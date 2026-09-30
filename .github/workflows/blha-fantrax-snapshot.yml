@@ -1,0 +1,31 @@
+name: BLHA Fantrax Schema Snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      league_id:
+        description: "Fantrax league ID from the test league URL"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependency
+        run: pip install requests==2.32.5
+
+      - name: Inspect Fantrax data schema
+        run: |
+          python automation/phase-2d3/fantrax_snapshot.py --league-id "${{ inputs.league_id }}"
