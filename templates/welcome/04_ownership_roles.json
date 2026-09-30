@@ -11,11 +11,8 @@
         {"name":"🏆 / 🥇 HONOR ROLES","value":"League Champion and Presidents' Trophy roles recognize current title holders.","inline":false},
         {"name":"🗳️ FORMAL VOTING","value":"Only the Franchise Owner role posts the franchise's vote in **league-voting**. Co-owners can view the channel but remain read-only by design.","inline":false}
       ],
-      "footer": {"text":"ONE FRANCHISE • ONE VOTE • ONE DUES OBLIGATION"}
-    },
-    {
-      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"},
-      "description":"​"
+      "footer": {"text":"ONE FRANCHISE • ONE VOTE • ONE DUES OBLIGATION"},
+      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
     }
   ]
 }
