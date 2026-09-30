@@ -1,6 +1,10 @@
 name: BLHA Fantrax Standings
 
 on:
+  schedule:
+    # One controlled live standings check per day after overnight NHL scoring settles.
+    # 11:30 UTC = 7:30 AM EDT / 6:30 AM EST
+    - cron: "30 11 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -48,6 +52,12 @@ jobs:
           BLHA_WEBHOOK_STANDINGS: ${{ secrets.BLHA_WEBHOOK_STANDINGS }}
         shell: bash
         run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "Scheduled standings snapshot -> LIVE mode"
+            python automation/phase-2d3/standings.py --mode live
+            exit $?
+          fi
+
           FORCE=""
           if [[ "${{ inputs.force }}" == "true" ]]; then
             FORCE="--force"
@@ -55,7 +65,7 @@ jobs:
           python automation/phase-2d3/standings.py --mode "${{ inputs.mode }}" $FORCE
 
       - name: Persist standings state
-        if: ${{ (inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
         shell: bash
         run: |
           if git diff --quiet -- automation/phase-2d3/state/standings.json; then
