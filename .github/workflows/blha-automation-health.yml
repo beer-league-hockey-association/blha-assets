@@ -1,0 +1,71 @@
+name: BLHA Automation Health
+
+on:
+  schedule:
+    - cron: "27 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Health monitor mode"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - test
+          - live
+
+permissions:
+  actions: read
+  contents: write
+
+concurrency:
+  group: blha-automation-health
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run automation health monitor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLHA_WEBHOOK_AUTOMATION_HEALTH: ${{ secrets.BLHA_WEBHOOK_AUTOMATION_HEALTH }}
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            python automation/health/health.py --mode live
+          else
+            python automation/health/health.py --mode "${{ inputs.mode }}"
+          fi
+
+      - name: Persist automation health state
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          STATE="automation/health/state/health.json"
+          if git diff --quiet -- "$STATE"; then
+            echo "No automation health state change."
+            exit 0
+          fi
+
+          git config user.name "BLHA Systems Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$STATE"
+          git commit -m "chore(automation-health): persist issue state [skip ci]"
+          git pull --rebase
+          git push
