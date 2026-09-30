@@ -1,5 +1,5 @@
 league_id: w02cjakmmumb3lur
 season_label: "2026-27 TEST"
-channel_label: "📊 SCOREBOARD"
+channel_label: "SCOREBOARD"
 webhook_secret: BLHA_WEBHOOK_SCOREBOARD
 color: 0xFFB81C
