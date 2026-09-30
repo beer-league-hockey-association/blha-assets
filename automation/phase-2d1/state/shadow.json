@@ -1,6 +1,687 @@
 {
   "version": 1,
-  "initialized": false,
-  "updated_at": "",
-  "seen": []
+  "initialized": true,
+  "updated_at": "2026-09-30T18:10:01.287380Z",
+  "seen": [
+    {
+      "key": "400d6a50469214f7d0492932",
+      "url": "https://www.nhl.com/news",
+      "fingerprint": "511fcdddb45c57ca",
+      "title_norm": "skip to main content",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.155113Z"
+    },
+    {
+      "key": "771ee594d7ce1ddf2592b005",
+      "url": "https://www.nhl.com/news/alex-ovechkin-says-he-ll-be-ready-to-play-for-washington-capitals-in-season-opener",
+      "fingerprint": "39045135c61deffa",
+      "title_norm": "ovi says heâll be ready for capsâ opener on friday nhlâs all-time leading goal-scorer missed all preseason games with lower-body injury sep 30, 2026",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.155212Z"
+    },
+    {
+      "key": "5b36f12459cc0a808345c353",
+      "url": "https://www.nhl.com/news/jared-bednar-signs-four-year-contract-with-colorado-avalanche",
+      "fingerprint": "058102ab506076e7",
+      "title_norm": "avalanche coach bednar signs contract through 2030-31 set to begin 11th season as colorado coach, won stanley cup in 2022 sep 30, 2026",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.155285Z"
+    },
+    {
+      "key": "2cadeb6a84606237c81c9d18",
+      "url": "https://www.nhl.com/news/casey-desmith-signs-two-year-contract-will-dallas-stars",
+      "fingerprint": "9f852a97b87c1adb",
+      "title_norm": "desmith signs 2-year, $5 million deal with stars sep 30, 2026",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.155630Z"
+    },
+    {
+      "key": "7bd37eb6bd14008f5a27136e",
+      "url": "https://www.nhl.com/news/gavin-mckenna-family-savor-experience-of-nhl-debut-for-maple-leafs",
+      "fingerprint": "9b969bf4bf659fa4",
+      "title_norm": "mckenna, family savor 'unreal' nhl debut for leafs sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.155757Z"
+    },
+    {
+      "key": "67bcc9cc55dc7f6b62585b2a",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-september-30-2026",
+      "fingerprint": "034d040bd83b5f2d",
+      "title_norm": "on tap: laviolette to debut as kings coach tonight sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.156108Z"
+    },
+    {
+      "key": "ab13477939af226f1ee632e3",
+      "url": "https://www.nhl.com/news/patrick-kane-scores-with-familiar-flair-in-chicago-blackhawks-return",
+      "fingerprint": "a19d763001fe013f",
+      "title_norm": "kane scores with familiar flair in blackhawks return sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.156621Z"
+    },
+    {
+      "key": "52fca4e2ce2d866376afd0a0",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-september-30-2026",
+      "fingerprint": "599df49f64673c85",
+      "title_norm": "status report: luukkonen likely for sabres tomorrow sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.157251Z"
+    },
+    {
+      "key": "9bb25dd3bbee0e627b4a3c4b",
+      "url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+      "fingerprint": "b375d717b563d5d4",
+      "title_norm": "projected lineups, starting goalies for tonight sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.157994Z"
+    },
+    {
+      "key": "9a93da9bca57db325b65fc1f",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-picks-props-daily-fantasy-hockey-projections-for-2026-27-season",
+      "fingerprint": "007fbc40d3ee3506",
+      "title_norm": "fantasy picks, props, futures with edge stats sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.158873Z"
+    },
+    {
+      "key": "bd9240b40d84cd2ca46cbec8",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-vegas-golden-knights-game-recap-september-29-2026",
+      "fingerprint": "dc0c6c0b00453a75",
+      "title_norm": "golden knights pull away from blackhawks, win craig's debut as coach sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.160192Z"
+    },
+    {
+      "key": "2e1474db0342fbad15971977",
+      "url": "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-recap-september-29-2026",
+      "fingerprint": "093d7fe256949856",
+      "title_norm": "canucks recover for ot victory against oilers after blowing three-goal lead sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.161823Z"
+    },
+    {
+      "key": "81bfeb521f56854f3c320d04",
+      "url": "https://www.nhl.com/news/new-york-rangers-boston-bruins-game-recap-september-29-2026",
+      "fingerprint": "9faabaebfdc3598a",
+      "title_norm": "bruins score three goals late, blank rangers in season opener sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.163674Z"
+    },
+    {
+      "key": "93f4486033872eda6326694f",
+      "url": "https://www.nhl.com/news/montreal-canadiens-toronto-maple-leafs-game-recap-september-29-2026",
+      "fingerprint": "81515bd2741253bb",
+      "title_norm": "canadiens hold off maple leafs in opener to spoil mckenna debut sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.165625Z"
+    },
+    {
+      "key": "f8d36ffd038035fb6a7ea49e",
+      "url": "https://www.nhl.com/news/florida-panthers-carolina-hurricanes-game-recap-september-29-2026",
+      "fingerprint": "c47884cb98e086ac",
+      "title_norm": "forsling scores ot winner with 4.3 seconds left, panthers spoil hurricanesâ banner raising sep 30, 2026",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T18:10:01.168490Z"
+    },
+    {
+      "key": "ce4f781869d64a6dc85c4d27",
+      "url": "https://www.sandiegogulls.com/news/detail/suchanek-ready-for-fresh-start-after-turbulent-2025-26",
+      "fingerprint": "c0700f9a83ab64fe",
+      "title_norm": "suchanek ready for fresh start after turbulent 2025-26",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.168564Z"
+    },
+    {
+      "key": "85cc49adfcfdeb98d1bd9d4b",
+      "url": "https://theahl.com/news/waiver-wire-opens-doors-for-new-opportunities",
+      "fingerprint": "1beddd4dea6d5353",
+      "title_norm": "waiver wire opens doors for new opportunities",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.168757Z"
+    },
+    {
+      "key": "392b03959457601a3690b777",
+      "url": "https://theahl.com/news/opening-night-nhl-rosters-602-ahl-alumni",
+      "fingerprint": "216797bd2a8cd24a",
+      "title_norm": "opening-night nhl rosters include 602 ahl alumni",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.169053Z"
+    },
+    {
+      "key": "2b3f2afdfb5649b6d39dd135",
+      "url": "https://theahl.com/news/bears-sign-petersen-to-ahl-contract",
+      "fingerprint": "73fa6d24e478a7a4",
+      "title_norm": "bears sign petersen to ahl contract",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.169402Z"
+    },
+    {
+      "key": "5aaf1e2c84f5a162779bce24",
+      "url": "https://www.nhl.com/penguins/news/murashov-takes-another-step",
+      "fingerprint": "c3d792910c857d26",
+      "title_norm": "murashov takes another step with penguins",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.169828Z"
+    },
+    {
+      "key": "ff95d1b5b45887a60b801676",
+      "url": "https://theahl.com/news/stevenson-claimed-by-jets",
+      "fingerprint": "13b812656ee4cad3",
+      "title_norm": "stevenson claimed by jets",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.170229Z"
+    },
+    {
+      "key": "57621a76f63aee6a5ff00f56",
+      "url": "https://theahl.com/news/flyers-agree-to-terms-with-phantoms-captain-wilson",
+      "fingerprint": "d6f264ffb06c9da6",
+      "title_norm": "flyers agree to terms with phantoms captain wilson",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.170911Z"
+    },
+    {
+      "key": "0bb4075d4d8a564f34acf55a",
+      "url": "https://theahl.com/news/devils-claim-poirier-off-waivers-from-stars",
+      "fingerprint": "aeefea41268102d8",
+      "title_norm": "devils claim poirier off waivers from stars",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.171754Z"
+    },
+    {
+      "key": "a97361de4b980b24eb5ea4e1",
+      "url": "https://theahl.com/news/hurricanes-relying-on-wolves-deep-talent-pool",
+      "fingerprint": "31ba9fa90abcd020",
+      "title_norm": "hurricanes relying on wolves' deep talent pool",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.172668Z"
+    },
+    {
+      "key": "af0b2b434cbf63cfeb4e8273",
+      "url": "https://charlottecheckers.com/articles/kinnear-heads-into-10th-year-at-the-helm-ready-to-teach,-build-off-early-playoff-exit",
+      "fingerprint": "39206087e16b7dd4",
+      "title_norm": "kinnear heads into 10th year ready to teach",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.173595Z"
+    },
+    {
+      "key": "d8aaabd44b2109e11c43360d",
+      "url": "",
+      "fingerprint": "07fd51fabaed7751",
+      "title_norm": "five young nhl players poised for breakouts",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.176216Z"
+    },
+    {
+      "key": "24ffefc331d2240b0a2f971c",
+      "url": "",
+      "fingerprint": "078a0f52dca687c7",
+      "title_norm": "10 thoughts on maple leafs after opening night: new guys a mixed bag",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.180260Z"
+    },
+    {
+      "key": "bcf97728d3e576083807e895",
+      "url": "",
+      "fingerprint": "5853a9e60198e0c3",
+      "title_norm": "sloppy oilers deliver 'unacceptable' performance in babcock's debut",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.184311Z"
+    },
+    {
+      "key": "f2dae174b39546d3ad309b0b",
+      "url": "",
+      "fingerprint": "1ef6fd0b8fc5b0b3",
+      "title_norm": "islanders' schaefer pumped to open season in front of family in toronto",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.187134Z"
+    },
+    {
+      "key": "ba9de125f9fb88ec15b21310",
+      "url": "",
+      "fingerprint": "e235cce6e9ad1255",
+      "title_norm": "how flames analyst kevin sawyer sparked the nastiest night in saddledome history",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.190412Z"
+    },
+    {
+      "key": "3381d7df29e8f2e97b38fb5a",
+      "url": "",
+      "fingerprint": "6d07d53cb06259c9",
+      "title_norm": "maple leafs 'look like a new team' in emotional opening loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.192978Z"
+    },
+    {
+      "key": "a750707f0e8c692694f9092c",
+      "url": "",
+      "fingerprint": "3aefc98c11af1415",
+      "title_norm": "arizona state places men's hockey coach greg powers on paid leave",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.195935Z"
+    },
+    {
+      "key": "fa24c76107d5d7d484241a4f",
+      "url": "",
+      "fingerprint": "712dcae11624e517",
+      "title_norm": "maple leafs' anthony stolarz to start vs. islanders in second half of back-to-back",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.199610Z"
+    },
+    {
+      "key": "473190d7e32b3b33aca4b637",
+      "url": "",
+      "fingerprint": "1f72380724bed331",
+      "title_norm": "senators' andre burakovsky not expected to play season opener",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.202816Z"
+    },
+    {
+      "key": "86094b88137e4cf94a946ca8",
+      "url": "",
+      "fingerprint": "457e0e9d3bbb7847",
+      "title_norm": "avalanche, coach jared bednar agree to four-year contract extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.203571Z"
+    },
+    {
+      "key": "8c88be261c663db9740c3704",
+      "url": "",
+      "fingerprint": "9e4ccfd130431e04",
+      "title_norm": "stars sign goalie casey desmith to two-year, $5-million contract extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.204340Z"
+    },
+    {
+      "key": "23648fc5cbaabdfb3f46386d",
+      "url": "",
+      "fingerprint": "a886bbcd16a44e10",
+      "title_norm": "kraken's beniers embracing expanded leadership role",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.207243Z"
+    },
+    {
+      "key": "f8a4e6fad40f2940490d3657",
+      "url": "",
+      "fingerprint": "7318123d12365859",
+      "title_norm": "oilers' bouchard pots first hat trick by a defenceman in season opener since 1980",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.211514Z"
+    },
+    {
+      "key": "2b8b0033e41849e66146c55b",
+      "url": "",
+      "fingerprint": "f18fc2c5298ffc96",
+      "title_norm": "eichel hits 700 points, golden knights beat blackhawks in craig's first game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.215654Z"
+    },
+    {
+      "key": "e34e9fb2513598cbe3bbe66e",
+      "url": "",
+      "fingerprint": "fbdf93b84a5ed14e",
+      "title_norm": "nhl top videos",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:10:01.216880Z"
+    },
+    {
+      "key": "14e3503afe28b7e0eda71d18",
+      "url": "https://dobberprospects.com/2026/09/28/32-in-32-summer-series-winnipeg-jets-2",
+      "fingerprint": "2e152d79fb1800cc",
+      "title_norm": "32-in-32 summer series: winnipeg jets",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.217785Z"
+    },
+    {
+      "key": "7a0096c6ccdf5ce82622cfe8",
+      "url": "https://dobberprospects.com/2026/09/25/32-in-32-summer-series-washington-capitals-2",
+      "fingerprint": "1ab9b8abc8108998",
+      "title_norm": "32-in-32 summer series: washington capitals",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.218861Z"
+    },
+    {
+      "key": "7038404ca4f072e4d2ed144a",
+      "url": "https://dobberprospects.com/2026/09/23/32-in-32-summer-series-vegas-golden-knights-2",
+      "fingerprint": "b133227c558141d7",
+      "title_norm": "32-in-32 summer series: vegas golden knights",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.219989Z"
+    },
+    {
+      "key": "c13c411449afe33a81bd238a",
+      "url": "https://dobberprospects.com/2026/09/20/32-in-32-summer-series-vancouver-canucks-2",
+      "fingerprint": "a006bb87c2ef8814",
+      "title_norm": "32-in-32 summer series: vancouver canucks",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.221114Z"
+    },
+    {
+      "key": "273275421ab0488277741b16",
+      "url": "https://dobberprospects.com/2026/09/18/32-in-32-summer-series-utah-mammoth-2",
+      "fingerprint": "5f5e615fa3deac1d",
+      "title_norm": "32-in-32 summer series: utah mammoth",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.222174Z"
+    },
+    {
+      "key": "491ae20593acb7cc157be278",
+      "url": "https://dobberprospects.com/2026/09/16/32-in-32-summer-series-toronto-maple-leafs-2",
+      "fingerprint": "bac955954bef5b64",
+      "title_norm": "32-in-32 summer series: toronto maple leafs",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.223468Z"
+    },
+    {
+      "key": "f6d9a82f24c58bdb69408aab",
+      "url": "https://dobberprospects.com/2026/09/15/32-in-32-summer-series-tampa-bay-lightning-take-2",
+      "fingerprint": "2b42fadb5e89f50d",
+      "title_norm": "32-in-32 summer series: tampa bay lightning – take 2",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.225052Z"
+    },
+    {
+      "key": "49d880310066ac8f59664265",
+      "url": "https://dobberprospects.com/2026/09/12/32-in-32-summer-series-st-louis-blues-2",
+      "fingerprint": "6b12c86de5a50503",
+      "title_norm": "32-in-32 summer series: st. louis blues",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.226463Z"
+    },
+    {
+      "key": "a292a77030c2cb25c404b2a0",
+      "url": "https://dobberprospects.com/2026/09/11/32-in-32-summer-series-seattle-kraken-2",
+      "fingerprint": "bd2b0283327f74f1",
+      "title_norm": "32-in-32 summer series: seattle kraken",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.227855Z"
+    },
+    {
+      "key": "ca538b1cc5ccabf20b3e529c",
+      "url": "https://thehockeywriters.com/every-nhl-team-most-underrated-prospect",
+      "fingerprint": "b0d81aa31afc3b58",
+      "title_norm": "every nhl team's most underrated prospect",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.229695Z"
+    },
+    {
+      "key": "30acba55cab95a5b79935170",
+      "url": "https://thehockeywriters.com/5-western-conference-1st-round-picks-who-must-show-they-can-stick-in-the-nhl-in-2026-27",
+      "fingerprint": "038a83ac2c3ca5d7",
+      "title_norm": "5 western conference 1st round picks who must show they can stick in the nhl in 2026-27",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.232550Z"
+    },
+    {
+      "key": "ba8294f5916d703cd7ffefe9",
+      "url": "https://thehockeywriters.com/jamie-glance-is-a-sleeper-top-prospect-for-the-2027-nhl-draft",
+      "fingerprint": "2ffa782b8a359184",
+      "title_norm": "jamie glance is a sleeper top prospect for the 2027 nhl draft",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.235248Z"
+    },
+    {
+      "key": "7e15fc0f878b8795c2a55308",
+      "url": "https://thehockeywriters.com/every-nhl-teams-top-prospect",
+      "fingerprint": "ccec078ebd56990c",
+      "title_norm": "every nhl team's top prospect – 2026-27 preseason update",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.237738Z"
+    },
+    {
+      "key": "bc7b95e9afbd90e091847313",
+      "url": "https://thehockeywriters.com/2027-nhl-draft-baracchinis-rankings-preseason-top-32",
+      "fingerprint": "a33e7da7792d4eb5",
+      "title_norm": "2027 nhl draft: baracchini's top 32 preseason rankings",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.240101Z"
+    },
+    {
+      "key": "bd8949897eca35312f1be185",
+      "url": "https://thehockeywriters.com/the-top-10-goalie-prospects-in-the-nhl",
+      "fingerprint": "62541e3aedefb5ce",
+      "title_norm": "the top 10 nhl goalie prospects",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.242365Z"
+    },
+    {
+      "key": "e42f88e1934f91c6e9a99422",
+      "url": "https://thehockeywriters.com/3-finnish-nhl-prospects-to-watch-at-the-2026-rookie-faceoff",
+      "fingerprint": "e30c3b668678ca33",
+      "title_norm": "3 finnish nhl prospects to watch at the 2026 rookie faceoff",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.245396Z"
+    },
+    {
+      "key": "352445b6ec8574a67a5c53a1",
+      "url": "https://www.uscho.com/2026/09/29/afas-frank-serratore-to-join-brother-tom-in-retirement-after-season",
+      "fingerprint": "cc39aed18aa652c4",
+      "title_norm": "afa's frank serratore to join brother tom in retirement after season",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.248827Z"
+    },
+    {
+      "key": "fd4ed686510f286fcc1d91ba",
+      "url": "https://www.uscho.com/2026/09/29/the-podkaz-ohio-state-gets-a-sweep-at-penn-state-and-other-observations-on-week-2",
+      "fingerprint": "34d4c52dd1565d99",
+      "title_norm": "the podkaz: ohio state gets a sweep at penn state, and other observations on week 2",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.252956Z"
+    },
+    {
+      "key": "e895bc723affb5ac57ca20e7",
+      "url": "https://www.uscho.com/2026/09/28/asu-players-challenge-schools-workout-review",
+      "fingerprint": "309f4c9da8130044",
+      "title_norm": "report: asu players challenge school's workout review",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.256221Z"
+    },
+    {
+      "key": "1de7f738e31d11146304486f",
+      "url": "https://www.uscho.com/2026/09/28/womens-hockey-weekend-wrap-september-28-2026",
+      "fingerprint": "c065eebbaf4f8025",
+      "title_norm": "women's hockey weekend wrap – september 28, 2026",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.259102Z"
+    },
+    {
+      "key": "76efafa3ebf807473db480d0",
+      "url": "https://www.uscho.com/2026/09/25/womens-hockey-2026-27-newha-season-preview",
+      "fingerprint": "58b018224fb9aaa2",
+      "title_norm": "women's hockey: 2026-27 newha season preview",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.261675Z"
+    },
+    {
+      "key": "85019928f4f954ad8b78c7b0",
+      "url": "https://www.uscho.com/2026/09/24/ncaa-hockey-roster-expansion-takes-step-forward",
+      "fingerprint": "eb6ae199be5f20f8",
+      "title_norm": "ncaa hockey roster expansion takes step forward",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.265127Z"
+    },
+    {
+      "key": "ca742ace96a92d0bbdcae789",
+      "url": "https://www.uscho.com/2026/09/24/womens-hockey-2026-27-hockey-east-season-preview",
+      "fingerprint": "62ac67c001c349ac",
+      "title_norm": "women's hockey: 2026-27 hockey east season preview",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.268196Z"
+    },
+    {
+      "key": "bed66653b7a791a6cba2764f",
+      "url": "https://www.uscho.com/2026/09/22/report-asu-review-leaves-mayich-family-demanding-answers",
+      "fingerprint": "545d33422d1a3a2e",
+      "title_norm": "report: asu review leaves mayich family demanding answers",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.271937Z"
+    },
+    {
+      "key": "f2282367c2d7025aba9fd79a",
+      "url": "https://www.uscho.com/2026/09/22/hartford-to-replace-bridgeport-as-27-ncaa-tourney-host",
+      "fingerprint": "ca174f2f0a54631e",
+      "title_norm": "hartford to replace bridgeport as '27 ncaa tourney host",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.275917Z"
+    },
+    {
+      "key": "b1546025953709732845e6f6",
+      "url": "https://www.uscho.com/2026/09/22/the-podkaz-meet-new-syracuse-coach-brian-idalski",
+      "fingerprint": "88bcf6fd597ea32d",
+      "title_norm": "the podkaz: meet new syracuse coach brian idalski",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.279831Z"
+    },
+    {
+      "key": "29c0c13078e3766093c16c05",
+      "url": "https://www.uscho.com/2026/09/18/womens-hockey-roster-updates-2026-27",
+      "fingerprint": "54b046443afd08ea",
+      "title_norm": "women's hockey roster updates 2026-27",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.283137Z"
+    },
+    {
+      "key": "5d244878b96c692823affeff",
+      "url": "https://www.uscho.com/2026/09/17/podcast-understanding-the-chls-impact-after-one-season",
+      "fingerprint": "9a2d3296ea2c0c1d",
+      "title_norm": "podcast: understanding the chl's impact after one season",
+      "channel": "prospect-wire",
+      "source_id": "uscho",
+      "tier": 2,
+      "seen_at": "2026-09-30T18:10:01.287300Z"
+    }
+  ]
 }
