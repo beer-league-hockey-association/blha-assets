@@ -33,6 +33,13 @@ STATE_TTL_HOURS = 24 * 30
 FUZZY_DEDUPE_WINDOW_HOURS = 48
 DEFAULT_MAX_SOURCE_ITEMS = 15
 
+# Production flood guards. Normal 15-minute runs should produce only a handful
+# of truly new items. If a feed/parser suddenly exposes a backlog, these limits
+# prevent Discord from being flooded. Suppressed items are remembered so they do
+# not trickle out over later runs.
+MAX_LIVE_POSTS_PER_RUN = 6
+MAX_LIVE_POSTS_PER_CHANNEL = 3
+
 # Channels handled primarily by a superior native integration. The GitHub engine
 # still collects/classifies/dedupes these stories, but does not post them live.
 NATIVE_PRIMARY_CHANNELS = {"nhl-transactions"}
@@ -294,7 +301,8 @@ def main() -> int:
         print(f"LIVE BASELINE CREATED: {baseline} current items recorded; 0 Discord messages sent.")
         return 0
 
-    posted = shadowed = duplicates = discovery = native_skipped = 0
+    posted = shadowed = duplicates = discovery = native_skipped = suppressed = 0
+    posted_by_channel: dict[str, int] = {}
 
     for candidate in candidates:
         prefix = f"[{candidate['channel']}] {candidate['source_name']}"
@@ -322,10 +330,18 @@ def main() -> int:
             native_skipped += 1
             continue
 
+        channel_count = posted_by_channel.get(candidate["channel"], 0)
+        if posted >= MAX_LIVE_POSTS_PER_RUN or channel_count >= MAX_LIVE_POSTS_PER_CHANNEL:
+            print(f"RATE-GUARD SUPPRESSED {prefix}: {candidate['title']}")
+            remember(candidate, state)
+            suppressed += 1
+            continue
+
         if deliver(candidate):
             print(f"POSTED {prefix}: {candidate['title']}")
             remember(candidate, state)
             posted += 1
+            posted_by_channel[candidate["channel"]] = channel_count + 1
         else:
             print(f"NOT POSTED {prefix}: {candidate['title']}")
 
@@ -336,7 +352,7 @@ def main() -> int:
     print(
         f"SUMMARY mode={args.mode} posted={posted} shadowed={shadowed} "
         f"duplicates={duplicates} discovery={discovery} native_skipped={native_skipped} "
-        f"state={state_path.name}"
+        f"suppressed={suppressed} state={state_path.name}"
     )
     return 0
 
