@@ -57,6 +57,28 @@ jobs:
             echo "No state changes to persist."
             exit 0
           fi
+
+          # Ignore a timestamp-only change. This prevents a meaningless commit
+          # every 15 minutes when there were no new stories or state expirations.
+          python - "$STATE" <<'PY'
+          import json, subprocess, sys
+          path = sys.argv[1]
+          current = json.load(open(path, encoding='utf-8'))
+          previous = json.loads(subprocess.check_output(['git', 'show', f'HEAD:{path}'], text=True))
+          current.pop('updated_at', None)
+          previous.pop('updated_at', None)
+          if current == previous:
+              sys.exit(10)
+          PY
+          STATUS=$?
+          if [ "$STATUS" -eq 10 ]; then
+            git checkout -- "$STATE"
+            echo "Only updated_at changed; skipping state commit."
+            exit 0
+          elif [ "$STATUS" -ne 0 ]; then
+            exit "$STATUS"
+          fi
+
           git config user.name "BLHA Wire Automation"
           git config user.email "actions@users.noreply.github.com"
           git add "$STATE"
