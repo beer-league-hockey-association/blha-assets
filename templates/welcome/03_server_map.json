@@ -5,65 +5,22 @@
       "description": "Every category has a job. Use the right room and the server stays useful instead of becoming one giant chat.",
       "color": 16758812,
       "fields": [
-        {
-          "name": "🏛️ LEAGUE OFFICE",
-          "value": "Governance, constitution, announcements, calendar, ledger, voting, champions and permanent records.",
-          "inline": false
-        },
-        {
-          "name": "📰 THE WIRE",
-          "value": "Breaking NHL news, injuries, transactions, prospects and league-wide news discussion.",
-          "inline": false
-        },
-        {
-          "name": "💼 GENERAL MANAGERS",
-          "value": "The clubhouse: GM Lounge, game-day talk, chirps, memes, off-topic conversation and media.",
-          "inline": false
-        },
-        {
-          "name": "🔄 TRADE CENTER",
-          "value": "Trade blocks, acquisition targets, trade discussion, completed trades and dynasty player values.",
-          "inline": false
-        },
-        {
-          "name": "🌱 SCOUTING DEPARTMENT",
-          "value": "Prospect scouting, NCAA, juniors, international prospects, AHL watch and draft discussion.",
-          "inline": false
-        },
-        {
-          "name": "💵 WAIVER WIRE",
-          "value": "FAAB strategy, adds/drops and players worth watching. Actual claims remain in Fantrax.",
-          "inline": false
-        },
-        {
-          "name": "🏆 LEAGUE COMPETITION",
-          "value": "Weekly scoreboards, standings, recaps, playoffs and the consolation bracket.",
-          "inline": false
-        },
-        {
-          "name": "🏢 COMMISSIONER'S OFFICE",
-          "value": "Private tickets, public rules questions and league suggestions.",
-          "inline": false
-        },
-        {
-          "name": "🎙️ DRAFT CENTER",
-          "value": "Startup and annual draft-day communication, picks, draft trades and live discussion.",
-          "inline": false
-        },
-        {
-          "name": "🏒 FRANCHISE HQ",
-          "value": "Franchise-specific spaces for team identity, planning and internal organization.",
-          "inline": false
-        }
+        {"name":"🏛️ LEAGUE OFFICE","value":"Governance, constitution, announcements, calendar, ledger, voting, champions and permanent records.","inline":false},
+        {"name":"📰 THE WIRE","value":"Breaking NHL news, injuries, transactions, prospects and league-wide news discussion.","inline":false},
+        {"name":"💼 GENERAL MANAGERS","value":"The clubhouse: GM Lounge, game-day talk, chirps, memes, off-topic conversation and media.","inline":false},
+        {"name":"🔄 TRADE CENTER","value":"Trade blocks, acquisition targets, trade discussion, completed trades and dynasty player values.","inline":false},
+        {"name":"🌱 SCOUTING DEPARTMENT","value":"Prospect scouting, NCAA, juniors, international prospects, AHL watch and draft discussion.","inline":false},
+        {"name":"💵 WAIVER WIRE","value":"FAAB strategy, adds/drops and players worth watching. Actual claims remain in Fantrax.","inline":false},
+        {"name":"🏆 LEAGUE COMPETITION","value":"Weekly scoreboards, standings, recaps, playoffs and the consolation bracket.","inline":false},
+        {"name":"🏢 COMMISSIONER'S OFFICE","value":"Private tickets, public rules questions and league suggestions.","inline":false},
+        {"name":"🎙️ DRAFT CENTER","value":"Startup and annual draft-day communication, picks, draft trades and live discussion.","inline":false},
+        {"name":"🏒 FRANCHISE HQ","value":"Franchise-specific spaces for team identity, planning and internal organization.","inline":false}
       ],
-      "footer": {
-        "text": "BLHA SERVER DIRECTORY"
-      }
+      "footer": {"text":"BLHA SERVER DIRECTORY"}
     },
     {
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
-      }
+      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"},
+      "description":"​"
     }
   ]
 }
