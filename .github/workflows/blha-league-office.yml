@@ -1,0 +1,95 @@
+name: BLHA League Office Automation
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - dry-run
+          - live
+          - test
+      channel:
+        description: "Only used for test mode"
+        required: true
+        default: choose-channel
+        type: choice
+        options:
+          - choose-channel
+          - league-calendar
+          - league-announcements
+      reset_state:
+        description: "Clear League Office delivery state before this run"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-league-office
+  cancel-in-progress: false
+
+jobs:
+  league-office:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run League Office automation
+        env:
+          BLHA_WEBHOOK_LEAGUE_CALENDAR: ${{ secrets.BLHA_WEBHOOK_LEAGUE_CALENDAR }}
+          BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS: ${{ secrets.BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS }}
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            python automation/phase-2d2/league_ops.py --mode live
+            exit $?
+          fi
+
+          MODE="${{ inputs.mode }}"
+          RESET=""
+          if [[ "${{ inputs.reset_state }}" == "true" ]]; then
+            RESET="--reset-state"
+          fi
+
+          if [[ "$MODE" == "test" ]]; then
+            if [[ "${{ inputs.channel }}" == "choose-channel" ]]; then
+              echo "ERROR: choose league-calendar or league-announcements for test mode."
+              exit 1
+            fi
+            python automation/phase-2d2/league_ops.py --mode test --channel "${{ inputs.channel }}"
+          else
+            python automation/phase-2d2/league_ops.py --mode "$MODE" $RESET
+          fi
+
+      - name: Persist League Office state
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          if git diff --quiet -- automation/phase-2d2/state/league_ops.json; then
+            echo "No League Office state change."
+            exit 0
+          fi
+          git config user.name "BLHA League Office Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/phase-2d2/state/league_ops.json
+          git commit -m "chore(league-office): persist reminder state [skip ci]"
+          git push
