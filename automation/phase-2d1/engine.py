@@ -6,10 +6,6 @@ Architecture:
   Discord webhooks = delivery
   Native integrations = preferred where superior (PuckPedia transactions)
   Discord bot = deferred to a later interactive phase
-
-Scheduled production should remain in SHADOW mode until webhook secrets and
-routing behavior have been validated. Live mode is implemented but intentionally
-safe: the first live run establishes a baseline and sends nothing.
 """
 
 from __future__ import annotations
@@ -35,7 +31,7 @@ CONFIG = ROOT / "sources.yaml"
 STATE_DIR = ROOT / "state"
 STATE_TTL_HOURS = 72
 DEDUPE_WINDOW_HOURS = 48
-MAX_SOURCE_ITEMS = 15
+DEFAULT_MAX_SOURCE_ITEMS = 15
 
 WEBHOOK_ENV = {
     "breaking-news": "BLHA_WEBHOOK_BREAKING_NEWS",
@@ -144,7 +140,7 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
             continue
         if candidate["key"] == prior.get("key"):
             return "same-source-id"
-        if url and url == prior.get("url"):
+        if candidate.get("dedupe_by_url", True) and url and url == prior.get("url"):
             return "same-url"
         if fp == prior.get("fingerprint"):
             return "same-headline"
@@ -184,31 +180,36 @@ def build_candidate(source: dict, entry: dict) -> dict:
         "tier": int(source.get("tier", 9)),
         "channel": channel,
         "discovery_only": bool(source.get("discovery_only", False)),
+        "dedupe_by_url": bool(source.get("dedupe_by_url", True)),
         "player": entry.get("player", ""),
         "team": entry.get("team", ""),
         "status": entry.get("status", ""),
     }
 
 
-def fetch_candidates(config: dict) -> list[dict]:
+def fetch_candidates(config: dict, include_discovery: bool = False) -> list[dict]:
     candidates: list[dict] = []
     sources = [s for s in config.get("sources", []) if s.get("enabled", False)]
     sources.sort(key=lambda s: (int(s.get("tier", 9)), s.get("name", "")))
 
     for source in sources:
+        if source.get("discovery_only", False) and not include_discovery:
+            continue
         try:
             entries = wire.fetch_source(source)
         except Exception as exc:
             print(f"SOURCE ERROR [{source.get('name')}]: {exc}")
             continue
+
         count = 0
+        max_items = int(source.get("max_items", DEFAULT_MAX_SOURCE_ITEMS))
         for entry in entries:
             candidate = build_candidate(source, entry)
             if wire.should_ignore(candidate["title"], candidate["source_id"], candidate["channel"]):
                 continue
             candidates.append(candidate)
             count += 1
-            if count >= MAX_SOURCE_ITEMS:
+            if count >= max_items:
                 break
     return candidates
 
@@ -247,8 +248,9 @@ def deliver(candidate: dict) -> bool:
         print(f"DELIVERY SKIP: missing GitHub Actions secret {env_name}")
         return False
 
-    payload = discord_payload(candidate)
-    response = requests.post(webhook, params={"wait": "true"}, json=payload, timeout=25)
+    response = requests.post(
+        webhook, params={"wait": "true"}, json=discord_payload(candidate), timeout=25
+    )
     if response.status_code not in (200, 204):
         print(f"DELIVERY ERROR {response.status_code}: {response.text[:300]}")
         return False
@@ -259,18 +261,22 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=("shadow", "live"), default="shadow")
     parser.add_argument("--reset-state", action="store_true")
+    parser.add_argument("--include-discovery", action="store_true")
     args = parser.parse_args()
 
     cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
     state, state_path = load_state(args.mode)
     if args.reset_state:
         state = empty_state()
+        print(f"STATE RESET requested for {args.mode}")
 
     prune_state(state)
-    candidates = fetch_candidates(cfg)
-    print(f"BLHA THE WIRE — mode={args.mode.upper()} candidates={len(candidates)}")
+    candidates = fetch_candidates(cfg, include_discovery=args.include_discovery)
+    print(
+        f"BLHA THE WIRE — mode={args.mode.upper()} candidates={len(candidates)} "
+        f"include_discovery={args.include_discovery}"
+    )
 
-    # Live safety rail: first live invocation only establishes the baseline.
     if args.mode == "live" and not state.get("initialized", False):
         baseline = 0
         for candidate in candidates:
@@ -283,10 +289,7 @@ def main() -> int:
         print(f"LIVE BASELINE CREATED: {baseline} current items recorded; 0 Discord messages sent.")
         return 0
 
-    posted = 0
-    shadowed = 0
-    duplicates = 0
-    discovery = 0
+    posted = shadowed = duplicates = discovery = 0
 
     for candidate in candidates:
         prefix = f"[{candidate['channel']}] {candidate['source_name']}"
