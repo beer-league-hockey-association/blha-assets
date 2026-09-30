@@ -1,0 +1,69 @@
+name: BLHA Fantrax Standings
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Standings mode"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - test
+          - baseline
+          - live
+      force:
+        description: "Force a live post even if standings are unchanged"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-fantrax-standings
+  cancel-in-progress: false
+
+jobs:
+  standings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run Fantrax standings automation
+        env:
+          BLHA_WEBHOOK_STANDINGS: ${{ secrets.BLHA_WEBHOOK_STANDINGS }}
+        shell: bash
+        run: |
+          FORCE=""
+          if [[ "${{ inputs.force }}" == "true" ]]; then
+            FORCE="--force"
+          fi
+          python automation/phase-2d3/standings.py --mode "${{ inputs.mode }}" $FORCE
+
+      - name: Persist standings state
+        if: ${{ (inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          if git diff --quiet -- automation/phase-2d3/state/standings.json; then
+            echo "No standings state change."
+            exit 0
+          fi
+          git config user.name "BLHA Fantrax Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/phase-2d3/state/standings.json
+          git commit -m "chore(fantrax): persist standings state [skip ci]"
+          git push
