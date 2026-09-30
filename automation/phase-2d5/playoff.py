@@ -558,26 +558,126 @@ def main() -> int:
     first = int(playoffs.get("firstPlayoffPeriod") or 0)
     last_regular = int(playoffs.get("lastRegularSeasonPeriod") or 0)
     detected_period = current_period(info, now)
-    current = args.period if args.period is not None else detected_period
+    effective_period = args.period if args.period is not None else detected_period
+
+    if effective_period is None:
+        print("ERROR: unable to determine scoring period")
+        return 1
+
+    if args.period is not None and args.period not in pperiods:
+        print(f"ERROR: --period must be one of playoff periods {pperiods}")
+        return 1
 
     state = load_state()
-    stored_seeds = state.get("seeds")
-    if isinstance(stored_seeds, dict) and len(stored_seeds) >= cutoff:
+    saved_seeds = state.get("seeds")
+    baseline_ready = (
+        isinstance(saved_seeds, dict)
+        and len(saved_seeds) >= cutoff
+        and bool(state.get("baseline_recorded_at"))
+    )
+
+    if baseline_ready:
         seeds = {
-            int(key): value
-            for key, value in stored_seeds.items()
-            if str(key).isdigit()
+            int(seed): team
+            for seed, team in saved_seeds.items()
+            if str(seed).isdigit() and isinstance(team, dict)
         }
-        seed_source = "saved final regular-season seeds"
+        seed_source = "saved playoff seed baseline"
     else:
         seeds = standings_seed_map(standings, cutoff)
         seed_source = "current Fantrax standings (no saved playoff seed baseline)"
 
+    scores_by_period: dict[int, list[dict[str, Any]]] = {}
+    complete_by_period: dict[int, bool] = {}
+    for number in pperiods:
+        try:
+            scores_by_period[number] = normalize_scores(
+                get_json(session, "getMatchupScores", league_id, period=number)
+            )
+        except Exception as exc:
+            print(f"ERROR: Fantrax playoff score read failed for period {number}: {exc}")
+            return 1
+        complete_by_period[number] = period_complete(info, number, now)
+
+    # A manual period override is a bracket-format test aid. It must not trick
+    # the system into marking future rounds complete.
+    if args.period is not None:
+        for number in pperiods:
+            complete_by_period[number] = False
+
+    r1_results = period_results(
+        scores_by_period.get(pperiods[0], []),
+        seeds,
+        complete_by_period.get(pperiods[0], False),
+    )
+    r1_winners = winners_from(r1_results)
+    r2_results = period_results(
+        scores_by_period.get(pperiods[1], []) if len(pperiods) > 1 else [],
+        seeds,
+        complete_by_period.get(pperiods[1], False) if len(pperiods) > 1 else False,
+    )
+    r2_winners = winners_from(r2_results)
+
+    rounds: dict[int, dict[str, Any]] = {
+        1: {
+            "period": pperiods[0],
+            "matchups": [],
+        },
+        2: {
+            "period": pperiods[1] if len(pperiods) > 1 else None,
+            "matchups": [],
+        },
+        3: {
+            "period": pperiods[2] if len(pperiods) > 2 else None,
+            "matchups": [],
+        },
+    }
+
+    r1_pairs = expected_round1(seeds)
+    r1_scores = scores_by_period.get(pperiods[0], [])
+    for index, pair in enumerate(r1_pairs):
+        score = r1_scores[index] if index < len(r1_scores) else None
+        winner = r1_results[index]["winner"] if index < len(r1_results) else None
+        rounds[1]["matchups"].append(
+            {"pair": pair, "score": score, "winner": winner}
+        )
+
+    r2_pairs = expected_semis(seeds, r1_winners)
+    r2_scores = scores_by_period.get(pperiods[1], []) if len(pperiods) > 1 else []
+    for index, pair in enumerate(r2_pairs):
+        score = r2_scores[index] if index < len(r2_scores) else None
+        winner = r2_results[index]["winner"] if index < len(r2_results) else None
+        rounds[2]["matchups"].append(
+            {"pair": pair, "score": score, "winner": winner}
+        )
+
+    r3_pairs = expected_final(r2_winners)
+    r3_scores = scores_by_period.get(pperiods[2], []) if len(pperiods) > 2 else []
+    r3_results = period_results(
+        r3_scores,
+        seeds,
+        complete_by_period.get(pperiods[2], False) if len(pperiods) > 2 else False,
+    )
+    for index, pair in enumerate(r3_pairs):
+        score = r3_scores[index] if index < len(r3_scores) else None
+        winner = r3_results[index]["winner"] if index < len(r3_results) else None
+        rounds[3]["matchups"].append(
+            {"pair": pair, "score": score, "winner": winner}
+        )
+
+    canonical = {
+        "effective_period": effective_period,
+        "seeds": seeds,
+        "rounds": rounds,
+    }
+    current_hash = hashlib.sha256(
+        json.dumps(canonical, sort_keys=True, default=str).encode("utf-8")
+    ).hexdigest()
+    previous_hash = str(state.get("fingerprint") or "")
+
     print(
-        "BLHA FANTRAX PLAYOFFS "
-        f"mode={args.mode.upper()} "
-        f"detected_period={detected_period} "
-        f"effective_period={current} "
+        f"BLHA FANTRAX PLAYOFFS mode={args.mode.upper()} "
+        f"detected_period={detected_period} effective_period={effective_period} "
         f"playoff_periods={pperiods}"
     )
     print(f"seed_source={seed_source}")
@@ -585,254 +685,94 @@ def main() -> int:
     for seed in sorted(seeds):
         team = seeds[seed]
         print(
-            f"{seed}. {team['teamName']} "
-            f"[{team.get('teamId', '')}] "
-            f"{team.get('record', '')}"
+            f"  {seed}. {team.get('teamName')} [{team.get('teamId')}] "
+            f"{team.get('record')}"
+        )
+    for number in pperiods:
+        print(
+            f"period={number} matchups={len(scores_by_period.get(number, []))} "
+            f"complete={complete_by_period.get(number, False)}"
         )
 
-    if current is None or current < first:
-        status = "PLAYOFFS NOT STARTED"
-        r1_pairs = expected_round1(seeds)
-        rounds = {
-            1: {
-                "matchups": [
-                    {"pair": r1_pairs[0]},
-                    {"pair": r1_pairs[1]},
-                ]
-            },
-            2: {
-                "matchups": [
-                    {"pair": (seeds.get(1), None)},
-                    {"pair": (seeds.get(2), None)},
-                ]
-            },
-            3: {"matchups": [{"pair": (None, None)}]},
-        }
-    else:
-        if (
-            not isinstance(stored_seeds, dict)
-            and current > first
-            and args.mode == "live"
-        ):
-            print(
-                "ERROR: final playoff seed baseline is missing and the "
-                "regular season has already moved past the first playoff "
-                "period; refusing to infer seeds from playoff-adjusted standings."
-            )
-            return 1
-
-        status = f"PLAYOFF PERIOD {current}"
-        scores_by_period: dict[int, list[dict[str, Any]]] = {}
-        results_by_period: dict[int, list[dict[str, Any]]] = {}
-
-        for number in pperiods:
-            if args.period is None and number > current:
-                break
-
-            try:
-                scores = normalize_scores(
-                    get_json(
-                        session,
-                        "getMatchupScores",
-                        league_id,
-                        period=number,
-                    )
-                )
-                complete = (
-                    period_complete(info, number, now)
-                    if args.period is None
-                    else False
-                )
-                scores_by_period[number] = scores
-                results_by_period[number] = period_results(
-                    scores,
-                    seeds,
-                    complete,
-                )
-                print(
-                    f"period={number} "
-                    f"matchups={len(scores)} "
-                    f"complete={complete}"
-                )
-            except Exception as exc:
-                print(f"WARNING: period {number} scores failed: {exc}")
-
-        r1_scores = scores_by_period.get(first, [])
-        r1_results = results_by_period.get(first, [])
-        r1_matchups: list[dict[str, Any]] = []
-
-        for pair in expected_round1(seeds):
-            target = {seed_of(pair[0], seeds), seed_of(pair[1], seeds)}
-            score = next(
-                (
-                    matchup
-                    for matchup in r1_scores
-                    if {
-                        seed_of(matchup["away"], seeds),
-                        seed_of(matchup["home"], seeds),
-                    }
-                    == target
-                ),
-                None,
-            )
-            r1_matchups.append(
-                {"pair": pair, "score": score, "winner": None}
-            )
-
-        for result in r1_results:
-            winner = result["winner"]
-            if not winner:
-                continue
-            for item in r1_matchups:
-                score = item.get("score")
-                if score and winner["teamId"] in (
-                    score["away"]["teamId"],
-                    score["home"]["teamId"],
-                ):
-                    item["winner"] = winner
-
-        r1_winners = winners_from(r1_results)
-        r2_pairs = expected_semis(seeds, r1_winners)
-
-        r2_scores = scores_by_period.get(first + 1, [])
-        r2_results = results_by_period.get(first + 1, [])
-        r2_matchups: list[dict[str, Any]] = []
-
-        for pair in r2_pairs:
-            target = {
-                team["teamId"]
-                for team in pair
-                if team is not None
-            }
-            score = next(
-                (
-                    matchup
-                    for matchup in r2_scores
-                    if {
-                        matchup["away"]["teamId"],
-                        matchup["home"]["teamId"],
-                    }
-                    == target
-                ),
-                None,
-            )
-            r2_matchups.append(
-                {"pair": pair, "score": score, "winner": None}
-            )
-
-        for result in r2_results:
-            winner = result["winner"]
-            if not winner:
-                continue
-            for item in r2_matchups:
-                score = item.get("score")
-                if score and winner["teamId"] in (
-                    score["away"]["teamId"],
-                    score["home"]["teamId"],
-                ):
-                    item["winner"] = winner
-
-        r2_winners = winners_from(r2_results)
-        r3_pairs = expected_final(r2_winners)
-
-        r3_scores = scores_by_period.get(first + 2, [])
-        r3_results = results_by_period.get(first + 2, [])
-        r3_matchups = [
-            {
-                "pair": r3_pairs[0],
-                "score": (
-                    r3_scores[0]
-                    if len(r3_scores) == 1
-                    else None
-                ),
-                "winner": (
-                    r3_results[0]["winner"]
-                    if r3_results
-                    else None
-                ),
-            }
-        ]
-
-        rounds = {
-            1: {"matchups": r1_matchups},
-            2: {"matchups": r2_matchups},
-            3: {"matchups": r3_matchups},
-        }
-
-    payload = build_payload(
+    season_label = str(cfg.get("season_label") or "")
+    status = f"PLAYOFF PERIOD {effective_period}"
+    body = build_payload(
         info,
         seeds,
         rounds,
-        str(cfg.get("season_label") or "2026-27"),
+        season_label,
         status,
         test=args.mode == "test",
     )
 
-    fingerprint_text = json.dumps(
-        payload["embeds"][0],
-        ensure_ascii=False,
-        sort_keys=True,
-        separators=(",", ":"),
-    )
-    fingerprint = hashlib.sha256(
-        fingerprint_text.encode("utf-8")
-    ).hexdigest()
-
-    previous = str(state.get("fingerprint") or "")
-
     if args.mode == "preview":
-        print(json.dumps(payload, indent=2))
-        print(f"RESULT: preview only; fingerprint={fingerprint[:12]}")
+        print(json.dumps(body, ensure_ascii=False, indent=2))
+        print(f"RESULT: preview only; fingerprint={current_hash[:12]}")
         return 0
 
     if args.mode == "baseline":
         if detected_period is None or detected_period <= last_regular:
             print(
-                "RESULT: baseline not recorded yet; "
-                "wait until the regular season is complete."
+                "ERROR: baseline can only be recorded after the regular season "
+                f"(last regular period={last_regular}, detected={detected_period})"
+            )
+            return 1
+
+        if baseline_ready:
+            print("RESULT: playoff seed baseline already exists; no change.")
+            return 0
+
+        state.update(
+            {
+                "seeds": {str(seed): team for seed, team in seeds.items()},
+                "baseline_recorded_at": now.isoformat(),
+                "baseline_period": detected_period,
+            }
+        )
+        save_state(state)
+        print("RESULT: final regular-season playoff seed baseline recorded.")
+        return 0
+
+    if args.mode == "live":
+        if detected_period is None or detected_period < first:
+            print(
+                "RESULT: outside playoff window; no Discord message sent and "
+                "no playoff state changed."
             )
             return 0
 
-        save_state(
-            {
-                "seeds": {
-                    str(seed): team
-                    for seed, team in sorted(seeds.items())
-                },
-                "fingerprint": fingerprint,
-                "recorded_at": now.isoformat(),
-            }
-        )
-        print("RESULT: playoff baseline recorded.")
-        return 0
+        if not baseline_ready:
+            print(
+                "RESULT: playoff window reached but no seed baseline exists; "
+                "run baseline after the regular season before enabling live posts."
+            )
+            return 0
 
-    if args.mode == "live" and previous == fingerprint and not args.force:
-        print("RESULT: playoff snapshot unchanged; 0 Discord messages sent.")
-        return 0
+        if previous_hash == current_hash and not args.force:
+            print("RESULT: playoff bracket unchanged; 0 Discord messages sent.")
+            return 0
 
-    secret = str(
-        cfg.get("webhook_secret") or "BLHA_WEBHOOK_PLAYOFFS"
-    )
-    ok, detail = deliver(secret, payload)
+    secret = str(cfg.get("webhook_secret") or "BLHA_WEBHOOK_PLAYOFFS")
+    ok, detail = deliver(secret, body)
     if not ok:
         print(f"DELIVERY ERROR: {detail}")
         return 1
 
+    state_updated = False
     if args.mode == "live":
-        save_state(
+        state.update(
             {
-                "seeds": {
-                    str(seed): team
-                    for seed, team in sorted(seeds.items())
-                },
-                "fingerprint": fingerprint,
-                "recorded_at": now.isoformat(),
+                "fingerprint": current_hash,
+                "last_posted_at": now.isoformat(),
+                "last_posted_period": effective_period,
             }
         )
+        save_state(state)
+        state_updated = True
 
     print(
         f"RESULT: Discord playoff message {detail}; "
-        f"state_updated={args.mode == 'live'}"
+        f"state_updated={state_updated}"
     )
     return 0
 
