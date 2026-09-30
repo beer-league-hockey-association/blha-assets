@@ -212,8 +212,8 @@ def discord_matchup_fields(rows: list[dict]) -> list[dict]:
         fields.append({
             "name": f"Matchup {index}",
             "value": (
-                f"✈️ **{away['teamName']}** — {away_score_text} • `{fmt_gp(away['gamesPlayed'])} GP`\n"
-                f"🏠 **{home['teamName']}** — {home_score_text} • `{fmt_gp(home['gamesPlayed'])} GP`"
+                f"**{away['teamName']}** *(Away)* — {away_score_text} • `{fmt_gp(away['gamesPlayed'])} GP`\n"
+                f"**{home['teamName']}** *(Home)* — {home_score_text} • `{fmt_gp(home['gamesPlayed'])} GP`"
             ),
             "inline": False,
         })
@@ -262,7 +262,7 @@ def payload(info: dict, rows: list[dict], cfg: dict, period: int, period_info: d
             "description": description,
             "fields": discord_matchup_fields(rows),
             "color": color_value(cfg.get("color", "0xFFB81C")),
-            "footer": {"text": f"{cfg.get('channel_label','📊 SCOREBOARD')} • FANTRAX READ-ONLY DATA"},
+            "footer": {"text": f"{cfg.get('channel_label','SCOREBOARD')} • FANTRAX READ-ONLY DATA"},
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }],
     }
