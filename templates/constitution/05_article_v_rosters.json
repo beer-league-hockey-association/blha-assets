@@ -1,0 +1,9 @@
+{
+  "embeds": [{
+    "title": "ARTICLE V — ROSTERS AND POSITIONS",
+    "description": "Normal roster limits are **20 active players** and **6 reserves**, for 26 non-minor controlled roster spots, plus **10 minor-league spots** and up to **5 IR spots**.\n\n**Active positions**\n• 3 C\n• 3 LW\n• 3 RW\n• 3 F\n• 6 D\n• 2 G\n\nMinor-league players do not count toward the normal 26-player roster limit. IR players do not count toward normal roster limitations while properly placed on IR, subject to Fantrax eligibility rules.",
+    "color": 16758812,
+    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
+    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
+  }]
+}

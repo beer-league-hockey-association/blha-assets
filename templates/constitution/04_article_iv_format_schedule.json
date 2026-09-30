@@ -1,0 +1,9 @@
+{
+  "embeds": [{
+    "title": "ARTICLE IV — LEAGUE FORMAT AND SCHEDULE",
+    "description": "The BLHA uses **Head-to-Head Points** scoring with **daily lineups**.\n\nThe regular season is **22 fantasy weeks**. Each franchise plays every other franchise twice. The league does not use divisions or conferences.\n\nIndividual players lock at approximately one minute before their NHL game begins, subject to Fantrax system behavior.",
+    "color": 16758812,
+    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
+    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
+  }]
+}

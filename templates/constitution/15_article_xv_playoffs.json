@@ -1,0 +1,9 @@
+{
+  "embeds": [{
+    "title": "ARTICLE XV — PLAYOFFS AND CONSOLATION",
+    "description": "Six franchises qualify for the championship playoffs.\n\n• Seeds 1 and 2 receive first-round byes\n• Opening round: **3 vs. 6** and **4 vs. 5**\n• The bracket reseeds after each round\n• Quarterfinals: 1 week\n• Semifinals: 1 week\n• Championship: **2-week cumulative matchup**\n\nIf a playoff matchup ends in an exact tie, the **higher seed** advances or wins.\n\nThe championship schedule should end approximately six days before the NHL regular season concludes.\n\nThe six non-championship teams participate in the consolation bracket. The consolation champion receives the next-season **+$50 FAAB** bonus described in Article IX.",
+    "color": 16758812,
+    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
+    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
+  }]
+}

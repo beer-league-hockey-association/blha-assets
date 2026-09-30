@@ -1,0 +1,9 @@
+{
+  "embeds": [{
+    "title": "ARTICLE I — LEAGUE IDENTITY AND PURPOSE",
+    "description": "The **Beer League Hockey Association (BLHA)** is a 12-franchise dynasty fantasy hockey league built around long-term roster construction, prospect development, active trading, daily competition, and permanent league history.\n\n**Fantrax** is the authoritative platform for gameplay, rosters, scoring, transactions, standings, and playoff results.\n\n**Discord** is the league’s communication, governance, trade-market, scouting, recordkeeping, and community platform.",
+    "color": 16758812,
+    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
+    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
+  }]
+}

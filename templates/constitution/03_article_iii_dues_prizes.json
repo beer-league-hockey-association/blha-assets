@@ -1,0 +1,9 @@
+{
+  "embeds": [{
+    "title": "ARTICLE III — FRANCHISE OWNERSHIP, DUES, AND PRIZES",
+    "description": "Annual dues are **$50 per franchise**. At startup, each franchise pays **$100**, covering the first season and the following season in advance. The league is intended to remain one season prepaid thereafter.\n\nA franchise is a single dues obligation even when co-owners are present.\n\n**Current annual allocation**\n• 12 franchises: $600\n• Fantrax Premium budget: $129.95\n• League Champion: $250\n• Runner-Up: $100\n• Presidents’ Trophy: $75\n• Third Place: $25\n• Regular-Season Fantasy Points Leader: $20\n\nAny residual amount remains league treasury unless otherwise approved.",
+    "color": 16758812,
+    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
+    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
+  }]
+}

@@ -1,0 +1,9 @@
+{
+  "embeds": [{
+    "title": "ARTICLE XII — STARTUP DRAFT",
+    "description": "The working startup format is a **36-round slow snake draft** with a **4-hour pick clock**.\n\nA nightly sleep window runs from **12:00 AM through 8:00 AM ET**. Picks may be made during the sleep window where Fantrax allows, but the active clock is paused.\n\nDraft queues are strongly encouraged. After two timer expirations, Fantrax auto-draft behavior may be used until the manager returns.\n\nFinal startup mechanics remain subject to the tested Fantrax configuration before the inaugural draft begins.",
+    "color": 16758812,
+    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
+    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
+  }]
+}
