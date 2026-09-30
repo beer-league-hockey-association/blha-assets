@@ -1,4 +1,5 @@
 name: BLHA Wire Webhook Test
+run-name: "BLHA Wire Webhook Test — ${{ github.event.inputs.channel }}"
 
 on:
   workflow_dispatch:
@@ -6,9 +7,10 @@ on:
       channel:
         description: 'Choose which BLHA Wire webhook to test.'
         required: true
-        default: breaking-news
+        default: choose-channel
         type: choice
         options:
+          - choose-channel
           - breaking-news
           - nhl-news
           - injury-report
@@ -40,4 +42,12 @@ jobs:
         run: pip install requests
 
       - name: Send controlled BLHA Wire test
-        run: python automation/phase-2d1/test_delivery.py --channel "${{ inputs.channel }}"
+        shell: bash
+        run: |
+          CHANNEL="${{ github.event.inputs.channel }}"
+          echo "Selected channel: $CHANNEL"
+          if [ "$CHANNEL" = "choose-channel" ]; then
+            echo "::error::Select a real channel before running this workflow."
+            exit 1
+          fi
+          python automation/phase-2d1/test_delivery.py --channel "$CHANNEL"
