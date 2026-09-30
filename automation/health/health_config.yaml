@@ -5,6 +5,9 @@ settings:
   recovery_color: 0x2E7D32
   test_color: 0xFFB81C
   wire_persistent_source_runs: 3
+  # A one-off flood-guard event can simply be a legitimate burst of news.
+  # Alert only if the Wire hits the guard in consecutive scheduled runs.
+  wire_rate_guard_consecutive_runs: 2
   # Newly created scheduled workflows can take time to receive their first
   # GitHub schedule event. Do not treat that startup window as an outage.
   no_run_grace_minutes: 1440
