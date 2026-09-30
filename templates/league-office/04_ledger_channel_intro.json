@@ -1,6 +1,12 @@
 {
   "embeds": [
     {
+      "description": "⠀",
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-ledger-header.png"
+      }
+    },
+    {
       "title": "BLHA LEAGUE LEDGER",
       "description": "Public league-level accounting for dues, league expenses, prizes, and treasury status.",
       "color": 13012757,
@@ -19,11 +25,6 @@
       "footer": {
         "text": "BLHA LEAGUE OFFICE"
       },
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-ledger-header.png"
-      }
-    },
-    {
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
       }
