@@ -1,10 +1,12 @@
 sources:
-  - id: espn_nhl
-    name: ESPN NHL
-    type: rss
-    url: https://www.espn.com/espn/rss/nhl/news
+  - id: nhl_latest
+    name: NHL.com Latest News
+    type: html
+    parser: nhl_news
+    url: https://www.nhl.com/news/
     tier: 1
     breaking_allowed: true
+    discovery_only: false
     enabled: true
 
   - id: sportsnet_nhl
@@ -13,6 +15,7 @@ sources:
     url: https://www.sportsnet.ca/hockey/nhl/feed/
     tier: 1
     breaking_allowed: true
+    discovery_only: false
     enabled: true
 
   - id: reddit_hockey
@@ -21,13 +24,20 @@ sources:
     url: https://www.reddit.com/r/hockey/.rss
     tier: 2
     breaking_allowed: false
+    discovery_only: true
     enabled: true
 
+  - id: espn_nhl
+    name: ESPN NHL
+    type: rss
+    url: https://www.espn.com/espn/rss/nhl/news
+    tier: 1
+    breaking_allowed: true
+    discovery_only: false
+    enabled: false
+    note: Disabled after dry run returned no entries on 2026-09-30. Retain for periodic retest.
+
 planned_sources:
-  - id: nhl_latest
-    name: NHL.com Latest News
-    type: html
-    status: phase-2d2
   - id: daily_faceoff_injuries
     name: Daily Faceoff Injury Report
     type: html
