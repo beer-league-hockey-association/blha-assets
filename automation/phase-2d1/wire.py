@@ -72,7 +72,17 @@ def route(title: str, breaking_allowed: bool) -> str:
 def fetch_feed(url: str):
     response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=20)
     response.raise_for_status()
-    return feedparser.loads(response.content)
+
+    # feedparser's public API is parse(); it accepts bytes directly.
+    feed = feedparser.parse(response.content)
+
+    # A malformed feed may still yield entries. Only fail when parsing reports
+    # an error and there are no usable entries to classify.
+    if getattr(feed, "bozo", False) and not getattr(feed, "entries", []):
+        exc = getattr(feed, "bozo_exception", "unknown feed parsing error")
+        raise RuntimeError(f"RSS parse error: {exc}")
+
+    return feed
 
 
 def main() -> int:
@@ -91,7 +101,12 @@ def main() -> int:
             print(f"ERROR: {exc}\n")
             continue
 
-        for entry in feed.entries[:10]:
+        entries = list(getattr(feed, "entries", []))
+        if not entries:
+            print("No entries returned.\n")
+            continue
+
+        for entry in entries[:10]:
             title = entry.get("title", "(untitled)")
             link = entry.get("link", "")
             target = route(title, bool(source.get("breaking_allowed")))
