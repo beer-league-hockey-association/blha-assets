@@ -20,5 +20,14 @@ Discord-ready Constitution section templates are stored in:
 
 These are working drafts and may be replaced when the Constitution is finalized.
 
+## Phase 2D.1 — The Wire Automation
+Architecture, routing rules, source configuration, test plan, and the dry-run collector are stored at:
+`automation/phase-2d1/`
+
+A manual GitHub Actions dry-run workflow is stored at:
+`.github/workflows/blha-wire-dry-run.yml`
+
+Phase 2D.1 does not post anything to Discord. Live webhook delivery will be enabled only after dry-run routing is approved and webhook URLs are stored in GitHub Actions Secrets.
+
 ## Raw URL base
 `https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/`
