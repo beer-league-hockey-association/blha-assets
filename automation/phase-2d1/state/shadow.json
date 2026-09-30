@@ -1,107 +1,107 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-09-30T18:25:51.524374Z",
+  "updated_at": "2026-09-30T18:33:48.090066Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
       "url": "https://www.nhl.com/news/alex-ovechkin-says-he-ll-be-ready-to-play-for-washington-capitals-in-season-opener",
-      "fingerprint": "39045135c61deffa",
-      "title_norm": "ovi says heâll be ready for capsâ opener on friday nhlâs all-time leading goal-scorer missed all preseason games with lower-body injury sep 30, 2026",
-      "channel": "injury-report",
+      "fingerprint": "067eca883b4c90b9",
+      "title_norm": "ovi says he'll be ready for caps' opener on friday",
+      "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.476939Z"
+      "seen_at": "2026-09-30T18:33:47.989892Z"
     },
     {
       "key": "5b36f12459cc0a808345c353",
       "url": "https://www.nhl.com/news/jared-bednar-signs-four-year-contract-with-colorado-avalanche",
-      "fingerprint": "058102ab506076e7",
-      "title_norm": "avalanche coach bednar signs contract through 2030-31 set to begin 11th season as colorado coach, won stanley cup in 2022 sep 30, 2026",
+      "fingerprint": "19ee2f81580717e4",
+      "title_norm": "avalanche coach bednar signs contract through 2030-31",
       "channel": "nhl-transactions",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.477023Z"
+      "seen_at": "2026-09-30T18:33:47.989956Z"
     },
     {
       "key": "2cadeb6a84606237c81c9d18",
       "url": "https://www.nhl.com/news/casey-desmith-signs-two-year-contract-will-dallas-stars",
-      "fingerprint": "9f852a97b87c1adb",
-      "title_norm": "desmith signs 2-year, $5 million deal with stars sep 30, 2026",
+      "fingerprint": "416b895e98c48296",
+      "title_norm": "desmith signs 2-year, $5 million deal with stars",
       "channel": "nhl-transactions",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.477408Z"
+      "seen_at": "2026-09-30T18:33:47.990141Z"
     },
     {
       "key": "7bd37eb6bd14008f5a27136e",
       "url": "https://www.nhl.com/news/gavin-mckenna-family-savor-experience-of-nhl-debut-for-maple-leafs",
-      "fingerprint": "9b969bf4bf659fa4",
-      "title_norm": "mckenna, family savor 'unreal' nhl debut for leafs sep 30, 2026",
+      "fingerprint": "3f3eeeba2408ff03",
+      "title_norm": "mckenna, family savor 'unreal' nhl debut for leafs",
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.477471Z"
+      "seen_at": "2026-09-30T18:33:47.990316Z"
     },
     {
       "key": "67bcc9cc55dc7f6b62585b2a",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-september-30-2026",
-      "fingerprint": "034d040bd83b5f2d",
-      "title_norm": "on tap: laviolette to debut as kings coach tonight sep 30, 2026",
+      "fingerprint": "44eb69e7a8edb004",
+      "title_norm": "on tap: laviolette to debut as kings coach tonight",
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.477701Z"
+      "seen_at": "2026-09-30T18:33:47.990559Z"
     },
     {
       "key": "ab13477939af226f1ee632e3",
       "url": "https://www.nhl.com/news/patrick-kane-scores-with-familiar-flair-in-chicago-blackhawks-return",
-      "fingerprint": "a19d763001fe013f",
-      "title_norm": "kane scores with familiar flair in blackhawks return sep 30, 2026",
+      "fingerprint": "531b3d92a70d57ef",
+      "title_norm": "kane scores with familiar flair in blackhawks return",
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.478124Z"
+      "seen_at": "2026-09-30T18:33:47.991024Z"
     },
     {
       "key": "52fca4e2ce2d866376afd0a0",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-september-30-2026",
-      "fingerprint": "599df49f64673c85",
-      "title_norm": "status report: luukkonen likely for sabres tomorrow sep 30, 2026",
+      "fingerprint": "e7a3681225739792",
+      "title_norm": "status report: luukkonen likely for sabres tomorrow",
       "channel": "injury-report",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.478463Z"
+      "seen_at": "2026-09-30T18:33:47.991071Z"
     },
     {
       "key": "bd9240b40d84cd2ca46cbec8",
       "url": "https://www.nhl.com/news/chicago-blackhawks-vegas-golden-knights-game-recap-september-29-2026",
-      "fingerprint": "dc0c6c0b00453a75",
-      "title_norm": "golden knights pull away from blackhawks, win craig's debut as coach sep 30, 2026",
+      "fingerprint": "3129985d4693bb1e",
+      "title_norm": "golden knights pull away from blackhawks, win craig's debut as coach",
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.479153Z"
+      "seen_at": "2026-09-30T18:33:47.991762Z"
     },
     {
       "key": "2e1474db0342fbad15971977",
       "url": "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-recap-september-29-2026",
-      "fingerprint": "093d7fe256949856",
-      "title_norm": "canucks recover for ot victory against oilers after blowing three-goal lead sep 30, 2026",
+      "fingerprint": "d6cb09e58ca161f3",
+      "title_norm": "canucks recover for ot victory against oilers after blowing three-goal lead",
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.480030Z"
+      "seen_at": "2026-09-30T18:33:47.992537Z"
     },
     {
       "key": "81bfeb521f56854f3c320d04",
       "url": "https://www.nhl.com/news/new-york-rangers-boston-bruins-game-recap-september-29-2026",
-      "fingerprint": "9faabaebfdc3598a",
-      "title_norm": "bruins score three goals late, blank rangers in season opener sep 30, 2026",
+      "fingerprint": "c25bdb601b81831e",
+      "title_norm": "bruins score three goals late, blank rangers in season opener",
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:25:51.481245Z"
+      "seen_at": "2026-09-30T18:33:47.993584Z"
     },
     {
       "key": "ce4f781869d64a6dc85c4d27",
@@ -111,7 +111,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.481334Z"
+      "seen_at": "2026-09-30T18:33:47.993643Z"
     },
     {
       "key": "85cc49adfcfdeb98d1bd9d4b",
@@ -121,7 +121,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.481529Z"
+      "seen_at": "2026-09-30T18:33:47.993824Z"
     },
     {
       "key": "392b03959457601a3690b777",
@@ -131,7 +131,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.481819Z"
+      "seen_at": "2026-09-30T18:33:47.994094Z"
     },
     {
       "key": "2b3f2afdfb5649b6d39dd135",
@@ -141,7 +141,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.482128Z"
+      "seen_at": "2026-09-30T18:33:47.994378Z"
     },
     {
       "key": "5aaf1e2c84f5a162779bce24",
@@ -151,7 +151,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.482562Z"
+      "seen_at": "2026-09-30T18:33:47.994779Z"
     },
     {
       "key": "ff95d1b5b45887a60b801676",
@@ -161,7 +161,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.482938Z"
+      "seen_at": "2026-09-30T18:33:47.995160Z"
     },
     {
       "key": "57621a76f63aee6a5ff00f56",
@@ -171,7 +171,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.483626Z"
+      "seen_at": "2026-09-30T18:33:47.995835Z"
     },
     {
       "key": "0bb4075d4d8a564f34acf55a",
@@ -181,7 +181,157 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.484368Z"
+      "seen_at": "2026-09-30T18:33:47.996507Z"
+    },
+    {
+      "key": "63ddd11f7f3f8cd04d24a6b5",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-edmundson/2532",
+      "fingerprint": "4adae62828101947",
+      "title_norm": "joel edmundson ( defenseman ) ( d ) (lak) — edmundson (undisclosed) will play in los angeles' season opener vs. colorado on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:47.996878Z"
+    },
+    {
+      "key": "4c1aad872f321854760ab588",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-duchene/341",
+      "fingerprint": "e143175aa5159546",
+      "title_norm": "matt duchene ( center ) ( c ) (dal) — duchene (upper-body) is doubtful for dallas' season opener vs. st. louis on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:47.997799Z"
+    },
+    {
+      "key": "77785d7871308c81d56088b8",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
+      "fingerprint": "268c5508e2b21d2a",
+      "title_norm": "connor brown ( right wing ) ( rw ) (rw) — brown (lower-body) will miss new jersey's first two games of the season.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:47.998848Z"
+    },
+    {
+      "key": "f60ad9cc559a404940a3b97e",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "836a0cddb23e94a5",
+      "title_norm": "andre burakovsky ( left wing ) ( lw ) (lw) — burakovsky (upper-body) is not expected to play in ottawa's upcoming game this weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.000762Z"
+    },
+    {
+      "key": "8108986077cd8a1f345193b5",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "2e10c7f6df000aa3",
+      "title_norm": "jake sanderson ( defenseman ) ( d ) (ott) — sanderson (undisclosed) skated on wednesday and is hopeful to return on saturday vs. toronto.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.003482Z"
+    },
+    {
+      "key": "fe0ea65917aae81d78cb29eb",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
+      "fingerprint": "bdc8ed4c64454644",
+      "title_norm": "mattias samuelsson ( defenseman ) ( d ) (buf) — samuelsson (lower-body) has a chance to play in buffalo's season opener vs. columbus on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.006644Z"
+    },
+    {
+      "key": "8440781942766c027a2a87ff",
+      "url": "https://www.dailyfaceoff.com/players/news/olen-zellweger/34623",
+      "fingerprint": "8b10cb87a8dd1aa7",
+      "title_norm": "olen zellweger ( defenseman ) ( d ) (buf) — zellweger (concussion) will be out for buffalo's season opener vs. columbus on thursday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.010559Z"
+    },
+    {
+      "key": "e21375c0e87ecb5e5f552a4f",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "bec3ca6474278f31",
+      "title_norm": "troy terry ( right wing ) ( rw ) (rw) — terry (hip) has been placed to ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.013221Z"
+    },
+    {
+      "key": "47659a05d4d05f7018ffbbbc",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-helleson/30429",
+      "fingerprint": "8b3d1ce3e3838cb0",
+      "title_norm": "drew helleson ( defenseman ) ( d ) (ana) — helleson (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.016055Z"
+    },
+    {
+      "key": "694a718d5bd4a20efb88e0b0",
+      "url": "https://www.dailyfaceoff.com/players/news/andrew-mangiapane/4622",
+      "fingerprint": "5bf490da79a9b6bd",
+      "title_norm": "andrew mangiapane ( left wing ) ( lw ) (lw) — mangiapane (lower-body) is not expected to play on the remainder of chicago's road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.021040Z"
+    },
+    {
+      "key": "1373d6605eb57b3404ba6fd4",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
+      "fingerprint": "8b4696494839109e",
+      "title_norm": "ivan demidov ( right wing ) ( rw ) (rw) — demidov (foot) will play in montreal's season opener.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.024977Z"
+    },
+    {
+      "key": "b978767a6a1f55e3b3f1457c",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
+      "fingerprint": "d229cd2ea750c0ca",
+      "title_norm": "jake debrusk ( left wing ) ( lw ) (lw) — debrusk (lower-body) will play in the canucks season opener on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.029887Z"
+    },
+    {
+      "key": "62a2b2bea2cc52c7a3a5a2c9",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
+      "fingerprint": "970774fedae7262e",
+      "title_norm": "zachary l'heureux ( left wing ) ( lw ) (lw) — l'heureux (lower-body) will miss colorado's season opener vs. los angeles and is considere day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.036355Z"
+    },
+    {
+      "key": "586f9afb429b1a23430fecb8",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
+      "fingerprint": "ababb5d3b29476bd",
+      "title_norm": "logan o'connor ( right wing ) ( rw ) (rw) — o'connor (lower-body) will miss colorado's season opener vs. los angeles on wednesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.043328Z"
+    },
+    {
+      "key": "44a86a5e60304c79ae123dd0",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-savoie/31504",
+      "fingerprint": "b882bb018e3bba8c",
+      "title_norm": "matthew savoie ( center ) ( c ) (edm) — savoie (undisclosed) is approximately seven weeks away from returning to the oilers' lineup.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.051977Z"
     },
     {
       "key": "d8aaabd44b2109e11c43360d",
@@ -191,7 +341,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.485195Z"
+      "seen_at": "2026-09-30T18:33:48.052799Z"
     },
     {
       "key": "24ffefc331d2240b0a2f971c",
@@ -201,7 +351,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.486687Z"
+      "seen_at": "2026-09-30T18:33:48.054006Z"
     },
     {
       "key": "bcf97728d3e576083807e895",
@@ -211,7 +361,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.488049Z"
+      "seen_at": "2026-09-30T18:33:48.055409Z"
     },
     {
       "key": "f2dae174b39546d3ad309b0b",
@@ -221,7 +371,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.489660Z"
+      "seen_at": "2026-09-30T18:33:48.057080Z"
     },
     {
       "key": "ba9de125f9fb88ec15b21310",
@@ -231,7 +381,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.491774Z"
+      "seen_at": "2026-09-30T18:33:48.059228Z"
     },
     {
       "key": "3381d7df29e8f2e97b38fb5a",
@@ -241,17 +391,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.493580Z"
-    },
-    {
-      "key": "a750707f0e8c692694f9092c",
-      "url": "",
-      "fingerprint": "3aefc98c11af1415",
-      "title_norm": "arizona state places men's hockey coach greg powers on paid leave",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.495562Z"
+      "seen_at": "2026-09-30T18:33:48.060957Z"
     },
     {
       "key": "fa24c76107d5d7d484241a4f",
@@ -261,7 +401,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.498118Z"
+      "seen_at": "2026-09-30T18:33:48.063335Z"
     },
     {
       "key": "45e014ff5c3e25b34214cfa5",
@@ -271,17 +411,27 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.499850Z"
+      "seen_at": "2026-09-30T18:33:48.064872Z"
     },
     {
       "key": "473190d7e32b3b33aca4b637",
       "url": "",
       "fingerprint": "1f72380724bed331",
       "title_norm": "senators' andre burakovsky not expected to play season opener",
-      "channel": "nhl-news",
+      "channel": "injury-report",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:25:51.502278Z"
+      "seen_at": "2026-09-30T18:33:48.068163Z"
+    },
+    {
+      "key": "86094b88137e4cf94a946ca8",
+      "url": "",
+      "fingerprint": "457e0e9d3bbb7847",
+      "title_norm": "avalanche, coach jared bednar agree to four-year contract extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T18:33:48.068500Z"
     },
     {
       "key": "14e3503afe28b7e0eda71d18",
@@ -291,7 +441,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.503046Z"
+      "seen_at": "2026-09-30T18:33:48.069240Z"
     },
     {
       "key": "7a0096c6ccdf5ce82622cfe8",
@@ -301,7 +451,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.503935Z"
+      "seen_at": "2026-09-30T18:33:48.070106Z"
     },
     {
       "key": "7038404ca4f072e4d2ed144a",
@@ -311,7 +461,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.504848Z"
+      "seen_at": "2026-09-30T18:33:48.070998Z"
     },
     {
       "key": "c13c411449afe33a81bd238a",
@@ -321,7 +471,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.505828Z"
+      "seen_at": "2026-09-30T18:33:48.071930Z"
     },
     {
       "key": "273275421ab0488277741b16",
@@ -331,7 +481,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.506708Z"
+      "seen_at": "2026-09-30T18:33:48.072768Z"
     },
     {
       "key": "491ae20593acb7cc157be278",
@@ -341,7 +491,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.507816Z"
+      "seen_at": "2026-09-30T18:33:48.073838Z"
     },
     {
       "key": "f6d9a82f24c58bdb69408aab",
@@ -351,7 +501,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.509176Z"
+      "seen_at": "2026-09-30T18:33:48.075163Z"
     },
     {
       "key": "ca538b1cc5ccabf20b3e529c",
@@ -361,7 +511,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.510807Z"
+      "seen_at": "2026-09-30T18:33:48.076712Z"
     },
     {
       "key": "30acba55cab95a5b79935170",
@@ -371,7 +521,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.513163Z"
+      "seen_at": "2026-09-30T18:33:48.079064Z"
     },
     {
       "key": "ba8294f5916d703cd7ffefe9",
@@ -381,7 +531,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.515450Z"
+      "seen_at": "2026-09-30T18:33:48.081296Z"
     },
     {
       "key": "7e15fc0f878b8795c2a55308",
@@ -391,7 +541,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.517604Z"
+      "seen_at": "2026-09-30T18:33:48.083410Z"
     },
     {
       "key": "bc7b95e9afbd90e091847313",
@@ -401,7 +551,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.519623Z"
+      "seen_at": "2026-09-30T18:33:48.085414Z"
     },
     {
       "key": "bd8949897eca35312f1be185",
@@ -411,7 +561,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.521729Z"
+      "seen_at": "2026-09-30T18:33:48.087450Z"
     },
     {
       "key": "e42f88e1934f91c6e9a99422",
@@ -421,7 +571,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:25:51.524334Z"
+      "seen_at": "2026-09-30T18:33:48.090027Z"
     }
   ]
 }
