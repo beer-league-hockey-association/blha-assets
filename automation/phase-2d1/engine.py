@@ -33,6 +33,10 @@ STATE_TTL_HOURS = 24 * 30
 FUZZY_DEDUPE_WINDOW_HOURS = 48
 DEFAULT_MAX_SOURCE_ITEMS = 15
 
+# Channels handled primarily by a superior native integration. The GitHub engine
+# still collects/classifies/dedupes these stories, but does not post them live.
+NATIVE_PRIMARY_CHANNELS = {"nhl-transactions"}
+
 WEBHOOK_ENV = {
     "breaking-news": "BLHA_WEBHOOK_BREAKING_NEWS",
     "nhl-news": "BLHA_WEBHOOK_NHL_NEWS",
@@ -135,7 +139,6 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
     fp = wire.fingerprint(candidate["title"])
 
     for prior in reversed(state.get("seen", [])):
-        # Exact identities stay suppressed for the full state-retention window.
         if candidate["key"] == prior.get("key"):
             return "same-source-id"
         if candidate.get("dedupe_by_url", True) and url and url == prior.get("url"):
@@ -143,8 +146,6 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
         if fp == prior.get("fingerprint"):
             return "same-headline"
 
-        # Fuzzy cross-source matching is intentionally short-lived so materially
-        # new developments on the same topic are not hidden days later.
         seen_at = parse_seen_time(prior.get("seen_at", ""))
         if seen_at and now - seen_at > timedelta(hours=FUZZY_DEDUPE_WINDOW_HOURS):
             continue
@@ -293,7 +294,7 @@ def main() -> int:
         print(f"LIVE BASELINE CREATED: {baseline} current items recorded; 0 Discord messages sent.")
         return 0
 
-    posted = shadowed = duplicates = discovery = 0
+    posted = shadowed = duplicates = discovery = native_skipped = 0
 
     for candidate in candidates:
         prefix = f"[{candidate['channel']}] {candidate['source_name']}"
@@ -313,13 +314,20 @@ def main() -> int:
             print(f"SHADOW {prefix}: {candidate['title']}")
             remember(candidate, state)
             shadowed += 1
+            continue
+
+        if candidate["channel"] in NATIVE_PRIMARY_CHANNELS:
+            print(f"NATIVE-PRIMARY SKIP {prefix}: {candidate['title']}")
+            remember(candidate, state)
+            native_skipped += 1
+            continue
+
+        if deliver(candidate):
+            print(f"POSTED {prefix}: {candidate['title']}")
+            remember(candidate, state)
+            posted += 1
         else:
-            if deliver(candidate):
-                print(f"POSTED {prefix}: {candidate['title']}")
-                remember(candidate, state)
-                posted += 1
-            else:
-                print(f"NOT POSTED {prefix}: {candidate['title']}")
+            print(f"NOT POSTED {prefix}: {candidate['title']}")
 
     state["initialized"] = True
     prune_state(state)
@@ -327,7 +335,8 @@ def main() -> int:
 
     print(
         f"SUMMARY mode={args.mode} posted={posted} shadowed={shadowed} "
-        f"duplicates={duplicates} discovery={discovery} state={state_path.name}"
+        f"duplicates={duplicates} discovery={discovery} native_skipped={native_skipped} "
+        f"state={state_path.name}"
     )
     return 0
 
