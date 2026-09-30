@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
-USER_AGENT = "BLHA-The-Wire/0.2 (+https://github.com/diseasewheeze/blha-assets)"
+USER_AGENT = "BLHA-The-Wire/0.3 (+https://github.com/diseasewheeze/blha-assets)"
 
 # Routing priority is intentional: BREAKING -> INJURY -> TRANSACTION -> PROSPECT -> NEWS.
 BREAKING = (
@@ -55,10 +55,13 @@ IGNORE_PATTERNS = (
     r"^nhl page featured",
     r"^nhl featured$",
     r"^nhl headlines$",
+    r"promo code",
+    r"bonus bets",
     # Reddit highlight/score formatting such as: [VAN (6) - EDM 5] ...
     r"^\[[A-Z]{2,4}\s*\(\d+\).*\]",
 )
 REPORTER_PREFIX = re.compile(r"^\[[^\]]{2,40}\]\s+")
+SAME_TEAM_TRANSFER = re.compile(r"\bfrom\s+(.+?)\s+to\s+\1\b", re.I)
 
 
 def normalize(text: str) -> str:
@@ -73,7 +76,6 @@ def fingerprint(title: str) -> str:
 
 def term_matches(hay: str, term: str) -> bool:
     term = normalize(term)
-    # Single tokens use word boundaries so AHL does not accidentally match a name/string.
     if re.fullmatch(r"[a-z0-9-]+", term):
         return re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", hay) is not None
     return term in hay
@@ -84,7 +86,7 @@ def contains_any(text: str, terms: tuple[str, ...]) -> bool:
     return any(term_matches(hay, term) for term in terms)
 
 
-def route(title: str, breaking_allowed: bool) -> str:
+def classify_title(title: str, breaking_allowed: bool) -> str:
     if breaking_allowed and contains_any(title, BREAKING):
         return "breaking-news"
     if contains_any(title, INJURY):
@@ -96,11 +98,22 @@ def route(title: str, breaking_allowed: bool) -> str:
     return "nhl-news"
 
 
+def route(title: str, source: dict) -> str:
+    # A source-specific desk is more reliable than headline keyword guessing.
+    if source.get("force_channel"):
+        return str(source["force_channel"])
+    return classify_title(title, bool(source.get("breaking_allowed")))
+
+
 def should_ignore(title: str, source_id: str, target: str) -> bool:
     t = normalize(title)
     if not t or t in GENERIC_TITLES or len(t) < 12:
         return True
     if any(re.search(pattern, t, re.I) for pattern in IGNORE_PATTERNS):
+        return True
+
+    # Elite Prospects occasionally emits bookkeeping/self-transfers that are not useful news.
+    if source_id.startswith("eliteprospects_") and SAME_TEAM_TRANSFER.search(title):
         return True
 
     if source_id == "reddit_hockey":
@@ -174,7 +187,8 @@ def main() -> int:
         if not source.get("enabled", False):
             continue
 
-        print(f"## {source['name']}")
+        mode = "DISCOVERY" if source.get("discovery_only", False) else "LIVE-CANDIDATE"
+        print(f"## {source['name']} [{mode}]")
         try:
             entries = fetch_source(source)
         except Exception as exc:
@@ -185,15 +199,11 @@ def main() -> int:
         for entry in entries:
             title = entry.get("title", "(untitled)")
             link = entry.get("link", "")
-            target = route(title, bool(source.get("breaking_allowed")))
+            target = route(title, source)
             if should_ignore(title, source.get("id", ""), target):
                 continue
 
-            if source.get("discovery_only", False):
-                label = f"discovery->{target}"
-            else:
-                label = target
-
+            label = f"discovery->{target}" if source.get("discovery_only", False) else target
             print(f"[{label}] {title}")
             print(f"  {link}")
             print(f"  fingerprint={fingerprint(title)}")
