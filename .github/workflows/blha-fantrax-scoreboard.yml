@@ -1,0 +1,77 @@
+name: BLHA Fantrax Scoreboard
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Scoreboard mode"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - test
+          - baseline
+          - live
+      period:
+        description: "Optional scoring period override; leave blank for current period"
+        required: false
+        type: string
+      force:
+        description: "Force a live post even if scoreboard is unchanged"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-fantrax-scoreboard
+  cancel-in-progress: false
+
+jobs:
+  scoreboard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run Fantrax scoreboard automation
+        env:
+          BLHA_WEBHOOK_SCOREBOARD: ${{ secrets.BLHA_WEBHOOK_SCOREBOARD }}
+        shell: bash
+        run: |
+          FORCE=""
+          PERIOD=""
+          if [[ "${{ inputs.force }}" == "true" ]]; then
+            FORCE="--force"
+          fi
+          if [[ -n "${{ inputs.period }}" ]]; then
+            PERIOD="--period ${{ inputs.period }}"
+          fi
+          python automation/phase-2d3/scoreboard.py --mode "${{ inputs.mode }}" $PERIOD $FORCE
+
+      - name: Persist scoreboard state
+        if: ${{ (inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          if git diff --quiet -- automation/phase-2d3/state/scoreboard.json; then
+            echo "No scoreboard state change."
+            exit 0
+          fi
+          git config user.name "BLHA Fantrax Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/phase-2d3/state/scoreboard.json
+          git commit -m "chore(fantrax): persist scoreboard state [skip ci]"
+          git push
