@@ -16,11 +16,11 @@ from urllib.parse import urljoin
 import feedparser
 import requests
 import yaml
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString, Tag
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
-USER_AGENT = "BLHA-The-Wire/0.5 (+https://github.com/diseasewheeze/blha-assets)"
+USER_AGENT = "BLHA-The-Wire/0.6 (+https://github.com/diseasewheeze/blha-assets)"
 
 BREAKING = (
     "out indefinitely", "season-ending", "out for the season", "suspended indefinitely",
@@ -30,7 +30,8 @@ INJURY = (
     "injury", "injured", "day-to-day", "week-to-week", "month-to-month",
     "injured reserve", "ltir", "surgery", "concussion", "fractured", "fracture",
     "activated from ir", "cleared to play", "returns from injury", "out indefinitely",
-    "status report:",
+    "status report:", "not expected to play", "will not play", "will miss",
+    "expected to miss", "ruled out", "not available", "unavailable",
 )
 TRANSACTION = (
     "traded", "trade", "acquired", "signed", "signs", "re-signs", "re-signed",
@@ -65,9 +66,11 @@ IGNORE_PATTERNS = (
 )
 REPORTER_PREFIX = re.compile(r"^\[[^\]]{2,40}\]\s+")
 SAME_TEAM_TRANSFER = re.compile(r"\bfrom\s+(.+?)\s+to\s+\1\b", re.I)
-DFO_PLAYER_TEXT = re.compile(r"^(.+?)\((C|LW|RW|D|G)\)$")
+DFO_PLAYER_WITH_POS = re.compile(r"^(.+?)\s*\((C|LW|RW|D|G)\)\s*$")
+DFO_POS_TEAM = re.compile(r"\((C|LW|RW|D|G)\)\s*\|?\s*([A-Z]{2,4})?")
 ISO_TS_ANY = re.compile(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z)")
 TEAM_CODE = re.compile(r"^[A-Z]{2,4}$")
+DATE_SUFFIX = re.compile(r"\s+[A-Z][a-z]{2}\s+\d{1,2},\s+20\d{2}\s*$")
 
 
 def normalize(text: str) -> str:
@@ -118,6 +121,8 @@ def should_ignore(title: str, source_id: str, target: str) -> bool:
         return True
     if source_id.startswith("eliteprospects_") and SAME_TEAM_TRANSFER.search(title):
         return True
+    if source_id == "sportsnet_nhl" and "men's hockey coach" in t:
+        return True
     if source_id == "reddit_hockey":
         attributed = REPORTER_PREFIX.search(title.strip()) is not None
         if target == "nhl-news" and not attributed:
@@ -144,15 +149,30 @@ def fetch_rss(url: str) -> list[dict[str, str]]:
     } for entry in feed.entries]
 
 
+def _headline_from_anchor(anchor: Tag) -> str:
+    heading = anchor.find(["h1", "h2", "h3", "h4", "h5"])
+    if heading:
+        title = heading.get_text(" ", strip=True)
+    else:
+        title = anchor.get_text(" ", strip=True)
+    title = re.sub(r"\s+", " ", title).strip()
+    title = DATE_SUFFIX.sub("", title).strip()
+    return title
+
+
 def fetch_nhl_news(url: str) -> list[dict[str, str]]:
     response = get(url)
-    soup = BeautifulSoup(response.text, "html.parser")
+    # Parse bytes, not response.text, so BeautifulSoup can honor the page encoding
+    # and avoid UTF-8 mojibake in apostrophes/dashes.
+    soup = BeautifulSoup(response.content, "html.parser")
     items: list[dict[str, str]] = []
     seen: set[str] = set()
     for anchor in soup.find_all("a", href=True):
-        title = re.sub(r"\s+", " ", anchor.get_text(" ", strip=True)).strip()
         href = urljoin(url, anchor.get("href", ""))
-        if not title or len(title) < 18 or "/news/" not in href:
+        if "/news/" not in href:
+            continue
+        title = _headline_from_anchor(anchor)
+        if not title or len(title) < 18:
             continue
         if should_ignore(title, "nhl_latest", classify_title(title, True)):
             continue
@@ -173,59 +193,73 @@ def _short_status(text: str, max_words: int = 24) -> str:
     return " ".join(words[:max_words]).rstrip(".,;:") + "…"
 
 
-def _clean_strings(node) -> list[str]:
-    return [
-        re.sub(r"\s+", " ", s).strip()
-        for s in node.stripped_strings
-        if re.sub(r"\s+", " ", s).strip()
-    ]
+def _clean_text(value: str) -> str:
+    return re.sub(r"\s+", " ", value).strip()
 
 
-def _smallest_dfo_card(anchor):
-    """Return the smallest ancestor that looks like one Daily Faceoff news card."""
-    node = anchor
-    for _ in range(10):
-        node = getattr(node, "parent", None)
-        if node is None:
+def _dfo_lines_after_anchor(anchor: Tag, max_nodes: int = 180) -> list[str]:
+    """Collect one Daily Faceoff card by document order.
+
+    DFO currently places the player name inside the player link, while position,
+    team, Injury label, update, source and timestamp are sibling/nested nodes.
+    Stopping at the next player-news link makes this independent of CSS classes.
+    """
+    lines: list[str] = []
+    nodes = 0
+    for element in anchor.next_elements:
+        nodes += 1
+        if nodes > max_nodes:
             break
-        strings = _clean_strings(node)
-        lowered = [s.lower() for s in strings]
-        if (
-            "injury" in lowered
-            and any(s.startswith("Source:") or s == "Source:" for s in strings)
-            and len(strings) <= 45
-        ):
-            return node
-    return None
+        if isinstance(element, Tag):
+            if element is not anchor and element.name == "a":
+                href = element.get("href", "") or ""
+                if "/players/news/" in href:
+                    break
+            continue
+        if not isinstance(element, NavigableString):
+            continue
+        text = _clean_text(str(element))
+        if not text:
+            continue
+        if not lines or lines[-1] != text:
+            lines.append(text)
+    return lines
 
 
-def _extract_dfo_card(anchor, page_url: str) -> dict[str, str] | None:
-    player_text = re.sub(r"\s+", " ", anchor.get_text(" ", strip=True)).strip()
-    match = DFO_PLAYER_TEXT.match(player_text)
-    if not match:
+def _extract_dfo_card(anchor: Tag, page_url: str) -> dict[str, str] | None:
+    raw_player = _clean_text(anchor.get_text(" ", strip=True))
+    if not raw_player:
         return None
-    player, position = match.groups()
 
-    card = _smallest_dfo_card(anchor)
-    if card is None:
+    position = ""
+    player = raw_player
+    player_match = DFO_PLAYER_WITH_POS.match(raw_player)
+    if player_match:
+        player, position = player_match.groups()
+
+    lines = _dfo_lines_after_anchor(anchor)
+    if not lines:
         return None
 
-    strings = _clean_strings(card)
-    try:
-        player_idx = strings.index(player_text)
-    except ValueError:
-        player_idx = 0
-
+    # Reconstruct enough leading text to capture patterns such as `(RW)|MTL`
+    # even when position/team are split across adjacent DOM nodes.
+    lead = " ".join(lines[:12])
+    pos_team = DFO_POS_TEAM.search(lead)
     team = ""
-    for s in strings[player_idx + 1: player_idx + 6]:
-        candidate = s.strip().strip("|").strip()
-        if TEAM_CODE.fullmatch(candidate):
-            team = candidate
-            break
+    if pos_team:
+        position = position or pos_team.group(1)
+        team = pos_team.group(2) or ""
+
+    if not team:
+        for s in lines[:12]:
+            candidate = s.strip().strip("|").strip()
+            if TEAM_CODE.fullmatch(candidate):
+                team = candidate
+                break
 
     injury_idx = None
-    for idx in range(player_idx + 1, min(player_idx + 10, len(strings))):
-        if strings[idx].lower() == "injury":
+    for idx, s in enumerate(lines[:25]):
+        if s.lower() == "injury":
             injury_idx = idx
             break
     if injury_idx is None:
@@ -236,10 +270,8 @@ def _extract_dfo_card(anchor, page_url: str) -> dict[str, str] | None:
     timestamp = ""
     after_source = False
 
-    for s in strings[injury_idx + 1:]:
+    for s in lines[injury_idx + 1:]:
         low = s.lower()
-        if DFO_PLAYER_TEXT.match(s) and s != player_text:
-            break
         if low == "injury" or low.startswith("image:"):
             continue
         if s == "Source:":
@@ -260,11 +292,13 @@ def _extract_dfo_card(anchor, page_url: str) -> dict[str, str] | None:
                 source_name = reporter
             continue
 
-        if after_source and not source_name and 2 <= len(s) <= 80:
+        if after_source and not source_name and 2 <= len(s) <= 100:
             source_name = s
             continue
 
-        if not summary and len(s) >= 12:
+        # The first substantive sentence after the Injury label is DFO's status
+        # headline; the longer paragraph that follows is commentary/context.
+        if not summary and len(s) >= 12 and not DFO_POS_TEAM.fullmatch(s):
             summary = s
 
     if not summary:
@@ -272,7 +306,7 @@ def _extract_dfo_card(anchor, page_url: str) -> dict[str, str] | None:
 
     player_link = urljoin(page_url, anchor.get("href", ""))
     short = _short_status(summary)
-    title = f"{player} ({team or position}) — {short}"
+    title = f"{player} ({team or position or 'NHL'}) — {short}"
     event_key = f"dfo|{player}|{summary}|{timestamp}"
 
     return {
@@ -291,7 +325,7 @@ def _extract_dfo_card(anchor, page_url: str) -> dict[str, str] | None:
 def fetch_daily_faceoff_injuries(url: str) -> list[dict[str, str]]:
     """Parse Daily Faceoff's dedicated NHL Injury Report cards."""
     response = get(url)
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(response.content, "html.parser")
     items: list[dict[str, str]] = []
     seen: set[str] = set()
 
@@ -309,9 +343,14 @@ def fetch_daily_faceoff_injuries(url: str) -> list[dict[str, str]]:
     if not items:
         player_anchor_count = len(anchors)
         injury_text_count = len(soup.find_all(string=re.compile(r"^\s*Injury\s*$", re.I)))
+        sample_players = [
+            _clean_text(a.get_text(" ", strip=True))
+            for a in anchors[:3]
+        ]
         raise RuntimeError(
             "Daily Faceoff injury parser returned no injury entries "
-            f"(player_links={player_anchor_count}, injury_labels={injury_text_count})"
+            f"(player_links={player_anchor_count}, injury_labels={injury_text_count}, "
+            f"sample_players={sample_players})"
         )
     return items
 
