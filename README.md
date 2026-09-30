@@ -20,14 +20,26 @@ Discord-ready Constitution section templates are stored in:
 
 These are working drafts and may be replaced when the Constitution is finalized.
 
-## Phase 2D.1 — The Wire Automation
-Architecture, routing rules, source configuration, test plan, and the dry-run collector are stored at:
+## Phase 2D.1C — The Wire Automation
+Locked architecture:
+
+- **GitHub Actions = brain**
+- **Discord webhooks = delivery**
+- **Native integrations = use when superior**
+- **Discord bot = save for a later interactive phase**
+
+Source collectors, routing, Daily Faceoff injury parsing, persistent dedupe state, and webhook delivery code are stored in:
 `automation/phase-2d1/`
 
-A manual GitHub Actions dry-run workflow is stored at:
-`.github/workflows/blha-wire-dry-run.yml`
+The scheduled engine workflow is:
+`.github/workflows/blha-wire-engine.yml`
 
-Phase 2D.1 does not post anything to Discord. Live webhook delivery will be enabled only after dry-run routing is approved and webhook URLs are stored in GitHub Actions Secrets.
+It currently runs every 15 minutes in **shadow mode**. Shadow mode never posts to Discord. Live delivery is implemented but remains opt-in and requires Discord webhook URLs to be stored as GitHub Actions Secrets.
+
+Operational and rollout instructions:
+`automation/phase-2d1/phase-2d1c-operations.md`
+
+PuckPedia native Discord integration is the preferred live transaction feed for NHL trades, signings, and waivers.
 
 ## Raw URL base
 `https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/`
