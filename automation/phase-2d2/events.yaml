@@ -1,0 +1,94 @@
+settings:
+  timezone: America/New_York
+  default_channel: league-calendar
+  default_reminders:
+    - 14d
+    - 7d
+    - 3d
+    - 1d
+    - 3h
+    - 1h
+    - start
+
+channels:
+  league-calendar:
+    secret: BLHA_WEBHOOK_LEAGUE_CALENDAR
+    color: 0xC68F15
+    label: "📅 LEAGUE CALENDAR"
+  league-announcements:
+    secret: BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS
+    color: 0xD4AF37
+    label: "📢 LEAGUE ANNOUNCEMENT"
+
+# Keep events disabled until their actual BLHA dates are finalized.
+# starts_at must be ISO-8601 with an explicit offset, for example:
+# 2027-09-20T20:00:00-04:00
+#
+# announcement_reminders duplicates only the specified reminders into
+# league-announcements for high-priority league deadlines/milestones.
+events:
+  - id: startup-draft
+    enabled: false
+    title: "BLHA Startup Draft"
+    type: draft
+    starts_at: null
+    channel: league-calendar
+    priority: high
+    description: "The inaugural BLHA startup draft begins."
+    reminders: [14d, 7d, 3d, 1d, 3h, 1h, start]
+    announcement_reminders: [7d, 1d, 1h, start]
+
+  - id: annual-rookie-draft
+    enabled: false
+    title: "BLHA Annual Draft"
+    type: draft
+    starts_at: null
+    channel: league-calendar
+    priority: high
+    description: "The annual five-round BLHA draft begins."
+    reminders: [14d, 7d, 3d, 1d, 3h, 1h, start]
+    announcement_reminders: [7d, 1d, 1h, start]
+
+  - id: trade-deadline
+    enabled: false
+    title: "BLHA Trade Deadline"
+    type: deadline
+    starts_at: null
+    channel: league-calendar
+    priority: high
+    description: "The BLHA in-season trade window closes at this deadline."
+    reminders: [14d, 7d, 3d, 1d, 3h, 1h, start]
+    announcement_reminders: [7d, 1d, 3h, 1h, start]
+
+  - id: dues-deadline
+    enabled: false
+    title: "BLHA Dues Deadline"
+    type: finance
+    starts_at: null
+    channel: league-calendar
+    priority: high
+    description: "League dues must be paid by this deadline."
+    reminders: [14d, 7d, 3d, 1d, start]
+    announcement_reminders: [7d, 1d, start]
+
+  - id: opening-night
+    enabled: false
+    title: "BLHA Opening Night"
+    type: season
+    starts_at: null
+    channel: league-calendar
+    priority: normal
+    description: "The BLHA regular season begins."
+    reminders: [7d, 3d, 1d, 3h, 1h, start]
+    announcement_reminders: [1d, start]
+
+  - id: playoffs-begin
+    enabled: false
+    title: "BLHA Playoffs Begin"
+    type: playoffs
+    starts_at: null
+    channel: league-calendar
+    priority: high
+    description: "The BLHA championship playoffs begin."
+    reminders: [7d, 3d, 1d, 3h, 1h, start]
+    announcement_reminders: [3d, 1d, start]
