@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-09-30T18:33:48.090066Z",
+  "updated_at": "2026-09-30T18:43:47.356410Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11,7 +11,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.989892Z"
+      "seen_at": "2026-09-30T18:43:47.273091Z"
     },
     {
       "key": "5b36f12459cc0a808345c353",
@@ -21,7 +21,7 @@
       "channel": "nhl-transactions",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.989956Z"
+      "seen_at": "2026-09-30T18:43:47.273156Z"
     },
     {
       "key": "2cadeb6a84606237c81c9d18",
@@ -31,7 +31,7 @@
       "channel": "nhl-transactions",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.990141Z"
+      "seen_at": "2026-09-30T18:43:47.273342Z"
     },
     {
       "key": "7bd37eb6bd14008f5a27136e",
@@ -41,7 +41,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.990316Z"
+      "seen_at": "2026-09-30T18:43:47.273522Z"
     },
     {
       "key": "67bcc9cc55dc7f6b62585b2a",
@@ -51,7 +51,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.990559Z"
+      "seen_at": "2026-09-30T18:43:47.273764Z"
     },
     {
       "key": "ab13477939af226f1ee632e3",
@@ -61,7 +61,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.991024Z"
+      "seen_at": "2026-09-30T18:43:47.274221Z"
     },
     {
       "key": "52fca4e2ce2d866376afd0a0",
@@ -71,7 +71,7 @@
       "channel": "injury-report",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.991071Z"
+      "seen_at": "2026-09-30T18:43:47.274269Z"
     },
     {
       "key": "bd9240b40d84cd2ca46cbec8",
@@ -81,7 +81,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.991762Z"
+      "seen_at": "2026-09-30T18:43:47.274962Z"
     },
     {
       "key": "2e1474db0342fbad15971977",
@@ -91,7 +91,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.992537Z"
+      "seen_at": "2026-09-30T18:43:47.275734Z"
     },
     {
       "key": "81bfeb521f56854f3c320d04",
@@ -101,7 +101,7 @@
       "channel": "nhl-news",
       "source_id": "nhl_latest",
       "tier": 0,
-      "seen_at": "2026-09-30T18:33:47.993584Z"
+      "seen_at": "2026-09-30T18:43:47.276761Z"
     },
     {
       "key": "ce4f781869d64a6dc85c4d27",
@@ -111,7 +111,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.993643Z"
+      "seen_at": "2026-09-30T18:43:47.276818Z"
     },
     {
       "key": "85cc49adfcfdeb98d1bd9d4b",
@@ -121,7 +121,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.993824Z"
+      "seen_at": "2026-09-30T18:43:47.276997Z"
     },
     {
       "key": "392b03959457601a3690b777",
@@ -131,7 +131,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.994094Z"
+      "seen_at": "2026-09-30T18:43:47.277274Z"
     },
     {
       "key": "2b3f2afdfb5649b6d39dd135",
@@ -141,7 +141,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.994378Z"
+      "seen_at": "2026-09-30T18:43:47.277558Z"
     },
     {
       "key": "5aaf1e2c84f5a162779bce24",
@@ -151,7 +151,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.994779Z"
+      "seen_at": "2026-09-30T18:43:47.277961Z"
     },
     {
       "key": "ff95d1b5b45887a60b801676",
@@ -161,7 +161,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.995160Z"
+      "seen_at": "2026-09-30T18:43:47.278309Z"
     },
     {
       "key": "57621a76f63aee6a5ff00f56",
@@ -171,7 +171,7 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.995835Z"
+      "seen_at": "2026-09-30T18:43:47.278975Z"
     },
     {
       "key": "0bb4075d4d8a564f34acf55a",
@@ -181,157 +181,157 @@
       "channel": "prospect-wire",
       "source_id": "ahl_official",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.996507Z"
+      "seen_at": "2026-09-30T18:43:47.279652Z"
     },
     {
-      "key": "63ddd11f7f3f8cd04d24a6b5",
+      "key": "5ffdfe6f16edb5a07d3ed2c4",
       "url": "https://www.dailyfaceoff.com/players/news/joel-edmundson/2532",
-      "fingerprint": "4adae62828101947",
-      "title_norm": "joel edmundson ( defenseman ) ( d ) (lak) — edmundson (undisclosed) will play in los angeles' season opener vs. colorado on wednesday.",
+      "fingerprint": "c7e410ca0c74329d",
+      "title_norm": "joel edmundson (lak) — edmundson (undisclosed) will play in los angeles' season opener vs. colorado on wednesday.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.996878Z"
+      "seen_at": "2026-09-30T18:43:47.279971Z"
     },
     {
-      "key": "4c1aad872f321854760ab588",
+      "key": "2dab88f751b87dd3fe21abef",
       "url": "https://www.dailyfaceoff.com/players/news/matt-duchene/341",
-      "fingerprint": "e143175aa5159546",
-      "title_norm": "matt duchene ( center ) ( c ) (dal) — duchene (upper-body) is doubtful for dallas' season opener vs. st. louis on friday.",
+      "fingerprint": "079ee21412b2ccc9",
+      "title_norm": "matt duchene (dal) — duchene (upper-body) is doubtful for dallas' season opener vs. st. louis on friday.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.997799Z"
+      "seen_at": "2026-09-30T18:43:47.280638Z"
     },
     {
-      "key": "77785d7871308c81d56088b8",
+      "key": "d32754a64a28b6a11b21face",
       "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
-      "fingerprint": "268c5508e2b21d2a",
-      "title_norm": "connor brown ( right wing ) ( rw ) (rw) — brown (lower-body) will miss new jersey's first two games of the season.",
+      "fingerprint": "bdaba0cd31aba603",
+      "title_norm": "connor brown (njd) — brown (lower-body) will miss new jersey's first two games of the season.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:47.998848Z"
+      "seen_at": "2026-09-30T18:43:47.281432Z"
     },
     {
-      "key": "f60ad9cc559a404940a3b97e",
+      "key": "2d940994475f17eb891d93bd",
       "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
-      "fingerprint": "836a0cddb23e94a5",
-      "title_norm": "andre burakovsky ( left wing ) ( lw ) (lw) — burakovsky (upper-body) is not expected to play in ottawa's upcoming game this weekend.",
+      "fingerprint": "eb898a75166e1d02",
+      "title_norm": "andre burakovsky (ott) — burakovsky (upper-body) is not expected to play in ottawa's upcoming game this weekend.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.000762Z"
+      "seen_at": "2026-09-30T18:43:47.282859Z"
     },
     {
-      "key": "8108986077cd8a1f345193b5",
+      "key": "84bdd74b51dd3825fcb0d66f",
       "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "2e10c7f6df000aa3",
-      "title_norm": "jake sanderson ( defenseman ) ( d ) (ott) — sanderson (undisclosed) skated on wednesday and is hopeful to return on saturday vs. toronto.",
+      "fingerprint": "1d31d28270cd9d92",
+      "title_norm": "jake sanderson (ott) — sanderson (undisclosed) skated on wednesday and is hopeful to return on saturday vs. toronto.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.003482Z"
+      "seen_at": "2026-09-30T18:43:47.284498Z"
     },
     {
-      "key": "fe0ea65917aae81d78cb29eb",
+      "key": "45ab03eceac95e00c780c5b1",
       "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
-      "fingerprint": "bdc8ed4c64454644",
-      "title_norm": "mattias samuelsson ( defenseman ) ( d ) (buf) — samuelsson (lower-body) has a chance to play in buffalo's season opener vs. columbus on thursday.",
+      "fingerprint": "1c861388787286ad",
+      "title_norm": "mattias samuelsson (buf) — samuelsson (lower-body) has a chance to play in buffalo's season opener vs. columbus on thursday.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.006644Z"
+      "seen_at": "2026-09-30T18:43:47.286845Z"
     },
     {
-      "key": "8440781942766c027a2a87ff",
+      "key": "03d8b01daca0260bcd75d4e9",
       "url": "https://www.dailyfaceoff.com/players/news/olen-zellweger/34623",
-      "fingerprint": "8b10cb87a8dd1aa7",
-      "title_norm": "olen zellweger ( defenseman ) ( d ) (buf) — zellweger (concussion) will be out for buffalo's season opener vs. columbus on thursday and is considered day-to-day.",
+      "fingerprint": "3a1e44d6063f0534",
+      "title_norm": "olen zellweger (buf) — zellweger (concussion) will be out for buffalo's season opener vs. columbus on thursday and is considered day-to-day.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.010559Z"
+      "seen_at": "2026-09-30T18:43:47.289588Z"
     },
     {
-      "key": "e21375c0e87ecb5e5f552a4f",
+      "key": "d4c33102b902828acd47eba6",
       "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
-      "fingerprint": "bec3ca6474278f31",
-      "title_norm": "troy terry ( right wing ) ( rw ) (rw) — terry (hip) has been placed to ltir.",
+      "fingerprint": "183a529aef731b7f",
+      "title_norm": "troy terry (ana) — terry (hip) has been placed to ltir.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.013221Z"
+      "seen_at": "2026-09-30T18:43:47.291332Z"
     },
     {
-      "key": "47659a05d4d05f7018ffbbbc",
+      "key": "d5b87ad889e1291daee9e137",
       "url": "https://www.dailyfaceoff.com/players/news/drew-helleson/30429",
-      "fingerprint": "8b3d1ce3e3838cb0",
-      "title_norm": "drew helleson ( defenseman ) ( d ) (ana) — helleson (lower-body) has been placed on ir.",
+      "fingerprint": "a568bde22bdacde0",
+      "title_norm": "drew helleson (ana) — helleson (lower-body) has been placed on ir.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.016055Z"
+      "seen_at": "2026-09-30T18:43:47.293199Z"
     },
     {
-      "key": "694a718d5bd4a20efb88e0b0",
+      "key": "9966af86171970464b8adaea",
       "url": "https://www.dailyfaceoff.com/players/news/andrew-mangiapane/4622",
-      "fingerprint": "5bf490da79a9b6bd",
-      "title_norm": "andrew mangiapane ( left wing ) ( lw ) (lw) — mangiapane (lower-body) is not expected to play on the remainder of chicago's road trip.",
+      "fingerprint": "cc0e29c2f60924ba",
+      "title_norm": "andrew mangiapane (chi) — mangiapane (lower-body) is not expected to play on the remainder of chicago's road trip.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.021040Z"
+      "seen_at": "2026-09-30T18:43:47.296755Z"
     },
     {
-      "key": "1373d6605eb57b3404ba6fd4",
+      "key": "f4b198beb26fede7ab2b761e",
       "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
-      "fingerprint": "8b4696494839109e",
-      "title_norm": "ivan demidov ( right wing ) ( rw ) (rw) — demidov (foot) will play in montreal's season opener.",
+      "fingerprint": "1e63cf7122917c73",
+      "title_norm": "ivan demidov (mtl) — demidov (foot) will play in montreal's season opener.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.024977Z"
+      "seen_at": "2026-09-30T18:43:47.299409Z"
     },
     {
-      "key": "b978767a6a1f55e3b3f1457c",
+      "key": "3746f9c2b7fe5d679fd1ba8f",
       "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
-      "fingerprint": "d229cd2ea750c0ca",
-      "title_norm": "jake debrusk ( left wing ) ( lw ) (lw) — debrusk (lower-body) will play in the canucks season opener on tuesday.",
+      "fingerprint": "6da60f27e3a3e309",
+      "title_norm": "jake debrusk (van) — debrusk (lower-body) will play in the canucks season opener on tuesday.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.029887Z"
+      "seen_at": "2026-09-30T18:43:47.302667Z"
     },
     {
-      "key": "62a2b2bea2cc52c7a3a5a2c9",
+      "key": "fa6ccf04c9376efe84d20983",
       "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
-      "fingerprint": "970774fedae7262e",
-      "title_norm": "zachary l'heureux ( left wing ) ( lw ) (lw) — l'heureux (lower-body) will miss colorado's season opener vs. los angeles and is considere day-to-day.",
+      "fingerprint": "05975ab4da8581d6",
+      "title_norm": "zachary l'heureux (col) — l'heureux (lower-body) will miss colorado's season opener vs. los angeles and is considere day-to-day.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.036355Z"
+      "seen_at": "2026-09-30T18:43:47.307364Z"
     },
     {
-      "key": "586f9afb429b1a23430fecb8",
+      "key": "85385d4f5208b566700636d7",
       "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
-      "fingerprint": "ababb5d3b29476bd",
-      "title_norm": "logan o'connor ( right wing ) ( rw ) (rw) — o'connor (lower-body) will miss colorado's season opener vs. los angeles on wednesday and is considered day-to-day.",
+      "fingerprint": "ac788c962516048e",
+      "title_norm": "logan o'connor (col) — o'connor (lower-body) will miss colorado's season opener vs. los angeles on wednesday and is considered day-to-day.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.043328Z"
+      "seen_at": "2026-09-30T18:43:47.312557Z"
     },
     {
-      "key": "44a86a5e60304c79ae123dd0",
+      "key": "932dd8ebd5d877fec35b346a",
       "url": "https://www.dailyfaceoff.com/players/news/matthew-savoie/31504",
-      "fingerprint": "b882bb018e3bba8c",
-      "title_norm": "matthew savoie ( center ) ( c ) (edm) — savoie (undisclosed) is approximately seven weeks away from returning to the oilers' lineup.",
+      "fingerprint": "445353b1043c15f7",
+      "title_norm": "matthew savoie (edm) — savoie (undisclosed) is approximately seven weeks away from returning to the oilers' lineup.",
       "channel": "injury-report",
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.051977Z"
+      "seen_at": "2026-09-30T18:43:47.318370Z"
     },
     {
       "key": "d8aaabd44b2109e11c43360d",
@@ -341,7 +341,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.052799Z"
+      "seen_at": "2026-09-30T18:43:47.319195Z"
     },
     {
       "key": "24ffefc331d2240b0a2f971c",
@@ -351,7 +351,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.054006Z"
+      "seen_at": "2026-09-30T18:43:47.320402Z"
     },
     {
       "key": "bcf97728d3e576083807e895",
@@ -361,7 +361,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.055409Z"
+      "seen_at": "2026-09-30T18:43:47.321810Z"
     },
     {
       "key": "f2dae174b39546d3ad309b0b",
@@ -371,7 +371,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.057080Z"
+      "seen_at": "2026-09-30T18:43:47.323492Z"
     },
     {
       "key": "ba9de125f9fb88ec15b21310",
@@ -381,7 +381,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.059228Z"
+      "seen_at": "2026-09-30T18:43:47.325658Z"
     },
     {
       "key": "3381d7df29e8f2e97b38fb5a",
@@ -391,7 +391,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.060957Z"
+      "seen_at": "2026-09-30T18:43:47.327411Z"
     },
     {
       "key": "fa24c76107d5d7d484241a4f",
@@ -401,7 +401,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.063335Z"
+      "seen_at": "2026-09-30T18:43:47.329813Z"
     },
     {
       "key": "45e014ff5c3e25b34214cfa5",
@@ -411,7 +411,7 @@
       "channel": "nhl-news",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.064872Z"
+      "seen_at": "2026-09-30T18:43:47.331342Z"
     },
     {
       "key": "473190d7e32b3b33aca4b637",
@@ -421,7 +421,7 @@
       "channel": "injury-report",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.068163Z"
+      "seen_at": "2026-09-30T18:43:47.334272Z"
     },
     {
       "key": "86094b88137e4cf94a946ca8",
@@ -431,7 +431,7 @@
       "channel": "nhl-transactions",
       "source_id": "sportsnet_nhl",
       "tier": 1,
-      "seen_at": "2026-09-30T18:33:48.068500Z"
+      "seen_at": "2026-09-30T18:43:47.334617Z"
     },
     {
       "key": "14e3503afe28b7e0eda71d18",
@@ -441,7 +441,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.069240Z"
+      "seen_at": "2026-09-30T18:43:47.335356Z"
     },
     {
       "key": "7a0096c6ccdf5ce82622cfe8",
@@ -451,7 +451,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.070106Z"
+      "seen_at": "2026-09-30T18:43:47.336236Z"
     },
     {
       "key": "7038404ca4f072e4d2ed144a",
@@ -461,7 +461,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.070998Z"
+      "seen_at": "2026-09-30T18:43:47.337138Z"
     },
     {
       "key": "c13c411449afe33a81bd238a",
@@ -471,7 +471,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.071930Z"
+      "seen_at": "2026-09-30T18:43:47.338082Z"
     },
     {
       "key": "273275421ab0488277741b16",
@@ -481,7 +481,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.072768Z"
+      "seen_at": "2026-09-30T18:43:47.338911Z"
     },
     {
       "key": "491ae20593acb7cc157be278",
@@ -491,7 +491,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.073838Z"
+      "seen_at": "2026-09-30T18:43:47.340002Z"
     },
     {
       "key": "f6d9a82f24c58bdb69408aab",
@@ -501,7 +501,7 @@
       "channel": "prospect-wire",
       "source_id": "dobber_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.075163Z"
+      "seen_at": "2026-09-30T18:43:47.341343Z"
     },
     {
       "key": "ca538b1cc5ccabf20b3e529c",
@@ -511,7 +511,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.076712Z"
+      "seen_at": "2026-09-30T18:43:47.342901Z"
     },
     {
       "key": "30acba55cab95a5b79935170",
@@ -521,7 +521,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.079064Z"
+      "seen_at": "2026-09-30T18:43:47.345299Z"
     },
     {
       "key": "ba8294f5916d703cd7ffefe9",
@@ -531,7 +531,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.081296Z"
+      "seen_at": "2026-09-30T18:43:47.347551Z"
     },
     {
       "key": "7e15fc0f878b8795c2a55308",
@@ -541,7 +541,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.083410Z"
+      "seen_at": "2026-09-30T18:43:47.349716Z"
     },
     {
       "key": "bc7b95e9afbd90e091847313",
@@ -551,7 +551,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.085414Z"
+      "seen_at": "2026-09-30T18:43:47.351726Z"
     },
     {
       "key": "bd8949897eca35312f1be185",
@@ -561,7 +561,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.087450Z"
+      "seen_at": "2026-09-30T18:43:47.353773Z"
     },
     {
       "key": "e42f88e1934f91c6e9a99422",
@@ -571,7 +571,7 @@
       "channel": "prospect-wire",
       "source_id": "thw_prospects",
       "tier": 2,
-      "seen_at": "2026-09-30T18:33:48.090027Z"
+      "seen_at": "2026-09-30T18:43:47.356369Z"
     }
   ]
 }
