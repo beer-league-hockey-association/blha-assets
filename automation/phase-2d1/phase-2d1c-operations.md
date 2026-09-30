@@ -29,6 +29,7 @@ CBS Sports remains discovery/corroboration because its NHL RSS includes promotio
 ### 🏥 injury-report
 - Daily Faceoff dedicated Injury Report page — primary fantasy injury feed.
 - NHL.com / Sportsnet can also classify injury headlines.
+- NHL.com `Status Report:` headlines are treated as injury/status items.
 
 ### 🔄 nhl-transactions
 - **PuckPedia native Discord integration is preferred for live trades, signings and waivers.**
@@ -38,29 +39,38 @@ CBS Sports remains discovery/corroboration because its NHL RSS includes promotio
 - American Hockey League official RSS.
 - The Hockey Writers Prospects.
 - DobberProspects.
-- USCHO.
+
+USCHO remains discovery-only until NHL-prospect/entity filtering is added; the raw feed is too broad for automatic dynasty posting.
 
 ## Dedupe behavior
 
 The engine keeps mode-specific persistent state for 72 hours and suppresses repeats for 48 hours using:
 
 1. source/external ID,
-2. canonical URL,
+2. canonical URL where appropriate,
 3. normalized headline fingerprint,
 4. near-duplicate title similarity within the same target channel.
+
+Daily Faceoff injury events intentionally do **not** dedupe by URL because multiple distinct injury updates can share the same player/profile or report URL. Their event ID uses player + update text + timestamp.
 
 Sources are processed by trust tier so official/Tier 0 material is considered before lower-tier coverage in the same run.
 
 ## Shadow mode
 
-Scheduled runs execute every 15 minutes in `shadow` mode. Shadow mode:
+Scheduled runs execute every 15 minutes in `shadow` mode. Scheduled runs fetch **live-candidate sources only** by default. Discovery/corroboration feeds are excluded from routine scheduled polling to reduce requests, noise and duplicate processing.
 
-- fetches all enabled sources,
-- classifies and routes live-candidate stories,
+Manual workflow runs expose two extra controls:
+
+- `reset_state` — clears the selected mode's dedupe state before that run; use only for testing/calibration.
+- `include_discovery` — temporarily includes CBS, Elite Prospects, Pro Hockey Rumors, USCHO and Reddit discovery sources in the manual run.
+
+Shadow mode:
+
+- fetches enabled live-candidate sources,
+- classifies and routes stories,
 - prints what **would** be sent,
 - never calls Discord webhooks,
-- records dedupe state so repeated stories disappear from later shadow runs,
-- prints discovery-only sources separately without treating them as live posts.
+- records dedupe state so repeated stories disappear from later shadow runs.
 
 ## Live safety rail
 
@@ -97,17 +107,18 @@ For `🔄│nhl-transactions`:
 5. Paste the webhook URL and add it.
 6. Confirm the PuckPedia welcome/test post appears in `🔄│nhl-transactions`.
 
-PuckPedia currently sends league-wide NHL trades, contract signings and waiver activity. Keep this native integration separate from the BLHA News Wire webhook identity.
+Keep this native integration separate from the BLHA News Wire webhook identity.
 
 ## Rollout sequence
 
-1. Run scheduled shadow mode for at least several cycles.
-2. Inspect routing, especially Daily Faceoff injuries and prospect volume.
-3. Create the five Discord webhooks and store them as GitHub Actions Secrets.
-4. Configure PuckPedia native delivery for `🔄│nhl-transactions`.
-5. Manually run **BLHA Wire Engine** with mode `live` once. It will baseline and send nothing.
-6. Wait for a genuinely new event, then run live manually again to verify one-message delivery.
-7. After validation, change the scheduled workflow from shadow to live.
+1. Run a fresh manual shadow calibration with `reset_state=true` and `include_discovery=false`.
+2. Confirm Daily Faceoff injury extraction, NHL.com filtering and prospect volume.
+3. Let scheduled shadow mode run for several cycles and confirm later cycles are mostly deduped.
+4. Create the five Discord webhooks and store them as GitHub Actions Secrets.
+5. Configure PuckPedia native delivery for `🔄│nhl-transactions`.
+6. Manually run **BLHA Wire Engine** with mode `live` once. It will baseline and send nothing.
+7. Wait for a genuinely new event, then run live manually again to verify one-message delivery.
+8. After validation, change the scheduled workflow from shadow to live.
 
 ## Why no Discord bot yet
 
