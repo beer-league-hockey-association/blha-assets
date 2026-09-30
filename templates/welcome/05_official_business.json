@@ -5,40 +5,17 @@
       "description": "The BLHA should feel like a hockey league, not paperwork. The easiest way to keep it that way is to put official actions in the places designed for them.",
       "color": 16758812,
       "fields": [
-        {
-          "name": "TRADES",
-          "value": "Use Discord to shop, negotiate and discuss. **Finalize trades in Fantrax.** Fantrax remains the authoritative transaction record.",
-          "inline": false
-        },
-        {
-          "name": "WAIVERS / FAAB",
-          "value": "Discuss targets in Discord. **Submit actual claims and bids in Fantrax.**",
-          "inline": false
-        },
-        {
-          "name": "RULES QUESTIONS",
-          "value": "Use **rules-questions** when an interpretation should be visible to the whole league.",
-          "inline": false
-        },
-        {
-          "name": "PRIVATE ISSUES",
-          "value": "Use **open-a-ticket** for private commissioner matters instead of burying an issue in DMs.",
-          "inline": false
-        },
-        {
-          "name": "LEAGUE CHANGES",
-          "value": "Official announcements, votes and amendments belong in the League Office so the record is permanent.",
-          "inline": false
-        }
+        {"name":"TRADES","value":"Use Discord to shop, negotiate and discuss. **Finalize trades in Fantrax.** Fantrax remains the authoritative transaction record.","inline":false},
+        {"name":"WAIVERS / FAAB","value":"Discuss targets in Discord. **Submit actual claims and bids in Fantrax.**","inline":false},
+        {"name":"RULES QUESTIONS","value":"Use **rules-questions** when an interpretation should be visible to the whole league.","inline":false},
+        {"name":"PRIVATE ISSUES","value":"Use **open-a-ticket** for private commissioner matters instead of burying an issue in DMs.","inline":false},
+        {"name":"LEAGUE CHANGES","value":"Official announcements, votes and amendments belong in the League Office so the record is permanent.","inline":false}
       ],
-      "footer": {
-        "text": "BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"
-      }
+      "footer": {"text":"BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"}
     },
     {
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
-      }
+      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"},
+      "description":"​"
     }
   ]
 }
