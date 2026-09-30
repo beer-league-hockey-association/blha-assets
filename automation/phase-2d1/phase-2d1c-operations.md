@@ -7,14 +7,24 @@
 **Native integrations = use when superior**  
 **Discord bot = save for a later interactive phase**
 
+## Production status
+
+Phase 2D.1C is now in production.
+
+- Scheduled GitHub Actions runs execute every 15 minutes in **live mode**.
+- Manual runs still default to **shadow mode** for safe testing.
+- Live state has already been baselined, so activation does not replay the current feed backlog.
+- PuckPedia native Discord delivery is active for `🔄│nhl-transactions`.
+- Controlled webhook delivery tests passed for `🚨│breaking-news`, `📰│nhl-news`, `🏥│injury-report`, and `🌱│prospect-wire`.
+
 ## What is implemented
 
 - `wire.py` — source collectors + classifier.
-- `engine.py` — source precedence, routing, persistent dedupe, shadow/live modes, Discord webhook delivery.
+- `engine.py` — source precedence, routing, persistent dedupe, shadow/live modes, Discord webhook delivery and production flood guards.
 - `sources.yaml` — source registry and authority levels.
 - `state/shadow.json` — persistent shadow-mode dedupe state.
 - `state/live.json` — persistent live-mode dedupe state.
-- `.github/workflows/blha-wire-engine.yml` — runs every 15 minutes in **shadow mode** until deliberately changed.
+- `.github/workflows/blha-wire-engine.yml` — production live run every 15 minutes.
 - Daily Faceoff dedicated injury parser.
 - Live Discord delivery code using repository Actions Secrets.
 
@@ -63,11 +73,20 @@ Daily Faceoff injury events intentionally do **not** dedupe by URL because multi
 
 Sources are processed by trust tier so official/Tier 0 material is considered before lower-tier coverage in the same run.
 
+## Production flood guards
+
+To protect Discord from a malformed feed, parser change, or sudden backlog, live delivery is capped at:
+
+- **6 total GitHub-delivered posts per 15-minute run**, and
+- **3 posts to any single channel per run**.
+
+If a run exceeds either limit, lower-priority excess items are logged as `RATE-GUARD SUPPRESSED` and remembered in live state so they do not trickle into Discord on later runs.
+
+This guard does not affect PuckPedia's separate native transaction delivery.
+
 ## Shadow mode
 
-Scheduled runs execute every 15 minutes in `shadow` mode. Scheduled runs fetch **live-candidate sources only** by default. Discovery/corroboration feeds are excluded from routine scheduled polling to reduce requests, noise and duplicate processing.
-
-Manual workflow runs expose two extra controls:
+Manual workflow runs default to `shadow` mode and expose two extra controls:
 
 - `reset_state` — clears the selected mode's dedupe state before that run; use only for testing/calibration.
 - `include_discovery` — temporarily includes CBS, Elite Prospects, Pro Hockey Rumors, USCHO and Reddit discovery sources in the manual run.
@@ -84,7 +103,7 @@ Shadow mode:
 
 The first invocation of `engine.py --mode live` establishes a baseline and sends **zero** Discord messages. This prevents the server from being flooded with whatever happens to be present in each feed at activation time.
 
-Only later new stories are eligible for delivery.
+That baseline has been completed for the current production state.
 
 For channels handled by a native-primary integration, such as `nhl-transactions`, later live runs log those events as `NATIVE-PRIMARY SKIP`, record them in dedupe state, and do not send a competing GitHub webhook post.
 
@@ -119,15 +138,21 @@ For `🔄│nhl-transactions`:
 
 Keep this native integration separate from the BLHA News Wire webhook identity.
 
-## Rollout sequence
+## Production monitoring
 
-1. Confirm a fresh shadow baseline produces clean routing and formatting.
-2. Confirm an immediate second shadow run produces zero new shadow posts and only duplicates.
-3. Create the five Discord webhooks and store them as GitHub Actions Secrets.
-4. Configure PuckPedia native delivery for `🔄│nhl-transactions`.
-5. Manually run **BLHA Wire Engine** with mode `live` once. It will baseline and send nothing.
-6. Wait for a genuinely new event, then run live manually again to verify one-message delivery.
-7. After validation, change the scheduled workflow from shadow to live.
+For normal operation, watch the summary line of scheduled `BLHA Wire Engine` runs. Expected quiet runs usually look similar to:
+
+`SUMMARY mode=live posted=0 ... duplicates=<many> ... suppressed=0`
+
+Important conditions to investigate:
+
+- repeated `SOURCE ERROR` messages,
+- `DELIVERY ERROR`,
+- `NOT POSTED`,
+- unexpected `RATE-GUARD SUPPRESSED` counts,
+- an unusual burst of posts in Discord.
+
+Manual shadow mode can always be used to inspect current routing without sending messages.
 
 ## Why no Discord bot yet
 
