@@ -609,6 +609,18 @@ def main() -> int:
             3: {"matchups": [{"pair": (None, None)}]},
         }
     else:
+        if (
+            not isinstance(stored_seeds, dict)
+            and current > first
+            and args.mode == "live"
+        ):
+            print(
+                "ERROR: final playoff seed baseline is missing and the "
+                "regular season has already moved past the first playoff "
+                "period; refusing to infer seeds from playoff-adjusted standings."
+            )
+            return 1
+
         status = f"PLAYOFF PERIOD {current}"
         scores_by_period: dict[int, list[dict[str, Any]]] = {}
         results_by_period: dict[int, list[dict[str, Any]]] = {}
