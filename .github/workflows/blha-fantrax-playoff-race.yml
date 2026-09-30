@@ -1,0 +1,80 @@
+name: BLHA Fantrax Playoff Race
+
+on:
+  schedule:
+    # Run after the daily standings check.
+    # 12:15 UTC = 8:15 AM EDT / 7:15 AM EST
+    - cron: "15 12 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Playoff-race mode"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - test
+          - baseline
+          - live
+      force:
+        description: "Force a live post even if the race is unchanged"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-fantrax-playoff-race
+  cancel-in-progress: false
+
+jobs:
+  playoff-race:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run Fantrax playoff-race automation
+        env:
+          BLHA_WEBHOOK_PLAYOFF_RACE: ${{ secrets.BLHA_WEBHOOK_PLAYOFF_RACE }}
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "Scheduled playoff-race check -> LIVE mode"
+            python automation/phase-2d4/playoff_race.py --mode live
+            exit $?
+          fi
+
+          FORCE=""
+          if [[ "${{ inputs.force }}" == "true" ]]; then
+            FORCE="--force"
+          fi
+
+          python automation/phase-2d4/playoff_race.py --mode "${{ inputs.mode }}" $FORCE
+
+      - name: Persist playoff-race state
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          if git diff --quiet -- automation/phase-2d4/state/playoff_race.json; then
+            echo "No playoff-race state change."
+            exit 0
+          fi
+          git config user.name "BLHA Fantrax Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/phase-2d4/state/playoff_race.json
+          git commit -m "chore(fantrax): persist playoff-race state [skip ci]"
+          git push
