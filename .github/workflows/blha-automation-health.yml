@@ -48,14 +48,13 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            # Keep hourly checks read-only until the production monitor is approved.
-            python automation/health/runner.py --mode preview
+            python automation/health/runner.py --mode live
           else
             python automation/health/runner.py --mode "${{ inputs.mode }}"
           fi
 
       - name: Persist automation health state
-        if: ${{ inputs.mode == 'live' && success() }}
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
         shell: bash
         run: |
           STATE="automation/health/state/health.json"
