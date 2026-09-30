@@ -43,3 +43,24 @@ PuckPedia native Discord integration is the preferred live transaction feed for 
 
 ## Raw URL base
 `https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/`
+
+
+## Phase 2D.3 — Fantrax League Competition
+
+Fantrax read-only automation now covers:
+
+- `📊│scoreboard` — current matchup scores
+- `📈│standings` — current league standings
+- `📰│weekly-recap` — completed scoring-period recaps
+- `🏁│playoff-race` — current playoff positions, bubble, and cut-line tracking
+
+All Discord-facing competition posts use the clean vertical embed standard in `automation/DISCORD_AUTOMATION_STYLE.md`.
+
+## Phase 2D.4 — Playoff Race
+
+The playoff-race workflow is:
+`.github/workflows/blha-fantrax-playoff-race.yml`
+
+It checks daily after the standings workflow and posts only when the tracked playoff picture materially changes. It uses the existing `🏁│playoff-race` channel; no Discord channel is created by the automation.
+
+Clinching and elimination claims are intentionally deferred until remaining-matchup and tiebreaker semantics are proven rather than inferred.
