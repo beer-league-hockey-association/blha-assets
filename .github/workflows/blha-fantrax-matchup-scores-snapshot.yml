@@ -1,0 +1,40 @@
+name: BLHA Fantrax Matchup Score Snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      league_id:
+        description: "Fantrax league ID from the test league URL"
+        required: true
+        type: string
+      period:
+        description: "Optional scoring period number; leave blank to auto-detect current period"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependency
+        run: pip install requests==2.32.5
+
+      - name: Inspect Fantrax matchup score schema
+        shell: bash
+        run: |
+          PERIOD_ARG=""
+          if [[ -n "${{ inputs.period }}" ]]; then
+            PERIOD_ARG="--period ${{ inputs.period }}"
+          fi
+          python automation/phase-2d3/fantrax_matchup_scores_snapshot.py --league-id "${{ inputs.league_id }}" $PERIOD_ARG
