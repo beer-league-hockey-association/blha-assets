@@ -11,11 +11,8 @@
         {"name":"PRIVATE ISSUES","value":"Use **open-a-ticket** for private commissioner matters instead of burying an issue in DMs.","inline":false},
         {"name":"LEAGUE CHANGES","value":"Official announcements, votes and amendments belong in the League Office so the record is permanent.","inline":false}
       ],
-      "footer": {"text":"BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"}
-    },
-    {
-      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"},
-      "description":"​"
+      "footer": {"text":"BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"},
+      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
     }
   ]
 }
