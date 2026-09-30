@@ -1,6 +1,12 @@
 name: BLHA Fantrax Scoreboard
 
 on:
+  schedule:
+    # Two controlled live checks per day.
+    # 23:15 UTC = 7:15 PM EDT / 6:15 PM EST
+    # 06:30 UTC = 2:30 AM EDT / 1:30 AM EST
+    - cron: "15 23 * * *"
+    - cron: "30 6 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -52,6 +58,12 @@ jobs:
           BLHA_WEBHOOK_SCOREBOARD: ${{ secrets.BLHA_WEBHOOK_SCOREBOARD }}
         shell: bash
         run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            echo "Scheduled scoreboard snapshot -> LIVE mode"
+            python automation/phase-2d3/scoreboard.py --mode live
+            exit $?
+          fi
+
           FORCE=""
           PERIOD=""
           if [[ "${{ inputs.force }}" == "true" ]]; then
@@ -63,7 +75,7 @@ jobs:
           python automation/phase-2d3/scoreboard.py --mode "${{ inputs.mode }}" $PERIOD $FORCE
 
       - name: Persist scoreboard state
-        if: ${{ (inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
         shell: bash
         run: |
           if git diff --quiet -- automation/phase-2d3/state/scoreboard.json; then
