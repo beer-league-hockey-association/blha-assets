@@ -202,55 +202,20 @@ def race_fields(
     playoff_cut: int,
     bubble_depth: int,
 ) -> list[dict]:
+    """Use the same clean vertical field format as standings/scoreboard."""
     fields: list[dict] = []
+    limit = min(len(rows), playoff_cut + bubble_depth)
 
-    playoff_rows = rows[:playoff_cut]
-    bubble_rows = rows[playoff_cut : playoff_cut + bubble_depth]
+    for index, row in enumerate(rows[:limit], start=1):
+        rank = row["rank"] or index
+        title = f"{rank}. {row['teamName']}"
+        if rank == playoff_cut:
+            title += " — Playoff Cut"
 
-    for row in playoff_rows:
         fields.append(
             {
-                "name": f"{row['rank']}. {row['teamName']}",
+                "name": title,
                 "value": team_value(row),
-                "inline": False,
-            }
-        )
-
-    if bubble_rows:
-        fields.append(
-            {
-                "name": "On the Bubble",
-                "value": "\n".join(
-                    f"**{row['rank']}. {row['teamName']}** — "
-                    f"{row['record']} • {fmt_gb(row['gamesBack'])} GB"
-                    for row in bubble_rows
-                ),
-                "inline": False,
-            }
-        )
-
-    if len(rows) > playoff_cut:
-        cut = rows[playoff_cut - 1]
-        first_out = rows[playoff_cut]
-        gap = max(0.0, first_out["gamesBack"] - cut["gamesBack"])
-
-        if gap < 0.0001:
-            cutline = (
-                f"**{cut['teamName']}** (#{cut['rank']}) and "
-                f"**{first_out['teamName']}** (#{first_out['rank']}) "
-                "are currently tied on games back."
-            )
-        else:
-            cutline = (
-                f"**{cut['teamName']}** (#{cut['rank']}) is "
-                f"{gap:.2f} GB ahead of **{first_out['teamName']}** "
-                f"(#{first_out['rank']})."
-            )
-
-        fields.append(
-            {
-                "name": "Playoff Cut Line",
-                "value": cutline,
                 "inline": False,
             }
         )
@@ -289,9 +254,9 @@ def build_payload(
         description += f" • {season_label}"
 
     description += (
-        f"\n\n*Current Fantrax standings. The top {playoff_cut} "
-        "teams occupy playoff positions; the next teams are tracked as "
-        "the bubble.*"
+        f"\n\n*Playoff race pulled directly from Fantrax. "
+        f"The top {playoff_cut} teams currently occupy playoff positions; "
+        f"the next {bubble_depth} teams are tracked on the bubble.*"
     )
 
     return {
