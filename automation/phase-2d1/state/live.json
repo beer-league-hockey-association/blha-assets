@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-09-30T19:09:30.221798Z",
+  "updated_at": "2026-09-30T22:21:46.073462Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -592,6 +592,106 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-09-30T19:09:30.221794Z"
+    },
+    {
+      "key": "59117bb78ecd3cc165fe5eab",
+      "url": "https://www.nhl.com/news/william-karlsson-signs-two-year-contract-with-vegas-golden-knights",
+      "fingerprint": "dfce049b5f1a7155",
+      "title_norm": "karlsson signs with vegas through 2028-29 season",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T22:21:44.361305Z"
+    },
+    {
+      "key": "4351cfd9c6d15a71861fe287",
+      "url": "https://www.nhl.com/news/edmonton-oilers-have-serious-work-to-do-under-mike-babcock",
+      "fingerprint": "b023eacc299e496c",
+      "title_norm": "oilers have 'serious work to do' under babcock",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T22:21:44.959102Z"
+    },
+    {
+      "key": "0c185a2054f2400e1d398682",
+      "url": "https://www.flohockey.tv/articles/16217419-top-nhl-prospects-in-ahls-north-division",
+      "fingerprint": "53a827413748af13",
+      "title_norm": "fowler, aitcheson highlight top nhl prospects in ahl north division",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:45.121045Z"
+    },
+    {
+      "key": "1ca5bd7d4dc2df490b949ce2",
+      "url": "https://www.flohockey.tv/articles/16216133-ahl-stars-ready-to-impact-the-nhl",
+      "fingerprint": "06dba7a0c772e179",
+      "title_norm": "protas, levi among recent ahl grads ready to make nhl impact",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:45.400989Z"
+    },
+    {
+      "key": "10da011b94493a12aa687026",
+      "url": "https://www.flohockey.tv/articles/16215993-5-must-watch-ahl-games-on-flohockey-for-opening-weekend-2026",
+      "fingerprint": "3fcf9e559290efd4",
+      "title_norm": "5 games you can't miss on opening weekend",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:45.553290Z"
+    },
+    {
+      "key": "5601228baa2f6310c5a2479f",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-duchene/341",
+      "fingerprint": "1922012febb65a48",
+      "title_norm": "matt duchene (dal) — the stars have placed matt duchene (lower-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:45.834829Z"
+    },
+    {
+      "key": "4138639068dd9fb689a16d55",
+      "url": "https://www.dailyfaceoff.com/players/news/blake-lizotte/27482",
+      "fingerprint": "81f3769f98220d78",
+      "title_norm": "blake lizotte (pit) — the penguins have activated blake lizotte (upper-body) from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:46.005310Z"
+    },
+    {
+      "key": "0cab6afdfd7bc50efc26e138",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-nedeljkovic/2727",
+      "fingerprint": "8a14b675203f1877",
+      "title_norm": "alex nedeljkovic (sjs) — nedeljkovic (illness) missed practice on wednesday but is expected to be available for thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:46.010944Z"
+    },
+    {
+      "key": "161a0a427f3b7516cb49e4e7",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-tucker/27631",
+      "fingerprint": "0a2d11b538879b4d",
+      "title_norm": "tyler tucker (stl) — tucker underwent a successful arthroscopic procedure on his right knee and will be re-evaluated in six weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:46.017807Z"
+    },
+    {
+      "key": "f93fa230546505ef8f07f833",
+      "url": "",
+      "fingerprint": "2102c862f5343a52",
+      "title_norm": "golden knights sign william karlsson to two-year contract extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T22:21:46.059498Z"
     }
   ]
 }
