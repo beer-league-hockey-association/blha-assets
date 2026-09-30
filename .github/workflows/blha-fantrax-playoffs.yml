@@ -1,0 +1,87 @@
+name: BLHA Fantrax Playoffs
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Playoff automation mode"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - test
+          - baseline
+          - live
+      period:
+        description: "Optional playoff period override for testing (23, 24, or 25)"
+        required: false
+        default: ""
+        type: string
+      force:
+        description: "Force a live Discord post even if unchanged"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-fantrax-playoffs
+  cancel-in-progress: false
+
+jobs:
+  playoffs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run Fantrax playoff automation
+        env:
+          BLHA_WEBHOOK_PLAYOFFS: ${{ secrets.BLHA_WEBHOOK_PLAYOFFS }}
+        shell: bash
+        run: |
+          PERIOD_ARG=""
+          if [[ -n "${{ inputs.period }}" ]]; then
+            PERIOD_ARG="--period ${{ inputs.period }}"
+          fi
+
+          FORCE=""
+          if [[ "${{ inputs.force }}" == "true" ]]; then
+            FORCE="--force"
+          fi
+
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            python automation/phase-2d5/playoff.py --mode live
+          else
+            python automation/phase-2d5/playoff.py --mode "${{ inputs.mode }}" $PERIOD_ARG $FORCE
+          fi
+
+      - name: Persist playoff state
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          if git diff --quiet -- automation/phase-2d5/state/playoff.json; then
+            echo "No playoff state change."
+            exit 0
+          fi
+
+          git config user.name "BLHA Fantrax Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add automation/phase-2d5/state/playoff.json
+          git commit -m "chore(fantrax): persist playoff state [skip ci]"
+          git push
