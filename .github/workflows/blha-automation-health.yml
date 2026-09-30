@@ -48,9 +48,9 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            python automation/health/health.py --mode live
+            python automation/health/runner.py --mode live
           else
-            python automation/health/health.py --mode "${{ inputs.mode }}"
+            python automation/health/runner.py --mode "${{ inputs.mode }}"
           fi
 
       - name: Persist automation health state
