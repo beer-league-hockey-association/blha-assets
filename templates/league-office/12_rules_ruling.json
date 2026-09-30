@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "OFFICIAL RULE INTERPRETATION",
+      "description": "`[SHORT ISSUE TITLE]`",
+      "color": 3421236,
+      "fields": [
+        {
+          "name": "QUESTION",
+          "value": "`[RULE QUESTION]`",
+          "inline": false
+        },
+        {
+          "name": "RULING",
+          "value": "`[OFFICIAL INTERPRETATION]`",
+          "inline": false
+        },
+        {
+          "name": "BASIS",
+          "value": "`[CONSTITUTION SECTION / FANTRAX SETTING / PRIOR RULING]`",
+          "inline": false
+        },
+        {
+          "name": "EFFECTIVE",
+          "value": "`[IMMEDIATELY / DATE]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA COMMISSIONER'S OFFICE"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

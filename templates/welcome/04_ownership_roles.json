@@ -1,0 +1,44 @@
+{
+  "embeds": [
+    {
+      "title": "FRANCHISE OWNERSHIP & ROLES",
+      "description": "Discord roles reflect league function. They are not extra votes or extra franchises.",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "🏒 FRANCHISE OWNER",
+          "value": "Primary owner role. Full league participation and the franchise's formal league vote.",
+          "inline": false
+        },
+        {
+          "name": "🤝 CO-OWNER",
+          "value": "Full team-management and community access. Co-owners do **not** create a second league vote.",
+          "inline": false
+        },
+        {
+          "name": "⚜️ FOUNDING OWNER",
+          "value": "Permanent recognition for original BLHA ownership.",
+          "inline": false
+        },
+        {
+          "name": "🏆 / 🥇 HONOR ROLES",
+          "value": "League Champion and Presidents' Trophy roles recognize current title holders.",
+          "inline": false
+        },
+        {
+          "name": "🗳️ FORMAL VOTING",
+          "value": "Only the Franchise Owner role posts the franchise's vote in **league-voting**. Co-owners can view the channel but remain read-only by design.",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "ONE FRANCHISE • ONE VOTE • ONE DUES OBLIGATION"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

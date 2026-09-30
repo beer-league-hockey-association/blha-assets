@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "CALENDAR EVENT",
+      "description": "**`[EVENT NAME]`**",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "DATE",
+          "value": "`[DATE]`",
+          "inline": false
+        },
+        {
+          "name": "TIME",
+          "value": "`[TIME ET / ALL DAY]`",
+          "inline": false
+        },
+        {
+          "name": "DETAILS",
+          "value": "`[EVENT DETAILS]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE CALENDAR"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

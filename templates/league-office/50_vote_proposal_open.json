@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "PROPOSAL OPEN FOR DISCUSSION",
+      "description": "`[PROPOSAL TITLE]`",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "PROPOSED CHANGE",
+          "value": "`[FULL OR CONCISE PROPOSAL]`",
+          "inline": false
+        },
+        {
+          "name": "RATIONALE",
+          "value": "`[WHY IT IS BEING CONSIDERED]`",
+          "inline": false
+        },
+        {
+          "name": "DISCUSSION CLOSES",
+          "value": "`[DATE + TIME ET]`",
+          "inline": false
+        },
+        {
+          "name": "VOTE",
+          "value": "`[DATE / FOLLOWS DISCUSSION]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE VOTING • DISCUSSION ONLY"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

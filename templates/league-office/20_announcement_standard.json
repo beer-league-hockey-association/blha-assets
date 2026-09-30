@@ -1,0 +1,24 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA ANNOUNCEMENT",
+      "description": "`[ANNOUNCEMENT TEXT]`",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "EFFECTIVE / DATE",
+          "value": "`[DATE OR N/A]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA DRAFT ANNOUNCEMENT",
+      "description": "`[STARTUP / ANNUAL]` draft information.",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "START",
+          "value": "`[DATE + TIME ET]`",
+          "inline": false
+        },
+        {
+          "name": "FORMAT",
+          "value": "`[ROUNDS / SNAKE OR LINEAR / CLOCK]`",
+          "inline": false
+        },
+        {
+          "name": "SLEEP WINDOW",
+          "value": "`[IF APPLICABLE]`",
+          "inline": false
+        },
+        {
+          "name": "DRAFT ROOM",
+          "value": "Actual selections are made in **Fantrax**.",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA DRAFT CENTER"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

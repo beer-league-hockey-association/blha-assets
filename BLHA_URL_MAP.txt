@@ -1,0 +1,28 @@
+BLHA RAW ASSET URLS
+
+Base:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/
+
+Welcome banner:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/welcome/blha-welcome-banner.png
+
+Footer divider:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png
+
+Constitution:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-constitution-header.png
+
+Announcements:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-announcements-header.png
+
+Calendar:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-calendar-header.png
+
+Ledger:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-ledger-header.png
+
+Voting:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-voting-header.png
+
+Draft Center:
+https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/draft-center/blha-draft-center-header.png

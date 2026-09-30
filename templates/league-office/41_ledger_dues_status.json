@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "FRANCHISE DUES STATUS",
+      "description": "`[SEASON / DATE]`",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "PAID",
+          "value": "`[LIST FRANCHISES]`",
+          "inline": false
+        },
+        {
+          "name": "PREPAID FUTURE SEASONS",
+          "value": "`[LIST IF APPLICABLE]`",
+          "inline": false
+        },
+        {
+          "name": "OUTSTANDING",
+          "value": "`[LIST FRANCHISES / NONE]`",
+          "inline": false
+        },
+        {
+          "name": "DEADLINE",
+          "value": "`[DATE]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

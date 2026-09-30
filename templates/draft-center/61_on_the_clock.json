@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "⏱️ ON THE CLOCK",
+      "description": "**`[FRANCHISE]`**",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "PICK",
+          "value": "`[ROUND.PICK / OVERALL]`",
+          "inline": false
+        },
+        {
+          "name": "CLOCK",
+          "value": "`[TIME REMAINING OR DEADLINE]`",
+          "inline": false
+        },
+        {
+          "name": "NEXT",
+          "value": "`[FRANCHISE]`",
+          "inline": false
+        },
+        {
+          "name": "ON DECK",
+          "value": "`[FRANCHISE]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA DRAFT CENTER • FANTRAX REMAINS AUTHORITATIVE"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "VOTE RESULT",
+      "description": "`[PROPOSAL TITLE]`",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "RESULT",
+          "value": "**`[PASSED / FAILED / TIED]`**",
+          "inline": false
+        },
+        {
+          "name": "VOTE TOTAL",
+          "value": "`[A: X] • [B: Y] • [ABSTAIN: Z]`",
+          "inline": false
+        },
+        {
+          "name": "EFFECTIVE",
+          "value": "`[DATE / NEXT OFFSEASON / N/A]`",
+          "inline": false
+        },
+        {
+          "name": "NEXT STEP",
+          "value": "`[CONSTITUTION UPDATE / NO CHANGE / OTHER]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE VOTING • FINAL RESULT"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

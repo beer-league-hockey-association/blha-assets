@@ -1,0 +1,17 @@
+{
+  "embeds": [
+    {
+      "title": "YOU'RE CLEARED FOR THE ROOM",
+      "description": "Before jumping in, confirm your **Franchise Owner** or **Co-Owner** role and make sure you can see the league categories you need.\n\nThen review the constitution, check the league calendar, and head to **GM Lounge**.\n\n**Welcome to the BLHA. Grab a beer. Set your lineup. Make bad trades confidently.**",
+      "color": 16758812,
+      "footer": {
+        "text": "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

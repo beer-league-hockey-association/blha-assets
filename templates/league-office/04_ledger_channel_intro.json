@@ -1,0 +1,32 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA LEAGUE LEDGER",
+      "description": "Public league-level accounting for dues, league expenses, prizes, and treasury status.",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "PUBLIC TRANSPARENCY",
+          "value": "This channel tracks what each franchise owes or has paid at the league level and how league funds are allocated.",
+          "inline": false
+        },
+        {
+          "name": "PRIVACY",
+          "value": "Do **not** post payment credentials, account numbers, login details, or sensitive personal financial information.",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-ledger-header.png"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

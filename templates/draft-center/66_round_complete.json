@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "ROUND COMPLETE",
+      "description": "**Round `[X]`** is complete.",
+      "color": 3421236,
+      "fields": [
+        {
+          "name": "NEXT ROUND",
+          "value": "`[X+1]`",
+          "inline": false
+        },
+        {
+          "name": "FIRST PICK",
+          "value": "`[FRANCHISE / PICK]`",
+          "inline": false
+        },
+        {
+          "name": "NOTABLE MOVEMENT",
+          "value": "`[OPTIONAL TRADES / NOTES / NONE]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA DRAFT CENTER"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

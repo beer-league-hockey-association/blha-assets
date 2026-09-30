@@ -1,0 +1,32 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA LEAGUE VOTING",
+      "description": "Formal franchise votes are recorded here.",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "ONE FRANCHISE = ONE VOTE",
+          "value": "Only the **Franchise Owner** role casts the formal vote. Co-owners may discuss proposals but do not create an additional franchise vote.",
+          "inline": false
+        },
+        {
+          "name": "A VALID VOTE POST SHOULD STATE",
+          "value": "The proposal • voting options • opening time • closing time • threshold required • final result",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-voting-header.png"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

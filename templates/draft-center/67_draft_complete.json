@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA DRAFT COMPLETE",
+      "description": "`[DRAFT NAME / YEAR]` is officially complete.",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "ROUNDS",
+          "value": "`[NUMBER]`",
+          "inline": false
+        },
+        {
+          "name": "TOTAL PICKS",
+          "value": "`[NUMBER]`",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL RESULTS",
+          "value": "Final selections are preserved in **📋│draft-results** and the permanent league records.",
+          "inline": false
+        },
+        {
+          "name": "NEXT",
+          "value": "`[WAIVERS / ROSTER DEADLINE / SEASON START / OTHER]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA DRAFT CENTER • EST. 2026"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

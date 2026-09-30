@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA SEASON COMPLETE",
+      "description": "`[SEASON]` is officially in the books.",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "CHAMPION",
+          "value": "🏆 `[FRANCHISE]`",
+          "inline": false
+        },
+        {
+          "name": "RUNNER-UP",
+          "value": "`[FRANCHISE]`",
+          "inline": false
+        },
+        {
+          "name": "PRESIDENTS' TROPHY",
+          "value": "🥇 `[FRANCHISE]`",
+          "inline": false
+        },
+        {
+          "name": "NEXT",
+          "value": "`[OFFSEASON / DRAFT / REOPENING INFORMATION]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

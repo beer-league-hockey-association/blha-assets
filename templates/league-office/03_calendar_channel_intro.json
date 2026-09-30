@@ -1,0 +1,32 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA LEAGUE CALENDAR",
+      "description": "Official dates and deadlines for the current BLHA season.",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "TRACKED HERE",
+          "value": "Draft dates • trade deadline • dues deadlines • roster deadlines • playoffs • offseason reopening",
+          "inline": false
+        },
+        {
+          "name": "TIME STANDARD",
+          "value": "Unless a post explicitly states otherwise, league deadlines are listed in **Eastern Time**.",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-calendar-header.png"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

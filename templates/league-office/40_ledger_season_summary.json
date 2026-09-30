@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA FINANCIAL SUMMARY",
+      "description": "`[SEASON]`",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "LEAGUE DUES COLLECTED",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "FANTRAX / LEAGUE EXPENSES",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "PRIZE POOL",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "TREASURY BALANCE",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE LEDGER"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

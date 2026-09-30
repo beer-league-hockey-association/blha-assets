@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "DEADLINE REMINDER",
+      "description": "`[DEADLINE NAME]`",
+      "color": 10697266,
+      "fields": [
+        {
+          "name": "DEADLINE",
+          "value": "**`[DATE + TIME ET]`**",
+          "inline": false
+        },
+        {
+          "name": "REQUIRED",
+          "value": "`[WHAT MUST BE COMPLETED]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE CALENDAR"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

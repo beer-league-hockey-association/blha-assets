@@ -1,0 +1,32 @@
+{
+  "embeds": [
+    {
+      "title": "WELCOME TO THE BEER LEAGUE HOCKEY ASSOCIATION",
+      "description": "**BLHA** is a 12-franchise dynasty fantasy hockey league built around long-term roster construction, prospect development, an active trade market, daily competition, and permanent league history.\n\n**Fantrax runs the game. Discord runs the league.**",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "START HERE",
+          "value": "📕 **constitution** — league rules and amendments\n📢 **league-announcements** — official league notices\n📅 **league-calendar** — important dates and deadlines\n💰 **league-ledger** — dues and league accounting",
+          "inline": false
+        },
+        {
+          "name": "THE BLHA STANDARD",
+          "value": "Build for the long term. Stay active. Make your own moves. Own your decisions. Compete every week.",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/welcome/blha-welcome-banner.png"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

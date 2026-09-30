@@ -1,0 +1,44 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA PRIZE POOL",
+      "description": "`[SEASON]`",
+      "color": 13012757,
+      "fields": [
+        {
+          "name": "LEAGUE CHAMPION",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "RUNNER-UP",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "PRESIDENTS' TROPHY",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "THIRD PLACE",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "REGULAR-SEASON POINTS LEADER",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE LEDGER"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}

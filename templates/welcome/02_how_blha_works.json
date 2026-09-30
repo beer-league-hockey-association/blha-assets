@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "HOW THE BLHA WORKS",
+      "description": "The league uses two homes with different jobs. Keeping those jobs separate makes disputes, records, and league administration much cleaner.",
+      "color": 16758812,
+      "fields": [
+        {
+          "name": "FANTRAX — AUTHORITATIVE GAME RECORD",
+          "value": "Rosters • lineups • scoring • adds/drops • FAAB • trades • standings • playoff results\n\nIf a gameplay transaction or result exists in Fantrax, Fantrax is the authoritative record.",
+          "inline": false
+        },
+        {
+          "name": "DISCORD — THE CLUBHOUSE + FRONT OFFICE",
+          "value": "Announcements • voting • trade market • scouting • league discussion • records • draft-day communication • commissioner support",
+          "inline": false
+        },
+        {
+          "name": "ONE FRANCHISE, ONE VOICE",
+          "value": "Co-owners may fully help manage a franchise, but each franchise has **one formal league vote** and **one dues obligation**.",
+          "inline": false
+        }
+      ],
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE"
+      }
+    },
+    {
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
+}
