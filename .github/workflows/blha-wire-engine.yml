@@ -60,6 +60,7 @@ jobs:
 
           # Ignore a timestamp-only change. This prevents a meaningless commit
           # every 15 minutes when there were no new stories or state expirations.
+          set +e
           python - "$STATE" <<'PY'
           import json, subprocess, sys
           path = sys.argv[1]
@@ -71,6 +72,8 @@ jobs:
               sys.exit(10)
           PY
           STATUS=$?
+          set -e
+
           if [ "$STATUS" -eq 10 ]; then
             git checkout -- "$STATE"
             echo "Only updated_at changed; skipping state commit."
