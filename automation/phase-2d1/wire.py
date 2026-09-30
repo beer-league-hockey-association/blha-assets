@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
-USER_AGENT = "BLHA-The-Wire/0.6 (+https://github.com/diseasewheeze/blha-assets)"
+USER_AGENT = "BLHA-The-Wire/0.7 (+https://github.com/diseasewheeze/blha-assets)"
 
 BREAKING = (
     "out indefinitely", "season-ending", "out for the season", "suspended indefinitely",
@@ -66,10 +66,15 @@ IGNORE_PATTERNS = (
 )
 REPORTER_PREFIX = re.compile(r"^\[[^\]]{2,40}\]\s+")
 SAME_TEAM_TRANSFER = re.compile(r"\bfrom\s+(.+?)\s+to\s+\1\b", re.I)
-DFO_PLAYER_WITH_POS = re.compile(r"^(.+?)\s*\((C|LW|RW|D|G)\)\s*$")
-DFO_POS_TEAM = re.compile(r"\((C|LW|RW|D|G)\)\s*\|?\s*([A-Z]{2,4})?")
+DFO_PLAYER_WITH_POS = re.compile(r"^(.+?)\s*\(\s*(C|LW|RW|D|G)\s*\)\s*$", re.I)
+DFO_LONG_POSITION = re.compile(
+    r"\s*\(\s*(?:Center|Left Wing|Right Wing|Defenseman|Defenceman|Goaltender|Goalie)\s*\)\s*$",
+    re.I,
+)
+DFO_POS_TEAM = re.compile(r"\(\s*(C|LW|RW|D|G)\s*\)\s*\|?\s*\(?\s*([A-Z]{2,4})?\s*\)?")
 ISO_TS_ANY = re.compile(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z)")
 TEAM_CODE = re.compile(r"^[A-Z]{2,4}$")
+POSITION_CODES = {"C", "LW", "RW", "D", "G"}
 DATE_SUFFIX = re.compile(r"\s+[A-Z][a-z]{2}\s+\d{1,2},\s+20\d{2}\s*$")
 
 
@@ -162,8 +167,6 @@ def _headline_from_anchor(anchor: Tag) -> str:
 
 def fetch_nhl_news(url: str) -> list[dict[str, str]]:
     response = get(url)
-    # Parse bytes, not response.text, so BeautifulSoup can honor the page encoding
-    # and avoid UTF-8 mojibake in apostrophes/dashes.
     soup = BeautifulSoup(response.content, "html.parser")
     items: list[dict[str, str]] = []
     seen: set[str] = set()
@@ -198,12 +201,7 @@ def _clean_text(value: str) -> str:
 
 
 def _dfo_lines_after_anchor(anchor: Tag, max_nodes: int = 180) -> list[str]:
-    """Collect one Daily Faceoff card by document order.
-
-    DFO currently places the player name inside the player link, while position,
-    team, Injury label, update, source and timestamp are sibling/nested nodes.
-    Stopping at the next player-news link makes this independent of CSS classes.
-    """
+    """Collect one Daily Faceoff card by document order."""
     lines: list[str] = []
     nodes = 0
     for element in anchor.next_elements:
@@ -236,24 +234,30 @@ def _extract_dfo_card(anchor: Tag, page_url: str) -> dict[str, str] | None:
     player_match = DFO_PLAYER_WITH_POS.match(raw_player)
     if player_match:
         player, position = player_match.groups()
+        position = position.upper()
+
+    # Daily Faceoff currently includes a long-form position label inside the
+    # player link, e.g. `Joel Edmundson (Defenseman) (D)`. Remove the verbose
+    # label so Discord displays a normal player name.
+    player = DFO_LONG_POSITION.sub("", player).strip()
 
     lines = _dfo_lines_after_anchor(anchor)
     if not lines:
         return None
 
-    # Reconstruct enough leading text to capture patterns such as `(RW)|MTL`
-    # even when position/team are split across adjacent DOM nodes.
     lead = " ".join(lines[:12])
     pos_team = DFO_POS_TEAM.search(lead)
     team = ""
     if pos_team:
-        position = position or pos_team.group(1)
-        team = pos_team.group(2) or ""
+        position = position or (pos_team.group(1) or "").upper()
+        possible_team = (pos_team.group(2) or "").upper()
+        if possible_team and possible_team not in POSITION_CODES:
+            team = possible_team
 
     if not team:
         for s in lines[:12]:
-            candidate = s.strip().strip("|").strip()
-            if TEAM_CODE.fullmatch(candidate):
+            candidate = s.strip().strip("|() ").upper()
+            if TEAM_CODE.fullmatch(candidate) and candidate not in POSITION_CODES:
                 team = candidate
                 break
 
@@ -296,8 +300,6 @@ def _extract_dfo_card(anchor: Tag, page_url: str) -> dict[str, str] | None:
             source_name = s
             continue
 
-        # The first substantive sentence after the Injury label is DFO's status
-        # headline; the longer paragraph that follows is commentary/context.
         if not summary and len(s) >= 12 and not DFO_POS_TEAM.fullmatch(s):
             summary = s
 
@@ -343,10 +345,7 @@ def fetch_daily_faceoff_injuries(url: str) -> list[dict[str, str]]:
     if not items:
         player_anchor_count = len(anchors)
         injury_text_count = len(soup.find_all(string=re.compile(r"^\s*Injury\s*$", re.I)))
-        sample_players = [
-            _clean_text(a.get_text(" ", strip=True))
-            for a in anchors[:3]
-        ]
+        sample_players = [_clean_text(a.get_text(" ", strip=True)) for a in anchors[:3]]
         raise RuntimeError(
             "Daily Faceoff injury parser returned no injury entries "
             f"(player_links={player_anchor_count}, injury_labels={injury_text_count}, "
