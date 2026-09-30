@@ -1,6 +1,12 @@
 {
   "embeds": [
     {
+      "description": "⠀",
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-announcements-header.png"
+      }
+    },
+    {
       "title": "OFFICIAL BLHA ANNOUNCEMENTS",
       "description": "This channel is the official notice board of the Beer League Hockey Association. Managers are responsible for monitoring it.",
       "color": 16758812,
@@ -19,11 +25,6 @@
       "footer": {
         "text": "BLHA LEAGUE OFFICE"
       },
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-announcements-header.png"
-      }
-    },
-    {
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
       }
