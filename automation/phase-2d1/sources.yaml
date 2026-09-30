@@ -1,5 +1,5 @@
 sources:
-  # PRIMARY NHL NEWS — eligible for live delivery after shadow testing
+  # PRIMARY NHL NEWS
   - id: nhl_latest
     name: NHL.com Latest News
     type: html
@@ -21,7 +21,6 @@ sources:
     enabled: true
     role: primary-national-news
 
-  # CORROBORATION / DISCOVERY — healthy, but not clean enough for blind live posting
   - id: cbs_nhl
     name: CBS Sports NHL
     type: rss
@@ -30,31 +29,26 @@ sources:
     breaking_allowed: false
     discovery_only: true
     enabled: true
-    role: national-corroboration
-    note: Probe passed, but feed included promotional/non-NHL noise. Keep as corroboration/discovery unless filtering proves clean.
+    role: corroboration-national-news
+    note: Probe passed, but feed includes cross-sport/promotional noise; discovery/corroboration only.
 
-  - id: pro_hockey_rumors
-    name: Pro Hockey Rumors
-    type: rss
-    url: https://www.prohockeyrumors.com/feed
-    tier: 2
+  # INJURIES / PLAYER STATUS
+  - id: daily_faceoff_injuries
+    name: Daily Faceoff Injury Report
+    type: html
+    parser: daily_faceoff_injuries
+    url: https://www.dailyfaceoff.com/hockey-player-news/injuries
+    tier: 1
     breaking_allowed: false
-    discovery_only: true
+    discovery_only: false
     enabled: true
-    role: transactions-free-agency-discovery
-    note: Probe parsed successfully despite text/html content type. Never authoritative for Breaking News without Tier 0/1 confirmation.
+    force_channel: injury-report
+    role: primary-fantasy-injury-feed
+    note: Dedicated injury page. Production parser extracts player, team, summary, source and timestamp; goalie starts and unrelated updates are ignored.
 
-  - id: reddit_hockey
-    name: r/hockey
-    type: rss
-    url: https://www.reddit.com/r/hockey/.rss
-    tier: 3
-    breaking_allowed: false
-    discovery_only: true
-    enabled: true
-    role: community-discovery
-
-  # TRANSACTION BACKUPS — PuckPedia native Discord integration will be primary live feed
+  # TRANSACTIONS / ROSTER MOVEMENT
+  # PuckPedia native Discord integration is the preferred live transaction source.
+  # Elite Prospects feeds remain enabled for shadow/discovery cross-checking only.
   - id: eliteprospects_nhl_transactions
     name: Elite Prospects NHL Transactions
     type: rss
@@ -64,8 +58,7 @@ sources:
     discovery_only: true
     enabled: true
     force_channel: nhl-transactions
-    role: transaction-backup
-    note: Healthy feed, but probe showed edge cases such as same-team/self transactions. Keep as backup/corroboration until stricter transaction filtering is enabled.
+    role: transaction-cross-check
 
   - id: eliteprospects_recalls
     name: Elite Prospects Recalls and Reassignments
@@ -76,8 +69,7 @@ sources:
     discovery_only: true
     enabled: true
     force_channel: nhl-transactions
-    role: recalls-assignments-backup
-    note: Global feed includes non-NHL movements. Discovery/backstop only unless NHL-affiliation filtering is applied.
+    role: recalls-assignments-cross-check
 
   - id: eliteprospects_extensions
     name: Elite Prospects Contract Extensions
@@ -88,10 +80,19 @@ sources:
     discovery_only: true
     enabled: true
     force_channel: nhl-transactions
-    role: contract-extensions-backup
-    note: Global feed includes non-NHL and junior extensions. Discovery/backstop only unless NHL filtering is applied.
+    role: contract-extensions-cross-check
 
-  # PROSPECT / DEVELOPMENT — suitable for prospect-wire after content filtering
+  - id: pro_hockey_rumors
+    name: Pro Hockey Rumors
+    type: rss
+    url: https://www.prohockeyrumors.com/feed
+    tier: 2
+    breaking_allowed: false
+    discovery_only: true
+    enabled: true
+    role: transactions-free-agency-discovery
+
+  # PROSPECT / DEVELOPMENT COVERAGE
   - id: ahl_official
     name: American Hockey League
     type: rss
@@ -124,7 +125,6 @@ sources:
     enabled: true
     force_channel: prospect-wire
     role: fantasy-prospect-analysis
-    note: Probe passed with a healthy RSS feed. Excellent dynasty-focused prospect source.
 
   - id: uscho
     name: USCHO College Hockey
@@ -137,7 +137,6 @@ sources:
     force_channel: prospect-wire
     role: ncaa-news
 
-  # DISABLED / PARSER WORK
   - id: college_hockey_news
     name: College Hockey News
     type: html
@@ -145,12 +144,13 @@ sources:
     url: https://www.collegehockeynews.com/news/
     tier: 1
     breaking_allowed: false
-    discovery_only: false
+    discovery_only: true
     enabled: false
-    force_channel: prospect-wire
+    specialty: prospect
     role: ncaa-news
-    note: Page probe passed. Enable after exact RSS endpoint or dedicated parser is finalized.
+    note: Strong candidate; exact RSS/parser will be finalized separately.
 
+  # BROAD / DISCOVERY
   - id: thw_global
     name: The Hockey Writers Global
     type: rss
@@ -160,7 +160,16 @@ sources:
     discovery_only: true
     enabled: false
     role: broad-discovery
-    note: Feed is healthy but redundant with stronger sources and mixes news, analysis and rumors.
+
+  - id: reddit_hockey
+    name: r/hockey
+    type: rss
+    url: https://www.reddit.com/r/hockey/.rss
+    tier: 3
+    breaking_allowed: false
+    discovery_only: true
+    enabled: true
+    role: community-discovery
 
   - id: espn_nhl
     name: ESPN NHL
@@ -170,62 +179,23 @@ sources:
     breaking_allowed: false
     discovery_only: true
     enabled: false
-    note: Disabled after repeated probe returned zero entries / HTTP 202 behavior. Retain only for periodic retest.
+    note: Disabled after repeated empty feed results on 2026-09-30.
 
 planned_integrations:
   - id: puckpedia_discord
     name: PuckPedia Discord Integration
     type: native-discord-webhook
     target: nhl-transactions
-    status: recommended-primary
-    note: Preferred live transaction source for NHL trades, signings and waivers; avoids duplicating work already handled well by PuckPedia.
+    status: recommended
+    note: Preferred live source for NHL trades, signings, and waiver activity.
 
 planned_sources:
-  - id: daily_faceoff_player_news
-    name: Daily Faceoff Player News
-    type: html
-    url: https://www.dailyfaceoff.com/hockey-player-news
-    status: build-parser-next
-    target_channels: [injury-report, nhl-transactions]
-    note: Highest-value next parser. Page exposes Injury, Line Change, Signing, Trades, Roster Moves and Waiver Move categories.
-
-  - id: eliteprospects_ahl
-    name: Elite Prospects AHL Transactions
-    type: rss
-    url: https://www.eliteprospects.com/rss/league/ahl/transactions
-    status: healthy-discovery-only
-
-  - id: eliteprospects_ncaa
-    name: Elite Prospects NCAA Transactions
-    type: rss
-    url: https://www.eliteprospects.com/rss/league/ncaa/transactions
-    status: healthy-discovery-only
-
-  - id: eliteprospects_ohl
-    name: Elite Prospects OHL Transactions
-    type: rss
-    url: https://www.eliteprospects.com/rss/league/ohl/transactions
-    status: healthy-discovery-only
-
-  - id: eliteprospects_whl
-    name: Elite Prospects WHL Transactions
-    type: rss
-    url: https://www.eliteprospects.com/rss/league/whl/transactions
-    status: healthy-discovery-only
-
-  - id: eliteprospects_qmjhl
-    name: Elite Prospects QMJHL Transactions
-    type: rss
-    url: https://www.eliteprospects.com/rss/league/qmjhl/transactions
-    status: healthy-discovery-only
-
   - id: hockey_news_latest
     name: The Hockey News Latest News
     type: html-or-rss
     status: candidate
-    note: Reputable source; add only after a stable current feed endpoint is verified.
 
   - id: x_reporters
     name: Selected X reporter accounts
     type: social
-    status: deferred-until-stable-free-feed-method
+    status: deferred-until-stable-feed-method
