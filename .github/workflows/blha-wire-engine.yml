@@ -1,0 +1,64 @@
+name: BLHA Wire Engine
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode. Keep scheduled production in shadow until approved.'
+        required: true
+        default: shadow
+        type: choice
+        options:
+          - shadow
+          - live
+  schedule:
+    - cron: '3,18,33,48 * * * *'
+
+concurrency:
+  group: blha-wire-engine
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  wire:
+    runs-on: ubuntu-latest
+    env:
+      WIRE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'shadow' }}
+      BLHA_WEBHOOK_BREAKING_NEWS: ${{ secrets.BLHA_WEBHOOK_BREAKING_NEWS }}
+      BLHA_WEBHOOK_NHL_NEWS: ${{ secrets.BLHA_WEBHOOK_NHL_NEWS }}
+      BLHA_WEBHOOK_INJURY_REPORT: ${{ secrets.BLHA_WEBHOOK_INJURY_REPORT }}
+      BLHA_WEBHOOK_NHL_TRANSACTIONS: ${{ secrets.BLHA_WEBHOOK_NHL_TRANSACTIONS }}
+      BLHA_WEBHOOK_PROSPECT_WIRE: ${{ secrets.BLHA_WEBHOOK_PROSPECT_WIRE }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r automation/phase-2d1/requirements.txt
+
+      - name: Run BLHA Wire engine
+        run: python automation/phase-2d1/engine.py --mode "$WIRE_MODE"
+
+      - name: Persist dedupe state
+        shell: bash
+        run: |
+          STATE="automation/phase-2d1/state/${WIRE_MODE}.json"
+          if git diff --quiet -- "$STATE"; then
+            echo "No state changes to persist."
+            exit 0
+          fi
+          git config user.name "BLHA Wire Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$STATE"
+          git commit -m "chore(wire): persist ${WIRE_MODE} dedupe state [skip ci]"
+          git push
