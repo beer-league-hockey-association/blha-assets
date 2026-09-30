@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """BLHA Phase 2D.1 — The Wire source collectors and dry-run classifier.
 
-This module is shared by the production/shadow engine. It fetches configured
-public hockey sources, normalizes entries, and classifies them into BLHA Wire
-channels. Direct Discord delivery lives in engine.py.
+Shared by the production/shadow engine. Collectors normalize entries and route
+them into BLHA Wire desks. Discord delivery lives in engine.py.
 """
 
 from __future__ import annotations
@@ -21,7 +20,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
-USER_AGENT = "BLHA-The-Wire/0.4 (+https://github.com/diseasewheeze/blha-assets)"
+USER_AGENT = "BLHA-The-Wire/0.5 (+https://github.com/diseasewheeze/blha-assets)"
 
 BREAKING = (
     "out indefinitely", "season-ending", "out for the season", "suspended indefinitely",
@@ -31,6 +30,7 @@ INJURY = (
     "injury", "injured", "day-to-day", "week-to-week", "month-to-month",
     "injured reserve", "ltir", "surgery", "concussion", "fractured", "fracture",
     "activated from ir", "cleared to play", "returns from injury", "out indefinitely",
+    "status report:",
 )
 TRANSACTION = (
     "traded", "trade", "acquired", "signed", "signs", "re-signs", "re-signed",
@@ -44,7 +44,7 @@ PROSPECT = (
 
 GENERIC_TITLES = {
     "nhl featured", "nhl headlines", "nhl page featured 2 items", "nhl page featured",
-    "featured", "headlines", "latest news",
+    "featured", "headlines", "latest news", "nhl top videos", "skip to main content",
 }
 IGNORE_PATTERNS = (
     r"^daily free talk thread",
@@ -55,14 +55,19 @@ IGNORE_PATTERNS = (
     r"^nhl page featured",
     r"^nhl featured$",
     r"^nhl headlines$",
+    r"^nhl top videos$",
+    r"^skip to main content$",
     r"promo code",
     r"bonus bets",
+    r"^fantasy picks, props, futures\b",
+    r"^projected lineups, starting goalies\b",
     r"^\[[A-Z]{2,4}\s*\(\d+\).*\]",
 )
 REPORTER_PREFIX = re.compile(r"^\[[^\]]{2,40}\]\s+")
 SAME_TEAM_TRANSFER = re.compile(r"\bfrom\s+(.+?)\s+to\s+\1\b", re.I)
-DFO_PLAYER = re.compile(r"^(.+?)\((C|LW|RW|D|G)\)\|([A-Z]{2,4})?$")
-ISO_TS = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$")
+DFO_PLAYER_TEXT = re.compile(r"^(.+?)\((C|LW|RW|D|G)\)$")
+ISO_TS_ANY = re.compile(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z)")
+TEAM_CODE = re.compile(r"^[A-Z]{2,4}$")
 
 
 def normalize(text: str) -> str:
@@ -131,15 +136,12 @@ def fetch_rss(url: str) -> list[dict[str, str]]:
     feed = feedparser.parse(response.content)
     if getattr(feed, "bozo", False) and not feed.entries:
         raise RuntimeError(f"Feed parse failed: {getattr(feed, 'bozo_exception', 'unknown error')}")
-    items: list[dict[str, str]] = []
-    for entry in feed.entries:
-        items.append({
-            "title": entry.get("title", "(untitled)"),
-            "link": entry.get("link", ""),
-            "published": entry.get("published", entry.get("updated", "")),
-            "external_id": entry.get("id", entry.get("guid", entry.get("link", ""))),
-        })
-    return items
+    return [{
+        "title": entry.get("title", "(untitled)"),
+        "link": entry.get("link", ""),
+        "published": entry.get("published", entry.get("updated", "")),
+        "external_id": entry.get("id", entry.get("guid", entry.get("link", ""))),
+    } for entry in feed.entries]
 
 
 def fetch_nhl_news(url: str) -> list[dict[str, str]]:
@@ -152,6 +154,8 @@ def fetch_nhl_news(url: str) -> list[dict[str, str]]:
         href = urljoin(url, anchor.get("href", ""))
         if not title or len(title) < 18 or "/news/" not in href:
             continue
+        if should_ignore(title, "nhl_latest", classify_title(title, True)):
+            continue
         key = href.split("?")[0]
         if key in seen:
             continue
@@ -162,88 +166,153 @@ def fetch_nhl_news(url: str) -> list[dict[str, str]]:
     return items
 
 
-def _short_status(text: str, max_words: int = 20) -> str:
+def _short_status(text: str, max_words: int = 24) -> str:
     words = text.split()
     if len(words) <= max_words:
         return text
     return " ".join(words[:max_words]).rstrip(".,;:") + "…"
 
 
-def fetch_daily_faceoff_injuries(url: str) -> list[dict[str, str]]:
-    """Parse Daily Faceoff's dedicated injury page using visible text.
+def _clean_strings(node) -> list[str]:
+    return [
+        re.sub(r"\s+", " ", s).strip()
+        for s in node.stripped_strings
+        if re.sub(r"\s+", " ", s).strip()
+    ]
 
-    The dedicated page is intentionally used instead of the all-player-news page,
-    which also contains goalie starts, signings, trades and line changes.
-    """
+
+def _smallest_dfo_card(anchor):
+    """Return the smallest ancestor that looks like one Daily Faceoff news card."""
+    node = anchor
+    for _ in range(10):
+        node = getattr(node, "parent", None)
+        if node is None:
+            break
+        strings = _clean_strings(node)
+        lowered = [s.lower() for s in strings]
+        if (
+            "injury" in lowered
+            and any(s.startswith("Source:") or s == "Source:" for s in strings)
+            and len(strings) <= 45
+        ):
+            return node
+    return None
+
+
+def _extract_dfo_card(anchor, page_url: str) -> dict[str, str] | None:
+    player_text = re.sub(r"\s+", " ", anchor.get_text(" ", strip=True)).strip()
+    match = DFO_PLAYER_TEXT.match(player_text)
+    if not match:
+        return None
+    player, position = match.groups()
+
+    card = _smallest_dfo_card(anchor)
+    if card is None:
+        return None
+
+    strings = _clean_strings(card)
+    try:
+        player_idx = strings.index(player_text)
+    except ValueError:
+        player_idx = 0
+
+    team = ""
+    for s in strings[player_idx + 1: player_idx + 6]:
+        candidate = s.strip().strip("|").strip()
+        if TEAM_CODE.fullmatch(candidate):
+            team = candidate
+            break
+
+    injury_idx = None
+    for idx in range(player_idx + 1, min(player_idx + 10, len(strings))):
+        if strings[idx].lower() == "injury":
+            injury_idx = idx
+            break
+    if injury_idx is None:
+        return None
+
+    summary = ""
+    source_name = ""
+    timestamp = ""
+    after_source = False
+
+    for s in strings[injury_idx + 1:]:
+        low = s.lower()
+        if DFO_PLAYER_TEXT.match(s) and s != player_text:
+            break
+        if low == "injury" or low.startswith("image:"):
+            continue
+        if s == "Source:":
+            after_source = True
+            continue
+        if s.startswith("Source:"):
+            rest = s.split("Source:", 1)[1].strip()
+            if rest:
+                source_name = rest
+            after_source = True
+            continue
+
+        ts = ISO_TS_ANY.search(s)
+        if ts:
+            timestamp = ts.group(1)
+            reporter = s[:ts.start()].strip()
+            if reporter and after_source and not source_name:
+                source_name = reporter
+            continue
+
+        if after_source and not source_name and 2 <= len(s) <= 80:
+            source_name = s
+            continue
+
+        if not summary and len(s) >= 12:
+            summary = s
+
+    if not summary:
+        return None
+
+    player_link = urljoin(page_url, anchor.get("href", ""))
+    short = _short_status(summary)
+    title = f"{player} ({team or position}) — {short}"
+    event_key = f"dfo|{player}|{summary}|{timestamp}"
+
+    return {
+        "title": title,
+        "link": player_link or page_url,
+        "published": timestamp,
+        "external_id": event_key,
+        "player": player,
+        "team": team,
+        "position": position,
+        "source_detail": source_name,
+        "status": short,
+    }
+
+
+def fetch_daily_faceoff_injuries(url: str) -> list[dict[str, str]]:
+    """Parse Daily Faceoff's dedicated NHL Injury Report cards."""
     response = get(url)
     soup = BeautifulSoup(response.text, "html.parser")
-    lines = [re.sub(r"\s+", " ", s).strip() for s in soup.stripped_strings]
     items: list[dict[str, str]] = []
     seen: set[str] = set()
 
-    i = 0
-    while i < len(lines):
-        match = DFO_PLAYER.match(lines[i])
-        if not match:
-            i += 1
+    anchors = soup.find_all("a", href=re.compile(r"/players/news/"))
+    for anchor in anchors:
+        item = _extract_dfo_card(anchor, url)
+        if not item:
             continue
-
-        player, position, team = match.groups()
-        injury_idx = None
-        for j in range(i + 1, min(i + 7, len(lines))):
-            if lines[j].strip().lower() == "injury":
-                injury_idx = j
-                break
-        if injury_idx is None:
-            i += 1
+        key = item["external_id"]
+        if key in seen:
             continue
-
-        summary = ""
-        source_name = ""
-        timestamp = ""
-        k = injury_idx + 1
-        while k < min(injury_idx + 18, len(lines)):
-            line = lines[k]
-            if k > injury_idx + 1 and DFO_PLAYER.match(line):
-                break
-            low = line.lower()
-            if low in {"image: injury", "injury"} or low.startswith("image:"):
-                k += 1
-                continue
-            if line.startswith("Source:"):
-                source_name = line.split("Source:", 1)[1].strip()
-                k += 1
-                continue
-            if ISO_TS.match(line):
-                timestamp = line
-                k += 1
-                continue
-            if not summary and len(line) >= 12:
-                summary = line
-            k += 1
-
-        if summary:
-            team_label = team or position
-            short = _short_status(summary)
-            title = f"{player} ({team_label}) — {short}"
-            event_key = f"dfo|{player}|{summary}|{timestamp}"
-            if event_key not in seen:
-                seen.add(event_key)
-                items.append({
-                    "title": title,
-                    "link": url,
-                    "published": timestamp,
-                    "external_id": event_key,
-                    "player": player,
-                    "team": team or "",
-                    "position": position,
-                    "source_detail": source_name,
-                    "status": short,
-                })
-        i = max(i + 1, k)
+        seen.add(key)
+        items.append(item)
 
     if not items:
-        raise RuntimeError("Daily Faceoff injury parser returned no injury entries")
+        player_anchor_count = len(anchors)
+        injury_text_count = len(soup.find_all(string=re.compile(r"^\s*Injury\s*$", re.I)))
+        raise RuntimeError(
+            "Daily Faceoff injury parser returned no injury entries "
+            f"(player_links={player_anchor_count}, injury_labels={injury_text_count})"
+        )
     return items
 
 
@@ -275,6 +344,7 @@ def main() -> int:
             print(f"ERROR: {exc}\n")
             continue
         emitted = 0
+        max_items = int(source.get("max_items", 10))
         for entry in entries:
             title = entry.get("title", "(untitled)")
             link = entry.get("link", "")
@@ -289,7 +359,7 @@ def main() -> int:
             print(f"  fingerprint={fingerprint(title)}")
             emitted += 1
             total += 1
-            if emitted >= 10:
+            if emitted >= max_items:
                 break
         if emitted == 0:
             print("No usable entries after filtering")
