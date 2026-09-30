@@ -1,10 +1,11 @@
 name: BLHA Wire Engine
+run-name: BLHA Wire Engine — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Run mode. Keep scheduled production in shadow until approved.'
+        description: 'Run mode. Manual runs default to shadow for safe testing.'
         required: true
         default: shadow
         type: choice
@@ -34,8 +35,9 @@ permissions:
 jobs:
   wire:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     env:
-      WIRE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'shadow' }}
+      WIRE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
       RESET_STATE: ${{ github.event_name == 'workflow_dispatch' && inputs.reset_state || false }}
       INCLUDE_DISCOVERY: ${{ github.event_name == 'workflow_dispatch' && inputs.include_discovery || false }}
       BLHA_WEBHOOK_BREAKING_NEWS: ${{ secrets.BLHA_WEBHOOK_BREAKING_NEWS }}
