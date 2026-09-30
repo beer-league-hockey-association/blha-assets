@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-09-30T18:43:47.356410Z",
+  "updated_at": "2026-09-30T19:06:04.840944Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -572,6 +572,16 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-09-30T18:43:47.356369Z"
+    },
+    {
+      "key": "90826c03abdda435c554c5cf",
+      "url": "https://www.dailyfaceoff.com/players/news/max-domi/2131",
+      "fingerprint": "91e3e36b9be17173",
+      "title_norm": "max domi (tor) — domi (lower-body) has been added to ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:06:04.766015Z"
     }
   ]
 }
