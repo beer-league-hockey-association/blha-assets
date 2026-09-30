@@ -104,6 +104,7 @@ def fmt_gb(value: float) -> str:
 
 
 def table(rows: list[dict], playoff_cut: int) -> str:
+    """Compact console-only table for GitHub Actions logs."""
     lines = ["RK  TEAM                     REC        PF       GB"]
     lines.append("--  -----------------------  ---------  -------  ----")
     for index, row in enumerate(rows, start=1):
@@ -118,6 +119,28 @@ def table(rows: list[dict], playoff_cut: int) -> str:
     return "\n".join(lines)
 
 
+def discord_standing_fields(rows: list[dict], playoff_cut: int) -> list[dict]:
+    """Use the same clean vertical field style as the BLHA scoreboard."""
+    fields: list[dict] = []
+    for index, row in enumerate(rows, start=1):
+        rank = row["rank"] or index
+        title = f"{rank}. {row['teamName']}"
+        if rank == playoff_cut:
+            title += " — Playoff Cut"
+
+        value = (
+            f"**Record:** {row['points']} • "
+            f"**PF:** {fmt_pf(row['totalPointsFor'])} • "
+            f"**GB:** {fmt_gb(row['gamesBack'])}"
+        )
+        fields.append({
+            "name": title,
+            "value": value,
+            "inline": False,
+        })
+    return fields
+
+
 def color_value(raw: Any) -> int:
     if isinstance(raw, int):
         return raw
@@ -128,6 +151,7 @@ def color_value(raw: Any) -> int:
 def payload(info: dict, rows: list[dict], cfg: dict, *, test: bool = False) -> dict:
     league_name = str(info.get("leagueName") or "Beer League Hockey Association")
     season_label = str(cfg.get("season_label") or "")
+    playoff_cut = int(cfg.get("playoff_cut", 6))
     title = "BLHA League Standings"
     if test:
         title = "[TEST] " + title
@@ -135,8 +159,10 @@ def payload(info: dict, rows: list[dict], cfg: dict, *, test: bool = False) -> d
     description = f"**{league_name}**"
     if season_label:
         description += f" • {season_label}"
-    description += "\n\n```\n" + table(rows, int(cfg.get("playoff_cut", 6))) + "\n```"
-    description += "\n*Standings pulled directly from Fantrax. PF = Points For; GB = Games Back.*"
+    description += (
+        f"\n\n*Standings pulled directly from Fantrax. "
+        f"The top {playoff_cut} teams currently occupy playoff positions.*"
+    )
 
     return {
         "username": "BLHA Competition Desk",
@@ -145,8 +171,9 @@ def payload(info: dict, rows: list[dict], cfg: dict, *, test: bool = False) -> d
         "embeds": [{
             "title": title,
             "description": description,
+            "fields": discord_standing_fields(rows, playoff_cut),
             "color": color_value(cfg.get("color", "0xFFB81C")),
-            "footer": {"text": f"{cfg.get('channel_label','📊 STANDINGS')} • FANTRAX READ-ONLY DATA"},
+            "footer": {"text": f"{cfg.get('channel_label','STANDINGS')} • FANTRAX READ-ONLY DATA"},
             "timestamp": datetime.now(timezone.utc).isoformat(),
         }],
     }
