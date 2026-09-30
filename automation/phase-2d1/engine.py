@@ -29,8 +29,8 @@ import wire
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
 STATE_DIR = ROOT / "state"
-STATE_TTL_HOURS = 72
-DEDUPE_WINDOW_HOURS = 48
+STATE_TTL_HOURS = 24 * 30
+FUZZY_DEDUPE_WINDOW_HOURS = 48
 DEFAULT_MAX_SOURCE_ITEMS = 15
 
 WEBHOOK_ENV = {
@@ -125,7 +125,7 @@ def prune_state(state: dict) -> None:
         seen_at = parse_seen_time(item.get("seen_at", ""))
         if seen_at is None or seen_at >= cutoff:
             kept.append(item)
-    state["seen"] = kept[-1000:]
+    state["seen"] = kept[-5000:]
 
 
 def duplicate_reason(candidate: dict, state: dict) -> str | None:
@@ -135,15 +135,19 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
     fp = wire.fingerprint(candidate["title"])
 
     for prior in reversed(state.get("seen", [])):
-        seen_at = parse_seen_time(prior.get("seen_at", ""))
-        if seen_at and now - seen_at > timedelta(hours=DEDUPE_WINDOW_HOURS):
-            continue
+        # Exact identities stay suppressed for the full state-retention window.
         if candidate["key"] == prior.get("key"):
             return "same-source-id"
         if candidate.get("dedupe_by_url", True) and url and url == prior.get("url"):
             return "same-url"
         if fp == prior.get("fingerprint"):
             return "same-headline"
+
+        # Fuzzy cross-source matching is intentionally short-lived so materially
+        # new developments on the same topic are not hidden days later.
+        seen_at = parse_seen_time(prior.get("seen_at", ""))
+        if seen_at and now - seen_at > timedelta(hours=FUZZY_DEDUPE_WINDOW_HOURS):
+            continue
         if candidate["channel"] == prior.get("channel"):
             prior_title = prior.get("title_norm", "")
             if prior_title:
