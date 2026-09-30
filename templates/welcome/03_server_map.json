@@ -16,11 +16,8 @@
         {"name":"🎙️ DRAFT CENTER","value":"Startup and annual draft-day communication, picks, draft trades and live discussion.","inline":false},
         {"name":"🏒 FRANCHISE HQ","value":"Franchise-specific spaces for team identity, planning and internal organization.","inline":false}
       ],
-      "footer": {"text":"BLHA SERVER DIRECTORY"}
-    },
-    {
-      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"},
-      "description":"​"
+      "footer": {"text":"BLHA SERVER DIRECTORY"},
+      "image": {"url":"https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
     }
   ]
 }
