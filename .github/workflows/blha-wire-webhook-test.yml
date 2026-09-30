@@ -1,0 +1,43 @@
+name: BLHA Wire Webhook Test
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: 'Choose which BLHA Wire webhook to test.'
+        required: true
+        default: breaking-news
+        type: choice
+        options:
+          - breaking-news
+          - nhl-news
+          - injury-report
+          - prospect-wire
+          - all
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      BLHA_WEBHOOK_BREAKING_NEWS: ${{ secrets.BLHA_WEBHOOK_BREAKING_NEWS }}
+      BLHA_WEBHOOK_NHL_NEWS: ${{ secrets.BLHA_WEBHOOK_NHL_NEWS }}
+      BLHA_WEBHOOK_INJURY_REPORT: ${{ secrets.BLHA_WEBHOOK_INJURY_REPORT }}
+      BLHA_WEBHOOK_PROSPECT_WIRE: ${{ secrets.BLHA_WEBHOOK_PROSPECT_WIRE }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Send controlled BLHA Wire test
+        run: python automation/phase-2d1/test_delivery.py --channel "${{ inputs.channel }}"
