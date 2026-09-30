@@ -11,6 +11,16 @@ on:
         options:
           - shadow
           - live
+      reset_state:
+        description: 'Reset dedupe state before this run (use only for testing/calibration).'
+        required: false
+        default: false
+        type: boolean
+      include_discovery:
+        description: 'Also fetch discovery/corroboration sources for this manual run.'
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: '3,18,33,48 * * * *'
 
@@ -26,6 +36,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       WIRE_MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'shadow' }}
+      RESET_STATE: ${{ github.event_name == 'workflow_dispatch' && inputs.reset_state || false }}
+      INCLUDE_DISCOVERY: ${{ github.event_name == 'workflow_dispatch' && inputs.include_discovery || false }}
       BLHA_WEBHOOK_BREAKING_NEWS: ${{ secrets.BLHA_WEBHOOK_BREAKING_NEWS }}
       BLHA_WEBHOOK_NHL_NEWS: ${{ secrets.BLHA_WEBHOOK_NHL_NEWS }}
       BLHA_WEBHOOK_INJURY_REPORT: ${{ secrets.BLHA_WEBHOOK_INJURY_REPORT }}
@@ -47,7 +59,16 @@ jobs:
         run: pip install -r automation/phase-2d1/requirements.txt
 
       - name: Run BLHA Wire engine
-        run: python automation/phase-2d1/engine.py --mode "$WIRE_MODE"
+        shell: bash
+        run: |
+          ARGS=(--mode "$WIRE_MODE")
+          if [ "$RESET_STATE" = "true" ]; then
+            ARGS+=(--reset-state)
+          fi
+          if [ "$INCLUDE_DISCOVERY" = "true" ]; then
+            ARGS+=(--include-discovery)
+          fi
+          python automation/phase-2d1/engine.py "${ARGS[@]}"
 
       - name: Persist dedupe state
         shell: bash
