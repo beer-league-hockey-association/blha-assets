@@ -1,0 +1,38 @@
+sources:
+  - id: espn_nhl
+    name: ESPN NHL
+    type: rss
+    url: https://www.espn.com/espn/rss/nhl/news
+    tier: 1
+    breaking_allowed: true
+    enabled: true
+
+  - id: sportsnet_nhl
+    name: Sportsnet NHL
+    type: rss
+    url: https://www.sportsnet.ca/hockey/nhl/feed/
+    tier: 1
+    breaking_allowed: true
+    enabled: true
+
+  - id: reddit_hockey
+    name: r/hockey
+    type: rss
+    url: https://www.reddit.com/r/hockey/.rss
+    tier: 2
+    breaking_allowed: false
+    enabled: true
+
+planned_sources:
+  - id: nhl_latest
+    name: NHL.com Latest News
+    type: html
+    status: phase-2d2
+  - id: daily_faceoff_injuries
+    name: Daily Faceoff Injury Report
+    type: html
+    status: phase-2d2
+  - id: x_reporters
+    name: Selected X reporter accounts
+    type: social
+    status: deferred-until-stable-feed-method
