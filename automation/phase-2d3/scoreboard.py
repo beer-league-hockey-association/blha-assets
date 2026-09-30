@@ -93,7 +93,6 @@ def current_period(info: dict, requested: int | None = None) -> tuple[int, dict 
         if start <= now <= end:
             return int(period.get("number") or 0), period
 
-    # Safe fallback before/after the season.
     valid = [p for p in periods if int(p.get("number") or 0) > 0]
     if valid:
         first = valid[0]
@@ -137,7 +136,6 @@ def normalize_matchups(raw: Any) -> list[dict]:
 
 
 def canonical_for_fingerprint(period: int, rows: list[dict]) -> dict:
-    # Keep only fields that should cause a public scoreboard refresh.
     return {
         "period": period,
         "matchups": [
@@ -179,6 +177,7 @@ def fmt_gp(value: float) -> str:
 
 
 def scoreboard_table(rows: list[dict]) -> str:
+    """Compact console-only table for GitHub Actions logs."""
     lines = ["AWAY                     SCORE   GP   HOME                     SCORE   GP"]
     lines.append("-----------------------  ------  ---  -----------------------  ------  ---")
     for row in rows:
@@ -189,6 +188,36 @@ def scoreboard_table(rows: list[dict]) -> str:
             f"{home['teamName'][:23]:<23}  {fmt_score(home['score']):>6}  {fmt_gp(home['gamesPlayed']):>3}"
         )
     return "\n".join(lines)
+
+
+def discord_matchup_fields(rows: list[dict]) -> list[dict]:
+    """Use vertical embed fields so Discord never wraps a wide ASCII table badly."""
+    fields: list[dict] = []
+    for index, row in enumerate(rows, start=1):
+        away = row["away"]
+        home = row["home"]
+        away_score = fmt_score(away["score"])
+        home_score = fmt_score(home["score"])
+
+        if away["score"] > home["score"]:
+            away_score_text = f"**{away_score} pts**"
+            home_score_text = f"{home_score} pts"
+        elif home["score"] > away["score"]:
+            away_score_text = f"{away_score} pts"
+            home_score_text = f"**{home_score} pts**"
+        else:
+            away_score_text = f"{away_score} pts"
+            home_score_text = f"{home_score} pts"
+
+        fields.append({
+            "name": f"Matchup {index}",
+            "value": (
+                f"✈️ **{away['teamName']}** — {away_score_text} • `{fmt_gp(away['gamesPlayed'])} GP`\n"
+                f"🏠 **{home['teamName']}** — {home_score_text} • `{fmt_gp(home['gamesPlayed'])} GP`"
+            ),
+            "inline": False,
+        })
+    return fields
 
 
 def color_value(raw: Any) -> int:
@@ -222,8 +251,7 @@ def payload(info: dict, rows: list[dict], cfg: dict, period: int, period_info: d
     window = period_window(period_info)
     if window:
         description += f"\n**Scoring Period:** {window}"
-    description += "\n\n```\n" + scoreboard_table(rows) + "\n```"
-    description += "\n*Scores and games played pulled directly from Fantrax.*"
+    description += "\n\n*Scores and games played pulled directly from Fantrax. The leading score is bolded.*"
 
     return {
         "username": "BLHA Competition Desk",
@@ -232,6 +260,7 @@ def payload(info: dict, rows: list[dict], cfg: dict, period: int, period_info: d
         "embeds": [{
             "title": title,
             "description": description,
+            "fields": discord_matchup_fields(rows),
             "color": color_value(cfg.get("color", "0xFFB81C")),
             "footer": {"text": f"{cfg.get('channel_label','📊 SCOREBOARD')} • FANTRAX READ-ONLY DATA"},
             "timestamp": datetime.now(timezone.utc).isoformat(),
