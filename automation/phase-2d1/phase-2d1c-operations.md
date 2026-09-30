@@ -35,8 +35,10 @@ CBS Sports remains discovery/corroboration because its NHL RSS includes promotio
 The Daily Faceoff parser follows each player-news link in document order and reads the associated position, team, Injury label, status headline, source and timestamp until the next player card. This avoids relying on Daily Faceoff CSS classes or a specific card wrapper.
 
 ### 🔄 nhl-transactions
-- **PuckPedia native Discord integration is preferred for live trades, signings and waivers.**
+- **PuckPedia native Discord integration is the primary live delivery source for trades, signings and waivers.**
+- The GitHub engine still classifies and dedupes NHL transaction stories for monitoring, but `nhl-transactions` is marked as a native-primary channel and the engine does not post those items live by default.
 - Elite Prospects transaction feeds stay discovery/cross-check only to avoid bookkeeping noise and duplicate posts.
+- The GitHub transaction webhook mapping remains available as a fallback if the native policy is deliberately changed later.
 
 ### 🌱 prospect-wire
 - American Hockey League official RSS.
@@ -84,6 +86,8 @@ The first invocation of `engine.py --mode live` establishes a baseline and sends
 
 Only later new stories are eligible for delivery.
 
+For channels handled by a native-primary integration, such as `nhl-transactions`, later live runs log those events as `NATIVE-PRIMARY SKIP`, record them in dedupe state, and do not send a competing GitHub webhook post.
+
 ## Discord webhook secrets
 
 Create one Discord webhook per automated Wire channel, then add these under:
@@ -100,7 +104,7 @@ Required secret names:
 
 Never commit webhook URLs into repository files.
 
-The transaction webhook can remain unused by the GitHub engine while PuckPedia native delivery is preferred, but keeping the secret/mapping available gives us a fallback for future non-PuckPedia transaction sources.
+The transaction webhook is retained as a fallback. While PuckPedia is the native primary, the GitHub engine will not use it for ordinary transaction delivery.
 
 ## PuckPedia native integration
 
@@ -117,14 +121,13 @@ Keep this native integration separate from the BLHA News Wire webhook identity.
 
 ## Rollout sequence
 
-1. Run a fresh manual shadow calibration with `reset_state=true` and `include_discovery=false`.
-2. Confirm Daily Faceoff injury extraction, NHL.com headline cleanup, Sportsnet injury routing and prospect volume.
-3. Let scheduled shadow mode run for several cycles and confirm later cycles are mostly deduped.
-4. Create the five Discord webhooks and store them as GitHub Actions Secrets.
-5. Configure PuckPedia native delivery for `🔄│nhl-transactions`.
-6. Manually run **BLHA Wire Engine** with mode `live` once. It will baseline and send nothing.
-7. Wait for a genuinely new event, then run live manually again to verify one-message delivery.
-8. After validation, change the scheduled workflow from shadow to live.
+1. Confirm a fresh shadow baseline produces clean routing and formatting.
+2. Confirm an immediate second shadow run produces zero new shadow posts and only duplicates.
+3. Create the five Discord webhooks and store them as GitHub Actions Secrets.
+4. Configure PuckPedia native delivery for `🔄│nhl-transactions`.
+5. Manually run **BLHA Wire Engine** with mode `live` once. It will baseline and send nothing.
+6. Wait for a genuinely new event, then run live manually again to verify one-message delivery.
+7. After validation, change the scheduled workflow from shadow to live.
 
 ## Why no Discord bot yet
 
