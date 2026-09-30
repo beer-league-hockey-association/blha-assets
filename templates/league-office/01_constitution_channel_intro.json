@@ -1,6 +1,12 @@
 {
   "embeds": [
     {
+      "description": "⠀",
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-constitution-header.png"
+      }
+    },
+    {
       "title": "BLHA CONSTITUTION",
       "description": "The Constitution is the controlling rules document of the Beer League Hockey Association. Managers are responsible for knowing the current rules and any formally adopted amendments.",
       "color": 16758812,
@@ -24,11 +30,6 @@
       "footer": {
         "text": "BLHA LEAGUE OFFICE • EST. 2026"
       },
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-constitution-header.png"
-      }
-    },
-    {
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
       }
