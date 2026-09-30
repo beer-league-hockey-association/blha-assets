@@ -30,6 +30,9 @@ CBS Sports remains discovery/corroboration because its NHL RSS includes promotio
 - Daily Faceoff dedicated Injury Report page — primary fantasy injury feed.
 - NHL.com / Sportsnet can also classify injury headlines.
 - NHL.com `Status Report:` headlines are treated as injury/status items.
+- Phrases such as `not expected to play`, `will miss`, `expected to miss`, `ruled out`, and `unavailable` route to Injury Report.
+
+The Daily Faceoff parser follows each player-news link in document order and reads the associated position, team, Injury label, status headline, source and timestamp until the next player card. This avoids relying on Daily Faceoff CSS classes or a specific card wrapper.
 
 ### 🔄 nhl-transactions
 - **PuckPedia native Discord integration is preferred for live trades, signings and waivers.**
@@ -44,14 +47,17 @@ USCHO remains discovery-only until NHL-prospect/entity filtering is added; the r
 
 ## Dedupe behavior
 
-The engine keeps mode-specific persistent state for 72 hours and suppresses repeats for 48 hours using:
+The engine keeps mode-specific persistent state for **30 days**.
+
+Exact repeats are suppressed for that full retention window using:
 
 1. source/external ID,
 2. canonical URL where appropriate,
-3. normalized headline fingerprint,
-4. near-duplicate title similarity within the same target channel.
+3. normalized headline fingerprint.
 
-Daily Faceoff injury events intentionally do **not** dedupe by URL because multiple distinct injury updates can share the same player/profile or report URL. Their event ID uses player + update text + timestamp.
+Near-duplicate/fuzzy headline matching is limited to **48 hours** within the same target channel. This prevents repeated coverage of the same event from flooding Discord while still allowing a materially new development days later.
+
+Daily Faceoff injury events intentionally do **not** dedupe by URL because multiple distinct injury updates can share the same player/profile URL. Their event ID uses player + update text + timestamp.
 
 Sources are processed by trust tier so official/Tier 0 material is considered before lower-tier coverage in the same run.
 
@@ -112,7 +118,7 @@ Keep this native integration separate from the BLHA News Wire webhook identity.
 ## Rollout sequence
 
 1. Run a fresh manual shadow calibration with `reset_state=true` and `include_discovery=false`.
-2. Confirm Daily Faceoff injury extraction, NHL.com filtering and prospect volume.
+2. Confirm Daily Faceoff injury extraction, NHL.com headline cleanup, Sportsnet injury routing and prospect volume.
 3. Let scheduled shadow mode run for several cycles and confirm later cycles are mostly deduped.
 4. Create the five Discord webhooks and store them as GitHub Actions Secrets.
 5. Configure PuckPedia native delivery for `🔄│nhl-transactions`.
