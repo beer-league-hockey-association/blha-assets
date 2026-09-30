@@ -1,6 +1,597 @@
 {
   "version": 1,
-  "initialized": false,
-  "updated_at": "",
-  "seen": []
+  "initialized": true,
+  "updated_at": "2026-09-30T19:09:30.221798Z",
+  "seen": [
+    {
+      "key": "771ee594d7ce1ddf2592b005",
+      "url": "https://www.nhl.com/news/alex-ovechkin-says-he-ll-be-ready-to-play-for-washington-capitals-in-season-opener",
+      "fingerprint": "067eca883b4c90b9",
+      "title_norm": "ovi says he'll be ready for caps' opener on friday",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220389Z"
+    },
+    {
+      "key": "5b36f12459cc0a808345c353",
+      "url": "https://www.nhl.com/news/jared-bednar-signs-four-year-contract-with-colorado-avalanche",
+      "fingerprint": "19ee2f81580717e4",
+      "title_norm": "avalanche coach bednar signs contract through 2030-31",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220457Z"
+    },
+    {
+      "key": "2cadeb6a84606237c81c9d18",
+      "url": "https://www.nhl.com/news/casey-desmith-signs-two-year-contract-will-dallas-stars",
+      "fingerprint": "416b895e98c48296",
+      "title_norm": "desmith signs 2-year, $5 million deal with stars",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220487Z"
+    },
+    {
+      "key": "7bd37eb6bd14008f5a27136e",
+      "url": "https://www.nhl.com/news/gavin-mckenna-family-savor-experience-of-nhl-debut-for-maple-leafs",
+      "fingerprint": "3f3eeeba2408ff03",
+      "title_norm": "mckenna, family savor 'unreal' nhl debut for leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220513Z"
+    },
+    {
+      "key": "67bcc9cc55dc7f6b62585b2a",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-september-30-2026",
+      "fingerprint": "44eb69e7a8edb004",
+      "title_norm": "on tap: laviolette to debut as kings coach tonight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220536Z"
+    },
+    {
+      "key": "ab13477939af226f1ee632e3",
+      "url": "https://www.nhl.com/news/patrick-kane-scores-with-familiar-flair-in-chicago-blackhawks-return",
+      "fingerprint": "531b3d92a70d57ef",
+      "title_norm": "kane scores with familiar flair in blackhawks return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220558Z"
+    },
+    {
+      "key": "52fca4e2ce2d866376afd0a0",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-september-30-2026",
+      "fingerprint": "e7a3681225739792",
+      "title_norm": "status report: luukkonen likely for sabres tomorrow",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220581Z"
+    },
+    {
+      "key": "bd9240b40d84cd2ca46cbec8",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-vegas-golden-knights-game-recap-september-29-2026",
+      "fingerprint": "3129985d4693bb1e",
+      "title_norm": "golden knights pull away from blackhawks, win craig's debut as coach",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220605Z"
+    },
+    {
+      "key": "2e1474db0342fbad15971977",
+      "url": "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-recap-september-29-2026",
+      "fingerprint": "d6cb09e58ca161f3",
+      "title_norm": "canucks recover for ot victory against oilers after blowing three-goal lead",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220628Z"
+    },
+    {
+      "key": "81bfeb521f56854f3c320d04",
+      "url": "https://www.nhl.com/news/new-york-rangers-boston-bruins-game-recap-september-29-2026",
+      "fingerprint": "c25bdb601b81831e",
+      "title_norm": "bruins score three goals late, blank rangers in season opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-09-30T19:09:30.220649Z"
+    },
+    {
+      "key": "ce4f781869d64a6dc85c4d27",
+      "url": "https://www.sandiegogulls.com/news/detail/suchanek-ready-for-fresh-start-after-turbulent-2025-26",
+      "fingerprint": "c0700f9a83ab64fe",
+      "title_norm": "suchanek ready for fresh start after turbulent 2025-26",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220672Z"
+    },
+    {
+      "key": "85cc49adfcfdeb98d1bd9d4b",
+      "url": "https://theahl.com/news/waiver-wire-opens-doors-for-new-opportunities",
+      "fingerprint": "1beddd4dea6d5353",
+      "title_norm": "waiver wire opens doors for new opportunities",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220694Z"
+    },
+    {
+      "key": "392b03959457601a3690b777",
+      "url": "https://theahl.com/news/opening-night-nhl-rosters-602-ahl-alumni",
+      "fingerprint": "216797bd2a8cd24a",
+      "title_norm": "opening-night nhl rosters include 602 ahl alumni",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220716Z"
+    },
+    {
+      "key": "2b3f2afdfb5649b6d39dd135",
+      "url": "https://theahl.com/news/bears-sign-petersen-to-ahl-contract",
+      "fingerprint": "73fa6d24e478a7a4",
+      "title_norm": "bears sign petersen to ahl contract",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220736Z"
+    },
+    {
+      "key": "5aaf1e2c84f5a162779bce24",
+      "url": "https://www.nhl.com/penguins/news/murashov-takes-another-step",
+      "fingerprint": "c3d792910c857d26",
+      "title_norm": "murashov takes another step with penguins",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220757Z"
+    },
+    {
+      "key": "ff95d1b5b45887a60b801676",
+      "url": "https://theahl.com/news/stevenson-claimed-by-jets",
+      "fingerprint": "13b812656ee4cad3",
+      "title_norm": "stevenson claimed by jets",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220776Z"
+    },
+    {
+      "key": "57621a76f63aee6a5ff00f56",
+      "url": "https://theahl.com/news/flyers-agree-to-terms-with-phantoms-captain-wilson",
+      "fingerprint": "d6f264ffb06c9da6",
+      "title_norm": "flyers agree to terms with phantoms captain wilson",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220797Z"
+    },
+    {
+      "key": "0bb4075d4d8a564f34acf55a",
+      "url": "https://theahl.com/news/devils-claim-poirier-off-waivers-from-stars",
+      "fingerprint": "aeefea41268102d8",
+      "title_norm": "devils claim poirier off waivers from stars",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220817Z"
+    },
+    {
+      "key": "90826c03abdda435c554c5cf",
+      "url": "https://www.dailyfaceoff.com/players/news/max-domi/2131",
+      "fingerprint": "91e3e36b9be17173",
+      "title_norm": "max domi (tor) — domi (lower-body) has been added to ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220846Z"
+    },
+    {
+      "key": "5ffdfe6f16edb5a07d3ed2c4",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-edmundson/2532",
+      "fingerprint": "c7e410ca0c74329d",
+      "title_norm": "joel edmundson (lak) — edmundson (undisclosed) will play in los angeles' season opener vs. colorado on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220880Z"
+    },
+    {
+      "key": "2dab88f751b87dd3fe21abef",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-duchene/341",
+      "fingerprint": "079ee21412b2ccc9",
+      "title_norm": "matt duchene (dal) — duchene (upper-body) is doubtful for dallas' season opener vs. st. louis on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220911Z"
+    },
+    {
+      "key": "d32754a64a28b6a11b21face",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
+      "fingerprint": "bdaba0cd31aba603",
+      "title_norm": "connor brown (njd) — brown (lower-body) will miss new jersey's first two games of the season.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220940Z"
+    },
+    {
+      "key": "2d940994475f17eb891d93bd",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "eb898a75166e1d02",
+      "title_norm": "andre burakovsky (ott) — burakovsky (upper-body) is not expected to play in ottawa's upcoming game this weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.220970Z"
+    },
+    {
+      "key": "84bdd74b51dd3825fcb0d66f",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "1d31d28270cd9d92",
+      "title_norm": "jake sanderson (ott) — sanderson (undisclosed) skated on wednesday and is hopeful to return on saturday vs. toronto.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221001Z"
+    },
+    {
+      "key": "45ab03eceac95e00c780c5b1",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
+      "fingerprint": "1c861388787286ad",
+      "title_norm": "mattias samuelsson (buf) — samuelsson (lower-body) has a chance to play in buffalo's season opener vs. columbus on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221032Z"
+    },
+    {
+      "key": "03d8b01daca0260bcd75d4e9",
+      "url": "https://www.dailyfaceoff.com/players/news/olen-zellweger/34623",
+      "fingerprint": "3a1e44d6063f0534",
+      "title_norm": "olen zellweger (buf) — zellweger (concussion) will be out for buffalo's season opener vs. columbus on thursday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221066Z"
+    },
+    {
+      "key": "d4c33102b902828acd47eba6",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "183a529aef731b7f",
+      "title_norm": "troy terry (ana) — terry (hip) has been placed to ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221091Z"
+    },
+    {
+      "key": "d5b87ad889e1291daee9e137",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-helleson/30429",
+      "fingerprint": "a568bde22bdacde0",
+      "title_norm": "drew helleson (ana) — helleson (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221116Z"
+    },
+    {
+      "key": "9966af86171970464b8adaea",
+      "url": "https://www.dailyfaceoff.com/players/news/andrew-mangiapane/4622",
+      "fingerprint": "cc0e29c2f60924ba",
+      "title_norm": "andrew mangiapane (chi) — mangiapane (lower-body) is not expected to play on the remainder of chicago's road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221172Z"
+    },
+    {
+      "key": "f4b198beb26fede7ab2b761e",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
+      "fingerprint": "1e63cf7122917c73",
+      "title_norm": "ivan demidov (mtl) — demidov (foot) will play in montreal's season opener.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221200Z"
+    },
+    {
+      "key": "3746f9c2b7fe5d679fd1ba8f",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
+      "fingerprint": "6da60f27e3a3e309",
+      "title_norm": "jake debrusk (van) — debrusk (lower-body) will play in the canucks season opener on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221228Z"
+    },
+    {
+      "key": "fa6ccf04c9376efe84d20983",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
+      "fingerprint": "05975ab4da8581d6",
+      "title_norm": "zachary l'heureux (col) — l'heureux (lower-body) will miss colorado's season opener vs. los angeles and is considere day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221260Z"
+    },
+    {
+      "key": "85385d4f5208b566700636d7",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
+      "fingerprint": "ac788c962516048e",
+      "title_norm": "logan o'connor (col) — o'connor (lower-body) will miss colorado's season opener vs. los angeles on wednesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221298Z"
+    },
+    {
+      "key": "d8aaabd44b2109e11c43360d",
+      "url": "",
+      "fingerprint": "07fd51fabaed7751",
+      "title_norm": "five young nhl players poised for breakouts",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221311Z"
+    },
+    {
+      "key": "24ffefc331d2240b0a2f971c",
+      "url": "",
+      "fingerprint": "078a0f52dca687c7",
+      "title_norm": "10 thoughts on maple leafs after opening night: new guys a mixed bag",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221325Z"
+    },
+    {
+      "key": "bcf97728d3e576083807e895",
+      "url": "",
+      "fingerprint": "5853a9e60198e0c3",
+      "title_norm": "sloppy oilers deliver 'unacceptable' performance in babcock's debut",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221339Z"
+    },
+    {
+      "key": "f2dae174b39546d3ad309b0b",
+      "url": "",
+      "fingerprint": "1ef6fd0b8fc5b0b3",
+      "title_norm": "islanders' schaefer pumped to open season in front of family in toronto",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221353Z"
+    },
+    {
+      "key": "ba9de125f9fb88ec15b21310",
+      "url": "",
+      "fingerprint": "e235cce6e9ad1255",
+      "title_norm": "how flames analyst kevin sawyer sparked the nastiest night in saddledome history",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221366Z"
+    },
+    {
+      "key": "3381d7df29e8f2e97b38fb5a",
+      "url": "",
+      "fingerprint": "6d07d53cb06259c9",
+      "title_norm": "maple leafs 'look like a new team' in emotional opening loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221380Z"
+    },
+    {
+      "key": "fa24c76107d5d7d484241a4f",
+      "url": "",
+      "fingerprint": "712dcae11624e517",
+      "title_norm": "maple leafs' anthony stolarz to start vs. islanders in second half of back-to-back",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221394Z"
+    },
+    {
+      "key": "45e014ff5c3e25b34214cfa5",
+      "url": "",
+      "fingerprint": "a3a3723b506540c0",
+      "title_norm": "flames announce leadership group for 2026-27",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221423Z"
+    },
+    {
+      "key": "473190d7e32b3b33aca4b637",
+      "url": "",
+      "fingerprint": "1f72380724bed331",
+      "title_norm": "senators' andre burakovsky not expected to play season opener",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221438Z"
+    },
+    {
+      "key": "86094b88137e4cf94a946ca8",
+      "url": "",
+      "fingerprint": "457e0e9d3bbb7847",
+      "title_norm": "avalanche, coach jared bednar agree to four-year contract extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-09-30T19:09:30.221450Z"
+    },
+    {
+      "key": "14e3503afe28b7e0eda71d18",
+      "url": "https://dobberprospects.com/2026/09/28/32-in-32-summer-series-winnipeg-jets-2",
+      "fingerprint": "2e152d79fb1800cc",
+      "title_norm": "32-in-32 summer series: winnipeg jets",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221474Z"
+    },
+    {
+      "key": "7a0096c6ccdf5ce82622cfe8",
+      "url": "https://dobberprospects.com/2026/09/25/32-in-32-summer-series-washington-capitals-2",
+      "fingerprint": "1ab9b8abc8108998",
+      "title_norm": "32-in-32 summer series: washington capitals",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221496Z"
+    },
+    {
+      "key": "7038404ca4f072e4d2ed144a",
+      "url": "https://dobberprospects.com/2026/09/23/32-in-32-summer-series-vegas-golden-knights-2",
+      "fingerprint": "b133227c558141d7",
+      "title_norm": "32-in-32 summer series: vegas golden knights",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221517Z"
+    },
+    {
+      "key": "c13c411449afe33a81bd238a",
+      "url": "https://dobberprospects.com/2026/09/20/32-in-32-summer-series-vancouver-canucks-2",
+      "fingerprint": "a006bb87c2ef8814",
+      "title_norm": "32-in-32 summer series: vancouver canucks",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221538Z"
+    },
+    {
+      "key": "273275421ab0488277741b16",
+      "url": "https://dobberprospects.com/2026/09/18/32-in-32-summer-series-utah-mammoth-2",
+      "fingerprint": "5f5e615fa3deac1d",
+      "title_norm": "32-in-32 summer series: utah mammoth",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221558Z"
+    },
+    {
+      "key": "491ae20593acb7cc157be278",
+      "url": "https://dobberprospects.com/2026/09/16/32-in-32-summer-series-toronto-maple-leafs-2",
+      "fingerprint": "bac955954bef5b64",
+      "title_norm": "32-in-32 summer series: toronto maple leafs",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221578Z"
+    },
+    {
+      "key": "f6d9a82f24c58bdb69408aab",
+      "url": "https://dobberprospects.com/2026/09/15/32-in-32-summer-series-tampa-bay-lightning-take-2",
+      "fingerprint": "2b42fadb5e89f50d",
+      "title_norm": "32-in-32 summer series: tampa bay lightning – take 2",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221602Z"
+    },
+    {
+      "key": "a835074ffc8afc901d11d03a",
+      "url": "https://dobberprospects.com/2026/09/14/32-in-32-summer-series-tampa-bay-lightning-take-1",
+      "fingerprint": "827731334c918def",
+      "title_norm": "32-in-32 summer series: tampa bay lightning – take 1",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221625Z"
+    },
+    {
+      "key": "ca538b1cc5ccabf20b3e529c",
+      "url": "https://thehockeywriters.com/every-nhl-team-most-underrated-prospect",
+      "fingerprint": "b0d81aa31afc3b58",
+      "title_norm": "every nhl team's most underrated prospect",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221644Z"
+    },
+    {
+      "key": "30acba55cab95a5b79935170",
+      "url": "https://thehockeywriters.com/5-western-conference-1st-round-picks-who-must-show-they-can-stick-in-the-nhl-in-2026-27",
+      "fingerprint": "038a83ac2c3ca5d7",
+      "title_norm": "5 western conference 1st round picks who must show they can stick in the nhl in 2026-27",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221669Z"
+    },
+    {
+      "key": "ba8294f5916d703cd7ffefe9",
+      "url": "https://thehockeywriters.com/jamie-glance-is-a-sleeper-top-prospect-for-the-2027-nhl-draft",
+      "fingerprint": "2ffa782b8a359184",
+      "title_norm": "jamie glance is a sleeper top prospect for the 2027 nhl draft",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221690Z"
+    },
+    {
+      "key": "7e15fc0f878b8795c2a55308",
+      "url": "https://thehockeywriters.com/every-nhl-teams-top-prospect",
+      "fingerprint": "ccec078ebd56990c",
+      "title_norm": "every nhl team's top prospect – 2026-27 preseason update",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221713Z"
+    },
+    {
+      "key": "bc7b95e9afbd90e091847313",
+      "url": "https://thehockeywriters.com/2027-nhl-draft-baracchinis-rankings-preseason-top-32",
+      "fingerprint": "a33e7da7792d4eb5",
+      "title_norm": "2027 nhl draft: baracchini's top 32 preseason rankings",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221733Z"
+    },
+    {
+      "key": "68749b4214b96d027a8dbab6",
+      "url": "https://thehockeywriters.com/5-eastern-conference-1st-round-picks-who-must-show-they-can-stick-in-the-nhl-in-2026-27",
+      "fingerprint": "df872eb4697080c6",
+      "title_norm": "5 eastern conference 1st round picks who must show they can stick in the nhl in 2026-27",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221756Z"
+    },
+    {
+      "key": "bd8949897eca35312f1be185",
+      "url": "https://thehockeywriters.com/the-top-10-goalie-prospects-in-the-nhl",
+      "fingerprint": "62541e3aedefb5ce",
+      "title_norm": "the top 10 nhl goalie prospects",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221774Z"
+    },
+    {
+      "key": "e42f88e1934f91c6e9a99422",
+      "url": "https://thehockeywriters.com/3-finnish-nhl-prospects-to-watch-at-the-2026-rookie-faceoff",
+      "fingerprint": "e30c3b668678ca33",
+      "title_norm": "3 finnish nhl prospects to watch at the 2026 rookie faceoff",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-09-30T19:09:30.221794Z"
+    }
+  ]
 }
