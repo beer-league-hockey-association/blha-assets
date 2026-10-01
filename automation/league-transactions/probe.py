@@ -32,6 +32,52 @@ def compact(value: Any, limit: int = 1800) -> str:
     return text if len(text) <= limit else text[:limit] + "...<truncated>"
 
 
+def iter_nodes(value: Any):
+    """Yield every nested JSON node so auth errors cannot hide in wrappers."""
+    yield value
+    if isinstance(value, dict):
+        for child in value.values():
+            yield from iter_nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from iter_nodes(child)
+
+
+def auth_error_detail(body: Any) -> str | None:
+    auth_codes = {
+        "WARNING_NOT_LOGGED_IN",
+        "NOT_LOGGED_IN",
+        "UNAUTHORIZED",
+        "NOT_AUTHORIZED",
+        "PERMISSION_DENIED",
+    }
+    auth_markers = (
+        "not logged in",
+        "login required",
+        "must be logged in",
+        "unauthorized",
+        "not authorized",
+        "access denied",
+        "permission denied",
+    )
+
+    for node in iter_nodes(body):
+        if isinstance(node, dict):
+            code = str(node.get("code") or "").strip().upper()
+            text = str(node.get("text") or node.get("message") or "").strip()
+            if code in auth_codes:
+                return f"{code}: {text or 'authentication required'}"
+            lowered = text.lower()
+            if text and any(marker in lowered for marker in auth_markers):
+                return text
+        elif isinstance(node, str):
+            lowered = node.lower()
+            if any(marker in lowered for marker in auth_markers):
+                return node[:500]
+
+    return None
+
+
 def request_history(
     session: requests.Session,
     league_id: str,
@@ -78,17 +124,9 @@ def request_history(
             return "AUTH_REQUIRED", "received HTML instead of JSON", None
         return "UNKNOWN", f"HTTP 200 non-JSON body={preview!r}", None
 
-    lowered = compact(body, 4000).lower()
-    auth_markers = (
-        "not logged in",
-        "login required",
-        "unauthorized",
-        "not authorized",
-        "access denied",
-        "permission denied",
-    )
-    if any(marker in lowered for marker in auth_markers):
-        return "AUTH_REQUIRED", describe(body), body
+    auth_detail = auth_error_detail(body)
+    if auth_detail:
+        return "AUTH_REQUIRED", auth_detail, body
 
     return "PASS", describe(body), body
 
@@ -175,7 +213,7 @@ def main() -> int:
     elif passes:
         print("RESULT: transaction history is partially readable; inspect per-view results before building ingestion.")
     elif any(status == "AUTH_REQUIRED" for status in results):
-        print("RESULT: transaction history appears authentication-gated. Do not add credentials yet; review the probe output first.")
+        print("RESULT: transaction history is authentication-gated. Do not add credentials yet; review the authentication options before building ingestion.")
     else:
         print("RESULT: transaction-history probe was inconclusive; inspect the request results above.")
 
