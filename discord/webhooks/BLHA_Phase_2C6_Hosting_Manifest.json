@@ -1,16 +1,17 @@
 {
-  "phase": "2C.6",
-  "header_dimensions": "1600x420",
-  "footer_dimensions": "1600x90",
+  "phase": "2C.6-v2",
+  "header_dimensions": "1600x300",
+  "footer_dimensions": "1600x120 (legacy filename retained for stable URLs)",
   "palette": {
     "charcoal": "#2B2D31",
     "gold": "#FFB81C",
     "cream": "#F4EFE4"
   },
   "design": {
+    "discord_optimized": true,
     "right_circle": "fully inset; never clipped",
     "wordmark": "white BLHA lettering with black keyline and gold outer edge; no white card",
-    "footer": "cream/gold/cream rink-line divider with centered gold ring"
+    "footer": "fuller cream/gold/cream rink-line divider with centered gold ring"
   },
   "stable_urls": {
     "welcome": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/welcome/blha-welcome-banner.png",
