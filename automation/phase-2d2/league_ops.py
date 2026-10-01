@@ -63,13 +63,19 @@ def parse_offset(value: str) -> timedelta:
     raise ValueError(f"unsupported reminder offset: {value}")
 
 
-def parse_event_time(raw: str | None) -> datetime | None:
+def parse_event_time(raw: str | None, local_tz: ZoneInfo) -> datetime | None:
+    """Parse event time; naive ISO values are interpreted in the configured zone.
+
+    This lets events.yaml use local wall-clock times such as
+    `2027-01-15T20:00:00` without manually choosing -05:00 vs -04:00.
+    Explicit offsets and Z timestamps remain supported.
+    """
     if not raw:
         return None
     dt = datetime.fromisoformat(str(raw).replace("Z", "+00:00"))
     if dt.tzinfo is None:
-        raise ValueError("starts_at must include a UTC offset")
-    return dt
+        dt = dt.replace(tzinfo=local_tz)
+    return dt.astimezone(local_tz)
 
 
 def reminder_label(offset: str) -> str:
@@ -149,7 +155,7 @@ def run(mode: str, reset_state: bool = False) -> int:
             skipped += 1
             continue
         try:
-            starts_at = parse_event_time(event.get("starts_at"))
+            starts_at = parse_event_time(event.get("starts_at"), tz)
         except Exception as exc:
             print(f"CONFIG ERROR [{event.get('id','unknown')}]: {exc}")
             errors += 1
@@ -159,7 +165,6 @@ def run(mode: str, reset_state: bool = False) -> int:
             skipped += 1
             continue
 
-        starts_at = starts_at.astimezone(tz)
         reminders = event.get("reminders") or defaults
         calendar_channel = event.get("channel", config.get("settings", {}).get("default_channel", "league-calendar"))
         announcement_reminders = set(event.get("announcement_reminders", []))
