@@ -23,12 +23,13 @@ For the six-team Fantrax H2H format:
 - Round 1: Seed 3 vs Seed 6
 - Round 1: Seed 4 vs Seed 5
 - Seeds 1 and 2 receive byes
-- Round 2: Seed 1 vs the lowest-numbered remaining seed
-- Round 2: Seed 2 vs the highest-numbered remaining seed
+- Round 2 reseeds: Seed 1 faces the lowest-ranked remaining team, meaning the surviving team with the largest seed number
+- Round 2 reseeds: Seed 2 faces the highest-ranked remaining team, meaning the surviving team with the smallest seed number
+- Example: if Seeds 3 and 6 advance, the semifinals are Seed 1 vs Seed 6 and Seed 2 vs Seed 3
 - Round 3: Championship
 - A tied playoff matchup is awarded to the higher seed
 
-The final regular-season seed baseline is preserved in state/playoff.json so playoff results cannot accidentally change the original seeding.
+The final regular-season seed baseline is preserved in `state/playoff.json` so playoff results cannot accidentally change the original seeding.
 
 ## Architecture
 
@@ -37,6 +38,8 @@ The final regular-season seed baseline is preserved in state/playoff.json so pla
 - Fantrax = authoritative read-only league data
 - Discord bot = deferred to the later interactive phase
 
+Discord delivery uses the shared retry helper in `automation/discord_webhook.py`, which handles transient network failures, Discord rate limits, and common temporary HTTP failures with bounded retries.
+
 ## Modes
 
 - preview — render the current bracket payload; no Discord delivery or state change
@@ -44,7 +47,9 @@ The final regular-season seed baseline is preserved in state/playoff.json so pla
 - baseline — record final regular-season seeds once the regular season is complete
 - live — post only when the bracket/scores materially change
 
-The workflow runs hourly at minute 7. Outside the playoff window it performs the read-only check without posting.
+The live fingerprint ignores the embed render timestamp, so repeated checks of an unchanged bracket do not create duplicate Discord posts.
+
+The workflow checks every six hours at minute 7. Outside the playoff window it performs the read-only check without posting.
 
 ## Rollout
 
@@ -59,6 +64,8 @@ The workflow runs hourly at minute 7. Outside the playoff window it performs the
 
 Use the approved BLHA competition format:
 
+- `BLHA Competition Desk` sender identity
+- gold Competition Desk accent
 - no decorative emoji
 - no ASCII tables
 - clean readable team/matchup blocks
