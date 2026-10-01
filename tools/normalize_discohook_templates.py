@@ -9,6 +9,8 @@ Rules:
 - Existing message text, fields, semantic colors, and footers are preserved.
 - The shared footer image is attached to the final content embed. If that embed
   already uses a different image, a dedicated valid footer embed is appended.
+- The frozen footer URL carries a version query so Discord cannot keep serving
+  an older cached opaque divider after the asset itself is replaced.
 """
 
 from __future__ import annotations
@@ -20,7 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES = ROOT / "templates"
 
 BASE = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/"
-FOOTER_URL = BASE + "shared/blha-footer-divider-1600x90.png"
+FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
+FOOTER_URL = FOOTER_BASE_URL + "?v=2c6-frozen"
 HEADER_COLOR = int("2B2D31", 16)
 ZWSP = "\u200b"
 
@@ -64,24 +67,23 @@ def is_banner_like(embed: dict) -> bool:
     )
 
 
+def is_footer_url(value: str) -> bool:
+    return str(value or "").startswith(FOOTER_BASE_URL)
+
+
 def ensure_footer(embeds: list[dict]) -> None:
     if not embeds:
         embeds.append({"color": HEADER_COLOR, "footer": {"text": ZWSP}, "image": {"url": FOOTER_URL}})
         return
 
-    # Never attach the divider to the banner itself if a content embed follows.
-    target_index = len(embeds) - 1
-    target = embeds[target_index]
+    target = embeds[-1]
     image = target.get("image") if isinstance(target, dict) else None
     current_url = str(image.get("url") or "") if isinstance(image, dict) else ""
 
-    if not current_url or current_url == FOOTER_URL:
+    if not current_url or is_footer_url(current_url):
         target["image"] = {"url": FOOTER_URL}
         return
 
-    # Preserve an intentional content image by appending a dedicated, valid
-    # footer embed. The invisible footer marker prevents Discohook's empty-embed
-    # warning without adding a description line above the divider.
     embeds.append(
         {
             "color": HEADER_COLOR,
@@ -142,7 +144,7 @@ def verify_file(path: Path) -> None:
         for embed in embeds
     )
     if not footer_found:
-        raise AssertionError(f"{path}: footer divider missing")
+        raise AssertionError(f"{path}: frozen footer divider missing")
 
 
 def main() -> None:
