@@ -3,19 +3,23 @@
 
 Adds production-noise filters around the core health monitor:
 - first-schedule startup grace for newly created workflows;
-- repeated-run confirmation before a Wire flood-guard event becomes an alert.
+- repeated-run confirmation before a Wire flood-guard event becomes an alert;
+- automatic suppression of League Office schedule alerts while every event is disabled.
 """
 
 from __future__ import annotations
 
 import os
 import sys
+from pathlib import Path
 from typing import Any
 
 import health as core
 
 
 _original_collect_issues = core.collect_issues
+ROOT = Path(__file__).resolve().parents[1]
+LEAGUE_OFFICE_EVENTS = ROOT / "phase-2d2" / "events.yaml"
 
 
 def github_session() -> tuple[Any, str, str] | None:
@@ -91,13 +95,7 @@ def apply_wire_rate_guard_confirmation(
     issues: dict[str, dict[str, Any]],
     connection: tuple[Any, str, str] | None,
 ) -> None:
-    """Suppress a one-off Wire rate-guard event.
-
-    The Wire flood guard is itself a healthy safety mechanism. A single busy
-    15-minute news window should not page the commissioner. Keep the alert only
-    when RATE-GUARD SUPPRESSED appears in the configured number of consecutive
-    scheduled Wire runs.
-    """
+    """Suppress a one-off Wire rate-guard event."""
     if "wire-rate-guard" not in issues or connection is None:
         return
 
@@ -171,6 +169,33 @@ def apply_wire_rate_guard_confirmation(
         )
 
 
+def apply_dormant_league_office(issues: dict[str, dict[str, Any]]) -> None:
+    """Do not page on League Office scheduling while every event is disabled.
+
+    Monitoring automatically resumes as soon as any event in events.yaml is enabled.
+    """
+    try:
+        config = core.yaml.safe_load(LEAGUE_OFFICE_EVENTS.read_text(encoding="utf-8")) or {}
+    except Exception as exc:
+        print(f"LEAGUE-OFFICE DORMANCY WARNING: could not read events config: {exc}")
+        return
+
+    events = [item for item in (config.get("events") or []) if isinstance(item, dict)]
+    if any(bool(item.get("enabled")) for item in events):
+        return
+
+    removed = 0
+    for key in list(issues):
+        data = issues.get(key) or {}
+        if key.endswith(":league-office") or data.get("workflow") == "BLHA League Office Automation":
+            issues.pop(key, None)
+            removed += 1
+    print(
+        "LEAGUE OFFICE DORMANT: all configured events are disabled; "
+        f"suppressed {removed} health issue(s). Monitoring resumes automatically when an event is enabled."
+    )
+
+
 def collect_issues_with_safety_filters(
     cfg: dict[str, Any],
 ) -> dict[str, dict[str, Any]]:
@@ -178,6 +203,7 @@ def collect_issues_with_safety_filters(
     connection = github_session()
     apply_startup_grace(cfg, issues, connection)
     apply_wire_rate_guard_confirmation(cfg, issues, connection)
+    apply_dormant_league_office(issues)
     return issues
 
 
