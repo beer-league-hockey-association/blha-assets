@@ -8,6 +8,7 @@ import unittest
 import engine
 import roster_enrichment
 import wire
+import run_wire  # noqa: F401 - applies production routing/enrichment adapters
 
 
 class WireRoutingTests(unittest.TestCase):
