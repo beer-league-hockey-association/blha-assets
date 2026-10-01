@@ -7,7 +7,7 @@ BLHA fantasy-team ownership to injury candidates by normalized player name.
 
 Fantrax's getPlayerIds wire shape is slightly unusual: the root object itself is
 commonly keyed by the ID used by rosterItems, while each value may also contain
-a separate ``fantraxId``.  Keep every available ID as an alias for the same
+a separate ``fantraxId``. Keep every available ID as an alias for the same
 player name so roster joins do not depend on one undocumented ID flavor.
 """
 
@@ -57,6 +57,41 @@ def _player_container(payload: Any) -> Any:
     return payload
 
 
+def _roster_container(payload: Any) -> Any:
+    """Return the team-roster collection from known getTeamRosters shapes."""
+    if not isinstance(payload, dict):
+        return None
+    if "rosters" in payload:
+        return payload["rosters"]
+    if "teams" in payload:
+        return payload["teams"]
+    data = payload.get("data")
+    if isinstance(data, dict):
+        if "rosters" in data:
+            return data["rosters"]
+        if "teams" in data:
+            return data["teams"]
+    return None
+
+
+def _iter_roster_teams(payload: Any):
+    """Yield (team_id, team_object) for object- or array-shaped roster data."""
+    roster_block = _roster_container(payload)
+    if isinstance(roster_block, dict):
+        yield from roster_block.items()
+    elif isinstance(roster_block, list):
+        for raw_team in roster_block:
+            if not isinstance(raw_team, dict):
+                continue
+            team_id = str(
+                raw_team.get("teamId")
+                or raw_team.get("team_id")
+                or raw_team.get("id")
+                or ""
+            ).strip()
+            yield team_id, raw_team
+
+
 def player_name_index(payload: Any) -> dict[str, str]:
     """Return every known Fantrax player-ID alias -> player name."""
     index: dict[str, str] = {}
@@ -101,26 +136,23 @@ def player_name_index(payload: Any) -> dict[str, str]:
     return index
 
 
+def _team_items(raw_team: Any) -> list:
+    if not isinstance(raw_team, dict):
+        return []
+    items = raw_team.get("rosterItems")
+    if isinstance(items, list):
+        return items
+    for key in ("players", "roster", "rows"):
+        candidate = raw_team.get(key)
+        if isinstance(candidate, list):
+            return candidate
+    return []
+
+
 def _roster_player_ids(rosters: Any) -> set[str]:
     ids: set[str] = set()
-    if not isinstance(rosters, dict):
-        return ids
-    roster_block = rosters.get("rosters")
-    if not isinstance(roster_block, dict):
-        return ids
-    for raw_team in roster_block.values():
-        if not isinstance(raw_team, dict):
-            continue
-        items = raw_team.get("rosterItems")
-        if not isinstance(items, list):
-            for key in ("players", "roster", "rows"):
-                candidate = raw_team.get(key)
-                if isinstance(candidate, list):
-                    items = candidate
-                    break
-        if not isinstance(items, list):
-            continue
-        for row in items:
+    for _team_id, raw_team in _iter_roster_teams(rosters):
+        for row in _team_items(raw_team):
             if not isinstance(row, dict):
                 continue
             player_id = str(
@@ -137,20 +169,15 @@ def _roster_player_ids(rosters: Any) -> set[str]:
 
 def ownership_from_payloads(rosters: Any, players: Any) -> dict[str, str]:
     """Build normalized player name -> BLHA team name from Fantrax payloads."""
-    if not isinstance(rosters, dict):
-        return {}
-    roster_block = rosters.get("rosters")
-    if not isinstance(roster_block, dict):
-        return {}
-
     names_by_id = player_name_index(players)
     ownership: dict[str, str] = {}
 
-    for team_id, raw_team in roster_block.items():
+    for team_id, raw_team in _iter_roster_teams(rosters):
         if not isinstance(raw_team, dict):
             continue
         owner = str(
             raw_team.get("teamName")
+            or raw_team.get("team_name")
             or raw_team.get("name")
             or team_id
             or ""
@@ -158,19 +185,7 @@ def ownership_from_payloads(rosters: Any, players: Any) -> dict[str, str]:
         if not owner:
             continue
 
-        items = raw_team.get("rosterItems")
-        if not isinstance(items, list):
-            # Tolerate older/alternate payload shapes without making them the
-            # primary assumption.
-            for key in ("players", "roster", "rows"):
-                candidate = raw_team.get(key)
-                if isinstance(candidate, list):
-                    items = candidate
-                    break
-        if not isinstance(items, list):
-            continue
-
-        for row in items:
+        for row in _team_items(raw_team):
             if not isinstance(row, dict):
                 continue
             player_id = str(
@@ -193,22 +208,26 @@ def ownership_from_payloads(rosters: Any, players: Any) -> dict[str, str]:
     return ownership
 
 
-def fantrax_ownership(league_id: str) -> dict[str, str]:
+def fantrax_ownership(league_id: str, period: str = "current") -> dict[str, str]:
     if not league_id:
         return {}
+
+    period = str(period or "current").strip() or "current"
 
     session = requests.Session()
     session.headers.update(
         {
-            "User-Agent": "BLHA-Wire-Fantrax-Enrichment/1.2",
+            "User-Agent": "BLHA-Wire-Fantrax-Enrichment/1.3",
             "Accept": "application/json,text/plain,*/*",
         }
     )
 
     try:
+        # Fantrax expects a scoring period for getTeamRosters. "current" keeps
+        # this automatic as the NHL season advances instead of hard-coding 1.
         roster_response = session.get(
             f"{FANTRAX_BASE}/getTeamRosters",
-            params={"leagueId": league_id},
+            params={"leagueId": league_id, "period": period},
             timeout=20,
         )
         roster_response.raise_for_status()
@@ -227,20 +246,26 @@ def fantrax_ownership(league_id: str) -> dict[str, str]:
 
     ownership = ownership_from_payloads(rosters, players)
     if not ownership:
-        roster_type = type(rosters.get("rosters") if isinstance(rosters, dict) else None).__name__
+        roster_block = _roster_container(rosters)
+        roster_type = type(roster_block).__name__
+        roster_teams = len(roster_block) if isinstance(roster_block, (dict, list)) else 0
         roster_ids = _roster_player_ids(rosters)
         player_index = player_name_index(players)
         overlap = len(roster_ids.intersection(player_index))
-        raw_player_count = len(_player_container(players)) if isinstance(_player_container(players), (dict, list)) else 0
+        player_container = _player_container(players)
+        raw_player_count = len(player_container) if isinstance(player_container, (dict, list)) else 0
         print(
             "ROSTER ENRICHMENT WARNING: 0 rostered player names resolved "
-            f"(rosters_type={roster_type}, roster_ids={len(roster_ids)}, "
-            f"player_records={raw_player_count}, player_id_aliases={len(player_index)}, "
-            f"id_overlap={overlap})"
+            f"(period={period}, rosters_type={roster_type}, roster_teams={roster_teams}, "
+            f"roster_ids={len(roster_ids)}, player_records={raw_player_count}, "
+            f"player_id_aliases={len(player_index)}, id_overlap={overlap})"
         )
         return {}
 
-    print(f"ROSTER ENRICHMENT: loaded {len(ownership)} rostered player names")
+    print(
+        f"ROSTER ENRICHMENT: loaded {len(ownership)} rostered player names "
+        f"for period={period}"
+    )
     return ownership
 
 
@@ -257,7 +282,10 @@ def enrich_injury_ownership(candidates: list[dict], config: dict) -> None:
     if not injuries:
         return
 
-    ownership = fantrax_ownership(str(fantrax_cfg.get("league_id") or "").strip())
+    ownership = fantrax_ownership(
+        str(fantrax_cfg.get("league_id") or "").strip(),
+        str(fantrax_cfg.get("period") or "current").strip(),
+    )
     if not ownership:
         return
 
