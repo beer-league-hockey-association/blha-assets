@@ -2,7 +2,8 @@ name: BLHA Fantrax Matchup Preview
 
 on:
   schedule:
-    - cron: "13 * * * *"
+    # Four checks per day are plenty for a once-per-scoring-period preview.
+    - cron: "13 */6 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -10,10 +11,7 @@ on:
         required: true
         default: preview
         type: choice
-        options:
-          - preview
-          - test
-          - live
+        options: [preview, test, live]
       period:
         description: "Optional scoring period override for preview/test"
         required: false
@@ -36,54 +34,50 @@ jobs:
   matchup-preview:
     runs-on: ubuntu-latest
     timeout-minutes: 8
+    env:
+      INPUT_MODE: ${{ inputs.mode }}
+      INPUT_PERIOD: ${{ inputs.period }}
+      INPUT_FORCE: ${{ inputs.force }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
 
       - name: Install dependencies
-        run: pip install requests==2.32.5 PyYAML==6.0.2
+        run: pip install -r automation/common-requirements.txt
 
       - name: Run Fantrax matchup preview
         env:
           BLHA_WEBHOOK_SCOREBOARD: ${{ secrets.BLHA_WEBHOOK_SCOREBOARD }}
         shell: bash
         run: |
-          PERIOD_ARG=""
-          if [[ -n "${{ inputs.period }}" ]]; then
-            PERIOD_ARG="--period ${{ inputs.period }}"
-          fi
-
-          FORCE=""
-          if [[ "${{ inputs.force }}" == "true" ]]; then
-            FORCE="--force"
-          fi
-
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
             python automation/matchup-preview/matchup_preview.py --mode live
-          else
-            python automation/matchup-preview/matchup_preview.py --mode "${{ inputs.mode }}" $PERIOD_ARG $FORCE
+            exit $?
           fi
+
+          ARGS=(--mode "$INPUT_MODE")
+          if [[ -n "$INPUT_PERIOD" ]]; then
+            ARGS+=(--period "$INPUT_PERIOD")
+          fi
+          if [[ "$INPUT_FORCE" == "true" ]]; then
+            ARGS+=(--force)
+          fi
+          python automation/matchup-preview/matchup_preview.py "${ARGS[@]}"
 
       - name: Persist matchup preview state
         if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
         shell: bash
         run: |
-          STATE="automation/matchup-preview/state/matchup_preview.json"
-          if git diff --quiet -- "$STATE"; then
-            echo "No matchup preview state change."
-            exit 0
-          fi
-
-          git config user.name "BLHA Fantrax Automation"
-          git config user.email "actions@users.noreply.github.com"
-          git add "$STATE"
-          git commit -m "chore(fantrax): persist matchup preview state [skip ci]"
-          git pull --rebase
-          git push
+          bash automation/tools/persist_state.sh \
+            automation/matchup-preview/state/matchup_preview.json \
+            "chore(fantrax): persist matchup preview state [skip ci]" \
+            "BLHA Fantrax Automation"
