@@ -16,18 +16,20 @@ workflows:
   - id: wire-engine
     name: "BLHA Wire Engine"
     file: "blha-wire-engine.yml"
-    max_age_minutes: 75
+    # GitHub cron is best-effort; alert after several missed 15-minute slots,
+    # not after a single delayed event.
+    max_age_minutes: 120
     inspect_wire_logs: true
 
   - id: league-office
     name: "BLHA League Office Automation"
     file: "blha-league-office.yml"
-    max_age_minutes: 150
+    max_age_minutes: 180
 
   - id: matchup-preview
     name: "BLHA Fantrax Matchup Preview"
     file: "blha-fantrax-matchup-preview.yml"
-    max_age_minutes: 180
+    max_age_minutes: 600
 
   - id: scoreboard
     name: "BLHA Fantrax Scoreboard"
@@ -52,4 +54,4 @@ workflows:
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"
-    max_age_minutes: 180
+    max_age_minutes: 600
