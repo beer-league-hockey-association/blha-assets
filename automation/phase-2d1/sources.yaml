@@ -1,3 +1,7 @@
+fantrax:
+  league_id: w02cjakmmumb3lur
+  roster_enrichment: true
+
 sources:
   # PRIMARY NHL NEWS
   - id: nhl_latest
@@ -49,10 +53,10 @@ sources:
     dedupe_by_url: false
     max_items: 15
     role: primary-fantasy-injury-feed
-    note: Dedicated injury page. Event identity uses player + update + timestamp, not the shared page/player URL.
+    note: Dedicated injury page. Event identity uses player + update + timestamp, not the shared page/player URL. Wire posts tag the owning BLHA team when an exact normalized Fantrax roster match exists.
 
   # TRANSACTIONS / ROSTER MOVEMENT
-  # PuckPedia native Discord integration is the preferred live transaction source.
+  # PuckPedia native Discord integration is the active live transaction source.
   # Elite Prospects feeds remain discovery/cross-check only.
   - id: eliteprospects_nhl_transactions
     name: Elite Prospects NHL Transactions
@@ -196,13 +200,13 @@ sources:
     enabled: false
     note: Disabled after repeated empty feed results on 2026-09-30.
 
-planned_integrations:
+integrations:
   - id: puckpedia_discord
     name: PuckPedia Discord Integration
     type: native-discord-webhook
     target: nhl-transactions
-    status: recommended
-    note: Preferred live source for NHL trades, signings, and waiver activity.
+    status: active
+    note: Primary live source for NHL trades, signings, waivers, and roster movement. The Wire suppresses true transaction-event posts to avoid duplicates.
 
 planned_sources:
   - id: hockey_news_latest
