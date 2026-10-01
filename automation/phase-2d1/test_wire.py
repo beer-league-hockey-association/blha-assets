@@ -46,6 +46,12 @@ class WireFormattingTests(unittest.TestCase):
             engine.normalize_player_name("Jose Example"),
         )
 
+    def test_fantrax_last_first_name_normalization(self) -> None:
+        self.assertEqual(
+            roster_enrichment.normalize_player_name("Larkin, Dylan"),
+            roster_enrichment.normalize_player_name("Dylan Larkin"),
+        )
+
 
 class FantraxRosterEnrichmentTests(unittest.TestCase):
     def test_roster_items_resolve_through_player_ids(self) -> None:
@@ -55,15 +61,17 @@ class FantraxRosterEnrichmentTests(unittest.TestCase):
                 "team-a": {
                     "teamName": "Test 3",
                     "rosterItems": [
-                        {"id": "player-1", "position": "C", "status": "ACTIVE"},
-                        {"id": "player-2", "position": "D", "status": "RESERVE"},
+                        {"id": "wire-key-1", "position": "C", "status": "ACTIVE"},
+                        {"id": "wire-key-2", "position": "D", "status": "RESERVE"},
                     ],
                 }
             },
         }
+        # Live getPlayerIds commonly uses the roster ID as the root key while
+        # the nested fantraxId is a different alias. Both must resolve.
         players = {
-            "player-1": {"fantraxId": "player-1", "name": "José Example Jr."},
-            "player-2": {"fantraxId": "player-2", "name": "Second Player"},
+            "wire-key-1": {"fantraxId": "alternate-1", "name": "Example, José Jr."},
+            "wire-key-2": {"fantraxId": "alternate-2", "name": "Second, Player"},
         }
         ownership = roster_enrichment.ownership_from_payloads(rosters, players)
         self.assertEqual(
@@ -71,9 +79,16 @@ class FantraxRosterEnrichmentTests(unittest.TestCase):
             "Test 3",
         )
         self.assertEqual(
-            ownership[roster_enrichment.normalize_player_name("Second Player")],
+            ownership[roster_enrichment.normalize_player_name("Player Second")],
             "Test 3",
         )
+
+    def test_nested_fantrax_id_is_also_an_alias(self) -> None:
+        index = roster_enrichment.player_name_index(
+            {"wire-key": {"fantraxId": "nested-id", "name": "Larkin, Dylan"}}
+        )
+        self.assertEqual(index["wire-key"], "Larkin, Dylan")
+        self.assertEqual(index["nested-id"], "Larkin, Dylan")
 
 
 if __name__ == "__main__":
