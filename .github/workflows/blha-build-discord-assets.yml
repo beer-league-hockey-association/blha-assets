@@ -1,0 +1,75 @@
+name: BLHA Build Discord Assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/build_discord_assets.py'
+      - '.github/workflows/blha-build-discord-assets.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-build-discord-assets
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install Pillow
+        run: python -m pip install --upgrade pillow
+
+      - name: Build unified Discohook assets
+        run: python tools/build_discord_assets.py
+
+      - name: Verify required assets
+        run: |
+          test -s discord/webhooks/welcome/blha-welcome-banner.png
+          test -s discord/webhooks/league-office/blha-constitution-header.png
+          test -s discord/webhooks/league-office/blha-announcements-header.png
+          test -s discord/webhooks/league-office/blha-calendar-header.png
+          test -s discord/webhooks/league-office/blha-ledger-header.png
+          test -s discord/webhooks/league-office/blha-voting-header.png
+          test -s discord/webhooks/draft-center/blha-draft-center-header.png
+          test -s discord/webhooks/shared/blha-generic-header-1600x420.png
+          test -s discord/webhooks/shared/blha-footer-divider-1600x90.png
+          test -s discord/webhooks/shared/blha-banner-wordmark.png
+
+      - name: Publish generated hosting package
+        shell: bash
+        run: |
+          if git diff --quiet -- \
+            BLHA_URL_MAP.txt \
+            discord/webhooks; then
+            echo 'No hosted asset changes to publish.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add BLHA_URL_MAP.txt discord/webhooks
+          git commit -m 'assets(discord): publish unified Phase 2C.6 hosting package'
+
+          for attempt in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Publish attempt ${attempt} failed; retrying..."
+            sleep $((attempt * 3))
+          done
+
+          echo 'Unable to publish generated Discord assets after retries.' >&2
+          exit 1
