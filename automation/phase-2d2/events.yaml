@@ -14,15 +14,16 @@ channels:
   league-calendar:
     secret: BLHA_WEBHOOK_LEAGUE_CALENDAR
     color: 0xC68F15
-    label: "📅 LEAGUE CALENDAR"
+    label: "LEAGUE CALENDAR"
   league-announcements:
     secret: BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS
     color: 0xD4AF37
-    label: "📢 LEAGUE ANNOUNCEMENT"
+    label: "LEAGUE ANNOUNCEMENT"
 
 # Keep events disabled until their actual BLHA dates are finalized.
-# starts_at must be ISO-8601 with an explicit offset, for example:
-# 2027-09-20T20:00:00-04:00
+# starts_at may be entered as local New York wall-clock time without an offset,
+# for example: 2027-01-15T20:00:00. The automation applies America/New_York
+# and therefore handles EST/EDT automatically. Explicit offsets remain valid.
 #
 # announcement_reminders duplicates only the specified reminders into
 # league-announcements for high-priority league deadlines/milestones.
