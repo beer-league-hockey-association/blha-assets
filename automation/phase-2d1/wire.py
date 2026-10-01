@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import re
 import sys
+import time
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -20,7 +21,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
-USER_AGENT = "BLHA-The-Wire/0.7 (+https://github.com/diseasewheeze/blha-assets)"
+USER_AGENT = "BLHA-The-Wire/0.8 (+https://github.com/diseasewheeze/blha-assets)"
 
 BREAKING = (
     "out indefinitely", "season-ending", "out for the season", "suspended indefinitely",
@@ -33,10 +34,26 @@ INJURY = (
     "status report:", "not expected to play", "will not play", "will miss",
     "expected to miss", "ruled out", "not available", "unavailable",
 )
-TRANSACTION = (
-    "traded", "trade", "acquired", "signed", "signs", "re-signs", "re-signed",
-    "contract", "extension", "waived", "waivers", "claimed", "recalled", "call-up",
-    "assigned", "reassigned", "loaned", "agrees to", "agreed to",
+# Use action-oriented patterns instead of broad nouns such as "trade" or
+# "contract" so analysis headlines about a transaction remain NHL News.
+TRANSACTION_EVENT_PATTERNS = (
+    r"\btraded\b",
+    r"\btrades?\b.+\bto\b",
+    r"\bacquire[sd]?\b",
+    r"\bsign(?:s|ed)?\b",
+    r"\bre-sign(?:s|ed)?\b",
+    r"\bwaived?\b",
+    r"\bwaivers\b",
+    r"\bclaimed\b",
+    r"\brecalled\b",
+    r"\bcall-up\b",
+    r"\bassigned\b",
+    r"\breassigned\b",
+    r"\bloaned\b",
+    r"\bagrees? to\b",
+    r"\bagreed to\b",
+    r"\bcontract extension\b",
+    r"\bextends?\b.+\bcontract\b",
 )
 PROSPECT = (
     "prospect", "rookie", "ahl", "ncaa", "college hockey", "chl", "ohl", "whl",
@@ -100,12 +117,17 @@ def contains_any(text: str, terms: tuple[str, ...]) -> bool:
     return any(term_matches(hay, term) for term in terms)
 
 
+def is_transaction_event(title: str) -> bool:
+    text = normalize(title)
+    return any(re.search(pattern, text, re.I) for pattern in TRANSACTION_EVENT_PATTERNS)
+
+
 def classify_title(title: str, breaking_allowed: bool) -> str:
     if breaking_allowed and contains_any(title, BREAKING):
         return "breaking-news"
     if contains_any(title, INJURY):
         return "injury-report"
-    if contains_any(title, TRANSACTION):
+    if is_transaction_event(title):
         return "nhl-transactions"
     if contains_any(title, PROSPECT):
         return "prospect-wire"
@@ -136,9 +158,28 @@ def should_ignore(title: str, source_id: str, target: str) -> bool:
 
 
 def get(url: str) -> requests.Response:
-    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=25)
-    response.raise_for_status()
-    return response
+    last_error: Exception | None = None
+    for attempt in range(2):
+        try:
+            response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=20)
+            if response.status_code == 429 or 500 <= response.status_code <= 599:
+                if attempt == 0:
+                    retry_after = response.headers.get("Retry-After", "")
+                    try:
+                        delay = min(max(float(retry_after), 1.0), 5.0)
+                    except ValueError:
+                        delay = 2.0
+                    time.sleep(delay)
+                    continue
+            response.raise_for_status()
+            return response
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt == 0:
+                time.sleep(1.5)
+                continue
+            raise
+    raise RuntimeError(f"request failed: {last_error}")
 
 
 def fetch_rss(url: str) -> list[dict[str, str]]:
@@ -236,9 +277,6 @@ def _extract_dfo_card(anchor: Tag, page_url: str) -> dict[str, str] | None:
         player, position = player_match.groups()
         position = position.upper()
 
-    # Daily Faceoff currently includes a long-form position label inside the
-    # player link, e.g. `Joel Edmundson (Defenseman) (D)`. Remove the verbose
-    # label so Discord displays a normal player name.
     player = DFO_LONG_POSITION.sub("", player).strip()
 
     lines = _dfo_lines_after_anchor(anchor)
