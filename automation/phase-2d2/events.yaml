@@ -1,6 +1,7 @@
 settings:
   timezone: America/New_York
   default_channel: league-calendar
+  catchup_window_hours: 24
   default_reminders:
     - 14d
     - 7d
@@ -24,6 +25,10 @@ channels:
 # starts_at may be entered as local New York wall-clock time without an offset,
 # for example: 2027-01-15T20:00:00. The automation applies America/New_York
 # and therefore handles EST/EDT automatically. Explicit offsets remain valid.
+#
+# catchup_window_hours allows a reminder that GitHub started late to be posted
+# after its trigger. Reminders never post before their trigger and each
+# event/reminder/channel combination remains protected by persistent state.
 #
 # announcement_reminders duplicates only the specified reminders into
 # league-announcements for high-priority league deadlines/milestones.
