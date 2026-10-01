@@ -61,6 +61,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r automation/phase-2d1/requirements.txt
 
+      - name: Run Wire regression checks
+        run: python automation/phase-2d1/test_wire.py
+
       - name: Run BLHA Wire engine
         shell: bash
         run: |
