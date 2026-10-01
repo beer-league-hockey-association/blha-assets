@@ -1,0 +1,54 @@
+name: BLHA Package Frozen Discohook JSON
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/blha-package-discohook-json.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify frozen JSON count
+        shell: bash
+        run: |
+          count=$(find templates -type f -name '*.json' | wc -l | tr -d ' ')
+          echo "Found ${count} Discohook JSON templates."
+          test "$count" -eq 54
+
+      - name: Build frozen package
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+
+          root = Path('templates')
+          files = sorted(root.rglob('*.json'))
+          assert len(files) == 54, f'expected 54 JSON files, found {len(files)}'
+
+          out = Path('BLHA_Phase_2C6_Frozen_Discohook_JSON_54.zip')
+          with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
+              for path in files:
+                  z.write(path, path.as_posix())
+
+          with zipfile.ZipFile(out) as z:
+              members = [n for n in z.namelist() if n.endswith('.json')]
+              assert len(members) == 54, f'zip contains {len(members)} JSON files'
+          print(f'Created {out} with 54 finalized JSON files.')
+          PY
+
+      - name: Upload package
+        uses: actions/upload-artifact@v4
+        with:
+          name: BLHA-Phase-2C6-Frozen-Discohook-JSON-54
+          path: BLHA_Phase_2C6_Frozen_Discohook_JSON_54.zip
+          if-no-files-found: error
+          retention-days: 30
