@@ -4,6 +4,7 @@
 Adds production-noise filters around the core health monitor:
 - first-schedule startup grace for newly created workflows;
 - repeated-run confirmation before a Wire flood-guard event becomes an alert;
+- root-cause suppression of the Wire flood guard while the Wire schedule is stale;
 - automatic suppression of League Office schedule alerts while every event is disabled.
 """
 
@@ -169,6 +170,25 @@ def apply_wire_rate_guard_confirmation(
         )
 
 
+def apply_wire_root_cause_suppression(issues: dict[str, dict[str, Any]]) -> None:
+    """Prefer the stale Wire schedule as the actionable root cause.
+
+    A delayed GitHub schedule can leave a backlog of stories for the next Wire
+    execution. That catch-up run can legitimately hit the production flood
+    guard, so reporting both conditions at once creates two alerts for one
+    operational problem. While the schedule itself is stale, retain the stale
+    alert and defer rate-guard evaluation until scheduled execution recovers.
+    """
+    if "stale:wire-engine" not in issues or "wire-rate-guard" not in issues:
+        return
+
+    issues.pop("wire-rate-guard", None)
+    print(
+        "WIRE RATE-GUARD SECONDARY: suppressed while the Wire schedule is stale; "
+        "the rate guard will be evaluated again after scheduled execution recovers."
+    )
+
+
 def apply_dormant_league_office(issues: dict[str, dict[str, Any]]) -> None:
     """Do not page on League Office scheduling while every event is disabled.
 
@@ -203,6 +223,7 @@ def collect_issues_with_safety_filters(
     connection = github_session()
     apply_startup_grace(cfg, issues, connection)
     apply_wire_rate_guard_confirmation(cfg, issues, connection)
+    apply_wire_root_cause_suppression(issues)
     apply_dormant_league_office(issues)
     return issues
 
