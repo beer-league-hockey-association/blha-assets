@@ -74,7 +74,7 @@ jobs:
           if [ "$INCLUDE_DISCOVERY" = "true" ]; then
             ARGS+=(--include-discovery)
           fi
-          python automation/phase-2d1/engine.py "${ARGS[@]}"
+          python automation/phase-2d1/run_wire.py "${ARGS[@]}"
 
       - name: Persist dedupe state
         shell: bash
