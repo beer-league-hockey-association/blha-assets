@@ -136,17 +136,32 @@ def player_name_index(payload: Any) -> dict[str, str]:
     return index
 
 
-def _team_items(raw_team: Any) -> list:
+def _team_items_with_key(raw_team: Any) -> tuple[list, str | None]:
     if not isinstance(raw_team, dict):
-        return []
-    items = raw_team.get("rosterItems")
-    if isinstance(items, list):
-        return items
-    for key in ("players", "roster", "rows"):
+        return [], None
+    for key in ("rosterItems", "players", "roster", "rows"):
         candidate = raw_team.get(key)
         if isinstance(candidate, list):
-            return candidate
-    return []
+            return candidate, key
+    return [], None
+
+
+def _team_items(raw_team: Any) -> list:
+    return _team_items_with_key(raw_team)[0]
+
+
+def _roster_stats(rosters: Any) -> tuple[int, int, int]:
+    """Return team count, teams with a recognized item list, and total rows."""
+    team_count = 0
+    teams_with_items = 0
+    total_rows = 0
+    for _team_id, raw_team in _iter_roster_teams(rosters):
+        team_count += 1
+        items, key = _team_items_with_key(raw_team)
+        if key is not None:
+            teams_with_items += 1
+            total_rows += len(items)
+    return team_count, teams_with_items, total_rows
 
 
 def _roster_player_ids(rosters: Any) -> set[str]:
@@ -217,14 +232,14 @@ def fantrax_ownership(league_id: str, period: str = "current") -> dict[str, str]
     session = requests.Session()
     session.headers.update(
         {
-            "User-Agent": "BLHA-Wire-Fantrax-Enrichment/1.3",
+            "User-Agent": "BLHA-Wire-Fantrax-Enrichment/1.4",
             "Accept": "application/json,text/plain,*/*",
         }
     )
 
     try:
-        # Fantrax expects a scoring period for getTeamRosters. "current" keeps
-        # this automatic as the NHL season advances instead of hard-coding 1.
+        # "current" keeps this automatic as the NHL season advances instead
+        # of hard-coding a scoring-period number.
         roster_response = session.get(
             f"{FANTRAX_BASE}/getTeamRosters",
             params={"leagueId": league_id, "period": period},
@@ -232,7 +247,26 @@ def fantrax_ownership(league_id: str, period: str = "current") -> dict[str, str]
         )
         roster_response.raise_for_status()
         rosters = roster_response.json()
+    except Exception as exc:
+        print(f"ROSTER ENRICHMENT WARNING: Fantrax roster read failed: {exc}")
+        return {}
 
+    roster_block = _roster_container(rosters)
+    roster_type = type(roster_block).__name__
+    roster_teams, teams_with_items, total_rows = _roster_stats(rosters)
+
+    # The BLHA test league can legitimately contain all 12 team shells before
+    # any players have been drafted/assigned. That is not a parser failure and
+    # should not trigger a warning or a 9k-player directory download each run.
+    if roster_teams > 0 and teams_with_items == roster_teams and total_rows == 0:
+        print(
+            "ROSTER ENRICHMENT: Fantrax returned empty team rosters "
+            f"(period={period}, teams={roster_teams}); ownership tags will activate "
+            "automatically once players are rostered"
+        )
+        return {}
+
+    try:
         player_response = session.get(
             f"{FANTRAX_BASE}/getPlayerIds",
             params={"sport": "NHL"},
@@ -241,14 +275,11 @@ def fantrax_ownership(league_id: str, period: str = "current") -> dict[str, str]
         player_response.raise_for_status()
         players = player_response.json()
     except Exception as exc:
-        print(f"ROSTER ENRICHMENT WARNING: Fantrax read failed: {exc}")
+        print(f"ROSTER ENRICHMENT WARNING: Fantrax player-directory read failed: {exc}")
         return {}
 
     ownership = ownership_from_payloads(rosters, players)
     if not ownership:
-        roster_block = _roster_container(rosters)
-        roster_type = type(roster_block).__name__
-        roster_teams = len(roster_block) if isinstance(roster_block, (dict, list)) else 0
         roster_ids = _roster_player_ids(rosters)
         player_index = player_name_index(players)
         overlap = len(roster_ids.intersection(player_index))
@@ -257,6 +288,7 @@ def fantrax_ownership(league_id: str, period: str = "current") -> dict[str, str]
         print(
             "ROSTER ENRICHMENT WARNING: 0 rostered player names resolved "
             f"(period={period}, rosters_type={roster_type}, roster_teams={roster_teams}, "
+            f"teams_with_item_lists={teams_with_items}, roster_rows={total_rows}, "
             f"roster_ids={len(roster_ids)}, player_records={raw_player_count}, "
             f"player_id_aliases={len(player_index)}, id_overlap={overlap})"
         )
