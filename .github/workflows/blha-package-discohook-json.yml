@@ -23,86 +23,86 @@ jobs:
           echo "Found ${count} Discohook JSON templates."
           test "$count" -eq 54
 
-      - name: Build import-ready Discohook package
+      - name: Build validated Discohook test artifacts
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
           import json
-          import shutil
           import zipfile
 
           src_root = Path('templates')
-          out_root = Path('BLHA_Phase_2C6_Discohook_Import_54')
-          if out_root.exists():
-              shutil.rmtree(out_root)
-          out_root.mkdir(parents=True)
-
           files = sorted(src_root.rglob('*.json'))
           assert len(files) == 54, f'expected 54 JSON files, found {len(files)}'
 
-          for src in files:
-              payload = json.loads(src.read_text(encoding='utf-8'))
-              if not isinstance(payload, dict):
-                  raise AssertionError(f'{src}: raw payload root must be an object')
+          # 1) Per-message JSON Data Editor package.
+          # Discohook's JSON Editor expects MessageData directly: content,
+          # embeds, attachments, etc. It must NOT contain top-level version or
+          # messages keys.
+          raw_zip = Path('BLHA_Phase_2C6_Raw_Message_JSON_54.zip')
+          with zipfile.ZipFile(raw_zip, 'w', zipfile.ZIP_DEFLATED) as z:
+              for src in files:
+                  payload = json.loads(src.read_text(encoding='utf-8'))
+                  assert isinstance(payload, dict), f'{src}: payload root must be an object'
+                  assert 'version' not in payload, f'{src}: version is invalid in per-message JSON Editor data'
+                  assert 'messages' not in payload, f'{src}: messages is invalid in per-message JSON Editor data'
+                  assert 'embeds' in payload or 'content' in payload, f'{src}: message has no content or embeds'
+                  z.write(src, src.relative_to(src_root).as_posix())
 
-              wrapped = {
-                  'version': 'd2',
-                  'messages': [
-                      {
-                          'name': src.stem.replace('_', ' ').strip(),
-                          'data': payload,
-                      }
-                  ],
-              }
-
-              rel = src.relative_to(src_root)
-              dest = out_root / rel
-              dest.parent.mkdir(parents=True, exist_ok=True)
-              dest.write_text(json.dumps(wrapped, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
-
-          # Convenience bundle for the six Welcome messages, which are intended
-          # to be loaded/sent in order as one channel setup pass.
+          # 2) A single six-message Welcome backup for an end-to-end import test.
+          # Discohook's current backup exporter/importer uses version 8:
+          # { version: 8, backups: [{ name, messages:[{data: ...}], targets:[] }] }
           welcome_sources = sorted((src_root / 'welcome').glob('*.json'))
-          welcome_bundle = {
-              'version': 'd2',
-              'messages': [
+          assert len(welcome_sources) == 6, f'expected 6 Welcome messages, found {len(welcome_sources)}'
+
+          welcome_backup = {
+              'version': 8,
+              'backups': [
                   {
-                      'name': src.stem.replace('_', ' ').strip(),
-                      'data': json.loads(src.read_text(encoding='utf-8')),
+                      'name': 'BLHA Phase 2C.6 — Welcome',
+                      'messages': [
+                          {
+                              'name': src.stem.replace('_', ' ').strip()[:50],
+                              'data': json.loads(src.read_text(encoding='utf-8')),
+                          }
+                          for src in welcome_sources
+                      ],
+                      'targets': [],
                   }
-                  for src in welcome_sources
               ],
           }
-          Path('BLHA_Welcome_All_6_Discohook.json').write_text(
-              json.dumps(welcome_bundle, indent=2, ensure_ascii=False) + '\n',
+
+          test_file = Path('BLHA_Welcome_Backup_Test_v8.json')
+          test_file.write_text(
+              json.dumps(welcome_backup, indent=2, ensure_ascii=False) + '\n',
               encoding='utf-8',
           )
 
-          out = Path('BLHA_Phase_2C6_Discohook_Import_54.zip')
-          with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
-              for path in sorted(out_root.rglob('*.json')):
-                  z.write(path, path.relative_to(out_root).as_posix())
+          # Structural checks derived from Discohook's current v8 backup type.
+          check = json.loads(test_file.read_text(encoding='utf-8'))
+          assert check['version'] == 8
+          assert len(check['backups']) == 1
+          backup = check['backups'][0]
+          assert backup['name']
+          assert backup['targets'] == []
+          assert len(backup['messages']) == 6
+          for i, message in enumerate(backup['messages'], 1):
+              assert isinstance(message, dict), f'welcome message {i}: wrapper missing'
+              assert isinstance(message.get('data'), dict), f'welcome message {i}: data missing'
+              assert 'version' not in message['data'], f'welcome message {i}: nested d2 wrapper present'
+              assert 'messages' not in message['data'], f'welcome message {i}: nested messages wrapper present'
+              assert message['data'].get('embeds') or message['data'].get('content'), f'welcome message {i}: empty payload'
 
-          with zipfile.ZipFile(out) as z:
-              members = [n for n in z.namelist() if n.endswith('.json')]
-              assert len(members) == 54, f'zip contains {len(members)} JSON files'
-              for member in members:
-                  data = json.loads(z.read(member).decode('utf-8'))
-                  assert data.get('version') == 'd2', f'{member}: missing d2 version'
-                  assert len(data.get('messages') or []) == 1, f'{member}: must contain exactly one message'
-                  assert isinstance(data['messages'][0].get('data'), dict), f'{member}: message data missing'
-
-          print(f'Created {out} with 54 Discohook d2 import-ready JSON files.')
-          print('Created BLHA_Welcome_All_6_Discohook.json with 6 ordered Welcome messages.')
+          print('Validated 54 raw per-message JSON payloads for the JSON Data Editor.')
+          print('Validated BLHA_Welcome_Backup_Test_v8.json as a six-message Discohook v8 backup import.')
           PY
 
-      - name: Upload package
+      - name: Upload test artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: BLHA-Phase-2C6-Discohook-Import-54
+          name: BLHA-Phase-2C6-Discohook-Validated-Test
           path: |
-            BLHA_Phase_2C6_Discohook_Import_54.zip
-            BLHA_Welcome_All_6_Discohook.json
+            BLHA_Phase_2C6_Raw_Message_JSON_54.zip
+            BLHA_Welcome_Backup_Test_v8.json
           if-no-files-found: error
           retention-days: 30
