@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-01T14:48:43.924930Z",
+  "updated_at": "2026-10-01T20:18:21.048855Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -922,6 +922,296 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-01T14:48:43.904745Z"
+    },
+    {
+      "key": "bb5470fec6a71aa1c667a800",
+      "url": "https://www.nhl.com/news/tristain-luneau-signs-six-year-contract-with-anaheim-ducks",
+      "fingerprint": "c120d843a57463d0",
+      "title_norm": "luneau signs 6-year, $43.2 million deal with ducks",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:19.193119Z"
+    },
+    {
+      "key": "5d5038ad20cb9ca697ce6b62",
+      "url": "https://www.nhl.com/news/edmonton-oilers-zach-hyman-injury-status-update-october-1-2026",
+      "fingerprint": "4f23cd02f435264c",
+      "title_norm": "hyman out for oilers vs. canucks, timeline unclear",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:19.502251Z"
+    },
+    {
+      "key": "1750728d725db366f564e01a",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-1-2026",
+      "fingerprint": "7a7a28588d890836",
+      "title_norm": "status report: provorov week to week for blue jackets",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:19.772486Z"
+    },
+    {
+      "key": "af187443e20f4813e5ecfbbc",
+      "url": "https://www.nhl.com/news/detroit-red-wings-dylan-larkin-injury-status-update-october-1-2026",
+      "fingerprint": "1fdf0836f09b23b5",
+      "title_norm": "injured larkin out for wings' first 2 games",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:20.145163Z"
+    },
+    {
+      "key": "02a4c68df69b7d9060d8303b",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-1-2026",
+      "fingerprint": "f3198f64ea356441",
+      "title_norm": "on tap: celebrini to debut as sharks captain tonight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:20.349418Z"
+    },
+    {
+      "key": "4054213d3dadacae944e3b35",
+      "url": "https://www.nhl.com/news/victor-hedman-energized-ahead-of-1st-game-back-since-march-19",
+      "fingerprint": "1a773d9947f24263",
+      "title_norm": "hedman 'energized' ahead of 1st game since march 19",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:20.555457Z"
+    },
+    {
+      "key": "61657adc8603266d6957d841",
+      "url": "https://www.nhl.com/news/louis-crevier-signs-4-year-deal-with-buffalo",
+      "fingerprint": "d85dc16b34eb7b13",
+      "title_norm": "crevier signs with sabres through 2030-31 season",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:20.556312Z"
+    },
+    {
+      "key": "9a93da9bca57db325b65fc1f",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-picks-props-daily-fantasy-hockey-projections-for-2026-27-season",
+      "fingerprint": "2f5d8b8cbc409057",
+      "title_norm": "fantasy picks: stenberg's upside for nhl debut",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T20:18:20.559584Z"
+    },
+    {
+      "key": "facd3a6cbb01c574f1cb75cb",
+      "url": "https://theahl.com/news/ahl-influence-dominates-nhl-opening-night-rosters",
+      "fingerprint": "63f8d7437075c0c2",
+      "title_norm": "ahl influence dominates nhl opening-night rosters",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.894417Z"
+    },
+    {
+      "key": "b8fb35557e553c3040aa5d19",
+      "url": "https://www.flohockey.tv/articles/16218679-top-nhl-prospects-in-ahl-pacific-division",
+      "fingerprint": "601cd9a9acb13f7e",
+      "title_norm": "iginla, mcqueen highlight top nhl prospects in ahl pacific division",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.897519Z"
+    },
+    {
+      "key": "ebc3301f7050e99e84185026",
+      "url": "https://www.dailyfaceoff.com/players/news/mackie-samoskevich/31226",
+      "fingerprint": "5db45fccfa5878c9",
+      "title_norm": "mackie samoskevich (sea) — samoskevich (upper-body) returned to seattle's practice on thursday in a non-contact jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.912519Z"
+    },
+    {
+      "key": "87499e61989cda6e64703d49",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "5bf6df9f0daa5455",
+      "title_norm": "zach hyman (edm) — hyman (undisclosed) is out vs. vancouver on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.917430Z"
+    },
+    {
+      "key": "b9953b9b63e40871593ed14a",
+      "url": "https://www.dailyfaceoff.com/players/news/isac-lundestrom/4804",
+      "fingerprint": "8ca14fe54e18aa0a",
+      "title_norm": "isac lundestrom (cbj) — lundestrom (achilles) is considered month-to-month.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.922578Z"
+    },
+    {
+      "key": "5ee311f7252da9938838d032",
+      "url": "https://www.dailyfaceoff.com/players/news/joonas-korpisalo/2556",
+      "fingerprint": "4f0be31346b0ae3b",
+      "title_norm": "joonas korpisalo (nyr) — korpisalo is week-to-week with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.927491Z"
+    },
+    {
+      "key": "a5a914f75004d151a52ded73",
+      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
+      "fingerprint": "631d0f4639bf47dc",
+      "title_norm": "ben kindel (pit) — kindel (lower-body) returned to pittsburgh's practice in a regular jersey on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.934586Z"
+    },
+    {
+      "key": "23ac96a6b1d973ddbe7d4a98",
+      "url": "https://www.dailyfaceoff.com/players/news/ben-chiarot/1587",
+      "fingerprint": "d5c9409e9541d85c",
+      "title_norm": "ben chiarot (det) — chiarot (undisclosed) is dealing with a minor injury but is expected to be ready for detroit's season opener vs. new york.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.944857Z"
+    },
+    {
+      "key": "c729761c87e0bd6a546322d7",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
+      "fingerprint": "c8d91aa541b852aa",
+      "title_norm": "mattias samuelsson (buf) — samuelsson (lower-body) will dress for buffalo's season opener in columbus on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.953006Z"
+    },
+    {
+      "key": "b23ae41fd4d46af28425e7ef",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-larkin/2522",
+      "fingerprint": "622ef062fe474868",
+      "title_norm": "dylan larkin (det) — larkin (upper-body) will miss both of detroit's games on friday and saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.960515Z"
+    },
+    {
+      "key": "524ec16f119370cf357bc070",
+      "url": "https://www.dailyfaceoff.com/players/news/blake-lizotte/27482",
+      "fingerprint": "3f84628f379e9ec2",
+      "title_norm": "blake lizotte (pit) — lizotte (lower-body) is being further evaluated and will not practice on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.968771Z"
+    },
+    {
+      "key": "e20ad305db33d6d18400ad1e",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-provorov/2478",
+      "fingerprint": "f62b4a8d7c442c9b",
+      "title_norm": "ivan provorov (cbj) — provorov (lower-body) is out for columbus' season opener vs. buffalo and is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.977945Z"
+    },
+    {
+      "key": "5e180db40d79571427250a6d",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-duchene/341",
+      "fingerprint": "7b1aac69f0b1264f",
+      "title_norm": "matt duchene (dal) — duchene (lower-body) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.983532Z"
+    },
+    {
+      "key": "43d0adb211a0ae0898299843",
+      "url": "https://www.sportsnet.ca/nhl/article/would-connor-hellebuyck-consider-a-trade-to-the-oilers",
+      "fingerprint": "5123d14f5d325ce0",
+      "title_norm": "would connor hellebuyck consider a trade to the oilers?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:20.997763Z"
+    },
+    {
+      "key": "96c1c75483767df615f637e4",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-rookies-who-could-earn-a-big-role-this-season",
+      "fingerprint": "e5440543c89c6fb9",
+      "title_norm": "scout's analysis: rookies who could earn a big role this season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:21.002213Z"
+    },
+    {
+      "key": "7583d2f302c6b04a026dd1c4",
+      "url": "https://www.sportsnet.ca/nhl/article/anderson-carrier-reinforce-value-to-canadiens-in-strong-start-to-season",
+      "fingerprint": "6b03fd9b0740c28b",
+      "title_norm": "anderson, carrier reinforce value to canadiens in strong start to season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:21.007307Z"
+    },
+    {
+      "key": "0a7cec9f87537124110a662e",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-rumour-roundup-how-marchenko-deal-helped-maple-leafs-in-more-ways-than-one",
+      "fingerprint": "20d7bc24e9384adf",
+      "title_norm": "nhl rumour roundup: how marchenko deal helped maple leafs in more ways than one",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:21.014712Z"
+    },
+    {
+      "key": "5e7250b904ceb8f3727ac396",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-zach-hyman-out-approximately-two-weeks",
+      "fingerprint": "21ad85246b45b5d1",
+      "title_norm": "oilers' zach hyman out approximately two weeks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:21.018301Z"
+    },
+    {
+      "key": "36a1e26e5351f24ef85ef958",
+      "url": "https://www.sportsnet.ca/nhl/article/gary-bettman-on-rise-in-trade-requests-i-dont-think-its-a-good-thing",
+      "fingerprint": "91dc63791943cfb5",
+      "title_norm": "gary bettman on rise in trade requests: 'i don't think that's a good thing'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:21.023884Z"
+    },
+    {
+      "key": "7b9746415b91172ee3a11589",
+      "url": "https://www.sportsnet.ca/nhl/article/tristan-luneau-agrees-to-six-year-43-2-million-extension-with-ducks",
+      "fingerprint": "9d4a47cdb55e2ced",
+      "title_norm": "tristan luneau agrees to six-year, $43.2-million extension with ducks",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T20:18:21.024889Z"
+    },
+    {
+      "key": "da2d3a4124cebfef4a1dbdaa",
+      "url": "https://dobberprospects.com/2026/10/01/september-liiga-report-liiga-kick-off-and-nhl-preseason-notes",
+      "fingerprint": "dbb17bbded8f72d7",
+      "title_norm": "september liiga report: liiga kick-off and nhl preseason notes",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-01T20:18:21.030152Z"
     }
   ]
 }
