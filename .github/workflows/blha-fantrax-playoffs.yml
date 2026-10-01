@@ -2,7 +2,9 @@ name: BLHA Fantrax Playoffs
 
 on:
   schedule:
-    - cron: "7 * * * *"
+    # Bracket state changes at scoring-period boundaries, so six-hour checks
+    # are sufficient while keeping pre-playoff no-op traffic low.
+    - cron: "7 */6 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -10,11 +12,7 @@ on:
         required: true
         default: preview
         type: choice
-        options:
-          - preview
-          - test
-          - baseline
-          - live
+        options: [preview, test, baseline, live]
       period:
         description: "Optional playoff period override for testing (23, 24, or 25)"
         required: false
@@ -36,53 +34,50 @@ concurrency:
 jobs:
   playoffs:
     runs-on: ubuntu-latest
+    env:
+      INPUT_MODE: ${{ inputs.mode }}
+      INPUT_PERIOD: ${{ inputs.period }}
+      INPUT_FORCE: ${{ inputs.force }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
 
       - name: Install dependencies
-        run: pip install requests==2.32.5 PyYAML==6.0.2
+        run: pip install -r automation/common-requirements.txt
 
       - name: Run Fantrax playoff automation
         env:
           BLHA_WEBHOOK_PLAYOFFS: ${{ secrets.BLHA_WEBHOOK_PLAYOFFS }}
         shell: bash
         run: |
-          PERIOD_ARG=""
-          if [[ -n "${{ inputs.period }}" ]]; then
-            PERIOD_ARG="--period ${{ inputs.period }}"
-          fi
-
-          FORCE=""
-          if [[ "${{ inputs.force }}" == "true" ]]; then
-            FORCE="--force"
-          fi
-
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
             python automation/phase-2d5/runner.py --mode live
-          else
-            python automation/phase-2d5/runner.py --mode "${{ inputs.mode }}" $PERIOD_ARG $FORCE
+            exit $?
           fi
+
+          ARGS=(--mode "$INPUT_MODE")
+          if [[ -n "$INPUT_PERIOD" ]]; then
+            ARGS+=(--period "$INPUT_PERIOD")
+          fi
+          if [[ "$INPUT_FORCE" == "true" ]]; then
+            ARGS+=(--force)
+          fi
+          python automation/phase-2d5/runner.py "${ARGS[@]}"
 
       - name: Persist playoff state
         if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
         shell: bash
         run: |
-          if git diff --quiet -- automation/phase-2d5/state/playoff.json; then
-            echo "No playoff state change."
-            exit 0
-          fi
-
-          git config user.name "BLHA Fantrax Automation"
-          git config user.email "actions@users.noreply.github.com"
-          git add automation/phase-2d5/state/playoff.json
-          git commit -m "chore(fantrax): persist playoff state [skip ci]"
-          git pull --rebase
-          git push
+          bash automation/tools/persist_state.sh \
+            automation/phase-2d5/state/playoff.json \
+            "chore(fantrax): persist playoff state [skip ci]" \
+            "BLHA Fantrax Automation"
