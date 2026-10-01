@@ -48,6 +48,10 @@ jobs:
         run: |
           python -m py_compile \
             automation/discord_webhook.py \
+            automation/phase-2d1/wire.py \
+            automation/phase-2d1/engine.py \
+            automation/phase-2d1/run_wire.py \
+            automation/phase-2d1/roster_enrichment.py \
             automation/phase-2d2/league_ops.py \
             automation/phase-2d3/standings.py \
             automation/phase-2d3/scoreboard.py \
@@ -56,6 +60,9 @@ jobs:
             automation/matchup-preview/matchup_preview.py \
             automation/phase-2d5/playoff.py \
             automation/health/health.py
+
+      - name: Test The Wire
+        run: python automation/phase-2d1/test_wire.py
 
       - name: Test shared Discord delivery
         env:
