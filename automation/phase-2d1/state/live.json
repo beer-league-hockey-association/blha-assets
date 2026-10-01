@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-09-30T22:21:46.073462Z",
+  "updated_at": "2026-10-01T01:28:22.449373Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -692,6 +692,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-09-30T22:21:46.059498Z"
+    },
+    {
+      "key": "a7777e1f4e0a4ec95218be03",
+      "url": "https://www.nhl.com/news/tnt-studio-crew-hits-road-for-opener-in-philadelphia",
+      "fingerprint": "1234270cf9fc0042",
+      "title_norm": "tnt studio crew hits road for opener in philadelphia",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T01:28:21.318495Z"
+    },
+    {
+      "key": "fa403de7014ae32a637eba1d",
+      "url": "https://www.nhl.com/news/brock-faber-injury-status-update-september-29-2026",
+      "fingerprint": "797112536c6fff3b",
+      "title_norm": "faber out indefinitely for wild with 'scary' injury",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T01:28:21.604185Z"
+    },
+    {
+      "key": "54de00cb16000b0c01e1cfeb",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-edge-stats-kirill-marchenko-matthew-knies-trade-maple-leafs-blue-jackets",
+      "fingerprint": "a4f1c9406e4ad02b",
+      "title_norm": "nhl edge stats impact of marchenko-knies trade",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T01:28:21.605113Z"
+    },
+    {
+      "key": "236b4bea42d8cacef71d3ecd",
+      "url": "https://www.nhl.com/news/new-jersey-devils-amadeus-lombardi-eager-to-make-nhl-debut",
+      "fingerprint": "0da3ce89358c8b00",
+      "title_norm": "lombardi eager to make nhl debut thursday",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-01T01:28:21.921635Z"
+    },
+    {
+      "key": "09af9cfd48a615e237ad4392",
+      "url": "",
+      "fingerprint": "873f6bec8a7d0013",
+      "title_norm": "maple leafs live tracker: toronto vs. new york islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T01:28:22.213842Z"
+    },
+    {
+      "key": "40f5cc98d91a45b353b4409d",
+      "url": "",
+      "fingerprint": "1a169d3bcf4b4224",
+      "title_norm": "stars' matt duchene placed on ir to begin season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T01:28:22.428915Z"
     }
   ]
 }
