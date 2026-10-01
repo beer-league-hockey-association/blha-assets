@@ -65,15 +65,15 @@ jobs:
           alpha = im.getchannel('A')
           assert alpha.getextrema()[0] == 0, 'footer background is not transparent'
 
-          footer_url = 'https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png'
+          footer_url = 'https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen'
           files = sorted((root / 'templates').rglob('*.json'))
           assert files, 'no Discohook JSON templates found'
           for path in files:
               data = json.loads(path.read_text(encoding='utf-8'))
               embeds = data.get('embeds') or []
               assert embeds, f'{path}: no embeds'
-              assert any((e.get('image') or {}).get('url') == footer_url for e in embeds), f'{path}: shared footer missing'
-          print(f'FROZEN FORMAT VERIFIED: {len(files)} Discohook templates; transparent footer confirmed.')
+              assert any((e.get('image') or {}).get('url') == footer_url for e in embeds), f'{path}: frozen footer missing'
+          print(f'FROZEN FORMAT VERIFIED: {len(files)} Discohook templates; transparent cache-busted footer confirmed.')
           PY
 
       - name: Publish frozen Phase 2C.6 package
