@@ -53,6 +53,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r automation/common-requirements.txt
 
+      - name: Run League Office regression checks
+        run: python automation/phase-2d2/test_league_ops.py
+
       - name: Run League Office automation
         env:
           BLHA_WEBHOOK_LEAGUE_CALENDAR: ${{ secrets.BLHA_WEBHOOK_LEAGUE_CALENDAR }}
