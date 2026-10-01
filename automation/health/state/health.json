@@ -1,3 +1,16 @@
 {
-  "active_issues": {}
+  "active_issues": {
+    "stale:league-office": {
+      "detail": "Latest scheduled run started 164 minutes ago; alert threshold is 150 minutes.",
+      "summary": "Scheduled workflow appears stale",
+      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36824870074",
+      "workflow": "BLHA League Office Automation"
+    },
+    "stale:wire-engine": {
+      "detail": "Latest scheduled run started 90 minutes ago; alert threshold is 75 minutes.",
+      "summary": "Scheduled workflow appears stale",
+      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36831784690",
+      "workflow": "BLHA Wire Engine"
+    }
+  }
 }
