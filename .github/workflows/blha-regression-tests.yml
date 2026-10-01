@@ -1,0 +1,73 @@
+name: BLHA Automation Regression Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'automation/**/*.py'
+      - 'automation/phase-2d2/events.yaml'
+      - 'automation/phase-2d5/playoff_config.yaml'
+      - '.github/workflows/blha-regression-tests.yml'
+  pull_request:
+    paths:
+      - 'automation/**/*.py'
+      - 'automation/phase-2d2/events.yaml'
+      - 'automation/phase-2d5/playoff_config.yaml'
+      - '.github/workflows/blha-regression-tests.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blha-regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Compile audited automation modules
+        run: |
+          python -m py_compile \
+            automation/discord_webhook.py \
+            automation/phase-2d2/league_ops.py \
+            automation/phase-2d3/standings.py \
+            automation/phase-2d3/scoreboard.py \
+            automation/phase-2d3/weekly_recap.py \
+            automation/phase-2d4/playoff_race.py \
+            automation/matchup-preview/matchup_preview.py \
+            automation/phase-2d5/playoff.py \
+            automation/health/health.py
+
+      - name: Test shared Discord delivery
+        env:
+          PYTHONPATH: automation
+        run: python automation/test_discord_webhook.py
+
+      - name: Test League Office timing
+        env:
+          PYTHONPATH: automation:automation/phase-2d2
+        run: python automation/phase-2d2/test_league_ops.py
+
+      - name: Test playoff bracket logic
+        env:
+          PYTHONPATH: automation:automation/phase-2d5
+        run: python automation/phase-2d5/test_playoff.py
