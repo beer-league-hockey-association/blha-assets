@@ -1,7 +1,8 @@
 {
-  "phase": "2C.6-v2",
+  "phase": "2C.6-v3",
   "header_dimensions": "1600x300",
-  "footer_dimensions": "1600x120 (legacy filename retained for stable URLs)",
+  "header_embed_color": "#2B2D31",
+  "footer_dimensions": "1600x180 (legacy filename retained for stable URLs)",
   "palette": {
     "charcoal": "#2B2D31",
     "gold": "#FFB81C",
@@ -11,17 +12,6 @@
     "discord_optimized": true,
     "right_circle": "fully inset; never clipped",
     "wordmark": "white BLHA lettering with black keyline and gold outer edge; no white card",
-    "footer": "fuller cream/gold/cream rink-line divider with centered gold ring"
-  },
-  "stable_urls": {
-    "welcome": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/welcome/blha-welcome-banner.png",
-    "constitution": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-constitution-header.png",
-    "announcements": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-announcements-header.png",
-    "calendar": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-calendar-header.png",
-    "ledger": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-ledger-header.png",
-    "voting": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-voting-header.png",
-    "draft_center": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/draft-center/blha-draft-center-header.png",
-    "generic_header": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-generic-header-1600x420.png",
-    "footer": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+    "footer": "larger cream/gold/cream rink divider with centered gold ring"
   }
 }

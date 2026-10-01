@@ -1,8 +1,5 @@
 BLHA RAW ASSET URLS
 
-Base:
-https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/
-
 Welcome banner:
 https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/welcome/blha-welcome-banner.png
 
