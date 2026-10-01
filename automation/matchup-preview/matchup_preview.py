@@ -21,6 +21,12 @@ import yaml
 
 BASE = "https://www.fantrax.com/fxea/general"
 ROOT = Path(__file__).resolve().parent
+AUTOMATION_ROOT = ROOT.parent
+if str(AUTOMATION_ROOT) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_ROOT))
+
+from discord_webhook import post_discord_webhook
+
 CONFIG_PATH = ROOT / "matchup_preview_config.yaml"
 STATE_PATH = ROOT / "state" / "matchup_preview.json"
 AVATAR = (
@@ -259,21 +265,7 @@ def build_payload(
 
 
 def deliver(secret_name: str, body: dict[str, Any]) -> tuple[bool, str]:
-    webhook = os.getenv(secret_name, "").strip()
-    if not webhook:
-        return False, f"missing GitHub Actions secret {secret_name}"
-    try:
-        response = requests.post(
-            webhook,
-            params={"wait": "true"},
-            json=body,
-            timeout=25,
-        )
-    except Exception as exc:
-        return False, f"Discord request failed: {exc}"
-    if response.status_code not in (200, 204):
-        return False, f"Discord returned {response.status_code}: {response.text[:250]}"
-    return True, "delivered"
+    return post_discord_webhook(secret_name, body)
 
 
 def main() -> int:
