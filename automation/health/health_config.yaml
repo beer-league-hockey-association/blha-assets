@@ -24,6 +24,11 @@ workflows:
     file: "blha-league-office.yml"
     max_age_minutes: 150
 
+  - id: matchup-preview
+    name: "BLHA Fantrax Matchup Preview"
+    file: "blha-fantrax-matchup-preview.yml"
+    max_age_minutes: 180
+
   - id: scoreboard
     name: "BLHA Fantrax Scoreboard"
     file: "blha-fantrax-scoreboard.yml"
