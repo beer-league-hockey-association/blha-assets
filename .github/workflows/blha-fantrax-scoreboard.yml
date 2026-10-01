@@ -14,11 +14,7 @@ on:
         required: true
         default: preview
         type: choice
-        options:
-          - preview
-          - test
-          - baseline
-          - live
+        options: [preview, test, baseline, live]
       period:
         description: "Optional scoring period override; leave blank for current period"
         required: false
@@ -39,19 +35,25 @@ concurrency:
 jobs:
   scoreboard:
     runs-on: ubuntu-latest
+    env:
+      INPUT_MODE: ${{ inputs.mode }}
+      INPUT_PERIOD: ${{ inputs.period }}
+      INPUT_FORCE: ${{ inputs.force }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
 
       - name: Install dependencies
-        run: pip install requests==2.32.5 PyYAML==6.0.2
+        run: pip install -r automation/common-requirements.txt
 
       - name: Run Fantrax scoreboard automation
         env:
@@ -64,26 +66,20 @@ jobs:
             exit $?
           fi
 
-          FORCE=""
-          PERIOD=""
-          if [[ "${{ inputs.force }}" == "true" ]]; then
-            FORCE="--force"
+          ARGS=(--mode "$INPUT_MODE")
+          if [[ "$INPUT_FORCE" == "true" ]]; then
+            ARGS+=(--force)
           fi
-          if [[ -n "${{ inputs.period }}" ]]; then
-            PERIOD="--period ${{ inputs.period }}"
+          if [[ -n "$INPUT_PERIOD" ]]; then
+            ARGS+=(--period "$INPUT_PERIOD")
           fi
-          python automation/phase-2d3/scoreboard.py --mode "${{ inputs.mode }}" $PERIOD $FORCE
+          python automation/phase-2d3/scoreboard.py "${ARGS[@]}"
 
       - name: Persist scoreboard state
         if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
         shell: bash
         run: |
-          if git diff --quiet -- automation/phase-2d3/state/scoreboard.json; then
-            echo "No scoreboard state change."
-            exit 0
-          fi
-          git config user.name "BLHA Fantrax Automation"
-          git config user.email "actions@users.noreply.github.com"
-          git add automation/phase-2d3/state/scoreboard.json
-          git commit -m "chore(fantrax): persist scoreboard state [skip ci]"
-          git push
+          bash automation/tools/persist_state.sh \
+            automation/phase-2d3/state/scoreboard.json \
+            "chore(fantrax): persist scoreboard state [skip ci]" \
+            "BLHA Fantrax Automation"
