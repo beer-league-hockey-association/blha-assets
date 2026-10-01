@@ -1,9 +1,15 @@
 {
   "active_issues": {
+    "stale:playoffs": {
+      "detail": "Latest scheduled run started 782 minutes ago; alert threshold is 600 minutes.",
+      "summary": "Scheduled workflow appears stale",
+      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36839004425",
+      "workflow": "BLHA Fantrax Playoffs"
+    },
     "wire-rate-guard": {
       "detail": "The latest scheduled Wire run hit the production rate guard. Review the feed burst before changing limits.",
       "summary": "Wire flood guard suppressed posts",
-      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36879236993",
+      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36920557482",
       "workflow": "BLHA Wire Engine"
     }
   }
