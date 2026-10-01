@@ -30,7 +30,7 @@ Each event can define:
 - `enabled`
 - `title`
 - `type`
-- `starts_at` as ISO-8601 with explicit UTC offset
+- `starts_at` as New York local wall-clock ISO-8601 time, with explicit offsets also supported
 - `channel`
 - `priority`
 - `description`
@@ -44,7 +44,7 @@ Example:
   enabled: true
   title: "BLHA Trade Deadline"
   type: deadline
-  starts_at: "2028-02-28T23:59:00-05:00"
+  starts_at: "2028-02-28T23:59:00"
   channel: league-calendar
   priority: high
   description: "The BLHA in-season trade window closes at this deadline."
@@ -52,15 +52,17 @@ Example:
   announcement_reminders: [7d, 1d, 3h, 1h, start]
 ```
 
-The date above is an example only and is not a BLHA league date.
+The date above is an example only and is not a BLHA league date. Naive timestamps are interpreted in `America/New_York`, so EST/EDT changes are handled automatically. Explicit offsets and `Z` timestamps remain valid.
 
-## Scheduling
+## Scheduling and delayed-run protection
 
 `.github/workflows/blha-league-office.yml` checks every 30 minutes at `:07` and `:37`.
 
 The automation uses `America/New_York` as the league timezone and Discord native timestamps in posts, so managers see the correct local rendering.
 
-A reminder is eligible within a 20-minute run window. Persistent state prevents the same event/reminder/channel combination from posting more than once.
+Reminders never post before their configured trigger. Because GitHub scheduled jobs can start late, `settings.catchup_window_hours` provides a bounded backfill window; the current value is 24 hours. If a scheduled run is delayed but starts within that window, an unsent reminder can still be delivered. Persistent state prevents the same event/reminder/channel combination from posting more than once.
+
+The Discord copy also uses the actual event timestamp rather than making a potentially inaccurate future-time claim when a delayed run is catching up.
 
 ## Modes
 
@@ -91,6 +93,10 @@ The repository currently contains disabled templates for:
 
 More can be added later for voting deadlines, roster cutdowns, keeper/minors deadlines, playoff rounds, offseason reopening, annual meetings, or commissioner-defined milestones.
 
+## Delivery resilience
+
+League Office delivery uses the shared BLHA Discord webhook helper in `automation/discord_webhook.py`. The helper retries transient network failures, Discord rate limits, and common temporary HTTP failures with bounded backoff.
+
 ## Rollout
 
 1. Create a Discord webhook in `📅│league-calendar` named `BLHA League Office — Calendar`.
@@ -100,6 +106,6 @@ More can be added later for voting deadlines, roster cutdowns, keeper/minors dea
 5. Leave every real event disabled until its actual date is finalized.
 6. When a date is official, edit `events.yaml`, set the timestamp, and change `enabled` to `true`.
 
-## Why this is the next module
+## Why this module exists
 
-The League Office calendar is deterministic, commissioner-controlled, useful year-round, and does not depend on a Fantrax API or a paid integration. It is therefore a cleaner second automation module than standings/scoreboard ingestion, which should be built only after the Fantrax data path is proven.
+The League Office calendar is deterministic, commissioner-controlled, useful year-round, and does not depend on authenticated Fantrax access or a paid integration.
