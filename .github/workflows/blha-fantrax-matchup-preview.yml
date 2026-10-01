@@ -1,0 +1,89 @@
+name: BLHA Fantrax Matchup Preview
+
+on:
+  schedule:
+    - cron: "13 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Matchup preview mode"
+        required: true
+        default: preview
+        type: choice
+        options:
+          - preview
+          - test
+          - live
+      period:
+        description: "Optional scoring period override for preview/test"
+        required: false
+        default: ""
+        type: string
+      force:
+        description: "Force a live Discord post even if this period was already posted"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-fantrax-matchup-preview
+  cancel-in-progress: false
+
+jobs:
+  matchup-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests==2.32.5 PyYAML==6.0.2
+
+      - name: Run Fantrax matchup preview
+        env:
+          BLHA_WEBHOOK_SCOREBOARD: ${{ secrets.BLHA_WEBHOOK_SCOREBOARD }}
+        shell: bash
+        run: |
+          PERIOD_ARG=""
+          if [[ -n "${{ inputs.period }}" ]]; then
+            PERIOD_ARG="--period ${{ inputs.period }}"
+          fi
+
+          FORCE=""
+          if [[ "${{ inputs.force }}" == "true" ]]; then
+            FORCE="--force"
+          fi
+
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            python automation/matchup-preview/matchup_preview.py --mode live
+          else
+            python automation/matchup-preview/matchup_preview.py --mode "${{ inputs.mode }}" $PERIOD_ARG $FORCE
+          fi
+
+      - name: Persist matchup preview state
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
+        shell: bash
+        run: |
+          STATE="automation/matchup-preview/state/matchup_preview.json"
+          if git diff --quiet -- "$STATE"; then
+            echo "No matchup preview state change."
+            exit 0
+          fi
+
+          git config user.name "BLHA Fantrax Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add "$STATE"
+          git commit -m "chore(fantrax): persist matchup preview state [skip ci]"
+          git pull --rebase
+          git push
