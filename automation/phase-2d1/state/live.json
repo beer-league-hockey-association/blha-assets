@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-01T07:41:46.134089Z",
+  "updated_at": "2026-10-01T14:48:43.924930Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -872,6 +872,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-01T07:41:46.111688Z"
+    },
+    {
+      "key": "26c810f6fcb605e3a4aa2a91",
+      "url": "https://www.dailyfaceoff.com/players/news/alec-regula/28804",
+      "fingerprint": "d7d2cb0f3c3d0b43",
+      "title_norm": "alec regula (edm) — regula (undisclosed) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T14:48:43.020643Z"
+    },
+    {
+      "key": "3c9b9cf99763026ff313358c",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-savoie/31504",
+      "fingerprint": "5c490c7af2ac2a71",
+      "title_norm": "matthew savoie (edm) — savoie (undisclosed) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T14:48:43.281157Z"
+    },
+    {
+      "key": "ed94219dee82e454c39148c1",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-nugent-hopkins/1733",
+      "fingerprint": "29274b6ed217c28a",
+      "title_norm": "ryan nugent-hopkins (edm) — nugent-hopkins (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-01T14:48:43.576221Z"
+    },
+    {
+      "key": "3990cfe5ed0cd054c24d364d",
+      "url": "",
+      "fingerprint": "bc121ed7a29a008f",
+      "title_norm": "rebuilding flames still to feature plenty of feel-good stories",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T14:48:43.895407Z"
+    },
+    {
+      "key": "6c5ccfb957b34909cb552fc8",
+      "url": "",
+      "fingerprint": "9c068f06b71c6649",
+      "title_norm": "oilers place ryan nugent-hopkins on injured reserve, recall josh samanski",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T14:48:43.904745Z"
     }
   ]
 }
