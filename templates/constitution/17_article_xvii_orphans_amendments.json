@@ -1,9 +1,15 @@
 {
-  "embeds": [{
-    "title": "ARTICLE XVII — ORPHANS, COMMISSIONER POWERS, AND AMENDMENTS",
-    "description": "If a franchise becomes orphaned, the Commissioner may recruit and approve a replacement owner and take reasonable temporary steps necessary to preserve the roster and league schedule.\n\nAny prepaid league obligation attached to the franchise remains part of the franchise unless the league formally determines otherwise.\n\nThe Commissioner may correct clerical errors, Fantrax configuration mistakes, or platform issues necessary to apply an already-existing rule. Such corrections are not authority to create new substantive rules midstream.\n\nFormal amendments should be recorded in the Constitution channel with the affected section, approval date, and effective date.\n\nThe latest published version of the Constitution is the controlling league document.",
-    "color": 16758812,
-    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
-    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
-  }]
+  "embeds": [
+    {
+      "title": "ARTICLE XVII — ORPHANS, COMMISSIONER POWERS, AND AMENDMENTS",
+      "description": "If a franchise becomes orphaned, the Commissioner may recruit and approve a replacement owner and take reasonable temporary steps necessary to preserve the roster and league schedule.\n\nAny prepaid league obligation attached to the franchise remains part of the franchise unless the league formally determines otherwise.\n\nThe Commissioner may correct clerical errors, Fantrax configuration mistakes, or platform issues necessary to apply an already-existing rule. Such corrections are not authority to create new substantive rules midstream.\n\nFormal amendments should be recorded in the Constitution channel with the affected section, approval date, and effective date.\n\nThe latest published version of the Constitution is the controlling league document.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
 }

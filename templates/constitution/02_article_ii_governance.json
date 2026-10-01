@@ -1,9 +1,15 @@
 {
-  "embeds": [{
-    "title": "ARTICLE II — GOVERNANCE AND LEAGUE AUTHORITY",
-    "description": "The Commissioner administers the league, maintains Fantrax settings, publishes official rulings, enforces the Constitution, and protects league integrity. Assistant Commissioners may perform duties delegated by the Commissioner.\n\nEach franchise receives **one formal league vote** regardless of whether it has one owner or multiple co-owners. Co-owners may fully participate in team management and league discussion, but do not create an additional franchise vote.\n\nMaterial rule changes are handled through formal league governance and recorded in the Constitution and voting record. The current published Constitution controls when old messages, informal discussions, or outdated documents conflict.",
-    "color": 16758812,
-    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
-    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
-  }]
+  "embeds": [
+    {
+      "title": "ARTICLE II — GOVERNANCE AND LEAGUE AUTHORITY",
+      "description": "The Commissioner administers the league, maintains Fantrax settings, publishes official rulings, enforces the Constitution, and protects league integrity. Assistant Commissioners may perform duties delegated by the Commissioner.\n\nEach franchise receives **one formal league vote** regardless of whether it has one owner or multiple co-owners. Co-owners may fully participate in team management and league discussion, but do not create an additional franchise vote.\n\nMaterial rule changes are handled through formal league governance and recorded in the Constitution and voting record. The current published Constitution controls when old messages, informal discussions, or outdated documents conflict.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
 }

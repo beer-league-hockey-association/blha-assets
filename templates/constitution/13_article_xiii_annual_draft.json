@@ -1,9 +1,15 @@
 {
-  "embeds": [{
-    "title": "ARTICLE XIII — ANNUAL DRAFT",
-    "description": "The annual BLHA draft is **5 rounds** and **linear**, not snake. It is expected to begin approximately **2–3 weeks after the NHL Entry Draft**.\n\nThe draft uses an **8-hour pick clock** with a **12:00 AM–8:00 AM ET** pause. Managers are encouraged to maintain queues. Timeout handling may use Fantrax queue/autodraft or temporary-skip tools as announced before the draft.\n\nThe player pool is **not restricted to the current NHL draft class**. Any unowned player in the Fantrax player pool who satisfies BLHA minor-league eligibility may be selected.",
-    "color": 16758812,
-    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
-    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
-  }]
+  "embeds": [
+    {
+      "title": "ARTICLE XIII — ANNUAL DRAFT",
+      "description": "The annual BLHA draft is **5 rounds** and **linear**, not snake. It is expected to begin approximately **2–3 weeks after the NHL Entry Draft**.\n\nThe draft uses an **8-hour pick clock** with a **12:00 AM–8:00 AM ET** pause. Managers are encouraged to maintain queues. Timeout handling may use Fantrax queue/autodraft or temporary-skip tools as announced before the draft.\n\nThe player pool is **not restricted to the current NHL draft class**. Any unowned player in the Fantrax player pool who satisfies BLHA minor-league eligibility may be selected.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
 }

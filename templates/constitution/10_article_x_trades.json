@@ -1,9 +1,15 @@
 {
-  "embeds": [{
-    "title": "ARTICLE X — TRADES AND TRADE DEADLINE",
-    "description": "Trades are unlimited and are not subject to league vote or veto. A trade is not reversible merely because it appears lopsided.\n\nCommissioner intervention is limited to narrow circumstances such as collusion, prohibited outside consideration, clear misconduct, or a promptly reported and credible misclick/platform error.\n\n**Tradeable assets**\n• Rostered players\n• Eligible draft picks\n• Current-season FAAB\n\n**Prohibited**\n• Outside assets or cash consideration\n• Loans or rentals\n• Predetermined tradebacks\n• Other off-platform consideration\n\nThe trade deadline is the **end of Week 20**. Trading reopens the **day after the Stanley Cup Final**.",
-    "color": 16758812,
-    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
-    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
-  }]
+  "embeds": [
+    {
+      "title": "ARTICLE X — TRADES AND TRADE DEADLINE",
+      "description": "Trades are unlimited and are not subject to league vote or veto. A trade is not reversible merely because it appears lopsided.\n\nCommissioner intervention is limited to narrow circumstances such as collusion, prohibited outside consideration, clear misconduct, or a promptly reported and credible misclick/platform error.\n\n**Tradeable assets**\n• Rostered players\n• Eligible draft picks\n• Current-season FAAB\n\n**Prohibited**\n• Outside assets or cash consideration\n• Loans or rentals\n• Predetermined tradebacks\n• Other off-platform consideration\n\nThe trade deadline is the **end of Week 20**. Trading reopens the **day after the Stanley Cup Final**.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
 }

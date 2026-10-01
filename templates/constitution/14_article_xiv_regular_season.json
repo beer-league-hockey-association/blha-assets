@@ -1,9 +1,15 @@
 {
-  "embeds": [{
-    "title": "ARTICLE XIV — REGULAR SEASON AND STANDINGS",
-    "description": "The regular season consists of **22 scoring periods**. Every franchise plays every other franchise twice.\n\nRegular-season standings and head-to-head results are recorded by Fantrax.\n\nThe **Presidents’ Trophy** is awarded using the league’s configured regular-season H2H record criteria.\n\nThe **Regular-Season Fantasy Points Leader** prize is based on fantasy points accumulated during the regular season only.",
-    "color": 16758812,
-    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
-    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
-  }]
+  "embeds": [
+    {
+      "title": "ARTICLE XIV — REGULAR SEASON AND STANDINGS",
+      "description": "The regular season consists of **22 scoring periods**. Every franchise plays every other franchise twice.\n\nRegular-season standings and head-to-head results are recorded by Fantrax.\n\nThe **Presidents’ Trophy** is awarded using the league’s configured regular-season H2H record criteria.\n\nThe **Regular-Season Fantasy Points Leader** prize is based on fantasy points accumulated during the regular season only.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
 }

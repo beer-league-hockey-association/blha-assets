@@ -1,9 +1,15 @@
 {
-  "embeds": [{
-    "title": "ARTICLE VIII — LINEUPS AND GOALIE STARTS",
-    "description": "Lineups are set daily. Managers are responsible for maintaining legal rosters and active lineups.\n\nA franchise may receive credit for a maximum of:\n\n• **4 goalie starts** during a normal fantasy week\n• **8 goalie starts** during the two-week championship period\n\nFantrax enforcement settings govern the technical application of these limits.",
-    "color": 16758812,
-    "footer": {"text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"},
-    "image": {"url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"}
-  }]
+  "embeds": [
+    {
+      "title": "ARTICLE VIII — LINEUPS AND GOALIE STARTS",
+      "description": "Lineups are set daily. Managers are responsible for maintaining legal rosters and active lineups.\n\nA franchise may receive credit for a maximum of:\n\n• **4 goalie starts** during a normal fantasy week\n• **8 goalie starts** during the two-week championship period\n\nFantrax enforcement settings govern the technical application of these limits.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • WORKING DRAFT v1.1"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png"
+      }
+    }
+  ]
 }
