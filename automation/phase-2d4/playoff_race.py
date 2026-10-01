@@ -31,6 +31,12 @@ import yaml
 
 BASE = "https://www.fantrax.com/fxea/general"
 ROOT = Path(__file__).resolve().parent
+AUTOMATION_ROOT = ROOT.parent
+if str(AUTOMATION_ROOT) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_ROOT))
+
+from discord_webhook import post_discord_webhook
+
 CONFIG_PATH = ROOT / "playoff_race_config.yaml"
 STATE_PATH = ROOT / "state" / "playoff_race.json"
 AVATAR = (
@@ -175,7 +181,7 @@ def fingerprint(rows: list[dict], playoff_cut: int, bubble_depth: int) -> str:
 
 def console_table(rows: list[dict], playoff_cut: int, bubble_depth: int) -> str:
     limit = min(len(rows), playoff_cut + bubble_depth)
-    lines = ["RK  TEAM                     REC        GB"] 
+    lines = ["RK  TEAM                     REC        GB"]
     lines.append("--  -----------------------  ---------  ------")
     for index, row in enumerate(rows[:limit], start=1):
         rank = row["rank"] or index
@@ -286,28 +292,7 @@ def build_payload(
 
 
 def deliver(secret_name: str, body: dict) -> tuple[bool, str]:
-    url = os.getenv(secret_name, "").strip()
-    if not url:
-        return False, f"missing secret {secret_name}"
-
-    try:
-        response = requests.post(
-            url,
-            params={"wait": "true"},
-            json=body,
-            timeout=25,
-        )
-    except Exception as exc:
-        return False, f"request failed: {exc}"
-
-    if response.status_code not in (200, 204):
-        return (
-            False,
-            f"Discord returned {response.status_code}: "
-            f"{response.text[:250]}",
-        )
-
-    return True, "delivered"
+    return post_discord_webhook(secret_name, body)
 
 
 def main() -> int:
