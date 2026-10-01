@@ -24,6 +24,12 @@ import requests
 import yaml
 
 ROOT = Path(__file__).resolve().parent
+AUTOMATION_ROOT = ROOT.parent
+if str(AUTOMATION_ROOT) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_ROOT))
+
+from discord_webhook import post_discord_webhook
+
 CONFIG_PATH = ROOT / "health_config.yaml"
 STATE_PATH = ROOT / "state" / "health.json"
 AVATAR = (
@@ -430,14 +436,7 @@ def discord_payload(
 def deliver(cfg: dict[str, Any], body: dict[str, Any]) -> tuple[bool, str]:
     settings = cfg.get("settings") or {}
     secret_name = str(settings.get("webhook_secret") or "BLHA_WEBHOOK_AUTOMATION_HEALTH")
-    webhook = os.getenv(secret_name, "").strip()
-    if not webhook:
-        return False, f"missing GitHub Actions secret {secret_name}"
-
-    response = requests.post(webhook, params={"wait": "true"}, json=body, timeout=25)
-    if response.status_code not in (200, 204):
-        return False, f"Discord returned {response.status_code}: {response.text[:300]}"
-    return True, "delivered"
+    return post_discord_webhook(secret_name, body)
 
 
 def print_issues(issues: dict[str, dict[str, Any]]) -> None:
