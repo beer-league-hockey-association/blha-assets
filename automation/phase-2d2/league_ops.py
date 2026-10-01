@@ -10,23 +10,27 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import requests
 import yaml
 
 ROOT = Path(__file__).resolve().parent
+AUTOMATION_ROOT = ROOT.parent
+if str(AUTOMATION_ROOT) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_ROOT))
+
+from discord_webhook import post_discord_webhook
+
 CONFIG_PATH = ROOT / "events.yaml"
 STATE_PATH = ROOT / "state" / "league_ops.json"
 AVATAR = (
     "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
     "discord/webhooks/avatar/blha-webhook-avatar-512.png"
 )
-RUN_WINDOW_MINUTES = 20
+DEFAULT_CATCHUP_WINDOW = timedelta(hours=24)
 
 
 def load_config() -> dict:
@@ -94,12 +98,23 @@ def event_color(priority: str, fallback: int) -> int:
     return fallback
 
 
-def build_payload(event: dict, channel_cfg: dict, reminder: str, starts_at: datetime, test: bool = False) -> dict:
+def build_payload(
+    event: dict,
+    channel_cfg: dict,
+    reminder: str,
+    starts_at: datetime,
+    test: bool = False,
+    reference_time: datetime | None = None,
+) -> dict:
     unix = int(starts_at.timestamp())
     title_prefix = "[TEST] " if test else ""
-    when = "starts now" if reminder == "start" else f"is in {reminder_label(reminder).lower()}"
+    now = reference_time or datetime.now(starts_at.tzinfo or timezone.utc)
+    if now >= starts_at:
+        body = f"**{event['title']}** has reached its scheduled time."
+    else:
+        body = f"**{event['title']}** — {reminder_label(reminder).lower()} reminder."
+
     description = event.get("description", "").strip()
-    body = f"**{event['title']}** {when}."
     if description:
         body += f"\n\n{description}"
     body += f"\n\n**When:** <t:{unix}:F>\n**Relative:** <t:{unix}:R>"
@@ -121,33 +136,30 @@ def build_payload(event: dict, channel_cfg: dict, reminder: str, starts_at: date
 
 
 def post_webhook(secret_name: str, payload: dict) -> tuple[bool, str]:
-    url = os.getenv(secret_name, "").strip()
-    if not url:
-        return False, f"missing secret {secret_name}"
-    try:
-        response = requests.post(url, params={"wait": "true"}, json=payload, timeout=25)
-    except Exception as exc:
-        return False, f"request failed: {exc}"
-    if response.status_code not in (200, 204):
-        return False, f"Discord returned {response.status_code}: {response.text[:250]}"
-    return True, "delivered"
+    return post_discord_webhook(secret_name, payload)
 
 
-def due(now: datetime, trigger: datetime) -> bool:
-    delta = abs((now - trigger).total_seconds())
-    return delta <= RUN_WINDOW_MINUTES * 60
+def due(now: datetime, trigger: datetime, catchup_window: timedelta = DEFAULT_CATCHUP_WINDOW) -> bool:
+    """A reminder is due only after its trigger, with bounded delayed-run catchup."""
+    return trigger <= now <= trigger + catchup_window
 
 
 def run(mode: str, reset_state: bool = False) -> int:
     config = load_config()
-    tz = ZoneInfo(config.get("settings", {}).get("timezone", "America/New_York"))
+    settings = config.get("settings", {})
+    tz = ZoneInfo(settings.get("timezone", "America/New_York"))
     now = datetime.now(tz)
+    catchup_hours = float(settings.get("catchup_window_hours", 24))
+    catchup_window = timedelta(hours=max(0.0, catchup_hours))
     state = {"sent": {}} if reset_state else load_state()
     sent = state.setdefault("sent", {})
     channels = config.get("channels", {})
-    defaults = config.get("settings", {}).get("default_reminders", [])
+    defaults = settings.get("default_reminders", [])
 
-    print(f"BLHA LEAGUE OFFICE — mode={mode.upper()} now={now.isoformat()}")
+    print(
+        f"BLHA LEAGUE OFFICE — mode={mode.upper()} now={now.isoformat()} "
+        f"catchup_window_hours={catchup_hours:g}"
+    )
     examined = posted = dry = duplicate = skipped = errors = 0
 
     for event in config.get("events", []):
@@ -166,7 +178,7 @@ def run(mode: str, reset_state: bool = False) -> int:
             continue
 
         reminders = event.get("reminders") or defaults
-        calendar_channel = event.get("channel", config.get("settings", {}).get("default_channel", "league-calendar"))
+        calendar_channel = event.get("channel", settings.get("default_channel", "league-calendar"))
         announcement_reminders = set(event.get("announcement_reminders", []))
 
         for reminder in reminders:
@@ -176,7 +188,7 @@ def run(mode: str, reset_state: bool = False) -> int:
             if reminder in announcement_reminders and "league-announcements" not in destinations:
                 destinations.append("league-announcements")
 
-            if not due(now, trigger):
+            if not due(now, trigger, catchup_window):
                 continue
 
             for channel in destinations:
@@ -195,7 +207,13 @@ def run(mode: str, reset_state: bool = False) -> int:
                     dry += 1
                     continue
 
-                payload = build_payload(event, channel_cfg, reminder, starts_at)
+                payload = build_payload(
+                    event,
+                    channel_cfg,
+                    reminder,
+                    starts_at,
+                    reference_time=now,
+                )
                 ok, detail = post_webhook(channel_cfg["secret"], payload)
                 if ok:
                     print(f"POSTED [{channel}] {event['title']} — {reminder_label(reminder)}")
@@ -229,7 +247,14 @@ def test_channel(channel: str) -> int:
         "description": "Controlled test only. No league deadline or event is being announced.",
         "priority": "normal",
     }
-    payload = build_payload(event, cfg, "1h", now + timedelta(hours=1), test=True)
+    payload = build_payload(
+        event,
+        cfg,
+        "1h",
+        now + timedelta(hours=1),
+        test=True,
+        reference_time=now,
+    )
     ok, detail = post_webhook(cfg["secret"], payload)
     print(("PASS" if ok else "ERROR") + f" [{channel}]: {detail}")
     return 0 if ok else 1
