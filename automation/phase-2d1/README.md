@@ -1,47 +1,62 @@
 # BLHA Phase 2D.1 — The Wire Automation Architecture
 
 ## Goal
-Build a reliable, low-noise NHL news pipeline for the Beer League Hockey Association Discord server.
+Run a reliable, low-noise NHL news pipeline for the Beer League Hockey Association Discord server.
 
-## Platform choice
-The initial automation backbone is **GitHub Actions** because the BLHA repository is public, standard GitHub-hosted Actions are free for public repositories, and scheduled workflows can later run as often as every five minutes.
+## Current production state
+The Wire is **live** on GitHub Actions. Scheduled runs occur four times per hour at `:03`, `:18`, `:33`, and `:48` UTC-minute positions. Manual runs default to `shadow` mode for safe testing.
 
-Phase 2D.1 is intentionally **dry-run only**. Nothing posts to Discord until routing is tested and the Discord webhook URLs are stored as GitHub Actions secrets.
+Production safeguards include:
+- persistent deduplication with a 30-day / 5,000-item cap
+- fuzzy duplicate suppression
+- baseline-first live initialization
+- per-run and per-channel flood guards
+- source-level failures that do not crash the whole Wire
+- limited parallel source collection
+- one retry for transient source failures
+- Discord retry handling for HTTP 429 and 5xx responses
+- `allowed_mentions` disabled on automated posts
+- Automation Health monitoring for stale runs, persistent source failures, and repeated flood-guard events
+- resilient Git state persistence with pull/rebase/retry handling
 
 ## Discord destinations
 - `🚨│breaking-news` — only major, time-sensitive NHL developments.
 - `📰│nhl-news` — broader national NHL news that does not fit a more specific desk.
-- `🏥│injury-report` — injury, IR/LTIR, surgery, return and availability updates.
-- `🔄│nhl-transactions` — trades, signings, waivers, recalls, assignments and contract moves.
+- `🏥│injury-report` — injury, IR/LTIR, surgery, return and availability updates. When an exact normalized Fantrax roster match exists, the post also identifies the BLHA team that owns the player.
+- `🔄│nhl-transactions` — trades, signings, waivers, recalls, assignments and contract moves. **PuckPedia is the active primary live source for this channel.**
 - `🌱│prospect-wire` — prospects, AHL, NCAA, CHL, international development and draft-related updates.
 - `💬│news-desk` — human discussion only; no automation.
 
-## Initial source stack
-### Tier 1 — primary automatic sources
-1. **ESPN NHL RSS** — `https://www.espn.com/espn/rss/nhl/news`
-2. **Sportsnet NHL RSS** — `https://www.sportsnet.ca/hockey/nhl/feed/`
+## Active source stack
+### Primary live sources
+- NHL.com Latest News
+- Sportsnet NHL RSS
+- Daily Faceoff Injury Report
+- American Hockey League RSS
+- The Hockey Writers Prospects RSS
+- DobberProspects RSS
 
-### Tier 2 — discovery source
-3. **Reddit r/hockey RSS** — `https://www.reddit.com/r/hockey/.rss`
+### Discovery / corroboration sources
+- CBS Sports NHL
+- Elite Prospects transaction feeds
+- Pro Hockey Rumors
+- USCHO
+- r/hockey
 
-Reddit is discovery-only in the first release. It may route to `nhl-news`, `injury-report`, `nhl-transactions`, or `prospect-wire`, but it is not allowed to trigger `breaking-news` automatically until we have proven source validation.
+ESPN NHL is currently disabled because repeated scheduled probes returned an empty feed.
 
-## Planned second-stage sources
-- NHL.com Latest News / Status Report
-- Daily Faceoff injury report
-- Official team transaction/news pages where practical
-- X/Twitter only if a stable, compliant and reasonably priced feed method is available
+## Native transaction integration
+PuckPedia's Discord integration is active and is preferred for live NHL transaction posts. The Wire still classifies transaction events for dedupe/diagnostics but suppresses true transaction-event delivery to avoid duplicate posts. General analysis that merely mentions a trade or contract is routed back to NHL News instead of being silently discarded.
 
 ## Routing priority
-Each item should normally post to **one** channel only, using this priority:
-
+Each item should normally post to one channel only:
 1. Breaking News
 2. Injury Report
 3. NHL Transactions
 4. Prospect Wire
 5. NHL News
 
-This avoids flooding multiple channels with the same story.
+Transaction classification intentionally uses action-oriented patterns instead of broad words such as `trade`, `contract`, or `extension`, so analysis headlines are not incorrectly swallowed by the native transaction route.
 
 ## Breaking-news standard
 Breaking News is intentionally hard to trigger. Examples include:
@@ -52,42 +67,24 @@ Breaking News is intentionally hard to trigger. Examples include:
 - head coach / general manager firing or hiring with league-wide impact
 - major league rule or schedule development
 
-Routine signings, recalls, minor injuries, daily lineup notes, rumors, analysis, opinion and game recaps do **not** belong in Breaking News.
+Routine signings, recalls, minor injuries, daily lineup notes, rumors, analysis, opinion and game recaps do not belong in Breaking News.
 
 ## Security
-Discord webhook URLs are credentials. They must be stored only in GitHub Actions **Secrets** and never committed to this public repository.
+Discord webhook URLs are credentials and belong only in GitHub Actions Secrets. The repository should never contain webhook URLs, Fantrax passwords, session cookies, or other account credentials.
 
-Planned secret names:
+Current webhook secret names:
 - `BLHA_WEBHOOK_BREAKING_NEWS`
 - `BLHA_WEBHOOK_NHL_NEWS`
 - `BLHA_WEBHOOK_INJURY_REPORT`
 - `BLHA_WEBHOOK_NHL_TRANSACTIONS`
 - `BLHA_WEBHOOK_PROSPECT_WIRE`
 
-## Workflow phases
-### 2D.1 — Architecture + dry run
-- source list
-- route rules
-- dry-run collector
-- no Discord posting
+## Fantrax enrichment
+The public read-only Fantrax endpoints are used only to enrich injury alerts with BLHA ownership when an exact normalized player-name match can be made. Failure to read Fantrax does not stop Wire delivery; enrichment simply falls back to no ownership tag.
 
-### 2D.2 — Live Wire MVP
-- add webhook secrets
-- persistent deduplication
-- manual live test
-- enable schedule
+League transaction history is authentication-gated by Fantrax and is not currently ingested by the Wire.
 
-### 2D.3 — Source expansion
-- NHL.com
-- Daily Faceoff
-- official teams
-- optional social feeds
+## Maintenance
+GitHub scheduled workflows are best-effort rather than real-time. Automation Health uses deliberately tolerant stale thresholds so a single delayed cron event does not create noise.
 
-### 2D.4 — Fantrax integration
-- league transactions
-- waiver results
-- trades
-- draft events where technically feasible
-
-## Maintenance warning
-GitHub automatically disables scheduled workflows in public repositories after 60 days with no repository activity. The BLHA repo should be checked periodically during the offseason.
+GitHub may disable scheduled workflows in public repositories after long periods of repository inactivity, so the BLHA repository should still be checked during the offseason.
