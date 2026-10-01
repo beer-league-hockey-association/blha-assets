@@ -16,9 +16,14 @@ import json
 import os
 import re
 import sys
+import time
+import unicodedata
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
+from email.utils import parsedate_to_datetime
 from pathlib import Path
+from typing import Any
 from urllib.parse import urlsplit, urlunsplit
 
 import requests
@@ -32,6 +37,8 @@ STATE_DIR = ROOT / "state"
 STATE_TTL_HOURS = 24 * 30
 FUZZY_DEDUPE_WINDOW_HOURS = 48
 DEFAULT_MAX_SOURCE_ITEMS = 15
+MAX_SOURCE_WORKERS = 4
+FANTRAX_BASE = "https://www.fantrax.com/fxea/general"
 
 # Production flood guards. Normal 15-minute runs should produce only a handful
 # of truly new items. If a feed/parser suddenly exposes a backlog, these limits
@@ -196,34 +203,180 @@ def build_candidate(source: dict, entry: dict) -> dict:
         "player": entry.get("player", ""),
         "team": entry.get("team", ""),
         "status": entry.get("status", ""),
+        "fantasy_owner": "",
     }
 
 
-def fetch_candidates(config: dict, include_discovery: bool = False) -> list[dict]:
+def source_candidates(source: dict) -> list[dict]:
+    entries = wire.fetch_source(source)
     candidates: list[dict] = []
-    sources = [s for s in config.get("sources", []) if s.get("enabled", False)]
-    sources.sort(key=lambda s: (int(s.get("tier", 9)), s.get("name", "")))
-
-    for source in sources:
-        if source.get("discovery_only", False) and not include_discovery:
+    max_items = int(source.get("max_items", DEFAULT_MAX_SOURCE_ITEMS))
+    for entry in entries:
+        candidate = build_candidate(source, entry)
+        if wire.should_ignore(candidate["title"], candidate["source_id"], candidate["channel"]):
             continue
-        try:
-            entries = wire.fetch_source(source)
-        except Exception as exc:
-            print(f"SOURCE ERROR [{source.get('name')}]: {exc}")
-            continue
-
-        count = 0
-        max_items = int(source.get("max_items", DEFAULT_MAX_SOURCE_ITEMS))
-        for entry in entries:
-            candidate = build_candidate(source, entry)
-            if wire.should_ignore(candidate["title"], candidate["source_id"], candidate["channel"]):
-                continue
-            candidates.append(candidate)
-            count += 1
-            if count >= max_items:
-                break
+        candidates.append(candidate)
+        if len(candidates) >= max_items:
+            break
     return candidates
+
+
+def fetch_candidates(config: dict, include_discovery: bool = False) -> list[dict]:
+    sources = [
+        source
+        for source in config.get("sources", [])
+        if source.get("enabled", False)
+        and (include_discovery or not source.get("discovery_only", False))
+    ]
+    sources.sort(key=lambda source: (int(source.get("tier", 9)), source.get("name", "")))
+    if not sources:
+        return []
+
+    by_id: dict[str, list[dict]] = {}
+    with ThreadPoolExecutor(max_workers=min(MAX_SOURCE_WORKERS, len(sources))) as pool:
+        future_to_source = {pool.submit(source_candidates, source): source for source in sources}
+        for future in as_completed(future_to_source):
+            source = future_to_source[future]
+            source_id = str(source.get("id") or source.get("name") or id(source))
+            try:
+                by_id[source_id] = future.result()
+            except Exception as exc:
+                print(f"SOURCE ERROR [{source.get('name')}]: {exc}")
+                by_id[source_id] = []
+
+    candidates: list[dict] = []
+    for source in sources:
+        source_id = str(source.get("id") or source.get("name") or id(source))
+        candidates.extend(by_id.get(source_id, []))
+    return candidates
+
+
+def normalize_player_name(value: str) -> str:
+    text = unicodedata.normalize("NFKD", str(value or ""))
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    text = text.lower().replace("’", "'")
+    text = re.sub(r"\b(jr|sr|ii|iii|iv)\.?\b", "", text)
+    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+
+
+def extract_player_name(value: Any) -> str:
+    if not isinstance(value, dict):
+        return ""
+    for key in ("playerName", "fullName", "name"):
+        raw = value.get(key)
+        if isinstance(raw, str) and raw.strip():
+            return raw.strip()
+    for key in ("player", "playerInfo"):
+        nested = value.get(key)
+        if isinstance(nested, dict):
+            found = extract_player_name(nested)
+            if found:
+                return found
+    return ""
+
+
+def roster_rows(value: Any) -> list[dict[str, Any]]:
+    if isinstance(value, list):
+        return [row for row in value if isinstance(row, dict)]
+    if isinstance(value, dict):
+        for key in ("players", "roster", "rows"):
+            rows = value.get(key)
+            if isinstance(rows, list):
+                return [row for row in rows if isinstance(row, dict)]
+    return []
+
+
+def fantrax_ownership(league_id: str) -> dict[str, str]:
+    if not league_id:
+        return {}
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "BLHA-Wire-Fantrax-Enrichment/1.0",
+        "Accept": "application/json,text/plain,*/*",
+    })
+    try:
+        standings_response = session.get(
+            f"{FANTRAX_BASE}/getStandings",
+            params={"leagueId": league_id},
+            timeout=15,
+        )
+        standings_response.raise_for_status()
+        standings = standings_response.json()
+        roster_response = session.get(
+            f"{FANTRAX_BASE}/getTeamRosters",
+            params={"leagueId": league_id},
+            timeout=15,
+        )
+        roster_response.raise_for_status()
+        rosters = roster_response.json()
+    except Exception as exc:
+        print(f"ROSTER ENRICHMENT WARNING: Fantrax read failed: {exc}")
+        return {}
+
+    team_names: dict[str, str] = {}
+    if isinstance(standings, list):
+        for row in standings:
+            if isinstance(row, dict):
+                team_id = str(row.get("teamId") or "")
+                team_name = str(row.get("teamName") or "")
+                if team_id and team_name:
+                    team_names[team_id] = team_name
+
+    roster_block = rosters.get("rosters") if isinstance(rosters, dict) else None
+    if not isinstance(roster_block, dict):
+        print("ROSTER ENRICHMENT WARNING: Fantrax rosters block was not a dict")
+        return {}
+
+    ownership: dict[str, str] = {}
+    for team_id, raw_roster in roster_block.items():
+        owner = team_names.get(str(team_id), "")
+        if not owner:
+            continue
+        for row in roster_rows(raw_roster):
+            player = extract_player_name(row)
+            key = normalize_player_name(player)
+            if key:
+                ownership[key] = owner
+    print(f"ROSTER ENRICHMENT: loaded {len(ownership)} rostered player names")
+    return ownership
+
+
+def enrich_injury_ownership(candidates: list[dict], config: dict) -> None:
+    fantrax_cfg = config.get("fantrax") if isinstance(config.get("fantrax"), dict) else {}
+    if not fantrax_cfg.get("roster_enrichment", False):
+        return
+    injuries = [candidate for candidate in candidates if candidate.get("channel") == "injury-report" and candidate.get("player")]
+    if not injuries:
+        return
+    ownership = fantrax_ownership(str(fantrax_cfg.get("league_id") or "").strip())
+    if not ownership:
+        return
+    matched = 0
+    for candidate in injuries:
+        owner = ownership.get(normalize_player_name(candidate.get("player", "")), "")
+        if owner:
+            candidate["fantasy_owner"] = owner
+            matched += 1
+    print(f"ROSTER ENRICHMENT: matched {matched}/{len(injuries)} injury items to BLHA rosters")
+
+
+def published_timestamp(value: str) -> str | None:
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    dt: datetime | None = None
+    try:
+        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            dt = parsedate_to_datetime(raw)
+        except (TypeError, ValueError, OverflowError):
+            return None
+    if dt is None:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc).isoformat()
 
 
 def discord_payload(candidate: dict) -> dict:
@@ -233,20 +386,28 @@ def discord_payload(candidate: dict) -> dict:
         source_line += f" • {candidate['source_detail']}"
 
     description = f"**Source:** {source_line}"
-    if candidate.get("published"):
+    if candidate.get("fantasy_owner"):
+        description += f"\n**BLHA roster:** {candidate['fantasy_owner']}"
+
+    timestamp = published_timestamp(candidate.get("published", ""))
+    if not timestamp and candidate.get("published"):
         description += f"\n**Published:** {candidate['published']}"
+
+    embed = {
+        "title": candidate["title"][:256],
+        "url": candidate.get("link", "") or None,
+        "description": description[:4096],
+        "color": CHANNEL_COLORS.get(channel, 0xFFB81C),
+        "footer": {"text": f"{CHANNEL_LABELS.get(channel, channel)} • BLHA THE WIRE"},
+    }
+    if timestamp:
+        embed["timestamp"] = timestamp
 
     return {
         "username": "BLHA News Wire",
         "avatar_url": WEBHOOK_AVATAR,
         "allowed_mentions": {"parse": []},
-        "embeds": [{
-            "title": candidate["title"][:256],
-            "url": candidate.get("link", "") or None,
-            "description": description[:4096],
-            "color": CHANNEL_COLORS.get(channel, 0xFFB81C),
-            "footer": {"text": f"{CHANNEL_LABELS.get(channel, channel)} • BLHA THE WIRE"},
-        }],
+        "embeds": [embed],
     }
 
 
@@ -260,13 +421,44 @@ def deliver(candidate: dict) -> bool:
         print(f"DELIVERY SKIP: missing GitHub Actions secret {env_name}")
         return False
 
-    response = requests.post(
-        webhook, params={"wait": "true"}, json=discord_payload(candidate), timeout=25
-    )
-    if response.status_code not in (200, 204):
+    for attempt in range(3):
+        try:
+            response = requests.post(
+                webhook,
+                params={"wait": "true"},
+                json=discord_payload(candidate),
+                timeout=20,
+            )
+        except requests.RequestException as exc:
+            if attempt < 2:
+                time.sleep(2 ** attempt)
+                continue
+            print(f"DELIVERY ERROR: request failed after retries: {exc}")
+            return False
+
+        if response.status_code in (200, 204):
+            return True
+
+        if response.status_code == 429 and attempt < 2:
+            delay = 1.0
+            try:
+                delay = float(response.json().get("retry_after", delay))
+            except Exception:
+                try:
+                    delay = float(response.headers.get("Retry-After", delay))
+                except ValueError:
+                    pass
+            time.sleep(min(max(delay, 0.5), 10.0))
+            continue
+
+        if 500 <= response.status_code <= 599 and attempt < 2:
+            time.sleep(2 ** attempt)
+            continue
+
         print(f"DELIVERY ERROR {response.status_code}: {response.text[:300]}")
         return False
-    return True
+
+    return False
 
 
 def main() -> int:
@@ -284,6 +476,7 @@ def main() -> int:
 
     prune_state(state)
     candidates = fetch_candidates(cfg, include_discovery=args.include_discovery)
+    enrich_injury_ownership(candidates, cfg)
     print(
         f"BLHA THE WIRE — mode={args.mode.upper()} candidates={len(candidates)} "
         f"include_discovery={args.include_discovery}"
@@ -319,7 +512,8 @@ def main() -> int:
             continue
 
         if args.mode == "shadow":
-            print(f"SHADOW {prefix}: {candidate['title']}")
+            owner_note = f" [BLHA roster: {candidate['fantasy_owner']}]" if candidate.get("fantasy_owner") else ""
+            print(f"SHADOW {prefix}: {candidate['title']}{owner_note}")
             remember(candidate, state)
             shadowed += 1
             continue
