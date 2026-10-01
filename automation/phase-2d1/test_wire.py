@@ -8,7 +8,7 @@ import unittest
 import engine
 import roster_enrichment
 import wire
-import run_wire  # noqa: F401 - applies production routing/enrichment adapters
+import run_wire  # applies production routing/enrichment/source adapters
 
 
 class WireRoutingTests(unittest.TestCase):
@@ -31,6 +31,45 @@ class WireRoutingTests(unittest.TestCase):
     def test_out_for_games_routes_injury(self) -> None:
         title = "Dylan Larkin out for Red Wings' first two games"
         self.assertEqual(wire.classify_title(title, False), "injury-report")
+
+
+class WireSourceTests(unittest.TestCase):
+    def test_rss_link_recovers_alternate_href(self) -> None:
+        entry = {
+            "link": "",
+            "links": [
+                {"rel": "enclosure", "href": "https://cdn.example.test/audio.mp3"},
+                {"rel": "alternate", "href": "https://www.sportsnet.ca/nhl/article/example-story/"},
+            ],
+            "id": "sportsnet-guid-123",
+        }
+        self.assertEqual(
+            run_wire._rss_entry_link(entry),
+            "https://www.sportsnet.ca/nhl/article/example-story/",
+        )
+
+    def test_rss_link_can_use_http_guid(self) -> None:
+        entry = {
+            "link": "",
+            "links": [],
+            "guid": "https://www.sportsnet.ca/nhl/article/guid-story/",
+        }
+        self.assertEqual(
+            run_wire._rss_entry_link(entry),
+            "https://www.sportsnet.ca/nhl/article/guid-story/",
+        )
+
+    def test_rss_link_does_not_invent_url_from_non_http_guid(self) -> None:
+        entry = {"link": "", "links": [], "guid": "sportsnet:story:12345"}
+        self.assertEqual(run_wire._rss_entry_link(entry), "")
+
+    def test_sportsnet_live_tracker_is_ignored(self) -> None:
+        title = "Maple Leafs Live Tracker: Toronto vs. New York Islanders"
+        self.assertTrue(wire.should_ignore(title, "sportsnet_nhl", "nhl-news"))
+
+    def test_normal_sportsnet_story_is_not_ignored(self) -> None:
+        title = "Rebuilding Flames still to feature plenty of feel-good stories"
+        self.assertFalse(wire.should_ignore(title, "sportsnet_nhl", "nhl-news"))
 
 
 class WireFormattingTests(unittest.TestCase):
