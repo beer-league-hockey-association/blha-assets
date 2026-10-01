@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-01T01:28:22.449373Z",
+  "updated_at": "2026-10-01T07:41:46.134089Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -752,6 +752,126 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-01T01:28:22.428915Z"
+    },
+    {
+      "key": "58a12ab891b7ecda0d4da55f",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-philadelphia-flyers-game-recap-september-30-2026",
+      "fingerprint": "678db8dac3daad24",
+      "title_norm": "penguins shut out rival flyers in season opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T07:41:45.598959Z"
+    },
+    {
+      "key": "0d8bf953b782629d7726aeb5",
+      "url": "https://www.nhl.com/news/jt-miller-ready-to-lead-new-york-rangers-in-second-season-as-captain",
+      "fingerprint": "1a4cfe1339ee5876",
+      "title_norm": "miller 'learned a ton,' set to lead rangers' revival",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T07:41:45.830407Z"
+    },
+    {
+      "key": "666af6b9b4b2f0a3178352c6",
+      "url": "https://www.nhl.com/news/topic/super-16/super-16-nhl-power-rankings-october-1-2026",
+      "fingerprint": "44cca2b171e80a24",
+      "title_norm": "power rankings: top teams will go as far as …",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T07:41:46.010878Z"
+    },
+    {
+      "key": "5d8de36edadb591bbfe2a858",
+      "url": "https://www.nhl.com/news/anton-frondell-aiming-to-be-even-better-for-chicago-blackhawks-in-second-season",
+      "fingerprint": "5049d2f1e9fa2dbb",
+      "title_norm": "frondell aims 'to be even better' in 2nd season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T07:41:46.014171Z"
+    },
+    {
+      "key": "f7e1721c9bd3c2ffd3cc56fb",
+      "url": "https://www.nhl.com/news/with-jake-allen-help-nico-daws-ready-to-go-in-net-for-new-jersey-devils",
+      "fingerprint": "0dc8dfad8bb1d79c",
+      "title_norm": "with allen's help, daws 'ready to go' in net for devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T07:41:46.018261Z"
+    },
+    {
+      "key": "4e71845883ca2d9f1ae60480",
+      "url": "https://www.nhl.com/news/los-angeles-kings-colorado-avalanche-game-recap-september-30-2026",
+      "fingerprint": "2ff3f518b587fd47",
+      "title_norm": "avalanche score eight in season-opening win against kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-01T07:41:46.022342Z"
+    },
+    {
+      "key": "fa68960e7354e6ddf44a6b4f",
+      "url": "",
+      "fingerprint": "e706154459b298d0",
+      "title_norm": "steady stolarz leads new-look maple leafs to first victory",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T07:41:46.086920Z"
+    },
+    {
+      "key": "94f5791abc380629db2b2cc3",
+      "url": "",
+      "fingerprint": "0b1fdfbc143a566c",
+      "title_norm": "'some young juice': what makes maple leafs' cowan driven to win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T07:41:46.090419Z"
+    },
+    {
+      "key": "190445e01555ec05c3834500",
+      "url": "",
+      "fingerprint": "0c8775990f23e49e",
+      "title_norm": "mackinnon drops mitts with clarke for first fight in four years",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T07:41:46.096552Z"
+    },
+    {
+      "key": "ee3a718d8d0b970f9acc7d49",
+      "url": "",
+      "fingerprint": "7af31ee4ea215c83",
+      "title_norm": "ranking all 32 nhl centre-ice logos for 2026-27 season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T07:41:46.102798Z"
+    },
+    {
+      "key": "33944a3b109512fd088e390c",
+      "url": "",
+      "fingerprint": "9b4905ddf1cd7edd",
+      "title_norm": "mackinnon has two goals, rare fight in avalanche's victory over kings in opener",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T07:41:46.107996Z"
+    },
+    {
+      "key": "7ae2f707d14a867712396a7d",
+      "url": "",
+      "fingerprint": "041f8596d69c3317",
+      "title_norm": "nick robertson scores twice as penguins rout flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-01T07:41:46.111688Z"
     }
   ]
 }
