@@ -10,12 +10,12 @@
       "fields": [
         {
           "name": "FANTRAX — AUTHORITATIVE GAME RECORD",
-          "value": "Rosters • lineups • scoring • adds/drops • FAAB • trades • standings • playoff results\n\nIf a gameplay transaction or result exists in Fantrax, Fantrax is the authoritative record.",
+          "value": "Rosters • Lineups • Scoring • Adds/Drops • FAAB • Trades • Standings • Playoff Results\n\nIf a gameplay transaction or result exists in Fantrax, Fantrax is the authoritative record.",
           "inline": false
         },
         {
           "name": "DISCORD — THE CLUBHOUSE + FRONT OFFICE",
-          "value": "Announcements • voting • trade market • scouting • league discussion • records • draft-day communication • commissioner support",
+          "value": "Announcements • Voting • Trade Market • Scouting • League Discussion • Records • Draft-Day Communication • Commissioner Support",
           "inline": false
         },
         {
