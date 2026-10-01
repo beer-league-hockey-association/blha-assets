@@ -66,9 +66,9 @@ jobs:
           fi
 
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            python automation/phase-2d5/playoff.py --mode live
+            python automation/phase-2d5/runner.py --mode live
           else
-            python automation/phase-2d5/playoff.py --mode "${{ inputs.mode }}" $PERIOD_ARG $FORCE
+            python automation/phase-2d5/runner.py --mode "${{ inputs.mode }}" $PERIOD_ARG $FORCE
           fi
 
       - name: Persist playoff state
@@ -84,4 +84,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add automation/phase-2d5/state/playoff.json
           git commit -m "chore(fantrax): persist playoff state [skip ci]"
+          git pull --rebase
           git push
