@@ -4,105 +4,134 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - 'templates/**/*.json'
       - '.github/workflows/blha-package-discohook-json.yml'
 
 permissions:
   contents: read
 
 jobs:
-  package:
+  validate-and-package:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Verify frozen JSON count
-        shell: bash
-        run: |
-          count=$(find templates -type f -name '*.json' | wc -l | tr -d ' ')
-          echo "Found ${count} Discohook JSON templates."
-          test "$count" -eq 54
-
-      - name: Build validated Discohook test artifacts
+      - name: Validate raw Discohook message JSON
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
           import json
-          import zipfile
+          import urllib.parse
 
-          src_root = Path('templates')
-          files = sorted(src_root.rglob('*.json'))
+          root = Path('templates')
+          files = sorted(root.rglob('*.json'))
           assert len(files) == 54, f'expected 54 JSON files, found {len(files)}'
 
-          # 1) Per-message JSON Data Editor package.
-          # Discohook's JSON Editor expects MessageData directly: content,
-          # embeds, attachments, etc. It must NOT contain top-level version or
-          # messages keys.
-          raw_zip = Path('BLHA_Phase_2C6_Raw_Message_JSON_54.zip')
-          with zipfile.ZipFile(raw_zip, 'w', zipfile.ZIP_DEFLATED) as z:
-              for src in files:
-                  payload = json.loads(src.read_text(encoding='utf-8'))
-                  assert isinstance(payload, dict), f'{src}: payload root must be an object'
-                  assert 'version' not in payload, f'{src}: version is invalid in per-message JSON Editor data'
-                  assert 'messages' not in payload, f'{src}: messages is invalid in per-message JSON Editor data'
-                  assert 'embeds' in payload or 'content' in payload, f'{src}: message has no content or embeds'
-                  z.write(src, src.relative_to(src_root).as_posix())
-
-          # 2) A single six-message Welcome backup for an end-to-end import test.
-          # Discohook's current backup exporter/importer uses version 8:
-          # { version: 8, backups: [{ name, messages:[{data: ...}], targets:[] }] }
-          welcome_sources = sorted((src_root / 'welcome').glob('*.json'))
-          assert len(welcome_sources) == 6, f'expected 6 Welcome messages, found {len(welcome_sources)}'
-
-          welcome_backup = {
-              'version': 8,
-              'backups': [
-                  {
-                      'name': 'BLHA Phase 2C.6 — Welcome',
-                      'messages': [
-                          {
-                              'name': src.stem.replace('_', ' ').strip()[:50],
-                              'data': json.loads(src.read_text(encoding='utf-8')),
-                          }
-                          for src in welcome_sources
-                      ],
-                      'targets': [],
-                  }
-              ],
+          allowed_root = {
+              'content', 'embeds', 'username', 'avatar_url', 'attachments',
+              'components', 'flags', 'thread_name', 'allowed_mentions', 'webhook_id'
+          }
+          allowed_embed = {
+              'title', 'description', 'url', 'timestamp', 'color', 'footer',
+              'image', 'thumbnail', 'video', 'provider', 'author', 'fields'
           }
 
-          test_file = Path('BLHA_Welcome_Backup_Test_v8.json')
-          test_file.write_text(
-              json.dumps(welcome_backup, indent=2, ensure_ascii=False) + '\n',
-              encoding='utf-8',
-          )
+          def embed_text_length(embed):
+              total = len(embed.get('title') or '')
+              total += len(embed.get('description') or '')
+              total += len((embed.get('footer') or {}).get('text') or '')
+              total += len((embed.get('author') or {}).get('name') or '')
+              for field in embed.get('fields') or []:
+                  total += len(field.get('name') or '')
+                  total += len(field.get('value') or '')
+              return total
 
-          # Structural checks derived from Discohook's current v8 backup type.
-          check = json.loads(test_file.read_text(encoding='utf-8'))
-          assert check['version'] == 8
-          assert len(check['backups']) == 1
-          backup = check['backups'][0]
-          assert backup['name']
-          assert backup['targets'] == []
-          assert len(backup['messages']) == 6
-          for i, message in enumerate(backup['messages'], 1):
-              assert isinstance(message, dict), f'welcome message {i}: wrapper missing'
-              assert isinstance(message.get('data'), dict), f'welcome message {i}: data missing'
-              assert 'version' not in message['data'], f'welcome message {i}: nested d2 wrapper present'
-              assert 'messages' not in message['data'], f'welcome message {i}: nested messages wrapper present'
-              assert message['data'].get('embeds') or message['data'].get('content'), f'welcome message {i}: empty payload'
+          for src in files:
+              payload = json.loads(src.read_text(encoding='utf-8'))
+              assert isinstance(payload, dict), f'{src}: root must be an object'
+              assert not ({'version', 'messages', 'backups', 'targets', 'name'} & set(payload)), (
+                  f'{src}: wrapper keys are forbidden in per-message JSON'
+              )
+              extra_root = set(payload) - allowed_root
+              assert not extra_root, f'{src}: unsupported root keys: {sorted(extra_root)}'
 
-          print('Validated 54 raw per-message JSON payloads for the JSON Data Editor.')
-          print('Validated BLHA_Welcome_Backup_Test_v8.json as a six-message Discohook v8 backup import.')
+              embeds = payload.get('embeds')
+              assert isinstance(embeds, list) and 1 <= len(embeds) <= 10, (
+                  f'{src}: embeds must contain 1-10 items'
+              )
+
+              combined_text = 0
+              for i, embed in enumerate(embeds, 1):
+                  assert isinstance(embed, dict), f'{src}: embed {i} must be an object'
+                  extra_embed = set(embed) - allowed_embed
+                  assert not extra_embed, (
+                      f'{src}: embed {i} unsupported keys: {sorted(extra_embed)}'
+                  )
+
+                  text_len = embed_text_length(embed)
+                  combined_text += text_len
+                  has_image = bool((embed.get('image') or {}).get('url'))
+                  has_thumb = bool((embed.get('thumbnail') or {}).get('url'))
+                  assert text_len > 0 or has_image or has_thumb, (
+                      f'{src}: embed {i} would be empty in Discohook'
+                  )
+
+                  assert len(embed.get('title') or '') <= 256, f'{src}: embed {i} title too long'
+                  assert len(embed.get('description') or '') <= 4096, (
+                      f'{src}: embed {i} description too long'
+                  )
+
+                  fields = embed.get('fields') or []
+                  assert len(fields) <= 25, f'{src}: embed {i} has too many fields'
+                  for j, field in enumerate(fields, 1):
+                      assert len(field.get('name') or '') <= 256, (
+                          f'{src}: embed {i} field {j} name too long'
+                      )
+                      assert len(field.get('value') or '') <= 1024, (
+                          f'{src}: embed {i} field {j} value too long'
+                      )
+
+                  for key in ('image', 'thumbnail'):
+                      if key in embed:
+                          url = embed[key].get('url', '')
+                          parsed = urllib.parse.urlparse(url)
+                          assert parsed.scheme == 'https' and parsed.netloc, (
+                              f'{src}: embed {i} {key} URL must be HTTPS'
+                          )
+
+              assert combined_text <= 6000, f'{src}: total embed text exceeds 6000 characters'
+
+          print(f'Validated {len(files)} raw per-message Discohook JSON files.')
           PY
 
-      - name: Upload test artifacts
+      - name: Package raw JSON files
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+
+          root = Path('templates')
+          files = sorted(root.rglob('*.json'))
+          out = Path('BLHA_Phase_2C6_Raw_Discohook_JSON_54.zip')
+
+          with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
+              for src in files:
+                  z.write(src, src.relative_to(root).as_posix())
+
+          with zipfile.ZipFile(out) as z:
+              members = [name for name in z.namelist() if name.endswith('.json')]
+              assert len(members) == 54, f'zip contains {len(members)} JSON files'
+
+          print(f'Created {out} with 54 raw per-message JSON files.')
+          PY
+
+      - name: Upload raw JSON package
         uses: actions/upload-artifact@v4
         with:
-          name: BLHA-Phase-2C6-Discohook-Validated-Test
-          path: |
-            BLHA_Phase_2C6_Raw_Message_JSON_54.zip
-            BLHA_Welcome_Backup_Test_v8.json
+          name: BLHA-Phase-2C6-Raw-Discohook-JSON-54
+          path: BLHA_Phase_2C6_Raw_Discohook_JSON_54.zip
           if-no-files-found: error
           retention-days: 30

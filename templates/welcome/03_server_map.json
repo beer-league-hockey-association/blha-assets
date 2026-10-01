@@ -4,6 +4,9 @@
       "title": "SERVER MAP",
       "description": "Every category has a job. Use the right room and the server stays useful instead of becoming one giant chat.",
       "color": 16758812,
+      "footer": {
+        "text": "BLHA SERVER DIRECTORY"
+      },
       "fields": [
         {
           "name": "🏛️ LEAGUE OFFICE",
@@ -56,9 +59,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "BLHA SERVER DIRECTORY"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }

@@ -4,6 +4,9 @@
       "title": "OFFICIAL RULE INTERPRETATION",
       "description": "`[SHORT ISSUE TITLE]`",
       "color": 3421236,
+      "footer": {
+        "text": "BLHA COMMISSIONER'S OFFICE"
+      },
       "fields": [
         {
           "name": "QUESTION",
@@ -26,11 +29,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "BLHA COMMISSIONER'S OFFICE"
-      }
-    },
-    {
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }

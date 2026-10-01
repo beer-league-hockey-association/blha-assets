@@ -1,10 +1,8 @@
 {
   "embeds": [
     {
+      "description": "​",
       "color": 2829617,
-      "footer": {
-        "text": "​"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/draft-center/blha-draft-center-header.png"
       }
@@ -13,6 +11,9 @@
       "title": "BLHA DRAFT CENTER",
       "description": "Official BLHA draft-day communication lives here. Fantrax remains the authoritative platform for actual selections.",
       "color": 16758812,
+      "footer": {
+        "text": "BLHA DRAFT OPERATIONS • EST. 2026"
+      },
       "fields": [
         {
           "name": "DRAFT CENTER",
@@ -30,9 +31,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "BLHA DRAFT OPERATIONS • EST. 2026"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }

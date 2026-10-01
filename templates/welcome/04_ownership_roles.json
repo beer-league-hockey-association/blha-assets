@@ -4,6 +4,9 @@
       "title": "FRANCHISE OWNERSHIP & ROLES",
       "description": "Discord roles reflect league function. They are not extra votes or extra franchises.",
       "color": 16758812,
+      "footer": {
+        "text": "ONE FRANCHISE • ONE VOTE • ONE DUES OBLIGATION"
+      },
       "fields": [
         {
           "name": "🏒 FRANCHISE OWNER",
@@ -31,9 +34,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "ONE FRANCHISE • ONE VOTE • ONE DUES OBLIGATION"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }

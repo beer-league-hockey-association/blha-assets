@@ -4,6 +4,9 @@
       "title": "KEEP OFFICIAL BUSINESS OFFICIAL",
       "description": "The BLHA should feel like a hockey league, not paperwork. The easiest way to keep it that way is to put official actions in the places designed for them.",
       "color": 16758812,
+      "footer": {
+        "text": "BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"
+      },
       "fields": [
         {
           "name": "TRADES",
@@ -31,9 +34,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }

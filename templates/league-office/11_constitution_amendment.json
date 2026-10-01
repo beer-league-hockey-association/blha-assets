@@ -4,6 +4,9 @@
       "title": "CONSTITUTION AMENDMENT",
       "description": "A formally adopted amendment has been added to the BLHA Constitution.",
       "color": 13012757,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • AMENDMENT RECORD"
+      },
       "fields": [
         {
           "name": "AMENDMENT",
@@ -26,11 +29,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "BLHA LEAGUE OFFICE • AMENDMENT RECORD"
-      }
-    },
-    {
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }

@@ -4,6 +4,9 @@
       "title": "CONSTITUTION UPDATED",
       "description": "**Version `[X.X]`** of the BLHA Constitution has been published.",
       "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • OFFICIAL"
+      },
       "fields": [
         {
           "name": "EFFECTIVE DATE",
@@ -21,11 +24,6 @@
           "inline": false
         }
       ],
-      "footer": {
-        "text": "BLHA CONSTITUTION • OFFICIAL"
-      }
-    },
-    {
       "image": {
         "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
       }
