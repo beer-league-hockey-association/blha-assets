@@ -34,6 +34,12 @@ INJURY = (
     "status report:", "not expected to play", "will not play", "will miss",
     "expected to miss", "ruled out", "not available", "unavailable",
 )
+INJURY_EVENT_PATTERNS = (
+    r"\bout (?:for|at least) (?:the )?(?:next )?(?:first )?\w*(?:\s+\w+){0,3}\s+(?:games?|days?|weeks?|months?)\b",
+    r"\bout (?:for|at least) (?:\d+|two|three|four|five|six|seven|eight|nine|ten)\s+(?:games?|days?|weeks?|months?)\b",
+    r"\bmiss(?:es|ing)? (?:the )?(?:first |next )?\w*(?:\s+\w+){0,3}\s+(?:games?|days?|weeks?|months?)\b",
+)
+
 # Use action-oriented patterns instead of broad nouns such as "trade" or
 # "contract" so analysis headlines about a transaction remain NHL News.
 TRANSACTION_EVENT_PATTERNS = (
@@ -54,6 +60,17 @@ TRANSACTION_EVENT_PATTERNS = (
     r"\bagreed to\b",
     r"\bcontract extension\b",
     r"\bextends?\b.+\bcontract\b",
+)
+TRANSACTION_ANALYSIS_PATTERNS = (
+    r"\?\s*$",
+    r"\bconsider(?:ing)? (?:a )?trade\b",
+    r"\btrade (?:value|values|target|targets|rumor|rumors|rumour|rumours|market|ideas?|proposal|proposals)\b",
+    r"\b(?:possible|potential|hypothetical|mock) trade\b",
+    r"\b(?:could|would|should|might|may) trade\b",
+    r"\bimpact of\b.+\btrade\b",
+    r"\bafter (?:the |a )?trade\b",
+    r"\bgrading (?:the |a )?trade\b",
+    r"\btrade analysis\b",
 )
 PROSPECT = (
     "prospect", "rookie", "ahl", "ncaa", "college hockey", "chl", "ohl", "whl",
@@ -117,15 +134,22 @@ def contains_any(text: str, terms: tuple[str, ...]) -> bool:
     return any(term_matches(hay, term) for term in terms)
 
 
+def is_injury_event(title: str) -> bool:
+    text = normalize(title)
+    return any(re.search(pattern, text, re.I) for pattern in INJURY_EVENT_PATTERNS)
+
+
 def is_transaction_event(title: str) -> bool:
     text = normalize(title)
+    if any(re.search(pattern, text, re.I) for pattern in TRANSACTION_ANALYSIS_PATTERNS):
+        return False
     return any(re.search(pattern, text, re.I) for pattern in TRANSACTION_EVENT_PATTERNS)
 
 
 def classify_title(title: str, breaking_allowed: bool) -> str:
     if breaking_allowed and contains_any(title, BREAKING):
         return "breaking-news"
-    if contains_any(title, INJURY):
+    if contains_any(title, INJURY) or is_injury_event(title):
         return "injury-report"
     if is_transaction_event(title):
         return "nhl-transactions"
