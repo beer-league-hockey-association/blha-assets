@@ -5,7 +5,7 @@ Fantrax reads are anonymous/read-only. Discord delivery is webhook-only.
 
 The bracket follows Fantrax's six-team H2H format:
   Round 1: 3 vs 6 and 4 vs 5; 1 and 2 receive byes.
-  Round 2: 1 vs lowest-numbered remaining seed; 2 vs highest-numbered.
+  Round 2: 1 vs lowest-ranked remaining seed; 2 vs highest-ranked.
   Round 3: championship.
 
 The private Fantrax PLAYOFFS view is deliberately not used because it
@@ -19,7 +19,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -30,6 +29,12 @@ import yaml
 
 GENERAL_BASE = "https://www.fantrax.com/fxea/general"
 ROOT = Path(__file__).resolve().parent
+AUTOMATION_ROOT = ROOT.parent
+if str(AUTOMATION_ROOT) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_ROOT))
+
+from discord_webhook import post_discord_webhook
+
 CONFIG_PATH = ROOT / "playoff_config.yaml"
 STATE_PATH = ROOT / "state" / "playoff.json"
 AVATAR = (
@@ -322,6 +327,7 @@ def expected_semis(
     seeds: dict[int, dict[str, Any]],
     round1_winners: list[dict[str, Any]],
 ) -> list[tuple[dict[str, Any] | None, dict[str, Any] | None]]:
+    """Reseed so Seed 1 receives the lowest-ranked surviving opponent."""
     winners = list(round1_winners)
     winners.sort(
         key=lambda team: seed_of(team, seeds)
@@ -332,9 +338,11 @@ def expected_semis(
     if len(winners) < 2:
         return [(seeds.get(1), None), (seeds.get(2), None)]
 
+    # Numerically larger seed = lower-ranked team. With winners 3 and 6,
+    # standard reseeding is therefore 1-v-6 and 2-v-3.
     return [
-        (seeds.get(1), winners[0]),
-        (seeds.get(2), winners[-1]),
+        (seeds.get(1), winners[-1]),
+        (seeds.get(2), winners[0]),
     ]
 
 
@@ -383,16 +391,24 @@ def matchup_text(
     )
 
 
+def color_value(raw: Any) -> int:
+    if isinstance(raw, int):
+        return raw
+    text = str(raw).strip()
+    return int(text, 16) if text.lower().startswith("0x") else int(text)
+
+
 def build_payload(
     info: dict[str, Any],
     seeds: dict[int, dict[str, Any]],
     rounds: dict[int, dict[str, Any]],
-    season_label: str,
+    cfg: dict[str, Any],
     status: str,
     test: bool = False,
 ) -> dict[str, Any]:
     title = "[TEST] BLHA Playoffs" if test else "BLHA Playoffs"
     league = str(info.get("leagueName") or "Beer League Hockey Association")
+    season_label = str(cfg.get("season_label") or "")
 
     fields: list[dict[str, Any]] = []
 
@@ -453,6 +469,11 @@ def build_payload(
         }
     )
 
+    description = f"**{league}**"
+    if season_label:
+        description += f" • {season_label}"
+    description += "\n\n*Fantrax read-only playoff bracket.*"
+
     return {
         "username": "BLHA Competition Desk",
         "avatar_url": AVATAR,
@@ -460,41 +481,37 @@ def build_payload(
         "embeds": [
             {
                 "title": title,
-                "description": (
-                    f"**{league}** • {season_label}\n\n"
-                    "*Fantrax read-only playoff bracket.*"
-                ),
+                "description": description,
                 "fields": fields,
-                "footer": {"text": f"{status} • FANTRAX READ-ONLY DATA"},
+                "color": color_value(cfg.get("color", "0xFFB81C")),
+                "footer": {
+                    "text": (
+                        f"{cfg.get('channel_label', 'PLAYOFFS')} • {status} • "
+                        "FANTRAX READ-ONLY DATA"
+                    )
+                },
                 "timestamp": datetime.now(timezone.utc).isoformat(),
             }
         ],
     }
 
 
+def semantic_fingerprint(payload: dict[str, Any]) -> str:
+    """Fingerprint bracket meaning while ignoring render-time metadata."""
+    embeds = payload.get("embeds") or []
+    embed = dict(embeds[0]) if embeds and isinstance(embeds[0], dict) else {}
+    embed.pop("timestamp", None)
+    text = json.dumps(
+        embed,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
 def deliver(secret_name: str, body: dict[str, Any]) -> tuple[bool, str]:
-    url = os.getenv(secret_name, "").strip()
-    if not url:
-        return False, f"missing secret {secret_name}"
-
-    try:
-        response = requests.post(
-            url,
-            params={"wait": "true"},
-            json=body,
-            timeout=25,
-        )
-    except Exception as exc:
-        return False, f"Discord request failed: {exc}"
-
-    if response.status_code not in (200, 204):
-        return (
-            False,
-            f"Discord returned {response.status_code}: "
-            f"{response.text[:250]}",
-        )
-
-    return True, "delivered"
+    return post_discord_webhook(secret_name, body)
 
 
 def standings_seed_map(
@@ -763,21 +780,12 @@ def main() -> int:
         info,
         seeds,
         rounds,
-        str(cfg.get("season_label") or "2026-27"),
+        cfg,
         status,
         test=args.mode == "test",
     )
 
-    fingerprint_text = json.dumps(
-        payload["embeds"][0],
-        ensure_ascii=False,
-        sort_keys=True,
-        separators=(",", ":"),
-    )
-    fingerprint = hashlib.sha256(
-        fingerprint_text.encode("utf-8")
-    ).hexdigest()
-
+    fingerprint = semantic_fingerprint(payload)
     previous = str(state.get("fingerprint") or "")
 
     if args.mode == "preview":
