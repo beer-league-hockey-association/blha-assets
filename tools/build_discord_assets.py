@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build BLHA Phase 2C.6 v3 Discohook assets.
+"""Build frozen BLHA Phase 2C.6 Discohook assets.
 
-The raw GitHub paths intentionally stay stable so existing Discohook JSON files
-continue to work when the art is regenerated.
+Raw GitHub paths intentionally stay stable so existing Discohook JSON files do
+not need URL changes when the artwork is regenerated.
 """
 
 from __future__ import annotations
@@ -48,7 +48,7 @@ def add_texture(image: Image.Image, seed: int, density: float = 0.0035):
         y = rnd.randrange(height)
         alpha = rnd.randrange(3, 10)
         shade = 255 if rnd.random() > 0.5 else 0
-        draw.ellipse((x-1, y-1, x+1, y+1), fill=(shade, shade, shade, alpha))
+        draw.ellipse((x - 1, y - 1, x + 1, y + 1), fill=(shade, shade, shade, alpha))
     return Image.alpha_composite(image.convert("RGBA"), overlay)
 
 
@@ -64,12 +64,12 @@ def draw_wordmark(draw: ImageDraw.ImageDraw, center_x: int, top_y: int, max_widt
     sub = "BEER LEAGUE HOCKEY ASSOCIATION"
     sub_font = fit_font(sub, FONT_BOLD, 12, max_width, 9)
     sub_box = draw.textbbox((0, 0), sub, font=sub_font)
-    draw.text((center_x - (sub_box[2]-sub_box[0])//2, top_y + 76), sub, font=sub_font, fill=CREAM)
+    draw.text((center_x - (sub_box[2] - sub_box[0]) // 2, top_y + 76), sub, font=sub_font, fill=CREAM)
 
     est = "—  EST. 2026  —"
     est_font = ImageFont.truetype(FONT_MONO, 10)
     est_box = draw.textbbox((0, 0), est, font=est_font)
-    draw.text((center_x - (est_box[2]-est_box[0])//2, top_y + 96), est, font=est_font, fill=GOLD)
+    draw.text((center_x - (est_box[2] - est_box[0]) // 2, top_y + 96), est, font=est_font, fill=GOLD)
 
 
 def make_header(title: str, kicker: str) -> Image.Image:
@@ -88,21 +88,20 @@ def make_header(title: str, kicker: str) -> Image.Image:
         fill=MUTED,
     )
 
-    # Fully inset faceoff circle.
     cx, cy, radius = 1414, 172, 105
-    draw.ellipse((cx-radius, cy-radius, cx+radius, cy+radius), outline=GOLD, width=5)
-    draw.line((cx, cy-radius+1, cx, cy+radius-1), fill=CREAM, width=3)
-    draw.ellipse((cx-11, cy-11, cx+11, cy+11), fill=GOLD)
+    draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), outline=GOLD, width=5)
+    draw.line((cx, cy - radius + 1, cx, cy + radius - 1), fill=CREAM, width=3)
+    draw.ellipse((cx - 11, cy - 11, cx + 11, cy + 11), fill=GOLD)
     draw_wordmark(draw, cx, 20)
 
-    draw.rectangle((0, height-8, width, height), fill=GOLD)
+    draw.rectangle((0, height - 8, width, height), fill=GOLD)
     return image.convert("RGB")
 
 
 def make_footer() -> Image.Image:
-    """Rink divider with enough vertical weight to render cleanly in Discord."""
+    """Transparent rink divider for seamless Discord embed rendering."""
     width, height = 1600, 180
-    image = Image.new("RGB", (width, height), BG)
+    image = Image.new("RGBA", (width, height), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
 
     cx, cy = width // 2, height // 2
@@ -111,20 +110,21 @@ def make_footer() -> Image.Image:
     left, right = 62, width - 62
 
     for y, color, thick in ((66, CREAM, 10), (90, GOLD, 12), (114, CREAM, 10)):
-        draw.rectangle((left, y-thick//2, cx-ring_r-break_outer, y+thick//2), fill=color)
-        draw.rectangle((cx+ring_r+break_outer, y-thick//2, right, y+thick//2), fill=color)
+        rgba = color + (255,)
+        draw.rectangle((left, y - thick // 2, cx - ring_r - break_outer, y + thick // 2), fill=rgba)
+        draw.rectangle((cx + ring_r + break_outer, y - thick // 2, right, y + thick // 2), fill=rgba)
 
     shoulder = 14
     for side in (-1, 1):
         x1 = cx + side * (ring_r + break_outer)
         x2 = cx + side * (ring_r + 23)
         x3 = cx + side * (ring_r + 9)
-        draw.line([(x1, 66), (x2, 66), (x3, cy-shoulder)], fill=CREAM, width=10, joint="curve")
-        draw.line([(x1, 114), (x2, 114), (x3, cy+shoulder)], fill=CREAM, width=10, joint="curve")
+        draw.line([(x1, 66), (x2, 66), (x3, cy - shoulder)], fill=CREAM + (255,), width=10, joint="curve")
+        draw.line([(x1, 114), (x2, 114), (x3, cy + shoulder)], fill=CREAM + (255,), width=10, joint="curve")
 
-    draw.rectangle((cx-ring_r-break_outer, cy-6, cx-ring_r+3, cy+6), fill=GOLD)
-    draw.rectangle((cx+ring_r-3, cy-6, cx+ring_r+break_outer, cy+6), fill=GOLD)
-    draw.ellipse((cx-ring_r, cy-ring_r, cx+ring_r, cy+ring_r), outline=GOLD, width=9)
+    draw.rectangle((cx - ring_r - break_outer, cy - 6, cx - ring_r + 3, cy + 6), fill=GOLD + (255,))
+    draw.rectangle((cx + ring_r - 3, cy - 6, cx + ring_r + break_outer, cy + 6), fill=GOLD + (255,))
+    draw.ellipse((cx - ring_r, cy - ring_r, cx + ring_r, cy + ring_r), outline=GOLD + (255,), width=9)
     return image
 
 
@@ -134,11 +134,11 @@ def save_png(path: Path, image: Image.Image):
 
 
 def build_preview(entries: list[tuple[Path, str]], footer_path: Path):
-    sheet = Image.new("RGB", (1320, 980), (26, 27, 30))
+    sheet = Image.new("RGBA", (1320, 980), (26, 27, 30, 255))
     draw = ImageDraw.Draw(sheet)
     draw.text(
         (30, 24),
-        "BLHA PHASE 2C.6 v3 — DISCOHOOK HOSTING PACKAGE",
+        "BLHA PHASE 2C.6 — FROZEN DISCOHOOK STANDARD",
         font=ImageFont.truetype(FONT_BOLD, 34),
         fill=CREAM,
     )
@@ -148,15 +148,15 @@ def build_preview(entries: list[tuple[Path, str]], footer_path: Path):
         row, col = divmod(i, 2)
         x = 30 + col * 650
         y = 82 + row * 170
-        thumb = Image.open(path).resize((640, 120), Image.Resampling.LANCZOS)
-        sheet.paste(thumb, (x, y))
+        thumb = Image.open(path).convert("RGBA").resize((640, 120), Image.Resampling.LANCZOS)
+        sheet.alpha_composite(thumb, (x, y))
         draw.text((x, y + 127), title, font=label_font, fill=MUTED)
 
     footer_y = 790
-    draw.text((30, footer_y), "SHARED FOOTER DIVIDER", font=label_font, fill=MUTED)
-    footer = Image.open(footer_path).resize((1260, 142), Image.Resampling.LANCZOS)
-    sheet.paste(footer, (30, footer_y + 28))
-    save_png(WEBHOOKS / "BLHA_Phase_2C6_Hosting_Preview.png", sheet)
+    draw.text((30, footer_y), "SHARED TRANSPARENT FOOTER DIVIDER", font=label_font, fill=MUTED)
+    footer = Image.open(footer_path).convert("RGBA").resize((1260, 142), Image.Resampling.LANCZOS)
+    sheet.alpha_composite(footer, (30, footer_y + 28))
+    save_png(WEBHOOKS / "BLHA_Phase_2C6_Hosting_Preview.png", sheet.convert("RGB"))
 
 
 def main():
@@ -168,7 +168,6 @@ def main():
         (WEBHOOKS / "league-office" / "blha-ledger-header.png", "LEAGUE LEDGER", "OFFICIAL BLHA LEDGER"),
         (WEBHOOKS / "league-office" / "blha-voting-header.png", "LEAGUE VOTING", "OFFICIAL BLHA VOTE"),
         (WEBHOOKS / "draft-center" / "blha-draft-center-header.png", "DRAFT CENTER", "OFFICIAL BLHA DRAFT"),
-        # Legacy generic filename retained for URL compatibility.
         (WEBHOOKS / "shared" / "blha-generic-header-1600x420.png", "BEER LEAGUE HOCKEY ASSOCIATION", "OFFICIAL BLHA"),
     ]
 
@@ -194,28 +193,27 @@ def main():
     )
 
     manifest = {
-        "phase": "2C.6-v3",
+        "phase": "2C.6-frozen",
         "header_dimensions": "1600x300",
         "header_embed_color": "#2B2D31",
         "footer_dimensions": "1600x180 (legacy filename retained for stable URLs)",
+        "footer_background": "transparent",
         "palette": {"charcoal": "#2B2D31", "gold": "#FFB81C", "cream": "#F4EFE4"},
         "design": {
-            "discord_optimized": True,
+            "status": "frozen",
             "right_circle": "fully inset; never clipped",
             "wordmark": "white BLHA lettering with black keyline and gold outer edge; no white card",
-            "footer": "larger cream/gold/cream rink divider with centered gold ring",
+            "footer": "transparent cream/gold/cream rink divider with centered gold ring",
         },
     }
-    (WEBHOOKS / "BLHA_Phase_2C6_Hosting_Manifest.json").write_text(
-        json.dumps(manifest, indent=2), encoding="utf-8"
-    )
+    (WEBHOOKS / "BLHA_Phase_2C6_Hosting_Manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
     (WEBHOOKS / "README.md").write_text(
-        """# BLHA Phase 2C.6 v3 — Discohook Asset Hosting\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x300\n- Header embed side color: #2B2D31\n- Footer: 1600x180 (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right-side rink circle is fully inset.\n- BLHA lettering is white with black/gold keylines and no white logo card.\n""",
+        """# BLHA Phase 2C.6 — Frozen Discohook Standard\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x300\n- Header embed side color: #2B2D31\n- Footer: transparent 1600x180 PNG (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right-side rink circle is fully inset.\n- BLHA lettering is white with black/gold keylines and no white logo card.\n- All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.\n\nThis Phase 2C.6 visual format is frozen. Future content may change; the layout standard should not change without an explicit design revision.\n""",
         encoding="utf-8",
     )
 
-    print("BLHA Phase 2C.6 v3 assets generated.")
+    print("BLHA Phase 2C.6 frozen assets generated.")
 
 
 if __name__ == "__main__":
