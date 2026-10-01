@@ -21,6 +21,12 @@ import yaml
 
 BASE = "https://www.fantrax.com/fxea/general"
 ROOT = Path(__file__).resolve().parent
+AUTOMATION_ROOT = ROOT.parent
+if str(AUTOMATION_ROOT) not in sys.path:
+    sys.path.insert(0, str(AUTOMATION_ROOT))
+
+from discord_webhook import post_discord_webhook
+
 CONFIG_PATH = ROOT / "weekly_recap_config.yaml"
 STATE_PATH = ROOT / "state" / "weekly_recap.json"
 AVATAR = (
@@ -291,16 +297,7 @@ def build_payload(info: dict, rows: list[dict], cfg: dict, period: int, period_i
 
 
 def deliver(secret_name: str, payload: dict) -> tuple[bool, str]:
-    url = os.getenv(secret_name, "").strip()
-    if not url:
-        return False, f"missing secret {secret_name}"
-    try:
-        response = requests.post(url, params={"wait": "true"}, json=payload, timeout=25)
-    except Exception as exc:
-        return False, f"request failed: {exc}"
-    if response.status_code not in (200, 204):
-        return False, f"Discord returned {response.status_code}: {response.text[:250]}"
-    return True, "delivered"
+    return post_discord_webhook(secret_name, payload)
 
 
 def main() -> int:
