@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T00:07:02.746626Z",
+  "updated_at": "2026-10-02T05:48:35.463620Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1262,6 +1262,156 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T00:07:02.720378Z"
+    },
+    {
+      "key": "d431c125913158de58c3f9b0",
+      "url": "https://www.nhl.com/news/aleksander-barkov-leaves-in-second-period-for-florida-panthers-following-fall",
+      "fingerprint": "e246a1c55a659aa3",
+      "title_norm": "barkov leaves in 2nd period following awkward fall",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:34.760954Z"
+    },
+    {
+      "key": "be27c9c67a2f8dafd6d98ddb",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-new-york-rangers-game-recap-october-1-2026",
+      "fingerprint": "44ad01e3af904b1e",
+      "title_norm": "shesterkin scores rangers 1st goalie goal in win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.042226Z"
+    },
+    {
+      "key": "d9e4678e75d025ac3955da5e",
+      "url": "https://www.nhl.com/news/edmonton-oilers-vancouver-canucks-game-recap-october-1-2026",
+      "fingerprint": "83f106be4043e875",
+      "title_norm": "mcdavid has 5 points, oilers bounce back with 9 goals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.292245Z"
+    },
+    {
+      "key": "571a33cb35d20d64fc54f28a",
+      "url": "https://www.nhl.com/news/buffalo-sabres-columbus-blue-jackets-game-recap-october-1-2026",
+      "fingerprint": "e460cd84c93e7daf",
+      "title_norm": "knies' 3 points in debut lift jackets past sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.298915Z"
+    },
+    {
+      "key": "ce38aa973c945d5883cbd6a7",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-new-jersey-devils-game-recap-october-1-2026",
+      "fingerprint": "4a25e4e04250251f",
+      "title_norm": "hughes brothers lift devils to season-opening ot win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.308777Z"
+    },
+    {
+      "key": "95767e90e226b35d48bd846e",
+      "url": "https://www.nhl.com/news/seattle-kraken-calgary-flames-game-recap-october-1-2026",
+      "fingerprint": "21ca4a920d774520",
+      "title_norm": "kraken score 6, ease past flames in season opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.317347Z"
+    },
+    {
+      "key": "5e729ff6979a65734c406daa",
+      "url": "https://www.nhl.com/news/florida-panthers-san-jose-sharks-game-recap-october-1-2026",
+      "fingerprint": "1c80eaa2ae7bfce2",
+      "title_norm": "smith scores twice, sharks recover for ot win in opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.326614Z"
+    },
+    {
+      "key": "36f95d6d9b8f4eb888eadfb9",
+      "url": "https://www.nhl.com/news/nhl-goalie-goals-all-time-313758920",
+      "fingerprint": "4f1dc1794b268325",
+      "title_norm": "rangers' shesterkin latest goalie to score",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.332915Z"
+    },
+    {
+      "key": "e14dd1c355b77826dac8ecf1",
+      "url": "https://www.nhl.com/news/minnesota-wild-nashville-predators-game-recap-october-1-2026",
+      "fingerprint": "93c608ad483b995a",
+      "title_norm": "coleman helps wild win season opener against predators",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T05:48:35.341738Z"
+    },
+    {
+      "key": "9067303c21647dc4c2032c6d",
+      "url": "https://www.sportsnet.ca/nhl/video/oilers-canucks-erupt-for-a-combined-16-goals-in-offensive-showcase",
+      "fingerprint": "12224731cab4f2c3",
+      "title_norm": "oilers, canucks erupt for a combined 16 goals in offensive showcase",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T05:48:35.390116Z"
+    },
+    {
+      "key": "08749e40ae7ee80a7616e99f",
+      "url": "https://www.sportsnet.ca/nhl/article/mcdavid-has-five-points-as-oilers-outlast-canucks-in-16-goal-thriller",
+      "fingerprint": "66be9c6822ef0404",
+      "title_norm": "mcdavid has five points as oilers outlast canucks in 16-goal thriller",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T05:48:35.398581Z"
+    },
+    {
+      "key": "3c67e131a25ea65b84116408",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-shesterkin-scores-first-goalie-goal-in-rangers-history",
+      "fingerprint": "ec89072f62530c2b",
+      "title_norm": "gotta see it: shesterkin scores first goalie goal in rangers history",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T05:48:35.407281Z"
+    },
+    {
+      "key": "5cb172a761fadf0a389b7245",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-open-season-with-blowout-loss-to-kraken",
+      "fingerprint": "e9a1ac617b4230f6",
+      "title_norm": "flames open season with blowout loss to kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T05:48:35.413410Z"
+    },
+    {
+      "key": "a302cff04542744c9693e11f",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-aleksander-barkov-exits-vs-sharks-after-awkward-fall",
+      "fingerprint": "6806980a36ce1453",
+      "title_norm": "panthers' barkov to have more tests after injuring left leg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T05:48:35.427135Z"
+    },
+    {
+      "key": "86d5ba1d142c1207fc98f1a2",
+      "url": "https://www.sportsnet.ca/nhl/article/matthew-knies-shines-in-blue-jackets-debut-columbus-beats-sabres",
+      "fingerprint": "fee12aebb2506843",
+      "title_norm": "matthew knies shines in blue jackets debut, columbus beats sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T05:48:35.438732Z"
     }
   ]
 }
