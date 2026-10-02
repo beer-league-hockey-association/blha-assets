@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T20:15:30.833447Z",
+  "updated_at": "2026-10-02T20:25:51.288943Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1702,6 +1702,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-02T20:15:30.728927Z"
+    },
+    {
+      "key": "3954c359de4c3a6b26d81d88",
+      "url": "https://www.sportsnet.ca/nhl/article/why-left-wing-assignment-is-welcome-return-for-maple-leafs-marchenko",
+      "fingerprint": "2c9cc3df9750e9c8",
+      "title_norm": "why left-wing assignment is welcome return for maple leafs' marchenko",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T20:25:51.246941Z"
     }
   ]
 }
