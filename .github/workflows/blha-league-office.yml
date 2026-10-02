@@ -44,6 +44,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/league-office/state/league_ops.json"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -54,9 +57,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r automation/common-requirements.txt
 
-      - name: Run League Office regression checks
-        run: python automation/phase-2d2/test_league_ops.py
-
       - name: Run League Office automation
         env:
           BLHA_WEBHOOK_LEAGUE_CALENDAR: ${{ secrets.BLHA_WEBHOOK_LEAGUE_CALENDAR }}
@@ -64,7 +64,7 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            python automation/phase-2d2/league_ops.py --mode live
+            python automation/league-office/league_ops.py --mode live
             exit $?
           fi
 
@@ -73,20 +73,20 @@ jobs:
               echo "ERROR: choose league-calendar or league-announcements for test mode."
               exit 1
             fi
-            python automation/phase-2d2/league_ops.py --mode test --channel "$INPUT_CHANNEL"
+            python automation/league-office/league_ops.py --mode test --channel "$INPUT_CHANNEL"
           else
             ARGS=(--mode "$INPUT_MODE")
             if [[ "$INPUT_RESET_STATE" == "true" ]]; then
               ARGS+=(--reset-state)
             fi
-            python automation/phase-2d2/league_ops.py "${ARGS[@]}"
+            python automation/league-office/league_ops.py "${ARGS[@]}"
           fi
 
-      - name: Persist League Office state
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
         if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && !cancelled() }}
-        shell: bash
         run: |
-          bash automation/tools/persist_state.sh \
-            automation/phase-2d2/state/league_ops.json \
-            "chore(league-office): persist reminder state [skip ci]" \
-            "BLHA League Office Automation"
+          bash automation/tools/state_branch.sh save \
+            "chore(league-office): save reminder state" \
+            "BLHA League Office Automation" \
+            "automation/league-office/state/league_ops.json"

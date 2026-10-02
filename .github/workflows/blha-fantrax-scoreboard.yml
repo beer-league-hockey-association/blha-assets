@@ -40,6 +40,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/competition/state/scoreboard.json"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -59,11 +62,11 @@ jobs:
           if [[ -n "$WEEK" ]]; then ARGS+=(--week "$WEEK"); fi
           python automation/competition/scoreboard.py "${ARGS[@]}"
 
-      - name: Persist scoreboard state
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
         if: ${{ !cancelled() && env.MODE == 'live' }}
-        shell: bash
         run: |
-          bash automation/tools/persist_state.sh \
-            automation/competition/state/scoreboard.json \
-            "chore(fantrax): persist scoreboard state [skip ci]" \
-            "BLHA Fantrax Automation"
+          bash automation/tools/state_branch.sh save \
+            "chore(fantrax): save scoreboard state" \
+            "BLHA Fantrax Automation" \
+            "automation/competition/state/scoreboard.json"

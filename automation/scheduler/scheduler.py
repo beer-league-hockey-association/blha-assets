@@ -204,7 +204,7 @@ def main() -> int:
     )
     started = errors = 0
     for job in cfg["jobs"]:
-        active, why = job_active(job, phase)
+        active, why = job_active(job, phase, now)
         if not active:
             print(f"OFF     {job.get('id')}: {why}")
             continue

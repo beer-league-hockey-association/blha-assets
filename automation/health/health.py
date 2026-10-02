@@ -29,7 +29,7 @@ if str(AUTOMATION_ROOT) not in sys.path:
     sys.path.insert(0, str(AUTOMATION_ROOT))
 
 from discord_webhook import post_discord_webhook
-from blha.schedule import current_season, job_active, load_schedule
+from blha.schedule import condition_started_at, current_season, job_active, load_schedule
 
 CONFIG_PATH = ROOT / "health_config.yaml"
 STATE_PATH = ROOT / "state" / "health.json"
@@ -300,13 +300,18 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
         if not workflow_file or max_age <= 0:
             continue
         job = jobs_by_file.get(workflow_file, {})
-        active, why = job_active(job, phase)
+        active, why = job_active(job, phase, current)
         if not active:
             print(f"HEALTH SKIP [{workflow_id}]: {why}")
             continue
-        # A job that just switched on with the season gets max_age to run once.
+        # A job that just switched on (new season phase, or a League Office
+        # event window opening) gets max_age to complete its first run.
         if job.get("phases") and phase_started and (current - phase_started).total_seconds() < max_age * 60:
             print(f"HEALTH SKIP [{workflow_id}]: {phase} began recently; allowing first run")
+            continue
+        opened = condition_started_at(job, current) if job.get("when") else None
+        if opened and (current - opened).total_seconds() < max_age * 60:
+            print(f"HEALTH SKIP [{workflow_id}]: just became active; allowing first run")
             continue
 
         try:
@@ -380,7 +385,170 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
                 )
             )
 
+    connection = (session, repository, api_base)
+    apply_startup_grace(cfg, issues, connection)
+    apply_wire_rate_guard_confirmation(cfg, issues, connection)
+    apply_wire_root_cause_suppression(issues)
     return issues
+
+
+
+# --- Noise filters ------------------------------------------------------------
+# Applied after the raw checks so one operational problem produces one alert.
+
+
+def apply_startup_grace(
+    cfg: dict[str, Any],
+    issues: dict[str, dict[str, Any]],
+    connection: tuple[Any, str, str] | None,
+) -> None:
+    settings = cfg.get("settings") or {}
+    grace_minutes = int(settings.get("no_run_grace_minutes") or 0)
+    if grace_minutes <= 0 or connection is None:
+        return
+
+    no_run_ids = {
+        str(item.get("id") or "workflow"): item
+        for item in (cfg.get("workflows") or [])
+        if isinstance(item, dict)
+        and f"no-run:{str(item.get('id') or 'workflow')}" in issues
+    }
+    if not no_run_ids:
+        return
+
+    session, repository, api_base = connection
+    current = now_utc()
+
+    for workflow_id, item in no_run_ids.items():
+        workflow_file = str(item.get("file") or "").strip()
+        if not workflow_file:
+            continue
+        try:
+            metadata = api_get(
+                session,
+                api_base,
+                f"/repos/{repository}/actions/workflows/{workflow_file}",
+            )
+            created_at = parse_dt(
+                str(metadata.get("created_at") or "")
+                if isinstance(metadata, dict)
+                else ""
+            )
+        except Exception as exc:
+            print(
+                f"STARTUP-GRACE CHECK WARNING [{workflow_id}]: "
+                f"could not read workflow metadata: {exc}"
+            )
+            continue
+
+        if created_at is None:
+            continue
+
+        age_minutes = int((current - created_at).total_seconds() // 60)
+        if age_minutes < grace_minutes:
+            issues.pop(f"no-run:{workflow_id}", None)
+            print(
+                f"STARTUP GRACE [{workflow_id}]: no scheduled run yet; "
+                f"workflow age={age_minutes}m grace={grace_minutes}m"
+            )
+
+
+def apply_wire_rate_guard_confirmation(
+    cfg: dict[str, Any],
+    issues: dict[str, dict[str, Any]],
+    connection: tuple[Any, str, str] | None,
+) -> None:
+    """Suppress a one-off Wire rate-guard event."""
+    if "wire-rate-guard" not in issues or connection is None:
+        return
+
+    settings = cfg.get("settings") or {}
+    threshold = int(settings.get("wire_rate_guard_consecutive_runs") or 1)
+    if threshold <= 1:
+        return
+
+    wire_item = next(
+        (
+            item
+            for item in (cfg.get("workflows") or [])
+            if isinstance(item, dict) and item.get("id") == "wire-engine"
+        ),
+        None,
+    )
+    if not wire_item:
+        return
+
+    workflow_file = str(wire_item.get("file") or "").strip()
+    if not workflow_file:
+        return
+
+    session, repository, api_base = connection
+    try:
+        runs = scheduled_runs(
+            session,
+            api_base,
+            repository,
+            workflow_file,
+            per_page=max(10, threshold + 2),
+        )
+    except Exception as exc:
+        print(f"RATE-GUARD CONFIRMATION WARNING: could not read Wire runs: {exc}")
+        return
+
+    completed = [
+        row
+        for row in runs
+        if row.get("status") == "completed" and row.get("id")
+    ][:threshold]
+    if len(completed) < threshold:
+        issues.pop("wire-rate-guard", None)
+        print(
+            f"RATE-GUARD INFO: only {len(completed)} completed scheduled Wire run(s) "
+            f"available; need {threshold} consecutive runs before alerting"
+        )
+        return
+
+    guard_hits = 0
+    for row in completed:
+        try:
+            log_text = download_run_log(
+                session,
+                api_base,
+                repository,
+                int(row["id"]),
+            )
+        except Exception as exc:
+            print(f"RATE-GUARD CONFIRMATION WARNING: could not inspect run log: {exc}")
+            return
+        if "RATE-GUARD SUPPRESSED" in log_text:
+            guard_hits += 1
+
+    if guard_hits < threshold:
+        issues.pop("wire-rate-guard", None)
+        print(
+            f"RATE-GUARD INFO: latest Wire run hit the guard, but only "
+            f"{guard_hits}/{threshold} consecutive run(s) did; treating as a "
+            "one-off protected news burst"
+        )
+
+
+def apply_wire_root_cause_suppression(issues: dict[str, dict[str, Any]]) -> None:
+    """Prefer the stale Wire schedule as the actionable root cause.
+
+    A delayed GitHub schedule can leave a backlog of stories for the next Wire
+    execution. That catch-up run can legitimately hit the production flood
+    guard, so reporting both conditions at once creates two alerts for one
+    operational problem. While the schedule itself is stale, retain the stale
+    alert and defer rate-guard evaluation until scheduled execution recovers.
+    """
+    if "stale:wire-engine" not in issues or "wire-rate-guard" not in issues:
+        return
+
+    issues.pop("wire-rate-guard", None)
+    print(
+        "WIRE RATE-GUARD SECONDARY: suppressed while the Wire schedule is stale; "
+        "the rate guard will be evaluated again after scheduled execution recovers."
+    )
 
 
 def field_for_issue(data: dict[str, Any]) -> dict[str, Any]:

@@ -144,6 +144,81 @@ def due(now: datetime, trigger: datetime, catchup_window: timedelta = DEFAULT_CA
     return trigger <= now <= trigger + catchup_window
 
 
+def plan_event(
+    event: dict,
+    starts_at: datetime,
+    now: datetime,
+    sent: dict,
+    defaults: list,
+    default_channel: str,
+    catchup_window: timedelta = DEFAULT_CATCHUP_WINDOW,
+) -> list[tuple[str, str, str]]:
+    """Decide which reminders to send for one event.
+
+    Returns (channel, reminder, action) tuples, where action is "send" or
+    "skip". If a late run finds several reminders due at once (for example
+    3h, 1h and start), only the most recent one is sent per channel and the
+    older ones are marked skipped, so members never get a burst of stale
+    countdown posts.
+    """
+    reminders = event.get("reminders") or defaults
+    calendar_channel = event.get("channel", default_channel)
+    announce = set(event.get("announcement_reminders", []))
+
+    due_by_channel: dict[str, list[tuple[datetime, str]]] = {}
+    for reminder in reminders:
+        trigger = starts_at - parse_offset(reminder)
+        if not due(now, trigger, catchup_window):
+            continue
+        destinations = [calendar_channel]
+        if reminder in announce and "league-announcements" not in destinations:
+            destinations.append("league-announcements")
+        for channel in destinations:
+            if f"{event['id']}::{reminder}::{channel}" not in sent:
+                due_by_channel.setdefault(channel, []).append((trigger, reminder))
+
+    actions: list[tuple[str, str, str]] = []
+    for channel, items in due_by_channel.items():
+        items.sort()
+        for _, reminder in items[:-1]:
+            actions.append((channel, reminder, "skip"))
+        actions.append((channel, items[-1][1], "send"))
+    return actions
+
+
+def upcoming_window_start(config: dict, now: datetime | None = None) -> datetime | None:
+    """When the currently open reminder window began, or None if none is open.
+
+    A window opens one hour before an enabled event's earliest reminder and
+    closes when its catch-up window after the start time ends. The scheduler
+    only runs the League Office while a window is open.
+    """
+    settings = config.get("settings", {})
+    tz = ZoneInfo(settings.get("timezone", "America/New_York"))
+    now = now or datetime.now(tz)
+    catchup = timedelta(hours=float(settings.get("catchup_window_hours", 24)))
+    defaults = settings.get("default_reminders", [])
+    opened: list[datetime] = []
+    for event in config.get("events", []):
+        if not event.get("enabled"):
+            continue
+        try:
+            starts_at = parse_event_time(event.get("starts_at"), tz)
+        except Exception:
+            return now  # a broken date should surface in the League Office log
+        if not starts_at:
+            continue
+        offsets = [parse_offset(r) for r in (event.get("reminders") or defaults)] or [timedelta(0)]
+        opens = starts_at - max(offsets) - timedelta(hours=1)
+        if opens <= now <= starts_at + catchup:
+            opened.append(opens)
+    return min(opened) if opened else None
+
+
+def has_upcoming_events(config: dict, now: datetime | None = None) -> bool:
+    return upcoming_window_start(config, now) is not None
+
+
 def run(mode: str, reset_state: bool = False) -> int:
     config = load_config()
     settings = config.get("settings", {})
@@ -177,51 +252,38 @@ def run(mode: str, reset_state: bool = False) -> int:
             skipped += 1
             continue
 
-        reminders = event.get("reminders") or defaults
-        calendar_channel = event.get("channel", settings.get("default_channel", "league-calendar"))
-        announcement_reminders = set(event.get("announcement_reminders", []))
-
-        for reminder in reminders:
+        for channel, reminder, action in plan_event(
+            event, starts_at, now, sent, defaults,
+            settings.get("default_channel", "league-calendar"), catchup_window,
+        ):
             examined += 1
-            trigger = starts_at - parse_offset(reminder)
-            destinations = [calendar_channel]
-            if reminder in announcement_reminders and "league-announcements" not in destinations:
-                destinations.append("league-announcements")
-
-            if not due(now, trigger, catchup_window):
+            key = f"{event['id']}::{reminder}::{channel}"
+            if action == "skip":
+                print(f"SKIPPED [{channel}] {event['title']} — {reminder_label(reminder)} (superseded by a later reminder)")
+                if mode == "live":
+                    sent[key] = "skipped:" + datetime.now(timezone.utc).isoformat()
+                skipped += 1
+                continue
+            channel_cfg = channels.get(channel)
+            if not channel_cfg:
+                print(f"CONFIG ERROR [{key}]: unknown channel {channel}")
+                errors += 1
                 continue
 
-            for channel in destinations:
-                key = f"{event['id']}::{reminder}::{channel}"
-                if key in sent:
-                    duplicate += 1
-                    continue
-                channel_cfg = channels.get(channel)
-                if not channel_cfg:
-                    print(f"CONFIG ERROR [{key}]: unknown channel {channel}")
-                    errors += 1
-                    continue
+            if mode == "dry-run":
+                print(f"DRY-RUN [{channel}] {event['title']} — {reminder_label(reminder)}")
+                dry += 1
+                continue
 
-                if mode == "dry-run":
-                    print(f"DRY-RUN [{channel}] {event['title']} — {reminder_label(reminder)}")
-                    dry += 1
-                    continue
-
-                payload = build_payload(
-                    event,
-                    channel_cfg,
-                    reminder,
-                    starts_at,
-                    reference_time=now,
-                )
-                ok, detail = post_webhook(channel_cfg["secret"], payload)
-                if ok:
-                    print(f"POSTED [{channel}] {event['title']} — {reminder_label(reminder)}")
-                    sent[key] = datetime.now(timezone.utc).isoformat()
-                    posted += 1
-                else:
-                    print(f"DELIVERY ERROR [{channel}] {event['title']}: {detail}")
-                    errors += 1
+            payload = build_payload(event, channel_cfg, reminder, starts_at, reference_time=now)
+            ok, detail = post_webhook(channel_cfg["secret"], payload)
+            if ok:
+                print(f"POSTED [{channel}] {event['title']} — {reminder_label(reminder)}")
+                sent[key] = datetime.now(timezone.utc).isoformat()
+                posted += 1
+            else:
+                print(f"DELIVERY ERROR [{channel}] {event['title']}: {detail}")
+                errors += 1
 
     if mode == "live":
         save_state(state)

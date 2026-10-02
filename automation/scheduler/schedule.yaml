@@ -13,6 +13,8 @@
 #                  failed, up to this many extra attempts.
 #
 # Season calendar:
+#   when:   an extra condition. league-office-events = only while an enabled
+#           League Office event has a reminder window open.
 #   phases: only run during these parts of the Fantrax season:
 #           preseason, regular, playoffs, offseason.
 #           The current phase comes from Fantrax's own week dates.
@@ -36,9 +38,12 @@ jobs:
     workflow: blha-wire-engine.yml
     every_minutes: 15
 
+  # Deadline and event reminders. Runs only while an enabled event in
+  # automation/league-office/events.yaml has a reminder window open.
   - id: league-office
     workflow: blha-league-office.yml
     every_minutes: 30
+    when: league-office-events
 
   - id: automation-health
     workflow: blha-automation-health.yml

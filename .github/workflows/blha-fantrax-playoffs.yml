@@ -46,6 +46,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/playoffs/state/playoff.json"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -66,11 +69,11 @@ jobs:
           if [[ "$FORCE" == "true" ]]; then ARGS+=(--force); fi
           python automation/playoffs/playoff.py "${ARGS[@]}"
 
-      - name: Persist playoff state
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
         if: ${{ !cancelled() && (env.MODE == 'live' || env.MODE == 'baseline') }}
-        shell: bash
         run: |
-          bash automation/tools/persist_state.sh \
-            automation/playoffs/state/playoff.json \
-            "chore(fantrax): persist playoff state [skip ci]" \
-            "BLHA Fantrax Automation"
+          bash automation/tools/state_branch.sh save \
+            "chore(fantrax): save playoff state" \
+            "BLHA Fantrax Automation" \
+            "automation/playoffs/state/playoff.json"

@@ -33,6 +33,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/health/state/health.json"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -50,16 +53,16 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            python automation/health/runner.py --mode live
+            python automation/health/health.py --mode live
           else
-            python automation/health/runner.py --mode "$INPUT_MODE"
+            python automation/health/health.py --mode "$INPUT_MODE"
           fi
 
-      - name: Persist automation health state
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
         if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && !cancelled() }}
-        shell: bash
         run: |
-          bash automation/tools/persist_state.sh \
-            automation/health/state/health.json \
-            "chore(automation-health): persist issue state [skip ci]" \
-            "BLHA Systems Automation"
+          bash automation/tools/state_branch.sh save \
+            "chore(automation-health): save issue state" \
+            "BLHA Systems Automation" \
+            "automation/health/state/health.json"

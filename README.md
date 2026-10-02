@@ -46,7 +46,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Automation | When it runs |
 | --- | --- |
 | The Wire | Every 15 minutes, all year |
-| League Office | Every 30 minutes, all year |
+| League Office | Every 30 minutes, only while an enabled event is coming up |
 | Automation Health | Hourly, all year |
 | Competition Desk (weekly report) | 08:00 and 20:00 ET, preseason through playoffs; posts only when something is due |
 | Live scoreboard | Hourly, regular season and playoffs |
@@ -75,10 +75,13 @@ PuckPedia native Discord integration is the preferred live transaction feed for 
 
 ## League Office
 
-Commissioner-controlled dates and deadline reminders are stored in:
-`automation/phase-2d2/`
+Commissioner-controlled dates and deadline reminders live in `automation/league-office/events.yaml`.
 
-The League Office uses `America/New_York` for DST-safe local scheduling. Reminders never post before their trigger, and a bounded catch-up window protects against delayed GitHub scheduled runs. Real league events remain disabled until their dates are finalized.
+- Times are entered as New York wall-clock time; daylight saving is handled automatically.
+- Reminders never post before their trigger. If a check runs late and several reminders are due at once (for example 3 hours, 1 hour and start), only the most recent one is posted and the older ones are skipped, so members never get a burst of stale countdowns.
+- The scheduler only runs the League Office while an enabled event's reminder window is open (from an hour before its first reminder until the catch-up window after it starts). With every event disabled, it does not run at all.
+
+**To turn on an event:** set its `starts_at` (e.g. `2027-09-20T20:00:00`) and `enabled: true`. Reminders start automatically.
 
 ## Competition Desk — weekly report
 
@@ -106,6 +109,10 @@ Code: `automation/playoffs/` · Workflow: `.github/workflows/blha-fantrax-playof
 Runs only during the playoff weeks. Seeds are saved automatically once Fantrax has counted the final regular-season week, and six-team reseeding gives Seed 1 the lowest-ranked surviving opponent. Each round gets one bracket message (a new post when the round starts), edited in place as scores change.
 
 All Competition Desk posts use the clean vertical embed standard in `automation/DISCORD_AUTOMATION_STYLE.md`.
+
+## Where bot state lives
+
+Automations remember what they have already posted (Wire dedupe, report weeks, the live scoreboard's message, playoff seeds, health issues). That state is kept on the separate **`automation-state`** branch, not on `main`, so `main` only contains code and content changes. Each workflow restores its state at the start of a run and saves it back at the end (`automation/tools/state_branch.sh`). State is saved even when one post in a run fails, so successful posts are never repeated.
 
 ## Regression checks
 
