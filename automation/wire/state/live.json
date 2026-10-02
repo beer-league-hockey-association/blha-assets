@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T22:15:34.734701Z",
+  "updated_at": "2026-10-02T22:30:34.674366Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1772,6 +1772,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-02T22:15:34.649745Z"
+    },
+    {
+      "key": "4f940e8afbde9744a647d28a",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-andrei-kuzmenko-discusses-tragic-death-of-father",
+      "fingerprint": "baf4ae7c9f7750f4",
+      "title_norm": "penguins' andrei kuzmenko discusses tragic death of father",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T22:30:34.656897Z"
     }
   ]
 }
