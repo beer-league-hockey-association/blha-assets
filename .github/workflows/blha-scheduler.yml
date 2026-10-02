@@ -1,0 +1,61 @@
+name: BLHA Scheduler
+run-name: BLHA Scheduler — ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'dry-run' || 'live' }}
+
+# The one place automation timing lives. See automation/scheduler/README.md.
+#
+# Primary trigger: an external timer (cron-job.org) calls GitHub's
+# workflow_dispatch API for this file every 15 minutes.
+# Backup trigger: GitHub cron below, which is best-effort and often late.
+# Either way, the scheduler only starts jobs that are actually due, so extra
+# or duplicate starts are harmless.
+
+on:
+  schedule:
+    - cron: "4,19,34,49 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only report what is due; do not start anything"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: blha-scheduler
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Start due automations
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+        shell: bash
+        run: |
+          if [[ "$DRY_RUN" == "true" ]]; then
+            python automation/scheduler/scheduler.py --dry-run
+          else
+            python automation/scheduler/scheduler.py
+          fi

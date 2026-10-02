@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Safety wrapper for BLHA playoff automation.
 
-The playoff workflow runs on an hourly schedule year-round, but live Discord
+The playoff workflow runs every six hours year-round, but live Discord
 posts must remain completely silent until Fantrax reaches the first playoff
 scoring period and a final regular-season seed baseline has been recorded.
 Manual preview/test/baseline modes are passed through unchanged.

@@ -49,7 +49,7 @@ Discord delivery uses the shared retry helper in `automation/discord_webhook.py`
 
 The live fingerprint ignores the embed render timestamp, so repeated checks of an unchanged bracket do not create duplicate Discord posts.
 
-The workflow checks every six hours at minute 7. Outside the playoff window it performs the read-only check without posting.
+The BLHA Scheduler starts the playoff check every six hours. Outside the playoff window it performs the read-only check without posting.
 
 ## Rollout
 

@@ -42,10 +42,13 @@ FANTRAX_BASE = "https://www.fantrax.com/fxea/general"
 
 # Production flood guards. Normal 15-minute runs should produce only a handful
 # of truly new items. If a feed/parser suddenly exposes a backlog, these limits
-# prevent Discord from being flooded. Suppressed items are remembered so they do
-# not trickle out over later runs.
+# cap how many individual story posts go out. Anything over the limit is
+# rolled into one roundup post per channel instead of being dropped, and is
+# only remembered once that roundup has been delivered.
 MAX_LIVE_POSTS_PER_RUN = 6
 MAX_LIVE_POSTS_PER_CHANNEL = 3
+# Leave headroom under Discord's 4096-character embed description limit.
+DIGEST_MAX_CHARS = 3900
 
 # Channels handled primarily by a superior native integration. The GitHub engine
 # still collects/classifies/dedupes these stories, but does not post them live.
@@ -65,6 +68,14 @@ CHANNEL_LABELS = {
     "injury-report": "🏥 INJURY REPORT",
     "nhl-transactions": "🔄 NHL TRANSACTIONS",
     "prospect-wire": "🌱 PROSPECT WIRE",
+}
+
+CHANNEL_TITLES = {
+    "breaking-news": "Breaking News",
+    "nhl-news": "NHL News",
+    "injury-report": "Injury Report",
+    "nhl-transactions": "NHL Transactions",
+    "prospect-wire": "Prospect Wire",
 }
 
 CHANNEL_COLORS = {
@@ -172,8 +183,8 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
     return None
 
 
-def remember(candidate: dict, state: dict) -> None:
-    state.setdefault("seen", []).append({
+def remember(candidate: dict, state: dict) -> dict:
+    record = {
         "key": candidate["key"],
         "url": canonical_url(candidate.get("link", "")),
         "fingerprint": wire.fingerprint(candidate["title"]),
@@ -182,7 +193,9 @@ def remember(candidate: dict, state: dict) -> None:
         "source_id": candidate["source_id"],
         "tier": candidate["tier"],
         "seen_at": iso_now(),
-    })
+    }
+    state.setdefault("seen", []).append(record)
+    return record
 
 
 def build_candidate(source: dict, entry: dict) -> dict:
@@ -411,10 +424,68 @@ def discord_payload(candidate: dict) -> dict:
     }
 
 
+def _digest_link_text(title: str) -> str:
+    # Square brackets would break Discord's [text](url) link syntax.
+    return title.replace("[", "(").replace("]", ")")
+
+
+def digest_payload(channel: str, items: list[dict]) -> tuple[dict, int]:
+    """Build one roundup embed for stories that exceeded the per-run limits.
+
+    Returns the payload and how many items fit in the embed. Items that do not
+    fit are summarized as a count so nothing disappears without a trace.
+    """
+    count = len(items)
+    noun = "update" if count == 1 else "updates"
+    heading = CHANNEL_TITLES.get(channel, channel)
+    intro = "*More news than usual arrived at once, so the rest is rounded up here.*\n"
+
+    lines: list[str] = []
+    used = len(intro)
+    shown = 0
+    for item in items:
+        title = _digest_link_text(item["title"])[:200]
+        link = (item.get("link") or "").replace(")", "%29")
+        line = f"• [{title}]({link})" if link else f"• {title}"
+        line += f" — {item['source_name']}"
+        if item.get("fantasy_owner"):
+            line += f" · **BLHA roster:** {item['fantasy_owner']}"
+        # Reserve room for the "+N more" note.
+        if used + len(line) + 1 > DIGEST_MAX_CHARS - 60:
+            break
+        lines.append(line)
+        used += len(line) + 1
+        shown += 1
+
+    description = intro + "\n".join(lines)
+    hidden = count - shown
+    if hidden > 0:
+        description += f"\n\n*+{hidden} more not shown.*"
+
+    embed = {
+        "title": f"{heading} — {count} more {noun}",
+        "description": description[:4096],
+        "color": CHANNEL_COLORS.get(channel, 0xFFB81C),
+        "footer": {"text": f"{CHANNEL_LABELS.get(channel, channel)} • BLHA THE WIRE • ROUNDUP"},
+        "timestamp": now_utc().isoformat(),
+    }
+    payload = {
+        "username": "BLHA News Wire",
+        "avatar_url": WEBHOOK_AVATAR,
+        "allowed_mentions": {"parse": []},
+        "embeds": [embed],
+    }
+    return payload, shown
+
+
 def deliver(candidate: dict) -> bool:
-    env_name = WEBHOOK_ENV.get(candidate["channel"])
+    return post_payload(candidate["channel"], discord_payload(candidate))
+
+
+def post_payload(channel: str, payload: dict) -> bool:
+    env_name = WEBHOOK_ENV.get(channel)
     if not env_name:
-        print(f"DELIVERY SKIP: no webhook mapping for {candidate['channel']}")
+        print(f"DELIVERY SKIP: no webhook mapping for {channel}")
         return False
     webhook = os.getenv(env_name, "").strip()
     if not webhook:
@@ -426,7 +497,7 @@ def deliver(candidate: dict) -> bool:
             response = requests.post(
                 webhook,
                 params={"wait": "true"},
-                json=discord_payload(candidate),
+                json=payload,
                 timeout=20,
             )
         except requests.RequestException as exc:
@@ -494,61 +565,98 @@ def main() -> int:
         print(f"LIVE BASELINE CREATED: {baseline} current items recorded; 0 Discord messages sent.")
         return 0
 
-    posted = shadowed = duplicates = discovery = native_skipped = suppressed = 0
-    posted_by_channel: dict[str, int] = {}
-
-    for candidate in candidates:
-        prefix = f"[{candidate['channel']}] {candidate['source_name']}"
-
-        if candidate["discovery_only"]:
-            discovery += 1
-            if args.mode == "shadow":
-                print(f"DISCOVERY {prefix}: {candidate['title']}")
-            continue
-
-        reason = duplicate_reason(candidate, state)
-        if reason:
-            duplicates += 1
-            continue
-
-        if args.mode == "shadow":
-            owner_note = f" [BLHA roster: {candidate['fantasy_owner']}]" if candidate.get("fantasy_owner") else ""
-            print(f"SHADOW {prefix}: {candidate['title']}{owner_note}")
-            remember(candidate, state)
-            shadowed += 1
-            continue
-
-        if candidate["channel"] in NATIVE_PRIMARY_CHANNELS:
-            print(f"NATIVE-PRIMARY SKIP {prefix}: {candidate['title']}")
-            remember(candidate, state)
-            native_skipped += 1
-            continue
-
-        channel_count = posted_by_channel.get(candidate["channel"], 0)
-        if posted >= MAX_LIVE_POSTS_PER_RUN or channel_count >= MAX_LIVE_POSTS_PER_CHANNEL:
-            print(f"RATE-GUARD SUPPRESSED {prefix}: {candidate['title']}")
-            remember(candidate, state)
-            suppressed += 1
-            continue
-
-        if deliver(candidate):
-            print(f"POSTED {prefix}: {candidate['title']}")
-            remember(candidate, state)
-            posted += 1
-            posted_by_channel[candidate["channel"]] = channel_count + 1
-        else:
-            print(f"NOT POSTED {prefix}: {candidate['title']}")
+    counts = process_candidates(candidates, state, args.mode)
 
     state["initialized"] = True
     prune_state(state)
     save_state(state, state_path)
 
     print(
-        f"SUMMARY mode={args.mode} posted={posted} shadowed={shadowed} "
-        f"duplicates={duplicates} discovery={discovery} native_skipped={native_skipped} "
-        f"suppressed={suppressed} state={state_path.name}"
+        f"SUMMARY mode={args.mode} posted={counts['posted']} shadowed={counts['shadowed']} "
+        f"duplicates={counts['duplicates']} discovery={counts['discovery']} "
+        f"native_skipped={counts['native_skipped']} digested={counts['digested']} "
+        f"digest_posts={counts['digest_posts']} suppressed={counts['suppressed']} "
+        f"state={state_path.name}"
     )
     return 0
+
+
+def process_candidates(candidates: list[dict], state: dict, mode: str) -> dict[str, int]:
+    """Route, dedupe and deliver one run's candidates; returns counters.
+
+    In live mode, the first MAX_LIVE_POSTS_PER_CHANNEL stories per channel (and
+    MAX_LIVE_POSTS_PER_RUN overall) go out as individual posts. The rest of
+    each channel's stories are sent as a single roundup post. Overflow stories
+    are remembered immediately so later duplicates in the same run are caught,
+    but that memory is rolled back if the roundup cannot be delivered, so
+    those stories are retried on the next run instead of being lost.
+    """
+    counts = {
+        "posted": 0, "shadowed": 0, "duplicates": 0, "discovery": 0,
+        "native_skipped": 0, "digested": 0, "digest_posts": 0, "suppressed": 0,
+    }
+    posted_by_channel: dict[str, int] = {}
+    overflow: dict[str, list[tuple[dict, dict]]] = {}
+
+    for candidate in candidates:
+        prefix = f"[{candidate['channel']}] {candidate['source_name']}"
+
+        if candidate["discovery_only"]:
+            counts["discovery"] += 1
+            if mode == "shadow":
+                print(f"DISCOVERY {prefix}: {candidate['title']}")
+            continue
+
+        reason = duplicate_reason(candidate, state)
+        if reason:
+            counts["duplicates"] += 1
+            continue
+
+        if mode == "shadow":
+            owner_note = f" [BLHA roster: {candidate['fantasy_owner']}]" if candidate.get("fantasy_owner") else ""
+            print(f"SHADOW {prefix}: {candidate['title']}{owner_note}")
+            remember(candidate, state)
+            counts["shadowed"] += 1
+            continue
+
+        if candidate["channel"] in NATIVE_PRIMARY_CHANNELS:
+            print(f"NATIVE-PRIMARY SKIP {prefix}: {candidate['title']}")
+            remember(candidate, state)
+            counts["native_skipped"] += 1
+            continue
+
+        channel_count = posted_by_channel.get(candidate["channel"], 0)
+        if counts["posted"] >= MAX_LIVE_POSTS_PER_RUN or channel_count >= MAX_LIVE_POSTS_PER_CHANNEL:
+            print(f"RATE-GUARD ROUNDUP {prefix}: {candidate['title']}")
+            record = remember(candidate, state)
+            overflow.setdefault(candidate["channel"], []).append((candidate, record))
+            continue
+
+        if deliver(candidate):
+            print(f"POSTED {prefix}: {candidate['title']}")
+            remember(candidate, state)
+            counts["posted"] += 1
+            posted_by_channel[candidate["channel"]] = channel_count + 1
+        else:
+            print(f"NOT POSTED {prefix}: {candidate['title']}")
+
+    for channel, entries in overflow.items():
+        items = [candidate for candidate, _ in entries]
+        payload, shown = digest_payload(channel, items)
+        if post_payload(channel, payload):
+            counts["digest_posts"] += 1
+            counts["digested"] += shown
+            print(f"ROUNDUP POSTED [{channel}]: {len(items)} stories ({shown} listed)")
+            hidden = len(items) - shown
+            if hidden > 0:
+                counts["suppressed"] += hidden
+                print(f"RATE-GUARD SUPPRESSED [{channel}]: {hidden} stories did not fit in the roundup")
+        else:
+            records = {id(record) for _, record in entries}
+            state["seen"] = [row for row in state.get("seen", []) if id(row) not in records]
+            print(f"ROUNDUP NOT POSTED [{channel}]: {len(items)} stories will retry next run")
+
+    return counts
 
 
 if __name__ == "__main__":

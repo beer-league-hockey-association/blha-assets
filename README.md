@@ -25,11 +25,17 @@ These are working drafts and may be replaced when the Constitution is finalized.
 
 The approved architecture is:
 
-- **GitHub Actions = scheduler/brain**
+- **GitHub Actions = brain**, with timing owned by the **BLHA Scheduler**
 - **Discord webhooks = delivery**
 - **Fantrax = authoritative read-only league gameplay data where applicable**
 - **Native integrations = use when superior**
 - **Discord bot = save for a later interactive phase**
+
+## Scheduling
+
+All automation timing lives in one file: `automation/scheduler/schedule.yaml`.
+
+The **BLHA Scheduler** workflow (`.github/workflows/blha-scheduler.yml`) runs every 15 minutes, started by an external timer (cron-job.org) with GitHub cron as a backup. It starts each workflow in **live** mode when it is due and catches up after any delay, so a late check never skips a job. Individual workflows no longer carry their own cron entries. Setup and troubleshooting: `automation/scheduler/README.md`.
 
 Shared resilient Discord webhook delivery for League Office, Fantrax competition, matchup previews, playoffs, and automation health is implemented in:
 `automation/discord_webhook.py`
@@ -44,7 +50,7 @@ Source collectors, routing, Daily Faceoff injury parsing, persistent dedupe stat
 The scheduled engine workflow is:
 `.github/workflows/blha-wire-engine.yml`
 
-Scheduled runs execute every 15 minutes in **live mode** at minutes 3, 18, 33, and 48. Manual workflow dispatch defaults to **shadow mode** for safe testing. Shadow mode never posts to Discord; live delivery requires the appropriate Discord webhook URLs in GitHub Actions Secrets.
+The BLHA Scheduler starts the Wire every 15 minutes in **live mode**. When more stories arrive in one run than the flood guard allows as individual posts, the rest of each channel's stories are combined into one roundup post instead of being dropped. Manual workflow dispatch defaults to **shadow mode** for safe testing. Shadow mode never posts to Discord; live delivery requires the appropriate Discord webhook URLs in GitHub Actions Secrets.
 
 Operational and rollout instructions:
 `automation/phase-2d1/phase-2d1c-operations.md`
@@ -74,7 +80,7 @@ All Discord-facing competition posts use the clean vertical embed standard in `a
 The playoff-race workflow is:
 `.github/workflows/blha-fantrax-playoff-race.yml`
 
-It checks daily after the standings workflow and posts only when the tracked playoff picture materially changes. It uses the existing `🏁│playoff-race` channel; no Discord channel is created by the automation.
+It checks daily (08:15 ET, after the 07:30 standings check) and posts only when the tracked playoff picture materially changes. It uses the existing `🏁│playoff-race` channel; no Discord channel is created by the automation.
 
 Clinching and elimination claims are intentionally deferred until remaining-matchup and tiebreaker semantics are proven rather than inferred.
 
@@ -83,11 +89,11 @@ Clinching and elimination claims are intentionally deferred until remaining-matc
 The playoff module is stored in:
 `automation/phase-2d5/`
 
-It preserves final regular-season seeds, applies six-team reseeding so Seed 1 faces the lowest-ranked surviving opponent, and fingerprints semantic bracket content rather than render timestamps. The scheduled playoff workflow checks every six hours and remains a no-op outside the playoff window.
+It preserves final regular-season seeds, applies six-team reseeding so Seed 1 faces the lowest-ranked surviving opponent, and fingerprints semantic bracket content rather than render timestamps. The scheduler starts the playoff check every six hours; it remains a no-op outside the playoff window.
 
 ## Regression checks
 
-Automation regression tests cover shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles the affected automation modules and runs these checks whenever relevant code or configuration changes.
+Automation regression tests cover scheduler due-time logic, Wire routing and roundup posts, health-monitor run filtering, shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles the affected automation modules and runs these checks whenever relevant code or configuration changes.
 
 ## Raw URL base
 `https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/`
