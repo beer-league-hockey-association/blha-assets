@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T21:30:34.286927Z",
+  "updated_at": "2026-10-02T22:00:41.884922Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1722,6 +1722,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T21:30:34.265297Z"
+    },
+    {
+      "key": "5b3f045bc37c70f5e45c1bdf",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gm-john-chayka-talks-data-goaltending-mckenna",
+      "fingerprint": "87f12441833cfd58",
+      "title_norm": "maple leafs gm john chayka talks data, goaltending, mckenna",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T22:00:41.623823Z"
+    },
+    {
+      "key": "b71fd203879f65cde95e947c",
+      "url": "https://www.sportsnet.ca/nhl/article/things-we-think-we-know-oilers-goaltending-raises-alarm-bells",
+      "fingerprint": "8c21fd1efaf61645",
+      "title_norm": "things we (think we) know: oilers goaltending raises alarm bells",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T22:00:41.849193Z"
     }
   ]
 }
