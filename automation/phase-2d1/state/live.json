@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T12:22:14.434254Z",
+  "updated_at": "2026-10-02T15:55:39.981106Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1492,6 +1492,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T12:22:14.397257Z"
+    },
+    {
+      "key": "d096f34b71a335ac6d7f02d9",
+      "url": "https://www.flohockey.tv/articles/16219693-top-nhl-prospects-in-ahl-atlantic-division",
+      "fingerprint": "7a0339883d757609",
+      "title_norm": "zonnon, beaudoin lead top nhl prospects to watch in ahl atlantic division",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-02T15:55:39.417635Z"
+    },
+    {
+      "key": "ad1301acd5b37035f47096b7",
+      "url": "https://www.sportsnet.ca/nhl/article/sidney-crosbys-staying-power-appears-eternal-in-the-nhl-and-in-pittsburgh",
+      "fingerprint": "c25b3ab3becca818",
+      "title_norm": "sidney crosby's staying power appears eternal — in the nhl, and in pittsburgh",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T15:55:39.652437Z"
+    },
+    {
+      "key": "4e397298994974434cfa8cbc",
+      "url": "https://www.sportsnet.ca/hockey/article/franz-reindl-elected-iihf-president-canada-without-representation-on-council",
+      "fingerprint": "1d422f0f743df82f",
+      "title_norm": "franz reindl elected iihf president, canada without representation on council",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T15:55:39.947297Z"
     }
   ]
 }
