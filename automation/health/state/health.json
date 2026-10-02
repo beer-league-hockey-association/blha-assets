@@ -1,9 +1,9 @@
 {
   "active_issues": {
-    "wire-rate-guard": {
-      "detail": "The latest scheduled Wire run hit the production rate guard. Review the feed burst before changing limits.",
-      "summary": "Wire flood guard suppressed posts",
-      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36944335417",
+    "stale:wire-engine": {
+      "detail": "Latest scheduled run started 177 minutes ago; alert threshold is 120 minutes.",
+      "summary": "Scheduled workflow appears stale",
+      "url": "https://github.com/diseasewheeze/blha-assets/actions/runs/36970585659",
       "workflow": "BLHA Wire Engine"
     }
   }
