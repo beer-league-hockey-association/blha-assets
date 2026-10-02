@@ -11,20 +11,30 @@
     },
     {
       "title": "BLHA LEAGUE LEDGER",
-      "description": "Public league-level accounting for dues, league expenses, prizes, and treasury status.",
-      "color": 13012757,
+      "description": "Public league-level accounting for dues, league expenses, prizes and the Dynasty Pot.",
+      "color": 16758812,
       "footer": {
         "text": "BLHA LEAGUE OFFICE"
       },
       "fields": [
         {
-          "name": "PUBLIC TRANSPARENCY",
-          "value": "This channel tracks what each franchise owes or has paid at the league level and how league funds are allocated.",
+          "name": "POSTED HERE",
+          "value": "Payment confirmations • Dues status • Future-season prepayments • Prize payouts • Dynasty Pot balance • The Season Ledger",
+          "inline": false
+        },
+        {
+          "name": "A PAYMENT COUNTS WHEN",
+          "value": "The Commissioner has confirmed it and recorded it here (Article III). Future 1st- and 2nd-round pick trades stay pending until the required prepayment is confirmed here (Article XII).",
+          "inline": false
+        },
+        {
+          "name": "SEASON LEDGER",
+          "value": "Within 30 days after the BLHA Championship concludes, the Commissioner posts dues received, prizes paid, operating reserve spending, the Administration Fee and the Dynasty Pot balance.",
           "inline": false
         },
         {
           "name": "PRIVACY",
-          "value": "Do **not** post payment credentials, account numbers, login details, or sensitive personal financial information.",
+          "value": "Do **not** post payment credentials, account numbers, login details or sensitive personal financial information.",
           "inline": false
         }
       ],

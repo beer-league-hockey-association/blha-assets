@@ -1,0 +1,41 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/commissioners-office/blha-commissioners-office-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA COMMISSIONER SUPPORT",
+      "description": "Open a private ticket for anything that shouldn't be handled in public.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA COMMISSIONER'S OFFICE"
+      },
+      "fields": [
+        {
+          "name": "USE THIS ROOM FOR",
+          "value": "Disputes • Complaints • Payment questions • Roster or platform problems",
+          "inline": false
+        },
+        {
+          "name": "TIMING",
+          "value": "A request to review a material Commissioner ruling must be made within 48 hours of the ruling (Article XIX).",
+          "inline": false
+        },
+        {
+          "name": "PRIVACY",
+          "value": "Never post passwords, payment credentials or account numbers.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

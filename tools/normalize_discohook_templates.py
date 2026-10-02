@@ -28,30 +28,42 @@ HEADER_VERSION = "?v=4-b-mark"
 HEADER_COLOR = int("2B2D31", 16)
 ZWSP = "\u200b"
 
-INTRO_HEADERS = {
-    "welcome/01_welcome.json": BASE + "welcome/blha-welcome-banner.png" + HEADER_VERSION,
-    "league-office/01_constitution_channel_intro.json": BASE + "league-office/blha-constitution-header.png" + HEADER_VERSION,
-    "league-office/02_announcements_channel_intro.json": BASE + "league-office/blha-announcements-header.png" + HEADER_VERSION,
-    "league-office/03_calendar_channel_intro.json": BASE + "league-office/blha-calendar-header.png" + HEADER_VERSION,
-    "league-office/04_ledger_channel_intro.json": BASE + "league-office/blha-ledger-header.png" + HEADER_VERSION,
-    "league-office/05_voting_channel_intro.json": BASE + "league-office/blha-voting-header.png" + HEADER_VERSION,
-    "draft-center/06_draft_center_intro.json": BASE + "draft-center/blha-draft-center-header.png" + HEADER_VERSION,
-    "league-office/06_champions_channel_intro.json": BASE + "league-office/blha-champions-header.png" + HEADER_VERSION,
-    "league-office/07_records_channel_intro.json": BASE + "league-office/blha-records-header.png" + HEADER_VERSION,
-    "general-managers/01_gm_lounge_channel_intro.json": BASE + "general-managers/blha-general-managers-header.png" + HEADER_VERSION,
-    "trade-center/01_trade_center_channel_intro.json": BASE + "trade-center/blha-trade-center-header.png" + HEADER_VERSION,
-    "scouting/01_scouting_department_channel_intro.json": BASE + "scouting/blha-scouting-header.png" + HEADER_VERSION,
-    "waiver-wire/01_waiver_wire_channel_intro.json": BASE + "waiver-wire/blha-waiver-wire-header.png" + HEADER_VERSION,
-    "commissioners-office/01_commissioners_office_channel_intro.json": BASE + "commissioners-office/blha-commissioners-office-header.png" + HEADER_VERSION,
-    "franchise-hq/01_franchise_hq_channel_intro.json": BASE + "franchise-hq/blha-franchise-hq-header.png" + HEADER_VERSION,
+# Each category folder has one header image. League Office has one header per channel.
+CATEGORY_HEADERS = {
+    "the-wire": "the-wire/blha-the-wire-header.png",
+    "league-competition": "league-competition/blha-competition-header.png",
+    "general-managers": "general-managers/blha-general-managers-header.png",
+    "trade-center": "trade-center/blha-trade-center-header.png",
+    "scouting": "scouting/blha-scouting-header.png",
+    "waiver-wire": "waiver-wire/blha-waiver-wire-header.png",
+    "commissioners-office": "commissioners-office/blha-commissioners-office-header.png",
+    "franchise-hq": "franchise-hq/blha-franchise-hq-header.png",
+    "draft-center": "draft-center/blha-draft-center-header.png",
 }
-for _n, _f in (
-    ("01_breaking_news", "breaking-news"), ("02_nhl_news", "nhl-news"), ("03_injury_report", "injury-report"),
-    ("04_nhl_transactions", "nhl-transactions"), ("05_prospect_wire", "prospect-wire"), ("06_news_desk", "news-desk"),
-):
-    INTRO_HEADERS[f"the-wire/{_n}_channel_intro.json"] = BASE + "the-wire/blha-the-wire-header.png" + HEADER_VERSION
-for _n in ("01_scoreboard", "02_standings", "03_weekly_recap", "04_playoff_race", "05_playoffs"):
-    INTRO_HEADERS[f"league-competition/{_n}_channel_intro.json"] = BASE + "league-competition/blha-competition-header.png" + HEADER_VERSION
+LEAGUE_OFFICE_HEADERS = {
+    "01_constitution_channel_intro.json": "league-office/blha-constitution-header.png",
+    "02_announcements_channel_intro.json": "league-office/blha-announcements-header.png",
+    "03_calendar_channel_intro.json": "league-office/blha-calendar-header.png",
+    "04_ledger_channel_intro.json": "league-office/blha-ledger-header.png",
+    "05_voting_channel_intro.json": "league-office/blha-voting-header.png",
+    "06_hall_of_champions_channel_intro.json": "league-office/blha-champions-header.png",
+    "07_league_records_channel_intro.json": "league-office/blha-records-header.png",
+}
+
+
+def build_intro_headers() -> dict:
+    headers = {"welcome/01_welcome.json": BASE + "welcome/blha-welcome-banner.png" + HEADER_VERSION}
+    for path in sorted(TEMPLATES.rglob("*_channel_intro.json")):
+        category = path.parent.name
+        if category == "league-office":
+            image = LEAGUE_OFFICE_HEADERS[path.name]
+        else:
+            image = CATEGORY_HEADERS[category]
+        headers[path.relative_to(TEMPLATES).as_posix()] = BASE + image + HEADER_VERSION
+    return headers
+
+
+INTRO_HEADERS = build_intro_headers()
 
 
 def banner_embed(url: str) -> dict:

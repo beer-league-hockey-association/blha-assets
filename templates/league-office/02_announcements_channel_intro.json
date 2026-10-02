@@ -19,12 +19,17 @@
       "fields": [
         {
           "name": "POSTED HERE",
-          "value": "Deadlines • Season Notices • Schedule Changes • Commissioner Instructions • League-Wide Action Items",
+          "value": "Deadlines • Season notices • Calendar changes • Commissioner instructions • League-wide action items",
           "inline": false
         },
         {
           "name": "NOT POSTED HERE",
-          "value": "General discussion, trade talk, scouting chatter, or routine questions.",
+          "value": "General discussion, trade talk, scouting chatter or routine questions.",
+          "inline": false
+        },
+        {
+          "name": "RULES CHANGES",
+          "value": "Rules change only through the process in Article XX of the Constitution. An announcement never changes a rule by itself.",
           "inline": false
         }
       ],

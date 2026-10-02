@@ -1,0 +1,41 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/scouting/blha-scouting-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA ANNUAL DRAFT",
+      "description": "Strategy and planning for the annual draft.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA SCOUTING DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "THE FORMAT",
+          "value": "5 rounds, linear order, starting 14 to 21 days after the NHL Entry Draft. The first Annual Draft is in 2028 (Article XIV).",
+          "inline": false
+        },
+        {
+          "name": "DRAFT ORDER",
+          "value": "Non-playoff teams pick 1.01 to 1.06 by ascending Potential Points. Picks 1.07 and 1.08 go to the Quarterfinal losers, then fourth place, third place, Runner-Up and Champion.",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL COMMUNICATION",
+          "value": "Draft-day notices live in the Draft Center. This room is for strategy.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

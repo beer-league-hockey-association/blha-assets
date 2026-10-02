@@ -19,7 +19,7 @@
       "fields": [
         {
           "name": "START HERE",
-          "value": "📕 **constitution** — League rules and amendments.\n📢 **league-announcements** — Official league notices.\n📅 **league-calendar** — Important dates and deadlines.\n💰 **league-ledger** — Dues and league accounting.",
+          "value": "📜 **constitution** — League rules (Version 2.2) and amendments.\n📢 **announcements** — Official league notices.\n📅 **league-calendar** — Important dates and deadlines.\n💰 **league-ledger** — Dues and league accounting.",
           "inline": false
         },
         {

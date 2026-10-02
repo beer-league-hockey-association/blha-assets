@@ -10,26 +10,26 @@
       }
     },
     {
-      "title": "BLHA STANDINGS",
-      "description": "League standings after each completed week, posted by the BLHA Competition Desk from Fantrax data.",
+      "title": "BLHA PLAYOFFS",
+      "description": "Playoff matchups and results, posted by the BLHA Competition Desk.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMPETITION DESK"
       },
       "fields": [
         {
-          "name": "POSTED HERE",
-          "value": "Weekly standings • Playoff cut line • Final regular-season standings",
+          "name": "THE FORMAT",
+          "value": "Quarterfinals and Semifinals are one week each, and the BLHA Championship is a two-week cumulative matchup. Brackets reseed after each round. The Semifinal losers play for third place (Article XVI).",
           "inline": false
         },
         {
-          "name": "TIEBREAKERS",
-          "value": "Points scored, then head-to-head among the tied teams, then the next Fantrax tiebreaker, then a recorded random draw (Article XV).",
+          "name": "POSTED HERE",
+          "value": "Playoff matchups • Round results • Third-place game • Champion announcement",
           "inline": false
         },
         {
           "name": "OFFICIAL RESULTS",
-          "value": "Fantrax is the authoritative record. These posts are a convenient copy of it.",
+          "value": "Fantrax is the authoritative record. Rulings on playoff questions come from the League Office.",
           "inline": false
         }
       ],

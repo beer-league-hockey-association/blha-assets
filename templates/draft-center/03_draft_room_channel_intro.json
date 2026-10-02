@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/draft-center/blha-draft-center-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA DRAFT ROOM",
+      "description": "Live discussion while the draft runs.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA DRAFT CENTER"
+      },
+      "fields": [
+        {
+          "name": "USE THIS ROOM FOR",
+          "value": "Reactions • Pick talk • Draft banter",
+          "inline": false
+        },
+        {
+          "name": "DRAFT QUEUES",
+          "value": "Maintain a Fantrax queue so a timeout never costs you a pick (Articles XIII and XIV).",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

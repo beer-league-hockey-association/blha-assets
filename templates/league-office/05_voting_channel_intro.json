@@ -19,12 +19,22 @@
       "fields": [
         {
           "name": "ONE FRANCHISE = ONE VOTE",
-          "value": "Only the **Franchise Owner** role casts the formal vote. Co-owners may discuss proposals but do not create an additional franchise vote.",
+          "value": "Each franchise casts one vote, whether it has one owner or several. Co-owners may discuss proposals but do not create an additional vote.",
           "inline": false
         },
         {
-          "name": "A VALID VOTE POST SHOULD STATE",
-          "value": "The Proposal • Voting Options • Opening Time • Closing Time • Threshold Required • Final Result",
+          "name": "THE RULES OF A VOTE",
+          "value": "Material amendments need **8 of 12** affirmative votes. Votes happen only in the offseason, last 7 days, and follow a proposal posted at least 7 days earlier. Non-votes are not affirmative votes (Article XX).",
+          "inline": false
+        },
+        {
+          "name": "A VALID VOTE POST STATES",
+          "value": "The proposal • Voting options • Opening time • Closing time • Threshold required • Final result",
+          "inline": false
+        },
+        {
+          "name": "DISCUSSION",
+          "value": "Debate proposals in **gm-lounge**. This channel is for the proposal and the recorded vote.",
           "inline": false
         }
       ],

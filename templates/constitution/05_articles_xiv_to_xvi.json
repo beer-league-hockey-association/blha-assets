@@ -1,0 +1,31 @@
+{
+  "embeds": [
+    {
+      "title": "ARTICLE XIV — ANNUAL DRAFT AND DRAFT ORDER",
+      "description": "**14.1** The annual BLHA draft is 5 rounds and is linear rather than snake. Each franchise therefore holds the same draft position in every round unless a pick has been traded. The first Annual Draft is the 2028 Annual Draft.\n\n**14.2** The Annual Draft begins 14 to 21 days after the final day of the NHL Entry Draft (Article V).\n\n**14.3** The draft uses an 8-hour pick clock with a midnight–8:00 AM ET pause. Managers are encouraged to maintain queues. Timeout handling may use Fantrax queue, auto-draft, or temporary-skip tools as announced before the draft.\n\n**14.4** The player pool is not restricted to the current NHL draft class. Any unowned player in the Fantrax player pool who satisfies BLHA minor-league eligibility may be selected.\n\n**14.5** Draft order is based on the results of the Season just completed. Picks 1.01 through 1.06 belong to the six non-playoff franchises and are ordered by ascending Potential Points / Max Points For, with the lowest total receiving 1.01. Properly rostered minor-league players are excluded from the BLHA draft-order calculation to the extent Fantrax permits or the Commissioner can reliably reproduce the configured metric. Ties are broken under Section 15.5.\n\n**14.6** Picks 1.07 and 1.08 belong to the two Quarterfinal losers, with the lower regular-season seed selecting earlier. Pick 1.09 belongs to the fourth-place finisher. Pick 1.10 belongs to the third-place finisher. Pick 1.11 belongs to the Runner-Up. Pick 1.12 belongs to the BLHA Champion.\n\n**14.7** The same order repeats in Rounds 2 through 5. The consolation bracket does not alter annual draft position.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      }
+    },
+    {
+      "title": "ARTICLE XV — REGULAR SEASON, STANDINGS, AND PRESIDENTS' TROPHY",
+      "description": "**15.1** The regular season consists of 22 scoring periods. Every franchise plays every other franchise twice.\n\n**15.2** Regular-season standings and head-to-head results are recorded by Fantrax.\n\n**15.3** The Presidents' Trophy is awarded to the franchise with the best regular-season Head-to-Head record after Week 22 and carries the annual $200 prize. It is independent of postseason results.\n\n**15.4** **Standings tiebreakers.** These apply to every standings position, including the Presidents' Trophy, playoff qualification and seeding, and consolation seeding. If two or more franchises are tied: (1) regular-season fantasy points scored; (2) head-to-head record among the tied franchises; (3) the next configured Fantrax standings tiebreaker; (4) a random draw conducted by the Commissioner and recorded in Discord.\n\n**15.5** **Draft-order ties.** If non-playoff franchises are tied on Potential Points / Max Points For, the franchise with fewer regular-season fantasy points scored selects earlier. If still tied, a random draw conducted by the Commissioner and recorded in Discord decides.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      }
+    },
+    {
+      "title": "ARTICLE XVI — PLAYOFFS, THIRD PLACE, AND CONSOLATION",
+      "description": "**POSTSEASON** — Six playoff teams. Top two seeds receive byes. The BLHA Championship is a two-week cumulative matchup.\n\n**16.1** Six franchises qualify for the BLHA Championship Playoffs, ranked by final regular-season standings. Seeds 1 and 2 receive first-round byes.\n\n**16.2** **Quarterfinals:** Seed 3 vs. Seed 6 and Seed 4 vs. Seed 5. **Semifinals:** Seed 1 and Seed 2 join the four-team field; the playoff bracket reseeds after each round, with the highest remaining seed facing the lowest remaining seed. Quarterfinals and Semifinals are one fantasy Week each. The **BLHA Championship** is a two-week cumulative matchup.\n\n**16.3** The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $150 third-place prize.\n\n**16.4** If Fantrax cannot technically stage the third-place matchup, the fallback is the Semifinal loser who scores the most fantasy points during the same two-week championship period. If the fallback total is exactly tied, the higher playoff seed receives third place.\n\n**16.5** If any playoff, third-place, or consolation matchup ends in an exact tie, the higher seed advances or wins.\n\n**16.6** The playoff schedule should end approximately six days before the NHL regular season concludes to reduce late-season NHL lineup volatility where the NHL schedule permits (Article V).\n\n**16.7** **Consolation bracket.** The six non-playoff franchises play a consolation bracket during the same Weeks as the playoffs, using the same structure: seeded 1 through 6 by their regular-season standings rank among non-playoff franchises, top two seeds receive byes, reseeding after each round, and a two-week cumulative final. The consolation-bracket champion receives the next-Season $50 FAAB bonus described in Article X. Consolation results do not change annual draft order, standings, or the Presidents' Trophy.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

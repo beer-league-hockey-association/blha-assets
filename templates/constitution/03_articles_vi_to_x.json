@@ -1,0 +1,47 @@
+{
+  "embeds": [
+    {
+      "title": "ARTICLE VI — ROSTERS AND POSITIONS",
+      "description": "**6.1** Normal roster limits are 20 active players and 6 reserves, for 26 non-minor controlled roster spots, plus 10 minor-league spots and up to 5 IR spots. That is 36 controlled roster spots excluding IR, or 41 including IR.\n\n**6.2** Active positions are 3 C, 3 LW, 3 RW, 3 F, 6 D, and 2 G. An F slot may be filled by any forward (C, LW, or RW).\n\n**6.3** Minor-league players do not count toward the normal 26-player roster limit. Players properly placed on IR do not count toward normal roster limitations while Fantrax recognizes them as IR-eligible.\n\n**6.4** Managers are responsible for maintaining legal rosters. When a roster becomes illegal because of a transaction, eligibility change, or player activation, the manager must correct the violation within 24 hours of notice from Fantrax or the Commissioner, or within any shorter limit Fantrax enforces.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      }
+    },
+    {
+      "title": "ARTICLE VII — MINOR-LEAGUE ELIGIBILITY",
+      "description": "**7.1** The BLHA maintains 10 minor-league roster spots.\n\n**7.2** A player must be age 25 or younger using the player's age as of September 15 immediately before the Season. That age determination remains fixed for the entire fantasy Season.\n\n**7.3** Skaters remain minor-eligible through 100 career NHL regular-season games played. Goalies remain minor-eligible through 50 career NHL regular-season games played. Career NHL games played continue to accumulate during the Season.\n\n**7.4** Once Fantrax identifies a minor-league player as ineligible, the franchise has three calendar days to promote, trade, drop, or otherwise remove the player from the minor slot.\n\n**7.5** Promotion does not permanently burn minor eligibility. A player who still satisfies the BLHA minor rules may later return to a minor slot where Fantrax permits.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      }
+    },
+    {
+      "title": "ARTICLE VIII — SCORING",
+      "description": "**8.1** The BLHA scoring system is intentionally compact. Categories not listed below are disabled unless this Constitution is formally amended.\n\n**SKATERS**\n• Goal — **+5.00**\n• Assist — **+2.95**\n• Shot on Goal — **+0.55**\n• Block — **+0.35**\n• Hit — **+0.20**\n\n**GOALIES**\n• Game Started — **+6.50**\n• Save — **+0.49**\n• Goal Against — **-5.00**\n• Goalie Goal — **+5.00**\n• Goalie Assist — **+2.95**\n\n**8.2** Goalie wins, shutouts, plus/minus, penalty minutes, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      }
+    },
+    {
+      "title": "ARTICLE IX — LINEUPS AND GOALIE STARTS",
+      "description": "**9.1** Lineups are set daily. Managers are responsible for maintaining legal, reasonably competitive active lineups throughout the Season.\n\n**9.2** A franchise may receive credit for a maximum of 4 goalie starts during a normal fantasy Week.\n\n**9.3** The two-week BLHA Championship permits a maximum of 8 credited goalie starts across the full championship period.\n\n**9.4** Fantrax enforcement settings govern the technical application of the goalie-start limit. A manager may not intentionally exploit a platform timing or scoring behavior to obtain credit beyond the constitutional maximum.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      }
+    },
+    {
+      "title": "ARTICLE X — WAIVERS, FAAB, AND ACQUISITIONS",
+      "description": "**10.1** Each franchise receives **$1,000 FAAB** at the beginning of each Season. Standard FAAB does not roll over from Season to Season.\n\n**10.2** $0 bids are permitted and bids use $1 increments. Bids are hidden. Vickrey or proxy bidding is not used.\n\n**10.3** Unowned players are acquired through FAAB rather than first-come, first-served acquisition. Waivers are intended to process daily at approximately 11:00 AM ET, subject to Fantrax system behavior.\n\n**10.4** Equal bids are resolved by Fantrax's configured tiebreaker. The Commissioner will configure the earliest-submitted bid to win where Fantrax allows and will announce the setting in Discord before the Season.\n\n**10.5** A franchise may make up to **5 acquisitions per normal fantasy Week**. An acquisition is adding a player from the unowned player pool by FAAB claim or free-agent add, as counted by Fantrax. Trades, draft selections, and drops are not acquisitions. The two-week championship is treated as two separate acquisition weeks, permitting up to 5 acquisitions in each underlying Week, for a maximum of 10 across the full championship period.\n\n**10.6** Waiver-churning protections and Fantrax waiver-period protections remain enabled where available.\n\n**10.7** The consolation-bracket champion receives a **$50 FAAB bonus** for the following Season, giving that franchise $1,050 for that Season only. The bonus expires with ordinary current-season FAAB and may be traded as current-season FAAB (Article XI).",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

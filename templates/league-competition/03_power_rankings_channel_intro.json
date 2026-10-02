@@ -10,8 +10,8 @@
       }
     },
     {
-      "title": "BLHA STANDINGS",
-      "description": "League standings after each completed week, posted by the BLHA Competition Desk from Fantrax data.",
+      "title": "BLHA POWER RANKINGS",
+      "description": "How the teams stack up beyond the standings.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMPETITION DESK"
@@ -19,17 +19,12 @@
       "fields": [
         {
           "name": "POSTED HERE",
-          "value": "Weekly standings • Playoff cut line • Final regular-season standings",
+          "value": "Power rankings • Movers and risers • Strength-of-roster commentary",
           "inline": false
         },
         {
-          "name": "TIEBREAKERS",
-          "value": "Points scored, then head-to-head among the tied teams, then the next Fantrax tiebreaker, then a recorded random draw (Article XV).",
-          "inline": false
-        },
-        {
-          "name": "OFFICIAL RESULTS",
-          "value": "Fantrax is the authoritative record. These posts are a convenient copy of it.",
+          "name": "UNOFFICIAL",
+          "value": "Power rankings are opinion. They have no effect on standings, seeding or draft order.",
           "inline": false
         }
       ],

@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/franchise-hq/blha-franchise-hq-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA ROSTER SHOWCASE",
+      "description": "Show off your team and your prospect pipeline.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA FRANCHISE HQ"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "Roster snapshots • Prospect stashes • Draft-pick hauls",
+          "inline": false
+        },
+        {
+          "name": "FANTRAX FIRST",
+          "value": "Fantrax is the live roster. Showcase posts are a snapshot.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/draft-center/blha-draft-center-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA DRAFT RESULTS",
+      "description": "The pick-by-pick record and final board.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA DRAFT CENTER"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "Pick results • Round summaries • Final draft board",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL RECORD",
+          "value": "Fantrax is the authoritative record. If a Discord post and Fantrax ever differ, Fantrax wins.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

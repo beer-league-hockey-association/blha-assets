@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/scouting/blha-scouting-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA INTERNATIONAL PROSPECTS",
+      "description": "Prospects developing in Europe and around the world.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA SCOUTING DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "USE THIS ROOM FOR",
+          "value": "European pro leagues • World Juniors • International tournaments • Drafted-but-overseas stashes",
+          "inline": false
+        },
+        {
+          "name": "MINOR-LEAGUE RULES",
+          "value": "Minor-league spots are for players 25 or younger as of Sept. 15 with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

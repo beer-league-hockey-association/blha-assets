@@ -1,0 +1,15 @@
+{
+  "embeds": [
+    {
+      "title": "ARTICLE XX — AMENDMENTS, RECORDS, AND DISSOLUTION",
+      "description": "**20.1** **Adoption.** The Commissioner finalizes this Constitution before any owner is invited to the league. Accepting a franchise is accepting this Constitution, and each owner agrees to be bound by it. The text as accepted (the Charter) is locked. No amendment vote may be held before the Offseason following Season 2027, and until then the Constitution changes only by clerical correction under Section 2.5.\n\n**20.2** **Proposals.** Any franchise or the Commissioner may propose a Material Amendment in writing. A proposal must identify the affected rule, the proposed replacement language, and the intended effective date, and is posted in the voting channel at least 7 days before voting opens.\n\n**20.3** **Voting.** Votes are held only during the Offseason. The voting window is 7 days. Each franchise casts one vote through the league's designated voting channel or method. Approval requires at least 8 affirmative votes out of 12. Non-votes and abstentions are not affirmative votes.\n\n**20.4** **Timing.** An approved amendment takes effect for the next Season, or on the later date it states. To apply to a Season it must be approved before that Season's dues deadline, so every owner knows the rules before paying.\n\n**20.5** Amendments do not retroactively alter completed competition, previously earned prizes, or finalized transactions.\n\n**20.6** **Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is numbered, dated, and posted, and prior versions are archived.\n\n**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV.\n\n**20.8** The latest published version of this Constitution is the controlling league document. Upon adoption of Version 2.2, all prior working drafts are superseded except as historical records.\n\n**VERSION HISTORY**\n• **2.2** — Charter Edition. Adopted by owner acceptance. Effective Season 2027.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA CONSTITUTION • VERSION 2.2"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

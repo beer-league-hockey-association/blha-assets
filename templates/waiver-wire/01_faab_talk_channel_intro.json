@@ -1,0 +1,41 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/waiver-wire/blha-waiver-wire-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA FAAB TALK",
+      "description": "FAAB strategy and bidding discussion.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA WAIVER WIRE"
+      },
+      "fields": [
+        {
+          "name": "THE RULES",
+          "value": "$1,000 FAAB per season, $0 bids allowed, $1 increments, hidden bids, daily processing at about 11:00 AM ET (Article X). FAAB does not roll over.",
+          "inline": false
+        },
+        {
+          "name": "CONSOLATION BONUS",
+          "value": "The consolation-bracket champion gets a $50 FAAB bonus next season. Current-season FAAB can be traded (Article XI).",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL CLAIMS",
+          "value": "Actual claims stay in Fantrax. Discord never submits or changes a claim.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

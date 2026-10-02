@@ -10,8 +10,8 @@
       }
     },
     {
-      "title": "BLHA GM LOUNGE",
-      "description": "The clubhouse. This is where general managers talk hockey, discuss league business and enjoy the league.",
+      "title": "BLHA OFF TOPIC",
+      "description": "Everything that isn't hockey or league business.",
       "color": 16758812,
       "footer": {
         "text": "BLHA GENERAL MANAGERS"
@@ -19,17 +19,12 @@
       "fields": [
         {
           "name": "USE THIS ROOM FOR",
-          "value": "League talk • Proposal discussion before a vote • Hockey conversation • Getting to know your fellow owners",
+          "value": "Other sports • Food and drink • Movies, games and music • Life outside the league",
           "inline": false
         },
         {
-          "name": "OTHER ROOMS",
-          "value": "**game-day** for live games • **chirps-and-memes** for trash talk • **off-topic** for everything else • **media** for clips and photos",
-          "inline": false
-        },
-        {
-          "name": "NOT FOR OFFICIAL BUSINESS",
-          "value": "Votes, rulings, trades and deadlines belong in their own rooms. Nothing said in the lounge changes a rule or a result.",
+          "name": "HOUSE RULES",
+          "value": "Server-wide conduct rules still apply. Keep it friendly.",
           "inline": false
         }
       ],

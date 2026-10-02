@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/trade-center/blha-trade-center-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA PLAYER VALUES",
+      "description": "Dynasty values, rankings and trade-value discussion.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA TRADE CENTER"
+      },
+      "fields": [
+        {
+          "name": "USE THIS ROOM FOR",
+          "value": "Dynasty rankings • Value charts • Pick values • Risers and fallers",
+          "inline": false
+        },
+        {
+          "name": "REMEMBER",
+          "value": "Values are opinions. A trade isn't reversible just because someone believes one side received more value (Article XI).",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

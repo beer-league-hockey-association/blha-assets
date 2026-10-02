@@ -10,8 +10,8 @@
       }
     },
     {
-      "title": "BLHA STANDINGS",
-      "description": "League standings after each completed week, posted by the BLHA Competition Desk from Fantrax data.",
+      "title": "BLHA PLAYOFF RACE",
+      "description": "The late-season picture: who is in, who is on the bubble and what each team needs.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMPETITION DESK"
@@ -19,17 +19,17 @@
       "fields": [
         {
           "name": "POSTED HERE",
-          "value": "Weekly standings • Playoff cut line • Final regular-season standings",
+          "value": "Teams above and below the playoff cut line • Bubble teams • Updates through Week 22",
           "inline": false
         },
         {
-          "name": "TIEBREAKERS",
-          "value": "Points scored, then head-to-head among the tied teams, then the next Fantrax tiebreaker, then a recorded random draw (Article XV).",
+          "name": "THE FIELD",
+          "value": "Six teams make the playoffs and the top two seeds get byes (Article XVI).",
           "inline": false
         },
         {
-          "name": "OFFICIAL RESULTS",
-          "value": "Fantrax is the authoritative record. These posts are a convenient copy of it.",
+          "name": "WHEN IT STARTS",
+          "value": "These posts begin late in the regular season. Until then the channel stays quiet.",
           "inline": false
         }
       ],

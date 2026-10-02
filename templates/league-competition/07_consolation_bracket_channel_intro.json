@@ -10,26 +10,26 @@
       }
     },
     {
-      "title": "BLHA STANDINGS",
-      "description": "League standings after each completed week, posted by the BLHA Competition Desk from Fantrax data.",
+      "title": "BLHA CONSOLATION BRACKET",
+      "description": "The bracket for the six franchises that miss the playoffs.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMPETITION DESK"
       },
       "fields": [
         {
-          "name": "POSTED HERE",
-          "value": "Weekly standings • Playoff cut line • Final regular-season standings",
+          "name": "THE FORMAT",
+          "value": "Same structure as the playoffs, played in the same weeks, seeded by regular-season standings among non-playoff teams (Article XVI).",
           "inline": false
         },
         {
-          "name": "TIEBREAKERS",
-          "value": "Points scored, then head-to-head among the tied teams, then the next Fantrax tiebreaker, then a recorded random draw (Article XV).",
+          "name": "THE PRIZE",
+          "value": "The consolation champion receives a **$50 FAAB bonus** for the following season (Article X).",
           "inline": false
         },
         {
-          "name": "OFFICIAL RESULTS",
-          "value": "Fantrax is the authoritative record. These posts are a convenient copy of it.",
+          "name": "WHAT IT DOESN'T CHANGE",
+          "value": "Consolation results do not change annual draft order, standings or the Presidents' Trophy.",
           "inline": false
         }
       ],

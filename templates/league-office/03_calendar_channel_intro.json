@@ -19,12 +19,22 @@
       "fields": [
         {
           "name": "TRACKED HERE",
-          "value": "Draft Dates • Trade Deadline • Dues Deadlines • Roster Deadlines • Playoffs • Offseason Reopening",
+          "value": "Draft dates • Dues deadline • Trade deadline and reopening • Roster deadlines • Playoff weeks • Offseason milestones",
+          "inline": false
+        },
+        {
+          "name": "HOW DATES ARE SET",
+          "value": "The Constitution gives each date as a formula, such as \"end of Week 20\" or \"14 to 21 days after the NHL Entry Draft\". The calendar turns those formulas into exact dates. If the two ever disagree, the formula wins (Article V).",
+          "inline": false
+        },
+        {
+          "name": "CHANGES",
+          "value": "A published date changes only when the NHL schedule, a platform limitation or events outside the league's control require it, with at least 7 days' notice where possible. Deadlines are extended, not moved earlier.",
           "inline": false
         },
         {
           "name": "TIME STANDARD",
-          "value": "Unless a post explicitly states otherwise, league deadlines are listed in **Eastern Time**.",
+          "value": "Unless a post states otherwise, all times are **Eastern Time**.",
           "inline": false
         }
       ],

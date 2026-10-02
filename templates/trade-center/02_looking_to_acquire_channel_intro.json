@@ -1,0 +1,41 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/trade-center/blha-trade-center-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA LOOKING TO ACQUIRE",
+      "description": "Players, picks and positions you're hunting for.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA TRADE CENTER"
+      },
+      "fields": [
+        {
+          "name": "POST FORMAT",
+          "value": "Say what you want and what you can offer so owners can answer quickly.",
+          "inline": false
+        },
+        {
+          "name": "TIP",
+          "value": "Check **trade-block** first, since the player you want may already be listed.",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL RECORD",
+          "value": "A trade is official only when it is processed in Fantrax. Posts here don't bind anyone.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/waiver-wire/blha-waiver-wire-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA WAIVER WATCH",
+      "description": "Players worth watching before the next waiver run.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA WAIVER WIRE"
+      },
+      "fields": [
+        {
+          "name": "USE THIS ROOM FOR",
+          "value": "Breakout candidates • Call-ups • Goalie opportunities • Streaming targets",
+          "inline": false
+        },
+        {
+          "name": "ACQUISITION LIMIT",
+          "value": "Up to 5 acquisitions per normal fantasy week. The two-week championship counts as two separate weeks (Article X).",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}
