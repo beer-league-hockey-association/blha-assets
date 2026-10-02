@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "PRIZE PAID",
+      "description": "`[PRIZE]` for **Season `[YEAR]`** has been paid to `[FRANCHISE]`.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA LEAGUE LEDGER"
+      },
+      "fields": [
+        {
+          "name": "AMOUNT",
+          "value": "`$[AMOUNT]`",
+          "inline": false
+        },
+        {
+          "name": "PAID",
+          "value": "`[DATE]`",
+          "inline": false
+        },
+        {
+          "name": "REMAINING THIS SEASON",
+          "value": "`[PRIZES STILL UNPAID, OR NONE]`",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

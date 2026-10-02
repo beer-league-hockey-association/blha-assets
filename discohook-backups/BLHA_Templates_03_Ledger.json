@@ -1,0 +1,248 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "SEASON LEDGER",
+            "description": "`[SEASON]` • Published within 30 days after the BLHA Championship.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE LEDGER"
+            },
+            "fields": [
+              {
+                "name": "DUES RECEIVED",
+                "value": "`$[AMOUNT]` from `[12 / X]` franchises",
+                "inline": false
+              },
+              {
+                "name": "PRIZES PAID",
+                "value": "`$[AMOUNT]`",
+                "inline": false
+              },
+              {
+                "name": "OPERATING RESERVE",
+                "value": "Spent `$[AMOUNT]` on `[FANTRAX PREMIUM / OTHER]` • Unused `$[AMOUNT]` added to the Dynasty Pot",
+                "inline": false
+              },
+              {
+                "name": "ADMINISTRATION FEE",
+                "value": "`$[AMOUNT]`",
+                "inline": false
+              },
+              {
+                "name": "DYNASTY POT",
+                "value": "`$[BALANCE]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "FRANCHISE DUES STATUS",
+            "description": "`[SEASON / DATE]`",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED"
+            },
+            "fields": [
+              {
+                "name": "PAID AND CONFIRMED",
+                "value": "`[LIST FRANCHISES]`",
+                "inline": false
+              },
+              {
+                "name": "PREPAID FUTURE SEASONS",
+                "value": "`[FRANCHISE: THROUGH SEASON YYYY]` or none",
+                "inline": false
+              },
+              {
+                "name": "OUTSTANDING",
+                "value": "`[LIST FRANCHISES / NONE]`",
+                "inline": false
+              },
+              {
+                "name": "DEADLINE",
+                "value": "`[DATE + TIME ET]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "BLHA PRIZE POOL",
+            "description": "`[SEASON]` • 12 franchises × $150 = $1,800",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE LEDGER"
+            },
+            "fields": [
+              {
+                "name": "BLHA CHAMPION",
+                "value": "$650",
+                "inline": false
+              },
+              {
+                "name": "RUNNER-UP",
+                "value": "$350",
+                "inline": false
+              },
+              {
+                "name": "THIRD PLACE",
+                "value": "$150",
+                "inline": false
+              },
+              {
+                "name": "PRESIDENTS' TROPHY",
+                "value": "$200",
+                "inline": false
+              },
+              {
+                "name": "DYNASTY POT CONTRIBUTION",
+                "value": "$200",
+                "inline": false
+              },
+              {
+                "name": "FANTRAX / LEAGUE OPERATING RESERVE",
+                "value": "$150",
+                "inline": false
+              },
+              {
+                "name": "LEAGUE ADMINISTRATION FEE",
+                "value": "$100",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "PAYMENT CONFIRMED",
+            "description": "`[FRANCHISE]` is confirmed paid through **Season `[YEAR]`**.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED"
+            },
+            "fields": [
+              {
+                "name": "COVERS",
+                "value": "`[SEASON DUES / FUTURE-SEASON PREPAYMENT THROUGH YEAR]`",
+                "inline": false
+              },
+              {
+                "name": "CONFIRMED",
+                "value": "`[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "PENDING TRADE RELEASED",
+                "value": "`[TRADE DESCRIPTION, OR NONE]` — may now become final under Article XII.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "PRIZE PAID",
+            "description": "`[PRIZE]` for **Season `[YEAR]`** has been paid to `[FRANCHISE]`.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE LEDGER"
+            },
+            "fields": [
+              {
+                "name": "AMOUNT",
+                "value": "`$[AMOUNT]`",
+                "inline": false
+              },
+              {
+                "name": "PAID",
+                "value": "`[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "REMAINING THIS SEASON",
+                "value": "`[PRIZES STILL UNPAID, OR NONE]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "DYNASTY POT UPDATE",
+            "description": "The pot stands at **`$[BALANCE]`**.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE LEDGER"
+            },
+            "fields": [
+              {
+                "name": "THIS SEASON ADDED",
+                "value": "`$[DUES CONTRIBUTION]` + `$[UNUSED OPERATING RESERVE]`",
+                "inline": false
+              },
+              {
+                "name": "CHAMPIONSHIP COUNTS THIS CYCLE",
+                "value": "`[FRANCHISE: COUNT]`",
+                "inline": false
+              },
+              {
+                "name": "CYCLE STARTED",
+                "value": "`[SEASON]`",
+                "inline": false
+              },
+              {
+                "name": "TO WIN",
+                "value": "Three BLHA Championships in the same active cycle (Article IV).",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "CALENDAR EVENT",
+            "description": "**`[EVENT NAME]`**",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE CALENDAR"
+            },
+            "fields": [
+              {
+                "name": "DATE",
+                "value": "`[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "TIME",
+                "value": "`[TIME ET / ALL DAY]`",
+                "inline": false
+              },
+              {
+                "name": "DETAILS",
+                "value": "`[EVENT DETAILS]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "DEADLINE REMINDER",
+            "description": "`[DEADLINE NAME]`",
+            "color": 10697266,
+            "footer": {
+              "text": "BLHA LEAGUE CALENDAR"
+            },
+            "fields": [
+              {
+                "name": "DEADLINE",
+                "value": "**`[DATE + TIME ET]`**",
+                "inline": false
+              },
+              {
+                "name": "REQUIRED",
+                "value": "`[WHAT MUST BE COMPLETED]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "LEAGUE CALENDAR PUBLISHED",
+            "description": "The League Calendar for **Season `[YEAR]`** is live. Every date comes from the formulas in Article V of the Constitution.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE CALENDAR"
+            },
+            "fields": [
+              {
+                "name": "NHL SCHEDULE RELEASED",
+                "value": "`[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "DUES DEADLINE",
+                "value": "**`[DATE + TIME ET]`** (before the draft)",
+                "inline": false
+              },
+              {
+                "name": "DRAFT",
+                "value": "`[DATE + TIME ET]` • 14 to 21 days after the NHL Entry Draft",
+                "inline": false
+              },
+              {
+                "name": "TRADE DEADLINE",
+                "value": "Sunday 11:59 PM ET, end of Week 20: `[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "PLAYOFFS",
+                "value": "Quarterfinals `[DATE]` • Semifinals `[DATE]` • Championship `[DATES]`",
+                "inline": false
+              },
+              {
+                "name": "IF A DATE LOOKS WRONG",
+                "value": "The formula in the Constitution controls. Tell the Commissioner.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "CALENDAR DATE CHANGE",
+            "description": "`[EVENT]` has been updated.",
+            "color": 10697266,
+            "footer": {
+              "text": "BLHA LEAGUE CALENDAR"
+            },
+            "fields": [
+              {
+                "name": "PREVIOUS DATE",
+                "value": "`[OLD DATE + TIME ET]`",
+                "inline": false
+              },
+              {
+                "name": "NEW DATE",
+                "value": "**`[NEW DATE + TIME ET]`**",
+                "inline": false
+              },
+              {
+                "name": "REASON",
+                "value": "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`",
+                "inline": false
+              },
+              {
+                "name": "NOTICE",
+                "value": "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

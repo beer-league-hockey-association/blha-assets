@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "CALENDAR DATE CHANGE",
+      "description": "`[EVENT]` has been updated.",
+      "color": 10697266,
+      "footer": {
+        "text": "BLHA LEAGUE CALENDAR"
+      },
+      "fields": [
+        {
+          "name": "PREVIOUS DATE",
+          "value": "`[OLD DATE + TIME ET]`",
+          "inline": false
+        },
+        {
+          "name": "NEW DATE",
+          "value": "**`[NEW DATE + TIME ET]`**",
+          "inline": false
+        },
+        {
+          "name": "REASON",
+          "value": "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`",
+          "inline": false
+        },
+        {
+          "name": "NOTICE",
+          "value": "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

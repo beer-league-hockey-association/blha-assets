@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "PRESIDENTS' TROPHY",
+      "description": "🥇 **`[FRANCHISE]`** finishes with the best regular-season record.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "RECORD",
+          "value": "`[W-L-T]` • `[POINTS FOR]`",
+          "inline": false
+        },
+        {
+          "name": "PRIZE",
+          "value": "$200",
+          "inline": false
+        },
+        {
+          "name": "TIEBREAKER USED",
+          "value": "`[NONE / POINTS SCORED / HEAD-TO-HEAD / FANTRAX / RANDOM DRAW]`",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

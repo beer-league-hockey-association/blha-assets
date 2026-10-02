@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "THE BLHA CHAMPION",
+      "description": "🏆 **`[FRANCHISE]`** wins the **Season `[YEAR]`** BLHA Championship.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "FINAL",
+          "value": "`[FRANCHISE]` `[SCORE]` over `[FRANCHISE]` `[SCORE]` (two-week cumulative)",
+          "inline": false
+        },
+        {
+          "name": "PRIZE",
+          "value": "$650",
+          "inline": false
+        },
+        {
+          "name": "RUNNER-UP",
+          "value": "`[FRANCHISE]` • $350",
+          "inline": false
+        },
+        {
+          "name": "THIRD PLACE",
+          "value": "`[FRANCHISE]` • $150",
+          "inline": false
+        },
+        {
+          "name": "CHAMPIONSHIP COUNT",
+          "value": "`[FRANCHISE]` now has `[N]` in the current Dynasty Pot cycle.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

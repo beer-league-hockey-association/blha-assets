@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "DYNASTY POT UPDATE",
+      "description": "The pot stands at **`$[BALANCE]`**.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA LEAGUE LEDGER"
+      },
+      "fields": [
+        {
+          "name": "THIS SEASON ADDED",
+          "value": "`$[DUES CONTRIBUTION]` + `$[UNUSED OPERATING RESERVE]`",
+          "inline": false
+        },
+        {
+          "name": "CHAMPIONSHIP COUNTS THIS CYCLE",
+          "value": "`[FRANCHISE: COUNT]`",
+          "inline": false
+        },
+        {
+          "name": "CYCLE STARTED",
+          "value": "`[SEASON]`",
+          "inline": false
+        },
+        {
+          "name": "TO WIN",
+          "value": "Three BLHA Championships in the same active cycle (Article IV).",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

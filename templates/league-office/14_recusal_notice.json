@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "COMMISSIONER RECUSAL",
+      "description": "The Commissioner's franchise is involved in `[MATTER]`. A neutral party will decide it.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      },
+      "fields": [
+        {
+          "name": "DECIDED BY",
+          "value": "`[NEUTRAL ASSISTANT COMMISSIONER / TEMPORARY NEUTRAL REVIEWER / UNAFFECTED FRANCHISES]`",
+          "inline": false
+        },
+        {
+          "name": "TIMELINE",
+          "value": "`[DATE]`",
+          "inline": false
+        },
+        {
+          "name": "RECORD",
+          "value": "The outcome will be posted in **rulings-log**.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

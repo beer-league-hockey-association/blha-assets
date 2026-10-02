@@ -3,35 +3,37 @@
     {
       "title": "CONSTITUTION AMENDMENT",
       "description": "A formally adopted amendment has been added to the BLHA Constitution.",
-      "color": 13012757,
+      "color": 16758812,
       "footer": {
-        "text": "BLHA LEAGUE OFFICE • AMENDMENT RECORD"
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
       },
       "fields": [
         {
           "name": "AMENDMENT",
-          "value": "`[TITLE / SECTION]`",
+          "value": "`[TITLE]` • Article `[ROMAN]` Section `[N.N]`",
           "inline": false
         },
         {
           "name": "APPROVED",
-          "value": "`[DATE]`",
+          "value": "`[X]` of 12 on `[DATE]`",
           "inline": false
         },
         {
           "name": "EFFECTIVE",
-          "value": "`[DATE OR OFFSEASON]`",
+          "value": "`[SEASON / DATE]`",
           "inline": false
         },
         {
-          "name": "TEXT / SUMMARY",
-          "value": "`[INSERT AMENDMENT OR CONCISE SUMMARY]`",
+          "name": "TEXT",
+          "value": "`[NEW LANGUAGE OR CONCISE SUMMARY]`",
+          "inline": false
+        },
+        {
+          "name": "VERSION",
+          "value": "Now part of Version `[X.X]`",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     }
   ]
 }

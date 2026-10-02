@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "TRADE COMPLETED",
+      "description": "Processed in Fantrax on `[DATE]`.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA TRADE CENTER"
+      },
+      "fields": [
+        {
+          "name": "`[FRANCHISE A]` RECEIVES",
+          "value": "`[PLAYERS / PICKS / FAAB]`",
+          "inline": false
+        },
+        {
+          "name": "`[FRANCHISE B]` RECEIVES",
+          "value": "`[PLAYERS / PICKS / FAAB]`",
+          "inline": false
+        },
+        {
+          "name": "PREPAYMENT",
+          "value": "`[NOT REQUIRED / CONFIRMED IN LEAGUE-LEDGER ON DATE]`",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "AMENDMENT PROPOSAL — DISCUSSION",
+            "description": "`[PROPOSAL TITLE]`",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE VOTING • DISCUSSION ONLY"
+            },
+            "fields": [
+              {
+                "name": "AFFECTED RULE",
+                "value": "`[ARTICLE AND SECTION]`",
+                "inline": false
+              },
+              {
+                "name": "REPLACEMENT LANGUAGE",
+                "value": "`[EXACT NEW TEXT]`",
+                "inline": false
+              },
+              {
+                "name": "INTENDED EFFECTIVE DATE",
+                "value": "`[SEASON / DATE]`",
+                "inline": false
+              },
+              {
+                "name": "PROPOSED BY",
+                "value": "`[FRANCHISE OR COMMISSIONER]`",
+                "inline": false
+              },
+              {
+                "name": "VOTING OPENS",
+                "value": "**`[DATE + TIME ET]`** • at least 7 days after this post (Article XX)",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "OFFICIAL BLHA VOTE",
+            "description": "`[PROPOSAL TITLE]`",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE VOTING • OFFICIAL"
+            },
+            "fields": [
+              {
+                "name": "QUESTION",
+                "value": "`[EXACT QUESTION]`",
+                "inline": false
+              },
+              {
+                "name": "OPTIONS",
+                "value": "**Yes** — adopt the amendment\n**No** — keep the current rule",
+                "inline": false
+              },
+              {
+                "name": "VOTING CLOSES",
+                "value": "**`[DATE + TIME ET]`** • 7-day window",
+                "inline": false
+              },
+              {
+                "name": "PASSAGE REQUIREMENT",
+                "value": "At least **8 affirmative votes out of 12**. Non-votes and abstentions are not affirmative.",
+                "inline": false
+              },
+              {
+                "name": "WHO VOTES",
+                "value": "One formal vote per franchise, cast by the **Franchise Owner**.",
+                "inline": false
+              },
+              {
+                "name": "EFFECTIVE",
+                "value": "`[NEXT SEASON / LATER DATE]` • must pass before that Season's dues deadline",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "VOTE RESULT",
+            "description": "`[PROPOSAL TITLE]`",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE VOTING • FINAL RESULT"
+            },
+            "fields": [
+              {
+                "name": "RESULT",
+                "value": "**`[PASSED / FAILED]`**",
+                "inline": false
+              },
+              {
+                "name": "VOTE TOTAL",
+                "value": "Yes `[X]` • No `[Y]` • Not voted `[Z]` (8 of 12 required)",
+                "inline": false
+              },
+              {
+                "name": "EFFECTIVE",
+                "value": "`[SEASON / DATE / N/A]`",
+                "inline": false
+              },
+              {
+                "name": "NEXT STEP",
+                "value": "`[NEW CONSTITUTION VERSION / NO CHANGE]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

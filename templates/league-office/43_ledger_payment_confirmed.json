@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "PAYMENT CONFIRMED",
+      "description": "`[FRANCHISE]` is confirmed paid through **Season `[YEAR]`**.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED"
+      },
+      "fields": [
+        {
+          "name": "COVERS",
+          "value": "`[SEASON DUES / FUTURE-SEASON PREPAYMENT THROUGH YEAR]`",
+          "inline": false
+        },
+        {
+          "name": "CONFIRMED",
+          "value": "`[DATE]`",
+          "inline": false
+        },
+        {
+          "name": "PENDING TRADE RELEASED",
+          "value": "`[TRADE DESCRIPTION, OR NONE]` — may now become final under Article XII.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

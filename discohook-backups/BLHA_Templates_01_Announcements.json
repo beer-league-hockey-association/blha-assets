@@ -1,0 +1,223 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "BLHA ANNOUNCEMENT",
+            "description": "`[ANNOUNCEMENT TEXT]`",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "EFFECTIVE / DATE",
+                "value": "`[DATE OR N/A]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "ACTION REQUIRED",
+            "description": "`[WHAT MANAGERS MUST DO]`",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • ACTION REQUIRED"
+            },
+            "fields": [
+              {
+                "name": "DEADLINE",
+                "value": "`[DATE + TIME ET]`",
+                "inline": false
+              },
+              {
+                "name": "WHO",
+                "value": "`[ALL FRANCHISES / SPECIFIC FRANCHISES]`",
+                "inline": false
+              },
+              {
+                "name": "HOW",
+                "value": "`[EXACT ACTION STEPS]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "DEADLINE NOTICE",
+            "description": "`[URGENT NOTICE]`",
+            "color": 10697266,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • DEADLINE"
+            },
+            "fields": [
+              {
+                "name": "DEADLINE",
+                "value": "**`[DATE + TIME ET]`**",
+                "inline": false
+              },
+              {
+                "name": "REQUIRED ACTION",
+                "value": "`[ACTION]`",
+                "inline": false
+              },
+              {
+                "name": "CONSEQUENCE / NEXT STEP",
+                "value": "`[WHAT HAPPENS AFTER DEADLINE]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "THE BLHA SEASON IS OPEN",
+            "description": "`[SEASON]` is officially underway.",
+            "color": 16758812,
+            "footer": {
+              "text": "LATE ICE • LONG SEASONS • LIFETIME GRUDGES"
+            },
+            "fields": [
+              {
+                "name": "OPENING DAY",
+                "value": "`[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "FIRST FANTASY WEEK",
+                "value": "`[DATES]`",
+                "inline": false
+              },
+              {
+                "name": "KEY REMINDERS",
+                "value": "`[LINEUP / FAAB / GOALIE START / OTHER REMINDERS]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "BLHA SEASON COMPLETE",
+            "description": "`[SEASON, for example 2027–28]` is officially in the books.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "CHAMPION",
+                "value": "🏆 `[FRANCHISE]`",
+                "inline": false
+              },
+              {
+                "name": "RUNNER-UP",
+                "value": "`[FRANCHISE]`",
+                "inline": false
+              },
+              {
+                "name": "THIRD PLACE",
+                "value": "`[FRANCHISE]`",
+                "inline": false
+              },
+              {
+                "name": "PRESIDENTS' TROPHY",
+                "value": "🥇 `[FRANCHISE]`",
+                "inline": false
+              },
+              {
+                "name": "CONSOLATION CHAMPION",
+                "value": "`[FRANCHISE]` — earns the $50 FAAB bonus next season",
+                "inline": false
+              },
+              {
+                "name": "DYNASTY POT",
+                "value": "`[BALANCE]` • `[LEADING FRANCHISE AND CHAMPIONSHIP COUNT, OR NONE]`",
+                "inline": false
+              },
+              {
+                "name": "NEXT",
+                "value": "`[OFFSEASON / TRADING REOPENS / DRAFT / DUES DEADLINE]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "COMMISSIONER CORRECTION",
+            "description": "A clerical, Fantrax configuration or platform correction under Section 2.5 of the Constitution.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "WHAT WAS WRONG",
+                "value": "`[THE ERROR OR PLATFORM ISSUE]`",
+                "inline": false
+              },
+              {
+                "name": "RULE BEING APPLIED",
+                "value": "`[ARTICLE AND SECTION OF THE EXISTING RULE]`",
+                "inline": false
+              },
+              {
+                "name": "CORRECTION",
+                "value": "`[WHAT WAS FIXED]`",
+                "inline": false
+              },
+              {
+                "name": "INTENT PRESERVED",
+                "value": "This correction applies an existing rule. It does not create a new one.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

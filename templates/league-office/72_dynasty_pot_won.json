@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "DYNASTY POT WON",
+      "description": "**`[FRANCHISE]`** wins its third BLHA Championship in the active cycle and takes the entire Dynasty Pot.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "PAYOUT",
+          "value": "**`$[AMOUNT]`**",
+          "inline": false
+        },
+        {
+          "name": "CHAMPIONSHIPS",
+          "value": "`[SEASONS WON]`",
+          "inline": false
+        },
+        {
+          "name": "CYCLE RESET",
+          "value": "The pot returns to zero and every franchise's counter resets. A new cycle starts with Season `[YEAR]`.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

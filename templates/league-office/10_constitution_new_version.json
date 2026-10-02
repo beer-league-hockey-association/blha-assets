@@ -5,28 +5,35 @@
       "description": "**Version `[X.X]`** of the BLHA Constitution has been published.",
       "color": 16758812,
       "footer": {
-        "text": "BLHA CONSTITUTION • OFFICIAL"
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
       },
       "fields": [
         {
-          "name": "EFFECTIVE DATE",
-          "value": "`[DATE]`",
+          "name": "EFFECTIVE",
+          "value": "`[SEASON / DATE]`",
           "inline": false
         },
         {
           "name": "WHAT CHANGED",
-          "value": "`[SUMMARIZE CHANGES]`",
+          "value": "`[SUMMARIZE CHANGES WITH ARTICLE NUMBERS]`",
+          "inline": false
+        },
+        {
+          "name": "APPROVED BY VOTE",
+          "value": "`[X]` of 12 on `[DATE]`",
           "inline": false
         },
         {
           "name": "ACTION REQUIRED",
-          "value": "`[NONE / REVIEW SECTION(S) / OTHER]`",
+          "value": "`[NONE / REVIEW ARTICLES]`",
+          "inline": false
+        },
+        {
+          "name": "WHERE",
+          "value": "The current version is in **constitution**. Earlier versions are archived.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     }
   ]
 }

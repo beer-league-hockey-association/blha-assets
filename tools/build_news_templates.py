@@ -1,0 +1,206 @@
+#!/usr/bin/env python3
+"""Reusable League Office / Trade Center message templates and Discohook bundles.
+
+1. Writes the reusable templates (placeholders in `backticks`) into templates/.
+2. Builds one Discohook bundle per purpose in discohook-backups/ (messages array).
+3. Builds discohook.org links for every channel-intro message, constitution
+   message and bundle, written to discohook-backups/LINKS.md and links.json.
+
+Run before normalize_discohook_templates.py:
+    python3 tools/build_news_templates.py && python3 tools/normalize_discohook_templates.py
+"""
+
+from __future__ import annotations
+
+import base64
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+T = ROOT / "templates"
+OUT = ROOT / "discohook-backups"
+
+GOLD, ALERT, RECORD = 16758812, 10697266, 13012757
+LO = "BLHA LEAGUE OFFICE"
+
+
+def tmpl(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]], color: int = GOLD) -> None:
+    data = {"embeds": [{
+        "title": title, "description": desc, "color": color, "footer": {"text": footer},
+        "fields": [{"name": n, "value": v, "inline": False} for n, v in fields],
+    }]}
+    p = T / path
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+# ---------------------------------------------------------------- announcements
+tmpl("league-office/24_season_closing.json", "BLHA SEASON COMPLETE", "`[SEASON, for example 2027–28]` is officially in the books.", "BLHA RECORDS DEPARTMENT",
+     [("CHAMPION", "\U0001F3C6 `[FRANCHISE]`"), ("RUNNER-UP", "`[FRANCHISE]`"), ("THIRD PLACE", "`[FRANCHISE]`"),
+      ("PRESIDENTS' TROPHY", "\U0001F947 `[FRANCHISE]`"), ("CONSOLATION CHAMPION", "`[FRANCHISE]` — earns the $50 FAAB bonus next season"),
+      ("DYNASTY POT", "`[BALANCE]` • `[LEADING FRANCHISE AND CHAMPIONSHIP COUNT, OR NONE]`"),
+      ("NEXT", "`[OFFSEASON / TRADING REOPENS / DRAFT / DUES DEADLINE]`")], RECORD)
+tmpl("league-office/13_clerical_correction.json", "COMMISSIONER CORRECTION", "A clerical, Fantrax configuration or platform correction under Section 2.5 of the Constitution.", f"{LO} • OFFICIAL NOTICE",
+     [("WHAT WAS WRONG", "`[THE ERROR OR PLATFORM ISSUE]`"), ("RULE BEING APPLIED", "`[ARTICLE AND SECTION OF THE EXISTING RULE]`"),
+      ("CORRECTION", "`[WHAT WAS FIXED]`"), ("INTENT PRESERVED", "This correction applies an existing rule. It does not create a new one.")])
+
+# --------------------------------------------------------------------- calendar
+tmpl("league-office/32_calendar_published.json", "LEAGUE CALENDAR PUBLISHED", "The League Calendar for **Season `[YEAR]`** is live. Every date comes from the formulas in Article V of the Constitution.", "BLHA LEAGUE CALENDAR",
+     [("NHL SCHEDULE RELEASED", "`[DATE]`"), ("DUES DEADLINE", "**`[DATE + TIME ET]`** (before the draft)"),
+      ("DRAFT", "`[DATE + TIME ET]` • 14 to 21 days after the NHL Entry Draft"),
+      ("TRADE DEADLINE", "Sunday 11:59 PM ET, end of Week 20: `[DATE]`"),
+      ("PLAYOFFS", "Quarterfinals `[DATE]` • Semifinals `[DATE]` • Championship `[DATES]`"),
+      ("IF A DATE LOOKS WRONG", "The formula in the Constitution controls. Tell the Commissioner.")])
+tmpl("league-office/33_calendar_date_change.json", "CALENDAR DATE CHANGE", "`[EVENT]` has been updated.", "BLHA LEAGUE CALENDAR",
+     [("PREVIOUS DATE", "`[OLD DATE + TIME ET]`"), ("NEW DATE", "**`[NEW DATE + TIME ET]`**"),
+      ("REASON", "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`"),
+      ("NOTICE", "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.")], ALERT)
+
+# ----------------------------------------------------------------------- ledger
+tmpl("league-office/40_ledger_season_summary.json", "SEASON LEDGER", "`[SEASON]` • Published within 30 days after the BLHA Championship.", "BLHA LEAGUE LEDGER",
+     [("DUES RECEIVED", "`$[AMOUNT]` from `[12 / X]` franchises"), ("PRIZES PAID", "`$[AMOUNT]`"),
+      ("OPERATING RESERVE", "Spent `$[AMOUNT]` on `[FANTRAX PREMIUM / OTHER]` • Unused `$[AMOUNT]` added to the Dynasty Pot"),
+      ("ADMINISTRATION FEE", "`$[AMOUNT]`"), ("DYNASTY POT", "`$[BALANCE]`")], RECORD)
+tmpl("league-office/41_ledger_dues_status.json", "FRANCHISE DUES STATUS", "`[SEASON / DATE]`", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
+     [("PAID AND CONFIRMED", "`[LIST FRANCHISES]`"), ("PREPAID FUTURE SEASONS", "`[FRANCHISE: THROUGH SEASON YYYY]` or none"),
+      ("OUTSTANDING", "`[LIST FRANCHISES / NONE]`"), ("DEADLINE", "`[DATE + TIME ET]`")], RECORD)
+tmpl("league-office/42_ledger_prize_pool.json", "BLHA PRIZE POOL", "`[SEASON]` • 12 franchises × $150 = $1,800", "BLHA LEAGUE LEDGER",
+     [("BLHA CHAMPION", "$650"), ("RUNNER-UP", "$350"), ("THIRD PLACE", "$150"), ("PRESIDENTS' TROPHY", "$200"),
+      ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / LEAGUE OPERATING RESERVE", "$150"), ("LEAGUE ADMINISTRATION FEE", "$100")], RECORD)
+tmpl("league-office/43_ledger_payment_confirmed.json", "PAYMENT CONFIRMED", "`[FRANCHISE]` is confirmed paid through **Season `[YEAR]`**.", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
+     [("COVERS", "`[SEASON DUES / FUTURE-SEASON PREPAYMENT THROUGH YEAR]`"), ("CONFIRMED", "`[DATE]`"),
+      ("PENDING TRADE RELEASED", "`[TRADE DESCRIPTION, OR NONE]` — may now become final under Article XII.")], RECORD)
+tmpl("league-office/44_ledger_prize_payout.json", "PRIZE PAID", "`[PRIZE]` for **Season `[YEAR]`** has been paid to `[FRANCHISE]`.", "BLHA LEAGUE LEDGER",
+     [("AMOUNT", "`$[AMOUNT]`"), ("PAID", "`[DATE]`"), ("REMAINING THIS SEASON", "`[PRIZES STILL UNPAID, OR NONE]`")], RECORD)
+tmpl("league-office/45_ledger_dynasty_pot.json", "DYNASTY POT UPDATE", "The pot stands at **`$[BALANCE]`**.", "BLHA LEAGUE LEDGER",
+     [("THIS SEASON ADDED", "`$[DUES CONTRIBUTION]` + `$[UNUSED OPERATING RESERVE]`"),
+      ("CHAMPIONSHIP COUNTS THIS CYCLE", "`[FRANCHISE: COUNT]`"),
+      ("CYCLE STARTED", "`[SEASON]`"), ("TO WIN", "Three BLHA Championships in the same active cycle (Article IV).")], RECORD)
+
+# ----------------------------------------------------------------------- voting
+tmpl("league-office/50_vote_proposal_open.json", "AMENDMENT PROPOSAL — DISCUSSION", "`[PROPOSAL TITLE]`", "BLHA LEAGUE VOTING • DISCUSSION ONLY",
+     [("AFFECTED RULE", "`[ARTICLE AND SECTION]`"), ("REPLACEMENT LANGUAGE", "`[EXACT NEW TEXT]`"),
+      ("INTENDED EFFECTIVE DATE", "`[SEASON / DATE]`"), ("PROPOSED BY", "`[FRANCHISE OR COMMISSIONER]`"),
+      ("VOTING OPENS", "**`[DATE + TIME ET]`** • at least 7 days after this post (Article XX)")])
+tmpl("league-office/51_vote_open.json", "OFFICIAL BLHA VOTE", "`[PROPOSAL TITLE]`", "BLHA LEAGUE VOTING • OFFICIAL",
+     [("QUESTION", "`[EXACT QUESTION]`"), ("OPTIONS", "**Yes** — adopt the amendment\n**No** — keep the current rule"),
+      ("VOTING CLOSES", "**`[DATE + TIME ET]`** • 7-day window"),
+      ("PASSAGE REQUIREMENT", "At least **8 affirmative votes out of 12**. Non-votes and abstentions are not affirmative."),
+      ("WHO VOTES", "One formal vote per franchise, cast by the **Franchise Owner**."),
+      ("EFFECTIVE", "`[NEXT SEASON / LATER DATE]` • must pass before that Season's dues deadline")])
+tmpl("league-office/52_vote_result.json", "VOTE RESULT", "`[PROPOSAL TITLE]`", "BLHA LEAGUE VOTING • FINAL RESULT",
+     [("RESULT", "**`[PASSED / FAILED]`**"), ("VOTE TOTAL", "Yes `[X]` • No `[Y]` • Not voted `[Z]` (8 of 12 required)"),
+      ("EFFECTIVE", "`[SEASON / DATE / N/A]`"), ("NEXT STEP", "`[NEW CONSTITUTION VERSION / NO CHANGE]`")], RECORD)
+
+# ----------------------------------------------------- constitution and rulings
+tmpl("league-office/10_constitution_new_version.json", "CONSTITUTION UPDATED", "**Version `[X.X]`** of the BLHA Constitution has been published.", f"{LO} • OFFICIAL NOTICE",
+     [("EFFECTIVE", "`[SEASON / DATE]`"), ("WHAT CHANGED", "`[SUMMARIZE CHANGES WITH ARTICLE NUMBERS]`"),
+      ("APPROVED BY VOTE", "`[X]` of 12 on `[DATE]`"), ("ACTION REQUIRED", "`[NONE / REVIEW ARTICLES]`"),
+      ("WHERE", "The current version is in **constitution**. Earlier versions are archived.")])
+tmpl("league-office/11_constitution_amendment.json", "CONSTITUTION AMENDMENT", "A formally adopted amendment has been added to the BLHA Constitution.", f"{LO} • OFFICIAL NOTICE",
+     [("AMENDMENT", "`[TITLE]` • Article `[ROMAN]` Section `[N.N]`"), ("APPROVED", "`[X]` of 12 on `[DATE]`"),
+      ("EFFECTIVE", "`[SEASON / DATE]`"), ("TEXT", "`[NEW LANGUAGE OR CONCISE SUMMARY]`"),
+      ("VERSION", "Now part of Version `[X.X]`")])
+tmpl("league-office/12_rules_ruling.json", "OFFICIAL RULE INTERPRETATION", "`[SHORT ISSUE TITLE]`", f"{LO} • OFFICIAL RULING",
+     [("QUESTION", "`[RULE QUESTION]`"), ("RULING", "`[OFFICIAL INTERPRETATION]`"),
+      ("BASIS", "`[ARTICLE AND SECTION / FANTRAX SETTING / PRIOR RULING]`"), ("EFFECTIVE", "`[IMMEDIATELY / DATE]`"),
+      ("REVIEW", "A directly affected franchise may request review within 48 hours (Article XIX).")])
+tmpl("league-office/14_recusal_notice.json", "COMMISSIONER RECUSAL", "The Commissioner's franchise is involved in `[MATTER]`. A neutral party will decide it.", f"{LO} • OFFICIAL NOTICE",
+     [("DECIDED BY", "`[NEUTRAL ASSISTANT COMMISSIONER / TEMPORARY NEUTRAL REVIEWER / UNAFFECTED FRANCHISES]`"),
+      ("TIMELINE", "`[DATE]`"), ("RECORD", "The outcome will be posted in **rulings-log**.")])
+tmpl("league-office/15_appeal_outcome.json", "APPEAL OUTCOME", "Review of `[RULING TITLE]`", f"{LO} • OFFICIAL RULING",
+     [("REQUESTED BY", "`[FRANCHISE]`"), ("REVIEW PANEL", "`[THREE UNAFFECTED FRANCHISES]`"),
+      ("DECISION", "**`[UPHELD / MODIFIED / REVERSED]`**"), ("DETAILS", "`[WHAT CHANGES, IF ANYTHING]`"),
+      ("FINAL", "The panel's decision is final for this matter (Article XIX).")], RECORD)
+
+# -------------------------------------------------------------------- ownership
+tmpl("league-office/60_owner_welcome.json", "NEW OWNER", "Welcome to the BLHA, `[OWNER]`. They are taking over **`[FRANCHISE]`**.", f"{LO} • OFFICIAL NOTICE",
+     [("FRANCHISE", "`[FRANCHISE NAME]`"), ("PAID THROUGH", "Season `[YEAR]` (prepaid dues stay with the franchise)"),
+      ("START HERE", "Read **welcome** and **constitution**, then check **league-calendar**.")])
+tmpl("league-office/61_franchise_orphaned.json", "FRANCHISE SEEKING AN OWNER", "**`[FRANCHISE]`** is open and the league is looking for a replacement owner.", f"{LO} • OFFICIAL NOTICE",
+     [("WHAT HAPPENS NOW", "The franchise is locked from transactions while a replacement is arranged. The Commissioner keeps the roster legal (Article XVIII)."),
+      ("PREPAID DUES", "Any prepaid future seasons stay with the franchise and transfer to the new owner."),
+      ("INCENTIVE", "`[NONE / DISCLOSED INCENTIVE]`"),
+      ("INTERESTED?", "Contact the Commissioner. Please send names of qualified candidates.")], ALERT)
+tmpl("league-office/62_commissioner_transition.json", "COMMISSIONER TRANSITION", "`[INTERIM COMMISSIONER]` is now Interim Commissioner.", f"{LO} • OFFICIAL NOTICE",
+     [("REASON", "`[RESIGNATION / REMOVAL / UNAVAILABLE 14 DAYS]`"), ("HOW CHOSEN", "`[DESIGNATED SUCCESSOR / MAJORITY OF ACTIVE FRANCHISES]`"),
+      ("HANDOFF", "Funds, records, Fantrax access and Discord/automation administration transfer within 14 days (Article XIX)."),
+      ("NEXT", "A permanent Commissioner is chosen by majority vote of active franchises.")], ALERT)
+
+# ----------------------------------------------------------------------- honors
+tmpl("league-office/70_champion_crowned.json", "THE BLHA CHAMPION", "\U0001F3C6 **`[FRANCHISE]`** wins the **Season `[YEAR]`** BLHA Championship.", "BLHA RECORDS DEPARTMENT",
+     [("FINAL", "`[FRANCHISE]` `[SCORE]` over `[FRANCHISE]` `[SCORE]` (two-week cumulative)"),
+      ("PRIZE", "$650"), ("RUNNER-UP", "`[FRANCHISE]` • $350"), ("THIRD PLACE", "`[FRANCHISE]` • $150"),
+      ("CHAMPIONSHIP COUNT", "`[FRANCHISE]` now has `[N]` in the current Dynasty Pot cycle.")], RECORD)
+tmpl("league-office/71_presidents_trophy.json", "PRESIDENTS' TROPHY", "\U0001F947 **`[FRANCHISE]`** finishes with the best regular-season record.", "BLHA RECORDS DEPARTMENT",
+     [("RECORD", "`[W-L-T]` • `[POINTS FOR]`"), ("PRIZE", "$200"),
+      ("TIEBREAKER USED", "`[NONE / POINTS SCORED / HEAD-TO-HEAD / FANTRAX / RANDOM DRAW]`")], RECORD)
+tmpl("league-office/72_dynasty_pot_won.json", "DYNASTY POT WON", "**`[FRANCHISE]`** wins its third BLHA Championship in the active cycle and takes the entire Dynasty Pot.", "BLHA RECORDS DEPARTMENT",
+     [("PAYOUT", "**`$[AMOUNT]`**"), ("CHAMPIONSHIPS", "`[SEASONS WON]`"),
+      ("CYCLE RESET", "The pot returns to zero and every franchise's counter resets. A new cycle starts with Season `[YEAR]`.")], RECORD)
+
+# ------------------------------------------------------------------ trade center
+tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fantrax on `[DATE]`.", "BLHA TRADE CENTER",
+     [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
+      ("PREPAYMENT", "`[NOT REQUIRED / CONFIRMED IN LEAGUE-LEDGER ON DATE]`")])
+
+# ------------------------------------------------------------------- bundles
+BUNDLES = {
+    "01_Announcements": ["league-office/20_announcement_standard.json", "league-office/21_announcement_action_required.json",
+                         "league-office/22_announcement_urgent_deadline.json", "league-office/23_season_opening.json",
+                         "league-office/24_season_closing.json", "league-office/13_clerical_correction.json"],
+    "02_Calendar": ["league-office/30_calendar_event.json", "league-office/31_calendar_deadline_reminder.json",
+                    "league-office/32_calendar_published.json", "league-office/33_calendar_date_change.json"],
+    "03_Ledger": ["league-office/40_ledger_season_summary.json", "league-office/41_ledger_dues_status.json",
+                  "league-office/42_ledger_prize_pool.json", "league-office/43_ledger_payment_confirmed.json",
+                  "league-office/44_ledger_prize_payout.json", "league-office/45_ledger_dynasty_pot.json"],
+    "04_Voting": ["league-office/50_vote_proposal_open.json", "league-office/51_vote_open.json", "league-office/52_vote_result.json"],
+    "05_Constitution_and_Rulings": ["league-office/10_constitution_new_version.json", "league-office/11_constitution_amendment.json",
+                                    "league-office/12_rules_ruling.json", "league-office/14_recusal_notice.json", "league-office/15_appeal_outcome.json"],
+    "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
+    "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
+    "08_Trades": ["trade-center/90_trade_completed.json"],
+}
+
+FOOTER_URL = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+
+
+def with_footer(data: dict) -> dict:
+    """Same footer-divider rule as normalize_discohook_templates (idempotent)."""
+    emb = data["embeds"]
+    last = emb[-1]
+    if "image" not in last:
+        last["image"] = {"url": FOOTER_URL}
+    return data
+
+
+def link(messages: list[dict]) -> str:
+    raw = json.dumps({"messages": [{"data": m} for m in messages]}, ensure_ascii=True, separators=(",", ":")).encode()
+    return "https://discohook.org/?data=" + base64.urlsafe_b64encode(raw).decode().rstrip("=")
+
+
+def main() -> None:
+    OUT.mkdir(exist_ok=True)
+    links: dict[str, str] = {}
+    for name, files in BUNDLES.items():
+        msgs = [with_footer(json.loads((T / f).read_text(encoding="utf-8"))) for f in files]
+        (OUT / f"BLHA_Templates_{name}.json").write_text(
+            json.dumps({"messages": [{"data": m} for m in msgs]}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        links[f"bundle:{name}"] = link(msgs)
+    for p in sorted(T.rglob("*_channel_intro.json")):
+        links[f"intro:{p.relative_to(T).as_posix()}"] = link([json.loads(p.read_text(encoding="utf-8"))])
+    welcome = {"embeds": []}
+    for n in range(1, 7):
+        part = next((T / "welcome").glob(f"0{n}_*.json"))
+        welcome["embeds"] += json.loads(part.read_text(encoding="utf-8"))["embeds"]
+    (OUT / "BLHA_Welcome_Single_Message.json").write_text(json.dumps(welcome, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    links["welcome"] = link([welcome])
+    for p in sorted((T / "constitution").glob("*.json")):
+        links[f"constitution:{p.name}"] = link([json.loads(p.read_text(encoding="utf-8"))])
+    (OUT / "links.json").write_text(json.dumps(links, indent=2) + "\n", encoding="utf-8")
+    biggest = max(len(v) for v in links.values())
+    print(f"{len(BUNDLES)} bundles, {len(links)} links, longest link {biggest} chars")
+
+
+if __name__ == "__main__":
+    main()

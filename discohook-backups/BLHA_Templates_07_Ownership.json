@@ -1,0 +1,116 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "NEW OWNER",
+            "description": "Welcome to the BLHA, `[OWNER]`. They are taking over **`[FRANCHISE]`**.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "FRANCHISE",
+                "value": "`[FRANCHISE NAME]`",
+                "inline": false
+              },
+              {
+                "name": "PAID THROUGH",
+                "value": "Season `[YEAR]` (prepaid dues stay with the franchise)",
+                "inline": false
+              },
+              {
+                "name": "START HERE",
+                "value": "Read **welcome** and **constitution**, then check **league-calendar**.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "FRANCHISE SEEKING AN OWNER",
+            "description": "**`[FRANCHISE]`** is open and the league is looking for a replacement owner.",
+            "color": 10697266,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "WHAT HAPPENS NOW",
+                "value": "The franchise is locked from transactions while a replacement is arranged. The Commissioner keeps the roster legal (Article XVIII).",
+                "inline": false
+              },
+              {
+                "name": "PREPAID DUES",
+                "value": "Any prepaid future seasons stay with the franchise and transfer to the new owner.",
+                "inline": false
+              },
+              {
+                "name": "INCENTIVE",
+                "value": "`[NONE / DISCLOSED INCENTIVE]`",
+                "inline": false
+              },
+              {
+                "name": "INTERESTED?",
+                "value": "Contact the Commissioner. Please send names of qualified candidates.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "COMMISSIONER TRANSITION",
+            "description": "`[INTERIM COMMISSIONER]` is now Interim Commissioner.",
+            "color": 10697266,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "REASON",
+                "value": "`[RESIGNATION / REMOVAL / UNAVAILABLE 14 DAYS]`",
+                "inline": false
+              },
+              {
+                "name": "HOW CHOSEN",
+                "value": "`[DESIGNATED SUCCESSOR / MAJORITY OF ACTIVE FRANCHISES]`",
+                "inline": false
+              },
+              {
+                "name": "HANDOFF",
+                "value": "Funds, records, Fantrax access and Discord/automation administration transfer within 14 days (Article XIX).",
+                "inline": false
+              },
+              {
+                "name": "NEXT",
+                "value": "A permanent Commissioner is chosen by majority vote of active franchises.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

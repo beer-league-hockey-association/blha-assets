@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "COMMISSIONER TRANSITION",
+      "description": "`[INTERIM COMMISSIONER]` is now Interim Commissioner.",
+      "color": 10697266,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      },
+      "fields": [
+        {
+          "name": "REASON",
+          "value": "`[RESIGNATION / REMOVAL / UNAVAILABLE 14 DAYS]`",
+          "inline": false
+        },
+        {
+          "name": "HOW CHOSEN",
+          "value": "`[DESIGNATED SUCCESSOR / MAJORITY OF ACTIVE FRANCHISES]`",
+          "inline": false
+        },
+        {
+          "name": "HANDOFF",
+          "value": "Funds, records, Fantrax access and Discord/automation administration transfer within 14 days (Article XIX).",
+          "inline": false
+        },
+        {
+          "name": "NEXT",
+          "value": "A permanent Commissioner is chosen by majority vote of active franchises.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

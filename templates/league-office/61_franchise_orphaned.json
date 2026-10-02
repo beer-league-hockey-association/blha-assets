@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "FRANCHISE SEEKING AN OWNER",
+      "description": "**`[FRANCHISE]`** is open and the league is looking for a replacement owner.",
+      "color": 10697266,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      },
+      "fields": [
+        {
+          "name": "WHAT HAPPENS NOW",
+          "value": "The franchise is locked from transactions while a replacement is arranged. The Commissioner keeps the roster legal (Article XVIII).",
+          "inline": false
+        },
+        {
+          "name": "PREPAID DUES",
+          "value": "Any prepaid future seasons stay with the franchise and transfer to the new owner.",
+          "inline": false
+        },
+        {
+          "name": "INCENTIVE",
+          "value": "`[NONE / DISCLOSED INCENTIVE]`",
+          "inline": false
+        },
+        {
+          "name": "INTERESTED?",
+          "value": "Contact the Commissioner. Please send names of qualified candidates.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

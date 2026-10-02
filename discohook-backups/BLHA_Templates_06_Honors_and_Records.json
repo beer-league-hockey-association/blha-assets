@@ -1,0 +1,116 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "THE BLHA CHAMPION",
+            "description": "🏆 **`[FRANCHISE]`** wins the **Season `[YEAR]`** BLHA Championship.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "FINAL",
+                "value": "`[FRANCHISE]` `[SCORE]` over `[FRANCHISE]` `[SCORE]` (two-week cumulative)",
+                "inline": false
+              },
+              {
+                "name": "PRIZE",
+                "value": "$650",
+                "inline": false
+              },
+              {
+                "name": "RUNNER-UP",
+                "value": "`[FRANCHISE]` • $350",
+                "inline": false
+              },
+              {
+                "name": "THIRD PLACE",
+                "value": "`[FRANCHISE]` • $150",
+                "inline": false
+              },
+              {
+                "name": "CHAMPIONSHIP COUNT",
+                "value": "`[FRANCHISE]` now has `[N]` in the current Dynasty Pot cycle.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "PRESIDENTS' TROPHY",
+            "description": "🥇 **`[FRANCHISE]`** finishes with the best regular-season record.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "RECORD",
+                "value": "`[W-L-T]` • `[POINTS FOR]`",
+                "inline": false
+              },
+              {
+                "name": "PRIZE",
+                "value": "$200",
+                "inline": false
+              },
+              {
+                "name": "TIEBREAKER USED",
+                "value": "`[NONE / POINTS SCORED / HEAD-TO-HEAD / FANTRAX / RANDOM DRAW]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "DYNASTY POT WON",
+            "description": "**`[FRANCHISE]`** wins its third BLHA Championship in the active cycle and takes the entire Dynasty Pot.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "PAYOUT",
+                "value": "**`$[AMOUNT]`**",
+                "inline": false
+              },
+              {
+                "name": "CHAMPIONSHIPS",
+                "value": "`[SEASONS WON]`",
+                "inline": false
+              },
+              {
+                "name": "CYCLE RESET",
+                "value": "The pot returns to zero and every franchise's counter resets. A new cycle starts with Season `[YEAR]`.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

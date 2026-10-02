@@ -1,0 +1,34 @@
+{
+  "embeds": [
+    {
+      "title": "COMMISSIONER CORRECTION",
+      "description": "A clerical, Fantrax configuration or platform correction under Section 2.5 of the Constitution.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      },
+      "fields": [
+        {
+          "name": "WHAT WAS WRONG",
+          "value": "`[THE ERROR OR PLATFORM ISSUE]`",
+          "inline": false
+        },
+        {
+          "name": "RULE BEING APPLIED",
+          "value": "`[ARTICLE AND SECTION OF THE EXISTING RULE]`",
+          "inline": false
+        },
+        {
+          "name": "CORRECTION",
+          "value": "`[WHAT WAS FIXED]`",
+          "inline": false
+        },
+        {
+          "name": "INTENT PRESERVED",
+          "value": "This correction applies an existing rule. It does not create a new one.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

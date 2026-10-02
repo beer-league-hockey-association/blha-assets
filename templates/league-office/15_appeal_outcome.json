@@ -1,0 +1,39 @@
+{
+  "embeds": [
+    {
+      "title": "APPEAL OUTCOME",
+      "description": "Review of `[RULING TITLE]`",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL RULING"
+      },
+      "fields": [
+        {
+          "name": "REQUESTED BY",
+          "value": "`[FRANCHISE]`",
+          "inline": false
+        },
+        {
+          "name": "REVIEW PANEL",
+          "value": "`[THREE UNAFFECTED FRANCHISES]`",
+          "inline": false
+        },
+        {
+          "name": "DECISION",
+          "value": "**`[UPHELD / MODIFIED / REVERSED]`**",
+          "inline": false
+        },
+        {
+          "name": "DETAILS",
+          "value": "`[WHAT CHANGES, IF ANYTHING]`",
+          "inline": false
+        },
+        {
+          "name": "FINAL",
+          "value": "The panel's decision is final for this matter (Article XIX).",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "embeds": [
+    {
+      "title": "NEW OWNER",
+      "description": "Welcome to the BLHA, `[OWNER]`. They are taking over **`[FRANCHISE]`**.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      },
+      "fields": [
+        {
+          "name": "FRANCHISE",
+          "value": "`[FRANCHISE NAME]`",
+          "inline": false
+        },
+        {
+          "name": "PAID THROUGH",
+          "value": "Season `[YEAR]` (prepaid dues stay with the franchise)",
+          "inline": false
+        },
+        {
+          "name": "START HERE",
+          "value": "Read **welcome** and **constitution**, then check **league-calendar**.",
+          "inline": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "CONSTITUTION UPDATED",
+            "description": "**Version `[X.X]`** of the BLHA Constitution has been published.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "EFFECTIVE",
+                "value": "`[SEASON / DATE]`",
+                "inline": false
+              },
+              {
+                "name": "WHAT CHANGED",
+                "value": "`[SUMMARIZE CHANGES WITH ARTICLE NUMBERS]`",
+                "inline": false
+              },
+              {
+                "name": "APPROVED BY VOTE",
+                "value": "`[X]` of 12 on `[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "ACTION REQUIRED",
+                "value": "`[NONE / REVIEW ARTICLES]`",
+                "inline": false
+              },
+              {
+                "name": "WHERE",
+                "value": "The current version is in **constitution**. Earlier versions are archived.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "CONSTITUTION AMENDMENT",
+            "description": "A formally adopted amendment has been added to the BLHA Constitution.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "AMENDMENT",
+                "value": "`[TITLE]` • Article `[ROMAN]` Section `[N.N]`",
+                "inline": false
+              },
+              {
+                "name": "APPROVED",
+                "value": "`[X]` of 12 on `[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "EFFECTIVE",
+                "value": "`[SEASON / DATE]`",
+                "inline": false
+              },
+              {
+                "name": "TEXT",
+                "value": "`[NEW LANGUAGE OR CONCISE SUMMARY]`",
+                "inline": false
+              },
+              {
+                "name": "VERSION",
+                "value": "Now part of Version `[X.X]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "OFFICIAL RULE INTERPRETATION",
+            "description": "`[SHORT ISSUE TITLE]`",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL RULING"
+            },
+            "fields": [
+              {
+                "name": "QUESTION",
+                "value": "`[RULE QUESTION]`",
+                "inline": false
+              },
+              {
+                "name": "RULING",
+                "value": "`[OFFICIAL INTERPRETATION]`",
+                "inline": false
+              },
+              {
+                "name": "BASIS",
+                "value": "`[ARTICLE AND SECTION / FANTRAX SETTING / PRIOR RULING]`",
+                "inline": false
+              },
+              {
+                "name": "EFFECTIVE",
+                "value": "`[IMMEDIATELY / DATE]`",
+                "inline": false
+              },
+              {
+                "name": "REVIEW",
+                "value": "A directly affected franchise may request review within 48 hours (Article XIX).",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "COMMISSIONER RECUSAL",
+            "description": "The Commissioner's franchise is involved in `[MATTER]`. A neutral party will decide it.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "DECIDED BY",
+                "value": "`[NEUTRAL ASSISTANT COMMISSIONER / TEMPORARY NEUTRAL REVIEWER / UNAFFECTED FRANCHISES]`",
+                "inline": false
+              },
+              {
+                "name": "TIMELINE",
+                "value": "`[DATE]`",
+                "inline": false
+              },
+              {
+                "name": "RECORD",
+                "value": "The outcome will be posted in **rulings-log**.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "APPEAL OUTCOME",
+            "description": "Review of `[RULING TITLE]`",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL RULING"
+            },
+            "fields": [
+              {
+                "name": "REQUESTED BY",
+                "value": "`[FRANCHISE]`",
+                "inline": false
+              },
+              {
+                "name": "REVIEW PANEL",
+                "value": "`[THREE UNAFFECTED FRANCHISES]`",
+                "inline": false
+              },
+              {
+                "name": "DECISION",
+                "value": "**`[UPHELD / MODIFIED / REVERSED]`**",
+                "inline": false
+              },
+              {
+                "name": "DETAILS",
+                "value": "`[WHAT CHANGES, IF ANYTHING]`",
+                "inline": false
+              },
+              {
+                "name": "FINAL",
+                "value": "The panel's decision is final for this matter (Article XIX).",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

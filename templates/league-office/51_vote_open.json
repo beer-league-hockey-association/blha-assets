@@ -15,28 +15,30 @@
         },
         {
           "name": "OPTIONS",
-          "value": "**A.** `[OPTION]`\n**B.** `[OPTION]`\n`[ADD OPTIONS IF NEEDED]`",
+          "value": "**Yes** — adopt the amendment\n**No** — keep the current rule",
           "inline": false
         },
         {
           "name": "VOTING CLOSES",
-          "value": "**`[DATE + TIME ET]`**",
+          "value": "**`[DATE + TIME ET]`** • 7-day window",
           "inline": false
         },
         {
           "name": "PASSAGE REQUIREMENT",
-          "value": "`[SIMPLE MAJORITY / SUPERMAJORITY / OTHER]`",
+          "value": "At least **8 affirmative votes out of 12**. Non-votes and abstentions are not affirmative.",
           "inline": false
         },
         {
           "name": "WHO VOTES",
           "value": "One formal vote per franchise, cast by the **Franchise Owner**.",
           "inline": false
+        },
+        {
+          "name": "EFFECTIVE",
+          "value": "`[NEXT SEASON / LATER DATE]` • must pass before that Season's dues deadline",
+          "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     }
   ]
 }
