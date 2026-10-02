@@ -53,6 +53,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/competition/state/competition.json"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -77,11 +80,11 @@ jobs:
           python automation/competition/desk.py "${ARGS[@]}"
 
       # Saved even if one post failed, so posts that did go out are never repeated.
-      - name: Persist Competition Desk state
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
         if: ${{ !cancelled() && env.MODE == 'live' }}
-        shell: bash
         run: |
-          bash automation/tools/persist_state.sh \
-            automation/competition/state/competition.json \
-            "chore(competition): persist report state [skip ci]" \
-            "BLHA Fantrax Automation"
+          bash automation/tools/state_branch.sh save \
+            "chore(competition): save report state" \
+            "BLHA Fantrax Automation" \
+            "automation/competition/state/competition.json"

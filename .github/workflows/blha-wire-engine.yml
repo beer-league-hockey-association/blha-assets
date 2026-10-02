@@ -51,6 +51,9 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/wire/state/${WIRE_MODE}.json"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -73,41 +76,11 @@ jobs:
           fi
           python automation/wire/engine.py "${ARGS[@]}"
 
-      - name: Persist dedupe state
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
         if: ${{ !cancelled() }}
-        shell: bash
         run: |
-          STATE="automation/wire/state/${WIRE_MODE}.json"
-          if git diff --quiet -- "$STATE"; then
-            echo "No state changes to persist."
-            exit 0
-          fi
-
-          # Ignore a timestamp-only change. This prevents a meaningless commit
-          # every 15 minutes when there were no new stories or state expirations.
-          set +e
-          python - "$STATE" <<'PY'
-          import json, subprocess, sys
-          path = sys.argv[1]
-          current = json.load(open(path, encoding='utf-8'))
-          previous = json.loads(subprocess.check_output(['git', 'show', f'HEAD:{path}'], text=True))
-          current.pop('updated_at', None)
-          previous.pop('updated_at', None)
-          if current == previous:
-              sys.exit(10)
-          PY
-          STATUS=$?
-          set -e
-
-          if [ "$STATUS" -eq 10 ]; then
-            git checkout -- "$STATE"
-            echo "Only updated_at changed; skipping state commit."
-            exit 0
-          elif [ "$STATUS" -ne 0 ]; then
-            exit "$STATUS"
-          fi
-
-          bash automation/tools/persist_state.sh \
-            "$STATE" \
-            "chore(wire): persist ${WIRE_MODE} dedupe state [skip ci]" \
-            "BLHA Wire Automation"
+          bash automation/tools/state_branch.sh save \
+            "chore(wire): save ${WIRE_MODE} dedupe state" \
+            "BLHA Wire Automation" \
+            "automation/wire/state/${WIRE_MODE}.json"

@@ -15,7 +15,7 @@ It currently monitors:
 - BLHA Fantrax Scoreboard (live scoreboard)
 - BLHA Fantrax Playoffs (live bracket)
 
-Workflows that only run in part of the season (for example the scoreboard, which is off in the offseason) are only checked while they are supposed to be running, using the same season calendar as the scheduler. When a phase starts, each newly active workflow gets its normal threshold to complete a first run before it can be reported stale.
+Workflows that only run some of the time are only checked while they are supposed to be running, using the same rules as the scheduler: the scoreboard is off in the offseason, the playoff bracket only runs in playoff weeks, and the League Office only runs while an enabled event is coming up. When a workflow switches on, it gets its normal threshold to complete a first run before it can be reported stale.
 
 ## What triggers an alert
 
@@ -64,7 +64,7 @@ Each threshold is the maximum age of the latest live run before a "Workflow appe
 
 - Scheduler: 45 minutes (a stale scheduler usually means the external cron-job.org timer stopped)
 - Wire Engine: 60 minutes
-- League Office: 3 hours
+- League Office: 3 hours (only while an enabled event is coming up)
 - Scoreboard: 3 hours (regular season and playoffs)
 - Playoffs: 3 hours (playoff weeks)
 - Competition Desk: 15 hours (preseason through playoffs)

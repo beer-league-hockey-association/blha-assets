@@ -27,6 +27,8 @@ def load_schedule(path: Path = SCHEDULE_PATH) -> dict[str, Any]:
         for name in job.get("phases") or []:
             if name not in season.PHASES:
                 raise ValueError(f"job {job.get('id')}: unknown phase {name!r}")
+        if job.get("when") and job["when"] not in CONDITIONS:
+            raise ValueError(f"job {job.get('id')}: unknown condition {job['when']!r}")
     return data
 
 
@@ -50,13 +52,56 @@ def current_phase(now: datetime | None = None) -> tuple[str | None, str]:
     return phase, text
 
 
-def job_active(job: dict[str, Any], phase: str | None) -> tuple[bool, str]:
-    """Whether a job should run in the current season phase."""
+def _league_ops():
+    import sys
+
+    folder = AUTOMATION_ROOT / "league-office"
+    if str(folder) not in sys.path:
+        sys.path.insert(0, str(folder))
+    import league_ops  # noqa: PLC0415
+
+    return league_ops
+
+
+def league_office_window(now: datetime | None = None) -> datetime | None:
+    """When the open League Office reminder window began (None if closed)."""
+    ops = _league_ops()
+    return ops.upcoming_window_start(ops.load_config(), now)
+
+
+# condition name -> (function returning when it became true or None, reason when off)
+CONDITIONS = {
+    "league-office-events": (league_office_window, "no enabled League Office event is coming up"),
+}
+
+
+def condition_started_at(job: dict[str, Any], now: datetime | None = None) -> datetime | None:
+    entry = CONDITIONS.get(str(job.get("when") or ""))
+    if not entry:
+        return None
+    try:
+        return entry[0](now)
+    except Exception:
+        return None
+
+
+def job_active(job: dict[str, Any], phase: str | None, now: datetime | None = None) -> tuple[bool, str]:
+    """Whether a job should run now (season phase and any extra condition)."""
     allowed = job.get("phases")
-    if not allowed:
-        return True, ""
-    if phase is None:
+    if allowed and phase is not None and phase not in allowed:
+        return False, f"not active in {phase} (runs in {', '.join(allowed)})"
+
+    condition = job.get("when")
+    if condition:
+        check, reason = CONDITIONS.get(condition, (None, ""))
+        if check is None:
+            return True, f"unknown condition {condition!r}; running anyway"
+        try:
+            if check(now) is None:
+                return False, reason
+        except Exception as exc:
+            return True, f"condition {condition!r} failed ({exc}); running anyway"
+
+    if allowed and phase is None:
         return True, "season phase unknown; running anyway"
-    if phase in allowed:
-        return True, ""
-    return False, f"not active in {phase} (runs in {', '.join(allowed)})"
+    return True, ""

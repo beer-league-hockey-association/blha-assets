@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# Bot state lives on the automation-state branch (see automation/tools/state_branch.sh).
+automation/*/state/

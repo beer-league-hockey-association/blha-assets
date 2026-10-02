@@ -6,7 +6,8 @@ on:
     branches: [main]
     paths:
       - 'automation/**/*.py'
-      - 'automation/phase-2d2/events.yaml'
+      - 'automation/league-office/events.yaml'
+      - 'automation/tools/*.sh'
       - 'automation/league.yaml'
       - 'automation/scheduler/schedule.yaml'
       - 'automation/tests/fixtures/**'
@@ -14,7 +15,8 @@ on:
   pull_request:
     paths:
       - 'automation/**/*.py'
-      - 'automation/phase-2d2/events.yaml'
+      - 'automation/league-office/events.yaml'
+      - 'automation/tools/*.sh'
       - 'automation/league.yaml'
       - 'automation/scheduler/schedule.yaml'
       - 'automation/tests/fixtures/**'
@@ -76,8 +78,8 @@ jobs:
 
       - name: Test League Office timing
         env:
-          PYTHONPATH: automation:automation/phase-2d2
-        run: python automation/phase-2d2/test_league_ops.py
+          PYTHONPATH: automation:automation/league-office
+        run: python automation/league-office/test_league_ops.py
 
       - name: Test playoff bracket logic
         env:
