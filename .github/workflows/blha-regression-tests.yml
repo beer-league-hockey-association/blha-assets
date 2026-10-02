@@ -8,13 +8,15 @@ on:
       - 'automation/**/*.py'
       - 'automation/phase-2d2/events.yaml'
       - 'automation/phase-2d5/playoff_config.yaml'
-      - '.github/workflows/blha-regression-tests.yml'
+      - 'automation/scheduler/schedule.yaml'
+      - '.github/workflows/*.yml'
   pull_request:
     paths:
       - 'automation/**/*.py'
       - 'automation/phase-2d2/events.yaml'
       - 'automation/phase-2d5/playoff_config.yaml'
-      - '.github/workflows/blha-regression-tests.yml'
+      - 'automation/scheduler/schedule.yaml'
+      - '.github/workflows/*.yml'
 
 permissions:
   contents: read
@@ -63,10 +65,20 @@ jobs:
             automation/phase-2d4/playoff_race.py \
             automation/matchup-preview/matchup_preview.py \
             automation/phase-2d5/playoff.py \
-            automation/health/health.py
+            automation/health/health.py \
+            automation/health/runner.py \
+            automation/scheduler/scheduler.py
+
+      - name: Test the scheduler
+        run: python automation/scheduler/test_scheduler.py
 
       - name: Test The Wire
         run: python automation/phase-2d1/test_wire.py
+
+      - name: Test health-monitor run filtering
+        env:
+          PYTHONPATH: automation:automation/health
+        run: python automation/health/test_health.py
 
       - name: Test shared Discord delivery
         env:

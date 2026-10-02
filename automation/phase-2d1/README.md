@@ -10,13 +10,13 @@ Production safeguards include:
 - persistent deduplication with a 30-day / 5,000-item cap
 - fuzzy duplicate suppression
 - baseline-first live initialization
-- per-run and per-channel flood guards
+- per-run and per-channel flood guards, with overflow combined into one roundup post per channel
 - source-level failures that do not crash the whole Wire
 - limited parallel source collection
 - one retry for transient source failures
 - Discord retry handling for HTTP 429 and 5xx responses
 - `allowed_mentions` disabled on automated posts
-- Automation Health monitoring for stale runs, persistent source failures, and repeated flood-guard events
+- Automation Health monitoring for stale runs, persistent source failures, and roundups that overflow in consecutive runs
 - resilient Git state persistence with pull/rebase/retry handling
 
 ## Discord destinations
@@ -85,6 +85,6 @@ The public read-only Fantrax endpoints are used only to enrich injury alerts wit
 League transaction history is authentication-gated by Fantrax and is not currently ingested by the Wire.
 
 ## Maintenance
-GitHub scheduled workflows are best-effort rather than real-time. Automation Health uses deliberately tolerant stale thresholds so a single delayed cron event does not create noise.
+GitHub's built-in cron is best-effort rather than real-time, so the Wire is started by the BLHA Scheduler, which is driven by an external timer (see `automation/scheduler/README.md`). Automation Health alerts if the Wire has not had a live run in 60 minutes.
 
 GitHub may disable scheduled workflows in public repositories after long periods of repository inactivity, so the BLHA repository should still be checked during the offseason.

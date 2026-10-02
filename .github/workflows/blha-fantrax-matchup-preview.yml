@@ -1,9 +1,9 @@
 name: BLHA Fantrax Matchup Preview
+run-name: BLHA Fantrax Matchup Preview — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    # Four checks per day are plenty for a once-per-scoring-period preview.
-    - cron: "13 */6 * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:

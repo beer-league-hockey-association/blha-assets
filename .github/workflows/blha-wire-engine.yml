@@ -2,6 +2,8 @@ name: BLHA Wire Engine
 run-name: BLHA Wire Engine — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live every 15 minutes.
   workflow_dispatch:
     inputs:
       mode:
@@ -22,8 +24,6 @@ on:
         required: false
         default: false
         type: boolean
-  schedule:
-    - cron: '3,18,33,48 * * * *'
 
 concurrency:
   group: blha-wire-engine

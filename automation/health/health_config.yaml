@@ -13,12 +13,20 @@ settings:
   no_run_grace_minutes: 1440
 
 workflows:
+  # The scheduler starts every other workflow. If it goes stale, the external
+  # timer (cron-job.org) has probably stopped and only GitHub's late backup
+  # cron is running. See automation/scheduler/README.md.
+  - id: scheduler
+    name: "BLHA Scheduler"
+    file: "blha-scheduler.yml"
+    max_age_minutes: 45
+
   - id: wire-engine
     name: "BLHA Wire Engine"
     file: "blha-wire-engine.yml"
-    # GitHub cron is best-effort; alert after several missed 15-minute slots,
-    # not after a single delayed event.
-    max_age_minutes: 120
+    # The scheduler starts the Wire every 15 minutes; alert after several
+    # missed starts, not after a single delayed one.
+    max_age_minutes: 60
     inspect_wire_logs: true
 
   - id: league-office

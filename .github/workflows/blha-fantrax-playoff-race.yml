@@ -1,10 +1,9 @@
 name: BLHA Fantrax Playoff Race
+run-name: BLHA Fantrax Playoff Race — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    # Run after the daily standings check.
-    # 12:15 UTC = 8:15 AM EDT / 7:15 AM EST
-    - cron: "15 12 * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:

@@ -1,12 +1,9 @@
 name: BLHA Fantrax Scoreboard
+run-name: BLHA Fantrax Scoreboard — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    # Two controlled live checks per day.
-    # 23:15 UTC = 7:15 PM EDT / 6:15 PM EST
-    # 06:30 UTC = 2:30 AM EDT / 1:30 AM EST
-    - cron: "15 23 * * *"
-    - cron: "30 6 * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:

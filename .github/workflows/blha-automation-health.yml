@@ -1,8 +1,9 @@
 name: BLHA Automation Health
+run-name: BLHA Automation Health — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    - cron: "27 * * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:

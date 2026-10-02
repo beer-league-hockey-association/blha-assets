@@ -1,0 +1,57 @@
+# BLHA Scheduler: the single source of truth for when each automation runs.
+#
+# The scheduler workflow is started every 15 minutes by an external timer
+# (cron-job.org), with GitHub's own cron as a backup. On every start it checks
+# each job below and starts the ones that are due, in live mode.
+#
+# Two kinds of timing:
+#   every_minutes: start the job when its last live run is at least this old.
+#   daily_at:      start the job once after each listed local time. If the
+#                  scheduler was late or down, the job runs at the next check
+#                  instead of being skipped.
+#
+# Times are America/New_York wall-clock times, so they stay fixed across
+# daylight saving changes.
+
+timezone: America/New_York
+
+# Allow a job to start a few minutes early relative to every_minutes. Without
+# this, small timer jitter would push a 15-minute job to every 30 minutes.
+interval_tolerance_minutes: 5
+
+jobs:
+  - id: wire-engine
+    workflow: blha-wire-engine.yml
+    every_minutes: 15
+
+  - id: league-office
+    workflow: blha-league-office.yml
+    every_minutes: 30
+
+  - id: automation-health
+    workflow: blha-automation-health.yml
+    every_minutes: 60
+
+  - id: matchup-preview
+    workflow: blha-fantrax-matchup-preview.yml
+    every_minutes: 360
+
+  - id: playoffs
+    workflow: blha-fantrax-playoffs.yml
+    every_minutes: 360
+
+  - id: scoreboard
+    workflow: blha-fantrax-scoreboard.yml
+    daily_at: ["02:30", "19:15"]
+
+  - id: standings
+    workflow: blha-fantrax-standings.yml
+    daily_at: ["07:30"]
+
+  - id: playoff-race
+    workflow: blha-fantrax-playoff-race.yml
+    daily_at: ["08:15"]
+
+  - id: weekly-recap
+    workflow: blha-fantrax-weekly-recap.yml
+    daily_at: ["08:45"]

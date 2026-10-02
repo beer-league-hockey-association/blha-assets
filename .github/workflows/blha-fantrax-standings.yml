@@ -1,10 +1,9 @@
 name: BLHA Fantrax Standings
+run-name: BLHA Fantrax Standings — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    # One controlled live standings check per day after overnight NHL scoring settles.
-    # 11:30 UTC = 7:30 AM EDT / 6:30 AM EST
-    - cron: "30 11 * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:

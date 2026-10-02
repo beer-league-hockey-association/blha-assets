@@ -104,14 +104,30 @@ def api_get(session: requests.Session, api_base: str, path: str, **params: Any) 
     return response.json()
 
 
+def is_automatic_live_run(row: dict[str, Any]) -> bool:
+    """True for production runs: GitHub cron runs or BLHA Scheduler live dispatches.
+
+    The BLHA Scheduler starts workflows through workflow_dispatch with
+    mode=live, and every BLHA workflow's run-name ends in "— <mode>". Manual
+    preview/test/shadow runs are therefore excluded without reading logs.
+    """
+    if row.get("event") == "schedule":
+        return True
+    if row.get("event") != "workflow_dispatch":
+        return False
+    title = str(row.get("display_title") or "").strip()
+    return title.endswith("— live")
+
+
 def scheduled_runs(
     session: requests.Session,
     api_base: str,
     repository: str,
     workflow_file: str,
     *,
-    per_page: int = 20,
+    per_page: int = 40,
 ) -> list[dict[str, Any]]:
+    """Return recent production (automatic live) runs, newest first."""
     raw = api_get(
         session,
         api_base,
@@ -119,7 +135,7 @@ def scheduled_runs(
         per_page=per_page,
     )
     rows = raw.get("workflow_runs", []) if isinstance(raw, dict) else []
-    return [row for row in rows if isinstance(row, dict) and row.get("event") == "schedule"]
+    return [row for row in rows if isinstance(row, dict) and is_automatic_live_run(row)]
 
 
 def download_run_log(
@@ -194,7 +210,7 @@ def inspect_wire_logs(
             "wire-delivery",
             "BLHA Wire Engine",
             "Discord delivery problem detected",
-            "The latest scheduled Wire run logged DELIVERY ERROR or NOT POSTED.",
+            "The latest Wire run logged DELIVERY ERROR or NOT POSTED.",
             latest_url,
         )
         found[key] = value
@@ -203,8 +219,8 @@ def inspect_wire_logs(
         key, value = issue(
             "wire-rate-guard",
             "BLHA Wire Engine",
-            "Wire flood guard suppressed posts",
-            "The latest scheduled Wire run hit the production rate guard. Review the feed burst before changing limits.",
+            "Wire roundup overflowed",
+            "The latest Wire run had more overflow stories than fit in a roundup post, so some were not shown. Review the feed burst; a parser change can expose a large backlog.",
             latest_url,
         )
         found[key] = value
@@ -238,7 +254,7 @@ def inspect_wire_logs(
             f"wire-source:{source.lower()}",
             "BLHA Wire Engine",
             f"Persistent source failure: {source}",
-            f"The source failed in {threshold} consecutive scheduled Wire runs. Latest error: {detail}",
+            f"The source failed in {threshold} consecutive Wire runs. Latest error: {detail}",
             latest_url,
         )
         found[key] = value
@@ -289,8 +305,8 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
             key, value = issue(
                 f"no-run:{workflow_id}",
                 name,
-                "No scheduled run found",
-                f"GitHub returned no scheduled run for {workflow_file}.",
+                "No live run found",
+                f"GitHub returned no live run for {workflow_file}.",
             )
             issues[key] = value
             continue
@@ -302,7 +318,7 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
             key, value = issue(
                 f"bad-time:{workflow_id}",
                 name,
-                "Latest scheduled run has no usable timestamp",
+                "Latest live run has no usable timestamp",
                 workflow_file,
                 newest_url,
             )
@@ -313,8 +329,8 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
                 key, value = issue(
                     f"stale:{workflow_id}",
                     name,
-                    "Scheduled workflow appears stale",
-                    f"Latest scheduled run started {age_minutes} minutes ago; alert threshold is {max_age} minutes.",
+                    "Workflow appears stale",
+                    f"Latest live run started {age_minutes} minutes ago; alert threshold is {max_age} minutes.",
                     newest_url,
                 )
                 issues[key] = value
@@ -327,7 +343,7 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
                 key, value = issue(
                     f"failed:{workflow_id}",
                     name,
-                    f"Latest completed scheduled run ended with {conclusion}",
+                    f"Latest completed live run ended with {conclusion}",
                     "Open the workflow run and review the failed step/log output.",
                     str(last_completed.get("html_url") or ""),
                 )

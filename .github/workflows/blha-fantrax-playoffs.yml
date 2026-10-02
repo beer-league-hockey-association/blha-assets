@@ -1,10 +1,9 @@
 name: BLHA Fantrax Playoffs
+run-name: BLHA Fantrax Playoffs — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    # Bracket state changes at scoring-period boundaries, so six-hour checks
-    # are sufficient while keeping pre-playoff no-op traffic low.
-    - cron: "7 */6 * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:

@@ -11,7 +11,7 @@
 
 Phase 2D.1C is now in production.
 
-- Scheduled GitHub Actions runs execute every 15 minutes in **live mode**.
+- The BLHA Scheduler starts the Wire every 15 minutes in **live mode** (see `automation/scheduler/README.md`).
 - Manual runs still default to **shadow mode** for safe testing.
 - Live state has already been baselined, so activation does not replay the current feed backlog.
 - PuckPedia native Discord delivery is active for `🔄│nhl-transactions`.
@@ -24,7 +24,7 @@ Phase 2D.1C is now in production.
 - `sources.yaml` — source registry and authority levels.
 - `state/shadow.json` — persistent shadow-mode dedupe state.
 - `state/live.json` — persistent live-mode dedupe state.
-- `.github/workflows/blha-wire-engine.yml` — production live run every 15 minutes.
+- `.github/workflows/blha-wire-engine.yml` — the Wire workflow; started in live mode every 15 minutes by the BLHA Scheduler.
 - Daily Faceoff dedicated injury parser.
 - Live Discord delivery code using repository Actions Secrets.
 
@@ -75,12 +75,15 @@ Sources are processed by trust tier so official/Tier 0 material is considered be
 
 ## Production flood guards
 
-To protect Discord from a malformed feed, parser change, or sudden backlog, live delivery is capped at:
+To protect Discord from a malformed feed, parser change, or sudden backlog, individual story posts are capped at:
 
-- **6 total GitHub-delivered posts per 15-minute run**, and
-- **3 posts to any single channel per run**.
+- **6 total individual posts per run**, and
+- **3 individual posts to any single channel per run**.
 
-If a run exceeds either limit, lower-priority excess items are logged as `RATE-GUARD SUPPRESSED` and remembered in live state so they do not trickle into Discord on later runs.
+Stories over either limit are logged as `RATE-GUARD ROUNDUP` and combined into **one roundup post per channel** ("Injury Report — 7 more updates"), listing each headline with its link, source, and BLHA roster tag. Nothing is silently dropped:
+
+- Roundup stories are remembered only after the roundup is delivered. If the roundup fails (`ROUNDUP NOT POSTED`), those stories are retried on the next run.
+- If a roundup would exceed Discord's embed size, the remainder is counted as "+N more not shown" and logged as `RATE-GUARD SUPPRESSED`. Automation Health alerts if that happens in consecutive runs.
 
 This guard does not affect PuckPedia's separate native transaction delivery.
 
@@ -142,7 +145,7 @@ Keep this native integration separate from the BLHA News Wire webhook identity.
 
 For normal operation, watch the summary line of scheduled `BLHA Wire Engine` runs. Expected quiet runs usually look similar to:
 
-`SUMMARY mode=live posted=0 ... duplicates=<many> ... suppressed=0`
+`SUMMARY mode=live posted=0 ... duplicates=<many> ... digested=0 digest_posts=0 suppressed=0`
 
 Important conditions to investigate:
 

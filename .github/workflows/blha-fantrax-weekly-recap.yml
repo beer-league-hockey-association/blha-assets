@@ -1,11 +1,9 @@
 name: BLHA Fantrax Weekly Recap
+run-name: BLHA Fantrax Weekly Recap — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 on:
-  schedule:
-    # Daily completion check. The script posts only when Fantrax exposes a newly
-    # completed scoring period, so this remains silent on all other days.
-    # 12:45 UTC = 8:45 AM EDT / 7:45 AM EST.
-    - cron: "45 12 * * *"
+  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
+  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:
