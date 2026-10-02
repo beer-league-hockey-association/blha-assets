@@ -1,0 +1,75 @@
+{
+  "01_logos": [
+    "blha-wordmark-white-transparent.png",
+    "blha-wordmark-black-transparent.png",
+    "blha-wordmark-textured-cream.png",
+    "blha-wordmark-on-charcoal-1920x1080.png",
+    "blha-wordmark-on-black-1920x1080.png",
+    "blha-wordmark-on-white-1920x1080.png",
+    "blha-b-mark-transparent-1024.png",
+    "blha-b-icon-black-1024.png",
+    "blha-b-icon-charcoal-1024.png",
+    "blha-b-icon-cream-1024.png",
+    "blha-b-icon-gold-1024.png"
+  ],
+  "02_avatars_icons": [
+    "blha-server-icon-1024.png",
+    "blha-webhook-avatar-512.png",
+    "blha-bot-avatar-round-512.png",
+    "blha-profile-picture-400.png",
+    "blha-emoji-b-128.png",
+    "blha-emoji-b-64.png",
+    "blha-favicon-256.png"
+  ],
+  "03_server_social_banners": [
+    "blha-server-banner-960x540.png",
+    "blha-server-banner-1920x1080.png",
+    "blha-invite-splash-1920x1080.png",
+    "blha-github-social-preview-1280x640.png",
+    "blha-x-header-1500x500.png",
+    "blha-event-cover-800x320.png"
+  ],
+  "04_channel_headers": [
+    "blha-welcome-header-1600x533.png",
+    "blha-constitution-header-1600x533.png",
+    "blha-announcements-header-1600x533.png",
+    "blha-calendar-header-1600x533.png",
+    "blha-ledger-header-1600x533.png",
+    "blha-voting-header-1600x533.png",
+    "blha-draft-center-header-1600x533.png",
+    "blha-the-wire-header-1600x533.png",
+    "blha-general-managers-header-1600x533.png",
+    "blha-trade-center-header-1600x533.png",
+    "blha-scouting-header-1600x533.png",
+    "blha-waiver-wire-header-1600x533.png",
+    "blha-competition-header-1600x533.png",
+    "blha-commissioners-office-header-1600x533.png",
+    "blha-franchise-hq-header-1600x533.png",
+    "blha-champions-header-1600x533.png",
+    "blha-records-header-1600x533.png",
+    "blha-generic-header-1600x533.png"
+  ],
+  "05_dividers": [
+    "blha-footer-divider-1600x180.png",
+    "blha-thin-rule-1600x40.png",
+    "blha-gold-bar-1600x24.png"
+  ],
+  "06_seals_stamps": [
+    "blha-official-seal-dark-1024.png",
+    "blha-official-seal-cream-1024.png",
+    "blha-official-seal-256.png",
+    "blha-stamp-official.png",
+    "blha-stamp-approved.png",
+    "blha-stamp-denied.png",
+    "blha-stamp-pending.png",
+    "blha-stamp-final.png",
+    "blha-stamp-amended.png",
+    "blha-stamp-vote-passed.png",
+    "blha-stamp-vote-failed.png",
+    "blha-stamp-commissioner-ruling.png",
+    "blha-stamp-champions.png",
+    "blha-stamp-paid-in-full.png",
+    "blha-stamp-dues-outstanding.png",
+    "blha-stamp-urgent-deadline.png"
+  ]
+}
