@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T05:48:35.463620Z",
+  "updated_at": "2026-10-02T12:22:14.434254Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1412,6 +1412,86 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T05:48:35.438732Z"
+    },
+    {
+      "key": "a485e4f93923122eb4711c4a",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-utah-mammoth-game-recap-october-1-2026",
+      "fingerprint": "d30861a257b8984d",
+      "title_norm": "mammoth cruise to shutout of blackhawks in opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T12:22:13.105396Z"
+    },
+    {
+      "key": "8e6221e2bab2fb16bddd120a",
+      "url": "https://theahl.com/news/ahl-begins-its-91st-season-tonight",
+      "fingerprint": "4a7a619b65ba4b5f",
+      "title_norm": "ahl begins its 91st season tonight",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:13.468130Z"
+    },
+    {
+      "key": "4f9c5740ffdf7ee2417b08e1",
+      "url": "https://www.dailyfaceoff.com/players/news/gustav-forsling/2431",
+      "fingerprint": "18ce67403ecc061b",
+      "title_norm": "gustav forsling (fla) — forsling is day-to-day with an upper-body injury and could play sunday in anaheim.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:13.722008Z"
+    },
+    {
+      "key": "ccad3b704e15f37140b56fe8",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "109c84087d9cb282",
+      "title_norm": "aleksander barkov (fla) — barkov left thursday's game with a lower-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:13.901729Z"
+    },
+    {
+      "key": "b41a73cc871ddb29a9f92863",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-lucky-to-overcome-weak-defence-goaltending-for-win-over-canucks",
+      "fingerprint": "f31f643f6888f5f4",
+      "title_norm": "oilers lucky to overcome weak defence, goaltending for win over canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:14.166438Z"
+    },
+    {
+      "key": "39497a52ae8106f6cf679914",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-abandon-winning-details-early-as-late-rally-falls-short-against-oilers",
+      "fingerprint": "488a1d9c9f078c09",
+      "title_norm": "canucks abandon winning details early as late rally falls short against oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:14.372012Z"
+    },
+    {
+      "key": "9c370eb64644bdb032ec2d2c",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-how-notable-players-have-fared-after-missing-training-camps",
+      "fingerprint": "ee817b77426d200e",
+      "title_norm": "friday four: how notable players have fared after missing training camps",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:14.385084Z"
+    },
+    {
+      "key": "d14b33cbcc365ba51fe765f7",
+      "url": "https://www.sportsnet.ca/nhl/article/its-embarrassing-flames-fail-to-rise-to-occasion-in-opening-night-letdown",
+      "fingerprint": "733c81c4add1027f",
+      "title_norm": "'it's embarrassing': flames fail to rise to occasion in opening-night letdown",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T12:22:14.397257Z"
     }
   ]
 }
