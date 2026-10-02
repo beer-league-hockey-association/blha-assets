@@ -28,7 +28,7 @@ CONFIG_PATH = ROOT / "events.yaml"
 STATE_PATH = ROOT / "state" / "league_ops.json"
 AVATAR = (
     "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
-    "discord/webhooks/avatar/blha-webhook-avatar-512.png"
+    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=2"
 )
 DEFAULT_CATCHUP_WINDOW = timedelta(hours=24)
 

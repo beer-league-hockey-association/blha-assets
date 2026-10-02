@@ -15,7 +15,7 @@ LEAGUE_PATH = AUTOMATION_ROOT / "league.yaml"
 
 AVATAR = (
     "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
-    "discord/webhooks/avatar/blha-webhook-avatar-512.png"
+    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=2"
 )
 DEFAULT_LEAGUE_NAME = "Beer League Hockey Association"
 

@@ -35,7 +35,7 @@ CONFIG_PATH = ROOT / "health_config.yaml"
 STATE_PATH = ROOT / "state" / "health.json"
 AVATAR = (
     "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
-    "discord/webhooks/avatar/blha-webhook-avatar-512.png"
+    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=2"
 )
 
 BAD_CONCLUSIONS = {
