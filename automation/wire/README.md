@@ -22,7 +22,7 @@ Production safeguards include:
 ## Discord destinations
 - `🚨│breaking-news` — only major, time-sensitive NHL developments.
 - `📰│nhl-news` — broader national NHL news that does not fit a more specific desk.
-- `🏥│injury-report` — injury, IR/LTIR, surgery, return and availability updates. When an exact normalized Fantrax roster match exists, the post also identifies the BLHA team that owns the player.
+- `🏥│injury-report` — injury, IR/LTIR, surgery, return and availability updates. When the player is on a BLHA roster, the post identifies the owning BLHA team and, if that owner opted in, mentions them.
 - `🔄│nhl-transactions` — trades, signings, waivers, recalls, assignments and contract moves. **PuckPedia is the active primary live source for this channel.**
 - `🌱│prospect-wire` — prospects, AHL, NCAA, CHL, international development and draft-related updates.
 - `💬│news-desk` — human discussion only; no automation.
@@ -80,7 +80,14 @@ Current webhook secret names:
 - `BLHA_WEBHOOK_PROSPECT_WIRE`
 
 ## Fantrax enrichment
-The public read-only Fantrax endpoints are used only to enrich injury alerts with BLHA ownership when an exact normalized player-name match can be made. Failure to read Fantrax does not stop Wire delivery; enrichment simply falls back to no ownership tag.
+The public read-only Fantrax endpoints tag Wire stories on every channel with the BLHA team that rosters the player (`roster.py`):
+
+- Injury entries carry the player's NHL team and position, which separate players who share a name (for example the two Sebastian Ahos, or the two Elias Petterssons who are both Canucks).
+- Headlines are scanned for full names of rostered players. A name shared with any other NHL player is not tagged from a headline alone.
+- Ambiguous matches are skipped: a missing tag is better than a wrong one.
+- Fantrax is only queried when a run has new stories to post. If Fantrax cannot be read, stories post without tags.
+
+Owner pings are opt-in and configured in `automation/league.yaml` (`owners`, `wire_pings`). Only listed owners can be mentioned, only for their own players, and only in the Injury Report.
 
 League transaction history is authentication-gated by Fantrax and is not currently ingested by the Wire.
 

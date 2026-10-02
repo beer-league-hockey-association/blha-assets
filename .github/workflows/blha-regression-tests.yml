@@ -45,12 +45,12 @@ jobs:
           cache: pip
           cache-dependency-path: |
             automation/common-requirements.txt
-            automation/phase-2d1/requirements.txt
+            automation/wire/requirements.txt
 
       - name: Install dependencies
         run: |
           pip install -r automation/common-requirements.txt
-          pip install -r automation/phase-2d1/requirements.txt
+          pip install -r automation/wire/requirements.txt
 
       - name: Compile all automation modules
         run: python -m compileall -q automation
@@ -62,7 +62,7 @@ jobs:
         run: python automation/tests/test_competition.py
 
       - name: Test The Wire
-        run: python automation/phase-2d1/test_wire.py
+        run: python automation/wire/test_wire.py
 
       - name: Test health-monitor run filtering
         env:

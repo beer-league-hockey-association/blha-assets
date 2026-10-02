@@ -1,5 +1,6 @@
 fantrax:
-  league_id: w02cjakmmumb3lur
+  # Tag stories with the BLHA team that rosters the player. The league comes
+  # from automation/league.yaml; owner pings are configured there too.
   roster_enrichment: true
 
 sources:
@@ -53,7 +54,7 @@ sources:
     dedupe_by_url: false
     max_items: 15
     role: primary-fantasy-injury-feed
-    note: Dedicated injury page. Event identity uses player + update + timestamp, not the shared page/player URL. Wire posts tag the owning BLHA team when an exact normalized Fantrax roster match exists.
+    note: Dedicated injury page. Event identity uses player + update + timestamp, not the shared page/player URL. Wire posts tag the owning BLHA team when the player can be identified by name, NHL team and position.
 
   # TRANSACTIONS / ROSTER MOVEMENT
   # PuckPedia native Discord integration is the active live transaction source.

@@ -35,6 +35,9 @@ INJURY = (
     "expected to miss", "ruled out", "not available", "unavailable",
 )
 INJURY_EVENT_PATTERNS = (
+    # A concrete absence without a classic injury word, e.g.
+    # "Dylan Larkin out for Red Wings' first two games".
+    r"\bout for\b(?:\s+[a-z0-9][a-z0-9'\-]*){1,8}\s+(?:games?|days?|weeks?|months?)\b",
     r"\bout (?:for|at least) (?:the )?(?:next )?(?:first )?\w*(?:\s+\w+){0,3}\s+(?:games?|days?|weeks?|months?)\b",
     r"\bout (?:for|at least) (?:\d+|two|three|four|five|six|seven|eight|nine|ten)\s+(?:games?|days?|weeks?|months?)\b",
     r"\bmiss(?:es|ing)? (?:the )?(?:first |next )?\w*(?:\s+\w+){0,3}\s+(?:games?|days?|weeks?|months?)\b",
@@ -174,6 +177,9 @@ def should_ignore(title: str, source_id: str, target: str) -> bool:
         return True
     if source_id == "sportsnet_nhl" and "men's hockey coach" in t:
         return True
+    # Sportsnet "Live Tracker" items are game-tracker shells, not news.
+    if source_id == "sportsnet_nhl" and "live tracker" in t:
+        return True
     if source_id == "reddit_hockey":
         attributed = REPORTER_PREFIX.search(title.strip()) is not None
         if target == "nhl-news" and not attributed:
@@ -206,17 +212,57 @@ def get(url: str) -> requests.Response:
     raise RuntimeError(f"request failed: {last_error}")
 
 
+def _http_url(value: object) -> str:
+    text = str(value or "").strip()
+    return text if re.match(r"^https?://", text, re.I) else ""
+
+
+def _rss_entry_link(entry: object) -> str:
+    """Find a usable article URL for an RSS entry.
+
+    Some feeds (notably Sportsnet) do not always set ``entry.link``. Fall back
+    to alternate link elements, then to the GUID/ID only when it is itself an
+    HTTP(S) URL. Never invents a destination.
+    """
+    if not hasattr(entry, "get"):
+        return ""
+    direct = _http_url(entry.get("link", ""))
+    if direct:
+        return direct
+    preferred: list[str] = []
+    fallback: list[str] = []
+    for row in entry.get("links") or []:
+        if not hasattr(row, "get"):
+            continue
+        href = _http_url(row.get("href", ""))
+        if not href:
+            continue
+        rel = str(row.get("rel") or "").strip().lower()
+        (preferred if rel in ("", "alternate") else fallback).append(href)
+    if preferred or fallback:
+        return (preferred or fallback)[0]
+    for key in ("id", "guid"):
+        identifier = _http_url(entry.get(key, ""))
+        if identifier:
+            return identifier
+    return ""
+
+
 def fetch_rss(url: str) -> list[dict[str, str]]:
     response = get(url)
     feed = feedparser.parse(response.content)
     if getattr(feed, "bozo", False) and not feed.entries:
         raise RuntimeError(f"Feed parse failed: {getattr(feed, 'bozo_exception', 'unknown error')}")
-    return [{
-        "title": entry.get("title", "(untitled)"),
-        "link": entry.get("link", ""),
-        "published": entry.get("published", entry.get("updated", "")),
-        "external_id": entry.get("id", entry.get("guid", entry.get("link", ""))),
-    } for entry in feed.entries]
+    items: list[dict[str, str]] = []
+    for entry in feed.entries:
+        link = _rss_entry_link(entry)
+        items.append({
+            "title": entry.get("title", "(untitled)"),
+            "link": link,
+            "published": entry.get("published", entry.get("updated", "")),
+            "external_id": entry.get("id", entry.get("guid", link)) or link,
+        })
+    return items
 
 
 def _headline_from_anchor(anchor: Tag) -> str:
