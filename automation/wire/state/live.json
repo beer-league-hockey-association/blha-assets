@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T16:15:34.052868Z",
+  "updated_at": "2026-10-02T17:15:34.674915Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1572,6 +1572,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-02T16:15:33.981220Z"
+    },
+    {
+      "key": "29d0051870f87c8a0990b04a",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-2-2026",
+      "fingerprint": "aeb32e0e82c4cb90",
+      "title_norm": "status report: kuzmenko back at practice for penguins",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T17:15:32.938464Z"
+    },
+    {
+      "key": "b868e2b683502b1a0d1d4e9f",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-2-2026",
+      "fingerprint": "461b83278230e4ec",
+      "title_norm": "on tap: robertson out to help stars sparkle in opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T17:15:33.531774Z"
+    },
+    {
+      "key": "5e621df8201f8d8ca20f9027",
+      "url": "https://www.nhl.com/news/topic/short-shifts/jack-hughes-stick-new-jersey-devils-fan",
+      "fingerprint": "e61c2a41c9654d8f",
+      "title_norm": "lucky fan catches hughes' stick after ot goal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-02T17:15:33.882047Z"
+    },
+    {
+      "key": "2e3664b527f746da85f7b67d",
+      "url": "https://www.sportsnet.ca/nhl/article/sandersons-return-to-practice-bodes-well-for-senators-season-opener",
+      "fingerprint": "a78a8154ade50051",
+      "title_norm": "sanderson's return to practice bodes well for senators' season opener",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T17:15:34.279259Z"
+    },
+    {
+      "key": "0c0e36c131db88b6df111ae1",
+      "url": "https://www.sportsnet.ca/nhl/article/two-horses-named-after-johnny-gaudreau-running-in-same-race",
+      "fingerprint": "c2cffb7f5d73a723",
+      "title_norm": "two horses named after johnny gaudreau running in same race",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T17:15:34.299180Z"
     }
   ]
 }
