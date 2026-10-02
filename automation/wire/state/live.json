@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T22:30:34.674366Z",
+  "updated_at": "2026-10-02T23:15:30.406548Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1782,6 +1782,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T22:30:34.656897Z"
+    },
+    {
+      "key": "57b4907133e02c543d48261e",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-fans-loudly-boo-dylan-larkin-before-home-opener",
+      "fingerprint": "464d2024d8e577e5",
+      "title_norm": "red wings fans loudly boo dylan larkin before home opener",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T23:15:30.378218Z"
     }
   ]
 }
