@@ -12,7 +12,7 @@
   "design": {
     "status": "frozen",
     "right_circle": "fully inset; never clipped",
-    "wordmark": "B logo tile with gold keyline on headers; wordmark file kept for legacy use",
+    "wordmark": "B from the official wordmark on headers; wordmark file kept for legacy use",
     "footer": "transparent cream/gold/cream rink divider with centered gold ring"
   }
 }

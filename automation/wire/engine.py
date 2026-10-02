@@ -90,7 +90,7 @@ CHANNEL_COLORS = {
 
 WEBHOOK_AVATAR = (
     "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
-    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=2"
+    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=3"
 )
 
 

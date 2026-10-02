@@ -72,18 +72,21 @@ def draw_wordmark(draw: ImageDraw.ImageDraw, center_x: int, top_y: int, max_widt
     draw.text((center_x - (est_box[2] - est_box[0]) // 2, top_y + 96), est, font=est_font, fill=GOLD)
 
 
-LOGO_SOURCE = ROOT / "brand" / "primary" / "blha-b-logo-source.png"
+B_MARK = ROOT / "brand" / "primary" / "blha-b-mark.png"
 
 
-def logo_tile(size: int) -> Image.Image:
-    """The B logo as a rounded tile with a gold keyline."""
-    logo = Image.open(LOGO_SOURCE).convert("RGB").resize((size, size), Image.LANCZOS)
-    mask = Image.new("L", (size, size), 0)
-    ImageDraw.Draw(mask).rounded_rectangle((0, 0, size - 1, size - 1), radius=size // 8, fill=255)
-    tile = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    tile.paste(logo, (0, 0), mask)
-    ImageDraw.Draw(tile).rounded_rectangle((0, 0, size - 1, size - 1), radius=size // 8, outline=GOLD, width=6)
-    return tile
+def b_mark(height: int) -> Image.Image:
+    """The B cut from the official BLHA wordmark (white fill, black/gold keylines)."""
+    mark = Image.open(B_MARK).convert("RGBA")
+    return mark.resize((round(mark.width * height / mark.height), height), Image.LANCZOS)
+
+
+def b_icon(size: int) -> Image.Image:
+    """Square icon: the B centered on near-black."""
+    icon = Image.new("RGBA", (size, size), BLACK + (255,))
+    mark = b_mark(round(size * 0.66))
+    icon.alpha_composite(mark, ((size - mark.width) // 2, (size - mark.height) // 2))
+    return icon
 
 
 def make_header(title: str, kicker: str) -> Image.Image:
@@ -103,8 +106,8 @@ def make_header(title: str, kicker: str) -> Image.Image:
         fill=MUTED,
     )
 
-    size = 400
-    image.alpha_composite(logo_tile(size), (width - 80 - size, (height - 8 - size) // 2))
+    mark = b_mark(380)
+    image.alpha_composite(mark, (width - 110 - mark.width, (height - 12 - mark.height) // 2))
 
     draw.rectangle((0, height - 12, width, height), fill=GOLD)
     return image.convert("RGB")
@@ -192,6 +195,8 @@ def main():
     footer_path = WEBHOOKS / "shared" / "blha-footer-divider-1600x90.png"
     save_png(footer_path, make_footer())
 
+    save_png(WEBHOOKS / "avatar" / "blha-webhook-avatar-512.png", b_icon(512).convert("RGB"))
+    save_png(ROOT / "discord" / "server" / "blha-server-icon-1024.png", b_icon(1024).convert("RGB"))
     wordmark = Image.new("RGBA", (640, 170), (0, 0, 0, 0))
     draw_wordmark(ImageDraw.Draw(wordmark), 320, 12, max_width=430)
     save_png(WEBHOOKS / "shared" / "blha-banner-wordmark.png", wordmark)
@@ -214,14 +219,14 @@ def main():
         "design": {
             "status": "frozen",
             "right_circle": "fully inset; never clipped",
-            "wordmark": "B logo tile with gold keyline on headers; wordmark file kept for legacy use",
+            "wordmark": "B from the official wordmark on headers; wordmark file kept for legacy use",
             "footer": "transparent cream/gold/cream rink divider with centered gold ring",
         },
     }
     (WEBHOOKS / "BLHA_Phase_2C6_Hosting_Manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
     (WEBHOOKS / "README.md").write_text(
-        """# BLHA Phase 2C.6 — Frozen Discohook Standard\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x533\n- Header embed side color: #2B2D31\n- Footer: transparent 1600x180 PNG (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right side carries the B logo tile with a gold keyline (brand/primary/blha-b-logo-source.png).\n- Headers are 3:1 with large type; header URLs carry a ?v= cache-busting query.\n- All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.\n\nThis Phase 2C.6 visual format is frozen. Future content may change; the layout standard should not change without an explicit design revision.\n""",
+        """# BLHA Phase 2C.6 — Frozen Discohook Standard\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x533\n- Header embed side color: #2B2D31\n- Footer: transparent 1600x180 PNG (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right side carries the B logo tile with a gold keyline (brand/primary/blha-b-mark.png).\n- Headers are 3:1 with large type; header URLs carry a ?v= cache-busting query.\n- All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.\n\nThis Phase 2C.6 visual format is frozen. Future content may change; the layout standard should not change without an explicit design revision.\n""",
         encoding="utf-8",
     )
 

@@ -24,7 +24,7 @@ TEMPLATES = ROOT / "templates"
 BASE = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/"
 FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
 FOOTER_URL = FOOTER_BASE_URL + "?v=2c6-frozen"
-HEADER_VERSION = "?v=3-b-logo"
+HEADER_VERSION = "?v=4-b-mark"
 HEADER_COLOR = int("2B2D31", 16)
 ZWSP = "\u200b"
 

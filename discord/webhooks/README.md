@@ -7,7 +7,7 @@ Canonical hosted graphics for BLHA Discohook messages.
 - Footer: transparent 1600x180 PNG (legacy filename retained)
 - Gold: #FFB81C
 - Cream: #F4EFE4
-- Right side carries the B logo tile with a gold keyline (brand/primary/blha-b-logo-source.png).
+- Right side carries the B logo tile with a gold keyline (brand/primary/blha-b-mark.png).
 - Headers are 3:1 with large type; header URLs carry a ?v= cache-busting query.
 - All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.
 
