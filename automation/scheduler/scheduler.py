@@ -28,10 +28,12 @@ from typing import Any, Iterable
 from zoneinfo import ZoneInfo
 
 import requests
-import yaml
 
 ROOT = Path(__file__).resolve().parent
-CONFIG_PATH = ROOT / "schedule.yaml"
+sys.path.insert(0, str(ROOT.parent))
+
+from blha.schedule import SCHEDULE_PATH as CONFIG_PATH  # noqa: E402
+from blha.schedule import current_phase, job_active, load_schedule  # noqa: E402
 
 # Runs that ended this way did no work, so they do not count as the job having
 # run. Failed runs DO count: retrying a failing job every 15 minutes would only
@@ -126,6 +128,15 @@ def decide(
         slot_text = slot.astimezone(tz).strftime("%a %H:%M %Z")
         if last is None or last < slot:
             return Decision(job_id, workflow, True, f"slot {slot_text} not yet run (last {last_text})")
+        # Optional retries: if every live run since the slot failed, try again
+        # at the next check, up to retry_failures extra attempts.
+        retries = int(job.get("retry_failures") or 0)
+        since = sorted(
+            (r for r in runs if is_live_run(r) and (parse_dt(r.get("created_at")) or slot) >= slot),
+            key=lambda r: str(r.get("created_at")),
+        )
+        if retries and since and all(r.get("conclusion") == "failure" for r in since) and len(since) <= retries:
+            return Decision(job_id, workflow, True, f"slot {slot_text} failed {len(since)}x; retrying")
         return Decision(job_id, workflow, False, f"slot {slot_text} already ran")
 
     raise ValueError(f"job {job_id} needs every_minutes or daily_at")
@@ -164,10 +175,7 @@ class GitHub:
 
 
 def load_config() -> dict[str, Any]:
-    data = yaml.safe_load(CONFIG_PATH.read_text(encoding="utf-8")) or {}
-    if not isinstance(data.get("jobs"), list) or not data["jobs"]:
-        raise ValueError("schedule.yaml must define a non-empty jobs list")
-    return data
+    return load_schedule(CONFIG_PATH)
 
 
 def main() -> int:
@@ -189,9 +197,17 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     gh = GitHub(token, repository, api_base)
 
-    print(f"BLHA SCHEDULER now={now.astimezone(tz).strftime('%Y-%m-%d %H:%M %Z')} dry_run={args.dry_run} ref={ref}")
+    phase, phase_text = current_phase(now)
+    print(
+        f"BLHA SCHEDULER now={now.astimezone(tz).strftime('%Y-%m-%d %H:%M %Z')} "
+        f"season={phase_text} dry_run={args.dry_run} ref={ref}"
+    )
     started = errors = 0
     for job in cfg["jobs"]:
+        active, why = job_active(job, phase)
+        if not active:
+            print(f"OFF     {job.get('id')}: {why}")
+            continue
         try:
             decision = decide(job, gh.recent_runs(str(job["workflow"])), now, tz, tolerance)
         except Exception as exc:

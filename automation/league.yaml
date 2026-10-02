@@ -1,0 +1,33 @@
+# League-wide settings shared by every BLHA automation.
+#
+# When the real 2027-28 league is created on Fantrax, change league_id and
+# season_label here. Everything else (week dates, playoff weeks, number of
+# playoff teams, the season calendar) is read from Fantrax automatically.
+
+league_id: w02cjakmmumb3lur
+season_label: "2026-27 TEST"
+timezone: America/New_York
+
+# BLHA gold accent used by Competition Desk posts.
+color: 0xFFB81C
+
+competition:
+  # The weekly report goes out at or after this local time on the morning a
+  # fantasy week ends (normally Monday).
+  report_time: "08:00"
+
+  # Playoff race posts begin with this week's report and run through the
+  # last regular-season week.
+  playoff_race_start_week: 16
+
+  # Teams just below the playoff line shown in the playoff race.
+  bubble_depth: 3
+
+  # GitHub Actions secret holding each channel's Discord webhook URL.
+  webhooks:
+    recap: BLHA_WEBHOOK_WEEKLY_RECAP
+    standings: BLHA_WEBHOOK_STANDINGS
+    playoff_race: BLHA_WEBHOOK_PLAYOFF_RACE
+    preview: BLHA_WEBHOOK_SCOREBOARD
+    scoreboard: BLHA_WEBHOOK_SCOREBOARD
+    playoffs: BLHA_WEBHOOK_PLAYOFFS

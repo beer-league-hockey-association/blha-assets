@@ -4,11 +4,22 @@
 # (cron-job.org), with GitHub's own cron as a backup. On every start it checks
 # each job below and starts the ones that are due, in live mode.
 #
-# Two kinds of timing:
+# Timing:
 #   every_minutes: start the job when its last live run is at least this old.
 #   daily_at:      start the job once after each listed local time. If the
 #                  scheduler was late or down, the job runs at the next check
 #                  instead of being skipped.
+#   retry_failures: for daily jobs, re-run at the next check if the run
+#                  failed, up to this many extra attempts.
+#
+# Season calendar:
+#   phases: only run during these parts of the Fantrax season:
+#           preseason, regular, playoffs, offseason.
+#           The current phase comes from Fantrax's own week dates.
+#           Jobs without phases run all year.
+#
+# Manual runs from the Actions tab ignore all of this, so any feature can be
+# tested at any time.
 #
 # Times are America/New_York wall-clock times, so they stay fixed across
 # daylight saving changes.
@@ -20,6 +31,7 @@ timezone: America/New_York
 interval_tolerance_minutes: 5
 
 jobs:
+  # All year: dynasty news matters in the offseason too.
   - id: wire-engine
     workflow: blha-wire-engine.yml
     every_minutes: 15
@@ -32,26 +44,24 @@ jobs:
     workflow: blha-automation-health.yml
     every_minutes: 60
 
-  - id: matchup-preview
-    workflow: blha-fantrax-matchup-preview.yml
-    every_minutes: 360
+  # Weekly report: recap, standings, playoff race (from week 16), preview.
+  # The 08:00 check posts the report the morning a fantasy week ends; the
+  # 20:00 check only posts anything Fantrax was not ready for in the morning.
+  - id: competition-desk
+    workflow: blha-competition-desk.yml
+    daily_at: ["08:00", "20:00"]
+    retry_failures: 3
+    phases: [preseason, regular, playoffs]
 
-  - id: playoffs
-    workflow: blha-fantrax-playoffs.yml
-    every_minutes: 360
-
+  # One live-updating scoreboard message per week. Edits are silent, so an
+  # hourly refresh keeps it current without notifying anyone.
   - id: scoreboard
     workflow: blha-fantrax-scoreboard.yml
-    daily_at: ["02:30", "19:15"]
+    every_minutes: 60
+    phases: [regular, playoffs]
 
-  - id: standings
-    workflow: blha-fantrax-standings.yml
-    daily_at: ["07:30"]
-
-  - id: playoff-race
-    workflow: blha-fantrax-playoff-race.yml
-    daily_at: ["08:15"]
-
-  - id: weekly-recap
-    workflow: blha-fantrax-weekly-recap.yml
-    daily_at: ["08:45"]
+  # Live bracket; saves seeds automatically after the final regular week.
+  - id: playoffs
+    workflow: blha-fantrax-playoffs.yml
+    every_minutes: 60
+    phases: [playoffs]

@@ -1,0 +1,87 @@
+name: BLHA Competition Desk
+run-name: BLHA Competition Desk — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# Weekly report: recap, standings, playoff race (from week 16), matchup preview.
+# Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler starts
+# this workflow with mode=live at 08:00 and 20:00 ET during the season.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log only; test = [TEST] posts; live = post what is due"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+      item:
+        description: "Which post (preview/test), or limit a live run"
+        required: false
+        default: all
+        type: choice
+        options: [all, recap, standings, race, preview]
+      week:
+        description: "Week to render (preview/test only; blank = current)"
+        required: false
+        default: ""
+        type: string
+      force:
+        description: "Live only: repost items already posted for their week"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-competition-desk
+  cancel-in-progress: false
+
+jobs:
+  desk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      ITEM: ${{ inputs.item || 'all' }}
+      WEEK: ${{ inputs.week }}
+      FORCE: ${{ inputs.force || false }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run Competition Desk
+        env:
+          BLHA_WEBHOOK_WEEKLY_RECAP: ${{ secrets.BLHA_WEBHOOK_WEEKLY_RECAP }}
+          BLHA_WEBHOOK_STANDINGS: ${{ secrets.BLHA_WEBHOOK_STANDINGS }}
+          BLHA_WEBHOOK_PLAYOFF_RACE: ${{ secrets.BLHA_WEBHOOK_PLAYOFF_RACE }}
+          BLHA_WEBHOOK_SCOREBOARD: ${{ secrets.BLHA_WEBHOOK_SCOREBOARD }}
+        shell: bash
+        run: |
+          ARGS=(--mode "$MODE" --item "$ITEM")
+          if [[ -n "$WEEK" ]]; then ARGS+=(--week "$WEEK"); fi
+          if [[ "$FORCE" == "true" ]]; then ARGS+=(--force); fi
+          python automation/competition/desk.py "${ARGS[@]}"
+
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Persist Competition Desk state
+        if: ${{ !cancelled() && env.MODE == 'live' }}
+        shell: bash
+        run: |
+          bash automation/tools/persist_state.sh \
+            automation/competition/state/competition.json \
+            "chore(competition): persist report state [skip ci]" \
+            "BLHA Fantrax Automation"

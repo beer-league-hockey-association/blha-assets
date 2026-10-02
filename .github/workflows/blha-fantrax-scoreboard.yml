@@ -1,26 +1,24 @@
 name: BLHA Fantrax Scoreboard
 run-name: BLHA Fantrax Scoreboard — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
+# One live-updating scoreboard message per week.
+# Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler starts
+# this workflow with mode=live hourly during the regular season and playoffs.
+
 on:
-  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
-  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:
-        description: "Scoreboard mode"
+        description: "preview = log only; test = post a [TEST] scoreboard; live = update the live message"
         required: true
         default: preview
         type: choice
-        options: [preview, test, baseline, live]
-      period:
-        description: "Optional scoring period override; leave blank for current period"
+        options: [preview, test, live]
+      week:
+        description: "Week to render (preview/test only; blank = current)"
         required: false
+        default: ""
         type: string
-      force:
-        description: "Force a live post even if scoreboard is unchanged"
-        required: true
-        default: false
-        type: boolean
 
 permissions:
   contents: write
@@ -32,10 +30,10 @@ concurrency:
 jobs:
   scoreboard:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     env:
-      INPUT_MODE: ${{ inputs.mode }}
-      INPUT_PERIOD: ${{ inputs.period }}
-      INPUT_FORCE: ${{ inputs.force }}
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      WEEK: ${{ inputs.week }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -52,31 +50,20 @@ jobs:
       - name: Install dependencies
         run: pip install -r automation/common-requirements.txt
 
-      - name: Run Fantrax scoreboard automation
+      - name: Update live scoreboard
         env:
           BLHA_WEBHOOK_SCOREBOARD: ${{ secrets.BLHA_WEBHOOK_SCOREBOARD }}
         shell: bash
         run: |
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            echo "Scheduled scoreboard snapshot -> LIVE mode"
-            python automation/phase-2d3/scoreboard.py --mode live
-            exit $?
-          fi
-
-          ARGS=(--mode "$INPUT_MODE")
-          if [[ "$INPUT_FORCE" == "true" ]]; then
-            ARGS+=(--force)
-          fi
-          if [[ -n "$INPUT_PERIOD" ]]; then
-            ARGS+=(--period "$INPUT_PERIOD")
-          fi
-          python automation/phase-2d3/scoreboard.py "${ARGS[@]}"
+          ARGS=(--mode "$MODE")
+          if [[ -n "$WEEK" ]]; then ARGS+=(--week "$WEEK"); fi
+          python automation/competition/scoreboard.py "${ARGS[@]}"
 
       - name: Persist scoreboard state
-        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        if: ${{ !cancelled() && env.MODE == 'live' }}
         shell: bash
         run: |
           bash automation/tools/persist_state.sh \
-            automation/phase-2d3/state/scoreboard.json \
+            automation/competition/state/scoreboard.json \
             "chore(fantrax): persist scoreboard state [skip ci]" \
             "BLHA Fantrax Automation"

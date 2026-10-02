@@ -83,7 +83,7 @@ jobs:
           fi
 
       - name: Persist League Office state
-        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && !cancelled() }}
         shell: bash
         run: |
           bash automation/tools/persist_state.sh \

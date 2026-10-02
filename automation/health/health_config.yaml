@@ -34,32 +34,20 @@ workflows:
     file: "blha-league-office.yml"
     max_age_minutes: 180
 
-  - id: matchup-preview
-    name: "BLHA Fantrax Matchup Preview"
-    file: "blha-fantrax-matchup-preview.yml"
-    max_age_minutes: 600
+  - id: competition-desk
+    name: "BLHA Competition Desk"
+    file: "blha-competition-desk.yml"
+    # Checks at 08:00 and 20:00 during the season.
+    max_age_minutes: 900
 
   - id: scoreboard
     name: "BLHA Fantrax Scoreboard"
     file: "blha-fantrax-scoreboard.yml"
-    max_age_minutes: 1200
-
-  - id: standings
-    name: "BLHA Fantrax Standings"
-    file: "blha-fantrax-standings.yml"
-    max_age_minutes: 2160
-
-  - id: weekly-recap
-    name: "BLHA Fantrax Weekly Recap"
-    file: "blha-fantrax-weekly-recap.yml"
-    max_age_minutes: 2160
-
-  - id: playoff-race
-    name: "BLHA Fantrax Playoff Race"
-    file: "blha-fantrax-playoff-race.yml"
-    max_age_minutes: 2160
+    # Hourly during the regular season and playoffs.
+    max_age_minutes: 180
 
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"
-    max_age_minutes: 600
+    # Hourly during the playoff weeks only.
+    max_age_minutes: 180

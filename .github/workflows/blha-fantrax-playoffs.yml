@@ -1,25 +1,27 @@
 name: BLHA Fantrax Playoffs
 run-name: BLHA Fantrax Playoffs — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
+# Live playoff bracket. Seeds are saved automatically after the final
+# regular-season week. Timing lives in automation/scheduler/schedule.yaml; the
+# BLHA Scheduler starts this workflow with mode=live hourly during playoff weeks.
+
 on:
-  # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler
-  # starts this workflow with mode=live when it is due.
   workflow_dispatch:
     inputs:
       mode:
-        description: "Playoff automation mode"
+        description: "preview = log only; test = post a [TEST] bracket; baseline = save seeds now; live = update the bracket"
         required: true
         default: preview
         type: choice
         options: [preview, test, baseline, live]
-      period:
-        description: "Optional playoff period override for testing (23, 24, or 25)"
+      week:
+        description: "Render as if this playoff week were current (preview/test only)"
         required: false
         default: ""
         type: string
       force:
-        description: "Force a live Discord post even if unchanged"
-        required: true
+        description: "Live only: post a new bracket message even if unchanged"
+        required: false
         default: false
         type: boolean
 
@@ -33,10 +35,11 @@ concurrency:
 jobs:
   playoffs:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     env:
-      INPUT_MODE: ${{ inputs.mode }}
-      INPUT_PERIOD: ${{ inputs.period }}
-      INPUT_FORCE: ${{ inputs.force }}
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      WEEK: ${{ inputs.week }}
+      FORCE: ${{ inputs.force || false }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -53,30 +56,21 @@ jobs:
       - name: Install dependencies
         run: pip install -r automation/common-requirements.txt
 
-      - name: Run Fantrax playoff automation
+      - name: Run playoff bracket
         env:
           BLHA_WEBHOOK_PLAYOFFS: ${{ secrets.BLHA_WEBHOOK_PLAYOFFS }}
         shell: bash
         run: |
-          if [[ "${{ github.event_name }}" == "schedule" ]]; then
-            python automation/phase-2d5/runner.py --mode live
-            exit $?
-          fi
-
-          ARGS=(--mode "$INPUT_MODE")
-          if [[ -n "$INPUT_PERIOD" ]]; then
-            ARGS+=(--period "$INPUT_PERIOD")
-          fi
-          if [[ "$INPUT_FORCE" == "true" ]]; then
-            ARGS+=(--force)
-          fi
-          python automation/phase-2d5/runner.py "${ARGS[@]}"
+          ARGS=(--mode "$MODE")
+          if [[ -n "$WEEK" ]]; then ARGS+=(--week "$WEEK"); fi
+          if [[ "$FORCE" == "true" ]]; then ARGS+=(--force); fi
+          python automation/playoffs/playoff.py "${ARGS[@]}"
 
       - name: Persist playoff state
-        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'baseline' || inputs.mode == 'live') && success() }}
+        if: ${{ !cancelled() && (env.MODE == 'live' || env.MODE == 'baseline') }}
         shell: bash
         run: |
           bash automation/tools/persist_state.sh \
-            automation/phase-2d5/state/playoff.json \
+            automation/playoffs/state/playoff.json \
             "chore(fantrax): persist playoff state [skip ci]" \
             "BLHA Fantrax Automation"

@@ -29,6 +29,7 @@ if str(AUTOMATION_ROOT) not in sys.path:
     sys.path.insert(0, str(AUTOMATION_ROOT))
 
 from discord_webhook import post_discord_webhook
+from blha.schedule import current_season, job_active, load_schedule
 
 CONFIG_PATH = ROOT / "health_config.yaml"
 STATE_PATH = ROOT / "state" / "health.json"
@@ -279,6 +280,16 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
     settings = cfg.get("settings") or {}
     source_threshold = int(settings.get("wire_persistent_source_runs") or 3)
 
+    # Workflows the scheduler is not running in this part of the season
+    # (for example the scoreboard in the offseason) are not expected to be fresh.
+    phase, phase_text, phase_started = current_season(current)
+    print(f"HEALTH season={phase_text}")
+    try:
+        jobs_by_file = {str(job["workflow"]): job for job in load_schedule()["jobs"]}
+    except Exception as exc:
+        print(f"HEALTH WARNING: could not read schedule.yaml: {exc}")
+        jobs_by_file = {}
+
     for item in cfg.get("workflows") or []:
         if not isinstance(item, dict):
             continue
@@ -287,6 +298,15 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
         workflow_file = str(item.get("file") or "").strip()
         max_age = int(item.get("max_age_minutes") or 0)
         if not workflow_file or max_age <= 0:
+            continue
+        job = jobs_by_file.get(workflow_file, {})
+        active, why = job_active(job, phase)
+        if not active:
+            print(f"HEALTH SKIP [{workflow_id}]: {why}")
+            continue
+        # A job that just switched on with the season gets max_age to run once.
+        if job.get("phases") and phase_started and (current - phase_started).total_seconds() < max_age * 60:
+            print(f"HEALTH SKIP [{workflow_id}]: {phase} began recently; allowing first run")
             continue
 
         try:
