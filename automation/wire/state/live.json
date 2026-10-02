@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T17:45:29.814676Z",
+  "updated_at": "2026-10-02T18:15:38.204023Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1652,6 +1652,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T17:45:29.778089Z"
+    },
+    {
+      "key": "62f890944942e47687a81e4c",
+      "url": "https://theahl.com/news/storylines-to-watch-in-2026-27",
+      "fingerprint": "c1e98200e93a6014",
+      "title_norm": "storylines to watch in 2026-27",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-02T18:15:37.670964Z"
+    },
+    {
+      "key": "25932b55f6f007a04d9e4fd5",
+      "url": "https://www.flohockey.tv/articles/16220256-top-nhl-prospects-in-ahls-central-division",
+      "fingerprint": "a653781753512b9e",
+      "title_norm": "augustine and stramel lead top nhl prospects in ahl central division",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-02T18:15:37.868352Z"
+    },
+    {
+      "key": "b69d938be4b5dc3ebf59f359",
+      "url": "https://www.sportsnet.ca/nhl/article/when-signing-an-rfa-to-a-long-term-deal-can-be-the-wrong-call",
+      "fingerprint": "1307eff96ce6e790",
+      "title_norm": "when signing an rfa to a long-term deal can be the wrong call",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-02T18:15:38.159078Z"
     }
   ]
 }
