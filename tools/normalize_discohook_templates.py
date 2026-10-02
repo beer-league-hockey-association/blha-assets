@@ -24,17 +24,18 @@ TEMPLATES = ROOT / "templates"
 BASE = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/"
 FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
 FOOTER_URL = FOOTER_BASE_URL + "?v=2c6-frozen"
+HEADER_VERSION = "?v=3-b-logo"
 HEADER_COLOR = int("2B2D31", 16)
 ZWSP = "\u200b"
 
 INTRO_HEADERS = {
-    "welcome/01_welcome.json": BASE + "welcome/blha-welcome-banner.png",
-    "league-office/01_constitution_channel_intro.json": BASE + "league-office/blha-constitution-header.png",
-    "league-office/02_announcements_channel_intro.json": BASE + "league-office/blha-announcements-header.png",
-    "league-office/03_calendar_channel_intro.json": BASE + "league-office/blha-calendar-header.png",
-    "league-office/04_ledger_channel_intro.json": BASE + "league-office/blha-ledger-header.png",
-    "league-office/05_voting_channel_intro.json": BASE + "league-office/blha-voting-header.png",
-    "draft-center/06_draft_center_intro.json": BASE + "draft-center/blha-draft-center-header.png",
+    "welcome/01_welcome.json": BASE + "welcome/blha-welcome-banner.png" + HEADER_VERSION,
+    "league-office/01_constitution_channel_intro.json": BASE + "league-office/blha-constitution-header.png" + HEADER_VERSION,
+    "league-office/02_announcements_channel_intro.json": BASE + "league-office/blha-announcements-header.png" + HEADER_VERSION,
+    "league-office/03_calendar_channel_intro.json": BASE + "league-office/blha-calendar-header.png" + HEADER_VERSION,
+    "league-office/04_ledger_channel_intro.json": BASE + "league-office/blha-ledger-header.png" + HEADER_VERSION,
+    "league-office/05_voting_channel_intro.json": BASE + "league-office/blha-voting-header.png" + HEADER_VERSION,
+    "draft-center/06_draft_center_intro.json": BASE + "draft-center/blha-draft-center-header.png" + HEADER_VERSION,
 }
 
 

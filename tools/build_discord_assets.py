@@ -72,29 +72,41 @@ def draw_wordmark(draw: ImageDraw.ImageDraw, center_x: int, top_y: int, max_widt
     draw.text((center_x - (est_box[2] - est_box[0]) // 2, top_y + 96), est, font=est_font, fill=GOLD)
 
 
+LOGO_SOURCE = ROOT / "brand" / "primary" / "blha-b-logo-source.png"
+
+
+def logo_tile(size: int) -> Image.Image:
+    """The B logo as a rounded tile with a gold keyline."""
+    logo = Image.open(LOGO_SOURCE).convert("RGB").resize((size, size), Image.LANCZOS)
+    mask = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, size - 1, size - 1), radius=size // 8, fill=255)
+    tile = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    tile.paste(logo, (0, 0), mask)
+    ImageDraw.Draw(tile).rounded_rectangle((0, 0, size - 1, size - 1), radius=size // 8, outline=GOLD, width=6)
+    return tile
+
+
 def make_header(title: str, kicker: str) -> Image.Image:
-    width, height = 1600, 300
+    """3:1 header, 1600x533, large type and the B logo on the right."""
+    width, height = 1600, 533
     image = Image.new("RGBA", (width, height), BG + (255,))
     image = add_texture(image, seed=2026 + len(title))
     draw = ImageDraw.Draw(image)
 
-    draw.rectangle((72, 48, 84, 248), fill=GOLD)
-    draw.text((120, 54), kicker, font=fit_font(kicker, FONT_MONO, 24, 850, 18), fill=GOLD)
-    draw.text((120, 100), title, font=fit_font(title, FONT_BOLD, 62, 1000, 38), fill=CREAM)
+    draw.rectangle((72, 80, 90, 453), fill=GOLD)
+    draw.text((130, 90), kicker, font=fit_font(kicker, FONT_MONO, 40, 900, 24), fill=GOLD)
+    draw.text((130, 160), title, font=fit_font(title, FONT_BOLD, 128, 930, 56), fill=CREAM)
     draw.text(
-        (120, 188),
+        (130, 360),
         "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026",
-        font=ImageFont.truetype(FONT_REG, 25),
+        font=fit_font("BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026", FONT_REG, 40, 930, 24),
         fill=MUTED,
     )
 
-    cx, cy, radius = 1414, 172, 105
-    draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), outline=GOLD, width=5)
-    draw.line((cx, cy - radius + 1, cx, cy + radius - 1), fill=CREAM, width=3)
-    draw.ellipse((cx - 11, cy - 11, cx + 11, cy + 11), fill=GOLD)
-    draw_wordmark(draw, cx, 20)
+    size = 400
+    image.alpha_composite(logo_tile(size), (width - 80 - size, (height - 8 - size) // 2))
 
-    draw.rectangle((0, height - 8, width, height), fill=GOLD)
+    draw.rectangle((0, height - 12, width, height), fill=GOLD)
     return image.convert("RGB")
 
 
@@ -134,7 +146,7 @@ def save_png(path: Path, image: Image.Image):
 
 
 def build_preview(entries: list[tuple[Path, str]], footer_path: Path):
-    sheet = Image.new("RGBA", (1320, 980), (26, 27, 30, 255))
+    sheet = Image.new("RGBA", (1320, 1260), (26, 27, 30, 255))
     draw = ImageDraw.Draw(sheet)
     draw.text(
         (30, 24),
@@ -147,12 +159,12 @@ def build_preview(entries: list[tuple[Path, str]], footer_path: Path):
     for i, (path, title) in enumerate(entries):
         row, col = divmod(i, 2)
         x = 30 + col * 650
-        y = 82 + row * 170
-        thumb = Image.open(path).convert("RGBA").resize((640, 120), Image.Resampling.LANCZOS)
+        y = 82 + row * 250
+        thumb = Image.open(path).convert("RGBA").resize((640, 213), Image.Resampling.LANCZOS)
         sheet.alpha_composite(thumb, (x, y))
-        draw.text((x, y + 127), title, font=label_font, fill=MUTED)
+        draw.text((x, y + 218), title, font=label_font, fill=MUTED)
 
-    footer_y = 790
+    footer_y = 1080
     draw.text((30, footer_y), "SHARED TRANSPARENT FOOTER DIVIDER", font=label_font, fill=MUTED)
     footer = Image.open(footer_path).convert("RGBA").resize((1260, 142), Image.Resampling.LANCZOS)
     sheet.alpha_composite(footer, (30, footer_y + 28))
@@ -194,7 +206,7 @@ def main():
 
     manifest = {
         "phase": "2C.6-frozen",
-        "header_dimensions": "1600x300",
+        "header_dimensions": "1600x533",
         "header_embed_color": "#2B2D31",
         "footer_dimensions": "1600x180 (legacy filename retained for stable URLs)",
         "footer_background": "transparent",
@@ -202,14 +214,14 @@ def main():
         "design": {
             "status": "frozen",
             "right_circle": "fully inset; never clipped",
-            "wordmark": "white BLHA lettering with black keyline and gold outer edge; no white card",
+            "wordmark": "B logo tile with gold keyline on headers; wordmark file kept for legacy use",
             "footer": "transparent cream/gold/cream rink divider with centered gold ring",
         },
     }
     (WEBHOOKS / "BLHA_Phase_2C6_Hosting_Manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
     (WEBHOOKS / "README.md").write_text(
-        """# BLHA Phase 2C.6 — Frozen Discohook Standard\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x300\n- Header embed side color: #2B2D31\n- Footer: transparent 1600x180 PNG (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right-side rink circle is fully inset.\n- BLHA lettering is white with black/gold keylines and no white logo card.\n- All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.\n\nThis Phase 2C.6 visual format is frozen. Future content may change; the layout standard should not change without an explicit design revision.\n""",
+        """# BLHA Phase 2C.6 — Frozen Discohook Standard\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x533\n- Header embed side color: #2B2D31\n- Footer: transparent 1600x180 PNG (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right side carries the B logo tile with a gold keyline (brand/primary/blha-b-logo-source.png).\n- Headers are 3:1 with large type; header URLs carry a ?v= cache-busting query.\n- All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.\n\nThis Phase 2C.6 visual format is frozen. Future content may change; the layout standard should not change without an explicit design revision.\n""",
         encoding="utf-8",
     )
 

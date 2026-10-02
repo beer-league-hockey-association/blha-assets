@@ -1,6 +1,6 @@
 {
   "phase": "2C.6-frozen",
-  "header_dimensions": "1600x300",
+  "header_dimensions": "1600x533",
   "header_embed_color": "#2B2D31",
   "footer_dimensions": "1600x180 (legacy filename retained for stable URLs)",
   "footer_background": "transparent",
@@ -12,7 +12,7 @@
   "design": {
     "status": "frozen",
     "right_circle": "fully inset; never clipped",
-    "wordmark": "white BLHA lettering with black keyline and gold outer edge; no white card",
+    "wordmark": "B logo tile with gold keyline on headers; wordmark file kept for legacy use",
     "footer": "transparent cream/gold/cream rink divider with centered gold ring"
   }
 }
