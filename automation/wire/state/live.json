@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T22:00:41.884922Z",
+  "updated_at": "2026-10-02T22:15:34.734701Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1742,6 +1742,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T22:00:41.849193Z"
+    },
+    {
+      "key": "fbd483182a1f3586706f54ec",
+      "url": "https://www.flohockey.tv/articles/16220898-why-the-ahl-is-must-watch-hockey-this-season",
+      "fingerprint": "c47e74ec7f076e55",
+      "title_norm": "why the ahl is must-watch hockey this season",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-02T22:15:34.113310Z"
+    },
+    {
+      "key": "0191dbfe6a8e3945dad370ae",
+      "url": "https://www.dailyfaceoff.com/players/news/andreas-englund/2716",
+      "fingerprint": "3663311237919de2",
+      "title_norm": "andreas englund (det) — the red wings have activated andreas englund from the immigration non-roster list.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-02T22:15:34.433648Z"
+    },
+    {
+      "key": "37966100ee545a45dcf24109",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-larkin/2522",
+      "fingerprint": "6652c333c0679236",
+      "title_norm": "dylan larkin (det) — the red wings have placed dylan larkin (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-02T22:15:34.649745Z"
     }
   ]
 }
