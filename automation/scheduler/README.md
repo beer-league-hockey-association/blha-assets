@@ -25,7 +25,17 @@ skipped; it simply runs at the next check. Duplicate checks are harmless.
 Edit `schedule.yaml`. Nothing else needs to change.
 
 - `every_minutes: 15` — run when the last live run is at least 15 minutes old.
-- `daily_at: ["07:30"]` — run once after each listed time (Eastern, DST-safe).
+- `daily_at: ["08:00"]` — run once after each listed time (Eastern, DST-safe).
+- `retry_failures: 3` — for daily jobs, if the run failed, try again at the
+  next check, up to 3 more times.
+- `phases: [regular, playoffs]` — only run during these parts of the season.
+  Phases are `preseason`, `regular`, `playoffs` and `offseason`, worked out
+  from Fantrax's own week dates for the league in `automation/league.yaml`.
+  If Fantrax cannot be reached, the scheduler runs the job anyway rather than
+  silently skipping it.
+
+The log for each scheduler run starts with the current season phase, then
+lists every job as `STARTED`, `WAIT`, or `OFF` (not active this phase).
 
 Manual runs from the Actions tab still work exactly as before and still
 default to preview/shadow. Only runs named `… — live` count as the job having

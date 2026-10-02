@@ -1,0 +1,1957 @@
+{
+ "endDate": "2027-04-04",
+ "leagueName": "Dynasty Hockey Test League",
+ "matchups": [
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    }
+   ],
+   "period": 1
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    }
+   ],
+   "period": 2
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    }
+   ],
+   "period": 3
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    }
+   ],
+   "period": 4
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    }
+   ],
+   "period": 5
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    }
+   ],
+   "period": 6
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    }
+   ],
+   "period": 7
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    }
+   ],
+   "period": 8
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    }
+   ],
+   "period": 9
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    }
+   ],
+   "period": 10
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    }
+   ],
+   "period": 11
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    }
+   ],
+   "period": 12
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    }
+   ],
+   "period": 13
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    }
+   ],
+   "period": 14
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    }
+   ],
+   "period": 15
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    }
+   ],
+   "period": 16
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    }
+   ],
+   "period": 17
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    }
+   ],
+   "period": 18
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    }
+   ],
+   "period": 19
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    }
+   ],
+   "period": 20
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     }
+    },
+    {
+     "away": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     },
+     "home": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     }
+    },
+    {
+     "away": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     },
+     "home": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     }
+    },
+    {
+     "away": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     },
+     "home": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     }
+    },
+    {
+     "away": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     },
+     "home": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     }
+    },
+    {
+     "away": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    }
+   ],
+   "period": 21
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "id": "8j6llh6gmumuxose",
+      "name": "Test 4",
+      "shortName": "Test 4"
+     },
+     "home": {
+      "id": "4qdrdr4fmumuxplb",
+      "name": "Test 11",
+      "shortName": "Test 11"
+     }
+    },
+    {
+     "away": {
+      "id": "2tml63mumumuxoqh",
+      "name": "Test 3",
+      "shortName": "Test 3"
+     },
+     "home": {
+      "id": "vs89xezfmumuxp44",
+      "name": "Test 8",
+      "shortName": "Test 8"
+     }
+    },
+    {
+     "away": {
+      "id": "93rjspsjmumuxpqw",
+      "name": "Test 12",
+      "shortName": "Test 12"
+     },
+     "home": {
+      "id": "gobvt8opmumuxoxm",
+      "name": "Test 6",
+      "shortName": "Test 6"
+     }
+    },
+    {
+     "away": {
+      "id": "tau9p1cvmumuxout",
+      "name": "Test 5",
+      "shortName": "Test 5"
+     },
+     "home": {
+      "id": "mvh0gxh2mumuxoo4",
+      "name": "Test 2",
+      "shortName": "Test 2"
+     }
+    },
+    {
+     "away": {
+      "id": "qqpqauuamumuxp03",
+      "name": "Test 7",
+      "shortName": "Test 7"
+     },
+     "home": {
+      "id": "6bzildyomumuxpe6",
+      "name": "Test 10",
+      "shortName": "Test 10"
+     }
+    },
+    {
+     "away": {
+      "id": "w9j9rgr1mumuxp9e",
+      "name": "Test 9",
+      "shortName": "Test 9"
+     },
+     "home": {
+      "id": "gb4or3npmumb3mgv",
+      "name": "Test",
+      "shortName": "mgthree2"
+     }
+    }
+   ],
+   "period": 22
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "bye": true
+     },
+     "home": {
+      "seed": 1
+     }
+    },
+    {
+     "away": {
+      "seed": 5
+     },
+     "home": {
+      "seed": 4
+     }
+    },
+    {
+     "away": {
+      "bye": true
+     },
+     "home": {
+      "seed": 2
+     }
+    },
+    {
+     "away": {
+      "seed": 6
+     },
+     "home": {
+      "seed": 3
+     }
+    }
+   ],
+   "period": 23
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "seed": 4
+     },
+     "home": {
+      "seed": 1
+     }
+    },
+    {
+     "away": {
+      "seed": 3
+     },
+     "home": {
+      "seed": 2
+     }
+    }
+   ],
+   "period": 24
+  },
+  {
+   "matchupList": [
+    {
+     "away": {
+      "seed": 2
+     },
+     "home": {
+      "seed": 1
+     }
+    }
+   ],
+   "period": 25
+  }
+ ],
+ "playoffs": {
+  "firstPlayoffPeriod": 23,
+  "lastRegularSeasonPeriod": 22,
+  "mergePlayoffPeriods": false,
+  "numPlayoffTeams": 6,
+  "used": true
+ },
+ "scoringPeriods": [
+  {
+   "endDate": "2026-10-05T18:59:59.0-0400",
+   "number": 1,
+   "startDate": "2026-09-29T17:00:00.0-0400"
+  },
+  {
+   "endDate": "2026-10-12T12:59:59.0-0400",
+   "number": 2,
+   "startDate": "2026-10-05T19:00:00.0-0400"
+  },
+  {
+   "endDate": "2026-10-19T18:59:59.0-0400",
+   "number": 3,
+   "startDate": "2026-10-12T13:00:00.0-0400"
+  },
+  {
+   "endDate": "2026-10-26T18:59:59.0-0400",
+   "number": 4,
+   "startDate": "2026-10-19T19:00:00.0-0400"
+  },
+  {
+   "endDate": "2026-11-02T18:59:59.0-0500",
+   "number": 5,
+   "startDate": "2026-10-26T19:00:00.0-0400"
+  },
+  {
+   "endDate": "2026-11-09T19:59:59.0-0500",
+   "number": 6,
+   "startDate": "2026-11-02T19:00:00.0-0500"
+  },
+  {
+   "endDate": "2026-11-16T19:29:59.0-0500",
+   "number": 7,
+   "startDate": "2026-11-09T20:00:00.0-0500"
+  },
+  {
+   "endDate": "2026-11-23T18:59:59.0-0500",
+   "number": 8,
+   "startDate": "2026-11-16T19:30:00.0-0500"
+  },
+  {
+   "endDate": "2026-11-30T12:59:59.0-0500",
+   "number": 9,
+   "startDate": "2026-11-23T19:00:00.0-0500"
+  },
+  {
+   "endDate": "2026-12-07T12:59:59.0-0500",
+   "number": 10,
+   "startDate": "2026-11-30T13:00:00.0-0500"
+  },
+  {
+   "endDate": "2026-12-14T13:59:59.0-0500",
+   "number": 11,
+   "startDate": "2026-12-07T13:00:00.0-0500"
+  },
+  {
+   "endDate": "2026-12-21T13:59:59.0-0500",
+   "number": 12,
+   "startDate": "2026-12-14T14:00:00.0-0500"
+  },
+  {
+   "endDate": "2026-12-28T13:59:59.0-0500",
+   "number": 13,
+   "startDate": "2026-12-21T14:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-01-04T19:29:59.0-0500",
+   "number": 14,
+   "startDate": "2026-12-28T14:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-01-11T19:29:59.0-0500",
+   "number": 15,
+   "startDate": "2027-01-04T19:30:00.0-0500"
+  },
+  {
+   "endDate": "2027-01-18T13:29:59.0-0500",
+   "number": 16,
+   "startDate": "2027-01-11T19:30:00.0-0500"
+  },
+  {
+   "endDate": "2027-01-25T18:59:59.0-0500",
+   "number": 17,
+   "startDate": "2027-01-18T13:30:00.0-0500"
+  },
+  {
+   "endDate": "2027-02-01T13:59:59.0-0500",
+   "number": 18,
+   "startDate": "2027-01-25T19:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-02-15T13:59:59.0-0500",
+   "number": 19,
+   "startDate": "2027-02-01T14:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-02-22T13:59:59.0-0500",
+   "number": 20,
+   "startDate": "2027-02-15T14:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-03-01T18:59:59.0-0500",
+   "number": 21,
+   "startDate": "2027-02-22T14:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-03-08T18:59:59.0-0500",
+   "number": 22,
+   "startDate": "2027-03-01T19:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-03-15T14:59:59.0-0400",
+   "number": 23,
+   "startDate": "2027-03-08T19:00:00.0-0500"
+  },
+  {
+   "endDate": "2027-03-22T18:59:59.0-0400",
+   "number": 24,
+   "startDate": "2027-03-15T15:00:00.0-0400"
+  },
+  {
+   "endDate": "2027-04-05T13:59:59.0-0400",
+   "number": 25,
+   "startDate": "2027-03-22T19:00:00.0-0400"
+  }
+ ],
+ "seasonYear": 2026,
+ "startDate": "2026-09-29",
+ "teamInfo": {
+  "2tml63mumumuxoqh": {
+   "id": "2tml63mumumuxoqh",
+   "name": "Test 3"
+  },
+  "4qdrdr4fmumuxplb": {
+   "id": "4qdrdr4fmumuxplb",
+   "name": "Test 11"
+  },
+  "6bzildyomumuxpe6": {
+   "id": "6bzildyomumuxpe6",
+   "name": "Test 10"
+  },
+  "8j6llh6gmumuxose": {
+   "id": "8j6llh6gmumuxose",
+   "name": "Test 4"
+  },
+  "93rjspsjmumuxpqw": {
+   "id": "93rjspsjmumuxpqw",
+   "name": "Test 12"
+  },
+  "gb4or3npmumb3mgv": {
+   "id": "gb4or3npmumb3mgv",
+   "name": "Test"
+  },
+  "gobvt8opmumuxoxm": {
+   "id": "gobvt8opmumuxoxm",
+   "name": "Test 6"
+  },
+  "mvh0gxh2mumuxoo4": {
+   "id": "mvh0gxh2mumuxoo4",
+   "name": "Test 2"
+  },
+  "qqpqauuamumuxp03": {
+   "id": "qqpqauuamumuxp03",
+   "name": "Test 7"
+  },
+  "tau9p1cvmumuxout": {
+   "id": "tau9p1cvmumuxout",
+   "name": "Test 5"
+  },
+  "vs89xezfmumuxp44": {
+   "id": "vs89xezfmumuxp44",
+   "name": "Test 8"
+  },
+  "w9j9rgr1mumuxp9e": {
+   "id": "w9j9rgr1mumuxp9e",
+   "name": "Test 9"
+  }
+ }
+}

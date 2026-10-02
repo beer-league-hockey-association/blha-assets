@@ -11,12 +11,11 @@ It currently monitors:
 - BLHA Scheduler (which starts every workflow below)
 - BLHA Wire Engine
 - BLHA League Office Automation
-- BLHA Fantrax Matchup Preview
-- BLHA Fantrax Scoreboard
-- BLHA Fantrax Standings
-- BLHA Fantrax Weekly Recap
-- BLHA Fantrax Playoff Race
-- BLHA Fantrax Playoffs
+- BLHA Competition Desk (weekly report)
+- BLHA Fantrax Scoreboard (live scoreboard)
+- BLHA Fantrax Playoffs (live bracket)
+
+Workflows that only run in part of the season (for example the scoreboard, which is off in the offseason) are only checked while they are supposed to be running, using the same season calendar as the scheduler. When a phase starts, each newly active workflow gets its normal threshold to complete a first run before it can be reported stale.
 
 ## What triggers an alert
 
@@ -66,12 +65,9 @@ Each threshold is the maximum age of the latest live run before a "Workflow appe
 - Scheduler: 45 minutes (a stale scheduler usually means the external cron-job.org timer stopped)
 - Wire Engine: 60 minutes
 - League Office: 3 hours
-- Matchup Preview: 10 hours
-- Playoffs: 10 hours
-- Scoreboard: 20 hours
-- Standings: 36 hours
-- Weekly Recap: 36 hours
-- Playoff Race: 36 hours
+- Scoreboard: 3 hours (regular season and playoffs)
+- Playoffs: 3 hours (playoff weeks)
+- Competition Desk: 15 hours (preseason through playoffs)
 
 These values are configured in `health_config.yaml` and can be tuned without changing the monitor engine.
 

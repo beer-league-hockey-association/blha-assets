@@ -31,16 +31,28 @@ The approved architecture is:
 - **Native integrations = use when superior**
 - **Discord bot = save for a later interactive phase**
 
-## Scheduling
+## League settings
+
+League-wide settings live in one file: `automation/league.yaml` (Fantrax league ID, season label, report time, playoff race start week, webhook secret names). When the real 2027-28 Fantrax league is created, change `league_id` and `season_label` there; week dates, playoff weeks and playoff team count are read from Fantrax automatically.
+
+## Scheduling and the season calendar
 
 All automation timing lives in one file: `automation/scheduler/schedule.yaml`.
 
-The **BLHA Scheduler** workflow (`.github/workflows/blha-scheduler.yml`) runs every 15 minutes, started by an external timer (cron-job.org) with GitHub cron as a backup. It starts each workflow in **live** mode when it is due and catches up after any delay, so a late check never skips a job. Individual workflows no longer carry their own cron entries. Setup and troubleshooting: `automation/scheduler/README.md`.
+The **BLHA Scheduler** workflow (`.github/workflows/blha-scheduler.yml`) runs every 15 minutes, started by an external timer (cron-job.org) with GitHub cron as a backup. It starts each workflow in **live** mode when it is due and catches up after any delay, so a late check never skips a job.
 
-Shared resilient Discord webhook delivery for League Office, Fantrax competition, matchup previews, playoffs, and automation health is implemented in:
-`automation/discord_webhook.py`
+Each job can be limited to parts of the season (preseason, regular season, playoffs, offseason). The current phase is worked out from Fantrax's own week dates, so the scoreboard and weekly report switch on when the season starts and the playoff bracket only runs during playoff weeks. Manual runs from the Actions tab ignore the calendar, so anything can be tested at any time. Setup and troubleshooting: `automation/scheduler/README.md`.
 
-The helper retries transient network failures, Discord rate limits, and common temporary HTTP failures with bounded backoff. The Wire retains its specialized delivery path because it already has source-specific retry and flood-control behavior.
+| Automation | When it runs |
+| --- | --- |
+| The Wire | Every 15 minutes, all year |
+| League Office | Every 30 minutes, all year |
+| Automation Health | Hourly, all year |
+| Competition Desk (weekly report) | 08:00 and 20:00 ET, preseason through playoffs; posts only when something is due |
+| Live scoreboard | Hourly, regular season and playoffs |
+| Playoff bracket | Hourly, playoff weeks only |
+
+Shared Discord delivery (`automation/discord_webhook.py`) retries transient network failures, Discord rate limits and temporary HTTP errors, and can edit a message it posted earlier so live views update in place. Shared Fantrax and season-calendar code lives in `automation/blha/`.
 
 ## Phase 2D.1C — The Wire Automation
 
@@ -64,36 +76,36 @@ Commissioner-controlled dates and deadline reminders are stored in:
 
 The League Office uses `America/New_York` for DST-safe local scheduling. Reminders never post before their trigger, and a bounded catch-up window protects against delayed GitHub scheduled runs. Real league events remain disabled until their dates are finalized.
 
-## Phase 2D.3 — Fantrax League Competition
+## Competition Desk — weekly report
 
-Fantrax read-only automation covers:
+Code: `automation/competition/desk.py` · Workflow: `.github/workflows/blha-competition-desk.yml`
 
-- `📊│scoreboard` — current matchup scores
-- `📈│standings` — current league standings
-- `📰│weekly-recap` — completed scoring-period recaps
-- weekly matchup previews delivered through the Competition Desk
+Fantrax weeks end at the first NHL game on Monday evening, so by Monday morning every game of the week is final. At **8:00 AM ET** that morning the Competition Desk posts, in order:
 
-All Discord-facing competition posts use the clean vertical embed standard in `automation/DISCORD_AUTOMATION_STYLE.md`.
+1. `📰│weekly-recap` — results of the week that just finished
+2. `📈│standings` — standings after that week (final standings after the last regular-season week)
+3. `🏁│playoff-race` — from **Week 16** through the last regular-season week
+4. Matchup preview for the week starting that evening (scoreboard channel)
 
-## Phase 2D.4 — Playoff Race
+If Fantrax has not yet counted the finished week in its standings at 8:00 AM, standings and the playoff race wait and go out at the 8:00 PM check. Nothing is ever posted twice for the same week, and a failed post is retried automatically.
 
-The playoff-race workflow is:
-`.github/workflows/blha-fantrax-playoff-race.yml`
+## Live scoreboard
 
-It checks daily (08:15 ET, after the 07:30 standings check) and posts only when the tracked playoff picture materially changes. It uses the existing `🏁│playoff-race` channel; no Discord channel is created by the automation.
+Code: `automation/competition/scoreboard.py` · Workflow: `.github/workflows/blha-fantrax-scoreboard.yml`
 
-Clinching and elimination claims are intentionally deferred until remaining-matchup and tiebreaker semantics are proven rather than inferred.
+One scoreboard message per week in `📊│scoreboard`, posted when the week starts and **edited in place** every hour as scores change (edits do not notify members). Monday morning it gets a final update marked **Final** and stays in the channel as the record of that week.
 
-## Phase 2D.5 — Playoffs
+## Playoffs
 
-The playoff module is stored in:
-`automation/phase-2d5/`
+Code: `automation/playoffs/` · Workflow: `.github/workflows/blha-fantrax-playoffs.yml`
 
-It preserves final regular-season seeds, applies six-team reseeding so Seed 1 faces the lowest-ranked surviving opponent, and fingerprints semantic bracket content rather than render timestamps. The scheduler starts the playoff check every six hours; it remains a no-op outside the playoff window.
+Runs only during the playoff weeks. Seeds are saved automatically once Fantrax has counted the final regular-season week, and six-team reseeding gives Seed 1 the lowest-ranked surviving opponent. Each round gets one bracket message (a new post when the round starts), edited in place as scores change.
+
+All Competition Desk posts use the clean vertical embed standard in `automation/DISCORD_AUTOMATION_STYLE.md`.
 
 ## Regression checks
 
-Automation regression tests cover scheduler due-time logic, Wire routing and roundup posts, health-monitor run filtering, shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles the affected automation modules and runs these checks whenever relevant code or configuration changes.
+Automation regression tests cover the season calendar (against real Fantrax week dates), the weekly report, the live scoreboard, playoff seeding, scheduler due-time logic and retries, Wire routing and roundup posts, health-monitor run filtering, shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles every automation module and runs these checks whenever relevant code or configuration changes.
 
 ## Raw URL base
 `https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/`

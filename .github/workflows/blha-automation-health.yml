@@ -56,7 +56,7 @@ jobs:
           fi
 
       - name: Persist automation health state
-        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && success() }}
+        if: ${{ (github.event_name == 'schedule' || inputs.mode == 'live') && !cancelled() }}
         shell: bash
         run: |
           bash automation/tools/persist_state.sh \

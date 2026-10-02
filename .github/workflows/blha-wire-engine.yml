@@ -77,6 +77,7 @@ jobs:
           python automation/phase-2d1/run_wire.py "${ARGS[@]}"
 
       - name: Persist dedupe state
+        if: ${{ !cancelled() }}
         shell: bash
         run: |
           STATE="automation/phase-2d1/state/${WIRE_MODE}.json"
