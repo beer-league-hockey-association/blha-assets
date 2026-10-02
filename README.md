@@ -54,10 +54,10 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 
 Shared Discord delivery (`automation/discord_webhook.py`) retries transient network failures, Discord rate limits and temporary HTTP errors, and can edit a message it posted earlier so live views update in place. Shared Fantrax and season-calendar code lives in `automation/blha/`.
 
-## Phase 2D.1C — The Wire Automation
+## The Wire
 
 Source collectors, routing, Daily Faceoff injury parsing, persistent dedupe state, flood protection, and webhook delivery code are stored in:
-`automation/phase-2d1/`
+`automation/wire/`
 
 The scheduled engine workflow is:
 `.github/workflows/blha-wire-engine.yml`
@@ -65,11 +65,15 @@ The scheduled engine workflow is:
 The BLHA Scheduler starts the Wire every 15 minutes in **live mode**. When more stories arrive in one run than the flood guard allows as individual posts, the rest of each channel's stories are combined into one roundup post instead of being dropped. Manual workflow dispatch defaults to **shadow mode** for safe testing. Shadow mode never posts to Discord; live delivery requires the appropriate Discord webhook URLs in GitHub Actions Secrets.
 
 Operational and rollout instructions:
-`automation/phase-2d1/phase-2d1c-operations.md`
+`automation/wire/operations.md`
 
 PuckPedia native Discord integration is the preferred live transaction feed for NHL trades, signings, and waivers.
 
-## Phase 2D.2 — League Office
+**BLHA roster tags.** Stories about a player on a BLHA roster show which BLHA team owns him, on every Wire channel. Players are identified by name, NHL team and position, so players who share a name (two Sebastian Ahos, two Elias Petterssons) are not confused; anything ambiguous is left untagged. Stories about rostered players get the individual posts first when news arrives in bulk.
+
+**Owner pings (opt-in).** Owners listed under `owners` in `automation/league.yaml` are mentioned when one of their own players appears in the Injury Report. Nobody else can be pinged.
+
+## League Office
 
 Commissioner-controlled dates and deadline reminders are stored in:
 `automation/phase-2d2/`

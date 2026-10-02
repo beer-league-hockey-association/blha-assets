@@ -3,12 +3,15 @@
 
 from __future__ import annotations
 
+import json
 import unittest
+from pathlib import Path
 
 import engine
-import roster_enrichment
+import roster
 import wire
-import run_wire  # applies production routing/enrichment/source adapters
+
+FIXTURES = Path(__file__).resolve().parents[1] / "tests" / "fixtures"
 
 
 class WireRoutingTests(unittest.TestCase):
@@ -44,7 +47,7 @@ class WireSourceTests(unittest.TestCase):
             "id": "sportsnet-guid-123",
         }
         self.assertEqual(
-            run_wire._rss_entry_link(entry),
+            wire._rss_entry_link(entry),
             "https://www.sportsnet.ca/nhl/article/example-story/",
         )
 
@@ -55,13 +58,13 @@ class WireSourceTests(unittest.TestCase):
             "guid": "https://www.sportsnet.ca/nhl/article/guid-story/",
         }
         self.assertEqual(
-            run_wire._rss_entry_link(entry),
+            wire._rss_entry_link(entry),
             "https://www.sportsnet.ca/nhl/article/guid-story/",
         )
 
     def test_rss_link_does_not_invent_url_from_non_http_guid(self) -> None:
         entry = {"link": "", "links": [], "guid": "sportsnet:story:12345"}
-        self.assertEqual(run_wire._rss_entry_link(entry), "")
+        self.assertEqual(wire._rss_entry_link(entry), "")
 
     def test_sportsnet_live_tracker_is_ignored(self) -> None:
         title = "Maple Leafs Live Tracker: Toronto vs. New York Islanders"
@@ -81,53 +84,81 @@ class WireFormattingTests(unittest.TestCase):
 
     def test_player_name_normalization(self) -> None:
         self.assertEqual(
-            engine.normalize_player_name("José Example Jr."),
-            engine.normalize_player_name("Jose Example"),
+            roster.normalize_player_name("José Example Jr."),
+            roster.normalize_player_name("Jose Example"),
         )
 
     def test_fantrax_last_first_name_normalization(self) -> None:
         self.assertEqual(
-            roster_enrichment.normalize_player_name("Larkin, Dylan"),
-            roster_enrichment.normalize_player_name("Dylan Larkin"),
+            roster.normalize_player_name("Larkin, Dylan"),
+            roster.normalize_player_name("Dylan Larkin"),
         )
 
 
-class FantraxRosterEnrichmentTests(unittest.TestCase):
-    def test_roster_items_resolve_through_player_ids(self) -> None:
-        rosters = {
-            "period": 1,
-            "rosters": {
-                "team-a": {
-                    "teamName": "Test 3",
-                    "rosterItems": [
-                        {"id": "wire-key-1", "position": "C", "status": "ACTIVE"},
-                        {"id": "wire-key-2", "position": "D", "status": "RESERVE"},
-                    ],
-                }
-            },
-        }
-        # Live getPlayerIds commonly uses the roster ID as the root key while
-        # the nested fantraxId is a different alias. Both must resolve.
-        players = {
-            "wire-key-1": {"fantraxId": "alternate-1", "name": "Example, José Jr."},
-            "wire-key-2": {"fantraxId": "alternate-2", "name": "Second, Player"},
-        }
-        ownership = roster_enrichment.ownership_from_payloads(rosters, players)
-        self.assertEqual(
-            ownership[roster_enrichment.normalize_player_name("Jose Example")],
-            "Test 3",
-        )
-        self.assertEqual(
-            ownership[roster_enrichment.normalize_player_name("Player Second")],
-            "Test 3",
-        )
+class RosterTagTests(unittest.TestCase):
+    """Real Fantrax player entries, including players who share a name."""
 
-    def test_nested_fantrax_id_is_also_an_alias(self) -> None:
-        index = roster_enrichment.player_name_index(
-            {"wire-key": {"fantraxId": "nested-id", "name": "Larkin, Dylan"}}
-        )
-        self.assertEqual(index["wire-key"], "Larkin, Dylan")
-        self.assertEqual(index["nested-id"], "Larkin, Dylan")
+    @classmethod
+    def setUpClass(cls) -> None:
+        players = json.loads((FIXTURES / "player_ids_sample.json").read_text())
+        rosters = {"period": 1, "rosters": {
+            "team-a": {"teamName": "Alpha", "rosterItems": [{"id": "03rmx"}, {"id": "03duf"}]},   # Aho (CAR C), Larkin
+            "team-b": {"teamName": "Bravo", "rosterItems": [{"id": "060v8"}, {"id": "05rin"}]},   # Pettersson (VAN D), Hughes (LAK)
+            "team-c": {"teamName": "Charlie", "rosterItems": [{"id": "01ztp"}, {"id": "02un4"}]},  # Hyman, McDavid
+        }}
+        cls.index = roster.build_index(rosters, players)
+
+    def test_same_name_different_team(self) -> None:
+        self.assertEqual(self.index.match("Sebastian Aho", "CAR", "C").owner_name, "Alpha")
+        self.assertIsNone(self.index.match("Sebastian Aho", "PIT", "D"))  # the other Aho is a free agent
+
+    def test_same_name_same_team_uses_position(self) -> None:
+        self.assertEqual(self.index.match("Elias Pettersson", "VAN", "D").owner_name, "Bravo")
+        self.assertIsNone(self.index.match("Elias Pettersson", "VAN", "C"))
+
+    def test_ambiguous_without_team_is_not_tagged(self) -> None:
+        self.assertIsNone(self.index.match("Sebastian Aho"))
+        self.assertIsNone(self.index.match("Jack Hughes"))
+
+    def test_team_alias_and_forward_positions(self) -> None:
+        self.assertEqual(self.index.match("Jack Hughes", "LA", "C").owner_name, "Bravo")
+        # Daily Faceoff lists Hyman at LW; Fantrax has RW. Both are forwards.
+        self.assertEqual(self.index.match("Zach Hyman", "EDM", "LW").owner_name, "Charlie")
+
+    def test_headline_scan_tags_unique_names_only(self) -> None:
+        found = self.index.scan("Dylan Larkin and Connor McDavid named stars of the week")
+        self.assertEqual(sorted(p.owner_name for p in found), ["Alpha", "Charlie"])
+        self.assertEqual(self.index.scan("Sebastian Aho scores twice as Hurricanes win"), [])
+
+    def test_tagging_injury_and_news_candidates(self) -> None:
+        injury = _candidate(1, "injury-report")
+        injury.update(player="Elias Pettersson", team="VAN", position="D")
+        news = _candidate(2, "nhl-news", title="Dylan Larkin extends point streak to nine games")
+        tagged = roster.tag_candidates([injury, news], self.index)
+        self.assertEqual(tagged, 2)
+        self.assertEqual(injury["fantasy_owner"], "Bravo")
+        self.assertEqual(news["fantasy_owner"], "Alpha (Dylan Larkin)")
+
+    def test_owner_pings_are_opt_in_and_injury_only(self) -> None:
+        injury = _candidate(1, "injury-report")
+        injury["owners"] = [{"team_id": "team-b", "team_name": "Bravo", "player": "Elias Pettersson"}]
+        league = {"owners": {"Bravo": "123456789012345678"}, "wire_pings": {"injuries": True}}
+        self.assertEqual(roster.owner_mentions(injury, league), ["123456789012345678"])
+        self.assertEqual(roster.owner_mentions(injury, {"owners": {}, "wire_pings": {"injuries": True}}), [])
+        news = dict(injury, channel="nhl-news")
+        self.assertEqual(roster.owner_mentions(news, league), [])
+
+    def test_ping_payload_only_allows_listed_users(self) -> None:
+        item = _candidate(1, "injury-report")
+        item["mentions"] = ["123456789012345678"]
+        payload = engine.discord_payload(item)
+        self.assertEqual(payload["content"], "<@123456789012345678>")
+        self.assertEqual(payload["allowed_mentions"], {"parse": [], "users": ["123456789012345678"]})
+
+    def test_no_ping_by_default(self) -> None:
+        payload = engine.discord_payload(_candidate(1, "injury-report"))
+        self.assertNotIn("content", payload)
+        self.assertEqual(payload["allowed_mentions"], {"parse": []})
 
 
 _TEAMS = ("Bruins", "Canucks", "Flames", "Kraken", "Lightning", "Oilers", "Predators",
@@ -216,6 +247,13 @@ class WireRoundupTests(unittest.TestCase):
         engine.process_candidates(batch, state, "live")
         self.assertEqual(len(self.sent), engine.MAX_LIVE_POSTS_PER_RUN)
         self.assertEqual([c for c, _ in self.roundups], ["prospect-wire"])
+
+    def test_rostered_players_get_individual_posts_first(self) -> None:
+        state = engine.empty_state()
+        batch = [_candidate(i) for i in range(5)]
+        batch[4]["owners"] = [{"team_id": "t", "team_name": "Alpha", "player": "X"}]
+        engine.process_candidates(batch, state, "live")
+        self.assertEqual(self.sent[0]["key"], batch[4]["key"])
 
     def test_roundup_fits_discord_limit_and_counts_hidden(self) -> None:
         items = [_candidate(i, title=("Very long headline " * 12) + str(i)) for i in range(60)]

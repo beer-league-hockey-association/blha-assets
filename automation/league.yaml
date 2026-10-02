@@ -31,3 +31,23 @@ competition:
     preview: BLHA_WEBHOOK_SCOREBOARD
     scoreboard: BLHA_WEBHOOK_SCOREBOARD
     playoffs: BLHA_WEBHOOK_PLAYOFFS
+
+# ---------------------------------------------------------------------------
+# Owner pings (opt-in)
+#
+# When a player on an owner's BLHA roster shows up in the Injury Report, the
+# Wire can mention that owner. Only owners listed here are ever pinged, and
+# only for their own players.
+#
+# Key: the BLHA team's Fantrax team name (or Fantrax team ID).
+# Value: the owner's Discord user ID, in quotes. In Discord: User Settings ->
+#        Advanced -> turn on Developer Mode, then right-click the member ->
+#        Copy User ID.
+#
+# Example:
+#   owners:
+#     "Test 4": "123456789012345678"
+owners: {}
+
+wire_pings:
+  injuries: true

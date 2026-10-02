@@ -17,7 +17,6 @@ import os
 import re
 import sys
 import time
-import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
@@ -29,7 +28,11 @@ from urllib.parse import urlsplit, urlunsplit
 import requests
 import yaml
 
+import roster
 import wire
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from blha.league import load_league  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
@@ -38,7 +41,6 @@ STATE_TTL_HOURS = 24 * 30
 FUZZY_DEDUPE_WINDOW_HOURS = 48
 DEFAULT_MAX_SOURCE_ITEMS = 15
 MAX_SOURCE_WORKERS = 4
-FANTRAX_BASE = "https://www.fantrax.com/fxea/general"
 
 # Production flood guards. Normal 15-minute runs should produce only a handful
 # of truly new items. If a feed/parser suddenly exposes a backlog, these limits
@@ -216,7 +218,10 @@ def build_candidate(source: dict, entry: dict) -> dict:
         "player": entry.get("player", ""),
         "team": entry.get("team", ""),
         "status": entry.get("status", ""),
+        "position": entry.get("position", ""),
         "fantasy_owner": "",
+        "owners": [],
+        "mentions": [],
     }
 
 
@@ -264,113 +269,34 @@ def fetch_candidates(config: dict, include_discovery: bool = False) -> list[dict
     return candidates
 
 
-def normalize_player_name(value: str) -> str:
-    text = unicodedata.normalize("NFKD", str(value or ""))
-    text = "".join(ch for ch in text if not unicodedata.combining(ch))
-    text = text.lower().replace("’", "'")
-    text = re.sub(r"\b(jr|sr|ii|iii|iv)\.?\b", "", text)
-    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+def enrich_ownership(candidates: list[dict], config: dict, state: dict) -> None:
+    """Tag new stories with the BLHA team that rosters the player.
 
-
-def extract_player_name(value: Any) -> str:
-    if not isinstance(value, dict):
-        return ""
-    for key in ("playerName", "fullName", "name"):
-        raw = value.get(key)
-        if isinstance(raw, str) and raw.strip():
-            return raw.strip()
-    for key in ("player", "playerInfo"):
-        nested = value.get(key)
-        if isinstance(nested, dict):
-            found = extract_player_name(nested)
-            if found:
-                return found
-    return ""
-
-
-def roster_rows(value: Any) -> list[dict[str, Any]]:
-    if isinstance(value, list):
-        return [row for row in value if isinstance(row, dict)]
-    if isinstance(value, dict):
-        for key in ("players", "roster", "rows"):
-            rows = value.get(key)
-            if isinstance(rows, list):
-                return [row for row in rows if isinstance(row, dict)]
-    return []
-
-
-def fantrax_ownership(league_id: str) -> dict[str, str]:
-    if not league_id:
-        return {}
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "BLHA-Wire-Fantrax-Enrichment/1.0",
-        "Accept": "application/json,text/plain,*/*",
-    })
-    try:
-        standings_response = session.get(
-            f"{FANTRAX_BASE}/getStandings",
-            params={"leagueId": league_id},
-            timeout=15,
-        )
-        standings_response.raise_for_status()
-        standings = standings_response.json()
-        roster_response = session.get(
-            f"{FANTRAX_BASE}/getTeamRosters",
-            params={"leagueId": league_id},
-            timeout=15,
-        )
-        roster_response.raise_for_status()
-        rosters = roster_response.json()
-    except Exception as exc:
-        print(f"ROSTER ENRICHMENT WARNING: Fantrax read failed: {exc}")
-        return {}
-
-    team_names: dict[str, str] = {}
-    if isinstance(standings, list):
-        for row in standings:
-            if isinstance(row, dict):
-                team_id = str(row.get("teamId") or "")
-                team_name = str(row.get("teamName") or "")
-                if team_id and team_name:
-                    team_names[team_id] = team_name
-
-    roster_block = rosters.get("rosters") if isinstance(rosters, dict) else None
-    if not isinstance(roster_block, dict):
-        print("ROSTER ENRICHMENT WARNING: Fantrax rosters block was not a dict")
-        return {}
-
-    ownership: dict[str, str] = {}
-    for team_id, raw_roster in roster_block.items():
-        owner = team_names.get(str(team_id), "")
-        if not owner:
-            continue
-        for row in roster_rows(raw_roster):
-            player = extract_player_name(row)
-            key = normalize_player_name(player)
-            if key:
-                ownership[key] = owner
-    print(f"ROSTER ENRICHMENT: loaded {len(ownership)} rostered player names")
-    return ownership
-
-
-def enrich_injury_ownership(candidates: list[dict], config: dict) -> None:
+    Only stories that will actually be posted are looked up, so the Fantrax
+    player directory is fetched only when there is something new.
+    """
     fantrax_cfg = config.get("fantrax") if isinstance(config.get("fantrax"), dict) else {}
     if not fantrax_cfg.get("roster_enrichment", False):
         return
-    injuries = [candidate for candidate in candidates if candidate.get("channel") == "injury-report" and candidate.get("player")]
-    if not injuries:
+    fresh = [
+        c for c in candidates
+        if not c["discovery_only"] and c["channel"] not in NATIVE_PRIMARY_CHANNELS
+        and duplicate_reason(c, state) is None
+    ]
+    if not fresh:
         return
-    ownership = fantrax_ownership(str(fantrax_cfg.get("league_id") or "").strip())
-    if not ownership:
+    try:
+        league = load_league()
+    except Exception as exc:
+        print(f"ROSTER TAGS WARNING: could not read league.yaml: {exc}")
         return
-    matched = 0
-    for candidate in injuries:
-        owner = ownership.get(normalize_player_name(candidate.get("player", "")), "")
-        if owner:
-            candidate["fantasy_owner"] = owner
-            matched += 1
-    print(f"ROSTER ENRICHMENT: matched {matched}/{len(injuries)} injury items to BLHA rosters")
+    index = roster.load_index(league)
+    if index is None:
+        return
+    tagged = roster.tag_candidates(fresh, index)
+    for candidate in fresh:
+        candidate["mentions"] = roster.owner_mentions(candidate, league)
+    print(f"ROSTER TAGS: tagged {tagged}/{len(fresh)} new stories")
 
 
 def published_timestamp(value: str) -> str | None:
@@ -400,7 +326,8 @@ def discord_payload(candidate: dict) -> dict:
 
     description = f"**Source:** {source_line}"
     if candidate.get("fantasy_owner"):
-        description += f"\n**BLHA roster:** {candidate['fantasy_owner']}"
+        label = "BLHA rosters" if len(candidate.get("owners") or []) > 1 else "BLHA roster"
+        description += f"\n**{label}:** {candidate['fantasy_owner']}"
 
     timestamp = published_timestamp(candidate.get("published", ""))
     if not timestamp and candidate.get("published"):
@@ -416,12 +343,20 @@ def discord_payload(candidate: dict) -> dict:
     if timestamp:
         embed["timestamp"] = timestamp
 
-    return {
+    return with_mentions({
         "username": "BLHA News Wire",
         "avatar_url": WEBHOOK_AVATAR,
         "allowed_mentions": {"parse": []},
         "embeds": [embed],
-    }
+    }, candidate.get("mentions") or [])
+
+
+def with_mentions(payload: dict, user_ids: list[str]) -> dict:
+    """Ping opted-in owners. Only the listed users can be notified."""
+    if user_ids:
+        payload["content"] = " ".join(f"<@{uid}>" for uid in user_ids)
+        payload["allowed_mentions"] = {"parse": [], "users": list(user_ids)}
+    return payload
 
 
 def _digest_link_text(title: str) -> str:
@@ -449,7 +384,8 @@ def digest_payload(channel: str, items: list[dict]) -> tuple[dict, int]:
         line = f"• [{title}]({link})" if link else f"• {title}"
         line += f" — {item['source_name']}"
         if item.get("fantasy_owner"):
-            line += f" · **BLHA roster:** {item['fantasy_owner']}"
+            label = "BLHA rosters" if len(item.get("owners") or []) > 1 else "BLHA roster"
+            line += f" · **{label}:** {item['fantasy_owner']}"
         # Reserve room for the "+N more" note.
         if used + len(line) + 1 > DIGEST_MAX_CHARS - 60:
             break
@@ -475,7 +411,12 @@ def digest_payload(channel: str, items: list[dict]) -> tuple[dict, int]:
         "allowed_mentions": {"parse": []},
         "embeds": [embed],
     }
-    return payload, shown
+    mentions: list[str] = []
+    for item in items[:shown]:
+        for uid in item.get("mentions") or []:
+            if uid not in mentions:
+                mentions.append(uid)
+    return with_mentions(payload, mentions), shown
 
 
 def deliver(candidate: dict) -> bool:
@@ -547,7 +488,7 @@ def main() -> int:
 
     prune_state(state)
     candidates = fetch_candidates(cfg, include_discovery=args.include_discovery)
-    enrich_injury_ownership(candidates, cfg)
+    enrich_ownership(candidates, cfg, state)
     print(
         f"BLHA THE WIRE — mode={args.mode.upper()} candidates={len(candidates)} "
         f"include_discovery={args.include_discovery}"
@@ -597,6 +538,10 @@ def process_candidates(candidates: list[dict], state: dict, mode: str) -> dict[s
     }
     posted_by_channel: dict[str, int] = {}
     overflow: dict[str, list[tuple[dict, dict]]] = {}
+
+    # Stories about players on BLHA rosters get the individual posts first;
+    # everything else keeps its source-priority order (the sort is stable).
+    candidates = sorted(candidates, key=lambda c: 0 if c.get("owners") else 1)
 
     for candidate in candidates:
         prefix = f"[{candidate['channel']}] {candidate['source_name']}"

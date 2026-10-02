@@ -1,4 +1,4 @@
-# BLHA Phase 2D.1C — Operations
+# BLHA The Wire — Operations
 
 ## Locked architecture
 
@@ -9,7 +9,7 @@
 
 ## Production status
 
-Phase 2D.1C is now in production.
+The Wire is in production.
 
 - The BLHA Scheduler starts the Wire every 15 minutes in **live mode** (see `automation/scheduler/README.md`).
 - Manual runs still default to **shadow mode** for safe testing.
@@ -20,7 +20,8 @@ Phase 2D.1C is now in production.
 ## What is implemented
 
 - `wire.py` — source collectors + classifier.
-- `engine.py` — source precedence, routing, persistent dedupe, shadow/live modes, Discord webhook delivery and production flood guards.
+- `engine.py` — source precedence, routing, persistent dedupe, shadow/live modes, Discord webhook delivery and production flood guards. Entry point for the workflow.
+- `roster.py` — BLHA roster tags (name + NHL team + position matching) and opt-in owner pings.
 - `sources.yaml` — source registry and authority levels.
 - `state/shadow.json` — persistent shadow-mode dedupe state.
 - `state/live.json` — persistent live-mode dedupe state.

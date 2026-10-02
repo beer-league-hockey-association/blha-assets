@@ -1,0 +1,99 @@
+{
+ "01ztp": {
+  "fantraxId": "01ztp",
+  "name": "Hyman, Zach",
+  "position": "RW",
+  "rotowireId": 4964,
+  "sportRadarId": "df68fd1a-d52d-4a74-b762-0aafada4a622",
+  "statsIncId": 5096,
+  "team": "EDM"
+ },
+ "02un4": {
+  "fantraxId": "02un4",
+  "name": "McDavid, Connor",
+  "position": "C",
+  "rotowireId": 4712,
+  "sportRadarId": "8949dceb-26ac-4cb1-b08d-2d5903d75611",
+  "statsIncId": 6743,
+  "team": "EDM"
+ },
+ "02un7": {
+  "fantraxId": "02un7",
+  "name": "Barkov, Aleksander",
+  "position": "C",
+  "rotowireId": 4147,
+  "sportRadarId": "0cd5158e-f92b-11e2-a133-f4ce4684ea4c",
+  "statsIncId": 5981,
+  "team": "FLA"
+ },
+ "03duf": {
+  "fantraxId": "03duf",
+  "name": "Larkin, Dylan",
+  "position": "C",
+  "rotowireId": 4396,
+  "sportRadarId": "61eae331-7558-4f3d-a3d0-886a9f422c91",
+  "statsIncId": 6381,
+  "team": "DET"
+ },
+ "03el6": {
+  "fantraxId": "03el6",
+  "name": "Aho, Sebastian",
+  "position": "D",
+  "rotowireId": 5572,
+  "sportRadarId": "7facf1b9-81a0-4e54-8f91-cb4b008fcb8d",
+  "statsIncId": 7654,
+  "team": "PIT"
+ },
+ "03rmx": {
+  "fantraxId": "03rmx",
+  "name": "Aho, Sebastian",
+  "position": "C",
+  "rotowireId": 4900,
+  "sportRadarId": "4c2ff5eb-59d8-413b-a840-53b5c516bdd6",
+  "statsIncId": 6777,
+  "team": "CAR"
+ },
+ "048x9": {
+  "fantraxId": "048x9",
+  "name": "Pettersson, Elias",
+  "position": "C",
+  "rotowireId": 5418,
+  "sportRadarId": "04396c28-a071-478a-b387-a456fac24415",
+  "statsIncId": 7520,
+  "team": "VAN"
+ },
+ "04bdb": {
+  "fantraxId": "04bdb",
+  "name": "Hughes, Jack",
+  "position": "C",
+  "rotowireId": 5963,
+  "sportRadarId": "1b48264e-4f71-4aaf-a263-62ba01d12b63",
+  "statsIncId": 8279,
+  "team": "NJD"
+ },
+ "04lbz": {
+  "fantraxId": "04lbz",
+  "name": "Hughes, Quinn",
+  "position": "D",
+  "rotowireId": 5691,
+  "sportRadarId": "bbc4fe2b-f685-47e8-ae58-8ca29ff706e6",
+  "statsIncId": 7905,
+  "team": "MIN"
+ },
+ "05rin": {
+  "fantraxId": "05rin",
+  "name": "Hughes, Jack",
+  "position": "C",
+  "rotowireId": 6729,
+  "sportRadarId": "c8bff667-163a-472b-9bfa-e32547ad02b6",
+  "team": "LAK"
+ },
+ "060v8": {
+  "fantraxId": "060v8",
+  "name": "Pettersson, Elias",
+  "position": "D",
+  "rotowireId": 6803,
+  "sportRadarId": "d728c690-20ba-48ab-a4db-a98cbd269dc6",
+  "team": "VAN"
+ }
+}
