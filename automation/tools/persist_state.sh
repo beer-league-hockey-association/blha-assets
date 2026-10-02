@@ -7,7 +7,8 @@ GIT_USER_NAME="${3:-BLHA Automation}"
 GIT_USER_EMAIL="${4:-actions@users.noreply.github.com}"
 BRANCH="${GITHUB_REF_NAME:-main}"
 
-if git diff --quiet -- "$STATE_PATH"; then
+# git status (unlike git diff) also reports a brand-new, untracked state file.
+if [[ -z "$(git status --porcelain -- "$STATE_PATH")" ]]; then
   echo "No state change for $STATE_PATH."
   exit 0
 fi
