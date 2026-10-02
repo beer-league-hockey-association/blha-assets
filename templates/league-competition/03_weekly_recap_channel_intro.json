@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-competition/blha-competition-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA WEEKLY RECAP",
+      "description": "The results of every completed matchup, posted after each fantasy week ends, normally on Monday morning.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA COMPETITION DESK"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "Completed matchup results for the week • Recap of how each week finished",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL RESULTS",
+          "value": "Results are pulled directly from Fantrax. Questions about a score go to the Commissioner's Office.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

@@ -36,7 +36,22 @@ INTRO_HEADERS = {
     "league-office/04_ledger_channel_intro.json": BASE + "league-office/blha-ledger-header.png" + HEADER_VERSION,
     "league-office/05_voting_channel_intro.json": BASE + "league-office/blha-voting-header.png" + HEADER_VERSION,
     "draft-center/06_draft_center_intro.json": BASE + "draft-center/blha-draft-center-header.png" + HEADER_VERSION,
+    "league-office/06_champions_channel_intro.json": BASE + "league-office/blha-champions-header.png" + HEADER_VERSION,
+    "league-office/07_records_channel_intro.json": BASE + "league-office/blha-records-header.png" + HEADER_VERSION,
+    "general-managers/01_gm_lounge_channel_intro.json": BASE + "general-managers/blha-general-managers-header.png" + HEADER_VERSION,
+    "trade-center/01_trade_center_channel_intro.json": BASE + "trade-center/blha-trade-center-header.png" + HEADER_VERSION,
+    "scouting/01_scouting_department_channel_intro.json": BASE + "scouting/blha-scouting-header.png" + HEADER_VERSION,
+    "waiver-wire/01_waiver_wire_channel_intro.json": BASE + "waiver-wire/blha-waiver-wire-header.png" + HEADER_VERSION,
+    "commissioners-office/01_commissioners_office_channel_intro.json": BASE + "commissioners-office/blha-commissioners-office-header.png" + HEADER_VERSION,
+    "franchise-hq/01_franchise_hq_channel_intro.json": BASE + "franchise-hq/blha-franchise-hq-header.png" + HEADER_VERSION,
 }
+for _n, _f in (
+    ("01_breaking_news", "breaking-news"), ("02_nhl_news", "nhl-news"), ("03_injury_report", "injury-report"),
+    ("04_nhl_transactions", "nhl-transactions"), ("05_prospect_wire", "prospect-wire"), ("06_news_desk", "news-desk"),
+):
+    INTRO_HEADERS[f"the-wire/{_n}_channel_intro.json"] = BASE + "the-wire/blha-the-wire-header.png" + HEADER_VERSION
+for _n in ("01_scoreboard", "02_standings", "03_weekly_recap", "04_playoff_race", "05_playoffs"):
+    INTRO_HEADERS[f"league-competition/{_n}_channel_intro.json"] = BASE + "league-competition/blha-competition-header.png" + HEADER_VERSION
 
 
 def banner_embed(url: str) -> dict:
@@ -64,6 +79,16 @@ def is_banner_like(embed: dict) -> bool:
             "blha-ledger-header.png",
             "blha-voting-header.png",
             "blha-draft-center-header.png",
+            "blha-the-wire-header.png",
+            "blha-competition-header.png",
+            "blha-general-managers-header.png",
+            "blha-trade-center-header.png",
+            "blha-scouting-header.png",
+            "blha-waiver-wire-header.png",
+            "blha-commissioners-office-header.png",
+            "blha-franchise-hq-header.png",
+            "blha-champions-header.png",
+            "blha-records-header.png",
         )
     )
 

@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-office/blha-champions-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA CHAMPIONS",
+      "description": "The permanent record of every BLHA champion.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "Championship announcements • Champion history • Permanent league honors",
+          "inline": false
+        },
+        {
+          "name": "PERMANENT RECORD",
+          "value": "This channel is kept as the lasting history of the league. Questions about an entry go to the League Office.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

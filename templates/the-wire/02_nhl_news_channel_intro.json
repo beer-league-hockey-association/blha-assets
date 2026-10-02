@@ -1,0 +1,41 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/the-wire/blha-the-wire-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA NHL NEWS",
+      "description": "The league-wide hockey news feed: reporting worth knowing that doesn't belong in a specialty channel. Stories are posted by automation as a headline, a source name and a direct link. Full articles are never copied; open the link to read the source.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA NEWS DESK"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "Team and league developments • Coaching and front-office changes • Captaincy news • Interviews • Meaningful analysis",
+          "inline": false
+        },
+        {
+          "name": "FILTERED OUT",
+          "value": "Scores, routine highlights, daily discussion threads and feed-section labels.",
+          "inline": false
+        },
+        {
+          "name": "LOOKING FOR SOMETHING ELSE?",
+          "value": "Injuries go to injury-report, signings and trades to nhl-transactions, prospects to prospect-wire, and major news to breaking-news.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

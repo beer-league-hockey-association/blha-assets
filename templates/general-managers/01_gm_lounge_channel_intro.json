@@ -1,0 +1,41 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/general-managers/blha-general-managers-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA GM LOUNGE",
+      "description": "The clubhouse. This is where general managers talk hockey, chirp each other and enjoy the league.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA GENERAL MANAGERS"
+      },
+      "fields": [
+        {
+          "name": "USE THESE ROOMS FOR",
+          "value": "GM Lounge • Game-day talk • Chirps and memes • Off-topic conversation • Media and highlights",
+          "inline": false
+        },
+        {
+          "name": "KEEP IT GOOD",
+          "value": "Chirp the team, not the person. Keep it fun, keep it respectful, and remember everyone here is a co-owner of the league.",
+          "inline": false
+        },
+        {
+          "name": "NOT FOR OFFICIAL BUSINESS",
+          "value": "Votes, rulings, trades and deadlines belong in their own rooms. Nothing said in the lounge changes a rule or a result.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

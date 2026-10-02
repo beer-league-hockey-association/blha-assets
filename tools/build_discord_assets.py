@@ -183,6 +183,16 @@ def main():
         (WEBHOOKS / "league-office" / "blha-ledger-header.png", "LEAGUE LEDGER", "OFFICIAL BLHA LEDGER"),
         (WEBHOOKS / "league-office" / "blha-voting-header.png", "LEAGUE VOTING", "OFFICIAL BLHA VOTE"),
         (WEBHOOKS / "draft-center" / "blha-draft-center-header.png", "DRAFT CENTER", "OFFICIAL BLHA DRAFT"),
+        (WEBHOOKS / "the-wire" / "blha-the-wire-header.png", "THE WIRE", "BLHA NEWS DESK"),
+        (WEBHOOKS / "league-competition" / "blha-competition-header.png", "LEAGUE COMPETITION", "STANDINGS & PLAYOFFS"),
+        (WEBHOOKS / "general-managers" / "blha-general-managers-header.png", "GENERAL MANAGERS", "THE CLUBHOUSE"),
+        (WEBHOOKS / "trade-center" / "blha-trade-center-header.png", "TRADE CENTER", "OFFICIAL BLHA TRADES"),
+        (WEBHOOKS / "scouting" / "blha-scouting-header.png", "SCOUTING DEPARTMENT", "PROSPECTS & PICKS"),
+        (WEBHOOKS / "waiver-wire" / "blha-waiver-wire-header.png", "WAIVER WIRE", "FAAB & CLAIMS"),
+        (WEBHOOKS / "commissioners-office" / "blha-commissioners-office-header.png", "COMMISSIONER'S OFFICE", "OFFICIAL BLHA RULINGS"),
+        (WEBHOOKS / "franchise-hq" / "blha-franchise-hq-header.png", "FRANCHISE HQ", "YOUR CLUB, YOUR CALLS"),
+        (WEBHOOKS / "league-office" / "blha-champions-header.png", "BLHA CHAMPIONS", "PERMANENT LEAGUE HISTORY"),
+        (WEBHOOKS / "league-office" / "blha-records-header.png", "LEAGUE RECORDS", "THE PERMANENT RECORD"),
         (WEBHOOKS / "shared" / "blha-generic-header-1600x420.png", "BEER LEAGUE HOCKEY ASSOCIATION", "OFFICIAL BLHA"),
     ]
 

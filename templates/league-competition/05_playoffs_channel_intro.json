@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/league-competition/blha-competition-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA PLAYOFFS",
+      "description": "Playoff matchups and results, including the consolation bracket, posted by the BLHA Competition Desk.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA COMPETITION DESK"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "Playoff matchups • Round results • Consolation bracket • Champion announcement",
+          "inline": false
+        },
+        {
+          "name": "OFFICIAL RESULTS",
+          "value": "Fantrax is the authoritative record. Rulings on playoff questions come from the League Office.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

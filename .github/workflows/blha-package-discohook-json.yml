@@ -27,7 +27,7 @@ jobs:
 
           root = Path('templates')
           files = sorted(root.rglob('*.json'))
-          assert len(files) == 54, f'expected 54 JSON files, found {len(files)}'
+          assert len(files) == 73, f'expected 73 JSON files, found {len(files)}'
 
           allowed_root = {
               'content', 'embeds', 'username', 'avatar_url', 'attachments',
@@ -115,7 +115,7 @@ jobs:
 
           root = Path('templates')
           files = sorted(root.rglob('*.json'))
-          out = Path('BLHA_Phase_2C6_Raw_Discohook_JSON_54.zip')
+          out = Path('BLHA_Phase_2C6_Raw_Discohook_JSON_73.zip')
 
           with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
               for src in files:
@@ -123,15 +123,15 @@ jobs:
 
           with zipfile.ZipFile(out) as z:
               members = [name for name in z.namelist() if name.endswith('.json')]
-              assert len(members) == 54, f'zip contains {len(members)} JSON files'
+              assert len(members) == 73, f'zip contains {len(members)} JSON files'
 
-          print(f'Created {out} with 54 raw per-message JSON files.')
+          print(f'Created {out} with 73 raw per-message JSON files.')
           PY
 
       - name: Upload raw JSON package
         uses: actions/upload-artifact@v4
         with:
-          name: BLHA-Phase-2C6-Raw-Discohook-JSON-54
-          path: BLHA_Phase_2C6_Raw_Discohook_JSON_54.zip
+          name: BLHA-Phase-2C6-Raw-Discohook-JSON-73
+          path: BLHA_Phase_2C6_Raw_Discohook_JSON_73.zip
           if-no-files-found: error
           retention-days: 30

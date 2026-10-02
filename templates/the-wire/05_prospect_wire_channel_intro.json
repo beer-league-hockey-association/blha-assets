@@ -1,0 +1,36 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/the-wire/blha-the-wire-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA PROSPECT WIRE",
+      "description": "Development news for dynasty owners who look beyond this season. Stories are posted by automation as a headline, a source name and a direct link. Full articles are never copied; open the link to read the source.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA NEWS DESK"
+      },
+      "fields": [
+        {
+          "name": "POSTED HERE",
+          "value": "AHL and rookie news • NCAA and college hockey • CHL, OHL, WHL and QMJHL • Junior and international events • Development camps • NHL Draft prospects • World Juniors",
+          "inline": false
+        },
+        {
+          "name": "DISCUSSION",
+          "value": "Use the Scouting Department to talk about prospects, draft rankings and trade targets.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}
