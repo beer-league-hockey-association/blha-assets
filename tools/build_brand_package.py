@@ -210,6 +210,7 @@ def main():
     put(g, "blha-invite-splash-1920x1080.png", wordmark_on(1920, 1080, wm_white, BLACK), rgb=True)
     put(g, "blha-github-social-preview-1280x640.png", wordmark_on(1280, 640, wm_white), rgb=True)
     put(g, "blha-x-header-1500x500.png", wordmark_on(1500, 500, wm_white, frac=0.62), rgb=True)
+    put(g, "blha-bot-profile-banner-1360x480.png", wordmark_on(1360, 480, wm_white, frac=0.5), rgb=True)
     put(g, "blha-event-cover-800x320.png", wordmark_on(800, 320, wm_white, frac=0.6), rgb=True)
 
     # 4 channel headers (1600x533)
