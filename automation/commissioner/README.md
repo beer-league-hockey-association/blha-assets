@@ -46,7 +46,7 @@ channel is only for you.
 ## Checking it
 
 - `preview` mode prints every task with its trigger time and whether it is
-  early, due, already sent or too late. Add `at` (for example
+  early, due, overdue, already sent or expired. Add `at` (for example
   `2027-03-08T08:00`) to see what would post at that moment.
 - The BLHA Scheduler starts the workflow hourly, so each reminder arrives
   within an hour of its trigger. Nothing is ever posted twice.

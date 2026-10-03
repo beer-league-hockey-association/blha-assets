@@ -283,7 +283,6 @@ def test_post() -> int:
     task = {
         "title": "Commissioner Desk delivery test",
         "items": ["Controlled test only. Nothing is due and no league deadline is being announced."],
-        "section": "TEST",
     }
     ok, detail = post_discord_webhook(secret_name(cfg), build_payload(task, None, cfg, test=True))
     print(("PASS" if ok else "ERROR") + f" [commissioner-desk]: {detail}")
