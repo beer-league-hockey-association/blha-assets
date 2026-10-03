@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-02T23:15:30.406548Z",
+  "updated_at": "2026-10-03T00:30:35.528876Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1792,6 +1792,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-02T23:15:30.378218Z"
+    },
+    {
+      "key": "40ed329a3e59b17d050f2fb4",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/5249386a-8fa7-4f52-a591-cd422a88b7b3",
+      "fingerprint": "094f0c057ffc9631",
+      "title_norm": "nhl on sportsnet: capitals vs. hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T00:30:35.270867Z"
+    },
+    {
+      "key": "687d2ccdb2eed0df29a03298",
+      "url": "https://www.sportsnet.ca/juniors/article/asu-asks-for-independent-review-of-mayich-incident",
+      "fingerprint": "c869de58753f05a8",
+      "title_norm": "asu asks for independent review of mayich incident",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T00:30:35.507850Z"
     }
   ]
 }
