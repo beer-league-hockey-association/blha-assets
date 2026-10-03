@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T18:30:35.935391Z",
+  "updated_at": "2026-10-03T18:45:29.979869Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2152,6 +2152,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T18:30:35.906580Z"
+    },
+    {
+      "key": "d265be1030c7cbb19c7bc9a8",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-jake-debrusk-out-against-flames-with-illness",
+      "fingerprint": "b32a0f1bd97cf7bd",
+      "title_norm": "canucks' jake debrusk out against flames with illness",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T18:45:29.952275Z"
     }
   ]
 }
