@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T02:15:30.298951Z",
+  "updated_at": "2026-10-03T03:30:31.533120Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1892,6 +1892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T02:15:30.274577Z"
+    },
+    {
+      "key": "ad4ab52a2e22667fda88f5ab",
+      "url": "https://www.nhl.com/news/boston-bruins-winnipeg-jets-game-recap-october-2-2026",
+      "fingerprint": "64a911d2f1b299c0",
+      "title_norm": "peterka's ot goal caps bruins late comeback against jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T03:30:31.445488Z"
     }
   ]
 }
