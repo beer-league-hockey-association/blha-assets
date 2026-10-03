@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T23:15:27.015671Z",
+  "updated_at": "2026-10-03T23:45:32.673226Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2262,6 +2262,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-03T23:15:26.960073Z"
+    },
+    {
+      "key": "b42b08958eb361a2e5705fc1",
+      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
+      "fingerprint": "c2e1d0bb03e48e17",
+      "title_norm": "justus annunen (nsh) — annunen (undisclosed) is day-to-day and will not dress on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T23:45:32.603348Z"
     }
   ]
 }
