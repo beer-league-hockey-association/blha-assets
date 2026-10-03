@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T03:45:31.547462Z",
+  "updated_at": "2026-10-03T04:31:03.969216Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1922,6 +1922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T03:45:31.535728Z"
+    },
+    {
+      "key": "247c2159ccdde21c17e73ad6",
+      "url": "https://www.nhl.com/news/kirill-marchenko-already-getting-comfortable-with-toronto",
+      "fingerprint": "41ba1c81bd0768c9",
+      "title_norm": "marchenko already 'getting comfortable' with leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T04:31:03.662180Z"
+    },
+    {
+      "key": "e9c2627ea0170f563f738e76",
+      "url": "https://www.nhl.com/news/st-louis-blues-dallas-stars-game-recap-october-2-2026",
+      "fingerprint": "a6f45a06eb3af1d9",
+      "title_norm": "hofer stops 25, blues shut out stars in season opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T04:31:03.881012Z"
     }
   ]
 }
