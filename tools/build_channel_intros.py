@@ -164,7 +164,7 @@ card("trade-center/05_player_values_channel_intro.json", "BLHA PLAYER VALUES",
       ("REMEMBER", "Values are opinions. A trade isn't reversible just because someone believes one side received more value (Article XI).")])
 
 # --------------------------------------------------------------------- Scouting
-MINORS = ("MINOR-LEAGUE RULES", "Minor-league spots are for players 25 or younger as of Sept. 15 with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.")
+MINORS = ("MINOR-LEAGUE RULES", "Minor-league spots are for players 25 or younger (per Fantrax's age calculation) with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.")
 card("scouting/01_prospect_scouting_channel_intro.json", "BLHA PROSPECT SCOUTING",
      "Build the pipeline. This is where dynasty owners talk prospects.", SD,
      [("USE THIS ROOM FOR", "Prospect evaluations • Sleepers • Development timelines • Stash candidates"), MINORS,

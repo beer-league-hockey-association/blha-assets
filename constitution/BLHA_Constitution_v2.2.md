@@ -8,7 +8,7 @@
 - **Inaugural season:** 2027–28 (Season 2027). Startup draft is held in the 2027 offseason.
 - **Format:** Head-to-Head Points, daily lineups, 22-week regular season, each opponent twice, no divisions.
 - **Roster:** 20 active (3 C, 3 LW, 3 RW, 3 F, 6 D, 2 G), 6 reserve, 10 minors, 5 IR. 36 controlled spots excluding IR.
-- **Minors:** Age 25 or younger as of Sept. 15; skaters ≤100 career NHL regular-season GP; goalies ≤50.
+- **Minors:** Age 25 or younger as calculated by Fantrax; skaters ≤100 career NHL regular-season GP; goalies ≤50.
 - **FAAB:** $1,000 per season; no rollover; $0 bids allowed; hidden bids; daily processing; no FCFS.
 - **Acquisitions:** Maximum 5 per normal fantasy week; the two-week championship uses two separate five-acquisition weekly limits.
 - **Goalies:** Maximum 4 credited starts per normal fantasy week; 8 total across the two-week championship.
@@ -157,7 +157,7 @@
 
 **7.1** The BLHA maintains 10 minor-league roster spots.
 
-**7.2** A player must be age 25 or younger using the player's age as of September 15 immediately before the Season. That age determination remains fixed for the entire fantasy Season.
+**7.2** A player must be age 25 or younger, as Fantrax calculates the player's age on the day eligibility is checked. A player who turns 26 during the Season becomes minor-ineligible once Fantrax reflects that age, and Fantrax's age calculation is final.
 
 **7.3** Skaters remain minor-eligible through 100 career NHL regular-season games played. Goalies remain minor-eligible through 50 career NHL regular-season games played. Career NHL games played continue to accumulate during the Season.
 
