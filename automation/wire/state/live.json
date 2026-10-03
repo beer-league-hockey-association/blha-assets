@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T11:15:26.259843Z",
+  "updated_at": "2026-10-03T12:30:33.134404Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1972,6 +1972,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-03T11:15:26.165130Z"
+    },
+    {
+      "key": "07f66bf3c0bd35f8ea7b25f1",
+      "url": "https://www.sportsnet.ca/nhl/article/q-and-a-darryl-sittler-on-gavin-mckenna-trade-requests-and-growing-up-a-habs-fan",
+      "fingerprint": "4297c3d3fa394e1b",
+      "title_norm": "q and a: darryl sittler on gavin mckenna, trade requests and growing up a habs fan",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T12:30:33.095154Z"
     }
   ]
 }
