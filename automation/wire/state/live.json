@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T17:45:26.633041Z",
+  "updated_at": "2026-10-03T18:15:31.411315Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2112,6 +2112,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-03T17:45:26.539244Z"
+    },
+    {
+      "key": "ed02173bf867ee1f3e4259f3",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-trouba/2099",
+      "fingerprint": "3fa307b0ebffdf08",
+      "title_norm": "jacob trouba (sjs) — trouba (illness) will be a game-time decision on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T18:15:31.071011Z"
+    },
+    {
+      "key": "7c3cf81fb79271db3e7bfd6e",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "eb3fa9fc7ebc13af",
+      "title_norm": "aleksander barkov (fla) — barkov (lower body) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T18:15:31.338306Z"
     }
   ]
 }
