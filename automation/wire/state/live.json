@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T00:30:35.528876Z",
+  "updated_at": "2026-10-03T00:45:30.225260Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1812,6 +1812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T00:30:35.507850Z"
+    },
+    {
+      "key": "66e467041d0eb18733bed923",
+      "url": "https://www.nhl.com/news/maple-leafs-thanksgiving-visit-to-covenant-house-toronto",
+      "fingerprint": "b08a93b87347d4d3",
+      "title_norm": "leafs glad to 'lend a hand' serving thanksgiving meals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T00:45:30.113895Z"
     }
   ]
 }
