@@ -1,0 +1,51 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/commissioners-office/blha-commissioners-office-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "OPEN A TICKET",
+      "description": "Need the Commissioner? Pick the type of ticket from the menu below. A private channel opens for you and the commissioners. Nothing you write there is public.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA COMMISSIONER'S OFFICE"
+      },
+      "fields": [
+        {
+          "name": "OPEN TO COMMISSIONERS",
+          "value": "❓ General Help\n🔄 Trade Review\n⚖️ Rules Ruling / Appeal\n🏒 Roster / Fantrax Problem\n🎯 Draft Issue\n⚙️ Server / Bot Problem",
+          "inline": true
+        },
+        {
+          "name": "COMMISSIONER ONLY",
+          "value": "💰 Dues & Payment\n🚩 Report a Member\n🤝 Ownership Change\n\nThese stay private to the Commissioner.",
+          "inline": true
+        },
+        {
+          "name": "TIMING",
+          "value": "A request to review a material Commissioner ruling must be made within 48 hours of the ruling (Article 19.4). A trade misclick or platform error must be reported within 48 hours of the trade processing (11.2).",
+          "inline": false
+        },
+        {
+          "name": "BEFORE YOU OPEN ONE",
+          "value": "Questions the whole league could use the answer to belong in **rules-questions**. You can have up to 3 tickets open at once.",
+          "inline": false
+        },
+        {
+          "name": "PRIVACY",
+          "value": "Never post passwords, card numbers or bank account numbers in a ticket.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}
