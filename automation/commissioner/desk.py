@@ -181,8 +181,7 @@ def build_payload(
 ) -> dict[str, Any]:
     desk_cfg = cfg.get("commissioner_desk") or {}
     ping = str(desk_cfg.get("ping_user_id") or "").strip()
-    lines = [f"• {item}" for item in task["items"]]
-    body = "\n".join(lines)
+    body = "\n\n".join(task["items"])
     section = task.get("section")
     footer = "BLHA COMMISSIONER DESK"
     if section:
