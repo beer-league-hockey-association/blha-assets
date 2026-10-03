@@ -1,0 +1,16 @@
+{
+  "anchors": {
+    "first_week_start": "2026-09-29T21:00:00+00:00",
+    "last_regular_final": "2027-03-08T11:00:00+00:00",
+    "playoff_start:1": "2027-03-09T00:00:00+00:00",
+    "playoff_start:2": "2027-03-15T19:00:00+00:00",
+    "playoff_start:3": "2027-03-22T23:00:00+00:00",
+    "season_end_final": "2027-04-05T10:00:00+00:00",
+    "trade_deadline_final": "2027-02-22T11:00:00+00:00"
+  },
+  "baselined": "2026-10-03T23:30:36.386695+00:00",
+  "sent": {
+    "preseason-eve@2026-09-28T21:00:00+00:00": "baseline",
+    "preseason-week@2026-09-22T21:00:00+00:00": "baseline"
+  }
+}
