@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T16:30:33.788542Z",
+  "updated_at": "2026-10-03T16:45:31.268892Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2072,6 +2072,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T16:30:33.397310Z"
+    },
+    {
+      "key": "a68e00a85dfee6f30986b13d",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-assistant-daniel-alfredsson-ready-to-switch-sides-in-battle-of-ontario",
+      "fingerprint": "6b161ea1103636f5",
+      "title_norm": "maple leafs assistant daniel alfredsson ready to switch sides in battle of ontario",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T16:45:31.240849Z"
     }
   ]
 }
