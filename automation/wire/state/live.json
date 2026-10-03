@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T12:30:33.134404Z",
+  "updated_at": "2026-10-03T12:45:31.558779Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1982,6 +1982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T12:30:33.095154Z"
+    },
+    {
+      "key": "d0118a30ee0b7ef19c922301",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-why-maple-leafs-should-thrive-with-salary-cap-spike",
+      "fingerprint": "cd5ad5c4657b96ef",
+      "title_norm": "quick shifts: why maple leafs should thrive with salary-cap spike",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T12:45:31.513371Z"
     }
   ]
 }
