@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T17:00:39.819026Z",
+  "updated_at": "2026-10-03T17:15:31.447709Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2092,6 +2092,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T17:00:39.740080Z"
+    },
+    {
+      "key": "af241312fc916823d73fdd07",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-byram-to-miss-home-coming-against-sabres-because-of-family-matter",
+      "fingerprint": "978a0317c0d04063",
+      "title_norm": "blackhawks' byram to miss home-coming against sabres because of family matter",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T17:15:31.417536Z"
     }
   ]
 }
