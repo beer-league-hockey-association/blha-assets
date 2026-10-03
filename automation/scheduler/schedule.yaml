@@ -76,3 +76,8 @@ jobs:
   - id: commissioner-desk
     workflow: blha-commissioner-desk.yml
     every_minutes: 60
+
+  # Private alert when a draft pick changes owner (Article XII prepayment check).
+  - id: pick-trades
+    workflow: blha-pick-trades.yml
+    every_minutes: 15

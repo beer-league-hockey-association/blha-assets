@@ -92,3 +92,8 @@ jobs:
         env:
           PYTHONPATH: automation:automation/commissioner
         run: python automation/commissioner/test_desk.py
+
+      - name: Test pick-trade alert
+        env:
+          PYTHONPATH: automation:automation/commissioner
+        run: python automation/commissioner/test_picktrades.py

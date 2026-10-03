@@ -31,6 +31,19 @@ They are disabled templates until you give each a `starts_at` and set
 Public deadline reminders for owners stay in League Office as before. This
 channel is only for you.
 
+## Pick-trade alert
+
+`picktrades.py` (workflow BLHA Pick Trades, every 15 minutes) compares Fantrax's
+future-pick ownership with the last saved copy and posts one message to this
+channel whenever a pick changes owner. For 1st and 2nd round picks it tells you
+to check the League Ledger: the team giving the pick up must be paid through the
+pick's Season (Art. 12.2 to 12.5). Rounds 3 to 5 are listed for your records only.
+
+Fantrax shows a pick only after a trade has gone through, so this is a fast
+prompt to confirm or reverse, not a lock. It cannot see whether a franchise has
+paid; that stays in your ledger. The first run only saves a baseline. Use mode
+`test` for a sample alert and `preview` to see what would post.
+
 ## One-time setup
 
 1. In Discord create a private channel visible only to you, for example

@@ -57,3 +57,9 @@ workflows:
     file: "blha-commissioner-desk.yml"
     # Hourly all year.
     max_age_minutes: 180
+
+  - id: pick-trades
+    name: "BLHA Pick Trades"
+    file: "blha-pick-trades.yml"
+    # Every 15 minutes all year; alert after several missed runs.
+    max_age_minutes: 90
