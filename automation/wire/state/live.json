@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T12:45:31.558779Z",
+  "updated_at": "2026-10-03T15:30:36.850111Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1992,6 +1992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T12:45:31.513371Z"
+    },
+    {
+      "key": "d2c55b5087345b131532c8c4",
+      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
+      "fingerprint": "e0dea03911731aac",
+      "title_norm": "mathew barzal (nyi) — barzal (knee) is hopeful to begin skating before the end of next week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T15:30:36.762422Z"
     }
   ]
 }
