@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T00:45:30.225260Z",
+  "updated_at": "2026-10-03T01:45:33.488749Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1822,6 +1822,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-03T00:45:30.113895Z"
+    },
+    {
+      "key": "030caeb6a799170f4adbc4c2",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-evan-bouchard-edmonton-oilers-2026-27",
+      "fingerprint": "dba01f131e741f5b",
+      "title_norm": "edge stats: bouchard's early case for norris trophy",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T01:45:32.934491Z"
+    },
+    {
+      "key": "0a845ef8960405b80a107935",
+      "url": "https://www.nhl.com/news/new-york-rangers-detroit-red-wings-game-recap-october-2-2026",
+      "fingerprint": "33bd78fd2bd1c13e",
+      "title_norm": "garand gets first nhl shutout, rangers blank red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T01:45:33.178126Z"
+    },
+    {
+      "key": "44008e944cfafdb2338dabeb",
+      "url": "https://www.dailyfaceoff.com/players/news/a-j-greer/2706",
+      "fingerprint": "94859f7a9f8077ab",
+      "title_norm": "a.j. greer (ana) — greer (upper-body) will play friday in vegas.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T01:45:33.411117Z"
     }
   ]
 }
