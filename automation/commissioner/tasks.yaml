@@ -21,8 +21,12 @@
 settings:
   # Constitution 11.6: deadline is the end of Week 20 of 22, i.e. 2 weeks before the last regular week.
   trade_deadline_weeks_before_end: 2
-  # A reminder that is more than this late is dropped rather than posted stale.
+  # A reminder inside this window counts as on time.
   catchup_window_hours: 36
+  # After that it is still posted, marked OVERDUE, until this many days late.
+  # Past that it is considered irrelevant and is never posted. A task can set
+  # its own overdue_days.
+  overdue_window_days: 7
 
 tasks:
   - id: preseason-week
@@ -100,6 +104,7 @@ tasks:
     anchor: season_end_final
     offset: 2h
     title: "Season complete: close-out starts now"
+    overdue_days: 30
     section: "3. End of Season, Part B"
     items:
       - "Confirm champion, runner-up, third and fourth place, and the consolation champion."
@@ -112,6 +117,7 @@ tasks:
     anchor: season_end_final
     offset: 14d
     title: "Prizes and Season Ledger due in 16 days"
+    overdue_days: 16
     section: "3. End of Season, Part B"
     items:
       - "Pay Champion $650, Runner-Up $350, Third $150 and Presidents' Trophy $200, and record each in the Ledger."
@@ -121,6 +127,7 @@ tasks:
     anchor: season_end_final
     offset: 25d
     title: "Prizes and Season Ledger due in 5 days"
+    overdue_days: 5
     section: "3. End of Season, Part B"
     items:
       - "Anything unpaid or unpublished from the Part B list needs to be finished this week (3.9)."
@@ -129,6 +136,7 @@ tasks:
     anchor: season_end_final
     offset: 29d
     title: "Prizes and Season Ledger due tomorrow"
+    overdue_days: 2
     section: "3. End of Season, Part B"
     items:
       - "The 30-day deadline is tomorrow. Confirm every prize is paid and the Season Ledger is posted (3.9)."

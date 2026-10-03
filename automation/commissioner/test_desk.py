@@ -70,9 +70,25 @@ class PlanTests(unittest.TestCase):
         sent = {desk.state_key("wrapup", trigger): "x"}
         self.assertEqual(statuses(trigger + timedelta(minutes=1), sent)["wrapup"], "sent")
 
-    def test_stale_reminder_is_dropped_not_posted(self):
+    def test_late_reminder_is_still_posted_as_overdue(self):
         trigger = anchors()["last_regular_final"] + timedelta(hours=2)
-        self.assertEqual(statuses(trigger + CATCHUP + timedelta(minutes=1))["wrapup"], "late")
+        self.assertEqual(statuses(trigger + CATCHUP + timedelta(minutes=1))["wrapup"], "overdue")
+        self.assertEqual(statuses(trigger + timedelta(days=6))["wrapup"], "overdue")
+
+    def test_countdown_expires_when_its_event_starts(self):
+        start = anchors()["playoff_start:1"]
+        self.assertEqual(statuses(start - timedelta(hours=1))["consolation-r1"], "send")
+        self.assertEqual(statuses(start + timedelta(minutes=1))["consolation-r1"], "expired")
+        # With a late scheduler it is still posted, as overdue, until the event starts.
+        trigger = start - timedelta(hours=6)
+        self.assertEqual(statuses(trigger + CATCHUP + timedelta(hours=1))["consolation-r1"], "expired")
+
+    def test_reminder_expires_after_its_overdue_window(self):
+        trigger = anchors()["last_regular_final"] + timedelta(hours=2)
+        self.assertEqual(statuses(trigger + timedelta(days=8))["wrapup"], "expired")
+        # The close-out list is needed for 30 days.
+        end = anchors()["season_end_final"] + timedelta(hours=2)
+        self.assertEqual(statuses(end + timedelta(days=20))["closeout"], "overdue")
 
     def test_countdown_before_playoff_round(self):
         start = anchors()["playoff_start:1"]
@@ -84,11 +100,11 @@ class PlanTests(unittest.TestCase):
         self.assertEqual(statuses(end + timedelta(days=14, hours=1))["prizes-day-14"], "send")
         self.assertEqual(statuses(end + timedelta(days=29, hours=1))["prizes-day-29"], "send")
         # Nothing is left to say after day 30.
-        self.assertTrue(all(s != "send" for s in statuses(end + timedelta(days=32)).values()))
+        self.assertTrue(all(s not in ("send", "overdue") for s in statuses(end + timedelta(days=32)).values()))
 
     def test_nothing_due_midseason(self):
         now = season.period(INFO, 10).start + timedelta(days=2)
-        self.assertTrue(all(s != "send" for s in statuses(now).values()))
+        self.assertTrue(all(s not in ("send", "overdue") for s in statuses(now).values()))
 
     def test_missing_anchor_is_reported_not_crashed(self):
         out = desk.plan(DATA["tasks"], {}, {}, datetime.now(timezone.utc), CATCHUP)
@@ -115,10 +131,12 @@ class PayloadTests(unittest.TestCase):
 
 
 class RunTests(unittest.TestCase):
-    def _run(self, now, mode="live", post_ok=True):
+    def _run(self, now, mode="live", post_ok=True, baselined=True):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         state = Path(tmp.name) / "commissioner.json"
+        if baselined:
+            state.write_text(json.dumps({"baselined": "2026-01-01T00:00:00+00:00", "sent": {}}))
         posts = []
 
         def fake_post(secret, payload):
@@ -153,7 +171,30 @@ class RunTests(unittest.TestCase):
         code, _, posts, state = self._run(now, mode="preview")
         self.assertEqual(code, 0)
         self.assertEqual(posts, [])
-        self.assertFalse(state.exists())
+        self.assertEqual(json.loads(state.read_text()), {"baselined": "2026-01-01T00:00:00+00:00", "sent": {}})
+
+    def test_overdue_reminder_is_labelled(self):
+        now = anchors()["last_regular_final"] + timedelta(hours=2) + timedelta(days=3)
+        _, _, posts, _ = self._run(now)
+        titles = [p["embeds"][0]["title"] for p in posts]
+        self.assertEqual(len(titles), 1)
+        self.assertTrue(titles[0].startswith("OVERDUE: "))
+        self.assertIn("Was due", posts[0]["embeds"][0]["description"])
+
+    def test_first_live_run_does_not_flood_with_old_reminders(self):
+        # Enabled in the middle of the test season: weeks of past reminders exist.
+        now = anchors()["last_regular_final"] + timedelta(days=3)
+        code, code2, posts, state = self._run(now, baselined=False)
+        self.assertEqual((code, code2, posts), (0, 0, []))
+        saved = json.loads(state.read_text())
+        self.assertIn("baselined", saved)
+        self.assertTrue(all(v == "baseline" for v in saved["sent"].values()))
+
+    def test_first_live_run_still_posts_what_is_on_time(self):
+        now = anchors()["last_regular_final"] + timedelta(hours=3)
+        _, _, posts, _ = self._run(now, baselined=False)
+        self.assertEqual(len(posts), 1)
+        self.assertFalse(posts[0]["embeds"][0]["title"].startswith("OVERDUE"))
 
     def test_failed_delivery_is_retried_next_run(self):
         now = anchors()["last_regular_final"] + timedelta(hours=3)

@@ -49,8 +49,16 @@ channel is only for you.
   early, due, already sent or too late. Add `at` (for example
   `2027-03-08T08:00`) to see what would post at that moment.
 - The BLHA Scheduler starts the workflow hourly, so each reminder arrives
-  within an hour of its trigger. A reminder more than 36 hours late is dropped
-  rather than posted stale, and nothing is ever posted twice.
+  within an hour of its trigger. Nothing is ever posted twice.
+- **Late reminders are never silently dropped.** If GitHub or the scheduler
+  was down, a reminder more than 36 hours late is still posted, titled
+  `OVERDUE:` with "Was due" and the original time, for 7 days (30 for the
+  close-out list, and until the due date for the prize countdowns). A
+  countdown such as "Playoffs start in 6 hours" is dropped once that event
+  has started, because it would only add noise.
+- The first live run records anything already long past as handled, so
+  turning this on mid-season does not flood the channel. Reminders that are
+  on time at that moment still post.
 - Automation Health reports a stale or failing Commissioner Desk run.
 
 ## Season rollover
