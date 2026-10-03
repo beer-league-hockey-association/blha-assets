@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T21:55:46.084266Z",
+  "updated_at": "2026-10-03T23:00:38.533271Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2212,6 +2212,46 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-03T21:55:46.018210Z"
+    },
+    {
+      "key": "659b473f40d41adfe1aeee83",
+      "url": "https://www.nhl.com/news/nhl-bold-predictions-for-2026-27-fantasy-hockey-season",
+      "fingerprint": "3a5a0b3372ae4815",
+      "title_norm": "bold predictions for 2026-27 fantasy season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T23:00:37.582517Z"
+    },
+    {
+      "key": "2233b3fb7dbbd68182a7afd6",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/2a439054-7de3-477e-a598-d76b89f66e63/preview",
+      "fingerprint": "43c10bc5bab1c614",
+      "title_norm": "saturday night hockey on sportsnet: maple leafs vs. senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T23:00:37.959645Z"
+    },
+    {
+      "key": "0eeb49081f032a7a7b21b3a7",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/dc61b53e-40c8-4ea6-9ac4-141d20006f0d/preview",
+      "fingerprint": "59251e1595c72be2",
+      "title_norm": "saturday night hockey on sportsnet: oilers vs. kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T23:00:38.222751Z"
+    },
+    {
+      "key": "37de6929a587dd0bd23e6d09",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/5bd690f1-0e09-4533-ac8e-0ca5310dd90a",
+      "fingerprint": "7aaf9bd7f44db76d",
+      "title_norm": "saturday night hockey on sportsnet: canadiens vs. penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T23:00:38.232405Z"
     }
   ]
 }
