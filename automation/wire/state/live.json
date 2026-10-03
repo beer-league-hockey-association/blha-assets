@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T16:45:31.268892Z",
+  "updated_at": "2026-10-03T17:00:39.819026Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2082,6 +2082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T16:45:31.240849Z"
+    },
+    {
+      "key": "26c538a1e7394ebdb2554d04",
+      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
+      "fingerprint": "cf04d34a2d316598",
+      "title_norm": "ben kindel (pit) — kindel (lower body) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T17:00:39.740080Z"
     }
   ]
 }
