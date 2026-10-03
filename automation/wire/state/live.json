@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T03:30:31.533120Z",
+  "updated_at": "2026-10-03T03:45:31.547462Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1902,6 +1902,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-03T03:30:31.445488Z"
+    },
+    {
+      "key": "288daa029c0c521a68f1769a",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-lose-in-overtime-to-bruins-in-season-opener",
+      "fingerprint": "de9bda2c57e635db",
+      "title_norm": "jets lose in overtime to bruins in season opener",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T03:45:31.277136Z"
+    },
+    {
+      "key": "72358dd311455fd6596cdd26",
+      "url": "https://www.sportsnet.ca/nhl/article/blues-carlo-ejected-for-kneeing-stars-hintz",
+      "fingerprint": "eddee5dfc6f1f94c",
+      "title_norm": "blues' carlo ejected for kneeing stars' hintz",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T03:45:31.535728Z"
     }
   ]
 }
