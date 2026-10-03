@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T23:00:38.533271Z",
+  "updated_at": "2026-10-03T23:15:27.015671Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2252,6 +2252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T23:00:38.232405Z"
+    },
+    {
+      "key": "8d7847d5392138772f06569c",
+      "url": "https://www.winnipegfreepress.com/breakingnews/2026/10/03/living-the-dream-9",
+      "fingerprint": "3eaded7b2eb4a4b8",
+      "title_norm": "bauer basking in afterglow of nhl debut",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-03T23:15:26.960073Z"
     }
   ]
 }
