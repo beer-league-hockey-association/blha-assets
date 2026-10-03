@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T18:15:31.411315Z",
+  "updated_at": "2026-10-03T18:30:35.935391Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2132,6 +2132,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T18:15:31.338306Z"
+    },
+    {
+      "key": "845d835085e63b6bce876e5a",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
+      "fingerprint": "8015f487d6609ed6",
+      "title_norm": "jake debrusk (van) — debrusk (illness) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T18:30:35.499410Z"
+    },
+    {
+      "key": "a70b8a41983d50209d2f448e",
+      "url": "https://www.sportsnet.ca/nhl/article/report-panthers-place-captain-aleksander-barkov-on-ltir-with-leg-injury",
+      "fingerprint": "441812aacf03815a",
+      "title_norm": "panthers place captain aleksander barkov on ltir with leg injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T18:30:35.906580Z"
     }
   ]
 }
