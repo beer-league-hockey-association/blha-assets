@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T16:00:44.883681Z",
+  "updated_at": "2026-10-03T16:30:33.788542Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2032,6 +2032,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T16:00:44.801444Z"
+    },
+    {
+      "key": "7bfbaab24b353a5ba1b6a8eb",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-3-2026",
+      "fingerprint": "d331a2282ea6c7cd",
+      "title_norm": "status report: sanderson to play in senators opener",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T16:30:32.868575Z"
+    },
+    {
+      "key": "7a2fce079b72cbeb3cded03f",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "2f1070d28aff0204",
+      "title_norm": "bowen byram (chi) — byram (personal) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T16:30:33.088610Z"
+    },
+    {
+      "key": "29868b18d690a0037b75258f",
+      "url": "https://www.dailyfaceoff.com/players/news/marco-kasper/36364",
+      "fingerprint": "94656aa5a477ff95",
+      "title_norm": "marco kasper (det) — kasper (upper body) will not play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T16:30:33.388812Z"
+    },
+    {
+      "key": "b399e1713c5b8bb9178f28d1",
+      "url": "https://www.dailyfaceoff.com/players/news/mackie-samoskevich/31226",
+      "fingerprint": "b491bd8ab3b66164",
+      "title_norm": "mackie samoskevich (sea) — samoskevich (upper body) will make his season debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T16:30:33.397310Z"
     }
   ]
 }
