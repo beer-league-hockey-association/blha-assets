@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T15:30:36.850111Z",
+  "updated_at": "2026-10-03T15:45:31.246764Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2002,6 +2002,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T15:30:36.762422Z"
+    },
+    {
+      "key": "9dc4ab911b39687962d50102",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-melanson/31241",
+      "fingerprint": "21968cdd6b2be6e4",
+      "title_norm": "jacob melanson (sea) — melanson (upper body) is week-to-week and has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T15:45:30.209085Z"
+    },
+    {
+      "key": "a20907ce1664e8560c3cbabc",
+      "url": "https://www.dailyfaceoff.com/players/news/mackie-samoskevich/31226",
+      "fingerprint": "aecdf6457cdca367",
+      "title_norm": "mackie samoskevich (sea) — samoskevich (upper body) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T15:45:31.201651Z"
     }
   ]
 }
