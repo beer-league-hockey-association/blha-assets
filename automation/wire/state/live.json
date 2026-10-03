@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T01:45:33.488749Z",
+  "updated_at": "2026-10-03T02:00:35.109449Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1852,6 +1852,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T01:45:33.411117Z"
+    },
+    {
+      "key": "9469401b6b90967a85d02bbb",
+      "url": "https://www.sportsnet.ca/nhl/article/alex-tuch-scores-pair-in-capitals-debut-washington-beats-hurricanes",
+      "fingerprint": "b56b48205fcd04d0",
+      "title_norm": "alex tuch scores pair in capitals debut, washington beats hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T02:00:34.775348Z"
+    },
+    {
+      "key": "63f082ddc162a41a739fe1f0",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-garand-posts-first-career-shutout-in-win-over-red-wings",
+      "fingerprint": "746a667caef4ae06",
+      "title_norm": "rangers' garand posts first career shutout in win over red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T02:00:35.095693Z"
     }
   ]
 }
