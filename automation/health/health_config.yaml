@@ -51,3 +51,9 @@ workflows:
     file: "blha-fantrax-playoffs.yml"
     # Hourly during the playoff weeks only.
     max_age_minutes: 180
+
+  - id: commissioner-desk
+    name: "BLHA Commissioner Desk"
+    file: "blha-commissioner-desk.yml"
+    # Hourly all year.
+    max_age_minutes: 180

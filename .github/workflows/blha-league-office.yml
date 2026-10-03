@@ -17,7 +17,7 @@ on:
         required: true
         default: choose-channel
         type: choice
-        options: [choose-channel, league-calendar, league-announcements]
+        options: [choose-channel, league-calendar, league-announcements, commissioner-desk]
       reset_state:
         description: "Clear League Office delivery state before this run"
         required: true
@@ -61,6 +61,7 @@ jobs:
         env:
           BLHA_WEBHOOK_LEAGUE_CALENDAR: ${{ secrets.BLHA_WEBHOOK_LEAGUE_CALENDAR }}
           BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS: ${{ secrets.BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS }}
+          BLHA_WEBHOOK_COMMISSIONER_DESK: ${{ secrets.BLHA_WEBHOOK_COMMISSIONER_DESK }}
         shell: bash
         run: |
           if [[ "${{ github.event_name }}" == "schedule" ]]; then
@@ -70,7 +71,7 @@ jobs:
 
           if [[ "$INPUT_MODE" == "test" ]]; then
             if [[ "$INPUT_CHANNEL" == "choose-channel" ]]; then
-              echo "ERROR: choose league-calendar or league-announcements for test mode."
+              echo "ERROR: choose a channel for test mode."
               exit 1
             fi
             python automation/league-office/league_ops.py --mode test --channel "$INPUT_CHANNEL"

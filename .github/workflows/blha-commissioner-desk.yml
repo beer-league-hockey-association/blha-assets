@@ -1,0 +1,73 @@
+name: BLHA Commissioner Desk
+run-name: BLHA Commissioner Desk — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# Private reminders for the commissioner's manual season work. Timing lives in
+# automation/scheduler/schedule.yaml; the BLHA Scheduler starts this workflow
+# with mode=live every hour. Which reminders are due is decided by the Fantrax
+# calendar (automation/commissioner/tasks.yaml), not by this schedule.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log only; test = one [TEST] post; live = post what is due"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+      at:
+        description: "Preview only: pretend it is this local time (for example 2027-03-08T08:00)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-commissioner-desk
+  cancel-in-progress: false
+
+jobs:
+  desk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      AT: ${{ inputs.at }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/commissioner/state/commissioner.json"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run Commissioner Desk
+        env:
+          BLHA_WEBHOOK_COMMISSIONER_DESK: ${{ secrets.BLHA_WEBHOOK_COMMISSIONER_DESK }}
+        shell: bash
+        run: |
+          ARGS=(--mode "$MODE")
+          if [[ "$MODE" == "preview" && -n "$AT" ]]; then ARGS+=(--at "$AT"); fi
+          python automation/commissioner/desk.py "${ARGS[@]}"
+
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
+        if: ${{ !cancelled() && env.MODE == 'live' }}
+        run: |
+          bash automation/tools/state_branch.sh save \
+            "chore(commissioner): save reminder state" \
+            "BLHA Fantrax Automation" \
+            "automation/commissioner/state/commissioner.json"

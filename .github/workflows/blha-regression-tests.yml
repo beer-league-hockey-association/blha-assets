@@ -7,6 +7,7 @@ on:
     paths:
       - 'automation/**/*.py'
       - 'automation/league-office/events.yaml'
+      - 'automation/commissioner/tasks.yaml'
       - 'automation/tools/*.sh'
       - 'automation/league.yaml'
       - 'automation/scheduler/schedule.yaml'
@@ -16,6 +17,7 @@ on:
     paths:
       - 'automation/**/*.py'
       - 'automation/league-office/events.yaml'
+      - 'automation/commissioner/tasks.yaml'
       - 'automation/tools/*.sh'
       - 'automation/league.yaml'
       - 'automation/scheduler/schedule.yaml'
@@ -85,3 +87,8 @@ jobs:
         env:
           PYTHONPATH: automation:automation/playoffs
         run: python automation/playoffs/test_playoff.py
+
+      - name: Test Commissioner Desk reminders
+        env:
+          PYTHONPATH: automation:automation/commissioner
+        run: python automation/commissioner/test_desk.py
