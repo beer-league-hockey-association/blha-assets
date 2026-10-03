@@ -20,6 +20,12 @@ channels:
     secret: BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS
     color: 0xD4AF37
     label: "LEAGUE ANNOUNCEMENT"
+  # Private commissioner channel: reminders for manual work that keeps the
+  # league on track. Fantrax-timed reminders live in commissioner/tasks.yaml.
+  commissioner-desk:
+    secret: BLHA_WEBHOOK_COMMISSIONER_DESK
+    color: 0xFFB81C
+    label: "COMMISSIONER DESK"
 
 # Keep events disabled until their actual BLHA dates are finalized.
 # starts_at may be entered as local New York wall-clock time without an offset,
@@ -98,3 +104,99 @@ events:
     description: "The BLHA championship playoffs begin."
     reminders: [7d, 3d, 1d, 3h, 1h, start]
     announcement_reminders: [3d, 1d, start]
+
+  # ---------------------------------------------------------------------------
+  # Commissioner Desk reminders (private). These are dates Fantrax cannot know:
+  # they come from the NHL calendar or from deadlines you set. Set starts_at to
+  # the date each one is due, then set enabled: true. See the Commissioner
+  # Season Checklists for the full list.
+
+  - id: commissioner-calendar-due
+    enabled: false
+    title: "Publish the League Calendar"
+    type: commissioner
+    starts_at: null   # NHL schedule release date + 14 days (Art. 5.5)
+    channel: commissioner-desk
+    priority: high
+    description: "The League Calendar is due within 14 days after the NHL releases its schedule. Convert every formula date, post it in #league-calendar and create the Sesh events."
+    reminders: [7d, 3d, 1d, start]
+
+  - id: commissioner-draft-announcement
+    enabled: false
+    title: "Announce the draft date"
+    type: commissioner
+    starts_at: null   # Draft date minus 30 days (Art. 5.9)
+    channel: commissioner-desk
+    priority: high
+    description: "The draft must be announced at least 30 days ahead. Post the date, pick clock, nightly pause and timeout procedure."
+    reminders: [7d, 3d, 1d, start]
+
+  - id: commissioner-dues-notice
+    enabled: false
+    title: "Dues deadline notice due"
+    type: commissioner
+    starts_at: null   # Dues deadline minus 30 days (Art. 3.2)
+    channel: commissioner-desk
+    priority: normal
+    description: "Owners need at least 30 days' notice of the dues deadline. Post it with the accepted payment methods."
+    reminders: [7d, 3d, 1d, start]
+
+  - id: commissioner-dues-deadline
+    enabled: false
+    title: "Dues deadline: confirm payments"
+    type: commissioner
+    starts_at: null   # The dues deadline itself
+    channel: commissioner-desk
+    priority: high
+    description: "Check the League Ledger. Send written notice in Discord and by DM to every unpaid franchise (Art. 3.4). Unpaid franchises cannot draft."
+    reminders: [3d, 1d, start]
+
+  - id: commissioner-dues-escalation
+    enabled: false
+    title: "7 days past the dues deadline"
+    type: commissioner
+    starts_at: null   # Dues deadline plus 7 days (Art. 3.4)
+    channel: commissioner-desk
+    priority: high
+    description: "A franchise still unpaid today may be treated as orphaned and its owner replaced (Art. 3.4, 18)."
+    reminders: [1d, start]
+
+  - id: commissioner-amendment-deadline
+    enabled: false
+    title: "Last day to open an amendment vote"
+    type: commissioner
+    starts_at: null   # Dues deadline minus 7 days (Art. 20.3, 20.4)
+    channel: commissioner-desk
+    priority: normal
+    description: "A vote for next season must finish before the dues deadline. Proposals are posted 7 days before voting opens and the window is 7 days. Make sure the voting bot is running."
+    reminders: [21d, 14d, 7d, start]
+
+  - id: commissioner-trading-reopens
+    enabled: false
+    title: "Trading reopens"
+    type: commissioner
+    starts_at: null   # 12:00 AM ET the day after the Stanley Cup Final ends (Art. 5.9, 11.6)
+    channel: commissioner-desk
+    priority: high
+    description: "Clear or reset the trade deadline in Fantrax (Setup > Transactions > Trades) and announce that trades and draft-pick trades are open again."
+    reminders: [1d, start]
+
+  - id: commissioner-token-renewal
+    enabled: false
+    title: "Renew the scheduler GitHub token"
+    type: commissioner
+    starts_at: null   # Token expiry date minus 7 days
+    channel: commissioner-desk
+    priority: high
+    description: "The fine-grained token used by the cron-job.org timer is about to expire. Create a new one and update the cron-job.org header. If it lapses, the health monitor reports a stale Scheduler."
+    reminders: [14d, 7d, start]
+
+  - id: commissioner-premium-renewal
+    enabled: false
+    title: "Pay Fantrax Premium for the season"
+    type: commissioner
+    starts_at: null   # Your chosen date before the draft or Week 1
+    channel: commissioner-desk
+    priority: normal
+    description: "Pay from the League Operating Reserve and log it for the Season Ledger (Art. 3.7). Renew any paid bot or hosting plans the same way and disclose them."
+    reminders: [14d, 3d, start]

@@ -70,3 +70,9 @@ jobs:
     workflow: blha-fantrax-playoffs.yml
     every_minutes: 60
     phases: [playoffs]
+
+  # Private commissioner reminders. The hourly run only checks the Fantrax
+  # calendar (automation/commissioner/tasks.yaml) and posts what is due.
+  - id: commissioner-desk
+    workflow: blha-commissioner-desk.yml
+    every_minutes: 60

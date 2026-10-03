@@ -51,3 +51,13 @@ owners: {}
 
 wire_pings:
   injuries: true
+
+# ---------------------------------------------------------------------------
+# Commissioner Desk (private reminders for the commissioner's manual work)
+#
+# webhook:      GitHub Actions secret holding the private channel's webhook URL.
+# ping_user_id: optional. Your Discord user ID, in quotes, to get an @mention
+#               with each reminder. Leave "" for a silent post.
+commissioner_desk:
+  webhook: BLHA_WEBHOOK_COMMISSIONER_DESK
+  ping_user_id: ""

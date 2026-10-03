@@ -325,7 +325,7 @@ def test_channel(channel: str) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", choices=("dry-run", "live", "test"), default="dry-run")
-    parser.add_argument("--channel", choices=("league-calendar", "league-announcements"))
+    parser.add_argument("--channel", choices=("league-calendar", "league-announcements", "commissioner-desk"))
     parser.add_argument("--reset-state", action="store_true")
     args = parser.parse_args()
 
