@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T05:15:28.389877Z",
+  "updated_at": "2026-10-03T11:15:26.259843Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1962,6 +1962,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-03T05:15:28.296331Z"
+    },
+    {
+      "key": "c29f1237680322ecd28da54b",
+      "url": "http://youtube.com/flohockey",
+      "fingerprint": "a0ae1c630ae68c21",
+      "title_norm": "free doubleheader of ahl hockey on youtube today!",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-03T11:15:26.165130Z"
     }
   ]
 }
