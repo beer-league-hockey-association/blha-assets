@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T02:00:35.109449Z",
+  "updated_at": "2026-10-03T02:15:30.298951Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -1872,6 +1872,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T02:00:35.095693Z"
+    },
+    {
+      "key": "a5faffe5b591a6f916feb81c",
+      "url": "https://www.nhl.com/news/washington-capitals-carolina-hurricanes-game-recap-october-2-2026",
+      "fingerprint": "f29ee1abd4dfee8f",
+      "title_norm": "tuch scores twice in debut, capitals cruise past hurricanes",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T02:15:29.928392Z"
+    },
+    {
+      "key": "2ae56988900f9f528a91bcf5",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-connor-extends-record-for-opening-night-goals",
+      "fingerprint": "d83c7df065b865d1",
+      "title_norm": "jets' connor extends record for opening-night goals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T02:15:30.274577Z"
     }
   ]
 }
