@@ -1,0 +1,30 @@
+name: BLHA Fantrax Probe
+run-name: BLHA Fantrax Probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      period:
+        description: "Scoring period for the period roster call"
+        required: true
+        default: "1"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/common-requirements.txt
+      - name: Probe read-only Fantrax endpoints
+        run: python tools/fantrax_probe.py --out fantrax-probe --period "${{ inputs.period }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fantrax-probe
+          path: fantrax-probe/

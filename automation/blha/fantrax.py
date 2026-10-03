@@ -12,6 +12,16 @@ import requests
 BASE = "https://www.fantrax.com/fxea/general"
 
 
+class FantraxError(RuntimeError):
+    """Fantrax answered HTTP 200 but the body was an error object."""
+
+
+def raise_if_error(endpoint: str, body: Any) -> Any:
+    if isinstance(body, dict) and isinstance(body.get("error"), dict):
+        raise FantraxError(f"{endpoint}: {body['error']}")
+    return body
+
+
 class Fantrax:
     def __init__(self, league_id: str, *, user_agent: str = "BLHA-Automation/2.0", timeout: int = 30) -> None:
         self.league_id = league_id
@@ -26,7 +36,7 @@ class Fantrax:
         query = {"leagueId": self.league_id, **params}
         response = self.session.get(f"{BASE}/{endpoint}", params=query, timeout=self.timeout)
         response.raise_for_status()
-        return response.json()
+        return raise_if_error(endpoint, response.json())
 
     def league_info(self) -> dict[str, Any]:
         info = self.get("getLeagueInfo")
@@ -40,9 +50,22 @@ class Fantrax:
     def matchup_scores(self, period: int) -> list[dict[str, Any]]:
         return normalize_scores(self.get("getMatchupScores", period=period))
 
-    def rosters(self) -> dict[str, Any]:
-        raw = self.get("getTeamRosters")
+    def rosters(self, period: int | None = None) -> dict[str, Any]:
+        """Team rosters; with ``period`` returns that week's lineup and statuses."""
+        raw = self.get("getTeamRosters", **({"period": period} if period is not None else {}))
         return raw if isinstance(raw, dict) else {}
+
+    def draft_picks(self) -> Any:
+        """Current and future draft pick ownership (read-only)."""
+        return self.get("getDraftPicks")
+
+    def draft_results(self) -> Any:
+        """Draft results. Endpoint shape is unverified; see tools/fantrax_probe.py."""
+        return self.get("getDraftResults")
+
+    def adp(self, **filters: Any) -> Any:
+        """Average draft position data."""
+        return self.get("getAdp", **filters)
 
     def player_ids(self) -> dict[str, Any]:
         response = self.session.get(f"{BASE}/getPlayerIds", params={"sport": "NHL"}, timeout=self.timeout)
