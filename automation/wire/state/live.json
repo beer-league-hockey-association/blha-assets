@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T18:45:29.979869Z",
+  "updated_at": "2026-10-03T21:00:33.452012Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2162,6 +2162,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T18:45:29.952275Z"
+    },
+    {
+      "key": "66d62415bdbf3f6fc602c61a",
+      "url": "https://www.nhl.com/news/former-nhl-defenseman-lyle-odelein-dies-at-58",
+      "fingerprint": "ffdd8650296a9bfe",
+      "title_norm": "odelein dies at 58, was 1st blue jackets captain",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T21:00:33.061380Z"
+    },
+    {
+      "key": "7c49b378739e5a9a12540260",
+      "url": "https://www.sportsnet.ca/nhl/article/longtime-nhl-defenceman-lyle-odelein-dead-at-58",
+      "fingerprint": "468801a5ef8f42bc",
+      "title_norm": "longtime nhl defenceman lyle odelein dead at 58",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-03T21:00:33.441565Z"
     }
   ]
 }
