@@ -17,6 +17,7 @@ themselves when the real 2027-28 calendar is created.
 | 7 days and 1 day before Week 1 | Before Season essentials |
 | Monday after the trade-deadline week | Confirm Fantrax blocks trades |
 | Monday after Week 22 | Seed the playoffs, enter consolation round 1, record draft-order inputs |
+| 3 hours after Week 22 is final | Data report from the final standings: playoff field and round 1, Presidents' Trophy, consolation bracket, ties to check, draft-order teams. Waits until Fantrax has counted every week. Potential Points is not in Fantrax's data feed, so copy it from Fantrax by hand. |
 | 6 hours before each playoff round | Consolation entry, reseeding, championship rules, third place |
 | After the Championship | Close-out list, then countdowns at day 14, 25 and 29 for prizes and the Season Ledger |
 

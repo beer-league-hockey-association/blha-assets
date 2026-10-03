@@ -71,6 +71,15 @@ tasks:
       - "Record Potential Points for the six non-playoff teams for picks 1.01 to 1.06 (14.5), and keep a screenshot."
       - "Decide the third-place plan: Fantrax game, or the 16.4 fallback posted in advance."
 
+  - id: endreport
+    anchor: last_regular_final
+    offset: 3h
+    report: end_of_season
+    title: "End-of-season report: seeds, ties, consolation, draft order"
+    section: "3. End of Season, Part A"
+    items:
+      - "Built from the final Fantrax standings once every regular-season week is counted."
+
   - id: consolation-r1
     anchor: playoff_start:1
     offset: -6h

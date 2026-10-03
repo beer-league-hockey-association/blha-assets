@@ -17,6 +17,7 @@ sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
 
 import desk  # noqa: E402
+import endreport  # noqa: E402
 from blha import season  # noqa: E402
 
 ET = ZoneInfo("America/New_York")
@@ -32,6 +33,19 @@ def anchors():
 
 def statuses(now, sent=None):
     return {d.task_id: d.status for d in desk.plan(DATA["tasks"], anchors(), sent or {}, now, CATCHUP)}
+
+
+def _raw(played, same_record=False):
+    rows = []
+    for i in range(1, 13):
+        rec = f"{played - i}-{i}-0" if not same_record or i not in (6, 7) else f"{played - 6}-6-0"
+        rows.append({"rank": i, "teamId": f"t{i}", "teamName": f"Team {i}", "points": rec,
+                     "totalPointsFor": 1000.0 - i, "gamesBack": 0, "winPercentage": 0.5})
+    return rows
+
+
+FINAL_STANDINGS = _raw(23)  # 22 games each: W + L = 22
+IN_PROGRESS = _raw(15)
 
 
 class AnchorTests(unittest.TestCase):
@@ -131,7 +145,7 @@ class PayloadTests(unittest.TestCase):
 
 
 class RunTests(unittest.TestCase):
-    def _run(self, now, mode="live", post_ok=True, baselined=True):
+    def _run(self, now, mode="live", post_ok=True, baselined=True, final_standings=True):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         state = Path(tmp.name) / "commissioner.json"
@@ -150,6 +164,9 @@ class RunTests(unittest.TestCase):
             def league_info(self):
                 return INFO
 
+            def standings(self):
+                return FINAL_STANDINGS if final_standings else IN_PROGRESS
+
         with patch.object(desk, "STATE_PATH", state), patch.object(desk, "Fantrax", FakeFantrax), \
                 patch.object(desk, "post_discord_webhook", fake_post):
             code = desk.run(mode, now)
@@ -160,10 +177,10 @@ class RunTests(unittest.TestCase):
         now = anchors()["last_regular_final"] + timedelta(hours=3)
         code, code2, posts, state = self._run(now)
         self.assertEqual((code, code2), (0, 0))
-        self.assertEqual(len(posts), 1)
+        self.assertEqual(len(posts), 2)  # the wrap-up checklist and the data report
         self.assertIn("seed the playoffs", posts[0]["embeds"][0]["title"])
         saved = json.loads(state.read_text())
-        self.assertEqual(len(saved["sent"]), 1)
+        self.assertEqual(len(saved["sent"]), 2)
         self.assertIn("season_end_final", saved["anchors"])
 
     def test_preview_posts_nothing_and_saves_nothing(self):
@@ -177,8 +194,8 @@ class RunTests(unittest.TestCase):
         now = anchors()["last_regular_final"] + timedelta(hours=2) + timedelta(days=3)
         _, _, posts, _ = self._run(now)
         titles = [p["embeds"][0]["title"] for p in posts]
-        self.assertEqual(len(titles), 1)
-        self.assertTrue(titles[0].startswith("OVERDUE: "))
+        self.assertEqual(len(titles), 2)
+        self.assertTrue(all(t.startswith("OVERDUE: ") for t in titles))
         self.assertIn("Was due", posts[0]["embeds"][0]["description"])
 
     def test_first_live_run_does_not_flood_with_old_reminders(self):
@@ -193,15 +210,49 @@ class RunTests(unittest.TestCase):
     def test_first_live_run_still_posts_what_is_on_time(self):
         now = anchors()["last_regular_final"] + timedelta(hours=3)
         _, _, posts, _ = self._run(now, baselined=False)
-        self.assertEqual(len(posts), 1)
+        self.assertEqual(len(posts), 2)
         self.assertFalse(posts[0]["embeds"][0]["title"].startswith("OVERDUE"))
 
     def test_failed_delivery_is_retried_next_run(self):
         now = anchors()["last_regular_final"] + timedelta(hours=3)
         code, _, posts, state = self._run(now, post_ok=False)
         self.assertEqual(code, 1)
-        self.assertEqual(len(posts), 2)  # tried on both passes, never recorded as sent
+        self.assertEqual(len(posts), 4)  # both messages tried on both passes, never recorded as sent
         self.assertEqual(json.loads(state.read_text())["sent"], {})
+
+
+class EndReportTests(unittest.TestCase):
+    def test_report_lists_field_bracket_consolation_and_trophy(self):
+        from blha.fantrax import normalize_standings
+        text = endreport.render(endreport.build_report(normalize_standings(FINAL_STANDINGS)))
+        self.assertIn("Presidents' Trophy", text)
+        self.assertIn("Round 1: Team 3 v Team 6 and Team 4 v Team 5", text)
+        self.assertIn("Round 1: Team 9 v Team 12 and Team 10 v Team 11", text)
+        self.assertIn("Potential Points", text)
+        self.assertNotIn("Ties to check", text)
+        self.assertNotIn("•", text)
+
+    def test_boundary_tie_and_equal_points_are_flagged(self):
+        from blha.fantrax import normalize_standings
+        rows = normalize_standings(_raw(23, same_record=True))
+        text = endreport.render(endreport.build_report(rows))
+        self.assertIn("Ties to check", text)
+        self.assertIn("last playoff spot", text)
+        for r in rows:
+            if r["rank"] in (6, 7):
+                r["pointsFor"] = 500.0
+        text = endreport.render(endreport.build_report(rows))
+        self.assertIn("head-to-head", text)
+
+    def test_report_waits_until_fantrax_counted_every_week(self):
+        now = anchors()["last_regular_final"] + timedelta(hours=3)
+        code, _, posts, state = self._run_wait(now)
+        titles = [p["embeds"][0]["title"] for p in posts]
+        self.assertFalse(any("End-of-season report" in t for t in titles))
+        self.assertEqual(code, 0)
+        self.assertFalse(any("endreport" in k for k in json.loads(state.read_text())["sent"]))
+
+    _run_wait = lambda self, now: RunTests._run(self, now, final_standings=False)
 
 
 if __name__ == "__main__":

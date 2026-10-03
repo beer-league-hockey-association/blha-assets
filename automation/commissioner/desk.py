@@ -35,9 +35,10 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 
 from blha import season  # noqa: E402
-from blha.fantrax import Fantrax  # noqa: E402
+from blha.fantrax import Fantrax, games_counted, normalize_standings  # noqa: E402
 from blha.league import AVATAR, color_value, load_json, load_league, save_json, timezone_of  # noqa: E402
 from discord_webhook import post_discord_webhook  # noqa: E402
+import endreport  # noqa: E402
 
 TASKS_PATH = ROOT / "tasks.yaml"
 STATE_PATH = ROOT / "state" / "commissioner.json"
@@ -209,6 +210,20 @@ def build_payload(
     return payload
 
 
+def live_report_task(task: dict[str, Any], fx: Fantrax, info: dict[str, Any], test: bool = False) -> dict[str, Any] | None:
+    """Fill an end-of-season report task from live standings, or None if Fantrax is not final yet."""
+    last_regular, _, teams = season.playoff_settings(info)
+    try:
+        rows = normalize_standings(fx.standings())
+    except Exception as exc:
+        print(f"WARNING: could not read standings ({exc})")
+        return None
+    counted = games_counted(rows)
+    if counted is None or counted < last_regular:
+        return None
+    return {**task, "items": [endreport.render(endreport.build_report(rows, teams))]}
+
+
 def secret_name(cfg: dict[str, Any]) -> str:
     return str((cfg.get("commissioner_desk") or {}).get("webhook") or DEFAULT_SECRET)
 
@@ -227,8 +242,10 @@ def run(mode: str, now: datetime | None = None) -> int:
 
     print(f"BLHA COMMISSIONER DESK mode={mode.upper()} now={now.astimezone(tz).isoformat()}")
 
+    fx = Fantrax(str(cfg["league_id"]), user_agent="BLHA-Commissioner-Desk/1.0")
+    info: dict[str, Any] = {}
     try:
-        info = Fantrax(str(cfg["league_id"]), user_agent="BLHA-Commissioner-Desk/1.0").league_info()
+        info = fx.league_info()
         anchors = anchors_from(info, tz, settings)
     except Exception as exc:
         print(f"WARNING: could not read Fantrax ({exc}); using saved anchors only")
@@ -261,7 +278,13 @@ def run(mode: str, now: datetime | None = None) -> int:
             continue
         if mode == "preview":
             continue
-        payload = build_payload(by_id[d.task_id], d.trigger, cfg, overdue=d.status == "overdue", now=now)
+        task = by_id[d.task_id]
+        if task.get("report") == "end_of_season":
+            task = live_report_task(task, fx, info, mode == "test")
+            if task is None:
+                print(f"WAITING   {d.task_id}: Fantrax has not counted every regular-season week yet; will retry")
+                continue
+        payload = build_payload(task, d.trigger, cfg, overdue=d.status == "overdue", now=now)
         ok, detail = post_discord_webhook(secret_name(cfg), payload)
         if ok:
             posted += 1
