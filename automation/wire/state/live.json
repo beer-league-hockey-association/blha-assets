@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T21:00:33.452012Z",
+  "updated_at": "2026-10-03T21:30:34.208933Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2182,6 +2182,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-03T21:00:33.441565Z"
+    },
+    {
+      "key": "dcd92efd041890d9528eeb3f",
+      "url": "https://www.nhl.com/news/panthers-aleksander-barkov-placed-on-long-term-injured-reserve",
+      "fingerprint": "c9b78103f039f739",
+      "title_norm": "barkov placed on ltir by panthers, timeline unknown",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-03T21:30:33.831393Z"
+    },
+    {
+      "key": "e147aa7f4d9774ae9a1a69bc",
+      "url": "https://www.dailyfaceoff.com/players/news/gustav-forsling/2431",
+      "fingerprint": "63a63ad739185ea3",
+      "title_norm": "gustav forsling (fla) — forsling (upper body) will be a game-time decision on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T21:30:34.139797Z"
     }
   ]
 }
