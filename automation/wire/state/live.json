@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T23:45:32.673226Z",
+  "updated_at": "2026-10-03T23:59:06.813237Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2272,6 +2272,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T23:45:32.603348Z"
+    },
+    {
+      "key": "e8e1e272f935ae6a38a65748",
+      "url": "https://www.dailyfaceoff.com/players/news/alexey-toropchenko/28113",
+      "fingerprint": "28b77fcd94e3a702",
+      "title_norm": "alexey toropchenko (stl) — toropchenko (upper body) will not play on saturday and will be re-evaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-03T23:59:06.746537Z"
     }
   ]
 }
