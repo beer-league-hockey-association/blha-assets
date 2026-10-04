@@ -44,6 +44,18 @@ prompt to confirm or reverse, not a lock. It cannot see whether a franchise has
 paid; that stays in your ledger. The first run only saves a baseline. Use mode
 `test` for a sample alert and `preview` to see what would post.
 
+## Minor-eligibility watch
+
+`minors.py` (workflow BLHA Minor Eligibility, once a day at 7 AM) reads birth
+dates and career games from the NHL's public stats API and matches your
+rostered players to NHL players by name. It posts here when a rostered player
+crosses the Article VII line since the last run: turns 26, or passes 100 career
+games (50 for goalies). Fantrax's data feed has no ages or career games and does
+not say who is in a minor slot, so the message tells you to check whether he is
+in one; his franchise then has three calendar days (7.4). Players who were
+already ineligible are never repeated. The first run only saves a baseline.
+`preview` mode also prints any players it could not match to an NHL player.
+
 ## One-time setup
 
 1. In Discord create a private channel visible only to you, for example

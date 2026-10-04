@@ -81,3 +81,10 @@ jobs:
   - id: pick-trades
     workflow: blha-pick-trades.yml
     every_minutes: 15
+
+  # Private alert when a rostered player stops being minor-eligible
+  # (Article VII). Reads NHL birth dates and career games once a day.
+  - id: minor-eligibility
+    workflow: blha-minor-eligibility.yml
+    daily_at: ["07:00"]
+    retry_failures: 2

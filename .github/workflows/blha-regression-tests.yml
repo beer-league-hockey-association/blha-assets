@@ -97,3 +97,8 @@ jobs:
         env:
           PYTHONPATH: automation:automation/commissioner
         run: python automation/commissioner/test_picktrades.py
+
+      - name: Test minor-eligibility watch
+        env:
+          PYTHONPATH: automation:automation/commissioner
+        run: python automation/commissioner/test_minors.py

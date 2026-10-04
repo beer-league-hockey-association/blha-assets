@@ -63,3 +63,9 @@ workflows:
     file: "blha-pick-trades.yml"
     # Every 15 minutes all year; alert after several missed runs.
     max_age_minutes: 90
+
+  - id: minor-eligibility
+    name: "BLHA Minor Eligibility"
+    file: "blha-minor-eligibility.yml"
+    # Once a day at 07:00.
+    max_age_minutes: 1700
