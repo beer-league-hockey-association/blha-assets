@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T20:00:50.968171Z",
+  "updated_at": "2026-10-04T20:15:31.413147Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2752,6 +2752,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T20:00:50.879084Z"
+    },
+    {
+      "key": "e40de0f55e294746e06725be",
+      "url": "https://www.nhl.com/news/winnipeg-jets-detroit-red-wings-game-recap-october-4-2026",
+      "fingerprint": "e005cc37d8403d2e",
+      "title_norm": "connor scores 2 on power play, jets top red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T20:15:31.054893Z"
+    },
+    {
+      "key": "c613c39841cd12d9693414f2",
+      "url": "https://thehockeywriters.com/blues-weekly-prospect-report-dagenais-and-korotky-among-prospects-heating-up",
+      "fingerprint": "200f05294a6c0172",
+      "title_norm": "blues weekly prospect report: dagenais and korotky among prospects heating up",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-04T20:15:31.408753Z"
     }
   ]
 }
