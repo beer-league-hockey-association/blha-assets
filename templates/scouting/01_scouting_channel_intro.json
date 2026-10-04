@@ -10,21 +10,31 @@
       }
     },
     {
-      "title": "BLHA PROSPECT SCOUTING",
-      "description": "Build the pipeline. This is where dynasty owners talk prospects.",
+      "title": "BLHA SCOUTING",
+      "description": "One forum for every prospect: college, juniors, Europe, the AHL, the NHL Draft and the BLHA draft.",
       "color": 16758812,
       "footer": {
         "text": "BLHA SCOUTING DEPARTMENT"
       },
       "fields": [
         {
-          "name": "USE THIS ROOM FOR",
-          "value": "Prospect evaluations • Sleepers • Development timelines • Stash candidates",
+          "name": "HOW IT WORKS",
+          "value": "Make one post per player or topic, and search before you post so each prospect keeps one thread. Add tags for the league, the player's status and position.",
+          "inline": false
+        },
+        {
+          "name": "TAGS",
+          "value": "**League:** NCAA • CHL • AHL • EUROPE/INTL • NHL DRAFT\n**Status:** TOP PROSPECT • SLEEPER • RISER • FALLER • NHL READY • LONG SHOT\n**Position:** FORWARD • DEFENSE • GOALIE\n**BLHA draft:** BLHA DRAFT • RANKINGS • MOCK DRAFT",
           "inline": false
         },
         {
           "name": "MINOR-LEAGUE RULES",
           "value": "Minor-league spots are for players 25 or younger (per Fantrax's age calculation) with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.",
+          "inline": false
+        },
+        {
+          "name": "THE BLHA DRAFT",
+          "value": "5 rounds, linear order, starting 14 to 21 days after the NHL Entry Draft; the first Annual Draft is in 2028. The pool is any unowned player who qualifies for a minor-league spot, not just the NHL Draft class (Article XIV). Official draft notices are in the Draft Center.",
           "inline": false
         },
         {

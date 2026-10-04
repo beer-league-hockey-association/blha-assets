@@ -26,6 +26,11 @@
           "name": "OFFICIAL RESULTS",
           "value": "Results are pulled directly from Fantrax. Questions about a score go to the Commissioner's Office.",
           "inline": false
+        },
+        {
+          "name": "DISCUSSION",
+          "value": "Owners can react here but not post. Talk about it in **gm-lounge** or **chirps-and-memes**.",
+          "inline": false
         }
       ],
       "image": {
