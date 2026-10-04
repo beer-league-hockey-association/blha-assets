@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T03:15:29.200006Z",
+  "updated_at": "2026-10-04T03:30:31.962912Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2512,6 +2512,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T03:15:29.118059Z"
+    },
+    {
+      "key": "f500ac4f352fd2c4bb4cb492",
+      "url": "https://www.nhl.com/news/washington-capitals-tampa-bay-lightning-game-recap-october-3-2026",
+      "fingerprint": "6eb21fa24e347132",
+      "title_norm": "guentzel has two points, lightning edge capitals in home opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T03:30:31.886933Z"
     }
   ]
 }
