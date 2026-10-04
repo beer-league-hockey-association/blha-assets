@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T03:45:30.508119Z",
+  "updated_at": "2026-10-04T04:15:26.023318Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2542,6 +2542,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T03:45:30.466702Z"
+    },
+    {
+      "key": "daf23a9cfa804ce8e3dbc60a",
+      "url": "https://www.nhl.com/news/st-louis-blues-colorado-avalanche-game-recap-october-3-2026",
+      "fingerprint": "03c0872f68da23d2",
+      "title_norm": "necas gets 3 points, avalanche cruise past blues",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T04:15:25.936864Z"
     }
   ]
 }
