@@ -191,6 +191,16 @@ events:
     description: "The fine-grained token used by the cron-job.org timer is about to expire. Create a new one and update the cron-job.org header. If it lapses, the health monitor reports a stale Scheduler."
     reminders: [14d, 7d, start]
 
+  - id: commissioner-github-api-version
+    enabled: true
+    title: "Update the GitHub API version before it retires"
+    type: commissioner
+    starts_at: "2027-05-03T09:00:00"
+    channel: commissioner-desk
+    priority: normal
+    description: "GitHub retires API version 2022-11-28 on March 10, 2028; 2026-03-10 is the newer one. Ask Claude to update the version header in the scheduler, health check and dormancy guard code, then change X-GitHub-Api-Version in both cron-job.org jobs (BLHA Scheduler Timer and BLHA Dormancy Guard) and test-run each."
+    reminders: [start]
+
   - id: commissioner-premium-renewal
     enabled: false
     title: "Pay Fantrax Premium for the season"
