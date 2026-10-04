@@ -61,3 +61,31 @@ wire_pings:
 commissioner_desk:
   webhook: BLHA_WEBHOOK_COMMISSIONER_DESK
   ping_user_id: ""
+
+# ---------------------------------------------------------------------------
+# Draft Center (automation/draft/)
+#
+# Countdown, draft-order reveal and round-by-round recap in Discord, plus a
+# private Commissioner Desk alert when a pick clock runs out or a pick is
+# skipped. No on-the-clock or per-pick posts: Fantrax sends those.
+# The draft date, order, rounds and picks come from Fantrax. Fantrax does not
+# publish the pick clock, so it is set here from the Constitution.
+draft_center:
+  webhooks:
+    announcements: BLHA_WEBHOOK_DRAFT_ANNOUNCEMENTS
+    results: BLHA_WEBHOOK_DRAFT_RESULTS
+  # Countdown posts before the Fantrax draft date. The first one sent is the
+  # full announcement (Art. 5.9: announce at least 30 days ahead).
+  countdown: ["30d", "7d", "1d", "1h", "start"]
+  # When the official draft order is posted, before the draft date.
+  order_reveal: "7d"
+  # Nightly pick-clock pause, Eastern time (Art. 13.4, 14.3).
+  pause: ["00:00", "08:00"]
+  drafts:
+    startup:
+      pick_clock_hours: 4   # Art. 13.1
+    annual:
+      pick_clock_hours: 8   # Art. 14.3
+  # TEST ONLY: pick clock in minutes for a fast test draft. Set back to null
+  # before the real startup draft.
+  test_pick_clock_minutes: null

@@ -14,6 +14,7 @@ It currently monitors:
 - BLHA Competition Desk (weekly report)
 - BLHA Fantrax Scoreboard (live scoreboard)
 - BLHA Fantrax Playoffs (live bracket)
+- BLHA Draft Center (only from 31 days before a Fantrax draft until a day after it)
 
 Workflows that only run some of the time are only checked while they are supposed to be running, using the same rules as the scheduler: the scoreboard is off in the offseason, the playoff bracket only runs in playoff weeks, and the League Office only runs while an enabled event is coming up. When a workflow switches on, it gets its normal threshold to complete a first run before it can be reported stale.
 

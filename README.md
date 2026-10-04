@@ -55,6 +55,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Competition Desk (weekly report) | 08:00 and 20:00 ET, preseason through playoffs; posts only when something is due |
 | Live scoreboard | Hourly, regular season and playoffs |
 | Playoff bracket | Hourly, playoff weeks only |
+| Draft Center | Every 15 minutes, only from 31 days before a Fantrax draft until a day after it ends |
 
 Shared Discord delivery (`automation/discord_webhook.py`) retries transient network failures, Discord rate limits and temporary HTTP errors, and can edit a message it posted earlier so live views update in place. Shared Fantrax and season-calendar code lives in `automation/blha/`.
 
@@ -113,6 +114,18 @@ Code: `automation/playoffs/` · Workflow: `.github/workflows/blha-fantrax-playof
 Runs only during the playoff weeks. Seeds are saved automatically once Fantrax has counted the final regular-season week, and six-team reseeding gives Seed 1 the lowest-ranked surviving opponent. Each round gets one bracket message (a new post when the round starts), edited in place as scores change.
 
 All Competition Desk posts use the clean vertical embed standard in `automation/DISCORD_AUTOMATION_STYLE.md`.
+
+## Draft Center
+
+Code: `automation/draft/` · Workflow: `.github/workflows/blha-draft-center.yml`
+
+Fantrax already tells owners when they are on the clock and shows every pick in the draft room, so the Draft Center never posts on-the-clock or per-pick messages. It covers what Fantrax does not:
+
+- **#draft-announcements:** a countdown from the Fantrax draft date (30 days, 7 days, 1 day, 1 hour, and when it starts; the first post is the full announcement), the official draft order with any traded picks (7 days before, or on demand), a notice if the date or order changes, and a "Draft Complete" summary.
+- **#draft-results:** the permanent record, posted round by round as each round is completed.
+- **Commissioner Desk (private):** an alert when a pick clock runs out or a pick is skipped, with each team's timeout count (Articles 13.5 and 14.3).
+
+The draft date, order, rounds and picks come from Fantrax; the pick clock and nightly pause come from `draft_center` in `automation/league.yaml`, because Fantrax does not publish them. Details: `automation/draft/README.md`.
 
 ## Where bot state lives
 

@@ -1,0 +1,83 @@
+name: BLHA Draft Center
+run-name: BLHA Draft Center — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# Countdown, draft-order reveal and round-by-round recap, plus a private
+# Commissioner Desk alert when a pick clock runs out. No on-the-clock or
+# per-pick posts (Fantrax sends those). Timing lives in
+# automation/scheduler/schedule.yaml: every 15 minutes, only from 31 days
+# before the Fantrax draft date until a day after the draft ends.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log only; test = [TEST] sample posts; live = post what is due"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+      item:
+        description: "Limit to one kind of post"
+        required: false
+        default: all
+        type: choice
+        options: [all, countdown, order, recap, alerts]
+      force:
+        description: "Live + order: post the draft order now instead of waiting for the reveal date"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-draft-center
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      ITEM: ${{ inputs.item || 'all' }}
+      FORCE: ${{ inputs.force || false }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/draft/state/draft.json"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run Draft Center
+        env:
+          BLHA_WEBHOOK_DRAFT_ANNOUNCEMENTS: ${{ secrets.BLHA_WEBHOOK_DRAFT_ANNOUNCEMENTS }}
+          BLHA_WEBHOOK_DRAFT_RESULTS: ${{ secrets.BLHA_WEBHOOK_DRAFT_RESULTS }}
+          BLHA_WEBHOOK_COMMISSIONER_DESK: ${{ secrets.BLHA_WEBHOOK_COMMISSIONER_DESK }}
+        shell: bash
+        run: |
+          ARGS=(--mode "$MODE" --item "$ITEM")
+          if [[ "$FORCE" == "true" ]]; then ARGS+=(--force); fi
+          python automation/draft/center.py "${ARGS[@]}"
+
+      # Saved even if one post failed, so posts that did go out are never repeated.
+      - name: Save state to the automation-state branch
+        if: ${{ !cancelled() && env.MODE == 'live' }}
+        run: |
+          bash automation/tools/state_branch.sh save \
+            "chore(draft): save Draft Center state" \
+            "BLHA Draft Automation" \
+            "automation/draft/state/draft.json"
