@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T06:30:34.262739Z",
+  "updated_at": "2026-10-04T06:45:32.896529Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2612,6 +2612,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T06:30:34.219295Z"
+    },
+    {
+      "key": "aa390780c057bd12e1b871d2",
+      "url": "https://www.sportsnet.ca/nhl/article/overturned-call-turns-tide-as-flames-squander-lead-against-canucks",
+      "fingerprint": "9890d858b7e45559",
+      "title_norm": "overturned call turns tide as flames squander lead against canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T06:45:32.860069Z"
     }
   ]
 }
