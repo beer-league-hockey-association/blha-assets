@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T18:45:02.736639Z",
+  "updated_at": "2026-10-04T19:15:28.188652Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2732,6 +2732,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T18:45:02.650011Z"
+    },
+    {
+      "key": "f6541fb1c226b9950d2c6ace",
+      "url": "https://www.dailyfaceoff.com/players/news/alexey-toropchenko/28113",
+      "fingerprint": "955cb4b550c2706f",
+      "title_norm": "alexey toropchenko (stl) — toropchenko will be re-evaluated in six weeks for an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T19:15:28.121545Z"
     }
   ]
 }
