@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T05:30:33.398243Z",
+  "updated_at": "2026-10-04T06:30:34.262739Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2602,6 +2602,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T05:30:33.350295Z"
+    },
+    {
+      "key": "8aca247f7787e5ac3aaf40ab",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-third-period-scoring-spree-continues-in-win-over-flames",
+      "fingerprint": "c41b5bf1e0655b57",
+      "title_norm": "canucks takeaways: third-period scoring spree continues in win over flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T06:30:34.219295Z"
     }
   ]
 }
