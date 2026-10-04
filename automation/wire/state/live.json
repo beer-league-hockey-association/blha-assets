@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T03:30:31.962912Z",
+  "updated_at": "2026-10-04T03:45:30.508119Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2522,6 +2522,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T03:30:31.886933Z"
+    },
+    {
+      "key": "349bd679ed235daf085d2d6e",
+      "url": "https://www.sportsnet.ca/nhl/article/lots-of-iron-maple-leafs-loss-to-senators-not-all-puck-luck",
+      "fingerprint": "377781b4533c403e",
+      "title_norm": "'lots of iron': maple leafs' loss to senators not all puck luck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T03:45:29.749111Z"
+    },
+    {
+      "key": "41b682711f9d2086e827a8b2",
+      "url": "https://www.sportsnet.ca/nhl/article/didnt-give-up-a-touchdown-oilers-lock-down-tidy-win-over-kraken",
+      "fingerprint": "4a253927b0d7d4cf",
+      "title_norm": "'didn't give up a touchdown': oilers lock down tidy win over kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T03:45:30.466702Z"
     }
   ]
 }
