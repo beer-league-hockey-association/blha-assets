@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T15:46:07.225463Z",
+  "updated_at": "2026-10-04T16:45:36.109498Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2662,6 +2662,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T15:46:07.139790Z"
+    },
+    {
+      "key": "c6f5faf2a3ac2b6bfb8497e1",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-4-2026",
+      "fingerprint": "62c23bf92e68068f",
+      "title_norm": "status report: sens' sanderson reaggravates injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T16:45:35.756094Z"
+    },
+    {
+      "key": "987761c3878bef84ac30b562",
+      "url": "https://www.nhl.com/news/daniel-alfredsson-emotional-seeing-senators-again-with-maple-leafs",
+      "fingerprint": "57a1b60c1ecfb0f0",
+      "title_norm": "alfredsson 'emotional' seeing sens again with leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T16:45:36.051094Z"
     }
   ]
 }
