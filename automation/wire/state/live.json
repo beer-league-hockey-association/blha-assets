@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T22:15:34.928907Z",
+  "updated_at": "2026-10-04T23:15:29.024324Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2802,6 +2802,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T22:15:34.867760Z"
+    },
+    {
+      "key": "85904572ca212160a84d6ccb",
+      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
+      "fingerprint": "c1301a3122d54496",
+      "title_norm": "joe veleno (nyr) — veleno (lower-body) left sunday's game vs. utah and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T23:15:28.953760Z"
     }
   ]
 }
