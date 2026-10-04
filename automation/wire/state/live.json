@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T19:15:28.188652Z",
+  "updated_at": "2026-10-04T20:00:50.968171Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2742,6 +2742,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T19:15:28.121545Z"
+    },
+    {
+      "key": "c90845c50bd76051912ad15b",
+      "url": "https://www.sportsnet.ca/nhl/article/kyle-connor-scores-a-pair-of-power-play-goals-as-jets-squeak-past-red-wings",
+      "fingerprint": "e89a2b675486f2d9",
+      "title_norm": "kyle connor scores a pair of power-play goals as jets squeak past red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T20:00:50.879084Z"
     }
   ]
 }
