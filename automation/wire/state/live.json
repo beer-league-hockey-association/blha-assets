@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T04:15:26.023318Z",
+  "updated_at": "2026-10-04T04:45:35.448389Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2552,6 +2552,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T04:15:25.936864Z"
+    },
+    {
+      "key": "85d47a3569e7c2df2f0f62ed",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-know-bad-second-period-habits-must-be-addressed-with-urgency",
+      "fingerprint": "633da1cba4934312",
+      "title_norm": "canadiens know bad second-period habits must be addressed with urgency",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T04:45:34.981641Z"
+    },
+    {
+      "key": "01ef245fade84b24ddc64a57",
+      "url": "https://www.sportsnet.ca/nhl/article/penalty-trouble-power-play-stumbles-sink-maple-leafs-against-rival-senators",
+      "fingerprint": "b313cdcc565ad0cb",
+      "title_norm": "penalty trouble, power-play stumbles sink maple leafs against rival senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T04:45:35.408548Z"
     }
   ]
 }
