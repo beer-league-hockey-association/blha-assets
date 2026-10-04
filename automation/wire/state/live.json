@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-03T23:59:06.813237Z",
+  "updated_at": "2026-10-04T00:30:35.954073Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2282,6 +2282,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-03T23:59:06.746537Z"
+    },
+    {
+      "key": "4730c441fe45f3c8103b5b95",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "a0d48a7e6a852251",
+      "title_norm": "jake sanderson (ott) — sanderson (undisclosed) left saturday's game and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T00:30:35.000697Z"
+    },
+    {
+      "key": "d7c13950a7661858c67b08f5",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-jake-sanderson-exits-with-apparent-injury-vs-maple-leafs",
+      "fingerprint": "40c6c6f1dcff79ed",
+      "title_norm": "senators' jake sanderson exits with apparent injury vs. maple leafs",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T00:30:35.456401Z"
+    },
+    {
+      "key": "6c98289131e462c94fce6ad7",
+      "url": "https://www.nhl.com/news/topic/short-shifts/mario-lemieux-takes-part-in-penguins-60th-anniversary-ceremony",
+      "fingerprint": "fd8f61f5594ce918",
+      "title_norm": "lemieux takes part in penguins' pregame ceremony",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T00:30:35.857392Z"
     }
   ]
 }
