@@ -5,6 +5,9 @@
 #       Copy each path from the state branch into the working tree before a
 #       run. Paths missing from the branch are left as they are.
 #
+#   state_branch.sh remove "<commit message>" "<author name>" <path>...
+#       Delete each path from the state branch (used by the season rollover).
+#
 #   state_branch.sh save "<commit message>" "<author name>" <path>...
 #       Commit each path to the state branch and push, retrying if another
 #       workflow pushed first. JSON files whose only change is a top-level
@@ -102,10 +105,48 @@ save() {
   return 1
 }
 
+remove() {
+  local message="$1" author="$2"
+  shift 2
+  for attempt in 1 2 3; do
+    local work
+    work="$(mktemp -d)"
+    if ! fetch_branch; then
+      echo "State branch $BRANCH not found; nothing to remove."
+      return 0
+    fi
+    git worktree add -q --detach "$work" FETCH_HEAD
+    local pushed=1
+    (
+      cd "$work"
+      for path in "$@"; do
+        if git cat-file -e "HEAD:$path" 2>/dev/null; then
+          git rm -q -- "$path"
+          echo "Removed $path from $BRANCH."
+        else
+          echo "No $path on $BRANCH; nothing to remove."
+        fi
+      done
+      if git diff --cached --quiet; then
+        exit 0
+      fi
+      git -c user.name="$author" -c user.email="actions@users.noreply.github.com" commit -q -m "$message"
+      git push -q "$REMOTE" "HEAD:refs/heads/$BRANCH"
+    ) && pushed=0
+    git worktree remove --force "$work" >/dev/null 2>&1 || rm -rf "$work"
+    git worktree prune >/dev/null 2>&1 || true
+    [[ $pushed -eq 0 ]] && return 0
+    sleep $((attempt * 2))
+  done
+  echo "ERROR: could not remove state from $BRANCH." >&2
+  return 1
+}
+
 command="${1:-}"
 shift || true
 case "$command" in
   restore) restore "$@" ;;
   save) save "$@" ;;
-  *) echo "usage: state_branch.sh restore <path>... | save <message> <author> <path>..." >&2; exit 2 ;;
+  remove) remove "$@" ;;
+  *) echo "usage: state_branch.sh restore <path>... | save <message> <author> <path>... | remove <message> <author> <path>..." >&2; exit 2 ;;
 esac

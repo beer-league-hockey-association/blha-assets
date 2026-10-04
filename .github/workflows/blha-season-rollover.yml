@@ -1,0 +1,62 @@
+name: BLHA Season Rollover
+run-name: BLHA Season Rollover — ${{ inputs.mode }}
+
+# Manual only. check reads a new Fantrax league and reports what is right,
+# wrong or still to do (changes nothing). reset-state clears the previous
+# season's saved state from the automation-state branch. See
+# automation/rollover/README.md for the full order of steps.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check = report on the new league; reset-state = clear the old season's saved state"
+        required: true
+        default: check
+        type: choice
+        options: [check, reset-state]
+      league_id:
+        description: "New Fantrax league ID (required for check)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-season-rollover
+  cancel-in-progress: false
+
+jobs:
+  rollover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MODE: ${{ inputs.mode }}
+      LEAGUE_ID: ${{ inputs.league_id }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Restore saved state
+        if: ${{ inputs.mode == 'check' }}
+        run: bash automation/tools/state_branch.sh restore "automation/commissioner/state/commissioner.json"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run rollover step
+        run: |
+          ARGS=(--mode "$MODE")
+          if [[ "$MODE" == "check" ]]; then ARGS+=(--league-id "$LEAGUE_ID"); fi
+          python automation/rollover/rollover.py "${ARGS[@]}"

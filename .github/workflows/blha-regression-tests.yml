@@ -102,3 +102,8 @@ jobs:
         env:
           PYTHONPATH: automation:automation/commissioner
         run: python automation/commissioner/test_minors.py
+
+      - name: Test season rollover tool
+        env:
+          PYTHONPATH: automation
+        run: python automation/rollover/test_rollover.py
