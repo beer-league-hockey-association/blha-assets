@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T18:15:29.928283Z",
+  "updated_at": "2026-10-04T18:45:02.736639Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2722,6 +2722,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T18:15:29.859006Z"
+    },
+    {
+      "key": "9ac92bf3877492bcab055103",
+      "url": "https://www.nhl.com/news/nhl-nhlpa-industry-growth-fund-red-wings-donate-zamboni-to-michigan-rink",
+      "fingerprint": "6b8771cc52df713c",
+      "title_norm": "nhl/nhlpa, red wings donate zamboni to michigan rink",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T18:45:02.650011Z"
     }
   ]
 }
