@@ -88,3 +88,17 @@ jobs:
     workflow: blha-minor-eligibility.yml
     daily_at: ["07:00"]
     retry_failures: 2
+
+  # Private prospect board (NHL Central Scouting rankings) for Commissioner Desk.
+  # Posts only when the rankings change.
+  - id: prospect-board
+    workflow: blha-prospect-board.yml
+    daily_at: ["09:30"]
+    retry_failures: 2
+
+  # Re-enables workflows GitHub switched off for inactivity and warns before
+  # that can happen. Also started daily by a second cron-job.org job.
+  - id: dormancy-guard
+    workflow: blha-dormancy-guard.yml
+    daily_at: ["06:15"]
+    retry_failures: 2

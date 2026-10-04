@@ -69,3 +69,15 @@ workflows:
     file: "blha-minor-eligibility.yml"
     # Once a day at 07:00.
     max_age_minutes: 1700
+
+  - id: prospect-board
+    name: "BLHA Prospect Board"
+    file: "blha-prospect-board.yml"
+    # Once a day at 09:30.
+    max_age_minutes: 1700
+
+  - id: dormancy-guard
+    name: "BLHA Dormancy Guard"
+    file: "blha-dormancy-guard.yml"
+    # Once a day at 06:15.
+    max_age_minutes: 1700

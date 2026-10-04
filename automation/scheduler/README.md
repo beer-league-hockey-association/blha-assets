@@ -96,6 +96,24 @@ STARTED wire-engine: last live run 15m ago (2026-10-02 16:00 UTC)
 WAIT    standings: slot Fri 07:30 EDT already ran
 ```
 
+## Protection against GitHub's 60-day rule
+
+GitHub switches off scheduled workflows in a public repository after 60 days
+with no repository activity. The scheduler has a `schedule:` backup trigger, so
+it could be switched off in a quiet stretch such as the offseason. The **BLHA
+Dormancy Guard** workflow has no `schedule:` trigger, so GitHub cannot switch it
+off that way. It re-enables any workflow GitHub disabled for inactivity and
+warns the Commissioner Desk when `main` has had no commit for 45 days.
+
+The scheduler starts the guard daily. In case the scheduler itself is the thing
+that was switched off, add a second cron-job.org job (same token as above):
+
+- **Title:** `BLHA Dormancy Guard`
+- **URL:** `https://api.github.com/repos/diseasewheeze/blha-assets/actions/workflows/blha-dormancy-guard.yml/dispatches`
+- **Schedule:** once a day
+- **Method and headers:** as for the scheduler job
+- **Request body:** `{"ref":"main","inputs":{"mode":"live"}}`
+
 ## If something goes wrong
 
 | Symptom | Likely cause | Fix |

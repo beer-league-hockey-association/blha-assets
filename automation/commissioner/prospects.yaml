@@ -1,0 +1,8 @@
+# How many players from each NHL Central Scouting list the prospect board shows.
+# 1 = North American skaters, 2 = international skaters,
+# 3 = North American goalies, 4 = international goalies. Use 0 to hide a list.
+top:
+  1: 20
+  2: 10
+  3: 5
+  4: 3

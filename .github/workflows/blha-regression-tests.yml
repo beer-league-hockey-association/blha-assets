@@ -103,7 +103,17 @@ jobs:
           PYTHONPATH: automation:automation/commissioner
         run: python automation/commissioner/test_minors.py
 
+      - name: Test prospect board
+        env:
+          PYTHONPATH: automation:automation/commissioner
+        run: python automation/commissioner/test_prospects.py
+
       - name: Test season rollover tool
         env:
           PYTHONPATH: automation
         run: python automation/rollover/test_rollover.py
+
+      - name: Test dormancy guard
+        env:
+          PYTHONPATH: automation:automation/health:automation/commissioner
+        run: python automation/health/test_dormancy.py
