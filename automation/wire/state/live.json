@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T21:45:31.623715Z",
+  "updated_at": "2026-10-04T21:57:59.100935Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2782,6 +2782,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T21:45:31.558875Z"
+    },
+    {
+      "key": "b61ef53ad15246ea5a346391",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-brad-marchand-set-for-season-debut-against-ducks",
+      "fingerprint": "756e26f19c185451",
+      "title_norm": "panthers' brad marchand set for season debut against ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T21:57:59.074833Z"
     }
   ]
 }
