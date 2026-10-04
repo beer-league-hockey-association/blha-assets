@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T23:15:29.024324Z",
+  "updated_at": "2026-10-04T23:45:29.797230Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2812,6 +2812,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T23:15:28.953760Z"
+    },
+    {
+      "key": "be7d7d4ac9c1bdb714316ee8",
+      "url": "https://www.dailyfaceoff.com/players/news/gustav-forsling/2431",
+      "fingerprint": "e974fca74b6a28df",
+      "title_norm": "gustav forsling (fla) — forsling (upper-body) is expected to return in anaheim on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T23:45:29.471371Z"
+    },
+    {
+      "key": "ac890ea0e80b46889801fc01",
+      "url": "https://www.dailyfaceoff.com/players/news/aaron-ekblad/2363",
+      "fingerprint": "97b74689b9109025",
+      "title_norm": "aaron ekblad (fla) — ekblad (undisclosed) is out vs. anaheim on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T23:45:29.728633Z"
     }
   ]
 }
