@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T02:45:33.796888Z",
+  "updated_at": "2026-10-04T03:15:29.200006Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2492,6 +2492,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T02:45:33.726270Z"
+    },
+    {
+      "key": "cccfb6b4cf091490dc5b69af",
+      "url": "https://www.nhl.com/news/dallas-stars-nashville-predators-game-recap-october-3-2026",
+      "fingerprint": "42f8ebb6845dd77d",
+      "title_norm": "hoglander helps preds edge stars for 1st win of season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T03:15:28.458718Z"
+    },
+    {
+      "key": "2ca0c9ea2d4c9fe9df9ad64e",
+      "url": "https://www.nhl.com/news/boston-bruins-minnesota-wild-game-recap-october-3-2026",
+      "fingerprint": "d0355d329dd269c7",
+      "title_norm": "kaprizov, hughes help wild storm past bruins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T03:15:29.118059Z"
     }
   ]
 }
