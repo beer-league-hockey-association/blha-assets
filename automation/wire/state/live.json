@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T02:15:36.917732Z",
+  "updated_at": "2026-10-04T02:31:07.994840Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2442,6 +2442,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T02:15:36.645353Z"
+    },
+    {
+      "key": "c5e313df6f26db72a326fb66",
+      "url": "https://www.nhl.com/news/topic/game-recap/utah-mammoth-columbus-blue-jackets-game-recap-october-3-2026",
+      "fingerprint": "3fce41f03ad5e1bc",
+      "title_norm": "schmaltz scores 2, guenther has 3 points in mammoth win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:31:07.333083Z"
+    },
+    {
+      "key": "90322faedb1ea3f9d85adb13",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-philadelphia-flyers-game-recap-october-3-2026",
+      "fingerprint": "83f24993e365547d",
+      "title_norm": "gostisbehere scores ot winner, hurricanes edge flyers for first win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:31:07.579913Z"
+    },
+    {
+      "key": "3e388c0dea3fb59cfb8ef2f0",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-comeback-falls-short-in-overtime-loss-to-penguins",
+      "fingerprint": "3440f17268c7bcd2",
+      "title_norm": "canadiens' comeback falls short in overtime loss to penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T02:31:07.964112Z"
     }
   ]
 }
