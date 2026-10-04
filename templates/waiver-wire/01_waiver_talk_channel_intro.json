@@ -10,8 +10,8 @@
       }
     },
     {
-      "title": "BLHA FAAB TALK",
-      "description": "FAAB strategy and bidding discussion.",
+      "title": "BLHA WAIVER TALK",
+      "description": "FAAB strategy, waiver timing and recently dropped players worth a claim.",
       "color": 16758812,
       "footer": {
         "text": "BLHA WAIVER WIRE"
@@ -25,6 +25,11 @@
         {
           "name": "CONSOLATION BONUS",
           "value": "The consolation-bracket champion gets a $50 FAAB bonus next season. Current-season FAAB can be traded (Article XI).",
+          "inline": false
+        },
+        {
+          "name": "RECENTLY DROPPED",
+          "value": "Spot a useful player who just hit the pool? Post him here. Players worth a longer look get their own post in **waiver-watch**.",
           "inline": false
         },
         {

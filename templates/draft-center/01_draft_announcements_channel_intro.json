@@ -26,6 +26,11 @@
           "name": "DATES",
           "value": "Drafts begin 14 to 21 days after the NHL Entry Draft and are announced at least 30 days ahead (Articles V, XIII and XIV).",
           "inline": false
+        },
+        {
+          "name": "ON THE CLOCK",
+          "value": "Fantrax alerts each manager when it's their pick, so Discord doesn't repeat those alerts. Round results are posted in **draft-results**.",
+          "inline": false
         }
       ],
       "image": {

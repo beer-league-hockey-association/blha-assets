@@ -90,12 +90,12 @@
         },
         {
           "name": "🌱 SCOUTING DEPARTMENT",
-          "value": "Prospect scouting, NCAA, juniors, international prospects, AHL watch and draft discussion.",
+          "value": "One prospect forum covering college, juniors, Europe, the AHL, the NHL Draft and the BLHA draft, sorted by tags.",
           "inline": false
         },
         {
           "name": "💵 WAIVER WIRE",
-          "value": "FAAB strategy, adds/drops and players worth watching. Actual claims remain in Fantrax.",
+          "value": "FAAB strategy, recently dropped players and players worth watching. Actual claims remain in Fantrax.",
           "inline": false
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "name": "🎙️ DRAFT CENTER",
-          "value": "Startup and annual draft-day communication, picks, draft trades and live discussion.",
+          "value": "Startup and annual draft announcements, round results, draft-day trades and live discussion. Fantrax sends the on-the-clock alerts.",
           "inline": false
         },
         {

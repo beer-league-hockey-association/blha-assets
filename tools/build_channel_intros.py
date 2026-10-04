@@ -165,51 +165,28 @@ card("trade-center/05_player_values_channel_intro.json", "BLHA PLAYER VALUES",
 
 # --------------------------------------------------------------------- Scouting
 MINORS = ("MINOR-LEAGUE RULES", "Minor-league spots are for players 25 or younger (per Fantrax's age calculation) with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.")
-card("scouting/01_prospect_scouting_channel_intro.json", "BLHA PROSPECT SCOUTING",
-     "Build the pipeline. This is where dynasty owners talk prospects.", SD,
-     [("USE THIS ROOM FOR", "Prospect evaluations • Sleepers • Development timelines • Stash candidates"), MINORS,
+card("scouting/01_scouting_channel_intro.json", "BLHA SCOUTING",
+     "One forum for every prospect: college, juniors, Europe, the AHL, the NHL Draft and the BLHA draft.", SD,
+     [("HOW IT WORKS", "Make one post per player or topic, and search before you post so each prospect keeps one thread. Add tags for the league, the player's status and position."),
+      ("TAGS", "**League:** NCAA • CHL • AHL • EUROPE/INTL • NHL DRAFT\n**Status:** TOP PROSPECT • SLEEPER • RISER • FALLER • NHL READY • LONG SHOT\n**Position:** FORWARD • DEFENSE • GOALIE\n**BLHA draft:** BLHA DRAFT • RANKINGS • MOCK DRAFT"),
+      MINORS,
+      ("THE BLHA DRAFT", "5 rounds, linear order, starting 14 to 21 days after the NHL Entry Draft; the first Annual Draft is in 2028. The pool is any unowned player who qualifies for a minor-league spot, not just the NHL Draft class (Article XIV). Official draft notices are in the Draft Center."),
       ("NEWS FEED", "Automated prospect news appears in **prospect-wire**. Come here to talk about what it means.")])
-card("scouting/02_ncaa_hockey_channel_intro.json", "BLHA NCAA HOCKEY",
-     "College hockey prospects and storylines.", SD,
-     [("USE THIS ROOM FOR", "NCAA standouts • Commitments and transfers • Frozen Four and conference news"), MINORS])
-card("scouting/03_chl_juniors_channel_intro.json", "BLHA CHL AND JUNIORS",
-     "OHL, WHL, QMJHL and junior hockey prospects.", SD,
-     [("USE THIS ROOM FOR", "CHL standouts • Draft-eligible players • Junior tournaments • Late bloomers"), MINORS])
-card("scouting/04_international_prospects_channel_intro.json", "BLHA INTERNATIONAL PROSPECTS",
-     "Prospects developing in Europe and around the world.", SD,
-     [("USE THIS ROOM FOR", "European pro leagues • World Juniors • International tournaments • Drafted-but-overseas stashes"), MINORS])
-card("scouting/05_ahl_watch_channel_intro.json", "BLHA AHL WATCH",
-     "Who is producing in the AHL and who is close to a call-up.", SD,
-     [("USE THIS ROOM FOR", "AHL standouts • Call-up candidates • Players nearing the 100-game line"), MINORS])
-card("scouting/06_draft_board_channel_intro.json", "BLHA DRAFT BOARD",
-     "Rankings and tiers for the BLHA draft.", SD,
-     [("USE THIS ROOM FOR", "Draft rankings • Tiers • Mock drafts • Targets by round"),
-      ("THE POOL", "The BLHA draft pool is not limited to the NHL Entry Draft class. Any unowned player who qualifies for a minor-league spot can be selected (Article XIV).")])
-card("scouting/07_annual_draft_channel_intro.json", "BLHA ANNUAL DRAFT",
-     "Strategy and planning for the annual draft.", SD,
-     [("THE FORMAT", "5 rounds, linear order, starting 14 to 21 days after the NHL Entry Draft. The first Annual Draft is in 2028 (Article XIV)."),
-      ("DRAFT ORDER", "Non-playoff teams pick 1.01 to 1.06 by ascending Potential Points. Picks 1.07 and 1.08 go to the Quarterfinal losers, then fourth place, third place, Runner-Up and Champion."),
-      ("OFFICIAL COMMUNICATION", "Draft-day notices live in the Draft Center. This room is for strategy.")])
 
 # ------------------------------------------------------------------- Waiver Wire
-card("waiver-wire/01_faab_talk_channel_intro.json", "BLHA FAAB TALK",
-     "FAAB strategy and bidding discussion.", WW,
+card("waiver-wire/01_waiver_talk_channel_intro.json", "BLHA WAIVER TALK",
+     "FAAB strategy, waiver timing and recently dropped players worth a claim.", WW,
      [("THE RULES", "$1,000 FAAB per season, $0 bids allowed, $1 increments, hidden bids, daily processing at about 11:00 AM ET (Article X). FAAB does not roll over."),
       ("CONSOLATION BONUS", "The consolation-bracket champion gets a $50 FAAB bonus next season. Current-season FAAB can be traded (Article XI)."),
+      ("RECENTLY DROPPED", "Spot a useful player who just hit the pool? Post him here. Players worth a longer look get their own post in **waiver-watch**."),
       ("OFFICIAL CLAIMS", "Actual claims stay in Fantrax. Discord never submits or changes a claim.")])
 card("waiver-wire/02_waiver_watch_channel_intro.json", "BLHA WAIVER WATCH",
      "Players worth watching before the next waiver run.", WW,
      [("USE THIS ROOM FOR", "Breakout candidates • Call-ups • Goalie opportunities • Streaming targets"),
       ("ACQUISITION LIMIT", "Up to 5 acquisitions per normal fantasy week. The two-week championship counts as two separate weeks (Article X).")])
-card("waiver-wire/03_adds_and_drops_channel_intro.json", "BLHA ADDS AND DROPS",
-     "Notable adds and drops across the league.", WW,
-     [("POSTED HERE", "Meaningful adds, drops and FAAB results"), ("OFFICIAL RECORD", FANTRAX)])
-card("waiver-wire/04_recently_dropped_channel_intro.json", "BLHA RECENTLY DROPPED",
-     "Players who just hit the pool and may be worth a claim.", WW,
-     [("POSTED HERE", "Recently dropped players with upside, prospects and bounce-back candidates"),
-      ("OFFICIAL RECORD", FANTRAX)])
 
 # -------------------------------------------------------------- League Competition
+DISCUSS = ("DISCUSSION", "Owners can react here but not post. Talk about it in **gm-lounge** or **chirps-and-memes**.")
 card("league-competition/01_scoreboard_channel_intro.json", "BLHA SCOREBOARD",
      "Live matchup results for the current week, posted by the BLHA Competition Desk and read directly from Fantrax.", COMP,
      [("POSTED HERE", "Weekly matchup previews • Matchup scoreboards during the week • Final scoreboards when a week ends"),
@@ -219,29 +196,29 @@ card("league-competition/02_standings_channel_intro.json", "BLHA STANDINGS",
      [("POSTED HERE", "Weekly standings • Playoff cut line • Final regular-season standings"),
       ("TIEBREAKERS", "Points scored, then head-to-head among the tied teams, then the next Fantrax tiebreaker, then a recorded random draw (Article XV)."),
       ("OFFICIAL RESULTS", "Fantrax is the authoritative record. These posts are a convenient copy of it.")])
-card("league-competition/03_power_rankings_channel_intro.json", "BLHA POWER RANKINGS",
-     "How the teams stack up beyond the standings.", COMP,
-     [("POSTED HERE", "Power rankings • Movers and risers • Strength-of-roster commentary"),
-      ("UNOFFICIAL", "Power rankings are opinion. They have no effect on standings, seeding or draft order.")])
 card("league-competition/04_weekly_recap_channel_intro.json", "BLHA WEEKLY RECAP",
      "The results of every completed matchup, posted after each fantasy week ends, normally on Monday morning.", COMP,
      [("POSTED HERE", "Completed matchup results for the week • Recap of how each week finished"),
-      ("OFFICIAL RESULTS", "Results are pulled directly from Fantrax. Questions about a score go to the Commissioner's Office.")])
+      ("OFFICIAL RESULTS", "Results are pulled directly from Fantrax. Questions about a score go to the Commissioner's Office."),
+      DISCUSS])
 card("league-competition/05_playoff_race_channel_intro.json", "BLHA PLAYOFF RACE",
      "The late-season picture: who is in, who is on the bubble and what each team needs.", COMP,
      [("POSTED HERE", "Teams above and below the playoff cut line • Bubble teams • Updates through Week 22"),
       ("THE FIELD", "Six teams make the playoffs and the top two seeds get byes (Article XVI)."),
-      ("WHEN IT STARTS", "These posts begin late in the regular season. Until then the channel stays quiet.")])
+      ("WHEN IT STARTS", "These posts begin late in the regular season. Until then the channel stays quiet."),
+      DISCUSS])
 card("league-competition/06_playoffs_channel_intro.json", "BLHA PLAYOFFS",
      "Playoff matchups and results, posted by the BLHA Competition Desk.", COMP,
      [("THE FORMAT", "Quarterfinals and Semifinals are one week each, and the BLHA Championship is a two-week cumulative matchup. Brackets reseed after each round. The Semifinal losers play for third place (Article XVI)."),
       ("POSTED HERE", "Playoff matchups • Round results • Third-place game • Champion announcement"),
-      ("OFFICIAL RESULTS", "Fantrax is the authoritative record. Rulings on playoff questions come from the League Office.")])
+      ("OFFICIAL RESULTS", "Fantrax is the authoritative record. Rulings on playoff questions come from the League Office."),
+      DISCUSS])
 card("league-competition/07_consolation_bracket_channel_intro.json", "BLHA CONSOLATION BRACKET",
      "The bracket for the six franchises that miss the playoffs.", COMP,
      [("THE FORMAT", "Same structure as the playoffs, played in the same weeks, seeded by regular-season standings among non-playoff teams (Article XVI)."),
       ("THE PRIZE", "The consolation champion receives a **$50 FAAB bonus** for the following season (Article X)."),
-      ("WHAT IT DOESN'T CHANGE", "Consolation results do not change annual draft order, standings or the Presidents' Trophy.")])
+      ("WHAT IT DOESN'T CHANGE", "Consolation results do not change annual draft order, standings or the Presidents' Trophy."),
+      DISCUSS])
 
 # --------------------------------------------------------------- Commissioner's Office
 card("commissioners-office/01_commissioner_support_channel_intro.json", "BLHA COMMISSIONER SUPPORT",
@@ -266,11 +243,8 @@ card("commissioners-office/04_rulings_log_channel_intro.json", "BLHA RULINGS LOG
 card("draft-center/01_draft_announcements_channel_intro.json", "BLHA DRAFT ANNOUNCEMENTS",
      "Official draft notices. Fantrax remains the authoritative platform for actual selections.", DC,
      [("POSTED HERE", "Draft date and start time • Order • Pick-clock and pause rules • Roster-compliance deadline"),
-      ("DATES", "Drafts begin 14 to 21 days after the NHL Entry Draft and are announced at least 30 days ahead (Articles V, XIII and XIV).")])
-card("draft-center/02_on_the_clock_channel_intro.json", "BLHA ON THE CLOCK",
-     "Who is up and who is next.", DC,
-     [("POSTED HERE", "Franchise on the clock • Next up"),
-      ("OFFICIAL RECORD", "If Discord and Fantrax ever disagree on an actual pick, the Fantrax draft room controls unless league staff issues a correction.")])
+      ("DATES", "Drafts begin 14 to 21 days after the NHL Entry Draft and are announced at least 30 days ahead (Articles V, XIII and XIV)."),
+      ("ON THE CLOCK", "Fantrax alerts each manager when it's their pick, so Discord doesn't repeat those alerts. Round results are posted in **draft-results**.")])
 card("draft-center/03_draft_room_channel_intro.json", "BLHA DRAFT ROOM",
      "Live discussion while the draft runs.", DC,
      [("USE THIS ROOM FOR", "Reactions • Pick talk • Draft banter"),
@@ -308,6 +282,14 @@ def main() -> None:
         "franchise-hq/01_franchise_hq_channel_intro.json", "draft-center/06_draft_center_intro.json",
         "league-competition/03_weekly_recap_channel_intro.json", "league-competition/04_playoff_race_channel_intro.json",
         "league-competition/05_playoffs_channel_intro.json",
+        # Oct 2026 channel consolidation: one Scouting forum, two Waiver Wire
+        # channels, no power rankings or on-the-clock channel.
+        "scouting/01_prospect_scouting_channel_intro.json", "scouting/02_ncaa_hockey_channel_intro.json",
+        "scouting/03_chl_juniors_channel_intro.json", "scouting/04_international_prospects_channel_intro.json",
+        "scouting/05_ahl_watch_channel_intro.json", "scouting/06_draft_board_channel_intro.json",
+        "scouting/07_annual_draft_channel_intro.json", "waiver-wire/01_faab_talk_channel_intro.json",
+        "waiver-wire/03_adds_and_drops_channel_intro.json", "waiver-wire/04_recently_dropped_channel_intro.json",
+        "league-competition/03_power_rankings_channel_intro.json", "draft-center/02_on_the_clock_channel_intro.json",
     ):
         p = ROOT / rel
         if p.exists():

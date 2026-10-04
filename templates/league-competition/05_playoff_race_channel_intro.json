@@ -31,6 +31,11 @@
           "name": "WHEN IT STARTS",
           "value": "These posts begin late in the regular season. Until then the channel stays quiet.",
           "inline": false
+        },
+        {
+          "name": "DISCUSSION",
+          "value": "Owners can react here but not post. Talk about it in **gm-lounge** or **chirps-and-memes**.",
+          "inline": false
         }
       ],
       "image": {
