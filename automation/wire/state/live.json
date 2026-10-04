@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T01:16:06.567812Z",
+  "updated_at": "2026-10-04T01:30:33.180734Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2342,6 +2342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T01:16:06.542870Z"
+    },
+    {
+      "key": "6282a4add6c23115a1d891f4",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "34ca3a2a5d700af9",
+      "title_norm": "rasmus ristolainen (phi) — ristolainen (undisclosed) left saturday's game and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T01:30:33.112925Z"
     }
   ]
 }
