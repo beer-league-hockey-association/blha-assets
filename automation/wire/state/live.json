@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T21:57:59.100935Z",
+  "updated_at": "2026-10-04T22:15:34.928907Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2792,6 +2792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T21:57:59.074833Z"
+    },
+    {
+      "key": "4f3104b633ea116dc603189d",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-fantasy-hockey-top-250-200-rankings-drafts-players-big-board-281505474",
+      "fingerprint": "106c952b49e9a789",
+      "title_norm": "fantasy hockey top 200 player rankings for 2026-27",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T22:15:34.867760Z"
     }
   ]
 }
