@@ -14,7 +14,9 @@
 #
 # Season calendar:
 #   when:   an extra condition. league-office-events = only while an enabled
-#           League Office event has a reminder window open.
+#           League Office event has a reminder window open. draft-window =
+#           from 31 days before the Fantrax draft date until a day after the
+#           draft finishes.
 #   phases: only run during these parts of the Fantrax season:
 #           preseason, regular, playoffs, offseason.
 #           The current phase comes from Fantrax's own week dates.
@@ -64,6 +66,13 @@ jobs:
     workflow: blha-fantrax-scoreboard.yml
     every_minutes: 60
     phases: [regular, playoffs]
+
+  # Draft Center: countdown, draft-order reveal, round-by-round recap and a
+  # private alert when a pick clock runs out. Runs only near a Fantrax draft.
+  - id: draft-center
+    workflow: blha-draft-center.yml
+    every_minutes: 15
+    when: draft-window
 
   # Live bracket; saves seeds automatically after the final regular week.
   - id: playoffs

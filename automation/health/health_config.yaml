@@ -52,6 +52,12 @@ workflows:
     # Hourly during the playoff weeks only.
     max_age_minutes: 180
 
+  - id: draft-center
+    name: "BLHA Draft Center"
+    file: "blha-draft-center.yml"
+    # Every 15 minutes, only from 31 days before a Fantrax draft until a day after it.
+    max_age_minutes: 60
+
   - id: commissioner-desk
     name: "BLHA Commissioner Desk"
     file: "blha-commissioner-desk.yml"

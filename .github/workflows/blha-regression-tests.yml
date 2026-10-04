@@ -86,6 +86,9 @@ jobs:
           PYTHONPATH: automation:automation/league-office
         run: python automation/league-office/test_league_ops.py
 
+      - name: Test Draft Center
+        run: python automation/draft/test_center.py
+
       - name: Test playoff bracket logic
         env:
           PYTHONPATH: automation:automation/playoffs

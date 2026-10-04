@@ -69,9 +69,30 @@ def league_office_window(now: datetime | None = None) -> datetime | None:
     return ops.upcoming_window_start(ops.load_config(), now)
 
 
+def draft_window(now: datetime | None = None) -> datetime | None:
+    """When the Draft Center window opened (None if no draft is near).
+
+    Opens a day before the earliest countdown post (30 days ahead by default)
+    and closes a day after the draft finishes, using Fantrax's draft date.
+    """
+    from datetime import timedelta
+
+    from . import draft as dr
+
+    now = now or datetime.now(timezone.utc)
+    cfg = load_league()
+    dc = cfg.get("draft_center") or {}
+    offsets = [str(o) for o in (dc.get("countdown") or ["30d"])]
+    days = max((int(o[:-1]) for o in offsets if o.endswith("d")), default=30)
+    info = Fantrax(str(cfg["league_id"]), user_agent="BLHA-Scheduler/2.0").get("getDraftResults")
+    draft = dr.parse_results(info)
+    return dr.window_start(draft, now, timedelta(days=days + 1), timedelta(hours=float(dc.get("linger_hours") or 24)))
+
+
 # condition name -> (function returning when it became true or None, reason when off)
 CONDITIONS = {
     "league-office-events": (league_office_window, "no enabled League Office event is coming up"),
+    "draft-window": (draft_window, "no Fantrax draft within the next 31 days"),
 }
 
 
