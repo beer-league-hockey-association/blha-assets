@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T01:30:33.180734Z",
+  "updated_at": "2026-10-04T01:45:34.430676Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2352,6 +2352,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T01:30:33.112925Z"
+    },
+    {
+      "key": "7a21481b6de52d1666e9ae6c",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-trouba/2099",
+      "fingerprint": "6449d3d0007ae5e8",
+      "title_norm": "jacob trouba (sjs) — trouba (illness) is on the ice for warmups and is expected to play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T01:45:33.900417Z"
+    },
+    {
+      "key": "f7d5110f21867c26b43cbbe2",
+      "url": "https://www.dailyfaceoff.com/players/news/alexandre-carrier/2732",
+      "fingerprint": "9d3a5e2e34956299",
+      "title_norm": "alexandre carrier (mtl) — carrier (undisclosed) left saturday's game and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T01:45:34.148917Z"
+    },
+    {
+      "key": "922a882066a17eb308848674",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-poking-around-for-forward-depth",
+      "fingerprint": "64602b54f64ed2d5",
+      "title_norm": "oilers poking around for forward depth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T01:45:34.418654Z"
     }
   ]
 }
