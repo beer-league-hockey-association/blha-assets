@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T20:15:31.413147Z",
+  "updated_at": "2026-10-04T21:45:31.623715Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2772,6 +2772,16 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-10-04T20:15:31.408753Z"
+    },
+    {
+      "key": "0289815cd595bccfb70c51be",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "df1695a53ed13058",
+      "title_norm": "brad marchand (fla) — marchand (undisclosed) will return to florida's lineup on sunday in anaheim.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T21:45:31.558875Z"
     }
   ]
 }
