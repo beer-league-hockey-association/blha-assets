@@ -65,6 +65,9 @@ jobs:
       - name: Test season calendar, weekly report, live scoreboard and playoffs
         run: python automation/tests/test_competition.py
 
+      - name: Test the Fantrax client
+        run: python automation/tests/test_fantrax_client.py
+
       - name: Test The Wire
         run: python automation/wire/test_wire.py
 
