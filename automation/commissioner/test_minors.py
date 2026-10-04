@@ -18,6 +18,8 @@ sys.path.insert(0, str(HERE))
 import minors  # noqa: E402
 
 TODAY = date(2026, 10, 3)
+minors.MIN_GAP = 0
+minors.time.sleep = lambda *_: None
 
 
 class FakeResponse:
@@ -86,6 +88,19 @@ class RuleTests(unittest.TestCase):
     def test_name_handling(self):
         self.assertEqual(minors.fantrax_name("Hyman, Zach"), ("Zach", "Hyman"))
         self.assertEqual(minors.norm("Tim Stützle Jr."), "timstutzle")
+
+
+class ThrottleTests(unittest.TestCase):
+    def test_429_is_retried(self):
+        calls = []
+
+        class Flaky:
+            def get(self, url, params=None, timeout=None):
+                calls.append(url)
+                return FakeResponse({"ok": True}, 429 if len(calls) < 3 else 200)
+
+        self.assertEqual(minors._get(Flaky(), "https://x/y"), {"ok": True})
+        self.assertEqual(len(calls), 3)
 
 
 class MatchTests(unittest.TestCase):

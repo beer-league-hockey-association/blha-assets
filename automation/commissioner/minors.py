@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+import time
 import unicodedata
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -102,17 +103,30 @@ class Index:
         return None
 
 
+MIN_GAP = 0.4  # seconds between NHL requests; the API answers 429 when hit too fast
+_last_call = [0.0]
+
+
 def _get(session: requests.Session, url: str, **params: Any) -> Any:
     last: Exception | None = None
-    for _ in range(3):
+    for attempt in range(5):
+        wait = MIN_GAP - (time.monotonic() - _last_call[0])
+        if wait > 0:
+            time.sleep(wait)
+        _last_call[0] = time.monotonic()
         try:
             r = session.get(url, params=params or None, timeout=20)
             if r.status_code == 404:
                 return None
+            if r.status_code == 429 or r.status_code >= 500:
+                last = RuntimeError(f"HTTP {r.status_code}")
+                time.sleep(min(2 ** (attempt + 1), 30))
+                continue
             r.raise_for_status()
             return r.json()
         except Exception as exc:  # retry, then report
             last = exc
+            time.sleep(1)
     raise RuntimeError(f"NHL request failed: {url} ({last})")
 
 
