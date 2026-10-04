@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T04:45:35.448389Z",
+  "updated_at": "2026-10-04T05:30:33.398243Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2572,6 +2572,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T04:45:35.408548Z"
+    },
+    {
+      "key": "1a91430654ada1e11dae3594",
+      "url": "https://www.nhl.com/news/los-angeles-kings-san-jose-sharks-game-recap-october-3-2026",
+      "fingerprint": "f512aff21f9945a6",
+      "title_norm": "chernyshov scores 2 goals, ot winner for sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T05:30:32.722112Z"
+    },
+    {
+      "key": "b98a76733f195c7513d00f6d",
+      "url": "https://www.nhl.com/news/calgary-flames-vancouver-canucks-game-recap-october-3-2026",
+      "fingerprint": "3128a77c7707e73e",
+      "title_norm": "canucks rally in third period, come back to defeat flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T05:30:33.053296Z"
+    },
+    {
+      "key": "d591ccb8be68320e32ad8d1c",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-score-four-unanswered-goals-in-third-period-to-top-flames",
+      "fingerprint": "217cb0b7f3f80bc8",
+      "title_norm": "canucks score four unanswered goals in third period to top flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T05:30:33.350295Z"
     }
   ]
 }
