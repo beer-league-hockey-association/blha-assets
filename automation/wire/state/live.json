@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T17:15:30.308785Z",
+  "updated_at": "2026-10-04T18:00:42.839306Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2702,6 +2702,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T17:15:30.267091Z"
+    },
+    {
+      "key": "86d29afabc0cab44d7996eb9",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
+      "fingerprint": "62ffc6df542bc35b",
+      "title_norm": "logan o'connor (col) — o'connor (lower-body) practiced in a regular jersey on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-04T18:00:42.769668Z"
     }
   ]
 }
