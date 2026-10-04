@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T01:45:34.430676Z",
+  "updated_at": "2026-10-04T02:15:36.917732Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2382,6 +2382,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T01:45:34.418654Z"
+    },
+    {
+      "key": "bf127e769b9fff559119f794",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-buffalo-sabres-game-recap-october-3-2026",
+      "fingerprint": "8d988bbb6e75b3af",
+      "title_norm": "kulich's 1st goal in 11 months helps sabres to 1st win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:15:36.026980Z"
+    },
+    {
+      "key": "41e9b88025b5a8d80e955b3f",
+      "url": "https://www.nhl.com/news/seattle-kraken-edmonton-oilers-game-recap-october-3-2026",
+      "fingerprint": "00beb8f04f032e73",
+      "title_norm": "draisaitl breaks tie late in third period to lift oilers past kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:15:36.331277Z"
+    },
+    {
+      "key": "a97d0c5bb4b05c08a0ed4fe9",
+      "url": "https://www.nhl.com/news/topic/Sc/hedsbox:%20Schmaltz%20scores%202,%20Guenther%20has%203%20points%20in%20Mammoth%20win/utah-mammoth-columbus-blue-jackets-game-recap-october-3-2026",
+      "fingerprint": "5554b670ec67605a",
+      "title_norm": "schmaltz scores two, guenther has three points, mammoth top blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:15:36.589551Z"
+    },
+    {
+      "key": "36fce11158abe16fa4d899dd",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/ee3c236a-190b-4385-b625-de7b906afb85/preview",
+      "fingerprint": "52871f476054d091",
+      "title_norm": "saturday night hockey on sportsnet: canucks vs. flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T02:15:36.625488Z"
+    },
+    {
+      "key": "aa2b5eb67b010316e58435f7",
+      "url": "https://www.sportsnet.ca/nhl/article/halliday-scores-winner-ullmark-stands-tall-as-senators-top-maple-leafs",
+      "fingerprint": "c858d154cc216bc8",
+      "title_norm": "halliday scores winner, ullmark stands tall as senators top maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T02:15:36.635358Z"
+    },
+    {
+      "key": "7be06a4da6677ad04823ab8d",
+      "url": "https://www.sportsnet.ca/nhl/article/draisaitl-mcdavid-score-late-to-lift-oilers-to-win-over-kraken",
+      "fingerprint": "e485ae26361f29d9",
+      "title_norm": "draisaitl, mcdavid score late to lift oilers to win over kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T02:15:36.645353Z"
     }
   ]
 }
