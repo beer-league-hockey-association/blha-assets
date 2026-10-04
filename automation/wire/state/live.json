@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T14:15:33.256373Z",
+  "updated_at": "2026-10-04T14:30:31.359122Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2642,6 +2642,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-04T14:15:33.182619Z"
+    },
+    {
+      "key": "4516f6060cdfbceee3a68154",
+      "url": "https://www.sportsnet.ca/nhl/article/goaltender-leevi-merilainen-makes-good-on-chance-with-canucks-in-win",
+      "fingerprint": "5b0350fc35bf6e7a",
+      "title_norm": "goaltender leevi merilainen makes good on chance with canucks in win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-04T14:30:31.339357Z"
     }
   ]
 }
