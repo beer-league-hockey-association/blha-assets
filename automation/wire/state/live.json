@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T02:31:07.994840Z",
+  "updated_at": "2026-10-04T02:45:33.796888Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2472,6 +2472,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T02:31:07.964112Z"
+    },
+    {
+      "key": "76122df1d3eb775983974f50",
+      "url": "https://www.nhl.com/news/new-jersey-devils-new-york-islanders-game-recap-october-3-2026",
+      "fingerprint": "62980d457143c862",
+      "title_norm": "sorokin gets shutout, islanders cruise past devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:45:33.494334Z"
+    },
+    {
+      "key": "6cd62788a4bd3389565dc8db",
+      "url": "https://www.nhl.com/news/montreal-canadiens-pittsburgh-penguins-game-recap-october-3-2026",
+      "fingerprint": "d3284db44b39c278",
+      "title_norm": "novak has ot winner, penguins recover to defeat canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T02:45:33.726270Z"
     }
   ]
 }
