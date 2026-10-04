@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T07:00:34.496348Z",
+  "updated_at": "2026-10-04T14:15:33.256373Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2632,6 +2632,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-04T07:00:34.480176Z"
+    },
+    {
+      "key": "0a8b409529d7cccebb355635",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-4-2026",
+      "fingerprint": "1c249ef3cd5f25de",
+      "title_norm": "on tap: ducks set for home opener against panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-04T14:15:33.182619Z"
     }
   ]
 }
