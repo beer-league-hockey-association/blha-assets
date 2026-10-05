@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T00:45:34.271852Z",
+  "updated_at": "2026-10-05T01:00:38.684341Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2872,6 +2872,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T00:45:34.253063Z"
+    },
+    {
+      "key": "c044d3caf3f64df4c6f04b67",
+      "url": "https://www.nhl.com/news/utah-mammoth-new-york-rangers-game-recap-october-4-2026",
+      "fingerprint": "f95f27f08bd816a9",
+      "title_norm": "rangers defeat mammoth for third win in four days",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T01:00:37.620246Z"
+    },
+    {
+      "key": "7286d70fcb6e874a2c3d69e7",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/79badd16-d72e-42b4-8b0c-f8ff9a981f37/preview",
+      "fingerprint": "3200815882423aa8",
+      "title_norm": "canucks on sportsnet: vancouver vs. vegas",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T01:00:38.371581Z"
+    },
+    {
+      "key": "d59b57111a16e113df10d7b2",
+      "url": "https://www.sportsnet.ca/nhl/article/shesterkin-back-on-scoresheet-as-rangers-double-up-mammoth",
+      "fingerprint": "d2e74ea2998e97d5",
+      "title_norm": "shesterkin back on scoresheet as rangers double up mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T01:00:38.668652Z"
     }
   ]
 }
