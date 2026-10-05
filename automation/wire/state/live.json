@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T18:00:39.004639Z",
+  "updated_at": "2026-10-05T18:15:42.022194Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3332,6 +3332,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T18:00:38.976481Z"
+    },
+    {
+      "key": "2f81afd3da15f34d68a78548",
+      "url": "https://www.sportsnet.ca/nhl/article/bettman-no-trade-comments-an-attack-on-player-rights-says-nhlpa-exec-hainsey",
+      "fingerprint": "ae61c3f8eb94e070",
+      "title_norm": "bettman no-trade comments an 'attack' on player rights, says nhlpa exec hainsey",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T18:15:42.002364Z"
     }
   ]
 }
