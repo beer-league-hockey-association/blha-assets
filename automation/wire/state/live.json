@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T22:45:31.414668Z",
+  "updated_at": "2026-10-05T23:00:39.790791Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3452,6 +3452,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T22:45:31.379601Z"
+    },
+    {
+      "key": "ebd6a2e60677b251314be909",
+      "url": "https://watch.sportsnet.ca/event/Ottawa_Boston_224907",
+      "fingerprint": "405b8da0e609bd32",
+      "title_norm": "monday night hockey on sportsnet: senators vs. bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T23:00:39.146116Z"
+    },
+    {
+      "key": "07e576da351b1c28928ce0b8",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-search-for-perfect-no-2-defenceman-still-a-work-in-progress",
+      "fingerprint": "d9b6e4d3cf33fccc",
+      "title_norm": "oilers' search for perfect no. 2 defenceman still a work in progress",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T23:00:39.772153Z"
     }
   ]
 }
