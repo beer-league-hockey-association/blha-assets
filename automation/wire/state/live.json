@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T04:45:29.221462Z",
+  "updated_at": "2026-10-05T06:00:35.571422Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3022,6 +3022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T04:45:29.204060Z"
+    },
+    {
+      "key": "2a701876b53e1aa2ad0d9fef",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-standards-on-the-rise-after-2-2-start-weve-still-got-better",
+      "fingerprint": "ca0dbe60f43e1291",
+      "title_norm": "canucks' standards on the rise after 2-2 start: 'we've still got better'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T06:00:35.535438Z"
     }
   ]
 }
