@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T16:45:32.204407Z",
+  "updated_at": "2026-10-05T17:15:38.157280Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3252,6 +3252,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T16:45:32.135875Z"
+    },
+    {
+      "key": "1332ed7d981f0ceee3e4d748",
+      "url": "https://theahl.com/news/firebirds-nyman-ahl-player-week",
+      "fingerprint": "5004ae29a6e77e12",
+      "title_norm": "firebirds' nyman named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-05T17:15:37.772110Z"
+    },
+    {
+      "key": "4ff40637712998c12519e608",
+      "url": "https://www.dailyfaceoff.com/players/news/damon-severson/2038",
+      "fingerprint": "c2c04f65f8f9fce4",
+      "title_norm": "damon severson (cbj) — severson (shoulder) was a full participant in practice on monday and is expected to return on friday vs. pittsburgh.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T17:15:38.126587Z"
     }
   ]
 }
