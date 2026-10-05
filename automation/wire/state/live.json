@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T17:15:38.157280Z",
+  "updated_at": "2026-10-05T17:30:33.395769Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3272,6 +3272,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T17:15:38.126587Z"
+    },
+    {
+      "key": "1f1a04313fa3ff37565d360c",
+      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
+      "fingerprint": "4b147c43d762e160",
+      "title_norm": "joe veleno (nyr) — veleno (lower-body) is out vs. new york on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T17:30:32.908926Z"
+    },
+    {
+      "key": "1d590678c6cb14fb792295f9",
+      "url": "https://www.sportsnet.ca/nhl/article/shesterkin-bouchard-cotter-named-nhls-three-stars-of-the-week",
+      "fingerprint": "13a571a47582df3c",
+      "title_norm": "shesterkin, bouchard, cotter named nhl's three stars of the week",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T17:30:33.376278Z"
     }
   ]
 }
