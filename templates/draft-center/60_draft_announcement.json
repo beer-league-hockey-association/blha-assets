@@ -10,7 +10,7 @@
       "fields": [
         {
           "name": "START",
-          "value": "`[DATE + TIME ET]`",
+          "value": "`[TIMESTAMP]`",
           "inline": false
         },
         {

@@ -15,7 +15,7 @@
         },
         {
           "name": "TIME",
-          "value": "`[TIME ET / ALL DAY]`",
+          "value": "`[TIMESTAMP / ALL DAY]`",
           "inline": false
         },
         {

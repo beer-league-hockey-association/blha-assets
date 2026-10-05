@@ -10,12 +10,12 @@
       "fields": [
         {
           "name": "PREVIOUS DATE",
-          "value": "`[OLD DATE + TIME ET]`",
+          "value": "`[OLD TIMESTAMP]`",
           "inline": false
         },
         {
           "name": "NEW DATE",
-          "value": "**`[NEW DATE + TIME ET]`**",
+          "value": "**`[NEW TIMESTAMP]`**",
           "inline": false
         },
         {

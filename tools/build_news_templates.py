@@ -46,13 +46,13 @@ tmpl("league-office/13_clerical_correction.json", "COMMISSIONER CORRECTION", "A 
 
 # --------------------------------------------------------------------- calendar
 tmpl("league-office/32_calendar_published.json", "LEAGUE CALENDAR PUBLISHED", "The League Calendar for **Season `[YEAR]`** is live. Every date comes from the formulas in Article V of the Constitution.", "BLHA LEAGUE CALENDAR",
-     [("NHL SCHEDULE RELEASED", "`[DATE]`"), ("DUES DEADLINE", "**`[DATE + TIME ET]`** (before the draft)"),
-      ("DRAFT", "`[DATE + TIME ET]` • 14 to 21 days after the NHL Entry Draft"),
-      ("TRADE DEADLINE", "Sunday 11:59 PM ET, end of Week 20: `[DATE]`"),
+     [("NHL SCHEDULE RELEASED", "`[DATE]`"), ("DUES DEADLINE", "**`[TIMESTAMP]`** (before the draft)"),
+      ("DRAFT", "`[TIMESTAMP]` • 14 to 21 days after the NHL Entry Draft"),
+      ("TRADE DEADLINE", "`[TIMESTAMP]` • Sunday 11:59 PM ET, end of Week 20"),
       ("PLAYOFFS", "Quarterfinals `[DATE]` • Semifinals `[DATE]` • Championship `[DATES]`"),
       ("IF A DATE LOOKS WRONG", "The formula in the Constitution controls. Tell the Commissioner.")])
 tmpl("league-office/33_calendar_date_change.json", "CALENDAR DATE CHANGE", "`[EVENT]` has been updated.", "BLHA LEAGUE CALENDAR",
-     [("PREVIOUS DATE", "`[OLD DATE + TIME ET]`"), ("NEW DATE", "**`[NEW DATE + TIME ET]`**"),
+     [("PREVIOUS DATE", "`[OLD TIMESTAMP]`"), ("NEW DATE", "**`[NEW TIMESTAMP]`**"),
       ("REASON", "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`"),
       ("NOTICE", "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.")], ALERT)
 
@@ -63,7 +63,7 @@ tmpl("league-office/40_ledger_season_summary.json", "SEASON LEDGER", "`[SEASON]`
       ("ADMINISTRATION FEE", "`$[AMOUNT]`"), ("DYNASTY POT", "`$[BALANCE]`")], RECORD)
 tmpl("league-office/41_ledger_dues_status.json", "FRANCHISE DUES STATUS", "`[SEASON / DATE]`", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
      [("PAID AND CONFIRMED", "`[LIST FRANCHISES]`"), ("PREPAID FUTURE SEASONS", "`[FRANCHISE: THROUGH SEASON YYYY]` or none"),
-      ("OUTSTANDING", "`[LIST FRANCHISES / NONE]`"), ("DEADLINE", "`[DATE + TIME ET]`")], RECORD)
+      ("OUTSTANDING", "`[LIST FRANCHISES / NONE]`"), ("DEADLINE", "`[TIMESTAMP]`")], RECORD)
 tmpl("league-office/42_ledger_prize_pool.json", "BLHA PRIZE POOL", "`[SEASON]` • 12 franchises × $150 = $1,800", "BLHA LEAGUE LEDGER",
      [("BLHA CHAMPION", "$650"), ("RUNNER-UP", "$350"), ("THIRD PLACE", "$150"), ("PRESIDENTS' TROPHY", "$200"),
       ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / LEAGUE OPERATING RESERVE", "$150"), ("LEAGUE ADMINISTRATION FEE", "$100")], RECORD)
@@ -81,10 +81,10 @@ tmpl("league-office/45_ledger_dynasty_pot.json", "DYNASTY POT UPDATE", "The pot 
 tmpl("league-office/50_vote_proposal_open.json", "AMENDMENT PROPOSAL — DISCUSSION", "`[PROPOSAL TITLE]`", "BLHA LEAGUE VOTING • DISCUSSION ONLY",
      [("AFFECTED RULE", "`[ARTICLE AND SECTION]`"), ("REPLACEMENT LANGUAGE", "`[EXACT NEW TEXT]`"),
       ("INTENDED EFFECTIVE DATE", "`[SEASON / DATE]`"), ("PROPOSED BY", "`[FRANCHISE OR COMMISSIONER]`"),
-      ("VOTING OPENS", "**`[DATE + TIME ET]`** • at least 7 days after this post (Article XX)")])
+      ("VOTING OPENS", "**`[TIMESTAMP]`** • at least 7 days after this post (Article XX)")])
 tmpl("league-office/51_vote_open.json", "OFFICIAL BLHA VOTE", "`[PROPOSAL TITLE]`", "BLHA LEAGUE VOTING • OFFICIAL",
      [("QUESTION", "`[EXACT QUESTION]`"), ("OPTIONS", "**Yes** — adopt the amendment\n**No** — keep the current rule"),
-      ("VOTING CLOSES", "**`[DATE + TIME ET]`** • 7-day window"),
+      ("VOTING CLOSES", "**`[TIMESTAMP]`** • 7-day window"),
       ("PASSAGE REQUIREMENT", "At least **8 affirmative votes out of 12**. Non-votes and abstentions are not affirmative."),
       ("WHO VOTES", "One formal vote per franchise, cast by the **Franchise Owner**."),
       ("EFFECTIVE", "`[NEXT SEASON / LATER DATE]` • must pass before that Season's dues deadline")])

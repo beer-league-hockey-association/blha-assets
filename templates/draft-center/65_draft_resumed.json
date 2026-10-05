@@ -20,7 +20,7 @@
         },
         {
           "name": "DEADLINE",
-          "value": "`[TIME ET]`",
+          "value": "`[TIMESTAMP]`",
           "inline": false
         }
       ],

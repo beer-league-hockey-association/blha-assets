@@ -143,6 +143,7 @@ h2 { font-size: 1.55rem; font-weight: 700; text-transform: uppercase; }
 .progress button { font: inherit; font-size: .8rem; color: var(--muted); background: none; border: 1px solid var(--line); border-radius: 4px; padding: 3px 8px; cursor: pointer; }
 .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 18px 0 8px; }
 .steps div { background: var(--surface); padding: 10px 12px; font-size: .88rem; min-width: 0; }
+.note { margin: 10px 0 0; font-size: .88rem; color: var(--muted); max-width: 80ch; } .note b { color: var(--ink); } .note code { font-family: var(--f-mono); font-size: .82rem; background: var(--soft); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; } .note a { color: var(--accent-ink); }
 .steps b { display: block; font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 2px; }
 section { margin-top: 30px; }
 section header { display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; }
@@ -179,6 +180,7 @@ section header p { margin: 0; color: var(--muted); font-size: .88rem; max-width:
     <div><b>3 Send</b>Check the banner preview, then click Send.</div>
     <div><b>4 Pin</b>Pin the message and delete Discord's "pinned a message" notice.</div>
   </div>
+  <p class="note"><b>Dates and times:</b> replace each <code>[TIMESTAMP]</code> with a Discord timestamp such as <code>&lt;t:1791504000:F&gt;</code>, made at <a href="https://sesh.fyi/timestamp" target="_blank" rel="noopener">sesh.fyi/timestamp</a> (pick the full date and time). Delete the backticks around the placeholder. Discord shows the time in each owner's own time zone. For a deadline, add <code>(&lt;t:1791504000:R&gt;)</code> after it for a live countdown.</p>
 {{BODY}}
 </main>
 <script>

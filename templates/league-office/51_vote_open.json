@@ -20,7 +20,7 @@
         },
         {
           "name": "VOTING CLOSES",
-          "value": "**`[DATE + TIME ET]`** • 7-day window",
+          "value": "**`[TIMESTAMP]`** • 7-day window",
           "inline": false
         },
         {

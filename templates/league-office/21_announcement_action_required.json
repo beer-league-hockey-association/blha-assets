@@ -10,7 +10,7 @@
       "fields": [
         {
           "name": "DEADLINE",
-          "value": "`[DATE + TIME ET]`",
+          "value": "`[TIMESTAMP]`",
           "inline": false
         },
         {
