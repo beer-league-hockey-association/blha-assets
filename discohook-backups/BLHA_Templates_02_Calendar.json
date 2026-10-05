@@ -18,7 +18,7 @@
               },
               {
                 "name": "TIME",
-                "value": "`[TIME ET / ALL DAY]`",
+                "value": "`[TIMESTAMP / ALL DAY]`",
                 "inline": false
               },
               {
@@ -47,7 +47,7 @@
             "fields": [
               {
                 "name": "DEADLINE",
-                "value": "**`[DATE + TIME ET]`**",
+                "value": "**`[TIMESTAMP]`**",
                 "inline": false
               },
               {
@@ -81,17 +81,17 @@
               },
               {
                 "name": "DUES DEADLINE",
-                "value": "**`[DATE + TIME ET]`** (before the draft)",
+                "value": "**`[TIMESTAMP]`** (before the draft)",
                 "inline": false
               },
               {
                 "name": "DRAFT",
-                "value": "`[DATE + TIME ET]` • 14 to 21 days after the NHL Entry Draft",
+                "value": "`[TIMESTAMP]` • 14 to 21 days after the NHL Entry Draft",
                 "inline": false
               },
               {
                 "name": "TRADE DEADLINE",
-                "value": "Sunday 11:59 PM ET, end of Week 20: `[DATE]`",
+                "value": "`[TIMESTAMP]` • Sunday 11:59 PM ET, end of Week 20",
                 "inline": false
               },
               {
@@ -125,12 +125,12 @@
             "fields": [
               {
                 "name": "PREVIOUS DATE",
-                "value": "`[OLD DATE + TIME ET]`",
+                "value": "`[OLD TIMESTAMP]`",
                 "inline": false
               },
               {
                 "name": "NEW DATE",
-                "value": "**`[NEW DATE + TIME ET]`**",
+                "value": "**`[NEW TIMESTAMP]`**",
                 "inline": false
               },
               {

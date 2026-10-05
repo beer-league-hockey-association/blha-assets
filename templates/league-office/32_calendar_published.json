@@ -15,17 +15,17 @@
         },
         {
           "name": "DUES DEADLINE",
-          "value": "**`[DATE + TIME ET]`** (before the draft)",
+          "value": "**`[TIMESTAMP]`** (before the draft)",
           "inline": false
         },
         {
           "name": "DRAFT",
-          "value": "`[DATE + TIME ET]` • 14 to 21 days after the NHL Entry Draft",
+          "value": "`[TIMESTAMP]` • 14 to 21 days after the NHL Entry Draft",
           "inline": false
         },
         {
           "name": "TRADE DEADLINE",
-          "value": "Sunday 11:59 PM ET, end of Week 20: `[DATE]`",
+          "value": "`[TIMESTAMP]` • Sunday 11:59 PM ET, end of Week 20",
           "inline": false
         },
         {

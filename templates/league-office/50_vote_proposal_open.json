@@ -30,7 +30,7 @@
         },
         {
           "name": "VOTING OPENS",
-          "value": "**`[DATE + TIME ET]`** • at least 7 days after this post (Article XX)",
+          "value": "**`[TIMESTAMP]`** • at least 7 days after this post (Article XX)",
           "inline": false
         }
       ]

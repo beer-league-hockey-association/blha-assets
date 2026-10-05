@@ -10,12 +10,12 @@
       "fields": [
         {
           "name": "PAUSE BEGAN",
-          "value": "`[TIME ET]`",
+          "value": "`[TIMESTAMP]`",
           "inline": false
         },
         {
           "name": "RESUMES",
-          "value": "`[TIME ET]`",
+          "value": "`[TIMESTAMP]`",
           "inline": false
         },
         {
