@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T15:45:50.287247Z",
+  "updated_at": "2026-10-05T16:00:46.129165Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3152,6 +3152,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T15:45:50.227537Z"
+    },
+    {
+      "key": "83098e44f2f3d3dad220f4af",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-5-2026",
+      "fingerprint": "bd593096ec20e2c0",
+      "title_norm": "on tap: sharks-stars showcased on prime in canada",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T16:00:45.781490Z"
+    },
+    {
+      "key": "62dddaf0c61e039cba6f617a",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-fantasy-hockey-waiver-wire-pickups-2026-2027-season",
+      "fingerprint": "080ff20184ab5055",
+      "title_norm": "fantasy top 10 waiver wire pickups; new podcast",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T16:00:46.063260Z"
     }
   ]
 }
