@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T18:15:42.022194Z",
+  "updated_at": "2026-10-05T18:30:42.025404Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3342,6 +3342,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T18:15:42.002364Z"
+    },
+    {
+      "key": "0a7761f31b304b1f6ae3bbbb",
+      "url": "https://www.nhl.com/news/anders-lee-settles-in-with-utah-already-making-impact",
+      "fingerprint": "9e517a07ae15f8d7",
+      "title_norm": "lee settles in with mammoth, already making impact",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T18:30:41.937886Z"
+    },
+    {
+      "key": "ceaeb95890edaab4b8a2a3c5",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-place-connor-zary-brayden-pachal-on-waivers",
+      "fingerprint": "95c52f9eb8761928",
+      "title_norm": "flames place connor zary, brayden pachal on waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T18:30:42.006043Z"
     }
   ]
 }
