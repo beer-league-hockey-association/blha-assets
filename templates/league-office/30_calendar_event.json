@@ -9,13 +9,8 @@
       },
       "fields": [
         {
-          "name": "DATE",
-          "value": "`[DATE]`",
-          "inline": false
-        },
-        {
-          "name": "TIME",
-          "value": "`[TIMESTAMP / ALL DAY]`",
+          "name": "WHEN",
+          "value": "`[TIMESTAMP]` (or `[DATE STAMP]` for an all-day event)",
           "inline": false
         },
         {

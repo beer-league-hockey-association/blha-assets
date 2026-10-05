@@ -49,7 +49,7 @@ tmpl("league-office/32_calendar_published.json", "LEAGUE CALENDAR PUBLISHED", "T
      [("NHL SCHEDULE RELEASED", "`[DATE]`"), ("DUES DEADLINE", "**`[TIMESTAMP]`** (before the draft)"),
       ("DRAFT", "`[TIMESTAMP]` • 14 to 21 days after the NHL Entry Draft"),
       ("TRADE DEADLINE", "`[TIMESTAMP]` • Sunday 11:59 PM ET, end of Week 20"),
-      ("PLAYOFFS", "Quarterfinals `[DATE]` • Semifinals `[DATE]` • Championship `[DATES]`"),
+      ("PLAYOFFS", "Quarterfinals `[DATE STAMP]` • Semifinals `[DATE STAMP]` • Championship `[DATE STAMP]` to `[DATE STAMP]`"),
       ("IF A DATE LOOKS WRONG", "The formula in the Constitution controls. Tell the Commissioner.")])
 tmpl("league-office/33_calendar_date_change.json", "CALENDAR DATE CHANGE", "`[EVENT]` has been updated.", "BLHA LEAGUE CALENDAR",
      [("PREVIOUS DATE", "`[OLD TIMESTAMP]`"), ("NEW DATE", "**`[NEW TIMESTAMP]`**"),
@@ -122,7 +122,7 @@ tmpl("league-office/12_rules_ruling.json", "OFFICIAL RULE INTERPRETATION", "`[SH
       ("REVIEW", "A directly affected franchise may request review within 48 hours (Article XIX).")])
 tmpl("league-office/14_recusal_notice.json", "COMMISSIONER RECUSAL", "The Commissioner's franchise is involved in `[MATTER]`. A neutral party will decide it.", f"{LO} • OFFICIAL NOTICE",
      [("DECIDED BY", "`[NEUTRAL ASSISTANT COMMISSIONER / TEMPORARY NEUTRAL REVIEWER / UNAFFECTED FRANCHISES]`"),
-      ("TIMELINE", "`[DATE]`"), ("RECORD", "The outcome will be posted in **rulings-log**.")])
+      ("TIMELINE", "Decision expected by `[DATE STAMP]`"), ("RECORD", "The outcome will be posted in **rulings-log**.")])
 tmpl("league-office/15_appeal_outcome.json", "APPEAL OUTCOME", "Review of `[RULING TITLE]`", f"{LO} • OFFICIAL RULING",
      [("REQUESTED BY", "`[FRANCHISE]`"), ("REVIEW PANEL", "`[THREE UNAFFECTED FRANCHISES]`"),
       ("DECISION", "**`[UPHELD / MODIFIED / REVERSED]`**"), ("DETAILS", "`[WHAT CHANGES, IF ANYTHING]`"),

@@ -15,7 +15,7 @@
         },
         {
           "name": "TIMELINE",
-          "value": "`[DATE]`",
+          "value": "Decision expected by `[DATE STAMP]`",
           "inline": false
         },
         {

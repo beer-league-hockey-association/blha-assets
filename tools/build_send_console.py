@@ -182,7 +182,7 @@ section header p { margin: 0; color: var(--muted); font-size: .88rem; max-width:
     <div><b>3 Send</b>Check the banner preview, then click Send.</div>
     <div><b>4 Pin</b>Pin the message and delete Discord's "pinned a message" notice.</div>
   </div>
-  <p class="note"><b>Dates and times:</b> replace each <code>[TIMESTAMP]</code> with a Discord timestamp such as <code>&lt;t:1791504000:F&gt;</code>, made at <a href="https://sesh.fyi/timestamp" target="_blank" rel="noopener">sesh.fyi/timestamp</a> (pick the full date and time). Delete the backticks around the placeholder. Discord shows the time in each owner's own time zone. For a deadline, add <code>(&lt;t:1791504000:R&gt;)</code> after it for a live countdown.</p>
+  <p class="note"><b>Dates and times:</b> replace each <code>[TIMESTAMP]</code> with a Discord timestamp such as <code>&lt;t:1791504000:F&gt;</code>, made at <a href="https://sesh.fyi/timestamp" target="_blank" rel="noopener">sesh.fyi/timestamp</a> (pick the full date and time). Delete the backticks around the placeholder. Discord shows the time in each owner's own time zone. For a deadline, add <code>(&lt;t:1791504000:R&gt;)</code> after it for a live countdown. A <code>[DATE STAMP]</code> is the date-only style, which ends in <code>:D</code>, for example <code>&lt;t:1791504000:D&gt;</code>.</p>
 {{BODY}}
 </main>
 <script>
