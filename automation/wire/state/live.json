@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T00:15:28.662973Z",
+  "updated_at": "2026-10-05T00:45:34.271852Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2862,6 +2862,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-05T00:15:28.617021Z"
+    },
+    {
+      "key": "a937e2ecdb4b10d1870e2612",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-canucks-pettersson-boosting-trade-value",
+      "fingerprint": "d8eedc24758af1bc",
+      "title_norm": "sunday overreactions: canucks' pettersson boosting trade value",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T00:45:34.253063Z"
     }
   ]
 }
