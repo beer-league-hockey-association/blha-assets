@@ -3,10 +3,7 @@
     {
       "title": "ARTICLE II — GOVERNANCE AND LEAGUE AUTHORITY",
       "description": "**GOVERNANCE THRESHOLD** — Material Amendments require at least 8 affirmative franchise votes out of 12.\n\n**2.1** The Commissioner administers the league, maintains Fantrax settings, publishes official rulings, enforces this Constitution, preserves the league record, and takes reasonable action necessary to protect competitive integrity and continuity. Assistant Commissioners perform duties delegated by the Commissioner as described in Article XIX.\n\n**2.2** Each franchise receives one formal league vote regardless of whether it has one owner or multiple co-owners. Co-owners may fully participate in roster management and league discussion but do not create an additional franchise vote.\n\n**2.3** An orphaned franchise (Article XVIII) has no vote while it is orphaned. The 8-vote threshold does not change.\n\n**2.4** Material Amendments are made only as provided in Article XX: during the Offseason, with at least 8 of the 12 franchise votes, effective for the next Season unless the amendment states a later effective date.\n\n**2.5** Substantive rules will not be changed during an Active Season. The Commissioner may correct a clerical error, Fantrax configuration error, or platform issue when the correction is necessary to apply an already-existing rule. A temporary operational measure may be used when a platform limitation makes literal enforcement impossible, but the measure must preserve the rule's original intent and be documented in Discord.\n\n**2.6** The current published Constitution controls when it conflicts with old messages, prior drafts, informal discussions, or outdated documents. The League Calendar implements this Constitution and cannot override it (Article V).",
-      "color": 16758812,
-      "footer": {
-        "text": "BLHA CONSTITUTION • VERSION 2.2"
-      }
+      "color": 16758812
     },
     {
       "title": "ARTICLE III — FRANCHISE OWNERSHIP, DUES, EXPENSES, AND PRIZES",

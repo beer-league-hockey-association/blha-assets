@@ -19,14 +19,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import constitution_source as S  # noqa: E402
+import discohook_format as fmt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_TEMPLATES = ROOT / "templates" / "constitution"
 OUT_DOCS = ROOT / "constitution"
 
 GOLD = 16758812
-BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
-FOOTER_URL = BASE + "shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
 MAX_DESC = 3900          # stay under Discord's 4096 per-embed description limit
 MAX_MESSAGE = 5600       # stay under Discord's 6000 per-message counted characters
 MAX_EMBEDS = 9           # leave room for the frozen footer image embed rule
@@ -151,7 +150,8 @@ def build_discord() -> list[tuple[str, dict]]:
     out: list[tuple[str, dict]] = []
     for idx, msg in enumerate(packed):
         clean = [{k: v for k, v in e.items() if not k.startswith("_")} for e in msg]
-        clean[-1]["image"] = {"url": FOOTER_URL}
+        # One message each; footer text and divider on the final embed only.
+        clean = fmt.apply(clean)
         name = message_name(idx, msg)
         out.append((name, {"embeds": clean}))
     return out
@@ -378,9 +378,9 @@ def main() -> None:
 
     for name, data in msgs:
         (OUT_TEMPLATES / name).write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        counted = sum(embed_chars(e) for e in data["embeds"])
-        assert counted <= 6000, (name, counted)
-        assert len(data["embeds"]) <= 10, name
+        counted = fmt.message_chars(data["embeds"])
+        errors = fmt.problems(data["embeds"])
+        assert not errors, (name, errors)
         for e in data["embeds"]:
             assert len(e.get("description", "")) <= 4096, (name, e.get("title"))
             assert len(e.get("title", "")) <= 256

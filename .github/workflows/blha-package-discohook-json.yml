@@ -5,6 +5,18 @@ on:
   push:
     paths:
       - 'templates/**/*.json'
+      - 'discohook-backups/*.json'
+      - 'constitution/*_discohook_backup.json'
+      - 'tools/discohook_format.py'
+      - 'tools/normalize_discohook_templates.py'
+      - '.github/workflows/blha-package-discohook-json.yml'
+  pull_request:
+    paths:
+      - 'templates/**/*.json'
+      - 'discohook-backups/*.json'
+      - 'constitution/*_discohook_backup.json'
+      - 'tools/discohook_format.py'
+      - 'tools/normalize_discohook_templates.py'
       - '.github/workflows/blha-package-discohook-json.yml'
 
 permissions:
@@ -49,6 +61,48 @@ jobs:
                   total += len(field.get('name') or '')
                   total += len(field.get('value') or '')
               return total
+
+          # BLHA format: one message per send; only the final embed has a footer
+          # (its text plus the gold divider image); a channel intro starts with
+          # its header banner, which has no footer.
+          divider = ('https://raw.githubusercontent.com/beer-league-hockey-association/'
+                     'blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png')
+
+          def image_url(embed):
+              return str((embed.get('image') or {}).get('url') or '')
+
+          def is_banner(embed):
+              url = image_url(embed)
+              return '-header.png' in url or 'blha-welcome-banner.png' in url
+
+          def banner_expected(src):
+              rel = src.relative_to(root).as_posix()
+              return rel.endswith('_channel_intro.json') or rel == 'welcome/01_welcome.json'
+
+          def check_blha_format(src, embeds, needs_banner):
+              last = len(embeds) - 1
+              for i, embed in enumerate(embeds):
+                  if i < last:
+                      assert 'footer' not in embed, (
+                          f'{src}: embed {i + 1} has a footer; only the final embed may'
+                      )
+                      assert not image_url(embed).startswith(divider), (
+                          f'{src}: embed {i + 1} has the footer divider; only the final embed may'
+                      )
+              final = embeds[last]
+              text = (final.get('footer') or {}).get('text') or ''
+              assert text.strip('\u200b'), f'{src}: final embed has no footer text'
+              assert image_url(final).startswith(divider), (
+                  f'{src}: final embed does not use the footer divider image'
+              )
+              for i, embed in enumerate(embeds):
+                  if is_banner(embed):
+                      assert i == 0, f'{src}: header banner must be the first embed'
+              if needs_banner:
+                  first = embeds[0]
+                  assert is_banner(first) and set(first) == {'color', 'image'} and first['color'] == 0x2B2D31, (
+                      f'{src}: must start with the header banner (charcoal, image only, no footer)'
+                  )
 
           for src in files:
               payload = json.loads(src.read_text(encoding='utf-8'))
@@ -104,9 +158,29 @@ jobs:
                           )
 
               assert combined_text <= 6000, f'{src}: total embed text exceeds 6000 characters'
+              check_blha_format(src, embeds, banner_expected(src))
 
-          print(f'Validated {len(files)} raw per-message Discohook JSON files.')
+          # Bundles and backups hold several separate one-message templates;
+          # every message in them follows the same BLHA format.
+          backups = sorted(Path('discohook-backups').glob('BLHA_*.json'))
+          backups += sorted(Path('constitution').glob('*_discohook_backup.json'))
+          checked = 0
+          for src in backups:
+              payload = json.loads(src.read_text(encoding='utf-8'))
+              messages = [m['data'] for m in payload['messages']] if 'messages' in payload else [payload]
+              for n, message in enumerate(messages, 1):
+                  embeds = message.get('embeds') or []
+                  assert 1 <= len(embeds) <= 10, f'{src} message {n}: embeds must contain 1-10 items'
+                  total = sum(embed_text_length(e) for e in embeds)
+                  assert total <= 6000, f'{src} message {n}: total embed text exceeds 6000 characters'
+                  check_blha_format(f'{src} message {n}', embeds, is_banner(embeds[0]))
+                  checked += 1
+
+          print(f'Validated {len(files)} raw per-message Discohook JSON files and {checked} bundled messages.')
           PY
+
+      - name: Check templates match the normalizer
+        run: python tools/normalize_discohook_templates.py --check
 
       - name: Package raw JSON files
         shell: bash

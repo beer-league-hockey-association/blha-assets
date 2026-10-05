@@ -6,15 +6,24 @@
 3. Builds discohook.org links for every channel-intro message, constitution
    message and bundle, written to discohook-backups/LINKS.md and links.json.
 
-Run before normalize_discohook_templates.py:
-    python3 tools/build_news_templates.py && python3 tools/normalize_discohook_templates.py
+Every template and link is one Discord message in the BLHA format from
+discohook_format.py (footer text and divider on the final embed only). Bundles
+are libraries of separate one-message templates: open one, keep the message you
+need, send it.
+
+Build order: build_channel_intros.py, normalize_discohook_templates.py,
+build_news_templates.py, build_send_console.py.
 """
 
 from __future__ import annotations
 
 import base64
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import discohook_format as fmt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 T = ROOT / "templates"
@@ -25,10 +34,10 @@ LO = "BLHA LEAGUE OFFICE"
 
 
 def tmpl(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]], color: int = GOLD) -> None:
-    data = {"embeds": [{
+    data = {"embeds": fmt.apply([{
         "title": title, "description": desc, "color": color, "footer": {"text": footer},
         "fields": [{"name": n, "value": v, "inline": False} for n, v in fields],
-    }]}
+    }])}
     p = T / path
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -56,20 +65,7 @@ tmpl("league-office/33_calendar_date_change.json", "CALENDAR DATE CHANGE", "`[EV
       ("REASON", "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`"),
       ("NOTICE", "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.")], ALERT)
 
-tmpl("league-office/34_calendar_sesh_reminders.json", "GET EVENT REMINDERS FROM SESH",
-     "League events on this calendar run through **Sesh**. Sesh reminds you by direct message, so it only works if Discord lets Sesh message you. One-time setup, about a minute.",
-     "BLHA LEAGUE CALENDAR",
-     [("1. ALLOW DMS FROM THIS SERVER",
-       "**Desktop:** click the server name at the top left, choose **Privacy Settings**, and turn on **Direct Messages**.\n"
-       "**Phone:** tap your profile picture, then the gear, then **Messaging Permissions** (older apps: **Content & Social** or **Privacy & Safety**). "
-       "Under server settings, pick this server and turn on **Direct messages**."),
-      ("2. RSVP TO THE EVENT", "Press **Attending** (or your answer) on the event post in this channel. Sesh sends you a confirmation DM right away."),
-      ("3. PICK YOUR REMINDER", "In that DM, choose when Sesh should remind you. Reminders are set one event at a time."),
-      ("NO DM FROM SESH?",
-       "Look in **Message Requests** (and its **Spam** tab) at the top of your DM list and accept Sesh. "
-       "Still nothing? Send Sesh the command `/settings` in a DM, or open **sesh.fyi/dashboard**, click your name, then **Preferences**, "
-       "and turn on **Event RSVP Confirmation DMs**. Sesh also needs you to stay in this server and not block it."),
-      ("TO STOP", "Change your RSVP or the reminder in the Sesh DM. Turning off Event RSVP Confirmation DMs stops every Sesh reminder.")])
+# The Sesh reminder steps are part of the calendar intro (build_channel_intros.py).
 
 # ----------------------------------------------------------------------- ledger
 tmpl("league-office/40_ledger_season_summary.json", "SEASON LEDGER", "`[SEASON]` • Published within 30 days after the BLHA Championship.", "BLHA LEAGUE LEDGER",
@@ -177,15 +173,13 @@ BUNDLES = {
     "08_Trades": ["trade-center/90_trade_completed.json"],
 }
 
-FOOTER_URL = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-
-
-def with_footer(data: dict) -> dict:
-    """Same footer-divider rule as normalize_discohook_templates (idempotent)."""
-    emb = data["embeds"]
-    last = emb[-1]
-    if "image" not in last:
-        last["image"] = {"url": FOOTER_URL}
+def message(path: Path) -> dict:
+    """Load one template and confirm it is a single message in the BLHA format."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    rel = path.relative_to(T).as_posix()
+    errors = fmt.problems(data["embeds"], fmt.header_url(rel))
+    if errors:
+        raise SystemExit(f"{rel}: {'; '.join(errors)} (run normalize_discohook_templates.py first)")
     return data
 
 
@@ -198,22 +192,17 @@ def main() -> None:
     OUT.mkdir(exist_ok=True)
     links: dict[str, str] = {}
     for name, files in BUNDLES.items():
-        msgs = [with_footer(json.loads((T / f).read_text(encoding="utf-8"))) for f in files]
+        msgs = [message(T / f) for f in files]
         (OUT / f"BLHA_Templates_{name}.json").write_text(
             json.dumps({"messages": [{"data": m} for m in msgs]}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         links[f"bundle:{name}"] = link(msgs)
     for p in sorted(T.rglob("*_channel_intro.json")):
-        links[f"intro:{p.relative_to(T).as_posix()}"] = link([json.loads(p.read_text(encoding="utf-8"))])
-    welcome = {"embeds": []}
-    for n in range(1, 7):
-        part = next((T / "welcome").glob(f"0{n}_*.json"))
-        welcome["embeds"] += json.loads(part.read_text(encoding="utf-8"))["embeds"]
+        links[f"intro:{p.relative_to(T).as_posix()}"] = link([message(p)])
+    welcome = message(T / fmt.WELCOME)
     (OUT / "BLHA_Welcome_Single_Message.json").write_text(json.dumps(welcome, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     links["welcome"] = link([welcome])
-    sesh = T / "league-office" / "34_calendar_sesh_reminders.json"
-    links["message:sesh-reminders"] = link([with_footer(json.loads(sesh.read_text(encoding="utf-8")))])
     for p in sorted((T / "constitution").glob("*.json")):
-        links[f"constitution:{p.name}"] = link([json.loads(p.read_text(encoding="utf-8"))])
+        links[f"constitution:{p.name}"] = link([message(p)])
     (OUT / "links.json").write_text(json.dumps(links, indent=2) + "\n", encoding="utf-8")
     biggest = max(len(v) for v in links.values())
     print(f"{len(BUNDLES)} bundles, {len(links)} links, longest link {biggest} chars")
