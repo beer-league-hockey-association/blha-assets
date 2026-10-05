@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T01:00:38.684341Z",
+  "updated_at": "2026-10-05T03:15:35.302643Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2902,6 +2902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T01:00:38.668652Z"
+    },
+    {
+      "key": "534f5fbc1493f001b8e08534",
+      "url": "https://www.nhl.com/news/calgary-flames-seattle-kraken-game-recap-october-4-2026",
+      "fingerprint": "02a49d0a8ea1cf1c",
+      "title_norm": "samoskevich scores twice, kraken cruise past flames again",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T03:15:35.215751Z"
     }
   ]
 }
