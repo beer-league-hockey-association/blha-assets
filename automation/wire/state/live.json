@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T00:00:33.974218Z",
+  "updated_at": "2026-10-05T00:15:28.662973Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2852,6 +2852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T00:00:33.943755Z"
+    },
+    {
+      "key": "f6d4b23daeb429cc9dc3550f",
+      "url": "https://www.nhl.com/news/topic/short-shifts/johnny-gaudreau-horses-belmont-park-breeders-cup",
+      "fingerprint": "5a7028a00e1ade7e",
+      "title_norm": "horse named for j. gaudreau finishes 2nd at belmont",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T00:15:28.617021Z"
     }
   ]
 }
