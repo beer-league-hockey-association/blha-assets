@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T15:00:44.250630Z",
+  "updated_at": "2026-10-05T15:15:47.219594Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3102,6 +3102,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T15:00:44.201202Z"
+    },
+    {
+      "key": "7b7c0f6f69ed34027bc23065",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-legend-alex-ovechkin-to-retire-at-end-of-season",
+      "fingerprint": "1270c3bed8dd6fc7",
+      "title_norm": "capitals legend alex ovechkin to retire at end of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:15:47.138501Z"
     }
   ]
 }
