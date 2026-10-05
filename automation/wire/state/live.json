@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T04:01:12.210501Z",
+  "updated_at": "2026-10-05T04:30:38.324809Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2982,6 +2982,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T04:01:12.170418Z"
+    },
+    {
+      "key": "43d4a869e2b2f8a14add4fc3",
+      "url": "https://www.sportsnet.ca/nhl/video/bauer-and-kolesar-drop-the-gloves-after-hard-hit-on-compher",
+      "fingerprint": "ae1044db3b7995af",
+      "title_norm": "bauer and kolesar drop the gloves after hard hit on compher",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T04:30:38.078084Z"
+    },
+    {
+      "key": "3dfed804402d75d0dfcaedf5",
+      "url": "https://www.sportsnet.ca/nhl/video/golden-knights-marner-shows-patience-before-burying-first-goal-of-season",
+      "fingerprint": "b27659e44fa09ae9",
+      "title_norm": "golden knights' marner shows patience before burying first goal of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T04:30:38.310588Z"
     }
   ]
 }
