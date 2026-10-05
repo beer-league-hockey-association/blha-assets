@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T17:30:33.395769Z",
+  "updated_at": "2026-10-05T17:45:31.967677Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3292,6 +3292,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T17:30:33.376278Z"
+    },
+    {
+      "key": "bd343f25cd2ea4fdd27bfaac",
+      "url": "https://www.nhl.com/news/topic/3-stars/shesterkin-bouchard-cotter-named-nhl-3-stars-of-week-october-5-2026",
+      "fingerprint": "7a505cb65349f727",
+      "title_norm": "shesterkin, bouchard, cotter named 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T17:45:30.355173Z"
+    },
+    {
+      "key": "e823cbf18da6cbbcc8f84160",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-5-2026",
+      "fingerprint": "daa81ede4ba3e64e",
+      "title_norm": "status report: sanderson out at least next 2 games for sens",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T17:45:31.679236Z"
+    },
+    {
+      "key": "9e50569fcc307ff812c03703",
+      "url": "https://www.dailyfaceoff.com/players/news/andrew-mangiapane/4622",
+      "fingerprint": "930274e72f09e5d8",
+      "title_norm": "andrew mangiapane (chi) — mangiapane (lower-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T17:45:31.902937Z"
     }
   ]
 }
