@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T18:30:42.025404Z",
+  "updated_at": "2026-10-05T18:45:37.971929Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3362,6 +3362,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T18:30:42.006043Z"
+    },
+    {
+      "key": "c80cb6759b2e28335ea8b342",
+      "url": "https://www.sportsnet.ca/nhl/article/no-reason-to-panic-maple-leafs-patient-despite-mckenna-lines-rough-start",
+      "fingerprint": "acaff06540475579",
+      "title_norm": "'no reason to panic': maple leafs patient despite mckenna line's rough start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T18:45:37.940784Z"
     }
   ]
 }
