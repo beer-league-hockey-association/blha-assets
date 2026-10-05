@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T16:00:46.129165Z",
+  "updated_at": "2026-10-05T16:15:31.457248Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3172,6 +3172,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-05T16:00:46.063260Z"
+    },
+    {
+      "key": "b520d2a16a17cce9d2fe3ba9",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "1be0b9697ff8abcd",
+      "title_norm": "connor bedard (chi) — bedard (shoulder) is participating in chicago's practice on monday in a non-contact jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:15:31.094969Z"
+    },
+    {
+      "key": "158ac87f9d81902aa749a8b1",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "978a5f49e8542f81",
+      "title_norm": "rasmus ristolainen (phi) — ristolainen (undisclosed) will be a game-time decision in tampa bay on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:15:31.423147Z"
     }
   ]
 }
