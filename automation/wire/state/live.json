@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T04:30:38.324809Z",
+  "updated_at": "2026-10-05T04:45:29.221462Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3002,6 +3002,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T04:30:38.310588Z"
+    },
+    {
+      "key": "f0470d4292ed0a358c030284",
+      "url": "https://www.nhl.com/news/brad-marchand-scores-in-season-debut-for-florida-panthers",
+      "fingerprint": "940df354612960af",
+      "title_norm": "marchand scores in season debut for panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T04:45:28.968987Z"
+    },
+    {
+      "key": "a2ddb9f9535b961bbb7aa7d6",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-disconnected-play-sets-painful-tone-for-first-year-of-rebuild",
+      "fingerprint": "70474800c369f1d3",
+      "title_norm": "flames' disconnected play sets painful tone for first year of rebuild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T04:45:29.204060Z"
     }
   ]
 }
