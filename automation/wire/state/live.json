@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T03:45:29.074603Z",
+  "updated_at": "2026-10-05T04:01:12.210501Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2942,6 +2942,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T03:45:29.039805Z"
+    },
+    {
+      "key": "db421d7e5c56568b7fd51d6b",
+      "url": "https://www.nhl.com/news/topic/trophy-tracker/trophy-tracker-flyers-porter-martone-preseason-choice-for-calder-trophy-as-top-rookie",
+      "fingerprint": "724939b86e148d4d",
+      "title_norm": "calder tracker: martone favorite as top rookie",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T04:01:08.668151Z"
+    },
+    {
+      "key": "c119fe825c03e092d231939c",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-october-5-2026",
+      "fingerprint": "f6b6b47a6c5c805a",
+      "title_norm": "nhl nationally televised games for week of oct. 5",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T04:01:11.323295Z"
+    },
+    {
+      "key": "62e522c9a3fa4daf00f802d2",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-vancouver-canucks-game-recap-october-4-2026",
+      "fingerprint": "4864fc9b72769171",
+      "title_norm": "gatcomb, golden knights hold off canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T04:01:11.575070Z"
+    },
+    {
+      "key": "cedff0f41ee0021388e0f2fa",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-fall-to-golden-knights-as-marner-scores-first-of-season",
+      "fingerprint": "bdb27a7f9dff8118",
+      "title_norm": "canucks fall to golden knights as marner scores first of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T04:01:12.170418Z"
     }
   ]
 }
