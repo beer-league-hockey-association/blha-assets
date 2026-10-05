@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T13:15:38.313987Z",
+  "updated_at": "2026-10-05T13:45:37.708903Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3042,6 +3042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-05T13:15:38.239938Z"
+    },
+    {
+      "key": "fe33b0a8ea670a86d359a467",
+      "url": "https://www.nhl.com/news/color-of-hockey-hispanic-trainers-making-their-mark-in-pro-game",
+      "fingerprint": "4c866cc957f9839b",
+      "title_norm": "hispanic trainers making their mark in ahl",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-05T13:45:37.654045Z"
     }
   ]
 }
