@@ -114,6 +114,56 @@ that was switched off, add a second cron-job.org job (same token as above):
 - **Method and headers:** as for the scheduler job
 - **Request body:** `{"ref":"main","inputs":{"mode":"live"}}`
 
+## Outside check-in (Healthchecks.io)
+
+Everything above alerts you through GitHub or Discord. If GitHub Actions or the
+cron-job.org timer stops altogether, nothing inside the system notices. A free
+Healthchecks.io check covers that gap: every live scheduler run pings it, and if
+the pings stop it emails you (and optionally posts in Discord).
+
+1. Sign up at https://healthchecks.io (free plan: 20 checks, no card).
+2. **Add Check**. Name it `BLHA Scheduler`.
+   - **Schedule:** Simple. **Period** 15 minutes, **Grace time** 1 hour. You are
+     alerted after about 75 minutes with no run, which rides out GitHub's
+     occasional late starts without crying wolf.
+3. Copy the check's ping URL (`https://hc-ping.com/...`).
+4. GitHub: Settings > Secrets and variables > Actions > New repository secret
+   named `BLHA_HEALTHCHECK_PING_URL`, value = that URL.
+5. Healthchecks: **Integrations**. Email to your sign-up address is on by
+   default. Optionally add **Discord** and pick `#automation-health`.
+6. Wait 15 minutes. The check should turn green ("up"). The scheduler log ends
+   with `Checked in (success)`; a failed scheduler run pings `/fail`, which
+   alerts you straight away.
+
+Without the secret the step just logs that it skipped.
+
+## Moving the repository to a GitHub organization
+
+An organization lets a future Commissioner take over the automation without
+your personal account (Constitution 19.7). It is free for a public repository.
+
+1. GitHub: **+** (top right) > **New organization** > **Free**. Pick a name,
+   for example `beer-league-hockey-association`, and "My personal account".
+2. In this repository: **Settings** > **General** > **Danger Zone** >
+   **Transfer ownership**. Choose the organization, type `diseasewheeze/blha-assets`
+   to confirm, and transfer.
+3. What moves with it: code, history, branches, pull requests, Actions history,
+   **repository secrets** and webhooks. GitHub redirects old links, including
+   `git` and image links.
+4. What you must redo:
+   - **Timer token.** A fine-grained token owned by `diseasewheeze` cannot start
+     workflows in an organization repository. Create a new one with
+     **Resource owner** = the organization (steps under "Create the GitHub
+     token" above) and put it in both cron-job.org jobs.
+   - **cron-job.org URLs.** Change `diseasewheeze` to the organization name in
+     both jobs, then **Test run** each (expect HTTP 204).
+   - **Claude's GitHub access.** Grant the Claude GitHub app access to the new
+     organization's repository so it can keep working on it.
+5. Then ask Claude to replace `diseasewheeze/blha-assets` in the templates and
+   docs with the new address, so nothing depends on GitHub's redirect.
+6. Never create a new repository called `blha-assets` under `diseasewheeze`;
+   that would break the redirect.
+
 ## If something goes wrong
 
 | Symptom | Likely cause | Fix |
@@ -124,3 +174,4 @@ that was switched off, add a second cron-job.org job (same token as above):
 | cron-job.org shows 422 | Request body missing or not JSON | Body must be exactly `{"ref":"main"}` |
 | Health alert: "BLHA Scheduler — Workflow appears stale" | External timer stopped; only GitHub's late backup cron is running | Check the cron-job.org job history |
 | Scheduler log shows `ERROR … dispatch failed` | GitHub API problem, or a workflow lost its `mode` input | Read the error text in the log |
+| Healthchecks.io says the check is down | No live scheduler run for over an hour | Check cron-job.org history and the Actions tab; a GitHub outage clears itself |
