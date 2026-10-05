@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T16:15:31.457248Z",
+  "updated_at": "2026-10-05T16:30:46.192748Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3192,6 +3192,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T16:15:31.423147Z"
+    },
+    {
+      "key": "92a260b6d2fb762647f99487",
+      "url": "https://www.sportsnet.ca/nhl/article/sidney-crosby-ponders-alex-ovechkin-rivalry-after-retirement-announcement",
+      "fingerprint": "e6afc5a9eab0d0bc",
+      "title_norm": "sidney crosby talks alex ovechkin rivalry after retirement announcement",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:30:45.455755Z"
+    },
+    {
+      "key": "9651ba198ed3dffe399903a7",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-jake-sanderson-to-miss-next-two-games",
+      "fingerprint": "40e54cea085aabc9",
+      "title_norm": "senators' jake sanderson to miss next two games",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:30:45.658040Z"
+    },
+    {
+      "key": "2d046a05ec01b2b92dc5a6aa",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "dc686bd612571f11",
+      "title_norm": "matt roy (wsh) — roy (lower-body) is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:30:45.883935Z"
+    },
+    {
+      "key": "f3b7ef5c344f3469fdd173a3",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "785d2457a1854a5d",
+      "title_norm": "aleksander barkov (fla) — barkov (lower-body) is expected to miss the next 10-12 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:30:46.135381Z"
     }
   ]
 }
