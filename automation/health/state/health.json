@@ -1,16 +1,3 @@
 {
-  "active_issues": {
-    "failed:dormancy-guard": {
-      "detail": "Open the workflow run and review the failed step/log output.",
-      "summary": "Latest completed live run ended with failure",
-      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/37372827478",
-      "workflow": "BLHA Dormancy Guard"
-    },
-    "failed:scoreboard": {
-      "detail": "Open the workflow run and review the failed step/log output.",
-      "summary": "Latest completed live run ended with failure",
-      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/37372999532",
-      "workflow": "BLHA Fantrax Scoreboard"
-    }
-  }
+  "active_issues": {}
 }
