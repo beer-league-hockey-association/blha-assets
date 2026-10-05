@@ -30,7 +30,7 @@
         },
         {
           "name": "PLAYOFFS",
-          "value": "Quarterfinals `[DATE]` • Semifinals `[DATE]` • Championship `[DATES]`",
+          "value": "Quarterfinals `[DATE STAMP]` • Semifinals `[DATE STAMP]` • Championship `[DATE STAMP]` to `[DATE STAMP]`",
           "inline": false
         },
         {
