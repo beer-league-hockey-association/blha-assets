@@ -35,14 +35,34 @@ channel is only for you.
 
 `picktrades.py` (workflow BLHA Pick Trades, every 15 minutes) compares Fantrax's
 future-pick ownership with the last saved copy and posts one message to this
-channel whenever a pick changes owner. For 1st and 2nd round picks it tells you
-to check the League Ledger: the team giving the pick up must be paid through the
-pick's Season (Art. 12.2 to 12.5). Rounds 3 to 5 are listed for your records only.
+channel whenever a pick changes owner. Fantrax processes trades without your
+approval and shows a pick only after the trade has gone through, so a 1st- or
+2nd-round pick traded before the seller's prepayment is confirmed is reversed
+(Art. 12.2 to 12.5). Rounds 3 to 5 are listed for your records only.
 
-Fantrax shows a pick only after a trade has gone through, so this is a fast
-prompt to confirm or reverse, not a lock. It cannot see whether a franchise has
-paid; that stays in your ledger. The first run only saves a baseline. Use mode
-`test` for a sample alert and `preview` to see what would post.
+**Automatic ledger check (optional, recommended).** The alert can read the
+League Ledger's **Pick Clearance** tab, which lists each franchise's Fantrax
+team ID and the Season it is paid through. Each 1st- or 2nd-round move then
+says **PAID** (no action) or **NOT PAID** (reverse the whole trade). To turn it
+on:
+
+1. In the ledger, fill in each franchise's Fantrax team ID on the Settings tab.
+   Run this workflow in `preview` mode to print every team's ID and name.
+2. In Google Sheets: File > Share > Publish to web. Under "Link", pick the
+   **Pick Clearance** tab (not "Entire document") and **Comma-separated values
+   (.csv)**, then Publish and copy the link. Only that tab is published: team
+   IDs, franchise names and paid-through Seasons, no amounts.
+3. In GitHub: Settings > Secrets and variables > Actions > New repository
+   secret named `BLHA_LEDGER_CLEARANCE_CSV`, value = that link.
+
+Google refreshes a published tab within about five minutes of an edit, so
+confirm a payment in the ledger a few minutes before the trade. If the link is
+missing or can't be read, the alert falls back to asking you to check the
+ledger by hand. When you reverse a trade, the picks moving back are recognised
+(for 14 days) and reported as a reversal instead of a new trade.
+
+The first run only saves a baseline. Use mode `test` for a sample alert and
+`preview` to see what would post.
 
 ## Minor-eligibility watch
 

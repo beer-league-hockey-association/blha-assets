@@ -56,20 +56,35 @@ tmpl("league-office/33_calendar_date_change.json", "CALENDAR DATE CHANGE", "`[EV
       ("REASON", "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`"),
       ("NOTICE", "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.")], ALERT)
 
+tmpl("league-office/34_calendar_sesh_reminders.json", "GET EVENT REMINDERS FROM SESH",
+     "League events on this calendar run through **Sesh**. Sesh reminds you by direct message, so it only works if Discord lets Sesh message you. One-time setup, about a minute.",
+     "BLHA LEAGUE CALENDAR",
+     [("1. ALLOW DMS FROM THIS SERVER",
+       "**Desktop:** click the server name at the top left, choose **Privacy Settings**, and turn on **Direct Messages**.\n"
+       "**Phone:** tap your profile picture, then the gear, then **Messaging Permissions** (older apps: **Content & Social** or **Privacy & Safety**). "
+       "Under server settings, pick this server and turn on **Direct messages**."),
+      ("2. RSVP TO THE EVENT", "Press **Attending** (or your answer) on the event post in this channel. Sesh sends you a confirmation DM right away."),
+      ("3. PICK YOUR REMINDER", "In that DM, choose when Sesh should remind you. Reminders are set one event at a time."),
+      ("NO DM FROM SESH?",
+       "Look in **Message Requests** (and its **Spam** tab) at the top of your DM list and accept Sesh. "
+       "Still nothing? Send Sesh the command `/settings` in a DM, or open **sesh.fyi/dashboard**, click your name, then **Preferences**, "
+       "and turn on **Event RSVP Confirmation DMs**. Sesh also needs you to stay in this server and not block it."),
+      ("TO STOP", "Change your RSVP or the reminder in the Sesh DM. Turning off Event RSVP Confirmation DMs stops every Sesh reminder.")])
+
 # ----------------------------------------------------------------------- ledger
 tmpl("league-office/40_ledger_season_summary.json", "SEASON LEDGER", "`[SEASON]` • Published within 30 days after the BLHA Championship.", "BLHA LEAGUE LEDGER",
      [("DUES RECEIVED", "`$[AMOUNT]` from `[12 / X]` franchises"), ("PRIZES PAID", "`$[AMOUNT]`"),
       ("OPERATING RESERVE", "Spent `$[AMOUNT]` on `[FANTRAX PREMIUM / OTHER]` • Unused `$[AMOUNT]` added to the Dynasty Pot"),
-      ("ADMINISTRATION FEE", "`$[AMOUNT]`"), ("DYNASTY POT", "`$[BALANCE]`")], RECORD)
+      ("LEAGUE SERVICES", "`$[AMOUNT]`"), ("DYNASTY POT", "`$[BALANCE]`")], RECORD)
 tmpl("league-office/41_ledger_dues_status.json", "FRANCHISE DUES STATUS", "`[SEASON / DATE]`", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
      [("PAID AND CONFIRMED", "`[LIST FRANCHISES]`"), ("PREPAID FUTURE SEASONS", "`[FRANCHISE: THROUGH SEASON YYYY]` or none"),
       ("OUTSTANDING", "`[LIST FRANCHISES / NONE]`"), ("DEADLINE", "`[TIMESTAMP]`")], RECORD)
 tmpl("league-office/42_ledger_prize_pool.json", "BLHA PRIZE POOL", "`[SEASON]` • 12 franchises × $150 = $1,800", "BLHA LEAGUE LEDGER",
      [("BLHA CHAMPION", "$650"), ("RUNNER-UP", "$350"), ("THIRD PLACE", "$150"), ("PRESIDENTS' TROPHY", "$200"),
-      ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / LEAGUE OPERATING RESERVE", "$150"), ("LEAGUE ADMINISTRATION FEE", "$100")], RECORD)
+      ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / LEAGUE OPERATING RESERVE", "$150"), ("LEAGUE SERVICES ALLOCATION", "$100")], RECORD)
 tmpl("league-office/43_ledger_payment_confirmed.json", "PAYMENT CONFIRMED", "`[FRANCHISE]` is confirmed paid through **Season `[YEAR]`**.", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
      [("COVERS", "`[SEASON DUES / FUTURE-SEASON PREPAYMENT THROUGH YEAR]`"), ("CONFIRMED", "`[DATE]`"),
-      ("PENDING TRADE RELEASED", "`[TRADE DESCRIPTION, OR NONE]` — may now become final under Article XII.")], RECORD)
+      ("PICK TRADES", "`[FRANCHISE]` may now trade its 1st- and 2nd-round picks for drafts through **`[YEAR]`**. A pick trade made before payment is confirmed is reversed (Article XII).")], RECORD)
 tmpl("league-office/44_ledger_prize_payout.json", "PRIZE PAID", "`[PRIZE]` for **Season `[YEAR]`** has been paid to `[FRANCHISE]`.", "BLHA LEAGUE LEDGER",
      [("AMOUNT", "`$[AMOUNT]`"), ("PAID", "`[DATE]`"), ("REMAINING THIS SEASON", "`[PRIZES STILL UNPAID, OR NONE]`")], RECORD)
 tmpl("league-office/45_ledger_dynasty_pot.json", "DYNASTY POT UPDATE", "The pot stands at **`$[BALANCE]`**.", "BLHA LEAGUE LEDGER",
@@ -195,6 +210,8 @@ def main() -> None:
         welcome["embeds"] += json.loads(part.read_text(encoding="utf-8"))["embeds"]
     (OUT / "BLHA_Welcome_Single_Message.json").write_text(json.dumps(welcome, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     links["welcome"] = link([welcome])
+    sesh = T / "league-office" / "34_calendar_sesh_reminders.json"
+    links["message:sesh-reminders"] = link([with_footer(json.loads(sesh.read_text(encoding="utf-8")))])
     for p in sorted((T / "constitution").glob("*.json")):
         links[f"constitution:{p.name}"] = link([json.loads(p.read_text(encoding="utf-8"))])
     (OUT / "links.json").write_text(json.dumps(links, indent=2) + "\n", encoding="utf-8")

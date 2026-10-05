@@ -8,7 +8,7 @@
 - **Inaugural season:** 2027–28 (Season 2027). Startup draft is held in the 2027 offseason.
 - **Format:** Head-to-Head Points, daily lineups, 22-week regular season, each opponent twice, no divisions.
 - **Roster:** 20 active (3 C, 3 LW, 3 RW, 3 F, 6 D, 2 G), 6 reserve, 10 minors, 5 IR. 36 controlled spots excluding IR.
-- **Minors:** Age 25 or younger as calculated by Fantrax; skaters ≤100 career NHL regular-season GP; goalies ≤50.
+- **Minors:** Age 25 or younger on NHL opening day, as calculated by Fantrax; skaters ≤100 career NHL regular-season GP; goalies ≤50.
 - **FAAB:** $1,000 per season; no rollover; $0 bids allowed; hidden bids; daily processing; no FCFS.
 - **Acquisitions:** Maximum 5 per normal fantasy week; the two-week championship uses two separate five-acquisition weekly limits.
 - **Goalies:** Maximum 4 credited starts per normal fantasy week; 8 total across the two-week championship.
@@ -29,7 +29,7 @@
 | Presidents' Trophy | $200 |
 | Dynasty Pot | $200 |
 | Fantrax / League Operating Reserve | $150 |
-| League Administration Fee | $100 |
+| League Services Allocation | $100 |
 | **Total** | **$1,800** |
 
 ## Article I — League Identity and Purpose
@@ -78,16 +78,16 @@
 • Presidents' Trophy — **$200**
 • Dynasty Pot — **$200**
 • Fantrax / League Operating Reserve — **$150**
-• League Administration Fee — **$100**
+• League Services Allocation — **$100**
 • **TOTAL — $1,800**
 
-**3.6** The League Administration Fee compensates the Commissioner for recurring league administration, setup, records, Discord infrastructure, automation maintenance, league communications, and related management duties. Any increase to the Administration Fee is a Material Amendment. On any vote that changes the Administration Fee, the Commissioner's franchise does not vote and approval requires at least 8 of the other 11 franchises.
+**3.6** The League Services Allocation is paid to the Commissioner for recurring league administration, setup, records, Discord infrastructure, automation maintenance, league communications, and related management duties. Any increase to the League Services Allocation is a Material Amendment. On any vote that changes the League Services Allocation, the Commissioner's franchise does not vote and approval requires at least 8 of the other 11 franchises.
 
 **3.7** The League Operating Reserve may be used only for Fantrax Premium and other disclosed, authorized league operating costs. Any portion of the $150 reserve remaining after the Season's authorized expenses are settled is added to the Dynasty Pot.
 
 **3.8** Guaranteed competitive prizes will not be reduced during an Active Season to cover an unanticipated operating overage. Any additional assessment or material change to the annual allocation requires league approval under this Constitution.
 
-**3.9** Prizes are paid after the competition that earns them is final, and no later than 30 days after the BLHA Championship concludes. Within the same period the Commissioner publishes a Season Ledger in the League Ledger channel showing dues received, prizes paid, operating reserve spending, the Administration Fee, and the Dynasty Pot balance.
+**3.9** Prizes are paid after the competition that earns them is final, and no later than 30 days after the BLHA Championship concludes. Within the same period the Commissioner publishes a Season Ledger in the League Ledger channel showing dues received, prizes paid, operating reserve spending, the League Services Allocation, and the Dynasty Pot balance.
 
 **3.10** Annual dues are non-refundable once the Annual Draft has begun (the Startup Draft for Season 2027), except that if the league dissolves before the Season, Article XX requires a distribution or refund. Future-season prepayments attached to a franchise are non-refundable if an owner voluntarily leaves the league.
 
@@ -157,7 +157,7 @@
 
 **7.1** The BLHA maintains 10 minor-league roster spots.
 
-**7.2** A player must be age 25 or younger, as Fantrax calculates the player's age on the day eligibility is checked. A player who turns 26 during the Season becomes minor-ineligible once Fantrax reflects that age, and Fantrax's age calculation is final.
+**7.2** A player must be age 25 or younger on the first day of the NHL regular season, as Fantrax calculates it. Age is measured on that date for the whole Season, so a birthday during the Season does not change a player's eligibility. Fantrax's age calculation is final.
 
 **7.3** Skaters remain minor-eligible through 100 career NHL regular-season games played. Goalies remain minor-eligible through 50 career NHL regular-season games played. Career NHL games played continue to accumulate during the Season.
 
@@ -203,7 +203,7 @@
 
 **10.3** Unowned players are acquired through FAAB rather than first-come, first-served acquisition. Waivers are intended to process daily at approximately 11:00 AM ET, subject to Fantrax system behavior.
 
-**10.4** Equal bids are resolved by Fantrax's configured tiebreaker. The Commissioner will configure the earliest-submitted bid to win where Fantrax allows and will announce the setting in Discord before the Season.
+**10.4** Equal bids go to the bid submitted first, using Fantrax's Earliest Bid tie-breaker. The Commissioner announces this setting in Discord before the Season.
 
 **10.5** A franchise may make up to **5 acquisitions per normal fantasy Week**. An acquisition is adding a player from the unowned player pool by FAAB claim or free-agent add, as counted by Fantrax. Trades, draft selections, and drops are not acquisitions. The two-week championship is treated as two separate acquisition weeks, permitting up to 5 acquisitions in each underlying Week, for a maximum of 10 across the full championship period.
 
@@ -227,17 +227,17 @@
 
 ## Article XII — Future Draft Picks and Required Prepayment
 
-> **PAYMENT FIRST** — Required future-season dues must be paid and confirmed before a future 1st- or 2nd-round pick trade can become final.
+> **PAYMENT FIRST** — Pay first, then trade. A future 1st- or 2nd-round pick trade made before the required dues are confirmed is reversed.
 
-**12.1** Fantrax draft-pick trading is enabled for the next Annual Draft plus the following three Annual Drafts. Five rounds of annual draft picks are tradeable.
+**12.1** Fantrax draft-pick trading is enabled for the next three Annual Drafts (the next Annual Draft and the two after it). Five rounds of annual draft picks are tradeable.
 
 **12.2** A franchise may not trade away a future first- or second-round pick unless that franchise is fully paid through the Season associated with that pick (the Season supplied by that Annual Draft) before the trade is completed.
 
 **12.3** Required prepayment is cumulative. Example: during Season 2027, a franchise that has paid for Season 2027 and wishes to trade its 2030 first- or second-round pick must first be paid for Seasons 2028, 2029, and 2030.
 
-**12.4** A trade requiring future-season prepayment remains pending and shall not be approved, processed, or permitted to become final until the Commissioner has received and confirmed the required payment in the League Ledger. If multiple franchises in the same trade trigger this rule, each affected franchise must satisfy its own prepayment requirement before completion.
+**12.4** The required payment must be received and confirmed by the Commissioner in the League Ledger before the trade is proposed or accepted. If multiple franchises in the same trade trigger this rule, each affected franchise must satisfy its own prepayment requirement.
 
-**12.5** Fantrax acceptance does not override the prepayment rule. If the platform technically permits acceptance before payment verification, the Commissioner shall withhold approval, reverse the transaction where necessary, or otherwise prevent completion until all required dues have been paid.
+**12.5** Fantrax processes trades without Commissioner approval and does not check this rule, and Fantrax acceptance does not override it. If a trade processes before every required payment is confirmed, the Commissioner reverses the entire trade in Fantrax and notifies the franchises involved. The same trade may be made again once the payment is confirmed.
 
 **12.6** Prepaid dues attach to the franchise, not the individual owner. If an owner leaves the BLHA, those funds remain with the franchise and a replacement owner inherits the benefit of the paid Seasons.
 

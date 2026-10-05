@@ -24,7 +24,7 @@
           "inline": false
         },
         {
-          "name": "ADMINISTRATION FEE",
+          "name": "LEAGUE SERVICES",
           "value": "`$[AMOUNT]`",
           "inline": false
         },

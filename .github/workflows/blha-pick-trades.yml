@@ -50,6 +50,8 @@ jobs:
       - name: Check pick ownership
         env:
           BLHA_WEBHOOK_COMMISSIONER_DESK: ${{ secrets.BLHA_WEBHOOK_COMMISSIONER_DESK }}
+          # Optional: published-CSV link of the League Ledger's Pick Clearance tab.
+          BLHA_LEDGER_CLEARANCE_CSV: ${{ secrets.BLHA_LEDGER_CLEARANCE_CSV }}
         run: python automation/commissioner/picktrades.py --mode "$MODE"
 
       # Saved even if a later step fails, so a posted alert is never repeated.

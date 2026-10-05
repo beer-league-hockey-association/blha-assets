@@ -36,7 +36,7 @@ tasks:
     section: "1. Before Season"
     items:
       - "Every $150 is confirmed in the League Ledger; unpaid franchises have written notice (Art. 3.3, 3.4)."
-      - "Fantrax: FAAB is $1,000 per team (last consolation champion $1,050), trade deadline set, goalie Max GP 4, waiver tiebreaker Earliest Bid."
+      - "Fantrax: FAAB is $1,000 per team (last consolation champion $1,050), trade deadline set, Games Started - Goalies max 4 with prorating on, minors age condition is Player age up to start of season, waiver tiebreaker Earliest Bid."
       - "Waiver tiebreaker setting posted in Discord (10.4); League Calendar pinned."
       - "league.yaml and events.yaml point at this season; Xenon backup taken."
 
@@ -131,7 +131,7 @@ tasks:
     section: "3. End of Season, Part B"
     items:
       - "Pay Champion $650, Runner-Up $350, Third $150 and Presidents' Trophy $200, and record each in the Ledger."
-      - "Publish the Season Ledger in #ledger: dues, prizes, reserve spending, $100 Administration Fee, Dynasty Pot balance (3.9, 4.7)."
+      - "Publish the Season Ledger in #league-ledger: dues, prizes, reserve spending, $100 League Services Allocation, Dynasty Pot balance (3.9, 4.7)."
 
   - id: prizes-day-25
     anchor: season_end_final
