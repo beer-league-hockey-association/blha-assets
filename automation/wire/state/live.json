@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T16:30:46.192748Z",
+  "updated_at": "2026-10-05T16:45:32.204407Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3232,6 +3232,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T16:30:46.135381Z"
+    },
+    {
+      "key": "a87159e466d5a419423e8e2a",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
+      "fingerprint": "3605b842312ca8c8",
+      "title_norm": "connor brown (njd) — brown (lower-body) skated on monday but is not expected back this week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:45:31.882783Z"
+    },
+    {
+      "key": "f3fe02e6048ac2e79f43f92e",
+      "url": "https://www.dailyfaceoff.com/players/news/danila-yurov/36363",
+      "fingerprint": "ed9d1a285bca8aed",
+      "title_norm": "danila yurov (min) — yurov (upper-body) left minnesota's practice early on monday and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T16:45:32.135875Z"
     }
   ]
 }
