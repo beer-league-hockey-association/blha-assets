@@ -138,6 +138,24 @@ class LedgerTests(unittest.TestCase):
         self.assertIn("not on the Pick Clearance tab", "\n".join(task["items"]))
 
 
+class ClearanceReportTests(unittest.TestCase):
+    def test_report_without_secret(self):
+        with patch.dict(picktrades.os.environ, {picktrades.CLEARANCE_ENV: ""}), patch("builtins.print") as out:
+            picktrades.report_clearance(NAMES)
+        self.assertIn("is not set", out.call_args_list[0].args[0])
+
+    def test_report_lists_matches_and_missing(self):
+        table = picktrades.parse_clearance(CSV)
+        with patch.dict(picktrades.os.environ, {picktrades.CLEARANCE_ENV: "https://example.invalid/x.csv"}), \
+                patch.object(picktrades, "load_clearance", lambda: table), patch("builtins.print") as out:
+            picktrades.report_clearance(NAMES)
+        text = "\n".join(c.args[0] for c in out.call_args_list)
+        self.assertIn("Ledger check: OK", text)
+        self.assertIn("2 of 3 Fantrax teams", text)
+        self.assertIn("Test 3", text)
+        self.assertIn("Test 1: paid through 2029", text)
+
+
 class ReversalTests(unittest.TestCase):
     def test_pick_sent_back_is_marked_as_reversal(self):
         now = picktrades.datetime(2027, 1, 10, tzinfo=picktrades.timezone.utc)

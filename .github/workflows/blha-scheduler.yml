@@ -59,3 +59,20 @@ jobs:
           else
             python automation/scheduler/scheduler.py
           fi
+
+      # Optional outside check-in (healthchecks.io). A ping after every live run;
+      # if pings stop, Healthchecks emails you or posts to Discord. Never fails the run.
+      - name: Check in with the outside monitor
+        if: ${{ always() && !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
+        env:
+          PING_URL: ${{ secrets.BLHA_HEALTHCHECK_PING_URL }}
+          OUTCOME: ${{ job.status }}
+        shell: bash
+        run: |
+          if [[ -z "$PING_URL" ]]; then
+            echo "No BLHA_HEALTHCHECK_PING_URL secret; skipping the outside check-in."
+            exit 0
+          fi
+          url="$PING_URL"
+          [[ "$OUTCOME" == "success" ]] || url="$PING_URL/fail"
+          curl -fsS -m 10 --retry 3 -o /dev/null "$url" && echo "Checked in ($OUTCOME)." || echo "Check-in did not go through; the run itself is unaffected."

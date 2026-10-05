@@ -131,6 +131,26 @@ def load_clearance() -> dict[str, dict[str, Any]] | None:
     return table
 
 
+def report_clearance(names: dict[str, str]) -> None:
+    """Preview only: show whether the ledger's Pick Clearance tab can be read and matches Fantrax."""
+    if not os.environ.get(CLEARANCE_ENV, "").strip():
+        print(f"Ledger check: {CLEARANCE_ENV} is not set, so alerts ask for a manual check.")
+        return
+    table = load_clearance()
+    if table is None:
+        print("Ledger check: FAILED. The secret is set but the Pick Clearance tab could not be read.")
+        return
+    found = [t for t in names if t in table]
+    print(f"Ledger check: OK. Read {len(table)} franchises from the Pick Clearance tab; "
+          f"{len(found)} of {len(names)} Fantrax teams are on it.")
+    missing = sorted(names[t] for t in names if t not in table)
+    if missing:
+        print("  Not on the tab (add their Fantrax team IDs on the Settings tab): " + ", ".join(missing))
+    for team_id in found:
+        paid = table[team_id].get("paid_through")
+        print(f"  {names[team_id]}: paid through {paid if paid is not None else 'no Season yet'}")
+
+
 def verdict(change: dict[str, Any], clearance: dict[str, dict[str, Any]] | None) -> tuple[str, int | None]:
     """'paid', 'unpaid' or 'unknown' for the team giving the pick up."""
     entry = (clearance or {}).get(change["from"])
@@ -222,6 +242,7 @@ def run(mode: str) -> int:
         print("Fantrax team IDs (copy into the ledger's Settings tab):")
         for team_id, team_name in sorted(names.items(), key=lambda kv: kv[1].lower()):
             print(f"  {team_id}  {team_name}")
+        report_clearance(names)
     if not isinstance(prev, dict):
         print("No saved copy yet: recording the current ownership as the baseline. No alert.")
         if mode == "live":
