@@ -23,7 +23,10 @@
           "value": "The pot returns to zero and every franchise's counter resets. A new cycle starts with Season `[YEAR]`.",
           "inline": false
         }
-      ]
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
     }
   ]
 }

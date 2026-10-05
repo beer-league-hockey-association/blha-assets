@@ -33,7 +33,10 @@
           "value": "Change your RSVP or the reminder in the Sesh DM. Turning off Event RSVP Confirmation DMs stops every Sesh reminder.",
           "inline": false
         }
-      ]
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
     }
   ]
 }

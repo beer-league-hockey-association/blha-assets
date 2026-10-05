@@ -23,7 +23,10 @@
           "value": "`[FRANCHISE]` may now trade its 1st- and 2nd-round picks for drafts through **`[YEAR]`**. A pick trade made before payment is confirmed is reversed (Article XII).",
           "inline": false
         }
-      ]
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
     }
   ]
 }

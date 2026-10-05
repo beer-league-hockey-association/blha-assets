@@ -38,7 +38,10 @@
           "value": "`[NEXT SEASON / LATER DATE]` • must pass before that Season's dues deadline",
           "inline": false
         }
-      ]
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
     }
   ]
 }
