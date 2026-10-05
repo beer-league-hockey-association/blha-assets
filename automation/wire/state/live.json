@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T06:00:35.571422Z",
+  "updated_at": "2026-10-05T13:15:38.313987Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3032,6 +3032,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T06:00:35.535438Z"
+    },
+    {
+      "key": "a154f893debe9714a66ee86e",
+      "url": "https://www.nhl.com/news/nhl-and-sofascore-announce-global-multiyear-partnership",
+      "fingerprint": "5280045030cc73bd",
+      "title_norm": "nhl, sofascore announce global multiyear partnership",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T13:15:38.239938Z"
     }
   ]
 }
