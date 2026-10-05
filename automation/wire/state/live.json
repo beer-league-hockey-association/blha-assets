@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T14:00:39.681073Z",
+  "updated_at": "2026-10-05T15:00:44.250630Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3062,6 +3062,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-05T14:00:39.616244Z"
+    },
+    {
+      "key": "7fc9b43a312e018d2b27df6c",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-forward-ivan-demidov-misses-practice",
+      "fingerprint": "2024e0c16ca51c5b",
+      "title_norm": "canadiens forward ivan demidov misses practice",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:00:43.466331Z"
+    },
+    {
+      "key": "5a13558b091e72e2a3588702",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-poitras/33196",
+      "fingerprint": "728cf56148eaa812",
+      "title_norm": "matthew poitras (bos) — poitras (lower-body) will make his season debut vs. ottawa on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:00:43.753277Z"
+    },
+    {
+      "key": "15db3a340837baed223be755",
+      "url": "https://www.dailyfaceoff.com/players/news/dominic-james/32816",
+      "fingerprint": "877b933e47aa53f7",
+      "title_norm": "dominic james (tbl) — james (hand) will be an option on thursday vs. minnesota.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:00:43.957600Z"
+    },
+    {
+      "key": "5b648c2a6b7f0fb4aebe7226",
+      "url": "https://www.dailyfaceoff.com/players/news/emil-lilleberg/37940",
+      "fingerprint": "f3592f423216a3a2",
+      "title_norm": "emil lilleberg (tbl) — lilleberg (undisclosed) is expected to miss the next week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:00:44.201202Z"
     }
   ]
 }
