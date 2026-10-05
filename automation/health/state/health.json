@@ -1,16 +1,16 @@
 {
   "active_issues": {
-    "failed:pick-trades": {
+    "failed:dormancy-guard": {
       "detail": "Open the workflow run and review the failed step/log output.",
-      "summary": "Latest completed live run ended with cancelled",
-      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/37368676878",
-      "workflow": "BLHA Pick Trades"
+      "summary": "Latest completed live run ended with failure",
+      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/37372827478",
+      "workflow": "BLHA Dormancy Guard"
     },
-    "failed:wire-engine": {
+    "failed:scoreboard": {
       "detail": "Open the workflow run and review the failed step/log output.",
-      "summary": "Latest completed live run ended with cancelled",
-      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/37368662574",
-      "workflow": "BLHA Wire Engine"
+      "summary": "Latest completed live run ended with failure",
+      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/37372999532",
+      "workflow": "BLHA Fantrax Scoreboard"
     }
   }
 }
