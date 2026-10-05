@@ -136,4 +136,4 @@ Automations remember what they have already posted (Wire dedupe, report weeks, t
 Automation regression tests cover the season calendar (against real Fantrax week dates), Fantrax error handling, the weekly report, the live scoreboard, playoff seeding, scheduler due-time logic and retries, Wire routing and roundup posts, health-monitor run filtering, shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles every automation module and runs these checks whenever relevant code or configuration changes.
 
 ## Raw URL base
-`https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/`
+`https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/`

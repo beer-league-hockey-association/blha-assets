@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / "sources.yaml"
-USER_AGENT = "BLHA-The-Wire/0.8 (+https://github.com/diseasewheeze/blha-assets)"
+USER_AGENT = "BLHA-The-Wire/0.8 (+https://github.com/beer-league-hockey-association/blha-assets)"
 
 BREAKING = (
     "out indefinitely", "season-ending", "out for the season", "suspended indefinitely",

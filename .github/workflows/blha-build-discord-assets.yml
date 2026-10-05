@@ -65,7 +65,7 @@ jobs:
           alpha = im.getchannel('A')
           assert alpha.getextrema()[0] == 0, 'footer background is not transparent'
 
-          footer_url = 'https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen'
+          footer_url = 'https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen'
           files = sorted((root / 'templates').rglob('*.json'))
           assert files, 'no Discohook JSON templates found'
           for path in files:

@@ -55,7 +55,7 @@ repository, and a free cron-job.org job that uses it.
 3. **Expiration:** the longest offered (up to 1 year). Put a reminder on your
    calendar a week before it expires. If it lapses, the health monitor will
    report "BLHA Scheduler — Workflow appears stale".
-4. **Resource owner:** `diseasewheeze`.
+4. **Resource owner:** `beer-league-hockey-association` (the organization).
 5. **Repository access:** **Only select repositories** → `blha-assets`.
 6. **Permissions** → **Repository permissions** → **Actions** → **Read and write**.
    Leave everything else as is (GitHub adds read-only Metadata automatically).
@@ -70,7 +70,7 @@ same page at any time.
 1. Sign in at https://cron-job.org and choose **Create cronjob**.
 2. **Title:** `BLHA Scheduler`.
 3. **URL:**
-   `https://api.github.com/repos/diseasewheeze/blha-assets/actions/workflows/blha-scheduler.yml/dispatches`
+   `https://api.github.com/repos/beer-league-hockey-association/blha-assets/actions/workflows/blha-scheduler.yml/dispatches`
 4. **Execution schedule:** every 15 minutes.
 5. Open the **Advanced** tab:
    - **Request method:** `POST`
@@ -109,7 +109,7 @@ The scheduler starts the guard daily. In case the scheduler itself is the thing
 that was switched off, add a second cron-job.org job (same token as above):
 
 - **Title:** `BLHA Dormancy Guard`
-- **URL:** `https://api.github.com/repos/diseasewheeze/blha-assets/actions/workflows/blha-dormancy-guard.yml/dispatches`
+- **URL:** `https://api.github.com/repos/beer-league-hockey-association/blha-assets/actions/workflows/blha-dormancy-guard.yml/dispatches`
 - **Schedule:** once a day
 - **Method and headers:** as for the scheduler job
 - **Request body:** `{"ref":"main","inputs":{"mode":"live"}}`
@@ -137,32 +137,28 @@ the pings stop it emails you (and optionally posts in Discord).
 
 Without the secret the step just logs that it skipped.
 
-## Moving the repository to a GitHub organization
+## Repository home
 
-An organization lets a future Commissioner take over the automation without
-your personal account (Constitution 19.7). It is free for a public repository.
+The repository lives in the `beer-league-hockey-association` organization at
+`beer-league-hockey-association/blha-assets`, so a future Commissioner can take
+over the automation without a personal account (Constitution 19.7). It moved
+there from the previous personal-account address in October 2026; code,
+history, pull requests, Actions history, repository secrets and webhooks moved
+with it, and every template, tool and doc now uses the organization address.
 
-1. GitHub: **+** (top right) > **New organization** > **Free**. Pick a name,
-   for example `beer-league-hockey-association`, and "My personal account".
-2. In this repository: **Settings** > **General** > **Danger Zone** >
-   **Transfer ownership**. Choose the organization, type `diseasewheeze/blha-assets`
-   to confirm, and transfer.
-3. What moves with it: code, history, branches, pull requests, Actions history,
-   **repository secrets** and webhooks. GitHub redirects old links, including
-   `git` and image links.
-4. What you must redo:
-   - **Timer token.** A fine-grained token owned by `diseasewheeze` cannot start
-     workflows in an organization repository. Create a new one with
-     **Resource owner** = the organization (steps under "Create the GitHub
-     token" above) and put it in both cron-job.org jobs.
-   - **cron-job.org URLs.** Change `diseasewheeze` to the organization name in
-     both jobs, then **Test run** each (expect HTTP 204).
-   - **Claude's GitHub access.** Grant the Claude GitHub app access to the new
-     organization's repository so it can keep working on it.
-5. Then ask Claude to replace `diseasewheeze/blha-assets` in the templates and
-   docs with the new address, so nothing depends on GitHub's redirect.
-6. Never create a new repository called `blha-assets` under `diseasewheeze`;
-   that would break the redirect.
+If you set up the timer before the move, check these:
+
+- **Timer token.** A fine-grained token owned by a personal account cannot start
+  workflows in an organization repository. Create one with **Resource owner** =
+  `beer-league-hockey-association` (steps under "Create the GitHub token"
+  above) and put it in both cron-job.org jobs.
+- **cron-job.org URLs.** Both jobs must use the organization address shown in
+  the steps above; **Test run** each (expect HTTP 204).
+- **Claude's GitHub access.** The Claude GitHub app needs access to the
+  organization's repository.
+
+Never create a new repository called `blha-assets` under the old personal
+account; that would break GitHub's redirect for any old link still in use.
 
 ## If something goes wrong
 

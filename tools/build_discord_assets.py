@@ -213,7 +213,7 @@ def main():
 
     build_preview(preview_entries, footer_path)
 
-    base = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/"
+    base = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
     (ROOT / "BLHA_URL_MAP.txt").write_text(
         f"""BLHA RAW ASSET URLS\n\nWelcome banner:\n{base}welcome/blha-welcome-banner.png\n\nFooter divider:\n{base}shared/blha-footer-divider-1600x90.png\n\nGeneric header:\n{base}shared/blha-generic-header-1600x420.png\n\nBanner wordmark:\n{base}shared/blha-banner-wordmark.png\n\nHosting preview:\n{base}BLHA_Phase_2C6_Hosting_Preview.png\n\nConstitution:\n{base}league-office/blha-constitution-header.png\n\nAnnouncements:\n{base}league-office/blha-announcements-header.png\n\nCalendar:\n{base}league-office/blha-calendar-header.png\n\nLedger:\n{base}league-office/blha-ledger-header.png\n\nVoting:\n{base}league-office/blha-voting-header.png\n\nDraft Center:\n{base}draft-center/blha-draft-center-header.png\n""",
         encoding="utf-8",

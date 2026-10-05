@@ -177,7 +177,7 @@ BUNDLES = {
     "08_Trades": ["trade-center/90_trade_completed.json"],
 }
 
-FOOTER_URL = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+FOOTER_URL = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
 
 
 def with_footer(data: dict) -> dict:

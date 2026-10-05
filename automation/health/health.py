@@ -34,7 +34,7 @@ from blha.schedule import condition_started_at, current_season, job_active, load
 CONFIG_PATH = ROOT / "health_config.yaml"
 STATE_PATH = ROOT / "state" / "health.json"
 AVATAR = (
-    "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
+    "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
     "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=3"
 )
 

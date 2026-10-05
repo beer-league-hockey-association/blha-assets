@@ -27,7 +27,7 @@ from discord_webhook import post_discord_webhook
 CONFIG_PATH = ROOT / "events.yaml"
 STATE_PATH = ROOT / "state" / "league_ops.json"
 AVATAR = (
-    "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
+    "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
     "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=3"
 )
 DEFAULT_CATCHUP_WINDOW = timedelta(hours=24)

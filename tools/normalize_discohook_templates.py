@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES = ROOT / "templates"
 
-BASE = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/"
+BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
 FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
 FOOTER_URL = FOOTER_BASE_URL + "?v=2c6-frozen"
 HEADER_VERSION = "?v=4-b-mark"

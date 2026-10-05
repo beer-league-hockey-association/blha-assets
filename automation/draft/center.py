@@ -44,7 +44,7 @@ import desk  # noqa: E402  (Commissioner Desk private payloads)
 
 STATE_PATH = ROOT / "state" / "draft.json"
 FOOTER_DIVIDER = (
-    "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/"
+    "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
     "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
 )
 RESULTS_CHANNEL = "📋│draft-results"

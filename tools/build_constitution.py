@@ -25,7 +25,7 @@ OUT_TEMPLATES = ROOT / "templates" / "constitution"
 OUT_DOCS = ROOT / "constitution"
 
 GOLD = 16758812
-BASE = "https://raw.githubusercontent.com/diseasewheeze/blha-assets/main/discord/webhooks/"
+BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
 FOOTER_URL = BASE + "shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
 MAX_DESC = 3900          # stay under Discord's 4096 per-embed description limit
 MAX_MESSAGE = 5600       # stay under Discord's 6000 per-message counted characters
