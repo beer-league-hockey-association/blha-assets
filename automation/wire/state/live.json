@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-04T23:45:29.797230Z",
+  "updated_at": "2026-10-05T00:00:33.974218Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2832,6 +2832,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-04T23:45:29.728633Z"
+    },
+    {
+      "key": "4f64c36b247895948712024f",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-hanley/2605",
+      "fingerprint": "42a6b92e4862e4c0",
+      "title_norm": "joel hanley (cgy) — hanley will be a healthy scratch vs. seattle on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T00:00:33.541800Z"
+    },
+    {
+      "key": "dc0c1277453cb4bf2436b16b",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-on-sportsnet-calgary-vs-seattle-10",
+      "fingerprint": "4491f2824a5df447",
+      "title_norm": "flames on sportsnet: calgary vs. seattle",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T00:00:33.943755Z"
     }
   ]
 }
