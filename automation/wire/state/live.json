@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T22:15:37.006688Z",
+  "updated_at": "2026-10-05T22:45:31.414668Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3442,6 +3442,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T22:15:36.981445Z"
+    },
+    {
+      "key": "e6cf9e944a21925be4fc7265",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "4bf2b8eb775a11bd",
+      "title_norm": "rasmus ristolainen (phi) — ristolainen (undisclosed) is not on the ice for warmups and will not play monday in tampa.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T22:45:31.379601Z"
     }
   ]
 }
