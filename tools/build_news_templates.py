@@ -177,7 +177,7 @@ def message(path: Path) -> dict:
     """Load one template and confirm it is a single message in the BLHA format."""
     data = json.loads(path.read_text(encoding="utf-8"))
     rel = path.relative_to(T).as_posix()
-    errors = fmt.problems(data["embeds"], fmt.header_url(rel))
+    errors = fmt.problems(data["embeds"], fmt.header_url(rel), rel)
     if errors:
         raise SystemExit(f"{rel}: {'; '.join(errors)} (run normalize_discohook_templates.py first)")
     return data

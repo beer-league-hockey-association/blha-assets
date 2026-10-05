@@ -62,11 +62,17 @@ jobs:
                   total += len(field.get('value') or '')
               return total
 
-          # BLHA format: one message per send; only the final embed has a footer
-          # (its text plus the gold divider image); a channel intro starts with
-          # its header banner, which has no footer.
+          # BLHA format (tools/discohook_format.py): one message per send made of
+          # the channel's header banner embed (if any) plus ONE text embed. The
+          # banner keeps only an invisible footer; only the final embed has real
+          # footer text and the gold divider image.
           divider = ('https://raw.githubusercontent.com/beer-league-hockey-association/'
                      'blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png')
+          zwsp = '\u200b'
+          # Messages whose sections do not fit one embed yet (kept in step with
+          # MULTI_SECTION_EXCEPTIONS in tools/discohook_format.py).
+          multi_section_ok = ('welcome/01_welcome.json', 'constitution/',
+                              'BLHA_Welcome_Single_Message.json', '_discohook_backup.json')
 
           def image_url(embed):
               return str((embed.get('image') or {}).get('url') or '')
@@ -80,29 +86,39 @@ jobs:
               return rel.endswith('_channel_intro.json') or rel == 'welcome/01_welcome.json'
 
           def check_blha_format(src, embeds, needs_banner):
+              label = str(src)
+              head = 1 if is_banner(embeds[0]) else 0
+              if needs_banner:
+                  assert head, f'{label}: must start with the header banner embed'
+              if head:
+                  banner = embeds[0]
+                  assert set(banner) == {'color', 'footer', 'image'} and banner['color'] == 0x2B2D31, (
+                      f'{label}: header banner must be charcoal with only the image and invisible footer'
+                  )
+                  assert banner['footer'].get('text') == zwsp, (
+                      f'{label}: header banner must keep the invisible footer'
+                  )
+              for i, embed in enumerate(embeds[1:], 2):
+                  assert not is_banner(embed), f'{label}: embed {i} is a header banner; only embed 1 may be'
+              texts = len(embeds) - head
+              if not any(k in label for k in multi_section_ok):
+                  assert texts == 1, (
+                      f'{label}: {texts} text embeds; sections must merge into one text embed'
+                  )
               last = len(embeds) - 1
-              for i, embed in enumerate(embeds):
-                  if i < last:
-                      assert 'footer' not in embed, (
-                          f'{src}: embed {i + 1} has a footer; only the final embed may'
-                      )
-                      assert not image_url(embed).startswith(divider), (
-                          f'{src}: embed {i + 1} has the footer divider; only the final embed may'
-                      )
+              for i in range(head, last):
+                  assert 'footer' not in embeds[i], (
+                      f'{label}: embed {i + 1} has a footer; only the final embed may'
+                  )
+                  assert not image_url(embeds[i]).startswith(divider), (
+                      f'{label}: embed {i + 1} has the footer divider; only the final embed may'
+                  )
               final = embeds[last]
               text = (final.get('footer') or {}).get('text') or ''
-              assert text.strip('\u200b'), f'{src}: final embed has no footer text'
+              assert text.strip(zwsp), f'{label}: final embed has no footer text'
               assert image_url(final).startswith(divider), (
-                  f'{src}: final embed does not use the footer divider image'
+                  f'{label}: final embed does not use the footer divider image'
               )
-              for i, embed in enumerate(embeds):
-                  if is_banner(embed):
-                      assert i == 0, f'{src}: header banner must be the first embed'
-              if needs_banner:
-                  first = embeds[0]
-                  assert is_banner(first) and set(first) == {'color', 'image'} and first['color'] == 0x2B2D31, (
-                      f'{src}: must start with the header banner (charcoal, image only, no footer)'
-                  )
 
           for src in files:
               payload = json.loads(src.read_text(encoding='utf-8'))

@@ -150,9 +150,9 @@ def build_discord() -> list[tuple[str, dict]]:
     out: list[tuple[str, dict]] = []
     for idx, msg in enumerate(packed):
         clean = [{k: v for k, v in e.items() if not k.startswith("_")} for e in msg]
-        # One message each; footer text and divider on the final embed only.
-        clean = fmt.apply(clean)
         name = message_name(idx, msg)
+        # One message each; footer text and divider on the final embed only.
+        clean = fmt.apply(clean, rel=f"constitution/{name}")
         out.append((name, {"embeds": clean}))
     return out
 
@@ -379,7 +379,7 @@ def main() -> None:
     for name, data in msgs:
         (OUT_TEMPLATES / name).write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         counted = fmt.message_chars(data["embeds"])
-        errors = fmt.problems(data["embeds"])
+        errors = fmt.problems(data["embeds"], rel=f"constitution/{name}")
         assert not errors, (name, errors)
         for e in data["embeds"]:
             assert len(e.get("description", "")) <= 4096, (name, e.get("title"))
