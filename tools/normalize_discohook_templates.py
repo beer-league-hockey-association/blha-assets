@@ -1,200 +1,66 @@
 #!/usr/bin/env python3
-"""Normalize BLHA Discohook JSON templates to the frozen Phase 2C.6 format.
+"""Normalize and verify every BLHA Discohook template (templates/**/*.json).
 
-Rules:
-- Every Discohook message ends with the shared footer-divider image.
-- Channel-intro messages begin with a valid banner embed using the charcoal
-  #2B2D31 side color and an invisible footer marker so Discohook does not flag
-  the image-only banner as empty.
-- Existing message text, fields, semantic colors, and footers are preserved.
-- The shared footer image is attached to the final content embed. If that embed
-  already uses a different image, a dedicated valid footer embed is appended.
-- The frozen footer URL carries a version query so Discord cannot keep serving
-  an older cached opaque divider after the asset itself is replaced.
+Each template is one Discord message. The rules live in discohook_format.py:
+- One message per send: up to 10 embeds and 6,000 counted characters. A
+  template over either limit fails here; it is never split automatically.
+- Channel intros (and the welcome message) start with the header banner embed:
+  charcoal #2B2D31 side color and the header image, with no footer.
+- Only the final embed has a footer: its footer text and the shared gold
+  footer-divider image. Every other embed has neither.
+- Message text, fields and semantic colors are preserved. The frozen divider
+  URL keeps its version query so Discord cannot serve an older cached image.
+
+Run with --check to verify without rewriting files.
 """
 
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import discohook_format as fmt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES = ROOT / "templates"
 
-BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
-FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
-FOOTER_URL = FOOTER_BASE_URL + "?v=2c6-frozen"
-HEADER_VERSION = "?v=4-b-mark"
-HEADER_COLOR = int("2B2D31", 16)
-ZWSP = "\u200b"
 
-# Each category folder has one header image. League Office has one header per channel.
-CATEGORY_HEADERS = {
-    "the-wire": "the-wire/blha-the-wire-header.png",
-    "league-competition": "league-competition/blha-competition-header.png",
-    "general-managers": "general-managers/blha-general-managers-header.png",
-    "trade-center": "trade-center/blha-trade-center-header.png",
-    "scouting": "scouting/blha-scouting-header.png",
-    "waiver-wire": "waiver-wire/blha-waiver-wire-header.png",
-    "commissioners-office": "commissioners-office/blha-commissioners-office-header.png",
-    "franchise-hq": "franchise-hq/blha-franchise-hq-header.png",
-    "draft-center": "draft-center/blha-draft-center-header.png",
-}
-LEAGUE_OFFICE_HEADERS = {
-    "01_constitution_channel_intro.json": "league-office/blha-constitution-header.png",
-    "02_announcements_channel_intro.json": "league-office/blha-announcements-header.png",
-    "03_calendar_channel_intro.json": "league-office/blha-calendar-header.png",
-    "04_ledger_channel_intro.json": "league-office/blha-ledger-header.png",
-    "05_voting_channel_intro.json": "league-office/blha-voting-header.png",
-    "06_hall_of_champions_channel_intro.json": "league-office/blha-champions-header.png",
-    "07_league_records_channel_intro.json": "league-office/blha-records-header.png",
-}
-
-
-def build_intro_headers() -> dict:
-    headers = {"welcome/01_welcome.json": BASE + "welcome/blha-welcome-banner.png" + HEADER_VERSION}
-    for path in sorted(TEMPLATES.rglob("*_channel_intro.json")):
-        category = path.parent.name
-        if category == "league-office":
-            image = LEAGUE_OFFICE_HEADERS[path.name]
-        else:
-            image = CATEGORY_HEADERS[category]
-        headers[path.relative_to(TEMPLATES).as_posix()] = BASE + image + HEADER_VERSION
-    return headers
-
-
-INTRO_HEADERS = build_intro_headers()
-
-
-def banner_embed(url: str) -> dict:
-    return {
-        "color": HEADER_COLOR,
-        "footer": {"text": ZWSP},
-        "image": {"url": url},
-    }
-
-
-def is_banner_like(embed: dict) -> bool:
-    if not isinstance(embed, dict):
-        return False
-    image = embed.get("image")
-    if not isinstance(image, dict):
-        return False
-    url = str(image.get("url") or "")
-    return any(
-        token in url
-        for token in (
-            "blha-welcome-banner.png",
-            "blha-constitution-header.png",
-            "blha-announcements-header.png",
-            "blha-calendar-header.png",
-            "blha-ledger-header.png",
-            "blha-voting-header.png",
-            "blha-draft-center-header.png",
-            "blha-the-wire-header.png",
-            "blha-competition-header.png",
-            "blha-general-managers-header.png",
-            "blha-trade-center-header.png",
-            "blha-scouting-header.png",
-            "blha-waiver-wire-header.png",
-            "blha-commissioners-office-header.png",
-            "blha-franchise-hq-header.png",
-            "blha-champions-header.png",
-            "blha-records-header.png",
-        )
-    )
-
-
-def is_footer_url(value: str) -> bool:
-    return str(value or "").startswith(FOOTER_BASE_URL)
-
-
-def ensure_footer(embeds: list[dict]) -> None:
-    if not embeds:
-        embeds.append({"color": HEADER_COLOR, "footer": {"text": ZWSP}, "image": {"url": FOOTER_URL}})
-        return
-
-    target = embeds[-1]
-    image = target.get("image") if isinstance(target, dict) else None
-    current_url = str(image.get("url") or "") if isinstance(image, dict) else ""
-
-    if not current_url or is_footer_url(current_url):
-        target["image"] = {"url": FOOTER_URL}
-        return
-
-    embeds.append(
-        {
-            "color": HEADER_COLOR,
-            "footer": {"text": ZWSP},
-            "image": {"url": FOOTER_URL},
-        }
-    )
+def load(path: Path) -> dict:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or not isinstance(data.get("embeds"), list):
+        raise ValueError(f"{path}: root must be an object with an embeds list")
+    return data
 
 
 def normalize_file(path: Path) -> bool:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict):
-        raise ValueError(f"{path}: root must be an object")
-
-    embeds = data.get("embeds")
-    if not isinstance(embeds, list):
-        raise ValueError(f"{path}: embeds must be a list")
-
+    data = load(path)
     rel = path.relative_to(TEMPLATES).as_posix()
-    header_url = INTRO_HEADERS.get(rel)
-    if header_url:
-        new_header = banner_embed(header_url)
-        if embeds and is_banner_like(embeds[0]):
-            embeds[0] = new_header
-        else:
-            embeds.insert(0, new_header)
-
-    ensure_footer(embeds)
-
+    data["embeds"] = fmt.apply(data["embeds"], fmt.header_url(rel))
     rendered = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
-    old = path.read_text(encoding="utf-8")
-    if rendered == old:
+    if rendered == path.read_text(encoding="utf-8"):
         return False
     path.write_text(rendered, encoding="utf-8")
     return True
 
 
-def verify_file(path: Path) -> None:
-    data = json.loads(path.read_text(encoding="utf-8"))
-    embeds = data.get("embeds")
-    if not isinstance(embeds, list) or not embeds:
-        raise AssertionError(f"{path}: no embeds")
-
+def verify_file(path: Path) -> list[str]:
     rel = path.relative_to(TEMPLATES).as_posix()
-    if rel in INTRO_HEADERS:
-        first = embeds[0]
-        if first.get("color") != HEADER_COLOR:
-            raise AssertionError(f"{path}: banner color is not #2B2D31")
-        if first.get("footer", {}).get("text") != ZWSP:
-            raise AssertionError(f"{path}: banner validity marker missing")
-        if first.get("image", {}).get("url") != INTRO_HEADERS[rel]:
-            raise AssertionError(f"{path}: wrong banner URL")
-
-    footer_found = any(
-        isinstance(embed, dict)
-        and isinstance(embed.get("image"), dict)
-        and embed["image"].get("url") == FOOTER_URL
-        for embed in embeds
-    )
-    if not footer_found:
-        raise AssertionError(f"{path}: frozen footer divider missing")
+    return [f"{rel}: {p}" for p in fmt.problems(load(path)["embeds"], fmt.header_url(rel))]
 
 
 def main() -> None:
+    check_only = "--check" in sys.argv
     paths = sorted(TEMPLATES.rglob("*.json"))
-    changed = 0
-    for path in paths:
-        changed += int(normalize_file(path))
-    for path in paths:
-        verify_file(path)
-
-    print(f"DISCOHOOK FORMAT: verified {len(paths)} JSON templates; changed {changed}.")
-    print("DISCOHOOK FORMAT: Phase 2C.6 frozen standard applied.")
+    changed = 0 if check_only else sum(int(normalize_file(p)) for p in paths)
+    errors = [e for p in paths for e in verify_file(p)]
+    if errors:
+        print("DISCOHOOK FORMAT: problems found:", *errors, sep="\n  ")
+        sys.exit(1)
+    done = "" if check_only else f" Changed {changed}."
+    print(f"DISCOHOOK FORMAT: verified {len(paths)} templates.{done}")
+    print("DISCOHOOK FORMAT: one message per send, footer and divider on the final embed only.")
 
 
 if __name__ == "__main__":

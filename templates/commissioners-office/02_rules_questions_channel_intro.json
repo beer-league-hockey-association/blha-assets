@@ -2,9 +2,6 @@
   "embeds": [
     {
       "color": 2829617,
-      "footer": {
-        "text": "​"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/commissioners-office/blha-commissioners-office-header.png?v=4-b-mark"
       }

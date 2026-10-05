@@ -2,8 +2,9 @@
 """Generate the per-channel intro Discohook templates (one JSON per channel).
 
 Channel names follow the live server. Rules references use the Constitution
-article numbers in tools/constitution_source.py (v2.2). Run the normalizer
-afterwards to attach the category header image and the footer divider:
+article numbers in tools/constitution_source.py (v2.2). Each intro is written
+in the BLHA format from discohook_format.py: one message, header banner first,
+footer text and divider on the final embed only. The normalizer re-checks it:
 
     python3 tools/build_channel_intros.py && python3 tools/normalize_discohook_templates.py
 """
@@ -11,7 +12,11 @@ afterwards to attach the category header image and the footer divider:
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import discohook_format as fmt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1] / "templates"
 GOLD = 16758812
@@ -44,6 +49,17 @@ def card(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, 
     }]}
 
 
+def more(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]]) -> None:
+    """Add another card to the same message (still one send)."""
+    items[path]["embeds"].append({
+        "title": title,
+        "description": desc,
+        "color": GOLD,
+        "footer": {"text": footer},
+        "fields": [{"name": n, "value": v, "inline": False} for n, v in fields],
+    })
+
+
 # ------------------------------------------------------------------ League Office
 card("league-office/01_constitution_channel_intro.json", "BLHA CONSTITUTION",
      "The Constitution is the controlling rules document of the Beer League Hockey Association. Every owner accepts it as a condition of joining and is responsible for knowing it.", LO,
@@ -63,6 +79,21 @@ card("league-office/03_calendar_channel_intro.json", "BLHA LEAGUE CALENDAR",
       ("HOW DATES ARE SET", "The Constitution gives each date as a formula, such as \"end of Week 20\" or \"14 to 21 days after the NHL Entry Draft\". The calendar turns those formulas into exact dates. If the two ever disagree, the formula wins (Article V)."),
       ("CHANGES", "A published date changes only when the NHL schedule, a platform limitation or events outside the league's control require it, with at least 7 days' notice where possible. Deadlines are extended, not moved earlier."),
       ("TIME STANDARD", "Unless a post states otherwise, all times are **Eastern Time**.")])
+# The Sesh reminder steps travel in the same message as the calendar intro.
+more("league-office/03_calendar_channel_intro.json", "GET EVENT REMINDERS FROM SESH",
+     "League events on this calendar run through **Sesh**. Sesh reminds you by direct message, so it only works if Discord lets Sesh message you. One-time setup, about a minute.",
+     "BLHA LEAGUE CALENDAR",
+     [("1. ALLOW DMS FROM THIS SERVER",
+       "**Desktop:** click the server name at the top left, choose **Privacy Settings**, and turn on **Direct Messages**.\n"
+       "**Phone:** tap your profile picture, then the gear, then **Messaging Permissions** (older apps: **Content & Social** or **Privacy & Safety**). "
+       "Under server settings, pick this server and turn on **Direct messages**."),
+      ("2. RSVP TO THE EVENT", "Press **Attending** (or your answer) on the event post in this channel. Sesh sends you a confirmation DM right away."),
+      ("3. PICK YOUR REMINDER", "In that DM, choose when Sesh should remind you. Reminders are set one event at a time."),
+      ("NO DM FROM SESH?",
+       "Look in **Message Requests** (and its **Spam** tab) at the top of your DM list and accept Sesh. "
+       "Still nothing? Send Sesh the command `/settings` in a DM, or open **sesh.fyi/dashboard**, click your name, then **Preferences**, "
+       "and turn on **Event RSVP Confirmation DMs**. Sesh also needs you to stay in this server and not block it."),
+      ("TO STOP", "Change your RSVP or the reminder in the Sesh DM. Turning off Event RSVP Confirmation DMs stops every Sesh reminder.")])
 card("league-office/04_ledger_channel_intro.json", "BLHA LEAGUE LEDGER",
      "Public league-level accounting for dues, league expenses, prizes and the Dynasty Pot.", LO,
      [("POSTED HERE", "Payment confirmations • Dues status • Future-season prepayments • Prize payouts • Dynasty Pot balance • The Season Ledger"),
@@ -290,18 +321,23 @@ def main() -> None:
         "scouting/07_annual_draft_channel_intro.json", "waiver-wire/01_faab_talk_channel_intro.json",
         "waiver-wire/03_adds_and_drops_channel_intro.json", "waiver-wire/04_recently_dropped_channel_intro.json",
         "league-competition/03_power_rankings_channel_intro.json", "draft-center/02_on_the_clock_channel_intro.json",
+        # Oct 2026: the Sesh reminder steps are part of the calendar intro message.
+        "league-office/34_calendar_sesh_reminders.json",
     ):
         p = ROOT / rel
         if p.exists():
             p.unlink()
     for rel, data in items.items():
+        banner = fmt.header_url(rel)
+        data = {"embeds": fmt.apply(data["embeds"], banner)}
+        errors = fmt.problems(data["embeds"], banner)
+        assert not errors, (rel, errors)
+        for e in data["embeds"]:
+            assert len(e.get("description") or "") <= 4096, rel
+            assert all(len(f["value"]) <= 1024 for f in e.get("fields") or []), rel
         p = ROOT / rel
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        for e in data["embeds"]:
-            total = len(e["title"]) + len(e["description"]) + len(e["footer"]["text"]) + sum(len(f["name"]) + len(f["value"]) for f in e["fields"])
-            assert total < 5000 and len(e["description"]) < 4096, rel
-            assert all(len(f["value"]) <= 1024 for f in e["fields"]), rel
     print(f"Wrote {len(items)} channel intro templates.")
 
 

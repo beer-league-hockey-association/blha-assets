@@ -9,7 +9,7 @@ This repository is public so Discord and Discohook can load approved images dire
 - Keep the default branch named `main`.
 - Do not rename live image files after webhook templates are in use.
 - The approved BLHA primary logo is the master. Supporting assets must not redraw or reinterpret it.
-- Webhook templates use the shared BLHA footer divider as a second embed after every message, or as the bottom image of the content embed where full-width alignment is preferred.
+- Discohook templates are one message per send (up to 10 embeds, 6,000 characters). A channel intro starts with its header banner, which has no footer. Only the final embed has a footer: its footer text and the shared gold divider image. The rules live in `tools/discohook_format.py`; `tools/normalize_discohook_templates.py` enforces them and the packaging workflow checks them.
 - Discord webhook URLs belong in GitHub Actions Secrets and must never be committed to the repository.
 
 ## Constitution

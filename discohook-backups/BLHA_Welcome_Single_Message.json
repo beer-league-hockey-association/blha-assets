@@ -2,9 +2,6 @@
   "embeds": [
     {
       "color": 2829617,
-      "footer": {
-        "text": "​"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/welcome/blha-welcome-banner.png?v=4-b-mark"
       }
@@ -13,9 +10,6 @@
       "title": "WELCOME TO THE BEER LEAGUE HOCKEY ASSOCIATION",
       "description": "**BLHA** is a 12-franchise dynasty fantasy hockey league built around long-term roster construction, prospect development, an active trade market, daily competition, and permanent league history.\n\n**Fantrax runs the game. Discord runs the league.**",
       "color": 16758812,
-      "footer": {
-        "text": "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026"
-      },
       "fields": [
         {
           "name": "START HERE",
@@ -27,18 +21,12 @@
           "value": "Build for the long term. Stay active. Make your own moves. Own your decisions. Compete every week.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     },
     {
       "title": "HOW THE BLHA WORKS",
       "description": "The league uses two homes with different jobs. Keeping those jobs separate makes disputes, records, and league administration much cleaner.",
       "color": 16758812,
-      "footer": {
-        "text": "BLHA LEAGUE OFFICE"
-      },
       "fields": [
         {
           "name": "FANTRAX — AUTHORITATIVE GAME RECORD",
@@ -55,18 +43,12 @@
           "value": "Co-owners may fully help manage a franchise, but each franchise has **one formal league vote** and **one dues obligation**.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     },
     {
       "title": "SERVER MAP",
       "description": "Every category has a job. Use the right room and the server stays useful instead of becoming one giant chat.",
       "color": 16758812,
-      "footer": {
-        "text": "BLHA SERVER DIRECTORY"
-      },
       "fields": [
         {
           "name": "🏛️ LEAGUE OFFICE",
@@ -118,18 +100,12 @@
           "value": "Franchise-specific spaces for team identity, planning and internal organization.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     },
     {
       "title": "FRANCHISE OWNERSHIP & ROLES",
       "description": "Discord roles reflect league function. They are not extra votes or extra franchises.",
       "color": 16758812,
-      "footer": {
-        "text": "ONE FRANCHISE • ONE VOTE • ONE DUES OBLIGATION"
-      },
       "fields": [
         {
           "name": "🏒 FRANCHISE OWNER",
@@ -156,18 +132,12 @@
           "value": "Only the Franchise Owner role posts the franchise's vote in **league-voting**. Co-owners can view the channel but remain read-only by design.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     },
     {
       "title": "KEEP OFFICIAL BUSINESS OFFICIAL",
       "description": "The BLHA should feel like a hockey league, not paperwork. The easiest way to keep it that way is to put official actions in the places designed for them.",
       "color": 16758812,
-      "footer": {
-        "text": "BLHA • FANTRAX = GAMEPLAY • DISCORD = LEAGUE OPERATIONS"
-      },
       "fields": [
         {
           "name": "TRADES",
@@ -194,10 +164,7 @@
           "value": "Official announcements, votes and amendments belong in the League Office so the record is permanent.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-      }
+      ]
     },
     {
       "title": "YOU'RE CLEARED FOR THE ROOM",

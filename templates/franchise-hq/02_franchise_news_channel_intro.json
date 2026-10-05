@@ -2,9 +2,6 @@
   "embeds": [
     {
       "color": 2829617,
-      "footer": {
-        "text": "​"
-      },
       "image": {
         "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/franchise-hq/blha-franchise-hq-header.png?v=4-b-mark"
       }
