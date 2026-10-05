@@ -154,12 +154,12 @@ events:
 
   - id: commissioner-trading-reopens
     enabled: false
-    title: "Trading reopens"
+    title: "Renew the league: trading reopens"
     type: commissioner
-    starts_at: null   # 12:00 AM ET the day after the Stanley Cup Final ends (Art. 5.9, 11.6)
+    starts_at: null   # The day after the Stanley Cup Final ends (Art. 5.9, 11.6)
     channel: commissioner-desk
     priority: high
-    description: "Clear or reset the trade deadline in Fantrax (Setup > Transactions > Trades) and announce that trades and draft-pick trades are open again."
+    description: "Renew the league in Fantrax for next season today; Fantrax lets you renew a day or two after the NHL regular season, but wait until now. Renewal reopens all transactions, including trades and draft-pick trades, keeps traded picks and Premium, and resets every FAAB budget to $1,000: add the consolation champion's $50 by hand (10.7) and don't use Recalculate free agent budgets afterward. If the renewed league has a new league ID, run BLHA Season Rollover with it. Then announce that trading is open."
     reminders: [1d, start]
 
   - id: commissioner-token-renewal

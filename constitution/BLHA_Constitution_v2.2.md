@@ -40,7 +40,7 @@
 
 **1.3** The BLHA is intended to reward sustained franchise management. Rebuilding, prospect accumulation, veteran contention windows, and aggressive trading are legitimate strategies when conducted in good faith and within this Constitution.
 
-**1.4** **Definitions.** **Season** means the NHL season a BLHA season covers, identified by its starting year (Season 2027 is 2027–28). **Active Season** runs from the first lineup lock of Week 1 through the final scoring period of the BLHA Championship; **Offseason** is every other time. **Week** means a Fantrax scoring week. **Annual Draft** means the draft held in an Offseason for the next Season, identified by the year it is held (the 2028 Annual Draft supplies Season 2028). **Franchise** means a team with one league vote; **Owner** means a person who manages it.
+**1.4** **Definitions.** **Season** means the NHL season a BLHA season covers, identified by its starting year (Season 2027 is 2027–28). **Active Season** runs from the first lineup lock of Week 1 through the final scoring period of the BLHA Championship; **Offseason** is every other time. **Week** means a Fantrax scoring week. **Annual Draft** means the draft held in an Offseason for the next Season, identified by the year it is held (the 2028 Annual Draft supplies Season 2028). **Franchise** means a team with one league vote; **Owner** means a person who manages it. **League Ledger** means the Commissioner's record of dues, prepayments, operating expenses, prizes, and the Dynasty Pot; its summary, the Season Ledger, is published in the league-ledger channel.
 
 **1.5** **Material Amendment** means any change to dues, prizes, the financial allocation, scoring, roster or minor-league rules, trade, pick, or prepayment rules, playoff or draft-order formats, voting thresholds, or Commissioner powers, and any other change that alters franchise rights or obligations. Clerical corrections, platform-conformance fixes, and League Calendar dates are not Material Amendments.
 
@@ -135,7 +135,7 @@
 • **Dues deadline:** Set by the Commissioner with at least 30 days' notice, and always before that Season's draft (Article III).
 • **Startup Draft and Annual Draft:** Begin 14 to 21 days after the final day of the NHL Entry Draft, announced at least 30 days ahead (Articles XIII and XIV).
 • **Trade deadline:** Sunday 11:59 PM ET at the end of Week 20.
-• **Trading reopens:** 12:00 AM ET on the day after the Stanley Cup Final ends.
+• **Trading reopens:** The day after the Stanley Cup Final ends, when the Commissioner renews the league in Fantrax for the next Season.
 • **Regular season ends:** Sunday 11:59 PM ET at the end of Week 22.
 • **Playoffs:** Four consecutive Weeks after Week 22: Quarterfinals, Semifinals, then the two-week Championship. Scheduled to end about six days before the NHL regular season ends where the NHL schedule permits.
 • **Waiver processing:** Daily at about 11:00 AM ET; Fantrax system behavior controls.
@@ -209,7 +209,7 @@
 
 **10.6** Waiver-churning protections and Fantrax waiver-period protections remain enabled where available.
 
-**10.7** The consolation-bracket champion receives a **$50 FAAB bonus** for the following Season, giving that franchise $1,050 for that Season only. The bonus expires with ordinary current-season FAAB and may be traded as current-season FAAB (Article XI).
+**10.7** The consolation-bracket champion receives a **$50 FAAB bonus** for the following Season, giving that franchise $1,050 for that Season only. Fantrax resets every budget when the league renews, so the Commissioner adds the bonus by hand after renewal. The bonus expires with ordinary current-season FAAB and may be traded as current-season FAAB (Article XI).
 
 ## Article XI — Trades and Trade Deadline
 
@@ -223,7 +223,7 @@
 
 **11.5** Conditional draft picks are prohibited.
 
-**11.6** The trade deadline is the end of Week 20 (Article V). Trading reopens the day after the Stanley Cup Final ends. No trades, including draft picks, may be made between the deadline and the reopening.
+**11.6** The trade deadline is the end of Week 20 (Article V). Trading reopens the day after the Stanley Cup Final ends. No trades, including draft picks, may be made between the deadline and the reopening. A trade must be fully processed in Fantrax before the deadline; Fantrax can still process a trade that was pending at the deadline, and any trade processed after the deadline is void and is reversed by the Commissioner.
 
 ## Article XII — Future Draft Picks and Required Prepayment
 
@@ -267,7 +267,7 @@
 
 **14.4** The player pool is not restricted to the current NHL draft class. Any unowned player in the Fantrax player pool who satisfies BLHA minor-league eligibility may be selected.
 
-**14.5** Draft order is based on the results of the Season just completed. Picks 1.01 through 1.06 belong to the six non-playoff franchises and are ordered by ascending Potential Points / Max Points For, with the lowest total receiving 1.01. Properly rostered minor-league players are excluded from the BLHA draft-order calculation to the extent Fantrax permits or the Commissioner can reliably reproduce the configured metric. Ties are broken under Section 15.5.
+**14.5** Draft order is based on the results of the Season just completed. Picks 1.01 through 1.06 belong to the six non-playoff franchises and are ordered by ascending Potential Points / Max Points For, with the lowest total receiving 1.01. Potential Points is Fantrax's measure of the points a franchise would have scored with its best possible lineup each Week, using its active and reserve players; players in minor-league and IR slots are not counted. Ties are broken under Section 15.5.
 
 **14.6** Picks 1.07 and 1.08 belong to the two Quarterfinal losers, with the lower regular-season seed selecting earlier. Pick 1.09 belongs to the fourth-place finisher. Pick 1.10 belongs to the third-place finisher. Pick 1.11 belongs to the Runner-Up. Pick 1.12 belongs to the BLHA Champion.
 
@@ -293,7 +293,7 @@
 
 **16.2** **Quarterfinals:** Seed 3 vs. Seed 6 and Seed 4 vs. Seed 5. **Semifinals:** Seed 1 and Seed 2 join the four-team field; the playoff bracket reseeds after each round, with the highest remaining seed facing the lowest remaining seed. Quarterfinals and Semifinals are one fantasy Week each. The **BLHA Championship** is a two-week cumulative matchup.
 
-**16.3** The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $150 third-place prize.
+**16.3** The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $150 third-place prize. The Commissioner enters this matchup in Fantrax once the Semifinals are final.
 
 **16.4** If Fantrax cannot technically stage the third-place matchup, the fallback is the Semifinal loser who scores the most fantasy points during the same two-week championship period. If the fallback total is exactly tied, the higher playoff seed receives third place.
 
@@ -335,7 +335,7 @@
 
 **19.3** **Conflicts.** When the Commissioner's own franchise is directly involved in a dispute, disciplinary matter, contested trade review, or other individualized ruling, the Commissioner shall recuse from the substantive decision. A neutral Assistant Commissioner will administer the matter where available. If none is available, the Commissioner may designate a temporary neutral reviewer from among unaffected franchise owners or submit the issue to the unaffected franchises for resolution.
 
-**19.4** **Appeals.** A franchise directly affected by a material Commissioner ruling may request review within 48 hours of the ruling by posting the request in the League Office channel. A Review Panel of three owners from unaffected franchises, drawn at random in a publicly recorded draw, decides by majority within 7 days. The Panel may uphold, modify, or reverse the ruling, and its decision is final for that matter. Routine scoring results, published Fantrax outcomes, ordinary roster locks, and matters controlled automatically by the platform are not subject to appeal merely because the result is unfavorable.
+**19.4** **Appeals.** A franchise directly affected by a material Commissioner ruling may request review within 48 hours of the ruling by opening an Appeal ticket in the open-a-ticket channel. The Commissioner records the request in the rulings-log channel. A Review Panel of three owners from unaffected franchises, drawn at random in a publicly recorded draw, decides by majority within 7 days. The Panel may uphold, modify, or reverse the ruling, and its decision is final for that matter. Routine scoring results, published Fantrax outcomes, ordinary roster locks, and matters controlled automatically by the platform are not subject to appeal merely because the result is unfavorable.
 
 **19.5** **Vacancy.** The Commissioner's office is vacant if the Commissioner resigns, is removed, or is unavailable for 14 consecutive days. The Assistant Commissioner the Commissioner has designated as successor serves as Interim Commissioner. If there is none, the active franchises choose an Interim Commissioner by majority vote within 14 days. The Interim Commissioner serves until the active franchises choose a permanent Commissioner by majority vote.
 
@@ -343,7 +343,7 @@
 
 **19.7** **Transition.** A departing Commissioner must account for and transfer all league funds, records, Fantrax commissioner access, and Discord and automation administration to the successor within 14 days.
 
-**19.8** All significant rulings, recusal decisions, and appeal outcomes should be documented in the appropriate Discord League Office channel so that the league retains a permanent record.
+**19.8** All significant rulings, recusal decisions, and appeal outcomes are recorded in the rulings-log channel so that the league retains a permanent record.
 
 ## Article XX — Amendments, Records, and Dissolution
 

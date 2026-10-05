@@ -56,7 +56,8 @@ tasks:
     section: "2. During Season"
     items:
       - "Confirm Fantrax now blocks trades, including draft picks. If it does not, lock them by hand and post a notice (11.6)."
-      - "Trading stays closed until 12:00 AM ET the day after the Stanley Cup Final ends; the reopening reminder is in events.yaml."
+      - "Fantrax can still process a trade that was pending at the deadline. Check the transaction log for any trade processed after the deadline and reverse it (11.6)."
+      - "Trading stays closed until you renew the league the day after the Stanley Cup Final ends; the reminder is in events.yaml."
 
   - id: wrapup
     anchor: last_regular_final
