@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T13:45:37.708903Z",
+  "updated_at": "2026-10-05T14:00:39.681073Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3052,6 +3052,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-05T13:45:37.654045Z"
+    },
+    {
+      "key": "7ee9233e377e3a94205898f9",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "4f520cda377b712b",
+      "title_norm": "jake sanderson (ott) — sanderson (lower-body) is expected to miss the final two games of the senators' road-trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T14:00:39.616244Z"
     }
   ]
 }
