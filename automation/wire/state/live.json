@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T03:15:35.302643Z",
+  "updated_at": "2026-10-05T03:30:35.915810Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2912,6 +2912,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-05T03:15:35.215751Z"
+    },
+    {
+      "key": "33210ff01a119944868a0139",
+      "url": "https://www.nhl.com/news/florida-panthers-anaheim-ducks-game-recap-october-4-2026",
+      "fingerprint": "6781e23f9edccf39",
+      "title_norm": "ducks recover in ot, overcome marchand's late goal for panthers in season debut",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T03:30:35.445173Z"
+    },
+    {
+      "key": "28adb903487b7f708bb9cf39",
+      "url": "https://www.sportsnet.ca/nhl/article/granlund-scores-in-ot-gauthier-gets-two-goals-in-ducks-win-over-panthers",
+      "fingerprint": "13f4d0413f3f67b1",
+      "title_norm": "granlund scores in ot, gauthier gets two goals in ducks' win over panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T03:30:35.904929Z"
     }
   ]
 }
