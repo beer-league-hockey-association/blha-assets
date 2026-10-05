@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T03:30:35.915810Z",
+  "updated_at": "2026-10-05T03:45:29.074603Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -2932,6 +2932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T03:30:35.904929Z"
+    },
+    {
+      "key": "40ea4c38f0399e5b4f2bf0a8",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-stay-winless-after-loss-to-kraken",
+      "fingerprint": "0e9081a74ebc12a6",
+      "title_norm": "flames stay winless after loss to kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T03:45:29.039805Z"
     }
   ]
 }
