@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T22:00:41.311732Z",
+  "updated_at": "2026-10-05T22:15:37.006688Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3432,6 +3432,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-05T22:00:41.231139Z"
+    },
+    {
+      "key": "427c6c56d3c295ca8e68e8e2",
+      "url": "https://www.sportsnet.ca/nhl/article/whats-next-for-flames-connor-zary-after-being-placed-on-waivers",
+      "fingerprint": "769dfaff64107eac",
+      "title_norm": "what's next for flames' connor zary after being placed on waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T22:15:36.981445Z"
     }
   ]
 }
