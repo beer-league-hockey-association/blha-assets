@@ -85,6 +85,8 @@ def build() -> str:
             continue
         ch = channel_from_file(rel)
         lo_rows.append(row("intro-" + ch, ch, "Channel intro. Send, then pin.", v))
+        if ch == "league-calendar" and "message:sesh-reminders" in LINKS:
+            lo_rows.append(row("sesh-reminders", ch, "How owners get Sesh reminder DMs. Send after the intro, then pin.", LINKS["message:sesh-reminders"]))
     n_rows += len(lo_rows)
     sections.append(section("League Office", "Webhook channel: change it to each row's channel before you send. Send the constitution messages in order, top to bottom.", lo_rows, "league-office"))
 

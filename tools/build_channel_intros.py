@@ -66,8 +66,8 @@ card("league-office/03_calendar_channel_intro.json", "BLHA LEAGUE CALENDAR",
 card("league-office/04_ledger_channel_intro.json", "BLHA LEAGUE LEDGER",
      "Public league-level accounting for dues, league expenses, prizes and the Dynasty Pot.", LO,
      [("POSTED HERE", "Payment confirmations • Dues status • Future-season prepayments • Prize payouts • Dynasty Pot balance • The Season Ledger"),
-      ("A PAYMENT COUNTS WHEN", "The Commissioner has confirmed it and recorded it here (Article III). Future 1st- and 2nd-round pick trades stay pending until the required prepayment is confirmed here (Article XII)."),
-      ("SEASON LEDGER", "Within 30 days after the BLHA Championship concludes, the Commissioner posts dues received, prizes paid, operating reserve spending, the Administration Fee and the Dynasty Pot balance."),
+      ("A PAYMENT COUNTS WHEN", "The Commissioner has confirmed it and recorded it here (Article III). A future 1st- or 2nd-round pick trade made before the required prepayment is confirmed here is reversed (Article XII)."),
+      ("SEASON LEDGER", "Within 30 days after the BLHA Championship concludes, the Commissioner posts dues received, prizes paid, operating reserve spending, the League Services Allocation and the Dynasty Pot balance."),
       ("PRIVACY", "Do **not** post payment credentials, account numbers, login details or sensitive personal financial information.")])
 card("league-office/05_voting_channel_intro.json", "BLHA LEAGUE VOTING",
      "Formal franchise votes are recorded here.", LO,
@@ -157,7 +157,7 @@ card("trade-center/03_trade_discussion_channel_intro.json", "BLHA TRADE DISCUSSI
 card("trade-center/04_completed_trades_channel_intro.json", "BLHA COMPLETED TRADES",
      "The public record of trades that have been processed.", TC,
      [("POSTED HERE", "Completed trades only: the franchises involved and every player, pick and FAAB amount that moved."),
-      ("BEFORE YOU POST", "Post after Fantrax has processed the trade. A trade that needs future-season prepayment is not complete until the Commissioner has confirmed payment in **league-ledger** (Article XII)."), OFFICIAL])
+      ("BEFORE YOU POST", "Post after Fantrax has processed the trade. A future 1st- or 2nd-round pick trade needs the seller's prepayment confirmed in **league-ledger** first, or the Commissioner reverses it (Article XII)."), OFFICIAL])
 card("trade-center/05_player_values_channel_intro.json", "BLHA PLAYER VALUES",
      "Dynasty values, rankings and trade-value discussion.", TC,
      [("USE THIS ROOM FOR", "Dynasty rankings • Value charts • Pick values • Risers and fallers"),

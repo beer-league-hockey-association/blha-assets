@@ -84,15 +84,82 @@ class MessageTests(unittest.TestCase):
         self.assertNotIn("•", "\n".join(task["items"]))
 
 
-class RunTests(unittest.TestCase):
-    def _run(self, picks_now, saved=None, mode="live", ok=True):
-        tmp = tempfile.TemporaryDirectory()
-        self.addCleanup(tmp.cleanup)
-        state = Path(tmp.name) / "picktrades.json"
-        if saved is not None:
-            state.write_text(json.dumps({"owners": saved}))
-        posts = []
+CSV = (
+    "Pick Clearance,,\n"
+    "Read by the pick-trade alert,,\n"
+    "Fantrax team ID,Franchise,Paid through\n"
+    "a,Test 1,2029\n"
+    "b,Test 2,Not paid\n"
+    ",Franchise 12,0\n"
+)
 
+
+class LedgerTests(unittest.TestCase):
+    def test_parse_clearance_finds_header_and_reads_years(self):
+        table = picktrades.parse_clearance(CSV)
+        self.assertEqual(table["a"], {"franchise": "Test 1", "paid_through": 2029})
+        self.assertIsNone(table["b"]["paid_through"])
+        self.assertNotIn("", table)
+
+    def test_wrong_sheet_is_rejected(self):
+        self.assertIsNone(picktrades.parse_clearance("<html>Sign in</html>"))
+
+    def test_verdicts(self):
+        table = picktrades.parse_clearance(CSV)
+        move = {"year": 2029, "round": 1, "original": "a", "from": "a", "to": "b"}
+        self.assertEqual(picktrades.verdict(move, table), ("paid", 2029))
+        self.assertEqual(picktrades.verdict({**move, "year": 2030}, table), ("unpaid", 2029))
+        self.assertEqual(picktrades.verdict({**move, "from": "b"}, table), ("unpaid", None))
+        self.assertEqual(picktrades.verdict({**move, "from": "c"}, table), ("unknown", None))
+        self.assertEqual(picktrades.verdict(move, None), ("unknown", None))
+
+    def test_unpaid_seller_gets_reverse_instruction(self):
+        table = picktrades.parse_clearance(CSV)
+        found = [{"year": 2029, "round": 2, "original": "b", "from": "b", "to": "a"}]
+        task = picktrades.build_task(found, NAMES, table)
+        text = "\n".join(task["items"])
+        self.assertIn("reverse", task["title"])
+        self.assertIn("NOT PAID", text)
+        self.assertIn("Reverse the entire trade", text)
+
+    def test_paid_seller_needs_no_action(self):
+        table = picktrades.parse_clearance(CSV)
+        found = [{"year": 2029, "round": 1, "original": "a", "from": "a", "to": "b"}]
+        task = picktrades.build_task(found, NAMES, table)
+        self.assertEqual(task["title"], "Pick trade: prepayment confirmed")
+        self.assertIn("PAID: ", task["items"][1])
+        self.assertNotIn("Reverse", "\n".join(task["items"]))
+
+    def test_team_missing_from_sheet_asks_for_hand_check(self):
+        table = picktrades.parse_clearance(CSV)
+        found = [{"year": 2029, "round": 1, "original": "c", "from": "c", "to": "a"}]
+        task = picktrades.build_task(found, NAMES, table)
+        self.assertIn("confirm prepayment", task["title"])
+        self.assertIn("not on the Pick Clearance tab", "\n".join(task["items"]))
+
+
+class ReversalTests(unittest.TestCase):
+    def test_pick_sent_back_is_marked_as_reversal(self):
+        now = picktrades.datetime(2027, 1, 10, tzinfo=picktrades.timezone.utc)
+        recent = [{"key": "2029|1|a", "from": "a", "to": "b", "at": "2027-01-09T12:00:00+00:00"}]
+        found = [{"year": 2029, "round": 1, "original": "a", "from": "b", "to": "a"}]
+        picktrades.mark_reversals(found, recent, now)
+        self.assertTrue(found[0].get("reversal"))
+        task = picktrades.build_task(found, NAMES, None)
+        self.assertEqual(task["title"], "Pick trade reversed")
+        self.assertNotIn("paid through", "\n".join(task["items"]))
+
+    def test_old_alert_is_not_a_reversal(self):
+        now = picktrades.datetime(2027, 3, 1, tzinfo=picktrades.timezone.utc)
+        recent = [{"key": "2029|1|a", "from": "a", "to": "b", "at": "2027-01-09T12:00:00+00:00"}]
+        found = [{"year": 2029, "round": 1, "original": "a", "from": "b", "to": "a"}]
+        picktrades.mark_reversals(found, recent, now)
+        self.assertFalse(found[0].get("reversal"))
+
+
+class RunTests(unittest.TestCase):
+    @staticmethod
+    def _fake(picks_now):
         class FakeFantrax:
             def __init__(self, *a, **k):
                 pass
@@ -102,6 +169,16 @@ class RunTests(unittest.TestCase):
 
             def standings(self):
                 return [{"rank": i, "teamId": t, "teamName": n, "points": "0-0-0"} for i, (t, n) in enumerate(NAMES.items(), 1)]
+        return FakeFantrax
+
+    def _run(self, picks_now, saved=None, mode="live", ok=True):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        state = Path(tmp.name) / "picktrades.json"
+        if saved is not None:
+            state.write_text(json.dumps({"owners": saved}))
+        posts = []
+        FakeFantrax = self._fake(picks_now)
 
         def fake_post(secret, payload):
             posts.append(payload)
@@ -129,6 +206,25 @@ class RunTests(unittest.TestCase):
         code, _, posts, state = self._run({**BASE, (2028, 1, "a"): "b"}, saved, ok=False)
         self.assertEqual((code, len(posts)), (1, 2))
         self.assertEqual(json.loads(state.read_text())["owners"], saved)
+
+    def test_alert_remembers_move_and_reversal_is_recognised(self):
+        saved = picktrades.snapshot(raw(BASE))
+        code, _, posts, state = self._run({**BASE, (2028, 1, "a"): "b"}, saved)
+        recent = json.loads(state.read_text())["recent"]
+        self.assertEqual([(r["key"], r["from"], r["to"]) for r in recent], [("2028|1|a", "a", "b")])
+        posts2 = []
+        with patch.object(picktrades, "STATE_PATH", state), \
+                patch.object(picktrades, "Fantrax", self._fake(BASE)), \
+                patch.object(picktrades, "post_discord_webhook", lambda s, p: (posts2.append(p) or True, "ok")):
+            picktrades.run("live")
+        self.assertEqual(posts2[0]["embeds"][0]["title"], "Pick trade reversed")
+
+    def test_ledger_verdict_reaches_the_message(self):
+        saved = picktrades.snapshot(raw(BASE))
+        table = picktrades.parse_clearance(CSV)
+        with patch.object(picktrades, "load_clearance", lambda: table):
+            _, _, posts, _ = self._run({**BASE, (2029, 2, "b"): "a"}, saved)
+        self.assertIn("NOT PAID", posts[0]["embeds"][0]["description"])
 
     def test_preview_posts_and_saves_nothing(self):
         saved = picktrades.snapshot(raw(BASE))
