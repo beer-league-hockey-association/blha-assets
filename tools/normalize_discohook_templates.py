@@ -2,12 +2,15 @@
 """Normalize and verify every BLHA Discohook template (templates/**/*.json).
 
 Each template is one Discord message. The rules live in discohook_format.py:
-- One message per send: up to 10 embeds and 6,000 counted characters. A
-  template over either limit fails here; it is never split automatically.
-- Channel intros (and the welcome message) start with the header banner embed:
-  charcoal #2B2D31 side color and the header image, with no footer.
-- Only the final embed has a footer: its footer text and the shared gold
-  footer-divider image. Every other embed has neither.
+- One message per send: the header banner embed (if the channel has one) plus
+  ONE text embed. Extra text sections merge into it as bold divider fields.
+- The header banner (charcoal #2B2D31, header image) keeps an invisible
+  footer so Discohook accepts it.
+- Only the final embed has footer text and the shared gold footer-divider
+  image. No other embed has either.
+- Discord limits are enforced (25 fields, 1,024 per field, 4,096 per
+  description, 6,000 per message). Content that does not fit fails here and
+  is never split, except the listed MULTI_SECTION_EXCEPTIONS.
 - Message text, fields and semantic colors are preserved. The frozen divider
   URL keeps its version query so Discord cannot serve an older cached image.
 
@@ -37,7 +40,7 @@ def load(path: Path) -> dict:
 def normalize_file(path: Path) -> bool:
     data = load(path)
     rel = path.relative_to(TEMPLATES).as_posix()
-    data["embeds"] = fmt.apply(data["embeds"], fmt.header_url(rel))
+    data["embeds"] = fmt.apply(data["embeds"], fmt.header_url(rel), rel)
     rendered = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
     if rendered == path.read_text(encoding="utf-8"):
         return False
@@ -47,7 +50,7 @@ def normalize_file(path: Path) -> bool:
 
 def verify_file(path: Path) -> list[str]:
     rel = path.relative_to(TEMPLATES).as_posix()
-    return [f"{rel}: {p}" for p in fmt.problems(load(path)["embeds"], fmt.header_url(rel))]
+    return [f"{rel}: {p}" for p in fmt.problems(load(path)["embeds"], fmt.header_url(rel), rel)]
 
 
 def main() -> None:

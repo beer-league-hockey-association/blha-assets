@@ -329,8 +329,8 @@ def main() -> None:
             p.unlink()
     for rel, data in items.items():
         banner = fmt.header_url(rel)
-        data = {"embeds": fmt.apply(data["embeds"], banner)}
-        errors = fmt.problems(data["embeds"], banner)
+        data = {"embeds": fmt.apply(data["embeds"], banner, rel)}
+        errors = fmt.problems(data["embeds"], banner, rel)
         assert not errors, (rel, errors)
         for e in data["embeds"]:
             assert len(e.get("description") or "") <= 4096, rel

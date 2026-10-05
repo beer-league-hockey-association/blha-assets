@@ -2,6 +2,9 @@
   "embeds": [
     {
       "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
       "image": {
         "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/waiver-wire/blha-waiver-wire-header.png?v=4-b-mark"
       }
