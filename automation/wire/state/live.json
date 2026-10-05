@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T18:45:37.971929Z",
+  "updated_at": "2026-10-05T21:08:46.620916Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3372,6 +3372,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T18:45:37.940784Z"
+    },
+    {
+      "key": "5642d239504c4671c2e2ab80",
+      "url": "https://www.dailyfaceoff.com/players/news/nikita-grebenkin/34689",
+      "fingerprint": "124ae922ea3255cc",
+      "title_norm": "nikita grebenkin (phi) — grebenkin (upper-body) has been placed on injured reserve.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T21:08:45.244354Z"
+    },
+    {
+      "key": "8003c3c770e6e74cca4df3d7",
+      "url": "https://www.nhl.com/news/aleksander-barkov-playing-injury-status-2026-2027",
+      "fingerprint": "c34492acb0addc99",
+      "title_norm": "barkov status still unclear, maurice says",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-05T21:08:45.554727Z"
+    },
+    {
+      "key": "0165c6af99f7be877d42cb57",
+      "url": "https://www.dailyfaceoff.com/players/news/denver-barkey/35098",
+      "fingerprint": "1bdc4f549de2d008",
+      "title_norm": "denver barkey (phi) — barkey (lower-body) will make his season debut in tampa bay on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T21:08:45.975184Z"
+    },
+    {
+      "key": "92db79f318da099c39fc915e",
+      "url": "https://www.sportsnet.ca/nhl/article/rematch-against-hurricanes-prompts-early-lineup-dilemma-for-canadiens",
+      "fingerprint": "2bb878fff172a902",
+      "title_norm": "rematch against hurricanes prompts early lineup dilemma for canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T21:08:46.326872Z"
+    },
+    {
+      "key": "125a9d68eceb5a3fee1bcbc5",
+      "url": "https://dobberprospects.com/2026/10/05/october-ohl-report-prospect-watch",
+      "fingerprint": "e7b7c88633b5f201",
+      "title_norm": "october ohl report: prospect watch",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-05T21:08:46.602902Z"
     }
   ]
 }
