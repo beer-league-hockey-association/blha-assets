@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-05T15:15:47.219594Z",
+  "updated_at": "2026-10-05T15:30:37.839730Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3112,6 +3112,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-05T15:15:47.138501Z"
+    },
+    {
+      "key": "46e437e23167b7ed9f472c7e",
+      "url": "https://www.dailyfaceoff.com/players/news/damon-severson/2038",
+      "fingerprint": "2712f26e83fe3bc9",
+      "title_norm": "damon severson (cbj) — severson (shoulder) was a full participant in practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:30:37.292698Z"
+    },
+    {
+      "key": "3f8c79a7c7e8ef11605b6cf4",
+      "url": "https://www.sportsnet.ca/nhl/article/weekend-takeaways-no-question-red-wings-are-in-a-world-of-hurt",
+      "fingerprint": "09d61b22087e6704",
+      "title_norm": "weekend takeaways: no question, red wings are in a world of hurt",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:30:37.611781Z"
+    },
+    {
+      "key": "e6e3aa70d6b3e5fb41d7a04b",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-open-to-long-term-deal-with-simon-edvinsson",
+      "fingerprint": "295b07e52481ae32",
+      "title_norm": "red wings open to long-term deal with simon edvinsson",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-05T15:30:37.815450Z"
     }
   ]
 }
