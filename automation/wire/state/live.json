@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T17:45:36.726537Z",
+  "updated_at": "2026-10-06T18:15:41.584258Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3892,6 +3892,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T17:45:36.702026Z"
+    },
+    {
+      "key": "e8fc7ae5ecafc68b26a745fd",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-connor-zary-brayden-pachal-clear-waivers",
+      "fingerprint": "283cb2d709e4e791",
+      "title_norm": "flames' connor zary, brayden pachal clear waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:15:41.564150Z"
+    },
+    {
+      "key": "4075cf5db1768f31006a63c0",
+      "url": "https://www.sportsnet.ca/nhl/article/flyers-to-sign-veteran-forward-michael-bunting",
+      "fingerprint": "a72a3fdbd0d0c8e1",
+      "title_norm": "flyers to sign veteran forward michael bunting",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:15:41.565111Z"
     }
   ]
 }
