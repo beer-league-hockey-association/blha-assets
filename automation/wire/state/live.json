@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T21:15:31.034095Z",
+  "updated_at": "2026-10-06T21:30:45.919160Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4022,6 +4022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T21:15:31.017509Z"
+    },
+    {
+      "key": "2d89d7ff385b54cc68ad72d2",
+      "url": "https://www.sportsnet.ca/nhl/article/sharks-celebrini-misses-practice-considered-day-to-day",
+      "fingerprint": "0a4aa261c456b7df",
+      "title_norm": "sharks' celebrini misses practice, considered day-to-day",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T21:30:45.905316Z"
     }
   ]
 }
