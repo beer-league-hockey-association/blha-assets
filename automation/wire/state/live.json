@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T17:15:33.473054Z",
+  "updated_at": "2026-10-06T17:30:41.112860Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3872,6 +3872,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T17:15:33.387405Z"
+    },
+    {
+      "key": "bce41ca91b1d2a5a6c2ec06b",
+      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
+      "fingerprint": "5e181408d08e91ec",
+      "title_norm": "bryan rust (pit) — rust (upper-body) was a full participant in tuesday's practice.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T17:30:41.055663Z"
     }
   ]
 }
