@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T16:00:47.073468Z",
+  "updated_at": "2026-10-06T16:15:37.645931Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3842,6 +3842,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-06T16:00:46.991812Z"
+    },
+    {
+      "key": "d8a94fe03ef4e3b1ab943845",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-6-2026",
+      "fingerprint": "a15cb3b4a2ae3b05",
+      "title_norm": "status report: annunen placed on ir by predators",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T16:15:37.584932Z"
     }
   ]
 }
