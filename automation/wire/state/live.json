@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T02:30:42.636335Z",
+  "updated_at": "2026-10-06T02:45:35.971678Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3542,6 +3542,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T02:30:42.618718Z"
+    },
+    {
+      "key": "be1824f61ba9f821563dc1f5",
+      "url": "https://www.nhl.com/news/ottawa-senators-boston-bruins-game-recap-october-5-2026",
+      "fingerprint": "dc7b2af27bec4719",
+      "title_norm": "stutzle gets 3 points, senators ease past bruins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T02:45:35.887820Z"
     }
   ]
 }
