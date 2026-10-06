@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T18:45:39.458955Z",
+  "updated_at": "2026-10-06T19:00:34.253258Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3972,6 +3972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T18:45:39.440370Z"
+    },
+    {
+      "key": "4479685cdd4fbc6b936185d3",
+      "url": "https://www.nhl.com/news/aleksander-barkov-injury-status-update-october-6-2026",
+      "fingerprint": "994c99621dd06cbd",
+      "title_norm": "barkov out 6-8 weeks for panthers, won't need surgery",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T19:00:34.153377Z"
     }
   ]
 }
