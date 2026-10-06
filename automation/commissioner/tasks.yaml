@@ -39,6 +39,7 @@ tasks:
       - "Fantrax: FAAB is $1,000 per team (last consolation champion $1,050), trade deadline set, Games Started - Goalies max 4 with prorating on, minors age condition is Player age up to start of season, waiver tiebreaker Earliest Bid."
       - "League Calendar pinned."
       - "league.yaml and events.yaml point at this season; Xenon backup taken."
+      - "Wooden Spoon: last Season's holder has posted the Season preview (due before Week 1)."
 
   - id: preseason-eve
     anchor: first_week_start
@@ -47,6 +48,7 @@ tasks:
     section: "1. Before Season"
     items:
       - "No illegal rosters and no ineligible minors left to fix (6.4, 7.4)."
+      - "Wooden Spoon: take the role back from last Season's holder when Week 1 starts (it is held for the Offseason only)."
       - "#automation-health is quiet; scoreboard and weekly report previews look right."
 
   - id: deadline-passed
@@ -68,6 +70,7 @@ tasks:
       - "Confirm Fantrax counted all weeks, then resolve every tie under 15.4 and record any random draw in Discord."
       - "Verify the saved playoff seeds match Fantrax standings; announce the field and bracket."
       - "Crown the Presidents' Trophy winner (best head-to-head record)."
+      - "Wooden Spoon: the Competition Desk posts it in #weekly-recap with the final standings. Give that owner the Wooden Spoon role, and record wooden_spoon for the Season in automation/history/history.yaml."
       - "Enter consolation round 1 by hand before Week 23 starts: seed 3 v 6 and seed 4 v 5 among the six non-playoff teams; seeds 1 and 2 on byes (16.7)."
       - "Record Potential Points for the six non-playoff teams for picks 1.01 to 1.06 (14.5), and keep a screenshot."
       - "Decide the third-place plan: Fantrax game, or the 16.4 fallback posted in advance."

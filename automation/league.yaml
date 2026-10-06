@@ -34,6 +34,12 @@ competition:
   light_night_max_teams: 8
   heavy_night_min_teams: 20
 
+  # The Wooden Spoon (league tradition, no money, no rule change): when the
+  # final regular-season standings are posted, the last-place franchise gets
+  # the Wooden Spoon post in #weekly-recap (its owner is mentioned if listed
+  # under owners). Set false to stop it.
+  wooden_spoon: true
+
   # GitHub Actions secret holding each channel's Discord webhook URL.
   # awards and rankings go to #weekly-recap with the recap; games (the NHL
   # games grid) goes to the scoreboard channel with the matchup preview.
@@ -47,6 +53,7 @@ competition:
     games: BLHA_WEBHOOK_SCOREBOARD
     scoreboard: BLHA_WEBHOOK_SCOREBOARD
     playoffs: BLHA_WEBHOOK_PLAYOFFS
+    spoon: BLHA_WEBHOOK_WEEKLY_RECAP
 
 # ---------------------------------------------------------------------------
 # Owner pings (opt-in)

@@ -39,9 +39,13 @@ votes:
   threshold: 8          # affirmative votes needed (Article XX, 3.6)
   notice_days: 7        # proposal posted at least 7 days before voting (20.2)
   window_days: 7        # voting window (20.3)
-  # 20.1: no amendment vote before the Offseason following Season 2027.
-  # Set this to the day after the Season 2027 Championship ends.
-  amendment_votes_from: "2027-04-05"
+  # 20.1: no amendment vote before the Offseason following Season 2027
+  # (2027-28). The Offseason starts after the Championship's final scoring
+  # period (1.4); the playoffs end about six days before the NHL regular
+  # season (5.9). Estimated until the NHL releases its 2027-28 schedule:
+  # confirm against the Season 2027 League Calendar (Commissioner Desk
+  # reminder, August 2027) and set it to the day after the Championship ends.
+  amendment_votes_from: "2028-04-10"
   remind_hours_before_close: 24
   # true: the result post lists each franchise's ballot (permanent record).
   # false: only the totals are posted.

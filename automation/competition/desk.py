@@ -12,6 +12,8 @@ league.yaml), posts in order:
 5. Playoff race (from playoff_race_start_week through the last regular week)
 6. Matchup preview for the week that starts that evening (scoreboard channel)
 7. NHL games grid for that week, for planning daily lineups (scoreboard channel)
+8. The Wooden Spoon for the last-place franchise, once, with the final
+   regular-season standings (#weekly-recap; competition.wooden_spoon)
 
 All-play, awards and power rankings are computed from Fantrax matchup scores
 (see weekly.py); the games grid reads the NHL schedule API (blha/nhl.py).
@@ -49,7 +51,7 @@ from blha.league import color_value, load_json, load_league, save_json, timezone
 from discord_webhook import send_discord_webhook  # noqa: E402
 
 STATE_PATH = ROOT / "state" / "competition.json"
-ITEMS = ("recap", "awards", "rankings", "standings", "race", "preview", "games")
+ITEMS = ("recap", "awards", "rankings", "standings", "race", "preview", "games", "spoon")
 STATE_KEYS = {
     "recap": "recap_week",
     "awards": "awards_week",
@@ -58,11 +60,12 @@ STATE_KEYS = {
     "race": "race_week",
     "preview": "preview_week",
     "games": "games_week",
+    "spoon": "spoon_week",
 }
 # Items added after the report went live go out with an older sibling. Until an
 # item has its own state, it counts as posted up to the week its sibling last
 # posted, so deploying mid-week never posts an old week's awards or grid.
-SIBLING = {"awards": "recap", "rankings": "recap", "games": "preview"}
+SIBLING = {"awards": "recap", "rankings": "recap", "games": "preview", "spoon": "standings"}
 # Previous weeks' power rankings kept in state (for the week-over-week change).
 RANKS_KEPT = 4
 # If Fantrax still has not counted a week this long after it officially
@@ -135,6 +138,13 @@ def plan_report(
                 plan.posts.append(Plan("standings", week))
             else:
                 plan.notes.append(f"standings wait: Fantrax has counted {counted} of {week} weeks")
+
+        spoon_on = comp.get("wooden_spoon", True) is not False
+        if spoon_on and week == last_regular and posted_week(state, "spoon") < week:
+            if standings_ready:
+                plan.posts.append(Plan("spoon", week))
+            else:
+                plan.notes.append("Wooden Spoon waits for the final standings")
 
         next_week = week + 1
         if race_start <= next_week <= last_regular and int(state.get("race_week") or 0) < week:
@@ -276,6 +286,11 @@ class Desk:
                                        weeks_left=max(0, self.last_regular - week),
                                        playoff_cut=self.playoff_cut,
                                        bubble_depth=int(self.comp.get("bubble_depth") or 3))
+        if item == "spoon":
+            if not self.rows:
+                return None
+            last = max(self.rows, key=lambda r: r["rank"])
+            return render.wooden_spoon(self.ctx, last, owner_mention(self.cfg, last))
         if item == "preview":
             pairs = schedule_for(self.info, week) or [
                 {"away": r["away"], "home": r["home"]} for r in self.scores(week)
@@ -303,6 +318,13 @@ class Desk:
         if done:
             return done.number
         return active.number if active else 1
+
+
+def owner_mention(cfg: dict[str, Any], row: dict[str, Any]) -> str:
+    """Discord user ID of the franchise's owner if listed under owners (opt-in), else ""."""
+    owners = {str(k).strip().lower(): str(v).strip() for k, v in (cfg.get("owners") or {}).items()}
+    user = owners.get(str(row.get("teamId") or "").lower()) or owners.get(str(row.get("teamName") or "").lower()) or ""
+    return user if user.isdigit() and 15 <= len(user) <= 21 else ""
 
 
 def record_post(state: dict[str, Any], desk: Desk, post: Plan, now: datetime) -> None:

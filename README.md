@@ -109,6 +109,7 @@ Fantrax weeks end at the first NHL game on Monday evening, so by Monday morning 
 5. `🏁│playoff-race` — from **Week 16** through the last regular-season week
 6. Matchup preview for the week starting that evening (scoreboard channel)
 7. **NHL games grid** for that week, for planning daily lineups (scoreboard channel, separate message)
+8. **The Wooden Spoon** once a season, with the final regular-season standings: the last-place franchise takes the Spoon (#weekly-recap; its owner is mentioned if listed under `owners`). A league tradition with no money and no rule change; switch it off with `competition.wooden_spoon: false`
 
 If Fantrax has not yet counted the finished week in its standings at 8:00 AM, standings and the playoff race wait and go out at the 8:00 PM check. Nothing is ever posted twice for the same week, and a failed post is retried automatically. Awards, rankings and the grid are tracked separately, so a failure in one never reposts the others.
 

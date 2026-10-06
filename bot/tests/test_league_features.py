@@ -707,7 +707,7 @@ class ConfigAndRoleTests(unittest.TestCase):
         order = list(dict.fromkeys(p["originalOwnerTeamId"] for p in PICKS["futureDraftPicks"]))
         self.assertEqual([f.fantrax_team_id for f in cfg.franchises], order)
         self.assertEqual(cfg.pickem_players, ("owner", "co_owner"))
-        self.assertEqual(cfg.settings.amendment_votes_from.date(), date(2027, 4, 5))
+        self.assertEqual(cfg.settings.amendment_votes_from.date(), date(2028, 4, 10))
         self.assertFalse(rules.fantrax_id_problems(cfg.franchises, team.team_names(INFO)))
         self.assertTrue(any("pickem_channel_id" in p for p in cfg.problems))
 

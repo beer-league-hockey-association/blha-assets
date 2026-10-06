@@ -20,7 +20,7 @@ on:
         required: false
         default: all
         type: choice
-        options: [all, recap, awards, rankings, standings, race, preview, games]
+        options: [all, recap, awards, rankings, standings, race, preview, games, spoon]
       week:
         description: "Week to render (preview/test only; blank = current)"
         required: false

@@ -136,7 +136,19 @@ class WeeklyReportTests(unittest.TestCase):
     def test_last_week_gets_final_standings_and_no_race_or_preview(self) -> None:
         state = {k: 21 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 22}
         plan = self.plan(morning_of_end(22), 22, state)
-        self.assertEqual(items(plan), [("recap", 22), ("awards", 22), ("rankings", 22), ("standings", 22)])
+        self.assertEqual(items(plan), [("recap", 22), ("awards", 22), ("rankings", 22), ("standings", 22), ("spoon", 22)])
+
+    def test_wooden_spoon_once_with_final_standings(self) -> None:
+        state = {k: 21 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 22}
+        waiting = self.plan(morning_of_end(22), 21, state)                 # Fantrax has not counted week 22 yet
+        self.assertNotIn("spoon", [i for i, _ in items(waiting)])
+        self.assertTrue(any("Wooden Spoon waits" in n for n in waiting.notes))
+        done = state | {"recap_week": 22, "standings_week": 22, "spoon_week": 22}
+        self.assertEqual(items(self.plan(et(2027, 3, 22, 20), 22, done)), [])
+        off = desk.plan_report(INFO, standings_after(22), state, morning_of_end(22), ET, COMP | {"wooden_spoon": False})
+        self.assertNotIn("spoon", [i for i, _ in items(off)])
+        mid = {k: 14 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 15}
+        self.assertNotIn("spoon", [i for i, _ in items(self.plan(morning_of_end(15), 15, mid))])
 
     def test_week_21_still_gets_a_race_update(self) -> None:
         state = {k: 20 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 21}
@@ -178,6 +190,22 @@ class RenderTests(unittest.TestCase):
         pairs = schedule_for(INFO, 2)
         body = render.preview(self.ctx, p, pairs, {}, ranks_shown=False)
         self.assertNotIn("#", body["embeds"][0]["fields"][0]["value"])
+
+    def test_wooden_spoon_post(self) -> None:
+        last = standings_after(22)[-1]
+        body = render.wooden_spoon(self.ctx, last)
+        embed = body["embeds"][0]
+        self.assertEqual(embed["title"], "The Wooden Spoon")
+        self.assertIn(f"**{last['teamName']}** finishes last", embed["description"])
+        self.assertIn("Its owner holds the Wooden Spoon role", embed["fields"][1]["value"])
+        self.assertEqual(body["allowed_mentions"], {"parse": []})
+        owner = "123456789012345678"
+        live = render.wooden_spoon(render.Context("L", "S", 0xFFB81C), last, owner)
+        self.assertEqual(live["content"], f"<@{owner}>")
+        self.assertEqual(live["allowed_mentions"], {"parse": [], "users": [owner]})
+        cfg = {"owners": {last["teamName"]: owner, "Someone Else": "not-an-id"}}
+        self.assertEqual(desk.owner_mention(cfg, last), owner)
+        self.assertEqual(desk.owner_mention({"owners": {}}, last), "")
 
     def test_competition_desk_identity_and_no_mentions(self) -> None:
         body = render.recap(self.ctx, season.period(INFO, 1), [])

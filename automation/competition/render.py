@@ -333,6 +333,25 @@ def standings(ctx: Context, rows: list[dict], *, after_week: int, playoff_cut: i
     return _payload(ctx, title, f"{_header(ctx)}\n\n{note}", fields, "STANDINGS")
 
 
+# --- Wooden Spoon -------------------------------------------------------------
+
+def wooden_spoon(ctx: Context, row: dict, owner_id: str = "") -> dict[str, Any]:
+    """The last-place franchise takes the Wooden Spoon (league tradition, no penalty)."""
+    holder = f"<@{owner_id}>" if owner_id else "Its owner"
+    fields = [
+        {"name": "Final record", "value": f"{row['record']} • {row['pointsFor']:.2f} points for", "inline": False},
+        {"name": "The tradition", "value": f"{holder} holds the Wooden Spoon role for the Offseason and writes the "
+                                           "preview of next Season, posted before Week 1.", "inline": False},
+        {"name": "No penalty", "value": "Draft order is unaffected: it comes from Potential Points (14.5).", "inline": False},
+    ]
+    note = f"**{row['teamName']}** finishes last in the regular season and takes home the Wooden Spoon."
+    payload = _payload(ctx, "The Wooden Spoon", f"{_header(ctx)}\n\n{note}", fields, "WOODEN SPOON")
+    if owner_id:
+        payload["content"] = f"<@{owner_id}>"
+        payload["allowed_mentions"] = {"parse": [], "users": [] if ctx.test else [owner_id]}
+    return payload
+
+
 # --- Playoff race -------------------------------------------------------------
 
 def playoff_race(
