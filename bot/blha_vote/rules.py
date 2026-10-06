@@ -58,6 +58,7 @@ class Franchise:
     role_id: int
     commissioner: bool = False
     orphaned: bool = False
+    fantrax_team_id: str = ""
 
 
 @dataclass(frozen=True)
@@ -204,6 +205,35 @@ def can_cast(member_role_ids: set[int], owner_role_id: int | None, franchises: l
     if kind.excludes_commissioner and franchise.commissioner:
         return None, "The Commissioner's franchise does not vote on this (3.6, 19.5)."
     return franchise, None
+
+
+def team_member(member_role_ids: set[int], allowed_role_ids: set[int], franchises: list[Franchise],
+                *, needs_fantrax: bool = False) -> tuple[Franchise | None, str | None]:
+    """Which franchise a Franchise Owner or Co-Owner belongs to, or why not.
+
+    ``allowed_role_ids`` are the configured Franchise Owner and Co-Owner role
+    IDs; the member needs one of them plus exactly one franchise role.
+    """
+    if not allowed_role_ids:
+        return None, "The Franchise Owner and Co-Owner roles aren't set up in the bot yet. Ask the Commissioner."
+    if not allowed_role_ids & member_role_ids:
+        return None, "Only a Franchise Owner or Co-Owner can use this."
+    mine = [f for f in franchises if f.role_id in member_role_ids]
+    if not mine:
+        return None, "You don't have a franchise role. Ask the Commissioner to add it."
+    if len(mine) > 1:
+        return None, "You have more than one franchise role. Ask the Commissioner to fix your roles."
+    if needs_fantrax and not mine[0].fantrax_team_id:
+        return None, f"{mine[0].name} isn't linked to a Fantrax team yet. Ask the Commissioner to set its fantrax_team_id."
+    return mine[0], None
+
+
+def fantrax_id_problems(franchises: list[Franchise], fantrax_teams: dict[str, str]) -> list[str]:
+    """Config fantrax_team_ids that aren't teams in the Fantrax league (e.g. after a new league)."""
+    if not fantrax_teams:
+        return []
+    return [f"{f.name}'s fantrax_team_id {f.fantrax_team_id} isn't a team in the Fantrax league."
+            for f in franchises if f.fantrax_team_id and f.fantrax_team_id not in fantrax_teams]
 
 
 def draw_panel(pool: dict[str, list[int]], excluded: set[str], rng, size: int = 3) -> list[tuple[str, int]]:

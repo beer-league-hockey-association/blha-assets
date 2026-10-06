@@ -1,0 +1,458 @@
+{
+ "_note": "Live getMatchupScores?period=2 from the 2026-27 test league, captured 2026-10-06 mid-week. Category values appear only when non-zero; GS = goalie games started (the 4-start cap).",
+ "response": {
+  "matchups": [
+   {
+    "away": {
+     "teamName": "Test 4",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "8j6llh6gmumuxose"
+    },
+    "categories": [
+     {
+      "away": {},
+      "name": "Goals",
+      "shortName": "G",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Assists",
+      "shortName": "A",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Shots on Goal",
+      "shortName": "SOG",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Hits",
+      "shortName": "Hit",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Blocks",
+      "shortName": "Blk",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Goals Against",
+      "shortName": "GA",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Saves",
+      "shortName": "SV",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Games Started",
+      "shortName": "GS",
+      "group": "Goalies",
+      "home": {}
+     }
+    ],
+    "home": {
+     "teamName": "Test 6",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "gobvt8opmumuxoxm"
+    }
+   },
+   {
+    "away": {
+     "teamName": "Test 8",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "vs89xezfmumuxp44"
+    },
+    "categories": [
+     {
+      "away": {},
+      "name": "Goals",
+      "shortName": "G",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Assists",
+      "shortName": "A",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Shots on Goal",
+      "shortName": "SOG",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Hits",
+      "shortName": "Hit",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Blocks",
+      "shortName": "Blk",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Goals Against",
+      "shortName": "GA",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Saves",
+      "shortName": "SV",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Games Started",
+      "shortName": "GS",
+      "group": "Goalies",
+      "home": {}
+     }
+    ],
+    "home": {
+     "teamName": "Test 2",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "mvh0gxh2mumuxoo4"
+    }
+   },
+   {
+    "away": {
+     "teamName": "Test 11",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "4qdrdr4fmumuxplb"
+    },
+    "categories": [
+     {
+      "away": {},
+      "name": "Goals",
+      "shortName": "G",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Assists",
+      "shortName": "A",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Shots on Goal",
+      "shortName": "SOG",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Hits",
+      "shortName": "Hit",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Blocks",
+      "shortName": "Blk",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Goals Against",
+      "shortName": "GA",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Saves",
+      "shortName": "SV",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Games Started",
+      "shortName": "GS",
+      "group": "Goalies",
+      "home": {}
+     }
+    ],
+    "home": {
+     "teamName": "Test 10",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "6bzildyomumuxpe6"
+    }
+   },
+   {
+    "away": {
+     "teamName": "Test 3",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "2tml63mumumuxoqh"
+    },
+    "categories": [
+     {
+      "away": {},
+      "name": "Goals",
+      "shortName": "G",
+      "group": "Skaters",
+      "home": {
+       "display": "1",
+       "value": 1,
+       "points": 5
+      }
+     },
+     {
+      "away": {},
+      "name": "Assists",
+      "shortName": "A",
+      "group": "Skaters",
+      "home": {
+       "points": 0
+      }
+     },
+     {
+      "away": {},
+      "name": "Shots on Goal",
+      "shortName": "SOG",
+      "group": "Skaters",
+      "home": {
+       "display": "9",
+       "value": 9,
+       "points": 4.95
+      }
+     },
+     {
+      "away": {},
+      "name": "Hits",
+      "shortName": "Hit",
+      "group": "Skaters",
+      "home": {
+       "display": "4",
+       "value": 4,
+       "points": 0.8
+      }
+     },
+     {
+      "away": {},
+      "name": "Blocks",
+      "shortName": "Blk",
+      "group": "Skaters",
+      "home": {
+       "display": "1",
+       "value": 1,
+       "points": 0.35
+      }
+     },
+     {
+      "away": {},
+      "name": "Goals Against",
+      "shortName": "GA",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Saves",
+      "shortName": "SV",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Games Started",
+      "shortName": "GS",
+      "group": "Goalies",
+      "home": {}
+     }
+    ],
+    "home": {
+     "teamName": "Test",
+     "score": 11.1,
+     "gamesPlayed": 2,
+     "teamId": "gb4or3npmumb3mgv"
+    }
+   },
+   {
+    "away": {
+     "teamName": "Test 12",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "93rjspsjmumuxpqw"
+    },
+    "categories": [
+     {
+      "away": {},
+      "name": "Goals",
+      "shortName": "G",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Assists",
+      "shortName": "A",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Shots on Goal",
+      "shortName": "SOG",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Hits",
+      "shortName": "Hit",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Blocks",
+      "shortName": "Blk",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Goals Against",
+      "shortName": "GA",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Saves",
+      "shortName": "SV",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Games Started",
+      "shortName": "GS",
+      "group": "Goalies",
+      "home": {}
+     }
+    ],
+    "home": {
+     "teamName": "Test 9",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "w9j9rgr1mumuxp9e"
+    }
+   },
+   {
+    "away": {
+     "teamName": "Test 5",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "tau9p1cvmumuxout"
+    },
+    "categories": [
+     {
+      "away": {},
+      "name": "Goals",
+      "shortName": "G",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Assists",
+      "shortName": "A",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Shots on Goal",
+      "shortName": "SOG",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Hits",
+      "shortName": "Hit",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Blocks",
+      "shortName": "Blk",
+      "group": "Skaters",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Goals Against",
+      "shortName": "GA",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Saves",
+      "shortName": "SV",
+      "group": "Goalies",
+      "home": {}
+     },
+     {
+      "away": {},
+      "name": "Games Started",
+      "shortName": "GS",
+      "group": "Goalies",
+      "home": {}
+     }
+    ],
+    "home": {
+     "teamName": "Test 7",
+     "score": 0,
+     "gamesPlayed": 0,
+     "teamId": "qqpqauuamumuxp03"
+    }
+   }
+  ],
+  "period": 2
+ }
+}

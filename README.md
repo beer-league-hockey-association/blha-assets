@@ -127,9 +127,9 @@ Fantrax already tells owners when they are on the clock and shows every pick in 
 
 The draft date, order, rounds and picks come from Fantrax; the pick clock and nightly pause come from `draft_center` in `automation/league.yaml`, because Fantrax does not publish them. Details: `automation/draft/README.md`.
 
-## Voting Bot
+## League Bot
 
-`bot/` holds the always-on Discord voting bot (proposals, one vote per franchise, Commissioner removal and elections, Review Panel draws). It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
+`bot/` holds the always-on BLHA League Bot: league votes (proposals, one vote per franchise, Commissioner removal and elections, Review Panel draws, suggestion threads turned into proposals), `/rule` Constitution lookup, `/deadlines`, `/minor` eligibility checks, a private `/myteam` view, `/tradecheck` compliance checks and a weekly Pick'em. It reads Fantrax and never writes to it. It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
 
 ## Where bot state lives
 

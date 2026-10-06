@@ -1,0 +1,378 @@
+{
+ "_note": "Live getTeamRosters (no period) for 2 of 12 test teams, captured 2026-10-06. Items carry only Fantrax player id, slot position and status (ACTIVE, RESERVE, MINORS; IR also exists). No names (use getPlayerIds), no points, no FAAB. NOTE: 'period' here is the DAILY lineup period (8 = Oct 6), not the scoring week.",
+ "response": {
+  "period": 8,
+  "rosters": {
+   "gb4or3npmumb3mgv": {
+    "teamName": "Test",
+    "rosterItems": [
+     {
+      "id": "04lcs",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05ogy",
+      "position": "F",
+      "status": "MINORS"
+     },
+     {
+      "id": "004cq",
+      "position": "RW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04qy5",
+      "position": "RW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05y3a",
+      "position": "C",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "060us",
+      "position": "G",
+      "status": "MINORS"
+     },
+     {
+      "id": "03v70",
+      "position": "LW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "06ag2",
+      "position": "F",
+      "status": "MINORS"
+     },
+     {
+      "id": "01587",
+      "position": "F",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "042vx",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05lud",
+      "position": "G",
+      "status": "MINORS"
+     },
+     {
+      "id": "02wy5",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "067yd",
+      "position": "D",
+      "status": "MINORS"
+     },
+     {
+      "id": "05ww8",
+      "position": "F",
+      "status": "MINORS"
+     },
+     {
+      "id": "04xec",
+      "position": "LW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04f75",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "05tur",
+      "position": "F",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "042yb",
+      "position": "LW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04f0t",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "05rjh",
+      "position": "F",
+      "status": "MINORS"
+     },
+     {
+      "id": "01xfq",
+      "position": "F",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04yla",
+      "position": "G",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "042vl",
+      "position": "RW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05lu6",
+      "position": "D",
+      "status": "MINORS"
+     },
+     {
+      "id": "03rfx",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "06axb",
+      "position": "F",
+      "status": "MINORS"
+     },
+     {
+      "id": "03rf5",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "003tz",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04ai3",
+      "position": "G",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "00qs7",
+      "position": "LW",
+      "status": "RESERVE"
+     },
+     {
+      "id": "05ui2",
+      "position": "C",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04o0g",
+      "position": "C",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04az7",
+      "position": "LW",
+      "status": "RESERVE"
+     },
+     {
+      "id": "03mqg",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "060wx",
+      "position": "F",
+      "status": "MINORS"
+     },
+     {
+      "id": "03jw0",
+      "position": "G",
+      "status": "RESERVE"
+     }
+    ]
+   },
+   "2tml63mumumuxoqh": {
+    "teamName": "Test 3",
+    "rosterItems": [
+     {
+      "id": "061a2",
+      "position": "LW",
+      "status": "RESERVE"
+     },
+     {
+      "id": "061im",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "01mzc",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "03e1n",
+      "position": "RW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04f2d",
+      "position": "LW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "0644b",
+      "position": "F",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "03wpi",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "04bii",
+      "position": "G",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "02b3w",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "02nok",
+      "position": "C",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "02npz",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05rji",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "0045j",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "050rc",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "05tqt",
+      "position": "C",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05td3",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "003kg",
+      "position": "RW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "01sio",
+      "position": "RW",
+      "status": "RESERVE"
+     },
+     {
+      "id": "01gjn",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "042ye",
+      "position": "LW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "04yu5",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "06ay2",
+      "position": "D",
+      "status": "RESERVE"
+     },
+     {
+      "id": "06hco",
+      "position": "D",
+      "status": "RESERVE"
+     },
+     {
+      "id": "062k9",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "01skr",
+      "position": "F",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05ugz",
+      "position": "D",
+      "status": "RESERVE"
+     },
+     {
+      "id": "03dde",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "06449",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "05ltt",
+      "position": "LW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "031v6",
+      "position": "D",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "05xcm",
+      "position": "RW",
+      "status": "RESERVE"
+     },
+     {
+      "id": "0457i",
+      "position": "G",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "02b70",
+      "position": "RW",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "039cg",
+      "position": "C",
+      "status": "ACTIVE"
+     },
+     {
+      "id": "03rag",
+      "position": "C",
+      "status": "RESERVE"
+     },
+     {
+      "id": "048x9",
+      "position": "F",
+      "status": "ACTIVE"
+     }
+    ]
+   }
+  }
+ }
+}
