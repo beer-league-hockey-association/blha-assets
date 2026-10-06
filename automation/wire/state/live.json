@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T22:45:33.874556Z",
+  "updated_at": "2026-10-06T23:00:42.606603Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4062,6 +4062,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-06T22:45:33.808201Z"
+    },
+    {
+      "key": "0abb0f998e45e24de27c641f",
+      "url": "https://www.dailyfaceoff.com/players/news/danila-yurov/36363",
+      "fingerprint": "4423c957425a4284",
+      "title_norm": "danila yurov (min) — yurov (upper-body) will play in buffalo on tuesday after originally being a game-time decision.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T23:00:42.240814Z"
+    },
+    {
+      "key": "2338163856a675327d9f71e6",
+      "url": "https://www.dailyfaceoff.com/players/news/alexandre-carrier/2732",
+      "fingerprint": "c460cf1fd9fa9ff9",
+      "title_norm": "alexandre carrier (mtl) — carrier (undisclosed) will play vs. carolina on tuesday after originally being a game-time decision.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T23:00:42.542891Z"
     }
   ]
 }
