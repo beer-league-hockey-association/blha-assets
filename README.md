@@ -129,7 +129,7 @@ The draft date, order, rounds and picks come from Fantrax; the pick clock and ni
 
 ## Voting Bot
 
-`bot/` holds the always-on Discord voting bot (proposals, one vote per franchise, Commissioner removal and elections, Review Panel draws). It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
+`bot/` holds the always-on Discord voting bot (proposals, one vote per franchise, Commissioner elections, Review Panel draws). It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
 
 ## Where bot state lives
 

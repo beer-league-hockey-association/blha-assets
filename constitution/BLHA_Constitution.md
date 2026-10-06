@@ -203,9 +203,9 @@
 
 **10.3** Unowned players are acquired through FAAB rather than first-come, first-served acquisition. Waivers are intended to process daily at approximately 11:00 AM ET, subject to Fantrax system behavior.
 
-**10.4** Equal bids go to the bid submitted first, using Fantrax's Earliest Bid tie-breaker. The Commissioner announces this setting in Discord before the Season.
+**10.4** Equal bids go to the bid submitted first, using Fantrax's Earliest Bid tie-breaker.
 
-**10.5** A franchise may make up to **5 acquisitions per normal fantasy Week**. An acquisition is adding a player from the unowned player pool by FAAB claim or free-agent add, as counted by Fantrax. Trades, draft selections, and drops are not acquisitions. The two-week championship is treated as two separate acquisition weeks, permitting up to 5 acquisitions in each underlying Week, for a maximum of 10 across the full championship period.
+**10.5** A franchise may make up to **5 acquisitions per normal fantasy Week**. An acquisition is adding a player from the unowned player pool by FAAB claim, as counted by Fantrax. Trades, draft selections, and drops are not acquisitions. The two-week championship is treated as two separate acquisition weeks, permitting up to 5 acquisitions in each underlying Week, for a maximum of 10 across the full championship period.
 
 **10.6** Waiver-churning protections and Fantrax waiver-period protections remain enabled where available.
 
@@ -337,13 +337,11 @@
 
 **19.4** **Appeals.** A franchise directly affected by a material Commissioner ruling may request review within 48 hours of the ruling by opening an Appeal ticket in the open-a-ticket channel. The Commissioner records the request in the rulings-log channel. A Review Panel of three owners from unaffected franchises, drawn at random in a publicly recorded draw, decides by majority within 7 days. The Panel may uphold, modify, or reverse the ruling, and its decision is final for that matter. Routine scoring results, published Fantrax outcomes, ordinary roster locks, and matters controlled automatically by the platform are not subject to appeal merely because the result is unfavorable.
 
-**19.5** **Vacancy.** The Commissioner's office is vacant if the Commissioner resigns, is removed, or is unavailable for 14 consecutive days. The Assistant Commissioner the Commissioner has designated as successor serves as Interim Commissioner. If there is none, the active franchises choose an Interim Commissioner by majority vote within 14 days. The Interim Commissioner serves until the active franchises choose a permanent Commissioner by majority vote.
+**19.5** **Vacancy.** The Commissioner's office is vacant if the Commissioner resigns or is unavailable for 14 consecutive days. The Assistant Commissioner the Commissioner has designated as successor serves as Interim Commissioner. If there is none, the active franchises choose an Interim Commissioner by majority vote within 14 days. The Interim Commissioner serves until the active franchises choose a permanent Commissioner by majority vote.
 
-**19.6** **Removal.** The Commissioner may be removed for cause by the affirmative vote of at least 8 of the other 11 franchises, the Commissioner's own franchise not voting. Cause means documented misuse of league funds, repeated violation of this Constitution, or abandonment of the office.
+**19.6** **Transition.** A departing Commissioner must account for and transfer all league funds, records, Fantrax commissioner access, and Discord and automation administration to the successor within 14 days.
 
-**19.7** **Transition.** A departing Commissioner must account for and transfer all league funds, records, Fantrax commissioner access, and Discord and automation administration to the successor within 14 days.
-
-**19.8** All significant rulings, recusal decisions, and appeal outcomes are recorded in the rulings-log channel so that the league retains a permanent record.
+**19.7** All significant rulings, recusal decisions, and appeal outcomes are recorded in the rulings-log channel so that the league retains a permanent record.
 
 ## Article XX — Amendments, Records, and Dissolution
 
@@ -351,7 +349,7 @@
 
 **20.2** **Proposals.** Any franchise or the Commissioner may propose a Material Amendment in writing. A proposal must identify the affected rule, the proposed replacement language, and the intended effective date, and is posted in the voting channel at least 7 days before voting opens.
 
-**20.3** **Voting.** Amendment votes are held only during the Offseason. Votes under Article XIX (Interim Commissioner, Commissioner removal) may be held at any time. The voting window is 7 days. Each franchise casts one vote through the league's designated voting channel or method. Approval requires at least 8 affirmative votes out of 12. Non-votes and abstentions are not affirmative votes.
+**20.3** **Voting.** Amendment votes are held only during the Offseason. The voting window is 7 days. Each franchise casts one vote through the league's designated voting channel or method. Approval requires at least 8 affirmative votes out of 12. Non-votes and abstentions are not affirmative votes. Votes to choose an Interim or permanent Commissioner under Article XIX are not amendment votes and may be held at any time.
 
 **20.4** **Timing.** An approved amendment takes effect for the next Season, or on the later date it states. To apply to a Season it must be approved before that Season's dues deadline, so every owner knows the rules before paying.
 

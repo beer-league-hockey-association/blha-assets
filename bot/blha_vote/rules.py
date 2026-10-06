@@ -8,8 +8,8 @@ Constitution references:
   2.3   an orphaned franchise has no vote; the 8-vote threshold does not change
   3.6   League Services Allocation votes: Commissioner's franchise does not
         vote; approval needs 8 of the other 11
-  19.4  Interim / permanent Commissioner chosen by majority vote
-  19.5  Commissioner removal: 8 of the other 11, Commissioner not voting
+  19.4  Review Panel: three owners from unaffected franchises, random draw
+  19.5  Interim / permanent Commissioner chosen by majority vote
   20.1  no amendment vote before the Offseason after Season 2027
   20.2  proposal posted at least 7 days before voting opens
   20.3  amendment votes: Offseason only, 7-day window, 8 of 12 affirmative;
@@ -46,7 +46,6 @@ class Kind:
 KINDS: dict[str, Kind] = {
     "amendment": Kind("amendment", "Material Amendment", True, True, False, "supermajority", "commissioner"),
     "services": Kind("services", "League Services Allocation change", True, True, True, "supermajority", "commissioner"),
-    "removal": Kind("removal", "Commissioner removal for cause", False, False, True, "supermajority", "owner"),
     "interim": Kind("interim", "Interim Commissioner", False, False, False, "majority", "owner"),
     "commissioner": Kind("commissioner", "Permanent Commissioner", False, False, False, "majority", "owner"),
 }
@@ -202,7 +201,7 @@ def can_cast(member_role_ids: set[int], owner_role_id: int | None, franchises: l
     if franchise.orphaned:
         return None, f"{franchise.name} is orphaned and has no vote while orphaned (2.3)."
     if kind.excludes_commissioner and franchise.commissioner:
-        return None, "The Commissioner's franchise does not vote on this (3.6, 19.5)."
+        return None, "The Commissioner's franchise does not vote on this (3.6)."
     return franchise, None
 
 
