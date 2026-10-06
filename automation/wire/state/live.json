@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T00:15:30.299354Z",
+  "updated_at": "2026-10-06T00:30:38.759002Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3482,6 +3482,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-06T00:15:30.244327Z"
+    },
+    {
+      "key": "e711dcd7696329eb2d71fe01",
+      "url": "https://www.sportsnet.ca/nhl/article/sharks-macklin-celebrini-ruled-out-vs-stars-with-lower-body-injury",
+      "fingerprint": "3deb7b18fd0ddd11",
+      "title_norm": "sharks' macklin celebrini ruled out vs. stars with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T00:30:38.311878Z"
+    },
+    {
+      "key": "14e68c2dc1591acb4b760292",
+      "url": "https://www.nhl.com/news/macklin-celebrini-out-with-lower-body-injury-for-san-jose-sharks",
+      "fingerprint": "8af75861287d5915",
+      "title_norm": "celebrini out with lower-body injury for sharks",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T00:30:38.642341Z"
     }
   ]
 }
