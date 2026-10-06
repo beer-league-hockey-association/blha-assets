@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T02:45:35.971678Z",
+  "updated_at": "2026-10-06T03:00:35.229711Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3552,6 +3552,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-06T02:45:35.887820Z"
+    },
+    {
+      "key": "9a24d6117f3690f8be0be6eb",
+      "url": "https://www.nhl.com/news/winnipeg-jets-pittsburgh-penguins-game-recap-october-5-2026",
+      "fingerprint": "15a87b0616bba155",
+      "title_norm": "jets surge with 3 goals in 3rd, hand penguins 1st loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T03:00:34.582441Z"
+    },
+    {
+      "key": "71640098942fa9b7e99c863b",
+      "url": "https://www.nhl.com/news/san-jose-sharks-dallas-stars-game-recap-october-5-2026",
+      "fingerprint": "a120e23714ca122e",
+      "title_norm": "oettinger makes 13 saves, stars shut out celebrini-less sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T03:00:34.949125Z"
+    },
+    {
+      "key": "c321bcff0ba0d6447eaa0f3a",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-score-three-third-period-goals-to-defeat-penguins",
+      "fingerprint": "f2e792e08b634ca4",
+      "title_norm": "jets score three third-period goals to defeat penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T03:00:35.208092Z"
     }
   ]
 }
