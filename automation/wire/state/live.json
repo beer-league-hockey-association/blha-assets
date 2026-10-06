@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T15:16:08.743446Z",
+  "updated_at": "2026-10-06T15:28:35.270151Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3702,6 +3702,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-06T15:16:08.688481Z"
+    },
+    {
+      "key": "e6e7e3b3a1755fba88176fd9",
+      "url": "https://www.dailyfaceoff.com/players/news/marco-kasper/36364",
+      "fingerprint": "cbb935f5db0b0af7",
+      "title_norm": "marco kasper (det) — kasper is week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T15:28:33.208021Z"
+    },
+    {
+      "key": "d3ecd0e8c57cc292e5f6260e",
+      "url": "https://www.nhl.com/news/ivan-demidov-injury-status-update-october-6-2026",
+      "fingerprint": "cab2ad121c25112d",
+      "title_norm": "demidov sidelined 2-4 weeks for canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T15:28:33.608427Z"
+    },
+    {
+      "key": "82d12d8099e9e8559223e0ec",
+      "url": "https://www.dailyfaceoff.com/players/news/j-t-compher/2751",
+      "fingerprint": "dcb3a6337ac9121e",
+      "title_norm": "j.t. compher (det) — compher is day-to-day with an undisclosed injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T15:28:34.096517Z"
+    },
+    {
+      "key": "898fb49104b2198c5e1cd216",
+      "url": "https://www.dailyfaceoff.com/players/news/mason-appleton/4582",
+      "fingerprint": "be3960d996af526f",
+      "title_norm": "mason appleton (det) — appleton is week-to-week with an undisclosed injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T15:28:34.482858Z"
+    },
+    {
+      "key": "b4f62cfd938a12fdc9c8c9c3",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-larkin/2522",
+      "fingerprint": "b0403d1e87edf3ce",
+      "title_norm": "dylan larkin (det) — larkin (upper-body) was a full participant in tuesday's morning skate and will be a game-time decision vs. the senators.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T15:28:34.498227Z"
+    },
+    {
+      "key": "c392b4c5429bb993f5aa09a0",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-dylan-larkin-likely-to-make-season-debut-against-senators",
+      "fingerprint": "61614fbf4e0301ce",
+      "title_norm": "red wings' dylan larkin 'likely' to make season debut against senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T15:28:34.795862Z"
     }
   ]
 }
