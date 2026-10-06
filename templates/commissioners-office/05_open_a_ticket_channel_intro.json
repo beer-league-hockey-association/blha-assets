@@ -11,14 +11,14 @@
     },
     {
       "title": "OPEN A TICKET",
-      "description": "Need the Commissioner? Pick the type of ticket from the menu below. A private channel opens for you and the commissioners. Nothing you write there is public.",
+      "description": "Need the Commissioner? Pick the type of ticket from the menu below. A private channel opens for you and the Commissioner. Nothing you write there is public.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMMISSIONER'S OFFICE"
       },
       "fields": [
         {
-          "name": "OPEN TO COMMISSIONERS",
+          "name": "OPEN A TICKET FOR",
           "value": "❓ General Help\n🔄 Trade Review\n⚖️ Rules Ruling / Appeal\n🏒 Roster / Fantrax Problem\n🎯 Draft Issue\n⚙️ Server / Bot Problem",
           "inline": true
         },
@@ -29,7 +29,7 @@
         },
         {
           "name": "TIMING",
-          "value": "A request to review a material Commissioner ruling must be made within 48 hours of the ruling (Article 19.4). A trade misclick or platform error must be reported within 48 hours of the trade processing (11.2).",
+          "value": "A request to review a material Commissioner ruling must be made within 48 hours of the ruling (Section 19.4). A trade misclick or platform error must be reported within 48 hours of the trade processing (Section 11.2).",
           "inline": false
         },
         {

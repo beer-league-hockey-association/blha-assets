@@ -24,7 +24,7 @@
         },
         {
           "name": "APPEALS",
-          "value": "A directly affected franchise may request review within 48 hours. A panel of three unaffected owners, drawn at random, decides by majority within 7 days.",
+          "value": "A directly affected franchise may request review within 48 hours by opening an Appeal ticket in **open-a-ticket** (Section 19.4). A panel of three unaffected owners, drawn at random, decides by majority within 7 days.",
           "inline": false
         }
       ],

@@ -13,12 +13,12 @@ This repository is public so Discord and Discohook can load approved images dire
 - Discord webhook URLs belong in GitHub Actions Secrets and must never be committed to the repository.
 
 ## Constitution
-The Constitution (Version 2.2, Charter Edition) is generated from one source file:
+The Constitution (Charter Edition) is generated from one source file:
 `tools/constitution_source.py`
 
 Run `python3 tools/build_constitution.py --pdf` to rebuild everything from it:
-- `constitution/BLHA_Constitution_v2.2.pdf` and `.md` (owner-facing copies)
-- `constitution/BLHA_Constitution_v2.2_discohook_backup.json` (all Discord messages in one Discohook backup)
+- `constitution/BLHA_Constitution.pdf` and `.md` (owner-facing copies)
+- `constitution/BLHA_Constitution_discohook_backup.json` (all Discord messages in one Discohook backup)
 - `templates/constitution/` (one Discohook JSON per Discord message)
 
 The earlier Version 1.1 draft is kept in `constitution/archive/`.

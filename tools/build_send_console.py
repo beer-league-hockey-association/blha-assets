@@ -39,7 +39,7 @@ BUNDLES = [
     ("02_Calendar", "league-calendar", "Calendar event, deadline reminder, calendar published, date change"),
     ("03_Ledger", "league-ledger", "Season ledger, dues status, prize pool, payment confirmed, prize paid, Dynasty Pot update"),
     ("04_Voting", "league-voting", "Amendment proposal, official vote, vote result"),
-    ("05_Constitution_and_Rulings", "constitution and rulings-log", "New version, amendment, rule ruling, recusal notice, appeal outcome"),
+    ("05_Constitution_and_Rulings", "constitution and rulings-log", "Constitution updated, amendment, rule ruling, recusal notice, appeal outcome"),
     ("06_Honors_and_Records", "hall-of-champions", "Champion crowned, Presidents' Trophy, Dynasty Pot won"),
     ("07_Ownership", "announcements", "New owner, franchise seeking an owner, Commissioner transition"),
     ("08_Trades", "completed-trades", "Trade completed"),

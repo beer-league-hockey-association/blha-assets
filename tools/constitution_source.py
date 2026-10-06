@@ -15,10 +15,9 @@ Text conventions:
 
 from __future__ import annotations
 
-VERSION = "2.2"
 EDITION = "Charter Edition"
 TAGLINE = "A permanent framework for competition, governance, and long-term franchise management."
-FOOTER = "BLHA CONSTITUTION • VERSION 2.2"
+FOOTER = "BLHA CONSTITUTION • CHARTER EDITION"
 
 GLANCE_STATS = [
     ("12", "Franchises"),
@@ -307,10 +306,10 @@ ARTICLES = [
             ("p", "**Voting.** Votes are held only during the Offseason. The voting window is 7 days. Each franchise casts one vote through the league's designated voting channel or method. Approval requires at least 8 affirmative votes out of 12. Non-votes and abstentions are not affirmative votes."),
             ("p", "**Timing.** An approved amendment takes effect for the next Season, or on the later date it states. To apply to a Season it must be approved before that Season's dues deadline, so every owner knows the rules before paying."),
             ("p", "Amendments do not retroactively alter completed competition, previously earned prizes, or finalized transactions."),
-            ("p", "**Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is numbered, dated, and posted, and prior versions are archived."),
+            ("p", "**Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is dated and posted, and prior versions are archived."),
             ("p", "**Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV."),
-            ("p", "The latest published version of this Constitution is the controlling league document. Upon adoption of Version 2.2, all prior working drafts are superseded except as historical records."),
-            ("history", [("2.2", "Charter Edition. Adopted by owner acceptance. Effective Season 2027.")]),
+            ("p", "The latest published version of this Constitution is the controlling league document. Upon adoption of the Charter, all prior working drafts are superseded except as historical records."),
+            ("history", [("Charter", "Adopted by owner acceptance. Effective Season 2027.")]),
         ],
     },
 ]

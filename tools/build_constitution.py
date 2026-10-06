@@ -3,9 +3,9 @@
 
 Outputs
 - templates/constitution/NN_*.json   Discohook messages (one JSON per Discord message)
-- constitution/BLHA_Constitution_vX.Y.md
-- constitution/BLHA_Constitution_vX.Y_discohook_backup.json   all messages in one Discohook backup
-- constitution/BLHA_Constitution_vX.Y.pdf   (when --pdf is given)
+- constitution/BLHA_Constitution.md
+- constitution/BLHA_Constitution_discohook_backup.json   all messages in one Discohook backup
+- constitution/BLHA_Constitution.pdf   (when --pdf is given)
 
 Usage: python3 tools/build_constitution.py [--pdf]
 """
@@ -55,7 +55,7 @@ def article_lines(art: dict, fmt: str) -> list[str]:
         elif kind == "dates":
             lines.append("\n".join(f"• **{k}:** {v}" for k, v in S.DATE_RULES))
         elif kind == "history":
-            lines.append("**VERSION HISTORY**\n" + "\n".join(f"• **{v}** — {t}" for v, t in block[1]))
+            lines.append("**HISTORY**\n" + "\n".join(f"• **{v}** — {t}" for v, t in block[1]))
     return lines
 
 
@@ -100,7 +100,7 @@ def make_embeds() -> list[dict]:
     qr = "\n".join(f"• **{k}:** {v}" for k, v in S.QUICK_REFERENCE)
     embeds.append({
         "title": "BLHA CONSTITUTION — QUICK REFERENCE",
-        "description": f"**Version {S.VERSION} • {S.EDITION}**\n\n{qr}",
+        "description": f"**{S.EDITION}**\n\n{qr}",
         "color": GOLD, "footer": {"text": S.FOOTER},
     })
     alloc = "\n".join(f"• {k} — **${v:,}**" for k, v in S.ALLOCATION)
@@ -159,7 +159,7 @@ def build_discord() -> list[tuple[str, dict]]:
 
 # -------------------------------------------------------------------- Markdown
 def build_markdown() -> str:
-    md = [f"# BLHA Constitution — Version {S.VERSION} ({S.EDITION})", "", f"*{S.TAGLINE}*", ""]
+    md = [f"# BLHA Constitution — {S.EDITION}", "", f"*{S.TAGLINE}*", ""]
     md += ["## Quick Reference", ""] + [f"- **{k}:** {v}" for k, v in S.QUICK_REFERENCE] + [""]
     md += ["## Annual Financial Allocation", "", "| Allocation | Amount |", "|---|---:|"]
     md += [f"| {k} | ${v:,} |" for k, v in S.ALLOCATION] + [f"| **Total** | **${S.ALLOCATION_TOTAL:,}** |", ""]
@@ -231,7 +231,7 @@ def build_pdf(path: Path) -> None:
         c.drawString(1.4 * inch, H - 4.9 * inch, "and long-term franchise management.")
         c.setFillColor(colors.HexColor("#1F2023")); c.setStrokeColor(GOLDC); c.setLineWidth(1.6)
         c.roundRect(1.4 * inch, H - 6.35 * inch, 3.9 * inch, 0.85 * inch, 9, stroke=1, fill=1)
-        c.setFillColor(CREAM); c.setFont("Head-Med", 11); c.drawString(1.62 * inch, H - 5.95 * inch, f"VERSION {S.VERSION}  •  {S.EDITION.upper()}")
+        c.setFillColor(CREAM); c.setFont("Head-Med", 11); c.drawString(1.62 * inch, H - 5.95 * inch, S.EDITION.upper())
         c.setFillColor(colors.HexColor("#B9BBC0")); c.setFont("Body", 9.5)
         c.drawString(1.62 * inch, H - 6.2 * inch, "Established 2026  •  Inaugural Season 2027–28")
         c.setFillColor(GOLDC); c.setFont("Head", 10); c.drawString(1.4 * inch, 1.15 * inch, "FANTRAX RUNS THE GAME.  DISCORD RUNS THE LEAGUE.")
@@ -240,7 +240,7 @@ def build_pdf(path: Path) -> None:
     def on_page(c, d):
         c.setFillColor(GREY); c.setFont("Head", 7.5)
         c.drawString(LM, H - 0.6 * inch, "BLHA  /  CONSTITUTION")
-        c.setFillColor(GOLDC); c.drawString(LM + 1.56 * inch, H - 0.6 * inch, f"VERSION {S.VERSION}")
+        c.setFillColor(GOLDC); c.drawString(LM + 1.56 * inch, H - 0.6 * inch, S.EDITION.upper())
         c.drawImage(logo_black, W - RM - 1.1 * inch, H - 0.78 * inch, width=1.1 * inch, height=1.1 * inch * 1086 / 1448, mask="auto")
         c.setStrokeColor(GOLDC); c.setLineWidth(0.8); c.line(LM, 0.72 * inch, W - RM, 0.72 * inch)
         c.setFillColor(GREY); c.setFont("Body-Bold", 8)
@@ -248,7 +248,7 @@ def build_pdf(path: Path) -> None:
         c.drawRightString(W - RM, 0.55 * inch, f"PAGE {d.page}")
 
     doc = BaseDocTemplate(str(path), pagesize=letter, leftMargin=LM, rightMargin=RM, topMargin=1.05 * inch, bottomMargin=0.95 * inch,
-                          title=f"BLHA Constitution v{S.VERSION}", author="Beer League Hockey Association")
+                          title="BLHA Constitution", author="Beer League Hockey Association")
     frame = Frame(LM, 0.95 * inch, W - LM - RM, H - 2.0 * inch, id="f", leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
     doc.addPageTemplates([PageTemplate(id="cover", frames=[frame], onPage=on_cover),
                           PageTemplate(id="page", frames=[frame], onPage=on_page)])
@@ -358,7 +358,7 @@ def build_pdf(path: Path) -> None:
                                         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("TOPPADDING", (0, 0), (-1, -1), 3.5), ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5), ("LEFTPADDING", (0, 0), (-1, -1), 7)]))
                 story += [dt, Spacer(1, 7)]
             elif kind == "history":
-                rows = [[Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">VERSION</font>', small), Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">CHANGE</font>', small)]]
+                rows = [[Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">EDITION</font>', small), Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">CHANGE</font>', small)]]
                 rows += [[Paragraph(f"<b>{v}</b>", small), Paragraph(md(t), small)] for v, t in block[1]]
                 ht = Table(rows, colWidths=[0.9 * inch, cw - 0.9 * inch])
                 ht.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), CHAR), ("TOPPADDING", (0, 0), (-1, -1), 3.5), ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5)]))
@@ -386,13 +386,12 @@ def main() -> None:
             assert len(e.get("title", "")) <= 256
         print(f"{name}: {len(data['embeds'])} embeds, {counted} chars")
 
-    tag = f"v{S.VERSION}"
-    (OUT_DOCS / f"BLHA_Constitution_{tag}.md").write_text(build_markdown(), encoding="utf-8")
+    (OUT_DOCS / "BLHA_Constitution.md").write_text(build_markdown(), encoding="utf-8")
     backup = {"messages": [{"data": d} for _, d in msgs]}
-    (OUT_DOCS / f"BLHA_Constitution_{tag}_discohook_backup.json").write_text(json.dumps(backup, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (OUT_DOCS / "BLHA_Constitution_discohook_backup.json").write_text(json.dumps(backup, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if "--pdf" in sys.argv:
-        build_pdf(OUT_DOCS / f"BLHA_Constitution_{tag}.pdf")
-    print(f"Built {len(msgs)} Discord messages for Constitution {tag}.")
+        build_pdf(OUT_DOCS / "BLHA_Constitution.pdf")
+    print(f"Built {len(msgs)} Discord messages for the Constitution.")
 
 
 if __name__ == "__main__":

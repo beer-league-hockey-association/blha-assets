@@ -29,8 +29,8 @@
           "inline": false
         },
         {
-          "name": "VERSION",
-          "value": "Now part of Version `[X.X]`",
+          "name": "STATUS",
+          "value": "Now part of the current Constitution",
           "inline": false
         }
       ],
