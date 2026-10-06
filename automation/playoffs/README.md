@@ -8,6 +8,8 @@ Live playoff bracket for the league's six-team head-to-head format.
 - Round 2 (Semifinals): reseed. Seed 1 plays the lowest-ranked survivor, Seed 2 the highest-ranked survivor
 - Round 3: Championship
 - A tied playoff matchup goes to the higher seed
+- Third place: the two Semifinal losers, shown during the Championship. The post uses the third-place matchup you enter in Fantrax; if Fantrax can't stage it, it compares their Championship-period totals (Constitution 16.3 and 16.4)
+- Consolation bracket: the six non-playoff teams, seeded 1 to 6 by regular-season rank, same format (16.7). Its champion is flagged for the $50 FAAB bonus
 
 Playoff weeks, number of playoff teams and the last regular-season week come from Fantrax (`getLeagueInfo`).
 
@@ -15,7 +17,7 @@ Playoff weeks, number of playoff teams and the last regular-season week come fro
 
 The BLHA Scheduler starts it **hourly during playoff weeks only** (`automation/scheduler/schedule.yaml`).
 
-1. **Seeds save themselves.** On the first run after Fantrax has counted every regular-season week, the final standings are saved as the playoff seeds in `state/playoff.json`. Later playoff results can never reshuffle them. If seeds were somehow never saved and the playoffs are already past round 1, the run fails loudly (Automation Health reports it) instead of guessing.
+1. **Seeds save themselves.** On the first run after Fantrax has counted every regular-season week, the final standings are saved as the playoff seeds (and the consolation seeds) in `state/playoff.json`. Later playoff results can never reshuffle them. If seeds were somehow never saved and the playoffs are already past round 1, the run fails loudly (Automation Health reports it) instead of guessing.
 2. **One message per round.** When a round starts, a new bracket message is posted so members are notified. During the round the same message is edited as scores change. Edits are silent.
 
 ## Manual modes (Actions tab)

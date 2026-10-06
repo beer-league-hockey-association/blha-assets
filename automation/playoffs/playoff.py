@@ -3,7 +3,10 @@
 
   Round 1: 3 vs 6 and 4 vs 5; Seeds 1 and 2 receive byes.
   Round 2: reseed. Seed 1 plays the lowest-ranked survivor, Seed 2 the highest.
-  Round 3: championship.
+  Round 3: championship (two weeks, cumulative).
+
+Also shows the third-place race between the Semifinal losers (16.3, with
+the 16.4 points fallback) and the six-team consolation bracket (16.7).
 
 Runs only during the playoff weeks (see automation/scheduler/schedule.yaml).
 
@@ -95,14 +98,6 @@ def period_results(
     return results
 
 
-def winners_from(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return [
-        result["winner"]
-        for result in results
-        if isinstance(result.get("winner"), dict)
-    ]
-
-
 def expected_round1(
     seeds: dict[int, dict[str, Any]],
 ) -> list[tuple[dict[str, Any] | None, dict[str, Any] | None]]:
@@ -180,6 +175,53 @@ def matchup_text(
     )
 
 
+def third_place_text(third: dict[str, Any], seeds: dict[int, dict[str, Any]]) -> str:
+    status = third.get("status")
+    pair = third.get("pair") or (None, None)
+    if status == "waiting":
+        return "The two Semifinal losers play for third place during the Championship."
+    if status == "matchup":
+        return matchup_text(pair, seeds, third.get("score"), third.get("winner"))
+    if status == "fallback":
+        a, b = third["totals"]
+        lines = [
+            f"**{label_team(pair[0], seeds)}** — {a:.2f}",
+            f"**{label_team(pair[1], seeds)}** — {b:.2f}",
+            "*No third-place matchup in Fantrax: the higher Championship-period total takes third.*",
+        ]
+        if third.get("winner"):
+            lines.append(f"Third place: **{label_team(third['winner'], seeds)}**")
+        return "\n".join(lines)
+    text = matchup_text(pair, seeds)
+    if status == "no_matchup":
+        text += "\n*Waiting for the third-place matchup in Fantrax.*"
+    return text
+
+
+def round_value(items: list[dict[str, Any]], seeds: dict[int, dict[str, Any]]) -> str:
+    return "\n\n".join(
+        matchup_text(item["pair"], seeds, item.get("score"), item.get("winner"))
+        for item in items
+    ) or "TBD"
+
+
+def consolation_fields(extras: dict[str, Any]) -> list[dict[str, Any]]:
+    rounds = extras.get("consolation")
+    seeds = extras.get("consolation_seeds") or {}
+    if not rounds:
+        return []
+    r1 = "**Seeds 1 and 2 — BYE**\n\n" + round_value(rounds[1]["matchups"], seeds)
+    final = round_value(rounds[3]["matchups"], seeds)
+    champ = rounds[3]["matchups"][0].get("winner")
+    if champ:
+        final += f"\n\n**{champ['teamName']}** wins the consolation bracket and a $50 FAAB bonus next Season."
+    return [
+        {"name": "CONSOLATION — ROUND 1", "value": r1, "inline": False},
+        {"name": "CONSOLATION — SEMIFINALS", "value": round_value(rounds[2]["matchups"], seeds), "inline": False},
+        {"name": "CONSOLATION — FINAL", "value": final, "inline": False},
+    ]
+
+
 def build_payload(
     info: dict[str, Any],
     seeds: dict[int, dict[str, Any]],
@@ -187,6 +229,7 @@ def build_payload(
     cfg: dict[str, Any],
     status: str,
     test: bool = False,
+    extras: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     title = "[TEST] BLHA Playoffs" if test else "BLHA Playoffs"
     league = str(info.get("leagueName") or "Beer League Hockey Association")
@@ -251,6 +294,15 @@ def build_payload(
         }
     )
 
+    extras = extras or {}
+    if extras.get("third"):
+        fields.append({
+            "name": "THIRD PLACE",
+            "value": third_place_text(extras["third"], seeds),
+            "inline": False,
+        })
+    fields.extend(consolation_fields(extras))
+
     description = f"**{league}**"
     if season_label:
         description += f" • {season_label}"
@@ -307,6 +359,23 @@ def standings_seed_map(
     }
 
 
+def consolation_seed_map(
+    standings: list[dict[str, Any]],
+    cutoff: int,
+) -> dict[int, dict[str, Any]] | None:
+    """Non-playoff teams seeded 1 to 6 by regular-season rank (16.7)."""
+    rest = standings[cutoff:cutoff + 6]
+    if len(rest) < 6:
+        return None
+    return {
+        i: {
+            "teamId": row["teamId"],
+            "teamName": row["teamName"],
+            "record": row["record"],
+            "pointsFor": row["pointsFor"],
+        }
+        for i, row in enumerate(rest, start=1)
+    }
 
 
 def seeds_ready(info: dict[str, Any], standings: list[dict[str, Any]]) -> bool:
@@ -314,6 +383,129 @@ def seeds_ready(info: dict[str, Any], standings: list[dict[str, Any]]) -> bool:
     last_regular, _, _ = season.playoff_settings(info)
     counted = games_counted(standings)
     return counted is not None and counted >= last_regular
+
+
+def in_bracket(team: dict[str, Any] | None, seeds: dict[int, dict[str, Any]]) -> bool:
+    return seed_of(team, seeds) is not None
+
+
+def bracket_winners(
+    results: list[dict[str, Any]],
+    seeds: dict[int, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Winners of this bracket's matchups only.
+
+    A playoff week also holds consolation and third-place matchups, so
+    results are filtered to games where both teams belong to ``seeds``.
+    """
+    return [
+        r["winner"]
+        for r in results
+        if isinstance(r.get("winner"), dict)
+        and in_bracket(r["matchup"]["away"], seeds)
+        and in_bracket(r["matchup"]["home"], seeds)
+    ]
+
+
+def bracket_losers(
+    results: list[dict[str, Any]],
+    seeds: dict[int, dict[str, Any]],
+) -> list[dict[str, Any]]:
+    return [
+        r["loser"]
+        for r in results
+        if isinstance(r.get("loser"), dict)
+        and in_bracket(r["matchup"]["away"], seeds)
+        and in_bracket(r["matchup"]["home"], seeds)
+    ]
+
+
+def find_score(
+    scores: list[dict[str, Any]],
+    pair: tuple[dict[str, Any] | None, dict[str, Any] | None],
+) -> dict[str, Any] | None:
+    ids = {str(t["teamId"]) for t in pair if t}
+    if len(ids) != 2:
+        return None
+    return next(
+        (m for m in scores if {m["away"]["teamId"], m["home"]["teamId"]} == ids),
+        None,
+    )
+
+
+def bracket_rounds(
+    seeds: dict[int, dict[str, Any]],
+    scores_by: dict[int, list[dict[str, Any]]],
+    final_by: dict[int, bool],
+    first: int,
+) -> dict[int, dict[str, Any]]:
+    """Three rounds of a six-team bracket (byes for 1 and 2, reseeding).
+
+    Used for the playoffs and, with its own seeds, the consolation bracket
+    (16.7). Weeks missing from ``scores_by`` have not started.
+    """
+    def results(number: int) -> list[dict[str, Any]]:
+        return period_results(scores_by.get(number, []), seeds, final_by.get(number, False))
+
+    def items(pairs: list[tuple], number: int) -> list[dict[str, Any]]:
+        scores = scores_by.get(number, [])
+        done = results(number)
+        out = []
+        for pair in pairs:
+            score = find_score(scores, pair)
+            winner = None
+            if score:
+                for r in done:
+                    if r["matchup"] is score:
+                        winner = r["winner"]
+            out.append({"pair": pair, "score": score, "winner": winner})
+        return out
+
+    r1 = items(expected_round1(seeds), first)
+    r2 = items(expected_semis(seeds, bracket_winners(results(first), seeds)), first + 1)
+    r3 = items(expected_final(bracket_winners(results(first + 1), seeds)), first + 2)
+    return {1: {"matchups": r1}, 2: {"matchups": r2}, 3: {"matchups": r3}}
+
+
+def third_place(
+    seeds: dict[int, dict[str, Any]],
+    scores_by: dict[int, list[dict[str, Any]]],
+    final_by: dict[int, bool],
+    first: int,
+) -> dict[str, Any]:
+    """The third-place race between the two Semifinal losers (16.3, 16.4).
+
+    Preferred: the third-place matchup the Commissioner enters in Fantrax.
+    Fallback (16.4): the loser with more points over the championship period.
+    An exact tie goes to the higher playoff seed (16.5).
+    """
+    semis = period_results(scores_by.get(first + 1, []), seeds, final_by.get(first + 1, False))
+    losers = bracket_losers(semis, seeds)
+    if len(losers) < 2:
+        return {"status": "waiting", "pair": (None, None)}
+    losers.sort(key=lambda t: seed_of(t, seeds) or 99)
+    pair = (losers[0], losers[1])
+    if first + 2 not in scores_by:
+        return {"status": "set", "pair": pair}
+    scores = scores_by[first + 2]
+    final = final_by.get(first + 2, False)
+    score = find_score(scores, pair)
+    if score:
+        winner = completed_result(score, seeds)[0] if final else None
+        return {"status": "matchup", "pair": pair, "score": score, "winner": winner}
+
+    totals: dict[str, float] = {}
+    for m in scores:
+        for side in ("away", "home"):
+            if m[side]["teamId"] in {pair[0]["teamId"], pair[1]["teamId"]}:
+                totals[m[side]["teamId"]] = m[side]["score"]
+    if len(totals) < 2:
+        return {"status": "no_matchup", "pair": pair}
+    a, b = (totals[pair[0]["teamId"]], totals[pair[1]["teamId"]])
+    winner = None
+    if final:
+        winner = pair[0] if a >= b else pair[1]  # pair[0] is the higher seed
+    return {"status": "fallback", "pair": pair, "totals": (a, b), "winner": winner}
 
 
 def build_rounds(
@@ -325,67 +517,35 @@ def build_rounds(
     tz: ZoneInfo,
     *,
     simulate: bool = False,
-) -> tuple[dict[int, dict[str, Any]], str]:
-    """Assemble the three bracket rounds from Fantrax playoff matchup scores."""
+    consolation: dict[int, dict[str, Any]] | None = None,
+) -> tuple[dict[int, dict[str, Any]], str, dict[str, Any]]:
+    """Assemble the playoff rounds, third place and consolation from Fantrax."""
     _, first, _ = season.playoff_settings(info)
     weeks = {p.number: p for p in season.periods(info)}
 
-    if current is None or current < first:
-        r1 = expected_round1(seeds)
-        rounds = {
-            1: {"matchups": [{"pair": r1[0]}, {"pair": r1[1]}]},
-            2: {"matchups": [{"pair": (seeds.get(1), None)}, {"pair": (seeds.get(2), None)}]},
-            3: {"matchups": [{"pair": (None, None)}]},
-        }
-        return rounds, "PLAYOFFS NOT STARTED"
-
     scores_by: dict[int, list[dict[str, Any]]] = {}
-    results_by: dict[int, list[dict[str, Any]]] = {}
-    for number in (first, first + 1, first + 2):
-        if number > current or number not in weeks:
-            break
-        scores = fx.matchup_scores(number)
-        complete = False if simulate else season.is_final(weeks[number], now, tz)
-        scores_by[number] = scores
-        results_by[number] = period_results(scores, seeds, complete)
-        print(f"week={number} matchups={len(scores)} final={complete}")
+    final_by: dict[int, bool] = {}
+    started = current is not None and current >= first
+    if started:
+        for number in (first, first + 1, first + 2):
+            if number > current or number not in weeks:
+                break
+            scores_by[number] = fx.matchup_scores(number)
+            final_by[number] = False if simulate else season.is_final(weeks[number], now, tz)
+            print(f"week={number} matchups={len(scores_by[number])} final={final_by[number]}")
 
-    def attach(pairs: list[tuple], number: int, by_seed: bool) -> list[dict[str, Any]]:
-        scores = scores_by.get(number, [])
-        items = []
-        for pair in pairs:
-            if by_seed:
-                target = {seed_of(pair[0], seeds), seed_of(pair[1], seeds)}
-                score = next((m for m in scores
-                              if {seed_of(m["away"], seeds), seed_of(m["home"], seeds)} == target), None)
-            else:
-                target = {t["teamId"] for t in pair if t is not None}
-                score = next((m for m in scores
-                              if {m["away"]["teamId"], m["home"]["teamId"]} == target), None)
-            items.append({"pair": pair, "score": score, "winner": None})
-        for result in results_by.get(number, []):
-            winner = result["winner"]
-            if not winner:
-                continue
-            for item in items:
-                s = item.get("score")
-                if s and winner["teamId"] in (s["away"]["teamId"], s["home"]["teamId"]):
-                    item["winner"] = winner
-        return items
+    rounds = bracket_rounds(seeds, scores_by, final_by, first)
+    extras: dict[str, Any] = {"third": third_place(seeds, scores_by, final_by, first)}
+    if consolation and len(consolation) >= 6:
+        extras["consolation"] = bracket_rounds(consolation, scores_by, final_by, first)
+        extras["consolation_seeds"] = consolation
 
-    r1_items = attach(expected_round1(seeds), first, True)
-    r2_items = attach(expected_semis(seeds, winners_from(results_by.get(first, []))), first + 1, False)
-    r3_pairs = expected_final(winners_from(results_by.get(first + 1, [])))
-    r3_scores = scores_by.get(first + 2, [])
-    r3_results = results_by.get(first + 2, [])
-    r3_items = [{
-        "pair": r3_pairs[0],
-        "score": r3_scores[0] if len(r3_scores) == 1 else None,
-        "winner": r3_results[0]["winner"] if r3_results else None,
-    }]
+    if not started:
+        return rounds, "PLAYOFFS NOT STARTED", extras
     names = {first: "QUARTERFINALS", first + 1: "SEMIFINALS", first + 2: "CHAMPIONSHIP"}
-    status = "CHAMPION CROWNED" if r3_items[0]["winner"] else names.get(current, f"PLAYOFF WEEK {current}")
-    return {1: {"matchups": r1_items}, 2: {"matchups": r2_items}, 3: {"matchups": r3_items}}, status
+    champion = rounds[3]["matchups"][0].get("winner")
+    status = "CHAMPION CROWNED" if champion else names.get(current, f"PLAYOFF WEEK {current}")
+    return rounds, status, extras
 
 
 def main() -> int:
@@ -420,12 +580,16 @@ def main() -> int:
 
     state = load_json(STATE_PATH, {})
     stored = state.get("seeds") if isinstance(state.get("seeds"), dict) else None
+    stored_cons = state.get("consolation_seeds") if isinstance(state.get("consolation_seeds"), dict) else None
     if stored and len(stored) >= cutoff:
         seeds = {int(k): v for k, v in stored.items() if str(k).isdigit()}
+        consolation = ({int(k): v for k, v in stored_cons.items() if str(k).isdigit()}
+                       if stored_cons else None)
         seed_source = "saved final regular-season seeds"
     else:
         stored = None
         seeds = standings_seed_map(standings, cutoff)
+        consolation = consolation_seed_map(standings, cutoff)
         seed_source = "current Fantrax standings"
 
     print(f"BLHA PLAYOFFS mode={args.mode.upper()} season={season.describe(info, now)} "
@@ -441,6 +605,8 @@ def main() -> int:
                   "refusing to infer seeds from playoff-era standings.")
             return 1
         state["seeds"] = {str(k): v for k, v in sorted(seeds.items())}
+        if consolation:
+            state["consolation_seeds"] = {str(k): v for k, v in sorted(consolation.items())}
         state["recorded_at"] = now.isoformat()
         save_json(STATE_PATH, state)
         print("SEEDS SAVED from final regular-season standings:")
@@ -452,8 +618,9 @@ def main() -> int:
         print("RESULT: seeds were already saved; nothing to do.")
         return 0
 
-    rounds, status = build_rounds(fx, info, seeds, current, now, tz, simulate=args.week is not None)
-    payload = build_payload(info, seeds, rounds, cfg, status, test=args.mode == "test")
+    rounds, status, extras = build_rounds(fx, info, seeds, current, now, tz,
+                                          simulate=args.week is not None, consolation=consolation)
+    payload = build_payload(info, seeds, rounds, cfg, status, test=args.mode == "test", extras=extras)
     fp = semantic_fingerprint(payload)
 
     if args.mode == "preview":
