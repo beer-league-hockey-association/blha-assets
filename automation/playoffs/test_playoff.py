@@ -77,5 +77,107 @@ class PlayoffLogicTests(unittest.TestCase):
         )
 
 
+def team(tid: str, score: float = 0.0) -> dict:
+    return {"teamId": tid, "teamName": f"Team {tid}", "score": score, "gamesPlayed": 0.0}
+
+
+def game(a: str, sa: float, b: str, sb: float) -> dict:
+    return {"away": team(a, sa), "home": team(b, sb)}
+
+
+class BracketTests(unittest.TestCase):
+    """Playoffs, third place and consolation in shared playoff weeks."""
+
+    def setUp(self) -> None:
+        self.seeds = {n: {"teamId": f"t{n}", "teamName": f"Team t{n}", "record": "", "pointsFor": 0.0}
+                      for n in range(1, 7)}
+        self.cons = {n: {"teamId": f"c{n}", "teamName": f"Team c{n}", "record": "", "pointsFor": 0.0}
+                     for n in range(1, 7)}
+        # Week 23: QFs plus consolation round 1 in the same Fantrax week.
+        self.w1 = [game("t3", 100, "t6", 90), game("t4", 80, "t5", 85),
+                   game("c3", 70, "c6", 75), game("c4", 60, "c5", 50)]
+        # Week 24: semis (1 v 6 worst survivor... here 5, 2 v 3) plus consolation semis.
+        self.w2 = [game("t1", 110, "t5", 120), game("t2", 95, "t3", 99),
+                   game("c1", 50, "c6", 40), game("c2", 45, "c4", 47)]
+
+    def scores(self, *weeks):
+        return {23 + i: w for i, w in enumerate(weeks)}
+
+    def finals(self, n):
+        return {23 + i: True for i in range(n)}
+
+    def test_consolation_games_do_not_leak_into_playoff_semis(self) -> None:
+        rounds = playoff.bracket_rounds(self.seeds, self.scores(self.w1), self.finals(1), 23)
+        semis = [tuple(t["teamId"] for t in item["pair"]) for item in rounds[2]["matchups"]]
+        self.assertEqual(semis, [("t1", "t5"), ("t2", "t3")])
+
+    def test_final_score_found_among_other_matchups(self) -> None:
+        w3 = [game("c1", 130, "c4", 120), game("t5", 200, "t3", 210), game("t1", 150, "t2", 140)]
+        rounds = playoff.bracket_rounds(self.seeds, self.scores(self.w1, self.w2, w3), self.finals(3), 23)
+        final = rounds[3]["matchups"][0]
+        self.assertIsNotNone(final["score"])
+        self.assertEqual(final["winner"]["teamId"], "t3")
+
+    def test_consolation_bracket_uses_its_own_seeds(self) -> None:
+        w3 = [game("c1", 130, "c4", 120), game("t5", 200, "t3", 210)]
+        rounds = playoff.bracket_rounds(self.cons, self.scores(self.w1, self.w2, w3), self.finals(3), 23)
+        r2 = [tuple(t["teamId"] for t in item["pair"]) for item in rounds[2]["matchups"]]
+        self.assertEqual(r2, [("c1", "c6"), ("c2", "c4")])
+        self.assertEqual(rounds[3]["matchups"][0]["winner"]["teamId"], "c1")
+
+    def test_third_place_waits_for_semis(self) -> None:
+        third = playoff.third_place(self.seeds, self.scores(self.w1), self.finals(1), 23)
+        self.assertEqual(third["status"], "waiting")
+
+    def test_third_place_from_fantrax_matchup(self) -> None:
+        w3 = [game("t5", 200, "t3", 210), game("t1", 150, "t2", 160)]
+        third = playoff.third_place(self.seeds, self.scores(self.w1, self.w2, w3), self.finals(3), 23)
+        self.assertEqual(third["status"], "matchup")
+        self.assertEqual(third["winner"]["teamId"], "t2")
+
+    def test_third_place_matchup_tie_goes_to_higher_seed(self) -> None:
+        w3 = [game("t5", 200, "t3", 210), game("t2", 150, "t1", 150)]
+        third = playoff.third_place(self.seeds, self.scores(self.w1, self.w2, w3), self.finals(3), 23)
+        self.assertEqual(third["winner"]["teamId"], "t1")
+
+    def test_third_place_no_winner_until_final(self) -> None:
+        w3 = [game("t5", 200, "t3", 210), game("t1", 150, "t2", 160)]
+        finals = {23: True, 24: True, 25: False}
+        third = playoff.third_place(self.seeds, self.scores(self.w1, self.w2, w3), finals, 23)
+        self.assertIsNone(third["winner"])
+
+    def test_third_place_without_matchup_shows_waiting(self) -> None:
+        w3 = [game("t5", 200, "t3", 210)]
+        third = playoff.third_place(self.seeds, self.scores(self.w1, self.w2, w3), self.finals(3), 23)
+        self.assertEqual(third["status"], "no_matchup")
+
+    def test_payload_has_third_place_and_consolation_fields(self) -> None:
+        w3 = [game("c1", 130, "c4", 120), game("t5", 200, "t3", 210), game("t1", 150, "t2", 160)]
+        sc, fin = self.scores(self.w1, self.w2, w3), self.finals(3)
+        rounds = playoff.bracket_rounds(self.seeds, sc, fin, 23)
+        extras = {
+            "third": playoff.third_place(self.seeds, sc, fin, 23),
+            "consolation": playoff.bracket_rounds(self.cons, sc, fin, 23),
+            "consolation_seeds": self.cons,
+        }
+        payload = playoff.build_payload({}, self.seeds, rounds, {}, "CHAMPION CROWNED", extras=extras)
+        fields = payload["embeds"][0]["fields"]
+        names = [f["name"] for f in fields]
+        self.assertIn("THIRD PLACE", names)
+        self.assertIn("CONSOLATION — FINAL", names)
+        cons_final = next(f for f in fields if f["name"] == "CONSOLATION — FINAL")["value"]
+        self.assertIn("$50 FAAB", cons_final)
+        self.assertTrue(all(len(f["value"]) <= 1024 for f in fields))
+        embed = payload["embeds"][0]
+        total = len(embed["title"]) + len(embed["description"]) + sum(len(f["name"]) + len(f["value"]) for f in fields)
+        self.assertLess(total, 6000)
+
+    def test_consolation_seed_map_needs_six_teams(self) -> None:
+        rows = [{"teamId": f"x{i}", "teamName": f"X{i}", "record": "", "pointsFor": 0.0} for i in range(12)]
+        cons = playoff.consolation_seed_map(rows, 6)
+        self.assertEqual(cons[1]["teamId"], "x6")
+        self.assertIsNone(playoff.consolation_seed_map(rows[:10], 6))
+
+
 if __name__ == "__main__":
     unittest.main()
