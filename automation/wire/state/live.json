@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T00:30:38.759002Z",
+  "updated_at": "2026-10-06T01:45:34.549925Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3502,6 +3502,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-06T00:30:38.642341Z"
+    },
+    {
+      "key": "e3e0724a0d0de5e3bfb83dd7",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "9d57c3b841ce9672",
+      "title_norm": "linus ullmark (ott) — ullmark (undisclosed) did not return to the crease for the third period.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T01:45:34.486313Z"
     }
   ]
 }
