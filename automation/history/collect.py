@@ -108,6 +108,10 @@ def pick_snapshot(raw: Any, draft_year: int | None = None) -> dict[str, str]:
     return out
 
 
+# A team with at least this many players can't legitimately be emptied in one day.
+MIN_TEAM_PLAYERS = 5
+
+
 def check_sane(prev: dict[str, dict[str, str]], cur: dict[str, dict[str, str]]) -> None:
     """Refuse a snapshot that would turn a Fantrax hiccup into mass drops."""
     before = {p for roster in prev.values() for p in roster}
@@ -119,6 +123,11 @@ def check_sane(prev: dict[str, dict[str, str]], cur: dict[str, dict[str, str]]) 
     missing = set(prev) - set(cur)
     if prev and len(missing) > len(prev) / 2:
         raise SnapshotError(f"{len(missing)} of {len(prev)} teams are missing from Fantrax's rosters; saving nothing")
+    emptied = sorted(t for t, roster in prev.items() if len(roster) >= MIN_TEAM_PLAYERS and not cur.get(t))
+    if emptied:
+        raise SnapshotError(
+            f"{len(emptied)} team(s) that had players are missing or empty in Fantrax's answer ({', '.join(emptied)}); "
+            "saving nothing. If rosters were reset on purpose, run the archive once in rebaseline mode")
 
 
 # --- diffing -----------------------------------------------------------------------
@@ -390,11 +399,14 @@ def run(mode: str, *, now: datetime | None = None, fx: Any = None, archive: Arch
           f"rostered={sum(len(r) for r in rosters.values())} picks={len(picks) if picks is not None else 'n/a'}")
 
     since = cal.parse_dt(meta.get("last_snapshot"))
-    prev_rosters = archive.rosters(season) if archive.has(season, "rosters.json") else None
-    prev_picks = archive.picks(season) if archive.has(season, "picks.json") else None
+    rebaseline = mode == "rebaseline"
+    prev_rosters = archive.rosters(season) if archive.has(season, "rosters.json") and not rebaseline else None
+    prev_picks = archive.picks(season) if archive.has(season, "picks.json") and not rebaseline else None
     events: list[dict[str, Any]] = []
     if prev_rosters is None:
-        print(f"No saved snapshot for season {season} yet: saving a baseline. No events recorded this run.")
+        print(f"Rebaseline: saving a fresh snapshot for season {season}. No events recorded this run."
+              if rebaseline else
+              f"No saved snapshot for season {season} yet: saving a baseline. No events recorded this run.")
     else:
         check_sane(prev_rosters, rosters)
         adds, drops, moves, statuses = player_changes(prev_rosters, rosters, drafted_since(draft, since))
@@ -425,7 +437,7 @@ def run(mode: str, *, now: datetime | None = None, fx: Any = None, archive: Arch
           f"Final standings: {'saved now' if standings else ('already saved' if archive.standings(season) else 'not final yet')}. "
           f"Draft results: {'saved now' if draft_saved else ('already saved' if archive.draft(season) else 'no completed draft')}.")
 
-    if mode != "live":
+    if mode not in ("live", "rebaseline"):
         print("PREVIEW: nothing written.")
         return 0
     archive.write(season, "rosters.json", rosters)
@@ -446,7 +458,8 @@ def run(mode: str, *, now: datetime | None = None, fx: Any = None, archive: Arch
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=("preview", "live"), default="preview")
+    parser.add_argument("--mode", choices=("preview", "live", "rebaseline"), default="preview",
+                        help="rebaseline: save a fresh snapshot with no events, e.g. after resetting rosters")
     args = parser.parse_args()
     try:
         return run(args.mode)

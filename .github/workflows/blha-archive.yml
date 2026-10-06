@@ -12,11 +12,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "preview = log what would be saved; live = save to the archive"
+        description: "preview = log what would be saved; live = save to the archive; rebaseline = save a fresh baseline with no events (use once after resetting rosters)"
         required: true
         default: preview
         type: choice
-        options: [preview, live]
+        options: [preview, live, rebaseline]
 
 permissions:
   contents: write
@@ -58,7 +58,7 @@ jobs:
         run: python automation/history/collect.py --mode "$MODE"
 
       - name: Save the archive to the automation-state branch
-        if: ${{ success() && env.MODE == 'live' }}
+        if: ${{ success() && (env.MODE == 'live' || env.MODE == 'rebaseline') }}
         run: |
           bash automation/tools/state_branch.sh save \
             "chore(history): save league archive" \

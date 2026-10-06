@@ -10,26 +10,31 @@
       }
     },
     {
-      "title": "BLHA SCOREBOARD",
-      "description": "Live matchup results for the current week, posted by the BLHA Competition Desk and read directly from Fantrax.",
+      "title": "BLHA LINEUP ALERTS",
+      "description": "A daily heads-up before games start when a lineup can be improved.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMPETITION DESK"
       },
       "fields": [
         {
-          "name": "POSTED HERE",
-          "value": "Weekly matchup previews • NHL games grid for the Week (games per team, back-to-backs, light nights) • Live scoreboards with goalie starts used • Final scoreboards when a week ends",
+          "name": "WHAT IT CATCHES",
+          "value": "A player in your active lineup has no NHL game today while one of your reserves who can fill that slot does play.",
           "inline": false
         },
         {
-          "name": "OFFICIAL RESULTS",
-          "value": "Fantrax is the authoritative record. If a Discord post and Fantrax ever differ, Fantrax wins.",
+          "name": "WHO GETS ALERTS",
+          "value": "Owners who opt in. Ask the Commissioner to add you; the alert mentions you once a day at most, around 3:00 PM ET.",
+          "inline": false
+        },
+        {
+          "name": "YOUR CALL",
+          "value": "Alerts are a reminder, not a rule. Lineups are yours to set in Fantrax (9.1).",
           "inline": false
         },
         {
           "name": "DISCUSSION",
-          "value": "Matchup talk and trash talk belong in **gm-lounge** and **chirps-and-memes**.",
+          "value": "Owners can react here but not post. Talk about it in **gm-lounge**.",
           "inline": false
         }
       ],

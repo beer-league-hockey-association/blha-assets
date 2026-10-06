@@ -514,13 +514,22 @@ class TradeTests(unittest.TestCase):
         c = self.run_check(self.side("Test", TEST, players="Quinn Hughes"),
                            self.side("Test 3", TEST3, players="Elias Pettersson, Sebastian Aho"),
                            to_minors="Aho, Wayne Gretzky")
-        self.assertEqual(c.a.after, {"active": 19, "reserve": 7, "minors": 11, "ir": 0})
-        self.assertEqual(c.b.after, {"active": 19, "reserve": 16, "minors": 0, "ir": 0})
+        # Incoming players fill an open active spot first, then reserve.
+        self.assertEqual(c.a.after, {"active": 20, "reserve": 6, "minors": 11, "ir": 0})
+        self.assertEqual(c.b.after, {"active": 20, "reserve": 15, "minors": 0, "ir": 0})
         self.assertEqual(c.to_minors_unmatched, ["Wayne Gretzky"])
         problems = c.problems()
-        self.assertIn("Test: Reserve over by 1", problems)
+        self.assertNotIn("Test: Reserve over by 1", problems)
         self.assertIn("Test: Minors over by 1", problems)
-        self.assertIn("Test 3: Reserve over by 10", problems)
+        self.assertIn("Test 3: Reserve over by 9", problems)
+
+    def test_full_rosters_swapping_starters_is_legal(self) -> None:
+        # Two full rosters (20 active / 6 reserve) swap one active player each: legal (6.1).
+        c = self.run_check(self.side("Test", TEST, players="Quinn Hughes"),
+                           self.side("Test 3", TEST3, players="Elias Pettersson"))
+        self.assertEqual(c.a.after["active"], 20)
+        self.assertEqual(c.a.after["reserve"], 6)
+        self.assertFalse([p for p in c.problems() if p.startswith("Test:")])
 
     def test_trade_deadline_from_fantrax(self) -> None:
         deadline = trade.trade_deadline(INFO, NY)

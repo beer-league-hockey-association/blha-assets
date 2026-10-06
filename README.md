@@ -57,6 +57,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Competition Desk (weekly report) | 08:00 and 20:00 ET, preseason through playoffs; posts only when something is due |
 | Live scoreboard | Hourly, regular season and playoffs |
 | Lineup Alerts | 3:00 PM ET daily, regular season and playoffs |
+| Starting Goalies | Several checks from 11:30 AM to 9:15 PM ET, regular season and playoffs; edits one message a day |
 | Playoff bracket | Hourly, playoff weeks only |
 | Draft Center | Every 15 minutes, only from 31 days before a Fantrax draft until a day after it ends |
 | League Archive | Daily around 05:30 ET, all year |
@@ -83,6 +84,8 @@ PuckPedia native Discord integration is the preferred live transaction feed for 
 
 **Owner pings (opt-in).** Owners listed under `owners` in `automation/league.yaml` are mentioned when one of their own players appears in the Injury Report. Nobody else can be pinged. The same list opts owners in to Lineup Alerts.
 
+
+**Podcasts.** Five fantasy hockey podcast feeds (Apples & Ginos, Keeping Karlsson, RotoWire Fantasy Hockey, NHL Fantasy on Ice, Prospects2Pros) post each new episode to #media through the secret `BLHA_WEBHOOK_MEDIA`. A feed marked `baseline_first: true` in `automation/wire/sources.yaml` posts nothing on its first live run, so adding a feed never floods the channel with old episodes.
 ## League Office
 
 Commissioner-controlled dates and deadline reminders live in `automation/league-office/events.yaml`.
@@ -136,6 +139,17 @@ Once a day at about **3:00 PM ET** during the regular season and playoffs, each 
 - **Data:** Fantrax `getTeamRosters` (today's daily lineup; MINORS and IR players are ignored), Fantrax `getPlayerIds` (names and NHL teams) and the NHL schedule API (today's games). A player whose NHL team is missing, or does not appear in the NHL's 7-day schedule, is skipped rather than guessed at.
 - **Modes:** `preview` prints the alerts; `test` posts `[TEST]` alerts without notifying anyone; `live` alerts opted-in owners and records them. In preview and test, **all_teams** also checks franchises with no opted-in owner (without a mention).
 - Lineups remain each manager's responsibility (9.1); players lock about one minute before their own game (5.3).
+
+## Starting Goalies
+
+Code: `automation/goalies/starters.py` · Workflow: `.github/workflows/blha-starting-goalies.yml` · Channel: `#game-day` (webhook secret `BLHA_WEBHOOK_GAME_DAY`)
+
+On game days during the regular season and playoffs, the first check after **11:00 AM ET** posts one **Starting Goalies** message: every NHL game tonight with each team's expected starter marked **Confirmed**, **Likely** or **Unconfirmed**. Later checks (through about 9:15 PM ET) **edit that same message** only when a report changed, so nobody is notified; after the last puck drop it is left as is. Goalies on a BLHA roster show their BLHA team, and a short list at the bottom shows rostered goalies whose NHL team plays tonight but who are not the Confirmed or Likely starter.
+
+- **Data:** Daily Faceoff's starting goalies page for the day (`https://www.dailyfaceoff.com/starting-goalies/YYYY-MM-DD`; the data is read from the page's `__NEXT_DATA__` JSON, captured on 2026-10-06 in `automation/tests/fixtures/`), plus Fantrax `getTeamRosters` and `getPlayerIds` for the BLHA tags. Names are only tagged when they identify one player (the Wire's roster matching). If Fantrax cannot be read, the message posts without tags.
+- **Modes:** `preview` prints the message; `test` posts a new `[TEST]` message; `live` posts or edits today's message.
+- If Daily Faceoff changes its page layout, the run fails with a clear error and Automation Health reports it.
+- Information only: goalie starts count against the weekly cap (9.2), and Fantrax's own numbers decide.
 
 ## Playoffs
 

@@ -1,0 +1,32 @@
+{
+  "embeds": [
+    {
+      "title": "NEW TRADITION? THE WOODEN SPOON",
+      "description": "A just-for-fun tradition for the last-place team. Owners decide whether we do it.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • DISCUSSION"
+      },
+      "fields": [
+        {
+          "name": "THE IDEA",
+          "value": "The franchise that finishes last in the regular season holds the **Wooden Spoon** role for the Offseason and writes a short preview of the next Season, posted before Week 1.",
+          "inline": false
+        },
+        {
+          "name": "WHAT IT ISN'T",
+          "value": "No money and no rule change. Draft order still comes from Potential Points (14.5), so the Spoon can't be chased.",
+          "inline": false
+        },
+        {
+          "name": "HAVE YOUR SAY",
+          "value": "React 👍 or 👎 by **`[TIMESTAMP]`**, or reply in **gm-lounge**. It starts only if owners want it.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

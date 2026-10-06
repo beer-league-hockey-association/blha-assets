@@ -1,0 +1,66 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/commissioners-office/blha-commissioners-office-header.png?v=4-b-mark"
+      }
+    },
+    {
+      "title": "BLHA OWNER HANDBOOK",
+      "description": "Everything an owner needs week to week, in one place. The Constitution has the full rules; section numbers are in brackets.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA COMMISSIONER'S OFFICE"
+      },
+      "fields": [
+        {
+          "name": "DAILY LINEUPS",
+          "value": "Set your lineup in Fantrax every day. Each player locks about one minute before his NHL game (5.3). Active slots: 3 C, 3 LW, 3 RW, 3 F (any forward), 6 D and 2 G (6.2).",
+          "inline": false
+        },
+        {
+          "name": "GOALIE STARTS",
+          "value": "A maximum of 4 goalie starts count each Week, and 8 across the two-week Championship (9.2, 9.3). The live scoreboard shows how many starts each team has used.",
+          "inline": false
+        },
+        {
+          "name": "MINORS AND IR",
+          "value": "10 minors spots for players 25 or younger on NHL opening day with 100 or fewer NHL games (goalies 50) (7.2, 7.3). When a player stops qualifying you have 3 days to move him (7.4). Up to 5 IR spots. An illegal roster must be fixed within 24 hours (6.4).",
+          "inline": false
+        },
+        {
+          "name": "FAAB AND ADDS",
+          "value": "$1,000 FAAB each Season. Bids are hidden, in $1 steps, and $0 is allowed; the earliest bid wins a tie. Claims process daily around 11:00 AM ET. Up to 5 acquisitions per Week (Article X).",
+          "inline": false
+        },
+        {
+          "name": "TRADES AND PICKS",
+          "value": "No votes or vetoes. The deadline is Sunday 11:59 PM ET at the end of Week 20 (11.6). To trade away a future 1st- or 2nd-round pick, your dues must be paid through that pick's Season first, or the trade is reversed (Article XII).",
+          "inline": false
+        },
+        {
+          "name": "STAY IN THE LOOP",
+          "value": "Turn on notifications in the Fantrax app so you hear about trades, claims and lineup problems. Type `/link` for the League Calendar on your phone. Pick your notification roles under **Channels & Roles**.",
+          "inline": false
+        },
+        {
+          "name": "LEAGUE BOT (FROM SEASON 2027)",
+          "value": "`/myteam` your roster, picks and next matchup • `/minor` a player's eligibility • `/rule` any section • `/deadlines` the next dates • `/tradecheck` a trade against the rules • Pick'em in **game-day**.",
+          "inline": false
+        },
+        {
+          "name": "QUESTIONS",
+          "value": "Rules questions go to **rules-questions**. Anything private goes to **open-a-ticket**.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

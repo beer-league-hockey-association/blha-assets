@@ -1,0 +1,62 @@
+name: BLHA Starting Goalies
+run-name: BLHA Starting Goalies — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# One "Starting Goalies" message per game day in #game-day, edited silently as
+# Daily Faceoff's reports firm up until the last game starts. Timing lives in
+# automation/scheduler/schedule.yaml (several checks a day, regular season and
+# playoffs). Code: automation/goalies/starters.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log only; test = new [TEST] post; live = post or edit today's message"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-starting-goalies
+  cancel-in-progress: false
+
+jobs:
+  starters:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/goalies/state/starting_goalies.json"
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run Starting Goalies
+        env:
+          BLHA_WEBHOOK_GAME_DAY: ${{ secrets.BLHA_WEBHOOK_GAME_DAY }}
+        run: python automation/goalies/starters.py --mode "$MODE"
+
+      - name: Save state to the automation-state branch
+        if: ${{ !cancelled() && env.MODE == 'live' }}
+        run: |
+          bash automation/tools/state_branch.sh save \
+            "chore(goalies): save starting goalies state" \
+            "BLHA Fantrax Automation" \
+            "automation/goalies/state/starting_goalies.json"

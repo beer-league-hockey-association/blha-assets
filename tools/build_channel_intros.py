@@ -89,6 +89,9 @@ more("league-office/03_calendar_channel_intro.json", "GET EVENT REMINDERS FROM S
        "Under server settings, pick this server and turn on **Direct messages**."),
       ("2. RSVP TO THE EVENT", "Press **Attending** (or your answer) on the event post in this channel. Sesh sends you a confirmation DM right away."),
       ("3. PICK YOUR REMINDER", "In that DM, choose when Sesh should remind you. Reminders are set one event at a time."),
+      ("ADD THE CALENDAR TO YOUR PHONE",
+       "Type `/link` in any channel. Sesh replies privately with a calendar feed. Add it to Google, Apple or Outlook Calendar "
+       "and every league date shows up there, updated automatically."),
       ("NO DM FROM SESH?",
        "Look in **Message Requests** (and its **Spam** tab) at the top of your DM list and accept Sesh. "
        "Still nothing? Send Sesh the command `/settings` in a DM, or open **sesh.fyi/dashboard**, click your name, then **Preferences**, "
@@ -147,6 +150,30 @@ card("the-wire/06_news_desk_channel_intro.json", "BLHA NEWS DESK",
       ("FEEDS", "breaking-news • nhl-news • injury-report • nhl-transactions • prospect-wire"),
       ("GUIDELINES", "Link the story you're discussing. Keep rumors labeled as rumors. Anything official goes through the League Office.")])
 
+card("league-competition/08_lineup_alerts_channel_intro.json", "BLHA LINEUP ALERTS",
+     "A daily heads-up before games start when a lineup can be improved.", COMP,
+     [("WHAT IT CATCHES", "A player in your active lineup has no NHL game today while one of your reserves who can fill that slot does play."),
+      ("WHO GETS ALERTS", "Owners who opt in. Ask the Commissioner to add you; the alert mentions you once a day at most, around 3:00 PM ET."),
+      ("YOUR CALL", "Alerts are a reminder, not a rule. Lineups are yours to set in Fantrax (9.1)."),
+      ("DISCUSSION", "Owners can react here but not post. Talk about it in **gm-lounge**.")])
+card("commissioners-office/06_owner_handbook_channel_intro.json", "BLHA OWNER HANDBOOK",
+     "Everything an owner needs week to week, in one place. The Constitution has the full rules; section numbers are in brackets.", CO,
+     [("DAILY LINEUPS", "Set your lineup in Fantrax every day. Each player locks about one minute before his NHL game (5.3). "
+       "Active slots: 3 C, 3 LW, 3 RW, 3 F (any forward), 6 D and 2 G (6.2)."),
+      ("GOALIE STARTS", "A maximum of 4 goalie starts count each Week, and 8 across the two-week Championship (9.2, 9.3). "
+       "The live scoreboard shows how many starts each team has used."),
+      ("MINORS AND IR", "10 minors spots for players 25 or younger on NHL opening day with 100 or fewer NHL games (goalies 50) (7.2, 7.3). "
+       "When a player stops qualifying you have 3 days to move him (7.4). Up to 5 IR spots. An illegal roster must be fixed within 24 hours (6.4)."),
+      ("FAAB AND ADDS", "$1,000 FAAB each Season. Bids are hidden, in $1 steps, and $0 is allowed; the earliest bid wins a tie. "
+       "Claims process daily around 11:00 AM ET. Up to 5 acquisitions per Week (Article X)."),
+      ("TRADES AND PICKS", "No votes or vetoes. The deadline is Sunday 11:59 PM ET at the end of Week 20 (11.6). "
+       "To trade away a future 1st- or 2nd-round pick, your dues must be paid through that pick's Season first, or the trade is reversed (Article XII)."),
+      ("STAY IN THE LOOP", "Turn on notifications in the Fantrax app so you hear about trades, claims and lineup problems. "
+       "Type `/link` for the League Calendar on your phone. Pick your notification roles under **Channels & Roles**."),
+      ("LEAGUE BOT (FROM SEASON 2027)", "`/myteam` your roster, picks and next matchup • `/minor` a player's eligibility • `/rule` any section • "
+       "`/deadlines` the next dates • `/tradecheck` a trade against the rules • Pick'em in **game-day**."),
+      ("QUESTIONS", "Rules questions go to **rules-questions**. Anything private goes to **open-a-ticket**.")])
+
 # -------------------------------------------------------------- General Managers
 card("general-managers/01_gm_lounge_channel_intro.json", "BLHA GM LOUNGE",
      "The clubhouse. This is where general managers talk hockey, discuss league business and enjoy the league.", GM,
@@ -156,6 +183,8 @@ card("general-managers/01_gm_lounge_channel_intro.json", "BLHA GM LOUNGE",
 card("general-managers/02_game_day_channel_intro.json", "BLHA GAME DAY",
      "Live reaction for NHL game nights and BLHA matchups.", GM,
      [("USE THIS ROOM FOR", "Live game chat • Matchup swings • Goalie-start watching • Late-night lineup panic"),
+      ("STARTING GOALIES", "Each game day from late morning, one message lists tonight's expected starters (Confirmed, Likely or Unconfirmed) and tags goalies on BLHA rosters. It updates quietly until the last game starts."),
+      ("PICK'EM", "From Season 2027 the BLHA League Bot posts each Week's matchups here. Pick the winners before the Week starts; a season leaderboard keeps score."),
       ("KEEP IT READABLE", "Spoiler courtesy goes a long way. Use **news-desk** for deeper discussion of a story.")])
 card("general-managers/03_chirps_and_memes_channel_intro.json", "BLHA CHIRPS AND MEMES",
      "Friendly trash talk and hockey humor.", GM,
@@ -168,6 +197,7 @@ card("general-managers/04_off_topic_channel_intro.json", "BLHA OFF TOPIC",
 card("general-managers/05_media_channel_intro.json", "BLHA MEDIA",
      "Clips, highlights, photos and graphics.", GM,
      [("POSTED HERE", "Highlight clips • Game photos • Franchise graphics and logos • Anything worth sharing visually"),
+      ("PODCASTS", "New episodes from a few fantasy hockey podcasts are posted here automatically by the Wire, one post per episode."),
       ("PLEASE", "Credit the source where you can, and keep conversation in the matching discussion channel.")])
 
 # ------------------------------------------------------------------- Trade Center
@@ -220,7 +250,7 @@ card("waiver-wire/02_waiver_watch_channel_intro.json", "BLHA WAIVER WATCH",
 DISCUSS = ("DISCUSSION", "Owners can react here but not post. Talk about it in **gm-lounge** or **chirps-and-memes**.")
 card("league-competition/01_scoreboard_channel_intro.json", "BLHA SCOREBOARD",
      "Live matchup results for the current week, posted by the BLHA Competition Desk and read directly from Fantrax.", COMP,
-     [("POSTED HERE", "Weekly matchup previews • Matchup scoreboards during the week • Final scoreboards when a week ends"),
+     [("POSTED HERE", "Weekly matchup previews • NHL games grid for the Week (games per team, back-to-backs, light nights) • Live scoreboards with goalie starts used • Final scoreboards when a week ends"),
       ("OFFICIAL RESULTS", FANTRAX), ("DISCUSSION", "Matchup talk and trash talk belong in **gm-lounge** and **chirps-and-memes**.")])
 card("league-competition/02_standings_channel_intro.json", "BLHA STANDINGS",
      "League standings after each completed week, posted by the BLHA Competition Desk from Fantrax data.", COMP,
@@ -229,7 +259,8 @@ card("league-competition/02_standings_channel_intro.json", "BLHA STANDINGS",
       ("OFFICIAL RESULTS", "Fantrax is the authoritative record. These posts are a convenient copy of it.")])
 card("league-competition/04_weekly_recap_channel_intro.json", "BLHA WEEKLY RECAP",
      "The results of every completed matchup, posted after each fantasy week ends, normally on Monday morning.", COMP,
-     [("POSTED HERE", "Completed matchup results for the week • Recap of how each week finished"),
+     [("POSTED HERE", "Completed matchup results for the week • Weekly Awards (the three stars, tough luck, lucky win, closest game, biggest blowout) • Power Rankings • All-play records"),
+      ("POWER RANKINGS", "Results only: 50% season points, 30% points over the last three Weeks, 20% all-play record. All-play is each team's record if it had played every other team every Week."),
       ("OFFICIAL RESULTS", "Results are pulled directly from Fantrax. Questions about a score go to the Commissioner's Office."),
       DISCUSS])
 card("league-competition/05_playoff_race_channel_intro.json", "BLHA PLAYOFF RACE",
@@ -262,8 +293,9 @@ card("commissioners-office/02_rules_questions_channel_intro.json", "BLHA RULES Q
      [("HOW IT WORKS", "Ask here so the answer helps everyone. Include the situation and the Article you're looking at."),
       ("OFFICIAL RULINGS", "Binding answers are posted in **rulings-log**. A casual reply in this channel is not a ruling.")])
 card("commissioners-office/03_league_suggestions_channel_intro.json", "BLHA LEAGUE SUGGESTIONS",
-     "Ideas for improving the league.", CO,
-     [("HOW IT WORKS", "Post an idea and discuss it. A suggestion can become a formal amendment proposal."),
+     "Ideas for improving the league, tracked from first post to final decision.", CO,
+     [("HOW IT WORKS", "Start one post per idea and pick a topic tag. Owners discuss it in the post. Every idea shows where it stands with a status tag."),
+      ("STATUS TAGS", "**Idea** → **Discussion** → **Commissioner Review** → **Scheduled for Vote** → **Approved** or **Rejected** → **Implemented**. Only the Commissioner changes a status."),
       ("THE PROCESS", "Material Amendments are proposed in writing, posted at least 7 days before voting, and approved by 8 of 12 votes in the offseason (Article XX).")])
 card("commissioners-office/04_rulings_log_channel_intro.json", "BLHA RULINGS LOG",
      "The permanent record of Commissioner rulings, recusals and appeal outcomes.", CO,

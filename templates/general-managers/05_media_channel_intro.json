@@ -23,6 +23,11 @@
           "inline": false
         },
         {
+          "name": "PODCASTS",
+          "value": "New episodes from a few fantasy hockey podcasts are posted here automatically by the Wire, one post per episode.",
+          "inline": false
+        },
+        {
           "name": "PLEASE",
           "value": "Credit the source where you can, and keep conversation in the matching discussion channel.",
           "inline": false

@@ -1,0 +1,194 @@
+{
+  "messages": [
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "BLHA AWARDS NIGHT",
+            "description": "Season `[YEAR]` ballots are open. Owners choose the winners.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "THE AWARDS",
+                "value": "**GM of the Year** • **Trade of the Year** • **Waiver Wire Award** (best pickup) • **Rookie GM of the Year** (first-season owners) • **Cold Beer Award** (the season's funniest moment)",
+                "inline": false
+              },
+              {
+                "name": "HOW TO VOTE",
+                "value": "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
+                "inline": false
+              },
+              {
+                "name": "RESULTS",
+                "value": "Winners are announced in **hall-of-champions** and kept in the league records.",
+                "inline": false
+              },
+              {
+                "name": "JUST FOR FUN",
+                "value": "Awards carry no money and change nothing in the standings or the draft.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "BLHA AWARDS NIGHT: THE WINNERS",
+            "description": "Season `[YEAR]`, as voted by the owners.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "GM OF THE YEAR",
+                "value": "`[FRANCHISE / OWNER]`",
+                "inline": false
+              },
+              {
+                "name": "TRADE OF THE YEAR",
+                "value": "`[TRADE AND DATE]`",
+                "inline": false
+              },
+              {
+                "name": "WAIVER WIRE AWARD",
+                "value": "`[PLAYER, FRANCHISE]`",
+                "inline": false
+              },
+              {
+                "name": "ROOKIE GM OF THE YEAR",
+                "value": "`[OWNER]`",
+                "inline": false
+              },
+              {
+                "name": "COLD BEER AWARD",
+                "value": "`[THE MOMENT]`",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "NEW TRADITION? THE WOODEN SPOON",
+            "description": "A just-for-fun tradition for the last-place team. Owners decide whether we do it.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • DISCUSSION"
+            },
+            "fields": [
+              {
+                "name": "THE IDEA",
+                "value": "The franchise that finishes last in the regular season holds the **Wooden Spoon** role for the Offseason and writes a short preview of the next Season, posted before Week 1.",
+                "inline": false
+              },
+              {
+                "name": "WHAT IT ISN'T",
+                "value": "No money and no rule change. Draft order still comes from Potential Points (14.5), so the Spoon can't be chased.",
+                "inline": false
+              },
+              {
+                "name": "HAVE YOUR SAY",
+                "value": "React 👍 or 👎 by **`[TIMESTAMP]`**, or reply in **gm-lounge**. It starts only if owners want it.",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "THE WOODEN SPOON",
+            "description": "**`[FRANCHISE]`** finishes last in Season `[YEAR]` and takes home the Spoon.",
+            "color": 13012757,
+            "footer": {
+              "text": "BLHA RECORDS DEPARTMENT"
+            },
+            "fields": [
+              {
+                "name": "THE TRADITION",
+                "value": "`[OWNER]` holds the Wooden Spoon role for the Offseason and writes the Season `[NEXT YEAR]` preview, posted before Week 1.",
+                "inline": false
+              },
+              {
+                "name": "NO PENALTY",
+                "value": "Draft order is unaffected: it comes from Potential Points (14.5).",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "embeds": [
+          {
+            "title": "MEET THE BLHA LEAGUE BOT",
+            "description": "League tools, right in Discord. Every command reads Fantrax and the Constitution; nothing here changes Fantrax.",
+            "color": 16758812,
+            "footer": {
+              "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+            },
+            "fields": [
+              {
+                "name": "YOUR TEAM",
+                "value": "`/myteam` shows your roster counts, picks you own, how far your dues are paid and this Week's matchup. Only you see it.",
+                "inline": false
+              },
+              {
+                "name": "RULES",
+                "value": "`/rule 12.4` or `/rule prepayment` shows the Constitution's text. `/deadlines` lists the next dates.",
+                "inline": false
+              },
+              {
+                "name": "PLAYERS AND TRADES",
+                "value": "`/minor` checks a player's minors eligibility. `/tradecheck` checks a trade against the rules (picks, prepayment, roster limits, the deadline). It never grades a trade.",
+                "inline": false
+              },
+              {
+                "name": "PICK'EM",
+                "value": "Each Week the bot posts the matchups in **game-day**. Make your picks before the Week starts; a season leaderboard keeps score.",
+                "inline": false
+              },
+              {
+                "name": "VOTING",
+                "value": "Proposals and official votes run through the bot in **league-voting**, one vote per franchise (Article XX).",
+                "inline": false
+              }
+            ],
+            "image": {
+              "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

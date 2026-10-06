@@ -39,7 +39,7 @@ Fantrax is only ever read, never written. The bot posts nothing that Fantrax alr
 | `/pickem leaderboard` | Anyone | Pick'em season standings |
 
 - **Minor eligibility** uses the NHL's player search and stats, the same source as the nightly minor-eligibility watch. Age is measured on the first day of the NHL regular season, which is the start of Fantrax Week 1 (Article V). Before Fantrax has the next Season's calendar, October 1 is used and labeled as an estimate. Every answer says "By NHL data. Fantrax's age calculation is final (7.2)."
-- **Trade check assumptions:** players are typed as names (`Quinn Hughes, Elias Pettersson`) and matched to the giving team's Fantrax roster; picks as `2029 1st, 2028 3rd`. Incoming players count as reserve unless listed in `to_minors`. The trade deadline is Sunday 11:59 PM ET at the end of Week 20, from the Fantrax calendar. The reopening date comes from the `commissioner-trading-reopens` event in events.yaml once it has a date.
+- **Trade check assumptions:** players are typed as names (`Quinn Hughes, Elias Pettersson`) and matched to the giving team's Fantrax roster; picks as `2029 1st, 2028 3rd`. Incoming players fill open active spots first, then reserve, unless listed in `to_minors`. The trade deadline is Sunday 11:59 PM ET at the end of Week 20, from the Fantrax calendar. The reopening date comes from the `commissioner-trading-reopens` event in events.yaml once it has a date.
 - **Paid through** comes from the League Ledger's Pick Clearance tab (`BLHA_LEDGER_CLEARANCE_CSV`, the same link the Pick Trades alert uses). Without it, the bot says so and asks for a manual check.
 
 ### Pick'em

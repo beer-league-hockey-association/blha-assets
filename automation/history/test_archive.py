@@ -148,6 +148,17 @@ class DiffTests(unittest.TestCase):
         self.assertEqual(collect.pick_changes(prev, {f"2028|1|{A}": B}),
                          [{"asset": f"pick:2028|1|{A}", "from": A, "to": B}])
 
+    def test_one_emptied_team_is_refused(self) -> None:
+        # One team missing or empty in Fantrax's answer would otherwise log ~36 fake drops.
+        prev = {f"t{n}": {f"p{n}-{i}": "ACTIVE" for i in range(36)} for n in range(12)}
+        cur = dict(prev)
+        cur["t3"] = {}
+        with self.assertRaises(collect.SnapshotError):
+            collect.check_sane(prev, cur)
+        del cur["t3"]
+        with self.assertRaises(collect.SnapshotError):
+            collect.check_sane(prev, cur)
+
     def test_mass_vanish_is_refused(self) -> None:
         prev = {A: {f"p{i}": "ACTIVE" for i in range(30)}, B: {f"q{i}": "ACTIVE" for i in range(30)}}
         with self.assertRaises(collect.SnapshotError):
@@ -260,6 +271,20 @@ class RunTests(TempArchive):
         # Nothing changes the next day: nothing new is appended.
         self.run_collect(kit.FakeFantrax(rosters=nxt, picks=picks), utc(2026, 10, 22))
         self.assertEqual(len(self.archive.season_events(2026)), 3)
+
+    def test_rebaseline_saves_a_fresh_snapshot_without_events(self) -> None:
+        raw = kit.rosters_raw()
+        self.run_collect(kit.FakeFantrax(rosters=raw), utc(2026, 10, 20))
+        emptied = copy.deepcopy(raw)
+        for team in emptied["rosters"].values():
+            team["rosterItems"] = []
+        # A normal live run refuses the wiped rosters...
+        with self.assertRaises(collect.SnapshotError):
+            self.run_collect(kit.FakeFantrax(rosters=emptied), utc(2026, 10, 21))
+        # ...rebaseline accepts them as the new starting point and logs nothing.
+        self.assertEqual(self.run_collect(kit.FakeFantrax(rosters=emptied), utc(2026, 10, 21), mode="rebaseline"), 0)
+        self.assertEqual(self.archive.season_events(2026), [])
+        self.assertEqual(sum(len(r) for r in self.archive.rosters(2026).values()), 0)
 
     def test_preview_writes_nothing(self) -> None:
         self.run_collect(kit.FakeFantrax(), utc(2026, 10, 20), mode="preview")

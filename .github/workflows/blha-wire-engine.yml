@@ -44,6 +44,7 @@ jobs:
       BLHA_WEBHOOK_NHL_NEWS: ${{ secrets.BLHA_WEBHOOK_NHL_NEWS }}
       BLHA_WEBHOOK_INJURY_REPORT: ${{ secrets.BLHA_WEBHOOK_INJURY_REPORT }}
       BLHA_WEBHOOK_PROSPECT_WIRE: ${{ secrets.BLHA_WEBHOOK_PROSPECT_WIRE }}
+      BLHA_WEBHOOK_MEDIA: ${{ secrets.BLHA_WEBHOOK_MEDIA }}
 
     steps:
       - name: Check out repository

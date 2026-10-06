@@ -1,0 +1,42 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA AWARDS NIGHT: THE WINNERS",
+      "description": "Season `[YEAR]`, as voted by the owners.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "GM OF THE YEAR",
+          "value": "`[FRANCHISE / OWNER]`",
+          "inline": false
+        },
+        {
+          "name": "TRADE OF THE YEAR",
+          "value": "`[TRADE AND DATE]`",
+          "inline": false
+        },
+        {
+          "name": "WAIVER WIRE AWARD",
+          "value": "`[PLAYER, FRANCHISE]`",
+          "inline": false
+        },
+        {
+          "name": "ROOKIE GM OF THE YEAR",
+          "value": "`[OWNER]`",
+          "inline": false
+        },
+        {
+          "name": "COLD BEER AWARD",
+          "value": "`[THE MOMENT]`",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA AWARDS NIGHT",
+      "description": "Season `[YEAR]` ballots are open. Owners choose the winners.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "THE AWARDS",
+          "value": "**GM of the Year** • **Trade of the Year** • **Waiver Wire Award** (best pickup) • **Rookie GM of the Year** (first-season owners) • **Cold Beer Award** (the season's funniest moment)",
+          "inline": false
+        },
+        {
+          "name": "HOW TO VOTE",
+          "value": "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
+          "inline": false
+        },
+        {
+          "name": "RESULTS",
+          "value": "Winners are announced in **hall-of-champions** and kept in the league records.",
+          "inline": false
+        },
+        {
+          "name": "JUST FOR FUN",
+          "value": "Awards carry no money and change nothing in the standings or the draft.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

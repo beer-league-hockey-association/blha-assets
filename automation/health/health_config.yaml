@@ -52,6 +52,13 @@ workflows:
     # Once a day at 15:00 during the regular season and playoffs.
     max_age_minutes: 1700
 
+  - id: starting-goalies
+    name: "BLHA Starting Goalies"
+    file: "blha-starting-goalies.yml"
+    # Several checks a day from 11:30 to 21:15 during the regular season and
+    # playoffs; the longest gap is overnight (about 14 hours).
+    max_age_minutes: 1000
+
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"

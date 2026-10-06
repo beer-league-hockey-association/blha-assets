@@ -277,5 +277,32 @@ class WireRoundupTests(unittest.TestCase):
         self.assertIn("BLHA roster:** Team Example", payload["embeds"][0]["description"])
 
 
+class WireNewSourceTests(unittest.TestCase):
+    def cand(self, source_id: str, key: str) -> dict:
+        return {"key": key, "title": f"Episode {key} of a hockey podcast", "link": f"https://example.com/{key}",
+                "channel": "media", "source_id": source_id, "tier": 2, "discovery_only": False}
+
+    def test_new_baseline_first_source_posts_nothing_on_first_run(self) -> None:
+        cfg = {"sources": [{"id": "pod_a", "baseline_first": True, "force_channel": "media"},
+                           {"id": "news", "force_channel": "nhl-news"}]}
+        state = {"initialized": True, "seen": []}
+        first = engine.baseline_new_sources([self.cand("pod_a", "1"), self.cand("news", "2")], cfg, state)
+        self.assertEqual([c["source_id"] for c in first], ["news"])
+        self.assertEqual(state["known_sources"], ["pod_a"])
+        self.assertEqual([r["source_id"] for r in state["seen"]], ["pod_a"])
+        later = engine.baseline_new_sources([self.cand("pod_a", "3")], cfg, state)
+        self.assertEqual([c["key"] for c in later], ["3"])
+
+    def test_podcast_sources_route_to_media(self) -> None:
+        import yaml
+        cfg = yaml.safe_load((Path(__file__).resolve().parent / "sources.yaml").read_text(encoding="utf-8"))
+        pods = [s for s in cfg["sources"] if s.get("role") == "podcast-episodes"]
+        self.assertTrue(pods)
+        for s in pods:
+            self.assertEqual(wire.route("Anything at all", s), "media")
+            self.assertTrue(s.get("baseline_first"))
+        self.assertIn("media", engine.WEBHOOK_ENV)
+
+
 if __name__ == "__main__":
     unittest.main()

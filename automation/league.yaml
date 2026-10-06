@@ -83,6 +83,18 @@ lineup_alerts:
   webhook: BLHA_WEBHOOK_LINEUP_ALERTS
 
 # ---------------------------------------------------------------------------
+# Starting Goalies (automation/goalies/)
+#
+# One message per game day in #game-day listing tonight's expected starters
+# (Daily Faceoff), edited silently until the last game starts. Goalies on a
+# BLHA roster show their BLHA team. Nobody is pinged.
+# webhook:   GitHub Actions secret holding the #game-day webhook URL.
+# post_from: earliest local time the day's message is posted.
+starting_goalies:
+  webhook: BLHA_WEBHOOK_GAME_DAY
+  post_from: "11:00"
+
+# ---------------------------------------------------------------------------
 # Commissioner Desk (private reminders for the commissioner's manual work)
 #
 # webhook:      GitHub Actions secret holding the private channel's webhook URL.

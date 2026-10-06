@@ -19,7 +19,12 @@
       "fields": [
         {
           "name": "POSTED HERE",
-          "value": "Completed matchup results for the week • Recap of how each week finished",
+          "value": "Completed matchup results for the week • Weekly Awards (the three stars, tough luck, lucky win, closest game, biggest blowout) • Power Rankings • All-play records",
+          "inline": false
+        },
+        {
+          "name": "POWER RANKINGS",
+          "value": "Results only: 50% season points, 30% points over the last three Weeks, 20% all-play record. All-play is each team's record if it had played every other team every Week.",
           "inline": false
         },
         {

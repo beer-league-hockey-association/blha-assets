@@ -1,0 +1,42 @@
+{
+  "embeds": [
+    {
+      "title": "MEET THE BLHA LEAGUE BOT",
+      "description": "League tools, right in Discord. Every command reads Fantrax and the Constitution; nothing here changes Fantrax.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
+      },
+      "fields": [
+        {
+          "name": "YOUR TEAM",
+          "value": "`/myteam` shows your roster counts, picks you own, how far your dues are paid and this Week's matchup. Only you see it.",
+          "inline": false
+        },
+        {
+          "name": "RULES",
+          "value": "`/rule 12.4` or `/rule prepayment` shows the Constitution's text. `/deadlines` lists the next dates.",
+          "inline": false
+        },
+        {
+          "name": "PLAYERS AND TRADES",
+          "value": "`/minor` checks a player's minors eligibility. `/tradecheck` checks a trade against the rules (picks, prepayment, roster limits, the deadline). It never grades a trade.",
+          "inline": false
+        },
+        {
+          "name": "PICK'EM",
+          "value": "Each Week the bot posts the matchups in **game-day**. Make your picks before the Week starts; a season leaderboard keeps score.",
+          "inline": false
+        },
+        {
+          "name": "VOTING",
+          "value": "Proposals and official votes run through the bot in **league-voting**, one vote per franchise (Article XX).",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+      }
+    }
+  ]
+}

@@ -96,6 +96,11 @@ jobs:
           PYTHONPATH: automation:automation/lineup
         run: python automation/lineup/test_alerts.py
 
+      - name: Test Starting Goalies
+        env:
+          PYTHONPATH: automation:automation/goalies
+        run: python automation/goalies/test_starters.py
+
       - name: Test The Wire
         run: python automation/wire/test_wire.py
 

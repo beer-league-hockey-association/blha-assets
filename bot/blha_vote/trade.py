@@ -5,7 +5,7 @@ Checks
       through that pick's Season in the League Ledger (12.2 to 12.4), using
       picktrades.py's Pick Clearance parser and verdict.
   (b) 6.1 roster limits after the trade. Incoming players are assumed to
-      arrive in reserve unless the owner lists them for minors.
+      fill open active spots first, then reserve, unless the owner lists them for minors.
   (c) 11.6 trade window: closed from the deadline (end of Week 20, Sunday
       11:59 PM ET) until the day after the Stanley Cup Final.
   (d) A reminder of what the bot can't detect (11.3, 11.4, 11.5).
@@ -42,7 +42,7 @@ CANT_CHECK = (
     "• Required prepayment must be confirmed in the League Ledger before the trade processes (12.4)."
 )
 ASSUMED = (
-    "Incoming players join as reserve unless listed in to_minors. Outgoing players leave the slot Fantrax shows "
+    "Incoming players fill open active spots first, then reserve, unless listed in to_minors. Outgoing players leave the slot Fantrax shows "
     "today. Position limits and minor eligibility aren't checked (use /minor)."
 )
 
@@ -257,7 +257,8 @@ def check(*, a: Side, b: Side, rosters: dict[str, Any] | None, player_ids: dict[
     if picks_raw is None and (a.picks_out or b.picks_out):
         result.notes.append("Couldn't read draft picks from Fantrax, so pick ownership wasn't checked.")
 
-    # Incoming players: reserve unless the receiving owner would put them in minors.
+    # Incoming players fill open active spots first, then reserve, unless the
+    # receiving owner would put them in minors.
     to_minors_ids: set[str] = set()
     for query in split_list(to_minors):
         found, _, _ = match_players(query, a.players_out + b.players_out)
@@ -273,7 +274,12 @@ def check(*, a: Side, b: Side, rosters: dict[str, Any] | None, player_ids: dict[
         for p in side.players_out:
             after[p["status"]] = after.get(p["status"], 0) - 1
         for p in incoming:
-            slot = "minors" if p["id"] in to_minors_ids else "reserve"
+            if p["id"] in to_minors_ids:
+                slot = "minors"
+            elif after.get("active", 0) < T.LIMITS["active"]:
+                slot = "active"  # an open active spot is filled first (6.1)
+            else:
+                slot = "reserve"
             after[slot] = after.get(slot, 0) + 1
         side.after = after
     return result

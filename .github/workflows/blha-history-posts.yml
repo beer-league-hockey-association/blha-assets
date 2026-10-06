@@ -33,8 +33,10 @@ on:
 permissions:
   contents: write
 
+# Shares the archive's group: both save under archive/, so their runs must
+# never overlap (a stale copy could otherwise overwrite a newer file).
 concurrency:
-  group: blha-history-posts
+  group: blha-archive
   cancel-in-progress: false
 
 jobs:
