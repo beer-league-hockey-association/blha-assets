@@ -40,7 +40,7 @@ jobs:
       INPUT_RESET_STATE: ${{ inputs.reset_state }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
 
@@ -48,7 +48,7 @@ jobs:
         run: bash automation/tools/state_branch.sh restore "automation/league-office/state/league_ops.json"
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
