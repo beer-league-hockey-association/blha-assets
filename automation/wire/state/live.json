@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T03:15:31.265062Z",
+  "updated_at": "2026-10-06T03:45:28.134686Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3592,6 +3592,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T03:15:31.248110Z"
+    },
+    {
+      "key": "4a246b318102ca0421cffbe3",
+      "url": "https://www.sportsnet.ca/nhl/article/stutzles-three-points-lifts-undefeated-senators-to-victory-over-bruins",
+      "fingerprint": "5664993212b018ce",
+      "title_norm": "stutzle's three points lifts undefeated senators to victory over bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T03:45:28.109677Z"
     }
   ]
 }
