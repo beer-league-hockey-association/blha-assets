@@ -1,0 +1,46 @@
+# BLHA Voting Bot settings. Discord IDs go in quotes.
+# To copy an ID: Discord User Settings > Advanced > turn on Developer Mode,
+# then right-click the server, channel or role > Copy ID.
+
+timezone: America/New_York
+
+discord:
+  guild_id: ""                        # the BLHA server
+  voting_channel_id: ""               # league-voting
+  rulings_log_channel_id: ""          # rulings-log (Review Panel draws)
+  commissioner_role_id: ""            # Commissioner role
+  assistant_commissioner_role_id: ""  # optional; may run Review Panel draws
+  franchise_owner_role_id: ""         # only this role casts a franchise's vote
+
+# One entry per franchise. role_id is that franchise's own Discord role.
+# Mark exactly one franchise commissioner: true (it sits out 3.6 and 19.5 votes).
+franchises:
+  - {name: "Franchise 1", role_id: "", commissioner: true}
+  - {name: "Franchise 2", role_id: ""}
+  - {name: "Franchise 3", role_id: ""}
+  - {name: "Franchise 4", role_id: ""}
+  - {name: "Franchise 5", role_id: ""}
+  - {name: "Franchise 6", role_id: ""}
+  - {name: "Franchise 7", role_id: ""}
+  - {name: "Franchise 8", role_id: ""}
+  - {name: "Franchise 9", role_id: ""}
+  - {name: "Franchise 10", role_id: ""}
+  - {name: "Franchise 11", role_id: ""}
+  - {name: "Franchise 12", role_id: ""}
+
+votes:
+  threshold: 8          # affirmative votes needed (Article XX, 3.6, 19.5)
+  notice_days: 7        # proposal posted at least 7 days before voting (20.2)
+  window_days: 7        # voting window (20.3)
+  # 20.1: no amendment vote before the Offseason following Season 2027.
+  # Set this to the day after the Season 2027 Championship ends.
+  amendment_votes_from: "2028-04-10"
+  remind_hours_before_close: 24
+  # true: the result post lists each franchise's ballot (permanent record).
+  # false: only the totals are posted.
+  publish_ballots: true
+
+# Dues deadline for each Season, from the League Calendar (20.4). A vote for
+# a Season must close before that Season's deadline.
+dues_deadlines:
+  # 2028: "2028-06-30"
