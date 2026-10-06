@@ -12,6 +12,12 @@ on:
       - 'automation/league.yaml'
       - 'automation/scheduler/schedule.yaml'
       - 'automation/tests/fixtures/**'
+      - 'automation/history/history.yaml'
+      - 'automation/history/requirements.txt'
+      - 'tools/build_site.py'
+      - 'tools/build_constitution.py'
+      - 'tools/constitution_source.py'
+      - 'constitution/CHANGELOG.md'
       - 'bot/**'
       - '.github/workflows/*.yml'
   pull_request:
@@ -23,6 +29,12 @@ on:
       - 'automation/league.yaml'
       - 'automation/scheduler/schedule.yaml'
       - 'automation/tests/fixtures/**'
+      - 'automation/history/history.yaml'
+      - 'automation/history/requirements.txt'
+      - 'tools/build_site.py'
+      - 'tools/build_constitution.py'
+      - 'tools/constitution_source.py'
+      - 'constitution/CHANGELOG.md'
       - 'bot/**'
       - '.github/workflows/*.yml'
 
@@ -52,12 +64,14 @@ jobs:
           cache-dependency-path: |
             automation/common-requirements.txt
             automation/wire/requirements.txt
+            automation/history/requirements.txt
             bot/requirements.txt
 
       - name: Install dependencies
         run: |
           pip install -r automation/common-requirements.txt
           pip install -r automation/wire/requirements.txt
+          pip install -r automation/history/requirements.txt
           pip install -r bot/requirements.txt
 
       - name: Compile all automation modules
@@ -127,6 +141,15 @@ jobs:
         env:
           PYTHONPATH: automation:automation/health:automation/commissioner
         run: python automation/health/test_dormancy.py
+
+      - name: Test the league archive (snapshots, inferred transactions, results, drafts)
+        run: python automation/history/test_archive.py
+
+      - name: Test league history (history.yaml, Dynasty Pot, trade trees, rivalries, retrospectives, graphics, posts)
+        run: python automation/history/test_history.py
+
+      - name: Test the history website and the Constitution changelog
+        run: python automation/history/test_site.py
 
       - name: Test the voting bot (rules, storage, embeds, Discord commands)
         run: python bot/tests/test_bot.py

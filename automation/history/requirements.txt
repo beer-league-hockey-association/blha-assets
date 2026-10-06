@@ -1,0 +1,3 @@
+# League history graphics and site (installed on top of ../common-requirements.txt).
+# Pillow 10.1+ is needed for its scalable built-in fallback font.
+Pillow>=10.1,<13

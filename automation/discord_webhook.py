@@ -9,6 +9,7 @@ not notify members when a message is edited.
 
 from __future__ import annotations
 
+import json
 import os
 import time
 from typing import Any, Callable
@@ -103,6 +104,32 @@ def send_discord_webhook(
     except Exception:
         message_id = None
     return True, "delivered", message_id
+
+
+def post_discord_webhook_files(
+    secret_name: str,
+    payload: dict[str, Any],
+    files: list[tuple[str, bytes]],
+    *,
+    timeout: int = 60,
+    attempts: int = 4,
+) -> tuple[bool, str]:
+    """Post one message with attached files (for example a PNG an embed shows as
+    ``attachment://<name>``). Same retry handling as post_discord_webhook."""
+    webhook = _webhook_url(secret_name)
+    if not webhook:
+        return False, f"missing GitHub Actions secret {secret_name}"
+    body = dict(payload)
+    body["attachments"] = [{"id": i, "filename": name} for i, (name, _) in enumerate(files)]
+
+    def send() -> requests.Response:
+        multipart = {f"files[{i}]": (name, data, "image/png" if name.endswith(".png") else "application/octet-stream")
+                     for i, (name, data) in enumerate(files)}
+        return requests.post(webhook, params={"wait": "true"}, data={"payload_json": json.dumps(body)},
+                             files=multipart, timeout=timeout)
+
+    _, detail = _send_with_retries(send, attempts)
+    return detail == "delivered", detail
 
 
 def post_discord_webhook(

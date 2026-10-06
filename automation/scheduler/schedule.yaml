@@ -111,3 +111,17 @@ jobs:
     workflow: blha-dormancy-guard.yml
     daily_at: ["06:15"]
     retry_failures: 2
+
+  # League archive: a daily snapshot of rosters, pick ownership, final weekly
+  # scores, final standings and draft results that builds the league history
+  # (automation/history/). All year: offseason trades and drafts count too.
+  - id: archive
+    workflow: blha-archive.yml
+    daily_at: ["05:30"]
+    retry_failures: 2
+
+  # History website, rebuilt from the archive and published to GitHub Pages
+  # once a week (every 7 days after the last live run).
+  - id: history-site
+    workflow: blha-history-site.yml
+    every_minutes: 10080

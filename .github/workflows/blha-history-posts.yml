@@ -1,0 +1,102 @@
+name: BLHA History Posts
+run-name: BLHA History Posts — ${{ inputs.item }} — ${{ inputs.mode }}
+
+# Manual only. Posts league-history graphics and reports to Discord:
+#   dynasty-pot      Dynasty Pot graphic to #league-ledger (one message)
+#   franchise-cards  one card per franchise to #franchise-directory (one message each)
+#   draft-retro      a draft retrospective to #draft-results (reads NHL stats)
+# preview builds everything and attaches the images to the run (Artifacts);
+# test posts one [TEST] message; live posts for real.
+# Code: automation/history/post.py
+
+on:
+  workflow_dispatch:
+    inputs:
+      item:
+        description: "What to post"
+        required: true
+        default: dynasty-pot
+        type: choice
+        options: [dynasty-pot, franchise-cards, draft-retro]
+      mode:
+        description: "preview = build only (images attached to the run); test = one [TEST] post; live = post"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+      draft_year:
+        description: "draft-retro only: year the draft was held (blank = latest saved draft)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-history-posts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      ITEM: ${{ inputs.item }}
+      MODE: ${{ inputs.mode }}
+      DRAFT_YEAR: ${{ inputs.draft_year }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Restore the archive
+        run: bash automation/tools/state_branch.sh restore archive
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            automation/common-requirements.txt
+            automation/history/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt -r automation/history/requirements.txt
+
+      - name: Build and post
+        env:
+          BLHA_WEBHOOK_LEAGUE_LEDGER: ${{ secrets.BLHA_WEBHOOK_LEAGUE_LEDGER }}
+          BLHA_WEBHOOK_FRANCHISE_DIRECTORY: ${{ secrets.BLHA_WEBHOOK_FRANCHISE_DIRECTORY }}
+          BLHA_WEBHOOK_DRAFT_RESULTS: ${{ secrets.BLHA_WEBHOOK_DRAFT_RESULTS }}
+        shell: bash
+        run: |
+          ARGS=(--item "$ITEM" --mode "$MODE")
+          if [[ -n "$DRAFT_YEAR" ]]; then ARGS+=(--draft-year "$DRAFT_YEAR"); fi
+          python automation/history/post.py "${ARGS[@]}"
+
+      - name: Attach preview images to the run
+        if: ${{ env.MODE == 'preview' && env.ITEM != 'draft-retro' }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: history-${{ inputs.item }}-preview
+          path: automation/history/out/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      # Only the retrospective file is saved, never the whole archive, so this
+      # can never overwrite what the daily archive run saved in the meantime.
+      - name: Save the posted retrospective
+        if: ${{ success() && env.MODE == 'live' && env.ITEM == 'draft-retro' }}
+        shell: bash
+        run: |
+          shopt -s nullglob
+          files=(archive/*/draft_retro.json)
+          if (( ${#files[@]} )); then
+            bash automation/tools/state_branch.sh save \
+              "chore(history): save draft retrospective" \
+              "BLHA History Automation" \
+              "${files[@]}"
+          fi

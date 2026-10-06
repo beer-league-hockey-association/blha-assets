@@ -87,3 +87,15 @@ workflows:
     file: "blha-dormancy-guard.yml"
     # Once a day at 06:15.
     max_age_minutes: 1700
+
+  - id: archive
+    name: "BLHA League Archive"
+    file: "blha-archive.yml"
+    # Once a day at 05:30.
+    max_age_minutes: 1700
+
+  - id: history-site
+    name: "BLHA History Site"
+    file: "blha-history-site.yml"
+    # Once a week.
+    max_age_minutes: 11600

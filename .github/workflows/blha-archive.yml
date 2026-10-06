@@ -1,0 +1,66 @@
+name: BLHA League Archive
+run-name: BLHA League Archive — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# Daily snapshot that builds the league's permanent history: rosters, pick
+# ownership, inferred adds/drops/trades, final weekly scores, final standings
+# and draft results. Saved under archive/ on the automation-state branch.
+# Timing lives in automation/scheduler/schedule.yaml (daily around 05:30 ET,
+# all year); the BLHA Scheduler starts this workflow with mode=live.
+# Code: automation/history/collect.py
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log what would be saved; live = save to the archive"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, live]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      # Strict: if the state branch exists but cannot be fetched, stop rather
+      # than start from an empty archive (events.jsonl is append-only).
+      - name: Restore the archive
+        env:
+          BLHA_STATE_STRICT: "1"
+        run: bash automation/tools/state_branch.sh restore archive
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Take today's snapshot
+        run: python automation/history/collect.py --mode "$MODE"
+
+      - name: Save the archive to the automation-state branch
+        if: ${{ success() && env.MODE == 'live' }}
+        run: |
+          bash automation/tools/state_branch.sh save \
+            "chore(history): save league archive" \
+            "BLHA History Automation" \
+            archive

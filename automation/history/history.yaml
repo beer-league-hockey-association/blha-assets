@@ -1,0 +1,79 @@
+# BLHA league history that the Fantrax feed cannot know.
+#
+# Maintained by the Commissioner. The history site, the Dynasty Pot graphic and
+# the franchise cards read this file; the regression tests check it on every
+# change (python automation/history/test_history.py), so a typo fails the check
+# instead of reaching Discord.
+#
+# Season years follow the Constitution: Season 2027 is the 2027-28 season.
+# Franchises are referred to by their key (the name before the colon under
+# franchises). A key never changes, even if the franchise is renamed.
+
+# ---------------------------------------------------------------------------
+# Franchise identities
+#
+#   name:      current franchise name
+#   owner:     owner display name (as it should appear publicly)
+#   founded:   first Season, e.g. 2027
+#   colors:    up to 3 hex colours, primary first, in quotes
+#   logo:      optional .png path in this repository, e.g. brand/franchises/rink-rats.png
+#   team_ids:  every Fantrax team ID this franchise has used, in quotes. Run the
+#              BLHA Pick Trades workflow in preview mode to print them. If a
+#              team's ID is not listed, it is matched by its Fantrax team name.
+#
+# Example:
+#   franchises:
+#     rink-rats:
+#       name: "Rink Rats"
+#       owner: "Alex"
+#       founded: 2027
+#       colors: ["#0B6E4F", "#F4EFE4"]
+#       logo: brand/franchises/rink-rats.png
+#       team_ids: ["8j6llh6gmumuxose"]
+franchises: {}
+
+# ---------------------------------------------------------------------------
+# Season honours and Dynasty Pot money
+#
+# Every field is optional; fill each one in when it is final.
+#   champion, runner_up, third_place, presidents_trophy,
+#   consolation_champion, wooden_spoon (last place): franchise keys
+#   dynasty_pot:
+#     dues:            dues added to the pot that Season (at least $200, Section 4.2)
+#     unused_reserve:  unused League Operating Reserve added after expenses (3.8, 4.2)
+#     balance:         optional; the pot after this Season's additions, before any
+#                      payout, as published in the Season Ledger. Checked against
+#                      the contributions since the cycle began.
+#   notes:             optional free text
+#
+# Example:
+#   seasons:
+#     2027:
+#       champion: rink-rats
+#       runner_up: north-stars
+#       third_place: ice-dogs
+#       presidents_trophy: north-stars
+#       consolation_champion: puck-luck
+#       wooden_spoon: zamboni-drivers
+#       dynasty_pot:
+#         dues: 200
+#         unused_reserve: 35
+#         balance: 235
+seasons: {}
+
+# ---------------------------------------------------------------------------
+# Dynasty Pot cycle (Article IV)
+#
+# Championship counts in the active cycle are worked out from the champions
+# above: the first franchise to 3 titles in a cycle wins the pot, then every
+# counter resets and the next cycle starts the following Season. You do not
+# need to keep counts by hand. If you do fill in championships (as published
+# in the Season Ledger), the check makes sure they agree.
+#
+# Example:
+#   dynasty_pot:
+#     first_cycle: 2027
+#     championships:
+#       rink-rats: 1
+dynasty_pot:
+  first_cycle: 2027
