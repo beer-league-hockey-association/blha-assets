@@ -59,8 +59,6 @@ def proposal(p: dict[str, Any], opens_at: datetime) -> dict[str, Any]:
 def vote_open(v: dict[str, Any], kind: Kind, threshold: str, options: list[str], warnings: list[str]) -> dict[str, Any]:
     if kind.rule == "supermajority":
         opts = "**Yes** — adopt\n**No** — keep the current rule\n**Abstain** — counted as not affirmative"
-        if kind.key == "removal":
-            opts = "**Yes** — remove the Commissioner\n**No** — keep the Commissioner\n**Abstain**"
         who = "One formal vote per franchise, cast by the **Franchise Owner**. You can change it until the vote closes."
     else:
         opts = "\n".join(f"**{o}**" for o in options) + "\n**Abstain**"

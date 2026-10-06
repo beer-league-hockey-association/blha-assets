@@ -13,7 +13,7 @@ discord:
   franchise_owner_role_id: ""         # only this role casts a franchise's vote
 
 # One entry per franchise. role_id is that franchise's own Discord role.
-# Mark exactly one franchise commissioner: true (it sits out 3.6 and 19.5 votes).
+# Mark exactly one franchise commissioner: true (it sits out 3.6 votes).
 franchises:
   - {name: "Franchise 1", role_id: "", commissioner: true}
   - {name: "Franchise 2", role_id: ""}
@@ -29,7 +29,7 @@ franchises:
   - {name: "Franchise 12", role_id: ""}
 
 votes:
-  threshold: 8          # affirmative votes needed (Article XX, 3.6, 19.5)
+  threshold: 8          # affirmative votes needed (Article XX, 3.6)
   notice_days: 7        # proposal posted at least 7 days before voting (20.2)
   window_days: 7        # voting window (20.3)
   # 20.1: no amendment vote before the Offseason following Season 2027.
