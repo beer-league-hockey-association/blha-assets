@@ -104,11 +104,12 @@ class WeeklyReportTests(unittest.TestCase):
 
     def test_monday_report_in_order(self) -> None:
         plan = self.plan(et(2026, 10, 5, 8), 1, {"preview_week": 1})
-        self.assertEqual(items(plan), [("recap", 1), ("standings", 1), ("preview", 2)])
+        self.assertEqual(items(plan), [("recap", 1), ("awards", 1), ("rankings", 1), ("standings", 1),
+                                       ("preview", 2), ("games", 2)])
 
     def test_standings_wait_for_fantrax_then_go_out_in_evening(self) -> None:
         morning = self.plan(et(2026, 10, 5, 8), 0, {"preview_week": 1})
-        self.assertEqual(items(morning), [("recap", 1), ("preview", 2)])
+        self.assertEqual(items(morning), [("recap", 1), ("awards", 1), ("rankings", 1), ("preview", 2), ("games", 2)])
         self.assertTrue(any("standings wait" in n for n in morning.notes))
         state = {"recap_week": 1, "preview_week": 2}
         self.assertEqual(items(self.plan(et(2026, 10, 5, 20), 1, state)), [("standings", 1)])
@@ -129,19 +130,20 @@ class WeeklyReportTests(unittest.TestCase):
     def test_playoff_race_starts_with_week_16(self) -> None:
         state = {k: 14 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 15}
         plan = self.plan(morning_of_end(15), 15, state)
-        self.assertEqual(items(plan), [("recap", 15), ("standings", 15), ("race", 15), ("preview", 16)])
+        self.assertEqual(items(plan), [("recap", 15), ("awards", 15), ("rankings", 15), ("standings", 15),
+                                       ("race", 15), ("preview", 16), ("games", 16)])
 
     def test_last_week_gets_final_standings_and_no_race_or_preview(self) -> None:
         state = {k: 21 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 22}
         plan = self.plan(morning_of_end(22), 22, state)
-        self.assertEqual(items(plan), [("recap", 22), ("standings", 22)])
+        self.assertEqual(items(plan), [("recap", 22), ("awards", 22), ("rankings", 22), ("standings", 22)])
 
     def test_week_21_still_gets_a_race_update(self) -> None:
         state = {k: 20 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 21}
         self.assertIn(("race", 21), items(self.plan(morning_of_end(21), 21, state)))
 
     def test_preseason_previews_week_one_on_opening_day(self) -> None:
-        self.assertEqual(items(self.plan(et(2026, 9, 29, 8), 0, {})), [("preview", 1)])
+        self.assertEqual(items(self.plan(et(2026, 9, 29, 8), 0, {})), [("preview", 1), ("games", 1)])
 
     def test_playoffs_do_not_trigger_regular_season_posts(self) -> None:
         state = {k: 22 for k in ("recap_week", "standings_week", "race_week", "preview_week")}

@@ -51,7 +51,8 @@ jobs:
     workflow: blha-automation-health.yml
     every_minutes: 60
 
-  # Weekly report: recap, standings, playoff race (from week 16), preview.
+  # Weekly report: recap (with all-play), weekly awards, power rankings,
+  # standings, playoff race (from week 16), matchup preview and NHL games grid.
   # The 08:00 check posts the report the morning a fantasy week ends; the
   # 20:00 check only posts anything Fantrax was not ready for in the morning.
   - id: competition-desk
@@ -73,6 +74,15 @@ jobs:
     workflow: blha-draft-center.yml
     every_minutes: 15
     when: draft-window
+
+  # Lineup Alerts: opted-in owners (league.yaml owners) get one message when
+  # a starter has no NHL game today and an eligible bench player does. 15:00
+  # leaves time before the evening games; at most one alert per team per day.
+  - id: lineup-alerts
+    workflow: blha-lineup-alerts.yml
+    daily_at: ["15:00"]
+    retry_failures: 2
+    phases: [regular, playoffs]
 
   # Live bracket; saves seeds automatically after the final regular week.
   - id: playoffs

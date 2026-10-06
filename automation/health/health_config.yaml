@@ -46,6 +46,12 @@ workflows:
     # Hourly during the regular season and playoffs.
     max_age_minutes: 180
 
+  - id: lineup-alerts
+    name: "BLHA Lineup Alerts"
+    file: "blha-lineup-alerts.yml"
+    # Once a day at 15:00 during the regular season and playoffs.
+    max_age_minutes: 1700
+
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"

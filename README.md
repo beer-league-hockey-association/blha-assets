@@ -37,7 +37,7 @@ The approved architecture is:
 
 ## League settings
 
-League-wide settings live in one file: `automation/league.yaml` (Fantrax league ID, season label, report time, playoff race start week, webhook secret names). When the real 2027-28 Fantrax league is created, change `league_id` and `season_label` there; week dates, playoff weeks and playoff team count are read from Fantrax automatically.
+League-wide settings live in one file: `automation/league.yaml` (Fantrax league ID, season label, report time, playoff race start week, goalie starts per week, light/heavy night thresholds for the NHL games grid, opted-in owners for pings, webhook secret names). When the real 2027-28 Fantrax league is created, change `league_id` and `season_label` there; week dates, playoff weeks and playoff team count are read from Fantrax automatically.
 
 ## Scheduling and the season calendar
 
@@ -54,6 +54,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Automation Health | Hourly, all year |
 | Competition Desk (weekly report) | 08:00 and 20:00 ET, preseason through playoffs; posts only when something is due |
 | Live scoreboard | Hourly, regular season and playoffs |
+| Lineup Alerts | 3:00 PM ET daily, regular season and playoffs |
 | Playoff bracket | Hourly, playoff weeks only |
 | Draft Center | Every 15 minutes, only from 31 days before a Fantrax draft until a day after it ends |
 
@@ -76,7 +77,7 @@ PuckPedia native Discord integration is the preferred live transaction feed for 
 
 **BLHA roster tags.** Stories about a player on a BLHA roster show which BLHA team owns him, on every Wire channel. Players are identified by name, NHL team and position, so players who share a name (two Sebastian Ahos, two Elias Petterssons) are not confused; anything ambiguous is left untagged. Stories about rostered players get the individual posts first when news arrives in bulk.
 
-**Owner pings (opt-in).** Owners listed under `owners` in `automation/league.yaml` are mentioned when one of their own players appears in the Injury Report. Nobody else can be pinged.
+**Owner pings (opt-in).** Owners listed under `owners` in `automation/league.yaml` are mentioned when one of their own players appears in the Injury Report. Nobody else can be pinged. The same list opts owners in to Lineup Alerts.
 
 ## League Office
 
@@ -94,18 +95,43 @@ Code: `automation/competition/desk.py` · Workflow: `.github/workflows/blha-comp
 
 Fantrax weeks end at the first NHL game on Monday evening, so by Monday morning every game of the week is final. At **8:00 AM ET** that morning the Competition Desk posts, in order:
 
-1. `📰│weekly-recap` — results of the week that just finished
-2. `📈│standings` — standings after that week (final standings after the last regular-season week)
-3. `🏁│playoff-race` — from **Week 16** through the last regular-season week
-4. Matchup preview for the week starting that evening (scoreboard channel)
+1. `📰│weekly-recap` — results of the week that just finished, with each team's **all-play** record (its record had it played all 11 other teams that week) for the week and the season
+2. `📰│weekly-recap` — **Weekly Awards** (separate message)
+3. `📰│weekly-recap` — **Power Rankings** (separate message)
+4. `📈│standings` — standings after that week (final standings after the last regular-season week)
+5. `🏁│playoff-race` — from **Week 16** through the last regular-season week
+6. Matchup preview for the week starting that evening (scoreboard channel)
+7. **NHL games grid** for that week, for planning daily lineups (scoreboard channel, separate message)
 
-If Fantrax has not yet counted the finished week in its standings at 8:00 AM, standings and the playoff race wait and go out at the 8:00 PM check. Nothing is ever posted twice for the same week, and a failed post is retried automatically.
+If Fantrax has not yet counted the finished week in its standings at 8:00 AM, standings and the playoff race wait and go out at the 8:00 PM check. Nothing is ever posted twice for the same week, and a failed post is retried automatically. Awards, rankings and the grid are tracked separately, so a failure in one never reposts the others.
+
+All-play, awards and power rankings are results-only: they are computed from Fantrax's matchup scores for every final week of the season (`automation/competition/weekly.py`), so anyone can check them by hand. Weeks where every team scored 0 (placeholder weeks) and 0-0 matchups are ignored.
+
+- **Power Rankings.** Score = 50% season points-for + 30% points-for over the last 3 final weeks + 20% season all-play win %. Both points-for figures are scaled 0 to 1 across the league (lowest team 0, highest 1); ties go to higher season points-for. Each team shows its rank, change since last week, record, points-for, season all-play and score. The posted ranks are saved in the report state so next week can show the change; if they are missing, last week's ranks are recomputed from the scores.
+- **Weekly Awards.** First, Second and Third Star (the top three scores), Tough Luck (highest score in a loss), Lucky Win (lowest score in a win), Closest Game and Biggest Blowout. These replace the recap's old High Score / Closest Matchup / Largest Margin lines, so the channel does not show them twice.
+- **Not included: Bench Disaster and Waiver Steal.** Fantrax's read-only feed has no per-player daily points, bench points or waiver-claim results, so these two awards cannot be computed honestly.
+- **NHL games grid.** Reads the NHL schedule API (`https://api-web.nhle.com/v1/schedule/{date}`, one call per 7 days the Fantrax week spans) and shows NHL teams grouped by games played this Fantrax week, back-to-back sets, light nights (8 or fewer teams playing) and heavy nights (20 or more). A game counts toward the Fantrax week by its start time, so the Monday-afternoon game before the week's first lineup lock belongs to the previous week. Thresholds are `light_night_max_teams` and `heavy_night_min_teams` in `automation/league.yaml`. The API's response shape is taken from its public documentation and has not yet been checked against a live response (`automation/blha/nhl.py`).
+
+Manual runs can post or preview one item: `recap`, `awards`, `rankings`, `standings`, `race`, `preview` or `games`.
 
 ## Live scoreboard
 
 Code: `automation/competition/scoreboard.py` · Workflow: `.github/workflows/blha-fantrax-scoreboard.yml`
 
 One scoreboard message per week in `📊│scoreboard`, posted when the week starts and **edited in place** every hour as scores change (edits do not notify members). Monday morning it gets a final update marked **Final** and stays in the channel as the record of that week.
+
+Each team also shows **Goalie starts: X of Y**. X is Fantrax's Games Started (GS) category for the week; Y is the credited-start cap, 4 per calendar week (9.2), so a two-week period such as the Championship gets 8 (9.3). Y is computed as `goalie_starts_per_week` × the period's length in weeks, rounded.
+
+## Lineup Alerts
+
+Code: `automation/lineup/alerts.py` · Workflow: `.github/workflows/blha-lineup-alerts.yml` · Channel: `#lineup-alerts` (webhook secret `BLHA_WEBHOOK_LINEUP_ALERTS`)
+
+Once a day at about **3:00 PM ET** during the regular season and playoffs, each owner listed under `owners` in `automation/league.yaml` gets one short message that mentions them when a player in today's **ACTIVE** lineup has no NHL game today while one of their **RESERVE** players at an eligible position does play (and his game has not started). Owners not listed are never checked or pinged. Each franchise gets at most one alert a day.
+
+- **Position eligibility (kept simple):** a C, LW or RW slot takes a reserve at that position; the F (utility forward) slot takes any forward (C, LW, RW or F); D only for D; G only for G. A reserve's positions are his Fantrax roster position plus his position(s) in Fantrax's player directory.
+- **Data:** Fantrax `getTeamRosters` (today's daily lineup; MINORS and IR players are ignored), Fantrax `getPlayerIds` (names and NHL teams) and the NHL schedule API (today's games). A player whose NHL team is missing, or does not appear in the NHL's 7-day schedule, is skipped rather than guessed at.
+- **Modes:** `preview` prints the alerts; `test` posts `[TEST]` alerts without notifying anyone; `live` alerts opted-in owners and records them. In preview and test, **all_teams** also checks franchises with no opted-in owner (without a mention).
+- Lineups remain each manager's responsibility (9.1); players lock about one minute before their own game (5.3).
 
 ## Playoffs
 
@@ -137,7 +163,7 @@ Automations remember what they have already posted (Wire dedupe, report weeks, t
 
 ## Regression checks
 
-Automation regression tests cover the season calendar (against real Fantrax week dates), Fantrax error handling, the weekly report, the live scoreboard, playoff seeding, scheduler due-time logic and retries, Wire routing and roundup posts, health-monitor run filtering, shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles every automation module and runs these checks whenever relevant code or configuration changes.
+Automation regression tests cover the season calendar (against real Fantrax week dates), Fantrax error handling, the weekly report (including all-play, power rankings and weekly awards), goalie starts on the live scoreboard (against a live Fantrax matchup sample), the NHL games grid and Lineup Alerts (against a synthetic NHL schedule in the documented API shape), playoff seeding, scheduler due-time logic and retries, Wire routing and roundup posts, health-monitor run filtering, shared Discord retry behavior, League Office timing/catch-up behavior, playoff reseeding, and playoff semantic deduplication. The dedicated regression workflow compiles every automation module and runs these checks whenever relevant code or configuration changes.
 
 ## Raw URL base
 `https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/`

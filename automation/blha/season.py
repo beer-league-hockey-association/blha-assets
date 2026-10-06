@@ -92,6 +92,24 @@ def is_final(p: Period, now: datetime, tz: ZoneInfo) -> bool:
     return now >= final_at(p, tz)
 
 
+GOALIE_STARTS_PER_WEEK = 4  # Constitution 9.2
+
+
+def calendar_weeks(p: Period) -> int:
+    """Calendar weeks a period spans, rounded (never less than 1).
+
+    A normal Fantrax week runs about 6.75 to 7.25 days, so it counts as 1; the
+    two-week Championship or a week stretched over an NHL break counts as 2.
+    """
+    days = (p.end - p.start).total_seconds() / 86400
+    return max(1, round(days / 7))
+
+
+def goalie_start_cap(p: Period, per_week: int = GOALIE_STARTS_PER_WEEK) -> int:
+    """Credited goalie starts allowed in a period: 4 per calendar week (9.2, 9.3)."""
+    return per_week * calendar_weeks(p)
+
+
 def active_period(info: dict[str, Any], now: datetime) -> Period | None:
     return next((p for p in periods(info) if p.contains(now)), None)
 

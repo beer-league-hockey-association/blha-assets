@@ -69,8 +69,18 @@ jobs:
       - name: Test season calendar, weekly report, live scoreboard and playoffs
         run: python automation/tests/test_competition.py
 
+      - name: Test goalie starts, all-play, power rankings, weekly awards and the NHL games grid
+        env:
+          PYTHONPATH: automation:automation/competition
+        run: python automation/tests/test_competition_additions.py
+
       - name: Test the Fantrax client
         run: python automation/tests/test_fantrax_client.py
+
+      - name: Test Lineup Alerts
+        env:
+          PYTHONPATH: automation:automation/lineup
+        run: python automation/lineup/test_alerts.py
 
       - name: Test The Wire
         run: python automation/wire/test_wire.py
