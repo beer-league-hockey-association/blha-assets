@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T17:30:41.112860Z",
+  "updated_at": "2026-10-06T17:45:36.726537Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3882,6 +3882,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-06T17:30:41.055663Z"
+    },
+    {
+      "key": "410f1fa4e7978840473243ad",
+      "url": "https://www.sportsnet.ca/nhl/article/demidov-injury-a-big-challenge-for-canadiens-to-overcome",
+      "fingerprint": "b29d1398edb85e07",
+      "title_norm": "demidov injury a big challenge for canadiens to overcome",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T17:45:36.702026Z"
     }
   ]
 }
