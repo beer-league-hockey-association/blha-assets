@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T04:30:36.178980Z",
+  "updated_at": "2026-10-06T04:45:33.332702Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3632,6 +3632,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-06T04:30:36.122933Z"
+    },
+    {
+      "key": "49c6dd651722a2b5c58273eb",
+      "url": "https://www.nhl.com/news/ottawa-senators-shaking-off-doubters-with-strong-start",
+      "fingerprint": "c645d61d91cfc190",
+      "title_norm": "senators shaking off doubters with strong start",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T04:45:33.256636Z"
     }
   ]
 }
