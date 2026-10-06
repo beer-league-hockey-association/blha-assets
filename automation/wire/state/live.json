@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T03:45:28.134686Z",
+  "updated_at": "2026-10-06T04:30:36.178980Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3602,6 +3602,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T03:45:28.109677Z"
+    },
+    {
+      "key": "506d09b3f4d226b65eff565c",
+      "url": "https://www.nhl.com/news/sidney-crosby-evgeni-malkin-appreciate-alex-ovechkins-legacy",
+      "fingerprint": "5cf71d1eb8d9c4e9",
+      "title_norm": "crosby, malkin reflect on ovi's career",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T04:30:35.613185Z"
+    },
+    {
+      "key": "5f5c7039ab9e50f4a0ea402f",
+      "url": "https://www.nhl.com/news/alex-ovechkin-always-put-on-a-show",
+      "fingerprint": "7cd28c6ad80b6b29",
+      "title_norm": "nhl.com writer had front-row seat for ovi's career",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T04:30:35.883149Z"
+    },
+    {
+      "key": "45f393c6780969ba7964f8a8",
+      "url": "https://www.nhl.com/news/igor-shesterkin-goal-scoring-has-rangers-off-to-hot-start",
+      "fingerprint": "7664293e45f150ee",
+      "title_norm": "shesterkin's goal-scoring 'part of the show'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T04:30:36.122933Z"
     }
   ]
 }
