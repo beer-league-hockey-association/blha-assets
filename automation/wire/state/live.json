@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T03:00:35.229711Z",
+  "updated_at": "2026-10-06T03:15:31.265062Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3582,6 +3582,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T03:00:35.208092Z"
+    },
+    {
+      "key": "7c1b7b7fa0b085b08523645c",
+      "url": "https://www.sportsnet.ca/nhl/article/oettinger-earns-17th-career-shutout-as-stars-beat-sharks",
+      "fingerprint": "6dee31325b820397",
+      "title_norm": "oettinger earns 17th career shutout as stars beat sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T03:15:31.248110Z"
     }
   ]
 }
