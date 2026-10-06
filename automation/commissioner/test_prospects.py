@@ -110,7 +110,9 @@ class RunTests(unittest.TestCase):
     def test_first_run_posts_board_once(self):
         c1, c2, posts, state = self._run(lists())
         self.assertEqual((c1, c2, len(posts)), (0, 0, 1))
-        self.assertEqual(posts[0]["allowed_mentions"], {"parse": []})
+        # Only the Commissioner set in league.yaml (commissioner_desk.ping_user_id) can ever be mentioned.
+        ping = str((prospects.load_league().get("commissioner_desk") or {}).get("ping_user_id") or "")
+        self.assertEqual(posts[0]["allowed_mentions"], {"users": [ping]} if ping else {"parse": []})
         self.assertIn("hash", json.loads(state.read_text()))
 
     def test_changed_rankings_post_again(self):

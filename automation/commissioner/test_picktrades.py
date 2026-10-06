@@ -217,7 +217,9 @@ class RunTests(unittest.TestCase):
         saved = picktrades.snapshot(raw(BASE))
         code, code2, posts, _ = self._run({**BASE, (2028, 1, "a"): "b"}, saved)
         self.assertEqual((code, code2, len(posts)), (0, 0, 1))
-        self.assertEqual(posts[0]["allowed_mentions"], {"parse": []})
+        # Only the Commissioner set in league.yaml (commissioner_desk.ping_user_id) can ever be mentioned.
+        ping = str((picktrades.load_league().get("commissioner_desk") or {}).get("ping_user_id") or "")
+        self.assertEqual(posts[0]["allowed_mentions"], {"users": [ping]} if ping else {"parse": []})
 
     def test_failed_delivery_retries_and_does_not_save(self):
         saved = picktrades.snapshot(raw(BASE))
