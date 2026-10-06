@@ -16,7 +16,7 @@
       "fields": [
         {
           "name": "START HERE",
-          "value": "📜 **constitution** — League rules (Version 2.2) and amendments.\n📢 **announcements** — Official league notices.\n📅 **league-calendar** — Important dates and deadlines.\n💰 **league-ledger** — Dues and league accounting.",
+          "value": "📜 **constitution** — League rules and amendments.\n📢 **announcements** — Official league notices.\n📅 **league-calendar** — Important dates and deadlines.\n💰 **league-ledger** — Dues and league accounting.",
           "inline": false
         },
         {
@@ -100,7 +100,7 @@
         },
         {
           "name": "🏒 FRANCHISE HQ",
-          "value": "Franchise-specific spaces for team identity, planning and internal organization.",
+          "value": "The franchise directory, franchise news and roster showcases.",
           "inline": false
         }
       ]
@@ -159,7 +159,7 @@
         },
         {
           "name": "PRIVATE ISSUES",
-          "value": "Use **open-a-ticket** for private commissioner matters instead of burying an issue in DMs.",
+          "value": "Use **open-a-ticket** for private Commissioner matters instead of burying an issue in DMs.",
           "inline": false
         },
         {

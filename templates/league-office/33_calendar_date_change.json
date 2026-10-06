@@ -25,7 +25,7 @@
         },
         {
           "name": "NOTICE",
-          "value": "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.",
+          "value": "Changes get at least 7 days' notice where possible. Deadlines may be extended but are not moved earlier unless the NHL schedule forces it.",
           "inline": false
         }
       ],

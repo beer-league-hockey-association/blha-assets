@@ -2,7 +2,7 @@
 """Generate the per-channel intro Discohook templates (one JSON per channel).
 
 Channel names follow the live server. Rules references use the Constitution
-article numbers in tools/constitution_source.py (v2.2). Each intro is written
+article numbers in tools/constitution_source.py. Each intro is written
 in the BLHA format from discohook_format.py: one message, header banner first,
 footer text and divider on the final embed only. The normalizer re-checks it:
 
@@ -63,10 +63,10 @@ def more(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, 
 # ------------------------------------------------------------------ League Office
 card("league-office/01_constitution_channel_intro.json", "BLHA CONSTITUTION",
      "The Constitution is the controlling rules document of the Beer League Hockey Association. Every owner accepts it as a condition of joining and is responsible for knowing it.", LO,
-     [("CURRENT DOCUMENT", "**Version:** 2.2 • Charter Edition\n**Effective:** Season 2027 (inaugural season 2027–28)\n**Last amended:** Not yet amended"),
+     [("CURRENT DOCUMENT", "**Edition:** Charter Edition\n**Effective:** Season 2027 (inaugural season 2027–28)\n**Last amended:** Not yet amended"),
       ("HOW DATES WORK", "The Constitution defines deadlines by formula. Exact dates for each season are published in **league-calendar** within 14 days after the NHL releases its schedule."),
-      ("CHANGING THE RULES", "Material amendments need 8 of 12 franchise votes, are held only in the offseason, and must pass before the dues deadline of the season they first apply to (Article XX). The first amendment vote can happen after Season 2027."),
-      ("HOW TO USE THIS CHANNEL", "The current Constitution, adopted amendments and the version history live here. Questions about what a rule means go to **rules-questions**."),
+      ("CHANGING THE RULES", "Material Amendments need 8 of 12 franchise votes, are held only in the offseason, and must pass before the dues deadline of the season they first apply to (Article XX). The first amendment vote can happen after Season 2027."),
+      ("HOW TO USE THIS CHANNEL", "The current Constitution, adopted amendments and the amendment history live here. Questions about what a rule means go to **rules-questions**."),
       ("AUTHORITY", "Fantrax controls gameplay records and transactions. The Constitution controls league rules and governance. The newest published version controls.")])
 card("league-office/02_announcements_channel_intro.json", "OFFICIAL BLHA ANNOUNCEMENTS",
      "This channel is the official notice board of the Beer League Hockey Association. Managers are responsible for monitoring it.", LO,
@@ -77,7 +77,7 @@ card("league-office/03_calendar_channel_intro.json", "BLHA LEAGUE CALENDAR",
      "Official dates and deadlines for the current BLHA season.", LO,
      [("TRACKED HERE", "Draft dates • Dues deadline • Trade deadline and reopening • Roster deadlines • Playoff weeks • Offseason milestones"),
       ("HOW DATES ARE SET", "The Constitution gives each date as a formula, such as \"end of Week 20\" or \"14 to 21 days after the NHL Entry Draft\". The calendar turns those formulas into exact dates. If the two ever disagree, the formula wins (Article V)."),
-      ("CHANGES", "A published date changes only when the NHL schedule, a platform limitation or events outside the league's control require it, with at least 7 days' notice where possible. Deadlines are extended, not moved earlier."),
+      ("CHANGES", "A published date changes only when the NHL schedule, a platform limitation or events outside the league's control require it, with at least 7 days' notice where possible. Deadlines may be extended but are not moved earlier unless the NHL schedule forces it."),
       ("TIME STANDARD", "Unless a post states otherwise, all times are **Eastern Time**.")])
 # The Sesh reminder steps travel in the same message as the calendar intro.
 more("league-office/03_calendar_channel_intro.json", "GET EVENT REMINDERS FROM SESH",
@@ -103,7 +103,7 @@ card("league-office/04_ledger_channel_intro.json", "BLHA LEAGUE LEDGER",
 card("league-office/05_voting_channel_intro.json", "BLHA LEAGUE VOTING",
      "Formal franchise votes are recorded here.", LO,
      [("ONE FRANCHISE = ONE VOTE", "Each franchise casts one vote, whether it has one owner or several. Co-owners may discuss proposals but do not create an additional vote."),
-      ("THE RULES OF A VOTE", "Material amendments need **8 of 12** affirmative votes. Votes happen only in the offseason, last 7 days, and follow a proposal posted at least 7 days earlier. Non-votes are not affirmative votes (Article XX)."),
+      ("THE RULES OF A VOTE", "Material Amendments need **8 of 12** affirmative votes. Votes happen only in the offseason, last 7 days, and follow a proposal posted at least 7 days earlier. Non-votes are not affirmative votes (Article XX)."),
       ("A VALID VOTE POST STATES", "The proposal • Voting options • Opening time • Closing time • Threshold required • Final result"),
       ("DISCUSSION", "Debate proposals in **gm-lounge**. This channel is for the proposal and the recorded vote.")])
 card("league-office/06_hall_of_champions_channel_intro.json", "BLHA HALL OF CHAMPIONS",
@@ -113,7 +113,7 @@ card("league-office/06_hall_of_champions_channel_intro.json", "BLHA HALL OF CHAM
       ("PERMANENT RECORD", "This channel is the lasting history of the league. Questions about an entry go to the League Office.")])
 card("league-office/07_league_records_channel_intro.json", "BLHA LEAGUE RECORDS",
      "The permanent record of league history, milestones and achievements.", LO,
-     [("POSTED HERE", "League records • Milestones • Season-by-season history • Constitution version history"),
+     [("POSTED HERE", "League records • Milestones • Season-by-season history • Constitution amendment history"),
       ("PERMANENT RECORD", "Records are posted by the League Office. Questions about an entry go to the League Office.")])
 
 # ------------------------------------------------------------------------ The Wire
@@ -140,7 +140,7 @@ card("the-wire/04_nhl_transactions_channel_intro.json", "BLHA NHL TRANSACTIONS",
 card("the-wire/05_prospect_wire_channel_intro.json", "BLHA PROSPECT WIRE",
      "Development news for dynasty owners who look beyond this season. " + AUTO, NEWS,
      [("POSTED HERE", "AHL and rookie news • NCAA and college hockey • CHL, OHL, WHL and QMJHL • Junior and international events • Development camps • NHL Draft prospects • World Juniors"),
-      ("DISCUSSION", "Use the Scouting Department to talk about prospects, draft rankings and trade targets.")])
+      ("DISCUSSION", "Use the **scouting** forum to talk about prospects, draft rankings and trade targets.")])
 card("the-wire/06_news_desk_channel_intro.json", "BLHA NEWS DESK",
      "The discussion room for everything the wire posts. No automation posts here, so conversation stays readable.", NEWS,
      [("USE THIS ROOM FOR", "Reactions to news • Injury impact • Player outlook • General hockey talk"),
@@ -195,7 +195,7 @@ card("trade-center/05_player_values_channel_intro.json", "BLHA PLAYER VALUES",
       ("REMEMBER", "Values are opinions. A trade isn't reversible just because someone believes one side received more value (Article XI).")])
 
 # --------------------------------------------------------------------- Scouting
-MINORS = ("MINOR-LEAGUE RULES", "Minor-league spots are for players 25 or younger (per Fantrax's age calculation) with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.")
+MINORS = ("MINOR-LEAGUE RULES", "Minor-league spots are for players 25 or younger on NHL opening day (per Fantrax's age calculation) with 100 or fewer career NHL games (50 for goalies). Details are in Article VII.")
 card("scouting/01_scouting_channel_intro.json", "BLHA SCOUTING",
      "One forum for every prospect: college, juniors, Europe, the AHL, the NHL Draft and the BLHA draft.", SD,
      [("HOW IT WORKS", "Make one post per player or topic, and search before you post so each prospect keeps one thread. Add tags for the league, the player's status and position."),
@@ -264,11 +264,11 @@ card("commissioners-office/02_rules_questions_channel_intro.json", "BLHA RULES Q
 card("commissioners-office/03_league_suggestions_channel_intro.json", "BLHA LEAGUE SUGGESTIONS",
      "Ideas for improving the league.", CO,
      [("HOW IT WORKS", "Post an idea and discuss it. A suggestion can become a formal amendment proposal."),
-      ("THE PROCESS", "Material amendments are proposed in writing, posted at least 7 days before voting, and approved by 8 of 12 votes in the offseason (Article XX).")])
+      ("THE PROCESS", "Material Amendments are proposed in writing, posted at least 7 days before voting, and approved by 8 of 12 votes in the offseason (Article XX).")])
 card("commissioners-office/04_rulings_log_channel_intro.json", "BLHA RULINGS LOG",
      "The permanent record of Commissioner rulings, recusals and appeal outcomes.", CO,
      [("POSTED HERE", "Official rulings • Recusal decisions • Appeal outcomes (Article XIX)"),
-      ("APPEALS", "A directly affected franchise may request review within 48 hours. A panel of three unaffected owners, drawn at random, decides by majority within 7 days.")])
+      ("APPEALS", "A directly affected franchise may request review within 48 hours by opening an Appeal ticket in **open-a-ticket** (Section 19.4). A panel of three unaffected owners, drawn at random, decides by majority within 7 days.")])
 
 # ------------------------------------------------------------------- Draft Center
 card("draft-center/01_draft_announcements_channel_intro.json", "BLHA DRAFT ANNOUNCEMENTS",

@@ -63,7 +63,7 @@ tmpl("league-office/32_calendar_published.json", "LEAGUE CALENDAR PUBLISHED", "T
 tmpl("league-office/33_calendar_date_change.json", "CALENDAR DATE CHANGE", "`[EVENT]` has been updated.", "BLHA LEAGUE CALENDAR",
      [("PREVIOUS DATE", "`[OLD TIMESTAMP]`"), ("NEW DATE", "**`[NEW TIMESTAMP]`**"),
       ("REASON", "`[NHL SCHEDULE CHANGE / PLATFORM LIMITATION / OTHER]`"),
-      ("NOTICE", "Changes get at least 7 days' notice where possible. Deadlines are extended, not moved earlier.")], ALERT)
+      ("NOTICE", "Changes get at least 7 days' notice where possible. Deadlines may be extended but are not moved earlier unless the NHL schedule forces it.")], ALERT)
 
 # The Sesh reminder steps are part of the calendar intro (build_channel_intros.py).
 
@@ -104,18 +104,18 @@ tmpl("league-office/52_vote_result.json", "VOTE RESULT", "`[PROPOSAL TITLE]`", "
       ("EFFECTIVE", "`[SEASON / DATE / N/A]`"), ("NEXT STEP", "`[NEW CONSTITUTION VERSION / NO CHANGE]`")], RECORD)
 
 # ----------------------------------------------------- constitution and rulings
-tmpl("league-office/10_constitution_new_version.json", "CONSTITUTION UPDATED", "**Version `[X.X]`** of the BLHA Constitution has been published.", f"{LO} • OFFICIAL NOTICE",
+tmpl("league-office/10_constitution_new_version.json", "CONSTITUTION UPDATED", "An updated BLHA Constitution has been published.", f"{LO} • OFFICIAL NOTICE",
      [("EFFECTIVE", "`[SEASON / DATE]`"), ("WHAT CHANGED", "`[SUMMARIZE CHANGES WITH ARTICLE NUMBERS]`"),
       ("APPROVED BY VOTE", "`[X]` of 12 on `[DATE]`"), ("ACTION REQUIRED", "`[NONE / REVIEW ARTICLES]`"),
       ("WHERE", "The current version is in **constitution**. Earlier versions are archived.")])
 tmpl("league-office/11_constitution_amendment.json", "CONSTITUTION AMENDMENT", "A formally adopted amendment has been added to the BLHA Constitution.", f"{LO} • OFFICIAL NOTICE",
      [("AMENDMENT", "`[TITLE]` • Article `[ROMAN]` Section `[N.N]`"), ("APPROVED", "`[X]` of 12 on `[DATE]`"),
       ("EFFECTIVE", "`[SEASON / DATE]`"), ("TEXT", "`[NEW LANGUAGE OR CONCISE SUMMARY]`"),
-      ("VERSION", "Now part of Version `[X.X]`")])
+      ("STATUS", "Now part of the current Constitution")])
 tmpl("league-office/12_rules_ruling.json", "OFFICIAL RULE INTERPRETATION", "`[SHORT ISSUE TITLE]`", f"{LO} • OFFICIAL RULING",
      [("QUESTION", "`[RULE QUESTION]`"), ("RULING", "`[OFFICIAL INTERPRETATION]`"),
       ("BASIS", "`[ARTICLE AND SECTION / FANTRAX SETTING / PRIOR RULING]`"), ("EFFECTIVE", "`[IMMEDIATELY / DATE]`"),
-      ("REVIEW", "A directly affected franchise may request review within 48 hours (Article XIX).")])
+      ("REVIEW", "A directly affected franchise may request review within 48 hours by opening an Appeal ticket in **open-a-ticket** (Section 19.4).")])
 tmpl("league-office/14_recusal_notice.json", "COMMISSIONER RECUSAL", "The Commissioner's franchise is involved in `[MATTER]`. A neutral party will decide it.", f"{LO} • OFFICIAL NOTICE",
      [("DECIDED BY", "`[NEUTRAL ASSISTANT COMMISSIONER / TEMPORARY NEUTRAL REVIEWER / UNAFFECTED FRANCHISES]`"),
       ("TIMELINE", "Decision expected by `[DATE STAMP]`"), ("RECORD", "The outcome will be posted in **rulings-log**.")])
@@ -129,7 +129,7 @@ tmpl("league-office/60_owner_welcome.json", "NEW OWNER", "Welcome to the BLHA, `
      [("FRANCHISE", "`[FRANCHISE NAME]`"), ("PAID THROUGH", "Season `[YEAR]` (prepaid dues stay with the franchise)"),
       ("START HERE", "Read **welcome** and **constitution**, then check **league-calendar**.")])
 tmpl("league-office/61_franchise_orphaned.json", "FRANCHISE SEEKING AN OWNER", "**`[FRANCHISE]`** is open and the league is looking for a replacement owner.", f"{LO} • OFFICIAL NOTICE",
-     [("WHAT HAPPENS NOW", "The franchise is locked from transactions while a replacement is arranged. The Commissioner keeps the roster legal (Article XVIII)."),
+     [("WHAT HAPPENS NOW", "The Commissioner may lock the franchise from transactions while a replacement is arranged. The Commissioner keeps the roster legal (Article XVIII)."),
       ("PREPAID DUES", "Any prepaid future seasons stay with the franchise and transfer to the new owner."),
       ("INCENTIVE", "`[NONE / DISCLOSED INCENTIVE]`"),
       ("INTERESTED?", "Contact the Commissioner. Please send names of qualified candidates.")], ALERT)

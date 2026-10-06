@@ -5,7 +5,7 @@
         "embeds": [
           {
             "title": "CONSTITUTION UPDATED",
-            "description": "**Version `[X.X]`** of the BLHA Constitution has been published.",
+            "description": "An updated BLHA Constitution has been published.",
             "color": 16758812,
             "footer": {
               "text": "BLHA LEAGUE OFFICE • OFFICIAL NOTICE"
@@ -76,8 +76,8 @@
                 "inline": false
               },
               {
-                "name": "VERSION",
-                "value": "Now part of Version `[X.X]`",
+                "name": "STATUS",
+                "value": "Now part of the current Constitution",
                 "inline": false
               }
             ],
@@ -121,7 +121,7 @@
               },
               {
                 "name": "REVIEW",
-                "value": "A directly affected franchise may request review within 48 hours (Article XIX).",
+                "value": "A directly affected franchise may request review within 48 hours by opening an Appeal ticket in **open-a-ticket** (Section 19.4).",
                 "inline": false
               }
             ],

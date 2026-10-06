@@ -1,4 +1,4 @@
-# BLHA Constitution — Version 2.2 (Charter Edition)
+# BLHA Constitution — Charter Edition
 
 *A permanent framework for competition, governance, and long-term franchise management.*
 
@@ -357,13 +357,13 @@
 
 **20.5** Amendments do not retroactively alter completed competition, previously earned prizes, or finalized transactions.
 
-**20.6** **Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is numbered, dated, and posted, and prior versions are archived.
+**20.6** **Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is dated and posted, and prior versions are archived.
 
 **20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV.
 
-**20.8** The latest published version of this Constitution is the controlling league document. Upon adoption of Version 2.2, all prior working drafts are superseded except as historical records.
+**20.8** The latest published version of this Constitution is the controlling league document. Upon adoption of the Charter, all prior working drafts are superseded except as historical records.
 
-**VERSION HISTORY**
-• **2.2** — Charter Edition. Adopted by owner acceptance. Effective Season 2027.
+**HISTORY**
+• **Charter** — Adopted by owner acceptance. Effective Season 2027.
 
 *End of Constitution*
