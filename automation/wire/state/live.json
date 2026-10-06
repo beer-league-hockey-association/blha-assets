@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T22:15:31.348224Z",
+  "updated_at": "2026-10-06T22:45:33.874556Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4052,6 +4052,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-06T22:15:31.272126Z"
+    },
+    {
+      "key": "2bf857b72aed0fcfc7ce5d1a",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-larkin/2522",
+      "fingerprint": "dc87aacd55e3d649",
+      "title_norm": "dylan larkin (det) — larkin (upper-body) is expected to return and make his season debut vs. ottawa on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T22:45:33.808201Z"
     }
   ]
 }
