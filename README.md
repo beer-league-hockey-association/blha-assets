@@ -127,6 +127,10 @@ Fantrax already tells owners when they are on the clock and shows every pick in 
 
 The draft date, order, rounds and picks come from Fantrax; the pick clock and nightly pause come from `draft_center` in `automation/league.yaml`, because Fantrax does not publish them. Details: `automation/draft/README.md`.
 
+## Voting Bot
+
+`bot/` holds the always-on Discord voting bot (proposals, one vote per franchise, Commissioner removal and elections, Review Panel draws). It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
+
 ## Where bot state lives
 
 Automations remember what they have already posted (Wire dedupe, report weeks, the live scoreboard's message, playoff seeds, health issues). That state is kept on the separate **`automation-state`** branch, not on `main`, so `main` only contains code and content changes. Each workflow restores its state at the start of a run and saves it back at the end (`automation/tools/state_branch.sh`). State is saved even when one post in a run fails, so successful posts are never repeated.
