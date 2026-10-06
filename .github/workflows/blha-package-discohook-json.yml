@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Validate raw Discohook message JSON
         shell: bash
@@ -223,7 +223,7 @@ jobs:
           PY
 
       - name: Upload raw JSON package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: BLHA-Phase-2C6-Raw-Discohook-JSON
           path: BLHA_Phase_2C6_Raw_Discohook_JSON.zip
