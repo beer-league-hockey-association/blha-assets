@@ -20,7 +20,7 @@ discord:
 # fantrax_team_id is the franchise's Fantrax team ID (run the BLHA Pick Trades
 # workflow in preview mode to list them). The IDs below are the 2026-27 TEST
 # league's, in draft order; replace them when the real league is created.
-# Mark exactly one franchise commissioner: true (it sits out 3.6 and 19.5 votes).
+# Mark exactly one franchise commissioner: true (it sits out 3.6 votes).
 franchises:
   - {name: "Franchise 1", role_id: "", fantrax_team_id: "2tml63mumumuxoqh", commissioner: true}
   - {name: "Franchise 2", role_id: "", fantrax_team_id: "gb4or3npmumb3mgv"}
@@ -36,7 +36,7 @@ franchises:
   - {name: "Franchise 12", role_id: "", fantrax_team_id: "93rjspsjmumuxpqw"}
 
 votes:
-  threshold: 8          # affirmative votes needed (Article XX, 3.6, 19.5)
+  threshold: 8          # affirmative votes needed (Article XX, 3.6)
   notice_days: 7        # proposal posted at least 7 days before voting (20.2)
   window_days: 7        # voting window (20.3)
   # 20.1: no amendment vote before the Offseason following Season 2027.

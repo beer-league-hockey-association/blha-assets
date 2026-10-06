@@ -134,7 +134,7 @@ tmpl("league-office/61_franchise_orphaned.json", "FRANCHISE SEEKING AN OWNER", "
       ("INCENTIVE", "`[NONE / DISCLOSED INCENTIVE]`"),
       ("INTERESTED?", "Contact the Commissioner. Please send names of qualified candidates.")], ALERT)
 tmpl("league-office/62_commissioner_transition.json", "COMMISSIONER TRANSITION", "`[INTERIM COMMISSIONER]` is now Interim Commissioner.", f"{LO} • OFFICIAL NOTICE",
-     [("REASON", "`[RESIGNATION / REMOVAL / UNAVAILABLE 14 DAYS]`"), ("HOW CHOSEN", "`[DESIGNATED SUCCESSOR / MAJORITY OF ACTIVE FRANCHISES]`"),
+     [("REASON", "`[RESIGNATION / UNAVAILABLE 14 DAYS]`"), ("HOW CHOSEN", "`[DESIGNATED SUCCESSOR / MAJORITY OF ACTIVE FRANCHISES]`"),
       ("HANDOFF", "Funds, records, Fantrax access and Discord/automation administration transfer within 14 days (Article XIX)."),
       ("NEXT", "A permanent Commissioner is chosen by majority vote of active franchises.")], ALERT)
 

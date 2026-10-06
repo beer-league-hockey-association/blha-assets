@@ -10,7 +10,7 @@
       "fields": [
         {
           "name": "REASON",
-          "value": "`[RESIGNATION / REMOVAL / UNAVAILABLE 14 DAYS]`",
+          "value": "`[RESIGNATION / UNAVAILABLE 14 DAYS]`",
           "inline": false
         },
         {

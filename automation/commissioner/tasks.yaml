@@ -37,7 +37,7 @@ tasks:
     items:
       - "Every $150 is confirmed in the League Ledger; unpaid franchises have written notice (Art. 3.3, 3.4)."
       - "Fantrax: FAAB is $1,000 per team (last consolation champion $1,050), trade deadline set, Games Started - Goalies max 4 with prorating on, minors age condition is Player age up to start of season, waiver tiebreaker Earliest Bid."
-      - "Waiver tiebreaker setting posted in Discord (10.4); League Calendar pinned."
+      - "League Calendar pinned."
       - "league.yaml and events.yaml point at this season; Xenon backup taken."
 
   - id: preseason-eve

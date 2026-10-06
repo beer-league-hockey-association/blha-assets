@@ -16,6 +16,13 @@ sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
 
 import prospects  # noqa: E402
+from blha.league import load_league  # noqa: E402
+
+
+def expected_mentions() -> dict:
+    """Alerts mention only the Commissioner set in league.yaml, or nobody when it is blank."""
+    ping = str((load_league().get("commissioner_desk") or {}).get("ping_user_id") or "").strip()
+    return {"users": [ping]} if ping else {"parse": []}
 
 import minors  # noqa: E402
 
@@ -110,8 +117,7 @@ class RunTests(unittest.TestCase):
     def test_first_run_posts_board_once(self):
         c1, c2, posts, state = self._run(lists())
         self.assertEqual((c1, c2, len(posts)), (0, 0, 1))
-        ping = str((prospects.load_league().get("commissioner_desk") or {}).get("ping_user_id") or "").strip()
-        self.assertEqual(posts[0]["allowed_mentions"], {"users": [ping]} if ping else {"parse": []})
+        self.assertEqual(posts[0]["allowed_mentions"], expected_mentions())
         self.assertIn("hash", json.loads(state.read_text()))
 
     def test_changed_rankings_post_again(self):
