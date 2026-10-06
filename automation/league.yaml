@@ -60,7 +60,7 @@ wire_pings:
 #               with each reminder. Leave "" for a silent post.
 commissioner_desk:
   webhook: BLHA_WEBHOOK_COMMISSIONER_DESK
-  ping_user_id: ""
+  ping_user_id: "1059135310132424814"
 
 # ---------------------------------------------------------------------------
 # Draft Center (automation/draft/)
