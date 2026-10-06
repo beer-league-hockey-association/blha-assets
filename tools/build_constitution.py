@@ -4,6 +4,7 @@
 Outputs
 - templates/constitution/NN_*.json   Discohook messages (one JSON per Discord message)
 - constitution/BLHA_Constitution.md
+- constitution/CHANGELOG.md   every adopted amendment by date (from S.AMENDMENTS), newest first
 - constitution/BLHA_Constitution_discohook_backup.json   all messages in one Discohook backup
 - constitution/BLHA_Constitution.pdf   (when --pdf is given)
 
@@ -55,8 +56,137 @@ def article_lines(art: dict, fmt: str) -> list[str]:
         elif kind == "dates":
             lines.append("\n".join(f"• **{k}:** {v}" for k, v in S.DATE_RULES))
         elif kind == "history":
-            lines.append("**HISTORY**\n" + "\n".join(f"• **{v}** — {t}" for v, t in block[1]))
+            lines.append("**HISTORY**\n" + "\n".join(f"• **{v}** — {t}" for v, t in history_rows(block[1])))
     return lines
+
+
+# ------------------------------------------------------------------ amendments
+# Amendments are identified by their adoption date, never by a version number.
+VOTES_NEEDED = 8          # Section 20.3
+FRANCHISES = 12
+_SECTION = re.compile(r"^\d{1,2}\.\d{1,2}$")
+_ARTICLE = re.compile(r"^[IVXL]+$")
+_VERSION_WORDS = re.compile(r"\b(?:v\d+(?:\.\d+)*|version\s+\d+(?:\.\d+)*)\b", re.IGNORECASE)
+_AMENDMENT_KEYS = {"adopted", "articles", "sections", "old", "new", "vote", "effective_season", "summary"}
+
+
+def nice_date(iso: str) -> str:
+    from datetime import date
+
+    d = date.fromisoformat(iso)
+    return f"{d.strftime('%B')} {d.day}, {d.year}"
+
+
+def check_amendments(amendments: list[dict]) -> list[dict]:
+    """Validate S.AMENDMENTS and return them oldest first. Raises ValueError on any problem."""
+    from datetime import date
+
+    errors: list[str] = []
+    out: list[dict] = []
+    for i, a in enumerate(amendments, 1):
+        where = f"AMENDMENTS entry {i}"
+        if not isinstance(a, dict):
+            errors.append(f"{where}: must be a dict")
+            continue
+        unknown = set(a) - _AMENDMENT_KEYS
+        if unknown:
+            errors.append(f"{where}: unknown keys {sorted(unknown)}")
+        try:
+            adopted = date.fromisoformat(str(a.get("adopted")))
+        except ValueError:
+            errors.append(f"{where}: adopted must be a date like 2028-06-20")
+            continue
+        where = f"Amendment adopted {adopted.isoformat()}"
+        articles = [str(x) for x in a.get("articles") or []]
+        sections = [str(x) for x in a.get("sections") or []]
+        if not articles and not sections:
+            errors.append(f"{where}: list the articles or sections it changes")
+        errors += [f"{where}: article {x!r} is not a Roman numeral" for x in articles if not _ARTICLE.match(x)]
+        errors += [f"{where}: section {x!r} must be cited as N.N" for x in sections if not _SECTION.match(x)]
+        vote = a.get("vote") if isinstance(a.get("vote"), dict) else {}
+        counts = {k: vote.get(k) for k in ("yes", "no", "not_voted")}
+        if set(vote) - set(counts) or any(not isinstance(v, int) or v < 0 for v in counts.values()):
+            errors.append(f"{where}: vote must be {{'yes': n, 'no': n, 'not_voted': n}} with whole numbers")
+        else:
+            if counts["yes"] < VOTES_NEEDED:
+                errors.append(f"{where}: {counts['yes']} yes votes; an amendment needs at least {VOTES_NEEDED} (20.3)")
+            if sum(counts.values()) > FRANCHISES:
+                errors.append(f"{where}: {sum(counts.values())} votes counted; there are {FRANCHISES} franchises")
+        season = a.get("effective_season")
+        if not isinstance(season, int) or season < 2027 or season < adopted.year:
+            errors.append(f"{where}: effective_season must be a Season year (2027 or later, not before the adoption year)")
+        if not str(a.get("old") or "") and not str(a.get("new") or ""):
+            errors.append(f"{where}: give the old text, the new text, or both")
+        for key in ("old", "new", "summary"):
+            if _VERSION_WORDS.search(str(a.get(key) or "")):
+                errors.append(f"{where}: {key} mentions a version number; amendments are identified by date only")
+        out.append({**a, "adopted": adopted.isoformat(), "articles": articles, "sections": sections, "vote": counts})
+    if errors:
+        raise ValueError("Invalid AMENDMENTS in tools/constitution_source.py:\n  " + "\n  ".join(errors))
+    return sorted(out, key=lambda a: a["adopted"])
+
+
+def cites(a: dict) -> str:
+    parts = [f"Article {x}" for x in a["articles"]]
+    if a["sections"]:
+        parts.append(("Sections " if len(a["sections"]) > 1 else "Section ") + ", ".join(a["sections"]))
+    return "; ".join(parts)
+
+
+def vote_text(vote: dict) -> str:
+    text = f"{vote['yes']} yes, {vote['no']} no"
+    if vote["not_voted"]:
+        text += f", {vote['not_voted']} not voted"
+    return text
+
+
+def amendment_rows(amendments: list[dict]) -> list[tuple[str, str]]:
+    rows = []
+    for a in check_amendments(amendments):
+        text = f"{cites(a)}. "
+        if a.get("summary"):
+            text += f"{str(a['summary']).rstrip('.')}. "
+        text += f"Vote {vote_text(a['vote'])}. Effective Season {a['effective_season']}."
+        rows.append((f"Amended {nice_date(a['adopted'])}", text))
+    return rows
+
+
+def history_rows(rows: list[tuple[str, str]]) -> list[tuple[str, str]]:
+    """The Article XX history block: the Charter row, then every adopted amendment by date."""
+    return list(rows) + amendment_rows(S.AMENDMENTS)
+
+
+def build_changelog(amendments: list[dict]) -> str:
+    """constitution/CHANGELOG.md: every change to the Constitution, newest first, by date."""
+    md = [
+        "<!-- Generated from tools/constitution_source.py (AMENDMENTS) by tools/build_constitution.py. Do not edit by hand. -->",
+        "# BLHA Constitution — Changelog",
+        "",
+        "Every change to the Constitution, newest first. Amendments are identified by the date they were adopted.",
+        "",
+    ]
+    for a in reversed(check_amendments(amendments)):
+        md += [f"## Amended {nice_date(a['adopted'])}", ""]
+        if a.get("summary"):
+            md += [str(a["summary"]), ""]
+        md += [
+            f"- **Changes:** {cites(a)}",
+            f"- **Vote:** {vote_text(a['vote'])} ({VOTES_NEEDED} yes votes required, Section 20.3)",
+            f"- **Effective:** Season {a['effective_season']}",
+            "",
+        ]
+        for label, key in (("Old text", "old"), ("New text", "new")):
+            text = str(a.get(key) or "").strip()
+            md += [f"**{label}:**", ""]
+            md += [("> " + line) if line else ">" for line in text.splitlines()] if text else ["*(none)*"]
+            md += [""]
+    md += [
+        "## Charter",
+        "",
+        "Adopted by owner acceptance. Effective Season 2027 (Section 20.1).",
+        "",
+    ]
+    return "\n".join(md)
 
 
 _ARTICLE_INDEX: dict[str, int] = {}
@@ -358,9 +488,12 @@ def build_pdf(path: Path) -> None:
                                         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("TOPPADDING", (0, 0), (-1, -1), 3.5), ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5), ("LEFTPADDING", (0, 0), (-1, -1), 7)]))
                 story += [dt, Spacer(1, 7)]
             elif kind == "history":
-                rows = [[Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">EDITION</font>', small), Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">CHANGE</font>', small)]]
-                rows += [[Paragraph(f"<b>{v}</b>", small), Paragraph(md(t), small)] for v, t in block[1]]
-                ht = Table(rows, colWidths=[0.9 * inch, cw - 0.9 * inch])
+                entries = history_rows(block[1])
+                head = "EDITION" if entries == list(block[1]) else "ADOPTED"
+                left = 0.9 * inch if entries == list(block[1]) else 1.45 * inch
+                rows = [[Paragraph(f'<font name="Body-Bold" size="8.5" color="#FFB81C">{head}</font>', small), Paragraph('<font name="Body-Bold" size="8.5" color="#FFB81C">CHANGE</font>', small)]]
+                rows += [[Paragraph(f"<b>{v}</b>", small), Paragraph(md(t), small)] for v, t in entries]
+                ht = Table(rows, colWidths=[left, cw - left])
                 ht.setStyle(TableStyle([("BACKGROUND", (0, 0), (-1, 0), CHAR), ("TOPPADDING", (0, 0), (-1, -1), 3.5), ("BOTTOMPADDING", (0, 0), (-1, -1), 3.5)]))
                 last = story.pop()
                 story.append(KeepTogether([last, Spacer(1, 4), ht]))
@@ -387,6 +520,7 @@ def main() -> None:
         print(f"{name}: {len(data['embeds'])} embeds, {counted} chars")
 
     (OUT_DOCS / "BLHA_Constitution.md").write_text(build_markdown(), encoding="utf-8")
+    (OUT_DOCS / "CHANGELOG.md").write_text(build_changelog(S.AMENDMENTS), encoding="utf-8")
     backup = {"messages": [{"data": d} for _, d in msgs]}
     (OUT_DOCS / "BLHA_Constitution_discohook_backup.json").write_text(json.dumps(backup, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     if "--pdf" in sys.argv:

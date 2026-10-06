@@ -119,3 +119,24 @@ draft_center:
   # TEST ONLY: pick clock in minutes for a fast test draft. Set back to null
   # before the real startup draft.
   test_pick_clock_minutes: null
+
+# ---------------------------------------------------------------------------
+# League history (automation/history/)
+#
+# rivals: declared rivalries, as pairs. Each side may be a franchise key from
+#         automation/history/history.yaml, a Fantrax team ID or a team name.
+#         Every franchise also has an "earned" rival worked out from the
+#         archive: the opponent it has played most (closest record breaks ties).
+#
+# Example:
+#   rivals:
+#     - ["rink-rats", "north-stars"]
+#     - ["Test 4", "Test 7"]
+rivals: []
+
+history:
+  # GitHub Actions secret holding each channel's Discord webhook URL.
+  # Draft retrospectives post to draft_center.webhooks.results above.
+  webhooks:
+    dynasty_pot: BLHA_WEBHOOK_LEAGUE_LEDGER
+    franchise_directory: BLHA_WEBHOOK_FRANCHISE_DIRECTORY

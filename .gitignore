@@ -3,3 +3,9 @@ __pycache__/
 
 # Bot state lives on the automation-state branch (see automation/tools/state_branch.sh).
 automation/*/state/
+
+# League archive restored from the automation-state branch, the built history
+# website and preview images (see automation/history/ and tools/build_site.py).
+/archive/
+/site/
+automation/history/out/
