@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T15:45:37.383989Z",
+  "updated_at": "2026-10-06T16:00:47.073468Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3802,6 +3802,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T15:45:37.365762Z"
+    },
+    {
+      "key": "bcfe6addf7068af666b6d7ca",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
+      "fingerprint": "0f7ab1be96e3fbab",
+      "title_norm": "jake debrusk (van) — debrusk (illness) returned to vancouver's practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T16:00:46.174074Z"
+    },
+    {
+      "key": "c91a1c8a089e5291dfce95ab",
+      "url": "https://www.nhl.com/news/new-york-islanders-semyon-varlamov-to-make-first-start-since-2024",
+      "fingerprint": "8a88e6915505b516",
+      "title_norm": "varlamov to make 1st nhl start since 2024",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T16:00:46.450480Z"
+    },
+    {
+      "key": "92b6f10d6404023282fe525f",
+      "url": "https://www.nhl.com/news/patrick-kane-looks-to-help-blackhawks-get-first-win-in-united-center-return",
+      "fingerprint": "986c7cbdff972e7c",
+      "title_norm": "win in kane's return to united center would be 'huge'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T16:00:46.708580Z"
+    },
+    {
+      "key": "20f7e6f160030123f899ebcc",
+      "url": "https://www.nhl.com/news/zizing-em-up-nhl-thrilling-first-week-of-2026-27-season",
+      "fingerprint": "97aa2cf320b1510a",
+      "title_norm": "zizing 'em up: nhl's thrilling 1st week had it all",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T16:00:46.991812Z"
     }
   ]
 }
