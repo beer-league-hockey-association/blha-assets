@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T23:00:42.606603Z",
+  "updated_at": "2026-10-06T23:45:35.583170Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4082,6 +4082,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-06T23:00:42.542891Z"
+    },
+    {
+      "key": "290a643625aa4686abd863a4",
+      "url": "https://www.nhl.com/news/michael-bunting-signs-one-year-contract-with-philadelphia-flyers",
+      "fingerprint": "1da3a6d9ace53e8c",
+      "title_norm": "bunting signs 1-year contract with flyers",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T23:45:35.151895Z"
+    },
+    {
+      "key": "afa2b021ecdeb4cb80ef1f0b",
+      "url": "https://www.nhl.com/news/pk-subban-to-star-in-new-animated-series-screech-owls",
+      "fingerprint": "a94c954ddf59fad4",
+      "title_norm": "subban star, executive producer of new animated series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-06T23:45:35.509677Z"
     }
   ]
 }
