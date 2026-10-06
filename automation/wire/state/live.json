@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T19:15:32.738912Z",
+  "updated_at": "2026-10-06T20:15:35.444322Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3992,6 +3992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T19:15:32.720861Z"
+    },
+    {
+      "key": "70655587adb434fc1696d8b0",
+      "url": "https://www.sportsnet.ca/nhl/article/should-feel-a-little-uneasy-zary-demotion-sends-message-to-flames",
+      "fingerprint": "7e05952ad22d7620",
+      "title_norm": "'should feel a little uneasy': zary demotion sends message to flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T20:15:35.421882Z"
     }
   ]
 }
