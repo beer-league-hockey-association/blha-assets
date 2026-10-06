@@ -101,7 +101,7 @@ tmpl("league-office/51_vote_open.json", "OFFICIAL BLHA VOTE", "`[PROPOSAL TITLE]
       ("EFFECTIVE", "`[NEXT SEASON / LATER DATE]` • must pass before that Season's dues deadline")])
 tmpl("league-office/52_vote_result.json", "VOTE RESULT", "`[PROPOSAL TITLE]`", "BLHA LEAGUE VOTING • FINAL RESULT",
      [("RESULT", "**`[PASSED / FAILED]`**"), ("VOTE TOTAL", "Yes `[X]` • No `[Y]` • Not voted `[Z]` (8 of 12 required)"),
-      ("EFFECTIVE", "`[SEASON / DATE / N/A]`"), ("NEXT STEP", "`[NEW CONSTITUTION VERSION / NO CHANGE]`")], RECORD)
+      ("EFFECTIVE", "`[SEASON / DATE / N/A]`"), ("NEXT STEP", "`[CONSTITUTION UPDATED / NO CHANGE]`")], RECORD)
 
 # ----------------------------------------------------- constitution and rulings
 tmpl("league-office/10_constitution_new_version.json", "CONSTITUTION UPDATED", "An updated BLHA Constitution has been published.", f"{LO} • OFFICIAL NOTICE",
