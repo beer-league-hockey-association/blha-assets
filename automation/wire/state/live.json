@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T16:15:37.645931Z",
+  "updated_at": "2026-10-06T16:30:32.269860Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3852,6 +3852,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-06T16:15:37.584932Z"
+    },
+    {
+      "key": "abb4aedce24d16b13f942b0a",
+      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
+      "fingerprint": "cfd1ba541128077a",
+      "title_norm": "joe veleno (nyr) — veleno (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T16:30:32.231219Z"
     }
   ]
 }
