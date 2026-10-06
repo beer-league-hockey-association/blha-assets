@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T18:15:41.584258Z",
+  "updated_at": "2026-10-06T18:30:43.212967Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3912,6 +3912,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T18:15:41.565111Z"
+    },
+    {
+      "key": "5e40764e233f747bfb035a3a",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
+      "fingerprint": "c932a1b6473d2e0b",
+      "title_norm": "logan o'connor (col) — o'connor (lower body) is expected to play on the upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:30:41.950116Z"
+    },
+    {
+      "key": "4735e81903d96b2de07b397f",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
+      "fingerprint": "2c5fead11e368e83",
+      "title_norm": "zachary l'heureux (col) — l'heureux (lower body) is expected to play on the upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:30:42.442251Z"
+    },
+    {
+      "key": "e88c0f16994b68595a7a3b0d",
+      "url": "https://www.sportsnet.ca/nhl/video/its-a-pressure-cooker-stamkos-on-media-attention-surrounding-mckenna",
+      "fingerprint": "d650c0fbd2452aa3",
+      "title_norm": "'it's a pressure cooker': stamkos on media attention surrounding mckenna",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:30:42.780260Z"
+    },
+    {
+      "key": "bfcd708b4bd943ccf84115af",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-recall-goalie-jonas-johansson-after-ullmark-injury",
+      "fingerprint": "b5e7b0d6b4785b68",
+      "title_norm": "senators recall goalie jonas johansson after ullmark injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:30:43.193435Z"
     }
   ]
 }
