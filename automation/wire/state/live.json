@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T02:15:32.499427Z",
+  "updated_at": "2026-10-06T02:30:42.636335Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3532,6 +3532,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T02:15:32.481552Z"
+    },
+    {
+      "key": "7f02337be6c458ba39357c6a",
+      "url": "https://www.sportsnet.ca/nhl/article/vasilevskiy-tied-for-20th-on-all-time-wins-list-after-lightning-beat-flyers",
+      "fingerprint": "c687b337d1baa007",
+      "title_norm": "vasilevskiy tied for 20th on all-time wins list after lightning beat flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T02:30:42.618718Z"
     }
   ]
 }
