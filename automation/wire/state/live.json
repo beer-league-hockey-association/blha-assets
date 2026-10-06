@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T18:30:43.212967Z",
+  "updated_at": "2026-10-06T18:45:39.458955Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3952,6 +3952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T18:30:43.193435Z"
+    },
+    {
+      "key": "6d90445f2857460cdaab59ef",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "f768306e65b72d65",
+      "title_norm": "aleksander barkov (fla) — barkov (lower body) is expected to miss six to eight weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:45:39.065613Z"
+    },
+    {
+      "key": "18f4f8dcfe8441fcc23f4c26",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-aleksander-barkov-out-six-to-eight-weeks-with-leg-injury",
+      "fingerprint": "b918ceebb0aa7698",
+      "title_norm": "panthers' aleksander barkov out six to eight weeks with leg injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T18:45:39.440370Z"
     }
   ]
 }
