@@ -32,11 +32,14 @@ class EligibilityTests(unittest.TestCase):
     def test_amendment_all_twelve_vote(self) -> None:
         self.assertEqual(len(rules.eligible(league(), rules.KINDS["amendment"])), 12)
 
-    def test_services_and_removal_exclude_commissioner(self) -> None:
-        for key in ("services", "removal"):
-            names = [f.name for f in rules.eligible(league(), rules.KINDS[key])]
-            self.assertEqual(len(names), 11)
-            self.assertNotIn("F1", names)
+    def test_services_excludes_commissioner(self) -> None:
+        names = [f.name for f in rules.eligible(league(), rules.KINDS["services"])]
+        self.assertEqual(len(names), 11)
+        self.assertNotIn("F1", names)
+
+    def test_no_commissioner_removal_vote(self) -> None:
+        # The Constitution has no Commissioner removal (Article XIX).
+        self.assertNotIn("removal", rules.KINDS)
 
     def test_orphan_has_no_vote(self) -> None:
         names = [f.name for f in rules.eligible(league("F5"), rules.KINDS["amendment"])]
@@ -55,8 +58,8 @@ class EligibilityTests(unittest.TestCase):
         self.assertIsNone(f)
         self.assertIn("more than one", why)
 
-    def test_commissioner_franchise_refused_on_removal(self) -> None:
-        f, why = rules.can_cast({101, 999}, 999, league(), rules.KINDS["removal"])
+    def test_commissioner_franchise_refused_on_services(self) -> None:
+        f, why = rules.can_cast({101, 999}, 999, league(), rules.KINDS["services"])
         self.assertIsNone(f)
         f, _ = rules.can_cast({101, 999}, 999, league(), rules.KINDS["amendment"])
         self.assertEqual(f.name, "F1")
@@ -106,8 +109,8 @@ class OpeningTests(unittest.TestCase):
         self.assertEqual(blocking, [])
         self.assertTrue(warnings)
 
-    def test_removal_any_time(self) -> None:
-        blocking, _ = rules.open_problems(rules.KINDS["removal"], now=NOW, phase="regular",
+    def test_election_any_time(self) -> None:
+        blocking, _ = rules.open_problems(rules.KINDS["interim"], now=NOW, phase="regular",
                                           proposal_posted_at=None, effective_season=None, settings=S)
         self.assertEqual(blocking, [])
 
@@ -128,9 +131,9 @@ class TallyTests(unittest.TestCase):
         ballots = {f"F{i}": rules.YES for i in range(1, 8)}
         self.assertFalse(rules.tally(rules.KINDS["amendment"], ballots, league("F12"), S).passed)
 
-    def test_commissioner_ballot_ignored_on_removal(self) -> None:
+    def test_commissioner_ballot_ignored_on_services(self) -> None:
         ballots = {f"F{i}": rules.YES for i in range(1, 9)}  # includes F1 (Commissioner)
-        out = rules.tally(rules.KINDS["removal"], ballots, league(), S)
+        out = rules.tally(rules.KINDS["services"], ballots, league(), S)
         self.assertEqual(out.counts[rules.YES], 7)
         self.assertFalse(out.passed)
 
@@ -178,7 +181,7 @@ class StoreTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.s.audit()), 4)
 
     def test_reminder_once(self) -> None:
-        vid = self.s.open_vote(kind="removal", title="R", question="Q", options=[], proposal_id=None,
+        vid = self.s.open_vote(kind="interim", title="R", question="Q", options=[], proposal_id=None,
                                effective=None, user_id=1, now=NOW, closes_at=NOW + timedelta(days=7))
         later = NOW + timedelta(days=6, hours=1)
         self.assertEqual([v["id"] for v in self.s.due_reminder(later, 24)], [vid])
@@ -231,7 +234,7 @@ class DiscordSmokeTests(unittest.TestCase):
         commands = {c.name: c for c in bot.tree.get_commands()}
         self.assertEqual(set(commands), {"proposal", "vote", "franchise", "panel", "pickem",
                                          "rule", "deadlines", "minor", "myteam", "tradecheck"})
-        self.assertEqual({c.name for c in commands["vote"].commands}, {"open", "removal", "elect", "status", "cancel"})
+        self.assertEqual({c.name for c in commands["vote"].commands}, {"open", "elect", "status", "cancel"})
         self.assertEqual({c.name for c in commands["proposal"].commands}, {"new", "from-thread"})
         self.assertEqual({c.name for c in commands["pickem"].commands}, {"leaderboard"})
         for name in ("rule", "deadlines", "minor", "myteam", "tradecheck"):

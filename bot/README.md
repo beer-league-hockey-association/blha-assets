@@ -13,10 +13,9 @@ Fantrax is only ever read, never written. The bot posts nothing that Fantrax alr
 | `/proposal new` | Franchise Owner or Commissioner | Posts a written proposal: affected rule, exact new text, Season it takes effect (20.2) |
 | `/proposal from-thread` | Commissioner | Used inside a **league-suggestions** forum thread: opens the same proposal form with the thread title filled in. After posting, it replies in the thread with a link to the proposal and adds the "scheduled for vote" tag if one is set |
 | `/vote open` | Commissioner | Opens voting on a proposal once 7 days have passed, only in the Offseason, only before 20.1's date, and only if it closes before that Season's dues deadline (20.3, 20.4) |
-| `/vote removal` | Any Franchise Owner | Commissioner removal for cause: 8 of the other 11, Commissioner's franchise doesn't vote, any time of year (19.5) |
-| `/vote elect` | Any Franchise Owner | Interim or permanent Commissioner: majority of active franchises (19.4) |
+| `/vote elect` | Any Franchise Owner | Interim or permanent Commissioner: majority of active franchises (19.5) |
 | `/vote status` | Anyone | Which franchises have voted (never how) |
-| `/vote cancel` | Commissioner | Withdraws an open amendment vote; removal and election votes always run to the end |
+| `/vote cancel` | Commissioner | Withdraws an open amendment vote; election votes always run to the end |
 | `/franchise orphan` | Commissioner | An orphaned franchise has no vote; the threshold stays 8 (2.3) |
 | `/panel draw` | Commissioner or Assistant | Draws a three-owner Review Panel from unaffected franchises and posts it in rulings-log (19.4) |
 

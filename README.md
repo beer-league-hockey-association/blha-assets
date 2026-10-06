@@ -212,7 +212,7 @@ Images are drawn with Pillow (`automation/history/requirements.txt`) in brand co
 
 ## League Bot
 
-`bot/` holds the always-on BLHA League Bot: league votes (proposals, one vote per franchise, Commissioner removal and elections, Review Panel draws, suggestion threads turned into proposals), `/rule` Constitution lookup, `/deadlines`, `/minor` eligibility checks, a private `/myteam` view, `/tradecheck` compliance checks and a weekly Pick'em. It reads Fantrax and never writes to it. It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
+`bot/` holds the always-on BLHA League Bot: league votes (proposals, one vote per franchise, Commissioner elections, Review Panel draws, suggestion threads turned into proposals), `/rule` Constitution lookup, `/deadlines`, `/minor` eligibility checks, a private `/myteam` view, `/tradecheck` compliance checks and a weekly Pick'em. It reads Fantrax and never writes to it. It is built and tested but not deployed; it goes on Railway once owners join. Setup and commands: `bot/README.md`.
 
 ## Where bot state lives
 

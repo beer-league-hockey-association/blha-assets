@@ -15,6 +15,13 @@ sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(HERE))
 
 import picktrades  # noqa: E402
+from blha.league import load_league  # noqa: E402
+
+
+def expected_mentions() -> dict:
+    """Alerts mention only the Commissioner set in league.yaml, or nobody when it is blank."""
+    ping = str((load_league().get("commissioner_desk") or {}).get("ping_user_id") or "").strip()
+    return {"users": [ping]} if ping else {"parse": []}
 
 NAMES = {"a": "Test 1", "b": "Test 2", "c": "Test 3"}
 
@@ -217,8 +224,7 @@ class RunTests(unittest.TestCase):
         saved = picktrades.snapshot(raw(BASE))
         code, code2, posts, _ = self._run({**BASE, (2028, 1, "a"): "b"}, saved)
         self.assertEqual((code, code2, len(posts)), (0, 0, 1))
-        ping = str((picktrades.load_league().get("commissioner_desk") or {}).get("ping_user_id") or "").strip()
-        self.assertEqual(posts[0]["allowed_mentions"], {"users": [ping]} if ping else {"parse": []})
+        self.assertEqual(posts[0]["allowed_mentions"], expected_mentions())
 
     def test_failed_delivery_retries_and_does_not_save(self):
         saved = picktrades.snapshot(raw(BASE))

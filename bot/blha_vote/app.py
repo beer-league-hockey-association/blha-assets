@@ -4,9 +4,8 @@ Slash commands:
   /proposal new            post a written amendment proposal (20.2)
   /proposal from-thread    Commissioner turns a suggestion forum thread into a proposal
   /vote open               Commissioner opens voting on a proposal (20.3)
-  /vote removal            any Franchise Owner starts a removal vote (19.5)
   /vote elect              any Franchise Owner starts an Interim or permanent
-                           Commissioner election (19.4)
+                           Commissioner election (19.5)
   /vote status             who has voted so far (not how)
   /vote cancel             Commissioner withdraws an amendment vote
   /franchise orphan        Commissioner marks a franchise orphaned (2.3)
@@ -585,20 +584,7 @@ class VoteBot(discord.Client):
             await bot.start_vote(interaction, row["kind"], row["title"], question, [], proposal_id,
                                  f"Season {row['effective_season']}", warnings)
 
-        @vote.command(name="removal", description="Start a vote to remove the Commissioner for cause (19.5)")
-        async def vote_removal(interaction: discord.Interaction, cause: str) -> None:
-            kind = rules.KINDS["removal"]
-            f, why = rules.can_cast(bot.role_ids(interaction.user), bot.cfg.owner_role_id, bot.franchises(), kind)
-            if f is None:
-                await interaction.response.send_message(why, ephemeral=True)
-                return
-            await interaction.response.defer(ephemeral=True, thinking=True)
-            question = (f"Remove the Commissioner for cause? Cause stated by {f.name}: {cause[:700]}\n"
-                        "Cause means documented misuse of league funds, repeated violation of the Constitution, "
-                        "or abandonment of the office (19.5).")
-            await bot.start_vote(interaction, "removal", "Commissioner removal", question, [], None, None, [])
-
-        @vote.command(name="elect", description="Elect an Interim or permanent Commissioner (19.4)")
+        @vote.command(name="elect", description="Elect an Interim or permanent Commissioner (19.5)")
         @app_commands.describe(candidates="Mention each candidate, e.g. @Alex @Sam")
         @app_commands.choices(office=[app_commands.Choice(name="Interim Commissioner", value="interim"),
                                       app_commands.Choice(name="Permanent Commissioner", value="commissioner")])
@@ -644,7 +630,7 @@ class VoteBot(discord.Client):
                 return
             if row is None or row["status"] != "open" or row["kind"] not in ("amendment", "services"):
                 await interaction.response.send_message(
-                    "Only an open amendment vote can be withdrawn. Removal and election votes run to the end.",
+                    "Only an open amendment vote can be withdrawn. Election votes run to the end.",
                     ephemeral=True)
                 return
             bot.store.close_vote(vote_id, {"cancelled": True, "reason": reason}, now=utcnow(), status="cancelled")

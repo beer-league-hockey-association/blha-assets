@@ -141,7 +141,7 @@ Without the secret the step just logs that it skipped.
 
 The repository lives in the `beer-league-hockey-association` organization at
 `beer-league-hockey-association/blha-assets`, so a future Commissioner can take
-over the automation without a personal account (Constitution 19.7). It moved
+over the automation without a personal account (Constitution 19.6). It moved
 there from the previous personal-account address in October 2026; code,
 history, pull requests, Actions history, repository secrets and webhooks moved
 with it, and every template, tool and doc now uses the organization address.
