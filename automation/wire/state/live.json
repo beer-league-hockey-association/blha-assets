@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T20:15:35.444322Z",
+  "updated_at": "2026-10-06T21:15:31.034095Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4002,6 +4002,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-06T20:15:35.421882Z"
+    },
+    {
+      "key": "0b0ba8120595ac7847ba54c6",
+      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
+      "fingerprint": "1577283bfeebeb51",
+      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is considered day-to-day but is still being evaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-06T21:15:30.686206Z"
+    },
+    {
+      "key": "6ef30dbc2137a6e55db3147a",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-ullmark-not-dressed-vs-red-wings",
+      "fingerprint": "0f3652910ad92b7b",
+      "title_norm": "senators' ullmark not dressed vs. red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T21:15:31.017509Z"
     }
   ]
 }
