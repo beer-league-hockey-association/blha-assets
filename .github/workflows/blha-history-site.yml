@@ -2,18 +2,21 @@ name: BLHA History Site
 run-name: BLHA History Site — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 # Builds the league history website (tools/build_site.py) from main plus the
-# archive on the automation-state branch, and publishes it to GitHub Pages.
-# Timing lives in automation/scheduler/schedule.yaml (weekly); the BLHA
-# Scheduler starts this workflow with mode=live. Run it by hand any time.
+# archive on the automation-state branch, and publishes it to Cloudflare Pages
+# as a standalone site: visitors only ever see the site's own address.
+# Timing lives in automation/scheduler/schedule.yaml (daily, after the
+# archive); the BLHA Scheduler starts this workflow with mode=live.
 #
-# One-time setup: repository Settings > Pages > Build and deployment >
-# Source: GitHub Actions. Until then the deploy step fails.
+# One-time setup (README, "History website"): repository secrets
+# CLOUDFLARE_API_TOKEN (permission: Account > Cloudflare Pages > Edit) and
+# CLOUDFLARE_ACCOUNT_ID. The Pages project named in automation/league.yaml
+# (history_site.cloudflare_project) is created on the first live run.
 
 on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "preview = build and attach the site to the run; live = build and publish to GitHub Pages"
+        description: "preview = build and attach the site to the run; live = build and publish to Cloudflare Pages"
         required: true
         default: preview
         type: choice
@@ -27,9 +30,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  site:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
     steps:
@@ -73,24 +76,28 @@ jobs:
           path: site/
           retention-days: 7
 
-      - name: Upload the Pages artifact
+      - name: Set up Node (for Cloudflare's Wrangler)
         if: ${{ env.MODE == 'live' }}
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/setup-node@v5
         with:
-          path: site/
+          node-version: "22"
 
-  deploy:
-    needs: build
-    if: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode || 'live') == 'live' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Publish to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Publish to Cloudflare Pages
+        if: ${{ env.MODE == 'live' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" || -z "$CLOUDFLARE_ACCOUNT_ID" ]]; then
+            echo "::error::Add the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID repository secrets first (README, History website)."
+            exit 1
+          fi
+          PROJECT=$(python -c "import sys; sys.path.insert(0, 'automation'); from blha.league import load_league; print((load_league().get('history_site') or {}).get('cloudflare_project') or 'blha-history')")
+          echo "Cloudflare Pages project: $PROJECT"
+          WRANGLER="npx --yes wrangler@4"
+          if ! $WRANGLER pages project list 2>/dev/null | grep -qw "$PROJECT"; then
+            echo "Creating the Pages project $PROJECT (first publish)"
+            $WRANGLER pages project create "$PROJECT" --production-branch main
+          fi
+          $WRANGLER pages deploy site --project-name "$PROJECT" --branch main --commit-message "League history update" --commit-dirty=true

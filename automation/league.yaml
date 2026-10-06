@@ -146,6 +146,19 @@ draft_center:
 #     - ["Test 4", "Test 7"]
 rivals: []
 
+# ---------------------------------------------------------------------------
+# League history website (tools/build_site.py, workflow BLHA History Site)
+#
+# A standalone site on Cloudflare Pages. Nothing on it points to GitHub.
+# url:                the site's own address once the domain is connected,
+#                     e.g. "https://blhahockey.com" (no trailing slash). Used
+#                     for search engines and link previews; leave "" until then.
+# cloudflare_project: the Cloudflare Pages project name. Its free address is
+#                     https://<project>.pages.dev until the domain is added.
+history_site:
+  url: ""
+  cloudflare_project: blha-history
+
 history:
   # GitHub Actions secret holding each channel's Discord webhook URL.
   # Draft retrospectives post to draft_center.webhooks.results above.

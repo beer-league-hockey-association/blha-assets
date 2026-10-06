@@ -138,8 +138,9 @@ jobs:
     daily_at: ["05:30"]
     retry_failures: 2
 
-  # History website, rebuilt from the archive and published to GitHub Pages
-  # once a week (every 7 days after the last live run).
+  # History website, rebuilt from the archive and published to Cloudflare Pages
+  # every morning after the archive's 05:30 run.
   - id: history-site
     workflow: blha-history-site.yml
-    every_minutes: 10080
+    daily_at: ["06:15"]
+    retry_failures: 2

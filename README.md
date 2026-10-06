@@ -61,7 +61,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Playoff bracket | Hourly, playoff weeks only |
 | Draft Center | Every 15 minutes, only from 31 days before a Fantrax draft until a day after it ends |
 | League Archive | Daily around 05:30 ET, all year |
-| History Site | Weekly (7 days after its last live run) |
+| History Site | Daily around 06:15 ET, after the archive |
 
 Shared Discord delivery (`automation/discord_webhook.py`) retries transient network failures, Discord rate limits and temporary HTTP errors, and can edit a message it posted earlier so live views update in place. Shared Fantrax and season-calendar code lives in `automation/blha/`.
 
@@ -201,11 +201,16 @@ The first run of each season saves a baseline only. Limits: a player dropped by 
 
 Images are drawn with Pillow (`automation/history/requirements.txt`) in brand colours (gold #FFB81C on charcoal #2B2D31, cream text, the B mark) and attached to the message, so nothing is committed. Retrospectives score NHL regular-season stats since the draft the BLHA way where the NHL feed allows (goals, assists, shots; goalies: starts, saves, goals against); hits and blocks are not in the NHL's public feed.
 
-**History website** (workflow BLHA History Site, `blha-history-site.yml`, weekly plus manual; `preview` attaches the built site to the run, `live` publishes it). `tools/build_site.py` builds plain HTML and CSS with no JavaScript or outside files from main plus the archive on the `automation-state` branch: home (champions and Dynasty Pot), standings by season with weekly results, head-to-head and rivalries, trade log with trade trees, drafts with retrospectives, franchises, and the Constitution with its changelog. It builds cleanly from an empty archive. Build it locally with `python tools/build_site.py --archive <archive folder>`; output goes to `site/` (git-ignored). The site is public, like the repository: it shows franchise names, owner display names and league results only.
+**History website** (workflow BLHA History Site, `blha-history-site.yml`, daily plus manual; `preview` attaches the built site to the run, `live` publishes it). A standalone public website on **Cloudflare Pages** at the league's own domain. `tools/build_site.py` builds it from main plus the archive on the `automation-state` branch as plain HTML and CSS with no JavaScript. Every page, image and font (Archivo, `brand/fonts/archivo/`, SIL Open Font License) is served by the site itself, and nothing on it names or links to GitHub; the regression tests fail the build if anything does.
+
+- **Pages:** home (championship banners in the rafters, the Dynasty Pot race, season by season), a page per Season (honours, standings, every week), a page per franchise (banners, season by season, head-to-head, trades, draft picks), head-to-head and rivalries, trades with trade trees, drafts with retrospectives, league records, and the Constitution with its changelog. Clean addresses such as `/seasons/2027/` and `/franchises/rink-rats/`, plus a 404 page, `robots.txt`, a sitemap and a link-preview image.
+- **Address:** `history_site.url` in `automation/league.yaml` (for search engines and link previews) and `history_site.cloudflare_project` (default `blha-history`, free address `https://blha-history.pages.dev` until the domain is connected).
+- **Security and speed:** a `_headers` file gives Cloudflare a strict content security policy and long caching for versioned assets.
+- It builds cleanly from an empty archive. Build it locally with `python tools/build_site.py --archive <archive folder>`; output goes to `site/` (git-ignored). Preview it with `python -m http.server -d site` and open http://localhost:8000. It shows franchise names, owner display names and league results only.
 
 **One-time setup**
 
-1. GitHub Pages: repository Settings > Pages > Build and deployment > Source: **GitHub Actions**. The site is then published at `https://beer-league-hockey-association.github.io/blha-assets/` by the weekly run, or straight away with Actions > BLHA History Site > Run workflow > mode `live`.
+1. Cloudflare: create a free account, buy the domain through Cloudflare Registrar (or point an existing one at Cloudflare), then create an API token with the permission **Account > Cloudflare Pages > Edit**. Add two repository secrets: `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Run Actions > BLHA History Site > mode `live` once; it creates the Pages project. In Cloudflare, open Workers & Pages > the project > Custom domains and add the domain, then set `history_site.url` to it.
 2. In Discord, create a webhook in #league-ledger and one in #franchise-directory, and add them as repository secrets `BLHA_WEBHOOK_LEAGUE_LEDGER` and `BLHA_WEBHOOK_FRANCHISE_DIRECTORY`.
 3. Actions > BLHA League Archive > mode `preview` once to check it reads Fantrax, then let the scheduler run it (the first live run saves the baseline).
 4. When owners join, fill in `franchises` in `automation/history/history.yaml` (Fantrax team IDs are printed by BLHA Pick Trades in `preview` mode). After each Season, record its honours and Dynasty Pot money there.

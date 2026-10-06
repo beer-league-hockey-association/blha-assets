@@ -28,12 +28,14 @@ from history import collect, testkit as kit  # noqa: E402
 from history.records import Records  # noqa: E402
 from history.store import Archive  # noqa: E402
 
-PAGES = [name for name, _ in build_site.PAGES]
 NOW = datetime(2026, 10, 22, 12, tzinfo=timezone.utc)
+SECTION_PAGES = [f"{key}/index.html" for key, _ in build_site.SECTIONS]
+OWN_SITE = "https://blhahockey.com"
 
 
 def read(out: Path) -> dict[str, str]:
-    return {name: (out / name).read_text(encoding="utf-8") for name in PAGES}
+    """Every HTML page in the built site, by path."""
+    return {str(f.relative_to(out)): f.read_text(encoding="utf-8") for f in sorted(out.rglob("*.html"))}
 
 
 class SiteTests(unittest.TestCase):
@@ -41,35 +43,67 @@ class SiteTests(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         self.base = Path(self.tmp.name)
+        self.out = self.base / "site"
 
     def build(self, archive: Path, records: Records, league: dict | None = None) -> dict[str, str]:
-        out = self.base / "site"
-        pages = build_site.build(archive, out, records=records, league=league or {"rivals": []}, now=NOW)
-        self.assertEqual(pages, PAGES)
-        for asset in ("site.css", "favicon.png", "b-mark.png", "wordmark.png"):
-            self.assertTrue((out / "assets" / asset).is_file(), asset)
-        return read(out)
+        pages = build_site.build(archive, self.out, records=records, league=league or {"rivals": []}, now=NOW)
+        for page in ["index.html", *SECTION_PAGES, "404.html"]:
+            self.assertIn(page, pages)
+        for asset in ("site.css", "favicon.png", "apple-touch-icon.png", "b-mark.png", "social-card.png",
+                      "fonts/archivo.woff", "fonts/archivo-italic.woff"):
+            self.assertTrue((self.out / "assets" / asset).is_file(), asset)
+        for extra in ("robots.txt", "_headers"):
+            self.assertTrue((self.out / extra).is_file(), extra)
+        return read(self.out)
 
-    def common_checks(self, pages: dict[str, str]) -> None:
+    def standalone_checks(self, pages: dict[str, str]) -> None:
+        """The site stands alone: nothing names or loads from GitHub or any other address, and every link works."""
+        for f in self.out.rglob("*"):
+            if f.is_file() and f.suffix in ("", ".html", ".css", ".txt", ".xml"):
+                self.assertNotIn("github", f.read_text(encoding="utf-8").lower(), str(f))
+        css = (self.out / "assets" / "site.css").read_text(encoding="utf-8")
+        self.assertIsNone(re.search(r"url\((?!\"?/assets/)", css))                     # fonts are served by the site
         for name, text in pages.items():
             self.assertTrue(text.startswith("<!doctype html>"), name)
-            self.assertNotIn("<script", text, name)                       # no JavaScript at all
-            self.assertIsNone(re.search(r'(src|href)="(https?:)?//', text), name)  # nothing loaded from elsewhere
-            self.assertIsNone(re.search(r"\bNone\b(?! yet)|\bnan\b", re.sub(r"<[^>]+>", " ", text)), name)
+            self.assertNotIn("<script", text, name)                                    # no JavaScript at all
+            self.assertNotIn(" style=", text, name)                                    # allowed by the strict CSP
             self.assertIn('name="viewport"', text)
-            self.assertIn(f'href="{name}" aria-current=page', text)
+            self.assertIsNone(re.search(r"\bNone\b(?! yet)|\bnan\b", re.sub(r"<[^>]+>", " ", text)), name)
+            for attr, target in re.findall(r'\b(src|href)="([^"]*)"', text):
+                if target.startswith("#"):
+                    continue
+                if target.startswith(OWN_SITE):                                        # canonical links to its own domain
+                    target = target[len(OWN_SITE):]
+                self.assertTrue(target.startswith("/"), f"{name}: {attr}={target} points outside the site")
+                path = target.split("#")[0].split("?")[0]
+                file = self.out / path.lstrip("/")
+                if path.endswith("/"):
+                    file = file / "index.html"
+                self.assertTrue(file.is_file(), f"{name}: broken link {target}")
+            for key, _ in build_site.SECTIONS:
+                if name == f"{key}/index.html":
+                    self.assertIn(f'href="/{key}/" aria-current=page', text)
 
     def test_builds_from_an_empty_archive(self) -> None:
         pages = self.build(self.base / "no-archive", Records({}))
-        self.common_checks(pages)
-        self.assertIn("No Season has finished yet", pages["index.html"])
-        self.assertIn("$0", pages["index.html"])
-        self.assertIn("No season has been archived yet", pages["standings.html"])
-        self.assertIn("No trades recorded yet", pages["trades.html"])
-        self.assertIn("No completed draft", pages["drafts.html"])
-        self.assertIn("Article XX", pages["constitution.html"])
-        self.assertIn("Adopted by owner acceptance. Effective Season 2027", pages["constitution.html"])
-        self.assertNotIn("Do not edit", pages["constitution.html"])
+        self.standalone_checks(pages)
+        home = pages["index.html"]
+        self.assertIn('class="banner pending"', home)                                  # an empty banner waits in the rafters
+        self.assertIn("The first Season is still to come", home)
+        self.assertIn("$0", home)
+        self.assertIn("No Season has been archived yet", pages["seasons/index.html"])
+        self.assertIn("No trades recorded yet", pages["trades/index.html"])
+        self.assertIn("No completed draft", pages["drafts/index.html"])
+        self.assertIn("no records", pages["records/index.html"])
+        self.assertIn("Article XX", pages["constitution/index.html"])
+        self.assertIn("Adopted by owner acceptance. Effective Season 2027", pages["constitution/index.html"])
+        self.assertNotIn("Do not edit", pages["constitution/index.html"])
+        self.assertIn("isn't in the record book", pages["404.html"])
+        self.assertNotIn("canonical", home)                                            # no domain set yet
+        self.assertFalse((self.out / "sitemap.xml").exists())
+        headers = (self.out / "_headers").read_text()
+        self.assertIn("default-src 'none'", headers)
+        self.assertIn("immutable", headers)
 
     def test_builds_from_the_fantrax_fixtures(self) -> None:
         root = self.base / "archive"
@@ -85,18 +119,23 @@ class SiteTests(unittest.TestCase):
         collect.run("live", now=datetime(2026, 10, 21, 9, 30, tzinfo=timezone.utc),
                     fx=kit.FakeFantrax(rosters=nxt, picks=picks), archive=arch, cfg=kit.CFG)
         pages = self.build(root, Records({}), {"rivals": [["Test", "Test 3"]]})
-        self.common_checks(pages)
-        self.assertIn("Season 2026 (2026-27 TEST)", pages["standings.html"])
-        self.assertIn("Through Week 3", pages["standings.html"])
-        self.assertIn("2028 1st round pick (Test 3)", pages["trades.html"])
-        self.assertIn("Not used yet", pages["trades.html"])
-        self.assertIn("Jack Hughes (C, NJD)", pages["trades.html"])
-        self.assertIn("Declared rivalries", pages["rivalries.html"])
-        self.assertIn('class="matrix"', pages["rivalries.html"])
-        self.assertIn("Full draft board (24 picks)", pages["drafts.html"])
-        self.assertIn("Connor McDavid (C, EDM)", pages["drafts.html"])
-        self.assertEqual(pages["franchises.html"].count('<article class="card"'), 12)
-        self.assertLess(pages["franchises.html"].index(">Test 2<"), pages["franchises.html"].index(">Test 10<"))
+        self.standalone_checks(pages)
+        self.assertIn("2026-27 TEST", pages["seasons/2026/index.html"])
+        self.assertIn("Through Week 3", pages["seasons/2026/index.html"])
+        self.assertIn("Season 2027 is the first that counts", pages["index.html"])
+        self.assertIn('<span class="year">2027</span>', pages["index.html"])        # the first real Season's banner
+        self.assertIn("2028 1st round pick (Test 3)", pages["trades/index.html"])
+        self.assertIn("Not used yet", pages["trades/index.html"])
+        self.assertIn("Jack Hughes (C, NJD)", pages["trades/index.html"])
+        self.assertIn("Declared rivalries", pages["head-to-head/index.html"])
+        self.assertIn('class="matrix"', pages["head-to-head/index.html"])
+        self.assertIn("Full draft board (24 picks)", pages["drafts/index.html"])
+        self.assertIn("Connor McDavid (C, EDM)", pages["drafts/index.html"])
+        franchise_pages = [p for p in pages if p.startswith("franchises/") and p != "franchises/index.html"]
+        self.assertEqual(len(franchise_pages), 12)
+        index = pages["franchises/index.html"]
+        self.assertLess(index.index(">Test 2<"), index.index(">Test 10<"))
+        self.assertIn("Highest scores", pages["records/index.html"])
 
     def test_builds_a_multi_season_history(self) -> None:
         root = self.base / "archive"
@@ -106,20 +145,37 @@ class SiteTests(unittest.TestCase):
             "steal": {"name": "Test Player13 (C, EDM)", "round": 2, "in_round": 3, "overall": 7, "franchise": "North Stars",
                       "value": 300.0, "gp": 100, "points": 60, "rank": 1}, "miss": None, "pickup": None, "development": None})
         records = Records(th.HISTORY)
-        pages = self.build(root, records, {"rivals": [["north", "west"]]})
-        self.common_checks(pages)
+        pages = self.build(root, records, {"rivals": [["north", "west"]], "history_site": {"url": "https://blhahockey.com"}})
+        self.standalone_checks(pages)
         home = pages["index.html"]
         self.assertIn("$435", home)
-        self.assertIn("North Stars", home)
         self.assertIn('aria-label="2 of 3"', home)
-        self.assertNotIn("2026-27 TEST", pages["standings.html"])               # test season hidden once real ones exist
-        self.assertIn("Week 4 (playoffs)", pages["standings.html"])
-        self.assertIn("Used at 2.03", pages["trades.html"])
-        self.assertIn("Retrospective (as of Jul 1, 2030)", pages["drafts.html"])
-        self.assertIn("<strong>Test Player13 (C, EDM)</strong>", pages["drafts.html"])
-        self.assertIn("assets/logos/north.png", pages["franchises.html"])
-        self.assertTrue((self.base / "site" / "assets" / "logos" / "north.png").is_file())
-        self.assertIn("Presidents&#x27; Trophy 2027", pages["franchises.html"])
+        self.assertEqual(home.count('<li class="banner"><span class="rod"></span><a href="/seasons/'), 2)  # two titles
+        self.assertIn('<li class="banner cream">', home)                                # a Presidents' Trophy banner
+        self.assertNotIn("seasons/2026", "".join(pages))                               # test season hidden once real ones exist
+        self.assertIn("Week 4, playoffs", pages["seasons/2027/index.html"])
+        self.assertIn("Used at 2.03", pages["trades/index.html"])
+        self.assertIn("Retrospective, as of Jul 1, 2030", pages["drafts/index.html"])
+        self.assertIn("<strong>Test Player13 (C, EDM)</strong>", pages["drafts/index.html"])
+        north = pages["franchises/north/index.html"]
+        self.assertIn("/assets/logos/north.png?v=", north)
+        self.assertIn("Presidents&#x27; Trophy", pages["franchises/south/index.html"])
+        self.assertIn("Championships</dt><dd>2 (2027, 2028)", north)
+        self.assertIn('<link rel="canonical" href="https://blhahockey.com/franchises/north/">', north)
+        self.assertIn('content="https://blhahockey.com/assets/social-card.png"', north)
+        sitemap = (self.out / "sitemap.xml").read_text()
+        self.assertIn("<loc>https://blhahockey.com/seasons/2027/</loc>", sitemap)
+        self.assertNotIn("404", sitemap)
+        self.assertIn("Sitemap: https://blhahockey.com/sitemap.xml", (self.out / "robots.txt").read_text())
+        css = (self.out / "assets" / "site.css").read_text()
+        self.assertIn(".f-north{--fc:#1D4E89;--fc2:#F4EFE4;--fc-ink:#F4EFE4}", css)
+
+    def test_site_address_must_be_a_plain_https_domain(self) -> None:
+        for bad in ("http://blhahockey.com", "https://blhahockey.com/history", "blhahockey.com"):
+            with self.assertRaises(ValueError, msg=bad):
+                build_site.site_url({"history_site": {"url": bad}})
+        self.assertEqual(build_site.site_url({"history_site": {"url": "https://www.blhahockey.com/"}}), "https://www.blhahockey.com")
+        self.assertEqual(build_site.site_url({}), "")
 
     def test_text_is_escaped(self) -> None:
         root = self.base / "archive"
@@ -127,7 +183,7 @@ class SiteTests(unittest.TestCase):
         data = json.loads(json.dumps(th.HISTORY))
         data["franchises"]["north"]["name"] = "<script>alert(1)</script> & Co"
         pages = self.build(root, Records(data))
-        self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt; &amp; Co", pages["franchises.html"])
+        self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt; &amp; Co", pages["franchises/index.html"])
         self.assertNotIn("<script>", "".join(pages.values()))
 
     def test_markdown_subset(self) -> None:
@@ -143,6 +199,10 @@ class SiteTests(unittest.TestCase):
         self.assertIn("<ul><li>one</li><li>two</li></ul>", html)
         self.assertIn("<p><strong>HISTORY</strong></p>\n<ul><li><strong>Charter</strong> — Adopted.</li></ul>", html)
         self.assertIn("<td><strong>y</strong></td>", html)
+
+    def test_readable_text_on_franchise_colours(self) -> None:
+        self.assertEqual(build_site.ink_for("#FFB81C"), build_site.INK)
+        self.assertEqual(build_site.ink_for("#1D4E89"), build_site.CREAM)
 
 
 SAMPLE = {

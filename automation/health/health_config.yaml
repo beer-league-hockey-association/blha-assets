@@ -110,5 +110,5 @@ workflows:
   - id: history-site
     name: "BLHA History Site"
     file: "blha-history-site.yml"
-    # Once a week.
-    max_age_minutes: 11600
+    # Once a day at 06:15.
+    max_age_minutes: 1700
