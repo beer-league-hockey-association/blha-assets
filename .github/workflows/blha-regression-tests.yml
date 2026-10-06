@@ -138,5 +138,8 @@ jobs:
           PYTHONPATH: automation:automation/health:automation/commissioner
         run: python automation/health/test_dormancy.py
 
-      - name: Test the voting bot (rules, storage, embeds, Discord commands)
+      - name: Test the league bot's votes (rules, storage, embeds, Discord commands)
         run: python bot/tests/test_bot.py
+
+      - name: Test the league bot's league tools (rule, deadlines, minor, myteam, tradecheck, Pick'em)
+        run: python bot/tests/test_league_features.py

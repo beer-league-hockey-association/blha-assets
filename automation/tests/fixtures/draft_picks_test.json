@@ -1,0 +1,1088 @@
+{
+ "_note": "Shape of live getDraftPicks (180 future picks = 12 teams x 3 years x 5 rounds; currentDraftPicks empty outside a draft). Rebuilt from the live response structure 2026-10-06; no picks traded yet.",
+ "response": {
+  "futureDraftPicks": [
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "2tml63mumumuxoqh",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "2tml63mumumuxoqh"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "gb4or3npmumb3mgv",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "gb4or3npmumb3mgv"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "mvh0gxh2mumuxoo4",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "mvh0gxh2mumuxoo4"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "8j6llh6gmumuxose",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "8j6llh6gmumuxose"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "tau9p1cvmumuxout",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "tau9p1cvmumuxout"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "gobvt8opmumuxoxm",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "gobvt8opmumuxoxm"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "qqpqauuamumuxp03",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "qqpqauuamumuxp03"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "vs89xezfmumuxp44",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "vs89xezfmumuxp44"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "w9j9rgr1mumuxp9e",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "w9j9rgr1mumuxp9e"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "6bzildyomumuxpe6",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "6bzildyomumuxpe6"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "4qdrdr4fmumuxplb",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "4qdrdr4fmumuxplb"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 1,
+    "year": 2027,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 2,
+    "year": 2027,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 3,
+    "year": 2027,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 4,
+    "year": 2027,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 5,
+    "year": 2027,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 1,
+    "year": 2028,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 2,
+    "year": 2028,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 3,
+    "year": 2028,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 4,
+    "year": 2028,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 5,
+    "year": 2028,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 1,
+    "year": 2029,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 2,
+    "year": 2029,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 3,
+    "year": 2029,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 4,
+    "year": 2029,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   },
+   {
+    "currentOwnerTeamId": "93rjspsjmumuxpqw",
+    "round": 5,
+    "year": 2029,
+    "originalOwnerTeamId": "93rjspsjmumuxpqw"
+   }
+  ],
+  "currentDraftPicks": []
+ }
+}
