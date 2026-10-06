@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T16:30:32.269860Z",
+  "updated_at": "2026-10-06T17:15:33.473054Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -3862,6 +3862,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-06T16:30:32.231219Z"
+    },
+    {
+      "key": "7331a32fdc35ba8a488ceaec",
+      "url": "https://www.sportsnet.ca/nhl/article/you-hear-about-it-gavin-mckenna-talks-early-point-slump-in-toronto",
+      "fingerprint": "748b227de9cff421",
+      "title_norm": "'you hear about it': gavin mckenna talks early point slump in toronto",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-06T17:15:33.387405Z"
     }
   ]
 }
