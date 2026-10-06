@@ -191,7 +191,7 @@
 
 **9.2** A franchise may receive credit for a maximum of 4 goalie starts during a normal fantasy Week.
 
-**9.3** The two-week BLHA Championship permits a maximum of 8 credited goalie starts across the full championship period.
+**9.3** The two-week BLHA Championship permits a maximum of 8 credited goalie starts across the full championship period. Any other Week longer than one calendar week, such as over an NHL break, uses the same rule: 4 credited goalie starts and 5 acquisitions for each calendar week it spans.
 
 **9.4** Fantrax enforcement settings govern the technical application of the goalie-start limit. A manager may not intentionally exploit a platform timing or scoring behavior to obtain credit beyond the constitutional maximum.
 
@@ -235,7 +235,7 @@
 
 **12.3** Required prepayment is cumulative. Example: during Season 2027, a franchise that has paid for Season 2027 and wishes to trade its 2030 first- or second-round pick must first be paid for Seasons 2028, 2029, and 2030.
 
-**12.4** The required payment must be received and confirmed by the Commissioner in the League Ledger before the trade is proposed or accepted. If multiple franchises in the same trade trigger this rule, each affected franchise must satisfy its own prepayment requirement.
+**12.4** The required payment must be received and confirmed by the Commissioner in the League Ledger before the trade processes in Fantrax. If multiple franchises in the same trade trigger this rule, each affected franchise must satisfy its own prepayment requirement.
 
 **12.5** Fantrax processes trades without Commissioner approval and does not check this rule, and Fantrax acceptance does not override it. If a trade processes before every required payment is confirmed, the Commissioner reverses the entire trade in Fantrax and notifies the franchises involved. The same trade may be made again once the payment is confirmed.
 
@@ -249,7 +249,7 @@
 
 **13.2** Startup draft order is set by a random draw conducted by the Commissioner and published in Discord before the draft.
 
-**13.3** The Startup Draft follows the date formula in Article V. If all 12 franchises are not filled and fully paid in time, the Commissioner may postpone the draft with at least 14 days' notice, but it must be completed at least 14 days before Week 1.
+**13.3** The Startup Draft follows the date formula in Article V. If all 12 franchises are not filled and fully paid in time, the Commissioner may postpone the draft with at least 14 days' notice, but it must be completed at least 14 days before Week 1. If the draft is not on pace to finish in time, the Commissioner may shorten the pick clock with 7 days' notice.
 
 **13.4** A nightly clock pause runs from midnight through 8:00 AM ET. Picks may be made during the pause where Fantrax allows, but the active pick timer is suspended.
 
@@ -265,7 +265,7 @@
 
 **14.3** The draft uses an 8-hour pick clock with a midnight–8:00 AM ET pause. Managers are encouraged to maintain queues. Timeout handling may use Fantrax queue, auto-draft, or temporary-skip tools as announced before the draft.
 
-**14.4** The player pool is not restricted to the current NHL draft class. Any unowned player in the Fantrax player pool who satisfies BLHA minor-league eligibility may be selected.
+**14.4** The player pool is not restricted to the current NHL draft class. Any unowned player in the Fantrax player pool who satisfies BLHA minor-league eligibility for the Season that Annual Draft supplies may be selected.
 
 **14.5** Draft order is based on the results of the Season just completed. Picks 1.01 through 1.06 belong to the six non-playoff franchises and are ordered by ascending Potential Points / Max Points For, with the lowest total receiving 1.01. Potential Points is Fantrax's measure of the points a franchise would have scored with its best possible lineup each Week, using its active and reserve players; players in minor-league and IR slots are not counted. Ties are broken under Section 15.5.
 
@@ -275,7 +275,7 @@
 
 ## Article XV — Regular Season, Standings, and Presidents' Trophy
 
-**15.1** The regular season consists of 22 scoring periods. Every franchise plays every other franchise twice.
+**15.1** The regular season consists of 22 Weeks. Every franchise plays every other franchise twice.
 
 **15.2** Regular-season standings and head-to-head results are recorded by Fantrax.
 
@@ -351,7 +351,7 @@
 
 **20.2** **Proposals.** Any franchise or the Commissioner may propose a Material Amendment in writing. A proposal must identify the affected rule, the proposed replacement language, and the intended effective date, and is posted in the voting channel at least 7 days before voting opens.
 
-**20.3** **Voting.** Votes are held only during the Offseason. The voting window is 7 days. Each franchise casts one vote through the league's designated voting channel or method. Approval requires at least 8 affirmative votes out of 12. Non-votes and abstentions are not affirmative votes.
+**20.3** **Voting.** Amendment votes are held only during the Offseason. Votes under Article XIX (Interim Commissioner, Commissioner removal) may be held at any time. The voting window is 7 days. Each franchise casts one vote through the league's designated voting channel or method. Approval requires at least 8 affirmative votes out of 12. Non-votes and abstentions are not affirmative votes.
 
 **20.4** **Timing.** An approved amendment takes effect for the next Season, or on the later date it states. To apply to a Season it must be approved before that Season's dues deadline, so every owner knows the rules before paying.
 
@@ -359,7 +359,7 @@
 
 **20.6** **Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is dated and posted, and prior versions are archived.
 
-**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV.
+**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them.
 
 **20.8** The latest published version of this Constitution is the controlling league document. Upon adoption of the Charter, all prior working drafts are superseded except as historical records.
 
