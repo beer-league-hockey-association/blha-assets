@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T02:15:32.802002Z",
+  "updated_at": "2026-10-07T02:30:41.870696Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4232,6 +4232,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T02:15:32.607604Z"
+    },
+    {
+      "key": "77cb7475c52529bb369dfe3c",
+      "url": "https://www.nhl.com/news/utah-mammoth-new-jersey-devils-game-recap-october-6-2026",
+      "fingerprint": "6e5b2b7aa0071dcc",
+      "title_norm": "schmaltz has 3 points, goal streak hits 4 in utah win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:30:40.962387Z"
+    },
+    {
+      "key": "18807dcca86a7da64d9ae9ac",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-montreal-canadiens-game-recap-october-6-2026",
+      "fingerprint": "6a950f32350271a4",
+      "title_norm": "hall has two goals, hurricanes score six to hold off canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:30:41.385450Z"
+    },
+    {
+      "key": "a85280f4f0e39a636c43f981",
+      "url": "https://www.sportsnet.ca/nhl/article/hall-scores-twice-as-hurricanes-spoil-canadiens-home-opener",
+      "fingerprint": "b270d28dff48f08c",
+      "title_norm": "hall scores twice as hurricanes spoil canadiens home opener",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:30:41.844096Z"
     }
   ]
 }
