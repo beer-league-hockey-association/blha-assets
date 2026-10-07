@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T19:15:34.529674Z",
+  "updated_at": "2026-10-07T20:00:45.279627Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4892,6 +4892,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T19:15:34.448060Z"
+    },
+    {
+      "key": "10e4e71f6789f820b7af18cc",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-low-risk-hallander-adds-depth-compete-to-forward-corps",
+      "fingerprint": "f974a094a8f666d1",
+      "title_norm": "oilers notebook: low-risk hallander adds depth, compete to forward corps",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T20:00:45.257754Z"
     }
   ],
   "known_sources": [
