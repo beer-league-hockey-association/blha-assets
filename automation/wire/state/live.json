@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T15:45:37.345645Z",
+  "updated_at": "2026-10-07T16:00:45.826698Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4672,6 +4672,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T15:45:37.312370Z"
+    },
+    {
+      "key": "f3da2ce5a8df03f8c7d20679",
+      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
+      "fingerprint": "f76587902f40926f",
+      "title_norm": "bryan rust (pit) — rust (upper-body) will be a game-time decision vs. washington on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T16:00:45.744952Z"
     }
   ],
   "known_sources": [
