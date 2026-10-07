@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T15:30:42.238484Z",
+  "updated_at": "2026-10-07T15:45:37.345645Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4652,6 +4652,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T15:30:42.151768Z"
+    },
+    {
+      "key": "e0effeff78f4ce2f7f080595",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-romanov-29623/29623",
+      "fingerprint": "b365fbfc6474b6df",
+      "title_norm": "alexander romanov (nyi) — romanov missed practice on wednesday after exiting tuesday's game with an undisclosed injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T15:45:37.000743Z"
+    },
+    {
+      "key": "f917fa3a10301fd1caae4987",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-recall-jonathan-castagna-aydar-suniev-from-wranglers",
+      "fingerprint": "05dcd956f1c83966",
+      "title_norm": "flames recall jonathan castagna, aydar suniev from wranglers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T15:45:37.312370Z"
     }
   ],
   "known_sources": [
