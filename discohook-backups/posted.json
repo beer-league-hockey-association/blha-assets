@@ -1,17 +1,37 @@
 {
   "about": "Templates live in Discord. See tools/posted_messages.py.",
   "posted": {
+    "commissioners-office/01_commissioner_support_channel_intro.json": {
+      "channel": "commissioner-support",
+      "posted": "2026-10-07",
+      "fingerprint": 32926332
+    },
+    "commissioners-office/02_rules_questions_channel_intro.json": {
+      "channel": "rules-questions",
+      "posted": "2026-10-07",
+      "fingerprint": 3986222817
+    },
     "commissioners-office/03_league_suggestions_channel_intro.json": {
       "channel": "league-suggestions",
       "posted": "2026-10-07",
       "fingerprint": 2487489888,
       "message": "https://discord.com/channels/1554538666721018016/1557268578376359946/1557268578376359946"
     },
+    "commissioners-office/04_rulings_log_channel_intro.json": {
+      "channel": "rulings-log",
+      "posted": "2026-10-07",
+      "fingerprint": 2852386537
+    },
     "commissioners-office/05_open_a_ticket_channel_intro.json": {
       "channel": "open-a-ticket",
       "posted": "2026-10-07",
       "fingerprint": 1599006030,
       "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688"
+    },
+    "commissioners-office/06_owner_handbook_channel_intro.json": {
+      "channel": "owner-handbook",
+      "posted": "2026-10-07",
+      "fingerprint": 3502283145
     },
     "constitution/00_quick_reference_and_article_i.json": {
       "channel": "constitution",
@@ -30,6 +50,12 @@
       "posted": "2026-10-07",
       "fingerprint": 940673060,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258385613791333"
+    },
+    "constitution/03_articles_vi_to_x.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3768214010,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379"
     },
     "constitution/04_articles_xi_to_xiii.json": {
       "channel": "constitution",
@@ -54,6 +80,41 @@
       "posted": "2026-10-07",
       "fingerprint": 3828200111,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258436532772905"
+    },
+    "draft-center/01_draft_announcements_channel_intro.json": {
+      "channel": "draft-announcements",
+      "posted": "2026-10-07",
+      "fingerprint": 4035829824
+    },
+    "draft-center/03_draft_room_channel_intro.json": {
+      "channel": "draft-room",
+      "posted": "2026-10-07",
+      "fingerprint": 1308094162
+    },
+    "draft-center/04_draft_day_trades_channel_intro.json": {
+      "channel": "draft-day-trades",
+      "posted": "2026-10-07",
+      "fingerprint": 2398867682
+    },
+    "draft-center/05_draft_results_channel_intro.json": {
+      "channel": "draft-results",
+      "posted": "2026-10-07",
+      "fingerprint": 3707392263
+    },
+    "franchise-hq/01_franchise_directory_channel_intro.json": {
+      "channel": "franchise-directory",
+      "posted": "2026-10-07",
+      "fingerprint": 1474344495
+    },
+    "franchise-hq/02_franchise_news_channel_intro.json": {
+      "channel": "franchise-news",
+      "posted": "2026-10-07",
+      "fingerprint": 3780127156
+    },
+    "franchise-hq/03_roster_showcase_channel_intro.json": {
+      "channel": "roster-showcase",
+      "posted": "2026-10-07",
+      "fingerprint": 3818933937
     },
     "general-managers/01_gm_lounge_channel_intro.json": {
       "channel": "gm-lounge",
@@ -84,6 +145,41 @@
       "posted": "2026-10-07",
       "fingerprint": 1068051974,
       "message": "https://discord.com/channels/1554538666721018016/1554549983473172590/1557262619084066898"
+    },
+    "league-competition/01_scoreboard_channel_intro.json": {
+      "channel": "scoreboard",
+      "posted": "2026-10-07",
+      "fingerprint": 1939079624
+    },
+    "league-competition/02_standings_channel_intro.json": {
+      "channel": "standings",
+      "posted": "2026-10-07",
+      "fingerprint": 3762733654
+    },
+    "league-competition/04_weekly_recap_channel_intro.json": {
+      "channel": "weekly-recap",
+      "posted": "2026-10-07",
+      "fingerprint": 4230816491
+    },
+    "league-competition/05_playoff_race_channel_intro.json": {
+      "channel": "playoff-race",
+      "posted": "2026-10-07",
+      "fingerprint": 1829682603
+    },
+    "league-competition/06_playoffs_channel_intro.json": {
+      "channel": "playoffs",
+      "posted": "2026-10-07",
+      "fingerprint": 907487912
+    },
+    "league-competition/07_consolation_bracket_channel_intro.json": {
+      "channel": "consolation-bracket",
+      "posted": "2026-10-07",
+      "fingerprint": 982974323
+    },
+    "league-competition/08_lineup_alerts_channel_intro.json": {
+      "channel": "lineup-alerts",
+      "posted": "2026-10-07",
+      "fingerprint": 1319779937
     },
     "league-office/01_constitution_channel_intro.json": {
       "channel": "constitution",
@@ -123,6 +219,17 @@
       "posted": "2026-10-07",
       "fingerprint": 2065454264,
       "message": "https://discord.com/channels/1554538666721018016/1554540618217427064/1557260237017456663"
+    },
+    "league-office/16_scoring_explained.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 1615074019,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557425202743349290"
+    },
+    "scouting/01_scouting_channel_intro.json": {
+      "channel": "scouting",
+      "posted": "2026-10-07",
+      "fingerprint": 299974155
     },
     "the-wire/01_breaking_news_channel_intro.json": {
       "channel": "breaking-news",
@@ -178,6 +285,26 @@
       "fingerprint": 2853781775,
       "message": "https://discord.com/channels/1554538666721018016/1554552853056458762/1557263951304335422"
     },
+    "trade-center/04_completed_trades_channel_intro.json": {
+      "channel": "completed-trades",
+      "posted": "2026-10-07",
+      "fingerprint": 432683405
+    },
+    "trade-center/05_player_values_channel_intro.json": {
+      "channel": "player-values",
+      "posted": "2026-10-07",
+      "fingerprint": 3764220154
+    },
+    "waiver-wire/01_waiver_talk_channel_intro.json": {
+      "channel": "waiver-talk",
+      "posted": "2026-10-07",
+      "fingerprint": 2261010311
+    },
+    "waiver-wire/02_waiver_watch_channel_intro.json": {
+      "channel": "waiver-watch",
+      "posted": "2026-10-07",
+      "fingerprint": 3602392238
+    },
     "welcome/01_welcome.json": {
       "channel": "welcome",
       "posted": "2026-10-07",
@@ -185,16 +312,5 @@
       "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
     }
   },
-  "update_in_place": {
-    "constitution/03_articles_vi_to_x.json": {
-      "channel": "constitution",
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379",
-      "reason": "penalty minutes added to scoring (-0.54)"
-    },
-    "league-office/16_scoring_explained.json": {
-      "channel": "constitution",
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557425202743349290",
-      "reason": "penalty minutes added to scoring (-0.54)"
-    }
-  }
+  "update_in_place": {}
 }
