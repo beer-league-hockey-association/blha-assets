@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T13:45:43.725381Z",
+  "updated_at": "2026-10-07T14:15:36.837221Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4582,6 +4582,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-07T13:45:43.656957Z"
+    },
+    {
+      "key": "53416f0be4cb6420be7a201a",
+      "url": "https://www.dailyfaceoff.com/players/news/teuvo-teravainen/2128",
+      "fingerprint": "abd3cd181a5c5101",
+      "title_norm": "teuvo teravainen (chi) — teravainen (lower-body) is out vs. the islanders on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T14:15:36.559031Z"
+    },
+    {
+      "key": "8d3245a946c3be118a7b67bc",
+      "url": "https://www.nhl.com/news/patrick-kane-soaks-up-emotional-chicago-blackhawks-homecoming",
+      "fingerprint": "5df65bdc98c2afe7",
+      "title_norm": "kane soaks up 'emotional' chicago homecoming",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T14:15:36.783092Z"
     }
   ],
   "known_sources": [
