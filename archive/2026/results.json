@@ -1,0 +1,71 @@
+{
+  "1": {
+    "end": "2026-10-05T22:59:59+00:00",
+    "matchups": [
+      {
+        "away": {
+          "score": 0.0,
+          "team": "vs89xezfmumuxp44"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "8j6llh6gmumuxose"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "gobvt8opmumuxoxm"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "4qdrdr4fmumuxplb"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "mvh0gxh2mumuxoo4"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "2tml63mumumuxoqh"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "6bzildyomumuxpe6"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "93rjspsjmumuxpqw"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "gb4or3npmumb3mgv"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "tau9p1cvmumuxout"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "w9j9rgr1mumuxp9e"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "qqpqauuamumuxp03"
+        }
+      }
+    ],
+    "period": 1,
+    "played": false,
+    "playoff": false,
+    "start": "2026-09-29T21:00:00+00:00"
+  }
+}

@@ -1,0 +1,2162 @@
+{
+  "003kg": {
+    "name": "Kane, Patrick",
+    "position": "RW",
+    "team": "CHI"
+  },
+  "003tz": {
+    "name": "Burns, Brent",
+    "position": "D",
+    "team": "COL"
+  },
+  "0042t": {
+    "name": "Giroux, Claude",
+    "position": "RW",
+    "team": "OTT"
+  },
+  "00454": {
+    "name": "Crosby, Sidney",
+    "position": "C",
+    "team": "PIT"
+  },
+  "0045j": {
+    "name": "Letang, Kris",
+    "position": "D",
+    "team": "PIT"
+  },
+  "0045k": {
+    "name": "Malkin, Evgeni",
+    "position": "C",
+    "team": "PIT"
+  },
+  "0045u": {
+    "name": "Staal, Jordan",
+    "position": "C",
+    "team": "CAR"
+  },
+  "004cq": {
+    "name": "Ovechkin, Alex",
+    "position": "LW",
+    "team": "WSH"
+  },
+  "004p4": {
+    "name": "Backlund, Mikael",
+    "position": "C",
+    "team": "CGY"
+  },
+  "00qnu": {
+    "name": "Doughty, Drew",
+    "position": "D",
+    "team": "LAK"
+  },
+  "00qru": {
+    "name": "Stamkos, Steven",
+    "position": "C",
+    "team": "NSH"
+  },
+  "00qs7": {
+    "name": "Benn, Jamie",
+    "position": "LW",
+    "team": "DAL"
+  },
+  "01587": {
+    "name": "Eberle, Jordan",
+    "position": "RW",
+    "team": "SEA"
+  },
+  "015pv": {
+    "name": "Carlson, John",
+    "position": "D",
+    "team": "TBL"
+  },
+  "016g3": {
+    "name": "Karlsson, Erik",
+    "position": "D",
+    "team": "PIT"
+  },
+  "016kv": {
+    "name": "Allen, Jake",
+    "position": "G",
+    "team": "NJD"
+  },
+  "01c12": {
+    "name": "Tavares, John",
+    "position": "C",
+    "team": "TOR"
+  },
+  "01c13": {
+    "name": "Hedman, Victor",
+    "position": "D",
+    "team": "TBL"
+  },
+  "01c32": {
+    "name": "Schenn, Brayden",
+    "position": "C",
+    "team": "NYI"
+  },
+  "01f3c": {
+    "name": "Kane, Evander",
+    "position": "LW",
+    "team": "(N/A)"
+  },
+  "01f3d": {
+    "name": "Ekman-Larsson, Oliver",
+    "position": "D",
+    "team": "TOR"
+  },
+  "01f3e": {
+    "name": "Kadri, Nazem",
+    "position": "C",
+    "team": "COL"
+  },
+  "01f5z": {
+    "name": "Kreider, Chris",
+    "position": "LW",
+    "team": "MTL"
+  },
+  "01f66": {
+    "name": "Palmieri, Kyle",
+    "position": "RW",
+    "team": "NYI"
+  },
+  "01f6d": {
+    "name": "OReilly, Ryan",
+    "position": "C",
+    "team": "NSH"
+  },
+  "01fx3": {
+    "name": "Josi, Roman",
+    "position": "D",
+    "team": "NSH"
+  },
+  "01gjn": {
+    "name": "Haula, Erik",
+    "position": "C",
+    "team": "LAK"
+  },
+  "01lkz": {
+    "name": "Hall, Taylor",
+    "position": "LW",
+    "team": "CAR"
+  },
+  "01mz5": {
+    "name": "Orlov, Dmitry",
+    "position": "D",
+    "team": "SJS"
+  },
+  "01mzc": {
+    "name": "McNabb, Brayden",
+    "position": "D",
+    "team": "VGK"
+  },
+  "01n84": {
+    "name": "Killorn, Alex",
+    "position": "RW",
+    "team": "ANA"
+  },
+  "01sif": {
+    "name": "Seguin, Tyler",
+    "position": "RW",
+    "team": "DAL"
+  },
+  "01sio": {
+    "name": "Zuccarello, Mats",
+    "position": "RW",
+    "team": "LAK"
+  },
+  "01skr": {
+    "name": "Granlund, Mikael",
+    "position": "C",
+    "team": "ANA"
+  },
+  "01xfq": {
+    "name": "Tarasenko, Vladimir",
+    "position": "RW",
+    "team": "(N/A)"
+  },
+  "01z7v": {
+    "name": "Couturier, Sean",
+    "position": "C",
+    "team": "PHI"
+  },
+  "01zql": {
+    "name": "Nelson, Brock",
+    "position": "C",
+    "team": "COL"
+  },
+  "01zs1": {
+    "name": "Wedgewood, Scott",
+    "position": "G",
+    "team": "COL"
+  },
+  "01zs7": {
+    "name": "Grubauer, Philipp",
+    "position": "G",
+    "team": "SEA"
+  },
+  "01zti": {
+    "name": "Toffoli, Tyler",
+    "position": "RW",
+    "team": "SJS"
+  },
+  "01zto": {
+    "name": "Coyle, Charlie",
+    "position": "C",
+    "team": "CBJ"
+  },
+  "01ztp": {
+    "name": "Hyman, Zach",
+    "position": "RW",
+    "team": "EDM"
+  },
+  "01zu5": {
+    "name": "Faulk, Justin",
+    "position": "D",
+    "team": "DET"
+  },
+  "01zvf": {
+    "name": "Stone, Mark",
+    "position": "RW",
+    "team": "VGK"
+  },
+  "020f4": {
+    "name": "Larsson, Adam",
+    "position": "D",
+    "team": "SEA"
+  },
+  "0222k": {
+    "name": "Kuemper, Darcy",
+    "position": "G",
+    "team": "LAK"
+  },
+  "0243e": {
+    "name": "Landeskog, Gabriel",
+    "position": "LW",
+    "team": "COL"
+  },
+  "0243f": {
+    "name": "Jones, Seth",
+    "position": "D",
+    "team": "FLA"
+  },
+  "02440": {
+    "name": "Lee, Anders",
+    "position": "LW",
+    "team": "UTA"
+  },
+  "024lv": {
+    "name": "Ekholm, Mattias",
+    "position": "D",
+    "team": "EDM"
+  },
+  "027i6": {
+    "name": "Zibanejad, Mika",
+    "position": "C",
+    "team": "NYR"
+  },
+  "02aez": {
+    "name": "Miller, J.T.",
+    "position": "C",
+    "team": "NYR"
+  },
+  "02azb": {
+    "name": "Scheifele, Mark",
+    "position": "C",
+    "team": "WPG"
+  },
+  "02azf": {
+    "name": "Hamilton, Dougie",
+    "position": "D",
+    "team": "NJD"
+  },
+  "02b3o": {
+    "name": "Rakell, Rickard",
+    "position": "LW",
+    "team": "PIT"
+  },
+  "02b3w": {
+    "name": "Jenner, Boone",
+    "position": "C",
+    "team": "WSH"
+  },
+  "02b3y": {
+    "name": "Gibson, John",
+    "position": "G",
+    "team": "DET"
+  },
+  "02b6w": {
+    "name": "Karlsson, William",
+    "position": "C",
+    "team": "VGK"
+  },
+  "02b70": {
+    "name": "Kucherov, Nikita",
+    "position": "RW",
+    "team": "TBL"
+  },
+  "02b76": {
+    "name": "Trocheck, Vincent",
+    "position": "C",
+    "team": "UTA"
+  },
+  "02dq3": {
+    "name": "Trouba, Jacob",
+    "position": "D",
+    "team": "SJS"
+  },
+  "02dq6": {
+    "name": "Pageau, Jean-Gabriel",
+    "position": "C",
+    "team": "NYI"
+  },
+  "02f9l": {
+    "name": "MacKinnon, Nathan",
+    "position": "C",
+    "team": "COL"
+  },
+  "02fda": {
+    "name": "Binnington, Jordan",
+    "position": "G",
+    "team": "STL"
+  },
+  "02fzj": {
+    "name": "Coleman, Blake",
+    "position": "RW",
+    "team": "MIN"
+  },
+  "02fzm": {
+    "name": "Forsberg, Filip",
+    "position": "LW",
+    "team": "NSH"
+  },
+  "02h6c": {
+    "name": "Forsberg, Anton",
+    "position": "G",
+    "team": "LAK"
+  },
+  "02ni5": {
+    "name": "Marchessault, Jonathan",
+    "position": "RW",
+    "team": "NSH"
+  },
+  "02noe": {
+    "name": "Rielly, Morgan",
+    "position": "D",
+    "team": "TOR"
+  },
+  "02noj": {
+    "name": "Wilson, Tom",
+    "position": "RW",
+    "team": "WSH"
+  },
+  "02nok": {
+    "name": "Hertl, Tomas",
+    "position": "C",
+    "team": "VGK"
+  },
+  "02nol": {
+    "name": "Teravainen, Teuvo",
+    "position": "LW",
+    "team": "CHI"
+  },
+  "02nom": {
+    "name": "Vasilevskiy, Andrei",
+    "position": "G",
+    "team": "TBL"
+  },
+  "02noq": {
+    "name": "Matheson, Mike",
+    "position": "D",
+    "team": "MTL"
+  },
+  "02nou": {
+    "name": "Skjei, Brady",
+    "position": "D",
+    "team": "NSH"
+  },
+  "02np6": {
+    "name": "McCabe, Jake",
+    "position": "D",
+    "team": "TOR"
+  },
+  "02npj": {
+    "name": "Martinook, Jordan",
+    "position": "LW",
+    "team": "CAR"
+  },
+  "02npz": {
+    "name": "Lindell, Esa",
+    "position": "D",
+    "team": "DAL"
+  },
+  "02nq2": {
+    "name": "Stephenson, Chandler",
+    "position": "C",
+    "team": "SEA"
+  },
+  "02nq3": {
+    "name": "Gostisbehere, Shayne",
+    "position": "D",
+    "team": "CAR"
+  },
+  "02nqb": {
+    "name": "Parayko, Colton",
+    "position": "D",
+    "team": "STL"
+  },
+  "02o7s": {
+    "name": "Hellebuyck, Connor",
+    "position": "G",
+    "team": "WPG"
+  },
+  "02oak": {
+    "name": "Brown, Connor",
+    "position": "RW",
+    "team": "NJD"
+  },
+  "02un4": {
+    "name": "McDavid, Connor",
+    "position": "C",
+    "team": "EDM"
+  },
+  "02un5": {
+    "name": "Reinhart, Sam",
+    "position": "RW",
+    "team": "FLA"
+  },
+  "02un6": {
+    "name": "Monahan, Sean",
+    "position": "C",
+    "team": "CBJ"
+  },
+  "02unz": {
+    "name": "Schmaltz, Nick",
+    "position": "RW",
+    "team": "UTA"
+  },
+  "02wy3": {
+    "name": "Lindholm, Elias",
+    "position": "C",
+    "team": "BOS"
+  },
+  "02wy5": {
+    "name": "Zadorov, Nikita",
+    "position": "D",
+    "team": "BOS"
+  },
+  "02wy7": {
+    "name": "Buchnevich, Pavel",
+    "position": "RW",
+    "team": "STL"
+  },
+  "02ybj": {
+    "name": "Mantha, Anthony",
+    "position": "RW",
+    "team": "NJD"
+  },
+  "02ybk": {
+    "name": "Lehkonen, Artturi",
+    "position": "LW",
+    "team": "COL"
+  },
+  "02ybl": {
+    "name": "Nichushkin, Valeri",
+    "position": "RW",
+    "team": "CBJ"
+  },
+  "02ybm": {
+    "name": "Pulock, Ryan",
+    "position": "D",
+    "team": "NYI"
+  },
+  "02ybn": {
+    "name": "Morrissey, Josh",
+    "position": "D",
+    "team": "WPG"
+  },
+  "02yjj": {
+    "name": "Nylander, William",
+    "position": "RW",
+    "team": "TOR"
+  },
+  "02yjl": {
+    "name": "Draisaitl, Leon",
+    "position": "C",
+    "team": "EDM"
+  },
+  "02yjp": {
+    "name": "Barbashev, Ivan",
+    "position": "LW",
+    "team": "VGK"
+  },
+  "02ytx": {
+    "name": "Hartman, Ryan",
+    "position": "C",
+    "team": "MIN"
+  },
+  "02zpp": {
+    "name": "Arvidsson, Viktor",
+    "position": "RW",
+    "team": "DET"
+  },
+  "03161": {
+    "name": "Nurse, Darnell",
+    "position": "D",
+    "team": "SJS"
+  },
+  "03167": {
+    "name": "Horvat, Bo",
+    "position": "C",
+    "team": "NYI"
+  },
+  "03169": {
+    "name": "Wennberg, Alexander",
+    "position": "C",
+    "team": "SJS"
+  },
+  "031nx": {
+    "name": "Theodore, Shea",
+    "position": "D",
+    "team": "VGK"
+  },
+  "031og": {
+    "name": "Bertuzzi, Tyler",
+    "position": "RW",
+    "team": "CHI"
+  },
+  "031p0": {
+    "name": "Guentzel, Jake",
+    "position": "LW",
+    "team": "TBL"
+  },
+  "031p3": {
+    "name": "Verhaeghe, Carter",
+    "position": "LW",
+    "team": "FLA"
+  },
+  "031p8": {
+    "name": "Bjorkstrand, Oliver",
+    "position": "RW",
+    "team": "NYR"
+  },
+  "031pl": {
+    "name": "Saros, Juuse",
+    "position": "G",
+    "team": "NSH"
+  },
+  "031pq": {
+    "name": "Copp, Andrew",
+    "position": "C",
+    "team": "DET"
+  },
+  "031v6": {
+    "name": "Weegar, MacKenzie",
+    "position": "D",
+    "team": "UTA"
+  },
+  "0322w": {
+    "name": "Sorokin, Ilya",
+    "position": "G",
+    "team": "NYI"
+  },
+  "038vb": {
+    "name": "Konecny, Travis",
+    "position": "RW",
+    "team": "PHI"
+  },
+  "03924": {
+    "name": "Eichel, Jack",
+    "position": "C",
+    "team": "VGK"
+  },
+  "039cg": {
+    "name": "Bennett, Sam",
+    "position": "C",
+    "team": "FLA"
+  },
+  "03as6": {
+    "name": "McCann, Jared",
+    "position": "LW",
+    "team": "SEA"
+  },
+  "03as8": {
+    "name": "Ehlers, Nikolaj",
+    "position": "LW",
+    "team": "CAR"
+  },
+  "03as9": {
+    "name": "Strome, Dylan",
+    "position": "C",
+    "team": "WSH"
+  },
+  "03bfj": {
+    "name": "Panarin, Artemi",
+    "position": "LW",
+    "team": "LAK"
+  },
+  "03bxl": {
+    "name": "Moore, Trevor",
+    "position": "RW",
+    "team": "LAK"
+  },
+  "03c0c": {
+    "name": "Manson, Josh",
+    "position": "D",
+    "team": "COL"
+  },
+  "03d09": {
+    "name": "Tuch, Alex",
+    "position": "RW",
+    "team": "WSH"
+  },
+  "03d12": {
+    "name": "Pastrnak, David",
+    "position": "RW",
+    "team": "BOS"
+  },
+  "03dde": {
+    "name": "Walman, Jake",
+    "position": "D",
+    "team": "EDM"
+  },
+  "03de2": {
+    "name": "Montour, Brandon",
+    "position": "D",
+    "team": "SEA"
+  },
+  "03dug": {
+    "name": "DeAngelo, Tony",
+    "position": "D",
+    "team": "NYI"
+  },
+  "03e1m": {
+    "name": "Point, Brayden",
+    "position": "C",
+    "team": "TBL"
+  },
+  "03e1n": {
+    "name": "Kempe, Adrian",
+    "position": "RW",
+    "team": "LAK"
+  },
+  "03e7p": {
+    "name": "Sanheim, Travis",
+    "position": "D",
+    "team": "PHI"
+  },
+  "03eb0": {
+    "name": "Donato, Ryan",
+    "position": "LW",
+    "team": "CHI"
+  },
+  "03eb3": {
+    "name": "Dvorak, Christian",
+    "position": "C",
+    "team": "PHI"
+  },
+  "03ebb": {
+    "name": "Foegele, Warren",
+    "position": "LW",
+    "team": "OTT"
+  },
+  "03ec6": {
+    "name": "Toews, Devon",
+    "position": "D",
+    "team": "COL"
+  },
+  "03ecd": {
+    "name": "Bunting, Michael",
+    "position": "LW",
+    "team": "PHI"
+  },
+  "03ece": {
+    "name": "Shesterkin, Igor",
+    "position": "G",
+    "team": "NYR"
+  },
+  "03ecl": {
+    "name": "Forsling, Gustav",
+    "position": "D",
+    "team": "FLA"
+  },
+  "03ekl": {
+    "name": "Gavrikov, Vladislav",
+    "position": "D",
+    "team": "NYR"
+  },
+  "03j8l": {
+    "name": "Hanifin, Noah",
+    "position": "D",
+    "team": "VGK"
+  },
+  "03jvu": {
+    "name": "Marner, Mitch",
+    "position": "RW",
+    "team": "VGK"
+  },
+  "03jw0": {
+    "name": "Daccord, Joey",
+    "position": "G",
+    "team": "SEA"
+  },
+  "03jxy": {
+    "name": "Matthews, Auston",
+    "position": "C",
+    "team": "TOR"
+  },
+  "03klz": {
+    "name": "Raddysh, Darren",
+    "position": "D",
+    "team": "TOR"
+  },
+  "03kra": {
+    "name": "Connor, Kyle",
+    "position": "LW",
+    "team": "WPG"
+  },
+  "03l0t": {
+    "name": "Zacha, Pavel",
+    "position": "C",
+    "team": "BOS"
+  },
+  "03m26": {
+    "name": "Garland, Conor",
+    "position": "RW",
+    "team": "CBJ"
+  },
+  "03mbn": {
+    "name": "Blackwood, Mackenzie",
+    "position": "G",
+    "team": "COL"
+  },
+  "03mm6": {
+    "name": "Crouse, Lawson",
+    "position": "RW",
+    "team": "UTA"
+  },
+  "03mn8": {
+    "name": "Keller, Clayton",
+    "position": "LW",
+    "team": "UTA"
+  },
+  "03mn9": {
+    "name": "Rantanen, Mikko",
+    "position": "RW",
+    "team": "DAL"
+  },
+  "03mqg": {
+    "name": "Chychrun, Jakob",
+    "position": "D",
+    "team": "WSH"
+  },
+  "03ne3": {
+    "name": "Vatrano, Frank",
+    "position": "LW",
+    "team": "ANA"
+  },
+  "03ra7": {
+    "name": "Werenski, Zach",
+    "position": "D",
+    "team": "CBJ"
+  },
+  "03ra8": {
+    "name": "Meier, Timo",
+    "position": "LW",
+    "team": "NJD"
+  },
+  "03rab": {
+    "name": "DeBrusk, Jake",
+    "position": "LW",
+    "team": "VAN"
+  },
+  "03rad": {
+    "name": "Chabot, Thomas",
+    "position": "D",
+    "team": "OTT"
+  },
+  "03rae": {
+    "name": "Eriksson Ek, Joel",
+    "position": "C",
+    "team": "MIN"
+  },
+  "03raf": {
+    "name": "Boeser, Brock",
+    "position": "RW",
+    "team": "VAN"
+  },
+  "03rag": {
+    "name": "Roslovic, Jack",
+    "position": "RW",
+    "team": "TOR"
+  },
+  "03rf5": {
+    "name": "Andersson, Rasmus",
+    "position": "D",
+    "team": "VGK"
+  },
+  "03rf7": {
+    "name": "Trenin, Yakov",
+    "position": "RW",
+    "team": "MIN"
+  },
+  "03rf8": {
+    "name": "Dunn, Vince",
+    "position": "D",
+    "team": "SEA"
+  },
+  "03rfl": {
+    "name": "Cirelli, Anthony",
+    "position": "C",
+    "team": "TBL"
+  },
+  "03rfo": {
+    "name": "Vladar, Daniel",
+    "position": "G",
+    "team": "PHI"
+  },
+  "03rfx": {
+    "name": "Novak, Tommy",
+    "position": "C",
+    "team": "PIT"
+  },
+  "03rh3": {
+    "name": "Kaprizov, Kirill",
+    "position": "LW",
+    "team": "MIN"
+  },
+  "03rih": {
+    "name": "Vejmelka, Karel",
+    "position": "G",
+    "team": "UTA"
+  },
+  "03rmx": {
+    "name": "Aho, Sebastian",
+    "position": "C",
+    "team": "CAR"
+  },
+  "03uzr": {
+    "name": "Tkachuk, Matthew",
+    "position": "RW",
+    "team": "FLA"
+  },
+  "03v70": {
+    "name": "DeBrincat, Alex",
+    "position": "LW",
+    "team": "DET"
+  },
+  "03w5m": {
+    "name": "Vilardi, Gabriel",
+    "position": "RW",
+    "team": "WPG"
+  },
+  "03w5s": {
+    "name": "McLeod, Ryan",
+    "position": "C",
+    "team": "BUF"
+  },
+  "03wor": {
+    "name": "Marchment, Mason",
+    "position": "LW",
+    "team": "SJS"
+  },
+  "03wpi": {
+    "name": "Dubois, Pierre-Luc",
+    "position": "C",
+    "team": "WSH"
+  },
+  "03wpm": {
+    "name": "McAvoy, Charlie",
+    "position": "D",
+    "team": "BOS"
+  },
+  "03yg3": {
+    "name": "Sergachev, Mikhail",
+    "position": "D",
+    "team": "UTA"
+  },
+  "03yh8": {
+    "name": "Tippett, Owen",
+    "position": "LW",
+    "team": "PHI"
+  },
+  "042t5": {
+    "name": "Thompson, Tage",
+    "position": "C",
+    "team": "BUF"
+  },
+  "042vl": {
+    "name": "Kyrou, Jordan",
+    "position": "RW",
+    "team": "WSH"
+  },
+  "042vx": {
+    "name": "Hronek, Filip",
+    "position": "D",
+    "team": "VAN"
+  },
+  "042w4": {
+    "name": "Fox, Adam",
+    "position": "D",
+    "team": "NYR"
+  },
+  "042yb": {
+    "name": "Hagel, Brandon",
+    "position": "LW",
+    "team": "TBL"
+  },
+  "042ye": {
+    "name": "Bratt, Jesper",
+    "position": "LW",
+    "team": "NJD"
+  },
+  "0457b": {
+    "name": "Mittelstadt, Casey",
+    "position": "C",
+    "team": "BOS"
+  },
+  "0457f": {
+    "name": "Hischier, Nico",
+    "position": "C",
+    "team": "NJD"
+  },
+  "0457i": {
+    "name": "Luukkonen, Ukko-Pekka",
+    "position": "G",
+    "team": "BUF"
+  },
+  "0457k": {
+    "name": "Oettinger, Jake",
+    "position": "G",
+    "team": "DAL"
+  },
+  "04843": {
+    "name": "Olivier, Mathieu",
+    "position": "RW",
+    "team": "CBJ"
+  },
+  "048vf": {
+    "name": "Svechnikov, Andrei",
+    "position": "LW",
+    "team": "CAR"
+  },
+  "048x9": {
+    "name": "Pettersson, Elias",
+    "position": "C",
+    "team": "VAN"
+  },
+  "048xc": {
+    "name": "Suzuki, Nick",
+    "position": "C",
+    "team": "MTL"
+  },
+  "049k7": {
+    "name": "Necas, Martin",
+    "position": "RW",
+    "team": "COL"
+  },
+  "049ph": {
+    "name": "Pionk, Neal",
+    "position": "D",
+    "team": "WPG"
+  },
+  "04a9v": {
+    "name": "Geekie, Morgan",
+    "position": "LW",
+    "team": "BOS"
+  },
+  "04ad7": {
+    "name": "Dahlin, Rasmus",
+    "position": "D",
+    "team": "BUF"
+  },
+  "04ai3": {
+    "name": "Lankinen, Kevin",
+    "position": "G",
+    "team": "VAN"
+  },
+  "04alw": {
+    "name": "Makar, Cale",
+    "position": "D",
+    "team": "COL"
+  },
+  "04amd": {
+    "name": "Krebs, Peyton",
+    "position": "C",
+    "team": "BUF"
+  },
+  "04amg": {
+    "name": "Lafreniere, Alexis",
+    "position": "RW",
+    "team": "NYR"
+  },
+  "04amw": {
+    "name": "Poehling, Ryan",
+    "position": "C",
+    "team": "ANA"
+  },
+  "04an5": {
+    "name": "Heiskanen, Miro",
+    "position": "D",
+    "team": "DAL"
+  },
+  "04apb": {
+    "name": "Thomas, Robert",
+    "position": "C",
+    "team": "STL"
+  },
+  "04az7": {
+    "name": "Iafallo, Alex",
+    "position": "RW",
+    "team": "WPG"
+  },
+  "04bdb": {
+    "name": "Hughes, Jack",
+    "position": "C",
+    "team": "NJD"
+  },
+  "04bii": {
+    "name": "Knight, Spencer",
+    "position": "G",
+    "team": "CHI"
+  },
+  "04dwj": {
+    "name": "Robertson, Jason",
+    "position": "LW",
+    "team": "DAL"
+  },
+  "04dwk": {
+    "name": "Norris, Josh",
+    "position": "C",
+    "team": "BUF"
+  },
+  "04ezy": {
+    "name": "Frost, Morgan",
+    "position": "C",
+    "team": "CGY"
+  },
+  "04f0t": {
+    "name": "Luostarinen, Eetu",
+    "position": "LW",
+    "team": "FLA"
+  },
+  "04f0y": {
+    "name": "Ferraro, Mario",
+    "position": "D",
+    "team": "WPG"
+  },
+  "04f17": {
+    "name": "Zetterlund, Fabian",
+    "position": "LW",
+    "team": "OTT"
+  },
+  "04f24": {
+    "name": "Swayman, Jeremy",
+    "position": "G",
+    "team": "BOS"
+  },
+  "04f2d": {
+    "name": "Batherson, Drake",
+    "position": "RW",
+    "team": "OTT"
+  },
+  "04f75": {
+    "name": "Cates, Noah",
+    "position": "C",
+    "team": "PHI"
+  },
+  "04kyh": {
+    "name": "Tkachuk, Brady",
+    "position": "LW",
+    "team": "FLA"
+  },
+  "04kyn": {
+    "name": "Walker, Sean",
+    "position": "D",
+    "team": "CAR"
+  },
+  "04lbz": {
+    "name": "Hughes, Quinn",
+    "position": "D",
+    "team": "MIN"
+  },
+  "04lc0": {
+    "name": "Bouchard, Evan",
+    "position": "D",
+    "team": "EDM"
+  },
+  "04lc5": {
+    "name": "McBain, Jack",
+    "position": "LW",
+    "team": "UTA"
+  },
+  "04lcf": {
+    "name": "Farabee, Joel",
+    "position": "LW",
+    "team": "CGY"
+  },
+  "04lcs": {
+    "name": "Samuelsson, Mattias",
+    "position": "D",
+    "team": "BUF"
+  },
+  "04ld3": {
+    "name": "Dobson, Noah",
+    "position": "D",
+    "team": "MTL"
+  },
+  "04ldb": {
+    "name": "Byram, Bowen",
+    "position": "D",
+    "team": "CHI"
+  },
+  "04ln4": {
+    "name": "Sherwood, Kiefer",
+    "position": "RW",
+    "team": "SJS"
+  },
+  "04lo0": {
+    "name": "Byfield, Quinton",
+    "position": "C",
+    "team": "LAK"
+  },
+  "04mdc": {
+    "name": "Thompson, Logan",
+    "position": "G",
+    "team": "WSH"
+  },
+  "04mjq": {
+    "name": "Ellis, Colten",
+    "position": "G",
+    "team": "BUF"
+  },
+  "04mkd": {
+    "name": "Sharangovich, Yegor",
+    "position": "LW",
+    "team": "CGY"
+  },
+  "04mq1": {
+    "name": "Mikheyev, Ilya",
+    "position": "RW",
+    "team": "TBL"
+  },
+  "04mtp": {
+    "name": "Cozens, Dylan",
+    "position": "C",
+    "team": "OTT"
+  },
+  "04mv2": {
+    "name": "Caufield, Cole",
+    "position": "LW",
+    "team": "MTL"
+  },
+  "04o0g": {
+    "name": "Rossi, Marco",
+    "position": "C",
+    "team": "VAN"
+  },
+  "04o0h": {
+    "name": "Guenther, Dylan",
+    "position": "RW",
+    "team": "UTA"
+  },
+  "04qve": {
+    "name": "Miller, KAndre",
+    "position": "D",
+    "team": "CAR"
+  },
+  "04qy3": {
+    "name": "Fehervary, Martin",
+    "position": "D",
+    "team": "WSH"
+  },
+  "04qy5": {
+    "name": "Marchenko, Kirill",
+    "position": "RW",
+    "team": "TOR"
+  },
+  "04uqa": {
+    "name": "Podkolzin, Vasily",
+    "position": "LW",
+    "team": "EDM"
+  },
+  "04uql": {
+    "name": "Perfetti, Cole",
+    "position": "RW",
+    "team": "WPG"
+  },
+  "04xe1": {
+    "name": "Pelletier, Jakob",
+    "position": "LW",
+    "team": "TBL"
+  },
+  "04xec": {
+    "name": "Boldy, Matt",
+    "position": "RW",
+    "team": "MIN"
+  },
+  "04xjf": {
+    "name": "Power, Owen",
+    "position": "D",
+    "team": "BUF"
+  },
+  "04y8g": {
+    "name": "Zegras, Trevor",
+    "position": "LW",
+    "team": "PHI"
+  },
+  "04yeb": {
+    "name": "Holmstrom, Simon",
+    "position": "RW",
+    "team": "NYI"
+  },
+  "04yg5": {
+    "name": "Wallstedt, Jesper",
+    "position": "G",
+    "team": "MIN"
+  },
+  "04yla": {
+    "name": "Bussi, Brandon",
+    "position": "G",
+    "team": "CAR"
+  },
+  "04ymn": {
+    "name": "Hughes, Luke",
+    "position": "D",
+    "team": "NJD"
+  },
+  "04ymt": {
+    "name": "Raymond, Lucas",
+    "position": "RW",
+    "team": "DET"
+  },
+  "04yn0": {
+    "name": "McMichael, Connor",
+    "position": "LW",
+    "team": "STL"
+  },
+  "04yqp": {
+    "name": "Lundell, Anton",
+    "position": "C",
+    "team": "FLA"
+  },
+  "04yu5": {
+    "name": "Harley, Thomas",
+    "position": "D",
+    "team": "DAL"
+  },
+  "04zb4": {
+    "name": "Seider, Moritz",
+    "position": "D",
+    "team": "DET"
+  },
+  "04zj5": {
+    "name": "Peterka, JJ",
+    "position": "LW",
+    "team": "BOS"
+  },
+  "04znw": {
+    "name": "Clarke, Brandt",
+    "position": "D",
+    "team": "LAK"
+  },
+  "04zo0": {
+    "name": "Dorofeyev, Pavel",
+    "position": "RW",
+    "team": "NYR"
+  },
+  "04zot": {
+    "name": "Robertson, Matthew",
+    "position": "D",
+    "team": "NYR"
+  },
+  "04zp9": {
+    "name": "Bourque, Mavrik",
+    "position": "RW",
+    "team": "NSH"
+  },
+  "050rc": {
+    "name": "Voronkov, Dmitry",
+    "position": "LW",
+    "team": "CBJ"
+  },
+  "051lz": {
+    "name": "Pinto, Shane",
+    "position": "C",
+    "team": "OTT"
+  },
+  "051m4": {
+    "name": "LaCombe, Jackson",
+    "position": "D",
+    "team": "ANA"
+  },
+  "051tx": {
+    "name": "Protas, Aliaksei",
+    "position": "LW",
+    "team": "WSH"
+  },
+  "051um": {
+    "name": "Gritsyuk, Arseny",
+    "position": "RW",
+    "team": "NJD"
+  },
+  "051v9": {
+    "name": "Edstrom, Adam",
+    "position": "LW",
+    "team": "NSH"
+  },
+  "051vh": {
+    "name": "Nesterenko, Nikita",
+    "position": "C",
+    "team": "ANA"
+  },
+  "051wf": {
+    "name": "Wolf, Dustin",
+    "position": "G",
+    "team": "CGY"
+  },
+  "051xf": {
+    "name": "Chinakhov, Egor",
+    "position": "LW",
+    "team": "PIT"
+  },
+  "051yz": {
+    "name": "Holloway, Dylan",
+    "position": "LW",
+    "team": "STL"
+  },
+  "051z0": {
+    "name": "Stutzle, Tim",
+    "position": "C",
+    "team": "OTT"
+  },
+  "0570x": {
+    "name": "Lambert, Brad",
+    "position": "RW",
+    "team": "WPG"
+  },
+  "0579x": {
+    "name": "Fantilli, Adam",
+    "position": "C",
+    "team": "CBJ"
+  },
+  "057yc": {
+    "name": "Othmann, Brennan",
+    "position": "LW",
+    "team": "CGY"
+  },
+  "059e0": {
+    "name": "Sanderson, Jake",
+    "position": "D",
+    "team": "OTT"
+  },
+  "059e2": {
+    "name": "Sourdif, Justin",
+    "position": "C",
+    "team": "WSH"
+  },
+  "059e5": {
+    "name": "Neighbours, Jake",
+    "position": "LW",
+    "team": "STL"
+  },
+  "05g42": {
+    "name": "Quinn, Jack",
+    "position": "RW",
+    "team": "BUF"
+  },
+  "05gd8": {
+    "name": "McTavish, Mason",
+    "position": "C",
+    "team": "STL"
+  },
+  "05gdo": {
+    "name": "Evangelista, Luke",
+    "position": "RW",
+    "team": "NJD"
+  },
+  "05grx": {
+    "name": "OConnor, Drew",
+    "position": "LW",
+    "team": "VAN"
+  },
+  "05gtp": {
+    "name": "Mercer, Dawson",
+    "position": "RW",
+    "team": "NJD"
+  },
+  "05gvo": {
+    "name": "Michkov, Matvei",
+    "position": "RW",
+    "team": "PHI"
+  },
+  "05j3d": {
+    "name": "McMann, Bobby",
+    "position": "LW",
+    "team": "SEA"
+  },
+  "05k8b": {
+    "name": "Finley, Jack",
+    "position": "C",
+    "team": "STL"
+  },
+  "05k8c": {
+    "name": "Foerster, Tyson",
+    "position": "LW",
+    "team": "PHI"
+  },
+  "05k9e": {
+    "name": "Wiesblatt, Ozzy",
+    "position": "RW",
+    "team": "NSH"
+  },
+  "05kbn": {
+    "name": "Cuylle, Will",
+    "position": "LW",
+    "team": "NYR"
+  },
+  "05kj7": {
+    "name": "Colangelo, Sam",
+    "position": "RW",
+    "team": "ANA"
+  },
+  "05kj8": {
+    "name": "Kuznetsov, Yan",
+    "position": "D",
+    "team": "CGY"
+  },
+  "05kua": {
+    "name": "Heineman, Emil",
+    "position": "LW",
+    "team": "NYI"
+  },
+  "05kub": {
+    "name": "Mukhamadullin, Shakir",
+    "position": "D",
+    "team": "EDM"
+  },
+  "05l28": {
+    "name": "Hunt, Daemon",
+    "position": "D",
+    "team": "MIN"
+  },
+  "05ltr": {
+    "name": "Sebrango, Donovan",
+    "position": "D",
+    "team": "FLA"
+  },
+  "05ltt": {
+    "name": "Laferriere, Alex",
+    "position": "RW",
+    "team": "LAK"
+  },
+  "05lu6": {
+    "name": "Mancini, Victor",
+    "position": "D",
+    "team": "VAN"
+  },
+  "05lu8": {
+    "name": "Nikishin, Alexander",
+    "position": "D",
+    "team": "CAR"
+  },
+  "05lud": {
+    "name": "Garand, Dylan",
+    "position": "G",
+    "team": "NYR"
+  },
+  "05m17": {
+    "name": "Nazar, Frank",
+    "position": "C",
+    "team": "CHI"
+  },
+  "05m18": {
+    "name": "Rosen, Isak",
+    "position": "LW",
+    "team": "WPG"
+  },
+  "05mwh": {
+    "name": "Levi, Devon",
+    "position": "G",
+    "team": "EDM"
+  },
+  "05o01": {
+    "name": "Cossa, Sebastian",
+    "position": "G",
+    "team": "UTA"
+  },
+  "05ogy": {
+    "name": "Halliday, Stephen",
+    "position": "LW",
+    "team": "OTT"
+  },
+  "05oxq": {
+    "name": "Pyyhtia, Mikael",
+    "position": "LW",
+    "team": "CBJ"
+  },
+  "05oxs": {
+    "name": "Dobes, Jakub",
+    "position": "G",
+    "team": "MTL"
+  },
+  "05oy1": {
+    "name": "Rempe, Matt",
+    "position": "RW",
+    "team": "NYR"
+  },
+  "05r1b": {
+    "name": "McGroarty, Rutger",
+    "position": "LW",
+    "team": "PIT"
+  },
+  "05r1c": {
+    "name": "Slafkovsky, Juraj",
+    "position": "RW",
+    "team": "MTL"
+  },
+  "05r1i": {
+    "name": "Beniers, Matty",
+    "position": "C",
+    "team": "SEA"
+  },
+  "05r1l": {
+    "name": "Eklund, William",
+    "position": "LW",
+    "team": "OTT"
+  },
+  "05r2j": {
+    "name": "Chibrikov, Nikita",
+    "position": "LW",
+    "team": "WPG"
+  },
+  "05r2y": {
+    "name": "Miroshnichenko, Ivan",
+    "position": "RW",
+    "team": "WSH"
+  },
+  "05r2z": {
+    "name": "Lindstein, Theo",
+    "position": "D",
+    "team": "STL"
+  },
+  "05r3d": {
+    "name": "Doan, Josh",
+    "position": "RW",
+    "team": "BUF"
+  },
+  "05r50": {
+    "name": "Samoskevich, Mackie",
+    "position": "RW",
+    "team": "SEA"
+  },
+  "05ran": {
+    "name": "Coronato, Matt",
+    "position": "RW",
+    "team": "CGY"
+  },
+  "05rb9": {
+    "name": "Geekie, Conor",
+    "position": "RW",
+    "team": "TBL"
+  },
+  "05rdi": {
+    "name": "Bardakov, Zakhar",
+    "position": "LW",
+    "team": "COL"
+  },
+  "05rf2": {
+    "name": "Stankoven, Logan",
+    "position": "RW",
+    "team": "CAR"
+  },
+  "05rfa": {
+    "name": "Howard, Isaac",
+    "position": "LW",
+    "team": "EDM"
+  },
+  "05riz": {
+    "name": "Jiricek, David",
+    "position": "D",
+    "team": "PHI"
+  },
+  "05rj3": {
+    "name": "Luneau, Tristan",
+    "position": "D",
+    "team": "ANA"
+  },
+  "05rjd": {
+    "name": "Gauthier, Cutter",
+    "position": "LW",
+    "team": "ANA"
+  },
+  "05rjg": {
+    "name": "Yurov, Danila",
+    "position": "LW",
+    "team": "MIN"
+  },
+  "05rjh": {
+    "name": "Ostlund, Noah",
+    "position": "C",
+    "team": "BUF"
+  },
+  "05rji": {
+    "name": "Gaucher, Nathan",
+    "position": "C",
+    "team": "ANA"
+  },
+  "05rkt": {
+    "name": "Safonov, Ilya",
+    "position": "C",
+    "team": "VAN"
+  },
+  "05tcz": {
+    "name": "Kapanen, Oliver",
+    "position": "C",
+    "team": "MTL"
+  },
+  "05td3": {
+    "name": "Dach, Colton",
+    "position": "LW",
+    "team": "EDM"
+  },
+  "05td4": {
+    "name": "Ufko, Ryan",
+    "position": "D",
+    "team": "NSH"
+  },
+  "05tqs": {
+    "name": "Allan, Nolan",
+    "position": "D",
+    "team": "SJS"
+  },
+  "05tqt": {
+    "name": "Johnston, Wyatt",
+    "position": "C",
+    "team": "DAL"
+  },
+  "05tuj": {
+    "name": "Winterton, Ryan",
+    "position": "C",
+    "team": "SEA"
+  },
+  "05tur": {
+    "name": "Knies, Matthew",
+    "position": "LW",
+    "team": "CBJ"
+  },
+  "05tv0": {
+    "name": "Blake, Jackson",
+    "position": "RW",
+    "team": "CAR"
+  },
+  "05u64": {
+    "name": "Legault, Charles-Alexis",
+    "position": "D",
+    "team": "CAR"
+  },
+  "05uao": {
+    "name": "Graf, Collin",
+    "position": "RW",
+    "team": "SJS"
+  },
+  "05ub3": {
+    "name": "Hinds, Tyson",
+    "position": "D",
+    "team": "ANA"
+  },
+  "05ub8": {
+    "name": "Hayes, Avery",
+    "position": "RW",
+    "team": "PIT"
+  },
+  "05ufl": {
+    "name": "Chmelar, Jaroslav",
+    "position": "RW",
+    "team": "NYR"
+  },
+  "05ug8": {
+    "name": "Kozak, Tyson",
+    "position": "C",
+    "team": "BUF"
+  },
+  "05ugz": {
+    "name": "Nystrom, Joel",
+    "position": "D",
+    "team": "CAR"
+  },
+  "05ui2": {
+    "name": "Cooley, Logan",
+    "position": "C",
+    "team": "UTA"
+  },
+  "05ui3": {
+    "name": "Kemell, Joakim",
+    "position": "RW",
+    "team": "NSH"
+  },
+  "05ui4": {
+    "name": "Dvorsky, Dalibor",
+    "position": "C",
+    "team": "STL"
+  },
+  "05und": {
+    "name": "Grebenkin, Nikita",
+    "position": "LW",
+    "team": "PHI"
+  },
+  "05w9b": {
+    "name": "Ritchie, Calum",
+    "position": "C",
+    "team": "NYI"
+  },
+  "05w9c": {
+    "name": "Celebrini, Macklin",
+    "position": "C",
+    "team": "SJS"
+  },
+  "05ws3": {
+    "name": "Kokko, Niklas",
+    "position": "G",
+    "team": "SEA"
+  },
+  "05ws4": {
+    "name": "Stenberg, Otto",
+    "position": "C",
+    "team": "STL"
+  },
+  "05ww8": {
+    "name": "Greene, Ryan",
+    "position": "C",
+    "team": "CHI"
+  },
+  "05wwg": {
+    "name": "Hutson, Lane",
+    "position": "D",
+    "team": "MTL"
+  },
+  "05xcm": {
+    "name": "Lekkerimaki, Jonathan",
+    "position": "RW",
+    "team": "VAN"
+  },
+  "05xct": {
+    "name": "Greaves, Jet",
+    "position": "G",
+    "team": "CBJ"
+  },
+  "05xrx": {
+    "name": "Kasper, Marco",
+    "position": "C",
+    "team": "DET"
+  },
+  "05y3a": {
+    "name": "Carlsson, Leo",
+    "position": "C",
+    "team": "ANA"
+  },
+  "05ylt": {
+    "name": "Benson, Zach",
+    "position": "LW",
+    "team": "BUF"
+  },
+  "05ym6": {
+    "name": "Ohgren, Liam",
+    "position": "LW",
+    "team": "VAN"
+  },
+  "05ymj": {
+    "name": "Snuggerud, Jimmy",
+    "position": "RW",
+    "team": "STL"
+  },
+  "05ymk": {
+    "name": "Del Bel Belluz, Luca",
+    "position": "C",
+    "team": "CBJ"
+  },
+  "05ymo": {
+    "name": "Beck, Owen",
+    "position": "C",
+    "team": "MTL"
+  },
+  "05yms": {
+    "name": "Rinzel, Sam",
+    "position": "D",
+    "team": "CHI"
+  },
+  "05ymt": {
+    "name": "Bains, Arshdeep",
+    "position": "LW",
+    "team": "VAN"
+  },
+  "05yn2": {
+    "name": "Minten, Fraser",
+    "position": "LW",
+    "team": "BOS"
+  },
+  "060hp": {
+    "name": "Bichsel, Lian",
+    "position": "D",
+    "team": "DAL"
+  },
+  "060j7": {
+    "name": "George, Isaiah",
+    "position": "D",
+    "team": "NYI"
+  },
+  "060jc": {
+    "name": "Haight, Hunter",
+    "position": "C",
+    "team": "MIN"
+  },
+  "060jj": {
+    "name": "Nyman, Jani",
+    "position": "LW",
+    "team": "SEA"
+  },
+  "060jl": {
+    "name": "Kulich, Jiri",
+    "position": "C",
+    "team": "BUF"
+  },
+  "060pq": {
+    "name": "Bump, Alex",
+    "position": "LW",
+    "team": "PHI"
+  },
+  "060us": {
+    "name": "Hildeby, Dennis",
+    "position": "G",
+    "team": "TBL"
+  },
+  "060v8": {
+    "name": "Pettersson, Elias",
+    "position": "D",
+    "team": "VAN"
+  },
+  "060wx": {
+    "name": "Schaefer, Reid",
+    "position": "LW",
+    "team": "NSH"
+  },
+  "061a2": {
+    "name": "Vilmanis, Sandis",
+    "position": "LW",
+    "team": "FLA"
+  },
+  "061i2": {
+    "name": "Murashov, Sergei",
+    "position": "G",
+    "team": "PIT"
+  },
+  "061im": {
+    "name": "Misa, Michael",
+    "position": "C",
+    "team": "SJS"
+  },
+  "062h5": {
+    "name": "McKenna, Gavin",
+    "position": "LW",
+    "team": "TOR"
+  },
+  "062k9": {
+    "name": "Laba, Noah",
+    "position": "C",
+    "team": "NYR"
+  },
+  "062pv": {
+    "name": "Wright, Jared",
+    "position": "RW",
+    "team": "LAK"
+  },
+  "06449": {
+    "name": "Danielson, Nate",
+    "position": "C",
+    "team": "DET"
+  },
+  "0644b": {
+    "name": "Smith, Will",
+    "position": "RW",
+    "team": "SJS"
+  },
+  "0644c": {
+    "name": "But, Daniil",
+    "position": "LW",
+    "team": "UTA"
+  },
+  "0644d": {
+    "name": "Brindley, Gavin",
+    "position": "C",
+    "team": "COL"
+  },
+  "0644e": {
+    "name": "Moore, Oliver",
+    "position": "C",
+    "team": "CHI"
+  },
+  "0644f": {
+    "name": "Leonard, Ryan",
+    "position": "RW",
+    "team": "WSH"
+  },
+  "064r2": {
+    "name": "Demidov, Ivan",
+    "position": "RW",
+    "team": "MTL"
+  },
+  "065d1": {
+    "name": "Wood, Matthew",
+    "position": "RW",
+    "team": "NSH"
+  },
+  "065nx": {
+    "name": "Catton, Berkly",
+    "position": "C",
+    "team": "SEA"
+  },
+  "066on": {
+    "name": "Brandsegg-Nygard, Michael",
+    "position": "RW",
+    "team": "DET"
+  },
+  "066q1": {
+    "name": "Boisvert, Sacha",
+    "position": "C",
+    "team": "CHI"
+  },
+  "066q4": {
+    "name": "Helenius, Konsta",
+    "position": "C",
+    "team": "BUF"
+  },
+  "066qt": {
+    "name": "Hameenaho, Lenni",
+    "position": "RW",
+    "team": "NJD"
+  },
+  "067xz": {
+    "name": "Sandin Pellikka, Axel",
+    "position": "D",
+    "team": "DET"
+  },
+  "067y1": {
+    "name": "Hryckowian, Justin",
+    "position": "C",
+    "team": "DAL"
+  },
+  "067yd": {
+    "name": "Reinbacher, David",
+    "position": "D",
+    "team": "MTL"
+  },
+  "068yz": {
+    "name": "Fowler, Jacob",
+    "position": "G",
+    "team": "MTL"
+  },
+  "06aew": {
+    "name": "Simashev, Dmitri",
+    "position": "D",
+    "team": "UTA"
+  },
+  "06ag2": {
+    "name": "Hagens, James",
+    "position": "C",
+    "team": "BOS"
+  },
+  "06age": {
+    "name": "Malinski, Sam",
+    "position": "D",
+    "team": "COL"
+  },
+  "06amv": {
+    "name": "Dickinson, Sam",
+    "position": "D",
+    "team": "SJS"
+  },
+  "06axb": {
+    "name": "Lardis, Nick",
+    "position": "RW",
+    "team": "CHI"
+  },
+  "06axc": {
+    "name": "Honzek, Samuel",
+    "position": "C",
+    "team": "CGY"
+  },
+  "06axe": {
+    "name": "Perreault, Gabe",
+    "position": "RW",
+    "team": "NYR"
+  },
+  "06axr": {
+    "name": "Willander, Tom",
+    "position": "D",
+    "team": "VAN"
+  },
+  "06axy": {
+    "name": "Levshunov, Artyom",
+    "position": "D",
+    "team": "CHI"
+  },
+  "06axz": {
+    "name": "Nadeau, Bradly",
+    "position": "C",
+    "team": "CAR"
+  },
+  "06ay2": {
+    "name": "Cagnoni, Luca",
+    "position": "D",
+    "team": "SJS"
+  },
+  "06bap": {
+    "name": "Cowan, Easton",
+    "position": "C",
+    "team": "TOR"
+  },
+  "06bde": {
+    "name": "Bonk, Oliver",
+    "position": "D",
+    "team": "PHI"
+  },
+  "06bdr": {
+    "name": "Kantserov, Roman",
+    "position": "RW",
+    "team": "CHI"
+  },
+  "06bmb": {
+    "name": "Buium, Zeev",
+    "position": "D",
+    "team": "VAN"
+  },
+  "06c72": {
+    "name": "Bowman, Braeden",
+    "position": "RW",
+    "team": "VGK"
+  },
+  "06cl1": {
+    "name": "Finnie, Emmitt",
+    "position": "LW",
+    "team": "DET"
+  },
+  "06fzv": {
+    "name": "Hutson, Cole",
+    "position": "D",
+    "team": "WSH"
+  },
+  "06fzw": {
+    "name": "Jiricek, Adam",
+    "position": "D",
+    "team": "STL"
+  },
+  "06gk0": {
+    "name": "Schaefer, Matthew",
+    "position": "D",
+    "team": "NYI"
+  },
+  "06h8h": {
+    "name": "Connelly, Trevor",
+    "position": "LW",
+    "team": "VGK"
+  },
+  "06hco": {
+    "name": "Parekh, Zayne",
+    "position": "D",
+    "team": "CGY"
+  },
+  "06hcq": {
+    "name": "Yakemchuk, Carter",
+    "position": "D",
+    "team": "OTT"
+  },
+  "06hcr": {
+    "name": "Chernyshov, Igor",
+    "position": "LW",
+    "team": "SJS"
+  },
+  "06hcw": {
+    "name": "Sennecke, Beckett",
+    "position": "RW",
+    "team": "ANA"
+  },
+  "06hj9": {
+    "name": "Martone, Porter",
+    "position": "RW",
+    "team": "PHI"
+  },
+  "06hk9": {
+    "name": "Pinchuk, Vitali",
+    "position": "C",
+    "team": "NSH"
+  },
+  "06i09": {
+    "name": "Quillan, Jacob",
+    "position": "C",
+    "team": "TOR"
+  },
+  "06iml": {
+    "name": "Tsyplakov, Maxim",
+    "position": "LW",
+    "team": "CGY"
+  },
+  "06imq": {
+    "name": "Shabanov, Maxim",
+    "position": "RW",
+    "team": "MIN"
+  },
+  "06jhd": {
+    "name": "Frondell, Anton",
+    "position": "C",
+    "team": "CHI"
+  },
+  "06kkx": {
+    "name": "Hyry, Arttu",
+    "position": "RW",
+    "team": "DAL"
+  },
+  "06lv1": {
+    "name": "Luchanko, Jett",
+    "position": "C",
+    "team": "PHI"
+  },
+  "06lvc": {
+    "name": "Brunicke, Harrison",
+    "position": "D",
+    "team": "PIT"
+  },
+  "06maz": {
+    "name": "Protas, Ilya",
+    "position": "LW",
+    "team": "WSH"
+  },
+  "06mb0": {
+    "name": "Gridin, Matvei",
+    "position": "RW",
+    "team": "CGY"
+  },
+  "06psl": {
+    "name": "Stenberg, Ivar",
+    "position": "LW",
+    "team": "SJS"
+  },
+  "06qw6": {
+    "name": "Samanski, Josh",
+    "position": "C",
+    "team": "EDM"
+  },
+  "06rus": {
+    "name": "Martin, Brady",
+    "position": "C",
+    "team": "NSH"
+  },
+  "06sds": {
+    "name": "Washe, Tim",
+    "position": "C",
+    "team": "ANA"
+  },
+  "06snb": {
+    "name": "Kindel, Benjamin",
+    "position": "RW",
+    "team": "PIT"
+  }
+}
