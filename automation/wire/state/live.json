@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T05:30:36.733057Z",
+  "updated_at": "2026-10-07T13:45:43.725381Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4572,6 +4572,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-07T05:30:36.639787Z"
+    },
+    {
+      "key": "256079bd1bf972138e20ae70",
+      "url": "https://www.flohockey.tv/articles/16231987-ahl-games-this-weekend-5-must-watch-matchups-on-flohockey",
+      "fingerprint": "de335ee33f474fba",
+      "title_norm": "new beginnings, old rivalries: 5 games to watch this weekend",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-07T13:45:43.656957Z"
     }
   ],
   "known_sources": [
