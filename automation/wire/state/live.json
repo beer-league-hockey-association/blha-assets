@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T16:00:45.826698Z",
+  "updated_at": "2026-10-07T16:19:26.503408Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4682,6 +4682,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T16:00:45.744952Z"
+    },
+    {
+      "key": "35cac99d2a3de1c4cf5c5220",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-7-2026",
+      "fingerprint": "36c1dabc525b2e52",
+      "title_norm": "on tap: avs face jets looking for 3rd straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T16:19:25.562406Z"
+    },
+    {
+      "key": "8eb03b9d4dff42888a5c826c",
+      "url": "https://www.nhl.com/news/dylan-larkin-has-interesting-night-in-return-to-detroit-red-wings-lineup",
+      "fingerprint": "7587f472194893b0",
+      "title_norm": "larkin has 'interesting night' in red wings return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T16:19:25.855505Z"
+    },
+    {
+      "key": "1dfd810715566fba9e876105",
+      "url": "https://www.nhl.com/news/alexis-lafreniere-becoming-more-complete-player-for-new-york-rangers",
+      "fingerprint": "2735d514a8bb7662",
+      "title_norm": "lafreniere becoming 'more complete player' for rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T16:19:26.128705Z"
+    },
+    {
+      "key": "c1192e2905bfc59a865d0258",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-gavin-mckenna-toronto-maple-leafs-rookie-start-2026-27",
+      "fingerprint": "311c10825a756ee2",
+      "title_norm": "edge stats: mckenna's early role with maple leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T16:19:26.138094Z"
+    },
+    {
+      "key": "33eb9227862ae86e51c2670f",
+      "url": "https://www.nhl.com/news/trophy-tracker-montreal-coach-martin-st-louis-early-season-pick-for-jack-adams-award",
+      "fingerprint": "92a14b2ac286ead3",
+      "title_norm": "adams tracker: race for top coach tight to start season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T16:19:26.148706Z"
+    },
+    {
+      "key": "cc541e562469a37668336533",
+      "url": "https://www.sportsnet.ca/nhl/article/are-the-red-wings-open-to-rebuilding-the-rebuild",
+      "fingerprint": "df32856e07548ad5",
+      "title_norm": "are the red wings open to rebuilding the rebuild?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T16:19:26.199057Z"
     }
   ],
   "known_sources": [
