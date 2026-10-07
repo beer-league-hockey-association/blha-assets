@@ -36,6 +36,23 @@ class WireRoutingTests(unittest.TestCase):
         self.assertEqual(wire.classify_title(title, False), "injury-report")
 
 
+    def test_season_ending_injury_is_breaking(self) -> None:
+        for title in ("Romanov likely to miss rest of season with torn ACL",
+                      "Islanders D Alexander Romanov out six to eight months with torn ACL"):
+            self.assertEqual(wire.classify_title(title, True), "breaking-news", title)
+            self.assertEqual(wire.classify_title(title, False), "injury-report", title)
+
+    def test_short_absence_is_injury_not_breaking(self) -> None:
+        title = "Hughes out 2-3 weeks with lower-body injury"
+        self.assertEqual(wire.classify_title(title, True), "injury-report")
+        self.assertEqual(wire.classify_title("Kucherov out two weeks", True), "injury-report")
+
+    def test_season_talk_without_absence_stays_news(self) -> None:
+        for title in ("What to expect from the Maple Leafs the rest of the season",
+                      "NHL's romance-themed audiobooks disappear after opening week of season"):
+            self.assertEqual(wire.classify_title(title, True), "nhl-news", title)
+
+
 class WireSourceTests(unittest.TestCase):
     def test_rss_link_recovers_alternate_href(self) -> None:
         entry = {
