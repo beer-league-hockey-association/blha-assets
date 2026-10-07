@@ -52,3 +52,16 @@ python3 brand/sounds/generate_sounds.py --preview preview.mp3    # also writes a
 ```
 
 It prints a JSON check for each file (duration, size, sample rate, integrated loudness, true peak, clipped samples, and whether it fits the Discord limits).
+
+## Emoji
+
+`emoji/` holds a matching 8-bit emoji for each sound (128 x 128 PNG, drawn on a 16 x 16 pixel grid by `emoji/generate_emoji.py`). Upload them as server emoji with these names, then set each one as its sound's related emoji in Server Settings > Soundboard.
+
+| Sound | Emoji file | Emoji name |
+| --- | --- | --- |
+| blha-goal-horn | `blha_goalhorn.png` | `blha_goalhorn` |
+| blha-gavel | `blha_gavel.png` | `blha_gavel` |
+| blha-draft-horn | `blha_drafthorn.png` | `blha_drafthorn` |
+| blha-on-the-clock | `blha_onclock.png` | `blha_onclock` |
+| blha-trade-alert | `blha_trade.png` | `blha_trade` |
+| blha-final-buzzer | `blha_buzzer.png` | `blha_buzzer` |
