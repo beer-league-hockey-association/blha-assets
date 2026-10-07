@@ -8,7 +8,7 @@ tools/build_discord_assets.py (drawing code in tools/blha_pixel.py).
 PALETTE
 -------
   Black     #0E0F12   grounds, outer keyline, counters
-  Charcoal  #2B2D31   main ground (banners, headers, embed side colour)
+  Charcoal  #2B2D31   main ground (banners, headers, embed side color)
   Gold      #FFB81C   keylines, boards, rules, eyebrows, the accent
   Cream     #F4EFE4   titles on dark, textured paper ground
   Ice       #EEF5FA   rink ice
@@ -53,7 +53,7 @@ THE ICE RESURFACER
 ------------------
   The league's mascot machine: a 56 x 28 pixel side view that drives to the right, with
   BLHA in 3 x 5 pixel letters on the body and the towel trailing behind. Two frames
-  (wheels straight, then the body bobbed up 1 pixel) for animation. Its own colours:
+  (wheels straight, then the body bobbed up 1 pixel) for animation. Its own colors:
   rink blue #2F6FDB, rib blue #7FB7F0, hatch navy #1F4FA8, seat charcoal #3A3D42, plus
   black, paper, gold, steel and cream. Used on the title screen (invite splash), the
   league site's rink, the Constitution cover and the hype video.
@@ -77,10 +77,10 @@ LOGOS
 
 DO
 --
-  Enlarge only by whole numbers with nearest-neighbour scaling.
+  Enlarge only by whole numbers with nearest-neighbor scaling.
   Keep the keyline order: gold then black on paper letters.
   Use the full lockup (BLHA over the name over EST. 2026) where a full lockup is needed.
-  Use status colours by meaning: green = approved/passed/paid, red = denied/failed/owed/urgent,
+  Use status colors by meaning: green = approved/passed/paid, red = denied/failed/owed/urgent,
   gold = pending/amended/champions, cream = official/final/rulings.
   Bump the ?v= version (tools/discohook_format.py ASSET_VERSION) whenever hosted art changes.
 
@@ -88,8 +88,8 @@ DON'T
 -----
   Don't smooth, blur, anti-alias, rotate or stretch pixel art (the seal ring text is the
   only rotated text, re-thresholded to solid pixels).
-  Don't put team colours on league marks, banners, headers, dividers or stamps. Team
-  colours appear only on small jersey or stripe elements (a team chip, a jersey stripe).
+  Don't put team colors on league marks, banners, headers, dividers or stamps. Team
+  colors appear only on small jersey or stripe elements (a team chip, a jersey stripe).
   Don't stack the B above BLHA; the B and the wordmark are separate marks.
   Don't recolour the B or BLHA, or swap in non-pixel fonts.
   Don't mix the small 14 x 14 B and the large B in one graphic.

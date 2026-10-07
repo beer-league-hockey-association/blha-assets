@@ -13,8 +13,8 @@ folder to Cloudflare Pages.
 Layout: a scoreboard header with the full menu and a "you are here" marker,
 breadcrumbs on inner pages, alternating ice and arena bands, pixel windows for
 each module, and the rafters with the ice resurfacer on the home page. Team
-colours appear only on each franchise's pixel jersey and the stripe under its
-page header; everything else stays in league colours.
+colors appear only on each franchise's pixel jersey and the stripe under its
+page header; everything else stays in league colors.
 
 Type: three pixel fonts. Jersey 10 for display, Silkscreen for labels, and
 Pixelify Sans for body copy and the Constitution.
@@ -801,7 +801,7 @@ class Site:
     def is_test(self, season: int) -> bool:
         return bool(self.hist.archive.meta(season).get("test"))
 
-    def honours(self, season: int) -> dict[str, str]:
+    def honors(self, season: int) -> dict[str, str]:
         return {a: k for a, k in (self.hist.records.seasons.get(season) or {}).items() if a in AWARDS and k}
 
     def season_link(self, season: int) -> str:
@@ -849,7 +849,7 @@ class Site:
         return rows, f"Regular-season standings worked out from the final weekly scores (through Week {through})."
 
     def in_progress(self, season: int) -> bool:
-        return season == self.hist.archive.latest_season() and "champion" not in self.honours(season)
+        return season == self.hist.archive.latest_season() and "champion" not in self.honors(season)
 
     def standings_table(self, rows: list[dict[str, Any]], *, final: bool) -> str:
         cut = final or len(rows) > PLAYOFF_TEAMS
@@ -939,7 +939,7 @@ class Site:
 <div><h2>Transactions</h2><ul><li><a href="/trades/">Trades</a></li><li><a href="/drafts/">Drafts</a></li></ul></div>
 <div><h2>Rulebook</h2><ul><li><a href="/constitution/">Constitution</a></li><li><a href="/constitution/#changelog">Changelog</a></li></ul></div>
 </div>
-<p class="fine">{esc(LEAGUE_NAME)}, founded 2026. Game results come from Fantrax; honours and the Dynasty Pot come from the Commissioner's records. Updated {esc(long_date(self.built))}.</p>
+<p class="fine">{esc(LEAGUE_NAME)}, founded 2026. Game results come from Fantrax; honors and the Dynasty Pot come from the Commissioner's records. Updated {esc(long_date(self.built))}.</p>
 </div></footer>
 </body>
 </html>
@@ -1025,7 +1025,7 @@ class Site:
     def rafters(self) -> str:
         items = []
         for season in sorted(self.hist.records.seasons):
-            h = self.honours(season)
+            h = self.honors(season)
             if h.get("champion"):
                 items.append(self.banner(season, "champion", h["champion"]))
             if h.get("presidents_trophy"):
@@ -1043,10 +1043,10 @@ class Site:
         latest = self.hist.archive.latest_season()
         if latest is None:  # nothing archived yet: the first Season of the Dynasty Pot cycle
             first = dynasty_summary(self.hist)["cycle_started"]
-            return int(first) if str(first).isdigit() and "champion" not in self.honours(int(first)) else None
-        if self.is_test(latest) or "champion" in self.honours(latest):
+            return int(first) if str(first).isdigit() and "champion" not in self.honors(int(first)) else None
+        if self.is_test(latest) or "champion" in self.honors(latest):
             nxt = latest + 1
-            return None if "champion" in self.honours(nxt) else nxt
+            return None if "champion" in self.honors(nxt) else nxt
         return latest
 
     # --- home ---------------------------------------------------------------------------
@@ -1104,9 +1104,9 @@ class Site:
                          f'<p class="note">The first franchise to win {need} BLHA Championships in one cycle takes the whole pot. '
                          f'{cycle}</p>{race}{past}', small="Article IV", ident="pot")
         right = [pot_win]
-        champ_season = next((s for s in sorted(hist.records.seasons, reverse=True) if self.honours(s).get("champion")), None)
+        champ_season = next((s for s in sorted(hist.records.seasons, reverse=True) if self.honors(s).get("champion")), None)
         if champ_season is not None:
-            key = self.honours(champ_season)["champion"]
+            key = self.honors(champ_season)["champion"]
             prof = next((p for p in self.profiles if p["key"] == key), None)
             rows, _ = self.standings(champ_season)
             mine = next((r for r in rows if r["key"] == key), None)
@@ -1122,7 +1122,7 @@ class Site:
         # records and the trophy room
         rows = []
         for season in sorted(set(hist.seasons) | set(hist.records.seasons), reverse=True):
-            h = self.honours(season)
+            h = self.honors(season)
             if not h and self.in_progress(season) and not self.is_test(season):
                 done, total = self.weeks_played(season)
                 rows.append([self.season_link(season), f'<span class="muted">In progress, week {done} of {total}</span>', "", ""])
@@ -1188,7 +1188,7 @@ class Site:
         rows = []
         all_seasons = sorted(self.all_seasons(), reverse=True)
         for season in all_seasons:
-            h = self.honours(season)
+            h = self.honors(season)
             standings, _ = self.standings(season)
             leader = standings[0] if standings else None
             if self.is_test(season):
@@ -1212,7 +1212,7 @@ class Site:
 
     def season_page(self, season: int, older: int | None, newer: int | None) -> None:
         hist = self.hist
-        h = self.honours(season)
+        h = self.honors(season)
         sub = self.label(season)
         if self.in_progress(season) and not self.is_test(season):
             sub = f"{sub}, in progress" if sub else "In progress"
@@ -1236,10 +1236,10 @@ class Site:
             pot = (hist.records.seasons.get(season) or {}).get("dynasty_pot") or {}
             pot_note = (f'<p class="note">Dynasty Pot after this Season: {esc(money(pot["balance"]))}.</p>'
                         if pot.get("balance") is not None else "")
-            honours = window("Honours", f'<dl class="facts">{facts}</dl>{pot_note}', small=f"Season {season}", ident="honours")
-            parts.append(f'<div class="band tight flush"><div class="in grid g-1-1"><div>{banners}</div>{honours}'
+            honors = window("Honors", f'<dl class="facts">{facts}</dl>{pot_note}', small=f"Season {season}", ident="honors")
+            parts.append(f'<div class="band tight flush"><div class="in grid g-1-1"><div>{banners}</div>{honors}'
                          f"</div></div>")
-            jumps.append(("honours", "Honours"))
+            jumps.append(("honors", "Honors"))
         rows, note = self.standings(season)
         stack = []
         if rows:
@@ -1263,7 +1263,7 @@ class Site:
         body = (self.head(f"Season {season}", esc(sub), pager=pager) + f'<div class="in">{jump}</div>' + "".join(parts)
                 + f'<div class="band flush"><div class="in stack">{"".join(stack)}</div></div>')
         self.write(f"seasons/{season}/index.html", f"Season {season}", body, section="seasons",
-                   description=f"BLHA Season {season}: honours, standings and every weekly result.",
+                   description=f"BLHA Season {season}: honors, standings and every weekly result.",
                    crumbs=[("Home", "/"), ("Seasons", "/seasons/"), (f"Season {season}", f"/seasons/{season}/")])
 
     def bracket(self, season: int, standings: list[dict[str, Any]]) -> str:
@@ -1280,7 +1280,7 @@ class Site:
             return ""
         weeks = sorted(by_week)
         names = ["Championship", "Semifinals", "Quarterfinals"]
-        h = self.honours(season)
+        h = self.honors(season)
         cols = []
         for i, week in enumerate(weeks):
             from_end = len(weeks) - 1 - i
@@ -1374,7 +1374,7 @@ class Site:
             live = self.in_progress(season)
             if not live and not self.is_test(season):
                 finishes.append(mine["rank"])
-            won = [label for a, label in AWARDS.items() if self.honours(season).get(a) == key]
+            won = [label for a, label in AWARDS.items() if self.honors(season).get(a) == key]
             season_rows.append([self.season_link(season), f'<span class="rank">{esc(ordinal(mine["rank"]))}</span>',
                                 esc(mine["record"]) + ('<span class="tag">So far</span>' if live else ""),
                                 esc(score(mine["pf"])), "".join(f'<span class="tag gold">{esc(w)}</span>' for w in won)])
@@ -1394,19 +1394,19 @@ class Site:
         banner_html = f'<ol class="banners small" aria-label="Banners">{"".join(banners)}</ol>' if banners else ""
         rival = (f"{esc(p['rival'])} ({esc(p['rival_record'])}, {esc(p['rival_kind'])})" if p.get("rival")
                  else '<span class="muted">To be decided</span>')
-        honours = "; ".join(f"{label} {', '.join(map(str, years))}" for label, years in p["awards"].items()
+        honors = "; ".join(f"{label} {', '.join(map(str, years))}" for label, years in p["awards"].items()
                             if label not in ("BLHA Champion", "Presidents' Trophy"))
         facts = [("Lifetime", f"{esc(p['lifetime'])} in {esc(plural(p['games'], 'game'))}"),
                  ("Championships", esc(f"{len(p['titles'])} ({', '.join(map(str, p['titles']))})" if p["titles"] else "None yet")),
                  ("Dynasty Pot", f"{self.coins(p['dynasty_count'], p['titles_to_win'])} {esc(p['dynasty_count'])} of "
                                  f"{esc(p['titles_to_win'])} this cycle"),
                  ("Rival", rival)]
-        if honours:
-            facts.append(("Other honours", esc(honours)))
+        if honors:
+            facts.append(("Other honors", esc(honors)))
         facts_win = window("Franchise file", '<dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl>")
         top = f'<div class="grid g-1-1"><div>{banner_html}</div>{facts_win}</div>' if banner_html else facts_win
         parts.append(top)
-        parts.append(window("Season by season", table(["Season", "Finish", "W-L-T", "Points for", "Honours"], season_rows, num={1, 3})
+        parts.append(window("Season by season", table(["Season", "Finish", "W-L-T", "Points for", "Honors"], season_rows, num={1, 3})
                             if season_rows else empty("No finished week yet.")))
 
         rows = []
@@ -1731,7 +1731,7 @@ def computed_standings(hist: LeagueHistory, season: int) -> tuple[list[tuple[str
 
 def shrink(source: Path, target: Path, width: int | None, smooth: bool = False) -> bool:
     """Write a smaller copy with Pillow (False if Pillow is not installed). Pixel art is resized with
-    nearest-neighbour so every art pixel stays a hard-edged square; franchise logos are smoothed."""
+    nearest-neighbor so every art pixel stays a hard-edged square; franchise logos are smoothed."""
     try:
         from PIL import Image
     except ImportError:

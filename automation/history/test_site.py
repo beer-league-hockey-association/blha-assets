@@ -179,7 +179,7 @@ class SiteTests(unittest.TestCase):
         self.assertIn("Sitemap: https://blhahockey.com/sitemap.xml", (self.out / "robots.txt").read_text())
         css = (self.out / "assets" / "site.css").read_text()
         self.assertIn(".f-north{--fc:#1D4E89;--fc2:#F4EFE4;--fc-ink:#F4EFE4}", css)
-        jersey = (self.out / "assets" / "sprites" / "jersey-north.svg").read_text()   # team colours live on the jersey
+        jersey = (self.out / "assets" / "sprites" / "jersey-north.svg").read_text()   # team colors live on the jersey
         self.assertIn('fill="#1D4E89"', jersey)
         self.assertIn('fill="#F4EFE4"', jersey)
         self.assertIn('/assets/sprites/jersey-north.svg?v=', north)
@@ -262,7 +262,7 @@ class ConstitutionChangelogTests(unittest.TestCase):
                {**SAMPLE, "adopted": "June 2028"},
                {**SAMPLE, "summary": "Version 2.0 of the rules"},
                {**SAMPLE, "effective_season": 2027},
-               {**SAMPLE, "colour": "gold"}]
+               {**SAMPLE, "color": "gold"}]
         for entry in bad:
             with self.assertRaises(ValueError, msg=entry):
                 bc.check_amendments([entry])

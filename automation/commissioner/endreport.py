@@ -23,7 +23,7 @@ def _line(row: dict[str, Any], seed: int | None = None) -> str:
 
 
 def find_ties(rows: list[dict[str, Any]]) -> list[str]:
-    """Plain-language notes about neighbouring teams with identical records (15.4)."""
+    """Plain-language notes about neighboring teams with identical records (15.4)."""
     notes: list[str] = []
     i = 0
     while i < len(rows):

@@ -369,7 +369,7 @@ def build_pdf(path: Path) -> None:
     GOLDC = colors.HexColor("#FFB81C")
     CREAM = colors.HexColor("#F4EFE4")
     INK = colors.HexColor("#14161A")
-    GREY = colors.HexColor("#4C5563")
+    GRAY = colors.HexColor("#4C5563")
     SOFT = colors.HexColor("#B9BEC6")
     ICE = colors.HexColor("#EEF5FA")
     LINE = colors.HexColor("#C3CFDA")
@@ -382,7 +382,7 @@ def build_pdf(path: Path) -> None:
     small = ParagraphStyle("small", parent=body, fontSize=9.3, leading=12.8, spaceAfter=0)
     h_sec = ParagraphStyle("hsec", fontName="Pix", fontSize=24, leading=24, textColor=INK, spaceBefore=4, spaceAfter=4)
     kick = ParagraphStyle("kick", fontName="Label-Bold", fontSize=7, leading=10, textColor=colors.HexColor("#8A5E00"))
-    sub = ParagraphStyle("sub", fontName="Body", fontSize=11, leading=15.5, textColor=GREY, spaceAfter=10)
+    sub = ParagraphStyle("sub", fontName="Body", fontSize=11, leading=15.5, textColor=GRAY, spaceAfter=10)
     toc_s = ParagraphStyle("toc", fontName="Body-Bold", fontSize=10.2, leading=13.5, textColor=INK)
     callout_s = ParagraphStyle("callout", parent=body, fontName="Body-Bold", fontSize=10.2, spaceAfter=0)
     right = ParagraphStyle("r", parent=small, alignment=2)
@@ -459,7 +459,7 @@ def build_pdf(path: Path) -> None:
         for i in range(int((W - LM - RM) // 8)):  # a stepped pixel rule
             c.setFillColor(GOLDC if i % 2 == 0 else colors.HexColor("#FFD76A"))
             c.rect(LM + i * 8, 0.72 * inch, 8, 2.5, stroke=0, fill=1)
-        c.setFillColor(GREY); c.setFont("Label", 7)
+        c.setFillColor(GRAY); c.setFont("Label", 7)
         c.drawString(LM, 0.52 * inch, "BEER LEAGUE HOCKEY ASSOCIATION  •  EST. 2026")
         c.setFont("Pix", 14); c.setFillColor(INK)
         c.drawRightString(W - RM, 0.5 * inch, f"PAGE {d.page}")
@@ -505,7 +505,7 @@ def build_pdf(path: Path) -> None:
     story += [Paragraph("Quick Reference", h_sec)]
     story += [label_table([[Paragraph(label(k), small), Paragraph(md(v), small)] for k, v in S.QUICK_REFERENCE], 1.3 * inch), Spacer(1, 10)]
     al_head = [Paragraph("Annual Financial Allocation", h_sec),
-               Paragraph(f"<b>12 franchises × $150 = ${S.ALLOCATION_TOTAL:,} annual league pool.</b>", ParagraphStyle("al", parent=small, textColor=GREY, spaceAfter=5))]
+               Paragraph(f"<b>12 franchises × $150 = ${S.ALLOCATION_TOTAL:,} annual league pool.</b>", ParagraphStyle("al", parent=small, textColor=GRAY, spaceAfter=5))]
 
     def alloc_table():
         data = [[Paragraph(label("Annual allocation"), small), Paragraph(label("Amount"), right)]]

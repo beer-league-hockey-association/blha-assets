@@ -1,6 +1,6 @@
 """automation/history/history.yaml: the league records the Fantrax feed cannot know.
 
-The Commissioner maintains franchise identities, each Season's honours and the
+The Commissioner maintains franchise identities, each Season's honors and the
 Dynasty Pot money in that file. Everything here reads and validates it; the
 regression tests run ``validate`` so a typo is caught before it reaches the
 site or Discord.
@@ -92,7 +92,7 @@ def validate(data: dict[str, Any], repo_root: Path = REPO_ROOT) -> list[str]:
             errors.append(f"{where}: founded must be a year such as 2027")
         colors = row.get("colors", [])
         if not isinstance(colors, list) or len(colors) > 3 or any(not COLOR.match(str(c)) for c in colors):
-            errors.append(f"{where}: colors must be a list of up to 3 hex colours like \"#FFB81C\"")
+            errors.append(f"{where}: colors must be a list of up to 3 hex colors like \"#FFB81C\"")
         logo = row.get("logo")
         if logo is not None:
             if not isinstance(logo, str) or not logo.lower().endswith(".png"):
@@ -110,7 +110,7 @@ def validate(data: dict[str, Any], repo_root: Path = REPO_ROOT) -> list[str]:
 
     seasons = data.get("seasons") or {}
     if not isinstance(seasons, dict):
-        return errors + ["seasons must be a mapping of Season year -> honours"]
+        return errors + ["seasons must be a mapping of Season year -> honors"]
     for year, row in seasons.items():
         where = f"seasons.{year}"
         if _season_year(year) is None:

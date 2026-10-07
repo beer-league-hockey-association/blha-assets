@@ -58,7 +58,7 @@ on:
 Google refreshes a published tab within about five minutes of an edit, so
 confirm a payment in the ledger a few minutes before the trade. If the link is
 missing or can't be read, the alert falls back to asking you to check the
-ledger by hand. When you reverse a trade, the picks moving back are recognised
+ledger by hand. When you reverse a trade, the picks moving back are recognized
 (for 14 days) and reported as a reversal instead of a new trade.
 
 The first run only saves a baseline. Use mode `test` for a sample alert and

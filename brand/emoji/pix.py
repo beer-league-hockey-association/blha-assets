@@ -1,8 +1,8 @@
 """Tiny pixel-art kit for the BLHA Discord emoji: a 32 x 32 canvas, shape helpers, an automatic
 black keyline, and exporters for 128 x 128 PNG (static) and GIF (animated) emoji.
 
-Colours are one-letter keys (see PAL) or RGB tuples. Every emoji is drawn on 32 x 32 art pixels and
-enlarged x4 with nearest-neighbour, so each art pixel is a hard 4 x 4 square.
+Colors are one-letter keys (see PAL) or RGB tuples. Every emoji is drawn on 32 x 32 art pixels and
+enlarged x4 with nearest-neighbor, so each art pixel is a hard 4 x 4 square.
 """
 from __future__ import annotations
 
@@ -86,7 +86,7 @@ class Canvas:
                 err += dx; y0 += sy
 
     def ellipse(self, cx, cy, rx, ry, c, fill=True):
-        """Pixel-centred ellipse: cx, cy may be .5 for even sizes."""
+        """Pixel-centered ellipse: cx, cy may be .5 for even sizes."""
         for y in range(self.h):
             for x in range(self.w):
                 d = ((x + .5 - cx - .5) / (rx + .5)) ** 2 + ((y + .5 - cy - .5) / (ry + .5)) ** 2
@@ -106,7 +106,7 @@ class Canvas:
                     self.px(x, y, c)
 
     def stamp(self, rows, x=0, y=0, pal=None):
-        """Draw a character map ('.' or ' ' transparent). pal maps extra letters to colours."""
+        """Draw a character map ('.' or ' ' transparent). pal maps extra letters to colors."""
         p = dict(pal or {})
         for j, row in enumerate(rows):
             for i, ch in enumerate(row):
@@ -133,7 +133,7 @@ class Canvas:
         return sum((len(f[ch][0]) if ch in f else 1) + gap for ch in s.upper()) - gap
 
     def outline(self, c="K", diagonal=False):
-        """Add a 1-pixel keyline on every transparent pixel touching a coloured one."""
+        """Add a 1-pixel keyline on every transparent pixel touching a colored one."""
         src = self.img.copy()
         nb = [(1, 0), (-1, 0), (0, 1), (0, -1)] + ([(1, 1), (1, -1), (-1, 1), (-1, -1)] if diagonal else [])
         for y in range(self.h):
@@ -182,13 +182,13 @@ def save_gif(frames, path, durations=100):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     bigs = [f.big() for f in frames]
-    colours = []
+    colors = []
     for im in bigs:
         for c in im.getdata():
-            if c[3] and c[:3] not in colours:
-                colours.append(c[:3])
-    assert len(colours) <= 255, f"{path.name}: {len(colours)} colours"
-    palette = [(0, 0, 0)] + colours   # index 0 is transparent
+            if c[3] and c[:3] not in colors:
+                colors.append(c[:3])
+    assert len(colors) <= 255, f"{path.name}: {len(colors)} colors"
+    palette = [(0, 0, 0)] + colors   # index 0 is transparent
     index = {c: i for i, c in enumerate(palette)}
     flat = [v for c in palette for v in c] + [0] * (768 - 3 * len(palette))
     out = []

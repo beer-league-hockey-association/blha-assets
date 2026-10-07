@@ -20,7 +20,7 @@ Workflows that only run some of the time are only checked while they are suppose
 
 ## What triggers an alert
 
-- latest completed live run failed, timed out, was cancelled, or otherwise ended abnormally
+- latest completed live run failed, timed out, was canceled, or otherwise ended abnormally
 - a workflow has not had a live run within its configured threshold
 - GitHub returns no live run for an expected production workflow
 - the latest Wire run logged a Discord delivery problem (including a roundup that failed to post)

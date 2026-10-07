@@ -98,7 +98,7 @@ class Archive:
     def seasons(self) -> list[int]:
         """Seasons that count as league history.
 
-        A season labelled TEST counts only until the first real season is
+        A season labeled TEST counts only until the first real season is
         archived, so the test league shows on the site while it is all there
         is and then drops out of lifetime records by itself.
         """
