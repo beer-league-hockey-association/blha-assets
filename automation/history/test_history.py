@@ -368,7 +368,8 @@ class ProfileTests(Fixture):
     def test_dynasty_summary(self) -> None:
         s = profiles.dynasty_summary(self.hist)
         self.assertEqual((s["balance"], s["cycle_started"], s["titles_to_win"]), (435, 2027, 3))
-        self.assertEqual(s["rows"][0], {"key": "north", "name": "North Stars", "titles": 2, "color": "#1D4E89"})
+        self.assertEqual(s["rows"][0], {"key": "north", "name": "North Stars", "titles": 2, "color": "#1D4E89",
+                                     "colors": ["#1D4E89", "#F4EFE4"]})
         self.assertEqual(s["last_added"], {"season": 2028, "dues": 200.0, "unused_reserve": 0.0})
 
     def test_franchise_profiles(self) -> None:

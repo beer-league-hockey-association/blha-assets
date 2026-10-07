@@ -49,8 +49,9 @@ class SiteTests(unittest.TestCase):
         pages = build_site.build(archive, self.out, records=records, league=league or {"rivals": []}, now=NOW)
         for page in ["index.html", *SECTION_PAGES, "404.html"]:
             self.assertIn(page, pages)
-        for asset in ("site.css", "favicon.png", "apple-touch-icon.png", "b-mark.png", "social-card.png",
-                      "fonts/archivo.woff", "fonts/archivo-italic.woff"):
+        for asset in ("site.css", "favicon.png", "apple-touch-icon.png", "social-card.png", "BLHA_Constitution.pdf",
+                      "fonts/jersey10.woff", "fonts/silkscreen.woff", "fonts/chakrapetch.woff",
+                      "sprites/b.svg", "sprites/jersey.svg", "sprites/resurfacer.svg"):
             self.assertTrue((self.out / "assets" / asset).is_file(), asset)
         for extra in ("robots.txt", "_headers"):
             self.assertTrue((self.out / extra).is_file(), extra)
@@ -95,7 +96,16 @@ class SiteTests(unittest.TestCase):
         self.assertIn("No trades recorded yet", pages["trades/index.html"])
         self.assertIn("No completed draft", pages["drafts/index.html"])
         self.assertIn("no records", pages["records/index.html"])
-        self.assertIn("Article XX", pages["constitution/index.html"])
+        con = pages["constitution/index.html"]
+        self.assertIn('<span class="art-no">Article XX</span>', con)                 # pixel article headings
+        self.assertIn('<strong class="sec-no">1.1</strong>', con)                      # section number chips
+        self.assertIn('<div class="qr"><ul>', con)                                     # the Quick Reference panel
+        self.assertIn('href="/assets/BLHA_Constitution.pdf?v=', con)
+        self.assertIn('<span class="zam"></span>', home)                               # the ice resurfacer on the rink
+        css = (self.out / "assets" / "site.css").read_text()
+        self.assertIn(":has(#article-i-league-identity-and-purpose:target)", css)
+        sheet = (self.out / "assets" / "sprites" / "resurfacer.svg").read_text()
+        self.assertIn('viewBox="0 0 112 28"', sheet)                                   # two 56 x 28 frames side by side
         self.assertIn("Adopted by owner acceptance. Effective Season 2027", pages["constitution/index.html"])
         self.assertNotIn("Do not edit", pages["constitution/index.html"])
         self.assertIn("isn't in the record book", pages["404.html"])
@@ -149,7 +159,7 @@ class SiteTests(unittest.TestCase):
         self.standalone_checks(pages)
         home = pages["index.html"]
         self.assertIn("$435", home)
-        self.assertIn('aria-label="2 of 3"', home)
+        self.assertIn('aria-label="2 of 3 titles"', home)
         self.assertEqual(home.count('<li class="banner"><span class="rod"></span><a href="/seasons/'), 2)  # two titles
         self.assertIn('<li class="banner cream">', home)                                # a Presidents' Trophy banner
         self.assertNotIn("seasons/2026", "".join(pages))                               # test season hidden once real ones exist
@@ -169,6 +179,12 @@ class SiteTests(unittest.TestCase):
         self.assertIn("Sitemap: https://blhahockey.com/sitemap.xml", (self.out / "robots.txt").read_text())
         css = (self.out / "assets" / "site.css").read_text()
         self.assertIn(".f-north{--fc:#1D4E89;--fc2:#F4EFE4;--fc-ink:#F4EFE4}", css)
+        jersey = (self.out / "assets" / "sprites" / "jersey-north.svg").read_text()   # team colours live on the jersey
+        self.assertIn('fill="#1D4E89"', jersey)
+        self.assertIn('fill="#F4EFE4"', jersey)
+        self.assertIn('/assets/sprites/jersey-north.svg?v=', north)
+        self.assertIn('class="fhero f-north"', north)                                  # and the stripe under the header
+        self.assertIn('class="bracket', pages["seasons/2027/index.html"])
 
     def test_site_address_must_be_a_plain_https_domain(self) -> None:
         for bad in ("http://blhahockey.com", "https://blhahockey.com/history", "blhahockey.com"):

@@ -16,10 +16,12 @@ def dynasty_summary(hist: LeagueHistory) -> dict[str, Any]:
     rows = []
     for key in hist.franchise_keys():
         colors = (hist.records.franchises.get(key) or {}).get("colors") or DEFAULT_COLORS
-        rows.append({"key": key, "name": hist.name(key), "titles": int(d.active.titles.get(key, 0)), "color": colors[0]})
+        rows.append({"key": key, "name": hist.name(key), "titles": int(d.active.titles.get(key, 0)), "color": colors[0],
+                     "colors": list(colors)})
     for key, count in d.active.titles.items():
         if key not in {r["key"] for r in rows}:
-            rows.append({"key": key, "name": hist.name(key), "titles": count, "color": DEFAULT_COLORS[0]})
+            rows.append({"key": key, "name": hist.name(key), "titles": count, "color": DEFAULT_COLORS[0],
+                         "colors": list(DEFAULT_COLORS)})
     rows.sort(key=lambda r: (-r["titles"], natural(r["name"])))
     return {
         "balance": d.active.balance,
