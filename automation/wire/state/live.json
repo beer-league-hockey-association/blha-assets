@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T19:00:44.535093Z",
+  "updated_at": "2026-10-07T19:15:34.529674Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4882,6 +4882,16 @@
       "source_id": "pod_prospects2pros",
       "tier": 2,
       "seen_at": "2026-10-07T19:00:44.524292Z"
+    },
+    {
+      "key": "9764901d174ceeba282715c6",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
+      "fingerprint": "a3b026481e5d0656",
+      "title_norm": "nick foligno (min) — foligno (upper-body) left tuesday's game vs. buffalo and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T19:15:34.448060Z"
     }
   ],
   "known_sources": [
