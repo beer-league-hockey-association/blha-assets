@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T03:00:39.171372Z",
+  "updated_at": "2026-10-07T03:15:34.867560Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4432,6 +4432,16 @@
       "source_id": "pod_rotowire_hockey",
       "tier": 2,
       "seen_at": "2026-10-07T03:00:39.076397Z"
+    },
+    {
+      "key": "9e51c8125d3ea140f80565ed",
+      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
+      "fingerprint": "e86f999a6eac4088",
+      "title_norm": "jonas siegenthaler (njd) — siegenthaler left tuesday's game vs. utah with an undisclosed injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T03:15:34.787458Z"
     }
   ],
   "known_sources": [
