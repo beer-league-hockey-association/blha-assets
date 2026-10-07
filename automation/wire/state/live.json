@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T17:45:37.362059Z",
+  "updated_at": "2026-10-07T17:58:29.152909Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4822,6 +4822,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T17:45:37.284209Z"
+    },
+    {
+      "key": "c3078ba726ec7f8314875fb3",
+      "url": "https://www.nhl.com/news/alexander-romanov-to-miss-rest-of-2026-2027-season",
+      "fingerprint": "2178f3de267eaed2",
+      "title_norm": "romanov likely to miss rest of season with torn acl",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T17:58:28.700448Z"
+    },
+    {
+      "key": "ffd43edc9765cda199fbb2e0",
+      "url": "https://www.sportsnet.ca/nhl/article/whats-working-and-what-needs-work-early-positives-concerns-for-maple-leafs",
+      "fingerprint": "a9f241cb7f975491",
+      "title_norm": "what's working and what needs work? early positives, concerns for maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T17:58:28.936403Z"
+    },
+    {
+      "key": "a603130437b42cb62fecd467",
+      "url": "https://www.sportsnet.ca/nhl/article/islanders-d-alexander-romanov-out-six-to-eight-months-with-torn-acl",
+      "fingerprint": "b4d41d9246945714",
+      "title_norm": "islanders d alexander romanov out six to eight months with torn acl",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T17:58:29.137545Z"
     }
   ],
   "known_sources": [
