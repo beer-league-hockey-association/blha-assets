@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T20:00:45.279627Z",
+  "updated_at": "2026-10-07T20:15:33.202676Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4902,6 +4902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T20:00:45.257754Z"
+    },
+    {
+      "key": "80d439097be3272f0a0eba53",
+      "url": "https://www.sportsnet.ca/nhl/article/how-the-panthers-can-navigate-aleksander-barkovs-absence",
+      "fingerprint": "ca00c0de50478310",
+      "title_norm": "how the panthers can navigate aleksander barkov's absence",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T20:15:33.182011Z"
     }
   ],
   "known_sources": [
