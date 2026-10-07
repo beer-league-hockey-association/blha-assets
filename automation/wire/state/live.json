@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T16:46:14.150266Z",
+  "updated_at": "2026-10-07T17:15:36.528055Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4772,6 +4772,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T16:46:14.124799Z"
+    },
+    {
+      "key": "90a3d2b30f9b881c278894f6",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-7-2026",
+      "fingerprint": "e3ecd4670a1f0d94",
+      "title_norm": "status report: rust game-time decision for penguins",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T17:15:36.179724Z"
+    },
+    {
+      "key": "b040eb32d2a7b58cf935884d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-goalie-samuel-montembeault-suffers-injury-in-practice",
+      "fingerprint": "47196f119b8d6838",
+      "title_norm": "canadiens goalie samuel montembeault suffers injury in practice",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T17:15:36.496797Z"
+    },
+    {
+      "key": "757ab9dd4228e55276bfab67",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-acquire-f-filip-hallander-from-penguins-for-d-spencer-stastney",
+      "fingerprint": "d743d431b14c0e68",
+      "title_norm": "oilers acquire f filip hallander from penguins for d spencer stastney",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T17:15:36.498544Z"
     }
   ],
   "known_sources": [
