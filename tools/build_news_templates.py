@@ -195,14 +195,15 @@ tmpl("league-office/63_league_bot_launch.json", "MEET THE BLHA LEAGUE BOT", "Lea
 # One-time reference post for owners: why each scoring value is what it is.
 # Numbers come from NHL league-wide averages (2024-25: about 3.0 goals, 28 shots
 # and a .900 save percentage per team per game; ~1.7 assists per goal; ~15
-# blocks and ~20 hits per team per game).
+# blocks and ~20 hits per team per game; power plays: 0.59 goals on 2.71 chances
+# per team per game, a 21.8% conversion rate).
 D = fmt.divider_name
 tmpl("league-office/16_scoring_explained.json", "HOW BLHA SCORING WORKS",
      "The BLHA scoring system has two goals: every point should come from something the player actually controls, "
      "and no single stat should decide a matchup. Each value was set against NHL league-wide averages "
      "(about 3 goals, 28 shots and a .900 save percentage per team per game), and the reasons are below.",
      "BLHA LEAGUE OFFICE",
-     [("SKATERS", "Goal **+5.00**\nAssist **+2.95**\nShot on Goal **+0.55**\nBlock **+0.35**\nHit **+0.20**"),
+     [("SKATERS", "Goal **+5.00**\nAssist **+2.95**\nShot on Goal **+0.55**\nBlock **+0.35**\nHit **+0.20**\nPenalty Minute **−0.54**"),
       ("GOALIES", "Game Started **+6.50**\nSave **+0.49**\nGoal Against **−5.00**\nGoalie Goal **+5.00**\nGoalie Assist **+2.95**"),
       (D("GOALS, ASSISTS, SHOTS"),
        "**Equal weight.** NHL teams average about **1.7 assists** and about **9 shots** for every goal. The assist and shot values "
@@ -220,6 +221,16 @@ tmpl("league-office/16_scoring_explained.json", "HOW BLHA SCORING WORKS",
        "A block (0.35) is worth more than a hit (0.20). Teams throw more hits than they block shots, about 20 a game against "
        "about 15, and hit totals depend a lot on which arena's scorer is counting. Blocks are the more consistent stat, so each "
        "one counts for more."),
+      (D("PENALTY MINUTES"),
+       "**Penalized on the ice, penalized on your roster.** A penalty hurts a real team by handing the other side a power play, "
+       "and NHL power plays score about **22%** of the time (0.59 goals on 2.71 chances per team per game in 2024-25). "
+       "So a minor costs about 0.22 goals; at 5.00 a goal that's **1.09 points**, or **0.54 per minute**.\n\n"
+       "Majors come out the same way: five minutes of power play is about two and a half minors' worth of chances, and "
+       "5 × 0.54 = **2.70**. Fantrax counts only total minutes, so a misconduct is charged at the same rate even though it "
+       "doesn't give a power play. It still takes a player off the ice.\n\n"
+       "Minor → **−1.08**\nFighting major → **−2.70**\n10-minute or game misconduct → **−5.40**\n\n"
+       "Across the league, penalties take back about what hits add. A clean player loses almost nothing; an enforcer's hits "
+       "no longer carry him."),
       (D("GOALIES"),
        "**Paid to start, judged on stopping.** A goal against costs exactly what a goal is worth (**−5.00**), so a goal counts "
        "the same at both ends of the ice.\n\n"
@@ -234,11 +245,10 @@ tmpl("league-office/16_scoring_explained.json", "HOW BLHA SCORING WORKS",
        "**Wins:** decided by the skaters in front of him and the other team's goalie. Saves and goals against measure the goalie himself.\n"
        "**Shutouts:** already rewarded, because a shutout has zero goals against. A bonus would count it twice.\n"
        "**Plus/minus:** a team stat that swings on who else is on the ice.\n"
-       "**Penalty minutes:** taking penalties hurts a real team, so it shouldn't help yours.\n"
        "**Power-play points and game-winning goals:** those goals and assists already count. A bonus double-counts them or rewards luck.\n"
        "**Faceoffs:** only centers take them, so they'd tip the value of the C slot and the F flex spot."),
       (D("WHY THE ODD DECIMALS"),
-       "2.95, 0.55 and 0.49 are the ratios above, rounded, so they aren't arbitrary. Off-round values have a bonus too: an exact "
+       "2.95, 0.55, 0.54 and 0.49 are the ratios above, rounded, so they aren't arbitrary. Off-round values have a bonus too: an exact "
        "tie in a weekly matchup becomes almost impossible."),
       (D("FOR YOUR ROSTER"),
        "Goal and 4 shots → **7.20**\nAssist, 3 shots and a hit → **4.80**\nDefenseman with no points, 2 shots, 3 blocks and 2 hits → **2.55**\n\n"

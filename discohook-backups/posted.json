@@ -7,6 +7,12 @@
       "fingerprint": 2487489888,
       "message": "https://discord.com/channels/1554538666721018016/1557268578376359946/1557268578376359946"
     },
+    "commissioners-office/05_open_a_ticket_channel_intro.json": {
+      "channel": "open-a-ticket",
+      "posted": "2026-10-07",
+      "fingerprint": 1599006030,
+      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688"
+    },
     "constitution/00_quick_reference_and_article_i.json": {
       "channel": "constitution",
       "posted": "2026-10-07",
@@ -24,12 +30,6 @@
       "posted": "2026-10-07",
       "fingerprint": 940673060,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258385613791333"
-    },
-    "constitution/03_articles_vi_to_x.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 617243029,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379"
     },
     "constitution/04_articles_xi_to_xiii.json": {
       "channel": "constitution",
@@ -124,11 +124,6 @@
       "fingerprint": 2065454264,
       "message": "https://discord.com/channels/1554538666721018016/1554540618217427064/1557260237017456663"
     },
-    "league-office/16_scoring_explained.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 3569623628
-    },
     "the-wire/01_breaking_news_channel_intro.json": {
       "channel": "breaking-news",
       "posted": "2026-10-07",
@@ -191,10 +186,15 @@
     }
   },
   "update_in_place": {
-    "commissioners-office/05_open_a_ticket_channel_intro.json": {
-      "channel": "open-a-ticket",
-      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688",
-      "reason": "lightest skin tone on 🤝🏻"
+    "constitution/03_articles_vi_to_x.json": {
+      "channel": "constitution",
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379",
+      "reason": "penalty minutes added to scoring (-0.54)"
+    },
+    "league-office/16_scoring_explained.json": {
+      "channel": "constitution",
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557425202743349290",
+      "reason": "penalty minutes added to scoring (-0.54)"
     }
   }
 }

@@ -175,6 +175,7 @@
 • Shot on Goal — **+0.55**
 • Block — **+0.35**
 • Hit — **+0.20**
+• Penalty Minute — **-0.54**
 
 **GOALIES**
 • Game Started — **+6.50**
@@ -183,7 +184,7 @@
 • Goalie Goal — **+5.00**
 • Goalie Assist — **+2.95**
 
-**8.2** Goalie wins, shutouts, plus/minus, penalty minutes, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored.
+**8.2** Goalie wins, shutouts, plus/minus, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored.
 
 ## Article IX — Lineups and Goalie Starts
 
