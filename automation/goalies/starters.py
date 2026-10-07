@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""BLHA Starting Goalies: one live message per game day in #game-day.
+"""BLHA Starting Goalies: one live message per game day in 🏒│game-day.
 
 During the regular season and playoffs the scheduler runs this several times
 a day (automation/scheduler/schedule.yaml). The first run of the day posts a

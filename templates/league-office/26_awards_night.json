@@ -15,12 +15,12 @@
         },
         {
           "name": "HOW TO VOTE",
-          "value": "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
+          "value": "One Discord poll per award in **💬│gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
           "inline": false
         },
         {
           "name": "RESULTS",
-          "value": "Winners are announced in **hall-of-champions** and kept in the league records.",
+          "value": "Winners are announced in **🏆│hall-of-champions** and kept in the league records.",
           "inline": false
         },
         {

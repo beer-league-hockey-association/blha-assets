@@ -201,7 +201,7 @@ sources:
     enabled: false
     note: Disabled after repeated empty feed results on 2026-09-30.
 
-  # PODCASTS: one post per new episode in #media (feed URLs from Apple Podcasts, 2026-10-06)
+  # PODCASTS: one post per new episode in 📸│media (feed URLs from Apple Podcasts, 2026-10-06)
   - id: pod_apples_ginos
     name: Apples & Ginos Fantasy Hockey Podcast
     type: rss

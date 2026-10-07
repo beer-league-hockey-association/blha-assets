@@ -11,7 +11,7 @@ Fantrax is only ever read, never written. The bot posts nothing that Fantrax alr
 | Command | Who | Rule |
 | --- | --- | --- |
 | `/proposal new` | Franchise Owner or Commissioner | Posts a written proposal: affected rule, exact new text, Season it takes effect (20.2) |
-| `/proposal from-thread` | Commissioner | Used inside a **league-suggestions** forum thread: opens the same proposal form with the thread title filled in. After posting, it replies in the thread with a link to the proposal and adds the "scheduled for vote" tag if one is set |
+| `/proposal from-thread` | Commissioner | Used inside a **💡│league-suggestions** forum thread: opens the same proposal form with the thread title filled in. After posting, it replies in the thread with a link to the proposal and adds the **🗳️ SENT TO VOTE** tag if one is set |
 | `/vote open` | Commissioner | Opens voting on a proposal once 7 days have passed, only in the Offseason, only before 20.1's date, and only if it closes before that Season's dues deadline (20.3, 20.4) |
 | `/vote elect` | Any Franchise Owner | Interim or permanent Commissioner: majority of active franchises (19.5) |
 | `/vote status` | Anyone | Which franchises have voted (never how) |
@@ -63,9 +63,9 @@ Regular-season Weeks only; Fantrax's schedule has seeds, not teams, for playoff 
 
 **2. Fill in `bot/config.yaml`**
 1. In Discord, go to **User Settings > Advanced** and turn on **Developer Mode**.
-2. Copy these IDs into config.yaml: the server, **league-voting**, **rulings-log**, the Commissioner role, the Assistant Commissioner role (optional), the Franchise Owner role and the Co-Owner role.
-3. Copy the IDs of the Pick'em channel (`pickem_channel_id`) and the **league-suggestions** forum (`suggestions_forum_id`).
-4. Optional: `scheduled_for_vote_tag_id`, the forum tag added to a suggestion when it becomes a proposal. Discord can't copy a tag's ID, so start the bot once with `suggestions_forum_id` set: its log lists the forum's tags as `Name (ID)`.
+2. Copy these IDs into config.yaml: the server, **🗳️│league-voting**, **⚖️│rulings-log**, the Commissioner role, the Assistant Commissioner role (optional), the Franchise Owner role and the Co-Owner role.
+3. Copy the IDs of the Pick'em channel (`pickem_channel_id`) and the **💡│league-suggestions** forum (`suggestions_forum_id`).
+4. Optional: `scheduled_for_vote_tag_id`, the ID of the forum's **🗳️ SENT TO VOTE** tag, added to a suggestion when it becomes a proposal. Discord can't copy a tag's ID, so start the bot once with `suggestions_forum_id` set: its log lists the forum's tags as `Name (ID)`.
 5. Replace the 12 placeholder franchises with real names, each franchise's role ID and its `fantrax_team_id`. The IDs in the file are the 2026-27 test league's; when the real league exists, run the **BLHA Pick Trades** workflow in preview mode to list them. Mark your own franchise `commissioner: true`.
 6. Set `amendment_votes_from` to the day after the Season 2027 Championship ends. Add each Season's dues deadline under `dues_deadlines`.
 7. Check it with `BLHA_CHECK=1 python3 bot/main.py`. The check should report 0 warnings. At startup the bot also warns if a `fantrax_team_id` isn't a team in the Fantrax league.

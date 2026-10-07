@@ -49,12 +49,12 @@
         },
         {
           "name": "LEAGUE BOT (FROM SEASON 2027)",
-          "value": "`/myteam` your roster, picks and next matchup • `/minor` a player's eligibility • `/rule` any section • `/deadlines` the next dates • `/tradecheck` a trade against the rules • Pick'em in **game-day**.",
+          "value": "`/myteam` your roster, picks and next matchup • `/minor` a player's eligibility • `/rule` any section • `/deadlines` the next dates • `/tradecheck` a trade against the rules • Pick'em in **🏒│game-day**.",
           "inline": false
         },
         {
           "name": "QUESTIONS",
-          "value": "Rules questions go to **rules-questions**. Anything private goes to **open-a-ticket**.",
+          "value": "Rules questions go to **❓│rules-questions**. Anything private goes to **🎟️│open-a-ticket**.",
           "inline": false
         }
       ],

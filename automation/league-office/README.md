@@ -11,7 +11,7 @@ Automate commissioner-controlled calendar milestones and deadline reminders with
 ## Channels
 
 - `📅│league-calendar` — primary destination for scheduled league milestones and reminders.
-- `📢│league-announcements` — receives only selected high-priority reminder copies defined by `announcement_reminders`.
+- `📢│announcements` — receives only selected high-priority reminder copies defined by `announcement_reminders`.
 
 ## Required GitHub Actions secrets
 
@@ -100,7 +100,7 @@ League Office delivery uses the shared BLHA Discord webhook helper in `automatio
 ## Rollout
 
 1. Create a Discord webhook in `📅│league-calendar` named `BLHA League Office — Calendar`.
-2. Create a Discord webhook in `📢│league-announcements` named `BLHA League Office — Announcements`.
+2. Create a Discord webhook in `📢│announcements` named `BLHA League Office — Announcements`.
 3. Add the two webhook URLs to GitHub Actions Secrets using the exact secret names above.
 4. Run `BLHA League Office Automation` in `test` mode once for each channel.
 5. Leave every real event disabled until its actual date is finalized.

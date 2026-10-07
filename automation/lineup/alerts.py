@@ -5,7 +5,7 @@ Once a day (about 3:00 PM ET, regular season and playoffs) this checks each
 opted-in owner's Fantrax lineup for today. When a player in the ACTIVE lineup
 has no NHL regular-season game today while one of that franchise's RESERVE
 players at an eligible position does play (and his game has not started yet),
-the owner gets one short message in #lineup-alerts that mentions them.
+the owner gets one short message in 🔔│lineup-alerts that mentions them.
 Lineups are the manager's job (9.1); this is only a reminder. Players lock
 about one minute before their own game (5.3).
 

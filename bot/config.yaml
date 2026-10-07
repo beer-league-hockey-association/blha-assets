@@ -14,7 +14,7 @@ discord:
   co_owner_role_id: ""                # Co-Owner role (/myteam, /tradecheck, Pick'em; never votes)
   pickem_channel_id: ""               # channel for the weekly Pick'em posts
   suggestions_forum_id: ""            # league-suggestions forum (/proposal from-thread)
-  scheduled_for_vote_tag_id: ""       # optional; forum tag added when a suggestion becomes a proposal
+  scheduled_for_vote_tag_id: ""       # optional; ID of the "🗳️ SENT TO VOTE" forum tag, added when a suggestion becomes a proposal
 
 # One entry per franchise. role_id is that franchise's own Discord role.
 # fantrax_team_id is the franchise's Fantrax team ID (run the BLHA Pick Trades

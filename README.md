@@ -85,7 +85,7 @@ PuckPedia native Discord integration is the preferred live transaction feed for 
 **Owner pings (opt-in).** Owners listed under `owners` in `automation/league.yaml` are mentioned when one of their own players appears in the Injury Report. Nobody else can be pinged. The same list opts owners in to Lineup Alerts.
 
 
-**Podcasts.** Five fantasy hockey podcast feeds (Apples & Ginos, Keeping Karlsson, RotoWire Fantasy Hockey, NHL Fantasy on Ice, Prospects2Pros) post each new episode to #media through the secret `BLHA_WEBHOOK_MEDIA`. A feed marked `baseline_first: true` in `automation/wire/sources.yaml` posts nothing on its first live run, so adding a feed never floods the channel with old episodes.
+**Podcasts.** Five fantasy hockey podcast feeds (Apples & Ginos, Keeping Karlsson, RotoWire Fantasy Hockey, NHL Fantasy on Ice, Prospects2Pros) post each new episode to `📸│media` through the secret `BLHA_WEBHOOK_MEDIA`. A feed marked `baseline_first: true` in `automation/wire/sources.yaml` posts nothing on its first live run, so adding a feed never floods the channel with old episodes.
 ## League Office
 
 Commissioner-controlled dates and deadline reminders live in `automation/league-office/events.yaml`.
@@ -109,7 +109,7 @@ Fantrax weeks end at the first NHL game on Monday evening, so by Monday morning 
 5. `🏁│playoff-race` — from **Week 16** through the last regular-season week
 6. Matchup preview for the week starting that evening (scoreboard channel)
 7. **NHL games grid** for that week, for planning daily lineups (scoreboard channel, separate message)
-8. **The Wooden Spoon** once a season, with the final regular-season standings: the last-place franchise takes the Spoon (#weekly-recap; its owner is mentioned if listed under `owners`). A league tradition with no money and no rule change; switch it off with `competition.wooden_spoon: false`
+8. **The Wooden Spoon** once a season, with the final regular-season standings: the last-place franchise takes the Spoon (`📰│weekly-recap`; its owner is mentioned if listed under `owners`). A league tradition with no money and no rule change; switch it off with `competition.wooden_spoon: false`
 
 If Fantrax has not yet counted the finished week in its standings at 8:00 AM, standings and the playoff race wait and go out at the 8:00 PM check. Nothing is ever posted twice for the same week, and a failed post is retried automatically. Awards, rankings and the grid are tracked separately, so a failure in one never reposts the others.
 
@@ -132,7 +132,7 @@ Each team also shows **Goalie starts: X of Y**. X is Fantrax's Games Started (GS
 
 ## Lineup Alerts
 
-Code: `automation/lineup/alerts.py` · Workflow: `.github/workflows/blha-lineup-alerts.yml` · Channel: `#lineup-alerts` (webhook secret `BLHA_WEBHOOK_LINEUP_ALERTS`)
+Code: `automation/lineup/alerts.py` · Workflow: `.github/workflows/blha-lineup-alerts.yml` · Channel: `🔔│lineup-alerts` (webhook secret `BLHA_WEBHOOK_LINEUP_ALERTS`)
 
 Once a day at about **3:00 PM ET** during the regular season and playoffs, each owner listed under `owners` in `automation/league.yaml` gets one short message that mentions them when a player in today's **ACTIVE** lineup has no NHL game today while one of their **RESERVE** players at an eligible position does play (and his game has not started). Owners not listed are never checked or pinged. Each franchise gets at most one alert a day.
 
@@ -143,7 +143,7 @@ Once a day at about **3:00 PM ET** during the regular season and playoffs, each 
 
 ## Starting Goalies
 
-Code: `automation/goalies/starters.py` · Workflow: `.github/workflows/blha-starting-goalies.yml` · Channel: `#game-day` (webhook secret `BLHA_WEBHOOK_GAME_DAY`)
+Code: `automation/goalies/starters.py` · Workflow: `.github/workflows/blha-starting-goalies.yml` · Channel: `🏒│game-day` (webhook secret `BLHA_WEBHOOK_GAME_DAY`)
 
 On game days during the regular season and playoffs, the first check after **11:00 AM ET** posts one **Starting Goalies** message: every NHL game tonight with each team's expected starter marked **Confirmed**, **Likely** or **Unconfirmed**. Later checks (through about 9:15 PM ET) **edit that same message** only when a report changed, so nobody is notified; after the last puck drop it is left as is. Goalies on a BLHA roster show their BLHA team, and a short list at the bottom shows rostered goalies whose NHL team plays tonight but who are not the Confirmed or Likely starter.
 
@@ -166,8 +166,8 @@ Code: `automation/draft/` · Workflow: `.github/workflows/blha-draft-center.yml`
 
 Fantrax already tells owners when they are on the clock and shows every pick in the draft room, so the Draft Center never posts on-the-clock or per-pick messages. It covers what Fantrax does not:
 
-- **#draft-announcements:** a countdown from the Fantrax draft date (30 days, 7 days, 1 day, 1 hour, and when it starts; the first post is the full announcement), the official draft order with any traded picks (7 days before, or on demand), a notice if the date or order changes, and a "Draft Complete" summary.
-- **#draft-results:** the permanent record, posted round by round as each round is completed.
+- **📢│draft-announcements:** a countdown from the Fantrax draft date (30 days, 7 days, 1 day, 1 hour, and when it starts; the first post is the full announcement), the official draft order with any traded picks (7 days before, or on demand), a notice if the date or order changes, and a "Draft Complete" summary.
+- **📋│draft-results:** the permanent record, posted round by round as each round is completed.
 - **Commissioner Desk (private):** an alert when a pick clock runs out or a pick is skipped, with each team's timeout count (Articles 13.5 and 14.3).
 
 The draft date, order, rounds and picks come from Fantrax; the pick clock and nightly pause come from `draft_center` in `automation/league.yaml`, because Fantrax does not publish them. Details: `automation/draft/README.md`.
@@ -196,9 +196,9 @@ The first run of each season saves a baseline only. Limits: a player dropped by 
 
 | Item | Posts to | Secret |
 | --- | --- | --- |
-| `dynasty-pot` | One #league-ledger message in the Dynasty Pot update format, with a PNG of the balance and every franchise's titles this cycle | `BLHA_WEBHOOK_LEAGUE_LEDGER` (new) |
-| `franchise-cards` | One #franchise-directory message per franchise, each with a card: name, owner, founded, titles, Dynasty Pot count, rival | `BLHA_WEBHOOK_FRANCHISE_DIRECTORY` (new) |
-| `draft-retro` | A retrospective of a saved draft (latest by default, or `draft_year`) to #draft-results: biggest steal, biggest miss, best undrafted pickup, best development. Reads NHL stats the same way as the minor-eligibility watch; `live` also saves it for the site | `BLHA_WEBHOOK_DRAFT_RESULTS` (existing) |
+| `dynasty-pot` | One `💰│league-ledger` message in the Dynasty Pot update format, with a PNG of the balance and every franchise's titles this cycle | `BLHA_WEBHOOK_LEAGUE_LEDGER` (new) |
+| `franchise-cards` | One `🏒│franchise-directory` message per franchise, each with a card: name, owner, founded, titles, Dynasty Pot count, rival | `BLHA_WEBHOOK_FRANCHISE_DIRECTORY` (new) |
+| `draft-retro` | A retrospective of a saved draft (latest by default, or `draft_year`) to `📋│draft-results`: biggest steal, biggest miss, best undrafted pickup, best development. Reads NHL stats the same way as the minor-eligibility watch; `live` also saves it for the site | `BLHA_WEBHOOK_DRAFT_RESULTS` (existing) |
 
 Images are drawn with Pillow (`automation/history/requirements.txt`) in brand colours (gold #FFB81C on charcoal #2B2D31, cream text, the B mark) and attached to the message, so nothing is committed. Retrospectives score NHL regular-season stats since the draft the BLHA way where the NHL feed allows (goals, assists, shots; goalies: starts, saves, goals against); hits and blocks are not in the NHL's public feed.
 
@@ -212,7 +212,7 @@ Images are drawn with Pillow (`automation/history/requirements.txt`) in brand co
 **One-time setup**
 
 1. Cloudflare: create a free account, buy the domain through Cloudflare Registrar (or point an existing one at Cloudflare), then create an API token with the permission **Account > Cloudflare Pages > Edit**. Add two repository secrets: `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. Run Actions > BLHA History Site > mode `live` once; it creates the Pages project. In Cloudflare, open Workers & Pages > the project > Custom domains and add the domain, then set `history_site.url` to it.
-2. In Discord, create a webhook in #league-ledger and one in #franchise-directory, and add them as repository secrets `BLHA_WEBHOOK_LEAGUE_LEDGER` and `BLHA_WEBHOOK_FRANCHISE_DIRECTORY`.
+2. In Discord, create a webhook in `💰│league-ledger` and one in `🏒│franchise-directory`, and add them as repository secrets `BLHA_WEBHOOK_LEAGUE_LEDGER` and `BLHA_WEBHOOK_FRANCHISE_DIRECTORY`.
 3. Actions > BLHA League Archive > mode `preview` once to check it reads Fantrax, then let the scheduler run it (the first live run saves the baseline).
 4. When owners join, fill in `franchises` in `automation/history/history.yaml` (Fantrax team IDs are printed by BLHA Pick Trades in `preview` mode). After each Season, record its honours and Dynasty Pot money there.
 

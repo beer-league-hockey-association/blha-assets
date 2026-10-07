@@ -147,7 +147,7 @@ card("the-wire/05_prospect_wire_channel_intro.json", "BLHA PROSPECT WIRE",
 card("the-wire/06_news_desk_channel_intro.json", "BLHA NEWS DESK",
      "The discussion room for everything the wire posts. No automation posts here, so conversation stays readable.", NEWS,
      [("USE THIS ROOM FOR", "Reactions to news • Injury impact • Player outlook • General hockey talk"),
-      ("FEEDS", "breaking-news • nhl-news • injury-report • nhl-transactions • prospect-wire"),
+      ("FEEDS", "**breaking-news** • **nhl-news** • **injury-report** • **nhl-transactions** • **prospect-wire**"),
       ("GUIDELINES", "Link the story you're discussing. Keep rumors labeled as rumors. Anything official goes through the League Office.")])
 
 card("league-competition/08_lineup_alerts_channel_intro.json", "BLHA LINEUP ALERTS",

@@ -49,7 +49,7 @@ tasks:
     items:
       - "No illegal rosters and no ineligible minors left to fix (6.4, 7.4)."
       - "Wooden Spoon: take the role back from last Season's holder when Week 1 starts (it is held for the Offseason only)."
-      - "#automation-health is quiet; scoreboard and weekly report previews look right."
+      - "⚙️│automation-health is quiet; scoreboard and weekly report previews look right."
 
   - id: deadline-passed
     anchor: trade_deadline_final
@@ -70,7 +70,7 @@ tasks:
       - "Confirm Fantrax counted all weeks, then resolve every tie under 15.4 and record any random draw in Discord."
       - "Verify the saved playoff seeds match Fantrax standings; announce the field and bracket."
       - "Crown the Presidents' Trophy winner (best head-to-head record)."
-      - "Wooden Spoon: the Competition Desk posts it in #weekly-recap with the final standings. Give that owner the Wooden Spoon role, and record wooden_spoon for the Season in automation/history/history.yaml."
+      - "Wooden Spoon: the Competition Desk posts it in 📰│weekly-recap with the final standings. Give that owner the Wooden Spoon role, and record wooden_spoon for the Season in automation/history/history.yaml."
       - "Enter consolation round 1 by hand before Week 23 starts: seed 3 v 6 and seed 4 v 5 among the six non-playoff teams; seeds 1 and 2 on byes (16.7)."
       - "Record Potential Points for the six non-playoff teams for picks 1.01 to 1.06 (14.5), and keep a screenshot."
       - "Decide the third-place plan: Fantrax game, or the 16.4 fallback posted in advance."
@@ -121,7 +121,7 @@ tasks:
     section: "3. End of Season, Part B"
     items:
       - "Confirm champion, runner-up, third and fourth place, and the consolation champion."
-      - "Post to #hall-of-champions and #league-records; update every franchise's Dynasty Pot championship count (4.3)."
+      - "Post to 🏆│hall-of-champions and 📚│league-records; update every franchise's Dynasty Pot championship count (4.3)."
       - "Finish the draft order: 1.07 and 1.08 quarterfinal losers, 1.09 fourth, 1.10 third, 1.11 runner-up, 1.12 champion (14.6)."
       - "Record the consolation champion's $50 FAAB bonus for next season (10.7)."
       - "Prizes and the Season Ledger are due within 30 days (3.9)."
@@ -134,7 +134,7 @@ tasks:
     section: "3. End of Season, Part B"
     items:
       - "Pay Champion $650, Runner-Up $350, Third $150 and Presidents' Trophy $200, and record each in the Ledger."
-      - "Publish the Season Ledger in #league-ledger: dues, prizes, reserve spending, $100 League Services Allocation, Dynasty Pot balance (3.9, 4.7)."
+      - "Publish the Season Ledger in 💰│league-ledger: dues, prizes, reserve spending, $100 League Services Allocation, Dynasty Pot balance (3.9, 4.7)."
 
   - id: prizes-day-25
     anchor: season_end_final

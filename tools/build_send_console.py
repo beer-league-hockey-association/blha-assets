@@ -10,7 +10,11 @@ from __future__ import annotations
 import html
 import json
 import re
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import discord_channels as channels  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 LINKS = json.loads((ROOT / "discohook-backups" / "links.json").read_text(encoding="utf-8"))
@@ -53,11 +57,16 @@ def channel_from_file(rel: str) -> str:
     return CHANNEL_NAMES.get(stem, stem.replace("_", "-"))
 
 
+def shown(channel: str) -> str:
+    """The row's channel as the server shows it: every channel slug becomes its full name."""
+    return re.sub(r"[a-z]+(?:-[a-z]+)*", lambda m: channels.name(m.group(0)) if m.group(0) in channels.EMOJI else m.group(0), channel)
+
+
 def row(key: str, channel: str, what: str, href: str, cta: str = "Open in Discohook") -> str:
     return (
         f'<li class="row" data-key="{html.escape(key)}">'
         f'<label class="tick"><input type="checkbox" id="c-{html.escape(key)}" aria-label="Sent: {html.escape(what)}"><span></span></label>'
-        f'<div class="what"><span class="ch">#{html.escape(channel)}</span><span class="desc">{html.escape(what)}</span></div>'
+        f'<div class="what"><span class="ch">{html.escape(shown(channel))}</span><span class="desc">{html.escape(what)}</span></div>'
         f'<a class="go" href="{href}" target="_blank" rel="noopener">{cta}</a></li>'
     )
 
@@ -100,8 +109,6 @@ def build() -> str:
                 rows.append(row("intro-" + ch, ch, "Channel intro. Send, then pin.", v))
         n_rows += len(rows)
         extra = ""
-        if folder == "commissioners-office":
-            extra = " The first channel name is my best reading of a truncated name, so check it against your server."
         if folder == "general-managers":
             extra = " Voice channels do not need an intro."
         sections.append(section(title, "Set the webhook to each row's channel, send, then pin." + extra, rows, folder))

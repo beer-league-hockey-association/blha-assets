@@ -99,7 +99,7 @@ events:
     starts_at: null   # NHL schedule release date + 14 days (Art. 5.5)
     channel: commissioner-desk
     priority: high
-    description: "The League Calendar is due within 14 days after the NHL releases its schedule. Convert every formula date, post it in #league-calendar and create the Sesh events."
+    description: "The League Calendar is due within 14 days after the NHL releases its schedule. Convert every formula date, post it in 📅│league-calendar and create the Sesh events."
     reminders: [7d, 3d, 1d, start]
 
   - id: commissioner-draft-announcement

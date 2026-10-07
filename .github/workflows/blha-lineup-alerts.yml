@@ -2,7 +2,7 @@ name: BLHA Lineup Alerts
 run-name: BLHA Lineup Alerts — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
 # Daily check for opted-in owners (league.yaml `owners`): a starter with no NHL
-# game today while an eligible bench player has one. Posts to #lineup-alerts.
+# game today while an eligible bench player has one. Posts to 🔔│lineup-alerts.
 # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler starts
 # this workflow with mode=live at 15:00 ET during the regular season and playoffs.
 

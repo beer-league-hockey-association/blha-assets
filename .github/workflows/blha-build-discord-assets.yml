@@ -7,6 +7,7 @@ on:
       - 'tools/build_discord_assets.py'
       - 'tools/blha_pixel.py'
       - 'tools/discohook_format.py'
+      - 'tools/discord_channels.py'
       - 'tools/normalize_discohook_templates.py'
       - 'brand/fonts/**'
       - '.github/workflows/blha-build-discord-assets.yml'

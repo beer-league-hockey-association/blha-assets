@@ -16,7 +16,7 @@
       "fields": [
         {
           "name": "START HERE",
-          "value": "📜 **constitution** — League rules and amendments.\n📢 **announcements** — Official league notices.\n📅 **league-calendar** — Important dates and deadlines.\n💰 **league-ledger** — Dues and league accounting.",
+          "value": "**📜│constitution** — League rules and amendments.\n**📢│announcements** — Official league notices.\n**📅│league-calendar** — Important dates and deadlines.\n**💰│league-ledger** — Dues and league accounting.",
           "inline": false
         },
         {
@@ -79,7 +79,7 @@
           "inline": false
         },
         {
-          "name": "💵 WAIVER WIRE",
+          "name": "💰 WAIVER WIRE",
           "value": "FAAB strategy, recently dropped players and players worth watching. Actual claims remain in Fantrax.",
           "inline": false
         },
@@ -89,12 +89,12 @@
           "inline": false
         },
         {
-          "name": "🏢 COMMISSIONER'S OFFICE",
+          "name": "🧑🏻‍⚖️ COMMISSIONER'S OFFICE",
           "value": "Private tickets, public rules questions and league suggestions.",
           "inline": false
         },
         {
-          "name": "🎙️ DRAFT CENTER",
+          "name": "🎯 DRAFT CENTER",
           "value": "Startup and annual draft announcements, round results, draft-day trades and live discussion. Fantrax sends the on-the-clock alerts.",
           "inline": false
         },
@@ -116,7 +116,7 @@
           "inline": false
         },
         {
-          "name": "🤝 CO-OWNER",
+          "name": "🤝🏻 CO-OWNER",
           "value": "Full team-management and community access. Co-owners do **not** create a second league vote.",
           "inline": false
         },
@@ -132,7 +132,7 @@
         },
         {
           "name": "🗳️ FORMAL VOTING",
-          "value": "Only the Franchise Owner role posts the franchise's vote in **league-voting**. Co-owners can view the channel but remain read-only by design.",
+          "value": "Only the Franchise Owner role posts the franchise's vote in **🗳️│league-voting**. Co-owners can view the channel but remain read-only by design.",
           "inline": false
         }
       ]
@@ -154,12 +154,12 @@
         },
         {
           "name": "RULES QUESTIONS",
-          "value": "Use **rules-questions** when an interpretation should be visible to the whole league.",
+          "value": "Use **❓│rules-questions** when an interpretation should be visible to the whole league.",
           "inline": false
         },
         {
           "name": "PRIVATE ISSUES",
-          "value": "Use **open-a-ticket** for private Commissioner matters instead of burying an issue in DMs.",
+          "value": "Use **🎟️│open-a-ticket** for private Commissioner matters instead of burying an issue in DMs.",
           "inline": false
         },
         {
@@ -171,7 +171,7 @@
     },
     {
       "title": "YOU'RE CLEARED FOR THE ROOM",
-      "description": "Before jumping in, confirm your **Franchise Owner** or **Co-Owner** role and make sure you can see the league categories you need.\n\nThen review the constitution, check the league calendar, and head to **gm-lounge**.\n\n**Welcome to the BLHA. Grab a beer. Set your lineup. Make bad trades confidently.**",
+      "description": "Before jumping in, confirm your **Franchise Owner** or **Co-Owner** role and make sure you can see the league categories you need.\n\nThen review the constitution, check the league calendar, and head to **💬│gm-lounge**.\n\n**Welcome to the BLHA. Grab a beer. Set your lineup. Make bad trades confidently.**",
       "color": 16758812,
       "footer": {
         "text": "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026"

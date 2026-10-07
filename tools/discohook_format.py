@@ -13,6 +13,9 @@ Every send is ONE Discord message:
 - Discord limits: 25 fields per embed, 256 per field name, 1,024 per field
   value, 4,096 per description, 10 embeds and 6,000 counted characters per
   message. Content that would break a limit is an error, never split.
+- Channels are written with their full server name ("**🏒│game-day**").
+  A short reference (**game-day**, #game-day, "the game-day channel") is
+  rewritten by discord_channels.restyle() and reported if one is left.
 - MULTI_SECTION_EXCEPTIONS lists the messages whose sections do not fit one
   embed. They keep one embed per section until the Commissioner decides how
   to reshape them; the footer rules still apply.
@@ -24,6 +27,8 @@ checks the same rules independently.
 """
 
 from __future__ import annotations
+
+import discord_channels as channels
 
 BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
 FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
@@ -165,7 +170,7 @@ def apply(embeds: list[dict], banner_url: str | None = None, rel: str | None = N
     so merging sections never loses the sign-off. Raises DoesNotFit when the
     sections cannot share one embed, unless the message is a listed exception.
     """
-    out = [dict(e) for e in embeds]
+    out = [channels.restyle_embed(e) for e in embeds]
     if banner_url:
         if out and is_banner(out[0]):
             out[0] = banner_embed(banner_url)
@@ -218,6 +223,7 @@ def problems(embeds: list[dict], banner_url: str | None = None, rel: str | None 
         errs.append(f"{chars} characters (limit {MAX_CHARS})")
     for i, e in enumerate(embeds):
         errs += [f"embed {i + 1}: {p}" for p in limit_problems(e)]
+        errs += [f"embed {i + 1}: {p}" for p in channels.embed_problems(e)]
     head = 1 if is_banner(embeds[0]) else 0
     if head and embeds[0] != {"color": HEADER_COLOR, "footer": {"text": ZWSP}, "image": embeds[0].get("image")}:
         errs.append("header banner must be charcoal with the header image and the invisible footer only")

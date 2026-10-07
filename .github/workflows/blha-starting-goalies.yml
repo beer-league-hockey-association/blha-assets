@@ -1,7 +1,7 @@
 name: BLHA Starting Goalies
 run-name: BLHA Starting Goalies — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
-# One "Starting Goalies" message per game day in #game-day, edited silently as
+# One "Starting Goalies" message per game day in 🏒│game-day, edited silently as
 # Daily Faceoff's reports firm up until the last game starts. Timing lives in
 # automation/scheduler/schedule.yaml (several checks a day, regular season and
 # playoffs). Code: automation/goalies/starters.py.
