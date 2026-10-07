@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T04:30:40.145759Z",
+  "updated_at": "2026-10-07T05:00:35.247527Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4532,6 +4532,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T04:30:40.113097Z"
+    },
+    {
+      "key": "5380ebe32149be12fcaef195",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-seattle-kraken-game-recap-october-6-2026",
+      "fingerprint": "8ef48d13e4a9a43c",
+      "title_norm": "hertl, eichel each has 4 points, vegas cruises",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T05:00:35.154792Z"
     }
   ],
   "known_sources": [
