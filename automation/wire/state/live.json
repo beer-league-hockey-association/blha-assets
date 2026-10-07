@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T00:45:33.610122Z",
+  "updated_at": "2026-10-07T01:00:38.214370Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4112,6 +4112,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T00:45:33.595271Z"
+    },
+    {
+      "key": "e5f648934ab3b720dbe7e794",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-scores-first-nhl-goal-vs-predators",
+      "fingerprint": "c5c6ecfa61fb6e06",
+      "title_norm": "maple leafs' gavin mckenna scores first nhl goal vs. predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T01:00:38.143310Z"
     }
   ]
 }
