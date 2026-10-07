@@ -11,8 +11,7 @@
       "channel": "open-a-ticket",
       "posted": "2026-10-07",
       "fingerprint": 1859882231,
-      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688",
-      "pinned": false
+      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688"
     },
     "constitution/00_quick_reference_and_article_i.json": {
       "channel": "constitution",
@@ -96,8 +95,7 @@
       "channel": "constitution",
       "posted": "2026-10-07",
       "fingerprint": 3587776718,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258361228234775",
-      "pinned": false
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258361228234775"
     },
     "league-office/02_announcements_channel_intro.json": {
       "channel": "announcements",
@@ -132,11 +130,40 @@
       "fingerprint": 2065454264,
       "message": "https://discord.com/channels/1554538666721018016/1554540618217427064/1557260237017456663"
     },
+    "league-office/16_scoring_explained.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3569623628
+    },
+    "the-wire/01_breaking_news_channel_intro.json": {
+      "channel": "breaking-news",
+      "posted": "2026-10-07",
+      "fingerprint": 150557949,
+      "message": "https://discord.com/channels/1554538666721018016/1554546862667726918/1557227695471984692"
+    },
     "the-wire/02_nhl_news_channel_intro.json": {
       "channel": "nhl-news",
       "posted": "2026-10-07",
       "fingerprint": 1213563735,
       "message": "https://discord.com/channels/1554538666721018016/1554546896293593189/1557228754873356373"
+    },
+    "the-wire/03_injury_report_channel_intro.json": {
+      "channel": "injury-report",
+      "posted": "2026-10-07",
+      "fingerprint": 4217481157,
+      "message": "https://discord.com/channels/1554538666721018016/1554546925368250479/1557228961140973590"
+    },
+    "the-wire/04_nhl_transactions_channel_intro.json": {
+      "channel": "nhl-transactions",
+      "posted": "2026-10-07",
+      "fingerprint": 2223950134,
+      "message": "https://discord.com/channels/1554538666721018016/1554546950454386819/1557229335130148887"
+    },
+    "the-wire/05_prospect_wire_channel_intro.json": {
+      "channel": "prospect-wire",
+      "posted": "2026-10-07",
+      "fingerprint": 2327250538,
+      "message": "https://discord.com/channels/1554538666721018016/1554546972734660729/1557229635862003739"
     },
     "the-wire/06_news_desk_channel_intro.json": {
       "channel": "news-desk",
@@ -169,26 +196,5 @@
       "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
     }
   },
-  "update_in_place": {
-    "the-wire/01_breaking_news_channel_intro.json": {
-      "channel": "breaking-news",
-      "message": "https://discord.com/channels/1554538666721018016/1554546862667726918/1557227695471984692",
-      "reason": "posted before channels used their full names"
-    },
-    "the-wire/03_injury_report_channel_intro.json": {
-      "channel": "injury-report",
-      "message": "https://discord.com/channels/1554538666721018016/1554546925368250479/1557228961140973590",
-      "reason": "posted before channels used their full names"
-    },
-    "the-wire/04_nhl_transactions_channel_intro.json": {
-      "channel": "nhl-transactions",
-      "message": "https://discord.com/channels/1554538666721018016/1554546950454386819/1557229335130148887",
-      "reason": "posted before channels used their full names"
-    },
-    "the-wire/05_prospect_wire_channel_intro.json": {
-      "channel": "prospect-wire",
-      "message": "https://discord.com/channels/1554538666721018016/1554546972734660729/1557229635862003739",
-      "reason": "posted before channels used their full names"
-    }
-  }
+  "update_in_place": {}
 }
