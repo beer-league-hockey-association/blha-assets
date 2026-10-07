@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T14:15:36.837221Z",
+  "updated_at": "2026-10-07T14:30:39.475961Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4602,6 +4602,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-07T14:15:36.783092Z"
+    },
+    {
+      "key": "3ff9d17539fa425e4344ae30",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-unveils-canadiens-jets-heritage-classic-jerseys",
+      "fingerprint": "e1422501e9d00edf",
+      "title_norm": "nhl unveils canadiens, jets heritage classic jerseys",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T14:30:39.441606Z"
     }
   ],
   "known_sources": [
