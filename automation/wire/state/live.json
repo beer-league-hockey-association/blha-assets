@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T20:30:39.482076Z",
+  "updated_at": "2026-10-07T21:00:51.522983Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4932,6 +4932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T20:30:39.446471Z"
+    },
+    {
+      "key": "aab8c0bc767a9a05a4ac6ebf",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
+      "fingerprint": "6c7c45a6556c0022",
+      "title_norm": "colton dach (edm) — dach (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T21:00:51.415680Z"
     }
   ],
   "known_sources": [
