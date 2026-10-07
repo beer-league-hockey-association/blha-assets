@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T17:15:36.528055Z",
+  "updated_at": "2026-10-07T17:30:42.876955Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4802,6 +4802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T17:15:36.498544Z"
+    },
+    {
+      "key": "33cda1f19d8c3b8b650f9f11",
+      "url": "https://www.sportsnet.ca/nhl/article/nhls-romance-themed-audiobooks-disappear-after-opening-week-of-season",
+      "fingerprint": "bb0d8e8dfba28389",
+      "title_norm": "nhl's romance-themed audiobooks disappear after opening week of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T17:30:42.850800Z"
     }
   ],
   "known_sources": [
