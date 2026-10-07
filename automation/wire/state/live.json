@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-06T23:45:35.583170Z",
+  "updated_at": "2026-10-07T00:45:33.610122Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4102,6 +4102,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-06T23:45:35.509677Z"
+    },
+    {
+      "key": "4969e20c87b980e37a1e8ea1",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-mckenna-helps-set-up-tavares-goal-for-first-career-nhl-point",
+      "fingerprint": "4cc7ccdf6a583058",
+      "title_norm": "maple leafs' mckenna helps set up tavares goal for first career nhl point",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T00:45:33.595271Z"
     }
   ]
 }
