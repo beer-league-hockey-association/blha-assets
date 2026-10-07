@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T04:15:40.223361Z",
+  "updated_at": "2026-10-07T04:30:40.145759Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4482,6 +4482,56 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-07T04:15:40.119474Z"
+    },
+    {
+      "key": "4ea93051a278e80f6891af1b",
+      "url": "https://www.nhl.com/news/florida-panthers-brad-marchand-injury-status-update-october-7-2026",
+      "fingerprint": "2d0572fa26cd1086",
+      "title_norm": "marchand helped off ice with apparent lower-body injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T04:30:39.229340Z"
+    },
+    {
+      "key": "13b6f17efe6dd5fb34ca4698",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "3c52d2d9affb7342",
+      "title_norm": "brad marchand (fla) — marchand (lower-body) left tuesday's game vs. los angeles.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T04:30:39.513799Z"
+    },
+    {
+      "key": "bc373c9d7ff79e046951863e",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-lindgren/4632",
+      "fingerprint": "f13ecc09db1a4728",
+      "title_norm": "ryan lindgren (sea) — lindgren left tuesday's game vs. vegas with an upper-body injury and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T04:30:39.723671Z"
+    },
+    {
+      "key": "158d6c7a3490423de0d97c9e",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-effort-nowhere-near-good-enough-to-beat-hurricanes",
+      "fingerprint": "318438fa95d65df8",
+      "title_norm": "canadiens' effort nowhere near good enough to beat hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T04:30:39.921287Z"
+    },
+    {
+      "key": "32462007e4a5719abeb6da53",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-brad-marchand-injures-knee-vs-kings",
+      "fingerprint": "d9689a9babbc6218",
+      "title_norm": "panthers' brad marchand injures knee vs. kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T04:30:40.113097Z"
     }
   ],
   "known_sources": [
