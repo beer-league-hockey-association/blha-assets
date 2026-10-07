@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T17:58:29.152909Z",
+  "updated_at": "2026-10-07T18:15:43.831495Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4852,6 +4852,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T17:58:29.137545Z"
+    },
+    {
+      "key": "9639a392ef1286d90053f4b8",
+      "url": "https://www.nhl.com/news/alex-ovechkin-best-moments-on-home-ice-discussed-by-nhl-writers",
+      "fingerprint": "53aabd976cb84ef3",
+      "title_norm": "roundtable: ovechkin's best moments on home ice",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T18:15:43.365664Z"
+    },
+    {
+      "key": "c19f8ce70df4fad6d910a4a2",
+      "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
+      "fingerprint": "08e2d159ad58ac29",
+      "title_norm": "jason dickinson (edm) — dickinson (undisclosed) will make his season debut in anaheim on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T18:15:43.744622Z"
     }
   ],
   "known_sources": [
