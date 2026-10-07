@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T20:15:33.202676Z",
+  "updated_at": "2026-10-07T20:30:39.482076Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4912,6 +4912,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T20:15:33.182011Z"
+    },
+    {
+      "key": "f19c921be7d8527715cf59b8",
+      "url": "https://theahl.com/news/firebirds-trio-off-to-white-hot-start",
+      "fingerprint": "337268977eb7fbd6",
+      "title_norm": "firebirds trio off to white-hot start",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-07T20:30:39.175850Z"
+    },
+    {
+      "key": "8315b6971575c7cc674b9209",
+      "url": "https://www.sportsnet.ca/nhl/article/how-newfound-stability-is-helping-flames-wolf-keep-perspective",
+      "fingerprint": "b8107f9c6b1667b8",
+      "title_norm": "how newfound stability is helping flames' wolf keep perspective",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T20:30:39.446471Z"
     }
   ],
   "known_sources": [
