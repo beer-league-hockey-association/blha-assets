@@ -120,7 +120,7 @@
                 "inline": false
               },
               {
-                "name": "FANTRAX / LEAGUE OPERATING RESERVE",
+                "name": "FANTRAX / OPERATING RESERVE",
                 "value": "$150",
                 "inline": false
               },
@@ -222,7 +222,7 @@
                 "inline": false
               },
               {
-                "name": "CHAMPIONSHIP COUNTS THIS CYCLE",
+                "name": "CHAMPIONSHIPS THIS CYCLE",
                 "value": "`[FRANCHISE: COUNT]`",
                 "inline": false
               },

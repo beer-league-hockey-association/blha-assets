@@ -24,6 +24,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import discohook_format as fmt  # noqa: E402
+import posted_messages as posted  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 T = ROOT / "templates"
@@ -33,11 +34,13 @@ GOLD, ALERT, RECORD = 16758812, 10697266, 13012757
 LO = "BLHA LEAGUE OFFICE"
 
 
-def tmpl(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]], color: int = GOLD) -> None:
+def tmpl(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]], color: int = GOLD,
+         banner: str | None = None) -> None:
     data = {"embeds": fmt.apply([{
         "title": title, "description": desc, "color": color, "footer": {"text": footer},
         "fields": [{"name": n, "value": v, "inline": False} for n, v in fields],
-    }])}
+    }], banner, path)}
+    data = posted.keep_posted(path, data)
     p = T / path
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -77,7 +80,7 @@ tmpl("league-office/41_ledger_dues_status.json", "FRANCHISE DUES STATUS", "`[SEA
       ("OUTSTANDING", "`[LIST FRANCHISES / NONE]`"), ("DEADLINE", "`[TIMESTAMP]`")], RECORD)
 tmpl("league-office/42_ledger_prize_pool.json", "BLHA PRIZE POOL", "`[SEASON]` • 12 franchises × $150 = $1,800", "BLHA LEAGUE LEDGER",
      [("BLHA CHAMPION", "$650"), ("RUNNER-UP", "$350"), ("THIRD PLACE", "$150"), ("PRESIDENTS' TROPHY", "$200"),
-      ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / LEAGUE OPERATING RESERVE", "$150"), ("LEAGUE SERVICES ALLOCATION", "$100")], RECORD)
+      ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / OPERATING RESERVE", "$150"), ("LEAGUE SERVICES ALLOCATION", "$100")], RECORD)
 tmpl("league-office/43_ledger_payment_confirmed.json", "PAYMENT CONFIRMED", "`[FRANCHISE]` is confirmed paid through **Season `[YEAR]`**.", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
      [("COVERS", "`[SEASON DUES / FUTURE-SEASON PREPAYMENT THROUGH YEAR]`"), ("CONFIRMED", "`[DATE]`"),
       ("PICK TRADES", "`[FRANCHISE]` may now trade its 1st- and 2nd-round picks for drafts through **`[YEAR]`**. A pick trade made before payment is confirmed is reversed (Article XII).")], RECORD)
@@ -85,7 +88,7 @@ tmpl("league-office/44_ledger_prize_payout.json", "PRIZE PAID", "`[PRIZE]` for *
      [("AMOUNT", "`$[AMOUNT]`"), ("PAID", "`[DATE]`"), ("REMAINING THIS SEASON", "`[PRIZES STILL UNPAID, OR NONE]`")], RECORD)
 tmpl("league-office/45_ledger_dynasty_pot.json", "DYNASTY POT UPDATE", "The pot stands at **`$[BALANCE]`**.", "BLHA LEAGUE LEDGER",
      [("THIS SEASON ADDED", "`$[DUES CONTRIBUTION]` + `$[UNUSED OPERATING RESERVE]`"),
-      ("CHAMPIONSHIP COUNTS THIS CYCLE", "`[FRANCHISE: COUNT]`"),
+      ("CHAMPIONSHIPS THIS CYCLE", "`[FRANCHISE: COUNT]`"),
       ("CYCLE STARTED", "`[SEASON]`"), ("TO WIN", "Three BLHA Championships in the same active cycle (Article IV).")], RECORD)
 
 # ----------------------------------------------------------------------- voting
@@ -188,6 +191,61 @@ tmpl("league-office/63_league_bot_launch.json", "MEET THE BLHA LEAGUE BOT", "Lea
       ("PICK'EM", "Each Week the bot posts the matchups in **game-day**. Make your picks before the Week starts; a season leaderboard keeps score."),
       ("VOTING", "Proposals and official votes run through the bot in **league-voting**, one vote per franchise (Article XX).")])
 
+# ---------------------------------------------------------------- scoring explainer
+# One-time reference post for owners: why each scoring value is what it is.
+# Numbers come from NHL league-wide averages (2024-25: about 3.0 goals, 28 shots
+# and a .900 save percentage per team per game; ~1.7 assists per goal; ~15
+# blocks and ~20 hits per team per game).
+D = fmt.divider_name
+tmpl("league-office/16_scoring_explained.json", "HOW BLHA SCORING WORKS",
+     "The BLHA scoring system has two goals: every point should come from something the player actually controls, "
+     "and no single stat should decide a matchup. Each value was set against NHL league-wide averages "
+     "(about 3 goals, 28 shots and a .900 save percentage per team per game), and the reasons are below.",
+     "BLHA LEAGUE OFFICE",
+     [("SKATERS", "Goal **+5.00**\nAssist **+2.95**\nShot on Goal **+0.55**\nBlock **+0.35**\nHit **+0.20**"),
+      ("GOALIES", "Game Started **+6.50**\nSave **+0.49**\nGoal Against **−5.00**\nGoalie Goal **+5.00**\nGoalie Assist **+2.95**"),
+      (D("GOALS, ASSISTS, SHOTS"),
+       "**Equal weight.** NHL teams average about **1.7 assists** and about **9 shots** for every goal. The assist and shot values "
+       "come straight from those ratios: 5.00 ÷ 1.7 ≈ **2.95**, and 5.00 ÷ 9.1 ≈ **0.55**.\n\n"
+       "So across the league, goals, assists and shots each add up to almost exactly the same share of points, "
+       "about 15 per team per game each. Snipers, playmakers and high-volume shooters all have a real path to value, "
+       "and no single build is the right one.\n\n"
+       "Shots carry that much weight on purpose. Shot volume is the most repeatable stat in hockey; a player's shooting "
+       "percentage jumps around from year to year, but how often he shoots doesn't. Rewarding shots means a cold streak "
+       "doesn't wipe out a player who's still creating chances."),
+      (D("BLOCKS AND HITS"),
+       "**The supporting cast.** Blocks and hits make up about **17%** of skater points. That's enough to make a shutdown "
+       "defenseman or an energy-line banger worth a roster spot, and it means your six D slots aren't all about power-play points. "
+       "It isn't enough for a 250-hit grinder to outscore a 30-goal winger.\n\n"
+       "A block (0.35) is worth more than a hit (0.20). Teams throw more hits than they block shots, about 20 a game against "
+       "about 15, and hit totals depend a lot on which arena's scorer is counting. Blocks are the more consistent stat, so each "
+       "one counts for more."),
+      (D("GOALIES"),
+       "**Paid to start, judged on stopping.** A goal against costs exactly what a goal is worth (**−5.00**), so a goal counts "
+       "the same at both ends of the ice.\n\n"
+       "The save value (0.49) puts the break-even point at a **.911 save percentage**. A goalie stopping shots at a better rate "
+       "than that earns points on every shot he faces, and one below it loses points. League average is about .900, so a goalie "
+       "can't pad his score just by facing a flood of shots behind a bad team. He has to stop them.\n\n"
+       "The **6.50** start bonus makes an average start worth playing. A league-average night (28 shots at .900) scores about "
+       "**4.8**, around one and a half times an average skater's game."),
+      ("WHAT A START CAN LOOK LIKE",
+       "28 saves on 30 shots → **+10.22**\n30-save shutout → **+21.20**\n20 saves on 25 shots (5 goals against) → **−8.70**"),
+      (D("WHAT ISN'T SCORED"),
+       "**Wins:** decided by the skaters in front of him and the other team's goalie. Saves and goals against measure the goalie himself.\n"
+       "**Shutouts:** already rewarded, because a shutout has zero goals against. A bonus would count it twice.\n"
+       "**Plus/minus:** a team stat that swings on who else is on the ice.\n"
+       "**Penalty minutes:** taking penalties hurts a real team, so it shouldn't help yours.\n"
+       "**Power-play points and game-winning goals:** those goals and assists already count. A bonus double-counts them or rewards luck.\n"
+       "**Faceoffs:** only centers take them, so they'd tip the value of the C slot and the F flex spot."),
+      (D("WHY THE ODD DECIMALS"),
+       "2.95, 0.55 and 0.49 are the ratios above, rounded, so they aren't arbitrary. Off-round values have a bonus too: an exact "
+       "tie in a weekly matchup becomes almost impossible."),
+      (D("FOR YOUR ROSTER"),
+       "Goal and 4 shots → **7.20**\nAssist, 3 shots and a hit → **4.80**\nDefenseman with no points, 2 shots, 3 blocks and 2 hits → **2.55**\n\n"
+       "Scoring is still king, but shooters and two-way defensemen stay in your lineup on nights the puck doesn't go in. Over a "
+       "week, goalies average roughly a tenth of your total, but no other position can swing a matchup by 30 points in a single night.")],
+     banner=fmt.GENERIC_HEADER)
+
 # ------------------------------------------------------------------- bundles
 BUNDLES = {
     "01_Announcements": ["league-office/20_announcement_standard.json", "league-office/21_announcement_action_required.json",
@@ -238,6 +296,7 @@ def main() -> None:
     welcome = message(T / fmt.WELCOME)
     (OUT / "BLHA_Welcome_Single_Message.json").write_text(json.dumps(welcome, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     links["welcome"] = link([welcome])
+    links["scoring"] = link([message(T / "league-office/16_scoring_explained.json")])
     for p in sorted((T / "constitution").glob("*.json")):
         links[f"constitution:{p.name}"] = link([message(p)])
     (OUT / "links.json").write_text(json.dumps(links, indent=2) + "\n", encoding="utf-8")

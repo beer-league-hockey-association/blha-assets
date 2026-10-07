@@ -1,0 +1,194 @@
+{
+  "about": "Templates live in Discord. See tools/posted_messages.py.",
+  "posted": {
+    "commissioners-office/03_league_suggestions_channel_intro.json": {
+      "channel": "league-suggestions",
+      "posted": "2026-10-07",
+      "fingerprint": 2487489888,
+      "message": "https://discord.com/channels/1554538666721018016/1557268578376359946/1557268578376359946"
+    },
+    "commissioners-office/05_open_a_ticket_channel_intro.json": {
+      "channel": "open-a-ticket",
+      "posted": "2026-10-07",
+      "fingerprint": 1859882231,
+      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688",
+      "pinned": false
+    },
+    "constitution/00_quick_reference_and_article_i.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3199039621,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258369016799325"
+    },
+    "constitution/01_articles_ii_to_iii.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3079471685,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258376600227843"
+    },
+    "constitution/02_articles_iv_to_v.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 940673060,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258385613791333"
+    },
+    "constitution/03_articles_vi_to_x.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 617243029,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379"
+    },
+    "constitution/04_articles_xi_to_xiii.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 921003983,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258400084140105"
+    },
+    "constitution/05_articles_xiv_to_xvi.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 706232382,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258406971187293"
+    },
+    "constitution/06_articles_xvii_to_xix.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 1896735968,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258413111648272"
+    },
+    "constitution/07_articles_xx.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3828200111,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258436532772905"
+    },
+    "general-managers/01_gm_lounge_channel_intro.json": {
+      "channel": "gm-lounge",
+      "posted": "2026-10-07",
+      "fingerprint": 4135983602,
+      "message": "https://discord.com/channels/1554538666721018016/1554549865684664441/1557261638103597171"
+    },
+    "general-managers/02_game_day_channel_intro.json": {
+      "channel": "game-day",
+      "posted": "2026-10-07",
+      "fingerprint": 1337398039,
+      "message": "https://discord.com/channels/1554538666721018016/1554549892561641523/1557262040689811548"
+    },
+    "general-managers/03_chirps_and_memes_channel_intro.json": {
+      "channel": "chirps-and-memes",
+      "posted": "2026-10-07",
+      "fingerprint": 4292449318,
+      "message": "https://discord.com/channels/1554538666721018016/1554549921158275272/1557262259426689186"
+    },
+    "general-managers/04_off_topic_channel_intro.json": {
+      "channel": "off-topic",
+      "posted": "2026-10-07",
+      "fingerprint": 2834912922,
+      "message": "https://discord.com/channels/1554538666721018016/1554549954851373217/1557262477476110360"
+    },
+    "general-managers/05_media_channel_intro.json": {
+      "channel": "media",
+      "posted": "2026-10-07",
+      "fingerprint": 1068051974,
+      "message": "https://discord.com/channels/1554538666721018016/1554549983473172590/1557262619084066898"
+    },
+    "league-office/01_constitution_channel_intro.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3587776718,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258361228234775",
+      "pinned": false
+    },
+    "league-office/02_announcements_channel_intro.json": {
+      "channel": "announcements",
+      "posted": "2026-10-07",
+      "fingerprint": 2058837828
+    },
+    "league-office/03_calendar_channel_intro.json": {
+      "channel": "league-calendar",
+      "posted": "2026-10-07",
+      "fingerprint": 652357966,
+      "message": "https://discord.com/channels/1554538666721018016/1554540394551713912/1557259300567654464"
+    },
+    "league-office/04_ledger_channel_intro.json": {
+      "channel": "league-ledger",
+      "posted": "2026-10-07",
+      "fingerprint": 1460790017
+    },
+    "league-office/05_voting_channel_intro.json": {
+      "channel": "league-voting",
+      "posted": "2026-10-07",
+      "fingerprint": 3688489968
+    },
+    "league-office/06_hall_of_champions_channel_intro.json": {
+      "channel": "hall-of-champions",
+      "posted": "2026-10-07",
+      "fingerprint": 568632640,
+      "message": "https://discord.com/channels/1554538666721018016/1554540575804362802/1557260118167527437"
+    },
+    "league-office/07_league_records_channel_intro.json": {
+      "channel": "league-records",
+      "posted": "2026-10-07",
+      "fingerprint": 2065454264,
+      "message": "https://discord.com/channels/1554538666721018016/1554540618217427064/1557260237017456663"
+    },
+    "the-wire/02_nhl_news_channel_intro.json": {
+      "channel": "nhl-news",
+      "posted": "2026-10-07",
+      "fingerprint": 1213563735,
+      "message": "https://discord.com/channels/1554538666721018016/1554546896293593189/1557228754873356373"
+    },
+    "the-wire/06_news_desk_channel_intro.json": {
+      "channel": "news-desk",
+      "posted": "2026-10-07",
+      "fingerprint": 1040880606,
+      "message": "https://discord.com/channels/1554538666721018016/1554547004204654662/1557230186531917864"
+    },
+    "trade-center/01_trade_block_channel_intro.json": {
+      "channel": "trade-block",
+      "posted": "2026-10-07",
+      "fingerprint": 439225576,
+      "message": "https://discord.com/channels/1554538666721018016/1557263243767054336/1557263243767054336"
+    },
+    "trade-center/02_looking_to_acquire_channel_intro.json": {
+      "channel": "looking-to-acquire",
+      "posted": "2026-10-07",
+      "fingerprint": 2357996299,
+      "message": "https://discord.com/channels/1554538666721018016/1557263469106171966/1557263469106171966"
+    },
+    "trade-center/03_trade_discussion_channel_intro.json": {
+      "channel": "trade-discussion",
+      "posted": "2026-10-07",
+      "fingerprint": 2853781775,
+      "message": "https://discord.com/channels/1554538666721018016/1554552853056458762/1557263951304335422"
+    },
+    "welcome/01_welcome.json": {
+      "channel": "welcome",
+      "posted": "2026-10-07",
+      "fingerprint": 865165278,
+      "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
+    }
+  },
+  "update_in_place": {
+    "the-wire/01_breaking_news_channel_intro.json": {
+      "channel": "breaking-news",
+      "message": "https://discord.com/channels/1554538666721018016/1554546862667726918/1557227695471984692",
+      "reason": "posted before channels used their full names"
+    },
+    "the-wire/03_injury_report_channel_intro.json": {
+      "channel": "injury-report",
+      "message": "https://discord.com/channels/1554538666721018016/1554546925368250479/1557228961140973590",
+      "reason": "posted before channels used their full names"
+    },
+    "the-wire/04_nhl_transactions_channel_intro.json": {
+      "channel": "nhl-transactions",
+      "message": "https://discord.com/channels/1554538666721018016/1554546950454386819/1557229335130148887",
+      "reason": "posted before channels used their full names"
+    },
+    "the-wire/05_prospect_wire_channel_intro.json": {
+      "channel": "prospect-wire",
+      "message": "https://discord.com/channels/1554538666721018016/1554546972734660729/1557229635862003739",
+      "reason": "posted before channels used their full names"
+    }
+  }
+}

@@ -4,10 +4,13 @@ Every send is ONE Discord message:
 - The channel's header banner embed (if it has one), then ONE text embed.
   When a message has several text sections, they merge into that one embed:
   each extra section's title becomes a bold divider field
-  ("**━━━━━━━━ TITLE ━━━━━━━━**") whose value is the section's text, followed
+  ("**━━━ TITLE ━━━**") whose value is the section's text, followed
   by the section's own fields.
 - The header banner embed is charcoal, shows the header image and keeps an
   invisible footer ("\u200b"); without it Discohook rejects it as empty.
+- Every screen (discord_layout.py): no inline fields, dividers and field
+  names fit a phone, titles fit desktop with the member list and a tablet.
+  Messages already posted in Discord (posted_messages.py) are left as posted.
 - Only the final embed carries real footer text plus the shared gold
   footer-divider image. No other embed has footer text or the divider.
 - When several messages are sent back to back as one sequence (SEQUENCES),
@@ -34,6 +37,8 @@ from __future__ import annotations
 from pathlib import Path
 
 import discord_channels as channels
+import discord_layout as layout
+import posted_messages as posted
 
 BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
 FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
@@ -100,7 +105,9 @@ def is_exception(rel: str | None) -> bool:
 
 
 def divider_name(title: str) -> str:
-    return f"**━━━━━━━━ {title} ━━━━━━━━**"
+    # Three bars a side keeps a short title on one line even on a phone
+    # (discord_layout.py checks it); longer bars wrapped on narrow screens.
+    return f"**━━━ {title} ━━━**"
 
 # Each category folder has one header image. League Office has one header per channel.
 CATEGORY_HEADERS = {
@@ -123,6 +130,7 @@ LEAGUE_OFFICE_HEADERS = {
     "06_hall_of_champions_channel_intro.json": "league-office/blha-champions-header.png",
     "07_league_records_channel_intro.json": "league-office/blha-records-header.png",
 }
+GENERIC_HEADER = BASE + "shared/blha-generic-header-1600x420.png" + HEADER_VERSION
 WELCOME = "welcome/01_welcome.json"
 WELCOME_HEADER = "welcome/blha-welcome-banner.png"
 
@@ -144,7 +152,8 @@ def banner_embed(url: str) -> dict:
 
 def is_banner(embed: dict) -> bool:
     url = str(((embed or {}).get("image") or {}).get("url") or "")
-    return url.startswith(BASE) and ("-header.png" in url or "blha-welcome-banner.png" in url)
+    return url.startswith(BASE) and ("-header.png" in url or "blha-welcome-banner.png" in url
+                                     or "blha-generic-header" in url)
 
 
 def is_divider(embed: dict) -> bool:
@@ -286,7 +295,7 @@ def problems(embeds: list[dict], banner_url: str | None = None, rel: str | None 
                 errs.append(f"embed {i + 1} has the footer divider; another message follows, so only the last message may")
         if banner_url and embeds[0] != banner_embed(banner_url):
             errs.append("first embed is not this channel's header banner")
-        return errs
+        return errs + layout_problems(embeds, rel)
     for i in range(head, last):
         if "footer" in embeds[i]:
             errs.append(f"embed {i + 1} has a footer; only the final embed may")
@@ -298,4 +307,16 @@ def problems(embeds: list[dict], banner_url: str | None = None, rel: str | None 
         errs.append("final embed does not use the footer divider image")
     if banner_url and embeds[0] != banner_embed(banner_url):
         errs.append("first embed is not this channel's header banner")
+    errs += layout_problems(embeds, rel)
     return errs
+
+
+def layout_problems(embeds: list[dict], rel: str | None) -> list[str]:
+    """Phone/tablet layout errors (discord_layout.py) for a template not yet posted.
+
+    Messages already live in Discord (posted_messages.py) keep what was posted;
+    their layout is fixed the next time they are changed and resent anyway.
+    """
+    if not rel or posted.is_posted(rel):
+        return []
+    return layout.problems(embeds, rel)[0]

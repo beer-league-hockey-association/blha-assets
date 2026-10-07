@@ -15,6 +15,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import discord_channels as channels  # noqa: E402
+import posted_messages as posted  # noqa: E402
+import base64  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 LINKS = json.loads((ROOT / "discohook-backups" / "links.json").read_text(encoding="utf-8"))
@@ -62,10 +64,42 @@ def shown(channel: str) -> str:
     return re.sub(r"[a-z]+(?:-[a-z]+)*", lambda m: channels.name(m.group(0)) if m.group(0) in channels.EMOJI else m.group(0), channel)
 
 
-def row(key: str, channel: str, what: str, href: str, cta: str = "Open in Discohook") -> str:
+AUDITED = "2026-10-07"         # when the server was last checked against these templates
+POSTED = posted.load()          # live in Discord and current
+UPDATE = posted.to_update()     # live in Discord but out of date: edit in place
+COUNTS = {"posted": 0, "pin": 0, "update": 0, "send": 0}
+
+
+def edit_link(rel: str) -> str:
+    """A Discohook link that opens the template as an edit of the live message."""
+    data = json.loads((ROOT / "templates" / rel).read_text(encoding="utf-8"))
+    body = {"messages": [{"data": data, "reference": UPDATE[rel]["message"]}]}
+    raw = json.dumps(body, ensure_ascii=True, separators=(",", ":")).encode()
+    return "https://discohook.org/?data=" + base64.urlsafe_b64encode(raw).decode().rstrip("=")
+
+
+def nice(day: str) -> str:
+    y, m, d = (int(x) for x in day.split("-"))
+    return ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][m - 1] + f" {d}"
+
+
+def row(key: str, channel: str, what: str, href: str, cta: str = "Open in Discohook", rel: str | None = None) -> str:
+    state, box = "send", ""
+    if rel in POSTED:
+        entry = POSTED[rel]
+        if entry.get("pinned") is False:
+            state, what, cta = "pin", f"Posted {nice(entry['posted'])} and current. Still to do: pin it.", "Open copy"
+        else:
+            state, what, cta, box = "posted", f"Posted {nice(entry['posted'])} and current. Nothing to do.", "Open copy", " checked disabled"
+    elif rel in UPDATE:
+        state, cta, href = "update", "Edit in Discohook", edit_link(rel)
+        what = ("Posted, but it still uses short channel names. This opens as an EDIT of the live message: "
+                "paste this channel's webhook URL and press Edit. No deleting or reposting; it keeps its place and its pin.")
+    if rel is not None:
+        COUNTS[state] += 1
     return (
-        f'<li class="row" data-key="{html.escape(key)}">'
-        f'<label class="tick"><input type="checkbox" id="c-{html.escape(key)}" aria-label="Sent: {html.escape(what)}"><span></span></label>'
+        f'<li class="row {state}" data-key="{html.escape(key)}">'
+        f'<label class="tick"><input type="checkbox" id="c-{html.escape(key)}" aria-label="Done: {html.escape(what)}"{box}><span></span></label>'
         f'<div class="what"><span class="ch">{html.escape(shown(channel))}</span><span class="desc">{html.escape(what)}</span></div>'
         f'<a class="go" href="{href}" target="_blank" rel="noopener">{cta}</a></li>'
     )
@@ -80,16 +114,17 @@ def build() -> str:
     n_rows = 0
 
     # League Office: welcome, constitution, then the rest in channel order
-    lo_rows = [row("welcome", "welcome", "Welcome message (all six sections in one message)", LINKS["welcome"])]
+    lo_rows = [row("welcome", "welcome", "Welcome message (all six sections in one message)", LINKS["welcome"], rel="welcome/01_welcome.json")]
     intros = {k.split(":", 1)[1]: v for k, v in LINKS.items() if k.startswith("intro:")}
     lo_intro = {k: v for k, v in intros.items() if k.startswith("league-office/")}
     const_intro = "league-office/01_constitution_channel_intro.json"
-    lo_rows.append(row("constitution-intro", "constitution", "Intro. Send this first, then pin it.", lo_intro[const_intro]))
+    lo_rows.append(row("constitution-intro", "constitution", "Intro. Send this first, then pin it.", lo_intro[const_intro], rel=const_intro))
     for k, v in LINKS.items():
         if k.startswith("constitution:"):
             stem = k.split(":", 1)[1].replace(".json", "")
             idx = stem[:2]
-            lo_rows.append(row(f"constitution-{idx}", "constitution", f"Message {int(idx) + 1} of 8: {CONSTITUTION_LABELS[stem]}", v, "Open in Discohook"))
+            lo_rows.append(row(f"constitution-{idx}", "constitution", f"Message {int(idx) + 1} of 8: {CONSTITUTION_LABELS[stem]}", v, "Open in Discohook", rel=f"constitution/{stem}.json"))
+    lo_rows.append(row("scoring-explained", "constitution", "How BLHA scoring works: the reasoning behind each value. A separate post with its own banner; send it after the Constitution, then pin it.", LINKS["scoring"], rel="league-office/16_scoring_explained.json"))
     for rel, v in lo_intro.items():
         if rel == const_intro:
             continue
@@ -97,7 +132,7 @@ def build() -> str:
         what = "Channel intro. Send, then pin."
         if ch == "league-calendar":
             what = "Channel intro with the Sesh reminder steps, in one message. Send, then pin."
-        lo_rows.append(row("intro-" + ch, ch, what, v))
+        lo_rows.append(row("intro-" + ch, ch, what, v, rel=rel))
     n_rows += len(lo_rows)
     sections.append(section("League Office", "Webhook channel: change it to each row's channel before you send. Send the constitution messages in order, top to bottom.", lo_rows, "league-office"))
 
@@ -106,7 +141,10 @@ def build() -> str:
         for rel, v in intros.items():
             if rel.startswith(folder + "/"):
                 ch = channel_from_file(rel)
-                rows.append(row("intro-" + ch, ch, "Channel intro. Send, then pin.", v))
+                what = "Channel intro. Send, then pin."
+                if rel.endswith("03_league_suggestions_channel_intro.json") or ch in ("trade-block", "looking-to-acquire", "scouting", "waiver-watch", "commissioner-support", "rules-questions"):
+                    what = "Forum post. Fill in Discohook's Forum thread name, send, then right-click the post and Pin Post."
+                rows.append(row("intro-" + ch, ch, what, v, rel=rel))
         n_rows += len(rows)
         extra = ""
         if folder == "general-managers":
@@ -120,7 +158,11 @@ def build() -> str:
     sections.append(section("Reusable templates", "Not one-time sends. Open a bundle, delete the messages you do not need, replace every placeholder in backticks, then send. Save the bundle in Discohook under Backups so it is there next time.", brows, "templates"))
 
     body = "\n".join(sections)
-    return TEMPLATE.replace("{{BODY}}", body).replace("{{TOTAL}}", str(n_rows))
+    summary = (f'<p class="status"><b>{COUNTS["posted"] + COUNTS["pin"]}</b> already posted and current'
+               + (f' ({COUNTS["pin"]} still need pinning)' if COUNTS["pin"] else '')
+               + f' · <b>{COUNTS["update"]}</b> to edit in place · <b>{COUNTS["send"]}</b> left to send. '
+               f'Checked against the server on {nice(AUDITED)}.</p>')
+    return TEMPLATE.replace("{{BODY}}", body).replace("{{TOTAL}}", str(n_rows)).replace("{{STATUS}}", summary)
 
 
 TEMPLATE = r"""<title>BLHA Send Console</title>
@@ -173,6 +215,9 @@ section header p { margin: 0; color: var(--muted); font-size: .88rem; max-width:
 .tick input:checked + span { background: var(--done); border-color: var(--done); }
 .tick input:checked + span::after { content: ""; position: absolute; left: 5px; top: 1px; width: 6px; height: 11px; border: solid var(--surface); border-width: 0 2.5px 2.5px 0; transform: rotate(45deg); }
 .row.done .ch, .row.done .desc { opacity: .5; }
+.status { margin: 14px 0 0; padding: 10px 12px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); font-size: .92rem; }
+.row.update .desc, .row.pin .desc { color: var(--accent-ink); font-weight: 500; }
+.row.update .go { background: var(--ink); color: var(--surface); }
 .row.done .go { background: var(--soft); color: var(--muted); border: 1px solid var(--line); }
 @media (max-width: 520px) { .row { grid-template-columns: auto minmax(0, 1fr); } .go { grid-column: 2; justify-self: start; } h1 { font-size: 2.1rem; } }
 @media (prefers-reduced-motion: no-preference) { .go { transition: filter .15s; } }
@@ -183,8 +228,9 @@ section header p { margin: 0; color: var(--muted); font-size: .88rem; max-width:
       <h1>BLHA Send Console</h1>
       <p>Each button opens Discohook with the message loaded. Tick a row once it is sent and pinned.</p>
     </div>
-    <div class="progress"><span><b id="n-done">0</b> of {{TOTAL}} sent</span><button type="button" id="reset">Reset ticks</button></div>
+    <div class="progress"><span><b id="n-done">0</b> of {{TOTAL}} done</span><button type="button" id="reset">Reset ticks</button></div>
   </div>
+  {{STATUS}}
   <div class="steps">
     <div><b>1 Channel</b>Set your webhook's channel in Discord to the row's channel and save.</div>
     <div><b>2 Open</b>Click the row's button. Paste your webhook URL if Discohook asks.</div>
@@ -211,11 +257,11 @@ section header p { margin: 0; color: var(--muted); font-size: .88rem; max-width:
   }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
   boxes.forEach(function (b) {
-    b.checked = !!state[b.id];
+    b.checked = b.disabled || !!state[b.id];
     b.addEventListener("change", function () { state[b.id] = b.checked; save(); paint(); });
   });
   document.getElementById("reset").addEventListener("click", function () {
-    state = {}; boxes.forEach(function (b) { b.checked = false; }); save(); paint();
+    state = {}; boxes.forEach(function (b) { b.checked = b.disabled; }); save(); paint();
   });
   paint();
 })();

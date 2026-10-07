@@ -10,6 +10,9 @@ This repository is public so Discord and Discohook can load approved images dire
 - Do not rename live image files after webhook templates are in use.
 - The approved BLHA primary logo is the master. Supporting assets must not redraw or reinterpret it.
 - Discohook templates are one message per send: the channel's header banner embed (if any) plus one text embed, with extra sections merged in as bold divider fields. The banner keeps an invisible footer so Discohook accepts it; only the final embed has footer text and the gold divider image. The rules live in `tools/discohook_format.py`; `tools/normalize_discohook_templates.py` enforces them and the packaging workflow checks them.
+- When several messages go out back to back into one channel (the 📜│constitution channel), only the last one has the footer text and divider (`SEQUENCES` in `tools/discohook_format.py`).
+- Messages must read the same on desktop, tablet and phone: no inline fields, and section dividers and field names that fit a phone (`tools/discord_layout.py`).
+- `discohook-backups/posted.json` records every template that is live in Discord, with a fingerprint of what was posted. A rebuild keeps the posted version instead of changing it, the checks fail if a posted template drifts, and the Send Console shows those rows as already posted. A posted message that has to change is listed under `update_in_place`, and the Send Console opens it as an **edit** of the live message (paste that channel's webhook URL in Discohook and press Edit), so nothing is deleted or reposted. See `tools/posted_messages.py`.
 - Discord webhook URLs belong in GitHub Actions Secrets and must never be committed to the repository.
 
 ## Constitution
