@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T15:00:49.396039Z",
+  "updated_at": "2026-10-07T15:30:42.238484Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4632,6 +4632,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T15:00:49.291183Z"
+    },
+    {
+      "key": "bc8c0d6d1f8b2b6566ede182",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "84b5397f0a27ff60",
+      "title_norm": "matt roy (wsh) — roy (lower-body) is out vs. pittsburgh and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T15:30:39.367061Z"
+    },
+    {
+      "key": "02332c0289b88adb8c73ff87",
+      "url": "https://www.dailyfaceoff.com/players/news/dominic-james/32816",
+      "fingerprint": "f13da7eb83cbfa94",
+      "title_norm": "dominic james (tbl) — james (hand) is expected to return on thursday vs. minnesota.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T15:30:42.151768Z"
     }
   ],
   "known_sources": [
