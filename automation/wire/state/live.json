@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T02:30:41.870696Z",
+  "updated_at": "2026-10-07T02:45:34.212993Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4262,6 +4262,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T02:30:41.844096Z"
+    },
+    {
+      "key": "f05a9cbf197b61bb4722955d",
+      "url": "https://www.nhl.com/news/new-york-islanders-new-york-rangers-game-recap-october-6-2026",
+      "fingerprint": "b5294a999420b9ec",
+      "title_norm": "lafreniere hat trick helps rangers win 4th in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:45:33.707397Z"
+    },
+    {
+      "key": "ddb4269bb5324918694f3413",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-fall-to-red-wings-for-first-loss",
+      "fingerprint": "bf36a3b536c40e22",
+      "title_norm": "senators fall to red wings for first loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:45:34.198743Z"
     }
   ]
 }
