@@ -9,6 +9,8 @@ on:
       - 'constitution/*_discohook_backup.json'
       - 'tools/discohook_format.py'
       - 'tools/discord_channels.py'
+      - 'tools/discord_layout.py'
+      - 'tools/posted_messages.py'
       - 'tools/test_discord_channels.py'
       - 'tools/normalize_discohook_templates.py'
       - '.github/workflows/blha-package-discohook-json.yml'
@@ -19,6 +21,8 @@ on:
       - 'constitution/*_discohook_backup.json'
       - 'tools/discohook_format.py'
       - 'tools/discord_channels.py'
+      - 'tools/discord_layout.py'
+      - 'tools/posted_messages.py'
       - 'tools/test_discord_channels.py'
       - 'tools/normalize_discohook_templates.py'
       - '.github/workflows/blha-package-discohook-json.yml'
@@ -83,7 +87,8 @@ jobs:
 
           def is_banner(embed):
               url = image_url(embed)
-              return '-header.png' in url or 'blha-welcome-banner.png' in url
+              return ('-header.png' in url or 'blha-welcome-banner.png' in url
+                      or 'blha-generic-header' in url)
 
           def banner_expected(src):
               rel = src.relative_to(root).as_posix()

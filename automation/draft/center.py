@@ -363,10 +363,8 @@ class Renderer:
     def complete(self) -> dict[str, Any]:
         made = [p for p in self.draft.picks if p.made]
         first = self.draft.round_picks(1)[0] if self.draft.round_picks(1) else None
-        fields = [
-            {"name": "ROUNDS", "value": str(self.draft.rounds), "inline": True},
-            {"name": "PICKS", "value": str(len(made)), "inline": True},
-        ]
+        # One field rather than two inline ones: phones stack inline fields.
+        fields = [{"name": "DRAFT", "value": f"{self.draft.rounds} rounds • {len(made)} picks", "inline": False}]
         if self.draft.start:
             fields.append({"name": "STARTED", "value": f"<t:{int(self.draft.start.timestamp())}:F>", "inline": False})
         finished = self.draft.end or self.draft.last_pick_time()

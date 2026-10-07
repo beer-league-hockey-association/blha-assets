@@ -25,6 +25,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import discohook_format as fmt  # noqa: E402
+import posted_messages as posted  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 TEMPLATES = ROOT / "templates"
@@ -40,7 +41,8 @@ def load(path: Path) -> dict:
 def normalize_file(path: Path) -> bool:
     data = load(path)
     rel = path.relative_to(TEMPLATES).as_posix()
-    data["embeds"] = fmt.apply(data["embeds"], fmt.header_url(rel), rel)
+    data = {**data, "embeds": fmt.apply(data["embeds"], fmt.header_url(rel), rel)}
+    data = posted.keep_posted(rel, data)
     rendered = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
     if rendered == path.read_text(encoding="utf-8"):
         return False
@@ -57,7 +59,7 @@ def main() -> None:
     check_only = "--check" in sys.argv
     paths = sorted(TEMPLATES.rglob("*.json"))
     changed = 0 if check_only else sum(int(normalize_file(p)) for p in paths)
-    errors = [e for p in paths for e in verify_file(p)]
+    errors = [e for p in paths for e in verify_file(p)] + posted.problems()
     if errors:
         print("DISCOHOOK FORMAT: problems found:", *errors, sep="\n  ")
         sys.exit(1)

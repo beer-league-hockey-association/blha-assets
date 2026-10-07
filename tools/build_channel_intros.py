@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import discohook_format as fmt  # noqa: E402
+import posted_messages as posted  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1] / "templates"
 GOLD = 16758812
@@ -126,7 +127,7 @@ card("the-wire/01_breaking_news_channel_intro.json", "BLHA BREAKING NEWS",
       ("HOW A STORY QUALIFIES", "It must come from a trusted primary source and describe a high-impact event. Ordinary signings, depth trades and routine roster moves go to other channels."),
       ("NOT POSTED HERE", "Rumors, opinion pieces, predictions, game threads or discussion. Talk it over in **news-desk**.")])
 card("the-wire/02_nhl_news_channel_intro.json", "BLHA NHL NEWS",
-     "The league-wide hockey news feed: reporting worth knowing that doesn't belong in a specialty channel. " + AUTO, NEWS,
+     "The league-wide hockey news feed: reports worth knowing that don't belong in a specialty channel. " + AUTO, NEWS,
      [("POSTED HERE", "Team and league developments • Coaching and front-office changes • Captaincy news • Interviews • Meaningful analysis"),
       ("FILTERED OUT", "Scores, routine highlights, daily discussion threads and feed-section labels."),
       ("LOOKING FOR SOMETHING ELSE?", "Injuries go to **injury-report**, signings and trades to **nhl-transactions**, prospects to **prospect-wire**, and major news to **breaking-news**.")])
@@ -147,7 +148,7 @@ card("the-wire/05_prospect_wire_channel_intro.json", "BLHA PROSPECT WIRE",
 card("the-wire/06_news_desk_channel_intro.json", "BLHA NEWS DESK",
      "The discussion room for everything the wire posts. No automation posts here, so conversation stays readable.", NEWS,
      [("USE THIS ROOM FOR", "Reactions to news • Injury impact • Player outlook • General hockey talk"),
-      ("FEEDS", "**breaking-news** • **nhl-news** • **injury-report** • **nhl-transactions** • **prospect-wire**"),
+      ("FEEDS", "🚨│breaking-news • 📰│nhl-news • 🏥│injury-report • 🔄│nhl-transactions • 🌱│prospect-wire"),
       ("GUIDELINES", "Link the story you're discussing. Keep rumors labeled as rumors. Anything official goes through the League Office.")])
 
 card("league-competition/08_lineup_alerts_channel_intro.json", "BLHA LINEUP ALERTS",
@@ -170,7 +171,7 @@ card("commissioners-office/06_owner_handbook_channel_intro.json", "BLHA OWNER HA
        "To trade away a future 1st- or 2nd-round pick, your dues must be paid through that pick's Season first, or the trade is reversed (Article XII)."),
       ("STAY IN THE LOOP", "Turn on notifications in the Fantrax app so you hear about trades, claims and lineup problems. "
        "Type `/link` for the League Calendar on your phone. Pick your notification roles under **Channels & Roles**."),
-      ("LEAGUE BOT (FROM SEASON 2027)", "`/myteam` your roster, picks and next matchup • `/minor` a player's eligibility • `/rule` any section • "
+      ("LEAGUE BOT (2027 ON)", "`/myteam` your roster, picks and next matchup • `/minor` a player's eligibility • `/rule` any section • "
        "`/deadlines` the next dates • `/tradecheck` a trade against the rules • Pick'em in **game-day**."),
       ("QUESTIONS", "Rules questions go to **rules-questions**. Anything private goes to **open-a-ticket**.")])
 
@@ -361,7 +362,7 @@ def main() -> None:
             p.unlink()
     for rel, data in items.items():
         banner = fmt.header_url(rel)
-        data = {"embeds": fmt.apply(data["embeds"], banner, rel)}
+        data = posted.keep_posted(rel, {"embeds": fmt.apply(data["embeds"], banner, rel)})
         errors = fmt.problems(data["embeds"], banner, rel)
         assert not errors, (rel, errors)
         for e in data["embeds"]:

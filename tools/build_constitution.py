@@ -21,6 +21,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import constitution_source as S  # noqa: E402
 import discohook_format as fmt  # noqa: E402
+import posted_messages as posted  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT_TEMPLATES = ROOT / "templates" / "constitution"
@@ -599,10 +600,12 @@ def build_pdf(path: Path) -> None:
 def main() -> None:
     msgs = build_discord()
     for old in OUT_TEMPLATES.glob("*.json"):
-        old.unlink()
+        if not posted.is_posted(f"constitution/{old.name}"):
+            old.unlink()
     OUT_TEMPLATES.mkdir(parents=True, exist_ok=True)
     OUT_DOCS.mkdir(exist_ok=True)
 
+    msgs = [(name, posted.keep_posted(f"constitution/{name}", data)) for name, data in msgs]
     for name, data in msgs:
         (OUT_TEMPLATES / name).write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         counted = fmt.message_chars(data["embeds"])
