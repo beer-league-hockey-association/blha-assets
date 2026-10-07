@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T18:15:43.831495Z",
+  "updated_at": "2026-10-07T19:00:44.535093Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4872,6 +4872,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T18:15:43.744622Z"
+    },
+    {
+      "key": "ad9348d9b49ac3974c2e496e",
+      "url": "https://rss.com/podcasts/prospects2pros/3215792",
+      "fingerprint": "da3da6eb6628de34",
+      "title_norm": "prospects2pros constitution review 26-27",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-10-07T19:00:44.524292Z"
     }
   ],
   "known_sources": [
