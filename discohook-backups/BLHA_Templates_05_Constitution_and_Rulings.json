@@ -33,7 +33,7 @@
               },
               {
                 "name": "WHERE",
-                "value": "The current version is in **constitution**. Earlier versions are archived.",
+                "value": "The current version is in **📜│constitution**. Earlier versions are archived.",
                 "inline": false
               }
             ],
@@ -121,7 +121,7 @@
               },
               {
                 "name": "REVIEW",
-                "value": "A directly affected franchise may request review within 48 hours by opening an Appeal ticket in **open-a-ticket** (Section 19.4).",
+                "value": "A directly affected franchise may request review within 48 hours by opening an Appeal ticket in **🎟️│open-a-ticket** (Section 19.4).",
                 "inline": false
               }
             ],
@@ -155,7 +155,7 @@
               },
               {
                 "name": "RECORD",
-                "value": "The outcome will be posted in **rulings-log**.",
+                "value": "The outcome will be posted in **⚖️│rulings-log**.",
                 "inline": false
               }
             ],

@@ -84,7 +84,7 @@ jobs:
     retry_failures: 2
     phases: [regular, playoffs]
 
-  # Starting Goalies: one #game-day message per game day, edited silently as
+  # Starting Goalies: one 🏒│game-day message per game day, edited silently as
   # Daily Faceoff's reports firm up. The first check posts it; later checks
   # edit it only when something changed; nothing runs after the last puck drop.
   - id: starting-goalies

@@ -3,10 +3,10 @@
 
 Items:
   dynasty-pot      the Dynasty Pot graphic (balance and every franchise's titles this
-                   cycle) in one #league-ledger message, in the ledger's Dynasty Pot
+                   cycle) in one 💰│league-ledger message, in the ledger's Dynasty Pot
                    update format (templates/league-office/45_ledger_dynasty_pot.json)
-  franchise-cards  one card per franchise to #franchise-directory, one message each
-  draft-retro      the retrospective of a saved draft to #draft-results; reads NHL
+  franchise-cards  one card per franchise to 🏒│franchise-directory, one message each
+  draft-retro      the retrospective of a saved draft to 📋│draft-results; reads NHL
                    stats, so it takes a few minutes for a 36-round draft
 
 Modes:

@@ -36,12 +36,12 @@ competition:
 
   # The Wooden Spoon (league tradition, no money, no rule change): when the
   # final regular-season standings are posted, the last-place franchise gets
-  # the Wooden Spoon post in #weekly-recap (its owner is mentioned if listed
+  # the Wooden Spoon post in 📰│weekly-recap (its owner is mentioned if listed
   # under owners). Set false to stop it.
   wooden_spoon: true
 
   # GitHub Actions secret holding each channel's Discord webhook URL.
-  # awards and rankings go to #weekly-recap with the recap; games (the NHL
+  # awards and rankings go to 📰│weekly-recap with the recap; games (the NHL
   # games grid) goes to the scoreboard channel with the matchup preview.
   webhooks:
     recap: BLHA_WEBHOOK_WEEKLY_RECAP
@@ -85,17 +85,17 @@ wire_pings:
 # under `owners` gets one short message, with a mention, when a player in
 # today's ACTIVE lineup has no NHL game while an eligible RESERVE player does.
 # Owners not listed under `owners` are never checked or pinged.
-# webhook: GitHub Actions secret holding the #lineup-alerts webhook URL.
+# webhook: GitHub Actions secret holding the 🔔│lineup-alerts webhook URL.
 lineup_alerts:
   webhook: BLHA_WEBHOOK_LINEUP_ALERTS
 
 # ---------------------------------------------------------------------------
 # Starting Goalies (automation/goalies/)
 #
-# One message per game day in #game-day listing tonight's expected starters
+# One message per game day in 🏒│game-day listing tonight's expected starters
 # (Daily Faceoff), edited silently until the last game starts. Goalies on a
 # BLHA roster show their BLHA team. Nobody is pinged.
-# webhook:   GitHub Actions secret holding the #game-day webhook URL.
+# webhook:   GitHub Actions secret holding the 🏒│game-day webhook URL.
 # post_from: earliest local time the day's message is posted.
 starting_goalies:
   webhook: BLHA_WEBHOOK_GAME_DAY

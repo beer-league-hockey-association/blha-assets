@@ -18,12 +18,12 @@
               },
               {
                 "name": "HOW TO VOTE",
-                "value": "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
+                "value": "One Discord poll per award in **💬│gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
                 "inline": false
               },
               {
                 "name": "RESULTS",
-                "value": "Winners are announced in **hall-of-champions** and kept in the league records.",
+                "value": "Winners are announced in **🏆│hall-of-champions** and kept in the league records.",
                 "inline": false
               },
               {
@@ -106,7 +106,7 @@
               },
               {
                 "name": "HAVE YOUR SAY",
-                "value": "React 👍 or 👎 by **`[TIMESTAMP]`**, or reply in **gm-lounge**. It starts only if owners want it.",
+                "value": "React 👍 or 👎 by **`[TIMESTAMP]`**, or reply in **💬│gm-lounge**. It starts only if owners want it.",
                 "inline": false
               }
             ],
@@ -174,12 +174,12 @@
               },
               {
                 "name": "PICK'EM",
-                "value": "Each Week the bot posts the matchups in **game-day**. Make your picks before the Week starts; a season leaderboard keeps score.",
+                "value": "Each Week the bot posts the matchups in **🏒│game-day**. Make your picks before the Week starts; a season leaderboard keeps score.",
                 "inline": false
               },
               {
                 "name": "VOTING",
-                "value": "Proposals and official votes run through the bot in **league-voting**, one vote per franchise (Article XX).",
+                "value": "Proposals and official votes run through the bot in **🗳️│league-voting**, one vote per franchise (Article XX).",
                 "inline": false
               }
             ],

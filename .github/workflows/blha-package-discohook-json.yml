@@ -8,6 +8,8 @@ on:
       - 'discohook-backups/*.json'
       - 'constitution/*_discohook_backup.json'
       - 'tools/discohook_format.py'
+      - 'tools/discord_channels.py'
+      - 'tools/test_discord_channels.py'
       - 'tools/normalize_discohook_templates.py'
       - '.github/workflows/blha-package-discohook-json.yml'
   pull_request:
@@ -16,6 +18,8 @@ on:
       - 'discohook-backups/*.json'
       - 'constitution/*_discohook_backup.json'
       - 'tools/discohook_format.py'
+      - 'tools/discord_channels.py'
+      - 'tools/test_discord_channels.py'
       - 'tools/normalize_discohook_templates.py'
       - '.github/workflows/blha-package-discohook-json.yml'
 
@@ -194,6 +198,9 @@ jobs:
 
           print(f'Validated {len(files)} raw per-message Discohook JSON files and {checked} bundled messages.')
           PY
+
+      - name: Check channel names match the server
+        run: python tools/test_discord_channels.py
 
       - name: Check templates match the normalizer
         run: python tools/normalize_discohook_templates.py --check

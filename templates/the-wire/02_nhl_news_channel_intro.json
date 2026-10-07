@@ -29,7 +29,7 @@
         },
         {
           "name": "LOOKING FOR SOMETHING ELSE?",
-          "value": "Injuries go to **injury-report**, signings and trades to **nhl-transactions**, prospects to **prospect-wire**, and major news to **breaking-news**.",
+          "value": "Injuries go to **🏥│injury-report**, signings and trades to **🔄│nhl-transactions**, prospects to **🌱│prospect-wire**, and major news to **🚨│breaking-news**.",
           "inline": false
         }
       ],

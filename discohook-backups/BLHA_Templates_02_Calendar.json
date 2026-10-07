@@ -159,7 +159,7 @@
             "fields": [
               {
                 "name": "WHEN",
-                "value": "**`[TIMESTAMP]`** • RSVP on the Sesh event in **league-calendar**",
+                "value": "**`[TIMESTAMP]`** • RSVP on the Sesh event in **📅│league-calendar**",
                 "inline": false
               },
               {
@@ -169,12 +169,12 @@
               },
               {
                 "name": "AGENDA",
-                "value": "Season review • Ideas from **league-suggestions** that could become amendment proposals (Article XX) • Draft and calendar dates • Open floor",
+                "value": "Season review • Ideas from **💡│league-suggestions** that could become amendment proposals (Article XX) • Draft and calendar dates • Open floor",
                 "inline": false
               },
               {
                 "name": "CAN'T MAKE IT",
-                "value": "Notes are posted in **gm-lounge** afterward. Nothing is decided at the meeting itself: rule changes still go through a written proposal and a vote.",
+                "value": "Notes are posted in **💬│gm-lounge** afterward. Nothing is decided at the meeting itself: rule changes still go through a written proposal and a vote.",
                 "inline": false
               }
             ],

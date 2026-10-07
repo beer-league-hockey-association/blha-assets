@@ -25,12 +25,12 @@
         },
         {
           "name": "PICK'EM",
-          "value": "Each Week the bot posts the matchups in **game-day**. Make your picks before the Week starts; a season leaderboard keeps score.",
+          "value": "Each Week the bot posts the matchups in **🏒│game-day**. Make your picks before the Week starts; a season leaderboard keeps score.",
           "inline": false
         },
         {
           "name": "VOTING",
-          "value": "Proposals and official votes run through the bot in **league-voting**, one vote per franchise (Article XX).",
+          "value": "Proposals and official votes run through the bot in **🗳️│league-voting**, one vote per franchise (Article XX).",
           "inline": false
         }
       ],

@@ -130,7 +130,7 @@ the pings stop it emails you (and optionally posts in Discord).
 4. GitHub: Settings > Secrets and variables > Actions > New repository secret
    named `BLHA_HEALTHCHECK_PING_URL`, value = that URL.
 5. Healthchecks: **Integrations**. Email to your sign-up address is on by
-   default. Optionally add **Discord** and pick `#automation-health`.
+   default. Optionally add **Discord** and pick `⚙️│automation-health`.
 6. Wait 15 minutes. The check should turn green ("up"). The scheduler log ends
    with `Checked in (success)`; a failed scheduler run pings `/fail`, which
    alerts you straight away.

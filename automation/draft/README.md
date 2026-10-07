@@ -11,12 +11,12 @@ per-pick messages** (decided Oct 2, 2026). It covers what Fantrax does not:
 
 | Post | Channel | When |
 | --- | --- | --- |
-| Announcement (date, format, pick clock, nightly pause, draft room) | #draft-announcements | 30 days before the Fantrax draft date. If the date is set later than that, the announcement goes out at the next countdown step. |
-| Countdown | #draft-announcements | 7 days, 1 day and 1 hour before, then "underway" at the start |
-| Official draft order, with traded picks | #draft-announcements | 7 days before, or on demand (see below) |
-| Date changed / order updated | #draft-announcements | If the Fantrax date or order changes after it was posted |
-| Round results | #draft-results | Each round as soon as all its picks are made |
-| Draft Complete summary | #draft-announcements | When Fantrax marks the draft completed |
+| Announcement (date, format, pick clock, nightly pause, draft room) | `📢│draft-announcements` | 30 days before the Fantrax draft date. If the date is set later than that, the announcement goes out at the next countdown step. |
+| Countdown | `📢│draft-announcements` | 7 days, 1 day and 1 hour before, then "underway" at the start |
+| Official draft order, with traded picks | `📢│draft-announcements` | 7 days before, or on demand (see below) |
+| Date changed / order updated | `📢│draft-announcements` | If the Fantrax date or order changes after it was posted |
+| Round results | `📋│draft-results` | Each round as soon as all its picks are made |
+| Draft Complete summary | `📢│draft-announcements` | When Fantrax marks the draft completed |
 | Pick clock ran out / pick skipped | Commissioner Desk (private) | During the draft, once per pick, with the team's timeout count |
 
 If a check runs late and several countdown posts are due at once, only the
@@ -47,16 +47,16 @@ draft already finished, so it recorded that draft and posted nothing.
 Private alerts use the existing Commissioner Desk webhook. The two public
 channels each need one:
 
-1. In Discord, open **#draft-announcements** → the gear icon (**Edit Channel**)
+1. In Discord, open **`📢│draft-announcements`** → the gear icon (**Edit Channel**)
    → **Integrations** → **Webhooks** → **New Webhook**. Name it
    `BLHA Draft Center` and click **Copy Webhook URL**.
 2. On GitHub: **blha-assets** → **Settings** → **Secrets and variables** →
    **Actions** → **New repository secret**. Name: `BLHA_WEBHOOK_DRAFT_ANNOUNCEMENTS`,
    value: the URL you copied. **Add secret**.
-3. Repeat for **#draft-results** with the name `BLHA_WEBHOOK_DRAFT_RESULTS`.
+3. Repeat for **`📋│draft-results`** with the name `BLHA_WEBHOOK_DRAFT_RESULTS`.
 4. Check it: **Actions** → **BLHA Draft Center** → **Run workflow** with mode
    `test`. You should see clearly labeled `[TEST]` posts: an announcement and
-   the draft order in #draft-announcements, Round 1 in #draft-results, a
+   the draft order in `📢│draft-announcements`, Round 1 in `📋│draft-results`, a
    completion post, and a sample timeout alert in Commissioner Desk.
 
 ## Manual runs (Actions tab → BLHA Draft Center)
@@ -75,7 +75,7 @@ channels each need one:
 3. Set `draft_center.test_pick_clock_minutes` in `automation/league.yaml` to
    the same number of minutes, so the private timeout alert knows the clock.
    If the Fantrax test draft has no overnight pause, also set `pause: null`.
-4. Watch #draft-announcements, #draft-results and Commissioner Desk. Checks
+4. Watch `📢│draft-announcements`, `📋│draft-results` and Commissioner Desk. Checks
    run every 15 minutes, so a timeout alert can arrive up to 15 minutes after
    the clock actually runs out.
 5. Afterwards, set `test_pick_clock_minutes` back to `null` and `pause` back to

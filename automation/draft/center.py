@@ -5,10 +5,10 @@ Scope (decided Oct 2, 2026): Fantrax already notifies owners when they are on
 the clock and when picks are made, so the Draft Center never posts per-pick or
 on-the-clock messages. It covers what Fantrax does not:
 
-  #draft-announcements  countdown from the Fantrax draft date (the first post is
+  📢│draft-announcements  countdown from the Fantrax draft date (the first post is
                         the full announcement), the official draft order, a notice
                         if the date or order changes, and a "Draft Complete" summary
-  #draft-results        the permanent record, one post per completed round
+  📋│draft-results        the permanent record, one post per completed round
   Commissioner Desk     private alert when a pick clock runs out or a pick is
                         skipped, with the team's timeout count (Art. 13.5 / 14.3)
 
@@ -47,7 +47,7 @@ FOOTER_DIVIDER = (
     "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
     "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
 )
-RESULTS_CHANNEL = "📋│draft-results"
+RESULTS_CHANNEL = "**📋│draft-results**"
 MAX_MESSAGE_CHARS = 5500  # under Discord's 6,000 total-embed-text limit
 MAX_EMBEDS = 10
 

@@ -5,15 +5,15 @@ On the morning a fantasy week ends (normally Monday, at report_time in
 league.yaml), posts in order:
 
 1. Weekly recap of the week that just finished, with each team's all-play
-   record for the week and the season (#weekly-recap)
-2. Weekly Awards for that week (#weekly-recap)
-3. Power Rankings after that week (#weekly-recap)
+   record for the week and the season (📰│weekly-recap)
+2. Weekly Awards for that week (📰│weekly-recap)
+3. Power Rankings after that week (📰│weekly-recap)
 4. League standings after that week
 5. Playoff race (from playoff_race_start_week through the last regular week)
 6. Matchup preview for the week that starts that evening (scoreboard channel)
 7. NHL games grid for that week, for planning daily lineups (scoreboard channel)
 8. The Wooden Spoon for the last-place franchise, once, with the final
-   regular-season standings (#weekly-recap; competition.wooden_spoon)
+   regular-season standings (📰│weekly-recap; competition.wooden_spoon)
 
 All-play, awards and power rankings are computed from Fantrax matchup scores
 (see weekly.py); the games grid reads the NHL schedule API (blha/nhl.py).
