@@ -54,5 +54,25 @@ class ChannelNames(unittest.TestCase):
         self.assertTrue(any("short channel name" in p for p in flagged))
 
 
+class FooterOnLastMessageOnly(unittest.TestCase):
+    """Messages sent back to back: only the last one has footer text and the divider."""
+
+    def test_constitution_sequence(self):
+        order = fmt.sequence("constitution")
+        self.assertEqual(order[0], "league-office/01_constitution_channel_intro.json")
+        self.assertTrue(all(fmt.continues(r) for r in order[:-1]))
+        self.assertFalse(fmt.continues(order[-1]))
+        self.assertFalse(fmt.continues("league-office/02_announcements_channel_intro.json"))
+
+    def test_continuing_message_has_no_footer(self):
+        embed = {"title": "T", "description": "D", "footer": {"text": "SIGN OFF"}}
+        out = fmt.apply([embed], cont=True)
+        self.assertNotIn("footer", out[0])
+        self.assertNotIn("image", out[0])
+        self.assertEqual(fmt.problems(out, cont=True), [])
+        self.assertTrue(fmt.problems(fmt.apply([embed]), cont=True))
+        self.assertTrue(fmt.problems(out, cont=False))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=1)

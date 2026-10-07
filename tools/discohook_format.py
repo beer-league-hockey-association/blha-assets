@@ -10,6 +10,9 @@ Every send is ONE Discord message:
   invisible footer ("\u200b"); without it Discohook rejects it as empty.
 - Only the final embed carries real footer text plus the shared gold
   footer-divider image. No other embed has footer text or the divider.
+- When several messages are sent back to back as one sequence (SEQUENCES),
+  only the sequence's LAST message has the footer text and divider. The
+  messages before it have neither, so they read as one continuous post.
 - Discord limits: 25 fields per embed, 256 per field name, 1,024 per field
   value, 4,096 per description, 10 embeds and 6,000 counted characters per
   message. Content that would break a limit is an error, never split.
@@ -27,6 +30,8 @@ checks the same rules independently.
 """
 
 from __future__ import annotations
+
+from pathlib import Path
 
 import discord_channels as channels
 
@@ -57,6 +62,37 @@ MULTI_SECTION_EXCEPTIONS = {
 
 class DoesNotFit(ValueError):
     """Merging the sections would break a Discord limit."""
+
+
+# Messages sent back to back, in this order, into one channel. Only the last one
+# has footer text and the divider. Paths are relative to templates/; a trailing
+# "/" stands for every template in that folder, in file-name order.
+SEQUENCES = {
+    "constitution": ["league-office/01_constitution_channel_intro.json", "constitution/"],
+}
+TEMPLATES = Path(__file__).resolve().parents[1] / "templates"
+
+
+def sequence(name: str, templates: Path = TEMPLATES) -> list[str]:
+    """The template paths of a sequence, in send order."""
+    out: list[str] = []
+    for part in SEQUENCES[name]:
+        if part.endswith("/"):
+            out += sorted(p.relative_to(templates).as_posix() for p in (templates / part).glob("*.json"))
+        else:
+            out.append(part)
+    return out
+
+
+def continues(rel: str | None, templates: Path = TEMPLATES) -> bool:
+    """True when another message of the same sequence follows this one (so it gets no footer)."""
+    if not rel:
+        return False
+    for name in SEQUENCES:
+        order = sequence(name, templates)
+        if rel in order:
+            return rel != order[-1]
+    return False
 
 
 def is_exception(rel: str | None) -> bool:
@@ -163,13 +199,18 @@ def merge_sections(texts: list[dict]) -> dict:
     return merged
 
 
-def apply(embeds: list[dict], banner_url: str | None = None, rel: str | None = None) -> list[dict]:
+def apply(embeds: list[dict], banner_url: str | None = None, rel: str | None = None,
+          cont: bool | None = None) -> list[dict]:
     """Return the embeds in the BLHA format. Text and order are kept.
 
     The final embed's footer text is the last real footer text in the message,
     so merging sections never loses the sign-off. Raises DoesNotFit when the
     sections cannot share one embed, unless the message is a listed exception.
+    cont: the message is followed by another one of its sequence, so it gets no
+    footer text and no divider at all (None = look it up from rel).
     """
+    if cont is None:
+        cont = continues(rel)
     out = [channels.restyle_embed(e) for e in embeds]
     if banner_url:
         if out and is_banner(out[0]):
@@ -181,7 +222,7 @@ def apply(embeds: list[dict], banner_url: str | None = None, rel: str | None = N
         text = footer_text(e)
         if text and text != ZWSP:
             sign_off = text
-    if not sign_off:
+    if not sign_off and not cont:
         raise ValueError("message has no footer text to put on its final embed")
     head = [out[0]] if out and is_banner(out[0]) else []
     texts = [e for e in out[len(head):]
@@ -195,12 +236,12 @@ def apply(embeds: list[dict], banner_url: str | None = None, rel: str | None = N
         except DoesNotFit:
             if not is_exception(rel):
                 raise
-    if (texts[-1].get("image") or {}).get("url") and not is_divider(texts[-1]):
+    if not cont and (texts[-1].get("image") or {}).get("url") and not is_divider(texts[-1]):
         # The final card shows its own image, so the divider needs an embed of its own.
         texts.append({"color": HEADER_COLOR})
     last = len(texts) - 1
     for i, e in enumerate(texts):
-        if i < last:
+        if i < last or cont:
             e.pop("footer", None)
             if is_divider(e):
                 e.pop("image", None)
@@ -211,8 +252,11 @@ def apply(embeds: list[dict], banner_url: str | None = None, rel: str | None = N
     return head + texts
 
 
-def problems(embeds: list[dict], banner_url: str | None = None, rel: str | None = None) -> list[str]:
+def problems(embeds: list[dict], banner_url: str | None = None, rel: str | None = None,
+             cont: bool | None = None) -> list[str]:
     """Every way these embeds break the format (empty list = compliant)."""
+    if cont is None:
+        cont = continues(rel)
     errs: list[str] = []
     if not isinstance(embeds, list) or not embeds:
         return ["no embeds"]
@@ -234,6 +278,15 @@ def problems(embeds: list[dict], banner_url: str | None = None, rel: str | None 
     if len(texts) > 1 and not is_exception(rel):
         errs.append(f"{len(texts)} text embeds; sections must merge into one text embed")
     last = len(embeds) - 1
+    if cont:
+        for i in range(head, len(embeds)):
+            if "footer" in embeds[i]:
+                errs.append(f"embed {i + 1} has a footer; another message follows, so only the last message may")
+            if is_divider(embeds[i]):
+                errs.append(f"embed {i + 1} has the footer divider; another message follows, so only the last message may")
+        if banner_url and embeds[0] != banner_embed(banner_url):
+            errs.append("first embed is not this channel's header banner")
+        return errs
     for i in range(head, last):
         if "footer" in embeds[i]:
             errs.append(f"embed {i + 1} has a footer; only the final embed may")

@@ -13,9 +13,6 @@
       "title": "BLHA CONSTITUTION",
       "description": "The Constitution is the controlling rules document of the Beer League Hockey Association. Every owner accepts it as a condition of joining and is responsible for knowing it.",
       "color": 16758812,
-      "footer": {
-        "text": "BLHA LEAGUE OFFICE"
-      },
       "fields": [
         {
           "name": "CURRENT DOCUMENT",
@@ -42,10 +39,7 @@
           "value": "Fantrax controls gameplay records and transactions. The Constitution controls league rules and governance. The newest published version controls.",
           "inline": false
         }
-      ],
-      "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
-      }
+      ]
     }
   ]
 }
