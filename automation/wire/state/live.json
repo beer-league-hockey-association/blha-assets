@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T01:15:29.705484Z",
+  "updated_at": "2026-10-07T02:00:37.971281Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4132,6 +4132,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T01:15:29.633912Z"
+    },
+    {
+      "key": "bbfbab842186b7e14d41402f",
+      "url": "https://www.nhl.com/news/quinton-byfield-wants-to-help-fill-void-for-kings-after-anze-kopitar-retirement",
+      "fingerprint": "8d7d5302798378be",
+      "title_norm": "byfield wants to 'be the guy' for kings post-kopitar",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:00:37.197821Z"
+    },
+    {
+      "key": "7c3d55fc142217b163222e70",
+      "url": "https://www.nhl.com/news/minnesota-wild-buffalo-sabres-game-recap-october-6-2026",
+      "fingerprint": "8bfa6bd91ca5eec6",
+      "title_norm": "power scores in ot, sabres rally past wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:00:37.589559Z"
+    },
+    {
+      "key": "d213ebc6ca9f10910c6cc2a2",
+      "url": "https://www.sportsnet.ca/mikhail-sergachev/article/mammoths-sergachev-exits-vs-devils-after-getting-hit-in-helmet-by-puck",
+      "fingerprint": "bf1128949305c1ec",
+      "title_norm": "mammoth's sergachev exits vs. devils after getting hit in helmet by puck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:00:37.952618Z"
     }
   ]
 }
