@@ -24,7 +24,7 @@ import build_discord_assets as bda  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 
-STAMPS = [  # (slug, word, colour, sub line): green yes/paid, red no/owed/urgent, gold pending/history, cream official
+STAMPS = [  # (slug, word, color, sub line): green yes/paid, red no/owed/urgent, gold pending/history, cream official
     ("official", "OFFICIAL", px.CREAM, "BEER LEAGUE HOCKEY ASSOCIATION"),
     ("approved", "APPROVED", px.GREEN, None),
     ("denied", "DENIED", px.RED, None),
@@ -48,7 +48,7 @@ Built by tools/build_brand_package.py (drawing code in tools/blha_pixel.py).
 
 Palette: black #0E0F12, charcoal #2B2D31, gold #FFB81C, cream #F4EFE4,
 ice #EEF5FA, paper #FCFCFC, blue #2457C5, red #C8241F.
-Status green #3FA34D appears on stamps only. Team colours appear only on small
+Status green #3FA34D appears on stamps only. Team colors appear only on small
 jersey or stripe elements, never on league marks.
 Type: Jersey 10 (BLHA, titles) and Silkscreen (labels), in brand/fonts with OFL.txt.
 Official marks: BLHA in Jersey 10 with gold then black keylines, and the pixel B

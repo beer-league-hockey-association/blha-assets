@@ -22,7 +22,7 @@ def grid(text: str) -> list[str]:
 
 
 def sym(text: str, odd: bool = False) -> list[str]:
-    """Left half rows -> mirrored full rows (even width, or odd with the last column as the centre).
+    """Left half rows -> mirrored full rows (even width, or odd with the last column as the center).
     Half rows are padded to the same width first so the mirror lines up."""
     rows = grid(text)
     n = max(len(r) for r in rows)
@@ -363,9 +363,9 @@ def blha_rink():
     rrect(c, 1, 6, 30, 20, 7, "I")
     c.rect(4, 8, 1, 16, "R"); c.rect(27, 8, 1, 16, "R")        # goal lines
     c.rect(9, 6, 2, 20, "b"); c.rect(21, 6, 2, 20, "b")        # blue lines
-    c.circle(15.5, 15.5, 3, "b", fill=False)                   # centre circle
-    c.rect(15, 6, 2, 20, "R")                                  # centre red line
-    c.rect(15, 15, 2, 2, "b")                                  # centre dot
+    c.circle(15.5, 15.5, 3, "b", fill=False)                   # center circle
+    c.rect(15, 6, 2, 20, "R")                                  # center red line
+    c.rect(15, 15, 2, 2, "b")                                  # center dot
     for x in (5, 26):                                          # creases
         c.rect(x, 14, 1, 4, "L")
     c.rect(3, 15, 1, 2, "R"); c.rect(28, 15, 1, 2, "R")        # nets
@@ -621,7 +621,7 @@ def blha_trapper():
         for x in range(32):
             if web.get(x, y)[3] and not c.get(x, y)[3]:
                 c.px(x, y, "K" if ((x + y) % 3 == 0 or (x - y) % 3 == 0) else "G")
-    c.line(6, 9, 18, 3, "W")                                            # T-trap: top binding + centre strap
+    c.line(6, 9, 18, 3, "W")                                            # T-trap: top binding + center strap
     c.line(12, 7, 12, 16, "W")
     for y in range(21):                                                 # gold rim round the finger lobe
         for x in range(19, 32):
@@ -708,7 +708,7 @@ def blha_salty():
     import math
     big = Canvas(64, 64)
     th = math.radians(28)                                       # tipped over to shake out salt
-    ox, oy, sc = 24.0, 50.0, .86                                # foot centre on the scratch canvas, scale
+    ox, oy, sc = 24.0, 50.0, .86                                # foot center on the scratch canvas, scale
     for y in range(64):
         for x in range(64):
             dx, dy = x + .5 - ox, oy - (y + .5)

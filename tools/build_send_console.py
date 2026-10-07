@@ -121,6 +121,22 @@ def row(key: str, channel: str, what: str, href: str, cta: str = "Open in Discoh
     )
 
 
+# Templates that automation already posts for you in some cases.
+AUTOMATED = {
+    "CALENDAR EVENT": "Automation posts calendar milestones once their dates are filled in automation/league-office/events.yaml. Use this only for an extra one.",
+    "DEADLINE REMINDER": "Automation posts reminders before each deadline in events.yaml. Use this only for an extra one.",
+    "DYNASTY POT UPDATE": "Automation posts the Dynasty Pot graphic once the franchises are filled in. Use this only for a written update.",
+}
+
+
+def template_row(key: str, channel: str, label: str, note: str, href: str) -> str:
+    return (
+        f'<li class="row tmpl" data-key="{html.escape(key)}"><span></span>'
+        f'<div class="what"><span class="ch">{html.escape(label)} → {html.escape(shown(channel))}</span><span class="desc">{html.escape(note)}</span></div>'
+        f'<a class="go" href="{href}" target="_blank" rel="noopener">Open</a></li>'
+    )
+
+
 def section(title: str, note: str, rows: list[str], sid: str) -> str:
     return (f'<section id="{sid}"><header><h2>{html.escape(title)}</h2><p>{note}</p></header><ol class="rows">' + "".join(rows) + "</ol></section>")
 
@@ -167,11 +183,21 @@ def build() -> str:
             extra = " Voice channels do not need an intro."
         sections.append(section(title, "Set the webhook to each row's channel, send, then pin." + extra, rows, folder))
 
-    brows = []
+    # Reusable templates: one section per bundle, one button per message, so a single message
+    # opens on its own. Nothing here is a one-time send, so these rows are never ticked or counted.
+    sections.append('<section id="templates"><header><h2>Reusable templates</h2><p>Use these any time, as often as you need. Each button opens one message on its own: set the webhook to the channel shown, replace every placeholder in backticks, then send. Nothing below is automated unless its row says so.</p></header></section>')
     for name, ch, what in BUNDLES:
-        brows.append(row("bundle-" + name, ch, what, LINKS["bundle:" + name], "Open bundle"))
-    n_rows += len(brows)
-    sections.append(section("Reusable templates", "Not one-time sends. Open a bundle, delete the messages you do not need, replace every placeholder in backticks, then send. Save the bundle in Discohook under Backups so it is there next time.", brows, "templates"))
+        msgs = json.loads((ROOT / "discohook-backups" / f"BLHA_Templates_{name}.json").read_text(encoding="utf-8"))["messages"]
+        trows = []
+        for i, m in enumerate(msgs):
+            title = next((e.get("title") for e in reversed(m["data"]["embeds"]) if e.get("title")), f"Message {i + 1}")
+            label = title.title().replace("Blha", "BLHA").replace("'S", "'s")
+            body = {"messages": [{"data": m["data"]}]}
+            raw = json.dumps(body, ensure_ascii=True, separators=(",", ":")).encode()
+            href = "https://discohook.org/?data=" + base64.urlsafe_b64encode(raw).decode().rstrip("=")
+            note = AUTOMATED.get(title, "Fill in every placeholder in backticks, then send.")
+            trows.append(template_row(f"tmpl-{name}-{i}", ch, label, note, href))
+        sections.append(section(name.split("_", 1)[1].replace("_", " "), html.escape(what) + ".", trows, "tmpl-" + name))
 
     body = "\n".join(sections)
     summary = (f'<p class="status"><b>{COUNTS["posted"] + COUNTS["pin"]}</b> already posted and current'

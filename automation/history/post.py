@@ -11,7 +11,7 @@ Items:
 
 Modes:
   preview  build everything, write the images to --out and print the messages; posts nothing
-  test     post one clearly labelled [TEST] message; saves nothing
+  test     post one clearly labeled [TEST] message; saves nothing
   live     post everything; draft-retro also saves the report to archive/<season>/draft_retro.json
 """
 

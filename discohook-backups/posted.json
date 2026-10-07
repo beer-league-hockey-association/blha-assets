@@ -7,12 +7,6 @@
       "fingerprint": 2487489888,
       "message": "https://discord.com/channels/1554538666721018016/1557268578376359946/1557268578376359946"
     },
-    "commissioners-office/05_open_a_ticket_channel_intro.json": {
-      "channel": "open-a-ticket",
-      "posted": "2026-10-07",
-      "fingerprint": 1859882231,
-      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688"
-    },
     "constitution/00_quick_reference_and_article_i.json": {
       "channel": "constitution",
       "posted": "2026-10-07",
@@ -196,5 +190,11 @@
       "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
     }
   },
-  "update_in_place": {}
+  "update_in_place": {
+    "commissioners-office/05_open_a_ticket_channel_intro.json": {
+      "channel": "open-a-ticket",
+      "message": "https://discord.com/channels/1554538666721018016/1555788599767597197/1557264155701018688",
+      "reason": "lightest skin tone on 🤝🏻"
+    }
+  }
 }

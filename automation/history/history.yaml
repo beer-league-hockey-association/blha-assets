@@ -15,7 +15,7 @@
 #   name:      current franchise name
 #   owner:     owner display name (as it should appear publicly)
 #   founded:   first Season, e.g. 2027
-#   colors:    up to 3 hex colours, primary first, in quotes
+#   colors:    up to 3 hex colors, primary first, in quotes
 #   logo:      optional .png path in this repository, e.g. brand/franchises/rink-rats.png
 #   team_ids:  every Fantrax team ID this franchise has used, in quotes. Run the
 #              BLHA Pick Trades workflow in preview mode to print them. If a
@@ -33,7 +33,7 @@
 franchises: {}
 
 # ---------------------------------------------------------------------------
-# Season honours and Dynasty Pot money
+# Season honors and Dynasty Pot money
 #
 # Every field is optional; fill each one in when it is final.
 #   champion, runner_up, third_place, presidents_trophy,

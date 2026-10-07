@@ -46,7 +46,7 @@ STEEL, STEEL_DK = (154, 161, 169), (110, 116, 124)
 MUTED = (184, 185, 190)
 CREAM_DK, CREAM_MD, CREAM_DKR, INK = (230, 222, 204), (237, 231, 218), (218, 209, 189), (58, 54, 49)
 
-# Sprite letters -> colours ("." is transparent)
+# Sprite letters -> colors ("." is transparent)
 PAL = {"K": BLACK, "W": PAPER, "G": GOLD, "D": GOLD_DK, "S": STEEL, "N": STEEL_DK,
        "B": BLUE, "R": RED, "L": ICE, "C": CREAM}
 
@@ -55,7 +55,7 @@ SPRITES = {
     "b": ["KKKKKKKKKK....", "KGGGGGGGGGK...", "KGWWWWWWWWGK..", "KGWWKKKKWWWGK.", "KGWWKGGKWWWGK.",
           "KGWWKKKKWWGK..", "KGWWWWWWWWGK..", "KGWWWWWWWWWGK.", "KGWWKKKKKWWWGK", "KGWWKGGGKWWWGK",
           "KGWWKKKKKWWWGK", "KGWWWWWWWWWWGK", "KGGGGGGGGGGGK.", "KKKKKKKKKKKK.."],
-    # the ice resurfacer (56 x 28, drives right); its own colours are in SPRITE_PALS["resurfacer"]
+    # the ice resurfacer (56 x 28, drives right); its own colors are in SPRITE_PALS["resurfacer"]
     "resurfacer": [
         ".......................KKKKKKKNNNNNNNNKKKK..............", "............KKKK......KBBBBBBBBBBBBBBBBBBBKKK...........",
         "...........KGGGGKK...KBBBBBBBBBBBBBBBBBBBBBBBK..........", ".........KKKGGGGGGK.KBBBBBBBBBBBBBBBBBBBBBBBBBK.........",
@@ -78,7 +78,7 @@ SPRITES = {
                "...CCC....CCC...", "..CCC......CCC..", "GGGC........CGGG", "GGG..........GGG"],
 }
 
-# Sprite-specific colours (the resurfacer's rink blue, light-blue ribs, navy hatch and charcoal seat)
+# Sprite-specific colors (the resurfacer's rink blue, light-blue ribs, navy hatch and charcoal seat)
 SPRITE_PALS = {"resurfacer": {"B": (47, 111, 219), "L": (127, 183, 240), "N": (31, 79, 168), "M": (58, 61, 66)}}
 
 # ---------------------------------------------------------------- the B mark
@@ -247,7 +247,7 @@ def frame(img, x, y, w, h, t, step, color, wear=0.0, seed=1):
 
 
 def ring(img, cx, cy, r0, r1, color, box=None):
-    """Fill art pixels whose centres lie between radii r0 and r1 of (cx, cy)."""
+    """Fill art pixels whose centers lie between radii r0 and r1 of (cx, cy)."""
     px = img.load()
     x0, y0, x1, y1 = box or (0, 0, img.width, img.height)
     for j in range(y0, y1):
@@ -309,7 +309,7 @@ def font(name: str) -> PixelFont:
 
 
 def outlined(mask: Image.Image, fill, layers) -> Image.Image:
-    """Colour a mask and wrap it in stepped keylines (one colour per pixel of distance, rounded corners)."""
+    """Color a mask and wrap it in stepped keylines (one color per pixel of distance, rounded corners)."""
     reach = len(layers)
     w, h = mask.width + 2 * reach, mask.height + 2 * reach
     mp = mask.load()
@@ -343,7 +343,7 @@ def text_image(text: str, face: str, scale: int, color, layers=(), shadow=None) 
 
 
 def draw_text(img, text, face, scale, x, cap_y, color, align="l", layers=(), shadow=None, snap=None):
-    """Draw text with its capitals starting at cap_y. align: l (x is left) or c (x is centre)."""
+    """Draw text with its capitals starting at cap_y. align: l (x is left) or c (x is center)."""
     t, cap_top = text_image(text, face, scale, color, layers, shadow)
     reach = len(layers) * scale
     left = x - reach if align == "l" else x - (t.width - (scale if shadow else 0)) // 2
@@ -463,7 +463,7 @@ def bg_splash(w=240, h=135):
 
 # ---------------------------------------------------------------- finished graphics (export size)
 def wordmark_on(size, color, variant, b, dy=0, k=8):
-    """Full lockup centred on a flat, lightly textured ground."""
+    """Full lockup centered on a flat, lightly textured ground."""
     W, H = size
     aw, ah = math.ceil(W / k), math.ceil(H / k)
     img = enlarge(bg_plain(aw, ah, color, textured=color in (CHARCOAL, BLACK)), k, size)
@@ -522,7 +522,7 @@ def header(title: str, kicker: str, seed: int = 7) -> Image.Image:
 
 
 def footer_divider() -> Image.Image:
-    """Transparent 1600 x 180: cream and gold lines running into a centre-ice ring (200 x 23 art grid)."""
+    """Transparent 1600 x 180: cream and gold lines running into a center-ice ring (200 x 23 art grid)."""
     a = art(200, 23)
     rect(a, 8, 10, 86, 2, GOLD)
     rect(a, 106, 10, 86, 2, GOLD)
@@ -552,7 +552,7 @@ def gold_bar() -> Image.Image:
 
 
 def b_icon(size: int, color, k: int = 21) -> Image.Image:
-    """Large B (28 x 32 art) centred on a flat colour."""
+    """Large B (28 x 32 art) centered on a flat color."""
     img = Image.new("RGBA", (size, size), color + (255,))
     place(img, sprite(B32(), k), size // 2, size // 2)
     return img

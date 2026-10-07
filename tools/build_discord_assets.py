@@ -149,7 +149,7 @@ def main() -> None:
             "status": "frozen layout, 8-bit artwork",
             "right_mark": "pixel B traced from the official mark, fully inset; never clipped",
             "wordmark": "BLHA in Jersey 10 with gold then black keylines; wordmark file kept for legacy use",
-            "footer": "transparent cream/gold/cream rink divider with a centred gold pixel ring",
+            "footer": "transparent cream/gold/cream rink divider with a centered gold pixel ring",
         },
     }
     (WEBHOOKS / "BLHA_Phase_2C6_Hosting_Manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")

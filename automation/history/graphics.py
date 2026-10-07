@@ -3,8 +3,8 @@
 Drawn with tools/blha_pixel.py (the same toolkit as the brand kit and channel
 headers): a charcoal arena ground on an 8 px grid, gold boards, Jersey 10 for
 names and numbers and Silkscreen for labels, both rendered as hard-edged pixels.
-Team colours appear only on each franchise's pixel jersey and the stripe beside
-it; everything else stays in league colours. Pillow only.
+Team colors appear only on each franchise's pixel jersey and the stripe beside
+it; everything else stays in league colors. Pillow only.
 """
 
 from __future__ import annotations
@@ -40,13 +40,13 @@ def rgb(value: Any, default: tuple[int, int, int]) -> tuple[int, int, int]:
 
 def paint(rows: list[str], scale: int, pal: dict[str, tuple[int, int, int]] | None = None) -> Image.Image:
     """A pixel sprite (one character per pixel, "." transparent) enlarged by a whole number."""
-    colours = {**px.PAL, "S": px.STEEL, **(pal or {})}
+    colors = {**px.PAL, "S": px.STEEL, **(pal or {})}
     img = Image.new("RGBA", (len(rows[0]), len(rows)), (0, 0, 0, 0))
     pixels = img.load()
     for y, row in enumerate(rows):
         for x, ch in enumerate(row):
-            if ch in colours:
-                pixels[x, y] = colours[ch] + (255,)
+            if ch in colors:
+                pixels[x, y] = colors[ch] + (255,)
     return img.resize((img.width * scale, img.height * scale), Image.NEAREST)
 
 
@@ -136,8 +136,8 @@ def dynasty_pot_png(summary: dict[str, Any]) -> bytes:
         coins_w = need * (7 * coin + 8)
         name_scale = 4 if step >= 64 else 3
         name, s = fit(row["name"], "jersey", col_w - 72 - coins_w - 16, (name_scale, 3))
-        colour = px.GOLD if row["titles"] and row["titles"] == leader else px.CREAM
-        px.draw_text(img, name, "jersey", s, cx + 72, y + (step - 10 * s) // 2, colour)
+        color = px.GOLD if row["titles"] and row["titles"] == leader else px.CREAM
+        px.draw_text(img, name, "jersey", s, cx + 72, y + (step - 10 * s) // 2, color)
         for p in range(need):
             piece = paint(COIN if p < row["titles"] else COIN_OFF, coin)
             img.alpha_composite(piece, (cx + col_w - coins_w + p * (7 * coin + 8), y + (step - piece.height) // 2))

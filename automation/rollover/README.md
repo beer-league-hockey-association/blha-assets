@@ -16,7 +16,7 @@ only a few things change.
 7. Run Commissioner Desk, Pick Trades and Playoffs once in `preview` mode, then let the scheduler run. Each first live run saves a baseline instead of posting about old data.
 8. Check Automation Health is quiet and the Scoreboard and weekly report previews show the new league.
 
-The league archive (`archive/` on the `automation-state` branch) is never cleared: the new Fantrax season gets its own folder and its first archive run saves a baseline. A season labelled TEST drops out of league history by itself once the first real season is archived.
+The league archive (`archive/` on the `automation-state` branch) is never cleared: the new Fantrax season gets its own folder and its first archive run saves a baseline. A season labeled TEST drops out of league history by itself once the first real season is archived.
 
 ## What the check compares
 

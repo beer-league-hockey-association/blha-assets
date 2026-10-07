@@ -10,7 +10,7 @@ All files are MP3, mono, 44.1 kHz, 192 kbps, loudness-matched to about -14 LUFS 
 | `blha-gavel.mp3` | 1.2 s | 30 KB | BLHA Gavel | ⚖️ | 80% |
 | `blha-draft-horn.mp3` | 3.0 s | 72 KB | BLHA Draft Horn | 📯 | 80% |
 | `blha-on-the-clock.mp3` | 3.0 s | 72 KB | BLHA On The Clock | ⏰ | 80% |
-| `blha-trade-alert.mp3` | 1.5 s | 37 KB | BLHA Trade Alert | 🤝 | 80% |
+| `blha-trade-alert.mp3` | 1.5 s | 37 KB | BLHA Trade Alert | 🤝🏻 | 80% |
 | `blha-final-buzzer.mp3` | 2.5 s | 60 KB | BLHA Final Buzzer | 🏁 | 80% |
 
 The sounds are already loudness-matched, so one starting volume works for all of them. Adjust to taste.

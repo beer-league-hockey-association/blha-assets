@@ -52,7 +52,7 @@ def sprite(rows, pal=None) -> Canvas:
 
 
 def rot(dst: Canvas, src: Canvas, ax, ay, sx, sy, deg):
-    """Nearest-neighbour rotate src (clockwise on screen for deg > 0) so that the source point
+    """Nearest-neighbor rotate src (clockwise on screen for deg > 0) so that the source point
     (sx, sy) lands on the destination point (ax, ay)."""
     a = math.radians(deg)
     ca, sa = math.cos(a), math.sin(a)
@@ -731,10 +731,10 @@ def snapped():
         sp = rng.uniform(1.5, 3)
         splinters.append([B[0], B[1], math.cos(a) * sp, math.sin(a) * sp - 1.2, "OCWO"[k % 4]])
 
-    # bottom piece rigid body: points relative to its centre
+    # bottom piece rigid body: points relative to its center
     bc = ((B[0] + P2[0] + BLADE[1][0]) / 3, (B[1] + P2[1] + BLADE[1][1]) / 3)
     bot_local = [(x - bc[0], y - bc[1]) for x, y in (bot_shaft[0], bot_shaft[1], BLADE[1])]
-    poses = [  # (top angle about P0, bottom centre dx, dy, bottom angle)
+    poses = [  # (top angle about P0, bottom center dx, dy, bottom angle)
         (0, 0, 0, 0), (-18, 3, -5, 40), (-30, 6, -7, 100), (-24, 8, -3, 160),
         (-12, 8, 2, 200), (-6, 7, 4, 180), (-4, 7, 4, 180), (-4, 7, 4, 180),
     ]
@@ -971,7 +971,7 @@ def pint():
 def cheers():
     g = pint()
     gr = pint().flip()
-    seq = [  # left glass bottom-centre x, y, angle
+    seq = [  # left glass bottom-center x, y, angle
         (6, 31, -6), (8, 30, 8), (9, 29, 18), (10, 28, 24), (9, 28, 20), (8, 29, 15),
         (7, 29, 10), (6, 30, 5), (5, 30, 0), (5, 31, -4), (5, 31, -6),
     ]
@@ -1461,7 +1461,7 @@ def hourglass():
                 h = n // 2
                 c.rect(16 - w, y, h, 1, "G"); c.rect(16 + w - h, y, h, 1, "G")
             left -= n
-        # sand below: fill rows from the bottom up; the last row fills from the centre (mound)
+        # sand below: fill rows from the bottom up; the last row fills from the center (mound)
         fallen = CAP - round(CAP * p)
         for y in sorted(rows_bot, reverse=True):
             w = rows_bot[y]

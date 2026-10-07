@@ -123,7 +123,7 @@ class HistoryFileTests(unittest.TestCase):
         bad["seasons"]["2027"]["mvp"] = "north"
         bad["extra"] = 1
         text = "\n".join(validate(bad))
-        for needle in ("hex colours", f"team id {A} is also listed", "does not exist", "unknown field 'nickname'",
+        for needle in ("hex colors", f"team id {A} is also listed", "does not exist", "unknown field 'nickname'",
                        "must be different franchises", "'nobody' is not a franchise", "unknown field 'mvp'",
                        "unknown top-level key 'extra'"):
             self.assertIn(needle, text)

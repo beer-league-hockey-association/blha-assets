@@ -33,7 +33,7 @@ def emoji(name):
 # ----------------------------------------------------------------------------------------------
 # small helpers
 # ----------------------------------------------------------------------------------------------
-# the only two colours outside the PAL letters
+# the only two colors outside the PAL letters
 GREEN_DK = (36, 112, 52)      # dumpster shading
 SMOKE = (88, 92, 99)          # dumpster smoke (between M and N)
 
@@ -144,7 +144,7 @@ def sparkle(c, x, y, col="W", size=1):
 # shared sprites: gold hands
 # ----------------------------------------------------------------------------------------------
 def make_open_hand(fw=3, tops=(2, 0, 1, 4), palm_y=10, palm_h=8, wrist_h=4, thumb=True):
-    """Open hand, palm towards viewer, fingers up. Returns (sprite, wrist_centre_x, wrist_bottom_y)."""
+    """Open hand, palm toward viewer, fingers up. Returns (sprite, wrist_centre_x, wrist_bottom_y)."""
     T = 4 if thumb else 0
     W = T + 4 * fw + 3 + 1
     H = palm_y + palm_h + wrist_h
@@ -208,7 +208,7 @@ def make_fist(w=15, h=12, wrist=4):
 
 
 def thin_keyline(c: Canvas):
-    """Drop keyline pixels that no longer touch colour (after a rotation doubled them), then re-outline."""
+    """Drop keyline pixels that no longer touch color (after a rotation doubled them), then re-outline."""
     a = np.array(c.img)
     k = np.array(pix.col("K"))
     isk = np.all(a == k, axis=2)
@@ -301,7 +301,7 @@ def sideeye():
 # 2. facepalm
 # ----------------------------------------------------------------------------------------------
 def _palm_over(angle, light=True):
-    """Open hand rotated so the fingers point up-left; returns (canvas 48x48, palm centre)."""
+    """Open hand rotated so the fingers point up-left; returns (canvas 48x48, palm center)."""
     h, wx, wy = make_open_hand(fw=2, tops=(2, 0, 1, 4), palm_y=9, palm_h=7, wrist_h=14)
     big = Canvas(48, 48)
     put(big, h, 16, 12)
@@ -1639,7 +1639,7 @@ def micdrop():
     fist = make_fist(w=11, h=9, wrist=0)
     hand, wx, wy = make_open_hand(fw=2, tops=(2, 0, 1, 4), palm_y=8, palm_h=6, wrist_h=4)
     oh = Canvas(32, 32); put(oh, hand, 8, 6)
-    oh = rot_keyed(oh, 50, 16, 17)           # fingers flung up-left, wrist towards the arm
+    oh = rot_keyed(oh, 50, 16, 17)           # fingers flung up-left, wrist toward the arm
     FLOOR = 29
     MX = 9
     # (hand, mic top y, mic angle, fx, ms)
@@ -1715,7 +1715,7 @@ def whiteflag():
             c.px(PX + off + 1, y, "o")
         c.rect(PX + sway - 1, 0, 3, 2, "S")
         c.px(PX + sway - 1, 0, "W")
-        # cloth rippling: each column displaced by a travelling wave that grows away from the pole
+        # cloth rippling: each column displaced by a traveling wave that grows away from the pole
         top0, h0 = 3, 16
         x0 = PX + 2 + sway
         L = 22

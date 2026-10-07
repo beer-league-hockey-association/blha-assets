@@ -25,20 +25,20 @@ DKORG = (206, 92, 12)      # deep orange shade (pylon)
 
 
 # ----------------------------------------------------------------------------------------------
-# helpers on top of pix.Canvas (pixel centres sit at x + .5, y + .5)
+# helpers on top of pix.Canvas (pixel centers sit at x + .5, y + .5)
 # ----------------------------------------------------------------------------------------------
-def fill_where(c, test, colour):
+def fill_where(c, test, color):
     for y in range(N):
         for x in range(N):
             if test(x + .5, y + .5):
-                c.px(x, y, colour)
+                c.px(x, y, color)
 
 
-def disc(c, cx, cy, rx, ry, colour):
-    fill_where(c, lambda X, Y: ((X - cx) / rx) ** 2 + ((Y - cy) / ry) ** 2 <= 1, colour)
+def disc(c, cx, cy, rx, ry, color):
+    fill_where(c, lambda X, Y: ((X - cx) / rx) ** 2 + ((Y - cy) / ry) ** 2 <= 1, color)
 
 
-def rdisc(c, cx, cy, rx, ry, deg, colour):
+def rdisc(c, cx, cy, rx, ry, deg, color):
     a = math.radians(deg)
     ca, sa = math.cos(a), math.sin(a)
 
@@ -47,7 +47,7 @@ def rdisc(c, cx, cy, rx, ry, deg, colour):
         u = dx * ca + dy * sa
         v = -dx * sa + dy * ca
         return (u / rx) ** 2 + (v / ry) ** 2 <= 1
-    fill_where(c, t, colour)
+    fill_where(c, t, color)
 
 
 def seg_dist(X, Y, x0, y0, x1, y1):
@@ -58,17 +58,17 @@ def seg_dist(X, Y, x0, y0, x1, y1):
     return math.hypot(X - px_, Y - py_)
 
 
-def capsule(c, x0, y0, x1, y1, r, colour):
-    fill_where(c, lambda X, Y: seg_dist(X, Y, x0, y0, x1, y1) <= r, colour)
+def capsule(c, x0, y0, x1, y1, r, color):
+    fill_where(c, lambda X, Y: seg_dist(X, Y, x0, y0, x1, y1) <= r, color)
 
 
-def path(c, pts, r, colour):
+def path(c, pts, r, color):
     for (a, b) in zip(pts, pts[1:]):
-        capsule(c, a[0], a[1], b[0], b[1], r, colour)
+        capsule(c, a[0], a[1], b[0], b[1], r, color)
 
 
-def same(c, x, y, colour):
-    return c.get(x, y)[:3] == col(colour)[:3] and c.get(x, y)[3] > 0
+def same(c, x, y, color):
+    return c.get(x, y)[:3] == col(color)[:3] and c.get(x, y)[3] > 0
 
 
 def filled(c, x, y):
@@ -82,9 +82,9 @@ def recolor(c, src, dst, test=lambda x, y: True):
                 c.px(x, y, dst)
 
 
-def edge(c, base, colour, dirs, depth=1, against=None):
+def edge(c, base, color, dirs, depth=1, against=None):
     """Recolour pixels of `base` that sit within `depth` px of an empty pixel (or a pixel that is not
-    in `against`, a set of colours) in any of the directions `dirs`."""
+    in `against`, a set of colors) in any of the directions `dirs`."""
     hits = []
     for y in range(N):
         for x in range(N):
@@ -103,14 +103,14 @@ def edge(c, base, colour, dirs, depth=1, against=None):
                     continue
                 break
     for x, y in hits:
-        c.px(x, y, colour)
+        c.px(x, y, color)
 
 
 UP, DOWN, LEFT, RIGHT = (0, -1), (0, 1), (-1, 0), (1, 0)
 
 
 def keyed_glyph(c, rows, x, y, fill, shade=None, key="K", diag=True):
-    """Stamp a '#' glyph with its own 1-px key line. 's' cells use the shade colour."""
+    """Stamp a '#' glyph with its own 1-px key line. 's' cells use the shade color."""
     cells = [(i, j, ch) for j, r in enumerate(rows) for i, ch in enumerate(r) if ch not in ". "]
     nb = [(1, 0), (-1, 0), (0, 1), (0, -1)] + ([(1, 1), (1, -1), (-1, 1), (-1, -1)] if diag else [])
     for i, j, _ in cells:
@@ -274,7 +274,7 @@ def lineup():
     # paper
     c.rect(5, 6, 22, 23, "W")
     c.rect(5, 28, 22, 1, "S")
-    # rink outline (rounded), centre red line, net at the top
+    # rink outline (rounded), center red line, net at the top
     c.frame(7, 8, 18, 19, "L")
     for (x, y) in ((7, 8), (24, 8), (7, 26), (24, 26)):
         c.px(x, y, "W")
@@ -507,7 +507,7 @@ def mullet():
     edge(c, "G", "D", [DOWN, RIGHT])
     c.rect(4, 29, 25, 1, "K")
     c.poly([(12, 20), (22, 20), (24, 23), (11, 23)], "K")
-    # head, face and hair laid out row by row: (x0, x1, colour)
+    # head, face and hair laid out row by row: (x0, x1, color)
     rows = {
         1: [(9, 9, "o"), (12, 12, "o"), (15, 15, "o"), (18, 18, "o"), (21, 21, "o")],
         2: [(8, 21, "o")],
