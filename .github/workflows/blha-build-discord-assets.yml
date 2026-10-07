@@ -5,7 +5,10 @@ on:
   push:
     paths:
       - 'tools/build_discord_assets.py'
+      - 'tools/blha_pixel.py'
+      - 'tools/discohook_format.py'
       - 'tools/normalize_discohook_templates.py'
+      - 'brand/fonts/**'
       - '.github/workflows/blha-build-discord-assets.yml'
 
 permissions:
@@ -65,7 +68,7 @@ jobs:
           alpha = im.getchannel('A')
           assert alpha.getextrema()[0] == 0, 'footer background is not transparent'
 
-          footer_url = 'https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen'
+          footer_url = 'https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1'
           files = sorted((root / 'templates').rglob('*.json'))
           assert files, 'no Discohook JSON templates found'
           for path in files:

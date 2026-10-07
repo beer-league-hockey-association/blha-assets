@@ -1,28 +1,28 @@
 # BLHA Soundboard Sounds
 
-These are original sounds synthesized from scratch in Python (no samples, recordings or downloaded audio), and the BLHA owns them.
+These are original 8-bit chiptune sounds synthesized from scratch in Python (no samples, recordings or downloaded audio), and the BLHA owns them. They use the same console-style voices as the league's arcade brand: pulse waves with duty-cycle control, a 4-bit stepped triangle, a 15-bit LFSR noise channel and an 8-bit output crush.
 
-All files are MP3, mono, 48 kHz, 192 kbps, peak-normalized to about -1 dBFS. All of them fit Discord's soundboard limits (MP3/OGG, under 512 KB, 5.2 s max).
+All files are MP3, mono, 44.1 kHz, 192 kbps, loudness-matched to about -14 LUFS integrated with a true peak under -1 dBTP, so they all sound about the same volume. All of them fit Discord's soundboard limits (MP3/OGG, under 512 KB, 5.2 s max).
 
 | File | Length | Size | Suggested name | Emoji | Starting volume |
 |---|---|---|---|---|---|
-| `blha-goal-horn.mp3` | 4.00 s | 95 KB | BLHA Goal Horn | 🚨 | 80% |
-| `blha-gavel.mp3` | 1.50 s | 37 KB | BLHA Gavel | ⚖️ | 100% |
-| `blha-draft-horn.mp3` | 2.50 s | 60 KB | BLHA Draft Horn | 📯 | 75% |
-| `blha-on-the-clock.mp3` | 4.25 s | 101 KB | BLHA On The Clock | ⏰ | 100% |
-| `blha-trade-alert.mp3` | 1.50 s | 37 KB | BLHA Trade Alert | 🤝 | 75% |
-| `blha-final-buzzer.mp3` | 2.50 s | 60 KB | BLHA Final Buzzer | 🏁 | 75% |
+| `blha-goal-horn.mp3` | 4.0 s | 96 KB | BLHA Goal Horn | 🚨 | 80% |
+| `blha-gavel.mp3` | 1.2 s | 30 KB | BLHA Gavel | ⚖️ | 80% |
+| `blha-draft-horn.mp3` | 3.0 s | 72 KB | BLHA Draft Horn | 📯 | 80% |
+| `blha-on-the-clock.mp3` | 3.0 s | 72 KB | BLHA On The Clock | ⏰ | 80% |
+| `blha-trade-alert.mp3` | 1.5 s | 37 KB | BLHA Trade Alert | 🤝 | 80% |
+| `blha-final-buzzer.mp3` | 2.5 s | 60 KB | BLHA Final Buzzer | 🏁 | 80% |
 
-The starting volumes roughly even out how loud the sounds seem (from measured loudness). Adjust them to taste.
+The sounds are already loudness-matched, so one starting volume works for all of them. Adjust to taste.
 
 ## What each one is
 
-- **Goal horn:** a deep arena horn chord (110 to 220 Hz), with a crowd roar swelling underneath.
-- **Gavel:** three sharp wooden knocks, for commissioner rulings.
-- **Draft horn:** a bright two-note brass fanfare (rising fifth), for when the draft opens or a pick is in.
-- **On the clock:** a tick-tock every half second that ends in a short buzzer.
-- **Trade alert:** an upbeat three-note "deal done" chime.
-- **Final buzzer:** a harsh end-of-period arena buzzer.
+- **Goal horn:** a big arcade "GOAL!" fanfare: a sustained low square-wave horn chord with rising arpeggios on top and a noise-channel crowd swelling underneath.
+- **Gavel:** three sharp knocks, each a metallic noise click over a low square thump, for commissioner rulings.
+- **Draft horn:** a stately rising fanfare in pulse and triangle (D, G, A, then a held D chord with vibrato), for when the draft opens or a pick is in.
+- **On the clock:** a noise-channel tick-tock every half second that ends in a rising two-tone pulse alarm.
+- **Trade alert:** a quick "item get" chime: a rising pulse arpeggio into a held note, then a coin ding.
+- **Final buzzer:** a harsh, long, detuned square-wave buzzer that cuts off cleanly.
 
 ## Adding them to Discord
 
@@ -43,11 +43,12 @@ Members with the **Use Soundboard** permission can then play them from the sound
 
 ## Regenerating
 
-`generate_sounds.py` rebuilds every file the same way each time. It needs `numpy`, `scipy`, and `ffmpeg` with MP3 (libmp3lame) support.
+`generate_sounds.py` rebuilds every file the same way each time (fixed seeds and LFSR start states). It needs `numpy` and `ffmpeg` with MP3 (libmp3lame) support; loudness is set with ffmpeg's two-pass `loudnorm`.
 
 ```bash
-python3 brand/sounds/generate_sounds.py            # writes next to the script
-python3 brand/sounds/generate_sounds.py some/dir   # or into another folder
+python3 brand/sounds/generate_sounds.py                          # writes next to the script
+python3 brand/sounds/generate_sounds.py some/dir                 # or into another folder
+python3 brand/sounds/generate_sounds.py --preview preview.mp3    # also writes all six back to back, for auditioning
 ```
 
-It prints a JSON check for each file (duration, size, decoded peak, clipped samples, loudness).
+It prints a JSON check for each file (duration, size, sample rate, integrated loudness, true peak, clipped samples, and whether it fits the Discord limits).

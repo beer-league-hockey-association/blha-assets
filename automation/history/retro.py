@@ -35,7 +35,7 @@ from history.context import LeagueHistory, ordinal  # noqa: E402
 
 FOOTER_DIVIDER = (
     "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
-    "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+    "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
 )
 SKATER = {"goals": 5.0, "assists": 2.95, "shots": 0.55}
 GOALIE = {"starts": 6.5, "saves": 0.49, "goals_against": -5.0, "goals": 5.0, "assists": 2.95}

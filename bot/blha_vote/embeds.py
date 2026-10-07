@@ -14,9 +14,9 @@ from .rules import ABSTAIN, NO, YES, Kind, Outcome
 
 GOLD = 0xFFB81C
 RAW = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
-DIVIDER = RAW + "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
-STAMP_PASSED = RAW + "brand/kit/06_seals_stamps/blha-stamp-vote-passed.png"
-STAMP_FAILED = RAW + "brand/kit/06_seals_stamps/blha-stamp-vote-failed.png"
+DIVIDER = RAW + "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
+STAMP_PASSED = RAW + "brand/kit/06_seals_stamps/blha-stamp-vote-passed.png?v=8bit-1"
+STAMP_FAILED = RAW + "brand/kit/06_seals_stamps/blha-stamp-vote-failed.png?v=8bit-1"
 CHOICE_LABEL = {YES: "Yes", NO: "No", ABSTAIN: "Abstain"}
 
 

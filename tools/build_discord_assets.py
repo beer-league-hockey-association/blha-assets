@@ -1,217 +1,131 @@
 #!/usr/bin/env python3
-"""Build frozen BLHA Phase 2C.6 Discohook assets.
+"""Build the BLHA Discohook assets in the 8-bit arcade style.
 
-Raw GitHub paths intentionally stay stable so existing Discohook JSON files do
-not need URL changes when the artwork is regenerated.
+Writes discord/webhooks/** (channel headers, footer divider, webhook avatar,
+banner wordmark, hosting preview, manifest, README), discord/server/** and
+BLHA_URL_MAP.txt. All artwork is pixel art drawn by tools/blha_pixel.py.
+
+Raw GitHub paths never change, so existing Discohook JSON keeps its URLs. The
+?v= version in tools/discohook_format.py is what makes Discord fetch new art:
+bump it whenever these images change, then run
+tools/normalize_discohook_templates.py.
 """
 
 from __future__ import annotations
 
 import json
-import random
+import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import blha_pixel as px  # noqa: E402
+from discohook_format import FOOTER_URL, HEADER_VERSION  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 WEBHOOKS = ROOT / "discord" / "webhooks"
+SERVER = ROOT / "discord" / "server"
 
-BG = (43, 45, 49)          # #2B2D31
-GOLD = (255, 184, 28)      # #FFB81C
-CREAM = (244, 239, 228)    # #F4EFE4
-MUTED = (184, 185, 190)
-BLACK = (12, 13, 15)
-WHITE = (255, 255, 255)
-
-FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf"
-FONT_REG = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
-FONT_MONO = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf"
-
-
-def fit_font(text: str, path: str, max_size: int, max_width: int, min_size: int = 20):
-    for size in range(max_size, min_size - 1, -1):
-        font = ImageFont.truetype(path, size)
-        box = font.getbbox(text)
-        if box[2] - box[0] <= max_width:
-            return font
-    return ImageFont.truetype(path, min_size)
-
-
-def add_texture(image: Image.Image, seed: int, density: float = 0.0035):
-    rnd = random.Random(seed)
-    overlay = Image.new("RGBA", image.size, (0, 0, 0, 0))
-    draw = ImageDraw.Draw(overlay)
-    width, height = image.size
-    count = int(width * height * density / 16)
-    for _ in range(count):
-        x = rnd.randrange(width)
-        y = rnd.randrange(height)
-        alpha = rnd.randrange(3, 10)
-        shade = 255 if rnd.random() > 0.5 else 0
-        draw.ellipse((x - 1, y - 1, x + 1, y + 1), fill=(shade, shade, shade, alpha))
-    return Image.alpha_composite(image.convert("RGBA"), overlay)
+# (file under discord/webhooks, title, eyebrow, kit slug: brand/kit names it blha-<slug>-header-1600x533.png)
+HEADERS = [
+    ("welcome/blha-welcome-banner.png", "WELCOME TO THE BLHA", "WELCOME TO THE ROOM", "welcome"),
+    ("league-office/blha-constitution-header.png", "LEAGUE CONSTITUTION", "OFFICIAL BLHA RULEBOOK", "constitution"),
+    ("league-office/blha-announcements-header.png", "LEAGUE ANNOUNCEMENTS", "OFFICIAL BLHA NOTICE", "announcements"),
+    ("league-office/blha-calendar-header.png", "LEAGUE CALENDAR", "OFFICIAL BLHA CALENDAR", "calendar"),
+    ("league-office/blha-ledger-header.png", "LEAGUE LEDGER", "OFFICIAL BLHA LEDGER", "ledger"),
+    ("league-office/blha-voting-header.png", "LEAGUE VOTING", "OFFICIAL BLHA VOTE", "voting"),
+    ("draft-center/blha-draft-center-header.png", "DRAFT CENTER", "OFFICIAL BLHA DRAFT", "draft-center"),
+    ("the-wire/blha-the-wire-header.png", "THE WIRE", "BLHA NEWS DESK", "the-wire"),
+    ("general-managers/blha-general-managers-header.png", "GENERAL MANAGERS", "THE CLUBHOUSE", "general-managers"),
+    ("trade-center/blha-trade-center-header.png", "TRADE CENTER", "OFFICIAL BLHA TRADES", "trade-center"),
+    ("scouting/blha-scouting-header.png", "SCOUTING DEPARTMENT", "PROSPECTS & PICKS", "scouting"),
+    ("waiver-wire/blha-waiver-wire-header.png", "WAIVER WIRE", "FAAB & CLAIMS", "waiver-wire"),
+    ("league-competition/blha-competition-header.png", "LEAGUE COMPETITION", "STANDINGS & PLAYOFFS", "competition"),
+    ("commissioners-office/blha-commissioners-office-header.png", "COMMISSIONER'S OFFICE", "OFFICIAL BLHA RULINGS", "commissioners-office"),
+    ("franchise-hq/blha-franchise-hq-header.png", "FRANCHISE HQ", "YOUR CLUB, YOUR CALLS", "franchise-hq"),
+    ("league-office/blha-champions-header.png", "BLHA CHAMPIONS", "PERMANENT LEAGUE HISTORY", "champions"),
+    ("league-office/blha-records-header.png", "LEAGUE RECORDS", "THE PERMANENT RECORD", "records"),
+    ("shared/blha-generic-header-1600x420.png", "BEER LEAGUE HOCKEY ASSOCIATION", "OFFICIAL BLHA", "generic"),
+]
 
 
-def draw_wordmark(draw: ImageDraw.ImageDraw, center_x: int, top_y: int, max_width: int = 275):
-    text = "BLHA"
-    font = fit_font(text, FONT_BOLD, 70, max_width, 44)
-    box = draw.textbbox((0, 0), text, font=font)
-    x = center_x - (box[2] - box[0]) // 2
-
-    draw.text((x, top_y), text, font=font, fill=BLACK, stroke_width=7, stroke_fill=GOLD)
-    draw.text((x, top_y), text, font=font, fill=WHITE, stroke_width=3, stroke_fill=BLACK)
-
-    sub = "BEER LEAGUE HOCKEY ASSOCIATION"
-    sub_font = fit_font(sub, FONT_BOLD, 12, max_width, 9)
-    sub_box = draw.textbbox((0, 0), sub, font=sub_font)
-    draw.text((center_x - (sub_box[2] - sub_box[0]) // 2, top_y + 76), sub, font=sub_font, fill=CREAM)
-
-    est = "—  EST. 2026  —"
-    est_font = ImageFont.truetype(FONT_MONO, 10)
-    est_box = draw.textbbox((0, 0), est, font=est_font)
-    draw.text((center_x - (est_box[2] - est_box[0]) // 2, top_y + 96), est, font=est_font, fill=GOLD)
+def make_header(title: str, kicker: str, seed: int = 7) -> Image.Image:
+    """1600 x 533 channel header (3:1): gold eyebrow, big title, the pixel B on the right."""
+    return px.header(title, kicker, seed)
 
 
-B_MARK = ROOT / "brand" / "primary" / "blha-b-mark.png"
-
-
-def b_mark(height: int) -> Image.Image:
-    """The B cut from the official BLHA wordmark (white fill, black/gold keylines)."""
-    mark = Image.open(B_MARK).convert("RGBA")
-    return mark.resize((round(mark.width * height / mark.height), height), Image.LANCZOS)
-
-
-def b_icon(size: int) -> Image.Image:
-    """Square icon: the B centered on near-black."""
-    icon = Image.new("RGBA", (size, size), BLACK + (255,))
-    mark = b_mark(round(size * 0.66))
-    icon.alpha_composite(mark, ((size - mark.width) // 2, (size - mark.height) // 2))
-    return icon
-
-
-def make_header(title: str, kicker: str) -> Image.Image:
-    """3:1 header, 1600x533, large type and the B logo on the right."""
-    width, height = 1600, 533
-    image = Image.new("RGBA", (width, height), BG + (255,))
-    image = add_texture(image, seed=2026 + len(title))
-    draw = ImageDraw.Draw(image)
-
-    draw.rectangle((72, 80, 90, 453), fill=GOLD)
-    draw.text((130, 90), kicker, font=fit_font(kicker, FONT_MONO, 40, 900, 24), fill=GOLD)
-    draw.text((130, 160), title, font=fit_font(title, FONT_BOLD, 128, 930, 56), fill=CREAM)
-    draw.text(
-        (130, 360),
-        "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026",
-        font=fit_font("BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026", FONT_REG, 40, 930, 24),
-        fill=MUTED,
-    )
-
-    mark = b_mark(380)
-    image.alpha_composite(mark, (width - 110 - mark.width, (height - 12 - mark.height) // 2))
-
-    draw.rectangle((0, height - 12, width, height), fill=GOLD)
-    return image.convert("RGB")
+def all_headers() -> list[tuple[str, str, Image.Image]]:
+    """(webhooks path, kit slug, image) for every header, in kit order."""
+    return [(rel, slug, make_header(title, kicker, seed=i + 3)) for i, (rel, title, kicker, slug) in enumerate(HEADERS)]
 
 
 def make_footer() -> Image.Image:
-    """Transparent rink divider for seamless Discord embed rendering."""
-    width, height = 1600, 180
-    image = Image.new("RGBA", (width, height), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(image)
-
-    cx, cy = width // 2, height // 2
-    ring_r = 42
-    break_outer = 70
-    left, right = 62, width - 62
-
-    for y, color, thick in ((66, CREAM, 10), (90, GOLD, 12), (114, CREAM, 10)):
-        rgba = color + (255,)
-        draw.rectangle((left, y - thick // 2, cx - ring_r - break_outer, y + thick // 2), fill=rgba)
-        draw.rectangle((cx + ring_r + break_outer, y - thick // 2, right, y + thick // 2), fill=rgba)
-
-    shoulder = 14
-    for side in (-1, 1):
-        x1 = cx + side * (ring_r + break_outer)
-        x2 = cx + side * (ring_r + 23)
-        x3 = cx + side * (ring_r + 9)
-        draw.line([(x1, 66), (x2, 66), (x3, cy - shoulder)], fill=CREAM + (255,), width=10, joint="curve")
-        draw.line([(x1, 114), (x2, 114), (x3, cy + shoulder)], fill=CREAM + (255,), width=10, joint="curve")
-
-    draw.rectangle((cx - ring_r - break_outer, cy - 6, cx - ring_r + 3, cy + 6), fill=GOLD + (255,))
-    draw.rectangle((cx + ring_r - 3, cy - 6, cx + ring_r + break_outer, cy + 6), fill=GOLD + (255,))
-    draw.ellipse((cx - ring_r, cy - ring_r, cx + ring_r, cy + ring_r), outline=GOLD + (255,), width=9)
-    return image
+    """Transparent 1600 x 180 rink divider used under every Discohook message."""
+    return px.footer_divider()
 
 
-def save_png(path: Path, image: Image.Image):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    image.save(path, "PNG", optimize=True)
+def server_banner() -> Image.Image:
+    return px.banner((1920, 1080), 36, 6, dy=48, bars=2)
 
 
-def build_preview(entries: list[tuple[Path, str]], footer_path: Path):
-    sheet = Image.new("RGBA", (1320, 1260), (26, 27, 30, 255))
-    draw = ImageDraw.Draw(sheet)
-    draw.text(
-        (30, 24),
-        "BLHA PHASE 2C.6 — FROZEN DISCOHOOK STANDARD",
-        font=ImageFont.truetype(FONT_BOLD, 34),
-        fill=CREAM,
-    )
-    label_font = ImageFont.truetype(FONT_REG, 18)
-
-    for i, (path, title) in enumerate(entries):
-        row, col = divmod(i, 2)
-        x = 30 + col * 650
-        y = 82 + row * 250
-        thumb = Image.open(path).convert("RGBA").resize((640, 213), Image.Resampling.LANCZOS)
-        sheet.alpha_composite(thumb, (x, y))
-        draw.text((x, y + 218), title, font=label_font, fill=MUTED)
-
-    footer_y = 1080
-    draw.text((30, footer_y), "SHARED TRANSPARENT FOOTER DIVIDER", font=label_font, fill=MUTED)
-    footer = Image.open(footer_path).convert("RGBA").resize((1260, 142), Image.Resampling.LANCZOS)
-    sheet.alpha_composite(footer, (30, footer_y + 28))
-    save_png(WEBHOOKS / "BLHA_Phase_2C6_Hosting_Preview.png", sheet.convert("RGB"))
+def banner_wordmark() -> Image.Image:
+    """640 x 170 transparent lockup for legacy embeds."""
+    img = Image.new("RGBA", (640, 170), (0, 0, 0, 0))
+    px.place(img, px.lockup(9, 2, "white", sub_bold=False), 320, 85)
+    return img
 
 
-def main():
-    specs = [
-        (WEBHOOKS / "welcome" / "blha-welcome-banner.png", "WELCOME TO THE BLHA", "WELCOME TO THE ROOM"),
-        (WEBHOOKS / "league-office" / "blha-constitution-header.png", "LEAGUE CONSTITUTION", "OFFICIAL BLHA RULEBOOK"),
-        (WEBHOOKS / "league-office" / "blha-announcements-header.png", "LEAGUE ANNOUNCEMENTS", "OFFICIAL BLHA NOTICE"),
-        (WEBHOOKS / "league-office" / "blha-calendar-header.png", "LEAGUE CALENDAR", "OFFICIAL BLHA CALENDAR"),
-        (WEBHOOKS / "league-office" / "blha-ledger-header.png", "LEAGUE LEDGER", "OFFICIAL BLHA LEDGER"),
-        (WEBHOOKS / "league-office" / "blha-voting-header.png", "LEAGUE VOTING", "OFFICIAL BLHA VOTE"),
-        (WEBHOOKS / "draft-center" / "blha-draft-center-header.png", "DRAFT CENTER", "OFFICIAL BLHA DRAFT"),
-        (WEBHOOKS / "the-wire" / "blha-the-wire-header.png", "THE WIRE", "BLHA NEWS DESK"),
-        (WEBHOOKS / "league-competition" / "blha-competition-header.png", "LEAGUE COMPETITION", "STANDINGS & PLAYOFFS"),
-        (WEBHOOKS / "general-managers" / "blha-general-managers-header.png", "GENERAL MANAGERS", "THE CLUBHOUSE"),
-        (WEBHOOKS / "trade-center" / "blha-trade-center-header.png", "TRADE CENTER", "OFFICIAL BLHA TRADES"),
-        (WEBHOOKS / "scouting" / "blha-scouting-header.png", "SCOUTING DEPARTMENT", "PROSPECTS & PICKS"),
-        (WEBHOOKS / "waiver-wire" / "blha-waiver-wire-header.png", "WAIVER WIRE", "FAAB & CLAIMS"),
-        (WEBHOOKS / "commissioners-office" / "blha-commissioners-office-header.png", "COMMISSIONER'S OFFICE", "OFFICIAL BLHA RULINGS"),
-        (WEBHOOKS / "franchise-hq" / "blha-franchise-hq-header.png", "FRANCHISE HQ", "YOUR CLUB, YOUR CALLS"),
-        (WEBHOOKS / "league-office" / "blha-champions-header.png", "BLHA CHAMPIONS", "PERMANENT LEAGUE HISTORY"),
-        (WEBHOOKS / "league-office" / "blha-records-header.png", "LEAGUE RECORDS", "THE PERMANENT RECORD"),
-        (WEBHOOKS / "shared" / "blha-generic-header-1600x420.png", "BEER LEAGUE HOCKEY ASSOCIATION", "OFFICIAL BLHA"),
-    ]
+def build_preview(headers: list[tuple[str, Image.Image]], footer: Image.Image) -> Image.Image:
+    """1320 x 1260 sheet: every header at quarter size, then the shared footer divider."""
+    sheet = Image.new("RGBA", (1320, 1260), px.BLACK + (255,))
+    px.draw_text(sheet, "BLHA DISCOHOOK GRAPHICS", "jersey", 3, 40, 26, px.PAPER)
+    y, col = 84, 0
+    for name, img in headers:
+        x = 40 + col * 420
+        sheet.alpha_composite(img.resize((400, 133), Image.NEAREST), (x, y))
+        px.draw_text(sheet, name, "silk", 2, x, y + 141, px.CREAM)
+        col += 1
+        if col == 3:
+            col, y = 0, y + 169
+    px.draw_text(sheet, "SHARED TRANSPARENT FOOTER DIVIDER", "silk-bold", 2, 40, y + 4, px.GOLD)
+    strip = Image.new("RGBA", (800, 90), px.CHARCOAL + (255,))
+    strip.alpha_composite(footer.resize((800, 90), Image.NEAREST))
+    sheet.alpha_composite(strip, (260, y + 26))
+    return sheet
 
-    preview_entries = []
-    for path, title, kicker in specs:
-        save_png(path, make_header(title, kicker))
-        if "generic" not in path.name:
-            preview_entries.append((path, title))
 
-    footer_path = WEBHOOKS / "shared" / "blha-footer-divider-1600x90.png"
-    save_png(footer_path, make_footer())
+README = f"""# BLHA Discohook graphics (8-bit arcade style)
 
-    save_png(WEBHOOKS / "avatar" / "blha-webhook-avatar-512.png", b_icon(512).convert("RGB"))
-    save_png(ROOT / "discord" / "server" / "blha-server-icon-1024.png", b_icon(1024).convert("RGB"))
-    wordmark = Image.new("RGBA", (640, 170), (0, 0, 0, 0))
-    draw_wordmark(ImageDraw.Draw(wordmark), 320, 12, max_width=430)
-    save_png(WEBHOOKS / "shared" / "blha-banner-wordmark.png", wordmark)
+Canonical hosted graphics for BLHA Discohook messages, drawn as pixel art by
+tools/build_discord_assets.py (shared drawing code in tools/blha_pixel.py).
 
-    build_preview(preview_entries, footer_path)
+- Headers: 1600x533 (3:1) on a 200 x 67 pixel grid at 8 px per pixel, so each pixel
+  is 2 px wide when Discord shows the image at 400 px.
+- Header embed side color: #2B2D31.
+- Footer: transparent 1600x180 PNG (legacy filename blha-footer-divider-1600x90.png kept).
+- Palette: black #0E0F12, charcoal #2B2D31, gold #FFB81C, cream #F4EFE4, ice #EEF5FA,
+  paper #FCFCFC, blue #2457C5, red #C8241F.
+- Type: Jersey 10 for titles and Silkscreen for eyebrows and labels (brand/fonts).
+- The right side of every header carries the pixel B traced from the official mark.
+- Image URLs carry a cache-busting version ({HEADER_VERSION} on headers, ?{FOOTER_URL.split('?')[1]} on the footer),
+  set in tools/discohook_format.py. Bump it whenever the artwork changes, then run
+  tools/normalize_discohook_templates.py.
+"""
+
+
+def main() -> None:
+    headers = all_headers()
+    for rel, _slug, img in headers:
+        px.save(WEBHOOKS / rel, img, "RGB")
+    footer = make_footer()
+    px.save(WEBHOOKS / "shared" / "blha-footer-divider-1600x90.png", footer, "RGBA")
+    px.save(WEBHOOKS / "shared" / "blha-banner-wordmark.png", banner_wordmark(), "RGBA")
+    px.save(WEBHOOKS / "avatar" / "blha-webhook-avatar-512.png", px.avatar(512), "RGB")
+    px.save(SERVER / "blha-server-icon-1024.png", px.avatar(1024), "RGB")
+    px.save(SERVER / "blha-server-banner-1920x1080.png", server_banner(), "RGB")
+    px.save(WEBHOOKS / "BLHA_Phase_2C6_Hosting_Preview.png",
+            build_preview([(Path(rel).name, img) for rel, _s, img in headers], footer), "RGB")
 
     base = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
     (ROOT / "BLHA_URL_MAP.txt").write_text(
@@ -221,26 +135,26 @@ def main():
 
     manifest = {
         "phase": "2C.6-frozen",
+        "style": "8-bit arcade",
+        "asset_version": HEADER_VERSION.removeprefix("?v="),
         "header_dimensions": "1600x533",
+        "header_grid": "200x67 pixels at 8 px",
         "header_embed_color": "#2B2D31",
         "footer_dimensions": "1600x180 (legacy filename retained for stable URLs)",
         "footer_background": "transparent",
-        "palette": {"charcoal": "#2B2D31", "gold": "#FFB81C", "cream": "#F4EFE4"},
+        "palette": {"black": "#0E0F12", "charcoal": "#2B2D31", "gold": "#FFB81C", "cream": "#F4EFE4",
+                    "ice": "#EEF5FA", "paper": "#FCFCFC", "blue": "#2457C5", "red": "#C8241F"},
+        "fonts": {"display": "Jersey 10", "labels": "Silkscreen"},
         "design": {
-            "status": "frozen",
-            "right_circle": "fully inset; never clipped",
-            "wordmark": "B from the official wordmark on headers; wordmark file kept for legacy use",
-            "footer": "transparent cream/gold/cream rink divider with centered gold ring",
+            "status": "frozen layout, 8-bit artwork",
+            "right_mark": "pixel B traced from the official mark, fully inset; never clipped",
+            "wordmark": "BLHA in Jersey 10 with gold then black keylines; wordmark file kept for legacy use",
+            "footer": "transparent cream/gold/cream rink divider with a centred gold pixel ring",
         },
     }
     (WEBHOOKS / "BLHA_Phase_2C6_Hosting_Manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
-
-    (WEBHOOKS / "README.md").write_text(
-        """# BLHA Phase 2C.6 — Frozen Discohook Standard\n\nCanonical hosted graphics for BLHA Discohook messages.\n\n- Headers: 1600x533\n- Header embed side color: #2B2D31\n- Footer: transparent 1600x180 PNG (legacy filename retained)\n- Gold: #FFB81C\n- Cream: #F4EFE4\n- Right side carries the B logo tile with a gold keyline (brand/primary/blha-b-mark.png).\n- Headers are 3:1 with large type; header URLs carry a ?v= cache-busting query.\n- All manual Discohook JSON templates are normalized by tools/normalize_discohook_templates.py.\n\nThis Phase 2C.6 visual format is frozen. Future content may change; the layout standard should not change without an explicit design revision.\n""",
-        encoding="utf-8",
-    )
-
-    print("BLHA Phase 2C.6 frozen assets generated.")
+    (WEBHOOKS / "README.md").write_text(README, encoding="utf-8")
+    print(f"BLHA 8-bit Discohook assets generated ({len(HEADERS)} headers, version {HEADER_VERSION}).")
 
 
 if __name__ == "__main__":

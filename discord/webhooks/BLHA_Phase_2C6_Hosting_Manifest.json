@@ -1,18 +1,30 @@
 {
   "phase": "2C.6-frozen",
+  "style": "8-bit arcade",
+  "asset_version": "8bit-1",
   "header_dimensions": "1600x533",
+  "header_grid": "200x67 pixels at 8 px",
   "header_embed_color": "#2B2D31",
   "footer_dimensions": "1600x180 (legacy filename retained for stable URLs)",
   "footer_background": "transparent",
   "palette": {
+    "black": "#0E0F12",
     "charcoal": "#2B2D31",
     "gold": "#FFB81C",
-    "cream": "#F4EFE4"
+    "cream": "#F4EFE4",
+    "ice": "#EEF5FA",
+    "paper": "#FCFCFC",
+    "blue": "#2457C5",
+    "red": "#C8241F"
+  },
+  "fonts": {
+    "display": "Jersey 10",
+    "labels": "Silkscreen"
   },
   "design": {
-    "status": "frozen",
-    "right_circle": "fully inset; never clipped",
-    "wordmark": "B from the official wordmark on headers; wordmark file kept for legacy use",
-    "footer": "transparent cream/gold/cream rink divider with centered gold ring"
+    "status": "frozen layout, 8-bit artwork",
+    "right_mark": "pixel B traced from the official mark, fully inset; never clipped",
+    "wordmark": "BLHA in Jersey 10 with gold then black keylines; wordmark file kept for legacy use",
+    "footer": "transparent cream/gold/cream rink divider with a centred gold pixel ring"
   }
 }
