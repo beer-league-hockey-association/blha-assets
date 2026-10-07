@@ -72,7 +72,13 @@ jobs:
           footer_url = 'https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1'
           files = sorted((root / 'templates').rglob('*.json'))
           assert files, 'no Discohook JSON templates found'
+          # Messages sent back to back (the 📜│constitution channel): only the last
+          # one carries the footer (SEQUENCES in tools/discohook_format.py).
+          constitution = sorted((root / 'templates' / 'constitution').glob('*.json'))
+          continuing = {root / 'templates' / 'league-office' / '01_constitution_channel_intro.json', *constitution[:-1]}
           for path in files:
+              if path in continuing:
+                  continue
               data = json.loads(path.read_text(encoding='utf-8'))
               embeds = data.get('embeds') or []
               assert embeds, f'{path}: no embeds'

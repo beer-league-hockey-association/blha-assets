@@ -89,6 +89,24 @@ jobs:
               rel = src.relative_to(root).as_posix()
               return rel.endswith('_channel_intro.json') or rel == 'welcome/01_welcome.json'
 
+          # Messages sent back to back into one channel (SEQUENCES in
+          # tools/discohook_format.py): only the last message has footer text and
+          # the divider; the ones before it have neither.
+          constitution = sorted(p.relative_to(root).as_posix() for p in (root / 'constitution').glob('*.json'))
+          sequence = ['league-office/01_constitution_channel_intro.json'] + constitution
+          continuing = set(sequence[:-1])
+
+          def check_continuing(src, embeds):
+              label = str(src)
+              head = 1 if is_banner(embeds[0]) else 0
+              for i in range(head, len(embeds)):
+                  assert 'footer' not in embeds[i], (
+                      f'{label}: embed {i + 1} has a footer; another message follows, so only the last message may'
+                  )
+                  assert not image_url(embeds[i]).startswith(divider), (
+                      f'{label}: embed {i + 1} has the footer divider; another message follows, so only the last message may'
+                  )
+
           def check_blha_format(src, embeds, needs_banner):
               label = str(src)
               head = 1 if is_banner(embeds[0]) else 0
@@ -178,7 +196,10 @@ jobs:
                           )
 
               assert combined_text <= 6000, f'{src}: total embed text exceeds 6000 characters'
-              check_blha_format(src, embeds, banner_expected(src))
+              if src.relative_to(root).as_posix() in continuing:
+                  check_continuing(src, embeds)
+              else:
+                  check_blha_format(src, embeds, banner_expected(src))
 
           # Bundles and backups hold several separate one-message templates;
           # every message in them follows the same BLHA format.
@@ -193,7 +214,10 @@ jobs:
                   assert 1 <= len(embeds) <= 10, f'{src} message {n}: embeds must contain 1-10 items'
                   total = sum(embed_text_length(e) for e in embeds)
                   assert total <= 6000, f'{src} message {n}: total embed text exceeds 6000 characters'
-                  check_blha_format(f'{src} message {n}', embeds, is_banner(embeds[0]))
+                  if src.name.endswith('_discohook_backup.json') and n < len(messages):
+                      check_continuing(f'{src} message {n}', embeds)
+                  else:
+                      check_blha_format(f'{src} message {n}', embeds, is_banner(embeds[0]))
                   checked += 1
 
           print(f'Validated {len(files)} raw per-message Discohook JSON files and {checked} bundled messages.')
