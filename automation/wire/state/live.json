@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T05:15:39.598682Z",
+  "updated_at": "2026-10-07T05:30:36.733057Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4562,6 +4562,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T05:15:39.573138Z"
+    },
+    {
+      "key": "85e3205b5ce37bbd43746bc0",
+      "url": "https://www.nhl.com/news/florida-panthers-los-angeles-kings-game-recap-october-6-2026",
+      "fingerprint": "bc9f935813c3185e",
+      "title_norm": "panthers edge kings but lose marchand to injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T05:30:36.639787Z"
     }
   ],
   "known_sources": [
