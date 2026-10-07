@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T02:00:37.971281Z",
+  "updated_at": "2026-10-07T02:15:32.802002Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4162,6 +4162,76 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T02:00:37.952618Z"
+    },
+    {
+      "key": "bb61fa03740be5cbd067d032",
+      "url": "https://www.dailyfaceoff.com/players/news/mikhail-sergachev/2639",
+      "fingerprint": "a2144fbf3cfaedd4",
+      "title_norm": "mikhail sergachev (uta) — sergachev left tuesday's game with an upper-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:15:31.610277Z"
+    },
+    {
+      "key": "49ded44f3c9780f42c426ce8",
+      "url": "https://www.nhl.com/news/ottawa-senators-detroit-red-wings-game-recap-october-6-2026",
+      "fingerprint": "e5706465a42bb255",
+      "title_norm": "larkin scores in season debut, helps wings to 1st win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:15:31.785030Z"
+    },
+    {
+      "key": "3c391bac510af05e85f51a5e",
+      "url": "https://www.nhl.com/news/norris-trophy-tracker-colorado-avalanche-defenseman-cale-makar-early-season-leader",
+      "fingerprint": "b72caf85d0bedff9",
+      "title_norm": "norris tracker: former winner favorite again",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:15:32.399272Z"
+    },
+    {
+      "key": "0d1a0622b027344a63509ff6",
+      "url": "https://www.nhl.com/news/nashville-predators-toronto-maple-leafs-game-recap-october-6-2026",
+      "fingerprint": "66b620a7646a2083",
+      "title_norm": "mckenna scores first nhl goal, maple leafs rally past predators in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T02:15:32.544472Z"
+    },
+    {
+      "key": "c1b62109fb7697816056e9bc",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-matthews-wires-home-ot-winner-to-cap-off-thriller-vs-predators",
+      "fingerprint": "9be94a9d0063cfa2",
+      "title_norm": "gotta see it: matthews wires home ot winner to cap off thriller vs. predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:15:32.588455Z"
+    },
+    {
+      "key": "ddf92c20b46e1f5487a9cbda",
+      "url": "https://www.sportsnet.ca/nhl/article/matthews-mckenna-lift-maple-leafs-to-thrilling-ot-win-over-predators",
+      "fingerprint": "44debe1e82929a6d",
+      "title_norm": "matthews, mckenna lift maple leafs to thrilling ot win over predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:15:32.597641Z"
+    },
+    {
+      "key": "efa1a7922bb8f6d4d3b890ea",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-larkin-named-first-star-in-first-game-after-trade-request",
+      "fingerprint": "27e9b5d85baf2b10",
+      "title_norm": "red wings' larkin named first star in first game after trade request",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T02:15:32.607604Z"
     }
   ]
 }
