@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T16:19:26.503408Z",
+  "updated_at": "2026-10-07T16:46:14.150266Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4742,6 +4742,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T16:19:26.199057Z"
+    },
+    {
+      "key": "63cbb3ba5538b84ba1b21de6",
+      "url": "https://www.dailyfaceoff.com/players/news/sam-montembeault/4479",
+      "fingerprint": "3becca8ec8a94145",
+      "title_norm": "sam montembeault (mtl) — montembeault left wednesday's practice with a lower-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T16:46:13.903889Z"
+    },
+    {
+      "key": "2ef733baed131c0d0ec00b48",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-kiviranta/31187",
+      "fingerprint": "9a7966d3f91082e1",
+      "title_norm": "joel kiviranta (dal) — kiviranta (lower-body) is expected to miss the remainder of dallas' road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T16:46:14.087122Z"
+    },
+    {
+      "key": "dfeaadba54a50b487952fcdb",
+      "url": "https://www.sportsnet.ca/nhl/article/why-red-wings-need-to-sign-simon-edvinsson-to-a-fair-deal",
+      "fingerprint": "c4cb70dd5a29f6ac",
+      "title_norm": "why red wings need to sign simon edvinsson to a fair deal",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T16:46:14.124799Z"
     }
   ],
   "known_sources": [
