@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T03:30:42.629448Z",
+  "updated_at": "2026-10-07T03:45:34.244313Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4452,6 +4452,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-07T03:30:42.531557Z"
+    },
+    {
+      "key": "3f4eba7e7fd2c0576a23c4cb",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-sabres-beat-wild-in-overtime-after-two-goal-comeback",
+      "fingerprint": "a079ffe7abbc77a9",
+      "title_norm": "nhl roundup: sabres beat wild in overtime after two-goal comeback",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T03:45:34.228012Z"
     }
   ],
   "known_sources": [
