@@ -63,6 +63,28 @@ CREATE TABLE IF NOT EXISTS audit (
     action TEXT NOT NULL,
     detail TEXT
 );
+CREATE TABLE IF NOT EXISTS pickem_weeks (
+    season TEXT NOT NULL,
+    period INTEGER NOT NULL,
+    matchups TEXT NOT NULL,
+    locks_at TEXT NOT NULL,
+    posted_at TEXT NOT NULL,
+    channel_id INTEGER,
+    message_id INTEGER,
+    status TEXT NOT NULL DEFAULT 'open',
+    winners TEXT,
+    scored_at TEXT,
+    PRIMARY KEY (season, period)
+);
+CREATE TABLE IF NOT EXISTS pickem_picks (
+    season TEXT NOT NULL,
+    period INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    matchup TEXT NOT NULL,
+    team_id TEXT NOT NULL,
+    picked_at TEXT NOT NULL,
+    PRIMARY KEY (season, period, user_id, matchup)
+);
 """
 
 
@@ -195,3 +217,62 @@ class Store:
 
     def orphaned(self) -> set[str]:
         return {r["franchise"] for r in self.db.execute("SELECT franchise FROM orphaned").fetchall()}
+
+    # -- Pick'em -----------------------------------------------------------
+    def add_pickem_week(self, season: str, period: int, matchups: list[dict[str, Any]], *,
+                        locks_at: datetime, now: datetime) -> None:
+        self.db.execute(
+            "INSERT OR IGNORE INTO pickem_weeks (season, period, matchups, locks_at, posted_at) VALUES (?, ?, ?, ?, ?)",
+            (season, period, json.dumps(matchups), iso(locks_at), iso(now)))
+        self.db.commit()
+
+    def set_pickem_message(self, season: str, period: int, channel_id: int, message_id: int) -> None:
+        self.db.execute("UPDATE pickem_weeks SET channel_id=?, message_id=? WHERE season=? AND period=?",
+                        (channel_id, message_id, season, period))
+        self.db.commit()
+
+    def pickem_week(self, season: str, period: int) -> sqlite3.Row | None:
+        return self.db.execute("SELECT * FROM pickem_weeks WHERE season=? AND period=?", (season, period)).fetchone()
+
+    def pickem_week_by_message(self, message_id: int) -> sqlite3.Row | None:
+        return self.db.execute("SELECT * FROM pickem_weeks WHERE message_id=?", (message_id,)).fetchone()
+
+    def pickem_statuses(self, season: str) -> dict[int, str]:
+        rows = self.db.execute("SELECT period, status FROM pickem_weeks WHERE season=?", (season,)).fetchall()
+        return {int(r["period"]): r["status"] for r in rows}
+
+    def set_pickem_status(self, season: str, period: int, status: str, *, winners: dict[str, Any] | None = None,
+                          now: datetime | None = None) -> None:
+        if status == "scored":
+            self.db.execute("UPDATE pickem_weeks SET status=?, winners=?, scored_at=? WHERE season=? AND period=?",
+                            (status, json.dumps(winners or {}), iso(now) if now else None, season, period))
+        else:
+            self.db.execute("UPDATE pickem_weeks SET status=? WHERE season=? AND period=?", (status, season, period))
+        self.db.commit()
+
+    def pick(self, season: str, period: int, user_id: int, matchup: str, team_id: str, *, now: datetime) -> None:
+        self.db.execute(
+            "INSERT INTO pickem_picks (season, period, user_id, matchup, team_id, picked_at) VALUES (?, ?, ?, ?, ?, ?) "
+            "ON CONFLICT(season, period, user_id, matchup) DO UPDATE SET team_id=excluded.team_id, "
+            "picked_at=excluded.picked_at",
+            (season, period, user_id, matchup, team_id, iso(now)))
+        self.db.commit()
+
+    def user_picks(self, season: str, period: int, user_id: int) -> dict[str, str]:
+        rows = self.db.execute("SELECT matchup, team_id FROM pickem_picks WHERE season=? AND period=? AND user_id=?",
+                               (season, period, user_id)).fetchall()
+        return {r["matchup"]: r["team_id"] for r in rows}
+
+    def week_picks(self, season: str, period: int) -> list[tuple[int, str, str]]:
+        rows = self.db.execute("SELECT user_id, matchup, team_id FROM pickem_picks WHERE season=? AND period=?",
+                               (season, period)).fetchall()
+        return [(int(r["user_id"]), r["matchup"], r["team_id"]) for r in rows]
+
+    def scored_weeks(self, season: str) -> list[tuple[int, dict[str, Any]]]:
+        rows = self.db.execute("SELECT period, winners FROM pickem_weeks WHERE season=? AND status='scored' "
+                               "ORDER BY period", (season,)).fetchall()
+        return [(int(r["period"]), json.loads(r["winners"] or "{}")) for r in rows]
+
+    def latest_pickem_season(self) -> str | None:
+        row = self.db.execute("SELECT season FROM pickem_weeks ORDER BY posted_at DESC LIMIT 1").fetchone()
+        return row["season"] if row else None

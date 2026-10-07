@@ -19,6 +19,36 @@ EDITION = "Charter Edition"
 TAGLINE = "A permanent framework for competition, governance, and long-term franchise management."
 FOOTER = "BLHA CONSTITUTION • CHARTER EDITION"
 
+# Adopted amendments, oldest first. Amendments are identified by the date they
+# were adopted; never give them version numbers. When an amendment passes
+# (Article XX), change the article text below AND add one entry here, then
+# rebuild: tools/build_constitution.py writes constitution/CHANGELOG.md and
+# adds the dated entry to the history block at the end of Article XX.
+#
+# Each entry:
+#   adopted           date the vote closed and the amendment passed, "YYYY-MM-DD"
+#   articles          Roman numerals of whole articles changed, e.g. ["X"] (may be empty)
+#   sections          sections changed, cited as N.N, e.g. ["10.3"] (may be empty,
+#                     but articles and sections cannot both be empty)
+#   old               text before the amendment ("" for a new section)
+#   new               text after the amendment ("" for a removed section)
+#   vote              {"yes": 9, "no": 2, "not_voted": 1}; at least 8 yes (20.3), at most 12 in total
+#   effective_season  first Season it applies to, e.g. 2028 (20.4)
+#   summary           optional one line on what changed
+#
+# Example (commented out):
+#   {
+#       "adopted": "2028-06-20",
+#       "articles": [],
+#       "sections": ["10.1"],
+#       "old": "Each franchise receives **$1,000 FAAB** at the beginning of each Season.",
+#       "new": "Each franchise receives **$1,200 FAAB** at the beginning of each Season.",
+#       "vote": {"yes": 9, "no": 2, "not_voted": 1},
+#       "effective_season": 2028,
+#       "summary": "FAAB budget raised to $1,200.",
+#   },
+AMENDMENTS: list[dict] = []
+
 GLANCE_STATS = [
     ("12", "Franchises"),
     ("$150", "Annual dues"),

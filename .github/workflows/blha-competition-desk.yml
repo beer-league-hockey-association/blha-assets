@@ -1,7 +1,8 @@
 name: BLHA Competition Desk
 run-name: BLHA Competition Desk — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
-# Weekly report: recap, standings, playoff race (from week 16), matchup preview.
+# Weekly report: recap (with all-play), weekly awards, power rankings, standings,
+# playoff race (from week 16), matchup preview and the NHL games grid.
 # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler starts
 # this workflow with mode=live at 08:00 and 20:00 ET during the season.
 
@@ -19,7 +20,7 @@ on:
         required: false
         default: all
         type: choice
-        options: [all, recap, standings, race, preview]
+        options: [all, recap, awards, rankings, standings, race, preview, games, spoon]
       week:
         description: "Week to render (preview/test only; blank = current)"
         required: false
@@ -79,7 +80,6 @@ jobs:
           if [[ "$FORCE" == "true" ]]; then ARGS+=(--force); fi
           python automation/competition/desk.py "${ARGS[@]}"
 
-      # Saved even if one post failed, so posts that did go out are never repeated.
       # Saved even if one post failed, so posts that did go out are never repeated.
       - name: Save state to the automation-state branch
         if: ${{ !cancelled() && env.MODE == 'live' }}

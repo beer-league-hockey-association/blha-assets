@@ -182,6 +182,16 @@ events:
     description: "GitHub retires API version 2022-11-28 on March 10, 2028; 2026-03-10 is the newer one. Ask Claude to update the version header in the scheduler, health check and dormancy guard code, then change X-GitHub-Api-Version in both cron-job.org jobs (BLHA Scheduler Timer and BLHA Dormancy Guard) and test-run each."
     reminders: [start]
 
+  - id: commissioner-amendment-vote-date
+    enabled: true
+    title: "Confirm when amendment votes open"
+    type: commissioner
+    starts_at: "2027-08-02T09:00:00"
+    channel: commissioner-desk
+    priority: normal
+    description: "No amendment vote before the Offseason after Season 2027 (20.1). Once the Season 2027 League Calendar is published, check amendment_votes_from in bot/config.yaml (now 2028-04-10) is the day after the Championship's final scoring period, and ask Claude to change it if not."
+    reminders: [start]
+
   - id: commissioner-premium-renewal
     enabled: false
     title: "Pay Fantrax Premium for the season"

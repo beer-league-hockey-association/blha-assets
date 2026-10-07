@@ -62,6 +62,7 @@ WEBHOOK_ENV = {
     "injury-report": "BLHA_WEBHOOK_INJURY_REPORT",
     "nhl-transactions": "BLHA_WEBHOOK_NHL_TRANSACTIONS",
     "prospect-wire": "BLHA_WEBHOOK_PROSPECT_WIRE",
+    "media": "BLHA_WEBHOOK_MEDIA",
 }
 
 CHANNEL_LABELS = {
@@ -70,6 +71,7 @@ CHANNEL_LABELS = {
     "injury-report": "🏥 INJURY REPORT",
     "nhl-transactions": "🔄 NHL TRANSACTIONS",
     "prospect-wire": "🌱 PROSPECT WIRE",
+    "media": "🎧 PODCASTS",
 }
 
 CHANNEL_TITLES = {
@@ -78,6 +80,7 @@ CHANNEL_TITLES = {
     "injury-report": "Injury Report",
     "nhl-transactions": "NHL Transactions",
     "prospect-wire": "Prospect Wire",
+    "media": "New Podcast Episodes",
 }
 
 CHANNEL_COLORS = {
@@ -86,11 +89,12 @@ CHANNEL_COLORS = {
     "injury-report": 0xD97706,
     "nhl-transactions": 0xFFB81C,
     "prospect-wire": 0xC68F15,
+    "media": 0xFFB81C,
 }
 
 WEBHOOK_AVATAR = (
     "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
-    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=3"
+    "discord/webhooks/avatar/blha-webhook-avatar-512.png?v=8bit-1"
 )
 
 
@@ -198,6 +202,28 @@ def remember(candidate: dict, state: dict) -> dict:
     }
     state.setdefault("seen", []).append(record)
     return record
+
+
+def baseline_new_sources(candidates: list[dict], cfg: dict, state: dict) -> list[dict]:
+    """A source marked `baseline_first: true` posts nothing on its first live run.
+
+    Its current items are only remembered, so adding a feed (for example a
+    podcast with years of episodes) never floods a channel with old posts.
+    """
+    known = set(state.get("known_sources") or [])
+    fresh = {str(s.get("id")) for s in cfg.get("sources") or []
+             if s.get("baseline_first") and s.get("enabled", True) and str(s.get("id")) not in known}
+    if not fresh:
+        return candidates
+    kept = []
+    for candidate in candidates:
+        if candidate["source_id"] in fresh:
+            remember(candidate, state)
+        else:
+            kept.append(candidate)
+    state["known_sources"] = sorted(known | fresh)
+    print(f"NEW SOURCE BASELINE: {', '.join(sorted(fresh))} (current items recorded, nothing posted)")
+    return kept
 
 
 def build_candidate(source: dict, entry: dict) -> dict:
@@ -505,6 +531,9 @@ def main() -> int:
         save_state(state, state_path)
         print(f"LIVE BASELINE CREATED: {baseline} current items recorded; 0 Discord messages sent.")
         return 0
+
+    if args.mode == "live":
+        candidates = baseline_new_sources(candidates, cfg, state)
 
     counts = process_candidates(candidates, state, args.mode)
 

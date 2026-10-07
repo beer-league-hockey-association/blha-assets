@@ -45,7 +45,7 @@ import desk  # noqa: E402  (Commissioner Desk private payloads)
 STATE_PATH = ROOT / "state" / "draft.json"
 FOOTER_DIVIDER = (
     "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
-    "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+    "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
 )
 RESULTS_CHANNEL = "📋│draft-results"
 MAX_MESSAGE_CHARS = 5500  # under Discord's 6,000 total-embed-text limit

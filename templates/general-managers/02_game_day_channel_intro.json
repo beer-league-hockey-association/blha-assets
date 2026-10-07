@@ -6,7 +6,7 @@
         "text": "​"
       },
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/general-managers/blha-general-managers-header.png?v=4-b-mark"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/general-managers/blha-general-managers-header.png?v=8bit-1"
       }
     },
     {
@@ -23,13 +23,23 @@
           "inline": false
         },
         {
+          "name": "STARTING GOALIES",
+          "value": "Each game day from late morning, one message lists tonight's expected starters (Confirmed, Likely or Unconfirmed) and tags goalies on BLHA rosters. It updates quietly until the last game starts.",
+          "inline": false
+        },
+        {
+          "name": "PICK'EM",
+          "value": "From Season 2027 the BLHA League Bot posts each Week's matchups here. Pick the winners before the Week starts; a season leaderboard keeps score.",
+          "inline": false
+        },
+        {
           "name": "KEEP IT READABLE",
           "value": "Spoiler courtesy goes a long way. Use **news-desk** for deeper discussion of a story.",
           "inline": false
         }
       ],
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
       }
     }
   ]

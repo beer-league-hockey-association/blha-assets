@@ -3,7 +3,11 @@
 #
 #   state_branch.sh restore <path>...
 #       Copy each path from the state branch into the working tree before a
-#       run. Paths missing from the branch are left as they are.
+#       run. Paths missing from the branch are left as they are. A path may be
+#       a folder (for example archive), restored with everything in it.
+#       With BLHA_STATE_STRICT=1 the restore fails instead of carrying on when
+#       the branch exists but cannot be fetched, so a run that appends to a
+#       saved file (the league archive) never starts from an empty copy.
 #
 #   state_branch.sh remove "<commit message>" "<author name>" <path>...
 #       Delete each path from the state branch (used by the season rollover).
@@ -11,7 +15,8 @@
 #   state_branch.sh save "<commit message>" "<author name>" <path>...
 #       Commit each path to the state branch and push, retrying if another
 #       workflow pushed first. JSON files whose only change is a top-level
-#       "updated_at" value are not committed.
+#       "updated_at" value are not committed. A folder path saves every file
+#       in it (files are added or updated, never deleted).
 #
 # This keeps `main` free of bot commits (the Wire alone used to add up to ~100
 # a day) and means state saves never conflict with code changes on `main`.
@@ -26,11 +31,23 @@ fetch_branch() {
 
 restore() {
   if ! fetch_branch; then
+    if [[ "${BLHA_STATE_STRICT:-0}" == "1" ]]; then
+      local rc=0
+      git ls-remote --exit-code --heads "$REMOTE" "$BRANCH" >/dev/null 2>&1 || rc=$?
+      if [[ $rc -ne 2 ]]; then
+        echo "ERROR: could not fetch $BRANCH (it exists or GitHub could not be reached); not starting from an empty copy." >&2
+        return 1
+      fi
+    fi
     echo "State branch $BRANCH not found; using the repository copies."
     return 0
   fi
   for path in "$@"; do
-    if git cat-file -e "FETCH_HEAD:$path" 2>/dev/null; then
+    if [[ "$(git cat-file -t "FETCH_HEAD:$path" 2>/dev/null)" == "tree" ]]; then
+      mkdir -p "$path"
+      git archive FETCH_HEAD "$path" | tar -x -C "$(git rev-parse --show-toplevel)"
+      echo "Restored folder $path from $BRANCH ($(find "$path" -type f | wc -l | tr -d ' ') files)."
+    elif git cat-file -e "FETCH_HEAD:$path" 2>/dev/null; then
       mkdir -p "$(dirname "$path")"
       git show "FETCH_HEAD:$path" > "$path"
       echo "Restored $path from $BRANCH."
@@ -71,6 +88,12 @@ save() {
     fi
 
     for path in "$@"; do
+      if [[ -d "$repo_root/$path" ]]; then
+        mkdir -p "$work/$path"
+        cp -R "$repo_root/$path/." "$work/$path/"
+        (cd "$work" && git add -A -- "$path")
+        continue
+      fi
       [[ -f "$repo_root/$path" ]] || { echo "Skip $path (not present)."; continue; }
       if [[ -f "$work/$path" && "$path" == *.json ]] && same_ignoring_updated_at "$repo_root/$path" "$work/$path"; then
         echo "Only updated_at changed in $path; not saving."

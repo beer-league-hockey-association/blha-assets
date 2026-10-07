@@ -104,11 +104,12 @@ class WeeklyReportTests(unittest.TestCase):
 
     def test_monday_report_in_order(self) -> None:
         plan = self.plan(et(2026, 10, 5, 8), 1, {"preview_week": 1})
-        self.assertEqual(items(plan), [("recap", 1), ("standings", 1), ("preview", 2)])
+        self.assertEqual(items(plan), [("recap", 1), ("awards", 1), ("rankings", 1), ("standings", 1),
+                                       ("preview", 2), ("games", 2)])
 
     def test_standings_wait_for_fantrax_then_go_out_in_evening(self) -> None:
         morning = self.plan(et(2026, 10, 5, 8), 0, {"preview_week": 1})
-        self.assertEqual(items(morning), [("recap", 1), ("preview", 2)])
+        self.assertEqual(items(morning), [("recap", 1), ("awards", 1), ("rankings", 1), ("preview", 2), ("games", 2)])
         self.assertTrue(any("standings wait" in n for n in morning.notes))
         state = {"recap_week": 1, "preview_week": 2}
         self.assertEqual(items(self.plan(et(2026, 10, 5, 20), 1, state)), [("standings", 1)])
@@ -129,19 +130,32 @@ class WeeklyReportTests(unittest.TestCase):
     def test_playoff_race_starts_with_week_16(self) -> None:
         state = {k: 14 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 15}
         plan = self.plan(morning_of_end(15), 15, state)
-        self.assertEqual(items(plan), [("recap", 15), ("standings", 15), ("race", 15), ("preview", 16)])
+        self.assertEqual(items(plan), [("recap", 15), ("awards", 15), ("rankings", 15), ("standings", 15),
+                                       ("race", 15), ("preview", 16), ("games", 16)])
 
     def test_last_week_gets_final_standings_and_no_race_or_preview(self) -> None:
         state = {k: 21 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 22}
         plan = self.plan(morning_of_end(22), 22, state)
-        self.assertEqual(items(plan), [("recap", 22), ("standings", 22)])
+        self.assertEqual(items(plan), [("recap", 22), ("awards", 22), ("rankings", 22), ("standings", 22), ("spoon", 22)])
+
+    def test_wooden_spoon_once_with_final_standings(self) -> None:
+        state = {k: 21 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 22}
+        waiting = self.plan(morning_of_end(22), 21, state)                 # Fantrax has not counted week 22 yet
+        self.assertNotIn("spoon", [i for i, _ in items(waiting)])
+        self.assertTrue(any("Wooden Spoon waits" in n for n in waiting.notes))
+        done = state | {"recap_week": 22, "standings_week": 22, "spoon_week": 22}
+        self.assertEqual(items(self.plan(et(2027, 3, 22, 20), 22, done)), [])
+        off = desk.plan_report(INFO, standings_after(22), state, morning_of_end(22), ET, COMP | {"wooden_spoon": False})
+        self.assertNotIn("spoon", [i for i, _ in items(off)])
+        mid = {k: 14 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 15}
+        self.assertNotIn("spoon", [i for i, _ in items(self.plan(morning_of_end(15), 15, mid))])
 
     def test_week_21_still_gets_a_race_update(self) -> None:
         state = {k: 20 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 21}
         self.assertIn(("race", 21), items(self.plan(morning_of_end(21), 21, state)))
 
     def test_preseason_previews_week_one_on_opening_day(self) -> None:
-        self.assertEqual(items(self.plan(et(2026, 9, 29, 8), 0, {})), [("preview", 1)])
+        self.assertEqual(items(self.plan(et(2026, 9, 29, 8), 0, {})), [("preview", 1), ("games", 1)])
 
     def test_playoffs_do_not_trigger_regular_season_posts(self) -> None:
         state = {k: 22 for k in ("recap_week", "standings_week", "race_week", "preview_week")}
@@ -176,6 +190,22 @@ class RenderTests(unittest.TestCase):
         pairs = schedule_for(INFO, 2)
         body = render.preview(self.ctx, p, pairs, {}, ranks_shown=False)
         self.assertNotIn("#", body["embeds"][0]["fields"][0]["value"])
+
+    def test_wooden_spoon_post(self) -> None:
+        last = standings_after(22)[-1]
+        body = render.wooden_spoon(self.ctx, last)
+        embed = body["embeds"][0]
+        self.assertEqual(embed["title"], "The Wooden Spoon")
+        self.assertIn(f"**{last['teamName']}** finishes last", embed["description"])
+        self.assertIn("Its owner holds the Wooden Spoon role", embed["fields"][1]["value"])
+        self.assertEqual(body["allowed_mentions"], {"parse": []})
+        owner = "123456789012345678"
+        live = render.wooden_spoon(render.Context("L", "S", 0xFFB81C), last, owner)
+        self.assertEqual(live["content"], f"<@{owner}>")
+        self.assertEqual(live["allowed_mentions"], {"parse": [], "users": [owner]})
+        cfg = {"owners": {last["teamName"]: owner, "Someone Else": "not-an-id"}}
+        self.assertEqual(desk.owner_mention(cfg, last), owner)
+        self.assertEqual(desk.owner_mention({"owners": {}}, last), "")
 
     def test_competition_desk_identity_and_no_mentions(self) -> None:
         body = render.recap(self.ctx, season.period(INFO, 1), [])

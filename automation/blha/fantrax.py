@@ -133,7 +133,32 @@ def games_counted(rows: list[dict[str, Any]]) -> int | None:
     return min(row["wins"] + row["losses"] + row["ties"] for row in rows)
 
 
+def category_values(categories: Any, side: str) -> dict[str, float]:
+    """One team's scoring-category values from a getMatchupScores matchup.
+
+    Each category is listed once per matchup with an ``away`` and a ``home``
+    entry. Fantrax fills an entry ({display, value, points}) only when the
+    value is non-zero, so an empty entry means 0. Keyed by ``shortName``
+    (for example ``GS`` = goalie games started).
+    """
+    values: dict[str, float] = {}
+    for category in categories if isinstance(categories, list) else []:
+        if not isinstance(category, dict):
+            continue
+        key = str(category.get("shortName") or category.get("name") or "").strip()
+        if not key:
+            continue
+        entry = category.get(side)
+        values[key] = _float(entry.get("value")) if isinstance(entry, dict) else 0.0
+    return values
+
+
 def normalize_scores(raw: Any) -> list[dict[str, Any]]:
+    """Matchups as [{"away": team, "home": team}].
+
+    Each team has teamId, teamName, score, gamesPlayed and ``categories``
+    (category shortName -> value; empty if Fantrax sent no categories).
+    """
     if not isinstance(raw, dict):
         raise ValueError("getMatchupScores did not return an object")
     if isinstance(raw.get("pageError"), dict):
@@ -142,17 +167,21 @@ def normalize_scores(raw: Any) -> list[dict[str, Any]]:
     if not isinstance(matchups, list):
         return []
 
-    def team(value: Any) -> dict[str, Any]:
+    def team(value: Any, categories: Any, side: str) -> dict[str, Any]:
         value = value if isinstance(value, dict) else {}
         return {
             "teamId": str(value.get("teamId") or ""),
             "teamName": str(value.get("teamName") or "Unknown Team"),
             "score": _float(value.get("score")),
             "gamesPlayed": _float(value.get("gamesPlayed")),
+            "categories": category_values(categories, side),
         }
 
     return [
-        {"away": team(m.get("away")), "home": team(m.get("home"))}
+        {
+            "away": team(m.get("away"), m.get("categories"), "away"),
+            "home": team(m.get("home"), m.get("categories"), "home"),
+        }
         for m in matchups
         if isinstance(m, dict)
     ]

@@ -27,8 +27,12 @@ from __future__ import annotations
 
 BASE = "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/"
 FOOTER_BASE_URL = BASE + "shared/blha-footer-divider-1600x90.png"
-FOOTER_URL = FOOTER_BASE_URL + "?v=2c6-frozen"
-HEADER_VERSION = "?v=4-b-mark"
+# Cache-busting version for the hosted artwork. Discord caches images by URL, so bump
+# ASSET_VERSION whenever tools/build_discord_assets.py changes the art, then run
+# tools/normalize_discohook_templates.py.
+ASSET_VERSION = "8bit-1"
+FOOTER_URL = FOOTER_BASE_URL + "?v=" + ASSET_VERSION
+HEADER_VERSION = "?v=" + ASSET_VERSION
 HEADER_COLOR = int("2B2D31", 16)
 ZWSP = "\u200b"
 MAX_EMBEDS = 10

@@ -155,13 +155,47 @@ tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fa
      [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
       ("PREPAYMENT", "`[NOT REQUIRED / CONFIRMED IN LEAGUE-LEDGER ON DATE]`")])
 
+# -------------------------------------------------------- community and traditions
+tmpl("league-office/36_calendar_sync.json", "ADD THE LEAGUE CALENDAR TO YOUR PHONE", "Every BLHA date can live in the calendar you already use.", "BLHA LEAGUE CALENDAR",
+     [("HOW", "Type `/link` in any channel. Sesh replies privately with a calendar feed link."),
+      ("THEN", "Add that link to Google Calendar (Other calendars → From URL), Apple Calendar (File → New Calendar Subscription) or Outlook (Add calendar → From internet)."),
+      ("WHAT YOU GET", "Draft night, deadlines and owners' meetings appear on your phone and update on their own when a date changes.")])
+tmpl("league-office/35_winter_meetings.json", "BLHA WINTER MEETINGS", "The yearly owners' meeting, held in the Offseason before the amendment window opens.", "BLHA LEAGUE CALENDAR",
+     [("WHEN", "**`[TIMESTAMP]`** • RSVP on the Sesh event in **league-calendar**"),
+      ("WHERE", "`[VOICE CHANNEL]`"),
+      ("AGENDA", "Season review • Ideas from **league-suggestions** that could become amendment proposals (Article XX) • Draft and calendar dates • Open floor"),
+      ("CAN'T MAKE IT", "Notes are posted in **gm-lounge** afterward. Nothing is decided at the meeting itself: rule changes still go through a written proposal and a vote.")])
+tmpl("league-office/26_awards_night.json", "BLHA AWARDS NIGHT", "Season `[YEAR]` ballots are open. Owners choose the winners.", "BLHA RECORDS DEPARTMENT",
+     [("THE AWARDS", "**GM of the Year** • **Trade of the Year** • **Waiver Wire Award** (best pickup) • **Rookie GM of the Year** (first-season owners) • **Cold Beer Award** (the season's funniest moment)"),
+      ("HOW TO VOTE", "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself."),
+      ("RESULTS", "Winners are announced in **hall-of-champions** and kept in the league records."),
+      ("JUST FOR FUN", "Awards carry no money and change nothing in the standings or the draft.")], RECORD)
+tmpl("league-office/27_award_winners.json", "BLHA AWARDS NIGHT: THE WINNERS", "Season `[YEAR]`, as voted by the owners.", "BLHA RECORDS DEPARTMENT",
+     [("GM OF THE YEAR", "`[FRANCHISE / OWNER]`"), ("TRADE OF THE YEAR", "`[TRADE AND DATE]`"),
+      ("WAIVER WIRE AWARD", "`[PLAYER, FRANCHISE]`"), ("ROOKIE GM OF THE YEAR", "`[OWNER]`"),
+      ("COLD BEER AWARD", "`[THE MOMENT]`")], RECORD)
+tmpl("league-office/28_wooden_spoon_proposal.json", "NEW TRADITION? THE WOODEN SPOON", "A just-for-fun tradition for the last-place team. Owners decide whether we do it.", f"{LO} • DISCUSSION",
+     [("THE IDEA", "The franchise that finishes last in the regular season holds the **Wooden Spoon** role for the Offseason and writes a short preview of the next Season, posted before Week 1."),
+      ("WHAT IT ISN'T", "No money and no rule change. Draft order still comes from Potential Points (14.5), so the Spoon can't be chased."),
+      ("HAVE YOUR SAY", "React 👍 or 👎 by **`[TIMESTAMP]`**, or reply in **gm-lounge**. It starts only if owners want it.")])
+tmpl("league-office/29_wooden_spoon_awarded.json", "THE WOODEN SPOON", "**`[FRANCHISE]`** finishes last in Season `[YEAR]` and takes home the Spoon.", "BLHA RECORDS DEPARTMENT",
+     [("THE TRADITION", "`[OWNER]` holds the Wooden Spoon role for the Offseason and writes the Season `[NEXT YEAR]` preview, posted before Week 1."),
+      ("NO PENALTY", "Draft order is unaffected: it comes from Potential Points (14.5).")], RECORD)
+tmpl("league-office/63_league_bot_launch.json", "MEET THE BLHA LEAGUE BOT", "League tools, right in Discord. Every command reads Fantrax and the Constitution; nothing here changes Fantrax.", f"{LO} • OFFICIAL NOTICE",
+     [("YOUR TEAM", "`/myteam` shows your roster counts, picks you own, how far your dues are paid and this Week's matchup. Only you see it."),
+      ("RULES", "`/rule 12.4` or `/rule prepayment` shows the Constitution's text. `/deadlines` lists the next dates."),
+      ("PLAYERS AND TRADES", "`/minor` checks a player's minors eligibility. `/tradecheck` checks a trade against the rules (picks, prepayment, roster limits, the deadline). It never grades a trade."),
+      ("PICK'EM", "Each Week the bot posts the matchups in **game-day**. Make your picks before the Week starts; a season leaderboard keeps score."),
+      ("VOTING", "Proposals and official votes run through the bot in **league-voting**, one vote per franchise (Article XX).")])
+
 # ------------------------------------------------------------------- bundles
 BUNDLES = {
     "01_Announcements": ["league-office/20_announcement_standard.json", "league-office/21_announcement_action_required.json",
                          "league-office/22_announcement_urgent_deadline.json", "league-office/23_season_opening.json",
                          "league-office/24_season_closing.json", "league-office/13_clerical_correction.json"],
     "02_Calendar": ["league-office/30_calendar_event.json", "league-office/31_calendar_deadline_reminder.json",
-                    "league-office/32_calendar_published.json", "league-office/33_calendar_date_change.json"],
+                    "league-office/32_calendar_published.json", "league-office/33_calendar_date_change.json",
+                    "league-office/35_winter_meetings.json", "league-office/36_calendar_sync.json"],
     "03_Ledger": ["league-office/40_ledger_season_summary.json", "league-office/41_ledger_dues_status.json",
                   "league-office/42_ledger_prize_pool.json", "league-office/43_ledger_payment_confirmed.json",
                   "league-office/44_ledger_prize_payout.json", "league-office/45_ledger_dynasty_pot.json"],
@@ -171,6 +205,9 @@ BUNDLES = {
     "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
     "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
     "08_Trades": ["trade-center/90_trade_completed.json"],
+    "09_Community_and_Traditions": ["league-office/26_awards_night.json", "league-office/27_award_winners.json",
+                                    "league-office/28_wooden_spoon_proposal.json", "league-office/29_wooden_spoon_awarded.json",
+                                    "league-office/63_league_bot_launch.json"],
 }
 
 def message(path: Path) -> dict:

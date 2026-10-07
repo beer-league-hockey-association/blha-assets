@@ -6,12 +6,12 @@
         "text": "​"
       },
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/commissioners-office/blha-commissioners-office-header.png?v=4-b-mark"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/commissioners-office/blha-commissioners-office-header.png?v=8bit-1"
       }
     },
     {
       "title": "BLHA LEAGUE SUGGESTIONS",
-      "description": "Ideas for improving the league.",
+      "description": "Ideas for improving the league, tracked from first post to final decision.",
       "color": 16758812,
       "footer": {
         "text": "BLHA COMMISSIONER'S OFFICE"
@@ -19,7 +19,12 @@
       "fields": [
         {
           "name": "HOW IT WORKS",
-          "value": "Post an idea and discuss it. A suggestion can become a formal amendment proposal.",
+          "value": "Start one post per idea and pick a topic tag. Owners discuss it in the post. Every idea shows where it stands with a status tag.",
+          "inline": false
+        },
+        {
+          "name": "STATUS TAGS",
+          "value": "**Idea** → **Discussion** → **Commissioner Review** → **Scheduled for Vote** → **Approved** or **Rejected** → **Implemented**. Only the Commissioner changes a status.",
           "inline": false
         },
         {
@@ -29,7 +34,7 @@
         }
       ],
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
       }
     }
   ]

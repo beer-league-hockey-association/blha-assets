@@ -6,6 +6,8 @@
   Edits do not notify members, so the channel stays quiet but current.
 - When the week's games are done (6 AM on the day it ends), the message gets
   one last edit marking it Final, and it stays in the channel as the record.
+- Each team shows its goalie starts against the week's cap: 4 per calendar
+  week (9.2), so 8 in a two-week period such as the Championship (9.3).
 
 Modes:
   preview  print the current scoreboard payload; no Discord, no state change
@@ -37,13 +39,17 @@ from discord_webhook import send_discord_webhook, upsert_discord_message  # noqa
 STATE_PATH = ROOT / "state" / "scoreboard.json"
 
 
+def _starts(team: dict) -> float | None:
+    return (team.get("categories") or {}).get("GS")
+
+
 def fingerprint(week: int, rows: list[dict], final: bool) -> str:
     canonical = {
         "week": week,
         "final": final,
         "rows": [
-            [r["away"]["teamId"], r["away"]["score"], r["away"]["gamesPlayed"],
-             r["home"]["teamId"], r["home"]["score"], r["home"]["gamesPlayed"]]
+            [r["away"]["teamId"], r["away"]["score"], r["away"]["gamesPlayed"], _starts(r["away"]),
+             r["home"]["teamId"], r["home"]["score"], r["home"]["gamesPlayed"], _starts(r["home"])]
             for r in rows
         ],
     }
@@ -72,7 +78,9 @@ def run(mode: str, week_override: int | None) -> int:
     cfg = load_league()
     tz = timezone_of(cfg)
     now = datetime.now(timezone.utc)
-    secret = str((cfg.get("competition") or {}).get("webhooks", {}).get("scoreboard") or "BLHA_WEBHOOK_SCOREBOARD")
+    comp = cfg.get("competition") or {}
+    secret = str((comp.get("webhooks") or {}).get("scoreboard") or "BLHA_WEBHOOK_SCOREBOARD")
+    per_week = int(comp.get("goalie_starts_per_week") or season.GOALIE_STARTS_PER_WEEK)
     fx = Fantrax(str(cfg["league_id"]), user_agent="BLHA-Scoreboard/2.0")
     info = fx.league_info()
     _, first_playoff, _ = season.playoff_settings(info)
@@ -89,7 +97,8 @@ def run(mode: str, week_override: int | None) -> int:
         if p is None:
             raise ValueError(f"Fantrax has no week {week}")
         rows = fx.matchup_scores(week)
-        body = render.scoreboard(ctx, p, rows, final=final, playoffs=week >= first_playoff)
+        body = render.scoreboard(ctx, p, rows, final=final, playoffs=week >= first_playoff,
+                                 goalie_cap=season.goalie_start_cap(p, per_week))
         return body, fingerprint(week, rows, final)
 
     if mode in ("preview", "test"):

@@ -201,6 +201,72 @@ sources:
     enabled: false
     note: Disabled after repeated empty feed results on 2026-09-30.
 
+  # PODCASTS: one post per new episode in #media (feed URLs from Apple Podcasts, 2026-10-06)
+  - id: pod_apples_ginos
+    name: Apples & Ginos Fantasy Hockey Podcast
+    type: rss
+    url: https://anchor.fm/s/7215b61c/podcast/rss
+    tier: 2
+    breaking_allowed: false
+    discovery_only: false
+    enabled: true
+    max_items: 3
+    force_channel: media
+    baseline_first: true
+    role: podcast-episodes
+
+  - id: pod_keeping_karlsson
+    name: Keeping Karlsson Fantasy Hockey Podcast
+    type: rss
+    url: https://feeds.simplecast.com/FxLigH_r
+    tier: 2
+    breaking_allowed: false
+    discovery_only: false
+    enabled: true
+    max_items: 3
+    force_channel: media
+    baseline_first: true
+    role: podcast-episodes
+
+  - id: pod_rotowire_hockey
+    name: RotoWire Fantasy Hockey Podcast
+    type: rss
+    url: https://feeds.simplecast.com/jmDAyEW0
+    tier: 2
+    breaking_allowed: false
+    discovery_only: false
+    enabled: true
+    max_items: 3
+    force_channel: media
+    baseline_first: true
+    role: podcast-episodes
+
+  - id: pod_nhl_fantasy_on_ice
+    name: NHL Fantasy on Ice
+    type: rss
+    url: https://audioboom.com/channels/4975974.rss
+    tier: 2
+    breaking_allowed: false
+    discovery_only: false
+    enabled: true
+    max_items: 3
+    force_channel: media
+    baseline_first: true
+    role: podcast-episodes
+
+  - id: pod_prospects2pros
+    name: Prospects2Pros (dynasty prospects)
+    type: rss
+    url: https://media.rss.com/prospects2pros/feed.xml
+    tier: 2
+    breaking_allowed: false
+    discovery_only: false
+    enabled: true
+    max_items: 3
+    force_channel: media
+    baseline_first: true
+    role: podcast-episodes
+
 integrations:
   - id: puckpedia_discord
     name: PuckPedia Discord Integration

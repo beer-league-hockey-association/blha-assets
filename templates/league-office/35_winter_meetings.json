@@ -1,0 +1,37 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA WINTER MEETINGS",
+      "description": "The yearly owners' meeting, held in the Offseason before the amendment window opens.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA LEAGUE CALENDAR"
+      },
+      "fields": [
+        {
+          "name": "WHEN",
+          "value": "**`[TIMESTAMP]`** • RSVP on the Sesh event in **league-calendar**",
+          "inline": false
+        },
+        {
+          "name": "WHERE",
+          "value": "`[VOICE CHANNEL]`",
+          "inline": false
+        },
+        {
+          "name": "AGENDA",
+          "value": "Season review • Ideas from **league-suggestions** that could become amendment proposals (Article XX) • Draft and calendar dates • Open floor",
+          "inline": false
+        },
+        {
+          "name": "CAN'T MAKE IT",
+          "value": "Notes are posted in **gm-lounge** afterward. Nothing is decided at the meeting itself: rule changes still go through a written proposal and a vote.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
+      }
+    }
+  ]
+}

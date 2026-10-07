@@ -46,6 +46,19 @@ workflows:
     # Hourly during the regular season and playoffs.
     max_age_minutes: 180
 
+  - id: lineup-alerts
+    name: "BLHA Lineup Alerts"
+    file: "blha-lineup-alerts.yml"
+    # Once a day at 15:00 during the regular season and playoffs.
+    max_age_minutes: 1700
+
+  - id: starting-goalies
+    name: "BLHA Starting Goalies"
+    file: "blha-starting-goalies.yml"
+    # Several checks a day from 11:30 to 21:15 during the regular season and
+    # playoffs; the longest gap is overnight (about 14 hours).
+    max_age_minutes: 1000
+
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"
@@ -85,5 +98,17 @@ workflows:
   - id: dormancy-guard
     name: "BLHA Dormancy Guard"
     file: "blha-dormancy-guard.yml"
+    # Once a day at 06:15.
+    max_age_minutes: 1700
+
+  - id: archive
+    name: "BLHA League Archive"
+    file: "blha-archive.yml"
+    # Once a day at 05:30.
+    max_age_minutes: 1700
+
+  - id: history-site
+    name: "BLHA History Site"
+    file: "blha-history-site.yml"
     # Once a day at 06:15.
     max_age_minutes: 1700

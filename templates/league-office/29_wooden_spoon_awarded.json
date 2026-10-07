@@ -1,0 +1,27 @@
+{
+  "embeds": [
+    {
+      "title": "THE WOODEN SPOON",
+      "description": "**`[FRANCHISE]`** finishes last in Season `[YEAR]` and takes home the Spoon.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "THE TRADITION",
+          "value": "`[OWNER]` holds the Wooden Spoon role for the Offseason and writes the Season `[NEXT YEAR]` preview, posted before Week 1.",
+          "inline": false
+        },
+        {
+          "name": "NO PENALTY",
+          "value": "Draft order is unaffected: it comes from Potential Points (14.5).",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
+      }
+    }
+  ]
+}

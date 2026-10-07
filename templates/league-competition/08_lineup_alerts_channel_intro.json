@@ -1,0 +1,46 @@
+{
+  "embeds": [
+    {
+      "color": 2829617,
+      "footer": {
+        "text": "​"
+      },
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/league-competition/blha-competition-header.png?v=8bit-1"
+      }
+    },
+    {
+      "title": "BLHA LINEUP ALERTS",
+      "description": "A daily heads-up before games start when a lineup can be improved.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA COMPETITION DESK"
+      },
+      "fields": [
+        {
+          "name": "WHAT IT CATCHES",
+          "value": "A player in your active lineup has no NHL game today while one of your reserves who can fill that slot does play.",
+          "inline": false
+        },
+        {
+          "name": "WHO GETS ALERTS",
+          "value": "Owners who opt in. Ask the Commissioner to add you; the alert mentions you once a day at most, around 3:00 PM ET.",
+          "inline": false
+        },
+        {
+          "name": "YOUR CALL",
+          "value": "Alerts are a reminder, not a rule. Lineups are yours to set in Fantrax (9.1).",
+          "inline": false
+        },
+        {
+          "name": "DISCUSSION",
+          "value": "Owners can react here but not post. Talk about it in **gm-lounge**.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@
         "text": "​"
       },
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/league-office/blha-calendar-header.png?v=4-b-mark"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/league-office/blha-calendar-header.png?v=8bit-1"
       }
     },
     {
@@ -58,6 +58,11 @@
           "inline": false
         },
         {
+          "name": "ADD THE CALENDAR TO YOUR PHONE",
+          "value": "Type `/link` in any channel. Sesh replies privately with a calendar feed. Add it to Google, Apple or Outlook Calendar and every league date shows up there, updated automatically.",
+          "inline": false
+        },
+        {
           "name": "NO DM FROM SESH?",
           "value": "Look in **Message Requests** (and its **Spam** tab) at the top of your DM list and accept Sesh. Still nothing? Send Sesh the command `/settings` in a DM, or open **sesh.fyi/dashboard**, click your name, then **Preferences**, and turn on **Event RSVP Confirmation DMs**. Sesh also needs you to stay in this server and not block it.",
           "inline": false
@@ -69,7 +74,7 @@
         }
       ],
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
       }
     }
   ]

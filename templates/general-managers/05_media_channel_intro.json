@@ -6,7 +6,7 @@
         "text": "​"
       },
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/general-managers/blha-general-managers-header.png?v=4-b-mark"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/general-managers/blha-general-managers-header.png?v=8bit-1"
       }
     },
     {
@@ -23,13 +23,18 @@
           "inline": false
         },
         {
+          "name": "PODCASTS",
+          "value": "New episodes from a few fantasy hockey podcasts are posted here automatically by the Wire, one post per episode.",
+          "inline": false
+        },
+        {
           "name": "PLEASE",
           "value": "Credit the source where you can, and keep conversation in the matching discussion channel.",
           "inline": false
         }
       ],
       "image": {
-        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=2c6-frozen"
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
       }
     }
   ]

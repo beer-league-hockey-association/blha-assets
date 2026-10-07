@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Offline tests for the BLHA Voting Bot (no Discord connection needed)."""
+"""Offline tests for the BLHA League Bot's voting rules (no Discord connection needed)."""
 
 from __future__ import annotations
 
@@ -231,10 +231,44 @@ class DiscordSmokeTests(unittest.TestCase):
     def test_commands_register(self) -> None:
         from blha_vote.app import VoteBot
         bot = VoteBot(load(HERE.parent / "config.yaml"), Store(":memory:"))
-        names = {c.name for c in bot.tree.get_commands()}
-        self.assertEqual(names, {"proposal", "vote", "franchise", "panel"})
-        vote = next(c for c in bot.tree.get_commands() if c.name == "vote")
-        self.assertEqual({c.name for c in vote.commands}, {"open", "elect", "status", "cancel"})
+        commands = {c.name: c for c in bot.tree.get_commands()}
+        self.assertEqual(set(commands), {"proposal", "vote", "franchise", "panel", "pickem",
+                                         "rule", "deadlines", "minor", "myteam", "tradecheck"})
+        self.assertEqual({c.name for c in commands["vote"].commands}, {"open", "elect", "status", "cancel"})
+        self.assertEqual({c.name for c in commands["proposal"].commands}, {"new", "from-thread"})
+        self.assertEqual({c.name for c in commands["pickem"].commands}, {"leaderboard"})
+        for name in ("rule", "deadlines", "minor", "myteam", "tradecheck"):
+            self.assertTrue(commands[name].guild_only, name)
+        self.assertEqual([p.name for p in commands["tradecheck"].parameters],
+                         ["team_a", "team_b", "a_players", "a_picks", "b_players", "b_picks", "to_minors", "post"])
+        self.assertEqual({p.name: p.required for p in commands["rule"].parameters}, {"query": True, "ephemeral": False})
+
+    def test_league_views_build(self) -> None:
+        import asyncio
+        import json
+
+        import discord
+        from blha_vote import pickem
+        from blha_vote.app import PickemPicksView, PickemPostView, ProposalModal, VoteBot
+        from blha_vote.shared import FIXTURES
+
+        info = json.loads((FIXTURES / "league_info_2026_test.json").read_text(encoding="utf-8"))
+        matchups = pickem.matchups(info, 1)
+
+        async def build():
+            bot = VoteBot(load(HERE.parent / "config.yaml"), Store(":memory:"))
+            return (PickemPostView(bot), PickemPicksView(bot, "L:2026", 1, matchups, NOW, 7),
+                    PickemPicksView(bot, "L:2026", 1, matchups, NOW, 7, page=1),
+                    ProposalModal(bot, "amendment", "Commissioner", title_default="T" * 150))
+
+        post, first, second, modal = asyncio.run(build())
+        self.assertTrue(post.is_persistent())
+        self.assertEqual([c.custom_id for c in post.children], ["blha:pickem:make"])
+        selects = [c for c in first.children if isinstance(c, discord.ui.Select)]
+        self.assertEqual((len(selects), len(first.children)), (4, 6))  # four menus plus Previous and Next
+        self.assertTrue(all(len(s.options) == 2 for s in selects))
+        self.assertEqual(len(second.children), 4)
+        self.assertEqual(modal.prop_title.default, "T" * 100)
 
     def test_ballot_view_builds(self) -> None:
         import asyncio

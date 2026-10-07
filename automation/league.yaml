@@ -23,21 +23,47 @@ competition:
   # Teams just below the playoff line shown in the playoff race.
   bubble_depth: 3
 
+  # Credited goalie starts per calendar week (Constitution 9.2). The live
+  # scoreboard shows "Goalie starts: X of Y" with Y = this x the period's
+  # calendar weeks, so a two-week period such as the Championship gets 8 (9.3).
+  goalie_starts_per_week: 4
+
+  # Weekly NHL games grid (posted after the matchup preview): a night is
+  # "light" when this many teams or fewer play, and "heavy" when at least
+  # heavy_night_min_teams play.
+  light_night_max_teams: 8
+  heavy_night_min_teams: 20
+
+  # The Wooden Spoon (league tradition, no money, no rule change): when the
+  # final regular-season standings are posted, the last-place franchise gets
+  # the Wooden Spoon post in #weekly-recap (its owner is mentioned if listed
+  # under owners). Set false to stop it.
+  wooden_spoon: true
+
   # GitHub Actions secret holding each channel's Discord webhook URL.
+  # awards and rankings go to #weekly-recap with the recap; games (the NHL
+  # games grid) goes to the scoreboard channel with the matchup preview.
   webhooks:
     recap: BLHA_WEBHOOK_WEEKLY_RECAP
+    awards: BLHA_WEBHOOK_WEEKLY_RECAP
+    rankings: BLHA_WEBHOOK_WEEKLY_RECAP
     standings: BLHA_WEBHOOK_STANDINGS
     playoff_race: BLHA_WEBHOOK_PLAYOFF_RACE
     preview: BLHA_WEBHOOK_SCOREBOARD
+    games: BLHA_WEBHOOK_SCOREBOARD
     scoreboard: BLHA_WEBHOOK_SCOREBOARD
     playoffs: BLHA_WEBHOOK_PLAYOFFS
+    spoon: BLHA_WEBHOOK_WEEKLY_RECAP
 
 # ---------------------------------------------------------------------------
 # Owner pings (opt-in)
 #
-# When a player on an owner's BLHA roster shows up in the Injury Report, the
-# Wire can mention that owner. Only owners listed here are ever pinged, and
-# only for their own players.
+# Owners listed here are mentioned:
+#   - by the Wire, when a player on their BLHA roster shows up in the Injury
+#     Report (wire_pings below), and
+#   - by Lineup Alerts, when a starter has no NHL game today while an
+#     eligible bench player does (lineup_alerts below).
+# Only owners listed here are ever pinged, and only about their own team.
 #
 # Key: the BLHA team's Fantrax team name (or Fantrax team ID).
 # Value: the owner's Discord user ID, in quotes. In Discord: User Settings ->
@@ -51,6 +77,29 @@ owners: {}
 
 wire_pings:
   injuries: true
+
+# ---------------------------------------------------------------------------
+# Lineup Alerts (automation/lineup/)
+#
+# Once a day (about 3:00 PM ET, regular season and playoffs) each owner listed
+# under `owners` gets one short message, with a mention, when a player in
+# today's ACTIVE lineup has no NHL game while an eligible RESERVE player does.
+# Owners not listed under `owners` are never checked or pinged.
+# webhook: GitHub Actions secret holding the #lineup-alerts webhook URL.
+lineup_alerts:
+  webhook: BLHA_WEBHOOK_LINEUP_ALERTS
+
+# ---------------------------------------------------------------------------
+# Starting Goalies (automation/goalies/)
+#
+# One message per game day in #game-day listing tonight's expected starters
+# (Daily Faceoff), edited silently until the last game starts. Goalies on a
+# BLHA roster show their BLHA team. Nobody is pinged.
+# webhook:   GitHub Actions secret holding the #game-day webhook URL.
+# post_from: earliest local time the day's message is posted.
+starting_goalies:
+  webhook: BLHA_WEBHOOK_GAME_DAY
+  post_from: "11:00"
 
 # ---------------------------------------------------------------------------
 # Commissioner Desk (private reminders for the commissioner's manual work)
@@ -89,3 +138,37 @@ draft_center:
   # TEST ONLY: pick clock in minutes for a fast test draft. Set back to null
   # before the real startup draft.
   test_pick_clock_minutes: null
+
+# ---------------------------------------------------------------------------
+# League history (automation/history/)
+#
+# rivals: declared rivalries, as pairs. Each side may be a franchise key from
+#         automation/history/history.yaml, a Fantrax team ID or a team name.
+#         Every franchise also has an "earned" rival worked out from the
+#         archive: the opponent it has played most (closest record breaks ties).
+#
+# Example:
+#   rivals:
+#     - ["rink-rats", "north-stars"]
+#     - ["Test 4", "Test 7"]
+rivals: []
+
+# ---------------------------------------------------------------------------
+# League history website (tools/build_site.py, workflow BLHA History Site)
+#
+# A standalone site on Cloudflare Pages. Nothing on it points to GitHub.
+# url:                the site's own address once the domain is connected,
+#                     e.g. "https://blhahockey.com" (no trailing slash). Used
+#                     for search engines and link previews; leave "" until then.
+# cloudflare_project: the Cloudflare Pages project name. Its free address is
+#                     https://<project>.pages.dev until the domain is added.
+history_site:
+  url: ""
+  cloudflare_project: blha-history
+
+history:
+  # GitHub Actions secret holding each channel's Discord webhook URL.
+  # Draft retrospectives post to draft_center.webhooks.results above.
+  webhooks:
+    dynasty_pot: BLHA_WEBHOOK_LEAGUE_LEDGER
+    franchise_directory: BLHA_WEBHOOK_FRANCHISE_DIRECTORY

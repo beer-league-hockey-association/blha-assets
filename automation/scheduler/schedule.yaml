@@ -51,7 +51,8 @@ jobs:
     workflow: blha-automation-health.yml
     every_minutes: 60
 
-  # Weekly report: recap, standings, playoff race (from week 16), preview.
+  # Weekly report: recap (with all-play), weekly awards, power rankings,
+  # standings, playoff race (from week 16), matchup preview and NHL games grid.
   # The 08:00 check posts the report the morning a fantasy week ends; the
   # 20:00 check only posts anything Fantrax was not ready for in the morning.
   - id: competition-desk
@@ -73,6 +74,23 @@ jobs:
     workflow: blha-draft-center.yml
     every_minutes: 15
     when: draft-window
+
+  # Lineup Alerts: opted-in owners (league.yaml owners) get one message when
+  # a starter has no NHL game today and an eligible bench player does. 15:00
+  # leaves time before the evening games; at most one alert per team per day.
+  - id: lineup-alerts
+    workflow: blha-lineup-alerts.yml
+    daily_at: ["15:00"]
+    retry_failures: 2
+    phases: [regular, playoffs]
+
+  # Starting Goalies: one #game-day message per game day, edited silently as
+  # Daily Faceoff's reports firm up. The first check posts it; later checks
+  # edit it only when something changed; nothing runs after the last puck drop.
+  - id: starting-goalies
+    workflow: blha-starting-goalies.yml
+    daily_at: ["11:30", "13:30", "15:30", "17:00", "18:00", "18:40", "20:00", "21:15"]
+    phases: [regular, playoffs]
 
   # Live bracket; saves seeds automatically after the final regular week.
   - id: playoffs
@@ -109,5 +127,20 @@ jobs:
   # that can happen. Also started daily by a second cron-job.org job.
   - id: dormancy-guard
     workflow: blha-dormancy-guard.yml
+    daily_at: ["06:15"]
+    retry_failures: 2
+
+  # League archive: a daily snapshot of rosters, pick ownership, final weekly
+  # scores, final standings and draft results that builds the league history
+  # (automation/history/). All year: offseason trades and drafts count too.
+  - id: archive
+    workflow: blha-archive.yml
+    daily_at: ["05:30"]
+    retry_failures: 2
+
+  # History website, rebuilt from the archive and published to Cloudflare Pages
+  # every morning after the archive's 05:30 run.
+  - id: history-site
+    workflow: blha-history-site.yml
     daily_at: ["06:15"]
     retry_failures: 2
