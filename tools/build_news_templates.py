@@ -180,7 +180,7 @@ tmpl("league-office/27_award_winners.json", "BLHA AWARDS NIGHT: THE WINNERS", "S
 tmpl("league-office/28_wooden_spoon_proposal.json", "NEW TRADITION? THE WOODEN SPOON", "A just-for-fun tradition for the last-place team. Owners decide whether we do it.", f"{LO} • DISCUSSION",
      [("THE IDEA", "The franchise that finishes last in the regular season holds the **Wooden Spoon** role for the Offseason and writes a short preview of the next Season, posted before Week 1."),
       ("WHAT IT ISN'T", "No money and no rule change. Draft order still comes from Potential Points (14.5), so the Spoon can't be chased."),
-      ("HAVE YOUR SAY", "React 👍 or 👎 by **`[TIMESTAMP]`**, or reply in **gm-lounge**. It starts only if owners want it.")])
+      ("HAVE YOUR SAY", "React 👍🏻 or 👎🏻 by **`[TIMESTAMP]`**, or reply in **gm-lounge**. It starts only if owners want it.")])
 tmpl("league-office/29_wooden_spoon_awarded.json", "THE WOODEN SPOON", "**`[FRANCHISE]`** finishes last in Season `[YEAR]` and takes home the Spoon.", "BLHA RECORDS DEPARTMENT",
      [("THE TRADITION", "`[OWNER]` holds the Wooden Spoon role for the Offseason and writes the Season `[NEXT YEAR]` preview, posted before Week 1."),
       ("NO PENALTY", "Draft order is unaffected: it comes from Potential Points (14.5).")], RECORD)
