@@ -47,6 +47,15 @@ class WireRoutingTests(unittest.TestCase):
         self.assertEqual(wire.classify_title(title, True), "injury-report")
         self.assertEqual(wire.classify_title("Kucherov out two weeks", True), "injury-report")
 
+    def test_signing_opinion_piece_stays_news(self) -> None:
+        for title in ("Why Red Wings need to sign Simon Edvinsson to a fair deal",
+                      "How the Oilers could trade for a top-six winger"):
+            self.assertEqual(wire.classify_title(title, False), "nhl-news")
+
+    def test_real_signing_still_routes_transactions(self) -> None:
+        self.assertEqual(wire.classify_title("Red Wings sign Simon Edvinsson to eight-year deal", False),
+                         "nhl-transactions")
+
     def test_season_talk_without_absence_stays_news(self) -> None:
         for title in ("What to expect from the Maple Leafs the rest of the season",
                       "NHL's romance-themed audiobooks disappear after opening week of season"):
@@ -255,6 +264,34 @@ class WireRoundupTests(unittest.TestCase):
         batch.append(_candidate(11, title="Star winger out week-to-week with upper body injury"))
         engine.process_candidates(batch, state, "live")
         self.assertIn("1 more update", self.roundups[0][1]["embeds"][0]["title"])
+
+    def test_same_player_injury_from_second_source_is_skipped(self) -> None:
+        state = engine.empty_state()
+        dfo = _candidate(20, title="Sam Montembeault (MTL) — Montembeault left Wednesday's practice with a lower-body injury.")
+        dfo["source_id"] = "daily_faceoff_injuries"
+        engine.process_candidates([dfo], state, "live")
+        other = _candidate(21, title="Canadiens goalie Samuel Montembeault suffers injury in practice")
+        other["source_id"] = "sportsnet_nhl"
+        status = _candidate(22, title="Status report: Sam Montembeault day-to-day for Canadiens")
+        status["source_id"] = "nhl_latest"
+        self.assertTrue(engine.duplicate_reason(status, state).startswith("same-player:"))
+        # Matched on the last name, so "Samuel" vs "Sam" is still caught.
+        self.assertTrue(engine.duplicate_reason(other, state).startswith("same-player:"))
+
+    def test_same_player_rule_keeps_dfo_updates_and_other_players(self) -> None:
+        state = engine.empty_state()
+        first = _candidate(30, title="Bryan Rust (PIT) — Rust (upper-body) will be a game-time decision.")
+        first["source_id"] = "daily_faceoff_injuries"
+        engine.process_candidates([first], state, "live")
+        update = _candidate(31, title="Bryan Rust (PIT) — Rust (upper-body) will make his season debut Wednesday.")
+        update["source_id"] = "daily_faceoff_injuries"
+        self.assertIsNone(engine.duplicate_reason(update, state))
+        other = _candidate(32, title="Status report: Kris Letang out for Penguins tonight")
+        other["source_id"] = "nhl_latest"
+        self.assertIsNone(engine.duplicate_reason(other, state))
+        breaking = _candidate(33, channel="breaking-news", title="Bryan Rust out for season with torn ACL")
+        breaking["source_id"] = "nhl_latest"
+        self.assertIsNone(engine.duplicate_reason(breaking, state))
 
     def test_run_wide_cap_spills_other_channels_into_roundups(self) -> None:
         state = engine.empty_state()

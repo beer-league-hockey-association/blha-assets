@@ -39,6 +39,10 @@ CONFIG = ROOT / "sources.yaml"
 STATE_DIR = ROOT / "state"
 STATE_TTL_HOURS = 24 * 30
 FUZZY_DEDUPE_WINDOW_HOURS = 48
+# Daily Faceoff posts one detailed item per injured player. Another source's
+# injury story about the same player within this window repeats it.
+SAME_PLAYER_WINDOW_HOURS = 12
+DFO_SOURCE = "daily_faceoff_injuries"
 DEFAULT_MAX_SOURCE_ITEMS = 15
 MAX_SOURCE_WORKERS = 4
 
@@ -163,6 +167,20 @@ def prune_state(state: dict) -> None:
     state["seen"] = kept[-5000:]
 
 
+def dfo_player(title_norm: str) -> str | None:
+    """The player's last name from a Daily Faceoff title such as "sam montembeault (mtl) — ...".
+
+    The last name is used because other outlets spell first names differently
+    ("Sam" / "Samuel"). Names shorter than five letters are skipped as too common.
+    """
+    if " (" not in title_norm:
+        return None
+    words = title_norm.split(" (", 1)[0].split()
+    if len(words) < 2 or len(words[-1]) < 5:
+        return None
+    return words[-1]
+
+
 def duplicate_reason(candidate: dict, state: dict) -> str | None:
     now = now_utc()
     title_norm = wire.normalize(candidate["title"])
@@ -180,6 +198,12 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
         seen_at = parse_seen_time(prior.get("seen_at", ""))
         if seen_at and now - seen_at > timedelta(hours=FUZZY_DEDUPE_WINDOW_HOURS):
             continue
+        if candidate["channel"] == "injury-report" and candidate.get("source_id") != DFO_SOURCE \
+                and prior.get("source_id") == DFO_SOURCE and prior.get("channel") == "injury-report" \
+                and seen_at and now - seen_at <= timedelta(hours=SAME_PLAYER_WINDOW_HOURS):
+            player = dfo_player(prior.get("title_norm", ""))
+            if player and re.search(rf"(?<![a-z]){re.escape(player)}(?![a-z])", title_norm):
+                return f"same-player:{player}"
         if candidate["channel"] == prior.get("channel"):
             prior_title = prior.get("title_norm", "")
             if prior_title:
