@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T04:00:40.745209Z",
+  "updated_at": "2026-10-07T04:15:40.223361Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4472,6 +4472,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-07T04:00:40.655107Z"
+    },
+    {
+      "key": "04d69558c6b272d61fc8eb18",
+      "url": "https://www.nhl.com/news/alex-ovechkin-1st-home-opener-was-one-for-the-ages",
+      "fingerprint": "5a028beb8fa9a61a",
+      "title_norm": "ovi's 1st home opener was one for the ages",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-07T04:15:40.119474Z"
     }
   ],
   "known_sources": [
