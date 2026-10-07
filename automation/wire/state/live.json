@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T01:00:38.214370Z",
+  "updated_at": "2026-10-07T01:15:29.705484Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4122,6 +4122,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T01:00:38.143310Z"
+    },
+    {
+      "key": "af059afb6a7bf9956511e957",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-mckenna-snipes-first-career-goal-with-maple-leafs",
+      "fingerprint": "021dce0bfcfcf3e6",
+      "title_norm": "gotta see it: gavin mckenna snipes first career goal with maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-07T01:15:29.633912Z"
     }
   ]
 }
