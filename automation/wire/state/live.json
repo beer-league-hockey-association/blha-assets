@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T02:45:34.212993Z",
+  "updated_at": "2026-10-07T03:00:39.171372Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4282,6 +4282,163 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T02:45:34.198743Z"
+    },
+    {
+      "key": "368724a2e1a8fd8dea15103b",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Week-2-Fantasy-Hockey-Waiver-Wire--Streamers--Adds--Drops--Schedule-Attack-e3pq232",
+      "fingerprint": "2e0d86164f27c7a5",
+      "title_norm": "week 2 fantasy hockey waiver wire | streamers, adds, drops & schedule attack",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076148Z"
+    },
+    {
+      "key": "621e3918e225df99838e15f4",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks---Week-1-e3pm0nh",
+      "fingerprint": "cdbb044bfcc26f04",
+      "title_norm": "trade talks - week 1",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076184Z"
+    },
+    {
+      "key": "db6304b52a84e13a1b2c6def",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/10-Fantasy-Hockey-HOT-TAKES-for-2026-27--Nate--the-Cream-Edition-e3pi9eu",
+      "fingerprint": "f84168232ff70c43",
+      "title_norm": "10 fantasy hockey hot takes for 2026-27 | nate & the cream edition 🌶️",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076218Z"
+    },
+    {
+      "key": "52878983444166394c5cb9c5",
+      "url": "https://keepingkarlsson.com/",
+      "fingerprint": "0450e7ec22aac1fe",
+      "title_norm": "no. 649 - cole, there's no time!",
+      "channel": "media",
+      "source_id": "pod_keeping_karlsson",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076244Z"
+    },
+    {
+      "key": "7e75be426d55bdc3d6a3b024",
+      "url": "https://keepingkarlsson.com/",
+      "fingerprint": "683f4da7272d7426",
+      "title_norm": "matchup maximizer 2026/27 week 2",
+      "channel": "media",
+      "source_id": "pod_keeping_karlsson",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076259Z"
+    },
+    {
+      "key": "6551dc774cd287131dd051dd",
+      "url": "https://keepingkarlsson.com/",
+      "fingerprint": "1b7397a138420414",
+      "title_norm": "short shifts - i tried to be like parker kelly",
+      "channel": "media",
+      "source_id": "pod_keeping_karlsson",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076274Z"
+    },
+    {
+      "key": "58c6199da695427b548415d9",
+      "url": "https://audioboom.com/posts/8960532",
+      "fingerprint": "615222e8a057055a",
+      "title_norm": "top 10 pickups for week 2; barkov injury",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076289Z"
+    },
+    {
+      "key": "ba7a68ed8fdbde8c7ed58090",
+      "url": "https://audioboom.com/posts/8959443",
+      "fingerprint": "1bc261d1ec86978c",
+      "title_norm": "marchenko-knies trade; week 1 mailbag",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076302Z"
+    },
+    {
+      "key": "00d6ef4a4bfdff961277d12a",
+      "url": "https://audioboom.com/posts/8957881",
+      "fingerprint": "365c513ce3a4c978",
+      "title_norm": "top 10 pickups for week 1; stanley cup predictions",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076317Z"
+    },
+    {
+      "key": "1c5b14ec8bddf56ec94f357a",
+      "url": "https://rss.com/podcasts/prospects2pros/3138151",
+      "fingerprint": "a162bf4f0194e729",
+      "title_norm": "the 2026 nhl draft - elite prospects and claude.",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076332Z"
+    },
+    {
+      "key": "53f3ba25039dc8f42828a4a2",
+      "url": "https://rss.com/podcasts/prospects2pros/2956172",
+      "fingerprint": "5051d90595df3c72",
+      "title_norm": "2026 nhl draft recap",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076345Z"
+    },
+    {
+      "key": "801764559ad19a92475a7abb",
+      "url": "https://rss.com/podcasts/prospects2pros/2946754",
+      "fingerprint": "1ac9afe120659d1f",
+      "title_norm": "2026 nhl draft coverage - round 1",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076359Z"
+    },
+    {
+      "key": "6540808bde3b2fcf43972159",
+      "url": "https://www.rotowire.com/hockey",
+      "fingerprint": "3c28964f2d185c2d",
+      "title_norm": "week 1 - the games have begun...who started hot ?",
+      "channel": "media",
+      "source_id": "pod_rotowire_hockey",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076374Z"
+    },
+    {
+      "key": "586735e270882737d017aa4a",
+      "url": "https://www.rotowire.com/hockey",
+      "fingerprint": "9274fe9d9a493beb",
+      "title_norm": "2026-27 atlantic division preview",
+      "channel": "media",
+      "source_id": "pod_rotowire_hockey",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076386Z"
+    },
+    {
+      "key": "bd1fd5e9afa517b481d1008f",
+      "url": "https://www.rotowire.com/hockey",
+      "fingerprint": "18fff3e7e35340d2",
+      "title_norm": "2026-27 metropolitan division preview",
+      "channel": "media",
+      "source_id": "pod_rotowire_hockey",
+      "tier": 2,
+      "seen_at": "2026-10-07T03:00:39.076397Z"
     }
+  ],
+  "known_sources": [
+    "pod_apples_ginos",
+    "pod_keeping_karlsson",
+    "pod_nhl_fantasy_on_ice",
+    "pod_prospects2pros",
+    "pod_rotowire_hockey"
   ]
 }
