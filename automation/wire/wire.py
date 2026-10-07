@@ -27,8 +27,16 @@ BREAKING = (
     "out indefinitely", "season-ending", "out for the season", "suspended indefinitely",
     "retires", "announces retirement", "fired", "dismissed", "blockbuster trade",
 )
+# Long absences that belong in Breaking News even without a classic keyword,
+# e.g. "Romanov likely to miss rest of season with torn ACL" or
+# "Romanov out six to eight months".
+BREAKING_EVENT_PATTERNS = (
+    r"\b(?:miss(?:es|ing)?|out|sidelined|done)\b.{0,40}\b(?:rest|remainder|balance) of (?:the )?(?:regular )?season\b",
+    r"\bout (?:at least )?(?:\w+(?:-\w+)? )?(?:to \w+ )?months?\b",
+    r"\btorn (?:acl|achilles)\b",
+)
 INJURY = (
-    "injury", "injured", "day-to-day", "week-to-week", "month-to-month",
+    "injury", "injured", "torn", "acl", "mcl", "achilles", "likely to miss", "day-to-day", "week-to-week", "month-to-month",
     "injured reserve", "ltir", "surgery", "concussion", "fractured", "fracture",
     "activated from ir", "cleared to play", "returns from injury", "out indefinitely",
     "status report:", "not expected to play", "will not play", "will miss",
@@ -40,6 +48,7 @@ INJURY_EVENT_PATTERNS = (
     r"\bout for\b(?:\s+[a-z0-9][a-z0-9'\-]*){1,8}\s+(?:games?|days?|weeks?|months?)\b",
     r"\bout (?:for|at least) (?:the )?(?:next )?(?:first )?\w*(?:\s+\w+){0,3}\s+(?:games?|days?|weeks?|months?)\b",
     r"\bout (?:for|at least) (?:\d+|two|three|four|five|six|seven|eight|nine|ten)\s+(?:games?|days?|weeks?|months?)\b",
+    r"\bout (?:\d+|two|three|four|five|six|seven|eight|nine|ten)(?:\s*(?:-|to)\s*(?:\d+|two|three|four|five|six|seven|eight|nine|ten))?\s+(?:games?|days?|weeks?|months?)\b",
     r"\bmiss(?:es|ing)? (?:the )?(?:first |next )?\w*(?:\s+\w+){0,3}\s+(?:games?|days?|weeks?|months?)\b",
 )
 
@@ -142,6 +151,11 @@ def is_injury_event(title: str) -> bool:
     return any(re.search(pattern, text, re.I) for pattern in INJURY_EVENT_PATTERNS)
 
 
+def is_breaking_event(title: str) -> bool:
+    text = normalize(title)
+    return any(re.search(pattern, text, re.I) for pattern in BREAKING_EVENT_PATTERNS)
+
+
 def is_transaction_event(title: str) -> bool:
     text = normalize(title)
     if any(re.search(pattern, text, re.I) for pattern in TRANSACTION_ANALYSIS_PATTERNS):
@@ -150,9 +164,9 @@ def is_transaction_event(title: str) -> bool:
 
 
 def classify_title(title: str, breaking_allowed: bool) -> str:
-    if breaking_allowed and contains_any(title, BREAKING):
+    if breaking_allowed and (contains_any(title, BREAKING) or is_breaking_event(title)):
         return "breaking-news"
-    if contains_any(title, INJURY) or is_injury_event(title):
+    if contains_any(title, INJURY) or is_injury_event(title) or is_breaking_event(title):
         return "injury-report"
     if is_transaction_event(title):
         return "nhl-transactions"
