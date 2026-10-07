@@ -302,7 +302,7 @@ def build_markdown() -> str:
 
 
 # ------------------------------------------------------------------------- PDF
-# The 8-bit league look, kept readable: Chakra Petch for the text, Jersey 10 for headings and numbers,
+# The 8-bit league look, kept readable: Pixelify Sans for the text, Jersey 10 for headings and numbers,
 # Silkscreen for small labels, pixel frames and the ice resurfacer on the cover.
 RESURFACER = [
     ".......................KKKKKKKNNNNNNNNKKKK..............",
@@ -352,11 +352,11 @@ def build_pdf(path: Path) -> None:
                                     Spacer, Table, TableStyle, NextPageTemplate, CondPageBreak)
 
     fonts = ROOT / "brand" / "fonts"
-    cp = fonts / "chakrapetch"
-    pdfmetrics.registerFont(TTFont("Body", str(cp / "ChakraPetch-Regular.ttf")))
-    pdfmetrics.registerFont(TTFont("Body-Bold", str(cp / "ChakraPetch-SemiBold.ttf")))
-    pdfmetrics.registerFont(TTFont("Body-Italic", str(cp / "ChakraPetch-Italic.ttf")))
-    pdfmetrics.registerFont(TTFont("Body-BoldItalic", str(cp / "ChakraPetch-SemiBoldItalic.ttf")))
+    px = fonts / "pixelifysans"  # no italic in Pixelify Sans: italic text uses the upright face
+    pdfmetrics.registerFont(TTFont("Body", str(px / "PixelifySans-Regular.ttf")))
+    pdfmetrics.registerFont(TTFont("Body-Bold", str(px / "PixelifySans-SemiBold.ttf")))
+    pdfmetrics.registerFont(TTFont("Body-Italic", str(px / "PixelifySans-Regular.ttf")))
+    pdfmetrics.registerFont(TTFont("Body-BoldItalic", str(px / "PixelifySans-SemiBold.ttf")))
     pdfmetrics.registerFontFamily("Body", normal="Body", bold="Body-Bold", italic="Body-Italic", boldItalic="Body-BoldItalic")
     pdfmetrics.registerFont(TTFont("Pix", str(fonts / "jersey10" / "Jersey10-Regular.ttf")))
     pdfmetrics.registerFont(TTFont("Label", str(fonts / "silkscreen" / "Silkscreen-Regular.ttf")))

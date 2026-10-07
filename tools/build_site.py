@@ -16,8 +16,8 @@ each module, and the rafters with the ice resurfacer on the home page. Team
 colours appear only on each franchise's pixel jersey and the stripe under its
 page header; everything else stays in league colours.
 
-Type: Jersey 10 (display) and Silkscreen (labels) are pixel fonts; Chakra
-Petch is the readable text face, used for body copy and the Constitution.
+Type: three pixel fonts. Jersey 10 for display, Silkscreen for labels, and
+Pixelify Sans for body copy and the Constitution.
 
 Pages use clean addresses (/seasons/2027/, /franchises/rink-rats/), so they
 are served from the root of the site's domain.
@@ -64,9 +64,7 @@ FONT_FILES = {
     "jersey10.woff": FONT_DIR / "jersey10" / "jersey10.woff",
     "silkscreen.woff": FONT_DIR / "silkscreen" / "silkscreen.woff",
     "silkscreen-bold.woff": FONT_DIR / "silkscreen" / "silkscreen-bold.woff",
-    "chakrapetch.woff": FONT_DIR / "chakrapetch" / "chakrapetch-regular.woff",
-    "chakrapetch-semibold.woff": FONT_DIR / "chakrapetch" / "chakrapetch-semibold.woff",
-    "chakrapetch-italic.woff": FONT_DIR / "chakrapetch" / "chakrapetch-italic.woff",
+    "pixelifysans.woff": FONT_DIR / "pixelifysans" / "pixelifysans.woff",
 }
 SITE_NAME = "BLHA History"
 LEAGUE_NAME = "Beer League Hockey Association"
@@ -363,17 +361,15 @@ CSS = """
 @font-face{font-family:"Jersey 10";src:url("@@fonts/jersey10.woff@@") format("woff");font-display:swap}
 @font-face{font-family:"Silkscreen";src:url("@@fonts/silkscreen.woff@@") format("woff");font-weight:400;font-display:swap}
 @font-face{font-family:"Silkscreen";src:url("@@fonts/silkscreen-bold.woff@@") format("woff");font-weight:700;font-display:swap}
-@font-face{font-family:"Chakra Petch";src:url("@@fonts/chakrapetch.woff@@") format("woff");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Chakra Petch";src:url("@@fonts/chakrapetch-semibold.woff@@") format("woff");font-weight:600 800;font-style:normal;font-display:swap}
-@font-face{font-family:"Chakra Petch";src:url("@@fonts/chakrapetch-italic.woff@@") format("woff");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Pixelify Sans";src:url("@@fonts/pixelifysans.woff@@") format("woff");font-weight:400 700;font-display:swap}
 :root{--black:#0E0F12;--char:#2B2D31;--char-2:#3A3D43;--gold:#FFB81C;--gold-lt:#FFD76A;--gold-dk:#8A5E00;--cream:#F4EFE4;
 --ice:#EEF5FA;--ice-2:#E0ECF5;--paper:#FCFCFC;--line:#C3CFDA;--ink:#14161A;--muted:#4C5563;--soft:#B9BEC6;
 --blue:#2457C5;--red:#C8241F;--steel:#9AA1A9;--led:#FF6A4A;
 --display:"Jersey 10","Silkscreen",ui-monospace,monospace;--label:"Silkscreen",ui-monospace,monospace;
---text:"Chakra Petch",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--u:8px}
+--text:"Pixelify Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--u:8px}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--ice);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.55}
+body{margin:0;background:var(--ice);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.55;font-variant-ligatures:none}
 img{max-width:100%}
 .px{display:block;flex:none}
 a{color:inherit;text-decoration:underline;text-decoration-color:var(--blue);text-decoration-thickness:2px;text-underline-offset:3px}
@@ -614,7 +610,7 @@ background:linear-gradient(var(--red),var(--red)) 50% 0/8px 100% no-repeat,linea
 .tlist dt{font-family:var(--label);font-size:.62rem;text-transform:uppercase;color:var(--muted);padding-top:4px}
 .tlist dd{margin:0}
 
-/* the Constitution: pixel headings, readable Chakra Petch text */
+/* the Constitution: pixel headings, Pixelify Sans text with roomy spacing */
 .con{background:var(--paper)}
 .con-layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:calc(var(--u)*6);align-items:start;padding-block:calc(var(--u)*2) calc(var(--u)*6)}
 .toc{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;padding:16px;background:var(--ice);box-shadow:inset 0 0 0 3px var(--line)}
@@ -921,7 +917,7 @@ class Site:
 {meta_html}
 <meta name="theme-color" content="{BLACK}">
 {favicon}{touch}<link rel="preload" href="{self.asset('fonts/jersey10.woff')}" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="{self.asset('fonts/chakrapetch.woff')}" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="{self.asset('fonts/pixelifysans.woff')}" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="{self.asset('site.css')}">
 </head>
 <body>

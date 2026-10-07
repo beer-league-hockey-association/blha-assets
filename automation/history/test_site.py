@@ -50,7 +50,7 @@ class SiteTests(unittest.TestCase):
         for page in ["index.html", *SECTION_PAGES, "404.html"]:
             self.assertIn(page, pages)
         for asset in ("site.css", "favicon.png", "apple-touch-icon.png", "social-card.png", "BLHA_Constitution.pdf",
-                      "fonts/jersey10.woff", "fonts/silkscreen.woff", "fonts/chakrapetch.woff",
+                      "fonts/jersey10.woff", "fonts/silkscreen.woff", "fonts/pixelifysans.woff",
                       "sprites/b.svg", "sprites/jersey.svg", "sprites/resurfacer.svg"):
             self.assertTrue((self.out / "assets" / asset).is_file(), asset)
         for extra in ("robots.txt", "_headers"):

@@ -27,9 +27,9 @@ Fonts (OFL, in brand/fonts with OFL.txt):
   Jersey 10   display: BLHA, titles, stamp words. Pixel = 75 units; caps are 10 pixels tall.
   Silkscreen  labels: eyebrows, sign-off lines, BEER LEAGUE HOCKEY ASSOCIATION, EST. 2026.
               Caps are 5 pixels tall; Bold for the lockup line.
-  Chakra Petch  readable text: the league site, the Constitution (web, PDF and Google Doc)
-              and other long documents. Squared like the pixel faces, but smooth, so long
-              text stays easy to read. Never inside pixel art.
+  Pixelify Sans  text: the league site, the Constitution (web, PDF and Google Doc) and
+              other long documents. A pixel-style face drawn for reading, with real
+              weights from 400 to 700. Set it with generous line spacing.
 
 Render pixel fonts at one export pixel per font pixel (or a whole multiple),
 with antialiasing off. Sizes below are export pixels per font pixel:
