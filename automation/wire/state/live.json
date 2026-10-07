@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T17:30:42.876955Z",
+  "updated_at": "2026-10-07T17:45:37.362059Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4812,6 +4812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-07T17:30:42.850800Z"
+    },
+    {
+      "key": "f4038eed771f2147a81394d4",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-romanov-29623/29623",
+      "fingerprint": "27dcc14cec74b700",
+      "title_norm": "alexander romanov (nyi) — romanov will undergo surgery to repair an acl tear and miss 6-8 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-07T17:45:37.284209Z"
     }
   ],
   "known_sources": [
