@@ -69,6 +69,17 @@ POSTED = posted.load()          # live in Discord and current
 UPDATE = posted.to_update()     # live in Discord but out of date: edit in place
 COUNTS = {"posted": 0, "pin": 0, "update": 0, "send": 0}
 
+# Forum channels: an intro goes out as a forum post, which needs a thread name and Pin Post.
+FORUMS = {"trade-block", "looking-to-acquire", "scouting", "waiver-watch", "commissioner-support",
+          "rules-questions", "league-suggestions", "franchise-news", "roster-showcase"}
+# Channels that had no webhook when the server was last checked (AUDITED): one has to exist before sending.
+NO_WEBHOOK = {"completed-trades", "player-values", "waiver-watch", "consolation-bracket", "commissioner-support",
+              "rules-questions", "rulings-log", "owner-handbook", "draft-room", "draft-day-trades",
+              "franchise-news", "roster-showcase"}
+# Old posts to clear out before the intro goes in, so the intro is the first message in the channel.
+CLEAR_FIRST = {"draft-announcements": "Delete the 3 old [TEST] posts here first.",
+               "draft-results": "Delete the old [TEST] post here first."}
+
 
 def edit_link(rel: str) -> str:
     """A Discohook link that opens the template as an edit of the live message."""
@@ -95,6 +106,11 @@ def row(key: str, channel: str, what: str, href: str, cta: str = "Open in Discoh
         state, cta, href = "update", "Edit in Discohook", edit_link(rel)
         what = ("Posted, but it still uses short channel names. This opens as an EDIT of the live message: "
                 "paste this channel's webhook URL and press Edit. No deleting or reposting; it keeps its place and its pin.")
+    elif rel is not None:
+        before = [CLEAR_FIRST[channel]] if channel in CLEAR_FIRST else []
+        if channel in NO_WEBHOOK:
+            before.append("No webhook in this channel yet: Edit Channel → Integrations → Webhooks → New Webhook → Copy Webhook URL.")
+        what = " ".join(before + [what])
     if rel is not None:
         COUNTS[state] += 1
     return (
@@ -142,7 +158,7 @@ def build() -> str:
             if rel.startswith(folder + "/"):
                 ch = channel_from_file(rel)
                 what = "Channel intro. Send, then pin."
-                if rel.endswith("03_league_suggestions_channel_intro.json") or ch in ("trade-block", "looking-to-acquire", "scouting", "waiver-watch", "commissioner-support", "rules-questions"):
+                if ch in FORUMS:
                     what = "Forum post. Fill in Discohook's Forum thread name, send, then right-click the post and Pin Post."
                 rows.append(row("intro-" + ch, ch, what, v, rel=rel))
         n_rows += len(rows)
