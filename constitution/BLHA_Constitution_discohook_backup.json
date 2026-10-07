@@ -68,7 +68,7 @@
           },
           {
             "title": "ARTICLE VIII — SCORING",
-            "description": "**8.1** The BLHA scoring system is intentionally compact. Categories not listed below are disabled unless this Constitution is formally amended.\n\n**SKATERS**\n• Goal — **+5.00**\n• Assist — **+2.95**\n• Shot on Goal — **+0.55**\n• Block — **+0.35**\n• Hit — **+0.20**\n\n**GOALIES**\n• Game Started — **+6.50**\n• Save — **+0.49**\n• Goal Against — **-5.00**\n• Goalie Goal — **+5.00**\n• Goalie Assist — **+2.95**\n\n**8.2** Goalie wins, shutouts, plus/minus, penalty minutes, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored.",
+            "description": "**8.1** The BLHA scoring system is intentionally compact. Categories not listed below are disabled unless this Constitution is formally amended.\n\n**SKATERS**\n• Goal — **+5.00**\n• Assist — **+2.95**\n• Shot on Goal — **+0.55**\n• Block — **+0.35**\n• Hit — **+0.20**\n• Penalty Minute — **-0.54**\n\n**GOALIES**\n• Game Started — **+6.50**\n• Save — **+0.49**\n• Goal Against — **-5.00**\n• Goalie Goal — **+5.00**\n• Goalie Assist — **+2.95**\n\n**8.2** Goalie wins, shutouts, plus/minus, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored.",
             "color": 16758812
           },
           {

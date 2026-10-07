@@ -85,7 +85,7 @@ ALLOCATION = [
 ALLOCATION_TOTAL = 1800
 assert sum(a for _, a in ALLOCATION) == ALLOCATION_TOTAL == 12 * 150
 
-SKATERS = [("Goal", "+5.00"), ("Assist", "+2.95"), ("Shot on Goal", "+0.55"), ("Block", "+0.35"), ("Hit", "+0.20")]
+SKATERS = [("Goal", "+5.00"), ("Assist", "+2.95"), ("Shot on Goal", "+0.55"), ("Block", "+0.35"), ("Hit", "+0.20"), ("Penalty Minute", "-0.54")]
 GOALIES = [("Game Started", "+6.50"), ("Save", "+0.49"), ("Goal Against", "-5.00"), ("Goalie Goal", "+5.00"), ("Goalie Assist", "+2.95")]
 
 DATE_RULES = [
@@ -201,7 +201,7 @@ ARTICLES = [
         "blocks": [
             ("p", "The BLHA scoring system is intentionally compact. Categories not listed below are disabled unless this Constitution is formally amended."),
             ("scoring",),
-            ("p", "Goalie wins, shutouts, plus/minus, penalty minutes, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored."),
+            ("p", "Goalie wins, shutouts, plus/minus, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored."),
         ],
     },
     {

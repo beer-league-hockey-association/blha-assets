@@ -19,7 +19,7 @@
       "fields": [
         {
           "name": "SKATERS",
-          "value": "Goal **+5.00**\nAssist **+2.95**\nShot on Goal **+0.55**\nBlock **+0.35**\nHit **+0.20**",
+          "value": "Goal **+5.00**\nAssist **+2.95**\nShot on Goal **+0.55**\nBlock **+0.35**\nHit **+0.20**\nPenalty Minute **−0.54**",
           "inline": false
         },
         {
@@ -38,6 +38,11 @@
           "inline": false
         },
         {
+          "name": "**━━━ PENALTY MINUTES ━━━**",
+          "value": "**Penalized on the ice, penalized on your roster.** A penalty hurts a real team by handing the other side a power play, and NHL power plays score about **22%** of the time (0.59 goals on 2.71 chances per team per game in 2024-25). So a minor costs about 0.22 goals; at 5.00 a goal that's **1.09 points**, or **0.54 per minute**.\n\nMajors come out the same way: five minutes of power play is about two and a half minors' worth of chances, and 5 × 0.54 = **2.70**. Fantrax counts only total minutes, so a misconduct is charged at the same rate even though it doesn't give a power play. It still takes a player off the ice.\n\nMinor → **−1.08**\nFighting major → **−2.70**\n10-minute or game misconduct → **−5.40**\n\nAcross the league, penalties take back about what hits add. A clean player loses almost nothing; an enforcer's hits no longer carry him.",
+          "inline": false
+        },
+        {
           "name": "**━━━ GOALIES ━━━**",
           "value": "**Paid to start, judged on stopping.** A goal against costs exactly what a goal is worth (**−5.00**), so a goal counts the same at both ends of the ice.\n\nThe save value (0.49) puts the break-even point at a **.911 save percentage**. A goalie stopping shots at a better rate than that earns points on every shot he faces, and one below it loses points. League average is about .900, so a goalie can't pad his score just by facing a flood of shots behind a bad team. He has to stop them.\n\nThe **6.50** start bonus makes an average start worth playing. A league-average night (28 shots at .900) scores about **4.8**, around one and a half times an average skater's game.",
           "inline": false
@@ -49,12 +54,12 @@
         },
         {
           "name": "**━━━ WHAT ISN'T SCORED ━━━**",
-          "value": "**Wins:** decided by the skaters in front of him and the other team's goalie. Saves and goals against measure the goalie himself.\n**Shutouts:** already rewarded, because a shutout has zero goals against. A bonus would count it twice.\n**Plus/minus:** a team stat that swings on who else is on the ice.\n**Penalty minutes:** taking penalties hurts a real team, so it shouldn't help yours.\n**Power-play points and game-winning goals:** those goals and assists already count. A bonus double-counts them or rewards luck.\n**Faceoffs:** only centers take them, so they'd tip the value of the C slot and the F flex spot.",
+          "value": "**Wins:** decided by the skaters in front of him and the other team's goalie. Saves and goals against measure the goalie himself.\n**Shutouts:** already rewarded, because a shutout has zero goals against. A bonus would count it twice.\n**Plus/minus:** a team stat that swings on who else is on the ice.\n**Power-play points and game-winning goals:** those goals and assists already count. A bonus double-counts them or rewards luck.\n**Faceoffs:** only centers take them, so they'd tip the value of the C slot and the F flex spot.",
           "inline": false
         },
         {
           "name": "**━━━ WHY THE ODD DECIMALS ━━━**",
-          "value": "2.95, 0.55 and 0.49 are the ratios above, rounded, so they aren't arbitrary. Off-round values have a bonus too: an exact tie in a weekly matchup becomes almost impossible.",
+          "value": "2.95, 0.55, 0.54 and 0.49 are the ratios above, rounded, so they aren't arbitrary. Off-round values have a bonus too: an exact tie in a weekly matchup becomes almost impossible.",
           "inline": false
         },
         {
