@@ -211,3 +211,109 @@ def week_grid(
         heavy_min=heavy_min,
         total_games=len(week),
     )
+
+
+# --- Final scores and goal scorers ------------------------------------------------
+#
+# Endpoint: ``GET https://api-web.nhle.com/v1/score/{YYYY-MM-DD}`` returns
+# ``{"games": [...]}`` for one date. Each game has ``id``, ``gameType``,
+# ``gameState`` (FUT, PRE, LIVE, CRIT, FINAL, OFF), ``startTimeUTC``,
+# ``awayTeam.abbrev``, ``homeTeam.abbrev`` and ``goals``: one entry per goal in
+# order, with ``playerId``, ``firstName.default``, ``lastName.default``
+# (or ``name.default``), ``teamAbbrev`` and ``periodDescriptor.periodType``
+# (REG, OT or SO; shootout goals are not real goals and are skipped).
+#
+# UNVERIFIED: like the schedule, this is the NHL's publicly documented shape and
+# has not been checked against a live response from this repository. The parser
+# is tolerant: a goal without a player is skipped, and ``teamAbbrev`` or a name
+# may be a plain string or {"default": ...}.
+
+SCORE_URL = "https://api-web.nhle.com/v1/score/{date}"
+FINISHED_STATES = {"FINAL", "OFF"}
+IN_PROGRESS_STATES = {"LIVE", "CRIT"}
+
+
+def _text(value: Any) -> str:
+    if isinstance(value, dict):
+        value = value.get("default")
+    return str(value or "").strip()
+
+
+@dataclass(frozen=True)
+class Goal:
+    player_id: str
+    name: str   # "First Last"
+    team: str   # the scorer's NHL team
+
+
+@dataclass(frozen=True)
+class ScoredGame:
+    game_id: str
+    game_type: int
+    state: str
+    start: datetime | None
+    away: str
+    home: str
+    goals: tuple[Goal, ...]
+
+    @property
+    def finished(self) -> bool:
+        return self.state in FINISHED_STATES
+
+    def opponent(self, team: str) -> str:
+        return self.home if team == self.away else self.away
+
+
+def parse_scores(raw: Any) -> list[ScoredGame]:
+    """Games from one /v1/score/{date} response, goals in scoring order."""
+    games: list[ScoredGame] = []
+    items = raw.get("games") if isinstance(raw, dict) else None
+    for item in items if isinstance(items, list) else []:
+        if not isinstance(item, dict):
+            continue
+        away, home = _abbrev(item.get("awayTeam")), _abbrev(item.get("homeTeam"))
+        try:
+            game_type = int(item.get("gameType") or 0)
+        except (TypeError, ValueError):
+            game_type = 0
+        goals: list[Goal] = []
+        for goal in item.get("goals") or []:
+            if not isinstance(goal, dict) or not goal.get("playerId"):
+                continue
+            period = goal.get("periodDescriptor") if isinstance(goal.get("periodDescriptor"), dict) else {}
+            if str(period.get("periodType") or "").upper() == "SO":
+                continue
+            name = " ".join(x for x in (_text(goal.get("firstName")), _text(goal.get("lastName"))) if x)
+            team = _text(goal.get("teamAbbrev")).upper()
+            goals.append(Goal(str(goal["playerId"]), name or _text(goal.get("name")), team))
+        games.append(ScoredGame(
+            game_id=str(item.get("id") or f"{away}-{home}"),
+            game_type=game_type,
+            state=str(item.get("gameState") or "").upper(),
+            start=parse_dt(item.get("startTimeUTC")),
+            away=away,
+            home=home,
+            goals=tuple(goals),
+        ))
+    return games
+
+
+@dataclass(frozen=True)
+class MultiGoal:
+    game: ScoredGame
+    goal: Goal       # the scorer
+    goals: int       # his goals in the game
+    order: int       # 0-based position of his ``threshold``-th goal in the game's goals
+
+
+def multi_goal_games(game: ScoredGame, threshold: int = 3) -> list[MultiGoal]:
+    """Players with at least ``threshold`` goals in one game (a hat trick at 3)."""
+    counts: dict[str, int] = {}
+    reached: dict[str, int] = {}
+    first: dict[str, Goal] = {}
+    for index, goal in enumerate(game.goals):
+        counts[goal.player_id] = counts.get(goal.player_id, 0) + 1
+        first.setdefault(goal.player_id, goal)
+        if counts[goal.player_id] == threshold:
+            reached[goal.player_id] = index
+    return [MultiGoal(game, first[pid], counts[pid], order) for pid, order in sorted(reached.items(), key=lambda x: x[1])]

@@ -40,13 +40,81 @@ competition:
   # under owners). Set false to stop it.
   wooden_spoon: true
 
+  # Monthly Awards in 📰│weekly-recap (Manager of the Month, Best Record,
+  # Biggest Single Week, Hard Luck), from Fantrax matchup scores. A week counts
+  # for the month its end date falls in; a month's awards go out the morning
+  # the first week of the next month is reported, and the season's last month
+  # with the final regular-season week. The Manager of the Month holds the
+  # "📅 Manager of the Month" Discord role until the next award (the
+  # Commissioner moves the role by hand). Set false to stop it.
+  monthly_awards: true
+
+  # Season bounties: one-time goals announced in 📰│weekly-recap when first
+  # reached. Each is claimed once per Season. Rewards are recognition only
+  # (a Discord role, a mention); FAAB, picks, the draft, dues or money are
+  # rejected. The Commissioner gives the role by hand.
+  #
+  #   id           unique key kept in the saved state; do not rename mid-season
+  #   title        short name shown in Discord
+  #   description  one line on what it takes
+  #   type         team_season_points  first franchise to reach `threshold` season points
+  #                team_week_points    first single week of at least `threshold` points
+  #                                    (periods longer than one calendar week do not count)
+  #                team_win_streak     first to `threshold` head-to-head wins in a row
+  #                                    (a tie ends a streak)
+  #                player_hat_trick    first NHL regular-season game in which a player on a
+  #                                    BLHA roster scores `threshold` goals (3 = hat trick;
+  #                                    shootout goals do not count); checked the morning after
+  #   threshold    the number to reach
+  #   reward       optional; default "🎯 Bounty Hunter role for the Season"
+  #
+  # Default thresholds come from the scoring values (Article VIII): 18 skater
+  # slots filled on most nights from a 26-player roster is about 65 skater
+  # games a week at roughly 3.7 points (rostered skaters are above the ~3.2
+  # league average), plus 4 goalie starts at about 5 points, so a typical team
+  # week is about 250 to 300 points (week to week about +/-40) and a season
+  # about 5,800 to 6,500. Simulated over many seasons at that level:
+  #   375 in a week    claimed in ~90% of seasons, typically around Week 6
+  #   6 straight wins  claimed in ~95% of seasons, typically around Week 8
+  #   6,000 points     the front-runner gets there around Week 20
+  #   hat trick        usually within the first week or two
+  # If real scoring runs higher (300+ a week), 375 goes early; raise it to 400.
+  bounties:
+    - id: first-hat-trick
+      title: "First Hat Trick"
+      description: "First BLHA-rostered player to score three goals in an NHL regular-season game."
+      type: player_hat_trick
+      threshold: 3
+      reward: "🎯 Bounty Hunter role for the Season"
+    - id: big-week-375
+      title: "The 375 Club"
+      description: "First franchise to score 375 points in a single week."
+      type: team_week_points
+      threshold: 375
+      reward: "🎯 Bounty Hunter role for the Season"
+    - id: hot-streak-6
+      title: "Six Straight"
+      description: "First franchise to win six head-to-head matchups in a row."
+      type: team_win_streak
+      threshold: 6
+      reward: "🎯 Bounty Hunter role for the Season"
+    - id: season-6000
+      title: "Six Thousand"
+      description: "First franchise to reach 6,000 season points."
+      type: team_season_points
+      threshold: 6000
+      reward: "🎯 Bounty Hunter role for the Season"
+
   # GitHub Actions secret holding each channel's Discord webhook URL.
-  # awards and rankings go to 📰│weekly-recap with the recap; games (the NHL
-  # games grid) goes to the scoreboard channel with the matchup preview.
+  # awards, rankings, monthly (Monthly Awards) and bounties go to
+  # 📰│weekly-recap with the recap; games (the NHL games grid) goes to the
+  # scoreboard channel with the matchup preview.
   webhooks:
     recap: BLHA_WEBHOOK_WEEKLY_RECAP
     awards: BLHA_WEBHOOK_WEEKLY_RECAP
     rankings: BLHA_WEBHOOK_WEEKLY_RECAP
+    monthly: BLHA_WEBHOOK_WEEKLY_RECAP
+    bounties: BLHA_WEBHOOK_WEEKLY_RECAP
     standings: BLHA_WEBHOOK_STANDINGS
     playoff_race: BLHA_WEBHOOK_PLAYOFF_RACE
     preview: BLHA_WEBHOOK_SCOREBOARD

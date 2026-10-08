@@ -40,6 +40,7 @@ tasks:
       - "League Calendar pinned."
       - "league.yaml and events.yaml point at this season; Xenon backup taken."
       - "Wooden Spoon: last Season's holder has posted the Season preview (due before Week 1)."
+      - "Discord roles 📅 Manager of the Month and 🎯 Bounty Hunter exist (cosmetic, no permissions), and competition.bounties in league.yaml lists this Season's bounties."
 
   - id: preseason-eve
     anchor: first_week_start
@@ -49,6 +50,8 @@ tasks:
     items:
       - "No illegal rosters and no ineligible minors left to fix (6.4, 7.4)."
       - "Wooden Spoon: take the role back from last Season's holder when Week 1 starts (it is held for the Offseason only)."
+      - "🎯 Bounty Hunter: take the role back from last Season's bounty winners when Week 1 starts (bounties last one Season)."
+      - "All Season, roles are yours to assign: when the Competition Desk posts Monthly Awards in 📰│weekly-recap, move 📅 Manager of the Month to the new winner (shared awards: every winner); when it posts a bounty claim, give that owner 🎯 Bounty Hunter. Recognition only, never FAAB or picks."
       - "⚙️│automation-health is quiet; scoreboard and weekly report previews look right."
 
   - id: deadline-passed

@@ -51,10 +51,13 @@ jobs:
     workflow: blha-automation-health.yml
     every_minutes: 60
 
-  # Weekly report: recap (with all-play), weekly awards, power rankings,
-  # standings, playoff race (from week 16), matchup preview and NHL games grid.
+  # Weekly report: recap (with all-play), weekly awards, power rankings (with
+  # Luck), Monthly Awards, bounty claims, standings, playoff race (from week
+  # 16), matchup preview (with projected games) and NHL games grid.
   # The 08:00 check posts the report the morning a fantasy week ends; the
   # 20:00 check only posts anything Fantrax was not ready for in the morning.
+  # Each check also reads the NHL scores of finished nights not checked yet,
+  # for the hat-trick bounty while it is unclaimed.
   - id: competition-desk
     workflow: blha-competition-desk.yml
     daily_at: ["08:00", "20:00"]
