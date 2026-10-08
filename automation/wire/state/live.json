@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T19:01:14.004819Z",
+  "updated_at": "2026-10-08T19:30:40.496376Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5322,6 +5322,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T19:01:13.960693Z"
+    },
+    {
+      "key": "401fb385e1881ce048b7f3c6",
+      "url": "https://charlottecheckers.com/articles/full-summer-of-training-fueling-nate-smith-s-strong-start",
+      "fingerprint": "a8105fb76848e7c3",
+      "title_norm": "full summer of training fueling strong start for checkers' smith",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-08T19:30:40.430511Z"
     }
   ],
   "known_sources": [
