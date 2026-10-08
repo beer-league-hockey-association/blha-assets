@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T15:00:45.664269Z",
+  "updated_at": "2026-10-08T15:30:40.096656Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5132,6 +5132,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T15:00:45.621938Z"
+    },
+    {
+      "key": "f1462066bd788a1b4469aa7e",
+      "url": "https://www.sportsnet.ca/nhl/article/linus-ullmark-to-start-in-senators-home-opener-vs-flyers",
+      "fingerprint": "ed7ecf1a78795ef6",
+      "title_norm": "linus ullmark to start in senators' home opener vs. flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T15:30:40.063628Z"
     }
   ],
   "known_sources": [
