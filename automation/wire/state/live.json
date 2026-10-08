@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T02:00:41.062561Z",
+  "updated_at": "2026-10-08T02:45:35.588638Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4982,6 +4982,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T02:00:41.026384Z"
+    },
+    {
+      "key": "6d11928f944fd5ca11ceccbe",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-washington-capitals-game-recap-october-7-2026",
+      "fingerprint": "c7eb920b7b26548d",
+      "title_norm": "wilson has 3 points, capitals top penguins in ovechkin's last home opener",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T02:45:35.257286Z"
+    },
+    {
+      "key": "0cb9a0fbe55f4d6b067a871b",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-top-penguins-in-ovechkins-final-home-opener-in-washington",
+      "fingerprint": "c32dff68148f671c",
+      "title_norm": "capitals top penguins in ovechkin's final home opener in washington",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T02:45:35.558489Z"
     }
   ],
   "known_sources": [
