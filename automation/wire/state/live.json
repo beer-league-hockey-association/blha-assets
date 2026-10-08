@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T15:30:40.096656Z",
+  "updated_at": "2026-10-08T15:45:38.164329Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5142,6 +5142,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T15:30:40.063628Z"
+    },
+    {
+      "key": "9a5061d5673d54f37ecb7693",
+      "url": "https://audioboom.com/posts/8962164",
+      "fingerprint": "15b881b633f3180f",
+      "title_norm": "larkin's fantasy value; week 2 mailbag",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-08T15:45:38.149316Z"
     }
   ],
   "known_sources": [
