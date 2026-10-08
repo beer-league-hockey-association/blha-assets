@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T16:45:41.029973Z",
+  "updated_at": "2026-10-08T17:15:40.982150Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5242,6 +5242,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T16:45:40.603891Z"
+    },
+    {
+      "key": "61590528af1e0dd132ac9610",
+      "url": "https://www.nhl.com/news/macklin-celebrini-game-time-decision-for-san-jose-vs-st-louis",
+      "fingerprint": "8c4b1ff2d3c59c4b",
+      "title_norm": "celebrini game-time decision for sharks tonight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T17:15:40.603389Z"
+    },
+    {
+      "key": "8d10c2f3486dae1b61af2b47",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
+      "fingerprint": "9afe00633fc53356",
+      "title_norm": "logan o'connor (col) — o'connor (lower-body) will be a game-time decision in calgary on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T17:15:40.904621Z"
     }
   ],
   "known_sources": [
