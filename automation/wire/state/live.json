@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T22:00:42.512529Z",
+  "updated_at": "2026-10-08T22:45:35.045182Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5392,6 +5392,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T22:00:42.482848Z"
+    },
+    {
+      "key": "d72ae6d05ad675290dbffa58",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-doan/32990",
+      "fingerprint": "2387a85adb44cce6",
+      "title_norm": "josh doan (buf) — doan (lower-body) will play vs. dallas on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T22:45:34.598623Z"
+    },
+    {
+      "key": "789136c516d1a2adf5ba6b6a",
+      "url": "https://www.dailyfaceoff.com/players/news/olli-maatta/1792",
+      "fingerprint": "54b8ba4fd3171e99",
+      "title_norm": "olli maatta (min) — maatta (lower-body) is out vs. tampa bay on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T22:45:34.804111Z"
+    },
+    {
+      "key": "033c67eae36869479f4ae1b1",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/cb1fbcc1-70e9-4730-b667-69d36bbb39b9",
+      "fingerprint": "0e764a5a2a9ceea5",
+      "title_norm": "canucks on sportsnet: vancouver vs. carolina",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T22:45:35.002260Z"
     }
   ],
   "known_sources": [
