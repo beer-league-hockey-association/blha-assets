@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T13:15:48.093690Z",
+  "updated_at": "2026-10-08T13:45:35.297648Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5092,6 +5092,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T13:15:48.051888Z"
+    },
+    {
+      "key": "42e3267e1af45a82454ce07e",
+      "url": "https://theahl.com/news/beaudoin-family-savor-opportunity-with-rangers",
+      "fingerprint": "e6651c15c8eafe6d",
+      "title_norm": "beaudoin, family savor opportunity with rangers",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-08T13:45:35.211069Z"
     }
   ],
   "known_sources": [
