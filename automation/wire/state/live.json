@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T20:30:39.202543Z",
+  "updated_at": "2026-10-08T20:45:36.670290Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5352,6 +5352,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T20:30:39.122025Z"
+    },
+    {
+      "key": "3fcd8ebaeaacaf2cb82c2f35",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-evan-bouchard-proving-critics-wrong-with-hot-start",
+      "fingerprint": "e0fb7f731542b69a",
+      "title_norm": "oilers' evan bouchard proving critics wrong with hot start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T20:45:36.585663Z"
     }
   ],
   "known_sources": [
