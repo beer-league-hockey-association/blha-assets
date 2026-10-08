@@ -42,6 +42,18 @@ FUZZY_DEDUPE_WINDOW_HOURS = 48
 # Daily Faceoff posts one detailed item per injured player. Another source's
 # injury story about the same player within this window repeats it.
 SAME_PLAYER_WINDOW_HOURS = 12
+# The same news from two outlets in NHL News / Breaking News: titles sharing
+# most of their words within this window. Measured on Sep 30-Oct 7 stories:
+# about 7 repeats a week caught, no unrelated pair matched.
+SAME_STORY_WINDOW_HOURS = 6
+SAME_STORY_MIN_OVERLAP = 0.40
+SAME_STORY_MIN_SHARED = 3
+STORY_CHANNELS = {"nhl-news", "breaking-news"}
+STOPWORDS = {
+    "the", "a", "an", "and", "or", "of", "to", "in", "on", "for", "with", "at", "by", "from",
+    "as", "is", "are", "be", "was", "his", "her", "their", "its", "it", "after", "vs", "has",
+    "have", "he", "will", "into", "over", "up", "out", "off", "this", "that", "nhl", "new",
+}
 DFO_SOURCE = "daily_faceoff_injuries"
 DEFAULT_MAX_SOURCE_ITEMS = 15
 MAX_SOURCE_WORKERS = 4
@@ -167,18 +179,77 @@ def prune_state(state: dict) -> None:
     state["seen"] = kept[-5000:]
 
 
-def dfo_player(title_norm: str) -> str | None:
-    """The player's last name from a Daily Faceoff title such as "sam montembeault (mtl) — ...".
+NHL_NICKNAMES = {
+    "ducks", "bruins", "sabres", "flames", "hurricanes", "blackhawks", "avalanche", "blue",
+    "jackets", "stars", "red", "wings", "oilers", "panthers", "kings", "wild", "canadiens",
+    "habs", "predators", "devils", "islanders", "rangers", "senators", "flyers", "penguins",
+    "sharks", "kraken", "blues", "lightning", "leafs", "maple", "mammoth", "utah", "canucks",
+    "knights", "golden", "capitals", "caps", "jets",
+}
+ROLE_WORDS = {
+    "goalie", "goaltender", "netminder", "defenseman", "defenceman", "d", "f", "g", "c",
+    "forward", "center", "winger", "captain", "rookie", "prospect", "star", "veteran",
+}
+# Words that make another outlet's story news beyond Daily Faceoff's item
+# ("day-to-day" then "out six weeks"); such a story is never treated as a repeat.
+ESCALATION_TERMS = (
+    "exit", "exits", "left", "leaves", "helped off", "stretcher", "surgery", "ltir",
+    "injured reserve", "placed on ir", "week", "weeks", "month", "months", "season",
+    "torn", "tear", "fracture", "fractured", "broken", "concussion", "indefinitely",
+    "career", "retire", "suspend",
+)
 
-    The last name is used because other outlets spell first names differently
-    ("Sam" / "Samuel"). Names shorter than five letters are skipped as too common.
+
+_WEBHOOK_PATH = re.compile(r"(/api/(?:v\d+/)?webhooks/)[^\s'\"?)]+")
+
+
+def redact(text: object) -> str:
+    """Hide webhook ids and tokens that requests puts in its error messages."""
+    return _WEBHOOK_PATH.sub(r"\1***", str(text))
+
+
+def dfo_player(title_norm: str) -> tuple[str, str] | None:
+    """(first name, last name) from a Daily Faceoff title such as "sam montembeault (mtl) — ...".
+
+    Last names shorter than five letters are skipped as too common.
     """
     if " (" not in title_norm:
         return None
     words = title_norm.split(" (", 1)[0].split()
     if len(words) < 2 or len(words[-1]) < 5:
         return None
-    return words[-1]
+    return words[0], words[-1]
+
+
+def mentions_player(title_norm: str, first: str, last: str) -> bool:
+    """True when the title names this player, not just someone sharing his last name.
+
+    The word before the last name must look like his first name (same first
+    three letters, so "Sam" matches "Samuel"), or be a team name, a role
+    ("goalie"), a possessive or a colon; or the name opens the title.
+    """
+    for match in re.finditer(rf"(?<![a-z-]){re.escape(last)}(?![a-z])", title_norm):
+        before = title_norm[: match.start()].split()
+        prev = before[-1] if before else ""
+        if (not prev or prev.endswith((":", "'", "'s")) or prev in ROLE_WORDS
+                or prev in NHL_NICKNAMES or prev.startswith(first[:3])):
+            return True
+    return False
+
+
+def escalates(title_norm: str, prior_title: str) -> bool:
+    return any(wire.term_matches(title_norm, term) and not wire.term_matches(prior_title, term)
+               for term in ESCALATION_TERMS)
+
+
+def story_words(title_norm: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9]+", title_norm.replace("'s", "")) if w not in STOPWORDS and len(w) > 1}
+
+
+def same_story(title_a: str, title_b: str) -> bool:
+    a, b = story_words(title_a), story_words(title_b)
+    shared = a & b
+    return len(shared) >= SAME_STORY_MIN_SHARED and len(shared) / max(1, len(a | b)) >= SAME_STORY_MIN_OVERLAP
 
 
 def duplicate_reason(candidate: dict, state: dict) -> str | None:
@@ -201,9 +272,16 @@ def duplicate_reason(candidate: dict, state: dict) -> str | None:
         if candidate["channel"] == "injury-report" and candidate.get("source_id") != DFO_SOURCE \
                 and prior.get("source_id") == DFO_SOURCE and prior.get("channel") == "injury-report" \
                 and seen_at and now - seen_at <= timedelta(hours=SAME_PLAYER_WINDOW_HOURS):
-            player = dfo_player(prior.get("title_norm", ""))
-            if player and re.search(rf"(?<![a-z]){re.escape(player)}(?![a-z])", title_norm):
-                return f"same-player:{player}"
+            prior_title = prior.get("title_norm", "")
+            player = dfo_player(prior_title)
+            if player and mentions_player(title_norm, *player) and not escalates(title_norm, prior_title):
+                return f"same-player:{player[1]}"
+        if candidate["channel"] in STORY_CHANNELS and prior.get("channel") in STORY_CHANNELS \
+                and candidate.get("source_id") != prior.get("source_id") \
+                and not (candidate["channel"] == "breaking-news" and prior.get("channel") != "breaking-news") \
+                and seen_at and now - seen_at <= timedelta(hours=SAME_STORY_WINDOW_HOURS) \
+                and same_story(title_norm, prior.get("title_norm", "")):
+            return "same-story"
         if candidate["channel"] == prior.get("channel"):
             prior_title = prior.get("title_norm", "")
             if prior_title:
@@ -491,11 +569,16 @@ def post_payload(channel: str, payload: dict) -> bool:
                 json=payload,
                 timeout=20,
             )
+        except requests.ReadTimeout:
+            # Discord received the post but its reply was slow; it has most
+            # likely posted. Retrying here (or next run) would post it twice.
+            print("DELIVERY UNCERTAIN: Discord did not reply in time; treating the story as posted.")
+            return True
         except requests.RequestException as exc:
             if attempt < 2:
                 time.sleep(2 ** attempt)
                 continue
-            print(f"DELIVERY ERROR: request failed after retries: {exc}")
+            print(f"DELIVERY ERROR: request failed after retries: {redact(exc)}")
             return False
 
         if response.status_code in (200, 204):
@@ -517,7 +600,7 @@ def post_payload(channel: str, payload: dict) -> bool:
             time.sleep(2 ** attempt)
             continue
 
-        print(f"DELIVERY ERROR {response.status_code}: {response.text[:300]}")
+        print(f"DELIVERY ERROR {response.status_code}: {redact(response.text[:300])}")
         return False
 
     return False

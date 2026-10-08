@@ -52,6 +52,11 @@ class WireRoutingTests(unittest.TestCase):
                       "How the Oilers could trade for a top-six winger"):
             self.assertEqual(wire.classify_title(title, False), "nhl-news")
 
+    def test_player_named_will_is_not_an_opinion_piece(self) -> None:
+        for title in ("Will Smith signs eight-year extension with Sharks",
+                      "Will Borgen traded to Kraken from Rangers"):
+            self.assertEqual(wire.classify_title(title, False), "nhl-transactions")
+
     def test_real_signing_still_routes_transactions(self) -> None:
         self.assertEqual(wire.classify_title("Red Wings sign Simon Edvinsson to eight-year deal", False),
                          "nhl-transactions")
@@ -292,6 +297,44 @@ class WireRoundupTests(unittest.TestCase):
         breaking = _candidate(33, channel="breaking-news", title="Bryan Rust out for season with torn ACL")
         breaking["source_id"] = "nhl_latest"
         self.assertIsNone(engine.duplicate_reason(breaking, state))
+
+    def _seen(self, state, title, source, channel="injury-report", n=0):
+        c = _candidate(100 + n, channel=channel, title=title)
+        c["source_id"] = source
+        engine.remember(c, state)
+
+    def _check(self, state, title, source, channel="injury-report", n=50):
+        c = _candidate(200 + n, channel=channel, title=title)
+        c["source_id"] = source
+        return engine.duplicate_reason(c, state)
+
+    def test_worse_news_from_another_outlet_still_posts(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Jake Sanderson (OTT) — Sanderson (lower-body) is day-to-day.", "daily_faceoff_injuries")
+        self.assertIsNone(self._check(state, "Senators' Jake Sanderson out six weeks with lower-body injury", "sportsnet_nhl"))
+        self.assertIsNone(self._check(state, "Sanderson exits with apparent injury vs. Maple Leafs", "nhl_latest", n=51))
+        self.assertTrue(self._check(state, "Senators' Sanderson day-to-day with lower-body injury",
+                                    "sportsnet_nhl", n=52).startswith("same-player:"))
+
+    def test_brothers_are_not_the_same_player(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Matthew Tkachuk (FLA) — Tkachuk (groin) is day-to-day.", "daily_faceoff_injuries")
+        self.assertIsNone(self._check(state, "Brady Tkachuk day-to-day for Senators with upper-body injury", "sportsnet_nhl"))
+        self.assertTrue(self._check(state, "Panthers' Tkachuk day-to-day with groin injury", "sportsnet_nhl", n=51))
+
+    def test_same_story_from_two_outlets_is_skipped(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Maple Leafs' Gavin McKenna scores first NHL goal vs. Predators", "nhl_latest", channel="nhl-news")
+        self.assertEqual(self._check(state, "McKenna scores first NHL goal, Maple Leafs rally past Predators",
+                                     "sportsnet_nhl", channel="nhl-news"), "same-story")
+        self.assertIsNone(self._check(state, "Predators trade for veteran defenseman before road trip",
+                                      "sportsnet_nhl", channel="nhl-news", n=51))
+
+    def test_breaking_news_upgrade_still_posts(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Romanov likely to miss time after injury in Islanders loss", "sportsnet_nhl", channel="nhl-news")
+        self.assertIsNone(self._check(state, "Romanov likely to miss rest of season after injury in Islanders loss",
+                                      "nhl_latest", channel="breaking-news"))
 
     def test_run_wide_cap_spills_other_channels_into_roundups(self) -> None:
         state = engine.empty_state()

@@ -76,7 +76,8 @@ TRANSACTION_EVENT_PATTERNS = (
 TRANSACTION_ANALYSIS_PATTERNS = (
     r"\?\s*$",
     # Explainers and opinion pieces ("Why the Red Wings need to sign ...").
-    r"^(?:why|how|what|should|could|would|can|will|is|are|does|do)\b",
+    # Not "will", "can" or "is": they start player names ("Will Smith signs ...").
+    r"^(?:why|how|what|should|could|would)\b",
     r"\bneeds? to (?:sign|trade|re-sign|extend)\b",
     r"\bconsider(?:ing)? (?:a )?trade\b",
     r"\btrade (?:value|values|target|targets|rumor|rumors|rumour|rumours|market|ideas?|proposal|proposals)\b",
