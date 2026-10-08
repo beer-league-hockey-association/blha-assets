@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-07T23:15:32.254019Z",
+  "updated_at": "2026-10-08T01:45:32.787380Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4952,6 +4952,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-07T23:15:32.201628Z"
+    },
+    {
+      "key": "010f633414f7582848a53350",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-josh-morrissey-exits-vs-avalanche-with-upper-body-injury",
+      "fingerprint": "84f1996e3108db91",
+      "title_norm": "jets' josh morrissey exits vs. avalanche with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T01:45:32.691733Z"
     }
   ],
   "known_sources": [
