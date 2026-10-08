@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T17:30:42.463737Z",
+  "updated_at": "2026-10-08T18:00:44.794510Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5282,6 +5282,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T17:30:42.389451Z"
+    },
+    {
+      "key": "718a1bcc2fcb81c05e2021c4",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-set-jarvis-injury-status-update-practicing-with-team",
+      "fingerprint": "2c87265ec095864c",
+      "title_norm": "jarvis takes next step in recovery from shoulder surgery",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T18:00:44.693082Z"
     }
   ],
   "known_sources": [
