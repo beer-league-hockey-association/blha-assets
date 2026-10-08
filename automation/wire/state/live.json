@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T13:45:35.297648Z",
+  "updated_at": "2026-10-08T14:45:40.320902Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5102,6 +5102,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-08T13:45:35.211069Z"
+    },
+    {
+      "key": "4b3982ac4e134edf99ce5dd1",
+      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
+      "fingerprint": "aa69657780b006d5",
+      "title_norm": "mathew barzal (nyi) — barzal (knee) skated on his own on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T14:45:39.996161Z"
+    },
+    {
+      "key": "16f60b4d2d151aaa6f62358e",
+      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
+      "fingerprint": "47fc296ff28b24f1",
+      "title_norm": "seth jarvis (car) — jarvis (shoulder) took part in thursday's morning skate in a regular jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T14:45:40.273047Z"
     }
   ],
   "known_sources": [
