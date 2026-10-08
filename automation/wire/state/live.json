@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T01:45:32.787380Z",
+  "updated_at": "2026-10-08T02:00:41.062561Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -4962,6 +4962,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T01:45:32.691733Z"
+    },
+    {
+      "key": "23e7aa7c32aff12744ea3cf4",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "d501a46dba222bc6",
+      "title_norm": "josh morrissey (wpg) — morrissey left wednesday's game with an upper-boyd injury and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T02:00:40.667433Z"
+    },
+    {
+      "key": "6c836344e6bf39c60d938d24",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/8c1bf383-b1f1-48d8-8c21-a863dd9117f0",
+      "fingerprint": "7dd8814a57e02665",
+      "title_norm": "oilers on sportsnet: edmonton vs. anaheim",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T02:00:41.026384Z"
     }
   ],
   "known_sources": [
