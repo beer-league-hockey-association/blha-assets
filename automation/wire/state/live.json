@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T21:15:41.334117Z",
+  "updated_at": "2026-10-08T22:00:42.512529Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5372,6 +5372,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T21:15:41.296675Z"
+    },
+    {
+      "key": "177a8319f0f91266f83af8b8",
+      "url": "https://www.nhl.com/news/florida-panthers-aleksander-barkov-injury-status-update-october-8-2026",
+      "fingerprint": "bdf0392157bb34bc",
+      "title_norm": "barkov will be back 'as soon as possible' for panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T22:00:42.065044Z"
+    },
+    {
+      "key": "9d3dd3ed6206d7b3c72e5dbc",
+      "url": "https://www.sportsnet.ca/nhl/video/really-happy-for-him-matthews-on-marners-run-to-stanley-cup-final",
+      "fingerprint": "4dde16443871559b",
+      "title_norm": "'really happy for him': matthews on marner's run to stanley cup final",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T22:00:42.482848Z"
     }
   ],
   "known_sources": [
