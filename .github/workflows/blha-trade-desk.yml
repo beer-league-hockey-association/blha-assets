@@ -1,0 +1,83 @@
+name: BLHA Trade Desk
+run-name: BLHA Trade Desk — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# A report card with a "Who won the trade?" poll in 💬│trade-discussion for
+# every trade Fantrax processes, revisits 6 and 12 months later, and the
+# deadline-day BLHA TRADECENTRE tracker in 📢│announcements.
+# Timing lives in automation/scheduler/schedule.yaml (every 30 minutes, every
+# 15 on trade-deadline day); the BLHA Scheduler starts this workflow with
+# mode=live. Code: automation/trades/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log only; test = post one [TEST] sample (see item); live = detect, post and save"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+      item:
+        description: "test mode: which sample to post (card and revisit go to trade-discussion, tracker to announcements)"
+        required: false
+        default: card
+        type: choice
+        options: [card, revisit, tracker]
+      at:
+        description: "preview mode only: as if it were this local time, e.g. 2027-02-21T21:00 (blank = now)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write   # only to save state to the automation-state branch
+
+concurrency:
+  group: blha-trade-desk
+  cancel-in-progress: false
+
+jobs:
+  trades:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      # The league archive is read only (what a traded pick became); it is never saved here.
+      - name: Restore saved state and the league archive
+        run: bash automation/tools/state_branch.sh restore "automation/trades/state/tradedesk.json" archive
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run the Trade Desk
+        env:
+          BLHA_WEBHOOK_TRADE_DISCUSSION: ${{ secrets.BLHA_WEBHOOK_TRADE_DISCUSSION }}
+          BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS: ${{ secrets.BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS }}
+          ITEM: ${{ inputs.item || 'card' }}
+          AT: ${{ inputs.at || '' }}
+        run: |
+          args=(--mode "$MODE" --item "$ITEM")
+          if [[ "$MODE" == "preview" && -n "$AT" ]]; then args+=(--at "$AT"); fi
+          python automation/trades/tradedesk.py "${args[@]}"
+
+      # Saved even if a later step fails, so a posted report card is never repeated.
+      - name: Save state to the automation-state branch
+        if: ${{ !cancelled() && env.MODE == 'live' }}
+        run: |
+          bash automation/tools/state_branch.sh save \
+            "chore(trades): save trade desk state" \
+            "BLHA Fantrax Automation" \
+            "automation/trades/state/tradedesk.json"

@@ -35,11 +35,14 @@ LO = "BLHA LEAGUE OFFICE"
 
 
 def tmpl(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]], color: int = GOLD,
-         banner: str | None = None) -> None:
+         banner: str | None = None, thread_name: str | None = None) -> None:
+    """Write one template. thread_name pre-fills Discohook's forum thread name for a forum post."""
     data = {"embeds": fmt.apply([{
         "title": title, "description": desc, "color": color, "footer": {"text": footer},
         "fields": [{"name": n, "value": v, "inline": False} for n, v in fields],
     }], banner, path)}
+    if thread_name:
+        data["thread_name"] = thread_name
     data = posted.keep_posted(path, data)
     p = T / path
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -158,6 +161,36 @@ tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fa
      [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
       ("PREPAYMENT", "`[NOT REQUIRED / CONFIRMED IN LEAGUE-LEDGER ON DATE]`")])
 
+# Deadline day: the BLHA TradeCentre. The live tracker in 📢│announcements and the
+# report cards with polls in 💬│trade-discussion are automated (automation/trades/);
+# these two are posted by the Commissioner before deadline day.
+DEADLINE_RULE = ("A trade must be fully processed in Fantrax before the deadline; one processed after it is "
+                 "reversed (11.6).")
+tmpl("trade-center/91_tradecentre_trade_bait_board.json", "BLHA TRADECENTRE: TRADE BAIT",
+     "The deadline-day trade bait board. One reply per franchise: what you're moving and what you need.",
+     "BLHA TRADE CENTER • TRADECENTRE",
+     [("HOW TO POST", "Reply once for your franchise and edit that reply as things change, so the thread stays one "
+                      "post per team. Delete it once you're done dealing."),
+      ("FORMAT", "**Available:** players and picks you'd move\n**Looking for:** positions, prospects or picks\n"
+                 "**Reach me:** DM, or reply in **trade-discussion**"),
+      ("DEADLINE", f"**`[TIMESTAMP]`** • 11:59 PM ET, end of Week 20. {DEADLINE_RULE}"),
+      ("ALLOWED IN TRADES", "Rostered players, eligible draft picks and current-season FAAB. Cash, loans, rentals, "
+                            "predetermined tradebacks and conditional picks are prohibited (Article XI). A future "
+                            "1st- or 2nd-round pick needs the seller's prepayment confirmed in **league-ledger** "
+                            "first (Article XII)."),
+      ("FOLLOW ALONG", "From 9:00 AM ET the live tracker in **announcements** counts down and lists every trade. "
+                       "Each trade also gets a report card and a just-for-fun poll in **trade-discussion**.")],
+     thread_name="BLHA TradeCentre: Trade Bait")
+tmpl("trade-center/92_tradecentre_sesh_event.json", "BLHA TRADECENTRE",
+     "Trade deadline day, live from 9:00 AM ET until the deadline at 11:59 PM ET.",
+     "BLHA LEAGUE CALENDAR",
+     [("WHEN", "**`[TIMESTAMP]`** • the Sunday that ends Week 20"),
+      ("WHERE", "Live tracker in **announcements**\nTrade bait in the **trade-block** forum\n"
+                "Talk, report cards and polls in **trade-discussion**"),
+      ("BEFORE YOU TRADE", f"{DEADLINE_RULE} A future 1st- or 2nd-round pick needs the seller's prepayment "
+                           "confirmed in **league-ledger** first (Article XII)."),
+      ("REMINDERS", "RSVP to this event in **league-calendar** and Sesh sends you a reminder by direct message.")])
+
 # -------------------------------------------------------- community and traditions
 tmpl("league-office/36_calendar_sync.json", "ADD THE LEAGUE CALENDAR TO YOUR PHONE", "Every BLHA date can live in the calendar you already use.", "BLHA LEAGUE CALENDAR",
      [("HOW", "Type `/link` in any channel. Sesh replies privately with a calendar feed link."),
@@ -273,6 +306,7 @@ BUNDLES = {
     "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
     "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
     "08_Trades": ["trade-center/90_trade_completed.json"],
+    "10_TradeCentre": ["trade-center/91_tradecentre_trade_bait_board.json", "trade-center/92_tradecentre_sesh_event.json"],
     "09_Community_and_Traditions": ["league-office/26_awards_night.json", "league-office/27_award_winners.json",
                                     "league-office/28_wooden_spoon_proposal.json", "league-office/29_wooden_spoon_awarded.json",
                                     "league-office/63_league_bot_launch.json"],

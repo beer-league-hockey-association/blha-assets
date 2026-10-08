@@ -112,6 +112,22 @@ commissioner_desk:
   ping_user_id: "1059135310132424814"
 
 # ---------------------------------------------------------------------------
+# Trade Desk (automation/trades/)
+#
+# Every trade Fantrax processes gets a report card in 💬│trade-discussion with
+# a "Who won the trade?" poll (just for fun; it never affects the trade,
+# Article XI), and a revisit 6 and 12 months later. On trade-deadline day the
+# BLHA TRADECENTRE tracker in 📢│announcements counts down to the deadline.
+# webhooks:   GitHub Actions secrets holding each channel's webhook URL. A
+#             missing secret skips that post without failing the run.
+# poll_hours: how long the poll stays open.
+trade_desk:
+  webhooks:
+    discussion: BLHA_WEBHOOK_TRADE_DISCUSSION
+    announcements: BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS
+  poll_hours: 72
+
+# ---------------------------------------------------------------------------
 # Draft Center (automation/draft/)
 #
 # Countdown, draft-order reveal and round-by-round recap in Discord, plus a

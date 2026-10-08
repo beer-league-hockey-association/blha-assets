@@ -83,6 +83,13 @@ workflows:
     # Every 15 minutes all year; alert after several missed runs.
     max_age_minutes: 90
 
+  - id: trade-desk
+    name: "BLHA Trade Desk"
+    file: "blha-trade-desk.yml"
+    # Every 30 minutes all year (every 15 on trade-deadline day); alert after
+    # several missed runs.
+    max_age_minutes: 120
+
   - id: minor-eligibility
     name: "BLHA Minor Eligibility"
     file: "blha-minor-eligibility.yml"

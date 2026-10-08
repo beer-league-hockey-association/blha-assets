@@ -122,6 +122,40 @@ class ConfigTests(unittest.TestCase):
             seen.add(job["workflow"])
             scheduler.decide(job, [], now, tz, TOL)
 
+    def test_faster_pace_must_be_valid(self) -> None:
+        import tempfile
+        from pathlib import Path
+
+        from blha.schedule import load_schedule
+
+        bad = [
+            "jobs:\n  - id: x\n    workflow: x.yml\n    daily_at: ['08:00']\n    faster: {when: trade-deadline-day, every_minutes: 15}\n",
+            "jobs:\n  - id: x\n    workflow: x.yml\n    every_minutes: 30\n    faster: {when: no-such-condition, every_minutes: 15}\n",
+            "jobs:\n  - id: x\n    workflow: x.yml\n    every_minutes: 30\n    faster: {when: trade-deadline-day, every_minutes: 45}\n",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            for i, text in enumerate(bad):
+                path = Path(tmp) / f"s{i}.yaml"
+                path.write_text(text, encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    load_schedule(path)
+
+    def test_faster_job_uses_its_short_interval_only_while_the_condition_holds(self) -> None:
+        from unittest.mock import patch
+
+        from blha import schedule
+
+        job = {"id": "x", "workflow": "x.yml", "every_minutes": 30,
+               "faster": {"when": "trade-deadline-day", "every_minutes": 15}}
+        now = utc("2027-02-21T20:00:00")
+        runs = [run(now - timedelta(minutes=12))]
+        with patch.dict(schedule.CONDITIONS, {"trade-deadline-day": (lambda n: now, "")}):
+            fast, _ = schedule.paced(job, now)
+        with patch.dict(schedule.CONDITIONS, {"trade-deadline-day": (lambda n: None, "")}):
+            slow, _ = schedule.paced(job, now)
+        self.assertTrue(scheduler.decide(fast, runs, now, ET, TOL).due)
+        self.assertFalse(scheduler.decide(slow, runs, now, ET, TOL).due)
+
 
 if __name__ == "__main__":
     unittest.main()

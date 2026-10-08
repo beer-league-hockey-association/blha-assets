@@ -33,6 +33,10 @@ Edit `schedule.yaml`. Nothing else needs to change.
   from Fantrax's own week dates for the league in `automation/league.yaml`.
   If Fantrax cannot be reached, the scheduler runs the job anyway rather than
   silently skipping it.
+- `faster: {when: trade-deadline-day, every_minutes: 15}` — run more often
+  while a condition holds. The Trade Desk runs every 30 minutes, and every 15
+  from midnight on trade-deadline day until an hour after the 11:59 PM ET
+  deadline. If Fantrax cannot be read, the normal interval is used.
 
 The log for each scheduler run starts with the current season phase, then
 lists every job as `STARTED`, `WAIT`, or `OFF` (not active this phase).

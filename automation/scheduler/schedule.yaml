@@ -16,7 +16,11 @@
 #   when:   an extra condition. league-office-events = only while an enabled
 #           League Office event has a reminder window open. draft-window =
 #           from 31 days before the Fantrax draft date until a day after the
-#           draft finishes.
+#           draft finishes. trade-deadline-day = from midnight on trade-deadline
+#           day (Sunday of the deadline Week) until an hour after the deadline.
+#   faster: run more often while a condition holds, e.g.
+#           faster: {when: trade-deadline-day, every_minutes: 15}
+#           on a job that otherwise runs every_minutes: 30.
 #   phases: only run during these parts of the Fantrax season:
 #           preseason, regular, playoffs, offseason.
 #           The current phase comes from Fantrax's own week dates.
@@ -108,6 +112,18 @@ jobs:
   - id: pick-trades
     workflow: blha-pick-trades.yml
     every_minutes: 15
+
+  # Trade Desk: a report card with a "Who won the trade?" poll in
+  # 💬│trade-discussion for every trade, revisits 6 and 12 months later, and the
+  # deadline-day BLHA TRADECENTRE tracker in 📢│announcements. All year: trades
+  # happen in the offseason too. Every 30 minutes, and every 15 minutes on
+  # trade-deadline day (midnight until an hour after the 11:59 PM ET deadline).
+  - id: trade-desk
+    workflow: blha-trade-desk.yml
+    every_minutes: 30
+    faster:
+      when: trade-deadline-day
+      every_minutes: 15
 
   # Private alert when a rostered player stops being minor-eligible
   # (Article VII). Reads NHL birth dates and career games once a day.

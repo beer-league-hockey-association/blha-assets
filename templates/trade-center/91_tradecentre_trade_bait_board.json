@@ -1,0 +1,43 @@
+{
+  "embeds": [
+    {
+      "title": "BLHA TRADECENTRE: TRADE BAIT",
+      "description": "The deadline-day trade bait board. One reply per franchise: what you're moving and what you need.",
+      "color": 16758812,
+      "footer": {
+        "text": "BLHA TRADE CENTER • TRADECENTRE"
+      },
+      "fields": [
+        {
+          "name": "HOW TO POST",
+          "value": "Reply once for your franchise and edit that reply as things change, so the thread stays one post per team. Delete it once you're done dealing.",
+          "inline": false
+        },
+        {
+          "name": "FORMAT",
+          "value": "**Available:** players and picks you'd move\n**Looking for:** positions, prospects or picks\n**Reach me:** DM, or reply in **💬│trade-discussion**",
+          "inline": false
+        },
+        {
+          "name": "DEADLINE",
+          "value": "**`[TIMESTAMP]`** • 11:59 PM ET, end of Week 20. A trade must be fully processed in Fantrax before the deadline; one processed after it is reversed (11.6).",
+          "inline": false
+        },
+        {
+          "name": "ALLOWED IN TRADES",
+          "value": "Rostered players, eligible draft picks and current-season FAAB. Cash, loans, rentals, predetermined tradebacks and conditional picks are prohibited (Article XI). A future 1st- or 2nd-round pick needs the seller's prepayment confirmed in **💰│league-ledger** first (Article XII).",
+          "inline": false
+        },
+        {
+          "name": "FOLLOW ALONG",
+          "value": "From 9:00 AM ET the live tracker in **📢│announcements** counts down and lists every trade. Each trade also gets a report card and a just-for-fun poll in **💬│trade-discussion**.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
+      }
+    }
+  ],
+  "thread_name": "BLHA TradeCentre: Trade Bait"
+}

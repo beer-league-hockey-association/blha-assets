@@ -45,8 +45,10 @@ EXPECTED_REGULAR_WEEKS = 22
 EXPECTED_PLAYOFF_TEAMS = 6
 EXPECTED_PLAYOFF_WEEKS = 3
 
-# Saved state that belongs to one season. Wire, Automation Health and the
-# minor-eligibility watch are not listed: they carry over between seasons.
+# Saved state that belongs to one season. Wire, Automation Health, the
+# minor-eligibility watch and the Trade Desk are not listed: they carry over
+# between seasons (the Trade Desk saves a new baseline for a new league or
+# season by itself and keeps its trades for their 6- and 12-month revisits).
 SEASON_STATE = [
     "automation/playoffs/state/playoff.json",
     "automation/competition/state/competition.json",
