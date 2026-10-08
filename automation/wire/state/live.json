@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T22:45:35.045182Z",
+  "updated_at": "2026-10-08T23:00:41.449680Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5422,6 +5422,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T22:45:35.002260Z"
+    },
+    {
+      "key": "8c02de9a8fef5a81761604d5",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-hoyt-stanley-to-make-nhl-debut-vs-flyers",
+      "fingerprint": "73d0da2914a0a22c",
+      "title_norm": "senators' hoyt stanley to make nhl debut vs. flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T23:00:41.430385Z"
     }
   ],
   "known_sources": [
