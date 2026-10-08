@@ -251,6 +251,15 @@ class RunTests(unittest.TestCase):
             _, _, posts, _ = self._run({**BASE, (2029, 2, "b"): "a"}, saved)
         self.assertIn("NOT PAID", posts[0]["embeds"][0]["description"])
 
+    def test_window_roll_with_same_count_is_saved_and_new_pick_trade_noticed(self):
+        saved = picktrades.snapshot(raw(BASE))
+        rolled = {(2029, 2, "b"): "b", (2030, 1, "a"): "a", (2030, 3, "a"): "a"}  # 2028 out, 2030 in
+        _, _, posts, state = self._run(rolled, saved)
+        self.assertEqual(posts, [])
+        self.assertEqual(json.loads(state.read_text())["owners"], picktrades.snapshot(raw(rolled)))
+        _, _, posts2, _ = self._run({**rolled, (2030, 1, "a"): "b"}, json.loads(state.read_text())["owners"])
+        self.assertEqual(len(posts2), 1)
+
     def test_preview_posts_and_saves_nothing(self):
         saved = picktrades.snapshot(raw(BASE))
         _, _, posts, state = self._run({**BASE, (2028, 1, "a"): "b"}, saved, mode="preview")

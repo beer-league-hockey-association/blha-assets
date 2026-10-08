@@ -35,6 +35,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 sys.path.insert(0, str(ROOT))
 
+from blha import season  # noqa: E402
 from blha.fantrax import Fantrax, normalize_standings  # noqa: E402
 from blha.league import load_json, load_league, save_json, timezone_of  # noqa: E402
 from discord_webhook import post_discord_webhook  # noqa: E402
@@ -244,6 +245,22 @@ def load_rostered(fx: Fantrax) -> list[dict[str, Any]]:
     return out
 
 
+def age_reference_date(fx: Any, tz: Any, today: date) -> date:
+    """The date ages are measured on: the season's start (Constitution 7.2).
+
+    Article VII fixes a player's age on NHL opening day for the whole Season,
+    the same rule as Fantrax's "player age up to start of season" setting. The
+    first Fantrax scoring period's start is used; if Fantrax can't be read,
+    today is used so the check still runs.
+    """
+    try:
+        weeks = season.periods(fx.league_info())
+    except Exception as exc:  # noqa: BLE001 - fall back rather than skip the check
+        print(f"Could not read the season start from Fantrax ({type(exc).__name__}); measuring ages today.")
+        return today
+    return weeks[0].start.astimezone(tz).date() if weeks else today
+
+
 def run(mode: str, today: date | None = None, session: requests.Session | None = None) -> int:
     cfg = load_league()
     now = datetime.now(timezone.utc)
@@ -254,7 +271,8 @@ def run(mode: str, today: date | None = None, session: requests.Session | None =
     rostered = load_rostered(fx)
     state = load_json(STATE_PATH, {})
     cache = state.setdefault("nhl", {})
-    cur, unmatched = evaluate(rostered, build_index(session), session, cache, today, now)
+    age_date = age_reference_date(fx, timezone_of(cfg), today)
+    cur, unmatched = evaluate(rostered, build_index(session), session, cache, age_date, now)
     print(f"BLHA MINORS mode={mode.upper()} rostered={len(rostered)} matched={len(cur)} unmatched={len(unmatched)} ineligible={sum(not v['eligible'] for v in cur.values())}")
     if unmatched:
         print("Could not match to an NHL player: " + "; ".join(sorted(unmatched)[:40]))

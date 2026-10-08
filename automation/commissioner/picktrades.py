@@ -254,7 +254,10 @@ def run(mode: str) -> int:
     mark_reversals(found, recent, now)
     if not found:
         print("No pick has changed owner.")
-        if mode == "live" and len(cur) != len(prev):
+        # Save when the set of picks changes (a new draft year rolls in and an
+        # old one drops out) even if the count stays the same, so a trade of a
+        # newly added pick is noticed next time.
+        if mode == "live" and set(cur) != set(prev):
             save_json(STATE_PATH, {**state, "owners": cur})
         return 0
     clearance = load_clearance() if any(c["round"] in PREPAY_ROUNDS and not c.get("reversal") for c in found) else None
