@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T17:15:40.982150Z",
+  "updated_at": "2026-10-08T17:30:42.463737Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5262,6 +5262,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T17:15:40.904621Z"
+    },
+    {
+      "key": "bf384d85640935245b7803ee",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
+      "fingerprint": "d838c6b07314ba19",
+      "title_norm": "jake debrusk (van) — debrusk (illness) is expected to return in carolina on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T17:30:42.032598Z"
+    },
+    {
+      "key": "6579040843161abbc3769f31",
+      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
+      "fingerprint": "1598ef464bb6054e",
+      "title_norm": "jonas siegenthaler (njd) — siegenthaler (undisclosed) has a chance to return on saturday vs. vancouver.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T17:30:42.389451Z"
     }
   ],
   "known_sources": [
