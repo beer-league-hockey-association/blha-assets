@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T20:00:40.193925Z",
+  "updated_at": "2026-10-08T20:30:39.202543Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5342,6 +5342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T20:00:40.149372Z"
+    },
+    {
+      "key": "87b6d32fd426fc6f34748f81",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "98bc839dc78a68c3",
+      "title_norm": "brad marchand (fla) — marchand (lower-body) is reportedly expected to miss a \"few weeks.\"",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T20:30:39.122025Z"
     }
   ],
   "known_sources": [
