@@ -3,6 +3,9 @@ name: BLHA Build Discord Assets
 on:
   workflow_dispatch:
   push:
+    # Only main: this job commits its output to main, so a run on a feature
+    # branch would carry that branch's unreviewed commits onto main.
+    branches: [main]
     paths:
       - 'tools/build_discord_assets.py'
       - 'tools/blha_pixel.py'
@@ -22,6 +25,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out repository
         uses: actions/checkout@v5

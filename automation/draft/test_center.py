@@ -193,6 +193,12 @@ class AlertTests(unittest.TestCase):
         self.assertEqual(center.active_minutes(start, end, ET, self.pause), 120)  # 23-00 and 08-09
         self.assertEqual(center.active_minutes(et(2027, 7, 16, 9), et(2027, 7, 16, 13), ET, self.pause), 240)
 
+    def test_active_minutes_across_the_fall_dst_change(self) -> None:
+        # Oct 31, 8 PM to Nov 1, 8 AM ET is 13 real hours (1-2 AM repeats).
+        # The midnight-8 AM pause is 9 real hours, so 4 hours count.
+        start, end = et(2026, 10, 31, 20), et(2026, 11, 1, 8)
+        self.assertEqual(center.active_minutes(start, end, ET, self.pause), 240)
+
     def test_clock_runs_out_only_after_four_active_hours(self) -> None:
         last = et(2027, 7, 15, 23)
         d = dr.parse_results(build_raw(36, made=30, date=et(2027, 7, 15, 20), times={30: last}))

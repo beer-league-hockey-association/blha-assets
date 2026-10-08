@@ -54,6 +54,43 @@ class DiscordWebhookTests(unittest.TestCase):
         self.assertEqual(post.call_count, 1)
         sleep.assert_not_called()
 
+    @patch("discord_webhook.time.sleep")
+    @patch("discord_webhook.requests.post")
+    def test_new_post_not_retried_after_read_timeout(self, post: Mock, sleep: Mock) -> None:
+        post.side_effect = discord_webhook.requests.ReadTimeout("read timed out")
+        ok, _ = discord_webhook.post_discord_webhook(self.secret, {})
+        self.assertFalse(ok)
+        self.assertEqual(post.call_count, 1)
+
+    @patch("discord_webhook.time.sleep")
+    @patch("discord_webhook.requests.post")
+    def test_new_post_not_retried_after_server_error(self, post: Mock, sleep: Mock) -> None:
+        post.return_value = Mock(status_code=502, text="bad gateway", headers={})
+        ok, _ = discord_webhook.post_discord_webhook(self.secret, {})
+        self.assertFalse(ok)
+        self.assertEqual(post.call_count, 1)
+
+    @patch("discord_webhook.time.sleep")
+    @patch("discord_webhook.requests.post")
+    def test_connection_error_is_retried(self, post: Mock, sleep: Mock) -> None:
+        post.side_effect = [discord_webhook.requests.ConnectionError("no route"),
+                            Mock(status_code=204, text="", headers={})]
+        ok, _ = discord_webhook.post_discord_webhook(self.secret, {})
+        self.assertTrue(ok)
+        self.assertEqual(post.call_count, 2)
+
+    @patch("discord_webhook.time.sleep")
+    @patch("discord_webhook.requests.post")
+    def test_error_detail_hides_webhook_token(self, post: Mock, sleep: Mock) -> None:
+        post.side_effect = discord_webhook.requests.ConnectionError(
+            "HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: "
+            "/api/webhooks/1234567890/SECRET-TOKEN_abc?wait=true (Caused by NameResolutionError)")
+        ok, detail = discord_webhook.post_discord_webhook(self.secret, {})
+        self.assertFalse(ok)
+        self.assertNotIn("SECRET-TOKEN", detail)
+        self.assertNotIn("1234567890", detail)
+        self.assertIn("/api/webhooks/***", detail)
+
 
 if __name__ == "__main__":
     unittest.main()

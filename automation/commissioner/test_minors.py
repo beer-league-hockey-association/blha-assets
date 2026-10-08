@@ -78,6 +78,30 @@ class RuleTests(unittest.TestCase):
         self.assertEqual(minors.age_on("2000-10-03", TODAY), 26)
         self.assertEqual(minors.age_on("2000-10-04", TODAY), 25)
 
+    def test_age_is_fixed_on_season_start(self):
+        from zoneinfo import ZoneInfo
+
+        class Fx:
+            def league_info(self):
+                return {"scoringPeriods": [
+                    {"number": 2, "startDate": "2027-10-11T00:00:00.0-0400", "endDate": "2027-10-17T23:59:59.0-0400"},
+                    {"number": 1, "startDate": "2027-10-05T19:00:00.0-0400", "endDate": "2027-10-10T23:59:59.0-0400"},
+                ]}
+
+        tz = ZoneInfo("America/New_York")
+        ref = minors.age_reference_date(Fx(), tz, date(2028, 2, 1))
+        self.assertEqual(ref, date(2027, 10, 5))
+        # Born Jan 15, 2002: 25 on opening day, so still eligible in February 2028.
+        self.assertEqual(minors.age_on("2002-01-15", ref), 25)
+        self.assertEqual(minors.age_on("2002-01-15", date(2028, 2, 1)), 26)
+
+    def test_age_date_falls_back_to_today(self):
+        class Broken:
+            def league_info(self):
+                raise RuntimeError("down")
+
+        self.assertEqual(minors.age_reference_date(Broken(), None, date(2028, 2, 1)), date(2028, 2, 1))
+
     def test_eligibility_limits(self):
         self.assertTrue(minors.eligible(25, 100, False))
         self.assertFalse(minors.eligible(25, 101, False))

@@ -124,6 +124,7 @@ def active_minutes(start: datetime, end: datetime, tz: ZoneInfo, pause: tuple[ti
     """Minutes between start and end, not counting the nightly clock pause."""
     if end <= start:
         return 0.0
+    start, end = start.astimezone(timezone.utc), end.astimezone(timezone.utc)
     total = (end - start).total_seconds() / 60
     if not pause:
         return total
@@ -131,8 +132,9 @@ def active_minutes(start: datetime, end: datetime, tz: ZoneInfo, pause: tuple[ti
     day = start.astimezone(tz).date() - timedelta(days=1)
     last = end.astimezone(tz).date()
     while day <= last:
-        a = datetime.combine(day, p_start, tzinfo=tz)
-        b = datetime.combine(day if p_end > p_start else day + timedelta(days=1), p_end, tzinfo=tz)
+        # In UTC: subtracting two times that share a ZoneInfo ignores a DST change between them.
+        a = datetime.combine(day, p_start, tzinfo=tz).astimezone(timezone.utc)
+        b = datetime.combine(day if p_end > p_start else day + timedelta(days=1), p_end, tzinfo=tz).astimezone(timezone.utc)
         overlap = (min(b, end) - max(a, start)).total_seconds() / 60
         if overlap > 0:
             total -= overlap

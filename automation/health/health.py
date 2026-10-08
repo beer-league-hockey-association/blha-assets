@@ -300,6 +300,11 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
         if not workflow_file or max_age <= 0:
             continue
         job = jobs_by_file.get(workflow_file, {})
+        if phase is None and job.get("phases"):
+            # Fantrax couldn't be read, so we don't know if this job should be
+            # running now; skip it rather than alert and then "recover".
+            print(f"HEALTH SKIP [{workflow_id}]: season phase unknown (Fantrax unreadable)")
+            continue
         active, why = job_active(job, phase, current)
         if not active:
             print(f"HEALTH SKIP [{workflow_id}]: {why}")
@@ -364,6 +369,13 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
         if completed:
             last_completed = completed[0]
             conclusion = str(last_completed.get("conclusion") or "").lower()
+            # One cancelled run is usually a queued duplicate replaced by the
+            # concurrency group (cron-job.org and GitHub's backup cron both
+            # start the scheduler). Two in a row (e.g. repeated timeouts) alert.
+            if conclusion == "cancelled":
+                previous = str((completed[1] if len(completed) > 1 else {}).get("conclusion") or "").lower()
+                if previous != "cancelled":
+                    conclusion = "success"
             if conclusion in BAD_CONCLUSIONS:
                 key, value = issue(
                     f"failed:{workflow_id}",

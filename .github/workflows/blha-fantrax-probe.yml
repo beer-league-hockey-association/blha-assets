@@ -23,7 +23,9 @@ jobs:
           python-version: "3.12"
       - run: pip install -r automation/common-requirements.txt
       - name: Probe read-only Fantrax endpoints
-        run: python tools/fantrax_probe.py --out fantrax-probe --period "${{ inputs.period }}"
+        env:
+          PERIOD: ${{ inputs.period }}
+        run: python tools/fantrax_probe.py --out fantrax-probe --period "$PERIOD"
       - uses: actions/upload-artifact@v6
         with:
           name: fantrax-probe

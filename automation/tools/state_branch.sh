@@ -5,9 +5,10 @@
 #       Copy each path from the state branch into the working tree before a
 #       run. Paths missing from the branch are left as they are. A path may be
 #       a folder (for example archive), restored with everything in it.
-#       With BLHA_STATE_STRICT=1 the restore fails instead of carrying on when
-#       the branch exists but cannot be fetched, so a run that appends to a
-#       saved file (the league archive) never starts from an empty copy.
+#       The restore fails instead of carrying on when the branch exists but
+#       cannot be fetched, so no job starts from an empty copy during a GitHub
+#       outage (the Wire would re-post its backlog and then overwrite the good
+#       state). Set BLHA_STATE_STRICT=0 to fall back to the repository copies.
 #
 #   state_branch.sh remove "<commit message>" "<author name>" <path>...
 #       Delete each path from the state branch (used by the season rollover).
@@ -31,7 +32,7 @@ fetch_branch() {
 
 restore() {
   if ! fetch_branch; then
-    if [[ "${BLHA_STATE_STRICT:-0}" == "1" ]]; then
+    if [[ "${BLHA_STATE_STRICT:-1}" == "1" ]]; then
       local rc=0
       git ls-remote --exit-code --heads "$REMOTE" "$BRANCH" >/dev/null 2>&1 || rc=$?
       if [[ $rc -ne 2 ]]; then
@@ -111,8 +112,10 @@ save() {
         echo "No state changes to save."
         exit 0
       fi
-      git -c user.name="$author" -c user.email="actions@users.noreply.github.com" commit -q -m "$message"
-      git push -q "$REMOTE" "HEAD:refs/heads/$BRANCH"
+      # `set -e` does not apply inside a subshell used with &&, so every
+      # step must fail the subshell explicitly or a rejected push looks saved.
+      git -c user.name="$author" -c user.email="actions@users.noreply.github.com" commit -q -m "$message" || exit 1
+      git push -q "$REMOTE" "HEAD:refs/heads/$BRANCH" || exit 1
       echo "State saved to $BRANCH."
     ) && pushed=0
 
@@ -153,8 +156,8 @@ remove() {
       if git diff --cached --quiet; then
         exit 0
       fi
-      git -c user.name="$author" -c user.email="actions@users.noreply.github.com" commit -q -m "$message"
-      git push -q "$REMOTE" "HEAD:refs/heads/$BRANCH"
+      git -c user.name="$author" -c user.email="actions@users.noreply.github.com" commit -q -m "$message" || exit 1
+      git push -q "$REMOTE" "HEAD:refs/heads/$BRANCH" || exit 1
     ) && pushed=0
     git worktree remove --force "$work" >/dev/null 2>&1 || rm -rf "$work"
     git worktree prune >/dev/null 2>&1 || true

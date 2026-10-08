@@ -10,6 +10,7 @@ not notify members when a message is edited.
 from __future__ import annotations
 
 import json
+import re
 import os
 import time
 from typing import Any, Callable
@@ -43,11 +44,26 @@ def _retry_delay(response: requests.Response | None, attempt: int) -> float:
     return min(2 ** attempt, 16)
 
 
+_WEBHOOK_PATH = re.compile(r"(/api/(?:v\d+/)?webhooks/)[^\s'\"?)]+")
+
+
+def redact(text: str) -> str:
+    """Hide webhook ids and tokens that requests puts in its error messages."""
+    return _WEBHOOK_PATH.sub(r"\1***", str(text))
+
+
 def _send_with_retries(
     send: Callable[[], requests.Response],
     attempts: int,
+    *,
+    creates: bool = False,
 ) -> tuple[requests.Response | None, str]:
-    """Run ``send`` with bounded retries. Returns the final response (or None)."""
+    """Run ``send`` with bounded retries. Returns the final response (or None).
+
+    ``creates`` marks a request that posts a new message. Those are retried only
+    when Discord certainly did not receive them (connection errors, 429), so a
+    slow reply or a 5xx after Discord accepted the post can't make a duplicate.
+    """
     last_detail = "unknown delivery failure"
     response: requests.Response | None = None
     for attempt in range(max(1, attempts)):
@@ -56,11 +72,17 @@ def _send_with_retries(
             response = send()
             if response.status_code in (200, 204):
                 return response, "delivered"
-            last_detail = f"Discord returned {response.status_code}: {response.text[:300]}"
+            last_detail = redact(f"Discord returned {response.status_code}: {response.text[:300]}")
             if response.status_code not in RETRYABLE_STATUS:
                 return response, last_detail
+            if creates and response.status_code != 429:
+                return response, last_detail
+        except requests.ConnectionError as exc:  # includes ConnectTimeout; never sent
+            last_detail = redact(f"Discord request failed: {exc}")
         except requests.RequestException as exc:
-            last_detail = f"Discord request failed: {exc}"
+            last_detail = redact(f"Discord request failed: {exc}")
+            if creates:
+                return response, last_detail
 
         if attempt < attempts - 1:
             time.sleep(_retry_delay(response, attempt))
@@ -93,6 +115,7 @@ def send_discord_webhook(
     response, detail = _send_with_retries(
         lambda: requests.post(webhook, params={"wait": "true"}, json=payload, timeout=timeout),
         attempts,
+        creates=True,
     )
     if detail != "delivered":
         return False, detail, None
@@ -128,7 +151,7 @@ def post_discord_webhook_files(
         return requests.post(webhook, params={"wait": "true"}, data={"payload_json": json.dumps(body)},
                              files=multipart, timeout=timeout)
 
-    _, detail = _send_with_retries(send, attempts)
+    _, detail = _send_with_retries(send, attempts, creates=True)
     return detail == "delivered", detail
 
 

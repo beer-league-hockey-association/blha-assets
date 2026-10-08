@@ -33,7 +33,7 @@ AUTOMATION = ROOT.parent
 sys.path.insert(0, str(AUTOMATION))
 
 from blha import season  # noqa: E402
-from blha.fantrax import Fantrax, normalize_standings  # noqa: E402
+from blha.fantrax import Fantrax  # noqa: E402
 from blha.league import load_json, load_league, timezone_of  # noqa: E402
 
 LEAGUE_YAML = AUTOMATION / "league.yaml"
@@ -141,7 +141,7 @@ def run_check(league_id: str) -> int:
     now = datetime.now(timezone.utc)
     fx = Fantrax(league_id, user_agent="BLHA-Rollover/1.0")
     info = fx.league_info()
-    standings = normalize_standings(fx.standings())
+    standings = fx.standings()  # already normalized; normalizing twice zeroes the W-L-T counts
     print(f"Checking Fantrax league {league_id}: {info.get('leagueName')} (season {info.get('seasonYear')})")
     fails = 0
     for f in check_league(info, standings, now):
