@@ -101,6 +101,11 @@ jobs:
           PYTHONPATH: automation:automation/goalies
         run: python automation/goalies/test_starters.py
 
+      - name: Test Morning Skate
+        env:
+          PYTHONPATH: automation:automation/media
+        run: python automation/media/test_morning.py
+
       - name: Test The Wire
         run: python automation/wire/test_wire.py
 

@@ -92,6 +92,15 @@ jobs:
     daily_at: ["11:30", "13:30", "15:30", "17:00", "18:00", "18:40", "20:00", "21:15"]
     phases: [regular, playoffs]
 
+  # Morning Skate: last night's NHL scores, the BLHA Goal Reel and a few
+  # YouTube highlights in 📸│media, once per NHL date. All year, so the NHL
+  # playoffs are covered after the BLHA season ends; nights without NHL games
+  # post nothing. A failed post is retried at the next check.
+  - id: morning-skate
+    workflow: blha-morning-skate.yml
+    daily_at: ["08:30"]
+    retry_failures: 3
+
   # Live bracket; saves seeds automatically after the final regular week.
   - id: playoffs
     workflow: blha-fantrax-playoffs.yml

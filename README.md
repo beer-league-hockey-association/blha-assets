@@ -61,6 +61,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Live scoreboard | Hourly, regular season and playoffs |
 | Lineup Alerts | 3:00 PM ET daily, regular season and playoffs |
 | Starting Goalies | Several checks from 11:30 AM to 9:15 PM ET, regular season and playoffs; edits one message a day |
+| Morning Skate | 08:30 ET daily, all year; posts only after a night with NHL games |
 | Playoff bracket | Hourly, playoff weeks only |
 | Draft Center | Every 15 minutes, only from 31 days before a Fantrax draft until a day after it ends |
 | League Archive | Daily around 05:30 ET, all year |
@@ -154,6 +155,12 @@ On game days during the regular season and playoffs, the first check after **11:
 - **Modes:** `preview` prints the message; `test` posts a new `[TEST]` message; `live` posts or edits today's message.
 - If Daily Faceoff changes its page layout, the run fails with a clear error and Automation Health reports it.
 - Information only: goalie starts count against the weekly cap (9.2), and Fantrax's own numbers decide.
+
+## Morning Skate
+
+Code: `automation/media/morning.py` · Workflow: `.github/workflows/blha-morning-skate.yml` · Channel: `📸│media` (webhook secret `BLHA_WEBHOOK_MEDIA`)
+
+Every morning at about **8:30 AM ET** after a night with NHL regular-season or playoff games: **Last Night in the NHL** (every final, winner in bold, OT/SO marked, NHL.com recap and condensed-game links), **The BLHA Goal Reel** (goals with NHL.com clip links and assists by players on BLHA rosters, one field per franchise; left out when none) and up to three YouTube highlight videos, BLHA-heavy games first. Links only, nothing re-uploaded, nobody pinged. Posted once per NHL date; a failed post is retried without repeats. Details: `automation/media/README.md`.
 
 ## Playoffs
 
