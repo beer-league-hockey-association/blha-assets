@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T16:01:05.734347Z",
+  "updated_at": "2026-10-08T16:15:40.993144Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5182,6 +5182,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T16:01:05.708961Z"
+    },
+    {
+      "key": "9513908070e2ec0f7ef8f2c9",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-8-2026",
+      "fingerprint": "6ff68637f860281b",
+      "title_norm": "nhl on tap: smith could take center stage for sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T16:15:40.647289Z"
+    },
+    {
+      "key": "2c81288dce8ee84905ed3e0f",
+      "url": "https://www.nhl.com/news/nhl-unveils-uniforms-for-2026-nhl-heritage-classic",
+      "fingerprint": "e8ee5a2987bf24ad",
+      "title_norm": "nhl unveils jets, habs uniforms for heritage classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T16:15:40.910137Z"
     }
   ],
   "known_sources": [
