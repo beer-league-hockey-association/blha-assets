@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T02:45:35.588638Z",
+  "updated_at": "2026-10-08T03:00:43.490147Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5002,6 +5002,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T02:45:35.558489Z"
+    },
+    {
+      "key": "e284eada118523ddf85b17da",
+      "url": "https://www.nhl.com/news/colorado-avalanche-winnipeg-jets-game-recap-october-7-2026",
+      "fingerprint": "e30771fb8f1c41f7",
+      "title_norm": "connor has game-winner with 1 minute left, jets top avs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T03:00:43.184969Z"
+    },
+    {
+      "key": "56c272315e7dde3b5a13edd4",
+      "url": "https://www.sportsnet.ca/nhl/article/connors-two-goals-help-jets-eke-out-win-over-avalanche",
+      "fingerprint": "6a2b6861a2ea6576",
+      "title_norm": "connor's two goals help jets eke out win over avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T03:00:43.458220Z"
     }
   ],
   "known_sources": [
