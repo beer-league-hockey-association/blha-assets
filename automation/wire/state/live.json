@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T04:15:33.466815Z",
+  "updated_at": "2026-10-08T05:15:34.074792Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5042,6 +5042,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-08T04:15:33.384160Z"
+    },
+    {
+      "key": "373dd8f33b1a4a26e6ba831d",
+      "url": "https://www.nhl.com/news/edmonton-oilers-anaheim-ducks-game-recap-october-7-2026",
+      "fingerprint": "38795b10ca069c35",
+      "title_norm": "bouchard scores twice for oilers in win against ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T05:15:33.840579Z"
+    },
+    {
+      "key": "0cd5d803035899dfb838a03e",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-use-five-goal-second-period-to-top-ducks",
+      "fingerprint": "177af78f8d0abe24",
+      "title_norm": "oilers use five-goal second period to top ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T05:15:34.032448Z"
     }
   ],
   "known_sources": [
