@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T16:15:40.993144Z",
+  "updated_at": "2026-10-08T16:45:41.029973Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5202,6 +5202,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-08T16:15:40.910137Z"
+    },
+    {
+      "key": "182b3a41837b09ae4d8fa465",
+      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
+      "fingerprint": "8a056755133e6340",
+      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) will be a game-time decision in st. louis on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T16:45:39.111681Z"
+    },
+    {
+      "key": "973e3e631a6397391c1095b7",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "db37f1939e5739e5",
+      "title_norm": "jake sanderson (ott) — sanderson (lower-body) skated on thursday but will not play vs. philadelphia.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T16:45:40.234792Z"
+    },
+    {
+      "key": "617cb33b4be8fa47b8f1b6db",
+      "url": "https://www.dailyfaceoff.com/players/news/mikhail-sergachev/2639",
+      "fingerprint": "797bee3dbfef604f",
+      "title_norm": "mikhail sergachev (uta) — sergachev (upper-body) will play in boston on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T16:45:40.557062Z"
+    },
+    {
+      "key": "b563521655b2f773292f46b0",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-lindgren/4632",
+      "fingerprint": "976ce326a2c88ba4",
+      "title_norm": "ryan lindgren (sea) — lindgren (upper-body) is expected to miss the next 4-6 weeks after being placed on ir on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T16:45:40.603891Z"
     }
   ],
   "known_sources": [
