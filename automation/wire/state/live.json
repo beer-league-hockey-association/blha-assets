@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T19:30:40.496376Z",
+  "updated_at": "2026-10-08T20:00:40.193925Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5332,6 +5332,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-08T19:30:40.430511Z"
+    },
+    {
+      "key": "85ecfdb7352e467af75d70f2",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-mckenna-moved-down-to-third-line-cowan-to-take-his-place",
+      "fingerprint": "fade4b2caeec1330",
+      "title_norm": "maple leafs' mckenna moved down to third line, cowan to take his place",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T20:00:40.149372Z"
     }
   ],
   "known_sources": [
