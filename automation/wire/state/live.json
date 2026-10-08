@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T03:00:43.490147Z",
+  "updated_at": "2026-10-08T04:15:33.466815Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5022,6 +5022,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T03:00:43.458220Z"
+    },
+    {
+      "key": "74fbd2f2cd9f414976c12822",
+      "url": "https://www.nhl.com/news/trophy-tracker-vezina-lightning-andrei-vasilevskiy-early-choice-as-top-goalie",
+      "fingerprint": "cbab5cb5b50c219b",
+      "title_norm": "vezina tracker: 2-time winner early-season favorite",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T04:15:32.967448Z"
+    },
+    {
+      "key": "5c21a7f82d837e459feae0c5",
+      "url": "https://www.nhl.com/news/top-2027-nhl-draft-prospect-landon-dupont-among-ncaa-players-to-watch",
+      "fingerprint": "d5f3db6786da4164",
+      "title_norm": "2027 draft prospect dupont tops ncaa must-watch list",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T04:15:33.384160Z"
     }
   ],
   "known_sources": [
