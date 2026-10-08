@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T06:45:38.635747Z",
+  "updated_at": "2026-10-08T13:15:48.093690Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5082,6 +5082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T06:45:38.591472Z"
+    },
+    {
+      "key": "c1fab061b78e0997bb0422f9",
+      "url": "https://www.sportsnet.ca/nhl/article/who-could-red-wings-target-in-potential-simon-edvinsson-trade",
+      "fingerprint": "f4f364243031b58a",
+      "title_norm": "who could red wings target in potential simon edvinsson trade?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T13:15:48.051888Z"
     }
   ],
   "known_sources": [
