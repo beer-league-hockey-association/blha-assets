@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T23:00:41.449680Z",
+  "updated_at": "2026-10-08T23:30:38.353288Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5432,6 +5432,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T23:00:41.430385Z"
+    },
+    {
+      "key": "5628b0293e25fea1e19a92c1",
+      "url": "https://www.sportsnet.ca/nhl/article/sharks-star-celebrini-a-game-time-decision-vs-blues",
+      "fingerprint": "1c056ed5a6e29c03",
+      "title_norm": "sharks star celebrini a game-time decision vs. blues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T23:30:38.316918Z"
     }
   ],
   "known_sources": [
