@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T05:15:34.074792Z",
+  "updated_at": "2026-10-08T05:30:40.980317Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5062,6 +5062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T05:15:34.032448Z"
+    },
+    {
+      "key": "586e024a771983e7438ee9ac",
+      "url": "https://www.nhl.com/news/washington-capitals-fans-feel-privileged-to-have-witnessed-alex-ovechkin-era",
+      "fingerprint": "d692210442d93081",
+      "title_norm": "capitals fans 'privileged' to have seen ovechkin era",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T05:30:40.894817Z"
     }
   ],
   "known_sources": [
