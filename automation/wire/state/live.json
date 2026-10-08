@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T05:30:40.980317Z",
+  "updated_at": "2026-10-08T06:45:38.635747Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5072,6 +5072,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-08T05:30:40.894817Z"
+    },
+    {
+      "key": "f5720a0905fbd7ec2f35150b",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-flip-script-on-ducks-with-dominant-final-40-we-got-competitive",
+      "fingerprint": "44a3df7ef4a1a088",
+      "title_norm": "oilers flip script on ducks with dominant final 40: 'we got competitive'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-08T06:45:38.591472Z"
     }
   ],
   "known_sources": [
