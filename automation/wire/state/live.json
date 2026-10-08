@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T18:00:44.794510Z",
+  "updated_at": "2026-10-08T18:15:36.254132Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5292,6 +5292,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-08T18:00:44.693082Z"
+    },
+    {
+      "key": "d89358cf4795edb598939498",
+      "url": "https://www.nhl.com/news/alex-ovechkin-has-memorable-final-home-opener-with-capitals",
+      "fingerprint": "937cbe468a263db8",
+      "title_norm": "ovechkin has 'memorable' final home opener with caps",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-08T18:15:36.147165Z"
     }
   ],
   "known_sources": [
