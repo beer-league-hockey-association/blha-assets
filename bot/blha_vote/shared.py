@@ -2,8 +2,9 @@
 
 The bot reuses the GitHub automation's read-only Fantrax client and season
 calendar (automation/blha), the minor-eligibility and pick-trade helpers
-(automation/commissioner), the League Office calendar (automation/league-office)
-and the Constitution source (tools/). Railway deploys the whole repository, so
+(automation/commissioner), the power-ranking math (automation/competition),
+the League Office calendar (automation/league-office) and the Constitution
+source (tools/). Railway deploys the whole repository, so
 these folders are always next to the bot.
 """
 
@@ -43,6 +44,11 @@ def minors() -> ModuleType:
 def picktrades() -> ModuleType:
     """automation/commissioner/picktrades.py (Pick Clearance CSV, prepayment verdicts)."""
     return _load(COMMISSIONER, "picktrades")
+
+
+def weekly() -> ModuleType:
+    """automation/competition/weekly.py (all-play and power-ranking math, read-only)."""
+    return _load(AUTOMATION / "competition", "weekly")
 
 
 def league_ops() -> ModuleType:

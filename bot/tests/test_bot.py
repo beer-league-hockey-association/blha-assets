@@ -232,11 +232,14 @@ class DiscordSmokeTests(unittest.TestCase):
         from blha_vote.app import VoteBot
         bot = VoteBot(load(HERE.parent / "config.yaml"), Store(":memory:"))
         commands = {c.name: c for c in bot.tree.get_commands()}
-        self.assertEqual(set(commands), {"proposal", "vote", "franchise", "panel", "pickem",
+        self.assertEqual(set(commands), {"proposal", "vote", "franchise", "panel", "pickem", "book", "awards",
                                          "rule", "deadlines", "minor", "myteam", "tradecheck"})
         self.assertEqual({c.name for c in commands["vote"].commands}, {"open", "elect", "status", "cancel"})
         self.assertEqual({c.name for c in commands["proposal"].commands}, {"new", "from-thread"})
         self.assertEqual({c.name for c in commands["pickem"].commands}, {"leaderboard"})
+        self.assertEqual({c.name for c in commands["book"].commands}, {"lines", "bet", "mybets", "leaderboard"})
+        self.assertEqual({c.name for c in commands["awards"].commands},
+                         {"open", "nominate", "close", "results", "status"})
         for name in ("rule", "deadlines", "minor", "myteam", "tradecheck"):
             self.assertTrue(commands[name].guild_only, name)
         self.assertEqual([p.name for p in commands["tradecheck"].parameters],

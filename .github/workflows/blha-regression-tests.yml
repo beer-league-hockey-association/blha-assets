@@ -171,3 +171,6 @@ jobs:
 
       - name: Test the league bot's league tools (rule, deadlines, minor, myteam, tradecheck, Pick'em)
         run: python bot/tests/test_league_features.py
+
+      - name: Test the league bot's BLHA Bucks and Awards Ballot
+        run: python bot/tests/test_book_awards.py
