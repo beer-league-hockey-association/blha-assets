@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T23:30:38.353288Z",
+  "updated_at": "2026-10-08T23:45:31.936994Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5442,6 +5442,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-08T23:30:38.316918Z"
+    },
+    {
+      "key": "d70939c40edba710213b31f5",
+      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
+      "fingerprint": "58171e88a7294b2a",
+      "title_norm": "william eklund (ott) — eklund suffered a lower-body injury and had to be helped off the ice vs. philadelphia.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T23:45:31.544211Z"
+    },
+    {
+      "key": "e34ceafb7a5de18587023419",
+      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
+      "fingerprint": "8dd71e63d96ed822",
+      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is not on the ice for warmups; will not play thursday in st. louis.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T23:45:31.820452Z"
     }
   ],
   "known_sources": [
