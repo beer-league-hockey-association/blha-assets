@@ -47,6 +47,20 @@ class WireRoutingTests(unittest.TestCase):
         self.assertEqual(wire.classify_title(title, True), "injury-report")
         self.assertEqual(wire.classify_title("Kucherov out two weeks", True), "injury-report")
 
+    def test_signing_opinion_piece_stays_news(self) -> None:
+        for title in ("Why Red Wings need to sign Simon Edvinsson to a fair deal",
+                      "How the Oilers could trade for a top-six winger"):
+            self.assertEqual(wire.classify_title(title, False), "nhl-news")
+
+    def test_player_named_will_is_not_an_opinion_piece(self) -> None:
+        for title in ("Will Smith signs eight-year extension with Sharks",
+                      "Will Borgen traded to Kraken from Rangers"):
+            self.assertEqual(wire.classify_title(title, False), "nhl-transactions")
+
+    def test_real_signing_still_routes_transactions(self) -> None:
+        self.assertEqual(wire.classify_title("Red Wings sign Simon Edvinsson to eight-year deal", False),
+                         "nhl-transactions")
+
     def test_season_talk_without_absence_stays_news(self) -> None:
         for title in ("What to expect from the Maple Leafs the rest of the season",
                       "NHL's romance-themed audiobooks disappear after opening week of season"):
@@ -255,6 +269,72 @@ class WireRoundupTests(unittest.TestCase):
         batch.append(_candidate(11, title="Star winger out week-to-week with upper body injury"))
         engine.process_candidates(batch, state, "live")
         self.assertIn("1 more update", self.roundups[0][1]["embeds"][0]["title"])
+
+    def test_same_player_injury_from_second_source_is_skipped(self) -> None:
+        state = engine.empty_state()
+        dfo = _candidate(20, title="Sam Montembeault (MTL) — Montembeault left Wednesday's practice with a lower-body injury.")
+        dfo["source_id"] = "daily_faceoff_injuries"
+        engine.process_candidates([dfo], state, "live")
+        other = _candidate(21, title="Canadiens goalie Samuel Montembeault suffers injury in practice")
+        other["source_id"] = "sportsnet_nhl"
+        status = _candidate(22, title="Status report: Sam Montembeault day-to-day for Canadiens")
+        status["source_id"] = "nhl_latest"
+        self.assertTrue(engine.duplicate_reason(status, state).startswith("same-player:"))
+        # Matched on the last name, so "Samuel" vs "Sam" is still caught.
+        self.assertTrue(engine.duplicate_reason(other, state).startswith("same-player:"))
+
+    def test_same_player_rule_keeps_dfo_updates_and_other_players(self) -> None:
+        state = engine.empty_state()
+        first = _candidate(30, title="Bryan Rust (PIT) — Rust (upper-body) will be a game-time decision.")
+        first["source_id"] = "daily_faceoff_injuries"
+        engine.process_candidates([first], state, "live")
+        update = _candidate(31, title="Bryan Rust (PIT) — Rust (upper-body) will make his season debut Wednesday.")
+        update["source_id"] = "daily_faceoff_injuries"
+        self.assertIsNone(engine.duplicate_reason(update, state))
+        other = _candidate(32, title="Status report: Kris Letang out for Penguins tonight")
+        other["source_id"] = "nhl_latest"
+        self.assertIsNone(engine.duplicate_reason(other, state))
+        breaking = _candidate(33, channel="breaking-news", title="Bryan Rust out for season with torn ACL")
+        breaking["source_id"] = "nhl_latest"
+        self.assertIsNone(engine.duplicate_reason(breaking, state))
+
+    def _seen(self, state, title, source, channel="injury-report", n=0):
+        c = _candidate(100 + n, channel=channel, title=title)
+        c["source_id"] = source
+        engine.remember(c, state)
+
+    def _check(self, state, title, source, channel="injury-report", n=50):
+        c = _candidate(200 + n, channel=channel, title=title)
+        c["source_id"] = source
+        return engine.duplicate_reason(c, state)
+
+    def test_worse_news_from_another_outlet_still_posts(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Jake Sanderson (OTT) — Sanderson (lower-body) is day-to-day.", "daily_faceoff_injuries")
+        self.assertIsNone(self._check(state, "Senators' Jake Sanderson out six weeks with lower-body injury", "sportsnet_nhl"))
+        self.assertIsNone(self._check(state, "Sanderson exits with apparent injury vs. Maple Leafs", "nhl_latest", n=51))
+        self.assertTrue(self._check(state, "Senators' Sanderson day-to-day with lower-body injury",
+                                    "sportsnet_nhl", n=52).startswith("same-player:"))
+
+    def test_brothers_are_not_the_same_player(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Matthew Tkachuk (FLA) — Tkachuk (groin) is day-to-day.", "daily_faceoff_injuries")
+        self.assertIsNone(self._check(state, "Brady Tkachuk day-to-day for Senators with upper-body injury", "sportsnet_nhl"))
+        self.assertTrue(self._check(state, "Panthers' Tkachuk day-to-day with groin injury", "sportsnet_nhl", n=51))
+
+    def test_same_story_from_two_outlets_is_skipped(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Maple Leafs' Gavin McKenna scores first NHL goal vs. Predators", "nhl_latest", channel="nhl-news")
+        self.assertEqual(self._check(state, "McKenna scores first NHL goal, Maple Leafs rally past Predators",
+                                     "sportsnet_nhl", channel="nhl-news"), "same-story")
+        self.assertIsNone(self._check(state, "Predators trade for veteran defenseman before road trip",
+                                      "sportsnet_nhl", channel="nhl-news", n=51))
+
+    def test_breaking_news_upgrade_still_posts(self) -> None:
+        state = engine.empty_state()
+        self._seen(state, "Romanov likely to miss time after injury in Islanders loss", "sportsnet_nhl", channel="nhl-news")
+        self.assertIsNone(self._check(state, "Romanov likely to miss rest of season after injury in Islanders loss",
+                                      "nhl_latest", channel="breaking-news"))
 
     def test_run_wide_cap_spills_other_channels_into_roundups(self) -> None:
         state = engine.empty_state()
