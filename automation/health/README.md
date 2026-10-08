@@ -15,6 +15,7 @@ It currently monitors:
 - BLHA Fantrax Scoreboard (live scoreboard)
 - BLHA Fantrax Playoffs (live bracket)
 - BLHA Draft Center (only from 31 days before a Fantrax draft until a day after it)
+- BLHA Playoff Pool (only around the NHL playoffs: from 5 days before the NHL regular season ends until 2 days after the last scheduled playoff date)
 
 Workflows that only run some of the time are only checked while they are supposed to be running, using the same rules as the scheduler: the scoreboard is off in the offseason, the playoff bracket only runs in playoff weeks, and the League Office only runs while an enabled event is coming up. When a workflow switches on, it gets its normal threshold to complete a first run before it can be reported stale.
 
@@ -69,6 +70,7 @@ Each threshold is the maximum age of the latest live run before a "Workflow appe
 - Scoreboard: 3 hours (regular season and playoffs)
 - Playoffs: 3 hours (playoff weeks)
 - Competition Desk: 15 hours (preseason through playoffs)
+- Playoff Pool: 15 hours (07:45 and 19:45 runs, NHL playoff window only)
 
 These values are configured in `health_config.yaml` and can be tuned without changing the monitor engine.
 

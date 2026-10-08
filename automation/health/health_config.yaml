@@ -65,6 +65,14 @@ workflows:
     # Hourly during the playoff weeks only.
     max_age_minutes: 180
 
+  - id: playoff-pool
+    name: "BLHA Playoff Pool"
+    file: "blha-playoff-pool.yml"
+    # 07:45 and 19:45, only inside the NHL playoff window (when: nhl-playoffs
+    # in schedule.yaml, from 5 days before the NHL regular season ends until
+    # 2 days after the last scheduled playoff date). The longest gap is 12 hours.
+    max_age_minutes: 900
+
   - id: draft-center
     name: "BLHA Draft Center"
     file: "blha-draft-center.yml"

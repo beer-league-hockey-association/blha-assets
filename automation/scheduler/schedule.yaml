@@ -16,7 +16,9 @@
 #   when:   an extra condition. league-office-events = only while an enabled
 #           League Office event has a reminder window open. draft-window =
 #           from 31 days before the Fantrax draft date until a day after the
-#           draft finishes.
+#           draft finishes. nhl-playoffs = from 5 days before the NHL regular
+#           season's last day until 2 days after the NHL's last scheduled
+#           playoff date (NHL schedule data; see automation/blha/nhl_playoffs.py).
 #   phases: only run during these parts of the Fantrax season:
 #           preseason, regular, playoffs, offseason.
 #           The current phase comes from Fantrax's own week dates.
@@ -91,6 +93,18 @@ jobs:
     workflow: blha-starting-goalies.yml
     daily_at: ["11:30", "13:30", "15:30", "17:00", "18:00", "18:40", "20:00", "21:15"]
     phases: [regular, playoffs]
+
+  # Playoff Pool (just for fun, no money): a free NHL playoff box pool in
+  # 🏒│game-day. Posts the boxes once the NHL playoff field is set, standings
+  # each morning after the first puck drop, and a final post naming the Pool
+  # Shark. The NHL playoffs fall in the BLHA Offseason, so no phases: only
+  # the NHL's own dates gate it. The 19:45 check posts the boxes the same day
+  # if the field was set during the day, and retries a failed morning post.
+  - id: playoff-pool
+    workflow: blha-playoff-pool.yml
+    daily_at: ["07:45", "19:45"]
+    retry_failures: 2
+    when: nhl-playoffs
 
   # Live bracket; saves seeds automatically after the final regular week.
   - id: playoffs

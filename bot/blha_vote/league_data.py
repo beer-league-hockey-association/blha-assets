@@ -1,7 +1,8 @@
 """Cached, read-only data for the bot's league commands.
 
 Every method here blocks (Fantrax, the NHL API, the League Ledger CSV, the
-events file), so the Discord layer calls them with ``asyncio.to_thread``.
+events file, the Playoff Pool boxes), so the Discord layer calls them with
+``asyncio.to_thread``.
 Results are cached for a few minutes (rosters, scores) up to half a day
 (Fantrax's player list), so busy commands don't hammer Fantrax or the NHL.
 Nothing here writes to Fantrax.
@@ -30,6 +31,7 @@ TTL = {
     "clearance_error": 60,
     "events": 60,
     "nhl_search": 6 * 3600,
+    "pool_boxes": 10 * 60,  # boxes.json gains its deadline once the NHL publishes it
 }
 
 
@@ -76,12 +78,14 @@ class LeagueData:
     def __init__(self, client: Any = None, *, league_id: str | None = None,
                  clock: Callable[[], float] = time.monotonic,
                  events_loader: Callable[[], dict[str, Any]] | None = None,
-                 clearance_loader: Callable[[], Any] | None = None) -> None:
+                 clearance_loader: Callable[[], Any] | None = None,
+                 pool_loader: Callable[[], Any] | None = None) -> None:
         self._client = client
         self._league_id = league_id
         self.cache = TTLCache(clock)
         self._events_loader = events_loader
         self._clearance_loader = clearance_loader
+        self._pool_loader = pool_loader
         self._client_lock = threading.Lock()
 
     @property
@@ -137,6 +141,30 @@ class LeagueData:
         if result.status == "error":  # retry a failed read sooner
             self.cache.put("clearance", TTL["clearance_error"], result)
         return result
+
+    def pool_boxes(self) -> Any:
+        """The Playoff Pool boxes the automation posted (pool.load_boxes), or None before they exist.
+
+        Read from the public automation-state branch (pool.boxes_url). A failed
+        read raises and is not cached, so the next command tries again.
+        """
+        from . import pool
+
+        def load() -> Any:
+            if self._pool_loader is not None:
+                raw = self._pool_loader()
+            else:
+                import requests
+
+                response = requests.get(pool.boxes_url(), headers={"User-Agent": USER_AGENT}, timeout=15)
+                if response.status_code == 404:
+                    raw = None
+                else:
+                    response.raise_for_status()
+                    raw = response.json()
+            return pool.load_boxes(raw)
+
+        return self.cache.get("pool_boxes", TTL["pool_boxes"], load)
 
 
 class NHLLookup:

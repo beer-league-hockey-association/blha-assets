@@ -16,19 +16,24 @@ Slash commands:
   /myteam                  your franchise at a glance (private)
   /tradecheck              Constitution compliance for a proposed trade (never value)
   /pickem leaderboard      Pick'em season standings
+  /pool boxes              the Playoff Pool boxes (just for fun, during the NHL playoffs)
+  /pool pick               a franchise picks one player per box (private, until the first puck drop)
+  /pool export             Commissioner: the picks as entries.yaml for the pool automation
 
 Ballots are buttons on the vote post. They are private, can be changed until
 the vote closes, and close automatically after the window. The same one-minute
 ticker posts, locks and scores the weekly Pick'em.
 
 League logic lives in the pure modules next to this one (rules, constitution,
-deadlines, minor, team, trade, pickem); blocking reads (Fantrax, the NHL API,
-the League Ledger CSV, events.yaml) run in threads through league_data.
+deadlines, minor, team, trade, pickem, pool); blocking reads (Fantrax, the NHL
+API, the League Ledger CSV, events.yaml, the Playoff Pool boxes) run in
+threads through league_data.
 """
 
 from __future__ import annotations
 
 import asyncio
+import io
 import json
 import logging
 import random
@@ -42,6 +47,7 @@ from discord import app_commands
 from discord.ext import tasks
 
 from . import constitution, deadlines, embeds, minor, pickem, rules, trade
+from . import pool as pool_view
 from . import team as team_view
 from .config import BotConfig
 from .league_data import LeagueData, NHLLookup
@@ -191,6 +197,51 @@ class PickemPicksView(discord.ui.View):
     def _picked(self, m: pickem.Matchup, select: discord.ui.Select):
         async def callback(interaction: discord.Interaction) -> None:
             await self.bot.save_pick(interaction, self, m, select.values[0])
+        return callback
+
+    def _turn(self, page: int):
+        async def callback(interaction: discord.Interaction) -> None:
+            view = self.again(page)
+            await interaction.response.edit_message(content=view.content(), view=view)
+            self.stop()
+        return callback
+
+
+class PoolPicksView(discord.ui.View):
+    """A franchise's private Playoff Pool picks: one menu per box, four per page, page buttons on the fifth row."""
+
+    def __init__(self, bot: "VoteBot", boxes: Any, franchise: str, page: int = 0) -> None:
+        super().__init__(timeout=900)
+        self.bot, self.boxes, self.franchise = bot, boxes, franchise
+        self.pages = pool_view.pages(boxes)
+        self.page = max(0, min(page, len(self.pages) - 1))
+        self.mine = bot.store.pool_picks(boxes.year, franchise)
+        for row, box in enumerate(self.pages[self.page]):
+            options = []
+            for index, player in enumerate(box.players[:25], 1):
+                label, description = pool_view.option(index, player)
+                options.append(discord.SelectOption(label=label, value=str(player.id), description=description,
+                                                    default=self.mine.get(box.number) == player.id))
+            select = discord.ui.Select(placeholder=embeds.clip(box.title, 150), min_values=1, max_values=1,
+                                       row=row, options=options)
+            select.callback = self._picked(box.number, select)
+            self.add_item(select)
+        if len(self.pages) > 1:
+            for label, target in (("Previous", self.page - 1), ("Next", self.page + 1)):
+                button = discord.ui.Button(label=label, style=discord.ButtonStyle.secondary, row=4,
+                                           disabled=not 0 <= target < len(self.pages))
+                button.callback = self._turn(target)
+                self.add_item(button)
+
+    def content(self) -> str:
+        return pool_view.picks_content(self.boxes, self.franchise, self.mine, self.page, len(self.pages))
+
+    def again(self, page: int | None = None) -> "PoolPicksView":
+        return PoolPicksView(self.bot, self.boxes, self.franchise, self.page if page is None else page)
+
+    def _picked(self, box_number: int, select: discord.ui.Select):
+        async def callback(interaction: discord.Interaction) -> None:
+            await self.bot.save_pool_pick(interaction, self, box_number, int(select.values[0]))
         return callback
 
     def _turn(self, page: int):
@@ -516,6 +567,37 @@ class VoteBot(discord.Client):
         await interaction.response.edit_message(content=fresh.content(), view=fresh)
         view.stop()
 
+    # -- Playoff Pool ------------------------------------------------------
+    async def pool_boxes_or_reply(self, interaction: discord.Interaction) -> Any:
+        """The posted boxes, or None after telling the member why not (the interaction is deferred)."""
+        try:
+            boxes = await asyncio.to_thread(self.data.pool_boxes)
+        except Exception as exc:
+            log.warning("Could not read the Playoff Pool boxes: %s", exc)
+            await interaction.followup.send("Couldn't read the Playoff Pool boxes right now. Try again later.",
+                                            ephemeral=True)
+            return None
+        if boxes is None:
+            await interaction.followup.send(pool_view.NOT_POSTED, ephemeral=True)
+        return boxes
+
+    async def save_pool_pick(self, interaction: discord.Interaction, view: PoolPicksView, box_number: int,
+                             player_id: int) -> None:
+        now = utcnow()
+        if view.boxes.locked(now):
+            await interaction.response.edit_message(
+                content="Playoff Pool picks are locked: the playoffs have started.", view=None)
+            view.stop()
+            return
+        if not pool_view.valid_pick(view.boxes, box_number, player_id):
+            await interaction.response.send_message("That player isn't in this box.", ephemeral=True)
+            return
+        self.store.pool_pick(view.boxes.year, view.franchise, box_number, player_id, interaction.user.id, now=now,
+                             box_count=len(view.boxes.boxes))
+        fresh = view.again()
+        await interaction.response.edit_message(content=fresh.content(), view=fresh)
+        view.stop()
+
     # -- commands ----------------------------------------------------------
     def _build_commands(self) -> None:
         bot = self
@@ -524,6 +606,8 @@ class VoteBot(discord.Client):
         franchise = app_commands.Group(name="franchise", description="Franchise status", guild_only=True)
         panel = app_commands.Group(name="panel", description="Review Panel (19.4)", guild_only=True)
         pickem_group = app_commands.Group(name="pickem", description="Weekly Pick'em", guild_only=True)
+        pool_group = app_commands.Group(name="pool", description="Playoff Pool (just for fun, no money)",
+                                        guild_only=True)
         kinds = [app_commands.Choice(name="Material Amendment", value="amendment"),
                  app_commands.Choice(name="League Services Allocation change", value="services")]
 
@@ -693,6 +777,51 @@ class VoteBot(discord.Client):
                 embed = pickem.leaderboard_embed(board, pickem.season_label(key), weeks)
             await interaction.response.send_message(embed=discord.Embed.from_dict(embed))
 
+        @pool_group.command(name="boxes", description="The Playoff Pool boxes and the pick deadline")
+        @app_commands.describe(ephemeral="Only you see the boxes")
+        async def pool_boxes(interaction: discord.Interaction, ephemeral: bool = True) -> None:
+            await interaction.response.defer(ephemeral=ephemeral, thinking=True)
+            boxes = await bot.pool_boxes_or_reply(interaction)
+            if boxes is not None:
+                await interaction.followup.send(embed=discord.Embed.from_dict(pool_view.boxes_embed(boxes)),
+                                                ephemeral=ephemeral)
+
+        @pool_group.command(name="pick", description="Pick or change your franchise's Playoff Pool players")
+        async def pool_pick(interaction: discord.Interaction) -> None:
+            f, why = bot.member_team(interaction.user)
+            if f is None:
+                await interaction.response.send_message(why, ephemeral=True)
+                return
+            await interaction.response.defer(ephemeral=True, thinking=True)
+            boxes = await bot.pool_boxes_or_reply(interaction)
+            if boxes is None:
+                return
+            if boxes.locked(utcnow()):
+                await interaction.followup.send(
+                    f"Playoff Pool picks locked at the first puck drop, {embeds.stamp(boxes.deadline)}.",
+                    ephemeral=True)
+                return
+            view = PoolPicksView(bot, boxes, f.name)
+            await interaction.followup.send(view.content(), view=view, ephemeral=True)
+
+        @pool_group.command(name="export", description="Commissioner: the Playoff Pool picks as entries.yaml")
+        async def pool_export(interaction: discord.Interaction) -> None:
+            if not bot.is_commissioner(interaction.user):
+                await interaction.response.send_message("Only the Commissioner can export the pool entries.",
+                                                        ephemeral=True)
+                return
+            await interaction.response.defer(ephemeral=True, thinking=True)
+            boxes = await bot.pool_boxes_or_reply(interaction)
+            if boxes is None:
+                return
+            rows = bot.store.pool_entries(boxes.year)
+            text = pool_view.export_text(boxes, rows)
+            bot.store.log(interaction.user.id, "pool_export", {"year": boxes.year, "entries": len(rows)},
+                          now=utcnow())
+            await interaction.followup.send(pool_view.export_note(boxes, rows, utcnow()), ephemeral=True,
+                                            file=discord.File(io.BytesIO(text.encode("utf-8")),
+                                                              filename="entries.yaml"))
+
         @app_commands.command(name="rule", description="Look up the Constitution by section (12.4), article (XII) or keyword")
         @app_commands.describe(query="A section like 12.4, an article like XII, or a keyword like prepayment",
                                ephemeral="Only you see the answer")
@@ -795,7 +924,7 @@ class VoteBot(discord.Client):
             embed = await asyncio.to_thread(trade.build, bot.data, a, b, to_minors, utcnow(), bot.cfg.timezone)
             await interaction.followup.send(embed=discord.Embed.from_dict(embed), ephemeral=not post)
 
-        for group in (proposal, vote, franchise, panel, pickem_group):
+        for group in (proposal, vote, franchise, panel, pickem_group, pool_group):
             self.tree.add_command(group)
         for command in (rule, deadlines_cmd, minor_cmd, myteam, tradecheck):
             self.tree.add_command(command)

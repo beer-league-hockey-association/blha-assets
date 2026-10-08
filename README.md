@@ -62,6 +62,7 @@ Each job can be limited to parts of the season (preseason, regular season, playo
 | Lineup Alerts | 3:00 PM ET daily, regular season and playoffs |
 | Starting Goalies | Several checks from 11:30 AM to 9:15 PM ET, regular season and playoffs; edits one message a day |
 | Playoff bracket | Hourly, playoff weeks only |
+| Playoff Pool | 07:45 and 19:45 ET, only around the NHL playoffs (BLHA Offseason); posts only when something is due |
 | Draft Center | Every 15 minutes, only from 31 days before a Fantrax draft until a day after it ends |
 | League Archive | Daily around 05:30 ET, all year |
 | History Site | Daily around 06:15 ET, after the archive |
@@ -154,6 +155,12 @@ On game days during the regular season and playoffs, the first check after **11:
 - **Modes:** `preview` prints the message; `test` posts a new `[TEST]` message; `live` posts or edits today's message.
 - If Daily Faceoff changes its page layout, the run fails with a clear error and Automation Health reports it.
 - Information only: goalie starts count against the weekly cap (9.2), and Fantrax's own numbers decide.
+
+## Playoff Pool
+
+Code: `automation/playoff_pool/` · Workflow: `.github/workflows/blha-playoff-pool.yml` · Channel: `🏒│game-day` (webhook secret `BLHA_WEBHOOK_GAME_DAY`) · Entries: `automation/playoff_pool/entries.yaml`
+
+A free NHL playoff box pool for the owners once the fantasy season is over. Just for fun: no money and no effect on the league; the winner gets the **Pool Shark** role for the next season and a `pool_shark` line in the league history. When the NHL playoff field is set, the pool posts 10 boxes (8 tiers of skaters by points per game, a Dark Horses box and a goalie box) with the pick deadline, the first puck drop. Each owner picks one player per box (DM to the Commissioner now, `/pool pick` once the League Bot is live). Picks score BLHA points on NHL playoff boxscores; standings post each morning and a final post names the Pool Shark. Details, entry handling and previews: `automation/playoff_pool/README.md`.
 
 ## Playoffs
 

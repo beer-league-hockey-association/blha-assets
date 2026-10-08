@@ -89,10 +89,22 @@ def draft_window(now: datetime | None = None) -> datetime | None:
     return dr.window_start(draft, now, timedelta(days=days + 1), timedelta(hours=float(dc.get("linger_hours") or 24)))
 
 
+def nhl_playoffs_window(now: datetime | None = None) -> datetime | None:
+    """When the NHL playoff window opened (None outside it); see blha/nhl_playoffs.py.
+
+    Opens 5 days before the NHL regular season's last day and closes 2 days
+    after the NHL's last scheduled playoff date.
+    """
+    from . import nhl_playoffs
+
+    return nhl_playoffs.window_start(now)
+
+
 # condition name -> (function returning when it became true or None, reason when off)
 CONDITIONS = {
     "league-office-events": (league_office_window, "no enabled League Office event is coming up"),
     "draft-window": (draft_window, "no Fantrax draft within the next 31 days"),
+    "nhl-playoffs": (nhl_playoffs_window, "outside the NHL playoff window"),
 }
 
 

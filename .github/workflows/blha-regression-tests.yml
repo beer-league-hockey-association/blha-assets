@@ -10,6 +10,7 @@ on:
       - 'automation/commissioner/tasks.yaml'
       - 'automation/tools/*.sh'
       - 'automation/league.yaml'
+      - 'automation/playoff_pool/entries.yaml'
       - 'automation/scheduler/schedule.yaml'
       - 'automation/tests/fixtures/**'
       - 'automation/history/history.yaml'
@@ -27,6 +28,7 @@ on:
       - 'automation/commissioner/tasks.yaml'
       - 'automation/tools/*.sh'
       - 'automation/league.yaml'
+      - 'automation/playoff_pool/entries.yaml'
       - 'automation/scheduler/schedule.yaml'
       - 'automation/tests/fixtures/**'
       - 'automation/history/history.yaml'
@@ -127,6 +129,11 @@ jobs:
           PYTHONPATH: automation:automation/playoffs
         run: python automation/playoffs/test_playoff.py
 
+      - name: Test the Playoff Pool (boxes, scoring, tiebreaks, entries, posts, the job)
+        env:
+          PYTHONPATH: automation
+        run: python automation/playoff_pool/test_pool.py
+
       - name: Test Commissioner Desk reminders
         env:
           PYTHONPATH: automation:automation/commissioner
@@ -171,3 +178,6 @@ jobs:
 
       - name: Test the league bot's league tools (rule, deadlines, minor, myteam, tradecheck, Pick'em)
         run: python bot/tests/test_league_features.py
+
+      - name: Test the league bot's Playoff Pool commands (boxes, picks, export)
+        run: python bot/tests/test_pool.py
