@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T14:45:40.320902Z",
+  "updated_at": "2026-10-08T15:00:45.664269Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5122,6 +5122,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T14:45:40.273047Z"
+    },
+    {
+      "key": "8b1c4feddd2b17ceb5c0ae69",
+      "url": "https://www.dailyfaceoff.com/players/news/dominic-james/32816",
+      "fingerprint": "fd5e649142068f13",
+      "title_norm": "dominic james (tbl) — james (hand) will remain out vs. minnesota on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-08T15:00:45.621938Z"
     }
   ],
   "known_sources": [
