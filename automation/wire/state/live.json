@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T23:00:44.338348Z",
+  "updated_at": "2026-10-09T23:15:34.026576Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6112,6 +6112,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T23:00:44.239586Z"
+    },
+    {
+      "key": "45976a27be45c6c6011ed3be",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-healthy-hallander-eager-to-make-most-of-fresh-start",
+      "fingerprint": "ea89d1d4d00ce72a",
+      "title_norm": "oilers notebook: healthy hallander eager to make most of fresh start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T23:15:33.723683Z"
+    },
+    {
+      "key": "8e371fdb8b79d58d88e767ee",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-send-jayden-struble-to-predators-for-second-round-pick",
+      "fingerprint": "b7cb1fb273331211",
+      "title_norm": "canadiens send jayden struble to predators for second-round pick",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T23:15:34.003573Z"
     }
   ],
   "known_sources": [
