@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T17:15:34.972949Z",
+  "updated_at": "2026-10-09T17:45:37.116799Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5922,6 +5922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T17:15:34.933894Z"
+    },
+    {
+      "key": "ba1b89cb825a7733d072387d",
+      "url": "https://www.nhl.com/news/ottawa-senators-william-eklund-injury-status-update-october-9-2026",
+      "fingerprint": "e3ad915828aa8e05",
+      "title_norm": "eklund out 'extended' period of time for senators",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T17:45:37.025167Z"
     }
   ],
   "known_sources": [
