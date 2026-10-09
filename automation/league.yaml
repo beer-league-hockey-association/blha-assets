@@ -195,6 +195,27 @@ morning_skate:
   max_youtube: 3
   include_goal_reel: true
 
+# Playoff Pool (automation/playoff_pool/)
+#
+# A free NHL playoff box pool for the owners in 🏒│game-day during the NHL
+# playoffs. Just for fun: no money and no effect on the fantasy league. The
+# winner gets the Pool Shark role for next season and a line in the league
+# history. Entries: automation/playoff_pool/entries.yaml.
+# webhook:          GitHub Actions secret holding the 🏒│game-day webhook URL.
+# players_per_box:  skaters in each of boxes 1-9 (2 to 10).
+# min_games:        regular-season games a skater needs to be boxed.
+# dark_horse_gap:   skaters skipped after box 8 before box 9 (Dark Horses).
+# standings_time:   earliest local time the daily standings are posted.
+# entries_via:      dm = owners DM their picks to the Commissioner;
+#                   bot = owners use /pool pick (once the League Bot is live).
+playoff_pool:
+  webhook: BLHA_WEBHOOK_GAME_DAY
+  players_per_box: 8
+  min_games: 20
+  dark_horse_gap: 8
+  standings_time: "07:30"
+  entries_via: dm
+
 # ---------------------------------------------------------------------------
 # Commissioner Desk (private reminders for the commissioner's manual work)
 #

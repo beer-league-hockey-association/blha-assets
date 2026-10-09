@@ -1,0 +1,34 @@
+# BLHA Playoff Pool entries (just for fun: no money, no effect on the league).
+#
+# The Playoff Pool automation reads only this file. Maintained by the
+# Commissioner; see automation/playoff_pool/README.md.
+#
+# Before the League Bot is live: owners DM their picks to the Commissioner, who
+# adds them here before the deadline (the first puck drop of the playoffs).
+# Once the bot is live, owners use /pool pick and the Commissioner replaces
+# this file with the output of /pool export after the deadline.
+#
+#   year:     the NHL playoffs these picks are for (the year in the boxes
+#             post title). A file for any other year is ignored.
+#   owner:    the name shown in the standings (one entry per owner)
+#   entered:  optional, when the picks came in (for example the DM's time);
+#             the earliest entry wins the last tiebreak. Without a time zone
+#             it is league time (Eastern). An entry after the deadline is
+#             left out.
+#   picks:    box number -> player: the option number shown in the boxes
+#             post (1, 2, 3...), the NHL player id, or the player's name
+#
+# Example:
+#   year: 2027
+#   entries:
+#     - owner: "Rink Rats"
+#       entered: "2027-04-16 21:05"
+#       picks:
+#         1: 3
+#         2: "Auston Matthews"
+#         3: 8478402
+#         ...
+#         10: 2
+
+year: null
+entries: []

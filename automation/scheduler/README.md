@@ -37,6 +37,12 @@ Edit `schedule.yaml`. Nothing else needs to change.
   while a condition holds. The Trade Desk runs every 30 minutes, and every 15
   from midnight on trade-deadline day until an hour after the 11:59 PM ET
   deadline. If Fantrax cannot be read, the normal interval is used.
+- `when: nhl-playoffs` (and the other `when:` conditions) — an extra
+  condition instead of a season phase. `nhl-playoffs` reads the NHL's own
+  season dates (`automation/blha/nhl_playoffs.py`): from 5 days before the NHL
+  regular season's last day until 2 days after its last scheduled playoff
+  date. Outside late March to late July it makes no NHL request at all. If
+  the NHL schedule can't be read, the job runs anyway.
 
 The log for each scheduler run starts with the current season phase, then
 lists every job as `STARTED`, `WAIT`, or `OFF` (not active this phase).

@@ -1,6 +1,6 @@
 # BLHA League Bot
 
-An always-on Discord bot for the league. It runs league votes by the Constitution's rules (one vote per franchise, cast by the Franchise Owner), answers rules and eligibility questions, shows each franchise its own Fantrax picture, checks trades for compliance, and runs a weekly Pick'em. It stays off until owners join; the Constitution blocks amendment votes until the Offseason after Season 2027 (20.1).
+An always-on Discord bot for the league. It runs league votes by the Constitution's rules (one vote per franchise, cast by the Franchise Owner), answers rules and eligibility questions, shows each franchise its own Fantrax picture, checks trades for compliance, runs a weekly Pick'em, and takes picks for the just-for-fun NHL Playoff Pool. It stays off until owners join; the Constitution blocks amendment votes until the Offseason after Season 2027 (20.1).
 
 Fantrax is only ever read, never written. The bot posts nothing that Fantrax already sends (lineups, trades, waivers, draft picks).
 
@@ -52,6 +52,20 @@ Each Fantrax Week, owners pick the winner of every matchup.
 
 Regular-season Weeks only; Fantrax's schedule has seeds, not teams, for playoff Weeks. Who plays is set by `pickem.players` in config.yaml (`owner`, `co_owner` or both). Picks are stored on the Railway volume.
 
+### Playoff Pool
+
+A free NHL playoff box pool after the fantasy season (no money, no effect on the league; the winner gets the Pool Shark role). The GitHub automation runs it: it builds and posts the boxes, scores the picks and posts standings (`automation/playoff_pool/README.md`). The bot only takes picks.
+
+| Command | Who | What it does |
+| --- | --- | --- |
+| `/pool boxes` | Anyone | The 10 boxes and the pick deadline (private by default) |
+| `/pool pick` | Franchise Owner or Co-Owner | Private menus, one per box, four boxes per page. One entry per franchise; picks can change until the first puck drop of the NHL playoffs |
+| `/pool export` | Commissioner | The picks as `entries.yaml`, the file the automation reads |
+
+- **Boxes** come from the automation's `automation/playoff_pool/state/boxes.json` on the public `automation-state` branch, re-read every 10 minutes (`BLHA_POOL_BOXES_URL` overrides the address).
+- **Picks** are stored on the Railway volume. The automation can't read the bot's database, so after the deadline the Commissioner runs `/pool export` and commits the file as `automation/playoff_pool/entries.yaml`. Also set `playoff_pool.entries_via: bot` in `automation/league.yaml` so the boxes post points owners to `/pool pick`.
+- An entry's time (the last tiebreak) is when its last box was first filled.
+
 ## Setup (when owners have joined)
 
 **1. Create the bot in Discord**
@@ -85,9 +99,11 @@ Regular-season Weeks only; Fantrax's schedule has seeds, not teams, for playoff 
 - **Fantrax** (read-only): the season calendar and schedule (`getLeagueInfo`), rosters (`getTeamRosters`), draft picks (`getDraftPicks`), player names (`getPlayerIds`) and live scores (`getMatchupScores`), through the shared client in `automation/blha/`. Reads are cached for 3 to 30 minutes (player names for 12 hours) and run off the event loop, so a slow Fantrax never freezes the bot.
 - **NHL stats API:** player search and career totals for `/minor`, through `automation/commissioner/minors.py`, cached for hours.
 - **League Calendar:** `automation/league-office/events.yaml`, read the same way as the League Office automation.
-- The bot's league logic lives in plain modules next to `app.py` (`constitution`, `deadlines`, `minor`, `team`, `trade`, `pickem`), so it is tested without Discord.
+- **Playoff Pool boxes:** the automation's `boxes.json` on the `automation-state` branch (`raw.githubusercontent.com`), cached for 10 minutes.
+- The bot's league logic lives in plain modules next to `app.py` (`constitution`, `deadlines`, `minor`, `team`, `trade`, `pickem`, `pool`), so it is tested without Discord.
 
 ## Tests
 
 - `python bot/tests/test_bot.py` runs the voting rules, storage, embed and config tests offline. The Discord command tests (every command registers, ballot and Pick'em views build) run where `discord.py` is installed, which includes the regression-tests workflow.
+- `python bot/tests/test_pool.py` tests the Playoff Pool commands: reading the boxes, the picks menus' limits, storage, the deadline and the export the automation reads back.
 - `python bot/tests/test_league_features.py` tests `/rule`, `/deadlines`, `/minor`, `/myteam`, `/tradecheck`, Pick'em and the data caching against the Fantrax samples in `automation/tests/fixtures/`, with no network.

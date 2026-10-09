@@ -1,4 +1,4 @@
-"""SQLite storage for proposals, votes, ballots and the audit trail.
+"""SQLite storage for proposals, votes, ballots, Pick'em, Playoff Pool picks and the audit trail.
 
 On Railway the database lives on a volume (BLHA_DB_PATH, default
 /data/blha_votes.db) so votes survive restarts and redeploys.
@@ -84,6 +84,21 @@ CREATE TABLE IF NOT EXISTS pickem_picks (
     team_id TEXT NOT NULL,
     picked_at TEXT NOT NULL,
     PRIMARY KEY (season, period, user_id, matchup)
+);
+CREATE TABLE IF NOT EXISTS pool_picks (
+    year INTEGER NOT NULL,
+    franchise TEXT NOT NULL,
+    box INTEGER NOT NULL,
+    player_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    picked_at TEXT NOT NULL,
+    PRIMARY KEY (year, franchise, box)
+);
+CREATE TABLE IF NOT EXISTS pool_entries (
+    year INTEGER NOT NULL,
+    franchise TEXT NOT NULL,
+    completed_at TEXT,
+    PRIMARY KEY (year, franchise)
 );
 """
 
@@ -276,3 +291,40 @@ class Store:
     def latest_pickem_season(self) -> str | None:
         row = self.db.execute("SELECT season FROM pickem_weeks ORDER BY posted_at DESC LIMIT 1").fetchone()
         return row["season"] if row else None
+
+    # -- Playoff Pool --------------------------------------------------------
+    def pool_pick(self, year: int, franchise: str, box: int, player_id: int, user_id: int, *, now: datetime,
+                  box_count: int) -> int:
+        """Record or replace one box's pick. Returns how many boxes the entry has.
+
+        The first time an entry has every box filled, that moment is its entry
+        time (the pool's last tiebreak); later changes keep it.
+        """
+        self.db.execute(
+            "INSERT INTO pool_picks (year, franchise, box, player_id, user_id, picked_at) VALUES (?, ?, ?, ?, ?, ?) "
+            "ON CONFLICT(year, franchise, box) DO UPDATE SET player_id=excluded.player_id, "
+            "user_id=excluded.user_id, picked_at=excluded.picked_at",
+            (year, franchise, box, player_id, user_id, iso(now)))
+        count = int(self.db.execute("SELECT COUNT(*) FROM pool_picks WHERE year=? AND franchise=?",
+                                    (year, franchise)).fetchone()[0])
+        self.db.execute("INSERT OR IGNORE INTO pool_entries (year, franchise, completed_at) VALUES (?, ?, NULL)",
+                        (year, franchise))
+        if count >= box_count:
+            self.db.execute("UPDATE pool_entries SET completed_at=? WHERE year=? AND franchise=? "
+                            "AND completed_at IS NULL", (iso(now), year, franchise))
+        self.db.commit()
+        self.log(user_id, "pool_pick", {"year": year, "franchise": franchise, "box": box, "player": player_id},
+                 now=now)
+        return count
+
+    def pool_picks(self, year: int, franchise: str) -> dict[int, int]:
+        rows = self.db.execute("SELECT box, player_id FROM pool_picks WHERE year=? AND franchise=?",
+                               (year, franchise)).fetchall()
+        return {int(r["box"]): int(r["player_id"]) for r in rows}
+
+    def pool_entries(self, year: int) -> list[tuple[str, dict[int, int], datetime | None]]:
+        """[(franchise, box -> player id, entry time or None)], complete entries first, earliest first."""
+        rows = self.db.execute("SELECT franchise, completed_at FROM pool_entries WHERE year=?", (year,)).fetchall()
+        out = [(r["franchise"], self.pool_picks(year, r["franchise"]), parse(r["completed_at"])) for r in rows]
+        out = [row for row in out if row[1]]
+        return sorted(out, key=lambda r: (r[2] is None, r[2].isoformat() if r[2] else "", r[0]))
