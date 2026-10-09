@@ -161,14 +161,14 @@ tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fa
      [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
       ("PREPAYMENT", "`[NOT REQUIRED / CONFIRMED IN LEAGUE-LEDGER ON DATE]`")])
 
-# Deadline day: the BLHA TradeCentre. The live tracker in 📢│announcements and the
+# Deadline day: the BLHA Deadline Day Trade Center. The live tracker in 📢│announcements and the
 # report cards with polls in 💬│trade-discussion are automated (automation/trades/);
 # these two are posted by the Commissioner before deadline day.
 DEADLINE_RULE = ("A trade must be fully processed in Fantrax before the deadline; one processed after it is "
                  "reversed (11.6).")
-tmpl("trade-center/91_tradecentre_trade_bait_board.json", "BLHA TRADECENTRE: TRADE BAIT",
+tmpl("trade-center/91_deadline_day_trade_bait_board.json", "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT",
      "The deadline-day trade bait board. One reply per franchise: what you're moving and what you need.",
-     "BLHA TRADE CENTER • TRADECENTRE",
+     "BLHA TRADE CENTER • DEADLINE DAY",
      [("HOW TO POST", "Reply once for your franchise and edit that reply as things change, so the thread stays one "
                       "post per team. Delete it once you're done dealing."),
       ("FORMAT", "**Available:** players and picks you'd move\n**Looking for:** positions, prospects or picks\n"
@@ -180,8 +180,8 @@ tmpl("trade-center/91_tradecentre_trade_bait_board.json", "BLHA TRADECENTRE: TRA
                             "first (Article XII)."),
       ("FOLLOW ALONG", "From 9:00 AM ET the live tracker in **announcements** counts down and lists every trade. "
                        "Each trade also gets a report card and a just-for-fun poll in **trade-discussion**.")],
-     thread_name="BLHA TradeCentre: Trade Bait")
-tmpl("trade-center/92_tradecentre_sesh_event.json", "BLHA TRADECENTRE",
+     thread_name="BLHA Deadline Day Trade Center: Trade Bait")
+tmpl("trade-center/92_deadline_day_sesh_event.json", "BLHA DEADLINE DAY TRADE CENTER",
      "Trade deadline day, live from 9:00 AM ET until the deadline at 11:59 PM ET.",
      "BLHA LEAGUE CALENDAR",
      [("WHEN", "**`[TIMESTAMP]`** • the Sunday that ends Week 20"),
@@ -306,7 +306,8 @@ BUNDLES = {
     "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
     "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
     "08_Trades": ["trade-center/90_trade_completed.json"],
-    "10_TradeCentre": ["trade-center/91_tradecentre_trade_bait_board.json", "trade-center/92_tradecentre_sesh_event.json"],
+    "10_Deadline_Day_Trade_Center": ["trade-center/91_deadline_day_trade_bait_board.json",
+                                     "trade-center/92_deadline_day_sesh_event.json"],
     "09_Community_and_Traditions": ["league-office/26_awards_night.json", "league-office/27_award_winners.json",
                                     "league-office/28_wooden_spoon_proposal.json", "league-office/29_wooden_spoon_awarded.json",
                                     "league-office/63_league_bot_launch.json"],

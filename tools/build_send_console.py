@@ -50,7 +50,7 @@ BUNDLES = [
     ("07_Ownership", "announcements", "New owner, franchise seeking an owner, Commissioner transition"),
     ("08_Trades", "completed-trades", "Trade completed"),
     ("09_Community_and_Traditions", "announcements, gm-lounge and hall-of-champions", "Awards Night ballots and winners, Wooden Spoon proposal and award, League Bot launch"),
-    ("10_TradeCentre", "trade-block and league-calendar", "Trade deadline day: the Trade Bait board (forum post) and the TradeCentre Sesh event. The live tracker, report cards and polls are automated"),
+    ("10_Deadline_Day_Trade_Center", "trade-block and league-calendar", "Trade deadline day: the Trade Bait board (forum post) and the Deadline Day Trade Center Sesh event. The live tracker, report cards and polls are automated"),
 ]
 
 
@@ -127,15 +127,15 @@ AUTOMATED = {
     "CALENDAR EVENT": "Automation posts calendar milestones once their dates are filled in automation/league-office/events.yaml. Use this only for an extra one.",
     "DEADLINE REMINDER": "Automation posts reminders before each deadline in events.yaml. Use this only for an extra one.",
     "DYNASTY POT UPDATE": "Automation posts the Dynasty Pot graphic once the franchises are filled in. Use this only for a written update.",
-    "BLHA TRADECENTRE: TRADE BAIT": "Forum post in trade-block a few days before deadline day: fill in the deadline timestamp, send (the thread name is filled in), then pin the post.",
-    "BLHA TRADECENTRE": "The Sesh event's text. In league-calendar run /create, name it BLHA TradeCentre, set deadline day 9:00 AM to 11:59 PM ET, and paste this message's text as the description.",
+    "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT": "Forum post in trade-block a few days before deadline day: fill in the deadline timestamp, send (the thread name is filled in), then pin the post.",
+    "BLHA DEADLINE DAY TRADE CENTER": "The Sesh event's text. In league-calendar run /create, name it BLHA Deadline Day Trade Center, set deadline day 9:00 AM to 11:59 PM ET, and paste this message's text as the description.",
 }
 
 
 # Templates in a bundle that spans channels: the channel each one goes to.
 TEMPLATE_CHANNELS = {
-    "BLHA TRADECENTRE: TRADE BAIT": "trade-block",
-    "BLHA TRADECENTRE": "league-calendar",
+    "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT": "trade-block",
+    "BLHA DEADLINE DAY TRADE CENTER": "league-calendar",
 }
 
 
@@ -201,7 +201,7 @@ def build() -> str:
         trows = []
         for i, m in enumerate(msgs):
             title = next((e.get("title") for e in reversed(m["data"]["embeds"]) if e.get("title")), f"Message {i + 1}")
-            label = title.title().replace("Blha", "BLHA").replace("'S", "'s").replace("Tradecentre", "TradeCentre")
+            label = title.title().replace("Blha", "BLHA").replace("'S", "'s")
             body = {"messages": [{"data": m["data"]}]}
             raw = json.dumps(body, ensure_ascii=True, separators=(",", ":")).encode()
             href = "https://discohook.org/?data=" + base64.urlsafe_b64encode(raw).decode().rstrip("=")

@@ -3,7 +3,7 @@ run-name: BLHA Trade Desk — ${{ github.event_name == 'workflow_dispatch' && in
 
 # A report card with a "Who won the trade?" poll in 💬│trade-discussion for
 # every trade Fantrax processes, revisits 6 and 12 months later, and the
-# deadline-day BLHA TRADECENTRE tracker in 📢│announcements.
+# BLHA Deadline Day Trade Center tracker in 📢│announcements.
 # Timing lives in automation/scheduler/schedule.yaml (every 30 minutes, every
 # 15 on trade-deadline day); the BLHA Scheduler starts this workflow with
 # mode=live. Code: automation/trades/.
@@ -12,11 +12,11 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "preview = log only; test = post one [TEST] sample (see item); live = detect, post and save"
+        description: "preview = log only; test = post one [TEST] sample (see item); live = detect, post and save; rebaseline = save what Fantrax shows now as the snapshot, posting nothing (once, after a deliberate roster reset)"
         required: true
         default: preview
         type: choice
-        options: [preview, test, live]
+        options: [preview, test, live, rebaseline]
       item:
         description: "test mode: which sample to post (card and revisit go to trade-discussion, tracker to announcements)"
         required: false
@@ -62,7 +62,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r automation/common-requirements.txt
 
+      # Its own timeout, shorter than the job's, so the save below always gets to run.
+      # The script saves after detection and after every post, and revisits stop at
+      # their time budget, so whatever was posted before a timeout is saved.
       - name: Run the Trade Desk
+        id: desk
+        timeout-minutes: 15
         env:
           BLHA_WEBHOOK_TRADE_DISCUSSION: ${{ secrets.BLHA_WEBHOOK_TRADE_DISCUSSION }}
           BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS: ${{ secrets.BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS }}
@@ -73,9 +78,10 @@ jobs:
           if [[ "$MODE" == "preview" && -n "$AT" ]]; then args+=(--at "$AT"); fi
           python automation/trades/tradedesk.py "${args[@]}"
 
-      # Saved even if a later step fails, so a posted report card is never repeated.
+      # Saved even if the run failed, timed out or was cancelled, so a posted report card is never
+      # repeated; never when the run didn't start (a failed restore must not overwrite good state).
       - name: Save state to the automation-state branch
-        if: ${{ !cancelled() && env.MODE == 'live' }}
+        if: ${{ always() && steps.desk.outcome != 'skipped' && (env.MODE == 'live' || env.MODE == 'rebaseline') }}
         run: |
           bash automation/tools/state_branch.sh save \
             "chore(trades): save trade desk state" \

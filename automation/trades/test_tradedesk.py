@@ -66,18 +66,36 @@ class FakeFantrax:
         self.info = info or INFO
         self.reads = 0
         self._picks: dict | None = None
+        self.rosters_error: Exception | None = None    # getTeamRosters fails (HTTP error, timeout)
+        self.picks_error: Exception | None = None      # getDraftPicks fails
+        self.current: list[dict] | None = None         # currentDraftPicks rows (a draft set up in Fantrax)
+        self.draft: dict | None = None                 # getDraftResults answer
+        self.draft_reads = 0
 
     def league_info(self) -> dict:
         return self.info
 
     def rosters(self) -> dict:
+        if self.rosters_error:
+            raise self.rosters_error
         teams, picks = self.readings[min(self.reads, len(self.readings) - 1)]
         self.reads += 1
         self._picks = picks
         return rosters_raw(teams)
 
     def draft_picks(self) -> dict:
-        return picks_raw(self._picks)
+        if self.picks_error:
+            raise self.picks_error
+        raw = picks_raw(self._picks)
+        if self.current is not None:
+            raw["currentDraftPicks"] = self.current
+        return raw
+
+    def draft_results(self) -> dict:
+        self.draft_reads += 1
+        if self.draft is None:
+            raise RuntimeError("HTTP 500")
+        return self.draft
 
     def player_ids(self) -> dict:
         return PLAYER_IDS
@@ -581,8 +599,10 @@ class RunTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.tmp.cleanup()
 
-    def run_desk(self, readings, now, fake, mode="live", env=None):
+    def run_desk(self, readings, now, fake, mode="live", env=None, **fx_attrs):
         fx = FakeFantrax(readings)
+        for key, value in fx_attrs.items():
+            setattr(fx, key, value)
         with discord(fake, env):
             code, log = quiet(tradedesk.run, mode, now=now, fx=fx, cfg=CFG, state_path=self.state,
                               stats=tp.NhlStats(FakeNhl().get), hist=FakeHistory(), sleep=no_sleep)
@@ -681,7 +701,7 @@ class RunTests(unittest.TestCase):
         secret_name, payload, message_id = fake.upserts[0]
         self.assertEqual((secret_name, message_id), ("BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS", None))
         embed = payload["embeds"][0]
-        self.assertEqual(embed["title"], "BLHA TRADECENTRE")
+        self.assertEqual(embed["title"], "BLHA DEADLINE DAY TRADE CENTER")
         deadline = int(cal.trade_deadline(INFO, NY).timestamp())
         self.assertIn(f"<t:{deadline}:R>", embed["description"])
         self.assertIn("**Trades today:** 0", embed["description"])
@@ -694,10 +714,14 @@ class RunTests(unittest.TestCase):
         self.assertEqual(payload["embeds"][0]["fields"][0]["name"], "TRADE 1")
 
         self.run_desk([TRADED_2], ny(2027, 2, 22, 0, 5), fake)
+        card = fake.sent[-1][1]
+        self.assertIn("poll", card)   # seen in the first check after the deadline: may have processed in time
+        self.assertIn(tr.AT_DEADLINE, card["embeds"][0]["description"])
+        self.assertNotIn(tr.AT_DEADLINE, fake.sent[0][1]["embeds"][0]["description"])
         _, payload, message_id = fake.upserts[-1]
         self.assertEqual(message_id, "101")
         embed = payload["embeds"][0]
-        self.assertEqual(embed["title"], "BLHA TRADECENTRE — FINAL")
+        self.assertEqual(embed["title"], "BLHA DEADLINE DAY TRADE CENTER — FINAL")
         self.assertIn("Deadline passed — 2 trades today.", embed["description"])
         self.assertIn("first check after the deadline", embed["fields"][1]["value"])
         self.assertEqual(embed["footer"]["text"], tr.TRACKER_FINAL_FOOTER)
@@ -727,6 +751,313 @@ class RunTests(unittest.TestCase):
         trades = self.saved()["trades"]
         self.assertEqual(len(trades), 1)
         self.assertIn("reversed", trades[0])
+
+
+class SafetyTests(RunTests):
+    """Review fixes: saves, stale windows, rebaseline, Fantrax errors, the 11.6 window, picks."""
+
+    # 1. state is saved after every post; the tracker runs before revisits; revisits have a time budget
+
+    def test_a_posted_card_is_saved_even_if_the_run_dies_in_revisits(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 10, 12, 0), fake)
+        with patch.object(tradedesk, "post_revisits", side_effect=RuntimeError("NHL API hung")):
+            with self.assertRaises(RuntimeError):
+                self.run_desk([TRADED], ny(2027, 1, 10, 12, 30), fake)
+        trade = self.saved()["trades"][0]
+        self.assertEqual((trade["card"], trade["message_id"]), ("posted", "101"))
+        self.run_desk([TRADED], ny(2027, 1, 10, 13, 0), fake)
+        self.assertEqual(len(fake.sent), 1)   # never posted twice
+
+    def test_tracker_runs_before_revisits(self):
+        order = []
+        tracker, revisits = tradedesk.update_tracker, tradedesk.post_revisits
+        with patch.object(tradedesk, "update_tracker", lambda *a, **k: order.append("tracker") or tracker(*a, **k)), \
+             patch.object(tradedesk, "post_revisits", lambda *a, **k: order.append("revisits") or revisits(*a, **k)):
+            self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 2, 21, 9, 5), Discord())
+        self.assertEqual(order, ["tracker", "revisits"])
+
+    def test_workflow_saves_state_always_and_bounds_the_run(self):
+        import yaml
+
+        flow = yaml.safe_load((AUTOMATION.parent / ".github" / "workflows" / "blha-trade-desk.yml").read_text(encoding="utf-8"))
+        steps = {s["name"]: s for s in flow["jobs"]["trades"]["steps"]}
+        save = next(s for n, s in steps.items() if n.startswith("Save state"))
+        self.assertIn("always()", save["if"])
+        self.assertIn("steps.desk.outcome != 'skipped'", save["if"])   # a failed restore never saves
+        self.assertIn("rebaseline", save["if"])
+        run_step = steps["Run the Trade Desk"]
+        self.assertLess(run_step["timeout-minutes"], flow["jobs"]["trades"]["timeout-minutes"])
+        self.assertIn("rebaseline", flow[True]["workflow_dispatch"]["inputs"]["mode"]["options"])
+
+    def revisit_state(self, count: int) -> dict:
+        trades = []
+        for i in range(count):
+            trades.append({**card_trade(), "id": f"t{i}", "players": {"p1": dict(PLAYER_IDS["p1"]), "p4": dict(PLAYER_IDS["p4"])},
+                           "card": "posted", "message_id": "55", "poll": False, "revisits": {},
+                           "league_id": "L1", "season": 2026, "test": True})
+        return {"trades": trades}
+
+    def test_revisits_stop_at_the_time_budget_and_resume_next_run(self):
+        state = self.revisit_state(2)
+        now = ny(2027, 7, 15, 12, 5)
+        clock_now = [0.0]
+        nhl = FakeNhl()
+
+        def slow_get(url, **params):
+            clock_now[0] += 10   # every NHL request takes 10 seconds
+            return nhl.get(url, **params)
+
+        fake = Discord()
+        with discord(fake):
+            errors, log = quiet(tradedesk.post_revisits, state, CFG, NY, now, "live", tp.NhlStats(slow_get), FakeHistory(),
+                                stop_at=70.0, clock_fn=lambda: clock_now[0])
+        self.assertEqual(errors, 0, log)
+        self.assertEqual(len(fake.sent), 1, log)            # the first fits in the budget
+        self.assertIn("6", state["trades"][0]["revisits"])
+        self.assertNotIn("6", state["trades"][1]["revisits"])
+        self.assertIn("could not be read in time", log)
+        with discord(fake):
+            quiet(tradedesk.post_revisits, state, CFG, NY, now, "live", tp.NhlStats(nhl.get), FakeHistory(),
+                  stop_at=None)
+        self.assertEqual(len(fake.sent), 2)                 # the second posts on the next run
+        self.assertIn("6", state["trades"][1]["revisits"])
+
+    def test_no_revisit_starts_once_the_budget_is_used(self):
+        state = self.revisit_state(1)
+        fake = Discord()
+        with discord(fake):
+            _, log = quiet(tradedesk.post_revisits, state, CFG, NY, ny(2027, 7, 15, 12, 5), "live",
+                           tp.NhlStats(FakeNhl().get), FakeHistory(), stop_at=5.0, clock_fn=lambda: 10.0)
+        self.assertEqual(fake.sent, [])
+        self.assertIn("resume next run", log)
+
+    def test_out_of_time_revisit_posts_what_it_has_after_the_give_up_period(self):
+        state = self.revisit_state(1)
+        fake = Discord()
+        late = ny(2027, 7, 15, 12, 5) + tradedesk.REVISIT_GIVE_UP + timedelta(hours=1)
+        with discord(fake):
+            quiet(tradedesk.post_revisits, state, CFG, NY, late, "live", tp.NhlStats(FakeNhl().get), FakeHistory(),
+                  stop_at=5.0, clock_fn=iter([0.0] + [10.0] * 50).__next__)
+        self.assertEqual(len(fake.sent), 1)
+        self.assertIn(tp.OUT_OF_TIME, json.dumps(fake.sent[0][1]))
+
+    # 2. a long window over a waiver run: one-sided player moves are not posted
+
+    def test_one_sided_player_move_across_a_missed_waiver_run_is_not_posted(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 11, 10, 0), fake)
+        code, log, _ = self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 11, 10, 30), fake,
+                                     rosters_error=RuntimeError("Fantrax 503"))
+        self.assertEqual(code, 1, log)
+        # Tuesday: A's Monday drop of p1 and B's FAAB claim look like a trade; b and c also swapped p5 for p7.
+        swapped = ({"a": ["p2", "p3"], "b": ["p1", "p4", "p6", "p7"], "c": ["p5", "p8"]}, BASE_PICKS)
+        code, log, _ = self.run_desk([swapped], ny(2027, 1, 12, 11, 30), fake)
+        self.assertEqual(code, 0, log)
+        self.assertIn("NOT POSTED: player:p1 went from Test 1 to Test 2", log)
+        self.assertEqual(len(fake.sent), 1)
+        trade = self.saved()["trades"][0]
+        self.assertEqual((trade["teams"], trade["received"]), (["b", "c"], {"b": ["player:p7"], "c": ["player:p5"]}))
+        self.assertIn("p1", self.saved()["snapshot"]["rosters"]["b"])   # rebaselined
+        self.run_desk([swapped], ny(2027, 1, 12, 12, 0), fake)
+        self.assertEqual(len(fake.sent), 1)
+
+    def test_one_sided_move_in_a_normal_window_over_the_waiver_run_still_posts(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 12, 10, 45), fake)
+        one_sided = ({"a": ["p2", "p3"], "b": ["p1", "p4", "p5", "p6"], "c": ["p7", "p8"]}, BASE_PICKS)
+        code, log, _ = self.run_desk([one_sided], ny(2027, 1, 12, 11, 15), fake)
+        self.assertEqual((code, len(fake.sent)), (0, 1), log)
+        self.assertTrue(self.saved()["trades"][0]["one_sided"])
+
+    def test_one_sided_pick_move_in_a_stale_window_still_posts(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 11, 9, 0), fake)
+        pick_only = (BASE_TEAMS, {**BASE_PICKS, (2028, 1, "a"): "b"})
+        self.run_desk([pick_only], ny(2027, 1, 12, 13, 0), fake)
+        self.assertEqual(len(fake.sent), 1)
+
+    def test_waiver_window_rules(self):
+        self.assertTrue(tradedesk.spans_waiver_run(ny(2027, 1, 11, 9, 0), ny(2027, 1, 12, 9, 0), NY))
+        self.assertTrue(tradedesk.spans_waiver_run(ny(2027, 1, 11, 11, 0), ny(2027, 1, 11, 11, 30), NY))
+        self.assertFalse(tradedesk.spans_waiver_run(ny(2027, 1, 11, 13, 0), ny(2027, 1, 11, 23, 0), NY))
+        self.assertIsNone(tradedesk.unsafe_window(ny(2027, 1, 11, 10, 30), ny(2027, 1, 11, 11, 0), NY))
+        self.assertIsNone(tradedesk.unsafe_window(ny(2027, 1, 11, 13, 0), ny(2027, 1, 11, 23, 0), NY))
+        self.assertIn("4.0 hours", tradedesk.unsafe_window(ny(2027, 1, 11, 8, 0), ny(2027, 1, 11, 12, 0), NY))
+
+    def test_read_at_moves_only_every_heartbeat_and_the_newest_stamp_wins(self):
+        state = {}
+        tradedesk.mark_read(state, ny(2027, 1, 11, 9, 0))
+        first = state["read_at"]
+        tradedesk.mark_read(state, ny(2027, 1, 11, 10, 30))
+        self.assertEqual(state["read_at"], first)          # quiet runs don't rewrite it (no state commit)
+        tradedesk.mark_read(state, ny(2027, 1, 11, 11, 0))
+        self.assertEqual(state["read_at"], ny(2027, 1, 11, 11, 0).isoformat())
+        state["updated_at"] = ny(2027, 1, 11, 11, 30).isoformat()
+        self.assertEqual(tradedesk.last_good_read(state), ny(2027, 1, 11, 11, 30))
+
+    # 3. a deliberate roster reset: live refuses it and points to rebaseline, which fixes it
+
+    def test_roster_reset_points_to_rebaseline_mode_which_saves_without_posting(self):
+        fake = Discord()
+        full = {t: [f"{t}{i}" for i in range(6)] for t in "abcd"}
+        self.run_desk([(full, BASE_PICKS)], ny(2027, 1, 10, 12, 0), fake)
+        reset = {**full, "a": []}
+        code, log, _ = self.run_desk([(reset, BASE_PICKS)], ny(2027, 1, 10, 12, 30), fake)
+        self.assertEqual(code, 1)
+        self.assertIn("run the BLHA Trade Desk workflow once with mode rebaseline", log)
+        self.assertNotIn("run the archive", log)
+        self.assertEqual(self.saved()["snapshot"]["rosters"]["a"], {f"a{i}": "" for i in range(6)})
+        code, log, _ = self.run_desk([(reset, BASE_PICKS)], ny(2027, 1, 10, 12, 45), fake, mode="rebaseline")
+        self.assertEqual(code, 0, log)
+        self.assertEqual(self.saved()["snapshot"]["rosters"]["a"], {})
+        code, log, _ = self.run_desk([(reset, BASE_PICKS)], ny(2027, 1, 10, 13, 0), fake)
+        self.assertEqual(code, 0, log)
+        self.assertEqual((fake.sent, self.saved()["trades"]), ([], []))
+
+    def test_rebaseline_keeps_trades_and_saved_picks_when_picks_fail(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 10, 12, 0), fake)
+        self.run_desk([TRADED], ny(2027, 1, 10, 12, 30), fake)
+        before = self.saved()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 10, 13, 0), fake, mode="rebaseline",
+                      picks_error=RuntimeError("HTTP 500"))
+        after = self.saved()
+        self.assertEqual(after["trades"], before["trades"])
+        self.assertEqual(after["snapshot"]["picks"], before["snapshot"]["picks"])
+        self.assertEqual(len(fake.sent), 1)
+
+    # 4. a Fantrax error: the snapshot is kept, the other phases still run, the run fails
+
+    def test_fantrax_error_keeps_the_snapshot_and_the_other_phases_run(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 2, 21, 8, 0), fake)
+        broken = Discord()
+        broken.send = lambda name, payload: (False, "Discord returned 503", None)
+        self.run_desk([TRADED], ny(2027, 2, 21, 8, 30), broken)       # card stays pending
+        snapshot = self.saved()["snapshot"]
+        code, log, _ = self.run_desk([TRADED], ny(2027, 2, 21, 9, 5), fake,
+                                     rosters_error=ConnectionError("read timed out"))
+        self.assertEqual(code, 1)
+        self.assertIn("ERROR: reading Fantrax for trades failed (ConnectionError", log)
+        self.assertEqual(self.saved()["snapshot"], snapshot)
+        self.assertEqual(len(fake.sent), 1)                          # the pending card was retried
+        self.assertEqual(len(fake.upserts), 1)                       # the tracker still posted
+
+    def test_league_info_error_still_retries_cards(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 10, 12, 0), fake)
+        broken = Discord()
+        broken.send = lambda name, payload: (False, "Discord returned 503", None)
+        self.run_desk([TRADED], ny(2027, 1, 10, 12, 30), broken)
+        fx = FakeFantrax([TRADED])
+        fx.league_info = lambda: (_ for _ in ()).throw(TimeoutError("getLeagueInfo"))
+        with discord(fake):
+            code, log = quiet(tradedesk.run, "live", now=ny(2027, 1, 10, 13, 0), fx=fx, cfg=CFG, state_path=self.state,
+                              stats=tp.NhlStats(FakeNhl().get), hist=FakeHistory(), sleep=no_sleep)
+        self.assertEqual(code, 1)
+        self.assertEqual(len(fake.sent), 1)
+
+    # 5. a trade seen after the deadline, while trading is closed (11.6)
+
+    def test_trade_after_the_deadline_gets_no_poll_and_is_not_counted(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 2, 22, 0, 30), fake)
+        code, log, _ = self.run_desk([TRADED], ny(2027, 3, 3, 20, 0), fake)
+        self.assertEqual(code, 0, log)
+        payload = fake.sent[0][1]
+        self.assertNotIn("poll", payload)
+        description = payload["embeds"][0]["description"]
+        self.assertIn("the Commissioner reviews it under Section 11.6", description)
+        self.assertNotIn("Vote in the poll", description)
+        state = self.saved()
+        self.assertTrue(state["trades"][0]["after_deadline"])
+        self.assertFalse(state["trades"][0]["poll"])
+        self.assertEqual(tradedesk.counted(state, "L1", 2026), [])
+        self.assertIsNone(tradedesk.read_tally(CFG, state["trades"][0]))   # nothing to read back at the revisit
+        self.assertNotIn("VOTE", payload["embeds"][0]["footer"]["text"])
+
+    def test_a_poll_refusal_never_re_adds_a_poll_after_the_deadline(self):
+        t = {**card_trade(), "after_deadline": True}
+        self.assertNotIn("poll", tr.report_card(t, CFG, with_poll=True))
+
+    # 6. three or more teams: the card says the feed may have joined two trades
+
+    def test_three_team_card_says_trades_minutes_apart_can_join(self):
+        t = card_trade()
+        self.assertNotIn(tr.MERGED_NOTE, tr.report_card(t, CFG)["embeds"][0]["description"])
+        t["teams"] = ["a", "b", "c"]
+        t["received"]["c"] = ["player:p9"]
+        description = tr.report_card(t, CFG)["embeds"][0]["description"]
+        self.assertIn("can't separate trades made minutes apart", description)
+        self.assertIn("The Commissioner can correct it.", description)
+
+    # 7. getDraftPicks fails while players moved: wait for the next run instead of splitting the trade
+
+    def test_unreadable_picks_hold_a_player_trade_until_the_next_run(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 10, 12, 0), fake)
+        players_moved = {"a": ["p2", "p3"], "b": ["p1", "p4", "p5", "p6"], "c": ["p7", "p8"]}
+        whole = (players_moved, {**BASE_PICKS, (2028, 1, "b"): "a"})
+        code, log, _ = self.run_desk([whole], ny(2027, 1, 10, 12, 30), fake, picks_error=RuntimeError("HTTP 500"))
+        self.assertEqual(code, 1)
+        self.assertIn("RETRY", log)
+        self.assertEqual(fake.sent, [])
+        self.assertIn("p1", self.saved()["snapshot"]["rosters"]["a"])   # not advanced
+        code, log, _ = self.run_desk([whole], ny(2027, 1, 10, 13, 0), fake)
+        self.assertEqual((code, len(fake.sent)), (0, 1), log)
+        fields = {f["name"]: f["value"] for f in fake.sent[0][1]["embeds"][0]["fields"]}
+        self.assertIn("2028 1st round pick (Test 2)", fields["TEST 1 RECEIVES"])
+        self.assertEqual(fields["TEST 2 RECEIVES"], "Connor McDavid (C, EDM)")
+
+    def test_players_post_without_picks_once_picks_stay_unreadable_too_long(self):
+        fake = Discord()
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 1, 10, 13, 0), fake)
+        code, log, _ = self.run_desk([TRADED], ny(2027, 1, 10, 20, 0), fake, picks_error=RuntimeError("HTTP 500"))
+        self.assertEqual((code, len(fake.sent)), (0, 1), log)
+        self.assertIn("posting the player moves without them", log)
+
+    # 8. current-draft picks (around the Annual Draft) are read too
+
+    def test_current_draft_picks_use_the_draft_year(self):
+        fx = FakeFantrax([(BASE_TEAMS, BASE_PICKS)])
+        fx.current = [{"round": 1, "pick": 3, "originalOwnerTeamId": "a", "currentOwnerTeamId": "b"}]
+        fx.draft = {"draftDate": "2027-07-20T20:00:00.0-0400", "draftState": "scheduled", "draftPicks": []}
+        _, picks, _ = quiet(td.read_snapshot, fx, NY)[0]
+        self.assertEqual(picks["2027|1|a"], "b")
+        self.assertEqual(picks["2028|1|a"], "a")
+        fx.current = [{"year": 2027, "round": 2, "originalOwnerTeamId": "c", "currentOwnerTeamId": "c"}]
+        fx.draft_reads = 0
+        _, picks, _ = quiet(td.read_snapshot, fx, NY)[0]
+        self.assertEqual((picks["2027|2|c"], fx.draft_reads), ("c", 0))   # rows with a year need no draft read
+        fx.current = [{"round": 1, "pick": 3, "originalOwnerTeamId": "a", "currentOwnerTeamId": "b"}]
+        fx.draft = None
+        (_, picks, _), log = quiet(td.read_snapshot, fx, NY)
+        self.assertNotIn("2027|1|a", picks)
+        self.assertIn("could not read the draft date", log)
+
+    def test_current_draft_pick_trade_is_a_trade(self):
+        fake = Discord()
+        draft = {"draftDate": "2027-07-20T20:00:00.0-0400", "draftState": "in_progress", "draftPicks": []}
+        current = [{"round": 1, "pick": 3, "originalOwnerTeamId": "a", "currentOwnerTeamId": "a"}]
+        self.run_desk([(BASE_TEAMS, BASE_PICKS)], ny(2027, 7, 20, 20, 0), fake, current=current, draft=draft)
+        traded = [{**current[0], "currentOwnerTeamId": "b"}]
+        swap = ({"a": ["p2", "p3", "p4"], "b": ["p1", "p5", "p6"], "c": ["p7", "p8"]}, BASE_PICKS)
+        self.run_desk([swap], ny(2027, 7, 20, 20, 30), fake, current=traded, draft=draft)
+        self.assertEqual(len(fake.sent), 1)
+        self.assertEqual(self.saved()["trades"][0]["received"]["b"], ["pick:2027|1|a", "player:p1"])
+
+    # 9. American spelling in everything posted
+
+    def test_posts_use_american_spelling(self):
+        d = cal.trade_deadline(INFO, NY)
+        payloads = [tr.tracker(CFG, d, [card_trade()], 3, final=final, now=ny(2027, 2, 21, 12, 0)) for final in (False, True)]
+        payloads.append(tr.report_card({**card_trade(), "after_deadline": True}, CFG))
+        payloads.append(tr.report_card({**card_trade(), "teams": ["a", "b", "c"], "at_deadline": True}, CFG))
+        shown = [{k: e.get(k) for k in ("title", "description", "fields", "footer")} for p in payloads for e in p["embeds"]]
+        text = json.dumps([p["username"] for p in payloads] + shown, ensure_ascii=False).lower()
+        self.assertNotIn("centre", text)
+        self.assertNotIn("github", text)   # no GitHub links in anything posted
 
 
 class TrackerLimitsTests(unittest.TestCase):

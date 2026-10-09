@@ -37,6 +37,7 @@ unmatched rather than guessed.
 from __future__ import annotations
 
 import sys
+import time
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -59,6 +60,7 @@ SKATER_STATS = {"Goal": "goals", "Assist": "assists", "Shot on Goal": "shots", "
 GOALIE_STATS = {"Game Started": "gamesStarted", "Save": "saves", "Goal Against": "goalsAgainst",
                 "Goalie Goal": "goals", "Goalie Assist": "assists"}
 BOX_ONLY = ("hits", "blockedShots")
+OUT_OF_TIME = "not read in time"
 
 
 def _values(table: list[tuple[str, str]], stats: dict[str, str]) -> dict[str, float]:
@@ -145,9 +147,17 @@ def _pos(code: Any) -> str:
 
 
 class NhlStats:
-    """NHL reads with one shared getter (tests pass a fake) and a per-run boxscore cache."""
+    """NHL reads with one shared getter (tests pass a fake) and a per-run boxscore cache.
+
+    ``stop_at`` (a ``clock`` reading) is the run's time budget for NHL reads:
+    once it passes, no further request is made and the player in progress gets
+    the OUT_OF_TIME error, so a slow NHL API (429s) can't run a job past its
+    timeout.
+    """
 
     def __init__(self, get: Callable[..., Any] | None = None) -> None:
+        self.stop_at: float | None = None
+        self.clock: Callable[[], float] = time.monotonic
         if get is None:
             import requests
 
@@ -158,6 +168,9 @@ class NhlStats:
             get = lambda url, **params: minors._get(session, url, **params)  # noqa: E731
         self.get = get
         self.boxes: dict[str, dict[str, dict[str, Any]]] = {}
+
+    def out_of_time(self) -> bool:
+        return self.stop_at is not None and self.clock() >= self.stop_at
 
     def find_id(self, name: str, team: str = "", position: str = "") -> int | None:
         """NHL player id for a Fantrax player ("Last, First", NHL team, position), or None if unsure."""
@@ -204,6 +217,9 @@ class NhlStats:
         if nhl_id is None:
             out.error = "not matched to an NHL player"
             return out
+        if self.out_of_time():
+            out.error = OUT_OF_TIME
+            return out
         try:
             rows = [r for sid in seasons_between(after, through) for r in self.game_log(nhl_id, sid)]
         except Exception as exc:  # noqa: BLE001 - reported per player
@@ -214,6 +230,9 @@ class NhlStats:
             if day is None or not (after < day <= through):
                 continue
             row = dict(row)
+            if str(row.get("gameId")) not in self.boxes and self.out_of_time():
+                out.error = OUT_OF_TIME   # stop before another boxscore request
+                return out
             goalie_row = goalie or "shotsAgainst" in row or "goalsAgainst" in row
             if goalie_row and row.get("gamesStarted") is None:
                 box = self.box_row(row.get("gameId"), nhl_id) or {}

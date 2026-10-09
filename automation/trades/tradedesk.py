@@ -13,14 +13,19 @@ only saves a baseline.
    Discord poll "Who won the trade?" (each team, plus Even) open 72 hours. The
    vote is for fun and never affects the trade (Article XI). The message id is
    saved. A trade that exactly undoes a trade from the last 14 days (the
-   Commissioner reversing it) is not posted.
+   Commissioner reversing it) is not posted. A trade seen after the trade
+   deadline, while trading is closed (11.6: until the league is renewed for
+   next season, which is how trading reopens), gets a card without a poll
+   saying the Commissioner reviews it under Section 11.6, and it doesn't count
+   toward the season's trades. A card for three or more teams says the feed
+   can't separate trades made minutes apart.
 2. TRADE REVISIT at 6 and 12 months (same channel): for each side, the BLHA
    fantasy points its players have produced in NHL regular-season games since
    the trade (trade_points.py), wherever they have played since; picks show
    "not yet used" or the player drafted with them (league archive); and the
    final poll result, read back from Discord. It never suggests a trade should
    change.
-3. BLHA TRADECENTRE (📢│announcements, secret BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS):
+3. BLHA DEADLINE DAY TRADE CENTER (📢│announcements, secret BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS):
    on trade-deadline day (Sunday of the deadline Week, 11:59 PM ET; deadline
    from blha.season.trade_deadline, the same helper the League Bot uses) one
    live message is posted at 9:00 AM ET and edited every run until the
@@ -31,11 +36,30 @@ only saves a baseline.
 A missing webhook secret skips that post with a clear log line; the run does
 not fail. Posts are text and links only.
 
+Safety:
+- State is saved after detection and after every post, so a run that dies
+  later (a slow NHL API during revisits) never posts the same card twice.
+  The order is detection, report cards, the tracker, then revisits, which
+  have a time budget and resume on the next run.
+- A Fantrax error during detection keeps the saved snapshot; cards, the
+  tracker and revisits still run and the run exits non-zero.
+- Player moves with nothing coming back are not posted when the window since
+  the last good read is longer than STALE_AFTER and includes a waiver run
+  (10.3): a drop by one team and a FAAB claim by another would look like a
+  trade. The new rosters become the baseline and the log says so. Two-sided
+  swaps and pick moves still post. ``read_at`` keeps the last good read for
+  this, rewritten at most every READ_HEARTBEAT on quiet runs.
+- If getDraftPicks fails while players moved, nothing is posted or saved
+  and the next run tries again (for up to PICKS_WAIT), so a player-for-pick
+  trade is never split into two cards.
+
 Modes:
-  preview  read Fantrax, print what would be posted; no Discord, no state change
-           (--at "2027-02-21T21:00" previews another moment, for example deadline day)
-  test     post one [TEST] sample (--item card, revisit or tracker); no state change
-  live     detect, post and save state
+  preview     read Fantrax, print what would be posted; no Discord, no state change
+              (--at "2027-02-21T21:00" previews another moment, for example deadline day)
+  test        post one [TEST] sample (--item card, revisit or tracker); no state change
+  live        detect, post and save state
+  rebaseline  read Fantrax and save it as the new snapshot without posting anything
+              (after a deliberate roster reset, which live mode refuses as incomplete)
 """
 
 from __future__ import annotations
@@ -74,8 +98,17 @@ REVISIT_MONTHS = (6, 12)
 REVISIT_AT = time(12, 0)               # local time a revisit is posted on its day
 REVISIT_GIVE_UP = timedelta(days=3)    # if the NHL can't be read, post with what is readable after this
 MAX_REVISITS_PER_RUN = 3
+REVISIT_BUDGET = timedelta(minutes=6)  # NHL reading time per run; the rest resumes next run
 CARD_RETRY = timedelta(hours=6)        # a report card that failed to post is retried this long
 CONFIRM_DELAY = 5                      # seconds before re-reading Fantrax to confirm a trade
+STALE_AFTER = timedelta(hours=3)       # a longer window over a waiver run can hide a drop and a claim
+READ_HEARTBEAT = timedelta(hours=2)    # read_at moves at most this often on quiet runs (state commits)
+WAIVER_RUN = (time(10, 45), time(12, 0))  # around the daily 11:00 AM ET waiver run (Constitution 10.3)
+PICKS_WAIT = timedelta(hours=6)        # how long player moves wait for a readable getDraftPicks
+
+
+class RetryNextRun(RuntimeError):
+    """Detection found something it can't post whole yet; the snapshot is kept for the next run."""
 
 
 # --- configuration ---------------------------------------------------------------
@@ -180,62 +213,159 @@ def player_info(fx: Any, trades: list[dict[str, Any]]) -> None:
                     players[pid] = {k: row.get(k) for k in ("name", "position", "team") if row.get(k)}
 
 
-def detect_trades(state: dict[str, Any], fx: Any, cfg: dict[str, Any], season: int, now: datetime,
-                  sleep: Callable[[float], Any] = clock.sleep) -> list[dict[str, Any]]:
-    """New trades since the saved snapshot (also updates the snapshot in state)."""
-    league = str(cfg["league_id"])
-    rosters, picks, names = td.read_snapshot(fx)
-    snap = state.get("snapshot") or {}
-    last_check = state.get("updated_at") or snap.get("at")
+def stamp(value: Any) -> datetime | None:
+    try:
+        return when(value) if value else None
+    except (TypeError, ValueError):
+        return None
+
+
+def last_good_read(state: dict[str, Any]) -> datetime | None:
+    """The latest moment the saved snapshot is known to match Fantrax.
+
+    ``updated_at`` is exact whenever the state was committed (the state
+    branch skips a change to it alone), ``read_at`` is at most READ_HEARTBEAT
+    behind, and the snapshot's ``at`` is when rosters or picks last changed.
+    """
+    found = [stamp(state.get("updated_at")), stamp(state.get("read_at")), stamp((state.get("snapshot") or {}).get("at"))]
+    found = [x for x in found if x is not None]
+    return max(found) if found else None
+
+
+def mark_read(state: dict[str, Any], now: datetime) -> None:
     state["updated_at"] = now.isoformat()   # the only change on a quiet run, which the state save skips
-    if snap.get("league_id") != league or snap.get("season") != season or not isinstance(snap.get("rosters"), dict):
-        print(f"No saved snapshot for league {league} season {season} yet: saving a baseline. No trades reported this run.")
-        state["snapshot"] = {"league_id": league, "season": season, "rosters": rosters, "picks": picks or {},
-                             "at": now.isoformat()}
+    previous = stamp(state.get("read_at"))
+    if previous is None or now - previous >= READ_HEARTBEAT:
+        state["read_at"] = now.isoformat()
+
+
+def spans_waiver_run(start: datetime, end: datetime, tz: ZoneInfo) -> bool:
+    """True if (start, end] overlaps a daily waiver run (10:45 AM to noon, league time)."""
+    day, last = start.astimezone(tz).date(), end.astimezone(tz).date()
+    while day <= last:
+        opens = datetime.combine(day, WAIVER_RUN[0], tzinfo=tz)
+        closes = datetime.combine(day, WAIVER_RUN[1], tzinfo=tz)
+        if start < closes and end > opens:
+            return True
+        day += timedelta(days=1)
+    return False
+
+
+def unsafe_window(since: datetime | None, now: datetime, tz: ZoneInfo) -> str | None:
+    """Why a player moving with nothing back can't be told from a waiver drop and claim, or None.
+
+    FAAB claims only process at the daily waiver run (10.3), and a dropped
+    player sits on waivers first (10.6), so both fit in one window only when
+    it is long and includes a waiver run. Normal 15 to 30 minute windows over
+    the waiver run stay trusted.
+    """
+    if since is None or now - since <= STALE_AFTER or not spans_waiver_run(since, now, tz):
+        return None
+    hours = (now - since).total_seconds() / 3600
+    return (f"the last good Fantrax read was {hours:.1f} hours ago and a waiver run fell in between, "
+            "so a waiver drop and a FAAB claim would look the same")
+
+
+def detect_trades(state: dict[str, Any], fx: Any, cfg: dict[str, Any], season: int, now: datetime,
+                  sleep: Callable[[float], Any] = clock.sleep, *, tz: ZoneInfo | None = None,
+                  deadline: datetime | None = None, rebaseline: bool = False) -> list[dict[str, Any]]:
+    """New trades since the saved snapshot (also updates the snapshot in state).
+
+    Nothing in ``state`` changes unless every read succeeds. ``deadline``
+    (11.6) marks trades seen after it. ``rebaseline`` saves what Fantrax shows
+    now as the snapshot without looking for trades.
+    """
+    league = str(cfg["league_id"])
+    tz = tz or timezone_of(cfg)
+    rosters, picks, names = td.read_snapshot(fx, tz)
+    snap = state.get("snapshot") or {}
+    since = last_good_read(state)
+    fresh = snap.get("league_id") != league or snap.get("season") != season or not isinstance(snap.get("rosters"), dict)
+    if fresh or rebaseline:
+        if rebaseline:
+            print(f"REBASELINE: saving what Fantrax shows now as the snapshot for league {league} season {season}. "
+                  "No trades reported; saved trades, cards and revisits are unchanged.")
+        else:
+            print(f"No saved snapshot for league {league} season {season} yet: saving a baseline. No trades reported this run.")
+        kept = (snap.get("picks") or {}) if not fresh else {}
+        if picks is None and kept:
+            print("Draft picks couldn't be read: keeping the saved pick ownership.")
+        state["snapshot"] = {"league_id": league, "season": season, "rosters": rosters,
+                             "picks": picks if picks is not None else kept, "at": now.isoformat()}
+        mark_read(state, now)
         return []
     prev_picks = snap.get("picks") if isinstance(snap.get("picks"), dict) and snap.get("picks") else None
-    found = td.detect(snap["rosters"], rosters, prev_picks, picks)
-    if found:
+    moves = td.moves_between(snap["rosters"], rosters, prev_picks, picks)
+    if moves:
         # Rosters and picks are two separate reads; read both again so a trade
         # processed between them is seen whole, not as two trades.
         sleep(CONFIRM_DELAY)
-        rosters, again, names2 = td.read_snapshot(fx)
+        rosters, again, names2 = td.read_snapshot(fx, tz)
         picks = again if again is not None else picks
         names = {**names, **names2}
-        found = td.detect(snap["rosters"], rosters, prev_picks, picks)
+        moves = td.moves_between(snap["rosters"], rosters, prev_picks, picks)
+    if picks is None and prev_picks is not None and any(m["asset"].startswith("player:") for m in moves):
+        if since is None or now - since <= PICKS_WAIT:
+            raise RetryNextRun("players moved but draft-pick ownership couldn't be read, so a pick in the same "
+                               "trade would be missed; nothing posted or saved, the next run tries again")
+        print(f"WARNING: draft picks have been unreadable for over {PICKS_WAIT}; posting the player moves without them.")
+    reason = unsafe_window(since, now, tz)
+    held: list[dict[str, str]] = []
+    if reason:
+        moves, held = td.hold_back_one_sided_players(moves)
+    found = td.group_trades(moves)
+
     trades: list[dict[str, Any]] = []
-    stamp = now.strftime("%Y%m%dT%H%M%S")
+    reversals: list[dict[str, Any]] = []
+    stamp_id = now.strftime("%Y%m%dT%H%M%S")
     for i, t in enumerate(found, 1):
         undone = td.reversal_of(t, state.get("trades") or [], now)
         if undone:
-            undone["reversed"] = now.isoformat()
+            reversals.append(undone)
             print(f"REVERSAL: this undoes trade {undone['id']} ({' and '.join(undone['names'].get(x, x) for x in undone['teams'])}); "
                   "no report card, and its revisits are cancelled.")
             continue
         record = {
-            "id": f"{season}-{stamp}-{i}", "season": season, "league_id": league,
+            "id": f"{season}-{stamp_id}-{i}", "season": season, "league_id": league,
             "test": is_test_label(cfg.get("season_label")),
-            "at": now.isoformat(), "since": last_check,
+            "at": now.isoformat(), "since": since.isoformat() if since else None,
             "teams": t["teams"], "received": t["received"], "sent": t["sent"],
             "names": {k: v for k, v in sorted(names.items())},
             "card": "pending", "revisits": {},
         }
         if t.get("one_sided"):
             record["one_sided"] = True
+        if deadline is not None and since is not None and since >= deadline:
+            record["after_deadline"] = True   # the whole window is after the deadline (11.6)
+            print(f"AFTER THE DEADLINE: trade {record['id']} was processed while trading is closed (11.6); "
+                  "its card has no poll and it isn't counted.")
+        elif deadline is not None and since is not None and since < deadline < now:
+            record["at_deadline"] = True      # first check after the deadline: it may have processed just before
         trades.append(record)
     player_info(fx, trades)
+    for m in held:
+        print(f"NOT POSTED: {m['asset']} went from {names.get(m['from'], m['from'])} to "
+              f"{names.get(m['to'], m['to'])} with nothing coming back, but {reason}. Saved as the new baseline.")
+
+    for undone in reversals:
+        undone["reversed"] = now.isoformat()
     cur = {"league_id": league, "season": season, "rosters": rosters,
            "picks": picks if picks is not None else (prev_picks or {})}
     if any(snap.get(k) != v for k, v in cur.items()):
         state["snapshot"] = {**cur, "at": now.isoformat()}   # "at": when rosters or picks last changed
     state.setdefault("trades", []).extend(trades)
+    mark_read(state, now)
     return trades
 
 
 # --- 1. report cards --------------------------------------------------------------
 
-def post_cards(state: dict[str, Any], cfg: dict[str, Any], now: datetime, mode: str) -> int:
-    """Post every report card not posted yet (new trades, or a recent failed post). Returns errors."""
+def post_cards(state: dict[str, Any], cfg: dict[str, Any], now: datetime, mode: str,
+               persist: Callable[[], Any] = lambda: None) -> int:
+    """Post every report card not posted yet (new trades, or a recent failed post). Returns errors.
+
+    ``persist`` saves the state after each card, so a run that dies later never posts it again.
+    """
     name, errors = secret(cfg, "discussion"), 0
     for t in state.get("trades") or []:
         if t.get("card") != "pending" or t.get("reversed"):
@@ -243,25 +373,28 @@ def post_cards(state: dict[str, Any], cfg: dict[str, Any], now: datetime, mode: 
         if now - when(t["at"]) > CARD_RETRY:
             t["card"] = "gave up"
             print(f"GAVE UP report card {t['id']}: it could not be posted within {CARD_RETRY}.")
+            persist()
             continue
-        payload = tr.report_card(t, cfg, poll_hours=poll_hours(cfg))
+        with_poll = not t.get("after_deadline")
+        payload = tr.report_card(t, cfg, with_poll=with_poll, poll_hours=poll_hours(cfg))
         print(f"REPORT CARD {t['id']}:")
         show(payload)
         if mode != "live":
             continue
         if not has_secret(name):
             t["card"] = "skipped"
+            persist()
             print(f"SKIP report card: the {name} secret is not set (💬│trade-discussion webhook). "
                   "Add it in GitHub > Settings > Secrets and variables > Actions; later trades will post.")
             continue
         ok, detail, message_id = dw.send_discord_webhook(name, payload)
-        with_poll = True
-        if not ok and detail.startswith("Discord returned 400"):
+        if not ok and with_poll and detail.startswith("Discord returned 400"):
             print(f"POLL WARNING: Discord refused the message with its poll ({detail}). Posting it without the poll.")
             with_poll = False
             ok, detail, message_id = dw.send_discord_webhook(name, tr.report_card(t, cfg, with_poll=False))
         if ok:
             t.update({"card": "posted", "message_id": message_id, "poll": with_poll, "posted_at": now.isoformat()})
+            persist()
             print(f"POSTED report card {t['id']} (message {message_id})")
         else:
             errors += 1
@@ -340,6 +473,12 @@ def revisit_sides(trade: dict[str, Any], due: datetime, tz: ZoneInfo, stats: Any
                 lines.append({"kind": "pick", "text": pick_text(trade, asset, hist, through)})
                 continue
             info = (trade.setdefault("players", {})).setdefault(value, {})
+            label = tr.display_name(str(info.get("name") or f"Player {value}"))
+            if getattr(stats, "out_of_time", lambda: False)():
+                complete = False   # no more NHL requests this run
+                lines.append({"kind": "player", "label": label, "points": 0.0, "games": 0, "goalie": False,
+                              "error": tp.OUT_OF_TIME, "missing_box": 0})
+                continue
             nhl_id = info.get("nhl_id")
             if nhl_id is None and info.get("name"):
                 try:
@@ -352,7 +491,7 @@ def revisit_sides(trade: dict[str, Any], due: datetime, tz: ZoneInfo, stats: Any
             prod = stats.production(nhl_id, str(info.get("position") or "") == "G", after, through)
             if prod.error and nhl_id is not None:
                 complete = False
-            lines.append({"kind": "player", "label": tr.display_name(str(info.get("name") or f"Player {value}")),
+            lines.append({"kind": "player", "label": label,
                           "points": prod.points, "games": prod.games, "goalie": prod.goalie,
                           "error": "no NHL match" if nhl_id is None else prod.error,
                           "missing_box": prod.missing_box})
@@ -385,7 +524,10 @@ def read_tally(cfg: dict[str, Any], trade: dict[str, Any]) -> dict[str, Any] | N
 
 
 def post_revisits(state: dict[str, Any], cfg: dict[str, Any], tz: ZoneInfo, now: datetime, mode: str,
-                  stats: Any = None, hist: Any = None) -> int:
+                  stats: Any = None, hist: Any = None, *, persist: Callable[[], Any] = lambda: None,
+                  stop_at: float | None = None, clock_fn: Callable[[], float] = clock.monotonic) -> int:
+    """Post due revisits, at most MAX_REVISITS_PER_RUN and only while ``stop_at`` (a ``clock_fn``
+    reading) hasn't passed; the rest resume next run. ``persist`` saves after each post."""
     due = due_revisits(state, cfg, tz, now)
     if not due:
         return 0
@@ -394,12 +536,19 @@ def post_revisits(state: dict[str, Any], cfg: dict[str, Any], tz: ZoneInfo, now:
         print(f"SKIP {len(due)} trade revisit(s): the {name} secret is not set. They post once it is added.")
         return 0
     stats = stats or tp.NhlStats()
+    if stop_at is not None:
+        stats.stop_at, stats.clock = stop_at, clock_fn
     hist = hist if hist is not None else history(cfg=cfg)
     errors, cache = 0, {}
-    for trade, months, when_due in due[:MAX_REVISITS_PER_RUN]:
+    for done, (trade, months, when_due) in enumerate(due[:MAX_REVISITS_PER_RUN]):
+        if stop_at is not None and clock_fn() >= stop_at:
+            print(f"TIME: the revisit time budget ({REVISIT_BUDGET}) is used up; "
+                  f"{len(due) - done} due revisit(s) resume next run.")
+            break
         sides, window, complete = revisit_sides(trade, when_due, tz, stats, hist)
         if not complete and now - when_due < REVISIT_GIVE_UP:
-            print(f"WAITING revisit {trade['id']} ({months} months): NHL stats could not be read; will retry next run.")
+            print(f"WAITING revisit {trade['id']} ({months} months): NHL stats could not be read"
+                  f"{' in time' if getattr(stats, 'out_of_time', lambda: False)() else ''}; will retry next run.")
             continue
         tally = read_tally(cfg, trade) if mode == "live" else None
         link = message_link(cfg, trade.get("message_id"), cache) if mode == "live" else None
@@ -411,6 +560,7 @@ def post_revisits(state: dict[str, Any], cfg: dict[str, Any], tz: ZoneInfo, now:
         ok, detail, message_id = dw.send_discord_webhook(name, payload)
         if ok:
             trade.setdefault("revisits", {})[str(months)] = {"at": now.isoformat(), "message_id": message_id}
+            persist()
             print(f"POSTED revisit {trade['id']} ({months} months)")
         else:
             errors += 1
@@ -423,8 +573,10 @@ def post_revisits(state: dict[str, Any], cfg: dict[str, Any], tz: ZoneInfo, now:
 # --- 2. deadline-day tracker --------------------------------------------------------
 
 def counted(state: dict[str, Any], league: str, season: int) -> list[dict[str, Any]]:
+    """The season's trades: not reversed, and not seen after the deadline while trading is closed (11.6)."""
     return [t for t in state.get("trades") or []
-            if not t.get("reversed") and t.get("league_id") == league and t.get("season") == season]
+            if not t.get("reversed") and not t.get("after_deadline")
+            and t.get("league_id") == league and t.get("season") == season]
 
 
 def update_tracker(state: dict[str, Any], cfg: dict[str, Any], info: dict[str, Any], tz: ZoneInfo, now: datetime,
@@ -439,7 +591,7 @@ def update_tracker(state: dict[str, Any], cfg: dict[str, Any], info: dict[str, A
     if stage == "off":
         return 0
     if stage == "waiting":
-        print(f"Tracker: trade-deadline day; the BLHA TRADECENTRE message starts at {TRACKER_OPENS.strftime('%I:%M %p').lstrip('0')}.")
+        print(f"Tracker: trade-deadline day; the Deadline Day Trade Center message starts at {TRACKER_OPENS.strftime('%I:%M %p').lstrip('0')}.")
         return 0
     if entry.get("final"):
         return 0
@@ -474,7 +626,7 @@ def update_tracker(state: dict[str, Any], cfg: dict[str, Any], info: dict[str, A
 
 def run(mode: str, *, now: datetime | None = None, fx: Any = None, cfg: dict[str, Any] | None = None,
         state_path: Path = STATE_PATH, stats: Any = None, hist: Any = None,
-        sleep: Callable[[float], Any] = clock.sleep) -> int:
+        sleep: Callable[[float], Any] = clock.sleep, clock_fn: Callable[[], float] = clock.monotonic) -> int:
     cfg = cfg or load_league()
     tz = timezone_of(cfg)
     now = now or datetime.now(timezone.utc)
@@ -482,24 +634,61 @@ def run(mode: str, *, now: datetime | None = None, fx: Any = None, cfg: dict[str
     state = load_json(state_path, {})
     state.setdefault("trades", [])
     state.setdefault("deadline", {})
+    saving = mode in ("live", "rebaseline")
 
-    info = fx.league_info()
-    season = td.season_of(info)
-    print(f"BLHA TRADE DESK mode={mode.upper()} season={season} ({cfg.get('season_label') or ''}) "
-          f"now={now.astimezone(tz).strftime('%a %b %d %Y %I:%M %p %Z')}")
+    def persist() -> None:
+        if saving:
+            save_json(state_path, state)
+
     errors = 0
     try:
-        new = detect_trades(state, fx, cfg, season, now, sleep)
-        print(f"Trades found this run: {len(new)}.")
-    except td.SnapshotError as exc:
-        print(f"ERROR: {exc}. Nothing about trades is saved this run.")
+        info: dict[str, Any] | None = fx.league_info()
+        season = td.season_of(info)
+    except Exception as exc:  # noqa: BLE001 - cards and revisits don't need Fantrax
+        info, season = None, (state.get("snapshot") or {}).get("season")
         errors += 1
-    errors += post_cards(state, cfg, now, mode)
-    errors += post_revisits(state, cfg, tz, now, mode, stats, hist)
-    errors += update_tracker(state, cfg, info, tz, now, season, mode)
-    if mode == "live":
-        save_json(state_path, state)
-    else:
+        print(f"ERROR: could not read Fantrax league info ({exc.__class__.__name__}: {str(exc)[:200]}). "
+              "Trades and the tracker are skipped this run; report cards and revisits still run.")
+    print(f"BLHA TRADE DESK mode={mode.upper()} season={season} ({cfg.get('season_label') or ''}) "
+          f"now={now.astimezone(tz).strftime('%a %b %d %Y %I:%M %p %Z')}")
+
+    if mode == "rebaseline":
+        if info is None:
+            return 1
+        try:
+            detect_trades(state, fx, cfg, season, now, sleep, tz=tz, rebaseline=True)
+        except Exception as exc:  # noqa: BLE001
+            print(f"ERROR: could not read Fantrax ({exc.__class__.__name__}: {str(exc)[:200]}). Nothing saved.")
+            return 1
+        persist()
+        print("REBASELINE: saved. The next live run compares with this snapshot.")
+        return 0
+
+    # 1. Detection, saved before anything is posted.
+    if info is not None:
+        try:
+            new = detect_trades(state, fx, cfg, season, now, sleep, tz=tz, deadline=cal.trade_deadline(info, tz))
+            print(f"Trades found this run: {len(new)}.")
+            persist()
+        except RetryNextRun as exc:
+            errors += 1
+            print(f"RETRY: {exc}.")
+        except td.SnapshotError as exc:
+            errors += 1
+            print(f"ERROR: {exc}. The saved snapshot is kept; nothing about trades is saved this run.")
+        except Exception as exc:  # noqa: BLE001 - a Fantrax HTTP error or timeout must not stop the other phases
+            errors += 1
+            print(f"ERROR: reading Fantrax for trades failed ({exc.__class__.__name__}: {str(exc)[:200]}). "
+                  "The saved snapshot is kept; the next run compares with it.")
+    # 2. Report cards (saved after each post), 3. the tracker, 4. revisits (time budget, saved after each).
+    errors += post_cards(state, cfg, now, mode, persist)
+    if info is not None:
+        errors += update_tracker(state, cfg, info, tz, now, season, mode)
+        persist()
+    errors += post_revisits(state, cfg, tz, now, mode, stats, hist, persist=persist,
+                            stop_at=clock_fn() + REVISIT_BUDGET.total_seconds(), clock_fn=clock_fn)
+    persist()
+    if not saving:
         print("PREVIEW: nothing posted or saved.")
     return 1 if errors else 0
 
@@ -559,7 +748,9 @@ def test_post(item: str) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--mode", choices=("preview", "test", "live"), default="preview")
+    parser.add_argument("--mode", choices=("preview", "test", "live", "rebaseline"), default="preview",
+                        help="rebaseline: save what Fantrax shows now as the snapshot, posting nothing "
+                             "(after a deliberate roster reset)")
     parser.add_argument("--item", choices=("card", "revisit", "tracker"), default="card",
                         help="test mode: which sample to post")
     parser.add_argument("--at", help="preview only: as if it were this local time, e.g. 2027-02-21T21:00")
@@ -568,7 +759,7 @@ def main() -> int:
         return test_post(args.item)
     now = None
     if args.at:
-        if args.mode == "live":
+        if args.mode != "preview":
             parser.error("--at is for preview only")
         tz = timezone_of(load_league())
         now = datetime.fromisoformat(args.at)

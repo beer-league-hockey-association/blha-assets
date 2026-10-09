@@ -141,7 +141,7 @@ jobs:
 
   # Trade Desk: a report card with a "Who won the trade?" poll in
   # 💬│trade-discussion for every trade, revisits 6 and 12 months later, and the
-  # deadline-day BLHA TRADECENTRE tracker in 📢│announcements. All year: trades
+  # BLHA Deadline Day Trade Center tracker in 📢│announcements. All year: trades
   # happen in the offseason too. Every 30 minutes, and every 15 minutes on
   # trade-deadline day (midnight until an hour after the 11:59 PM ET deadline).
   - id: trade-desk

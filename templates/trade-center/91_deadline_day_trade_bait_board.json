@@ -1,11 +1,11 @@
 {
   "embeds": [
     {
-      "title": "BLHA TRADECENTRE: TRADE BAIT",
+      "title": "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT",
       "description": "The deadline-day trade bait board. One reply per franchise: what you're moving and what you need.",
       "color": 16758812,
       "footer": {
-        "text": "BLHA TRADE CENTER • TRADECENTRE"
+        "text": "BLHA TRADE CENTER • DEADLINE DAY"
       },
       "fields": [
         {
@@ -39,5 +39,5 @@
       }
     }
   ],
-  "thread_name": "BLHA TradeCentre: Trade Bait"
+  "thread_name": "BLHA Deadline Day Trade Center: Trade Bait"
 }

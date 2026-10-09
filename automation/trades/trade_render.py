@@ -23,8 +23,16 @@ POLL_ANSWER_MAX = 55         # Discord's limit for a poll answer's text
 POLL_ANSWERS_MAX = 10
 CARD_FOOTER = "BLHA TRADE CENTER • JUST FOR FUN: THE VOTE NEVER AFFECTS THE TRADE (ARTICLE XI)"
 REVISIT_FOOTER = "BLHA TRADE CENTER • JUST FOR FUN: A TRADE IS NEVER REVERSED BECAUSE OF VALUE (ARTICLE XI)"
+LATE_FOOTER = "BLHA TRADE CENTER • AFTER THE TRADE DEADLINE (SECTION 11.6)"
 TRACKER_FOOTER = "BLHA LEAGUE OFFICE • LIVE: UPDATED EVERY 15 MINUTES"
 TRACKER_FINAL_FOOTER = "BLHA LEAGUE OFFICE • FINAL"
+TRACKER_TITLE = "BLHA DEADLINE DAY TRADE CENTER"
+AFTER_DEADLINE = ("That is after the trade deadline, while trading is closed, so the Commissioner reviews it under "
+                  "Section 11.6. No poll, and it doesn't count toward this season's trades.")
+AT_DEADLINE = ("Seen in the first check after the trade deadline: the Commissioner checks it was processed in time "
+               "(Section 11.6).")
+MERGED_NOTE = ("Fantrax's feed can't separate trades made minutes apart, so separate trades that share a team can "
+               "show up here as one. The Commissioner can correct it.")
 FIELD_MAX = 1024
 EMBED_BUDGET = 5800          # Discord allows 6,000 characters per message; keep a margin
 TRACKER_MAX_TRADES = 20
@@ -121,12 +129,23 @@ def poll(trade: dict[str, Any], hours: int = POLL_HOURS) -> dict[str, Any]:
 
 def report_card(trade: dict[str, Any], cfg: dict[str, Any], *, test: bool = False,
                 with_poll: bool = True, poll_hours: int = POLL_HOURS) -> dict[str, Any]:
+    """One trade's card. A trade seen after the deadline (``after_deadline``, 11.6) never gets a poll."""
     seen = _ts(trade["at"])
-    vote = (f"Who won it? Vote in the poll; it closes in {poll_hours} hours." if with_poll
-            else "Who won it? Talk it over below.")
-    description = (f"{header(cfg)}\n"
-                   f"A trade went through in Fantrax, seen <t:{seen}:f>. {vote}\n"
-                   f"Owners post the official record in {COMPLETED_TRADES}.")
+    late = bool(trade.get("after_deadline"))
+    with_poll = with_poll and not late
+    if late:
+        vote = AFTER_DEADLINE
+    elif with_poll:
+        vote = f"Who won it? Vote in the poll; it closes in {poll_hours} hours."
+    else:
+        vote = "Who won it? Talk it over below."
+    lines = [header(cfg), f"A trade went through in Fantrax, seen <t:{seen}:f>. {vote}"]
+    if trade.get("at_deadline") and not late:
+        lines.append(AT_DEADLINE)
+    if len(trade.get("teams") or []) >= 3:
+        lines.append(MERGED_NOTE)
+    lines.append(f"Owners post the official record in {COMPLETED_TRADES}.")
+    description = "\n".join(lines)
     fields = [{"name": f"{team_name(trade, t).upper()} RECEIVES", "value": side_text(trade, t), "inline": False}
               for t in trade["teams"]]
     payload: dict[str, Any] = {
@@ -138,7 +157,7 @@ def report_card(trade: dict[str, Any], cfg: dict[str, Any], *, test: bool = Fals
             "description": description,
             "fields": fields[:25],
             "color": color_value(cfg.get("color")),
-            "footer": {"text": CARD_FOOTER},
+            "footer": {"text": LATE_FOOTER if late else CARD_FOOTER},
             "timestamp": datetime.fromtimestamp(seen, timezone.utc).isoformat(),
         }],
     }
@@ -256,11 +275,11 @@ def _size(embed: dict[str, Any]) -> int:
 
 def tracker(cfg: dict[str, Any], deadline: datetime, trades_today: list[dict[str, Any]], season_count: int, *,
             final: bool, now: datetime, test: bool = False) -> dict[str, Any]:
-    """The one live BLHA TRADECENTRE message in 📢│announcements (edited until the deadline, then final)."""
+    """The one live Deadline Day Trade Center message in 📢│announcements (edited until the deadline, then final)."""
     d = int(deadline.timestamp())
     n = len(trades_today)
     if final:
-        title = "BLHA TRADECENTRE — FINAL"
+        title = f"{TRACKER_TITLE} — FINAL"
         description = (f"{header(cfg)}\n"
                        f"**Deadline passed — {_plural(n, 'trade')} today.**\n"
                        "Trading reopens the day after the Stanley Cup Final ends (11.6).\n\n"
@@ -268,7 +287,7 @@ def tracker(cfg: dict[str, Any], deadline: datetime, trades_today: list[dict[str
                        f"**Trades this season:** {season_count}\n\n"
                        f"Report cards and polls: {TRADE_DISCUSSION}")
     else:
-        title = "BLHA TRADECENTRE"
+        title = TRACKER_TITLE
         description = (f"{header(cfg)}\n"
                        "Trade deadline day. A trade must be fully processed in Fantrax before the deadline; "
                        "one processed after it is reversed (11.6).\n\n"
