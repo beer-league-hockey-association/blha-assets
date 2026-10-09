@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T02:15:32.382604Z",
+  "updated_at": "2026-10-09T02:30:33.959911Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5552,6 +5552,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T02:15:32.359618Z"
+    },
+    {
+      "key": "0ab54d90e719ac7c806de828",
+      "url": "https://www.nhl.com/news/nashville-predators-montreal-canadiens-game-recap-october-8-2026",
+      "fingerprint": "8e03bb883902bbc7",
+      "title_norm": "o'reilly's late goal lifts predators past canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T02:30:33.541340Z"
+    },
+    {
+      "key": "28403ea4358e53170f1a13cf",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-collapse-late-in-loss-to-predators",
+      "fingerprint": "8e20de3125226140",
+      "title_norm": "canadiens collapse late in loss to predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T02:30:33.926727Z"
     }
   ],
   "known_sources": [
