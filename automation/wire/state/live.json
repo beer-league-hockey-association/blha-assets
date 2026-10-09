@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T17:45:37.116799Z",
+  "updated_at": "2026-10-09T18:00:35.966999Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5932,6 +5932,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-09T17:45:37.025167Z"
+    },
+    {
+      "key": "fb587094af84f891f4c7b637",
+      "url": "https://www.sportsnet.ca/nhl/article/how-maple-leafs-marchenko-is-making-presence-felt",
+      "fingerprint": "5b35394c9c84fa38",
+      "title_norm": "how maple leafs' marchenko is making presence felt",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T18:00:35.942414Z"
     }
   ],
   "known_sources": [
