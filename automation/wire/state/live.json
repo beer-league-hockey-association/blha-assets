@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T11:45:36.899769Z",
+  "updated_at": "2026-10-09T13:15:36.969798Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5742,6 +5742,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T11:45:36.839382Z"
+    },
+    {
+      "key": "a49110aa8d4157cc739a9f7d",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-which-early-season-injury-will-be-most-impactful",
+      "fingerprint": "0a5805c5685deb53",
+      "title_norm": "friday four: which early season injury will be most impactful?",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T13:15:36.951834Z"
     }
   ],
   "known_sources": [
