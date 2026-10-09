@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T20:30:44.898209Z",
+  "updated_at": "2026-10-09T20:45:34.171614Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6012,6 +6012,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T20:30:44.823975Z"
+    },
+    {
+      "key": "60317520963b384d1cf55ceb",
+      "url": "https://dobberprospects.com/2026/10/09/october-whl-report-prospect-watch",
+      "fingerprint": "5fd445328ce583c9",
+      "title_norm": "october whl report: prospect watch",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-09T20:45:34.152577Z"
     }
   ],
   "known_sources": [
