@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T20:15:33.989123Z",
+  "updated_at": "2026-10-09T20:30:44.898209Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5992,6 +5992,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T20:15:33.924198Z"
+    },
+    {
+      "key": "8140926c41be8fd0ba3fae92",
+      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
+      "fingerprint": "eb7325aef12e95e8",
+      "title_norm": "mats zuccarello (lak) — zuccarello (upper-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T20:30:44.513777Z"
+    },
+    {
+      "key": "01939af83d98f071e3381177",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-turcotte-30420/30420",
+      "fingerprint": "d81e24dde6e62b3b",
+      "title_norm": "alex turcotte (lak) — turcotte (undisclosed) missed practice on friday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T20:30:44.823975Z"
     }
   ],
   "known_sources": [
