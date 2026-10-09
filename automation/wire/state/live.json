@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T05:30:36.880572Z",
+  "updated_at": "2026-10-09T05:45:34.494008Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5682,6 +5682,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-09T05:30:36.828676Z"
+    },
+    {
+      "key": "92100e0223b60a78dd1834c9",
+      "url": "https://www.sportsnet.ca/nhl/article/winless-flames-find-silver-lining-with-castagnas-debut",
+      "fingerprint": "215e48589c0a8428",
+      "title_norm": "winless flames find silver lining with castagna's debut",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T05:45:34.455839Z"
     }
   ],
   "known_sources": [
