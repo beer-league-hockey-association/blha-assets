@@ -27,6 +27,7 @@ TTL = {
     "picks": 10 * 60,
     "players": 12 * 3600,   # getPlayerIds is large and changes slowly
     "scores": 3 * 60,
+    "standings": 10 * 60,
     "clearance": 10 * 60,
     "clearance_error": 60,
     "events": 60,
@@ -118,6 +119,10 @@ class LeagueData:
 
     def matchup_scores(self, period: int) -> list[dict[str, Any]]:
         return self.cache.get(("scores", period), TTL["scores"], lambda: self.client.matchup_scores(period))
+
+    def standings(self) -> list[dict[str, Any]]:
+        """getStandings, normalized (rank, teamId, record, points for); the Awards Ballot's Comeback and Bust."""
+        return self.cache.get("standings", TTL["standings"], self.client.standings)
 
     def events(self) -> dict[str, Any]:
         def load() -> dict[str, Any]:

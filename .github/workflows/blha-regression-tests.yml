@@ -196,3 +196,5 @@ jobs:
 
       - name: Test the league bot's Playoff Pool commands (boxes, picks, export)
         run: python bot/tests/test_pool.py
+      - name: Test the league bot's BLHA Bucks and Awards Ballot
+        run: python bot/tests/test_book_awards.py

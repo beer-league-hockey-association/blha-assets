@@ -15,6 +15,9 @@ discord:
   pickem_channel_id: ""               # channel for the weekly Pick'em posts
   suggestions_forum_id: ""            # league-suggestions forum (/proposal from-thread)
   scheduled_for_vote_tag_id: ""       # optional; ID of the "🗳️ SENT TO VOTE" forum tag, added when a suggestion becomes a proposal
+  book_channel_id: ""                 # 🏒│game-day: BLHA Bucks lines, weekly settlement and leaderboard (blank = BLHA Bucks off)
+  hall_of_champions_channel_id: ""    # 🏆│hall-of-champions: /awards results posts the winners here
+  awards_ballot_channel_id: ""        # optional; where /awards open posts the ballot (blank = league-voting)
 
 # One entry per franchise. role_id is that franchise's own Discord role.
 # fantrax_team_id is the franchise's Fantrax team ID (run the BLHA Pick Trades
@@ -60,3 +63,17 @@ dues_deadlines:
 # and/or co_owner (Co-Owner role).
 pickem:
   players: [owner, co_owner]
+
+# BLHA Bucks: play-money bets against the spread on other franchises' matchups,
+# posted in book_channel_id. Just for fun: nothing affects FAAB, picks, lineups
+# or standings, and Bucks can't be traded or converted.
+book:
+  players: [owner]          # owner (Franchise Owner role) and/or co_owner (Co-Owner role)
+  sharp_role: "💸 Sharp"    # exact name of the role given to the season profit leader after the
+                            # last regular-season Week (create it; the bot needs Manage Roles)
+
+# Annual Awards Ballot (/awards open, after the BLHA Championship).
+awards:
+  ballot_days: 7            # ballots close this many days after /awards open, unless a deadline is given
+  export_path: ""           # JSON file of the winners for the history site's trophy case
+                            # (blank = blha_awards.json next to BLHA_DB_PATH, /data on Railway)

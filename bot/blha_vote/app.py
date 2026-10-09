@@ -19,14 +19,20 @@ Slash commands:
   /pool boxes              the Playoff Pool boxes (just for fun, during the NHL playoffs)
   /pool pick               a franchise picks one player per box (private, until the first puck drop)
   /pool export             Commissioner: the picks as entries.yaml for the pool automation
+  /book lines|bet|mybets|leaderboard
+                           BLHA Bucks: play-money bets against the spread on
+                           matchups the bettor's franchise isn't in
+  /awards open|nominate|close|results|status
+                           the annual Awards Ballot (5-3-1), after the Championship
 
 Ballots are buttons on the vote post. They are private, can be changed until
 the vote closes, and close automatically after the window. The same one-minute
-ticker posts, locks and scores the weekly Pick'em.
+ticker posts, locks and scores the weekly Pick'em, posts, locks and settles
+BLHA Bucks Weeks, and closes the Awards Ballot at its deadline.
 
 League logic lives in the pure modules next to this one (rules, constitution,
-deadlines, minor, team, trade, pickem, pool); blocking reads (Fantrax, the NHL
-API, the League Ledger CSV, events.yaml, the Playoff Pool boxes) run in
+deadlines, minor, team, trade, pickem, pool, book, awards); blocking reads (Fantrax,
+the NHL API, the League Ledger CSV, events.yaml, the Playoff Pool boxes) run in
 threads through league_data.
 """
 
@@ -40,13 +46,14 @@ import random
 import re
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Any, Optional
 
 import discord
 from discord import app_commands
 from discord.ext import tasks
 
-from . import constitution, deadlines, embeds, minor, pickem, rules, trade
+from . import awards, book, constitution, deadlines, embeds, minor, pickem, rules, trade
 from . import pool as pool_view
 from . import team as team_view
 from .config import BotConfig
@@ -252,6 +259,87 @@ class PoolPicksView(discord.ui.View):
         return callback
 
 
+class AwardsPostView(discord.ui.View):
+    """The persistent "Fill out my ballot" button on the Awards Ballot post."""
+
+    def __init__(self, bot: "VoteBot") -> None:
+        super().__init__(timeout=None)
+        self.bot = bot
+
+    @discord.ui.button(label="Fill out my ballot", style=discord.ButtonStyle.primary, custom_id="blha:awards:ballot")
+    async def fill(self, interaction: discord.Interaction, button: discord.ui.Button) -> None:
+        await self.bot.open_awards_ballot(interaction)
+
+
+class AwardsBallotView(discord.ui.View):
+    """A franchise's private Awards ballot: one award per page, a menu each for 1st, 2nd and 3rd."""
+
+    def __init__(self, bot: "VoteBot", season_year: int, franchise: str, nominees: awards.Nominees,
+                 closes_at: datetime, page: int = 0, *, at: str | None = None) -> None:
+        super().__init__(timeout=900)
+        self.bot, self.season, self.franchise = bot, season_year, franchise
+        self.nominees, self.closes_at = nominees, closes_at
+        self.keys = [a.key for a in awards.AWARDS if nominees.get(a.key)]
+        if at in self.keys:
+            page = self.keys.index(at)
+        self.page = max(0, min(page, len(self.keys) - 1))
+        self.award = awards.BY_KEY[self.keys[self.page]] if self.keys else None
+        self.mine: dict[int, str] = {}
+        self.options: list[awards.Nominee] = []
+        if self.award is None:
+            return
+        self.mine = bot.store.awards_ballot(season_year, franchise).get(self.award.key, {})
+        self.options = awards.options_for(self.award, nominees[self.award.key], franchise)
+        for place in (awards.PLACES if self.options else ()):
+            select = discord.ui.Select(
+                placeholder=f"{awards.ORDINAL[place]} choice ({awards.POINTS[place]} points)",
+                min_values=1, max_values=1, row=place - 1,
+                options=[discord.SelectOption(label=embeds.clip(n.label, 100), value=n.id,
+                                              description=embeds.clip(n.subtitle, 100) or None,
+                                              default=self.mine.get(place) == n.id) for n in self.options])
+            select.callback = self._picked(place, select)
+            self.add_item(select)
+        for label, target in (("Previous", self.page - 1), ("Next", self.page + 1)):
+            button = discord.ui.Button(label=label, style=discord.ButtonStyle.secondary, row=3,
+                                       disabled=not 0 <= target < len(self.keys))
+            button.callback = self._turn(target)
+            self.add_item(button)
+        clear = discord.ui.Button(label="Clear this award", style=discord.ButtonStyle.danger, row=3,
+                                  disabled=not self.mine)
+        clear.callback = self._clear
+        self.add_item(clear)
+
+    def content(self) -> str:
+        if self.award is None:
+            return f"Season {self.season} Awards: no award has nominees yet."
+        return awards.ballot_content(self.season, self.award, self.nominees[self.award.key], self.mine,
+                                     self.franchise, self.closes_at, self.page, len(self.keys),
+                                     can_rank=bool(self.options))
+
+    def again(self, page: int | None = None, nominees: awards.Nominees | None = None) -> "AwardsBallotView":
+        """A fresh copy (after a change), staying on the same award even if nominees were added meanwhile."""
+        if page is not None:
+            return AwardsBallotView(self.bot, self.season, self.franchise, nominees or self.nominees,
+                                    self.closes_at, page)
+        return AwardsBallotView(self.bot, self.season, self.franchise, nominees or self.nominees, self.closes_at,
+                                self.page, at=self.award.key if self.award else None)
+
+    def _picked(self, place: int, select: discord.ui.Select):
+        async def callback(interaction: discord.Interaction) -> None:
+            await self.bot.save_award_choice(interaction, self, place, select.values[0])
+        return callback
+
+    def _turn(self, page: int):
+        async def callback(interaction: discord.Interaction) -> None:
+            view = self.again(page)
+            await interaction.response.edit_message(content=view.content(), view=view)
+            self.stop()
+        return callback
+
+    async def _clear(self, interaction: discord.Interaction) -> None:
+        await self.bot.save_award_choice(interaction, self, None, None)
+
+
 class VoteBot(discord.Client):
     def __init__(self, cfg: BotConfig, store: Store, data: LeagueData | None = None,
                  nhl: NHLLookup | None = None) -> None:
@@ -265,6 +353,7 @@ class VoteBot(discord.Client):
         self.tree = app_commands.CommandTree(self)
         self.rng = random.SystemRandom()
         self._pickem_after: datetime | None = None
+        self._book_after: datetime | None = None
         self._build_commands()
 
     # -- helpers -----------------------------------------------------------
@@ -309,6 +398,7 @@ class VoteBot(discord.Client):
             if vote["message_id"]:
                 self.add_view(VoteView(self, as_dict(vote)), message_id=int(vote["message_id"]))
         self.add_view(PickemPostView(self))  # one handler for every Pick'em post's button
+        self.add_view(AwardsPostView(self))  # and for every Awards Ballot post's button
         if self.cfg.guild_id:
             guild = discord.Object(id=self.cfg.guild_id)
             self.tree.copy_global_to(guild=guild)
@@ -350,6 +440,17 @@ class VoteBot(discord.Client):
             except Exception:  # never let Pick'em stop the vote ticker
                 log.exception("Pick'em check failed; trying again in 15 minutes")
                 self._pickem_after = now + PICKEM_RETRY
+        if self.cfg.book_channel_id and (self._book_after is None or now >= self._book_after):
+            try:
+                await self.book_tick(now)
+            except Exception:  # never let BLHA Bucks stop the vote ticker
+                log.exception("BLHA Bucks check failed; trying again in 15 minutes")
+                self._book_after = now + PICKEM_RETRY
+        for row in self.store.awards_due_to_close(now):
+            try:
+                await self.close_awards_ballot(row, now)
+            except Exception:
+                log.exception("Closing the Season %s Awards Ballot failed", row["season"])
 
     @ticker.before_loop
     async def _wait(self) -> None:
@@ -598,6 +699,245 @@ class VoteBot(discord.Client):
         await interaction.response.edit_message(content=fresh.content(), view=fresh)
         view.stop()
 
+    # -- season roles --------------------------------------------------------
+    async def award_season_role(self, role_name: str, winners: list[int], reason: str) -> str | None:
+        """Give a season role (the BLHA Bucks Sharp role) to the winners and take it from last Season's holders.
+
+        Needs Manage Roles, with the bot's own role above this one. Returns what
+        went wrong, or None when every change went through.
+        """
+        guild = self.get_guild(self.cfg.guild_id) if self.cfg.guild_id else None
+        if guild is None:
+            return "the bot can't see the server (discord.guild_id)"
+        role = discord.utils.get(guild.roles, name=role_name)
+        if role is None:
+            return f"the server has no role named {role_name!r}"
+        add, remove = book.role_changes((m.id for m in role.members), winners)
+        problems = []
+        for uid in remove:
+            member = guild.get_member(uid)
+            try:
+                if member is not None:
+                    await member.remove_roles(role, reason=reason)
+            except discord.HTTPException as exc:
+                problems.append(f"couldn't take it from {uid} ({exc.status})")
+        for uid in add:
+            try:
+                member = guild.get_member(uid) or await guild.fetch_member(uid)
+                await member.add_roles(role, reason=reason)
+            except discord.HTTPException as exc:
+                problems.append(f"couldn't give it to {uid} ({exc.status})")
+        return "; ".join(problems) or None
+
+    # -- BLHA Bucks ----------------------------------------------------------
+    def book_player(self, member: Any) -> tuple[rules.Franchise | None, str | None]:
+        """The bettor's franchise (to keep them off its matchup), or why they can't play."""
+        if not self.cfg.book_role_ids & self.role_ids(member):
+            who = " or ".join({"owner": "Franchise Owners", "co_owner": "Co-Owners"}[p] for p in self.cfg.book_players)
+            return None, f"BLHA Bucks is for {who or 'members with a franchise role'}."
+        return rules.team_member(self.role_ids(member), self.cfg.book_role_ids, self.franchises(), needs_fantrax=True)
+
+    @staticmethod
+    def book_lines_of(row: Any) -> list[book.Line]:
+        return [book.Line.from_dict(d) for d in json.loads(row["lines"])]
+
+    def book_bets(self, key: str, number: int) -> list[book.Bet]:
+        return [book.Bet(uid, matchup, side, amount, franchise)
+                for uid, matchup, side, amount, franchise in self.store.week_bets(key, number)]
+
+    def book_board(self, key: str) -> tuple[list[book.Standing], int]:
+        weeks = [book.settle(self.book_bets(key, number), [book.Line.from_dict(d) for d in lines], found)
+                 for number, lines, found in self.store.settled_book_weeks(key)]
+        return book.leaderboard(weeks), len(weeks)
+
+    def open_book_week(self) -> tuple[Any, list[book.Line]]:
+        """The Week taking bets right now (row, lines), or (None, [])."""
+        row = self.store.latest_book_week("open")
+        if row is None or pickem.is_locked(parse(row["locks_at"]), utcnow()):
+            return None, []
+        return row, self.book_lines_of(row)
+
+    def book_matchup_choices(self, member: Any, current: str) -> list[app_commands.Choice[str]]:
+        """/book bet's matchup menu: this Week's lines, never the member's own matchup."""
+        row, lines = self.open_book_week()
+        if row is None:
+            return []
+        f, _ = self.book_player(member)
+        text = (current or "").lower()
+        shown = book.available(lines, f.fantrax_team_id) if f is not None else lines
+        return [app_commands.Choice(name=embeds.clip(x.text(), 100), value=x.key)
+                for x in shown if text in x.text().lower()][:25]
+
+    def book_side_choices(self, matchup: str) -> list[app_commands.Choice[str]]:
+        """/book bet's side menu: the two teams of the chosen matchup, with their spreads."""
+        _, lines = self.open_book_week()
+        line = next((x for x in lines if x.key == matchup), None)
+        if line is None:
+            return [app_commands.Choice(name="Away team", value=book.AWAY),
+                    app_commands.Choice(name="Home team", value=book.HOME)]
+        return [app_commands.Choice(name=embeds.clip(f"{line.label(s)} ({s})", 100), value=s) for s in book.SIDES]
+
+    async def book_tick(self, now: datetime) -> None:
+        """Post lines, lock and settle BLHA Bucks Weeks on Pick'em's Fantrax calendar (pickem.plan)."""
+        info = await asyncio.to_thread(self.data.league_info)
+        league_id = await asyncio.to_thread(getattr, self.data, "league_id")
+        key = pickem.season_key(league_id, info)
+        for action, number in pickem.plan(info, now, self.cfg.timezone, self.store.book_statuses(key)):
+            if action == "score":
+                await self.book_settle(key, info, number, now)
+            elif action == "lock":
+                self.store.set_book_status(key, number, "locked")
+            elif action == "post":
+                await self.book_post(key, info, number, now)
+
+    async def book_post(self, key: str, info: dict[str, Any], number: int, now: datetime) -> None:
+        week = season.period(info, number)
+        channel = await self.channel(self.cfg.book_channel_id)
+        if week is None or channel is None:
+            return
+        lines = await asyncio.to_thread(book.lines_for_week, info, number, now, self.cfg.timezone,
+                                        self.data.matchup_scores)
+        if not lines:
+            return
+        embed = book.lines_embed(number, lines, week.start, pickem.season_label(key))
+        msg = await channel.send(embed=discord.Embed.from_dict(embed))
+        self.store.add_book_week(key, number, [line.as_dict() for line in lines], locks_at=week.start, now=now)
+        self.store.set_book_message(key, number, msg.channel.id, msg.id)
+        log.info("BLHA Bucks Week %s lines posted", number)
+
+    async def book_settle(self, key: str, info: dict[str, Any], number: int, now: datetime) -> None:
+        row = self.store.book_week(key, number)
+        week = season.period(info, number)
+        if row is None or week is None:
+            return
+        lines = self.book_lines_of(row)
+        scores = await asyncio.to_thread(self.data.matchup_scores, number)
+        found = book.results(lines, scores)
+        if not book.ready_to_settle(lines, found, now, season.final_at(week, self.cfg.timezone)):
+            return
+        self.store.set_book_status(key, number, "settled", results={k: list(v) for k, v in found.items()}, now=now)
+        settled = book.settle(self.book_bets(key, number), lines, found)
+        board, _ = self.book_board(key)
+        channel = await self.channel(self.cfg.book_channel_id)
+        if settled and channel is not None:  # nobody bet: no settlement post
+            embed = book.settlement_embed(number, lines, found, settled, board, pickem.season_label(key))
+            await channel.send(embed=discord.Embed.from_dict(embed))
+        log.info("BLHA Bucks Week %s settled", number)
+        last_regular, _, _ = season.playoff_settings(info)
+        if number >= last_regular:
+            await self.book_crown(key, board)
+
+    async def book_crown(self, key: str, board: list[book.Standing]) -> None:
+        """After the last regular-season Week: the season profit leader gets the Sharp role (once per season)."""
+        if self.store.book_champions(key) is not None:
+            return
+        leaders = book.season_leaders(board)
+        problem = None
+        if leaders and self.cfg.sharp_role:
+            problem = await self.award_season_role(self.cfg.sharp_role, leaders,
+                                                   f"BLHA Bucks {pickem.season_label(key)} profit leader")
+        self.store.set_book_champions(key, leaders, now=utcnow())
+        if problem:
+            log.warning("BLHA Bucks: the %s role: %s", self.cfg.sharp_role, problem)
+        channel = await self.channel(self.cfg.book_channel_id)
+        if channel is not None and leaders:
+            embed = book.sharp_embed(self.cfg.sharp_role or "Sharp", leaders, board, pickem.season_label(key))
+            await channel.send(embed=discord.Embed.from_dict(embed))
+
+    # -- Awards Ballot -------------------------------------------------------
+    def league_phase(self) -> str | None:
+        """Fantrax's phase (preseason, regular, playoffs, offseason), or None if Fantrax can't be read. Blocks."""
+        try:
+            return season.phase(self.data.league_info(), utcnow())
+        except Exception as exc:
+            log.warning("Fantrax phase check failed: %s", exc)
+            return None
+
+    def final_ranks(self) -> dict[str, int] | None:
+        """This Season's regular-season rank per franchise from Fantrax standings, or None. Blocks."""
+        try:
+            return awards.ranks_by_franchise(self.data.standings(), self.cfg.franchises) or None
+        except Exception as exc:
+            log.warning("Fantrax standings unavailable for the Awards Ballot: %s", exc)
+            return None
+
+    def nominator_franchises(self, member: Any, *, commissioner: bool) -> set[str]:
+        """The franchises a nominator may not nominate: their own (and the Commissioner's, for the Commissioner)."""
+        own = {f.name for f in self.cfg.franchises if f.role_id in self.role_ids(member)}
+        if commissioner:
+            own |= {f.name for f in self.cfg.franchises if f.commissioner}
+        return own
+
+    def awards_voters(self) -> list[str]:
+        return [f.name for f in self.franchises() if not f.orphaned]
+
+    async def open_awards_ballot(self, interaction: discord.Interaction) -> None:
+        row = self.store.awards_by_message(interaction.message.id) if interaction.message else None
+        if row is None:
+            await interaction.response.send_message("This Awards Ballot is no longer active.", ephemeral=True)
+            return
+        closes = parse(row["closes_at"])
+        if row["status"] != "open" or utcnow() >= closes:
+            await interaction.response.send_message(f"Season {row['season']} Awards ballots are closed.", ephemeral=True)
+            return
+        franchise, why = rules.can_cast(self.role_ids(interaction.user), self.cfg.owner_role_id, self.franchises(),
+                                        rules.KINDS["amendment"])
+        if franchise is None:
+            await interaction.response.send_message(why, ephemeral=True)
+            return
+        view = AwardsBallotView(self, int(row["season"]), franchise.name, awards.nominees_from_json(row["nominees"]),
+                                closes)
+        await interaction.response.send_message(view.content(), view=view, ephemeral=True)
+
+    async def save_award_choice(self, interaction: discord.Interaction, view: AwardsBallotView, place: int | None,
+                                nominee_id: str | None) -> None:
+        """Save one 1st/2nd/3rd choice (or, with place None, clear the award) and redraw the ballot."""
+        now = utcnow()
+        row = self.store.awards_season(view.season)
+        if row is None or row["status"] != "open" or now >= parse(row["closes_at"]):
+            await interaction.response.edit_message(content=f"Season {view.season} Awards ballots are closed.",
+                                                    view=None)
+            view.stop()
+            return
+        franchise, why = rules.can_cast(self.role_ids(interaction.user), self.cfg.owner_role_id, self.franchises(),
+                                        rules.KINDS["amendment"])
+        if franchise is None or franchise.name != view.franchise:
+            await interaction.response.send_message(why or f"This is {view.franchise}'s ballot.", ephemeral=True)
+            return
+        nominees = awards.nominees_from_json(row["nominees"])  # an Assistant may have added nominees
+        award = view.award
+        if award is None:
+            await interaction.response.send_message("No award has nominees yet.", ephemeral=True)
+            return
+        if place is None:
+            new: dict[int, str] = {}
+        else:
+            current = self.store.awards_ballot(view.season, view.franchise).get(award.key, {})
+            new, error = awards.choose(current, place, nominee_id or "", award, nominees.get(award.key, []),
+                                       view.franchise)
+            if error:
+                await interaction.response.send_message(error, ephemeral=True)
+                return
+        self.store.set_award_choices(view.season, view.franchise, award.key, new, user_id=interaction.user.id, now=now)
+        fresh = view.again(nominees=nominees)
+        await interaction.response.edit_message(content=fresh.content(), view=fresh)
+        view.stop()
+
+    async def close_awards_ballot(self, row: Any, now: datetime, user_id: int | None = None) -> None:
+        """Close the ballot (Commissioner or deadline), remove the button and say what happens next."""
+        year = int(row["season"])
+        self.store.close_awards(year, now=now, user_id=user_id)
+        channel = await self.channel(int(row["channel_id"])) if row["channel_id"] else None
+        if channel is None:
+            return
+        try:
+            message = await channel.fetch_message(int(row["message_id"]))
+            await message.edit(view=None)
+        except Exception as exc:
+            log.warning("Could not remove the Awards Ballot button for Season %s: %s", year, exc)
+        await channel.send(f"Season {year} Awards ballots are closed. The winners will be announced in "
+                           "**🏆│hall-of-champions**.")
+
     # -- commands ----------------------------------------------------------
     def _build_commands(self) -> None:
         bot = self
@@ -608,6 +948,9 @@ class VoteBot(discord.Client):
         pickem_group = app_commands.Group(name="pickem", description="Weekly Pick'em", guild_only=True)
         pool_group = app_commands.Group(name="pool", description="Playoff Pool (just for fun, no money)",
                                         guild_only=True)
+        book_group = app_commands.Group(name="book", description="BLHA Bucks: play-money bets on matchups you're not in",
+                                        guild_only=True)
+        awards_group = app_commands.Group(name="awards", description="The annual Awards Ballot (5-3-1)", guild_only=True)
         kinds = [app_commands.Choice(name="Material Amendment", value="amendment"),
                  app_commands.Choice(name="League Services Allocation change", value="services")]
 
@@ -822,6 +1165,294 @@ class VoteBot(discord.Client):
                                             file=discord.File(io.BytesIO(text.encode("utf-8")),
                                                               filename="entries.yaml"))
 
+        # -- BLHA Bucks: /book ------------------------------------------------
+        open_book_week = bot.open_book_week
+
+        @book_group.command(name="lines", description="This Week's BLHA Bucks lines (play money)")
+        async def book_lines(interaction: discord.Interaction) -> None:
+            row = bot.store.latest_book_week()
+            if row is None:
+                await interaction.response.send_message(
+                    "No BLHA Bucks lines have been posted yet. They post when the previous Week is final.",
+                    ephemeral=True)
+                return
+            locks = parse(row["locks_at"])
+            number = int(row["period"])
+            if row["status"] == "settled":
+                state = f"Week {number} is settled; the next lines post when the current Week is final."
+            elif row["status"] != "open" or pickem.is_locked(locks, utcnow()):
+                state = f"Week {number} bets are locked while the Week is played."
+            else:
+                state = f"Week {number} is open for bets with `/book bet`."
+            embed = book.lines_embed(number, bot.book_lines_of(row), locks, pickem.season_label(row["season"]))
+            await interaction.response.send_message(state, embed=discord.Embed.from_dict(embed), ephemeral=True)
+
+        @book_group.command(name="bet", description="Bet BLHA Bucks on a matchup your franchise isn't in (0 removes a bet)")
+        @app_commands.describe(matchup="A matchup on this Week's board (never your own)",
+                               side="The team you're backing, with its spread",
+                               amount="Bucks on this bet; 100 a Week in all, unused Bucks don't carry over. 0 removes it")
+        async def book_bet(interaction: discord.Interaction, matchup: str, side: str,
+                           amount: app_commands.Range[int, 0, 100]) -> None:
+            f, why = bot.book_player(interaction.user)
+            if f is None:
+                await interaction.response.send_message(why, ephemeral=True)
+                return
+            row, lines = open_book_week()
+            if row is None:
+                await interaction.response.send_message(
+                    "No Week is open for bets right now. Lines post when the previous Week is final, and bets lock "
+                    "when the Week starts.", ephemeral=True)
+                return
+            key, number, now = row["season"], int(row["period"]), utcnow()
+            line = next((x for x in lines if x.key == matchup), None)
+            picked = book.side_from(line, side)
+            mine = bot.store.user_bets(key, number, interaction.user.id)
+            error = book.check_bet(line, picked or "", int(amount), f.fantrax_team_id,
+                                   book.staked(mine, except_matchup=matchup), locked=False)
+            if not error and not amount and line.key not in mine:
+                error = "You have no bet on that matchup to remove."
+            if error:
+                await interaction.response.send_message(error, ephemeral=True)
+                return
+            bot.store.place_bet(key, number, interaction.user.id, line.key, picked, int(amount), f.name, now=now)
+            mine = bot.store.user_bets(key, number, interaction.user.id)
+            done = (f"Removed your bet on {line.away} at {line.home}." if not amount
+                    else f"**{amount} Bucks** on **{line.label(picked)}**. Play money only.")
+            text = book.mybets_text(number, lines, mine, parse(row["locks_at"]), locked=False)
+            await interaction.response.send_message(f"{done}\n{text}", ephemeral=True)
+
+        @book_bet.autocomplete("matchup")
+        async def book_bet_matchup(interaction: discord.Interaction, current: str) -> list[app_commands.Choice[str]]:
+            return bot.book_matchup_choices(interaction.user, current)
+
+        @book_bet.autocomplete("side")
+        async def book_bet_side(interaction: discord.Interaction, current: str) -> list[app_commands.Choice[str]]:
+            return bot.book_side_choices(str(getattr(interaction.namespace, "matchup", "") or ""))
+
+        @book_group.command(name="mybets", description="Your BLHA Bucks bets this Week and your season profit (private)")
+        async def book_mybets(interaction: discord.Interaction) -> None:
+            f, why = bot.book_player(interaction.user)
+            if f is None:
+                await interaction.response.send_message(why, ephemeral=True)
+                return
+            row = bot.store.latest_book_week()
+            if row is None:
+                await interaction.response.send_message("No BLHA Bucks Week has been posted yet.", ephemeral=True)
+                return
+            key, number = row["season"], int(row["period"])
+            locks = parse(row["locks_at"])
+            found = json.loads(row["results"] or "{}") if row["status"] == "settled" else None
+            text = book.mybets_text(number, bot.book_lines_of(row), bot.store.user_bets(key, number, interaction.user.id),
+                                    locks, locked=row["status"] != "open" or pickem.is_locked(locks, utcnow()),
+                                    found=found)
+            board, _ = bot.book_board(key)
+            mine = next(((rank, r) for rank, r in book.ranked(board) if r.user_id == interaction.user.id), None)
+            if mine is None:
+                text += "\nSeason profit: no settled bets yet."
+            else:
+                rank, r = mine
+                text += (f"\nSeason profit: **{book.signed(r.profit)} Bucks** ({r.record}), "
+                         f"rank {rank} of {len(board)}.")
+            await interaction.response.send_message(text, ephemeral=True)
+
+        @book_group.command(name="leaderboard", description="BLHA Bucks season profit standings")
+        async def book_leaderboard(interaction: discord.Interaction) -> None:
+            key = bot.store.latest_book_season()
+            if key is None:
+                embed = book.leaderboard_embed([], "This Season", 0)
+            else:
+                board, weeks = bot.book_board(key)
+                embed = book.leaderboard_embed(board, pickem.season_label(key), weeks)
+            await interaction.response.send_message(embed=discord.Embed.from_dict(embed))
+
+        # -- Awards Ballot: /awards -------------------------------------------
+        listed = [app_commands.Choice(name=a.name, value=a.key) for a in awards.AWARDS if a.listed]
+
+        @awards_group.command(name="open", description="Commissioner: open the Awards Ballot. No self-nominations; "
+                                                       "your ballot counts the same (19.3)")
+        @app_commands.describe(
+            season="The Season being honored, e.g. 2027",
+            trades="Trade of the Year: Franchise 3 + Franchise 7: what moved; separate trades with ;",
+            waivers="Waiver Steal of the Year: Franchise 3: the player; separate nominees with ;",
+            comebacks="Comeback Franchise (blank: biggest climbs since last Season): franchise names, with ;",
+            busts="Bust of the Year (blank: biggest falls since last Season): Franchise 3: player, with ;",
+            deadline="When ballots close, e.g. 2028-04-20 (end of day, league time). Blank: awards.ballot_days")
+        async def awards_open(interaction: discord.Interaction, season: int, trades: str = "", waivers: str = "",
+                              comebacks: str = "", busts: str = "", deadline: str = "") -> None:
+            if not bot.is_commissioner(interaction.user):
+                await interaction.response.send_message("Only the Commissioner opens the Awards Ballot.", ephemeral=True)
+                return
+            if bot.store.awards_season(season) is not None:
+                await interaction.response.send_message(f"Season {season}'s Awards Ballot was already opened.",
+                                                        ephemeral=True)
+                return
+            now = utcnow()
+            closes = now + timedelta(days=bot.cfg.awards_ballot_days)
+            if deadline.strip():
+                closes, error = awards.parse_deadline(deadline, now, bot.cfg.timezone)
+                if error:
+                    await interaction.response.send_message(error, ephemeral=True)
+                    return
+            await interaction.response.defer(ephemeral=True, thinking=True)
+            notes: list[str] = []
+            phase = await asyncio.to_thread(bot.league_phase)
+            if phase is None:
+                notes.append("Fantrax couldn't be read, so the bot couldn't confirm the Championship is over.")
+            problems = awards.open_problems(phase, season)
+            if problems:
+                await interaction.followup.send("Can't open the Awards Ballot:\n- " + "\n- ".join(problems),
+                                                ephemeral=True)
+                return
+            current = await asyncio.to_thread(bot.final_ranks)
+            if current:
+                bot.store.save_ranks(season, current, now=now)
+            elif not (comebacks.strip() and busts.strip()):
+                notes.append("Couldn't read the Fantrax standings, so Comeback and Bust can't be proposed from them.")
+            nominees, errors, more = awards.build_ballot(
+                bot.franchises(), {"trade": trades, "waiver": waivers, "comeback": comebacks, "bust": busts},
+                bot.store.ranks(season - 1), current, bot.nominator_franchises(interaction.user, commissioner=True))
+            if errors:
+                await interaction.followup.send("Fix these and run `/awards open` again:\n- " + "\n- ".join(errors),
+                                                ephemeral=True)
+                return
+            channel = await bot.channel(bot.cfg.awards_ballot_channel_id or bot.cfg.voting_channel_id)
+            if channel is None:
+                await interaction.followup.send("Set discord.awards_ballot_channel_id (or voting_channel_id) first.",
+                                                ephemeral=True)
+                return
+            msg = await channel.send(embed=discord.Embed.from_dict(awards.ballot_embed(season, nominees, closes)),
+                                     view=AwardsPostView(bot))
+            bot.store.open_awards(season, awards.nominees_to_json(nominees), user_id=interaction.user.id, now=now,
+                                  closes_at=closes)
+            bot.store.set_awards_message(season, msg.channel.id, msg.id)
+            extra = "".join(f"\n- {n}" for n in notes + more)
+            await interaction.followup.send(f"Season {season} Awards Ballot is open: {msg.jump_url}{extra}",
+                                            ephemeral=True)
+
+        @awards_group.command(name="nominate", description="Commissioner or Assistant: add a nominee. Never your own "
+                                                           "franchise (19.3)")
+        @app_commands.describe(award="The award", nominee="Franchise 3: what they did (a trade: Franchise 3 + "
+                                                          "Franchise 7: what moved)")
+        @app_commands.choices(award=listed)
+        async def awards_nominate(interaction: discord.Interaction, award: app_commands.Choice[str],
+                                  nominee: str) -> None:
+            is_commissioner = bot.is_commissioner(interaction.user)
+            if not (is_commissioner or bot.is_assistant(interaction.user)):
+                await interaction.response.send_message(
+                    "Only the Commissioner or an Assistant Commissioner adds nominees.", ephemeral=True)
+                return
+            row = bot.store.latest_awards()
+            now = utcnow()
+            if row is None or row["status"] != "open" or now >= parse(row["closes_at"]):
+                await interaction.response.send_message("No Awards Ballot is open.", ephemeral=True)
+                return
+            kind = awards.BY_KEY[award.value]
+            nominees = awards.nominees_from_json(row["nominees"])
+            existing = nominees.get(kind.key, [])
+            found, bad = awards.parse_nominees(kind, nominee, [f.name for f in bot.cfg.franchises],
+                                               start=awards.next_index(existing))
+            nominator = bot.nominator_franchises(interaction.user, commissioner=is_commissioner)
+            problems = bad + awards.nomination_problems(kind, found, nominator, commissioner=is_commissioner)
+            if not found and not problems:
+                problems = ["Type a nominee, e.g. Franchise 3: Quinn Hughes off waivers."]
+            nominees[kind.key] = existing + found
+            problems += awards.too_many(nominees)
+            if problems:
+                await interaction.response.send_message("Not added:\n- " + "\n- ".join(problems), ephemeral=True)
+                return
+            bot.store.set_awards_nominees(int(row["season"]), awards.nominees_to_json(nominees),
+                                          user_id=interaction.user.id, now=now,
+                                          detail={"award": kind.key, "nominees": [n.as_dict() for n in found]})
+            note = ""
+            try:  # keep the public ballot post's nominee list current
+                channel = await bot.channel(int(row["channel_id"]))
+                message = await channel.fetch_message(int(row["message_id"]))
+                embed = awards.ballot_embed(int(row["season"]), nominees, parse(row["closes_at"]))
+                await message.edit(embed=discord.Embed.from_dict(embed))
+            except Exception as exc:
+                log.warning("Could not update the Awards Ballot post: %s", exc)
+                note = " (The ballot post couldn't be updated, but the nominee is on every ballot.)"
+            await interaction.response.send_message(
+                f"Added to {kind.name}: " + "; ".join(n.label for n in found) + "." + note, ephemeral=True)
+
+        @awards_group.command(name="close", description="Commissioner: close the Awards Ballot now")
+        async def awards_close(interaction: discord.Interaction) -> None:
+            if not bot.is_commissioner(interaction.user):
+                await interaction.response.send_message("Only the Commissioner closes the Awards Ballot.", ephemeral=True)
+                return
+            row = bot.store.latest_awards()
+            if row is None or row["status"] != "open":
+                await interaction.response.send_message("No Awards Ballot is open.", ephemeral=True)
+                return
+            await interaction.response.defer(ephemeral=True, thinking=True)
+            await bot.close_awards_ballot(row, utcnow(), interaction.user.id)
+            await interaction.followup.send(f"Season {row['season']} Awards ballots are closed. Post the winners with "
+                                            "`/awards results`.", ephemeral=True)
+
+        @awards_group.command(name="results", description="Commissioner: post the Awards winners and save the JSON export")
+        @app_commands.describe(again="Post them again even though they were already posted")
+        async def awards_results(interaction: discord.Interaction, again: bool = False) -> None:
+            if not bot.is_commissioner(interaction.user):
+                await interaction.response.send_message("Only the Commissioner posts the Awards results.", ephemeral=True)
+                return
+            row = bot.store.latest_awards()
+            if row is None:
+                await interaction.response.send_message("No Awards Ballot has been opened.", ephemeral=True)
+                return
+            year = int(row["season"])
+            if row["status"] == "open":
+                await interaction.response.send_message(
+                    "Ballots are still open. Close them with `/awards close` or wait for the deadline.", ephemeral=True)
+                return
+            if row["status"] == "posted" and not again:
+                await interaction.response.send_message(
+                    f"Season {year}'s winners were already posted. Use `again: True` to post them again.",
+                    ephemeral=True)
+                return
+            channel = await bot.channel(bot.cfg.hall_of_champions_channel_id)
+            if channel is None:
+                await interaction.response.send_message("Set discord.hall_of_champions_channel_id first.",
+                                                        ephemeral=True)
+                return
+            await interaction.response.defer(ephemeral=True, thinking=True)
+            nominees = awards.nominees_from_json(row["nominees"])
+            ballots = bot.store.awards_ballots(year)
+            voters = bot.awards_voters()
+            results = awards.tally_all(nominees, ballots, voters)
+            got = awards.returned(ballots, voters)
+            payload = awards.season_payload(year, results, closed_at=parse(row["closed_at"]), ballots=len(got),
+                                            eligible=len(voters), franchises=bot.cfg.franchises)
+            msg = await channel.send(embed=discord.Embed.from_dict(
+                awards.results_embed(year, results, len(got), len(voters))))
+            now = utcnow()
+            bot.store.set_awards_results(year, payload, now=now, user_id=interaction.user.id)
+            path = Path(bot.cfg.awards_export_path) if bot.cfg.awards_export_path else awards.default_export_path()
+            try:
+                export = await asyncio.to_thread(awards.write_export, path, payload, now)
+                saved = f"Saved to `{path}`."
+            except OSError as exc:
+                log.warning("Could not write the awards export %s: %s", path, exc)
+                export = awards.merge_export(None, payload, now)
+                saved = f"Couldn't write `{path}` ({exc.strerror or exc}); the attached file has the same data."
+            data = json.dumps(export, indent=2, ensure_ascii=False).encode("utf-8")
+            await interaction.followup.send(
+                f"Winners posted: {msg.jump_url}\n{saved} The attached JSON is the trophy-case export for the history "
+                "site (format in bot/README.md).",
+                file=discord.File(io.BytesIO(data), filename="blha_awards.json"), ephemeral=True)
+
+        @awards_group.command(name="status", description="Which franchises have returned an Awards ballot (not how)")
+        async def awards_status(interaction: discord.Interaction) -> None:
+            row = bot.store.latest_awards()
+            if row is None:
+                await interaction.response.send_message("No Awards Ballot has been opened.", ephemeral=True)
+                return
+            voters = bot.awards_voters()
+            done = awards.returned(bot.store.awards_ballots(int(row["season"])), voters)
+            waiting = [v for v in voters if v not in done]
+            await interaction.response.send_message(
+                awards.status_text(int(row["season"]), row["status"], parse(row["closes_at"]), done, waiting),
+                ephemeral=True)
+
         @app_commands.command(name="rule", description="Look up the Constitution by section (12.4), article (XII) or keyword")
         @app_commands.describe(query="A section like 12.4, an article like XII, or a keyword like prepayment",
                                ephemeral="Only you see the answer")
@@ -924,7 +1555,7 @@ class VoteBot(discord.Client):
             embed = await asyncio.to_thread(trade.build, bot.data, a, b, to_minors, utcnow(), bot.cfg.timezone)
             await interaction.followup.send(embed=discord.Embed.from_dict(embed), ephemeral=not post)
 
-        for group in (proposal, vote, franchise, panel, pickem_group, pool_group):
+        for group in (proposal, vote, franchise, panel, pickem_group, pool_group, book_group, awards_group):
             self.tree.add_command(group)
         for command in (rule, deadlines_cmd, minor_cmd, myteam, tradecheck):
             self.tree.add_command(command)
