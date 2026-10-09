@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T20:00:39.637180Z",
+  "updated_at": "2026-10-09T20:15:33.989123Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5982,6 +5982,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T20:00:39.576733Z"
+    },
+    {
+      "key": "9e6a109c001cb5cad120c1af",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
+      "fingerprint": "516f65e2d9c65c9d",
+      "title_norm": "michael carcone (uta) — carcone (undisclosed) is a game-time decision for saturday vs. buffalo.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T20:15:33.924198Z"
     }
   ],
   "known_sources": [
