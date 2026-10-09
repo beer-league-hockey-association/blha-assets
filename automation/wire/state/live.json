@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T18:15:33.679302Z",
+  "updated_at": "2026-10-09T19:15:34.382681Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5962,6 +5962,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T18:15:33.625176Z"
+    },
+    {
+      "key": "24db4618bc8395b5c269eb50",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-gustavsson/4565",
+      "fingerprint": "cd20e8a94e289ea3",
+      "title_norm": "filip gustavsson (min) — gustavsson (hip) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T19:15:34.325086Z"
     }
   ],
   "known_sources": [
