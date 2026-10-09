@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T22:15:36.829528Z",
+  "updated_at": "2026-10-09T23:00:44.338348Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6102,6 +6102,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-09T22:15:36.746783Z"
+    },
+    {
+      "key": "f8e6df116a4f6d40df1e0cf9",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-bjugstad/2107",
+      "fingerprint": "5ad9d693bac9281e",
+      "title_norm": "nick bjugstad (njd) — the devils have placed nick bjugstad (pectoral) on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T23:00:44.239586Z"
     }
   ],
   "known_sources": [
