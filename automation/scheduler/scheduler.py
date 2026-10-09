@@ -33,7 +33,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 
 from blha.schedule import SCHEDULE_PATH as CONFIG_PATH  # noqa: E402
-from blha.schedule import current_phase, job_active, load_schedule  # noqa: E402
+from blha.schedule import current_phase, job_active, load_schedule, paced  # noqa: E402
 
 # Runs that ended this way did no work, so they do not count as the job having
 # run. Failed runs DO count: retrying a failing job every 15 minutes would only
@@ -208,8 +208,11 @@ def main() -> int:
         if not active:
             print(f"OFF     {job.get('id')}: {why}")
             continue
+        job, pace = paced(job, now)
         try:
             decision = decide(job, gh.recent_runs(str(job["workflow"])), now, tz, tolerance)
+            if pace:
+                decision.reason += f" [{pace}]"
         except Exception as exc:
             print(f"ERROR   {job.get('id')}: could not evaluate: {exc}")
             errors += 1

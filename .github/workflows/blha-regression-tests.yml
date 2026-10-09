@@ -147,6 +147,11 @@ jobs:
           PYTHONPATH: automation:automation/commissioner
         run: python automation/commissioner/test_picktrades.py
 
+      - name: Test the Trade Desk (trade detection, report card poll, revisits, deadline-day tracker)
+        env:
+          PYTHONPATH: automation:automation/trades
+        run: python automation/trades/test_tradedesk.py
+
       - name: Test minor-eligibility watch
         env:
           PYTHONPATH: automation:automation/commissioner
