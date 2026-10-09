@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T15:15:35.760279Z",
+  "updated_at": "2026-10-09T16:00:41.159882Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5792,6 +5792,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T15:15:35.687370Z"
+    },
+    {
+      "key": "7d60f86800c03ea3148c4d3e",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
+      "fingerprint": "a9dc87ed35cd8d22",
+      "title_norm": "nick foligno (min) — foligno has been placed on ir with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T16:00:41.088653Z"
     }
   ],
   "known_sources": [
