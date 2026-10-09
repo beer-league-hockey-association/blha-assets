@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T21:00:39.487890Z",
+  "updated_at": "2026-10-09T21:15:37.601440Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6042,6 +6042,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T21:00:39.388619Z"
+    },
+    {
+      "key": "58627ea066fb5f8ebd525742",
+      "url": "https://www.dailyfaceoff.com/players/news/kiefer-sherwood/4675",
+      "fingerprint": "5d94fb3ca3894312",
+      "title_norm": "kiefer sherwood (sjs) — sherwood (upper-body) will be a game-time decision vs. edmonton on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T21:15:37.326293Z"
+    },
+    {
+      "key": "3aa168e2a02fbb617f8e161f",
+      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
+      "fingerprint": "4e06201620b39a8a",
+      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is a game-time decision on saturday vs. edmonton.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T21:15:37.496072Z"
     }
   ],
   "known_sources": [
