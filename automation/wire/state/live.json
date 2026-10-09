@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T05:00:43.894834Z",
+  "updated_at": "2026-10-09T05:30:36.880572Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5672,6 +5672,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T05:00:43.866470Z"
+    },
+    {
+      "key": "a9b3055d476d45dc54b6f16a",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-vegas-golden-knights-game-recap-october-8-2026",
+      "fingerprint": "fd8d19630fb4da3b",
+      "title_norm": "golden knights rally from down three, edge maple leafs in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T05:30:36.828676Z"
     }
   ],
   "known_sources": [
