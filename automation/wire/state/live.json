@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T16:45:36.048502Z",
+  "updated_at": "2026-10-09T17:15:34.972949Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5902,6 +5902,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T16:45:35.950334Z"
+    },
+    {
+      "key": "a46d8abc7733775928545be1",
+      "url": "https://www.nhl.com/news/florida-panthers-brad-marchand-injury-status-update-october-9-2026",
+      "fingerprint": "bf005be4ab8c1b2d",
+      "title_norm": "panthers get 'good news' on marchand injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T17:15:34.568139Z"
+    },
+    {
+      "key": "8a77f7459611a8750f785719",
+      "url": "https://www.sportsnet.ca/nhl/article/five-ways-the-early-nhl-season-is-altering-pre-season-predictions",
+      "fingerprint": "632fe8e8e21846bd",
+      "title_norm": "five ways the early nhl season is altering pre-season predictions",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T17:15:34.933894Z"
     }
   ],
   "known_sources": [
