@@ -156,16 +156,6 @@ tmpl("league-office/72_dynasty_pot_won.json", "DYNASTY POT WON", "**`[FRANCHISE]
      [("PAYOUT", "**`$[AMOUNT]`**"), ("CHAMPIONSHIPS", "`[SEASONS WON]`"),
       ("CYCLE RESET", "The pot returns to zero and every franchise's counter resets. A new cycle starts with Season `[YEAR]`.")], RECORD)
 
-tmpl("league-office/73_cup_handoff.json", "THE CUP CHANGES HANDS", "\U0001F3C6 The BLHA Cup goes to **`[FRANCHISE]`**, Season `[YEAR]` champion.", "BLHA RECORDS DEPARTMENT",
-     [("ENGRAVED", "Season `[YEAR]` • `[FRANCHISE]` • `[OWNER]`"),
-      ("HANDED OFF", "`[IN PERSON / BY MAIL]` on `[DATE]`, from `[LAST SEASON'S CHAMPION / THE COMMISSIONER]`."),
-      ("THE TRADITION", "The champion keeps the Cup until the next BLHA Championship is decided, then passes it on. Every champion gets a Day with the Cup: send the Commissioner a photo or two and they're posted here."),
-      ("JUST FOR FUN", "The Cup is the trophy, not a prize: it carries no money and changes nothing in the standings or the draft.")], RECORD)
-tmpl("league-office/74_day_with_the_cup.json", "A DAY WITH THE CUP", "**`[OWNER]`** of **`[FRANCHISE]`**, Season `[YEAR]` champion, spends a day with the BLHA Cup.", "BLHA RECORDS DEPARTMENT",
-     [("WHERE IT WENT", "`[THE DAY IN A SENTENCE OR TWO]`"),
-      ("PHOTOS", "Attached to this post."),
-      ("NEXT UP", "The Cup stays with **`[FRANCHISE]`** until the Season `[NEXT YEAR]` Championship is decided.")], RECORD)
-
 # ------------------------------------------------------------------ trade center
 tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fantrax on `[DATE]`.", "BLHA TRADE CENTER",
      [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
@@ -317,8 +307,7 @@ BUNDLES = {
     "04_Voting": ["league-office/50_vote_proposal_open.json", "league-office/51_vote_open.json", "league-office/52_vote_result.json"],
     "05_Constitution_and_Rulings": ["league-office/10_constitution_new_version.json", "league-office/11_constitution_amendment.json",
                                     "league-office/12_rules_ruling.json", "league-office/14_recusal_notice.json", "league-office/15_appeal_outcome.json"],
-    "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json",
-                              "league-office/73_cup_handoff.json", "league-office/74_day_with_the_cup.json"],
+    "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
     "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
     "08_Trades": ["trade-center/90_trade_completed.json"],
     "10_Deadline_Day_Trade_Center": ["trade-center/91_deadline_day_trade_bait_board.json",

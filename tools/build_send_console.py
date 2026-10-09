@@ -46,7 +46,7 @@ BUNDLES = [
     ("03_Ledger", "league-ledger", "Season ledger, dues status, prize pool, payment confirmed, prize paid, Dynasty Pot update"),
     ("04_Voting", "league-voting", "Amendment proposal, official vote, vote result"),
     ("05_Constitution_and_Rulings", "constitution and rulings-log", "Constitution updated, amendment, rule ruling, recusal notice, appeal outcome"),
-    ("06_Honors_and_Records", "hall-of-champions", "Champion crowned, Presidents' Trophy, Dynasty Pot won, the Cup handoff and A Day with the Cup"),
+    ("06_Honors_and_Records", "hall-of-champions", "Champion crowned, Presidents' Trophy, Dynasty Pot won"),
     ("07_Ownership", "announcements", "New owner, franchise seeking an owner, Commissioner transition"),
     ("08_Trades", "completed-trades", "Trade completed"),
     ("09_Community_and_Traditions", "announcements, gm-lounge and hall-of-champions", "Awards Night ballots and winners, Wooden Spoon proposal and award, League Bot launch"),
@@ -130,8 +130,6 @@ AUTOMATED = {
     "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT": "Forum post in trade-block a few days before deadline day: fill in the deadline timestamp, send (the thread name is filled in), then pin the post.",
     "BLHA AWARDS NIGHT": "Announcement in announcements once /awards open has posted the ballot in league-voting. The League Bot runs the ballot itself.",
     "BLHA AWARDS NIGHT: THE WINNERS": "The League Bot posts the winners itself with /awards results. Use this only if the bot isn't running.",
-    "THE CUP CHANGES HANDS": "Send when the Cup reaches the new champion.",
-    "A DAY WITH THE CUP": "Owners can't post in hall-of-champions, so the champion sends you the photos by DM. Attach them in Discohook (Add File) before you send.",
     "BLHA DEADLINE DAY TRADE CENTER": "The Sesh event's text. In league-calendar run /create, name it BLHA Deadline Day Trade Center, set deadline day 9:00 AM to 11:59 PM ET, and paste this message's text as the description.",
 }
 
