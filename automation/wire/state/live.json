@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T16:00:41.159882Z",
+  "updated_at": "2026-10-09T16:15:33.202754Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5802,6 +5802,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T16:00:41.088653Z"
+    },
+    {
+      "key": "2bb5bcf2552f5a43c22a546c",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-9-2026",
+      "fingerprint": "bfe294b36f872752",
+      "title_norm": "on tap: connor, jets look to stay hot vs. ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T16:15:32.855855Z"
+    },
+    {
+      "key": "db1803fe2ea74c2d6778e04e",
+      "url": "https://www.dailyfaceoff.com/players/news/damon-severson/2038",
+      "fingerprint": "6ec404c727d564cf",
+      "title_norm": "damon severson (cbj) — severson (shoulder) was activated off ir and is expected to make his season debut vs. pittsburgh on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T16:15:33.146930Z"
     }
   ],
   "known_sources": [
