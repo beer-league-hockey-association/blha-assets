@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T02:00:37.015085Z",
+  "updated_at": "2026-10-09T02:15:32.382604Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5522,6 +5522,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T02:00:36.972230Z"
+    },
+    {
+      "key": "1fe3c3124b515b22680c69df",
+      "url": "https://www.nhl.com/news/minnesota-wild-tampa-bay-lightning-game-recap-october-8-2026",
+      "fingerprint": "5e9bc7e7b1005c68",
+      "title_norm": "carlson's first 2 bolts goals help hold off wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T02:15:31.827856Z"
+    },
+    {
+      "key": "6bf5065a70bfa6dd76a5c840",
+      "url": "https://www.nhl.com/news/utah-mammoth-boston-bruins-game-recap-october-8-2026",
+      "fingerprint": "a24cbb4a43b2edcc",
+      "title_norm": "pastrnak's first two goals of season, two assists help bruins cruise past mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T02:15:32.033926Z"
+    },
+    {
+      "key": "07ef1699bdb2afc97120f5b6",
+      "url": "https://www.sportsnet.ca/nhl/article/yakemchuks-power-play-winner-lifts-senators-over-flyers",
+      "fingerprint": "b951baadb84a2f23",
+      "title_norm": "yakemchuk's power-play winner lifts senators over flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T02:15:32.359618Z"
     }
   ],
   "known_sources": [
