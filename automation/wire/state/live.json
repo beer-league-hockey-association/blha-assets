@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T04:15:36.460219Z",
+  "updated_at": "2026-10-09T04:45:34.565326Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5642,6 +5642,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T04:15:36.422630Z"
+    },
+    {
+      "key": "46c36c9047011d212780557c",
+      "url": "https://www.nhl.com/news/david-pastrnak-blossoming-in-first-season-as-boston-bruins-captain",
+      "fingerprint": "df8af6994c44e1f0",
+      "title_norm": "pastrnak blossoming in 1st season as bruins captain",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T04:45:34.474681Z"
     }
   ],
   "known_sources": [
