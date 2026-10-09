@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T14:30:37.352148Z",
+  "updated_at": "2026-10-09T15:15:35.760279Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5772,6 +5772,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T14:30:37.319309Z"
+    },
+    {
+      "key": "f4a9789a66210b5ec9a9eafb",
+      "url": "https://www.dailyfaceoff.com/players/news/bo-horvat/2141",
+      "fingerprint": "0e63975cd9680333",
+      "title_norm": "bo horvat (nyi) — horvat (undisclosed) is being further evaluated after leaving thursday's game vs. chicago.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T15:15:35.467603Z"
+    },
+    {
+      "key": "4ea86a9ec763f2818779de9e",
+      "url": "https://www.dailyfaceoff.com/players/news/j-t-compher/2751",
+      "fingerprint": "c1c06a6fed4738fd",
+      "title_norm": "j.t. compher (det) — compher (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T15:15:35.687370Z"
     }
   ],
   "known_sources": [
