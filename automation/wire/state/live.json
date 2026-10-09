@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T04:45:34.565326Z",
+  "updated_at": "2026-10-09T05:00:43.894834Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5652,6 +5652,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-09T04:45:34.474681Z"
+    },
+    {
+      "key": "d788d94cff99de8385df9946",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-oliver-ekman-larsson-injured-vs-golden-knights",
+      "fingerprint": "d1920e29848df049",
+      "title_norm": "maple leafs' oliver ekman-larsson injured vs. golden knights",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T05:00:43.625575Z"
+    },
+    {
+      "key": "824f906200f5ded0cb6e2657",
+      "url": "https://www.sportsnet.ca/nhl/article/newhook-line-helps-canadiens-restore-balance-despite-loss",
+      "fingerprint": "45671009fdfa3361",
+      "title_norm": "newhook line helps canadiens restore balance despite loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T05:00:43.866470Z"
     }
   ],
   "known_sources": [
