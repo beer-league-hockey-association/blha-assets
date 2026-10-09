@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T01:00:39.673408Z",
+  "updated_at": "2026-10-09T02:00:37.015085Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5492,6 +5492,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T01:00:39.638693Z"
+    },
+    {
+      "key": "882afcc636999894a506c781",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-ottawa-senators-game-recap-october-8-2026",
+      "fingerprint": "20480f9a2149dabc",
+      "title_norm": "senators prevail in home opener, keep flyers winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T02:00:36.371102Z"
+    },
+    {
+      "key": "4393101c5847af4a0cc6bd56",
+      "url": "https://www.nhl.com/news/dallas-stars-buffalo-sabres-game-recap-october-8-2026",
+      "fingerprint": "f2a9f1206bc15186",
+      "title_norm": "rantanen has four points, stars blank sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T02:00:36.561601Z"
+    },
+    {
+      "key": "a8b4c8f458061c19698bb3c3",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-fall-to-hurricanes-behind-stankovens-hat-trick",
+      "fingerprint": "9cefdd5405839134",
+      "title_norm": "canucks fall to hurricanes behind stankoven's hat trick",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T02:00:36.972230Z"
     }
   ],
   "known_sources": [
