@@ -1,0 +1,37 @@
+{
+  "embeds": [
+    {
+      "title": "THE CUP CHANGES HANDS",
+      "description": "🏆 The BLHA Cup goes to **`[FRANCHISE]`**, Season `[YEAR]` champion.",
+      "color": 13012757,
+      "footer": {
+        "text": "BLHA RECORDS DEPARTMENT"
+      },
+      "fields": [
+        {
+          "name": "ENGRAVED",
+          "value": "Season `[YEAR]` • `[FRANCHISE]` • `[OWNER]`",
+          "inline": false
+        },
+        {
+          "name": "HANDED OFF",
+          "value": "`[IN PERSON / BY MAIL]` on `[DATE]`, from `[LAST SEASON'S CHAMPION / THE COMMISSIONER]`.",
+          "inline": false
+        },
+        {
+          "name": "THE TRADITION",
+          "value": "The champion keeps the Cup until the next BLHA Championship is decided, then passes it on. Every champion gets a Day with the Cup: send the Commissioner a photo or two and they're posted here.",
+          "inline": false
+        },
+        {
+          "name": "JUST FOR FUN",
+          "value": "The Cup is the trophy, not a prize: it carries no money and changes nothing in the standings or the draft.",
+          "inline": false
+        }
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
+      }
+    }
+  ]
+}

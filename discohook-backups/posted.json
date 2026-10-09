@@ -156,11 +156,6 @@
       "posted": "2026-10-07",
       "fingerprint": 3762733654
     },
-    "league-competition/04_weekly_recap_channel_intro.json": {
-      "channel": "weekly-recap",
-      "posted": "2026-10-07",
-      "fingerprint": 4230816491
-    },
     "league-competition/05_playoff_race_channel_intro.json": {
       "channel": "playoff-race",
       "posted": "2026-10-07",
@@ -312,5 +307,12 @@
       "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
     }
   },
-  "update_in_place": {}
+  "update_in_place": {
+    "league-competition/04_weekly_recap_channel_intro.json": {
+      "channel": "weekly-recap",
+      "posted": "2026-10-07",
+      "fingerprint": 4230816491,
+      "message": "https://discord.com/channels/1554538666721018016/1554562413876219984/1557429480258277418"
+    }
+  }
 }

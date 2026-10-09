@@ -40,6 +40,7 @@ tasks:
       - "League Calendar pinned."
       - "league.yaml and events.yaml point at this season; Xenon backup taken."
       - "Wooden Spoon: last Season's holder has posted the Season preview (due before Week 1)."
+      - "A Day with the Cup: if last Season's champion has sent photos, send A DAY WITH THE CUP in 🏆│hall-of-champions with the photos attached."
       - "Discord roles 📅 Manager of the Month and 🎯 Bounty Hunter exist (cosmetic, no permissions), and competition.bounties in league.yaml lists this Season's bounties."
 
   - id: preseason-eve
@@ -128,6 +129,18 @@ tasks:
       - "Finish the draft order: 1.07 and 1.08 quarterfinal losers, 1.09 fourth, 1.10 third, 1.11 runner-up, 1.12 champion (14.6)."
       - "Record the consolation champion's $50 FAAB bonus for next season (10.7)."
       - "Prizes and the Season Ledger are due within 30 days (3.9)."
+      - "Awards Night: run /awards open in the League Bot (ballot in 🗳️│league-voting), then send the Awards Night announcement from the Send Console. After the deadline, /awards results posts the winners in 🏆│hall-of-champions."
+
+  - id: cup-handoff
+    anchor: season_end_final
+    offset: 7d
+    title: "The Cup: get it to the new champion"
+    overdue_days: 21
+    section: "3. End of Season, Part B"
+    items:
+      - "Order the engraving: Season, franchise and owner."
+      - "Get the Cup to the champion (in person or by mail), then send THE CUP CHANGES HANDS in 🏆│hall-of-champions."
+      - "Ask the champion for a photo or two for A Day with the Cup, sent to you by DM."
 
   - id: prizes-day-14
     anchor: season_end_final

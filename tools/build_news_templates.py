@@ -156,6 +156,16 @@ tmpl("league-office/72_dynasty_pot_won.json", "DYNASTY POT WON", "**`[FRANCHISE]
      [("PAYOUT", "**`$[AMOUNT]`**"), ("CHAMPIONSHIPS", "`[SEASONS WON]`"),
       ("CYCLE RESET", "The pot returns to zero and every franchise's counter resets. A new cycle starts with Season `[YEAR]`.")], RECORD)
 
+tmpl("league-office/73_cup_handoff.json", "THE CUP CHANGES HANDS", "\U0001F3C6 The BLHA Cup goes to **`[FRANCHISE]`**, Season `[YEAR]` champion.", "BLHA RECORDS DEPARTMENT",
+     [("ENGRAVED", "Season `[YEAR]` • `[FRANCHISE]` • `[OWNER]`"),
+      ("HANDED OFF", "`[IN PERSON / BY MAIL]` on `[DATE]`, from `[LAST SEASON'S CHAMPION / THE COMMISSIONER]`."),
+      ("THE TRADITION", "The champion keeps the Cup until the next BLHA Championship is decided, then passes it on. Every champion gets a Day with the Cup: send the Commissioner a photo or two and they're posted here."),
+      ("JUST FOR FUN", "The Cup is the trophy, not a prize: it carries no money and changes nothing in the standings or the draft.")], RECORD)
+tmpl("league-office/74_day_with_the_cup.json", "A DAY WITH THE CUP", "**`[OWNER]`** of **`[FRANCHISE]`**, Season `[YEAR]` champion, spends a day with the BLHA Cup.", "BLHA RECORDS DEPARTMENT",
+     [("WHERE IT WENT", "`[THE DAY IN A SENTENCE OR TWO]`"),
+      ("PHOTOS", "Attached to this post."),
+      ("NEXT UP", "The Cup stays with **`[FRANCHISE]`** until the Season `[NEXT YEAR]` Championship is decided.")], RECORD)
+
 # ------------------------------------------------------------------ trade center
 tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fantrax on `[DATE]`.", "BLHA TRADE CENTER",
      [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
@@ -201,15 +211,19 @@ tmpl("league-office/35_winter_meetings.json", "BLHA WINTER MEETINGS", "The yearl
       ("WHERE", "`[VOICE CHANNEL]`"),
       ("AGENDA", "Season review • Ideas from **league-suggestions** that could become amendment proposals (Article XX) • Draft and calendar dates • Open floor"),
       ("CAN'T MAKE IT", "Notes are posted in **gm-lounge** afterward. Nothing is decided at the meeting itself: rule changes still go through a written proposal and a vote.")])
-tmpl("league-office/26_awards_night.json", "BLHA AWARDS NIGHT", "Season `[YEAR]` ballots are open. Owners choose the winners.", "BLHA RECORDS DEPARTMENT",
-     [("THE AWARDS", "**GM of the Year** • **Trade of the Year** • **Waiver Wire Award** (best pickup) • **Rookie GM of the Year** (first-season owners) • **Cold Beer Award** (the season's funniest moment)"),
-      ("HOW TO VOTE", "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself."),
-      ("RESULTS", "Winners are announced in **hall-of-champions** and kept in the league records."),
+tmpl("league-office/26_awards_night.json", "BLHA AWARDS NIGHT", "Season `[YEAR]` ballots are open in **league-voting**. Owners choose the winners.", "BLHA RECORDS DEPARTMENT",
+     [("THE AWARDS", "**GM of the Year** • **Trade of the Year** • **Waiver Steal of the Year** • **Comeback Franchise** • **Bust of the Year** (all in good fun)"),
+      ("HOW TO VOTE", "Press **Fill out my ballot** on the League Bot's post in **league-voting**: a 1st, 2nd and 3rd choice for each award, worth 5, 3 and 1 points. One ballot per franchise, cast by the Franchise Owner. Change it any time until **`[TIMESTAMP]`**."),
+      ("NO SELF-VOTES", "Your own franchise, your own pickups and trades you were part of aren't on your ballot. Bust of the Year is the exception."),
+      ("RESULTS", "Most points wins; a tie goes to the most first-place votes, then the award is shared. Winners are announced in **hall-of-champions** and kept in the league records."),
       ("JUST FOR FUN", "Awards carry no money and change nothing in the standings or the draft.")], RECORD)
-tmpl("league-office/27_award_winners.json", "BLHA AWARDS NIGHT: THE WINNERS", "Season `[YEAR]`, as voted by the owners.", "BLHA RECORDS DEPARTMENT",
-     [("GM OF THE YEAR", "`[FRANCHISE / OWNER]`"), ("TRADE OF THE YEAR", "`[TRADE AND DATE]`"),
-      ("WAIVER WIRE AWARD", "`[PLAYER, FRANCHISE]`"), ("ROOKIE GM OF THE YEAR", "`[OWNER]`"),
-      ("COLD BEER AWARD", "`[THE MOMENT]`")], RECORD)
+tmpl("league-office/27_award_winners.json", "BLHA AWARDS NIGHT: THE WINNERS", "Season `[YEAR]`, as voted by the owners: `[N]` of `[N]` franchises returned a ballot. 5 points for a first-place vote, 3 for second, 1 for third.", "BLHA RECORDS DEPARTMENT",
+     [("GM OF THE YEAR", "**`[FRANCHISE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("TRADE OF THE YEAR", "**`[TRADE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("WAIVER STEAL OF THE YEAR", "**`[PLAYER, FRANCHISE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("COMEBACK FRANCHISE", "**`[FRANCHISE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("BUST OF THE YEAR", "**`[NOMINEE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("JUST FOR FUN", "Awards carry no money and change nothing in the standings or the draft.")], RECORD)
 tmpl("league-office/28_wooden_spoon_proposal.json", "NEW TRADITION? THE WOODEN SPOON", "A just-for-fun tradition for the last-place team. Owners decide whether we do it.", f"{LO} • DISCUSSION",
      [("THE IDEA", "The franchise that finishes last in the regular season holds the **Wooden Spoon** role for the Offseason and writes a short preview of the next Season, posted before Week 1."),
       ("WHAT IT ISN'T", "No money and no rule change. Draft order still comes from Potential Points (14.5), so the Spoon can't be chased."),
@@ -303,7 +317,8 @@ BUNDLES = {
     "04_Voting": ["league-office/50_vote_proposal_open.json", "league-office/51_vote_open.json", "league-office/52_vote_result.json"],
     "05_Constitution_and_Rulings": ["league-office/10_constitution_new_version.json", "league-office/11_constitution_amendment.json",
                                     "league-office/12_rules_ruling.json", "league-office/14_recusal_notice.json", "league-office/15_appeal_outcome.json"],
-    "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
+    "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json",
+                              "league-office/73_cup_handoff.json", "league-office/74_day_with_the_cup.json"],
     "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
     "08_Trades": ["trade-center/90_trade_completed.json"],
     "10_Deadline_Day_Trade_Center": ["trade-center/91_deadline_day_trade_bait_board.json",

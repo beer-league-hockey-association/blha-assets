@@ -2,7 +2,7 @@
   "embeds": [
     {
       "title": "BLHA AWARDS NIGHT",
-      "description": "Season `[YEAR]` ballots are open. Owners choose the winners.",
+      "description": "Season `[YEAR]` ballots are open in **🗳️│league-voting**. Owners choose the winners.",
       "color": 13012757,
       "footer": {
         "text": "BLHA RECORDS DEPARTMENT"
@@ -10,17 +10,22 @@
       "fields": [
         {
           "name": "THE AWARDS",
-          "value": "**GM of the Year** • **Trade of the Year** • **Waiver Wire Award** (best pickup) • **Rookie GM of the Year** (first-season owners) • **Cold Beer Award** (the season's funniest moment)",
+          "value": "**GM of the Year** • **Trade of the Year** • **Waiver Steal of the Year** • **Comeback Franchise** • **Bust of the Year** (all in good fun)",
           "inline": false
         },
         {
           "name": "HOW TO VOTE",
-          "value": "One Discord poll per award in **💬│gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself.",
+          "value": "Press **Fill out my ballot** on the League Bot's post in **🗳️│league-voting**: a 1st, 2nd and 3rd choice for each award, worth 5, 3 and 1 points. One ballot per franchise, cast by the Franchise Owner. Change it any time until **`[TIMESTAMP]`**.",
+          "inline": false
+        },
+        {
+          "name": "NO SELF-VOTES",
+          "value": "Your own franchise, your own pickups and trades you were part of aren't on your ballot. Bust of the Year is the exception.",
           "inline": false
         },
         {
           "name": "RESULTS",
-          "value": "Winners are announced in **🏆│hall-of-champions** and kept in the league records.",
+          "value": "Most points wins; a tie goes to the most first-place votes, then the award is shared. Winners are announced in **🏆│hall-of-champions** and kept in the league records.",
           "inline": false
         },
         {

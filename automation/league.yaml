@@ -42,8 +42,9 @@ competition:
 
   # Monthly Awards in 📰│weekly-recap (Manager of the Month, Best Record,
   # Biggest Single Week, Hard Luck), from Fantrax matchup scores. A week counts
-  # for the month its end date falls in; a month's awards go out the morning
-  # the first week of the next month is reported, and the season's last month
+  # for the month its last night (Sunday, Constitution 5.8) falls in; a
+  # month's awards go out the morning the first week of the next month is
+  # reported, and the season's last month
   # with the final regular-season week. The Manager of the Month holds the
   # "📅 Manager of the Month" Discord role until the next award (the
   # Commissioner moves the role by hand). Set false to stop it.
