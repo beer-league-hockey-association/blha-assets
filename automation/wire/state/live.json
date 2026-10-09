@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T23:15:34.026576Z",
+  "updated_at": "2026-10-09T23:30:35.576893Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6132,6 +6132,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T23:15:34.003573Z"
+    },
+    {
+      "key": "f606bc5bb22ff485252427d7",
+      "url": "https://www.nhl.com/news/topic/trade-coverage/jayden-struble-traded-to-nashville-predators-by-montreal-canadiens-for-pick",
+      "fingerprint": "4ecd6692854cda1f",
+      "title_norm": "struble traded to predators by canadiens for pick",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T23:30:35.218674Z"
+    },
+    {
+      "key": "9e9e6ed5737906cff8652f57",
+      "url": "https://www.nhl.com/news/san-jose-sharks-darnell-nurse-ready-for-matchup-against-former-team-edmonton-oilers",
+      "fingerprint": "ef632d1f687a9884",
+      "title_norm": "sharks' nurse set for 'weird' matchup against oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T23:30:35.479697Z"
     }
   ],
   "known_sources": [
