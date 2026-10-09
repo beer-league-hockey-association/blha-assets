@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T14:15:32.010620Z",
+  "updated_at": "2026-10-09T14:30:37.352148Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5762,6 +5762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T14:15:31.959759Z"
+    },
+    {
+      "key": "2dd1664154deb3e623bae9a4",
+      "url": "https://www.sportsnet.ca/nhl/article/tkachuk-less-senators-showcasing-many-promising-signs",
+      "fingerprint": "d5e5feea39ee994e",
+      "title_norm": "tkachuk-less senators showcasing many promising signs",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T14:30:37.319309Z"
     }
   ],
   "known_sources": [
