@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T18:00:35.966999Z",
+  "updated_at": "2026-10-09T18:15:33.679302Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5942,6 +5942,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T18:00:35.942414Z"
+    },
+    {
+      "key": "59fbb6699b73588e6e5969a0",
+      "url": "https://www.dailyfaceoff.com/players/news/dillon-dube/3907",
+      "fingerprint": "2716cfeecbe9335b",
+      "title_norm": "dillon dube (stl) — dube (upper-body) is doubtful for saturday's game vs. columbus.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T18:15:33.402204Z"
+    },
+    {
+      "key": "648b6755f6ce9d350ea300cc",
+      "url": "https://www.dailyfaceoff.com/players/news/william-trudeau/32461",
+      "fingerprint": "205e81a14cad39fd",
+      "title_norm": "william trudeau (nsh) — trudeau has been placed on ir with an upper-body injury and is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T18:15:33.625176Z"
     }
   ],
   "known_sources": [
