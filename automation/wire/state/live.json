@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T13:15:36.969798Z",
+  "updated_at": "2026-10-09T14:15:32.010620Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5752,6 +5752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T13:15:36.951834Z"
+    },
+    {
+      "key": "d109b52b61bb4ee56117d469",
+      "url": "https://www.dailyfaceoff.com/players/news/oliver-ekman-larsson/1172",
+      "fingerprint": "d3e2f55c03dfca71",
+      "title_norm": "oliver ekman-larsson (tor) — ekman-larson (undisclosed) left thursday's game and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T14:15:31.959759Z"
     }
   ],
   "known_sources": [
