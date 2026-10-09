@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T00:30:35.792464Z",
+  "updated_at": "2026-10-09T01:00:39.673408Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5482,6 +5482,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T00:30:35.734071Z"
+    },
+    {
+      "key": "60cce4f6e8fc98af3667012a",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/761029cb-c029-4d21-a260-3d54ec8c4c9e",
+      "fingerprint": "8bc113b752f3fa18",
+      "title_norm": "flames on sportsnet: colorado vs. calgary",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T01:00:39.638693Z"
     }
   ],
   "known_sources": [
