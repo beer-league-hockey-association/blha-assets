@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T16:30:40.210695Z",
+  "updated_at": "2026-10-09T16:45:36.048502Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5892,6 +5892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T16:30:39.867514Z"
+    },
+    {
+      "key": "7c2b0efbe68052855012d045",
+      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
+      "fingerprint": "d72965122be7ead5",
+      "title_norm": "william eklund (ott) — eklund (ankle) is out for an extended period of time.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T16:45:35.950334Z"
     }
   ],
   "known_sources": [
