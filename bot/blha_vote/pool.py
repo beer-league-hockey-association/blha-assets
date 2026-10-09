@@ -13,24 +13,32 @@ automation/playoff_pool/. The two sides share data through files only:
           automation/playoff_pool/entries.yaml, the only place the automation
           reads entries from (the same file the Commissioner fills by hand
           from DMs before the bot is live).
+  channel playoff_pool.entries_via in automation/league.yaml: "bot" takes
+          picks here; "dm" (owners DM the Commissioner) turns /pool pick and
+          /pool export off, because the export replaces entries.yaml and
+          would drop the DM'd entries.
 
 One entry per franchise; its Franchise Owner or Co-Owner picks one player per
 box with menus, four boxes per page, and can change picks until the first
 puck drop. An entry's time is when its last box was first filled; it breaks
 the final tie (most goalie points first).
+
+/pool export works only after the deadline: before it, the export would show
+the Commissioner (an entrant too) every other franchise's picks. It counts
+only picks made before the deadline (Store.pool_entries).
 """
 
 from __future__ import annotations
 
 import os
 from datetime import datetime
-from typing import Any
+from typing import Any, Sequence
 
 from . import embeds as E
 from . import shared  # noqa: F401  (puts automation/ on sys.path)
 
 from playoff_pool import entries as pool_entries  # noqa: E402
-from playoff_pool.boxes import Box, Boxes, Player  # noqa: E402
+from playoff_pool.boxes import Box, Boxes, Player, Settings  # noqa: E402
 
 BOXES_URL = ("https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/"
              "automation-state/automation/playoff_pool/state/boxes.json")
@@ -39,6 +47,21 @@ PER_PAGE = 4  # four menus per page; the fifth row holds the page buttons
 FOOTER = "BLHA PLAYOFF POOL"
 NOT_POSTED = ("The Playoff Pool boxes aren't posted yet. They go up in game-day once the NHL playoff "
               "field is set.")
+BOT, DM = "bot", "dm"  # playoff_pool.entries_via
+RECHECK_SECONDS = 60  # a pick made while the cached boxes have no deadline re-reads boxes.json at most this old
+DM_ENTRIES = ("This year, Playoff Pool entries go by DM to the Commissioner, not through the bot. Send your "
+              "10 picks, one per box: the option number or the player's name, for example \"Box 1: 3, Box 2: 5\". "
+              "`/pool boxes` shows the boxes and the deadline.")
+DM_EXPORT = ("This year's Playoff Pool entries go by DM (`playoff_pool.entries_via: dm` in "
+             "`automation/league.yaml`), so there's nothing to export: `/pool export` would replace "
+             "`entries.yaml` and drop the DM'd entries. Add the DM'd picks to `entries.yaml` after the deadline, "
+             "before the first standings post.")
+
+
+def entries_via(league: Any) -> str:
+    """playoff_pool.entries_via from automation/league.yaml (the automation's own reading and checks)."""
+    raw = league.get("playoff_pool") if isinstance(league, dict) else None
+    return Settings.from_cfg(raw).entries_via
 
 
 def boxes_url() -> str:
@@ -82,9 +105,15 @@ def picks_content(boxes: Boxes, franchise: str, mine: dict[int, int], page: int,
     return text
 
 
-def boxes_embed(boxes: Boxes) -> dict[str, Any]:
-    description = (f"Just for fun: no money and no effect on the league. Pick one player from each box with "
-                   f"`/pool pick`. {deadline_text(boxes)}.")
+def how_to_enter(via: str) -> str:
+    if via == BOT:
+        return "Pick one player from each box with `/pool pick`."
+    return "DM your picks to the Commissioner, one player from each box."
+
+
+def boxes_embed(boxes: Boxes, via: str = BOT) -> dict[str, Any]:
+    description = (f"Just for fun: no money and no effect on the league. {how_to_enter(via)} "
+                   f"{deadline_text(boxes)}.")
     for stats in (True, False):
         fields = [(b.title.upper(), "\n".join(f"{i}. {p.name}, {p.team}" + (f" — {p.stat}" if stats else "")
                                                for i, p in enumerate(b.players, 1)))
@@ -106,10 +135,28 @@ def export_text(boxes: Boxes, rows: list[tuple[str, dict[int, int], datetime | N
                                      for name, picks, entered in rows])
 
 
-def export_note(boxes: Boxes, rows: list[tuple[str, dict[int, int], datetime | None]], now: datetime) -> str:
+def export_refusal(boxes: Boxes, now: datetime) -> str | None:
+    """Why /pool export must wait, or None once picks are locked.
+
+    Before the deadline the file would show the Commissioner, who enters the
+    pool too, everyone else's picks while their own can still change.
+    """
+    if boxes.locked(now):
+        return None
+    when = ("the NHL hasn't published the first puck drop yet" if boxes.deadline is None
+            else f"they lock at the first puck drop, {E.stamp(boxes.deadline)} ({E.stamp(boxes.deadline, 'R')})")
+    return (f"Picks are still open: {when}. The export works only after the deadline, so nobody, the "
+            "Commissioner included, sees other entries while picks can change. Lock in your own picks with "
+            "`/pool pick` first.")
+
+
+def export_note(boxes: Boxes, rows: list[tuple[str, dict[int, int], datetime | None]],
+                late: Sequence[tuple[str, int]] = ()) -> str:
     complete = sum(1 for _, picks, _ in rows if len(picks) == len(boxes.boxes))
     text = (f"{len(rows)} entr{'y' if len(rows) == 1 else 'ies'} ({complete} complete). Commit this file as "
             "`automation/playoff_pool/entries.yaml` on main; the automation reads it at its next run.")
-    if not boxes.locked(now):
-        text += " Picks are still open, so export again after the deadline."
-    return text
+    if late:
+        where = ", ".join(f"{name} box {number}" for name, number in late)
+        text += (f" Ignored {len(late)} pick{'s' if len(late) != 1 else ''} made after the deadline ({where}): "
+                 "the pick in place at the deadline counts, or the box is empty.")
+    return E.clip(text, 2000)

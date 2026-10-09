@@ -374,17 +374,60 @@ class Store:
                  now=now)
         return count
 
-    def pool_picks(self, year: int, franchise: str) -> dict[int, int]:
-        rows = self.db.execute("SELECT box, player_id FROM pool_picks WHERE year=? AND franchise=?",
-                               (year, franchise)).fetchall()
-        return {int(r["box"]): int(r["player_id"]) for r in rows}
+    def pool_picks(self, year: int, franchise: str, *, before: datetime | None = None) -> dict[int, int]:
+        """Box number -> NHL player id: the franchise's current picks.
 
-    def pool_entries(self, year: int) -> list[tuple[str, dict[int, int], datetime | None]]:
-        """[(franchise, box -> player id, entry time or None)], complete entries first, earliest first."""
+        With ``before`` (the pick deadline), the picks in place at the deadline
+        instead. Only each box's latest pick is kept here, so a box changed at
+        or after the deadline falls back to its last earlier pick from the audit
+        trail (every pick is logged there), and a box first filled at or after
+        the deadline is left empty.
+        """
+        rows = self.db.execute("SELECT box, player_id, picked_at FROM pool_picks WHERE year=? AND franchise=?",
+                               (year, franchise)).fetchall()
+        picks = {int(r["box"]): int(r["player_id"]) for r in rows
+                 if before is None or parse(r["picked_at"]) < before}
+        late = {int(r["box"]) for r in rows} - set(picks)
+        if late:
+            picks.update(self._pool_picks_before(year, franchise, late, before))
+        return picks
+
+    def _pool_picks_before(self, year: int, franchise: str, boxes: set[int], before: datetime) -> dict[int, int]:
+        """The last pick made before ``before`` in each of ``boxes``, from the audit trail."""
+        found: dict[int, tuple[datetime, int]] = {}
+        for row in self.db.execute("SELECT at, detail FROM audit WHERE action='pool_pick' ORDER BY id").fetchall():
+            d = json.loads(row["detail"] or "{}")
+            at = parse(row["at"])
+            if d.get("year") != year or d.get("franchise") != franchise or d.get("box") not in boxes or at >= before:
+                continue
+            if d["box"] not in found or at >= found[d["box"]][0]:
+                found[int(d["box"])] = (at, int(d["player"]))
+        return {box: player for box, (_, player) in found.items()}
+
+    def pool_late_picks(self, year: int, deadline: datetime) -> list[tuple[str, int]]:
+        """[(franchise, box)] whose stored pick was made at or after the deadline (left out of the export)."""
+        rows = self.db.execute("SELECT franchise, box, picked_at FROM pool_picks WHERE year=? ORDER BY franchise, box",
+                               (year,)).fetchall()
+        return [(r["franchise"], int(r["box"])) for r in rows if parse(r["picked_at"]) >= deadline]
+
+    def pool_entries(self, year: int, deadline: datetime | None = None
+                     ) -> list[tuple[str, dict[int, int], datetime | None]]:
+        """[(franchise, box -> player id, entry time or None)], complete entries first, earliest first.
+
+        With ``deadline``, only picks made before it count (pool_picks), and an
+        entry first completed at or after it was incomplete when picks locked,
+        so it has no entry time.
+        """
         rows = self.db.execute("SELECT franchise, completed_at FROM pool_entries WHERE year=?", (year,)).fetchall()
-        out = [(r["franchise"], self.pool_picks(year, r["franchise"]), parse(r["completed_at"])) for r in rows]
+        out = []
+        for r in rows:
+            entered = parse(r["completed_at"])
+            if deadline is not None and entered is not None and entered >= deadline:
+                entered = None
+            out.append((r["franchise"], self.pool_picks(year, r["franchise"], before=deadline), entered))
         out = [row for row in out if row[1]]
         return sorted(out, key=lambda r: (r[2] is None, r[2].isoformat() if r[2] else "", r[0]))
+
     # -- BLHA Bucks --------------------------------------------------------
     def add_book_week(self, season: str, period: int, lines: list[dict[str, Any]], *,
                       locks_at: datetime, now: datetime) -> None:

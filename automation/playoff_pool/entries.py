@@ -3,8 +3,10 @@
 The automation only reads this file. It is filled in one of two ways:
 
   - Before the League Bot is live: owners DM their 10 picks to the
-    Commissioner, who types them in (a pick can be the option number shown in
-    the boxes post, the NHL player id, or the player's name).
+    Commissioner, who types them in after the deadline, before the first
+    standings post (the repository is public, so never earlier). A pick can
+    be the option number shown in the boxes post, the NHL player id, or the
+    player's name.
   - With the League Bot: owners use /pool pick; after the deadline the
     Commissioner runs /pool export, which returns this file ready to commit.
 

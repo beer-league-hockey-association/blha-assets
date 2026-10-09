@@ -4,7 +4,9 @@
 # Commissioner; see automation/playoff_pool/README.md.
 #
 # Before the League Bot is live: owners DM their picks to the Commissioner, who
-# adds them here before the deadline (the first puck drop of the playoffs).
+# adds them here after the deadline (the first puck drop of the playoffs) and
+# before the first standings post. Not before: the repository is public, so
+# picks committed early would show every later entrant what the others chose.
 # Once the bot is live, owners use /pool pick and the Commissioner replaces
 # this file with the output of /pool export after the deadline.
 #

@@ -14,8 +14,10 @@ Awards (AWARDS):
 
 Ballots: one per franchise, cast by the Franchise Owner like every league vote
 (2.2). For each award a 1st, 2nd and 3rd choice worth 5, 3 and 1 points. No
-owner may rank their own franchise for GM of the Year or Comeback Franchise.
-A ballot can be changed until /awards close or the deadline.
+owner may rank their own franchise for GM of the Year or Comeback Franchise,
+their own pickup for Waiver Steal, or a trade they were part of for Trade of
+the Year (either side), so nobody can give themselves points. Bust of the
+Year allows it. A ballot can be changed until /awards close or the deadline.
 
 Winner: the most points; a tie goes to the most first-place votes, and if it
 is still tied the award is shared.
@@ -66,12 +68,16 @@ class Award:
 
 AWARDS: tuple[Award, ...] = (
     Award("gm", "GM of the Year", False, False, "Every active franchise is on the ballot."),
-    Award("trade", "Trade of the Year", True, True, "The Season's best trades."),
-    Award("waiver", "Waiver Steal of the Year", True, True, "The Season's best pickups."),
+    Award("trade", "Trade of the Year", False, True, "The Season's best trades."),
+    Award("waiver", "Waiver Steal of the Year", False, True, "The Season's best pickups."),
     Award("comeback", "Comeback Franchise", False, True, "The biggest climbs in the standings since last Season."),
     Award("bust", "Bust of the Year", True, True, "All in good fun: the Season's biggest letdowns."),
 )
 BY_KEY = {a.key: a for a in AWARDS}
+# Trade and Waiver Steal: what an owner may not vote for (refusals and the ballot note).
+OWN = {"trade": "a trade your franchise was part of", "waiver": "your own franchise's pickup"}
+UNLISTED = {"trade": "Trades your franchise was part of aren't listed",
+            "waiver": "Your own franchise's pickups aren't listed"}
 
 
 @dataclass(frozen=True)
@@ -267,7 +273,7 @@ def build_ballot(franchises: list[Franchise], texts: dict[str, str], previous: d
 
 # ------------------------------------------------------------------ ballots
 def options_for(award: Award, nominees: list[Nominee], voter: str) -> list[Nominee]:
-    """Nominees this franchise may rank (never itself for GM of the Year or Comeback)."""
+    """Nominees this franchise may rank (never its own for GM, Comeback, Waiver Steal or Trade of the Year)."""
     return [n for n in nominees if award.self_vote or voter not in n.franchises]
 
 
@@ -280,6 +286,8 @@ def choose(current: dict[int, str], place: int, nominee_id: str, award: Award, n
     if nominee is None:
         return current, f"That nominee isn't on the {award.name} ballot."
     if not award.self_vote and voter in nominee.franchises:
+        if award.key in OWN:
+            return current, f"You can't vote for {OWN[award.key]} for {award.name}."
         return current, f"You can't vote for your own franchise for {award.name}."
     out = {p: n for p, n in current.items() if n != nominee_id and p != place}
     out[place] = nominee_id
@@ -490,7 +498,8 @@ def ballot_embed(season: int, nominees: Nominees, closes_at: datetime) -> dict[s
     fixed = [
         ("HOW TO VOTE", "**Fill out my ballot** opens your private ballot. One ballot per franchise, cast by the "
                         "**Franchise Owner**: a 1st, 2nd and 3rd choice for each award, worth 5, 3 and 1 points. No "
-                        "votes for your own franchise for GM of the Year or Comeback Franchise. Change it any time "
+                        "votes for your own franchise, your own pickup or a trade you were part of (Bust of the Year "
+                        "excepted). Change it any time "
                         f"until **{E.stamp(closes_at)}** ({E.stamp(closes_at, 'R')})."),
         ("RESULTS", "Most points wins; a tie goes to the most first-place votes, then the award is shared. Winners "
                     "are announced in **🏆│hall-of-champions** and kept in the league records."),
@@ -514,9 +523,11 @@ def ballot_content(season: int, award: Award, nominees: list[Nominee], mine: dic
             f"closes {E.stamp(closes_at, 'R')}\n{award.blurb} 1st = 5 points, 2nd = 3, 3rd = 1.\n"
             f"Your picks: {picks or 'none yet'}")
     if not can_rank:
-        text += "\nYour franchise is the only nominee, so there's nothing for you to rank here."
+        what = f"Every nominee is {OWN[award.key]}" if award.key in OWN else "Your franchise is the only nominee"
+        text += f"\n{what}, so there's nothing for you to rank here."
     elif not award.self_vote:
-        text += "\nYour own franchise isn't listed: no self-votes for this award."
+        unlisted = UNLISTED.get(award.key, "Your own franchise isn't listed")
+        text += f"\n{unlisted}: no self-votes for this award."
     return E.clip(text, 2000)
 
 

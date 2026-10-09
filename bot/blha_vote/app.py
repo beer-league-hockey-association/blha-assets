@@ -18,7 +18,7 @@ Slash commands:
   /pickem leaderboard      Pick'em season standings
   /pool boxes              the Playoff Pool boxes (just for fun, during the NHL playoffs)
   /pool pick               a franchise picks one player per box (private, until the first puck drop)
-  /pool export             Commissioner: the picks as entries.yaml for the pool automation
+  /pool export             Commissioner, after the deadline: the picks as entries.yaml for the pool automation
   /book lines|bet|mybets|leaderboard
                            BLHA Bucks: play-money bets against the spread on
                            matchups the bettor's franchise isn't in
@@ -669,10 +669,14 @@ class VoteBot(discord.Client):
         view.stop()
 
     # -- Playoff Pool ------------------------------------------------------
-    async def pool_boxes_or_reply(self, interaction: discord.Interaction) -> Any:
+    async def pool_entries_via(self) -> str:
+        """playoff_pool.entries_via in automation/league.yaml: pool_view.BOT or pool_view.DM."""
+        return await asyncio.to_thread(self.data.pool_entries_via)
+
+    async def pool_boxes_or_reply(self, interaction: discord.Interaction, max_age: float | None = None) -> Any:
         """The posted boxes, or None after telling the member why not (the interaction is deferred)."""
         try:
-            boxes = await asyncio.to_thread(self.data.pool_boxes)
+            boxes = await asyncio.to_thread(self.data.pool_boxes, max_age)
         except Exception as exc:
             log.warning("Could not read the Playoff Pool boxes: %s", exc)
             await interaction.followup.send("Couldn't read the Playoff Pool boxes right now. Try again later.",
@@ -684,19 +688,33 @@ class VoteBot(discord.Client):
 
     async def save_pool_pick(self, interaction: discord.Interaction, view: PoolPicksView, box_number: int,
                              player_id: int) -> None:
+        edit, reply = interaction.response.edit_message, interaction.response.send_message
+        if view.boxes.deadline is None:
+            # This menu opened before boxes.json had the deadline (it is cached for 10 minutes), and the
+            # first puck drop may have been published, or passed, since: read the file again first.
+            await interaction.response.defer()
+            edit, reply = interaction.edit_original_response, interaction.followup.send
+            try:
+                boxes = await asyncio.to_thread(self.data.pool_boxes, pool_view.RECHECK_SECONDS)
+            except Exception as exc:
+                log.warning("Could not re-read the Playoff Pool boxes: %s", exc)
+                await reply("Couldn't check the pick deadline right now, so that pick wasn't saved. "
+                            "Try again in a minute.", ephemeral=True)
+                return
+            if boxes is not None and boxes.year == view.boxes.year and boxes.deadline is not None:
+                view.boxes = boxes
         now = utcnow()
         if view.boxes.locked(now):
-            await interaction.response.edit_message(
-                content="Playoff Pool picks are locked: the playoffs have started.", view=None)
+            await edit(content="Playoff Pool picks are locked: the playoffs have started.", view=None)
             view.stop()
             return
         if not pool_view.valid_pick(view.boxes, box_number, player_id):
-            await interaction.response.send_message("That player isn't in this box.", ephemeral=True)
+            await reply("That player isn't in this box.", ephemeral=True)
             return
         self.store.pool_pick(view.boxes.year, view.franchise, box_number, player_id, interaction.user.id, now=now,
                              box_count=len(view.boxes.boxes))
         fresh = view.again()
-        await interaction.response.edit_message(content=fresh.content(), view=fresh)
+        await edit(content=fresh.content(), view=fresh)
         view.stop()
 
     # -- season roles --------------------------------------------------------
@@ -745,9 +763,14 @@ class VoteBot(discord.Client):
         return [book.Bet(uid, matchup, side, amount, franchise)
                 for uid, matchup, side, amount, franchise in self.store.week_bets(key, number)]
 
-    def book_board(self, key: str) -> tuple[list[book.Standing], int]:
+    def book_board(self, key: str, settling: tuple[int, list[book.Settled]] | None = None
+                   ) -> tuple[list[book.Standing], int]:
+        """Season profit standings over the settled Weeks, plus ``settling`` (week, its graded bets) if given."""
         weeks = [book.settle(self.book_bets(key, number), [book.Line.from_dict(d) for d in lines], found)
-                 for number, lines, found in self.store.settled_book_weeks(key)]
+                 for number, lines, found in self.store.settled_book_weeks(key)
+                 if settling is None or number != settling[0]]
+        if settling is not None:
+            weeks.append(settling[1])
         return book.leaderboard(weeks), len(weeks)
 
     def open_book_week(self) -> tuple[Any, list[book.Line]]:
@@ -789,6 +812,7 @@ class VoteBot(discord.Client):
                 self.store.set_book_status(key, number, "locked")
             elif action == "post":
                 await self.book_post(key, info, number, now)
+        await self.book_crown_if_due(key, info)
 
     async def book_post(self, key: str, info: dict[str, Any], number: int, now: datetime) -> None:
         week = season.period(info, number)
@@ -815,20 +839,40 @@ class VoteBot(discord.Client):
         found = book.results(lines, scores)
         if not book.ready_to_settle(lines, found, now, season.final_at(week, self.cfg.timezone)):
             return
-        self.store.set_book_status(key, number, "settled", results={k: list(v) for k, v in found.items()}, now=now)
+        # Post first, then mark the Week settled: if the post fails, the Week stays unsettled and the
+        # next tick (15 minutes later) settles and posts it again. It is only ever settled once.
         settled = book.settle(self.book_bets(key, number), lines, found)
-        board, _ = self.book_board(key)
         channel = await self.channel(self.cfg.book_channel_id)
         if settled and channel is not None:  # nobody bet: no settlement post
+            board, _ = self.book_board(key, settling=(number, settled))
             embed = book.settlement_embed(number, lines, found, settled, board, pickem.season_label(key))
             await channel.send(embed=discord.Embed.from_dict(embed))
+        self.store.set_book_status(key, number, "settled", results={k: list(v) for k, v in found.items()}, now=now)
         log.info("BLHA Bucks Week %s settled", number)
+
+    async def book_crown_if_due(self, key: str, info: dict[str, Any]) -> None:
+        """Crown the Sharp once the last regular-season Week is settled.
+
+        Checked at the end of every BLHA Bucks tick rather than inside the
+        settlement, so a crowning that failed part way (a Discord error) is
+        retried on later ticks until it is stored. Does nothing once this
+        season's champions are stored.
+        """
+        if self.store.book_champions(key) is not None:
+            return
         last_regular, _, _ = season.playoff_settings(info)
-        if number >= last_regular:
-            await self.book_crown(key, board)
+        if not any(n >= last_regular and s == "settled" for n, s in self.store.book_statuses(key).items()):
+            return
+        board, _ = self.book_board(key)
+        await self.book_crown(key, board)
 
     async def book_crown(self, key: str, board: list[book.Standing]) -> None:
-        """After the last regular-season Week: the season profit leader gets the Sharp role (once per season)."""
+        """After the last regular-season Week: the season profit leader gets the Sharp role (once per season).
+
+        The role and the post come first and the champions are stored last, so
+        if the post fails the next tick does both again (giving a role someone
+        already has changes nothing).
+        """
         if self.store.book_champions(key) is not None:
             return
         leaders = book.season_leaders(board)
@@ -836,13 +880,13 @@ class VoteBot(discord.Client):
         if leaders and self.cfg.sharp_role:
             problem = await self.award_season_role(self.cfg.sharp_role, leaders,
                                                    f"BLHA Bucks {pickem.season_label(key)} profit leader")
-        self.store.set_book_champions(key, leaders, now=utcnow())
         if problem:
             log.warning("BLHA Bucks: the %s role: %s", self.cfg.sharp_role, problem)
         channel = await self.channel(self.cfg.book_channel_id)
         if channel is not None and leaders:
             embed = book.sharp_embed(self.cfg.sharp_role or "Sharp", leaders, board, pickem.season_label(key))
             await channel.send(embed=discord.Embed.from_dict(embed))
+        self.store.set_book_champions(key, leaders, now=utcnow())
 
     # -- Awards Ballot -------------------------------------------------------
     def league_phase(self) -> str | None:
@@ -1126,8 +1170,8 @@ class VoteBot(discord.Client):
             await interaction.response.defer(ephemeral=ephemeral, thinking=True)
             boxes = await bot.pool_boxes_or_reply(interaction)
             if boxes is not None:
-                await interaction.followup.send(embed=discord.Embed.from_dict(pool_view.boxes_embed(boxes)),
-                                                ephemeral=ephemeral)
+                embed = pool_view.boxes_embed(boxes, await bot.pool_entries_via())
+                await interaction.followup.send(embed=discord.Embed.from_dict(embed), ephemeral=ephemeral)
 
         @pool_group.command(name="pick", description="Pick or change your franchise's Playoff Pool players")
         async def pool_pick(interaction: discord.Interaction) -> None:
@@ -1136,6 +1180,9 @@ class VoteBot(discord.Client):
                 await interaction.response.send_message(why, ephemeral=True)
                 return
             await interaction.response.defer(ephemeral=True, thinking=True)
+            if await bot.pool_entries_via() != pool_view.BOT:
+                await interaction.followup.send(pool_view.DM_ENTRIES, ephemeral=True)
+                return
             boxes = await bot.pool_boxes_or_reply(interaction)
             if boxes is None:
                 return
@@ -1147,21 +1194,32 @@ class VoteBot(discord.Client):
             view = PoolPicksView(bot, boxes, f.name)
             await interaction.followup.send(view.content(), view=view, ephemeral=True)
 
-        @pool_group.command(name="export", description="Commissioner: the Playoff Pool picks as entries.yaml")
+        @pool_group.command(name="export",
+                            description="Commissioner, after the deadline: the Playoff Pool picks as entries.yaml")
         async def pool_export(interaction: discord.Interaction) -> None:
             if not bot.is_commissioner(interaction.user):
                 await interaction.response.send_message("Only the Commissioner can export the pool entries.",
                                                         ephemeral=True)
                 return
             await interaction.response.defer(ephemeral=True, thinking=True)
-            boxes = await bot.pool_boxes_or_reply(interaction)
+            if await bot.pool_entries_via() != pool_view.BOT:
+                await interaction.followup.send(pool_view.DM_EXPORT, ephemeral=True)
+                return
+            # A fresh read: the cached boxes may predate the published deadline.
+            boxes = await bot.pool_boxes_or_reply(interaction, pool_view.RECHECK_SECONDS)
             if boxes is None:
                 return
-            rows = bot.store.pool_entries(boxes.year)
+            now = utcnow()
+            refusal = pool_view.export_refusal(boxes, now)
+            if refusal:
+                await interaction.followup.send(refusal, ephemeral=True)
+                return
+            rows = bot.store.pool_entries(boxes.year, deadline=boxes.deadline)
+            late = bot.store.pool_late_picks(boxes.year, boxes.deadline)
             text = pool_view.export_text(boxes, rows)
-            bot.store.log(interaction.user.id, "pool_export", {"year": boxes.year, "entries": len(rows)},
-                          now=utcnow())
-            await interaction.followup.send(pool_view.export_note(boxes, rows, utcnow()), ephemeral=True,
+            bot.store.log(interaction.user.id, "pool_export",
+                          {"year": boxes.year, "entries": len(rows), "late_picks": len(late)}, now=now)
+            await interaction.followup.send(pool_view.export_note(boxes, rows, late), ephemeral=True,
                                             file=discord.File(io.BytesIO(text.encode("utf-8")),
                                                               filename="entries.yaml"))
 

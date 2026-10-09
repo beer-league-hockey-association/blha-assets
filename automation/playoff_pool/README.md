@@ -49,22 +49,34 @@ The automation reads entries from one file only: `automation/playoff_pool/entrie
 **Before the League Bot is live (now):** owners DM their picks to the
 Commissioner, for example "Box 1: 3, Box 2: Auston Matthews, ...". The
 Commissioner adds each owner to `entries.yaml` with the DM's time as `entered`
-and commits it before the first standings post (picks are locked at the first
-puck drop; an entry `entered` after it is left out). A pick can be the option
+and commits it **after the deadline** (the first puck drop) and before the
+first standings post. Never earlier: the repository is public, so picks
+committed before the deadline would show later entrants everyone else's picks.
+An entry `entered` after the deadline is left out. A pick can be the option
 number from the boxes post, the player's name or his NHL player id. The run log
 lists any pick that isn't in its box.
 
 **Once the League Bot is live:** set `playoff_pool.entries_via: bot` in
-`automation/league.yaml` so the boxes post tells owners to use the bot.
+`automation/league.yaml`. The boxes post and the bot both read it: with `bot`
+the post tells owners to use `/pool pick`; with `dm` (the default) the bot's
+`/pool pick` and `/pool export` only reply that entries go by DM to the
+Commissioner this year. Use one channel per year: `/pool export` replaces
+`entries.yaml` entirely, so DM'd entries would be lost.
 
 - `/pool boxes` shows the boxes and the deadline.
 - `/pool pick` (Franchise Owner or Co-Owner): one private menu per box, four
   boxes per page. Picks can change until the deadline, then the bot refuses
   changes. An entry's time is when its last box was first filled.
 - `/pool export` (Commissioner): returns `entries.yaml` with every franchise's
-  picks. **After the deadline**, commit it as `automation/playoff_pool/entries.yaml`
-  on `main` (GitHub: open the file, then the pencil to replace its contents, or
-  **Add file > Upload files**). The next pool run reads it.
+  picks, and only **after the deadline**: before it, the bot refuses, because
+  the file would show the Commissioner, who enters too, everyone else's picks.
+  **Lock in your own picks with `/pool pick` first**, then export once the
+  playoffs have started. Only picks made before the deadline count: if a pick
+  was changed after it, the export keeps the pick in place at the deadline (or
+  leaves the box empty) and the reply lists it. Commit the file as
+  `automation/playoff_pool/entries.yaml` on `main` (GitHub: open the file, then
+  the pencil to replace its contents, or **Add file > Upload files**) before
+  the first standings post. The next pool run reads it.
 
 How the two sides share data, and why there is one manual step: the bot reads
 the boxes the automation posted from the public `automation-state` branch

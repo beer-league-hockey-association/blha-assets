@@ -60,11 +60,14 @@ A free NHL playoff box pool after the fantasy season (no money, no effect on the
 | --- | --- | --- |
 | `/pool boxes` | Anyone | The 10 boxes and the pick deadline (private by default) |
 | `/pool pick` | Franchise Owner or Co-Owner | Private menus, one per box, four boxes per page. One entry per franchise; picks can change until the first puck drop of the NHL playoffs |
-| `/pool export` | Commissioner | The picks as `entries.yaml`, the file the automation reads |
+| `/pool export` | Commissioner | After the deadline only: the picks as `entries.yaml`, the file the automation reads |
 
-- **Boxes** come from the automation's `automation/playoff_pool/state/boxes.json` on the public `automation-state` branch, re-read every 10 minutes (`BLHA_POOL_BOXES_URL` overrides the address).
-- **Picks** are stored on the Railway volume. The automation can't read the bot's database, so after the deadline the Commissioner runs `/pool export` and commits the file as `automation/playoff_pool/entries.yaml`. Also set `playoff_pool.entries_via: bot` in `automation/league.yaml` so the boxes post points owners to `/pool pick`.
-- An entry's time (the last tiebreak) is when its last box was first filled.
+- **Boxes** come from the automation's `automation/playoff_pool/state/boxes.json` on the public `automation-state` branch, re-read every 10 minutes (`BLHA_POOL_BOXES_URL` overrides the address). A pick made while the bot's copy has no deadline yet re-reads the file first, so a change after the first puck drop is refused.
+- **Bot or DMs:** the bot follows `playoff_pool.entries_via` in `automation/league.yaml`, the same setting as the boxes post. With `bot`, owners use `/pool pick`. With `dm` (the default until the bot is live), `/pool pick` and `/pool export` only reply that entries go by DM to the Commissioner this year, and `/pool boxes` says to DM. One channel per year: `/pool export` replaces `entries.yaml` entirely, so mixing the two would lose the DM'd entries.
+- **Picks** are stored on the Railway volume. The automation can't read the bot's database, so the Commissioner runs `/pool export` and commits the file as `automation/playoff_pool/entries.yaml` before the first standings post.
+- **The Commissioner enters too.** Lock in your own picks with `/pool pick` first, and export only after the deadline: before it the bot refuses, because the file would show you every other franchise's picks while yours could still change.
+- **Only picks made before the deadline count.** If a pick was changed after the first puck drop, the export keeps the pick in place at the deadline (from the audit trail) or leaves the box empty, and its reply lists those picks.
+- An entry's time (the last tiebreak) is when its last box was first filled; an entry completed only after the deadline has none.
 
 ### BLHA Bucks
 
@@ -84,6 +87,7 @@ A play-money sportsbook in **🏒│game-day** (`book_channel_id`). Owners bet a
 3. **Lock:** bets lock when the Week's scoring period starts in Fantrax.
 4. **Settle:** when the Week is final (and Fantrax has every score, or a day later regardless), each bet is graded against the spread at even money: a win adds the stake to your season profit, a loss subtracts it, and a push (the score lands exactly on the line, including an exact tie on a pick'em) returns it. A matchup Fantrax has no result for is returned too. An exact tie with a spread means the underdog covers. The bot posts the Week's results against the spread, everyone's net for the Week and the season profit leaderboard (no post if nobody bet).
 5. **The Sharp role:** after the last regular-season Week is settled, the season profit leader gets the role named in `book.sharp_role` (default **💸 Sharp**), and last Season's holder loses it. Tied leaders share it. Players with no settled bets aren't ranked.
+6. **Retries:** if a settlement or Sharp post fails (a Discord error), nothing is lost: the Week is marked settled only after its post goes out, and the Sharp role and post are retried every 15 minutes until they go through. A Week is never settled twice.
 
 Regular-season Weeks only. Bets, lines and results are stored on the Railway volume, and every bet is in the audit table.
 
@@ -111,7 +115,7 @@ After the BLHA Championship, owners vote on the Season's awards with a ranked ba
 
 An award without nominees is left off the ballot; the Commissioner's reply says why. Each nominee names its franchise(s) before a colon so the bot can apply the rules below. Up to 25 nominees per award.
 
-**Voting.** One ballot per franchise, cast by the Franchise Owner (2.2); Co-Owners and orphaned franchises don't vote. For each award, a 1st, 2nd and 3rd choice from private menus: 5, 3 and 1 points. An owner can't rank their own franchise for GM of the Year or Comeback Franchise; it isn't offered, and a crafted vote is refused and never counted. Your own trade or pickup is fine. Ballots can be changed until `/awards close` or the deadline.
+**Voting.** One ballot per franchise, cast by the Franchise Owner (2.2); Co-Owners and orphaned franchises don't vote. For each award, a 1st, 2nd and 3rd choice from private menus: 5, 3 and 1 points. No owner can give points to themselves: you can't rank your own franchise for GM of the Year or Comeback Franchise, your own franchise's pickup for Waiver Steal of the Year, or a trade your franchise was part of for Trade of the Year (neither trade partner can vote for it). Those nominees aren't offered, and a crafted vote is refused and never counted. Bust of the Year is the exception: owners may rank their own franchise there. Ballots can be changed until `/awards close` or the deadline.
 
 **Winners.** Most points wins. A tie goes to the franchise with the most first-place votes; if it's still tied, the award is shared.
 
@@ -201,6 +205,6 @@ Awards carry no money and change nothing in the standings or the draft.
 ## Tests
 
 - `python bot/tests/test_bot.py` runs the voting rules, storage, embed and config tests offline. The Discord command tests (every command registers, ballot and Pick'em views build) run where `discord.py` is installed, which includes the regression-tests workflow.
-- `python bot/tests/test_pool.py` tests the Playoff Pool commands: reading the boxes, the picks menus' limits, storage, the deadline and the export the automation reads back.
+- `python bot/tests/test_pool.py` tests the Playoff Pool commands: reading the boxes, the picks menus' limits, storage, the deadline (including a menu opened before the deadline was published), `entries_via` (bot or DM), the export waiting for the deadline, late picks left out, and the export the automation reads back.
 - `python bot/tests/test_league_features.py` tests `/rule`, `/deadlines`, `/minor`, `/myteam`, `/tradecheck`, Pick'em and the data caching against the Fantrax samples in `automation/tests/fixtures/`, with no network.
-- `python bot/tests/test_book_awards.py` tests BLHA Bucks (line math, locking, the own-matchup ban, settlement with pushes and ties, the weekly reset, the leaderboard, the Sharp role) and the Awards Ballot (nominations and the Commissioner's recusal, ballot rules and the self-vote ban, 5-3-1 tallies and tie-breaks, closing, the results post and export). Its Discord flow tests run a whole BLHA Bucks season and Awards Ballot through the slash commands where `discord.py` is installed.
+- `python bot/tests/test_book_awards.py` tests BLHA Bucks (line math, locking, the own-matchup ban, settlement with pushes and ties, the weekly reset, the leaderboard, the Sharp role, failed posts retried without settling twice) and the Awards Ballot (nominations and the Commissioner's recusal, ballot rules and the self-vote ban, 5-3-1 tallies and tie-breaks, closing, the results post and export). Its Discord flow tests run a whole BLHA Bucks season and Awards Ballot through the slash commands where `discord.py` is installed.

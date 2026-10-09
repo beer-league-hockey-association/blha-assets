@@ -368,6 +368,7 @@ def league(orphan: str | None = None) -> list[rules.Franchise]:
 NAMES = [f.name for f in league()]
 GM = awards.BY_KEY["gm"]
 TRADE = awards.BY_KEY["trade"]
+WAIVER = awards.BY_KEY["waiver"]
 COMEBACK = awards.BY_KEY["comeback"]
 BUST = awards.BY_KEY["bust"]
 
@@ -468,9 +469,22 @@ class BallotTests(unittest.TestCase):
         self.assertEqual(awards.options_for(COMEBACK, comeback, "F2"), [])
         _, error = awards.choose({}, 1, comeback[0].id, COMEBACK, comeback, "F2")
         self.assertIn("own franchise", error)
-        # Self-votes are fine for the hand-picked fun awards.
-        mine, error = awards.choose({}, 1, self.trades[0].id, TRADE, self.trades, "F2")
-        self.assertEqual((mine, error), ({1: "trade-1"}, None))
+        # Trade of the Year: neither trade partner may vote for the trade.
+        for partner in ("F2", "F3"):
+            mine, error = awards.choose({}, 1, self.trades[0].id, TRADE, self.trades, partner)
+            self.assertEqual((mine, error), ({}, "You can't vote for a trade your franchise was part of for "
+                                                 "Trade of the Year."))
+            self.assertNotIn(self.trades[0], awards.options_for(TRADE, self.trades, partner))
+        self.assertEqual(awards.choose({}, 1, self.trades[0].id, TRADE, self.trades, "F4"), ({1: "trade-1"}, None))
+        # Waiver Steal: no points for your own pickup.
+        pickups, _ = awards.parse_nominees(WAIVER, "F2: Quinn Hughes; F5: a goalie", NAMES)
+        _, error = awards.choose({}, 1, pickups[0].id, WAIVER, pickups, "F2")
+        self.assertEqual(error, "You can't vote for your own franchise's pickup for Waiver Steal of the Year.")
+        self.assertEqual(awards.options_for(WAIVER, pickups, "F2"), [pickups[1]])
+        # Bust of the Year still allows it, all in good fun.
+        busts, _ = awards.parse_nominees(BUST, "F2: the first-rounder", NAMES)
+        self.assertEqual(awards.choose({}, 1, busts[0].id, BUST, busts, "F2"), ({1: "bust-1"}, None))
+        self.assertEqual([a.key for a in awards.AWARDS if a.self_vote], ["bust"])
 
     def test_choose_places_and_moves(self) -> None:
         ballot, _ = awards.choose({}, 1, "gm-3", GM, self.gm, "F2")
@@ -487,7 +501,9 @@ class BallotTests(unittest.TestCase):
 
     def test_ballot_validation(self) -> None:
         nominees = {"gm": self.gm, "trade": self.trades}
-        self.assertEqual(awards.ballot_problems({"gm": {1: "gm-3", 2: "gm-4"}, "trade": {1: "trade-1"}}, nominees, "F2"), [])
+        self.assertEqual(awards.ballot_problems({"gm": {1: "gm-3", 2: "gm-4"}, "trade": {1: "trade-2"}}, nominees, "F2"), [])
+        self.assertEqual(awards.ballot_problems({"trade": {1: "trade-1"}}, nominees, "F3"),
+                         ["Trade of the Year: F3 can't vote for itself."])
         problems = awards.ballot_problems({"gm": {1: "gm-2", 2: "gm-4", 3: "gm-4", 4: "gm-5"}, "trade": {1: "trade-9"},
                                            "mvp": {1: "x"}}, nominees, "F2")
         self.assertEqual(len(problems), 5)
@@ -498,7 +514,8 @@ class BallotTests(unittest.TestCase):
 
 class TallyTests(unittest.TestCase):
     def nominees(self, n: int = 4) -> list[awards.Nominee]:
-        return [awards.Nominee(f"trade-{i}", f"Deal {i}", (f"F{i}", f"F{i + 4}")) for i in range(1, n + 1)]
+        """Trades between F5-F8 and F9-F12, so the voters F1-F4 are never in one."""
+        return [awards.Nominee(f"trade-{i}", f"Deal {i}", (f"F{i + 4}", f"F{i + 8}")) for i in range(1, n + 1)]
 
     def test_five_three_one(self) -> None:
         r = awards.tally(TRADE, self.nominees(), {
@@ -529,7 +546,7 @@ class TallyTests(unittest.TestCase):
         })
         self.assertEqual(([w.id for w in r.winners], r.decided_by, r.shared), (["trade-1", "trade-2"], "shared", True))
         text = json.dumps(awards.results_embed(2027, [r], 2, 12))
-        self.assertIn("**Deal 1** (F1 + F5) and **Deal 2** (F2 + F6)", text)
+        self.assertIn("**Deal 1** (F5 + F9) and **Deal 2** (F6 + F10)", text)
         self.assertIn("shared", text)
 
     def test_invalid_entries_never_count(self) -> None:
@@ -542,6 +559,20 @@ class TallyTests(unittest.TestCase):
         points = {row.nominee.label: row.points for row in r.rows if row.points}
         self.assertEqual(points, {"F3": 6})
         self.assertEqual(r.ballots, 2)
+
+    def test_no_points_for_your_own_trade_or_pickup(self) -> None:
+        r = awards.tally(TRADE, self.nominees(), {
+            "F5": {1: "trade-1", 2: "trade-2"},      # in Deal 1: only Deal 2 counts
+            "F9": {1: "trade-1"},                    # the other side of Deal 1: nothing counts
+            "F1": {1: "trade-3"},
+        })
+        self.assertEqual({row.nominee.id: row.points for row in r.rows if row.points}, {"trade-2": 3, "trade-3": 5})
+        self.assertEqual(r.ballots, 2)
+        pickups = [awards.Nominee("waiver-1", "Hughes", ("F2",)), awards.Nominee("waiver-2", "Goalie", ("F3",))]
+        r = awards.tally(WAIVER, pickups, {"F2": {1: "waiver-1", 2: "waiver-2"}, "F3": {1: "waiver-1"}})
+        self.assertEqual([(row.nominee.id, row.points) for row in r.rows], [("waiver-1", 5), ("waiver-2", 3)])
+        busts = [awards.Nominee("bust-1", "F2", ("F2",))]
+        self.assertEqual(awards.tally(BUST, busts, {"F2": {1: "bust-1"}}).rows[0].points, 5)
 
     def test_no_votes_no_winner(self) -> None:
         r = awards.tally(TRADE, self.nominees(), {})
@@ -612,8 +643,8 @@ class AwardsExportTests(unittest.TestCase):
         gm = awards.gm_nominees(league())
         trades, _ = awards.parse_nominees(TRADE, "F2 + F3: swap; F4 + F5: deal", NAMES)
         nominees = {"gm": gm, "trade": trades}
-        ballots = {"F1": {"gm": {1: "gm-3", 2: "gm-2"}, "trade": {1: "trade-2"}},
-                   "F2": {"gm": {1: "gm-3"}, "trade": {1: "trade-1", 2: "trade-2"}}}
+        ballots = {"F1": {"gm": {1: "gm-3", 2: "gm-2"}, "trade": {1: "trade-2", 2: "trade-1"}},
+                   "F2": {"gm": {1: "gm-3"}, "trade": {1: "trade-2"}}}
         return awards.tally_all(nominees, ballots, NAMES)
 
     def test_payload(self) -> None:
@@ -942,6 +973,64 @@ class DiscordFlowTests(unittest.TestCase):
 
         asyncio.run(run())
 
+    def test_failed_posts_are_retried_and_a_week_settles_once(self) -> None:
+        """A settlement or Sharp post that fails is retried on a later tick: nothing lost, nothing doubled."""
+        import blha_vote.app as app
+        info = copy.deepcopy(INFO)
+        info["playoffs"]["lastRegularSeasonPeriod"] = 1  # Week 1 is the last regular-season Week
+        week1 = season.period(info, 1)
+        clock = [week1.start - timedelta(days=2)]
+        sharp = FakeRole("💸 Sharp")
+        f2 = owner(7, 2)
+        guild = FakeGuild([f2], [sharp])
+        fail = set()
+
+        async def run():
+            with tempfile.TemporaryDirectory() as tmp, patch.object(app, "utcnow", lambda: clock[0]):
+                bot, channels = self.make_bot(info, {1: rows(WEEK1, {T8: 120.0, T4: 100.0})}, tmp)
+                bot.get_guild = lambda gid: guild
+                book_channel = channels[BOOK_CH]
+                send = book_channel.send
+
+                async def flaky(content=None, **kw):
+                    title = as_dict(kw["embed"])["title"] if "embed" in kw else ""
+                    if any(f in title for f in fail):
+                        fail.discard(next(f for f in fail if f in title))
+                        raise RuntimeError("Discord 503")
+                    return await send(content, **kw)
+
+                book_channel.send = flaky
+                await bot.book_tick(clock[0])                                    # Week 1 lines
+                key = bot.store.latest_book_season()
+                t8_t4 = next(x for x in bot.book_lines_of(bot.store.book_week(key, 1)) if x.involves(T8))
+                await self.command(bot, "book", "bet").callback(FakeInteraction(f2), matchup=t8_t4.key, side="away",
+                                                                amount=60)
+                clock[0] = week1.start
+                await bot.book_tick(clock[0])                                    # locked
+                clock[0] = season.final_at(week1, NY)
+                fail.update({"WEEK 1 SETTLED", "SEASON CHAMPION"})
+                with self.assertRaises(RuntimeError):                            # the settlement post fails
+                    await bot.book_tick(clock[0])
+                self.assertEqual(bot.store.book_statuses(key)[1], "locked")      # not settled, so it is retried
+                self.assertIsNone(bot.store.book_champions(key))
+                with self.assertRaises(RuntimeError):                            # settled and posted; the Sharp post fails
+                    await bot.book_tick(clock[0] + timedelta(minutes=15))
+                self.assertEqual(bot.store.book_statuses(key)[1], "settled")
+                self.assertIsNone(bot.store.book_champions(key))
+                self.assertEqual([m.id for m in sharp.members], [7])
+                await bot.book_tick(clock[0] + timedelta(minutes=30))            # the crowning is retried
+                self.assertEqual(bot.store.book_champions(key), [7])
+                await bot.book_tick(clock[0] + timedelta(minutes=45))            # and then nothing more happens
+                titles = [as_dict(m.kw["embed"])["title"] for m in book_channel.sent if "embed" in m.kw]
+                self.assertEqual(titles, ["BLHA BUCKS — WEEK 1 LINES", "BLHA BUCKS — WEEK 1 SETTLED",
+                                          "BLHA BUCKS — SEASON CHAMPION"])  # each posted once
+                self.assertIn("<@7> +60 (1-0-0)", json.dumps(as_dict(book_channel.sent[1].kw["embed"]), ensure_ascii=False))
+                self.assertEqual([m.id for m in sharp.members], [7])
+                board, weeks = bot.book_board(key)
+                self.assertEqual((weeks, board[0].profit), (1, 60))
+
+        asyncio.run(run())
+
     def test_awards_season(self) -> None:
         import blha_vote.app as app
         clock = [datetime(2027, 6, 1, 15, tzinfo=UTC)]  # after the Championship (offseason)
@@ -1003,9 +1092,13 @@ class DiscordFlowTests(unittest.TestCase):
                 self.assertIn("Franchise 3's ballot", i.response.sent[-1][0])
                 trade_view = view.again(1)
                 self.assertEqual(trade_view.award.key, "trade")
-                await bot.save_award_choice(FakeInteraction(f2), trade_view, 1, nominees["trade"][0].id)  # own trade: fine
+                self.assertEqual([o.value for o in trade_view.children[0].options], ["trade-2", "trade-3"])
+                i = FakeInteraction(f2)
+                await bot.save_award_choice(i, trade_view, 1, nominees["trade"][0].id)  # its own trade: refused
+                self.assertIn("a trade your franchise was part of", i.response.sent[-1][0])
+                await bot.save_award_choice(FakeInteraction(f2), trade_view, 1, nominees["trade"][1].id)
                 self.assertEqual(bot.store.awards_ballot(2027, "Franchise 2"),
-                                 {"gm": {1: gm["Franchise 3"], 2: gm["Franchise 4"]}, "trade": {1: "trade-1"}})
+                                 {"gm": {1: gm["Franchise 3"], 2: gm["Franchise 4"]}, "trade": {1: "trade-2"}})
                 # Results wait for the close; the deadline closes it on the ticker.
                 results = self.command(bot, "awards", "results")
                 i = FakeInteraction(commish)
