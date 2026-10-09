@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-08T23:45:31.936994Z",
+  "updated_at": "2026-10-09T00:00:37.109736Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5462,6 +5462,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-08T23:45:31.820452Z"
+    },
+    {
+      "key": "a647fe03dfbfa0cca2008506",
+      "url": "https://www.sportsnet.ca/nhl/article/with-top-line-rolling-jets-still-searching-for-more-depth-scoring",
+      "fingerprint": "baef220c3bbdc9c1",
+      "title_norm": "with top line rolling, jets still searching for more depth scoring",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T00:00:37.071326Z"
     }
   ],
   "known_sources": [
