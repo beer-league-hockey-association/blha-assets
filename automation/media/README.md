@@ -45,9 +45,11 @@ The test fixtures (`automation/tests/fixtures/nhl_score_2026-10-07_synthetic.jso
 
 State (`state/morning_skate.json`, saved on the `automation-state` branch) is
 keyed by NHL date and records each message as it goes out. A re-run never
-repeats a message. If a post fails, or the YouTube feed cannot be read, the run
-fails and the scheduler retries it (up to 3 times); the retry posts only what
-is missing.
+repeats a message. If a post fails, or the YouTube feed or Fantrax cannot be
+read, the run fails and the scheduler retries it (up to 3 times); the retry
+posts only what is missing. A Fantrax outage still lets the scores and
+highlights go out; the Goal Reel follows on the retry that can read the
+rosters. (Empty BLHA rosters are not an outage: that night has no Goal Reel.)
 
 ## Trying it
 

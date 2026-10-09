@@ -1,9 +1,12 @@
 """Monthly Awards, from Fantrax matchup scores only.
 
-A fantasy week belongs to the calendar month its end date falls in (league
-time). A month's awards go out the morning the first week of the next month
-is reported; the season's last regular-season month goes out with the final
-regular-season week.
+A fantasy week belongs to the calendar month of its last night (league time).
+A Week runs Monday through Sunday (Constitution 5.8), but Fantrax ends it on
+the Monday evening when the next week's first game starts, so the last night
+is the day before Fantrax's end date: a week ending Monday, November 1 is an
+October week. A month's awards go out the morning the first week of the next
+month is reported; the season's last regular-season month goes out with the
+final regular-season week.
 
 Awards (every regular-season week of the month that was actually played):
 
@@ -20,6 +23,7 @@ is shared.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from datetime import date, timedelta
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -43,18 +47,27 @@ class MonthGroup:
         return self.weeks[-1]
 
 
+def last_night(period: season.Period, tz: ZoneInfo) -> date:
+    """The week's last NHL night (local date).
+
+    A Fantrax week ends when the first game of its last day starts, so that
+    day's games belong to the next week: the last night is the day before.
+    """
+    return period.end.astimezone(tz).date() - timedelta(days=1)
+
+
 def month_groups(info: dict[str, Any], tz: ZoneInfo, last_regular: int) -> list[MonthGroup]:
-    """Regular-season weeks grouped by the month each week ends in."""
+    """Regular-season weeks grouped by the month of each week's last night."""
     raw: list[tuple[str, str, str, list[int]]] = []
     for p in season.periods(info):
         if p.number > last_regular:
             break
-        end = p.end.astimezone(tz)
-        key = f"{end:%Y-%m}"
+        night = last_night(p, tz)
+        key = f"{night:%Y-%m}"
         if raw and raw[-1][0] == key:
             raw[-1][3].append(p.number)
         else:
-            raw.append((key, f"{end:%B %Y}", f"{end:%B}", [p.number]))
+            raw.append((key, f"{night:%B %Y}", f"{night:%B}", [p.number]))
     groups = []
     for index, (key, label, month, weeks) in enumerate(raw):
         final = index == len(raw) - 1

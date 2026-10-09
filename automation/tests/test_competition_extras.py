@@ -398,17 +398,29 @@ MONTH = {1: M1, 2: M2, 3: M3}
 class MonthGroupTests(unittest.TestCase):
     groups = monthly.month_groups(INFO, ET, 22)
 
-    def test_weeks_belong_to_the_month_they_end_in(self) -> None:
+    def test_weeks_belong_to_the_month_of_their_last_night(self) -> None:
         got = [(g.key, g.weeks, g.report_week, g.final) for g in self.groups]
         self.assertEqual(got, [
             ("2026-10", (1, 2, 3, 4), 5, False),
             ("2026-11", (5, 6, 7, 8, 9), 10, False),
             ("2026-12", (10, 11, 12, 13), 14, False),
-            ("2027-01", (14, 15, 16, 17), 18, False),
-            ("2027-02", (18, 19, 20), 21, False),
-            ("2027-03", (21, 22), 22, True),   # the last month goes out with Week 22
+            ("2027-01", (14, 15, 16, 17, 18), 19, False),  # Week 18 ends Mon Feb 1: last night Sun Jan 31
+            ("2027-02", (19, 20, 21), 22, False),          # Week 21 ends Mon Mar 1: last night Sun Feb 28
+            ("2027-03", (22,), 22, True),   # the last month goes out with Week 22
         ])
         self.assertEqual(self.groups[0].label, "October 2026")
+
+    def test_month_ending_on_a_sunday_keeps_its_last_week(self) -> None:
+        # October 2027 ends on a Sunday. Fantrax ends the Oct 25-31 week on
+        # Monday, November 1 at the first puck drop; it is still an October week.
+        info = {"scoringPeriods": [
+            {"number": 1, "startDate": "2027-10-18T19:00:00.0-0400", "endDate": "2027-10-25T18:59:59.0-0400"},
+            {"number": 2, "startDate": "2027-10-25T19:00:00.0-0400", "endDate": "2027-11-01T18:59:59.0-0400"},
+            {"number": 3, "startDate": "2027-11-01T19:00:00.0-0400", "endDate": "2027-11-08T18:59:59.0-0500"},
+        ]}
+        self.assertEqual(monthly.last_night(season.period(info, 2), ET), date(2027, 10, 31))
+        got = [(g.key, g.weeks, g.report_week, g.final) for g in monthly.month_groups(info, ET, 3)]
+        self.assertEqual(got, [("2027-10", (1, 2), 3, False), ("2027-11", (3,), 3, True)])
 
     def test_due_and_baseline(self) -> None:
         self.assertEqual([g.key for g in monthly.due_groups(self.groups, 5, 0)], ["2026-10"])
@@ -504,11 +516,13 @@ class MonthlyPlanTests(unittest.TestCase):
         self.assertIn(("monthly", 4), items(self.plan(morning_of_end(5), 5, before)))
 
     def test_last_regular_week_posts_the_final_month(self) -> None:
+        # Week 22 is the first March week, so February (Weeks 19-21) is due
+        # too; March (Week 22 alone) is the final month and goes out with it.
         state = {k: 21 for k in ("recap_week", "standings_week", "race_week")} | {"preview_week": 22,
-                                                                                   "monthly_week": 20}
+                                                                                   "monthly_week": 18}
         self.assertEqual(items(self.plan(morning_of_end(22), 22, state)),
-                         [("recap", 22), ("awards", 22), ("rankings", 22), ("monthly", 22), ("standings", 22),
-                          ("spoon", 22)])
+                         [("recap", 22), ("awards", 22), ("rankings", 22), ("monthly", 21), ("monthly", 22),
+                          ("standings", 22), ("spoon", 22)])
 
     def test_force_reposts_latest_month_only(self) -> None:
         self.assertEqual([i for i in items(self.plan(morning_of_end(15), 15, {})) if i[0] == "monthly"],
@@ -656,7 +670,10 @@ class HatTrickTests(unittest.TestCase):
         multi = nhl.multi_goal_games(edm)
         self.assertEqual([(m.goal.name, m.goals, m.order) for m in multi], [("Connor McDavid", 3, 4)])
         self.assertEqual(nhl.multi_goal_games(barkov), [])
-        self.assertEqual(nhl.parse_scores({}), [])
+        self.assertEqual(nhl.parse_scores({"games": []}), [])
+        for broken in ({}, {"message": "Internal server error"}, {"games": None}, [], None):
+            with self.assertRaises(ValueError):
+                nhl.parse_scores(broken)
 
     def test_earliest_rostered_hat_trick_wins(self) -> None:
         check = bounties.find_hat_trick(self.hat, [date(2026, 10, 13)], lambda d: SCORES[d.isoformat()], self.owner_of())
@@ -686,6 +703,18 @@ class HatTrickTests(unittest.TestCase):
         failed = bounties.find_hat_trick(self.hat, [date(2026, 10, 12)], boom, self.owner_of())
         self.assertEqual((failed.claim, failed.checked_through), (None, None))
         self.assertIn("could not be read", failed.notes[0])
+
+    def test_error_body_is_retried_not_skipped(self) -> None:
+        # The NHL answers 200 with an error body on the hat-trick night: stop
+        # there, so the next run checks it again instead of skipping it.
+        nights = [date(2026, 10, 12), date(2026, 10, 13)]
+        bodies = {"2026-10-12": {"games": []}, "2026-10-13": {"message": "Internal server error"}}
+        failed = bounties.find_hat_trick(self.hat, nights, lambda d: bodies[d.isoformat()], self.owner_of())
+        self.assertIsNone(failed.claim)
+        self.assertEqual(failed.checked_through, date(2026, 10, 12))
+        self.assertIn("NHL scores for 2026-10-13 could not be read", failed.notes[0])
+        retry = bounties.find_hat_trick(self.hat, [date(2026, 10, 13)], lambda d: SCORES[d.isoformat()], self.owner_of())
+        self.assertEqual((retry.claim.night, retry.checked_through), ("2026-10-13", date(2026, 10, 13)))
 
     def test_nights_to_check(self) -> None:
         thu = et(2026, 10, 15, 8)

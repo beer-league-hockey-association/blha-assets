@@ -62,9 +62,10 @@ PLAYERS = {
 
 
 class FakeFantrax:
-    def __init__(self, rosters: dict | None = None, fail: bool = False) -> None:
+    def __init__(self, rosters: dict | None = None, fail: bool = False, players: dict | Exception | None = None) -> None:
         self._rosters = ROSTERS if rosters is None else rosters
         self.fail = fail
+        self._players = PLAYERS if players is None else players
         self.player_reads = 0
 
     def league_info(self) -> dict:
@@ -77,7 +78,9 @@ class FakeFantrax:
 
     def player_ids(self) -> dict:
         self.player_reads += 1
-        return PLAYERS
+        if isinstance(self._players, Exception):
+            raise self._players
+        return self._players
 
 
 def quiet(fn, *args, **kwargs):
@@ -243,10 +246,11 @@ class GoalReelTests(unittest.TestCase):
         self.assertTrue(reel.empty)
         self.assertEqual(morning.reel_messages(self.look, reel, MORNING), [])
 
-    def test_fantrax_failure_means_no_reel(self):
-        idx, out = quiet(morning.load_index, FakeFantrax(fail=True))
-        self.assertIsNone(idx)
-        self.assertIn("no Goal Reel", out)
+    def test_fantrax_failure_is_not_empty_rosters(self):
+        for fx in (FakeFantrax(fail=True), FakeFantrax({}), FakeFantrax(players=RuntimeError("HTTP 502")),
+                   FakeFantrax(players={})):
+            with self.assertRaises(morning.RosterReadError):
+                quiet(morning.load_index, fx)
 
     def test_large_reels_split_within_discord_limits(self):
         reel = morning.Reel()
@@ -435,6 +439,26 @@ class RunTests(unittest.TestCase):
         code, _, posted = self.run_mode()
         self.assertEqual(code, 0)
         self.assertEqual(self.kinds(posted), ["EdmAna07Hl1", "NyiNjd07Hl1", "TorMtl07Hl1"])
+
+    def test_fantrax_outage_posts_the_rest_and_retries_the_reel(self):
+        code, out, posted = self.run_mode(fx=FakeFantrax(fail=True))
+        self.assertEqual(code, 1)
+        self.assertIn("the Goal Reel will be retried next run", out)
+        # Scores and highlights still go out (ranked without BLHA points).
+        self.assertEqual(self.kinds(posted), ["LAST NIGHT IN THE NHL — Wednesday, October 7",
+                                              "TorMtl07Hl1", "EdmAna07Hl1", "PitWsh07Hl1"])
+        saved = json.loads(self.state.read_text())["dates"]["2026-10-07"]
+        self.assertEqual((saved["summary"], saved.get("reel"), saved.get("complete")), (1, None, None))
+
+        # Still down on the first retry: nothing is reposted, still failing.
+        code, _, posted = self.run_mode(fx=FakeFantrax(fail=True))
+        self.assertEqual((code, posted), (1, []))
+
+        code, _, posted = self.run_mode()
+        self.assertEqual(code, 0)
+        self.assertEqual(self.kinds(posted), ["THE BLHA GOAL REEL"])
+        saved = json.loads(self.state.read_text())["dates"]["2026-10-07"]
+        self.assertEqual((saved["reel"], saved["complete"]), (1, True))
 
     def test_empty_rosters_post_no_goal_reel(self):
         fx = FakeFantrax(EMPTY_ROSTERS)

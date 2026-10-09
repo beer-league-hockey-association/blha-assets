@@ -42,6 +42,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 from blha import nhl, season
+from monthly import last_night
 from weekly import latest_names, real_matchups, real_weeks, teams
 
 TEAM_SEASON_POINTS = "team_season_points"
@@ -266,13 +267,12 @@ def progress(bounty: Bounty, weeks: dict[int, list[dict]], long_weeks: set[int] 
 def regular_season_nights(info: dict[str, Any], tz: ZoneInfo, last_regular: int) -> tuple[date, date] | None:
     """First and last NHL night inside the BLHA regular season (local dates).
 
-    A Fantrax week ends when the first game of its last day starts, so that
-    day's games belong to the next week: the last night is the day before.
+    The last night is the final regular-season week's ``monthly.last_night``.
     """
     weeks = [p for p in season.periods(info) if p.number <= last_regular]
     if not weeks:
         return None
-    return weeks[0].start.astimezone(tz).date(), weeks[-1].end.astimezone(tz).date() - timedelta(days=1)
+    return weeks[0].start.astimezone(tz).date(), last_night(weeks[-1], tz)
 
 
 def nights_to_check(

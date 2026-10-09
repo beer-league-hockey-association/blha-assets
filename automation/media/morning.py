@@ -27,7 +27,9 @@ Data (all read-only):
 
 State (state/morning_skate.json, kept on the automation-state branch) is keyed
 by NHL date and records each part as it is posted, so a re-run never posts a
-part twice and a failed part is retried on the next run.
+part twice and a failed part is retried on the next run. If Fantrax cannot be
+read, the scores and highlights still go out, the night stays open and the run
+fails, so the scheduler's retry posts the Goal Reel.
 
 Modes:
   preview  print the messages; no Discord, no state change
@@ -355,24 +357,32 @@ class Reel:
         return not self.franchises
 
 
+class RosterReadError(RuntimeError):
+    """Fantrax could not be read, so the Goal Reel is unknown (not empty)."""
+
+
 def load_index(fx: Any) -> roster.RosterIndex | None:
-    """BLHA roster index, or None when nobody is rostered or Fantrax fails."""
+    """BLHA roster index, or None when nobody is rostered.
+
+    Raises RosterReadError when Fantrax cannot be read, so a failed read is
+    never mistaken for empty rosters and the Goal Reel can be retried.
+    """
     try:
         rosters = fx.rosters()
     except Exception as exc:
-        print(f"GOAL REEL WARNING: Fantrax roster read failed; no Goal Reel: {exc}")
-        return None
+        raise RosterReadError(f"Fantrax roster read failed: {exc}") from exc
     block = rosters.get("rosters") if isinstance(rosters, dict) else None
-    if not isinstance(block, dict) or not any(
-        (team or {}).get("rosterItems") for team in block.values() if isinstance(team, dict)
-    ):
+    if not isinstance(block, dict):
+        raise RosterReadError("Fantrax roster response has no rosters")
+    if not any((team or {}).get("rosterItems") for team in block.values() if isinstance(team, dict)):
         print("GOAL REEL: no players on BLHA rosters yet; Goal Reel skipped")
         return None
     try:
         players = fx.player_ids()
     except Exception as exc:
-        print(f"GOAL REEL WARNING: Fantrax player directory read failed; no Goal Reel: {exc}")
-        return None
+        raise RosterReadError(f"Fantrax player directory read failed: {exc}") from exc
+    if not players:
+        raise RosterReadError("Fantrax player directory came back empty")
     index = roster.build_index(rosters, players)
     if index.empty:
         print("GOAL REEL: no rostered players found in the Fantrax player directory; Goal Reel skipped")
@@ -810,7 +820,14 @@ def run(
         return 0
 
     fx = fx or Fantrax(str(cfg["league_id"]), user_agent="BLHA-Morning-Skate/1.0", timeout=20)
-    index = load_index(fx) if settings.get("include_goal_reel", True) else None
+    index = None
+    reel_error = ""  # Fantrax could not be read: the Goal Reel is retried, not skipped
+    if settings.get("include_goal_reel", True):
+        try:
+            index = load_index(fx)
+        except RosterReadError as exc:
+            reel_error = str(exc)
+            print(f"GOAL REEL WARNING: {reel_error}; no Goal Reel this run")
     reel = build_reel(games, index)
     print(f"GOAL REEL franchises={len(reel.franchises)} blha_points={sum(reel.by_game.values())}")
     try:
@@ -892,10 +909,14 @@ def run(
         save()
         print(f"POSTED  highlight {body['content']}")
 
-    if not feed_ok:
+    if reel_error or not feed_ok:
+        # Not complete: the next run posts only what is still missing.
         record["videos"] = posted
         save()
-        print("ERROR   YouTube feed unavailable; highlight videos will be retried next run")
+        if reel_error:
+            print(f"ERROR   {reel_error}; the Goal Reel will be retried next run")
+        if not feed_ok:
+            print("ERROR   YouTube feed unavailable; highlight videos will be retried next run")
         return 1
 
     record.update({"videos": posted, "complete": True, "games": len(games), "posted_at": now.isoformat()})

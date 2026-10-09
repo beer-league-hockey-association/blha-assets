@@ -265,10 +265,16 @@ class ScoredGame:
 
 
 def parse_scores(raw: Any) -> list[ScoredGame]:
-    """Games from one /v1/score/{date} response, goals in scoring order."""
-    games: list[ScoredGame] = []
+    """Games from one /v1/score/{date} response, goals in scoring order.
+
+    Raises ValueError when the response has no ``games`` list (an error body
+    or an API change), so it is not mistaken for a night without games.
+    """
     items = raw.get("games") if isinstance(raw, dict) else None
-    for item in items if isinstance(items, list) else []:
+    if not isinstance(items, list):
+        raise ValueError("NHL score response has no games list (API changed?)")
+    games: list[ScoredGame] = []
+    for item in items:
         if not isinstance(item, dict):
             continue
         away, home = _abbrev(item.get("awayTeam")), _abbrev(item.get("homeTeam"))
