@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T19:15:34.382681Z",
+  "updated_at": "2026-10-09T20:00:39.637180Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5972,6 +5972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T19:15:34.325086Z"
+    },
+    {
+      "key": "85ba4458b98b1a71d150ee69",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "e40bb557cd14c039",
+      "title_norm": "zach hyman (edm) — hyman (upper-body) returned to oilers' practice on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T20:00:39.576733Z"
     }
   ],
   "known_sources": [
