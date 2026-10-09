@@ -59,6 +59,13 @@ workflows:
     # playoffs; the longest gap is overnight (about 14 hours).
     max_age_minutes: 1000
 
+  - id: morning-skate
+    name: "BLHA Morning Skate"
+    file: "blha-morning-skate.yml"
+    # Once a day at 08:30, all year (it simply posts nothing on nights
+    # without NHL games).
+    max_age_minutes: 1700
+
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"

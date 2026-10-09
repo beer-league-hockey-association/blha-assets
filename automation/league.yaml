@@ -102,6 +102,32 @@ starting_goalies:
   post_from: "11:00"
 
 # ---------------------------------------------------------------------------
+# Morning Skate (automation/media/)
+#
+# Every morning after a night with NHL games (regular season and playoffs),
+# 📸│media gets last night's scores with NHL.com recap and condensed-game
+# links, the BLHA Goal Reel (goals and assists by players on BLHA rosters,
+# with clip links; left out when nobody scored) and a few YouTube highlight
+# videos. Links only, nothing is re-uploaded. Nobody is pinged.
+# enabled:           false stops the scheduled posts (manual preview/test
+#                    runs still work).
+# webhook:           GitHub Actions secret holding the 📸│media webhook URL
+#                    (the same one the Wire's podcast posts use).
+# post_time:         earliest local time the morning post goes out. The
+#                    scheduler starts the job at 08:30
+#                    (automation/scheduler/schedule.yaml); keep them in step.
+# max_youtube:       how many YouTube highlight videos to post (0 to 10). The
+#                    games with the most BLHA goals + assists go first, then
+#                    overtime/shootout games, then the highest-scoring games.
+# include_goal_reel: false leaves out the Goal Reel (no Fantrax roster read).
+morning_skate:
+  enabled: true
+  webhook: BLHA_WEBHOOK_MEDIA
+  post_time: "08:30"
+  max_youtube: 3
+  include_goal_reel: true
+
+# ---------------------------------------------------------------------------
 # Commissioner Desk (private reminders for the commissioner's manual work)
 #
 # webhook:      GitHub Actions secret holding the private channel's webhook URL.

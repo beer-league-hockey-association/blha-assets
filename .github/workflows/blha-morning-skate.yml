@@ -1,0 +1,74 @@
+name: BLHA Morning Skate
+run-name: BLHA Morning Skate — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+
+# Every morning after a night with NHL games: last night's scores with NHL.com
+# recap and condensed-game links, the BLHA Goal Reel and a few YouTube
+# highlights in 📸│media, once per NHL date. Timing lives in
+# automation/scheduler/schedule.yaml (08:30 ET, all year).
+# Code: automation/media/morning.py. Settings: automation/league.yaml (morning_skate).
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "preview = log only; test = [TEST] posts, nothing recorded; live = post last night once"
+        required: true
+        default: preview
+        type: choice
+        options: [preview, test, live]
+      date:
+        description: "Optional NHL date YYYY-MM-DD (default: last night)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blha-morning-skate
+  cancel-in-progress: false
+
+jobs:
+  morning-skate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
+      NHL_DATE: ${{ inputs.date || '' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Restore saved state
+        run: bash automation/tools/state_branch.sh restore "automation/media/state/morning_skate.json"
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: automation/common-requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r automation/common-requirements.txt
+
+      - name: Run Morning Skate
+        env:
+          BLHA_WEBHOOK_MEDIA: ${{ secrets.BLHA_WEBHOOK_MEDIA }}
+        shell: bash
+        run: |
+          ARGS=(--mode "$MODE")
+          if [[ -n "$NHL_DATE" ]]; then ARGS+=(--date "$NHL_DATE"); fi
+          python automation/media/morning.py "${ARGS[@]}"
+
+      # Saved even if a post failed, so the parts that did go out are never repeated.
+      - name: Save state to the automation-state branch
+        if: ${{ !cancelled() && env.MODE == 'live' }}
+        run: |
+          bash automation/tools/state_branch.sh save \
+            "chore(media): save morning skate state" \
+            "BLHA Fantrax Automation" \
+            "automation/media/state/morning_skate.json"
