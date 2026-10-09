@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T07:00:40.507656Z",
+  "updated_at": "2026-10-09T08:00:49.335117Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5702,6 +5702,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T07:00:40.464744Z"
+    },
+    {
+      "key": "d00a5638a62983310fb0b379",
+      "url": "https://www.nhl.com/news/vancouver-canucks-carolina-hurricanes-game-recap-october-8-2026",
+      "fingerprint": "172b7a7b795e5cd9",
+      "title_norm": "stankoven scores 1st hat trick, hurricanes top canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T08:00:48.976846Z"
+    },
+    {
+      "key": "591542efeca1ad9f7527fda6",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-rantanen-racks-up-four-points-stars-shutout-sabres",
+      "fingerprint": "d2b4759b5ef3d869",
+      "title_norm": "nhl roundup: rantanen racks up four points, stars shutout sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T08:00:49.302263Z"
     }
   ],
   "known_sources": [
