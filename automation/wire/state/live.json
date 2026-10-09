@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T21:30:39.284436Z",
+  "updated_at": "2026-10-09T21:45:31.543882Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6072,6 +6072,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-09T21:30:39.228624Z"
+    },
+    {
+      "key": "c7ec67d55e02cf61c54f75ae",
+      "url": "https://www.nhl.com/news/san-jose-sharks-macklin-celebrini-injury-status-update-october-9-2026",
+      "fingerprint": "8a27fa04b259bf2b",
+      "title_norm": "celebrini to be game-time decision tomorrow",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T21:45:31.404206Z"
     }
   ],
   "known_sources": [
