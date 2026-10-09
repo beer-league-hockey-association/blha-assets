@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T21:15:37.601440Z",
+  "updated_at": "2026-10-09T21:30:39.284436Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6062,6 +6062,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-09T21:15:37.496072Z"
+    },
+    {
+      "key": "0e28f1630f74dbeea71ec5ea",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-9-2026",
+      "fingerprint": "022b944344a0b7f5",
+      "title_norm": "status report: tavares out for leafs after birth of son",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T21:30:39.228624Z"
     }
   ],
   "known_sources": [
