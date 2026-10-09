@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T05:45:34.494008Z",
+  "updated_at": "2026-10-09T07:00:40.507656Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5692,6 +5692,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T05:45:34.455839Z"
+    },
+    {
+      "key": "889a64736828641c8effcf83",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-still-searching-for-chemistry-after-blowing-three-goal-lead",
+      "fingerprint": "3ff394db818542da",
+      "title_norm": "maple leafs still searching for chemistry after blowing three-goal lead",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T07:00:40.464744Z"
     }
   ],
   "known_sources": [
