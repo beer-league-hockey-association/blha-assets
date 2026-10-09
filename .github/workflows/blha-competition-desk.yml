@@ -1,8 +1,9 @@
 name: BLHA Competition Desk
 run-name: BLHA Competition Desk — ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'live' }}
 
-# Weekly report: recap (with all-play), weekly awards, power rankings, standings,
-# playoff race (from week 16), matchup preview and the NHL games grid.
+# Weekly report: recap (with all-play), weekly awards, power rankings (with the
+# Luck Index), Monthly Awards, bounty claims, standings, playoff race (from
+# week 16), matchup preview (with projected games) and the NHL games grid.
 # Timing lives in automation/scheduler/schedule.yaml; the BLHA Scheduler starts
 # this workflow with mode=live at 08:00 and 20:00 ET during the season.
 
@@ -20,7 +21,7 @@ on:
         required: false
         default: all
         type: choice
-        options: [all, recap, awards, rankings, standings, race, preview, games, spoon]
+        options: [all, recap, awards, rankings, monthly, bounties, standings, race, preview, games, spoon]
       week:
         description: "Week to render (preview/test only; blank = current)"
         required: false

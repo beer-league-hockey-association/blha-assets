@@ -8,6 +8,10 @@ any owner can check it by hand:
 - Power Rankings: 50% season points-for + 30% points-for over the last 3
   final weeks + 20% season all-play win %. Both points-for figures are scaled
   0 to 1 across the league (lowest team 0, highest 1).
+- Luck Index (shown with the power rankings, not part of the score): expected
+  wins xW = the sum over weeks of each week's all-play win share (teams
+  outscored / 11, an equal score counting half); Luck = actual H2H wins - xW,
+  a tie counting half a win. Across the league Luck adds up to 0.
 - Weekly Awards: three stars (top three scores), Tough Luck (highest score in
   a loss), Lucky Win (lowest winning score), Closest Game, Biggest Blowout.
 
@@ -128,6 +132,44 @@ def scaled(values: dict[str, float]) -> dict[str, float]:
     return {k: (v - low) / (high - low) for k, v in values.items()}
 
 
+# --- Luck Index -------------------------------------------------------------------
+
+def expected_wins(weeks: dict[int, list[dict]]) -> dict[str, float]:
+    """xW: the sum of each week's all-play win share (an equal score counts half)."""
+    total: dict[str, float] = {}
+    for rows in real_weeks(weeks).values():
+        for team_id, record in all_play(rows).items():
+            if record.games:
+                total[team_id] = total.get(team_id, 0.0) + record.pct
+    return total
+
+
+def luck(weeks: dict[int, list[dict]]) -> dict[str, float]:
+    """Actual H2H wins (a tie counts half) minus expected wins (xW)."""
+    xw = expected_wins(weeks)
+    h2h = head_to_head(weeks)
+    return {
+        team_id: (h2h.get(team_id, Record()).wins + 0.5 * h2h.get(team_id, Record()).ties) - value
+        for team_id, value in xw.items()
+    }
+
+
+def luck_extremes(rows: list["RankRow"]) -> tuple[list["RankRow"], list["RankRow"]]:
+    """(luckiest, unluckiest) teams, compared as shown (one decimal).
+
+    Teams that show the same Luck share the line. Both lists are empty when
+    every team shows the same Luck (for example, before any game is decided).
+    """
+    if not rows:
+        return [], []
+    shown = {r.team_id: round(r.luck, 1) for r in rows}
+    high, low = max(shown.values()), min(shown.values())
+    if high == low:
+        return [], []
+    return ([r for r in rows if shown[r.team_id] == high],
+            [r for r in rows if shown[r.team_id] == low])
+
+
 # --- Power rankings ---------------------------------------------------------------
 
 @dataclass
@@ -141,6 +183,8 @@ class RankRow:
     recent_points_for: float
     all_play: Record
     previous_rank: int | None = None
+    expected_wins: float = 0.0
+    luck: float = 0.0
 
     @property
     def change(self) -> int | None:
@@ -178,6 +222,8 @@ def power_rankings(
         recent_pf.setdefault(team_id, 0.0)
     ap = season_all_play(played)
     records = head_to_head(played)
+    xw = expected_wins(played)
+    lucky = luck(played)
     names = latest_names(weeks)
     pf_scaled, recent_scaled = scaled(season_pf), scaled(recent_pf)
 
@@ -197,6 +243,8 @@ def power_rankings(
             points_for=season_pf[team_id],
             recent_points_for=recent_pf[team_id],
             all_play=ap.get(team_id, Record()),
+            expected_wins=xw.get(team_id, 0.0),
+            luck=lucky.get(team_id, 0.0),
         ))
     # Ties: higher season points-for, then name, so the order is stable.
     rows.sort(key=lambda r: (-r.score, -r.points_for, r.team_name.lower()))

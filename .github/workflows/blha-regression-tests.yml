@@ -88,6 +88,11 @@ jobs:
           PYTHONPATH: automation:automation/competition
         run: python automation/tests/test_competition_additions.py
 
+      - name: Test the Luck Index, schedule edge, Monthly Awards and bounties
+        env:
+          PYTHONPATH: automation:automation/competition
+        run: python automation/tests/test_competition_extras.py
+
       - name: Test the Fantrax client
         run: python automation/tests/test_fantrax_client.py
 
