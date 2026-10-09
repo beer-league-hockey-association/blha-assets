@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T02:30:33.959911Z",
+  "updated_at": "2026-10-09T02:45:40.435356Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5572,6 +5572,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T02:30:33.926727Z"
+    },
+    {
+      "key": "86a04a42504c7f4f456a19b5",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-new-york-islanders-game-recap-october-8-2026",
+      "fingerprint": "a953ec67315adc6d",
+      "title_norm": "horvat stays hot with two goals, islanders defeat blackhawks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T02:45:40.347609Z"
     }
   ],
   "known_sources": [
