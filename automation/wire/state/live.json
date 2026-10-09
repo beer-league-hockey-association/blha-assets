@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T20:45:34.171614Z",
+  "updated_at": "2026-10-09T21:00:39.487890Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6022,6 +6022,26 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-09T20:45:34.152577Z"
+    },
+    {
+      "key": "022600d1114c6e7551772fbd",
+      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
+      "fingerprint": "5e573463dfcbe036",
+      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) has a chance to return on saturday vs. edmonton.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-09T21:00:39.055630Z"
+    },
+    {
+      "key": "35dcfeb415f328bf53fbf8e0",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-to-miss-game-vs-avalanche-after-birth-of-son",
+      "fingerprint": "0e5cded5d37b68c8",
+      "title_norm": "maple leafs' john tavares to miss game vs. avalanche after birth of son",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T21:00:39.388619Z"
     }
   ],
   "known_sources": [
