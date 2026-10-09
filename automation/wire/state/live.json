@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T03:15:37.363118Z",
+  "updated_at": "2026-10-09T04:15:36.460219Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -5612,6 +5612,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-09T03:15:37.330513Z"
+    },
+    {
+      "key": "d9341e155f987da6bb15c9e9",
+      "url": "https://www.nhl.com/news/colorado-avalanche-calgary-flames-game-recap-october-8-2026",
+      "fingerprint": "a53012d10ac945c2",
+      "title_norm": "makar, mackinnon has 3 points, avs keep flames winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-09T04:15:35.748385Z"
+    },
+    {
+      "key": "b04c251afbae6d47f36e6c79",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-effort-execution-lacking-in-embarrassing-loss",
+      "fingerprint": "b9a703c835bfe5de",
+      "title_norm": "canucks takeaways: effort, execution lacking in embarrassing loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T04:15:36.150259Z"
+    },
+    {
+      "key": "d09991839abdd9873aaf26d4",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-remain-winless-after-lopsided-loss-to-avalanche",
+      "fingerprint": "1736248545da0443",
+      "title_norm": "flames remain winless after lopsided loss to avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-09T04:15:36.422630Z"
     }
   ],
   "known_sources": [
