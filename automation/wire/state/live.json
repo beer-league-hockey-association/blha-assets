@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T16:15:31.543363Z",
+  "updated_at": "2026-10-10T16:45:40.500970Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6482,6 +6482,76 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T16:15:31.470138Z"
+    },
+    {
+      "key": "367f6a3a05fbdce8c1372433",
+      "url": "https://www.dailyfaceoff.com/players/news/igor-shesterkin/25267",
+      "fingerprint": "51dd191a3824eec4",
+      "title_norm": "igor shesterkin (nyr) — shesterkin (lower-body) will miss the rest of the 2026-27 season.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:39.472144Z"
+    },
+    {
+      "key": "7f54597ea2f1d71965f975e3",
+      "url": "https://www.dailyfaceoff.com/players/news/travis-konecny/2498",
+      "fingerprint": "77b266295980b714",
+      "title_norm": "travis konecny (phi) — konecny (lower-body) is day-to-day and will not play this weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:39.820201Z"
+    },
+    {
+      "key": "47d6fd3eee4127f3e2b1da45",
+      "url": "https://www.dailyfaceoff.com/players/news/joonas-korpisalo/2556",
+      "fingerprint": "33480b10290536af",
+      "title_norm": "joonas korpisalo (nyr) — korpisalo (lower-body) is expected to be out for four more weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:40.095942Z"
+    },
+    {
+      "key": "3875ee46f7c0360b04d80090",
+      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
+      "fingerprint": "a603836dae8268c9",
+      "title_norm": "joe veleno (nyr) — veleno (lower-body) will be placed on ltir and is expected to miss 3-to-3.5 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:40.114193Z"
+    },
+    {
+      "key": "6e3e1cd8777c034d0c7a3e62",
+      "url": "https://www.dailyfaceoff.com/players/news/helge-grans/33041",
+      "fingerprint": "dbca68ebd383eec1",
+      "title_norm": "helge grans (phi) — grans has been activated from injured, non-roster.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:40.128985Z"
+    },
+    {
+      "key": "8d045ba74b448219de6205e4",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "f257fc99e3b14f68",
+      "title_norm": "rasmus ristolainen (phi) — the flyers have placed rasmus ristolainen (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:40.145458Z"
+    },
+    {
+      "key": "7a3d2f289cae01304553299f",
+      "url": "https://www.dailyfaceoff.com/players/news/cameron-york/30422",
+      "fingerprint": "0897575ecfe6efae",
+      "title_norm": "cam york (phi) — york (upper-body) is day-to-day and will not play this weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:45:40.160313Z"
     }
   ],
   "known_sources": [
