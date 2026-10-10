@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T04:00:41.319498Z",
+  "updated_at": "2026-10-10T04:45:41.074576Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6302,6 +6302,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-10T04:00:41.227292Z"
+    },
+    {
+      "key": "6c1b3126cc1eb8ed73e42a03",
+      "url": "https://www.sportsnet.ca/nhl/article/injury-to-canadiens-montembeault-tough-blow-in-quest-for-redemption",
+      "fingerprint": "bd216ccc47967398",
+      "title_norm": "injury to canadiens' montembeault tough blow in quest for redemption",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T04:45:41.037314Z"
     }
   ],
   "known_sources": [
