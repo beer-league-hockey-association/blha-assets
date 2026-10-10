@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T15:45:30.243110Z",
+  "updated_at": "2026-10-10T16:00:37.506896Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6452,6 +6452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T15:45:30.033094Z"
+    },
+    {
+      "key": "13ff28da46dca3756838277d",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-activate-andre-burakovsky-for-season-debut-against-predators",
+      "fingerprint": "24eec642578af9aa",
+      "title_norm": "senators activate andre burakovsky for season debut against predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:00:37.491916Z"
     }
   ],
   "known_sources": [
