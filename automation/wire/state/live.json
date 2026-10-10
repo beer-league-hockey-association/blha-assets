@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T01:15:35.437453Z",
+  "updated_at": "2026-10-10T02:00:34.570238Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6212,6 +6212,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T01:15:35.337363Z"
+    },
+    {
+      "key": "8b381f87a410c6ebebc9b3fb",
+      "url": "https://www.nhl.com/news/seattle-kraken-detroit-red-wings-game-recap-october-9-2026",
+      "fingerprint": "3206f53fe392e065",
+      "title_norm": "kraken score four goals in second period, surge past red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-10T02:00:34.502996Z"
     }
   ],
   "known_sources": [
