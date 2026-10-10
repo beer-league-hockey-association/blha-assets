@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T03:45:33.742144Z",
+  "updated_at": "2026-10-10T04:00:41.319498Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6292,6 +6292,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T03:45:33.717001Z"
+    },
+    {
+      "key": "22927266582bc87bc6c35f89",
+      "url": "https://www.nhl.com/news/topic/game-recap/new-york-rangers-washington-capitals-game-recap-october-9-2026",
+      "fingerprint": "61a89bcd46976be2",
+      "title_norm": "jenner's first goal with capitals helps cool off rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-10T04:00:41.227292Z"
     }
   ],
   "known_sources": [
