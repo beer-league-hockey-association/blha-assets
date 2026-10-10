@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T16:00:37.506896Z",
+  "updated_at": "2026-10-10T16:15:31.543363Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6462,6 +6462,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T16:00:37.491916Z"
+    },
+    {
+      "key": "936551b82c26a8864b668e56",
+      "url": "https://www.sportsnet.ca/nhl/article/heartbreak-on-the-line-gabriel-landeskog-talks-comeback-sweep-makar-alfredsson",
+      "fingerprint": "77542b3302511b14",
+      "title_norm": "'heartbreak on the line': gabriel landeskog talks comeback, sweep, makar, alfredsson",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:15:31.233505Z"
+    },
+    {
+      "key": "66fe60976abd485a1fc6a861",
+      "url": "https://www.dailyfaceoff.com/players/news/florian-xhakaj/37772",
+      "fingerprint": "b9ff932b335bcaca",
+      "title_norm": "florian xhekaj (mtl) — xhekaj (undisclosed) will not play saturday vs. detroit.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T16:15:31.470138Z"
     }
   ],
   "known_sources": [
