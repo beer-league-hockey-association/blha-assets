@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-09T23:30:35.576893Z",
+  "updated_at": "2026-10-10T00:00:37.750532Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6152,6 +6152,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-09T23:30:35.479697Z"
+    },
+    {
+      "key": "b1593033b7cdb4838f26fb79",
+      "url": "https://www.sportsnet.ca/nhl/article/cam-talbot-sets-goaltending-record-by-playing-for-ninth-team",
+      "fingerprint": "9e7d8598746568a2",
+      "title_norm": "cam talbot sets goaltending record by playing for ninth team",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T00:00:37.721388Z"
     }
   ],
   "known_sources": [
