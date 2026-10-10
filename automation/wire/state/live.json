@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T00:00:37.750532Z",
+  "updated_at": "2026-10-10T00:15:37.110571Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6162,6 +6162,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T00:00:37.721388Z"
+    },
+    {
+      "key": "9064bbd7c53dae7ad57ec1d5",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/28c82d8a-9109-4284-991e-adbbcdbf0505",
+      "fingerprint": "f09bd9cc4049d7ec",
+      "title_norm": "nhl on sportsnet: winnipeg vs. anaheim",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T00:15:37.068501Z"
     }
   ],
   "known_sources": [
