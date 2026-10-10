@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T02:45:30.057450Z",
+  "updated_at": "2026-10-10T03:00:42.162865Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6252,6 +6252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T02:45:30.039272Z"
+    },
+    {
+      "key": "33a0e4c6271506ca27690a57",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "8054f8864dddb9f8",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) is not expected to play saturday in ottawa.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T03:00:42.065010Z"
     }
   ],
   "known_sources": [
