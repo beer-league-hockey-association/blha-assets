@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T19:00:39.860728Z",
+  "updated_at": "2026-10-10T19:26:52.798356Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6642,6 +6642,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T19:00:39.755568Z"
+    },
+    {
+      "key": "09d1bd006fab671da77be586",
+      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
+      "fingerprint": "6af37f48a10f6f80",
+      "title_norm": "jonas siegenthaler (njd) — siegenthaler (undisclosed) will play vs. vancouver on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T19:26:52.267646Z"
+    },
+    {
+      "key": "6b9039e1b513346dc39d8e52",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/06babba9-0525-41c2-82c1-c952e6c3c6cd",
+      "fingerprint": "034efe4a0e81d307",
+      "title_norm": "canucks on sportsnet: vancouver vs. new jersey",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T19:26:52.523583Z"
+    },
+    {
+      "key": "74417aee6cd03aa00fb06bfc",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-walman-out-hallander-in-against-sharks",
+      "fingerprint": "6a5b5d0299072e87",
+      "title_norm": "oilers' walman out, hallander in against sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T19:26:52.765892Z"
     }
   ],
   "known_sources": [
