@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T17:15:33.033132Z",
+  "updated_at": "2026-10-10T17:45:34.945831Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6572,6 +6572,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T17:15:32.997555Z"
+    },
+    {
+      "key": "28195c5093b1521c495bf3d2",
+      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
+      "fingerprint": "aa15c9cff5b3d412",
+      "title_norm": "johnathan kovacevic (njd) — the devils have activated johnathan kovacevic (knee) from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T17:45:34.888265Z"
     }
   ],
   "known_sources": [
