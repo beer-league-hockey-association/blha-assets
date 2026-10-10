@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T14:00:36.897200Z",
+  "updated_at": "2026-10-10T14:45:37.685210Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6352,6 +6352,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T14:00:36.848783Z"
+    },
+    {
+      "key": "da198e7ce76001e6997bff0d",
+      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
+      "fingerprint": "376c61f3fb82e87e",
+      "title_norm": "william eklund (ott) — the senators are placing william eklund (ankle) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T14:45:37.363480Z"
+    },
+    {
+      "key": "36c446ee0360bffe4c1cfff8",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "ff4c4aa43c66ec56",
+      "title_norm": "andre burakovsky (ott) — burakovsky (upper-body) is being activated from ir and is expected to make his senators debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T14:45:37.608550Z"
     }
   ],
   "known_sources": [
