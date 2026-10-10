@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T09:15:36.388663Z",
+  "updated_at": "2026-10-10T12:30:38.510719Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6332,6 +6332,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-10T09:15:36.359041Z"
+    },
+    {
+      "key": "be1786084464dec16f3ab3e9",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-is-the-real-auston-matthews-back",
+      "fingerprint": "ac83b1ef96cedc7a",
+      "title_norm": "quick shifts: is the real auston matthews back?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T12:30:38.412420Z"
     }
   ],
   "known_sources": [
