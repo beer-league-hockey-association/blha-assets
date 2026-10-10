@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T02:30:42.595352Z",
+  "updated_at": "2026-10-10T02:45:30.057450Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6242,6 +6242,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T02:30:42.563141Z"
+    },
+    {
+      "key": "b2356434c3a231231504ce1b",
+      "url": "https://www.sportsnet.ca/nhl/article/johnson-scores-lone-goal-in-shootout-to-give-blue-jackets-win-over-penguins",
+      "fingerprint": "d9afd1ff11dcbfcd",
+      "title_norm": "johnson scores lone goal in shootout to give blue jackets win over penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T02:45:30.039272Z"
     }
   ],
   "known_sources": [
