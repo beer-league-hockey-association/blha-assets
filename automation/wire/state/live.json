@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T02:00:34.570238Z",
+  "updated_at": "2026-10-10T02:30:42.595352Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6222,6 +6222,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-10T02:00:34.502996Z"
+    },
+    {
+      "key": "e68ef9bc291ebc9aa9ed50d2",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-columbus-blue-jackets-game-recap-october-9-2026",
+      "fingerprint": "96d07c0803b7fd7c",
+      "title_norm": "talbot stops 20 in debut, jackets top pens in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-10T02:30:42.238255Z"
+    },
+    {
+      "key": "81085e9c4ae1225906def114",
+      "url": "https://www.sportsnet.ca/nhl/article/jenner-lifts-capitals-over-rangers-after-shesterkins-exit",
+      "fingerprint": "53179fc37a5a1c49",
+      "title_norm": "jenner lifts capitals over rangers after shesterkin's exit",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T02:30:42.563141Z"
     }
   ],
   "known_sources": [
