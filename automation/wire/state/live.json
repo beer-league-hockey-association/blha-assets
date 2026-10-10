@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T00:15:37.110571Z",
+  "updated_at": "2026-10-10T00:45:36.688775Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6172,6 +6172,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T00:15:37.068501Z"
+    },
+    {
+      "key": "b5957ac813b5881b9c4e05d6",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-goalie-igor-shesterkin-exits-vs-capitals-with-apparent-leg-injury",
+      "fingerprint": "78deb38ca426ed3a",
+      "title_norm": "rangers goalie igor shesterkin exits vs. capitals with apparent leg injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T00:45:36.256522Z"
+    },
+    {
+      "key": "9a92cdbda2f1fcb31d877df9",
+      "url": "https://www.nhl.com/news/new-york-rangers-igor-shesterkin-injury-status-update-october-9-2026",
+      "fingerprint": "6e19cac80b1f7bbe",
+      "title_norm": "shesterkin helped off ice with apparent leg injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-10T00:45:36.598928Z"
     }
   ],
   "known_sources": [
