@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T17:45:34.945831Z",
+  "updated_at": "2026-10-10T18:15:36.981639Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6582,6 +6582,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T17:45:34.888265Z"
+    },
+    {
+      "key": "701dc925f9afe2f85a38a116",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-honzek/37733",
+      "fingerprint": "ac41b3314170fba9",
+      "title_norm": "samuel honzek (cgy) — honzek (undisclosed) willl not play saturday vs. the ducks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T18:15:36.085735Z"
+    },
+    {
+      "key": "607c33492f91bbe7f8b5bbd0",
+      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
+      "fingerprint": "87b35aeed6235c65",
+      "title_norm": "mats zuccarello (lak) — the kings have placed mats zuccarello (undisclosed) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T18:15:36.368598Z"
+    },
+    {
+      "key": "4c5a161c1c245046d071bd52",
+      "url": "https://www.dailyfaceoff.com/players/news/adam-gaudette/4646",
+      "fingerprint": "720e77fb1e364d35",
+      "title_norm": "adam gaudette (sjs) — the sharks have activated adam gaudette (upper-body) from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T18:15:36.692887Z"
+    },
+    {
+      "key": "b418c8e2783c61282a0ebc88",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-turcotte-30420/30420",
+      "fingerprint": "cfb872e456f0efa1",
+      "title_norm": "alex turcotte (lak) — the kings have placed alex turcotte (undisclosed) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T18:15:36.708757Z"
     }
   ],
   "known_sources": [
