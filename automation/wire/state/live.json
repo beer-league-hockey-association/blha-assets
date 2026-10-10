@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T00:45:36.688775Z",
+  "updated_at": "2026-10-10T01:00:37.591235Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6192,6 +6192,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-10T00:45:36.598928Z"
+    },
+    {
+      "key": "b3a6dc1c551bca621bffd4c4",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-frank-nazar-suspended-two-games-for-illegal-check-to-head",
+      "fingerprint": "dadd52e707f6af95",
+      "title_norm": "blackhawks' frank nazar suspended two games for illegal check to head",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T01:00:37.496408Z"
     }
   ],
   "known_sources": [
