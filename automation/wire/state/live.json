@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T03:15:36.828747Z",
+  "updated_at": "2026-10-10T03:45:33.742144Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6282,6 +6282,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T03:15:36.784307Z"
+    },
+    {
+      "key": "27f5cafa984119ccc135e652",
+      "url": "https://www.sportsnet.ca/nhl/article/gaudreau-scores-twice-in-four-goal-second-period-as-kraken-beat-red-wings",
+      "fingerprint": "3da14a5642131f2c",
+      "title_norm": "nhl roundup: kraken's four-goal period leads to win over red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T03:45:33.717001Z"
     }
   ],
   "known_sources": [
