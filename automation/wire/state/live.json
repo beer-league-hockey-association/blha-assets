@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T18:15:36.981639Z",
+  "updated_at": "2026-10-10T19:00:39.860728Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6622,6 +6622,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T18:15:36.708757Z"
+    },
+    {
+      "key": "9839742587af3a68aad76a31",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-walman/2859",
+      "fingerprint": "aedd42515e1aad89",
+      "title_norm": "jake walman (edm) — walman (undisclosed) will not play saturday in san jose.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T19:00:39.555921Z"
+    },
+    {
+      "key": "8db402d77b7d7c39e310008c",
+      "url": "https://www.dailyfaceoff.com/players/news/shakir-mukhamadullin/33038",
+      "fingerprint": "df76155ce5bd6dd1",
+      "title_norm": "shakir mukhamadullin (edm) — mukhamadulkin will be back in the sharks lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T19:00:39.755568Z"
     }
   ],
   "known_sources": [
