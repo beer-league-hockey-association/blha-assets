@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T12:30:38.510719Z",
+  "updated_at": "2026-10-10T14:00:36.897200Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6342,6 +6342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T12:30:38.412420Z"
+    },
+    {
+      "key": "f77572fcae37102243a87a5b",
+      "url": "https://www.dailyfaceoff.com/players/news/bo-horvat/2141",
+      "fingerprint": "c1d5a438c1f0c4ce",
+      "title_norm": "bo horvat (nyi) — horvat (upper-body) will be a game-time decision on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T14:00:36.848783Z"
     }
   ],
   "known_sources": [
