@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T17:00:36.753474Z",
+  "updated_at": "2026-10-10T17:15:33.033132Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6562,6 +6562,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T17:00:36.703260Z"
+    },
+    {
+      "key": "05a589364b2d7b05846f1f4c",
+      "url": "https://www.dailyfaceoff.com/players/news/kailer-yamamoto/2796",
+      "fingerprint": "05c5aa4e9234fbe6",
+      "title_norm": "kailer yamamoto (uta) — yamamoto will make his season debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T17:15:32.997555Z"
     }
   ],
   "known_sources": [
