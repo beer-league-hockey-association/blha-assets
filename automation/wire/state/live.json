@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T14:45:37.685210Z",
+  "updated_at": "2026-10-10T15:00:41.591068Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6372,6 +6372,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T14:45:37.608550Z"
+    },
+    {
+      "key": "690b240bdcd18f753a0cf85a",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "ae1ecee34f27cde0",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) missed saturday's practice and is questionable to play sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T15:00:41.223342Z"
+    },
+    {
+      "key": "7aca46c253860c28c523a0fe",
+      "url": "https://www.dailyfaceoff.com/players/news/kaiden-guhle/32947",
+      "fingerprint": "e003a42ad68a30e5",
+      "title_norm": "kaiden guhle (mtl) — guhle (groin) will make his season debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-10T15:00:41.531983Z"
     }
   ],
   "known_sources": [
