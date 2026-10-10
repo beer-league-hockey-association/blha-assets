@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T16:45:40.500970Z",
+  "updated_at": "2026-10-10T17:00:36.753474Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6552,6 +6552,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T16:45:40.160313Z"
+    },
+    {
+      "key": "760ddd5182dd2b3d188b4a17",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-goalie-igor-shesterkin-out-for-season",
+      "fingerprint": "0e418c325d8478eb",
+      "title_norm": "rangers goalie igor shesterkin out for season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T17:00:36.703260Z"
     }
   ],
   "known_sources": [
