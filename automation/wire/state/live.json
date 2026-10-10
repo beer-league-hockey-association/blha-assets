@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T04:45:41.074576Z",
+  "updated_at": "2026-10-10T07:15:31.877403Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6312,6 +6312,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-10T04:45:41.037314Z"
+    },
+    {
+      "key": "e94437984f11ff6a890b8a18",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-frank-nazar-suspended-two-games-for-illegal-check",
+      "fingerprint": "a5f22003f53ca8c7",
+      "title_norm": "nazar suspended 2 games for blackhawks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-10T07:15:31.782731Z"
     }
   ],
   "known_sources": [
