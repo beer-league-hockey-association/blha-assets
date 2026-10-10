@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T07:15:31.877403Z",
+  "updated_at": "2026-10-10T09:15:36.388663Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6322,6 +6322,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-10T07:15:31.782731Z"
+    },
+    {
+      "key": "cfeb937103dd586fff878f03",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Week-3-Waiver-Wire-Best-Streamers--Adds--Schedule--Crossing-the-Streams-e3q9lgr",
+      "fingerprint": "ca6884db69969b3b",
+      "title_norm": "week 3 waiver wire: best streamers, adds & schedule | crossing the streams",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-10T09:15:36.359041Z"
     }
   ],
   "known_sources": [
