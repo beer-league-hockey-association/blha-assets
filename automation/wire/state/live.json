@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-10T03:00:42.162865Z",
+  "updated_at": "2026-10-10T03:15:36.828747Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -6262,6 +6262,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-10T03:00:42.065010Z"
+    },
+    {
+      "key": "915396206dc6d95fadff11d3",
+      "url": "https://www.nhl.com/news/anaheim-ducks-winnipeg-jets-game-recap-october-9-2026",
+      "fingerprint": "6fc88cf6ea2a7559",
+      "title_norm": "granlund, washe each has two points, ducks slow down jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-10T03:15:36.368198Z"
+    },
+    {
+      "key": "eafe921b7838f8fcadf806ab",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-sent-to-first-regulation-loss-by-caufield-ducks",
+      "fingerprint": "86ba87f33908063a",
+      "title_norm": "jets sent to first regulation loss by caufield, ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-10T03:15:36.784307Z"
     }
   ],
   "known_sources": [
