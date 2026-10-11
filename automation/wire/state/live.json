@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T04:30:33.999597Z",
+  "updated_at": "2026-10-11T04:45:41.450157Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7142,6 +7142,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T04:30:33.947465Z"
+    },
+    {
+      "key": "272f9d39286fa035957fa919",
+      "url": "https://www.nhl.com/news/new-york-rangers-goalie-igor-shesterkin-out-for-season",
+      "fingerprint": "d1756b82c26aee1f",
+      "title_norm": "shesterkin out for season with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T04:45:41.122774Z"
+    },
+    {
+      "key": "e140bc396b22a339a44dce77",
+      "url": "https://www.sportsnet.ca/nhl/article/we-want-larkin-canadiens-fans-send-message-to-red-wings-star",
+      "fingerprint": "2d51c0f6b11a5e7d",
+      "title_norm": "'we want larkin': canadiens fans send message to red wings star",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T04:45:41.407915Z"
     }
   ],
   "known_sources": [
