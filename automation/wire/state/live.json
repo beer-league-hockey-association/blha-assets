@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T04:45:41.450157Z",
+  "updated_at": "2026-10-11T05:15:36.019076Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7162,6 +7162,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T04:45:41.407915Z"
+    },
+    {
+      "key": "614f87f523995b120f2c6178",
+      "url": "https://www.nhl.com/news/anaheim-ducks-calgary-flames-game-recap-october-10-2026",
+      "fingerprint": "7dd136da9a88fc31",
+      "title_norm": "poehling has two points, ducks hang on to keep flames winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T05:15:35.714743Z"
+    },
+    {
+      "key": "dea54b482153c9fc718e1e6b",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-fall-to-0-5-with-loss-to-ducks",
+      "fingerprint": "88d61a802c16dd09",
+      "title_norm": "flames fall to 0-5 with loss to ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T05:15:35.979110Z"
     }
   ],
   "known_sources": [
