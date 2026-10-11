@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T16:00:40.998148Z",
+  "updated_at": "2026-10-11T16:15:35.304186Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7242,6 +7242,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-11T16:00:40.927906Z"
+    },
+    {
+      "key": "993a678d4f8263a852919b50",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "c165f27b6717a84d",
+      "title_norm": "connor bedard (chi) — bedard (shoulder) was a full participant in chicago's practice on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T16:15:34.939676Z"
+    },
+    {
+      "key": "beb7b25bb085e23f4f4f3522",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-recall-defenceman-jorian-donovan-place-cam-crotty-on-ir",
+      "fingerprint": "5cb765ec49a2add4",
+      "title_norm": "senators recall defenceman jorian donovan, place cam crotty on ir",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T16:15:35.279431Z"
     }
   ],
   "known_sources": [
