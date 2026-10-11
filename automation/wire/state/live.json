@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T05:30:34.590708Z",
+  "updated_at": "2026-10-11T06:30:41.967580Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7192,6 +7192,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-11T05:30:34.519580Z"
+    },
+    {
+      "key": "1be6f5f06ecfb0422b0580b2",
+      "url": "https://www.sportsnet.ca/nhl/article/sunievs-first-goal-a-reminder-of-what-flames-rebuilding-season-is-about",
+      "fingerprint": "feb5e4fa992ba4e1",
+      "title_norm": "suniev's first goal a reminder of what flames' rebuilding season is about",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T06:30:41.926497Z"
     }
   ],
   "known_sources": [
