@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T18:45:33.551471Z",
+  "updated_at": "2026-10-11T19:00:35.913583Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7302,6 +7302,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-11T18:45:33.463393Z"
+    },
+    {
+      "key": "9c17396ba4d8483df92ac19b",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "ad9fd2593a366340",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will be a game-time decision on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T19:00:35.509405Z"
+    },
+    {
+      "key": "527f4bb334e5155d436547b6",
+      "url": "https://www.nhl.com/news/blackhawks-connor-bedard-nearing-return-after-full-contact-practice",
+      "fingerprint": "ebf6f82593e07a59",
+      "title_norm": "bedard joins blackhawks for full-contact practice",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T19:00:35.853442Z"
     }
   ],
   "known_sources": [
