@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T20:30:38.981029Z",
+  "updated_at": "2026-10-11T20:45:30.795523Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7352,6 +7352,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T20:30:38.934254Z"
+    },
+    {
+      "key": "6c8444fb25bcc5b1da513690",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "01983a94fc7fd6db",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will not play sunday vs. the kraken.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T20:45:30.681083Z"
     }
   ],
   "known_sources": [
