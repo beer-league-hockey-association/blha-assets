@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T05:15:36.019076Z",
+  "updated_at": "2026-10-11T05:30:34.590708Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7182,6 +7182,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T05:15:35.979110Z"
+    },
+    {
+      "key": "c892f193d2c4916951f1ab9c",
+      "url": "https://www.nhl.com/news/los-angeles-kings-vegas-golden-knights-game-recap-october-10-2026",
+      "fingerprint": "2a22f1574c9229f7",
+      "title_norm": "marner scores in ot, golden knights edge kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T05:30:34.519580Z"
     }
   ],
   "known_sources": [
