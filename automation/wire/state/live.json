@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T22:00:39.082999Z",
+  "updated_at": "2026-10-11T23:00:35.632086Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7372,6 +7372,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T22:00:39.036936Z"
+    },
+    {
+      "key": "006cf616515cf50a62aa8e05",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
+      "fingerprint": "c9254ea38df89b62",
+      "title_norm": "jordan staal (car) — staal (lower-body) will not play sunday in philadelphia.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T23:00:35.522229Z"
     }
   ],
   "known_sources": [
