@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T16:30:34.130681Z",
+  "updated_at": "2026-10-11T18:15:33.920466Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7282,6 +7282,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-11T16:30:34.023542Z"
+    },
+    {
+      "key": "b2780648533d8bfcd9066578",
+      "url": "https://www.dailyfaceoff.com/players/news/travis-konecny/2498",
+      "fingerprint": "699d399f62d60017",
+      "title_norm": "travis konecny (phi) — the flyers have placed travis konecny (lower-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T18:15:33.803605Z"
     }
   ],
   "known_sources": [
