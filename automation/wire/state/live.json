@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T19:30:35.789229Z",
+  "updated_at": "2026-10-11T20:15:37.162917Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7332,6 +7332,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-11T19:30:35.675907Z"
+    },
+    {
+      "key": "96059a3c3bb570c70503b4c8",
+      "url": "https://www.nhl.com/news/ryan-craig-has-write-stuff-to-become-vegas-coach",
+      "fingerprint": "abf94859dd38c0b1",
+      "title_norm": "lessons learned, relationships formed on craig's road to nhl",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-11T20:15:37.074334Z"
     }
   ],
   "known_sources": [
