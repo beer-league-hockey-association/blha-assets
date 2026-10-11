@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T20:15:37.162917Z",
+  "updated_at": "2026-10-11T20:30:38.981029Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7342,6 +7342,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-11T20:15:37.074334Z"
+    },
+    {
+      "key": "e30e53ce1370199579e2a0d9",
+      "url": "https://www.sportsnet.ca/nhl/article/blankys-the-man-blankenburg-earns-maple-leafs-respect-the-hard-way",
+      "fingerprint": "2437d2a3fe8d00ea",
+      "title_norm": "'blanky's the man!': blankenburg earns maple leafs' respect the hard way",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T20:30:38.934254Z"
     }
   ],
   "known_sources": [
