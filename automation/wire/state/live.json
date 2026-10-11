@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T06:30:41.967580Z",
+  "updated_at": "2026-10-11T12:30:35.793658Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7202,6 +7202,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T06:30:41.926497Z"
+    },
+    {
+      "key": "5b51b44e71e08770c2a83326",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-time-for-maple-leafs-to-shift-tavares-to-wing",
+      "fingerprint": "65ae32a266885467",
+      "title_norm": "sunday overreactions: time for maple leafs to shift tavares to wing",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T12:30:35.772492Z"
     }
   ],
   "known_sources": [
