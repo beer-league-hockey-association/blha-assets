@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T16:15:35.304186Z",
+  "updated_at": "2026-10-11T16:30:34.130681Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7262,6 +7262,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T16:15:35.279431Z"
+    },
+    {
+      "key": "7e94a267314cde2ed2c78a3e",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
+      "fingerprint": "05d9f6983fa16c13",
+      "title_norm": "ryan poehling (ana) — poehling (lower-body) left saturday's game vs. calgary and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T16:30:33.624964Z"
+    },
+    {
+      "key": "4614901189939478a8b0df39",
+      "url": "https://www.nhl.com/news/new-jersey-devils-evan-rodrigues-fined-for-high-sticking",
+      "fingerprint": "5fadcde5254bb391",
+      "title_norm": "rodrigues fined maximum of $5,000 for high-sticking",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T16:30:34.023542Z"
     }
   ],
   "known_sources": [
