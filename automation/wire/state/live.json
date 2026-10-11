@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T12:30:35.793658Z",
+  "updated_at": "2026-10-11T16:00:40.998148Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7212,6 +7212,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-11T12:30:35.772492Z"
+    },
+    {
+      "key": "d5e8f77ec231acbdc98f3d04",
+      "url": "https://www.nhl.com/news/trophy-tracker-hart-sharks-macklin-celebrini-early-choice-as-nhl-mvp",
+      "fingerprint": "12e401f1b660644e",
+      "title_norm": "hart tracker: celebrini early-season favorite",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T16:00:40.117886Z"
+    },
+    {
+      "key": "6b921bf68419ac9219c2876d",
+      "url": "https://www.nhl.com/news/topic/short-shifts/chicago-blackhawks-moment-of-silence-for-bears-mike-ditka",
+      "fingerprint": "6c0cfd4c99e9ec03",
+      "title_norm": "blackhawks hold moment of silence for mike ditka",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-11T16:00:40.575524Z"
+    },
+    {
+      "key": "d3598dc6be1d214e12941dbe",
+      "url": "https://www.dailyfaceoff.com/players/news/cameron-crotty/28075",
+      "fingerprint": "5ceeed075db1b18c",
+      "title_norm": "cameron crotty (ott) — crotty (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T16:00:40.927906Z"
     }
   ],
   "known_sources": [
