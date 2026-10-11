@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T18:15:33.920466Z",
+  "updated_at": "2026-10-11T18:45:33.551471Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7292,6 +7292,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-11T18:15:33.803605Z"
+    },
+    {
+      "key": "ede2fad7fba3cf7b867b3262",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
+      "fingerprint": "714812015b926a53",
+      "title_norm": "victor olofsson (vgk) — the golden knights have placed victor olofsson (undisclosed) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-11T18:45:33.463393Z"
     }
   ],
   "known_sources": [
