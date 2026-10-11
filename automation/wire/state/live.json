@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T20:45:30.795523Z",
+  "updated_at": "2026-10-11T22:00:39.082999Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7362,6 +7362,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-11T20:45:30.681083Z"
+    },
+    {
+      "key": "3b664d1b67b0b6aa86c85ed2",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/dc0cd5d4-3848-4564-9648-ae5db1973580",
+      "fingerprint": "b01900bfa6e91eed",
+      "title_norm": "canucks on sportsnet: vancouver vs. new york rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-11T22:00:39.036936Z"
     }
   ],
   "known_sources": [
