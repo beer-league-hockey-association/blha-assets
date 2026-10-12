@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T15:15:38.134285Z",
+  "updated_at": "2026-10-12T15:45:33.449753Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7632,6 +7632,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T15:15:37.859292Z"
+    },
+    {
+      "key": "11782db1870bbd01ffc4f5a1",
+      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
+      "fingerprint": "90d7710efebcbb41",
+      "title_norm": "radek faksa (dal) — faksa (lower-body) is practicing on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T15:45:33.372288Z"
     }
   ],
   "known_sources": [
