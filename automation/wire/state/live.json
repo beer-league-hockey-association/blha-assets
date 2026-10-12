@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-11T23:00:35.632086Z",
+  "updated_at": "2026-10-12T00:15:34.855364Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7382,6 +7382,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-11T23:00:35.522229Z"
+    },
+    {
+      "key": "c7dfeb5269007ab8de175098",
+      "url": "https://www.sportsnet.ca/nhl/article/kraken-overcame-alex-ovechkins-first-goal-of-season-to-beat-capitals",
+      "fingerprint": "1f051f5be2698305",
+      "title_norm": "kraken overcome alex ovechkin's first goal of season to beat capitals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T00:15:34.486093Z"
+    },
+    {
+      "key": "5a87d6908c6b2551e5655036",
+      "url": "https://www.nhl.com/news/seattle-kraken-washington-capitals-game-recap-october-11-2026",
+      "fingerprint": "5e7dc8592c13a074",
+      "title_norm": "kraken overcome ovi's 1st goal of season, top caps",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T00:15:34.796603Z"
     }
   ],
   "known_sources": [
