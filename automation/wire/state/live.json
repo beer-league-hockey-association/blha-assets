@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T16:30:45.402822Z",
+  "updated_at": "2026-10-12T16:45:40.204127Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7702,6 +7702,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T16:30:45.365003Z"
+    },
+    {
+      "key": "4d35d80bda17d9f164c64e83",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-honzek/37733",
+      "fingerprint": "602606af251976ba",
+      "title_norm": "samuel honzek (cgy) — honzek (lower-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:45:39.123373Z"
+    },
+    {
+      "key": "b26cc3474d22c84c6955c555",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-duchene/341",
+      "fingerprint": "b6f54f5b518b795b",
+      "title_norm": "matt duchene (dal) — duchene underwent successful surgery to repair a core injury and is expected to miss the next 3 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:45:39.452146Z"
+    },
+    {
+      "key": "4fd7df69634a03da1f5f6fa4",
+      "url": "https://www.sportsnet.ca/nhl/article/rumour-roundup-latest-on-larkin-hellebuyck-zary-struble",
+      "fingerprint": "dcce8b865e6d36d6",
+      "title_norm": "rumour roundup: latest on larkin, hellebuyck, zary, struble",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:45:39.850342Z"
+    },
+    {
+      "key": "ee16375c89ee88018342672d",
+      "url": "https://www.sportsnet.ca/nhl/article/stars-matt-duchene-out-three-months-after-core-surgery",
+      "fingerprint": "537327706c56dbef",
+      "title_norm": "stars' matt duchene out three months after core surgery",
+      "channel": "breaking-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:45:40.168686Z"
     }
   ],
   "known_sources": [
