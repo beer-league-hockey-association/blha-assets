@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T02:15:33.601816Z",
+  "updated_at": "2026-10-12T03:15:41.382473Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7452,6 +7452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T02:15:33.568687Z"
+    },
+    {
+      "key": "eabd5687d42e4f084c84844f",
+      "url": "https://www.sportsnet.ca/nhl/article/slap-in-the-face-canucks-outworked-overmatched-in-latest-road-trip-loss",
+      "fingerprint": "c01ddb3cab082166",
+      "title_norm": "'slap in the face': canucks outworked, overmatched in latest road-trip loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T03:15:41.334179Z"
     }
   ],
   "known_sources": [
