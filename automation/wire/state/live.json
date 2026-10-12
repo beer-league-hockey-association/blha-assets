@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T19:30:36.278447Z",
+  "updated_at": "2026-10-12T20:15:41.029540Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7942,6 +7942,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T19:30:36.229834Z"
+    },
+    {
+      "key": "bbb8c3224243083f0e060687",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "fd74c4b7cea1d6c6",
+      "title_norm": "rasmus dahlin (buf) — dahlin left monday's game vs. florida with a lower-body injury and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T20:15:40.428766Z"
+    },
+    {
+      "key": "ce43d800f1d3b43c74e701f5",
+      "url": "https://www.nhl.com/news/florida-panthers-buffalo-sabres-game-recap-october-12-2026",
+      "fingerprint": "77a8e4538313992e",
+      "title_norm": "sabres top panthers, lose dahlin to upper-body injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T20:15:40.656871Z"
+    },
+    {
+      "key": "43e5a680771b5fa93eee1488",
+      "url": "https://www.sportsnet.ca/nhl/article/ostlund-scores-go-ahead-goal-in-third-period-in-sabres-win-over-panthers",
+      "fingerprint": "98acd4afab5fc512",
+      "title_norm": "ostlund scores go-ahead goal in third period in sabres' win over panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T20:15:40.984811Z"
     }
   ],
   "known_sources": [
