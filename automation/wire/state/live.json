@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T22:45:38.879178Z",
+  "updated_at": "2026-10-12T23:00:43.363901Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8002,6 +8002,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T22:45:38.763455Z"
+    },
+    {
+      "key": "528ad3d4c1bb69dfd25db072",
+      "url": "https://www.nhl.com/news/matt-duchene-has-surgery-will-be-out-3-months-for-dallas",
+      "fingerprint": "8b477621f3fa7908",
+      "title_norm": "duchene has surgery, will be out 3 months for stars",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T23:00:43.249216Z"
     }
   ],
   "known_sources": [
