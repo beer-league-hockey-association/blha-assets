@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T17:30:38.421254Z",
+  "updated_at": "2026-10-12T17:45:37.930835Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7812,6 +7812,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T17:30:38.381135Z"
+    },
+    {
+      "key": "997c73942e17528bd3f99051",
+      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
+      "fingerprint": "483be9e11547c3d3",
+      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) practiced in full on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:45:37.131189Z"
+    },
+    {
+      "key": "be7e39772d2df5ddaff89a99",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-auston-matthews-named-nhls-first-star-of-week",
+      "fingerprint": "cf9551e00e16d2c6",
+      "title_norm": "maple leafs' auston matthews named nhl's first star of week",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:45:37.383510Z"
+    },
+    {
+      "key": "5682bb3bee3a3e8685cc552f",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "a519b9def50409e9",
+      "title_norm": "connor bedard (chi) — bedard (shoulder) is a game-time decision vs. pittsburgh on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:45:37.673386Z"
+    },
+    {
+      "key": "c6d76c32b6d0806e7c6ccbe2",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-bedard-closing-in-on-return-to-blackhawks",
+      "fingerprint": "830e96c90bb2e1ae",
+      "title_norm": "connor bedard closing in on return to blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:45:37.897032Z"
     }
   ],
   "known_sources": [
