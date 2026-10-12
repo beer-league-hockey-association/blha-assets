@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T04:00:36.984329Z",
+  "updated_at": "2026-10-12T09:14:21.085632Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7482,6 +7482,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-12T04:00:36.909992Z"
+    },
+    {
+      "key": "7c474882467fd277fbeed6e4",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-for-Week-3-e3qbu8e",
+      "fingerprint": "5cba99eaf935f2a4",
+      "title_norm": "puzzling players for week 3",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-12T09:14:21.053446Z"
     }
   ],
   "known_sources": [
