@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T18:00:41.373343Z",
+  "updated_at": "2026-10-12T18:15:41.566303Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7872,6 +7872,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T18:00:41.295361Z"
+    },
+    {
+      "key": "a3ae26c381c94e9b85d3f4e9",
+      "url": "https://www.nhl.com/news/player-poll-breakout-stars-in-frozen-frenzy-2026",
+      "fingerprint": "5f43e471dddcd5a9",
+      "title_norm": "player poll: breakout stars in frozen frenzy",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T18:15:41.465205Z"
     }
   ],
   "known_sources": [
