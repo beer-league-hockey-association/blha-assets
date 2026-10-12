@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T18:45:35.154920Z",
+  "updated_at": "2026-10-12T19:00:40.450346Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7902,6 +7902,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T18:45:35.076864Z"
+    },
+    {
+      "key": "11452a6fa6b5383219a85ca9",
+      "url": "https://www.sportsnet.ca/nhl/article/sabres-rasmus-dahlin-exits-game-against-panthers-with-upper-body-injury",
+      "fingerprint": "daf736188f4f5f65",
+      "title_norm": "sabres' rasmus dahlin exits game against panthers with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T19:00:40.104797Z"
+    },
+    {
+      "key": "12cee8f77fc0f58cf075fd49",
+      "url": "https://www.dailyfaceoff.com/players/news/riley-bezeau/32466",
+      "fingerprint": "3258e9f37f437f61",
+      "title_norm": "riley bezeau (cbj) — bezeau (undisclosed) has been activated off the injured/non-roster list and loaned to cleveland (ahl).",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T19:00:40.388627Z"
     }
   ],
   "known_sources": [
