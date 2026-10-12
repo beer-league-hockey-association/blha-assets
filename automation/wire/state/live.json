@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T03:15:41.382473Z",
+  "updated_at": "2026-10-12T04:00:36.984329Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7462,6 +7462,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T03:15:41.334179Z"
+    },
+    {
+      "key": "4d8e7d956734f6a98ce4da98",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-october-12-2026",
+      "fingerprint": "64a6bc88be96e67d",
+      "title_norm": "nhl nationally televised games for week of oct. 12",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T04:00:36.640518Z"
+    },
+    {
+      "key": "516d1918582c543289204a15",
+      "url": "https://www.nhl.com/news/color-of-hockey-ajeet-gundarah-aiming-to-be-best-goalie-in-the-country",
+      "fingerprint": "d7163721752e93b1",
+      "title_norm": "color of hockey: gundarah aiming to be top ncaa goalie",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T04:00:36.909992Z"
     }
   ],
   "known_sources": [
