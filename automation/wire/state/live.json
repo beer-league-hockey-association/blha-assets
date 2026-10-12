@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T01:00:41.018813Z",
+  "updated_at": "2026-10-12T01:15:36.830188Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7412,6 +7412,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-12T01:00:40.919273Z"
+    },
+    {
+      "key": "6fb68d6a95bebafe5f896a09",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-sunk-by-three-third-period-goals-in-loss-to-rangers",
+      "fingerprint": "a7097fe566552134",
+      "title_norm": "canucks sunk by three third-period goals in loss to rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T01:15:36.783239Z"
     }
   ],
   "known_sources": [
