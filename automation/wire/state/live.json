@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T16:45:40.204127Z",
+  "updated_at": "2026-10-12T17:00:41.198460Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7742,6 +7742,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T16:45:40.168686Z"
+    },
+    {
+      "key": "559a3cee78aabb16dbaca9ba",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/ee61d77c-9531-491d-bf23-309a05617d67",
+      "fingerprint": "c9ab621773a942ba",
+      "title_norm": "nhl on sportsnet: sabres vs. panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:00:41.176859Z"
     }
   ],
   "known_sources": [
