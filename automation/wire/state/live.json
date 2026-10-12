@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T11:00:45.506782Z",
+  "updated_at": "2026-10-12T13:00:43.817486Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7502,6 +7502,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T11:00:45.404769Z"
+    },
+    {
+      "key": "1a1c6bf7ffaf7d60287fc9d0",
+      "url": "https://www.sportsnet.ca/nhl/longform/an-oral-history-of-matthews-historic-four-goal-debut-one-of-those-nights",
+      "fingerprint": "3c6153f49324b416",
+      "title_norm": "an oral history of matthews' historic four-goal debut: 'one of those nights'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T13:00:43.796339Z"
     }
   ],
   "known_sources": [
