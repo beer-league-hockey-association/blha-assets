@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T18:15:41.566303Z",
+  "updated_at": "2026-10-12T18:45:35.154920Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7882,6 +7882,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-12T18:15:41.465205Z"
+    },
+    {
+      "key": "7259e10a80d17937b4017475",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "df30521f0a22a0e0",
+      "title_norm": "rasmus dahlin (buf) — dahlin (upper-body) left monday's game vs. florida and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T18:45:34.211448Z"
+    },
+    {
+      "key": "ee8ee39eb36478127e50470e",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "2ab379721318784e",
+      "title_norm": "chris tanev (tor) — tanev (upper-body) has been placed on ir retroactive to october 10th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T18:45:35.076864Z"
     }
   ],
   "known_sources": [
