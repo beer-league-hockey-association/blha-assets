@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T16:15:33.808836Z",
+  "updated_at": "2026-10-12T16:30:45.402822Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7672,6 +7672,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T16:15:33.730260Z"
+    },
+    {
+      "key": "aad87c8be0cf906f4ed6b52d",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "5f1846295ba7d3a2",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will not travel with washington to carolina.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:30:44.744187Z"
+    },
+    {
+      "key": "71b5a6face5a1b25fd809ca2",
+      "url": "https://www.dailyfaceoff.com/players/news/j-t-compher/2751",
+      "fingerprint": "9111ecc8ce642265",
+      "title_norm": "j.t. compher (det) — compher (undisclosed) practiced on monday and has a chance to return vs. new jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:30:45.013520Z"
+    },
+    {
+      "key": "2357dc45941b8e9c567295f8",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-goalie-ullmark-to-start-vs-devils-as-zub-sanderson-remain-out",
+      "fingerprint": "1037df381be96daa",
+      "title_norm": "senators goalie ullmark to start vs. devils as zub, sanderson remain out",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:30:45.365003Z"
     }
   ],
   "known_sources": [
