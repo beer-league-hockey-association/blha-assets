@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T19:15:40.500269Z",
+  "updated_at": "2026-10-12T19:30:36.278447Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7932,6 +7932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T19:15:40.394204Z"
+    },
+    {
+      "key": "861be21202ecbd9aec26c29c",
+      "url": "https://www.dailyfaceoff.com/players/news/barclay-goodrow/2395",
+      "fingerprint": "190e3af5345152d4",
+      "title_norm": "barclay goodrow (sjs) — goodrow (illness) missed practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T19:30:36.229834Z"
     }
   ],
   "known_sources": [
