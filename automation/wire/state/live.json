@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T13:15:34.486483Z",
+  "updated_at": "2026-10-12T14:15:43.150473Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7522,6 +7522,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T13:15:34.461577Z"
+    },
+    {
+      "key": "41e53449148ca88ced482588",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-st-louis-hughes-stoking-internal-competition",
+      "fingerprint": "7a6fd431f435a9d3",
+      "title_norm": "canadiens' st. louis, hughes stoking internal competition",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T14:15:43.127841Z"
     }
   ],
   "known_sources": [
