@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T14:15:43.150473Z",
+  "updated_at": "2026-10-12T14:30:39.323000Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7532,6 +7532,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T14:15:43.127841Z"
+    },
+    {
+      "key": "28c8b2576627630c3d3d25e2",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
+      "fingerprint": "fbcab442c3ecb699",
+      "title_norm": "connor brown (njd) — brown (lower-body) has been placed on ir retroactive to september 28th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T14:30:38.695329Z"
+    },
+    {
+      "key": "b1e702a63be8fb56de37e9a9",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "3c4dba8ef7e9bf16",
+      "title_norm": "matt roy (wsh) — roy (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T14:30:38.987247Z"
+    },
+    {
+      "key": "5224b14bf6bdf3555cf13d11",
+      "url": "https://www.sportsnet.ca/nhl/video/how-matthews-return-to-form-acts-as-rising-tide-for-maple-leafs",
+      "fingerprint": "2379f80b152e4644",
+      "title_norm": "how matthews' return to form acts as rising tide for maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T14:30:39.280308Z"
     }
   ],
   "known_sources": [
