@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T17:45:37.930835Z",
+  "updated_at": "2026-10-12T18:00:41.373343Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7852,6 +7852,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T17:45:37.897032Z"
+    },
+    {
+      "key": "cf3092642cc86bfcc00c68f0",
+      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
+      "fingerprint": "46f0a6abedc7020e",
+      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) practiced, but did not take part in line rushes on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T18:00:41.021637Z"
+    },
+    {
+      "key": "493699c2fea5c96bc086ac23",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-van-riemsdyk/2383",
+      "fingerprint": "42bcda6219c536b6",
+      "title_norm": "trevor van riemsdyk (pit) — van riemsdyk (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T18:00:41.295361Z"
     }
   ],
   "known_sources": [
