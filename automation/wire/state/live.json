@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T00:15:34.855364Z",
+  "updated_at": "2026-10-12T01:00:41.018813Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7402,6 +7402,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-12T00:15:34.796603Z"
+    },
+    {
+      "key": "6d0a1761b04023b45cfdb982",
+      "url": "https://www.nhl.com/news/vancouver-canucks-new-york-rangers-game-recap-october-11-2026",
+      "fingerprint": "9bc6efc82a7ce728",
+      "title_norm": "garand makes 19 saves, rangers defeat canucks in first game without shesterkin",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T01:00:40.919273Z"
     }
   ],
   "known_sources": [
