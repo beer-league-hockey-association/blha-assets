@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T23:00:43.363901Z",
+  "updated_at": "2026-10-12T23:30:39.956114Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8012,6 +8012,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-12T23:00:43.249216Z"
+    },
+    {
+      "key": "cf2c5d2b42cba2271f6f7999",
+      "url": "https://www.dailyfaceoff.com/players/news/parker-wotherspoon/3836",
+      "fingerprint": "816ec9718f97814b",
+      "title_norm": "parker wotherspoon (vgk) — wotherspoon will be out week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T23:30:38.617171Z"
+    },
+    {
+      "key": "3e192953a7dcea4d1a4a206a",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/da094622-d01a-43d6-a580-9429632707e7",
+      "fingerprint": "db3155618dcf87c2",
+      "title_norm": "monday night hockey on sportsnet: senators vs. devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T23:30:39.610112Z"
+    },
+    {
+      "key": "a374985e56ad167bad4d1426",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-notebook-chris-tanev-injury-leaves-questions",
+      "fingerprint": "e2b7e3ce8c6bf3ed",
+      "title_norm": "maple leafs notebook: chris tanev injury leaves questions",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T23:30:39.910304Z"
     }
   ],
   "known_sources": [
