@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T19:00:40.450346Z",
+  "updated_at": "2026-10-12T19:15:40.500269Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7922,6 +7922,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T19:00:40.388627Z"
+    },
+    {
+      "key": "e0eea63928965badd07c1320",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-re-joins-team-in-utah-after-birth-of-son",
+      "fingerprint": "9955a6022325d720",
+      "title_norm": "maple leafs' john tavares re-joins team in utah after birth of son",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T19:15:40.394204Z"
     }
   ],
   "known_sources": [
