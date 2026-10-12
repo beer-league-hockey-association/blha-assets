@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T13:00:43.817486Z",
+  "updated_at": "2026-10-12T13:15:34.486483Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7512,6 +7512,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T13:00:43.796339Z"
+    },
+    {
+      "key": "2a632736db2b47400a612eb5",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/a-stuffed-weekend",
+      "fingerprint": "c5e3f02fa15d58bc",
+      "title_norm": "32 thoughts podcast: a stuffed weekend",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T13:15:34.461577Z"
     }
   ],
   "known_sources": [
