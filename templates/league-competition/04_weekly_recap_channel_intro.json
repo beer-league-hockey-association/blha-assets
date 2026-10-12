@@ -28,6 +28,11 @@
           "inline": false
         },
         {
+          "name": "MONTHLY AWARDS",
+          "value": "Manager of the Month and the other Monthly Awards after each month, plus a post whenever a franchise claims a Season bounty. Recognition only: a role and a mention, never FAAB or picks.",
+          "inline": false
+        },
+        {
           "name": "OFFICIAL RESULTS",
           "value": "Results are pulled directly from Fantrax. Questions about a score go to the Commissioner's Office.",
           "inline": false

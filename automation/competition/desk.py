@@ -10,13 +10,26 @@ league.yaml), posts in order:
 3. Power Rankings after that week (📰│weekly-recap)
 4. League standings after that week
 5. Playoff race (from playoff_race_start_week through the last regular week)
-6. Matchup preview for the week that starts that evening (scoreboard channel)
+6. Matchup preview for the week that starts that evening, with each
+   matchup's projected games (schedule edge, edge.py) when rosters are filled
+   (scoreboard channel)
 7. NHL games grid for that week, for planning daily lineups (scoreboard channel)
 8. The Wooden Spoon for the last-place franchise, once, with the final
    regular-season standings (📰│weekly-recap; competition.wooden_spoon)
 
-All-play, awards and power rankings are computed from Fantrax matchup scores
-(see weekly.py); the games grid reads the NHL schedule API (blha/nhl.py).
+Also in 📰│weekly-recap, right after the power rankings:
+
+- Monthly Awards (monthly.py; competition.monthly_awards), the morning the
+  first week ending in a new month is reported, for the month before; the
+  season's last month goes out with the final regular-season week.
+- Bounty claims (bounties.py; competition.bounties), each announced once per
+  Season. Team bounties are checked when a week is final; the hat-trick bounty
+  is checked every run against the NHL scores of nights not checked yet, so a
+  claim goes out the morning after.
+
+All-play, awards, power rankings (with the Luck Index), monthly awards and
+team bounties are computed from Fantrax matchup scores (see weekly.py); the
+games grid reads the NHL schedule API (blha/nhl.py).
 
 Standings and the playoff race wait until Fantrax has counted the finished
 week in its standings. If Fantrax is not ready at 8:00 AM, those two go out
@@ -42,8 +55,14 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 sys.path.insert(0, str(ROOT))
+if str(ROOT.parent / "wire") not in sys.path:
+    sys.path.append(str(ROOT.parent / "wire"))  # after ours, so wire never shadows a desk module
 
+import bounties  # noqa: E402
+import edge  # noqa: E402
+import monthly  # noqa: E402
 import render  # noqa: E402
+import roster  # noqa: E402  (wire/roster.py: match NHL scorers to BLHA rosters)
 import weekly  # noqa: E402
 from blha import nhl, season  # noqa: E402
 from blha.fantrax import Fantrax, games_counted, schedule_for  # noqa: E402
@@ -51,11 +70,13 @@ from blha.league import color_value, load_json, load_league, save_json, timezone
 from discord_webhook import send_discord_webhook  # noqa: E402
 
 STATE_PATH = ROOT / "state" / "competition.json"
-ITEMS = ("recap", "awards", "rankings", "standings", "race", "preview", "games", "spoon")
+ITEMS = ("recap", "awards", "rankings", "monthly", "bounties", "standings", "race", "preview", "games", "spoon")
 STATE_KEYS = {
     "recap": "recap_week",
     "awards": "awards_week",
     "rankings": "rankings_week",
+    "monthly": "monthly_week",    # last week of the latest month posted
+    "bounties": "bounties_week",  # last final week checked for team bounties
     "standings": "standings_week",
     "race": "race_week",
     "preview": "preview_week",
@@ -102,6 +123,44 @@ def migrate_state(state: dict[str, Any]) -> dict[str, Any]:
     return state
 
 
+def migrate_monthly(state: dict[str, Any], info: dict[str, Any], tz: ZoneInfo, comp: dict[str, Any]) -> None:
+    """State saved before Monthly Awards existed: months already reported count as posted."""
+    if comp.get("monthly_awards") and "monthly_week" not in state:
+        last_regular, _, _ = season.playoff_settings(info)
+        groups = monthly.month_groups(info, tz, last_regular)
+        state["monthly_week"] = monthly.posted_baseline(groups, int(state.get("recap_week") or 0))
+
+
+def bounties_due(
+    info: dict[str, Any],
+    state: dict[str, Any],
+    now: datetime,
+    tz: ZoneInfo,
+    comp: dict[str, Any],
+    done_week: int,
+) -> bool:
+    """Whether an open bounty has something new to check: a newly final week
+    (team bounties) or a finished NHL night (the hat-trick bounty)."""
+    configured, _ = bounties.load_bounties(comp)
+    saved = bounty_state(state)
+    still_open = [b for b in configured if b.id not in saved["claimed"]]
+    if done_week and int(state.get("bounties_week") or 0) < done_week and any(
+            b.type in bounties.TEAM_TYPES for b in still_open):
+        return True
+    if any(b.type == bounties.PLAYER_HAT_TRICK for b in still_open):
+        last_regular, _, _ = season.playoff_settings(info)
+        return bool(bounties.nights_to_check(info, tz, now, last_regular, saved["hat_trick_through"], limit=1))
+    return False
+
+
+def bounty_state(state: dict[str, Any]) -> dict[str, Any]:
+    """The saved bounty state: {"claimed": {id: claim}, "hat_trick_through": "YYYY-MM-DD" | None}."""
+    raw = state.get("bounties") if isinstance(state.get("bounties"), dict) else {}
+    claimed = raw.get("claimed") if isinstance(raw.get("claimed"), dict) else {}
+    through = raw.get("hat_trick_through")
+    return {"claimed": claimed, "hat_trick_through": str(through) if through else None}
+
+
 def _report_time(comp: dict[str, Any]) -> time:
     hour, minute = (int(x) for x in str(comp.get("report_time") or "08:00").split(":", 1))
     return time(hour, minute)
@@ -133,6 +192,20 @@ def plan_report(
             if posted_week(state, item) < week:
                 plan.posts.append(Plan(item, week))
 
+        if comp.get("monthly_awards"):
+            groups = monthly.month_groups(info, tz, last_regular)
+            if "monthly_week" in state:
+                posted = int(state.get("monthly_week") or 0)
+            else:
+                posted = monthly.posted_baseline(groups, int(state.get("recap_week") or 0))
+            due = monthly.due_groups(groups, week, posted)
+            if not state:  # --force: repost the latest month only
+                due = due[-1:]
+            plan.posts.extend(Plan("monthly", g.last_week) for g in due)
+
+        if bounties_due(info, state, now, tz, comp, week):
+            plan.posts.append(Plan("bounties", week))
+
         if int(state.get("standings_week") or 0) < week:
             if standings_ready:
                 plan.posts.append(Plan("standings", week))
@@ -152,6 +225,8 @@ def plan_report(
                 plan.posts.append(Plan("race", week))
             else:
                 plan.notes.append("playoff race waits for standings")
+    elif bounties_due(info, state, now, tz, comp, 0):
+        plan.posts.append(Plan("bounties", 0))  # Week 1 not final yet: hat-trick check only
 
     upcoming = season.upcoming_period(info, now, tz)
     if upcoming and upcoming.number <= last_regular:
@@ -222,6 +297,15 @@ class Desk:
         self.saved_state = saved_state if saved_state is not None else load_json(STATE_PATH, {})
         self.nhl_get = nhl_get
         self.ranks: dict[int, dict[str, int]] = {}
+        # Set by run(): "preview", "test" or "live", and in live mode the state
+        # being written (bounty claims are read from it).
+        self.mode = "preview"
+        self.live_state: dict[str, Any] | None = None
+        self.bounty_update: dict[str, Any] | None = None
+        self.notes: list[str] = []
+        self._nhl: dict[tuple, list] = {}
+        self._rosters: dict[str, Any] | None = None
+        self._players: dict[str, Any] | None = None
 
     def scores(self, week: int) -> list[dict]:
         if week not in self._scores:
@@ -244,12 +328,152 @@ class Desk:
     def webhook(self, item: str) -> str:
         hooks = self.comp.get("webhooks") or {}
         key = {"race": "playoff_race"}.get(item, item)
-        fallback = {"awards": "recap", "rankings": "recap", "games": "preview"}.get(item, "")
+        fallback = {"awards": "recap", "rankings": "recap", "games": "preview",
+                    "monthly": "recap", "bounties": "recap"}.get(item, "")
         return str(hooks.get(key) or hooks.get(fallback) or "")
 
-    def games_grid(self, p: season.Period) -> dict[str, Any] | None:
+    # --- Shared reads (each fetched once per run) ---------------------------------
+
+    def nhl_schedule(self, p: season.Period) -> list[nhl.Game]:
         first, last = p.start.astimezone(self.tz).date(), p.end.astimezone(self.tz).date()
-        games = nhl.fetch_schedule(first, last, self.tz, self.nhl_get)
+        if (first, last) not in self._nhl:
+            self._nhl[(first, last)] = nhl.fetch_schedule(first, last, self.tz, self.nhl_get)
+        return self._nhl[(first, last)]
+
+    def roster_data(self) -> dict[str, Any]:
+        if self._rosters is None:
+            self._rosters = self.fx.rosters()
+        return self._rosters
+
+    def player_directory(self) -> dict[str, Any]:
+        if self._players is None:
+            self._players = self.fx.player_ids()
+        return self._players
+
+    def rosters_empty(self) -> bool:
+        block = self.roster_data().get("rosters")
+        if not isinstance(block, dict):
+            raise ValueError("getTeamRosters has no rosters object")
+        return not any((team or {}).get("rosterItems") for team in block.values() if isinstance(team, dict))
+
+    # --- Schedule edge (matchup preview) ------------------------------------------
+
+    def goalie_cap(self, p: season.Period) -> int:
+        return season.goalie_start_cap(p, int(self.comp.get("goalie_starts_per_week") or season.GOALIE_STARTS_PER_WEEK))
+
+    def light_max(self) -> int:
+        return int(self.comp.get("light_night_max_teams") or nhl.LIGHT_NIGHT_MAX_TEAMS)
+
+    def schedule_edge(self, p: season.Period) -> dict[str, edge.Projection] | None:
+        """teamId -> projected games for the week, or None to leave the line out.
+
+        Never raises: an empty roster, a Fantrax error or an NHL schedule error
+        only drops the projection from the preview.
+        """
+        try:
+            if self.rosters_empty():
+                self.notes.append("schedule edge left out: every BLHA roster is empty")
+                return None
+            squads = edge.lineup_players(self.roster_data(), self.player_directory())
+            if not squads:
+                self.notes.append("schedule edge left out: no lineup players found")
+                return None
+            found = edge.projections(squads, self.nhl_schedule(p), p.start, p.end, self.tz,
+                                     goalie_cap=self.goalie_cap(p), light_max=self.light_max())
+            if not found:
+                self.notes.append("schedule edge left out: no NHL regular-season games this week")
+            return found or None
+        except Exception as exc:
+            self.notes.append(f"schedule edge left out: {exc}")
+            return None
+
+    # --- Monthly awards -------------------------------------------------------------
+
+    def monthly_post(self, week: int) -> dict[str, Any] | None:
+        """Awards for the month containing ``week``, through that week."""
+        groups = monthly.month_groups(self.info, self.tz, self.last_regular)
+        group = monthly.group_for(groups, week)
+        if group is None:
+            return None  # playoff weeks have no monthly awards
+        numbers = [w for w in group.weeks if w <= week]
+        result = monthly.monthly_awards({w: self.scores(w) for w in numbers},
+                                        monthly.multi_week_periods(self.info, numbers))
+        first, last = season.period(self.info, numbers[0]), season.period(self.info, numbers[-1])
+        span = season.Period(0, first.start, last.end)
+        return render.monthly_awards(self.ctx, group, span, result, month_to_date=week < group.last_week)
+
+    # --- Bounties -------------------------------------------------------------------
+
+    def hat_trick_check(self, bounty: bounties.Bounty, now: datetime, through: str | None) -> bounties.HatTrickCheck:
+        nights = bounties.nights_to_check(self.info, self.tz, now, self.last_regular, through)
+        if not nights:
+            return bounties.HatTrickCheck()
+        try:
+            if self.rosters_empty():
+                # Nobody is rostered, so nobody can be credited for these nights.
+                return bounties.HatTrickCheck(checked_through=nights[-1])
+            index = roster.build_index(self.roster_data(), self.player_directory())
+        except Exception as exc:
+            self.notes.append(f"hat-trick check skipped, Fantrax rosters unavailable: {exc}")
+            return bounties.HatTrickCheck()
+
+        def owner_of(name: str, team: str) -> tuple[str, str] | None:
+            player = index.match(name, team)
+            return (player.owner_id, player.owner_name) if player else None
+
+        get = self.nhl_get or nhl.http_get_json
+        check = bounties.find_hat_trick(bounty, nights, lambda night: get(nhl.SCORE_URL.format(date=night.isoformat())),
+                                        owner_of)
+        self.notes.extend(f"hat-trick check: {note}" for note in check.notes)
+        return check
+
+    def bounty_post(self, week: int, now: datetime) -> dict[str, Any] | None:
+        """Live: new claims only (None when nothing new). Preview/test: the
+        Bounty Board, every claim so far plus where the open bounties stand."""
+        self.bounty_update = None
+        configured, errors = bounties.load_bounties(self.comp)
+        self.notes.extend(f"bounty config: {e}" for e in errors)
+        if not configured:
+            return None
+        state = self.live_state if self.live_state is not None else self.saved_state
+        saved = bounty_state(state)
+        claimed = {k: c for k, c in ((k, bounties.Claim.from_dict(v)) for k, v in saved["claimed"].items()) if c}
+        still_open = [b for b in configured if b.id not in claimed]
+
+        week = min(week, self.last_regular)
+        checked_week = int(state.get("bounties_week") or 0)
+        numbers = list(range(1, week + 1))
+        long_weeks = monthly.multi_week_periods(self.info, numbers)
+        fresh: dict[str, bounties.Claim] = {}
+        if self.mode != "live" or week > checked_week:
+            fresh = bounties.team_claims([b for b in still_open if b.type in bounties.TEAM_TYPES],
+                                         self.season_weeks(week), long_weeks)
+
+        through = saved["hat_trick_through"]
+        hat = next((b for b in still_open if b.type == bounties.PLAYER_HAT_TRICK), None)
+        if hat:
+            check = self.hat_trick_check(hat, now, through)
+            if check.checked_through:
+                through = check.checked_through.isoformat()
+            if check.claim:
+                fresh[hat.id] = check.claim
+        for claim in fresh.values():
+            claim.claimed_at = now.isoformat()
+
+        everything = {**claimed, **fresh}
+        self.bounty_update = {"claimed": {k: c.to_dict() for k, c in everything.items()}, "hat_trick_through": through}
+        shown = fresh if self.mode == "live" else everything
+        pairs = [(b, shown[b.id]) for b in configured if b.id in shown]
+        if self.mode == "live" and not pairs:
+            return None
+        # Read lazily: a daily hat-trick check with nothing new never re-reads every week.
+        weeks = self.season_weeks(week) if week >= 1 else {}
+        open_now = [(b, bounties.progress(b, weeks, long_weeks)) for b in configured if b.id not in everything]
+        return render.bounties(self.ctx, pairs, open_now,
+                               nhl_data=any(b.type == bounties.PLAYER_HAT_TRICK for b, _ in pairs))
+
+    def games_grid(self, p: season.Period) -> dict[str, Any] | None:
+        games = self.nhl_schedule(p)
         if not games:
             raise ValueError("the NHL schedule API returned no games at all; its response shape may have changed")
         grid = nhl.week_grid(
@@ -263,6 +487,8 @@ class Desk:
 
     def build(self, item: str, week: int, now: datetime) -> dict[str, Any] | None:
         """The Discord payload, or None when there is nothing to post."""
+        if item == "bounties":
+            return self.bounty_post(week, now)  # week 0: before Week 1 is final
         p = season.period(self.info, week)
         if p is None:
             raise ValueError(f"Fantrax has no week {week}")
@@ -303,9 +529,13 @@ class Desk:
             else:
                 records = records_with_week(self.rows, self.scores(needed))
                 ranks_shown = False
-            return render.preview(self.ctx, p, pairs, records, ranks_shown=ranks_shown)
+            return render.preview(self.ctx, p, pairs, records, ranks_shown=ranks_shown,
+                                  projections=self.schedule_edge(p), goalie_cap=self.goalie_cap(p),
+                                  light_max=self.light_max())
         if item == "games":
             return self.games_grid(p)
+        if item == "monthly":
+            return self.monthly_post(week)
         raise ValueError(f"unknown item {item}")
 
     def default_week(self, item: str, now: datetime) -> int:
@@ -315,6 +545,11 @@ class Desk:
         if item in ("preview", "games"):
             up = season.upcoming_period(self.info, now, self.tz) or active
             return up.number if up else 1
+        if item == "monthly" and done:
+            # The latest month whose awards are due; else this month to date.
+            groups = monthly.month_groups(self.info, self.tz, self.last_regular)
+            ready = [g for g in groups if g.report_week <= done.number]
+            return ready[-1].last_week if ready else done.number
         if done:
             return done.number
         return active.number if active else 1
@@ -332,6 +567,8 @@ def record_post(state: dict[str, Any], desk: Desk, post: Plan, now: datetime) ->
     state[key] = max(int(state.get(key) or 0), post.week)
     if post.item == "rankings" and post.week in desk.ranks:
         remember_ranks(state, post.week, desk.ranks[post.week])
+    if post.item == "bounties" and desk.bounty_update is not None:
+        state["bounties"] = desk.bounty_update
     state["updated_at"] = now.isoformat()
     save_json(STATE_PATH, state)
 
@@ -353,8 +590,11 @@ def run(
         f"season={season.describe(desk.info, now)} counted_weeks={games_counted(desk.rows)}"
     )
 
+    desk.mode = mode
     if mode == "live":
         state = migrate_state(load_json(STATE_PATH, {}))
+        migrate_monthly(state, desk.info, desk.tz, desk.comp)
+        desk.live_state = state
         planning_state = {} if force else state
         plan = plan_report(desk.info, desk.rows, planning_state, now, desk.tz, desk.comp)
         posts = [p for p in plan.posts if p.item in items]
@@ -373,6 +613,10 @@ def run(
             print(f"ERROR   {label}: could not build: {exc}")
             errors += 1
             continue
+        finally:
+            for note in desk.notes:
+                print(f"NOTE    {label}: {note}")
+            desk.notes.clear()
 
         if payload is None:
             print(f"SKIPPED {label}: nothing to post (no scores yet, or no NHL regular-season games)")

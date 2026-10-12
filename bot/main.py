@@ -3,7 +3,8 @@
 
 Environment:
   DISCORD_TOKEN              bot token from the Discord Developer Portal (required)
-  BLHA_DB_PATH               SQLite file, on a Railway volume (default /data/blha_votes.db)
+  BLHA_DB_PATH               SQLite file, on a Railway volume (default /data/blha_votes.db);
+                             the Awards export blha_awards.json is written next to it
   BLHA_BOT_CONFIG            settings file (default bot/config.yaml)
   BLHA_LEDGER_CLEARANCE_CSV  published-CSV link of the League Ledger's Pick Clearance tab
                              (/myteam "Paid through" and /tradecheck prepayment); optional

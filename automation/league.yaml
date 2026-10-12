@@ -40,13 +40,82 @@ competition:
   # under owners). Set false to stop it.
   wooden_spoon: true
 
+  # Monthly Awards in 📰│weekly-recap (Manager of the Month, Best Record,
+  # Biggest Single Week, Hard Luck), from Fantrax matchup scores. A week counts
+  # for the month its last night (Sunday, Constitution 5.8) falls in; a
+  # month's awards go out the morning the first week of the next month is
+  # reported, and the season's last month
+  # with the final regular-season week. The Manager of the Month holds the
+  # "📅 Manager of the Month" Discord role until the next award (the
+  # Commissioner moves the role by hand). Set false to stop it.
+  monthly_awards: true
+
+  # Season bounties: one-time goals announced in 📰│weekly-recap when first
+  # reached. Each is claimed once per Season. Rewards are recognition only
+  # (a Discord role, a mention); FAAB, picks, the draft, dues or money are
+  # rejected. The Commissioner gives the role by hand.
+  #
+  #   id           unique key kept in the saved state; do not rename mid-season
+  #   title        short name shown in Discord
+  #   description  one line on what it takes
+  #   type         team_season_points  first franchise to reach `threshold` season points
+  #                team_week_points    first single week of at least `threshold` points
+  #                                    (periods longer than one calendar week do not count)
+  #                team_win_streak     first to `threshold` head-to-head wins in a row
+  #                                    (a tie ends a streak)
+  #                player_hat_trick    first NHL regular-season game in which a player on a
+  #                                    BLHA roster scores `threshold` goals (3 = hat trick;
+  #                                    shootout goals do not count); checked the morning after
+  #   threshold    the number to reach
+  #   reward       optional; default "🎯 Bounty Hunter role for the Season"
+  #
+  # Default thresholds come from the scoring values (Article VIII): 18 skater
+  # slots filled on most nights from a 26-player roster is about 65 skater
+  # games a week at roughly 3.7 points (rostered skaters are above the ~3.2
+  # league average), plus 4 goalie starts at about 5 points, so a typical team
+  # week is about 250 to 300 points (week to week about +/-40) and a season
+  # about 5,800 to 6,500. Simulated over many seasons at that level:
+  #   375 in a week    claimed in ~90% of seasons, typically around Week 6
+  #   6 straight wins  claimed in ~95% of seasons, typically around Week 8
+  #   6,000 points     the front-runner gets there around Week 20
+  #   hat trick        usually within the first week or two
+  # If real scoring runs higher (300+ a week), 375 goes early; raise it to 400.
+  bounties:
+    - id: first-hat-trick
+      title: "First Hat Trick"
+      description: "First BLHA-rostered player to score three goals in an NHL regular-season game."
+      type: player_hat_trick
+      threshold: 3
+      reward: "🎯 Bounty Hunter role for the Season"
+    - id: big-week-375
+      title: "The 375 Club"
+      description: "First franchise to score 375 points in a single week."
+      type: team_week_points
+      threshold: 375
+      reward: "🎯 Bounty Hunter role for the Season"
+    - id: hot-streak-6
+      title: "Six Straight"
+      description: "First franchise to win six head-to-head matchups in a row."
+      type: team_win_streak
+      threshold: 6
+      reward: "🎯 Bounty Hunter role for the Season"
+    - id: season-6000
+      title: "Six Thousand"
+      description: "First franchise to reach 6,000 season points."
+      type: team_season_points
+      threshold: 6000
+      reward: "🎯 Bounty Hunter role for the Season"
+
   # GitHub Actions secret holding each channel's Discord webhook URL.
-  # awards and rankings go to 📰│weekly-recap with the recap; games (the NHL
-  # games grid) goes to the scoreboard channel with the matchup preview.
+  # awards, rankings, monthly (Monthly Awards) and bounties go to
+  # 📰│weekly-recap with the recap; games (the NHL games grid) goes to the
+  # scoreboard channel with the matchup preview.
   webhooks:
     recap: BLHA_WEBHOOK_WEEKLY_RECAP
     awards: BLHA_WEBHOOK_WEEKLY_RECAP
     rankings: BLHA_WEBHOOK_WEEKLY_RECAP
+    monthly: BLHA_WEBHOOK_WEEKLY_RECAP
+    bounties: BLHA_WEBHOOK_WEEKLY_RECAP
     standings: BLHA_WEBHOOK_STANDINGS
     playoff_race: BLHA_WEBHOOK_PLAYOFF_RACE
     preview: BLHA_WEBHOOK_SCOREBOARD
@@ -102,6 +171,53 @@ starting_goalies:
   post_from: "11:00"
 
 # ---------------------------------------------------------------------------
+# Morning Skate (automation/media/)
+#
+# Every morning after a night with NHL games (regular season and playoffs),
+# 📸│media gets last night's scores with NHL.com recap and condensed-game
+# links, the BLHA Goal Reel (goals and assists by players on BLHA rosters,
+# with clip links; left out when nobody scored) and a few YouTube highlight
+# videos. Links only, nothing is re-uploaded. Nobody is pinged.
+# enabled:           false stops the scheduled posts (manual preview/test
+#                    runs still work).
+# webhook:           GitHub Actions secret holding the 📸│media webhook URL
+#                    (the same one the Wire's podcast posts use).
+# post_time:         earliest local time the morning post goes out. The
+#                    scheduler starts the job at 08:30
+#                    (automation/scheduler/schedule.yaml); keep them in step.
+# max_youtube:       how many YouTube highlight videos to post (0 to 10). The
+#                    games with the most BLHA goals + assists go first, then
+#                    overtime/shootout games, then the highest-scoring games.
+# include_goal_reel: false leaves out the Goal Reel (no Fantrax roster read).
+morning_skate:
+  enabled: true
+  webhook: BLHA_WEBHOOK_MEDIA
+  post_time: "08:30"
+  max_youtube: 3
+  include_goal_reel: true
+
+# Playoff Pool (automation/playoff_pool/)
+#
+# A free NHL playoff box pool for the owners in 🏒│game-day during the NHL
+# playoffs. Just for fun: no money and no effect on the fantasy league. The
+# winner gets the Pool Shark role for next season and a line in the league
+# history. Entries: automation/playoff_pool/entries.yaml.
+# webhook:          GitHub Actions secret holding the 🏒│game-day webhook URL.
+# players_per_box:  skaters in each of boxes 1-9 (2 to 10).
+# min_games:        regular-season games a skater needs to be boxed.
+# dark_horse_gap:   skaters skipped after box 8 before box 9 (Dark Horses).
+# standings_time:   earliest local time the daily standings are posted.
+# entries_via:      dm = owners DM their picks to the Commissioner;
+#                   bot = owners use /pool pick (once the League Bot is live).
+playoff_pool:
+  webhook: BLHA_WEBHOOK_GAME_DAY
+  players_per_box: 8
+  min_games: 20
+  dark_horse_gap: 8
+  standings_time: "07:30"
+  entries_via: dm
+
+# ---------------------------------------------------------------------------
 # Commissioner Desk (private reminders for the commissioner's manual work)
 #
 # webhook:      GitHub Actions secret holding the private channel's webhook URL.
@@ -110,6 +226,22 @@ starting_goalies:
 commissioner_desk:
   webhook: BLHA_WEBHOOK_COMMISSIONER_DESK
   ping_user_id: "1059135310132424814"
+
+# ---------------------------------------------------------------------------
+# Trade Desk (automation/trades/)
+#
+# Every trade Fantrax processes gets a report card in 💬│trade-discussion with
+# a "Who won the trade?" poll (just for fun; it never affects the trade,
+# Article XI), and a revisit 6 and 12 months later. On trade-deadline day the
+# BLHA DEADLINE DAY TRADE CENTER tracker in 📢│announcements counts down to the deadline.
+# webhooks:   GitHub Actions secrets holding each channel's webhook URL. A
+#             missing secret skips that post without failing the run.
+# poll_hours: how long the poll stays open.
+trade_desk:
+  webhooks:
+    discussion: BLHA_WEBHOOK_TRADE_DISCUSSION
+    announcements: BLHA_WEBHOOK_LEAGUE_ANNOUNCEMENTS
+  poll_hours: 72
 
 # ---------------------------------------------------------------------------
 # Draft Center (automation/draft/)

@@ -1,7 +1,8 @@
 """Cached, read-only data for the bot's league commands.
 
 Every method here blocks (Fantrax, the NHL API, the League Ledger CSV, the
-events file), so the Discord layer calls them with ``asyncio.to_thread``.
+events file, the Playoff Pool boxes), so the Discord layer calls them with
+``asyncio.to_thread``.
 Results are cached for a few minutes (rosters, scores) up to half a day
 (Fantrax's player list), so busy commands don't hammer Fantrax or the NHL.
 Nothing here writes to Fantrax.
@@ -9,6 +10,7 @@ Nothing here writes to Fantrax.
 
 from __future__ import annotations
 
+import logging
 import os
 import threading
 import time
@@ -18,6 +20,7 @@ from typing import Any, Callable
 from .shared import minors, picktrades
 
 USER_AGENT = "BLHA-LeagueBot/1.0"
+log = logging.getLogger("blha.bot")
 
 # Seconds each kind of data is reused before it is read again.
 TTL = {
@@ -26,10 +29,12 @@ TTL = {
     "picks": 10 * 60,
     "players": 12 * 3600,   # getPlayerIds is large and changes slowly
     "scores": 3 * 60,
+    "standings": 10 * 60,
     "clearance": 10 * 60,
     "clearance_error": 60,
     "events": 60,
     "nhl_search": 6 * 3600,
+    "pool_boxes": 10 * 60,  # boxes.json gains its deadline once the NHL publishes it
 }
 
 
@@ -42,11 +47,14 @@ class TTLCache:
         self._data: dict[Any, tuple[float, float, Any]] = {}
         self._lock = threading.Lock()
 
-    def get(self, key: Any, ttl: float, load: Callable[[], Any]) -> Any:
+    def get(self, key: Any, ttl: float, load: Callable[[], Any], max_age: float | None = None) -> Any:
+        """The cached value, or a fresh ``load()``. ``max_age`` (seconds) asks for a fresher copy than the TTL."""
         with self._lock:
             hit = self._data.get(key)
-            if hit and self.clock() - hit[0] < hit[1]:
-                return hit[2]
+            if hit:
+                limit = hit[1] if max_age is None else min(hit[1], max_age)
+                if self.clock() - hit[0] < limit:
+                    return hit[2]
         value = load()  # outside the lock: a slow load doesn't block other keys
         self.put(key, ttl, value)
         return value
@@ -76,12 +84,16 @@ class LeagueData:
     def __init__(self, client: Any = None, *, league_id: str | None = None,
                  clock: Callable[[], float] = time.monotonic,
                  events_loader: Callable[[], dict[str, Any]] | None = None,
-                 clearance_loader: Callable[[], Any] | None = None) -> None:
+                 clearance_loader: Callable[[], Any] | None = None,
+                 pool_loader: Callable[[], Any] | None = None,
+                 league_loader: Callable[[], dict[str, Any]] | None = None) -> None:
         self._client = client
         self._league_id = league_id
         self.cache = TTLCache(clock)
         self._events_loader = events_loader
         self._clearance_loader = clearance_loader
+        self._pool_loader = pool_loader
+        self._league_loader = league_loader
         self._client_lock = threading.Lock()
 
     @property
@@ -115,6 +127,10 @@ class LeagueData:
     def matchup_scores(self, period: int) -> list[dict[str, Any]]:
         return self.cache.get(("scores", period), TTL["scores"], lambda: self.client.matchup_scores(period))
 
+    def standings(self) -> list[dict[str, Any]]:
+        """getStandings, normalized (rank, teamId, record, points for); the Awards Ballot's Comeback and Bust."""
+        return self.cache.get("standings", TTL["standings"], self.client.standings)
+
     def events(self) -> dict[str, Any]:
         def load() -> dict[str, Any]:
             if self._events_loader:
@@ -137,6 +153,54 @@ class LeagueData:
         if result.status == "error":  # retry a failed read sooner
             self.cache.put("clearance", TTL["clearance_error"], result)
         return result
+
+    def pool_boxes(self, max_age: float | None = None) -> Any:
+        """The Playoff Pool boxes the automation posted (pool.load_boxes), or None before they exist.
+
+        Read from the public automation-state branch (pool.boxes_url). A failed
+        read raises and is not cached, so the next command tries again.
+        ``max_age`` re-reads a copy older than that many seconds (the pick
+        deadline check when the cached boxes have no deadline yet).
+        """
+        from . import pool
+
+        def load() -> Any:
+            if self._pool_loader is not None:
+                raw = self._pool_loader()
+            else:
+                import requests
+
+                response = requests.get(pool.boxes_url(), headers={"User-Agent": USER_AGENT}, timeout=15)
+                if response.status_code == 404:
+                    raw = None
+                else:
+                    response.raise_for_status()
+                    raw = response.json()
+            return pool.load_boxes(raw)
+
+        return self.cache.get("pool_boxes", TTL["pool_boxes"], load, max_age)
+
+    def pool_entries_via(self) -> str:
+        """How owners enter the Playoff Pool this year: playoff_pool.entries_via in automation/league.yaml.
+
+        "bot" (/pool pick) or "dm" (DMs to the Commissioner). The automation's
+        boxes post reads the same key, so the post and the bot always agree. An
+        unreadable or invalid setting counts as "dm", the automation's default.
+        """
+        from . import pool
+
+        def load() -> str:
+            try:
+                if self._league_loader is not None:
+                    raw = self._league_loader()
+                else:
+                    from blha.league import load_league
+                    raw = load_league()
+                return pool.entries_via(raw)
+            except Exception as exc:
+                log.warning("playoff_pool.entries_via unreadable, using dm: %s", exc)
+                return pool.DM
+        return self.cache.get("pool_entries_via", TTL["info"], load)
 
 
 class NHLLookup:

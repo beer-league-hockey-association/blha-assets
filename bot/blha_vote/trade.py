@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
-from datetime import datetime, time, timedelta, timezone
+from datetime import datetime
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -117,18 +117,11 @@ def match_players(text: str | None, players: list[dict[str, Any]]) -> tuple[list
 
 # ------------------------------------------------------------ trade window
 def trade_deadline(info: dict[str, Any] | None, tz: ZoneInfo) -> datetime | None:
-    """Sunday 11:59 PM ET at the end of Week 20 (11.6), from the Fantrax calendar."""
-    if not info:
-        return None
-    last_regular, _, _ = season.playoff_settings(info)
-    week = season.period(info, last_regular - DEADLINE_WEEKS_BEFORE_END)
-    if week is None:
-        return None
-    day = week.end.astimezone(tz).date()
-    while day.weekday() != 6:  # back to that Week's Sunday
-        day -= timedelta(days=1)
-    deadline = datetime.combine(day, time(23, 59, 59), tzinfo=tz).astimezone(timezone.utc)
-    return min(deadline, week.end)
+    """Sunday 11:59 PM ET at the end of Week 20 (11.6), from the Fantrax calendar.
+
+    Shared with the Trade Desk's deadline-day tracker (automation/blha/season.py).
+    """
+    return season.trade_deadline(info, tz, DEADLINE_WEEKS_BEFORE_END)
 
 
 def trade_window(now: datetime, deadline: datetime | None, reopens: datetime | None,

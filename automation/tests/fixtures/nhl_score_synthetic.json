@@ -1,0 +1,481 @@
+{
+ "_note": "SYNTHETIC, not captured from the NHL API: hand-built in the documented shape of GET https://api-web.nhle.com/v1/score/{YYYY-MM-DD} (games[] with id, gameType, gameState, startTimeUTC, awayTeam.abbrev, homeTeam.abbrev and goals[] with playerId, firstName.default, lastName.default, teamAbbrev and periodDescriptor.periodType). The shape is UNVERIFIED against a live response. 'responses' maps each requested date to its response. 2026-10-13: a McDavid hat trick (EDM) in the earliest finished regular-season game with one, a later Larkin 4-goal game, a Barkov 2 goals + shootout goal, an ambiguous Elias Pettersson (VAN) hat trick and a preseason hat trick; one teamAbbrev uses the {\"default\": ...} form. 2026-10-14: a game still LIVE.",
+ "responses": {
+  "2026-10-13": {
+   "currentDate": "2026-10-13",
+   "games": [
+    {
+     "id": 2026020109,
+     "gameType": 2,
+     "gameState": "FINAL",
+     "startTimeUTC": "2026-10-13T23:30:00Z",
+     "awayTeam": {
+      "abbrev": "FLA"
+     },
+     "homeTeam": {
+      "abbrev": "DET"
+     },
+     "goals": [
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477493,
+       "name": {
+        "default": "D. Larkin"
+       },
+       "firstName": {
+        "default": "Dylan"
+       },
+       "lastName": {
+        "default": "Larkin"
+       },
+       "teamAbbrev": "DET"
+      },
+      {
+       "period": 2,
+       "periodDescriptor": {
+        "number": 2,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477493,
+       "name": {
+        "default": "D. Larkin"
+       },
+       "firstName": {
+        "default": "Dylan"
+       },
+       "lastName": {
+        "default": "Larkin"
+       },
+       "teamAbbrev": "DET"
+      },
+      {
+       "period": 3,
+       "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477493,
+       "name": {
+        "default": "D. Larkin"
+       },
+       "firstName": {
+        "default": "Dylan"
+       },
+       "lastName": {
+        "default": "Larkin"
+       },
+       "teamAbbrev": "DET"
+      },
+      {
+       "period": 3,
+       "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477493,
+       "name": {
+        "default": "D. Larkin"
+       },
+       "firstName": {
+        "default": "Dylan"
+       },
+       "lastName": {
+        "default": "Larkin"
+       },
+       "teamAbbrev": "DET"
+      }
+     ]
+    },
+    {
+     "id": 2026020110,
+     "gameType": 2,
+     "gameState": "OFF",
+     "startTimeUTC": "2026-10-13T23:00:00Z",
+     "awayTeam": {
+      "abbrev": "EDM"
+     },
+     "homeTeam": {
+      "abbrev": "CGY"
+     },
+     "goals": [
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8478402,
+       "name": {
+        "default": "C. McDavid"
+       },
+       "firstName": {
+        "default": "Connor"
+       },
+       "lastName": {
+        "default": "McDavid"
+       },
+       "teamAbbrev": "EDM"
+      },
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8479314,
+       "name": {
+        "default": "Z. Hyman"
+       },
+       "firstName": {
+        "default": "Zach"
+       },
+       "lastName": {
+        "default": "Hyman"
+       },
+       "teamAbbrev": {
+        "default": "EDM"
+       }
+      },
+      {
+       "period": 2,
+       "periodDescriptor": {
+        "number": 2,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8478402,
+       "name": {
+        "default": "C. McDavid"
+       },
+       "firstName": {
+        "default": "Connor"
+       },
+       "lastName": {
+        "default": "McDavid"
+       },
+       "teamAbbrev": "EDM"
+      },
+      {
+       "period": 2,
+       "periodDescriptor": {
+        "number": 2,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8475000,
+       "name": {
+        "default": "N. Kadri"
+       },
+       "firstName": {
+        "default": "Nazem"
+       },
+       "lastName": {
+        "default": "Kadri"
+       },
+       "teamAbbrev": "CGY"
+      },
+      {
+       "period": 3,
+       "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8478402,
+       "name": {
+        "default": "C. McDavid"
+       },
+       "firstName": {
+        "default": "Connor"
+       },
+       "lastName": {
+        "default": "McDavid"
+       },
+       "teamAbbrev": "EDM"
+      }
+     ]
+    },
+    {
+     "id": 2026020111,
+     "gameType": 2,
+     "gameState": "OFF",
+     "startTimeUTC": "2026-10-13T22:00:00Z",
+     "awayTeam": {
+      "abbrev": "FLA"
+     },
+     "homeTeam": {
+      "abbrev": "BOS"
+     },
+     "goals": [
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477933,
+       "name": {
+        "default": "A. Barkov"
+       },
+       "firstName": {
+        "default": "Aleksander"
+       },
+       "lastName": {
+        "default": "Barkov"
+       },
+       "teamAbbrev": "FLA"
+      },
+      {
+       "period": 2,
+       "periodDescriptor": {
+        "number": 2,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477933,
+       "name": {
+        "default": "A. Barkov"
+       },
+       "firstName": {
+        "default": "Aleksander"
+       },
+       "lastName": {
+        "default": "Barkov"
+       },
+       "teamAbbrev": "FLA"
+      },
+      {
+       "period": 5,
+       "periodDescriptor": {
+        "number": 5,
+        "periodType": "SO",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8477933,
+       "name": {
+        "default": "A. Barkov"
+       },
+       "firstName": {
+        "default": "Aleksander"
+       },
+       "lastName": {
+        "default": "Barkov"
+       },
+       "teamAbbrev": "FLA"
+      }
+     ]
+    },
+    {
+     "id": 2026020112,
+     "gameType": 2,
+     "gameState": "OFF",
+     "startTimeUTC": "2026-10-13T21:00:00Z",
+     "awayTeam": {
+      "abbrev": "VAN"
+     },
+     "homeTeam": {
+      "abbrev": "MIN"
+     },
+     "goals": [
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8480012,
+       "name": {
+        "default": "E. Pettersson"
+       },
+       "firstName": {
+        "default": "Elias"
+       },
+       "lastName": {
+        "default": "Pettersson"
+       },
+       "teamAbbrev": "VAN"
+      },
+      {
+       "period": 2,
+       "periodDescriptor": {
+        "number": 2,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8480012,
+       "name": {
+        "default": "E. Pettersson"
+       },
+       "firstName": {
+        "default": "Elias"
+       },
+       "lastName": {
+        "default": "Pettersson"
+       },
+       "teamAbbrev": "VAN"
+      },
+      {
+       "period": 3,
+       "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8480012,
+       "name": {
+        "default": "E. Pettersson"
+       },
+       "firstName": {
+        "default": "Elias"
+       },
+       "lastName": {
+        "default": "Pettersson"
+       },
+       "teamAbbrev": "VAN"
+      }
+     ]
+    },
+    {
+     "id": 2026010001,
+     "gameType": 1,
+     "gameState": "OFF",
+     "startTimeUTC": "2026-10-13T20:00:00Z",
+     "awayTeam": {
+      "abbrev": "NJD"
+     },
+     "homeTeam": {
+      "abbrev": "NYR"
+     },
+     "goals": [
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8481559,
+       "name": {
+        "default": "J. Hughes"
+       },
+       "firstName": {
+        "default": "Jack"
+       },
+       "lastName": {
+        "default": "Hughes"
+       },
+       "teamAbbrev": "NJD"
+      },
+      {
+       "period": 2,
+       "periodDescriptor": {
+        "number": 2,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8481559,
+       "name": {
+        "default": "J. Hughes"
+       },
+       "firstName": {
+        "default": "Jack"
+       },
+       "lastName": {
+        "default": "Hughes"
+       },
+       "teamAbbrev": "NJD"
+      },
+      {
+       "period": 3,
+       "periodDescriptor": {
+        "number": 3,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8481559,
+       "name": {
+        "default": "J. Hughes"
+       },
+       "firstName": {
+        "default": "Jack"
+       },
+       "lastName": {
+        "default": "Hughes"
+       },
+       "teamAbbrev": "NJD"
+      }
+     ]
+    }
+   ]
+  },
+  "2026-10-14": {
+   "currentDate": "2026-10-14",
+   "games": [
+    {
+     "id": 2026020120,
+     "gameType": 2,
+     "gameState": "LIVE",
+     "startTimeUTC": "2026-10-14T23:00:00Z",
+     "awayTeam": {
+      "abbrev": "TOR"
+     },
+     "homeTeam": {
+      "abbrev": "MTL"
+     },
+     "goals": [
+      {
+       "period": 1,
+       "periodDescriptor": {
+        "number": 1,
+        "periodType": "REG",
+        "maxRegulationPeriods": 3
+       },
+       "timeInPeriod": "10:00",
+       "playerId": 8479318,
+       "name": {
+        "default": "A. Matthews"
+       },
+       "firstName": {
+        "default": "Auston"
+       },
+       "lastName": {
+        "default": "Matthews"
+       },
+       "teamAbbrev": "TOR"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

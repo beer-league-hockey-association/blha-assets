@@ -50,6 +50,7 @@ BUNDLES = [
     ("07_Ownership", "announcements", "New owner, franchise seeking an owner, Commissioner transition"),
     ("08_Trades", "completed-trades", "Trade completed"),
     ("09_Community_and_Traditions", "announcements, gm-lounge and hall-of-champions", "Awards Night ballots and winners, Wooden Spoon proposal and award, League Bot launch"),
+    ("10_Deadline_Day_Trade_Center", "trade-block and league-calendar", "Trade deadline day: the Trade Bait board (forum post) and the Deadline Day Trade Center Sesh event. The live tracker, report cards and polls are automated"),
 ]
 
 
@@ -104,7 +105,7 @@ def row(key: str, channel: str, what: str, href: str, cta: str = "Open in Discoh
             state, what, cta, box = "posted", f"Posted {nice(entry['posted'])} and current. Nothing to do.", "Open copy", " checked disabled"
     elif rel in UPDATE:
         state, cta, href = "update", "Edit in Discohook", edit_link(rel)
-        what = ("Posted, but it still uses short channel names. This opens as an EDIT of the live message: "
+        what = ("Posted, but the template has changed since. This opens as an EDIT of the live message: "
                 "paste this channel's webhook URL and press Edit. No deleting or reposting; it keeps its place and its pin.")
     elif rel is not None:
         before = [CLEAR_FIRST[channel]] if channel in CLEAR_FIRST else []
@@ -126,6 +127,19 @@ AUTOMATED = {
     "CALENDAR EVENT": "Automation posts calendar milestones once their dates are filled in automation/league-office/events.yaml. Use this only for an extra one.",
     "DEADLINE REMINDER": "Automation posts reminders before each deadline in events.yaml. Use this only for an extra one.",
     "DYNASTY POT UPDATE": "Automation posts the Dynasty Pot graphic once the franchises are filled in. Use this only for a written update.",
+    "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT": "Forum post in trade-block a few days before deadline day: fill in the deadline timestamp, send (the thread name is filled in), then pin the post.",
+    "BLHA AWARDS NIGHT": "Announcement in announcements once /awards open has posted the ballot in league-voting. The League Bot runs the ballot itself.",
+    "BLHA AWARDS NIGHT: THE WINNERS": "The League Bot posts the winners itself with /awards results. Use this only if the bot isn't running.",
+    "BLHA DEADLINE DAY TRADE CENTER": "The Sesh event's text. In league-calendar run /create, name it BLHA Deadline Day Trade Center, set deadline day 9:00 AM to 11:59 PM ET, and paste this message's text as the description.",
+}
+
+
+# Templates in a bundle that spans channels: the channel each one goes to.
+TEMPLATE_CHANNELS = {
+    "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT": "trade-block",
+    "BLHA AWARDS NIGHT": "announcements",
+    "BLHA AWARDS NIGHT: THE WINNERS": "hall-of-champions",
+    "BLHA DEADLINE DAY TRADE CENTER": "league-calendar",
 }
 
 
@@ -196,7 +210,7 @@ def build() -> str:
             raw = json.dumps(body, ensure_ascii=True, separators=(",", ":")).encode()
             href = "https://discohook.org/?data=" + base64.urlsafe_b64encode(raw).decode().rstrip("=")
             note = AUTOMATED.get(title, "Fill in every placeholder in backticks, then send.")
-            trows.append(template_row(f"tmpl-{name}-{i}", ch, label, note, href))
+            trows.append(template_row(f"tmpl-{name}-{i}", TEMPLATE_CHANNELS.get(title, ch), label, note, href))
         sections.append(section(name.split("_", 1)[1].replace("_", " "), html.escape(what) + ".", trows, "tmpl-" + name))
 
     body = "\n".join(sections)

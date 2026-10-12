@@ -128,6 +128,13 @@ class HistoryFileTests(unittest.TestCase):
                        "unknown top-level key 'extra'"):
             self.assertIn(needle, text)
 
+    def test_pool_shark_is_a_franchise_honor(self) -> None:
+        good = json.loads(json.dumps(HISTORY))
+        good["seasons"]["2027"]["pool_shark"] = "east"
+        self.assertEqual(validate(good), [])
+        good["seasons"]["2027"]["pool_shark"] = "nobody"
+        self.assertIn("seasons.2027.pool_shark: 'nobody' is not a franchise", "\n".join(validate(good)))
+
     def test_balance_and_counts_must_agree_with_the_champions(self) -> None:
         bad = json.loads(json.dumps(HISTORY))
         bad["seasons"]["2028"]["dynasty_pot"]["balance"] = 400

@@ -59,11 +59,26 @@ workflows:
     # playoffs; the longest gap is overnight (about 14 hours).
     max_age_minutes: 1000
 
+  - id: morning-skate
+    name: "BLHA Morning Skate"
+    file: "blha-morning-skate.yml"
+    # Once a day at 08:30, all year (it simply posts nothing on nights
+    # without NHL games).
+    max_age_minutes: 1700
+
   - id: playoffs
     name: "BLHA Fantrax Playoffs"
     file: "blha-fantrax-playoffs.yml"
     # Hourly during the playoff weeks only.
     max_age_minutes: 180
+
+  - id: playoff-pool
+    name: "BLHA Playoff Pool"
+    file: "blha-playoff-pool.yml"
+    # 07:45 and 19:45, only inside the NHL playoff window (when: nhl-playoffs
+    # in schedule.yaml, from 5 days before the NHL regular season ends until
+    # 2 days after the last scheduled playoff date). The longest gap is 12 hours.
+    max_age_minutes: 900
 
   - id: draft-center
     name: "BLHA Draft Center"
@@ -82,6 +97,13 @@ workflows:
     file: "blha-pick-trades.yml"
     # Every 15 minutes all year; alert after several missed runs.
     max_age_minutes: 90
+
+  - id: trade-desk
+    name: "BLHA Trade Desk"
+    file: "blha-trade-desk.yml"
+    # Every 30 minutes all year (every 15 on trade-deadline day); alert after
+    # several missed runs.
+    max_age_minutes: 120
 
   - id: minor-eligibility
     name: "BLHA Minor Eligibility"

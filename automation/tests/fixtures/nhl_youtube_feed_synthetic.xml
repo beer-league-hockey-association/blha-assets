@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SYNTHETIC, not captured from YouTube: hand-built for the Morning Skate tests in the
+     shape of the NHL channel's Atom feed
+     (https://www.youtube.com/feeds/videos.xml?channel_id=UCqFMzb-4AUf6WAIbl132QKA:
+     entry/yt:videoId, title, link rel=alternate href, published). Video ids are made up.
+     Covers: per-game "| NHL Highlights | Oct 7, 2026" videos, Shorts (one with a
+     highlight-style title), another day's video, a condensed-game clip and other clips. -->
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCqFMzb-4AUf6WAIbl132QKA"/>
+ <id>yt:channel:qFMzb-4AUf6WAIbl132QKA</id>
+ <yt:channelId>qFMzb-4AUf6WAIbl132QKA</yt:channelId>
+ <title>NHL</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA"/>
+ <author>
+  <name>NHL</name>
+  <uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri>
+ </author>
+ <published>2006-11-08T00:00:00+00:00</published>
+ <entry>
+  <id>yt:video:McDOTshort1</id>
+  <yt:videoId>McDOTshort1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>McDavid ends it in overtime #shorts</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/McDOTshort1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T06:10:00+00:00</published>
+  <updated>2026-10-08T06:10:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:EdmAnaShort</id>
+  <yt:videoId>EdmAnaShort</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Oilers vs. Ducks | NHL Highlights | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/EdmAnaShort"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T06:05:00+00:00</published>
+  <updated>2026-10-08T06:05:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:EdmAna07Hl1</id>
+  <yt:videoId>EdmAna07Hl1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Oilers vs. Ducks | NHL Highlights | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=EdmAna07Hl1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T05:40:00+00:00</published>
+  <updated>2026-10-08T05:40:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:VanSea07Hl1</id>
+  <yt:videoId>VanSea07Hl1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Canucks vs. Kraken | NHL Highlights | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=VanSea07Hl1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T05:10:00+00:00</published>
+  <updated>2026-10-08T05:10:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:ChiDalCond1</id>
+  <yt:videoId>ChiDalCond1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Blackhawks vs. Stars | Condensed Game | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=ChiDalCond1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T04:30:00+00:00</published>
+  <updated>2026-10-08T04:30:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:TorMtl07Hl1</id>
+  <yt:videoId>TorMtl07Hl1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Maple Leafs vs. Canadiens | NHL Highlights | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=TorMtl07Hl1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T03:20:00+00:00</published>
+  <updated>2026-10-08T03:20:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:NyiNjd07Hl1</id>
+  <yt:videoId>NyiNjd07Hl1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Islanders vs. Devils | NHL Highlights | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=NyiNjd07Hl1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T02:50:00+00:00</published>
+  <updated>2026-10-08T02:50:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:PitWsh07Hl1</id>
+  <yt:videoId>PitWsh07Hl1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Penguins vs. Capitals | NHL Highlights | Oct 7, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=PitWsh07Hl1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-08T02:45:00+00:00</published>
+  <updated>2026-10-08T02:45:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:TopSaves001</id>
+  <yt:videoId>TopSaves001</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>NHL Top 10 Saves of the Week | Week 1</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=TopSaves001"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-07T18:00:00+00:00</published>
+  <updated>2026-10-07T18:00:00+00:00</updated>
+ </entry>
+ <entry>
+  <id>yt:video:ChiFla06Hl1</id>
+  <yt:videoId>ChiFla06Hl1</yt:videoId>
+  <yt:channelId>UCqFMzb-4AUf6WAIbl132QKA</yt:channelId>
+  <title>Blackhawks vs. Panthers | NHL Highlights | Oct 6, 2026</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=ChiFla06Hl1"/>
+  <author><name>NHL</name><uri>https://www.youtube.com/channel/UCqFMzb-4AUf6WAIbl132QKA</uri></author>
+  <published>2026-10-07T03:30:00+00:00</published>
+  <updated>2026-10-07T03:30:00+00:00</updated>
+ </entry>
+</feed>

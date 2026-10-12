@@ -162,6 +162,28 @@ def phase_started_at(info: dict[str, Any], now: datetime) -> datetime | None:
     return match.start if match else None
 
 
+# The trade deadline is the end of Week 20 of 22: the last regular week minus
+# 2 (Constitution 11.6; automation/commissioner/tasks.yaml uses the same
+# trade_deadline_weeks_before_end).
+DEADLINE_WEEKS_BEFORE_END = 2
+
+
+def trade_deadline(info: dict[str, Any] | None, tz: ZoneInfo,
+                   weeks_before_end: int = DEADLINE_WEEKS_BEFORE_END) -> datetime | None:
+    """Sunday 11:59 PM local at the end of the deadline Week (11.6), from the Fantrax calendar (UTC)."""
+    if not info:
+        return None
+    last_regular, _, _ = playoff_settings(info)
+    week = period(info, last_regular - weeks_before_end)
+    if week is None:
+        return None
+    day = week.end.astimezone(tz).date()
+    while day.weekday() != 6:  # back to that Week's Sunday
+        day -= timedelta(days=1)
+    deadline = datetime.combine(day, time(23, 59, 59), tzinfo=tz).astimezone(timezone.utc)
+    return min(deadline, week.end)
+
+
 def describe(info: dict[str, Any], now: datetime) -> str:
     current = active_period(info, now)
     week = f" week {current.number}" if current else ""

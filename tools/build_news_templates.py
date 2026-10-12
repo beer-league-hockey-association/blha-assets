@@ -35,11 +35,14 @@ LO = "BLHA LEAGUE OFFICE"
 
 
 def tmpl(path: str, title: str, desc: str, footer: str, fields: list[tuple[str, str]], color: int = GOLD,
-         banner: str | None = None) -> None:
+         banner: str | None = None, thread_name: str | None = None) -> None:
+    """Write one template. thread_name pre-fills Discohook's forum thread name for a forum post."""
     data = {"embeds": fmt.apply([{
         "title": title, "description": desc, "color": color, "footer": {"text": footer},
         "fields": [{"name": n, "value": v, "inline": False} for n, v in fields],
     }], banner, path)}
+    if thread_name:
+        data["thread_name"] = thread_name
     data = posted.keep_posted(path, data)
     p = T / path
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -158,6 +161,36 @@ tmpl("trade-center/90_trade_completed.json", "TRADE COMPLETED", "Processed in Fa
      [("`[FRANCHISE A]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"), ("`[FRANCHISE B]` RECEIVES", "`[PLAYERS / PICKS / FAAB]`"),
       ("PREPAYMENT", "`[NOT REQUIRED / CONFIRMED IN LEAGUE-LEDGER ON DATE]`")])
 
+# Deadline day: the BLHA Deadline Day Trade Center. The live tracker in 📢│announcements and the
+# report cards with polls in 💬│trade-discussion are automated (automation/trades/);
+# these two are posted by the Commissioner before deadline day.
+DEADLINE_RULE = ("A trade must be fully processed in Fantrax before the deadline; one processed after it is "
+                 "reversed (11.6).")
+tmpl("trade-center/91_deadline_day_trade_bait_board.json", "BLHA DEADLINE DAY TRADE CENTER: TRADE BAIT",
+     "The deadline-day trade bait board. One reply per franchise: what you're moving and what you need.",
+     "BLHA TRADE CENTER • DEADLINE DAY",
+     [("HOW TO POST", "Reply once for your franchise and edit that reply as things change, so the thread stays one "
+                      "post per team. Delete it once you're done dealing."),
+      ("FORMAT", "**Available:** players and picks you'd move\n**Looking for:** positions, prospects or picks\n"
+                 "**Reach me:** DM, or reply in **trade-discussion**"),
+      ("DEADLINE", f"**`[TIMESTAMP]`** • 11:59 PM ET, end of Week 20. {DEADLINE_RULE}"),
+      ("ALLOWED IN TRADES", "Rostered players, eligible draft picks and current-season FAAB. Cash, loans, rentals, "
+                            "predetermined tradebacks and conditional picks are prohibited (Article XI). A future "
+                            "1st- or 2nd-round pick needs the seller's prepayment confirmed in **league-ledger** "
+                            "first (Article XII)."),
+      ("FOLLOW ALONG", "From 9:00 AM ET the live tracker in **announcements** counts down and lists every trade. "
+                       "Each trade also gets a report card and a just-for-fun poll in **trade-discussion**.")],
+     thread_name="BLHA Deadline Day Trade Center: Trade Bait")
+tmpl("trade-center/92_deadline_day_sesh_event.json", "BLHA DEADLINE DAY TRADE CENTER",
+     "Trade deadline day, live from 9:00 AM ET until the deadline at 11:59 PM ET.",
+     "BLHA LEAGUE CALENDAR",
+     [("WHEN", "**`[TIMESTAMP]`** • the Sunday that ends Week 20"),
+      ("WHERE", "Live tracker in **announcements**\nTrade bait in the **trade-block** forum\n"
+                "Talk, report cards and polls in **trade-discussion**"),
+      ("BEFORE YOU TRADE", f"{DEADLINE_RULE} A future 1st- or 2nd-round pick needs the seller's prepayment "
+                           "confirmed in **league-ledger** first (Article XII)."),
+      ("REMINDERS", "RSVP to this event in **league-calendar** and Sesh sends you a reminder by direct message.")])
+
 # -------------------------------------------------------- community and traditions
 tmpl("league-office/36_calendar_sync.json", "ADD THE LEAGUE CALENDAR TO YOUR PHONE", "Every BLHA date can live in the calendar you already use.", "BLHA LEAGUE CALENDAR",
      [("HOW", "Type `/link` in any channel. Sesh replies privately with a calendar feed link."),
@@ -168,15 +201,19 @@ tmpl("league-office/35_winter_meetings.json", "BLHA WINTER MEETINGS", "The yearl
       ("WHERE", "`[VOICE CHANNEL]`"),
       ("AGENDA", "Season review • Ideas from **league-suggestions** that could become amendment proposals (Article XX) • Draft and calendar dates • Open floor"),
       ("CAN'T MAKE IT", "Notes are posted in **gm-lounge** afterward. Nothing is decided at the meeting itself: rule changes still go through a written proposal and a vote.")])
-tmpl("league-office/26_awards_night.json", "BLHA AWARDS NIGHT", "Season `[YEAR]` ballots are open. Owners choose the winners.", "BLHA RECORDS DEPARTMENT",
-     [("THE AWARDS", "**GM of the Year** • **Trade of the Year** • **Waiver Wire Award** (best pickup) • **Rookie GM of the Year** (first-season owners) • **Cold Beer Award** (the season's funniest moment)"),
-      ("HOW TO VOTE", "One Discord poll per award in **gm-lounge**, open until **`[TIMESTAMP]`**. One vote per owner per award. Please don't vote for yourself."),
-      ("RESULTS", "Winners are announced in **hall-of-champions** and kept in the league records."),
+tmpl("league-office/26_awards_night.json", "BLHA AWARDS NIGHT", "Season `[YEAR]` ballots are open in **league-voting**. Owners choose the winners.", "BLHA RECORDS DEPARTMENT",
+     [("THE AWARDS", "**GM of the Year** • **Trade of the Year** • **Waiver Steal of the Year** • **Comeback Franchise** • **Bust of the Year** (all in good fun)"),
+      ("HOW TO VOTE", "Press **Fill out my ballot** on the League Bot's post in **league-voting**: a 1st, 2nd and 3rd choice for each award, worth 5, 3 and 1 points. One ballot per franchise, cast by the Franchise Owner. Change it any time until **`[TIMESTAMP]`**."),
+      ("NO SELF-VOTES", "Your own franchise, your own pickups and trades you were part of aren't on your ballot. Bust of the Year is the exception."),
+      ("RESULTS", "Most points wins; a tie goes to the most first-place votes, then the award is shared. Winners are announced in **hall-of-champions** and kept in the league records."),
       ("JUST FOR FUN", "Awards carry no money and change nothing in the standings or the draft.")], RECORD)
-tmpl("league-office/27_award_winners.json", "BLHA AWARDS NIGHT: THE WINNERS", "Season `[YEAR]`, as voted by the owners.", "BLHA RECORDS DEPARTMENT",
-     [("GM OF THE YEAR", "`[FRANCHISE / OWNER]`"), ("TRADE OF THE YEAR", "`[TRADE AND DATE]`"),
-      ("WAIVER WIRE AWARD", "`[PLAYER, FRANCHISE]`"), ("ROOKIE GM OF THE YEAR", "`[OWNER]`"),
-      ("COLD BEER AWARD", "`[THE MOMENT]`")], RECORD)
+tmpl("league-office/27_award_winners.json", "BLHA AWARDS NIGHT: THE WINNERS", "Season `[YEAR]`, as voted by the owners: `[N]` of `[N]` franchises returned a ballot. 5 points for a first-place vote, 3 for second, 1 for third.", "BLHA RECORDS DEPARTMENT",
+     [("GM OF THE YEAR", "**`[FRANCHISE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("TRADE OF THE YEAR", "**`[TRADE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("WAIVER STEAL OF THE YEAR", "**`[PLAYER, FRANCHISE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("COMEBACK FRANCHISE", "**`[FRANCHISE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("BUST OF THE YEAR", "**`[NOMINEE]`** • `[POINTS]` points, `[N]` first-place votes"),
+      ("JUST FOR FUN", "Awards carry no money and change nothing in the standings or the draft.")], RECORD)
 tmpl("league-office/28_wooden_spoon_proposal.json", "NEW TRADITION? THE WOODEN SPOON", "A just-for-fun tradition for the last-place team. Owners decide whether we do it.", f"{LO} • DISCUSSION",
      [("THE IDEA", "The franchise that finishes last in the regular season holds the **Wooden Spoon** role for the Offseason and writes a short preview of the next Season, posted before Week 1."),
       ("WHAT IT ISN'T", "No money and no rule change. Draft order still comes from Potential Points (14.5), so the Spoon can't be chased."),
@@ -273,6 +310,8 @@ BUNDLES = {
     "06_Honors_and_Records": ["league-office/70_champion_crowned.json", "league-office/71_presidents_trophy.json", "league-office/72_dynasty_pot_won.json"],
     "07_Ownership": ["league-office/60_owner_welcome.json", "league-office/61_franchise_orphaned.json", "league-office/62_commissioner_transition.json"],
     "08_Trades": ["trade-center/90_trade_completed.json"],
+    "10_Deadline_Day_Trade_Center": ["trade-center/91_deadline_day_trade_bait_board.json",
+                                     "trade-center/92_deadline_day_sesh_event.json"],
     "09_Community_and_Traditions": ["league-office/26_awards_night.json", "league-office/27_award_winners.json",
                                     "league-office/28_wooden_spoon_proposal.json", "league-office/29_wooden_spoon_awarded.json",
                                     "league-office/63_league_bot_launch.json"],

@@ -13,6 +13,9 @@ import yaml
 from .rules import Franchise, Settings
 
 PICKEM_ROLES = ("owner", "co_owner")
+BOOK_PLAYERS = ("owner",)
+SHARP_ROLE = "💸 Sharp"
+AWARDS_BALLOT_DAYS = 7
 
 
 def _id(value: Any) -> int | None:
@@ -38,6 +41,13 @@ class BotConfig:
     suggestions_forum_id: int | None = None
     scheduled_for_vote_tag_id: int | None = None
     pickem_players: tuple[str, ...] = PICKEM_ROLES
+    book_channel_id: int | None = None
+    book_players: tuple[str, ...] = BOOK_PLAYERS
+    sharp_role: str = SHARP_ROLE
+    hall_of_champions_channel_id: int | None = None
+    awards_ballot_channel_id: int | None = None
+    awards_ballot_days: int = AWARDS_BALLOT_DAYS
+    awards_export_path: str | None = None
     problems: list[str] = field(default_factory=list)
 
     @property
@@ -50,6 +60,12 @@ class BotConfig:
         """Roles that play Pick'em (pickem.players in config.yaml)."""
         ids = {"owner": self.owner_role_id, "co_owner": self.co_owner_role_id}
         return {ids[k] for k in self.pickem_players if ids.get(k)}
+
+    @property
+    def book_role_ids(self) -> set[int]:
+        """Roles that play BLHA Bucks (book.players in config.yaml)."""
+        ids = {"owner": self.owner_role_id, "co_owner": self.co_owner_role_id}
+        return {ids[k] for k in self.book_players if ids.get(k)}
 
 
 def _date(value: Any, tz: ZoneInfo) -> datetime | None:
@@ -113,6 +129,23 @@ def load(path: str | Path) -> BotConfig:
         if p not in PICKEM_ROLES:
             problems.append(f"pickem.players has {p!r}; use owner and/or co_owner.")
 
+    book = raw.get("book") or {}
+    book_players = [str(p).strip() for p in (book.get("players") or BOOK_PLAYERS)]
+    for p in book_players:
+        if p not in PICKEM_ROLES:
+            problems.append(f"book.players has {p!r}; use owner and/or co_owner.")
+    sharp_role = str(book.get("sharp_role") if book.get("sharp_role") is not None else SHARP_ROLE).strip()
+
+    awards = raw.get("awards") or {}
+    try:
+        ballot_days = int(awards.get("ballot_days") or AWARDS_BALLOT_DAYS)
+    except (TypeError, ValueError):
+        ballot_days = 0
+    if not 1 <= ballot_days <= 30:
+        problems.append(f"awards.ballot_days must be 1 to 30 days, not {awards.get('ballot_days')!r}; using 7.")
+        ballot_days = AWARDS_BALLOT_DAYS
+    export_path = str(awards.get("export_path") or "").strip() or None
+
     discord_ids = raw.get("discord") or {}
     for key, value in discord_ids.items():
         text = str(value or "").strip()
@@ -135,6 +168,13 @@ def load(path: str | Path) -> BotConfig:
         suggestions_forum_id=_id(discord_ids.get("suggestions_forum_id")),
         scheduled_for_vote_tag_id=_id(discord_ids.get("scheduled_for_vote_tag_id")),
         pickem_players=tuple(p for p in players if p in PICKEM_ROLES),
+        book_channel_id=_id(discord_ids.get("book_channel_id")),
+        book_players=tuple(p for p in book_players if p in PICKEM_ROLES),
+        sharp_role=sharp_role,
+        hall_of_champions_channel_id=_id(discord_ids.get("hall_of_champions_channel_id")),
+        awards_ballot_channel_id=_id(discord_ids.get("awards_ballot_channel_id")),
+        awards_ballot_days=ballot_days,
+        awards_export_path=export_path,
         problems=problems,
     )
     for attr, key in (("guild_id", "guild_id"), ("voting_channel_id", "voting_channel_id"),
@@ -149,6 +189,14 @@ def load(path: str | Path) -> BotConfig:
         problems.append("discord.pickem_channel_id is not set, so Pick'em is off.")
     elif not cfg.pickem_role_ids:
         problems.append("Pick'em has no player roles: set the roles named in pickem.players.")
+    if cfg.book_channel_id is None:
+        problems.append("discord.book_channel_id is not set, so BLHA Bucks is off.")
+    elif not cfg.book_role_ids:
+        problems.append("BLHA Bucks has no player roles: set the roles named in book.players.")
+    elif not cfg.sharp_role:
+        problems.append("book.sharp_role is empty, so the BLHA Bucks season leader gets no role.")
+    if cfg.hall_of_champions_channel_id is None:
+        problems.append("discord.hall_of_champions_channel_id is not set, so /awards results can't post the winners.")
     if cfg.suggestions_forum_id is None:
         problems.append("discord.suggestions_forum_id is not set, so /proposal from-thread is off.")
         if cfg.scheduled_for_vote_tag_id is not None:

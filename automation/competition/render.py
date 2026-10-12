@@ -13,6 +13,7 @@ from typing import Any
 
 from blha.league import AVATAR, DEFAULT_LEAGUE_NAME
 from blha.season import Period
+from weekly import luck_extremes
 
 
 @dataclass
@@ -280,6 +281,26 @@ def _change(row: Any, has_previous: bool) -> str:
     return "Same"
 
 
+def fmt_luck(value: float) -> str:
+    """Luck to one decimal with its sign: +1.4, -0.6, 0.0."""
+    shown = round(value, 1)
+    return "0.0" if shown == 0 else f"{shown:+.1f}"
+
+
+def _names(rows: list[Any]) -> str:
+    names = [r.team_name for r in rows]
+    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def luck_line(rows: list[Any]) -> str:
+    """One line naming the luckiest and unluckiest teams ("" when all equal)."""
+    high, low = luck_extremes(rows)
+    if not high or not low:
+        return ""
+    return (f"**Luckiest:** {_names(high)} ({fmt_luck(high[0].luck)}) • "
+            f"**Unluckiest:** {_names(low)} ({fmt_luck(low[0].luck)})")
+
+
 def power_rankings(ctx: Context, after_week: int, rows: list[Any], *, has_previous: bool) -> dict[str, Any] | None:
     """Power Rankings post from weekly.power_rankings(); None if no results yet."""
     if not rows:
@@ -292,6 +313,7 @@ def power_rankings(ctx: Context, after_week: int, rows: list[Any], *, has_previo
                 f"**Record:** {row.record.text()} • "
                 f"**PF:** {row.points_for:.2f} • "
                 f"**All-Play:** {row.all_play.text()} • "
+                f"**Luck:** {fmt_luck(row.luck)} • "
                 f"**Score:** {row.score:.3f}"
             ),
             "inline": False,
@@ -301,8 +323,13 @@ def power_rankings(ctx: Context, after_week: int, rows: list[Any], *, has_previo
     note = (
         "*Results only. Score = 50% season points-for + 30% points-for over the last 3 weeks + "
         "20% season all-play win %. Both points-for figures are scaled 0 to 1 across the league "
-        "(lowest team 0, highest 1). Change is against last week's rankings.*"
+        "(lowest team 0, highest 1). Change is against last week's rankings. Luck = actual wins minus "
+        "expected wins, where expected wins add up each week's all-play win share (ties count half); "
+        "it is not part of the score.*"
     )
+    extremes = luck_line(rows)
+    if extremes:
+        note += f"\n{extremes}"
     return _payload(ctx, f"BLHA Power Rankings — After Week {after_week}", f"{_header(ctx)}\n\n{note}",
                     fields, "POWER RANKINGS")
 
@@ -388,6 +415,12 @@ def playoff_race(
 
 # --- Matchup preview ----------------------------------------------------------
 
+def projected_line(away: Any, home: Any) -> str:
+    """ "Projected games: 41 vs 37 • Light-night games: 5 vs 3" (away first)."""
+    return (f"Projected games: {away.games} vs {home.games} • "
+            f"Light-night games: {away.light_games} vs {home.light_games}")
+
+
 def preview(
     ctx: Context,
     p: Period,
@@ -395,7 +428,12 @@ def preview(
     records: dict[str, dict],
     *,
     ranks_shown: bool,
+    projections: dict[str, Any] | None = None,
+    goalie_cap: int | None = None,
+    light_max: int | None = None,
 ) -> dict[str, Any]:
+    """Matchup preview. ``projections`` (teamId -> edge.Projection) adds each
+    matchup's schedule edge; matchups missing either team simply go without."""
     def line(team: dict) -> str:
         meta = records.get(team.get("teamId", ""), {})
         record = meta.get("record") or "0-0-0"
@@ -403,15 +441,28 @@ def preview(
             return f"**{team.get('teamName', 'TBD')}** — #{meta['rank']} • {record}"
         return f"**{team.get('teamName', 'TBD')}** — {record}"
 
-    fields = [
-        {"name": f"Matchup {i}", "value": f"{line(m['away'])}\nvs\n{line(m['home'])}", "inline": False}
-        for i, m in enumerate(pairs, start=1)
-    ]
+    projections = projections or {}
+    shown = False
+    fields = []
+    for i, m in enumerate(pairs, start=1):
+        value = f"{line(m['away'])}\nvs\n{line(m['home'])}"
+        away, home = projections.get(m["away"].get("teamId", "")), projections.get(m["home"].get("teamId", ""))
+        if away is not None and home is not None:
+            value += "\n" + projected_line(away, home)
+            shown = True
+        fields.append({"name": f"Matchup {i}", "value": value, "inline": False})
     standing_note = "current Fantrax standing and record" if ranks_shown else "record including last week"
     note = (
         f"*This week's matchups with each team's {standing_note}. "
         "The scoreboard will track scoring once the week is underway.*"
     )
+    if shown:
+        cap = f", goalies capped at {goalie_cap} starts" if goalie_cap else ""
+        light = f" ({light_max} or fewer NHL teams playing)" if light_max else ""
+        note += (
+            "\n*Projected games: lineup slots each current roster can fill on this week's NHL nights "
+            f"(minors and IR left out{cap}). Light-night games: the same count on light nights{light}.*"
+        )
     return _payload(ctx, f"BLHA Week {p.number} Matchup Preview", f"{_header(ctx, p)}\n\n{note}", fields, "SCOREBOARD")
 
 
@@ -455,3 +506,115 @@ def games_grid(ctx: Context, p: Period, grid: Any) -> dict[str, Any]:
     )
     return _payload(ctx, f"BLHA Week {p.number} NHL Games Grid", f"{_header(ctx, p)}\n\n{note}", fields,
                     "NHL GAMES GRID", source=NHL_SOURCE)
+
+
+# --- Monthly awards -------------------------------------------------------------
+
+MONTHLY_ROLE = "📅 Manager of the Month"
+
+
+def _week_span(weeks: list[int] | tuple[int, ...]) -> str:
+    if not weeks:
+        return "no weeks"
+    if len(weeks) == 1:
+        return f"Week {weeks[0]}"
+    return f"Weeks {weeks[0]}–{weeks[-1]}"
+
+
+def _winners(winners: list[Any], text: Any) -> str:
+    return "\n".join(f"**{w.team_name}** — {text(w)}" for w in winners)
+
+
+def _together(names: list[str]) -> str:
+    bolded = [f"**{n}**" for n in names]
+    return bolded[0] if len(bolded) == 1 else ", ".join(bolded[:-1]) + " and " + bolded[-1]
+
+
+def monthly_awards(
+    ctx: Context,
+    group: Any,
+    span: Period,
+    result: Any,
+    *,
+    month_to_date: bool = False,
+) -> dict[str, Any] | None:
+    """Monthly Awards post (monthly.MonthGroup + monthly.MonthlyAwards); None if nothing was played."""
+    if result.empty:
+        return None
+    fields = [
+        {"name": "Manager of the Month",
+         "value": _winners(result.manager, lambda w: f"{_fmt_score(w.value)} pts"), "inline": False},
+    ]
+    if result.record:
+        fields.append({"name": "Best Record of the Month", "value": _winners(
+            result.record, lambda w: f"{w.record.text()} • {_fmt_score(w.total)} pts"), "inline": False})
+    if result.big_week:
+        fields.append({"name": "Biggest Single Week", "value": _winners(
+            result.big_week, lambda w: f"{_fmt_score(w.value)} pts in Week {w.week}"), "inline": False})
+    if result.hard_luck:
+        fields.append({"name": "Hard Luck", "value": _winners(
+            result.hard_luck,
+            lambda w: f"{_fmt_score(w.value)} pts in {w.losses} loss{'es' if w.losses != 1 else ''}"), "inline": False})
+
+    holders = _together([w.team_name for w in result.manager])
+    verb = "holds" if len(result.manager) == 1 else "share"
+    until = "the first Monthly Awards of next Season" if group.final else "next month's award"
+    if month_to_date:
+        role = f"Month to date. The award is decided when the last week ending in {group.month} is final."
+    else:
+        role = f"{holders} {verb} the {MONTHLY_ROLE} role until {until}. The Commissioner assigns the role."
+    fields.append({"name": "The Role", "value": role, "inline": False})
+
+    weeks = _week_span(result.weeks)
+    note = (
+        f"*{weeks}: the fantasy weeks that ended in {group.month}, from final Fantrax matchup scores. "
+        "Hard Luck is the most points scored in losses. Ties go to more total points for the month, "
+        "then are shared.*"
+    )
+    title = f"BLHA Monthly Awards — {group.label}" + (" (Month to Date)" if month_to_date else "")
+    return _payload(ctx, title, f"{_header(ctx, span)}\n\n{note}", fields, "MONTHLY AWARDS")
+
+
+# --- Bounties -------------------------------------------------------------------
+
+def _claim_value(bounty: Any, claim: Any) -> str:
+    names = _together([t.get("teamName") or "Unknown Team" for t in claim.teams])
+    lines = [f"{names} — {claim.detail}"]
+    if bounty.description:
+        lines.append(bounty.description)
+    shared = " (shared)" if len(claim.teams) > 1 else ""
+    lines.append(f"**Reward:** {bounty.reward}{shared}. The Commissioner assigns it.")
+    return "\n".join(lines)
+
+
+def bounties(
+    ctx: Context,
+    claims: list[tuple[Any, Any]],
+    still_open: list[tuple[Any, str]],
+    *,
+    nhl_data: bool = False,
+) -> dict[str, Any] | None:
+    """Bounty post: claims [(Bounty, Claim)] plus the bounties still open
+    [(Bounty, progress text)]. Without claims it is the Bounty Board."""
+    if not claims and not still_open:
+        return None
+    fields = [{"name": bounty.title, "value": _clip(_claim_value(bounty, claim)), "inline": False}
+              for bounty, claim in claims]
+    if still_open:
+        lines = []
+        for bounty, status in still_open:
+            line = f"**{bounty.title}** — {bounty.description}" if bounty.description else f"**{bounty.title}**"
+            lines.append(line + (f"\n{status}" if status else ""))
+        fields.append({"name": "Still Open", "value": _clip("\n".join(lines)), "inline": False})
+    if not claims:
+        title = "BLHA Bounty Board"
+    elif len(claims) == 1:
+        title = f"BLHA Bounty Claimed — {claims[0][0].title}"
+    else:
+        title = "BLHA Bounties Claimed"
+    note = (
+        "*Season bounties: each is claimed once, by the first franchise to get there. "
+        "Rewards are recognition only.*"
+    )
+    source = f"{FANTRAX_SOURCE} • NHL SCORE DATA" if nhl_data else FANTRAX_SOURCE
+    return _payload(ctx, title, f"{_header(ctx)}\n\n{note}", fields, "BOUNTIES", source=source)

@@ -33,6 +33,7 @@ AWARDS = {
     "presidents_trophy": "Presidents' Trophy",
     "consolation_champion": "Consolation Champion",
     "wooden_spoon": "Wooden Spoon",
+    "pool_shark": "Pool Shark (Playoff Pool)",  # just for fun; automation/playoff_pool/
 }
 PODIUM = ("champion", "runner_up", "third_place")
 TOP_KEYS = {"franchises", "seasons", "dynasty_pot"}

@@ -92,5 +92,30 @@ class DiscordWebhookTests(unittest.TestCase):
         self.assertIn("/api/webhooks/***", detail)
 
 
+    @patch("discord_webhook.requests.get")
+    def test_get_message_reads_back_a_poll(self, get: Mock) -> None:
+        body = {"id": "55", "poll": {"answers": [], "results": {"is_finalized": True, "answer_counts": []}}}
+        get.return_value = Mock(status_code=200, text="{}", headers={})
+        get.return_value.json.return_value = body
+
+        ok, detail, message = discord_webhook.get_discord_message(self.secret, "55")
+
+        self.assertTrue(ok)
+        self.assertEqual(message, body)
+        self.assertEqual(get.call_args.args[0], "https://discord.example.invalid/webhook/messages/55")
+
+    @patch("discord_webhook.time.sleep")
+    @patch("discord_webhook.requests.get")
+    def test_get_message_and_webhook_failures(self, get: Mock, sleep: Mock) -> None:
+        get.return_value = Mock(status_code=404, text="Unknown Message", headers={})
+        ok, detail, message = discord_webhook.get_discord_message(self.secret, "55")
+        self.assertEqual((ok, message), (False, None))
+        self.assertIn("404", detail)
+        os.environ.pop(self.secret, None)
+        ok, detail, hook = discord_webhook.get_webhook(self.secret)
+        self.assertEqual((ok, hook), (False, None))
+        self.assertIn(self.secret, detail)
+        self.assertEqual(get.call_count, 1)
+
 if __name__ == "__main__":
     unittest.main()

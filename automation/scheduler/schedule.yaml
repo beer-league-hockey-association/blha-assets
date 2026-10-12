@@ -16,7 +16,14 @@
 #   when:   an extra condition. league-office-events = only while an enabled
 #           League Office event has a reminder window open. draft-window =
 #           from 31 days before the Fantrax draft date until a day after the
-#           draft finishes.
+#           draft finishes. trade-deadline-day = from midnight on trade-deadline
+#           day (Sunday of the deadline Week) until an hour after the deadline.
+#   faster: run more often while a condition holds, e.g.
+#           faster: {when: trade-deadline-day, every_minutes: 15}
+#           on a job that otherwise runs every_minutes: 30.
+#           draft finishes. nhl-playoffs = from 5 days before the NHL regular
+#           season's last day until 2 days after the NHL's last scheduled
+#           playoff date (NHL schedule data; see automation/blha/nhl_playoffs.py).
 #   phases: only run during these parts of the Fantrax season:
 #           preseason, regular, playoffs, offseason.
 #           The current phase comes from Fantrax's own week dates.
@@ -51,10 +58,13 @@ jobs:
     workflow: blha-automation-health.yml
     every_minutes: 60
 
-  # Weekly report: recap (with all-play), weekly awards, power rankings,
-  # standings, playoff race (from week 16), matchup preview and NHL games grid.
+  # Weekly report: recap (with all-play), weekly awards, power rankings (with
+  # Luck), Monthly Awards, bounty claims, standings, playoff race (from week
+  # 16), matchup preview (with projected games) and NHL games grid.
   # The 08:00 check posts the report the morning a fantasy week ends; the
   # 20:00 check only posts anything Fantrax was not ready for in the morning.
+  # Each check also reads the NHL scores of finished nights not checked yet,
+  # for the hat-trick bounty while it is unclaimed.
   - id: competition-desk
     workflow: blha-competition-desk.yml
     daily_at: ["08:00", "20:00"]
@@ -92,6 +102,26 @@ jobs:
     daily_at: ["11:30", "13:30", "15:30", "17:00", "18:00", "18:40", "20:00", "21:15"]
     phases: [regular, playoffs]
 
+  # Morning Skate: last night's NHL scores, the BLHA Goal Reel and a few
+  # YouTube highlights in 📸│media, once per NHL date. All year, so the NHL
+  # playoffs are covered after the BLHA season ends; nights without NHL games
+  # post nothing. A failed post is retried at the next check.
+  - id: morning-skate
+    workflow: blha-morning-skate.yml
+    daily_at: ["08:30"]
+    retry_failures: 3
+  # Playoff Pool (just for fun, no money): a free NHL playoff box pool in
+  # 🏒│game-day. Posts the boxes once the NHL playoff field is set, standings
+  # each morning after the first puck drop, and a final post naming the Pool
+  # Shark. The NHL playoffs fall in the BLHA Offseason, so no phases: only
+  # the NHL's own dates gate it. The 19:45 check posts the boxes the same day
+  # if the field was set during the day, and retries a failed morning post.
+  - id: playoff-pool
+    workflow: blha-playoff-pool.yml
+    daily_at: ["07:45", "19:45"]
+    retry_failures: 2
+    when: nhl-playoffs
+
   # Live bracket; saves seeds automatically after the final regular week.
   - id: playoffs
     workflow: blha-fantrax-playoffs.yml
@@ -108,6 +138,18 @@ jobs:
   - id: pick-trades
     workflow: blha-pick-trades.yml
     every_minutes: 15
+
+  # Trade Desk: a report card with a "Who won the trade?" poll in
+  # 💬│trade-discussion for every trade, revisits 6 and 12 months later, and the
+  # BLHA Deadline Day Trade Center tracker in 📢│announcements. All year: trades
+  # happen in the offseason too. Every 30 minutes, and every 15 minutes on
+  # trade-deadline day (midnight until an hour after the 11:59 PM ET deadline).
+  - id: trade-desk
+    workflow: blha-trade-desk.yml
+    every_minutes: 30
+    faster:
+      when: trade-deadline-day
+      every_minutes: 15
 
   # Private alert when a rostered player stops being minor-eligible
   # (Article VII). Reads NHL birth dates and career games once a day.

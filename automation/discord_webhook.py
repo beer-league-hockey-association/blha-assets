@@ -194,6 +194,42 @@ def edit_discord_message(
     return detail == "delivered", detail, status
 
 
+def _get_json(url: str, timeout: int, attempts: int) -> tuple[bool, str, dict[str, Any] | None]:
+    response, detail = _send_with_retries(lambda: requests.get(url, timeout=timeout), attempts)
+    if detail != "delivered" or response is None:
+        return False, detail, None
+    try:
+        body = response.json()
+    except Exception:
+        return False, "Discord returned a body that is not JSON", None
+    return (True, "ok", body) if isinstance(body, dict) else (False, "Discord returned an unexpected body", None)
+
+
+def get_discord_message(
+    secret_name: str,
+    message_id: str,
+    *,
+    timeout: int = 25,
+    attempts: int = 3,
+) -> tuple[bool, str, dict[str, Any] | None]:
+    """Read back a message this webhook posted ("Get Webhook Message"), e.g. for poll results.
+
+    Returns (ok, detail, message object).
+    """
+    webhook = _webhook_url(secret_name)
+    if not webhook:
+        return False, f"missing GitHub Actions secret {secret_name}", None
+    return _get_json(message_url(webhook, message_id), timeout, attempts)
+
+
+def get_webhook(secret_name: str, *, timeout: int = 25, attempts: int = 3) -> tuple[bool, str, dict[str, Any] | None]:
+    """The webhook object ("Get Webhook with Token"): its guild_id and channel_id, for message links."""
+    webhook = _webhook_url(secret_name)
+    if not webhook:
+        return False, f"missing GitHub Actions secret {secret_name}", None
+    return _get_json(webhook, timeout, attempts)
+
+
 def upsert_discord_message(
     secret_name: str,
     payload: dict[str, Any],

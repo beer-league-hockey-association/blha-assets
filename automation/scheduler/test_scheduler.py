@@ -109,6 +109,66 @@ class DailyJobTests(unittest.TestCase):
         self.assertEqual(jan_slot, utc("2027-01-15T12:30:00"))
 
 
+class NhlPlayoffWindowTests(unittest.TestCase):
+    """when: nhl-playoffs, from the NHL schedule's season dates (synthetic shape, see nhl_playoffs.py)."""
+
+    SEASON = {"regularSeasonEndDate": "2027-04-15", "playoffEndDate": "2027-06-24", "gameWeek": []}
+
+    def start(self, now: datetime, raw: dict | None = None) -> datetime | None:
+        from blha import nhl_playoffs
+
+        calls: list[str] = []
+
+        def get(url: str) -> dict:
+            calls.append(url)
+            return raw if raw is not None else self.SEASON
+
+        result = nhl_playoffs.window_start(now, ET, get)
+        self.calls = calls
+        return result
+
+    def test_opens_five_days_before_the_regular_season_ends(self) -> None:
+        opens = datetime(2027, 4, 10, 0, 0, tzinfo=ET).astimezone(timezone.utc)
+        self.assertIsNone(self.start(opens - timedelta(minutes=1)))
+        self.assertEqual(self.start(opens), opens)
+        self.assertEqual(self.start(datetime(2027, 5, 20, 7, 45, tzinfo=ET).astimezone(timezone.utc)), opens)
+        self.assertTrue(self.calls[0].endswith("/v1/schedule/2027-05-20"))
+
+    def test_closes_two_days_after_the_last_scheduled_playoff_date(self) -> None:
+        last_morning = datetime(2027, 6, 26, 19, 45, tzinfo=ET).astimezone(timezone.utc)
+        self.assertIsNotNone(self.start(last_morning))
+        self.assertIsNone(self.start(datetime(2027, 6, 27, 0, 0, tzinfo=ET).astimezone(timezone.utc)))
+
+    def test_no_nhl_request_outside_the_spring(self) -> None:
+        for when in (utc("2026-10-02T15:00:00"), utc("2027-01-15T12:00:00"), utc("2027-08-01T12:00:00")):
+            self.assertIsNone(self.start(when))
+            self.assertEqual(self.calls, [], when)
+
+    def test_missing_season_dates_raise_so_the_job_runs_anyway(self) -> None:
+        with self.assertRaises(ValueError):
+            self.start(utc("2027-04-20T12:00:00"), raw={"gameWeek": []})
+
+    def test_pool_job_is_gated_by_the_condition(self) -> None:
+        from unittest.mock import patch
+
+        from blha import schedule
+
+        job = next(j for j in scheduler.load_config()["jobs"] if j["id"] == "playoff-pool")
+        now = utc("2027-04-20T12:00:00")
+        with patch.dict(schedule.CONDITIONS, {"nhl-playoffs": (lambda now=None: None, "outside the NHL playoff window")}):
+            self.assertEqual(schedule.job_active(job, "offseason", now), (False, "outside the NHL playoff window"))
+        with patch.dict(schedule.CONDITIONS, {"nhl-playoffs": (lambda now=None: now, "")}):
+            self.assertTrue(schedule.job_active(job, "offseason", now)[0])
+
+        def broken(now=None):
+            raise ValueError("no season dates")
+
+        with patch.dict(schedule.CONDITIONS, {"nhl-playoffs": (broken, "")}):
+            active, why = schedule.job_active(job, "offseason", now)
+            self.assertTrue(active)
+            self.assertIn("running anyway", why)
+
+
 class ConfigTests(unittest.TestCase):
     def test_every_job_has_valid_timing_and_workflow(self) -> None:
         cfg = scheduler.load_config()
@@ -121,6 +181,40 @@ class ConfigTests(unittest.TestCase):
             self.assertNotIn(job["workflow"], seen)
             seen.add(job["workflow"])
             scheduler.decide(job, [], now, tz, TOL)
+
+    def test_faster_pace_must_be_valid(self) -> None:
+        import tempfile
+        from pathlib import Path
+
+        from blha.schedule import load_schedule
+
+        bad = [
+            "jobs:\n  - id: x\n    workflow: x.yml\n    daily_at: ['08:00']\n    faster: {when: trade-deadline-day, every_minutes: 15}\n",
+            "jobs:\n  - id: x\n    workflow: x.yml\n    every_minutes: 30\n    faster: {when: no-such-condition, every_minutes: 15}\n",
+            "jobs:\n  - id: x\n    workflow: x.yml\n    every_minutes: 30\n    faster: {when: trade-deadline-day, every_minutes: 45}\n",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            for i, text in enumerate(bad):
+                path = Path(tmp) / f"s{i}.yaml"
+                path.write_text(text, encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    load_schedule(path)
+
+    def test_faster_job_uses_its_short_interval_only_while_the_condition_holds(self) -> None:
+        from unittest.mock import patch
+
+        from blha import schedule
+
+        job = {"id": "x", "workflow": "x.yml", "every_minutes": 30,
+               "faster": {"when": "trade-deadline-day", "every_minutes": 15}}
+        now = utc("2027-02-21T20:00:00")
+        runs = [run(now - timedelta(minutes=12))]
+        with patch.dict(schedule.CONDITIONS, {"trade-deadline-day": (lambda n: now, "")}):
+            fast, _ = schedule.paced(job, now)
+        with patch.dict(schedule.CONDITIONS, {"trade-deadline-day": (lambda n: None, "")}):
+            slow, _ = schedule.paced(job, now)
+        self.assertTrue(scheduler.decide(fast, runs, now, ET, TOL).due)
+        self.assertFalse(scheduler.decide(slow, runs, now, ET, TOL).due)
 
 
 if __name__ == "__main__":
