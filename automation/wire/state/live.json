@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T20:15:41.029540Z",
+  "updated_at": "2026-10-12T21:30:39.044873Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7972,6 +7972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T20:15:40.984811Z"
+    },
+    {
+      "key": "cc23c00ae47c55a3ee7b9d51",
+      "url": "https://www.buffalohockeybeat.com/newcomer-matt-villalta-gives-rochester-amerks-no-1-goalie-sabres-depth",
+      "fingerprint": "be5b8e674f73aac0",
+      "title_norm": "villalta gives sabres depth in net",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-12T21:30:38.952208Z"
     }
   ],
   "known_sources": [
