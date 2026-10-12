@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T21:30:39.044873Z",
+  "updated_at": "2026-10-12T21:45:50.058550Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7982,6 +7982,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-12T21:30:38.952208Z"
+    },
+    {
+      "key": "674d6956758c50e10ff1fa11",
+      "url": "https://theahl.com/news/penguins-acquire-johnson-from-buffalo",
+      "fingerprint": "0e16a99886f5e0fa",
+      "title_norm": "penguins acquire johnson from buffalo",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-12T21:45:49.985494Z"
     }
   ],
   "known_sources": [
