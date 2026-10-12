@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T01:15:36.830188Z",
+  "updated_at": "2026-10-12T02:00:37.301393Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7422,6 +7422,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T01:15:36.783239Z"
+    },
+    {
+      "key": "a0f93672e29fe2a2d632b72d",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-philadelphia-flyers-game-recap-october-11-2026",
+      "fingerprint": "ede7d4e4c377302a",
+      "title_norm": "aho, canes stay hot to keep flyers winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T02:00:37.206392Z"
     }
   ],
   "known_sources": [
