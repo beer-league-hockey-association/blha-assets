@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T17:15:42.762663Z",
+  "updated_at": "2026-10-12T17:30:38.421254Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7792,6 +7792,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T17:15:42.737144Z"
+    },
+    {
+      "key": "45d3ff7a0b3fcd1092d9f0ad",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-kiviranta/31187",
+      "fingerprint": "3189243b70a7bb2c",
+      "title_norm": "joel kiviranta (dal) — kiviranta (lower-body) is expected to return vs. colorado on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:30:38.150674Z"
+    },
+    {
+      "key": "5a4ff9d77ece34488f454e4a",
+      "url": "https://www.sportsnet.ca/nhl/article/goaltender-leevi-merilainen-getting-chance-to-showcase-skills-with-canucks",
+      "fingerprint": "4fab822285c8a25d",
+      "title_norm": "goaltender leevi merilainen getting chance to showcase skills with canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:30:38.381135Z"
     }
   ],
   "known_sources": [
