@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T02:00:37.301393Z",
+  "updated_at": "2026-10-12T02:15:33.601816Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7432,6 +7432,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-12T02:00:37.206392Z"
+    },
+    {
+      "key": "c235750b5113abb178156edb",
+      "url": "https://www.nhl.com/news/washington-capitals-hoping-things-snowball-following-first-goal-for-alex-ovechkin",
+      "fingerprint": "1a559ceb347523c9",
+      "title_norm": "caps hoping things 'snowball' after ovi's 1st goal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T02:15:33.178430Z"
+    },
+    {
+      "key": "a506f1788fe1117a79fcb686",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-send-flyers-to-franchise-record-7th-straight-loss-to-open-season",
+      "fingerprint": "b2dfa50247045879",
+      "title_norm": "hurricanes send flyers to franchise-record 7th straight loss to open season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T02:15:33.568687Z"
     }
   ],
   "known_sources": [
