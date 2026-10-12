@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T15:45:33.449753Z",
+  "updated_at": "2026-10-12T16:15:33.808836Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7642,6 +7642,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-12T15:45:33.372288Z"
+    },
+    {
+      "key": "9cf77b402fc8f81b82f1b298",
+      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
+      "fingerprint": "bf139485e760bef8",
+      "title_norm": "luke evangelista (njd) — evangelista (illness) will be a game-time decision vs. ottawa on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:15:33.137729Z"
+    },
+    {
+      "key": "e5444bcb42608d3e39a0e436",
+      "url": "https://www.dailyfaceoff.com/players/news/marcus-foligno/1689",
+      "fingerprint": "95f680cf9beaa4c3",
+      "title_norm": "marcus foligno (min) — foligno (lower-body) will remain out vs. vegas and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:15:33.476596Z"
+    },
+    {
+      "key": "4b4709ce5bfc4f3fc9e340d3",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-bogosian/53",
+      "fingerprint": "07e057eb775eba5d",
+      "title_norm": "zach bogosian (min) — bogosian (undisclosed) will return vs. vegas on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T16:15:33.730260Z"
     }
   ],
   "known_sources": [
