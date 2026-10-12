@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T21:45:50.058550Z",
+  "updated_at": "2026-10-12T22:45:38.879178Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7992,6 +7992,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-12T21:45:49.985494Z"
+    },
+    {
+      "key": "78349413e9152a778fa33e21",
+      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
+      "fingerprint": "d382417f94d1ef6c",
+      "title_norm": "luke evangelista (njd) — evangelista (illness) is on the ice for warmups and is expected to play monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T22:45:38.763455Z"
     }
   ],
   "known_sources": [
