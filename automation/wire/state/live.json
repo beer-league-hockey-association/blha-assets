@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T17:00:41.198460Z",
+  "updated_at": "2026-10-12T17:15:42.762663Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7752,6 +7752,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T17:00:41.176859Z"
+    },
+    {
+      "key": "a196d4e7f4aabd2cb0d1b42a",
+      "url": "https://www.nhl.com/news/topic/3-stars/matthews-oettinger-lafreniere-named-nhl-3-stars-of-week-october-12-2026",
+      "fingerprint": "e4e3c7f1b90e792f",
+      "title_norm": "matthews, oettinger, lafreniere named 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T17:15:41.646784Z"
+    },
+    {
+      "key": "46e3f0c86a1eee84329007a9",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-12-2026",
+      "fingerprint": "bdcdd1cba1c2620a",
+      "title_norm": "status report: sanderson, zub still out for senators",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T17:15:41.894160Z"
+    },
+    {
+      "key": "b902c712875c8dafd73fa37e",
+      "url": "https://theahl.com/news/griffins-postava-ahl-player-week",
+      "fingerprint": "2552eb9cded290a4",
+      "title_norm": "griffins' postava named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:15:42.445606Z"
+    },
+    {
+      "key": "99eb05382ce9d2f713210f9d",
+      "url": "https://www.sportsnet.ca/hockey/article/arizona-state-close-to-hiring-avalanche-assistant-dave-hakstol-as-head-coach",
+      "fingerprint": "21ef88da310e3c36",
+      "title_norm": "arizona state close to hiring avalanche assistant dave hakstol as head coach",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T17:15:42.737144Z"
     }
   ],
   "known_sources": [
