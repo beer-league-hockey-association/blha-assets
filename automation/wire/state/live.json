@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T14:30:39.323000Z",
+  "updated_at": "2026-10-12T15:15:38.134285Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -7562,6 +7562,76 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T14:30:39.280308Z"
+    },
+    {
+      "key": "02070f6a9fba28a5eaa37321",
+      "url": "https://www.nhl.com/news/new-york-rangers-ready-to-win-without-goalie-igor-shesterkin",
+      "fingerprint": "d19a502fab55f5cf",
+      "title_norm": "rangers 'know what needs to be done' without shesterkin",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T15:15:37.123052Z"
+    },
+    {
+      "key": "c967056d8c3f79b2a25a4890",
+      "url": "https://www.nhl.com/news/seattle-kraken-using-lengthy-road-trip-to-build-winning-habits",
+      "fingerprint": "0d4951544cc0600f",
+      "title_norm": "kraken using lengthy road trip to build winning habits",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T15:15:37.387372Z"
+    },
+    {
+      "key": "05869e30253ecaed9ad09c70",
+      "url": "https://www.nhl.com/news/gavin-mckenna-watch-maple-leafs-no-1-pick-maple-leafs-hosting-matthew-schaefer-islanders",
+      "fingerprint": "8d2b3a72d8a2a928",
+      "title_norm": "mckenna watch: no. 1 pick faces schaefer in rematch",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T15:15:37.586768Z"
+    },
+    {
+      "key": "a5f13e928902c8e373dbb681",
+      "url": "https://www.nhl.com/news/kevin-weekes-to-help-deliver-unlimited-coverage-of-frozen-frenzy",
+      "fingerprint": "d63e297b8753a0e3",
+      "title_norm": "weekes, espn set to deliver frozen frenzy tomorrow",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T15:15:37.596493Z"
+    },
+    {
+      "key": "db8577ef092f93c94059374f",
+      "url": "https://www.nhl.com/news/nick-schmaltz-capitalizing-on-chances-with-utah-mammoth",
+      "fingerprint": "b555a424ca601c83",
+      "title_norm": "schmaltz making most of 'ton of chances' for utah",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-12T15:15:37.605873Z"
+    },
+    {
+      "key": "6ddddf0444cbc97a401ad86a",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-van-riemsdyk/2383",
+      "fingerprint": "2deeb25916661bf7",
+      "title_norm": "trevor van riemsdyk (pit) — van reimsdyk (lower-body) missed practice on monday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-12T15:15:37.806961Z"
+    },
+    {
+      "key": "8af4bcfce37d6d4d8731ca80",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-place-chris-tanev-on-ir-recall-marshall-rifai",
+      "fingerprint": "777445d2f1e9a1f2",
+      "title_norm": "maple leafs place chris tanev on ir, recall marshall rifai",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-12T15:15:37.859292Z"
     }
   ],
   "known_sources": [
