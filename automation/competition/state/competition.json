@@ -1,6 +1,26 @@
 {
   "awards_week": 2,
+  "bounties": {
+    "claimed": {
+      "first-hat-trick": {
+        "bounty_id": "first-hat-trick",
+        "claimed_at": "2026-10-13T00:00:40.873428+00:00",
+        "detail": "Evan Bouchard (EDM): 3 goals against VAN on Tue Sep 29",
+        "night": "2026-09-29",
+        "teams": [
+          {
+            "teamId": "qqpqauuamumuxp03",
+            "teamName": "Test 7"
+          }
+        ],
+        "week": 0
+      }
+    },
+    "hat_trick_through": "2026-09-29"
+  },
+  "bounties_week": 2,
   "games_week": 3,
+  "monthly_week": 0,
   "power_ranks": {
     "2": {
       "2tml63mumumuxoqh": 6,
@@ -22,5 +42,5 @@
   "recap_week": 2,
   "spoon_week": 1,
   "standings_week": 2,
-  "updated_at": "2026-10-12T12:00:51.509239+00:00"
+  "updated_at": "2026-10-13T00:00:40.873428+00:00"
 }
