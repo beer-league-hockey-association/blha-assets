@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T04:15:35.145674Z",
+  "updated_at": "2026-10-13T12:30:39.602617Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8162,6 +8162,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-13T04:15:35.033968Z"
+    },
+    {
+      "key": "9082e49086a6a701a365dadb",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "428fb1153c90dee0",
+      "title_norm": "brad marchand (fla) — the panthers placed brad marchand (leg) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T12:30:39.515509Z"
     }
   ],
   "known_sources": [
