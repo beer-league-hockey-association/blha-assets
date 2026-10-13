@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T17:00:47.362559Z",
+  "updated_at": "2026-10-13T17:15:37.023064Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8382,6 +8382,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T17:00:47.324117Z"
+    },
+    {
+      "key": "a60245acabb537acef4c15d0",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
+      "fingerprint": "bc38b17e2dd74b82",
+      "title_norm": "ryan poehling (ana) — ryan poehling (sprained mcl) has been placed on ir and is expected to miss the next 6-8 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T17:15:36.583985Z"
+    },
+    {
+      "key": "94176d94b1894b6c7d5b6ef2",
+      "url": "https://www.nhl.com/news/frozen-frenzy-to-spotlight-hockey-fights-cancer",
+      "fingerprint": "e68998cb21d260e3",
+      "title_norm": "frozen frenzy to spotlight hockey fights cancer",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T17:15:36.942565Z"
     }
   ],
   "known_sources": [
