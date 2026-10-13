@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T18:00:39.175297Z",
+  "updated_at": "2026-10-13T18:30:43.843369Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8462,6 +8462,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T18:00:39.066213Z"
+    },
+    {
+      "key": "26d6c08ed2fa2986d9abf55a",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "e39e08d72b63dc42",
+      "title_norm": "zach hyman (edm) — hyman (upper-body) will not return on tuesday vs. los angeles.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T18:30:43.453430Z"
+    },
+    {
+      "key": "a157f163e1ea2f7f633cfc6e",
+      "url": "https://www.dailyfaceoff.com/players/news/barclay-goodrow/2395",
+      "fingerprint": "4183f244f28e1b7a",
+      "title_norm": "barclay goodrow (sjs) — goodrow (illness) is expected to play on tuesday vs. boston.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T18:30:43.777354Z"
     }
   ],
   "known_sources": [
