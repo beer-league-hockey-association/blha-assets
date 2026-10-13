@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T02:30:37.450682Z",
+  "updated_at": "2026-10-13T03:15:37.988013Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8122,6 +8122,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T02:30:37.419985Z"
+    },
+    {
+      "key": "3765d3961f31f5a9cd3905f9",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-minnesota-wild-game-recap-october-12-2026",
+      "fingerprint": "9e2c03018e2e2deb",
+      "title_norm": "wild score three in first period, end golden knights' winning streak at four",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T03:15:37.916640Z"
     }
   ],
   "known_sources": [
