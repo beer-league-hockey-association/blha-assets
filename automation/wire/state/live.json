@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T15:00:41.873213Z",
+  "updated_at": "2026-10-13T15:30:38.080248Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8252,6 +8252,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-13T15:00:41.836566Z"
+    },
+    {
+      "key": "766d9faa67a44dcac1586a2b",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
+      "fingerprint": "a6e9b7b20ecce51f",
+      "title_norm": "jordan staal (car) — staal has a calf tear and is expected to miss the next 1-2 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T15:30:37.981905Z"
     }
   ],
   "known_sources": [
