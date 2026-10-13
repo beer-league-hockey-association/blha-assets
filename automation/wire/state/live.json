@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T02:15:37.794417Z",
+  "updated_at": "2026-10-13T02:30:37.450682Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8092,6 +8092,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-13T02:15:37.674258Z"
+    },
+    {
+      "key": "5bc604148f8c393e92805b81",
+      "url": "https://www.dailyfaceoff.com/players/news/nico-sturm/27037",
+      "fingerprint": "cefb3bff8e98f87c",
+      "title_norm": "nico sturm (min) — sturm (upper-body) left monday's game vs. vegas and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T02:30:36.928569Z"
+    },
+    {
+      "key": "d849883e3c07ec672d3d7581",
+      "url": "https://www.sportsnet.ca/nhl/video/senators-stay-hot-to-start-season-as-defence-leads-way-in-win-vs-devils",
+      "fingerprint": "a415fce1f229b681",
+      "title_norm": "senators stay hot to start season as defence leads way in win vs. devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T02:30:37.181651Z"
+    },
+    {
+      "key": "dfba0459b5742dc6255aa5ee",
+      "url": "https://www.sportsnet.ca/nhl/article/tim-stutzle-and-the-senators-beat-the-devils-to-keep-their-hot-start-going",
+      "fingerprint": "3507c0c1315c3f66",
+      "title_norm": "stutzle, senators keep rolling with road win over devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T02:30:37.419985Z"
     }
   ],
   "known_sources": [
