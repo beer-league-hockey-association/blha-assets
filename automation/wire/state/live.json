@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T14:15:41.303232Z",
+  "updated_at": "2026-10-13T14:30:40.208125Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8202,6 +8202,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T14:15:41.188480Z"
+    },
+    {
+      "key": "d2d44dc5fa35b85e18da64aa",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
+      "fingerprint": "6a3272acbb384a2d",
+      "title_norm": "conor garland (cbj) — garland (illness) will be a game-time decision vs. florida on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T14:30:39.789244Z"
+    },
+    {
+      "key": "e5ea874ee227bace566337c6",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-frozen-frenzy-advanced-stats-preview-2026-27",
+      "fingerprint": "890dfcf67a7a8f93",
+      "title_norm": "nhl edge stats: 32 insights for frozen frenzy",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T14:30:40.146440Z"
     }
   ],
   "known_sources": [
