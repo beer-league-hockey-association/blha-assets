@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T17:15:37.023064Z",
+  "updated_at": "2026-10-13T17:30:45.839029Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8402,6 +8402,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-13T17:15:36.942565Z"
+    },
+    {
+      "key": "a249e1308b4f20c826d27ce0",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "15981cf8cee99c2f",
+      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) did not travel to montreal and will be out tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T17:30:44.996132Z"
+    },
+    {
+      "key": "886d44bc3b454b43955f2083",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanche-defenceman-cale-makar-awaiting-childbirth-out-against-stars",
+      "fingerprint": "0104984e8cb7b9ae",
+      "title_norm": "avalanche defenceman cale makar awaiting childbirth, out against stars",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T17:30:45.412018Z"
+    },
+    {
+      "key": "8f173a711843d240971a5ff4",
+      "url": "https://www.sportsnet.ca/nhl/video/is-senators-red-hot-start-to-the-season-sustainable",
+      "fingerprint": "48fb50a85ecc3c22",
+      "title_norm": "is senators' red-hot start to the season sustainable?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T17:30:45.795651Z"
     }
   ],
   "known_sources": [
