@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T22:00:42.594416Z",
+  "updated_at": "2026-10-13T22:30:39.152786Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8582,6 +8582,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-13T22:00:42.483781Z"
+    },
+    {
+      "key": "1098f16d3286c2ca5f5d64cf",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-tuch/2739",
+      "fingerprint": "7b1e7bd57c1f45e4",
+      "title_norm": "alex tuch (wsh) — tuch (undisclosed) is on the ice for warmups; he's expected to play tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T22:30:39.061930Z"
     }
   ],
   "known_sources": [
