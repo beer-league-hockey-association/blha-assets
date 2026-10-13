@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T21:30:35.712126Z",
+  "updated_at": "2026-10-13T22:00:42.594416Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8562,6 +8562,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T21:30:35.660602Z"
+    },
+    {
+      "key": "96d7c7a50556a4eb50cca3ec",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
+      "fingerprint": "711842101c2efa5a",
+      "title_norm": "conor garland (cbj) — garland (illness) is on the ice for warmups; he's expected to play vs. the panthers.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T22:00:42.275423Z"
+    },
+    {
+      "key": "24c6b77c537b1ea0e4f8e27c",
+      "url": "https://www.nhl.com/news/2026-team-usa-milano-cortina-gold-medalists-getting-hero-treatment",
+      "fingerprint": "7405d6c2436ae309",
+      "title_norm": "team usa gold medalists getting hero treatment",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T22:00:42.483781Z"
     }
   ],
   "known_sources": [
