@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T20:00:41.171714Z",
+  "updated_at": "2026-10-13T20:15:48.682380Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8532,6 +8532,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T20:00:41.100811Z"
+    },
+    {
+      "key": "6b24a8585b0bab98650e910d",
+      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
+      "fingerprint": "b468cedbca0ea9ce",
+      "title_norm": "luke evangelista (njd) — evangelista (illness) is out vs. detroit on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T20:15:48.059473Z"
+    },
+    {
+      "key": "b199d6d4f86e412614f674ce",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-mcdavid-set-for-game-no-800-as-light-road-trip-wraps-up",
+      "fingerprint": "88f0de56560bf48d",
+      "title_norm": "oilers notebook: mcdavid set for game no. 800 as light road trip wraps up",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T20:15:48.624722Z"
     }
   ],
   "known_sources": [
