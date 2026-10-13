@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T03:15:37.988013Z",
+  "updated_at": "2026-10-13T03:30:34.934956Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8132,6 +8132,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-13T03:15:37.916640Z"
+    },
+    {
+      "key": "14298b8e5d155fe3c9094a8d",
+      "url": "https://www.sportsnet.ca/nhl/article/wild-top-golden-knights-behind-another-stellar-special-teams-performance",
+      "fingerprint": "305ce66600a3c487",
+      "title_norm": "wild top golden knights behind another stellar special teams performance",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T03:30:34.913693Z"
     }
   ],
   "known_sources": [
