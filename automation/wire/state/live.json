@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-12T23:30:39.956114Z",
+  "updated_at": "2026-10-13T00:00:44.567222Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8042,6 +8042,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-12T23:30:39.910304Z"
+    },
+    {
+      "key": "dfca28e8b75f373efa540096",
+      "url": "https://www.sportsnet.ca/nhl/article/undrafted-owen-michaels-quickly-making-impact-with-oilers",
+      "fingerprint": "819c7aabdb623c4f",
+      "title_norm": "undrafted owen michaels quickly making impact with oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T00:00:44.182728Z"
+    },
+    {
+      "key": "d5e69f0d1f0a4701e3210197",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-mantha-assessed-major-penalty-for-boarding-senators-matinpalo",
+      "fingerprint": "24f43729d23f8d2c",
+      "title_norm": "devils' mantha assessed major penalty for boarding senators' matinpalo",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T00:00:44.525078Z"
     }
   ],
   "known_sources": [
