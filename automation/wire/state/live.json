@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T23:00:42.167349Z",
+  "updated_at": "2026-10-13T23:30:38.636140Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8602,6 +8602,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T23:00:42.128047Z"
+    },
+    {
+      "key": "2f3e1962e43cdcfefaa9cd80",
+      "url": "https://www.sportsnet.ca/nhl/video/full-circle-kreiders-journey-from-canadiens-villain-to-veteran-contributor",
+      "fingerprint": "3e1f5c0165da5be9",
+      "title_norm": "full circle: kreider's journey from canadiens villain to veteran contributor",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T23:30:38.592060Z"
     }
   ],
   "known_sources": [
