@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T03:30:34.934956Z",
+  "updated_at": "2026-10-13T04:15:35.145674Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8142,6 +8142,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T03:30:34.913693Z"
+    },
+    {
+      "key": "5166050417068185004f36e2",
+      "url": "https://www.nhl.com/news/zizing-em-up-espn-voices-hyped-for-frozen-frenzy",
+      "fingerprint": "3e57e62de2cf3897",
+      "title_norm": "espn voices hyped for frozen frenzy mayhem",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T04:15:34.783664Z"
+    },
+    {
+      "key": "a1aa0d2a5567288a93b7507e",
+      "url": "https://www.nhl.com/news/red-wings-rely-on-group-effort-without-captain-for-leadership",
+      "fingerprint": "9c78fc22ec51b51c",
+      "title_norm": "red wings turn to group effort in lieu of captain",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T04:15:35.033968Z"
     }
   ],
   "known_sources": [
