@@ -2,8 +2,10 @@
 
 Pure functions over Fantrax responses, shared with /tradecheck:
   getTeamRosters  roster items carry only id, slot position and status
-                  (ACTIVE, RESERVE, MINORS, IR); names come from getPlayerIds
-  getDraftPicks   futureDraftPicks: year, round, original and current owner
+                  (ACTIVE, RESERVE, MINORS, INJURED_RESERVE); names come from getPlayerIds
+  getDraftPicks   futureDraftPicks: year, round, original and current owner;
+                  currentDraftPicks: a set draft's unmade picks, which
+                  LeagueData.draft_picks gives the same fields
   getLeagueInfo   season calendar, schedule and team names
   getMatchupScores  live scores for a Week
 FAAB is not in Fantrax's feed.
@@ -89,9 +91,14 @@ def roster_text(counts: dict[str, int], separator: str = "\n") -> str:
 
 # -------------------------------------------------------------------- picks
 def future_picks(raw: Any) -> list[dict[str, Any]]:
-    picks = raw.get("futureDraftPicks") if isinstance(raw, dict) else None
+    """Every pick a team holds: future picks, plus the unmade picks of a draft whose order is set."""
+    raw = raw if isinstance(raw, dict) else {}
+    picks = raw.get("futureDraftPicks")
+    picks = list(picks) if isinstance(picks, list) else []
+    picks += [p for p in raw.get("currentDraftPicks") or []
+              if isinstance(p, dict) and p.get("year") and p.get("originalOwnerTeamId")]
     out = []
-    for p in picks if isinstance(picks, list) else []:
+    for p in picks:
         if not isinstance(p, dict):
             continue
         try:

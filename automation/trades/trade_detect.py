@@ -8,9 +8,10 @@ comparing two snapshots, the same way the league archive does
   left one BLHA team and is now on another moved in a trade. Adds from the
   free-agent pool and drops to it are ignored.
 - Draft picks: getDraftPicks, snapshotted with the archive's
-  collect.pick_snapshot (future picks, plus the current draft's picks while
-  Fantrax has a draft set up, so a pick traded around the Annual Draft is
-  seen) and diffed with the pick-trade alert's own functions
+  collect.pick_snapshot (future picks, plus the current draft's picks once
+  Fantrax has the draft order set, so a pick traded around the Annual Draft is
+  seen; blha.draft.complete_current_picks gives those their year and
+  original team) and diffed with the pick-trade alert's own functions
   (automation/commissioner/picktrades.py).
 - Everything that moved in the same window and shares a team is one trade
   (collect.group_trades), so a three-team deal is one trade. Two separate
@@ -53,15 +54,20 @@ REBASELINE_HINT = ("If rosters were reset on purpose (the Commissioner emptied a
                    "run the BLHA Trade Desk workflow once with mode rebaseline")
 
 
-def current_draft_year(fx: Any, tz: ZoneInfo) -> int | None:
-    """Year of the draft Fantrax has set up (its date in league time), for currentDraftPicks rows without a year."""
+def current_draft(fx: Any, tz: ZoneInfo) -> tuple[dr.Draft | None, int | None]:
+    """The draft Fantrax has set up and its year (its date in league time), for currentDraftPicks rows,
+    which carry neither a year nor the pick's original team."""
     try:
         draft = dr.parse_results(fx.draft_results())
     except Exception as exc:  # noqa: BLE001 - only current-draft picks depend on it
         print(f"WARNING: could not read the draft date ({exc.__class__.__name__}); current-draft picks are left out this run.")
-        return None
-    moment = draft.date or draft.start
-    return moment.astimezone(tz).year if moment else None
+        return None, None
+    return draft, dr.draft_year(draft, tz)
+
+
+def current_draft_year(fx: Any, tz: ZoneInfo) -> int | None:
+    """Year of the draft Fantrax has set up, for currentDraftPicks rows without a year."""
+    return current_draft(fx, tz)[1]
 
 
 def read_picks(fx: Any, tz: ZoneInfo) -> dict[str, str] | None:
@@ -69,10 +75,11 @@ def read_picks(fx: Any, tz: ZoneInfo) -> dict[str, str] | None:
     try:
         raw = fx.draft_picks()
         current = raw.get("currentDraftPicks") if isinstance(raw, dict) else None
-        year = None
-        if any(isinstance(row, dict) and not row.get("year") for row in current or []):
-            year = current_draft_year(fx, tz)
-        return pick_snapshot(raw, year)
+        draft, year = None, None
+        if any(isinstance(row, dict) and not (row.get("year") and row.get("originalOwnerTeamId"))
+               for row in current or []):
+            draft, year = current_draft(fx, tz)
+        return pick_snapshot(dr.complete_current_picks(raw, draft, year), year)
     except Exception as exc:  # noqa: BLE001 - picks are optional for player trades
         print(f"WARNING: could not read draft-pick ownership ({exc.__class__.__name__}); keeping the saved copy.")
         return None

@@ -415,7 +415,7 @@ def run(mode: str, item: str, force: bool) -> int:
     info = fx.league_info()
     draft = dr.parse_results(fx.draft_results())
     try:
-        traded = dr.traded_slots(fx.draft_picks())
+        traded = dr.traded_slots(fx.draft_picks(), draft)
     except Exception as exc:
         print(f"WARNING: could not read pick ownership ({exc}); traded picks not shown")
         traded = []

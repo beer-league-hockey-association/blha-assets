@@ -37,6 +37,30 @@ def raw(owners):
 BASE = {(2028, 1, "a"): "a", (2028, 3, "a"): "a", (2029, 2, "b"): "b"}
 
 
+class CurrentDraftTests(unittest.TestCase):
+    """Once a draft's order is set, Fantrax lists that season's picks in currentDraftPicks (holder, round, pick)."""
+
+    def test_snapshot_counts_current_draft_picks_once_completed(self):
+        r = raw({(2029, 1, "a"): "a"})
+        r["currentDraftPicks"] = [{"year": 2028, "round": 1, "originalOwnerTeamId": "a", "currentOwnerTeamId": "c"},
+                                  {"round": 1, "pick": 2, "teamId": "b"}]
+        self.assertEqual(picktrades.snapshot(r), {"2029|1|a": "a", "2028|1|a": "c"})
+
+    def test_read_picks_fills_in_year_and_original_team_from_the_draft(self):
+        class Fx:
+            def draft_picks(self):
+                r = raw({(2029, 1, "a"): "a"})
+                r["currentDraftPicks"] = [{"teamId": "c", "round": 1, "pick": 1}, {"teamId": "b", "round": 1, "pick": 2},
+                                          {"teamId": "c", "round": 1, "pick": 3}]
+                return r
+
+            def draft_results(self):
+                return {"draftDate": "2028-07-20T20:00:00.0-0400", "draftState": "scheduled",
+                        "draftOrder": ["a", "b", "c"], "draftPicks": []}
+        self.assertEqual(picktrades.read_picks(Fx(), {"timezone": "America/New_York"}),
+                         {"2029|1|a": "a", "2028|1|a": "c", "2028|1|b": "b", "2028|1|c": "c"})
+
+
 class DiffTests(unittest.TestCase):
     def test_no_change_no_alert(self):
         s = picktrades.snapshot(raw(BASE))

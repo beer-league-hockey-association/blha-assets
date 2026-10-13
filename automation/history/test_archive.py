@@ -59,6 +59,14 @@ class SnapshotTests(unittest.TestCase):
         with self.assertRaises(collect.SnapshotError):
             collect.roster_snapshot({"error": "nope"})
 
+    def test_injured_reserve_is_recorded_as_ir(self) -> None:
+        # Fantrax names the IR slot INJURED_RESERVE; the archive has always written IR.
+        raw = {"rosters": {A: {"rosterItems": [{"id": "p1", "status": "INJURED_RESERVE"}, {"id": "p2", "status": "ACTIVE"}]}}}
+        snap = collect.roster_snapshot(raw)
+        self.assertEqual(snap, {A: {"p1": "IR", "p2": "ACTIVE"}})
+        _, _, _, statuses = collect.player_changes({A: {"p1": "ACTIVE", "p2": "ACTIVE"}}, snap)
+        self.assertEqual(statuses, [{"team": A, "player": "p1", "from": "ACTIVE", "to": "IR"}])
+
     def test_pick_snapshot_reads_live_fixture(self) -> None:
         picks = collect.pick_snapshot(kit.PICKS)
         self.assertEqual(len(picks), 180)

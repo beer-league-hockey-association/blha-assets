@@ -1047,6 +1047,27 @@ class SafetyTests(RunTests):
         self.assertEqual(len(fake.sent), 1)
         self.assertEqual(self.saved()["trades"][0]["received"]["b"], ["pick:2027|1|a", "player:p1"])
 
+    def test_pick_traded_after_the_order_is_set_is_a_trade(self):
+        # Fantrax moves the season's picks from futureDraftPicks to currentDraftPicks once the order is set,
+        # listing only the holder, round and pick number; the keys must carry on unchanged.
+        fake = Discord()
+        draft = {"draftDate": "2027-07-20T20:00:00.0-0400", "draftState": "scheduled", "draftOrder": ["b", "a", "c"],
+                 "draftPicks": []}
+        before = {(2027, 1, "a"): "a", (2027, 1, "b"): "b", (2027, 1, "c"): "c", (2028, 1, "a"): "a"}
+        after = {(2028, 1, "a"): "a"}
+        order_set = [{"teamId": "b", "round": 1, "pick": 1}, {"teamId": "a", "round": 1, "pick": 2},
+                     {"teamId": "c", "round": 1, "pick": 3}]
+        self.run_desk([(BASE_TEAMS, before)], ny(2027, 7, 10, 12, 0), fake)
+        self.run_desk([(BASE_TEAMS, after)], ny(2027, 7, 10, 12, 30), fake, current=order_set, draft=draft)
+        self.assertEqual(fake.sent, [])
+        traded = [dict(r) for r in order_set]
+        traded[1]["teamId"] = "c"
+        swap = ({"a": ["p1", "p2", "p3", "p7"], "b": ["p4", "p5", "p6"], "c": ["p8"]}, after)
+        self.run_desk([swap], ny(2027, 7, 10, 13, 0), fake, current=traded, draft=draft)
+        self.assertEqual(len(fake.sent), 1)
+        trade = self.saved()["trades"][0]
+        self.assertEqual((trade["received"]["c"], trade["received"]["a"]), (["pick:2027|1|a"], ["player:p7"]))
+
     # 9. American spelling in everything posted
 
     def test_posts_use_american_spelling(self):
