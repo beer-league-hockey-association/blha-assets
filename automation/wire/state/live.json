@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T18:45:33.429867Z",
+  "updated_at": "2026-10-13T19:00:44.889003Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8492,6 +8492,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T18:45:33.382002Z"
+    },
+    {
+      "key": "9b657149e53c176278be84e7",
+      "url": "https://theahl.com/news/garand-ready-to-seize-the-moment-with-rangers",
+      "fingerprint": "8577be347667333c",
+      "title_norm": "garand ready to seize the moment with rangers",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-13T19:00:44.794070Z"
     }
   ],
   "known_sources": [
