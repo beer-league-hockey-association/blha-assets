@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T23:45:35.264192Z",
+  "updated_at": "2026-10-13T23:56:12.888101Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8622,6 +8622,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T23:45:35.212491Z"
+    },
+    {
+      "key": "26c150b63d8675183db64226",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
+      "fingerprint": "7e8c923194b601c0",
+      "title_norm": "jared spurgeon (min) — spurgeon (upper-body) will not play tuesday in winnipeg.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T23:56:12.843273Z"
     }
   ],
   "known_sources": [
