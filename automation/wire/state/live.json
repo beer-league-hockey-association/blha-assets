@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T00:30:33.080273Z",
+  "updated_at": "2026-10-13T01:45:33.771426Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8072,6 +8072,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T00:30:32.990101Z"
+    },
+    {
+      "key": "70b694a64e690359a6465fee",
+      "url": "https://www.sportsnet.ca/nhl/article/wilds-nico-sturm-injured-after-taking-puck-to-head",
+      "fingerprint": "b7b1435788dcaf21",
+      "title_norm": "wild's nico sturm injured after taking puck to head",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T01:45:33.730034Z"
     }
   ],
   "known_sources": [
