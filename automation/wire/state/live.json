@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T14:30:40.208125Z",
+  "updated_at": "2026-10-13T15:00:41.873213Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8222,6 +8222,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-13T14:30:40.146440Z"
+    },
+    {
+      "key": "d1dc482c50d9c956f38aa5e0",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-grzelcyk/2723",
+      "fingerprint": "ff3caf6818cfb63a",
+      "title_norm": "matt grzelcyk (buf) — grzelycyk (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T15:00:41.193335Z"
+    },
+    {
+      "key": "082ed6d132900536e1619ea4",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-call-up-roger-mcqueen-for-possible-nhl-debut",
+      "fingerprint": "0ffb6ab38ee61fdb",
+      "title_norm": "ducks call up roger mcqueen for possible nhl debut",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T15:00:41.533092Z"
+    },
+    {
+      "key": "67ab9b5231047ab1a118c468",
+      "url": "https://dobberprospects.com/2026/10/13/october-qmjhl-report-hot-starts-for-rookies",
+      "fingerprint": "f3019efeda7ce8d4",
+      "title_norm": "october qmjhl report: hot starts for rookies",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-13T15:00:41.836566Z"
     }
   ],
   "known_sources": [
