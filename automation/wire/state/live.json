@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T20:15:48.682380Z",
+  "updated_at": "2026-10-13T21:30:35.712126Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8552,6 +8552,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T20:15:48.624722Z"
+    },
+    {
+      "key": "b8e6353e4756cdb289c5cc6e",
+      "url": "https://www.dailyfaceoff.com/players/news/nikolas-matinpalo/37937",
+      "fingerprint": "f1c90f9d16fccbad",
+      "title_norm": "nikolas matinpalo (ott) — matinpalo (upper-body) is out vs. st. louis on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T21:30:35.660602Z"
     }
   ],
   "known_sources": [
