@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T15:45:34.652495Z",
+  "updated_at": "2026-10-13T16:00:42.499772Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8302,6 +8302,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T15:45:34.622510Z"
+    },
+    {
+      "key": "8445ea745722eb16b48a2cc1",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-jordan-staal-injury-status-report-october-13-2026",
+      "fingerprint": "75404dadff89d2c9",
+      "title_norm": "staal out at least 1 month for hurricanes with calf tear",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T16:00:41.666156Z"
+    },
+    {
+      "key": "164f4eb909e9886f37487472",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-13-2026",
+      "fingerprint": "db40dbbeecde9f3a",
+      "title_norm": "on tap: devils-red wings to begin frozen frenzy",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T16:00:41.878932Z"
+    },
+    {
+      "key": "58def19c7016356148e2e120",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-13-2026",
+      "fingerprint": "d3841ccfdf59f4af",
+      "title_norm": "status report: dahlin not expected to play tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T16:00:42.077254Z"
+    },
+    {
+      "key": "909263e6928803fa92252d2a",
+      "url": "https://audioboom.com/posts/8963748",
+      "fingerprint": "aee00b97f0926a7d",
+      "title_norm": "week 3 pickups; shesterkin out for season",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-13T16:00:42.477573Z"
     }
   ],
   "known_sources": [
