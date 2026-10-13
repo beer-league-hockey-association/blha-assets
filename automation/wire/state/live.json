@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T00:00:44.567222Z",
+  "updated_at": "2026-10-13T00:30:33.080273Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8062,6 +8062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T00:00:44.525078Z"
+    },
+    {
+      "key": "5cd12752481b93611e0f89b3",
+      "url": "https://www.dailyfaceoff.com/players/news/nikolas-matinpalo/37937",
+      "fingerprint": "72e2a6d1bdb9b75d",
+      "title_norm": "nikolas matinpalo (ott) — matinpalo suffered an upper-body injury on monday and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T00:30:32.990101Z"
     }
   ],
   "known_sources": [
