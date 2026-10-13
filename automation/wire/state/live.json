@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T19:00:44.889003Z",
+  "updated_at": "2026-10-13T20:00:41.171714Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8502,6 +8502,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-13T19:00:44.794070Z"
+    },
+    {
+      "key": "168b86ffacc7d5c6e4c7df24",
+      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
+      "fingerprint": "4eb976cfbbe3aea5",
+      "title_norm": "johnathan kovacevic (njd) — kovacevic (knee) will make his season debut on tuesday in detroit.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T20:00:40.583479Z"
+    },
+    {
+      "key": "4d14e7422189f8b696ebea05",
+      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
+      "fingerprint": "3c0f5ed6bc6f0eaa",
+      "title_norm": "radko gudas (fla) — gudas (undisclosed) is out vs. columbus on tuesday and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T20:00:40.807651Z"
+    },
+    {
+      "key": "f5ff5cfc0da85720167b8913",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
+      "fingerprint": "030b960509b9559e",
+      "title_norm": "jacob markstrom (fla) — markstrom (undisclosed) will be out vs. columbus on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T20:00:41.100811Z"
     }
   ],
   "known_sources": [
