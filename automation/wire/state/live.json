@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T23:30:38.636140Z",
+  "updated_at": "2026-10-13T23:45:35.264192Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8612,6 +8612,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T23:30:38.592060Z"
+    },
+    {
+      "key": "694a30f85ad0e1fa53b53a28",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/882d2d33-6dfe-475d-9a87-08c5ded4817a",
+      "fingerprint": "6d910bf854f5b08e",
+      "title_norm": "canucks on sportsnet: vancouver vs. new york islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T23:45:35.212491Z"
     }
   ],
   "known_sources": [
