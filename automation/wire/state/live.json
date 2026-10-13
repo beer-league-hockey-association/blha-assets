@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T17:45:33.727031Z",
+  "updated_at": "2026-10-13T18:00:39.175297Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8452,6 +8452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T17:45:33.704407Z"
+    },
+    {
+      "key": "b84c75b1db8463380ba1f304",
+      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
+      "fingerprint": "8ff5f94a51a56906",
+      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) will be out on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T18:00:39.066213Z"
     }
   ],
   "known_sources": [
