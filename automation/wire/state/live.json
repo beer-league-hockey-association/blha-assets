@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T17:30:45.839029Z",
+  "updated_at": "2026-10-13T17:45:33.727031Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8432,6 +8432,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T17:30:45.795651Z"
+    },
+    {
+      "key": "b13ad8f8b20e99881dd27eed",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-tuch/2739",
+      "fingerprint": "f3dbc0f4725b3b29",
+      "title_norm": "alex tuch (wsh) — tuch (undisclosed) will be a game-time decision in carolina on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-13T17:45:33.405822Z"
+    },
+    {
+      "key": "8c16192f8ec8e9b5d789e7e3",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-bedard-expected-to-make-season-debut-vs-penguins",
+      "fingerprint": "4c4d808a89a6cbc3",
+      "title_norm": "blackhawks' bedard set for season debut vs. penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-13T17:45:33.704407Z"
     }
   ],
   "known_sources": [
