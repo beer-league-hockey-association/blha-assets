@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T12:30:39.602617Z",
+  "updated_at": "2026-10-13T13:30:45.375083Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8172,6 +8172,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T12:30:39.515509Z"
+    },
+    {
+      "key": "dc6b966efa189257018ac23a",
+      "url": "https://www.nhl.com/news/connor-bedard-2026-season-debut-date-for-chicago",
+      "fingerprint": "6b2cd965edc1feb4",
+      "title_norm": "bedard could make season debut for hawks tomorrow",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T13:30:45.018034Z"
+    },
+    {
+      "key": "b517ca330eeb3f688bb3c472",
+      "url": "https://www.nhl.com/news/shortened-training-camps-having-major-impact-on-nhl-teams",
+      "fingerprint": "422317e47c6afe58",
+      "title_norm": "coaches room: effects of shortened training camps",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T13:30:45.296494Z"
     }
   ],
   "known_sources": [
