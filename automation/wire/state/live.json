@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T01:45:33.771426Z",
+  "updated_at": "2026-10-13T02:15:37.794417Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8082,6 +8082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-13T01:45:33.730034Z"
+    },
+    {
+      "key": "eda6ba0f86f228d021d7bf78",
+      "url": "https://www.nhl.com/news/ottawa-senators-new-jersey-devils-game-recap-october-12-2026",
+      "fingerprint": "f7669c5052660695",
+      "title_norm": "stutzle has 2 points, senators defeat devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-13T02:15:37.674258Z"
     }
   ],
   "known_sources": [
