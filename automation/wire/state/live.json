@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T00:30:39.160741Z",
+  "updated_at": "2026-10-14T01:15:35.819115Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8702,6 +8702,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-14T00:30:38.794053Z"
+    },
+    {
+      "key": "7a247647979fe7e27b0ca6f1",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-closing-in-on-seven-year-extension-with-alex-debrincat",
+      "fingerprint": "8b5ed6b3a94df6c3",
+      "title_norm": "red wings closing in on seven-year extension with alex debrincat",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T01:15:35.540377Z"
+    },
+    {
+      "key": "6ee84a658da15571b1c85263",
+      "url": "https://www.nhl.com/news/new-jersey-devils-detroit-red-wings-game-recap-october-13-2026",
+      "fingerprint": "5561d1305a3fff6f",
+      "title_norm": "j. hughes ot goal, 2 assists lift devils past wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T01:15:35.706541Z"
     }
   ],
   "known_sources": [
