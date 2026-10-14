@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T06:15:34.678248Z",
+  "updated_at": "2026-10-14T06:30:35.525499Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9062,6 +9062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T06:15:34.622997Z"
+    },
+    {
+      "key": "061079521f42367d1ed2dbdf",
+      "url": "https://www.sportsnet.ca/nhl/article/winning-is-fun-flames-use-strong-finish-to-secure-first-victory",
+      "fingerprint": "bf453ea473da8ef3",
+      "title_norm": "'winning is fun': flames use strong finish to secure first victory",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T06:30:35.484877Z"
     }
   ],
   "known_sources": [
