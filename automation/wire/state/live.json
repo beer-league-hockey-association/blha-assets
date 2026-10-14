@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T16:00:44.516575Z",
+  "updated_at": "2026-10-14T16:15:36.841535Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9162,6 +9162,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T16:00:44.476190Z"
+    },
+    {
+      "key": "f18df8a5f98ae2929fdc3c93",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-14-2026",
+      "fingerprint": "8f01231f244dcd8b",
+      "title_norm": "on tap: avs could get new-dad scoring bump from makar",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T16:15:36.383846Z"
+    },
+    {
+      "key": "b2c68df2074a7b384d6dc111",
+      "url": "https://www.nhl.com/news/kyle-palmieri-making-up-for-lost-time-with-ny-islanders",
+      "fingerprint": "201e67e9ea88446e",
+      "title_norm": "palmieri making up for lost time with islanders",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T16:15:36.749365Z"
     }
   ],
   "known_sources": [
