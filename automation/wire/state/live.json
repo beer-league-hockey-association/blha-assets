@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T16:45:34.599982Z",
+  "updated_at": "2026-10-14T17:00:44.429323Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9202,6 +9202,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T16:45:34.504439Z"
+    },
+    {
+      "key": "666a40a634cf1f21017dbe2a",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-14-2026",
+      "fingerprint": "3b79f6af075b3730",
+      "title_norm": "status report: hall injury 'doesn't look good' for canes",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T17:00:43.921528Z"
+    },
+    {
+      "key": "f8b46f9998f1c34158548649",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-interim-gm-shawn-horcoff-zero-interest-in-trading-edvinsson",
+      "fingerprint": "bd2339c62eb9a9ab",
+      "title_norm": "red wings interim gm shawn horcoff: 'zero interest in trading' edvinsson",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T17:00:44.402569Z"
     }
   ],
   "known_sources": [
