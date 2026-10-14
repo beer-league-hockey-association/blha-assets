@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T17:30:44.458927Z",
+  "updated_at": "2026-10-14T18:15:42.356182Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9242,6 +9242,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T17:30:44.360833Z"
+    },
+    {
+      "key": "da2e9e5b52c0ec763b8e02b8",
+      "url": "https://www.nhl.com/news/connor-bedard-shines-in-return-to-ice-with-chicago-blackhawks",
+      "fingerprint": "ac5f1f6126e1294f",
+      "title_norm": "bedard gets back to 'what i live for' in season debut",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T18:15:42.246239Z"
     }
   ],
   "known_sources": [
