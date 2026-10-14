@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T05:00:37.629917Z",
+  "updated_at": "2026-10-14T05:15:43.811517Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9002,6 +9002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T05:00:37.603706Z"
+    },
+    {
+      "key": "d1432b06998c5d763a535d2b",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-break-tie-late-beat-ducks-for-first-win",
+      "fingerprint": "1faed5097f9e98e4",
+      "title_norm": "flames break tie late, beat ducks for first win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T05:15:43.774188Z"
     }
   ],
   "known_sources": [
