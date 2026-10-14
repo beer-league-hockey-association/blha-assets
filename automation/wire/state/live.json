@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T18:56:33.544321Z",
+  "updated_at": "2026-10-14T19:15:45.208770Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9282,6 +9282,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-14T18:56:33.454641Z"
+    },
+    {
+      "key": "b46bbda89afaf77aede28f28",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-olivier-fined-5000-for-slashing-panthers-balinskis",
+      "fingerprint": "fbfde5f6f2a6989b",
+      "title_norm": "blue jackets' olivier fined $5,000 for slashing panthers' balinskis",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T19:15:45.176741Z"
     }
   ],
   "known_sources": [
