@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T17:15:37.767681Z",
+  "updated_at": "2026-10-14T17:30:44.458927Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9232,6 +9232,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T17:15:37.734851Z"
+    },
+    {
+      "key": "abe28428aaea1c9cd5d2c9b2",
+      "url": "https://www.nhl.com/news/outdoor-fan-festival-to-set-stage-for-heritage-classic",
+      "fingerprint": "2e42c8f56adfd559",
+      "title_norm": "outdoor fan festival to set stage at heritage classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T17:30:44.360833Z"
     }
   ],
   "known_sources": [
