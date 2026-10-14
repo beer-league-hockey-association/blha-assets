@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T07:45:32.455509Z",
+  "updated_at": "2026-10-14T12:15:34.783863Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9082,6 +9082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T07:45:32.423076Z"
+    },
+    {
+      "key": "ae3c39061217fc71269444df",
+      "url": "https://dobberprospects.com/2026/10/14/the-pharling-files",
+      "fingerprint": "cd52ac25a35bd442",
+      "title_norm": "the pharling files",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-14T12:15:34.746846Z"
     }
   ],
   "known_sources": [
