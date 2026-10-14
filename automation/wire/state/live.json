@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T19:15:45.208770Z",
+  "updated_at": "2026-10-14T19:30:38.977388Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9292,6 +9292,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T19:15:45.176741Z"
+    },
+    {
+      "key": "8f853e407ceb6a8751c6d74b",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-face-new-reality-as-albertas-time-change-brings-challenges",
+      "fingerprint": "c22702720e6d1f3e",
+      "title_norm": "oilers face new reality as alberta's time change brings challenges",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T19:30:38.657778Z"
+    },
+    {
+      "key": "c9e8804ef4a80c1ecbbce701",
+      "url": "https://www.sportsnet.ca/nhl/article/surreal-emergency-backup-goalies-getting-second-crack-at-nhl-dream",
+      "fingerprint": "5bce9ba214255035",
+      "title_norm": "'surreal': emergency backup goalies getting second crack at nhl dream",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T19:30:38.956450Z"
     }
   ],
   "known_sources": [
