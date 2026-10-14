@@ -142,8 +142,10 @@ the pings stop it emails you (and optionally posts in Discord).
 5. Healthchecks: **Integrations**. Email to your sign-up address is on by
    default. Optionally add **Discord** and pick `⚙️│automation-health`.
 6. Wait 15 minutes. The check should turn green ("up"). The scheduler log ends
-   with `Checked in (success)`; a failed scheduler run pings `/fail`, which
-   alerts you straight away.
+   with `Checked in (success)`. A failed run doesn't check in, so a single bad
+   run never alerts you; the check goes down only when no run has succeeded
+   for about 75 minutes. Real problems in a single run (a bad token, a missing
+   workflow) still reach `⚙️│automation-health` through the hourly health check.
 
 Without the secret the step just logs that it skipped.
 
@@ -179,5 +181,6 @@ account; that would break GitHub's redirect for any old link still in use.
 | cron-job.org shows 404 | Wrong URL, or the scheduler is not on `main` yet | Check the URL; merge the scheduler PR |
 | cron-job.org shows 422 | Request body missing or not JSON | Body must be exactly `{"ref":"main"}` |
 | Health alert: "BLHA Scheduler — Workflow appears stale" | External timer stopped; only GitHub's late backup cron is running | Check the cron-job.org job history |
-| Scheduler log shows `ERROR … dispatch failed` | GitHub API problem, or a workflow lost its `mode` input | Read the error text in the log |
+| Scheduler log shows `RETRY …` | GitHub answered one request with a 5xx or dropped the connection | Nothing; the job is checked or started at the next run |
+| Scheduler log shows `ERROR … dispatch failed` | Bad token or permissions, or a workflow lost its `mode` input | Read the error text in the log |
 | Healthchecks.io says the check is down | No live scheduler run for over an hour | Check cron-job.org history and the Actions tab; a GitHub outage clears itself |

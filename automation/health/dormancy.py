@@ -36,6 +36,7 @@ AUTOMATION = ROOT.parent
 sys.path.insert(0, str(AUTOMATION))
 sys.path.insert(0, str(AUTOMATION / "commissioner"))
 
+from blha import github_api  # noqa: E402
 from blha.league import load_json, load_league, save_json  # noqa: E402
 from discord_webhook import post_discord_webhook  # noqa: E402
 import desk  # noqa: E402
@@ -49,7 +50,7 @@ REPEAT_DAYS = 7
 class GitHub:
     def __init__(self, repo: str, token: str, session: requests.Session | None = None) -> None:
         self.repo = repo
-        self.session = session or requests.Session()
+        self.session = session or github_api.add_retries(requests.Session())
         self.session.headers.update({
             "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",

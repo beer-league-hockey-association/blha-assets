@@ -14,6 +14,12 @@ Because due-ness is computed from the last live run rather than from the
 current minute, a missed or delayed start never causes a job to be skipped;
 the job simply runs at the next check. Running the scheduler twice in a row is
 harmless because the second pass sees the runs the first pass started.
+
+GitHub's brief hiccups (a 500 or 502, a dropped connection) don't fail a run:
+reads are retried, and a job that couldn't be checked or started is simply
+still due at the next check (RETRY in the log). Only real problems fail the
+run (ERROR in the log): a bad token, a missing workflow, a bad request, or
+GitHub not answering a single read all run.
 """
 
 from __future__ import annotations
@@ -33,6 +39,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 
 from blha.schedule import SCHEDULE_PATH as CONFIG_PATH  # noqa: E402
+from blha import github_api  # noqa: E402
 from blha.schedule import current_phase, job_active, load_schedule, paced  # noqa: E402
 
 # Runs that ended this way did no work, so they do not count as the job having
@@ -142,11 +149,19 @@ def decide(
     raise ValueError(f"job {job_id} needs every_minutes or daily_at")
 
 
+class DispatchError(RuntimeError):
+    """GitHub refused to start a workflow; status is its HTTP answer."""
+
+    def __init__(self, status: int, text: str) -> None:
+        super().__init__(f"HTTP {status}: {text}")
+        self.status = status
+
+
 class GitHub:
     def __init__(self, token: str, repository: str, api_base: str) -> None:
         self.repository = repository
         self.api_base = api_base.rstrip("/")
-        self.session = requests.Session()
+        self.session = github_api.add_retries(requests.Session())
         self.session.headers.update({
             "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",
@@ -158,7 +173,7 @@ class GitHub:
         response = self.session.get(
             f"{self.api_base}/repos/{self.repository}/actions/workflows/{workflow}/runs",
             params={"per_page": per_page},
-            timeout=30,
+            timeout=(10, 30),
         )
         response.raise_for_status()
         rows = response.json().get("workflow_runs", [])
@@ -168,10 +183,10 @@ class GitHub:
         response = self.session.post(
             f"{self.api_base}/repos/{self.repository}/actions/workflows/{workflow}/dispatches",
             json={"ref": ref, "inputs": {"mode": "live"}},
-            timeout=30,
+            timeout=(10, 30),
         )
         if response.status_code != 204:
-            raise RuntimeError(f"HTTP {response.status_code}: {response.text[:300]}")
+            raise DispatchError(response.status_code, response.text[:300])
 
 
 def load_config() -> dict[str, Any]:
@@ -202,7 +217,7 @@ def main() -> int:
         f"BLHA SCHEDULER now={now.astimezone(tz).strftime('%Y-%m-%d %H:%M %Z')} "
         f"season={phase_text} dry_run={args.dry_run} ref={ref}"
     )
-    started = errors = 0
+    started = errors = retries = checked = 0
     for job in cfg["jobs"]:
         active, why = job_active(job, phase, now)
         if not active:
@@ -210,7 +225,19 @@ def main() -> int:
             continue
         job, pace = paced(job, now)
         try:
-            decision = decide(job, gh.recent_runs(str(job["workflow"])), now, tz, tolerance)
+            runs = gh.recent_runs(str(job["workflow"]))
+        except Exception as exc:
+            if github_api.is_transient(exc):
+                print(f"RETRY   {job.get('id')}: GitHub didn't answer ({github_api.describe(exc)}); "
+                      "checking again at the next run")
+                retries += 1
+            else:
+                print(f"ERROR   {job.get('id')}: could not evaluate: {exc}")
+                errors += 1
+            continue
+        checked += 1
+        try:
+            decision = decide(job, runs, now, tz, tolerance)
             if pace:
                 decision.reason += f" [{pace}]"
         except Exception as exc:
@@ -229,10 +256,20 @@ def main() -> int:
             print(f"STARTED {decision.job_id}: {decision.reason}")
             started += 1
         except Exception as exc:
-            print(f"ERROR   {decision.job_id}: dispatch failed: {exc}")
-            errors += 1
+            if github_api.is_transient(exc):
+                # Never repeated here: GitHub may have started it anyway. If it
+                # didn't, the job is still due and the next run starts it.
+                print(f"RETRY   {decision.job_id}: not started ({github_api.describe(exc)}); "
+                      "still due, so the next run starts it")
+                retries += 1
+            else:
+                print(f"ERROR   {decision.job_id}: dispatch failed: {exc}")
+                errors += 1
 
-    print(f"SUMMARY started={started} errors={errors}")
+    print(f"SUMMARY started={started} errors={errors} retry_next_run={retries}")
+    if retries and not checked:
+        print("ERROR   GitHub didn't answer any read this run")
+        return 1
     return 1 if errors else 0
 
 

@@ -31,7 +31,7 @@ concurrency:
 jobs:
   dispatch:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 5
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
@@ -60,8 +60,10 @@ jobs:
             python automation/scheduler/scheduler.py
           fi
 
-      # Optional outside check-in (healthchecks.io). A ping after every live run;
-      # if pings stop, Healthchecks emails you or posts to Discord. Never fails the run.
+      # Optional outside check-in (healthchecks.io). Each successful live run
+      # pings it. A failed run sends nothing, so one bad run never raises an
+      # alarm; Healthchecks alerts only when no run has succeeded for the
+      # check's period plus grace time (about 75 minutes). Never fails the run.
       - name: Check in with the outside monitor
         if: ${{ always() && !(github.event_name == 'workflow_dispatch' && inputs.dry_run) }}
         env:
@@ -73,6 +75,8 @@ jobs:
             echo "No BLHA_HEALTHCHECK_PING_URL secret; skipping the outside check-in."
             exit 0
           fi
-          url="$PING_URL"
-          [[ "$OUTCOME" == "success" ]] || url="$PING_URL/fail"
-          curl -fsS -m 10 --retry 3 -o /dev/null "$url" && echo "Checked in ($OUTCOME)." || echo "Check-in did not go through; the run itself is unaffected."
+          if [[ "$OUTCOME" != "success" ]]; then
+            echo "Run did not succeed ($OUTCOME); no check-in this time. Healthchecks alerts only if no run succeeds for over an hour."
+            exit 0
+          fi
+          curl -fsS -m 10 --retry 3 -o /dev/null "$PING_URL" && echo "Checked in (success)." || echo "Check-in did not go through; the run itself is unaffected."
