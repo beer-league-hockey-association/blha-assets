@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T01:15:35.819115Z",
+  "updated_at": "2026-10-14T01:30:40.428750Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8722,6 +8722,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T01:15:35.706541Z"
+    },
+    {
+      "key": "28dc86e58c2987ef0bd3a3ce",
+      "url": "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-recap-october-13-2026",
+      "fingerprint": "c1e37232a83c3438",
+      "title_norm": "brady tkachuk scores natural hat trick, powers panthers past blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T01:30:40.316396Z"
     }
   ],
   "known_sources": [
