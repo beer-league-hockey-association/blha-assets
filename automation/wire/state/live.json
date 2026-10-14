@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T02:45:36.058775Z",
+  "updated_at": "2026-10-14T03:00:44.389737Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8872,6 +8872,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T02:45:35.851627Z"
+    },
+    {
+      "key": "402ec81551667168d04e83f5",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-ridly-greig-leaves-game-early-with-strain",
+      "fingerprint": "9728e81bf1a4cfc6",
+      "title_norm": "senators' ridly greig leaves game early with strain",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T03:00:44.345614Z"
     }
   ],
   "known_sources": [
