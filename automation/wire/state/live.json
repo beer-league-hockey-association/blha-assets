@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T02:00:43.310179Z",
+  "updated_at": "2026-10-14T02:15:41.125187Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8772,6 +8772,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T02:00:43.260688Z"
+    },
+    {
+      "key": "f7a9ffc1b904c633dde0563b",
+      "url": "https://www.nhl.com/news/2026-heritage-classic-rink-build-personal-for-nhl-executive-derek-king",
+      "fingerprint": "16cb4de9d8f42191",
+      "title_norm": "heritage classic rink build personal for nhl vp",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:15:40.795813Z"
+    },
+    {
+      "key": "90bf368d125bebe498a4871b",
+      "url": "https://www.nhl.com/news/buffalo-sabres-montreal-canadiens-game-recap-october-13-2026",
+      "fingerprint": "b44d95907a5ceb3a",
+      "title_norm": "bolduc scores shootout winner again, canadiens recover to defeat sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:15:41.033302Z"
     }
   ],
   "known_sources": [
