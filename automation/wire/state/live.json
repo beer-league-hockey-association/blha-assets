@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T04:15:35.380530Z",
+  "updated_at": "2026-10-14T05:00:37.629917Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8982,6 +8982,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T04:15:35.347130Z"
+    },
+    {
+      "key": "00f1d84e610358044a67967c",
+      "url": "https://www.nhl.com/news/calgary-flames-anaheim-ducks-game-recap-october-13-2026",
+      "fingerprint": "c80d47c36cfd4a42",
+      "title_norm": "pospisil scores late, flames edge ducks for 1st win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T05:00:37.323848Z"
+    },
+    {
+      "key": "23265b97a78b2d065e194be7",
+      "url": "https://www.sportsnet.ca/nhl/article/buiums-struggles-continue-for-canucks-as-losses-pile-up",
+      "fingerprint": "6077c70ff907da87",
+      "title_norm": "buium's struggles continue for canucks as losses pile up",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T05:00:37.603706Z"
     }
   ],
   "known_sources": [
