@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T01:45:35.722931Z",
+  "updated_at": "2026-10-14T02:00:43.310179Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8752,6 +8752,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T01:45:35.699236Z"
+    },
+    {
+      "key": "bad7df5d2b8e117709390d6c",
+      "url": "https://www.nhl.com/news/washington-capitals-carolina-hurricanes-game-recap-october-13-2026",
+      "fingerprint": "46c4259ae4878dd6",
+      "title_norm": "svechnikov scores twice, has game-winner for hurricanes against capitals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:00:42.922128Z"
+    },
+    {
+      "key": "1c838e59e60cd3aff0c00b5d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-hang-on-for-shootout-win-over-sabres-after-blowing-two-goal-lead",
+      "fingerprint": "03d60e26ed7fc1c2",
+      "title_norm": "canadiens hang on for shootout win over sabres after blowing two-goal lead",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T02:00:43.260688Z"
     }
   ],
   "known_sources": [
