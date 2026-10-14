@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T02:30:37.825460Z",
+  "updated_at": "2026-10-14T02:45:36.058775Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8832,6 +8832,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T02:30:37.475487Z"
+    },
+    {
+      "key": "d9c0cb802080a02a4fd6994e",
+      "url": "https://www.nhl.com/news/st-louis-blues-ottawa-senators-game-recap-october-13-2026",
+      "fingerprint": "6acd4d885d4abeca",
+      "title_norm": "suter, neighbours, mctavish each scores 2 in blues win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:45:34.608140Z"
+    },
+    {
+      "key": "284a84a5578a88fa97e70f39",
+      "url": "https://www.nhl.com/news/vancouver-canucks-new-york-islanders-game-recap-october-13-2026",
+      "fingerprint": "7de0230787f5e0df",
+      "title_norm": "palmieri scores 1st 2 goals of season in islanders win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:45:35.326194Z"
+    },
+    {
+      "key": "45d4e0c32e69de3463fe5fba",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/f47bec47-ea22-488e-b1d1-3936fbc615e2",
+      "fingerprint": "509162db25bf9953",
+      "title_norm": "oilers on sportsnet: edmonton vs. los angeles",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T02:45:35.828719Z"
+    },
+    {
+      "key": "45a08bacf2023a43f7db7463",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-sent-to-fifth-straight-loss-by-islanders",
+      "fingerprint": "9da8acbc31e394d7",
+      "title_norm": "canucks sent to fifth straight loss by islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T02:45:35.851627Z"
     }
   ],
   "known_sources": [
