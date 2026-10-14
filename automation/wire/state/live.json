@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-13T23:56:12.888101Z",
+  "updated_at": "2026-10-14T00:30:39.160741Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8632,6 +8632,76 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-13T23:56:12.843273Z"
+    },
+    {
+      "key": "bc6c12df5b97bff1c319d852",
+      "url": "https://www.dailyfaceoff.com/players/news/reid-schaefer/32867",
+      "fingerprint": "7520a8a056337c22",
+      "title_norm": "reid schaefer (nsh) — schaefer will be scratched tuesday vs. the golden knights.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:37.875923Z"
+    },
+    {
+      "key": "993e3fe14da61902e55a63cc",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "c4390564349780f3",
+      "title_norm": "taylor hall (car) — hall suffered an upper-body injury vs. washington and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:38.132273Z"
+    },
+    {
+      "key": "0aed1e1fca29750bfee0d61f",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "f327ad32c72bdd58",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) remains day-to-day and will not play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:38.374746Z"
+    },
+    {
+      "key": "981b8a9388951d7280225d5e",
+      "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
+      "fingerprint": "08c4ee1b1cf1f290",
+      "title_norm": "wyatt johnston (dal) — johnston (illness) will not play tuesday vs. the avalanche.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:38.390150Z"
+    },
+    {
+      "key": "4deb1f7ebd0b3a18d25077ee",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-mathieu-olivier-given-game-misconduct-for-slashing",
+      "fingerprint": "af642a26d590d6c3",
+      "title_norm": "blue jackets' mathieu olivier given game misconduct for slashing",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:38.728392Z"
+    },
+    {
+      "key": "7d6bef69131c292753cbee91",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-taylor-hall-exits-vs-capitals",
+      "fingerprint": "6edc294a4671fc85",
+      "title_norm": "hurricanes' taylor hall exits vs. capitals with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:38.741716Z"
+    },
+    {
+      "key": "ad807406f5526bac052d8539",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
+      "fingerprint": "030d27ccb3cc2f97",
+      "title_norm": "zachary l'heureux (col) — l'heureux (upper-body) will not play tuesday in dallas.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T00:30:38.794053Z"
     }
   ],
   "known_sources": [
