@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T21:30:51.656069Z",
+  "updated_at": "2026-10-14T21:45:31.494363Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9332,6 +9332,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-14T21:30:51.549610Z"
+    },
+    {
+      "key": "1c514ea4def271d53ce99fb5",
+      "url": "https://www.sportsnet.ca/nhl/article/how-early-season-goalie-market-impacts-potential-hellebuyck-trade",
+      "fingerprint": "bf48ab932801e8a4",
+      "title_norm": "how early-season goalie market impacts potential hellebuyck trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T21:45:31.468972Z"
     }
   ],
   "known_sources": [
