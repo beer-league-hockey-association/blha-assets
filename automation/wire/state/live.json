@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T05:45:34.970640Z",
+  "updated_at": "2026-10-14T06:15:34.678248Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9042,6 +9042,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T05:45:34.922682Z"
+    },
+    {
+      "key": "88baefd726c8e7c765c7e755",
+      "url": "https://www.nhl.com/news/boston-bruins-san-jose-sharks-game-recap-october-13-2026",
+      "fingerprint": "87e3d569bd77b5ca",
+      "title_norm": "mcavoy scores in season debut, bruins defeat sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T06:15:34.311362Z"
+    },
+    {
+      "key": "caf260d96cb2344d2441574b",
+      "url": "https://www.sportsnet.ca/nhl/article/stolarz-maple-leafs-too-leaky-in-high-scoring-loss-to-mammoth",
+      "fingerprint": "d1aad094755a67ce",
+      "title_norm": "stolarz, maple leafs too leaky in high-scoring loss to mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T06:15:34.622997Z"
     }
   ],
   "known_sources": [
