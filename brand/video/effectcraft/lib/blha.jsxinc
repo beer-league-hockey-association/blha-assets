@@ -1,0 +1,524 @@
+// BLHA Video Kit: the shared helpers behind every script in this folder.
+// You never need to edit this file. Each numbered script includes it, builds its compositions
+// from the DATA block at its top, and puts them in the project's "BLHA Video Kit" folder.
+//
+// Plain ES3 JavaScript and the After Effects scripting model, so the same scripts also run in
+// After Effects. Fonts are named by their PostScript names, which both apps understand.
+
+var BLHA = (function () {
+    var B = {};
+    B.W = 1920;
+    B.H = 1080;
+    B.FPS = 30;
+    B.KIT = "BLHA Video Kit";
+    B.built = [];
+
+    // ------------------------------------------------------------ brand
+    B.COLORS = {
+        black: [14, 15, 18], charcoal: [43, 45, 49], charLight: [49, 51, 56], charDark: [38, 40, 44],
+        stands: [29, 31, 35], gold: [255, 184, 28], goldLight: [255, 215, 106], goldDark: [198, 138, 0],
+        cream: [244, 239, 228], ice: [238, 245, 250], paper: [252, 252, 252], blue: [36, 87, 197],
+        red: [200, 36, 31], green: [63, 163, 77], muted: [184, 185, 190], steel: [154, 161, 169]
+    };
+
+    // Pixel fonts: `k` is screen pixels per font pixel, so text stays on the pixel grid.
+    // Jersey 10 capitals are 10 font pixels tall (1400 units per em, 75 per pixel);
+    // Silkscreen capitals are 5 font pixels tall (1000 units per em, 140 per pixel).
+    B.FONTS = {
+        jersey: { name: "Jersey10-Regular", size: 1400 / 75, cap: 10 },
+        silk: { name: "Silkscreen-Regular", size: 1000 / 140, cap: 5 },
+        silkBold: { name: "Silkscreen-Bold", size: 1000 / 140, cap: 5 }
+    };
+
+    B.color = function (c) {
+        var v = c;
+        if (typeof c === "string") {
+            if (c.charAt(0) === "#") {
+                var h = c.substring(1);
+                if (h.length === 3) h = h.charAt(0) + h.charAt(0) + h.charAt(1) + h.charAt(1) + h.charAt(2) + h.charAt(2);
+                v = [parseInt(h.substring(0, 2), 16), parseInt(h.substring(2, 4), 16), parseInt(h.substring(4, 6), 16)];
+                if (h.length !== 6 || isNaN(v[0]) || isNaN(v[1]) || isNaN(v[2])) throw new Error("\"" + c + "\" is not a color. Write colors like #FFB81C.");
+            } else {
+                v = B.COLORS[c];
+                if (!v) throw new Error("Unknown color \"" + c + "\". Use a #RRGGBB value or a brand color name.");
+            }
+        }
+        return [v[0] / 255, v[1] / 255, v[2] / 255];
+    };
+
+    // Light or dark text for a background color.
+    B.inkOn = function (c) {
+        var v = B.color(c);
+        return (0.299 * v[0] + 0.587 * v[1] + 0.114 * v[2]) > 0.55 ? "black" : "cream";
+    };
+
+    B.f = function (frames) { return frames / B.FPS; };
+
+    // ------------------------------------------------------------ files and the project
+    B.here = (function () {
+        try { return new File($.fileName).parent.fsName; } catch (e) { return ""; }
+    })();
+
+    B.file = function (rel) { return new File(B.here + "/" + rel); };
+
+    B.log = function (s) { try { $.writeln(s); } catch (e) {} };
+
+    function findFolder(parent, name) {
+        var n = parent ? parent.numItems : app.project.numItems;
+        for (var i = 1; i <= n; i++) {
+            var it = parent ? parent.item(i) : app.project.item(i);
+            if (it instanceof FolderItem && it.name === name) return it;
+        }
+        return null;
+    }
+
+    B.folder = function (name) {
+        var kit = findFolder(null, B.KIT) || app.project.items.addFolder(B.KIT);
+        if (!name) return kit;
+        return findFolder(kit, name) || kit.items.addFolder(name);
+    };
+
+    function hasItem(folder, name) {
+        for (var i = 1; i <= folder.numItems; i++) if (folder.item(i).name === name) return true;
+        return false;
+    }
+
+    // A new 1920x1080, 30 fps composition. Re-running a script never replaces earlier work: a
+    // second build of the same name gets " (2)" on the end.
+    B.comp = function (folder, name, seconds) {
+        var n = name, k = 2;
+        while (hasItem(folder, n)) n = name + " (" + (k++) + ")";
+        var comp = folder.items.addComp(n, B.W, B.H, 1, seconds, B.FPS);
+        comp.bgColor = B.color("black");
+        B.built.push(n);
+        return comp;
+    };
+
+    // Footage from this kit (Images/ or Audio/), imported once per project.
+    B.footage = function (rel) {
+        // No f.exists check: EffectCraft only lets scripts look at files in the project's folder
+        // unless a preference is on, but importing is always allowed.
+        var f = B.file(rel);
+        var assets = B.folder("Kit Assets");
+        for (var i = 1; i <= assets.numItems; i++) {
+            var it = assets.item(i);
+            if (it instanceof FootageItem && it.name === f.name) return it;
+        }
+        try {
+            var item = app.project.importFile(new ImportOptions(f));
+            item.parentFolder = assets;
+            return item;
+        } catch (e) {
+            B.log("Could not import " + f.fsName + ": " + e.message);
+            return null;
+        }
+    };
+
+    var NAMES = {};
+    function uniqueLayerName(comp, name) {
+        var base = String(name).replace(/[\r\n]+/g, " ").substring(0, 40) || "Layer";
+        var used = NAMES[comp.id] || (NAMES[comp.id] = {});
+        var n = base, k = 2;
+        while (used[n]) n = base + " " + (k++);
+        used[n] = true;
+        return n;
+    }
+
+    // Line breaks: EffectCraft takes "\n"; After Effects wants "\r".
+    B.NL = (typeof $ !== "undefined" && $.engineName === "boa") ? "\n" : "\r";
+    function lines(s) { return String(s).replace(/\r\n|\r|\n/g, B.NL); }
+
+    // ------------------------------------------------------------ properties
+    function tr(layer, name) { return layer.property("ADBE Transform Group").property(name); }
+    B.pos = function (layer) { return tr(layer, "ADBE Position"); };
+    B.scaleProp = function (layer) { return tr(layer, "ADBE Scale"); };
+    B.opacity = function (layer) { return tr(layer, "ADBE Opacity"); };
+    B.anchor = function (layer) { return tr(layer, "ADBE Anchor Point"); };
+    B.textProp = function (layer) { return layer.property("ADBE Text Properties").property("ADBE Text Document"); };
+
+    // Everything below works on "pieces": arrays of layers that move together (a text and its shadow).
+    function each(piece, fn) {
+        if (!(piece instanceof Array)) piece = [piece];
+        for (var i = 0; i < piece.length; i++) if (piece[i]) fn(piece[i], i);
+    }
+    B.each = each;
+    B.main = function (piece) { return piece instanceof Array ? piece[piece.length - 1] : piece; };
+
+    // ------------------------------------------------------------ shapes, images, text
+    // A flat rectangle; x, y is its top-left corner.
+    B.box = function (comp, name, x, y, w, h, color) {
+        var L = comp.layers.addShape();
+        L.name = uniqueLayerName(comp, name);
+        L.property("ADBE Root Vectors Group").addProperty("ADBE Vector Group");
+        L.property("ADBE Root Vectors Group").property(1).property("ADBE Vectors Group").addProperty("ADBE Vector Shape - Rect");
+        L.property("ADBE Root Vectors Group").property(1).property("ADBE Vectors Group").addProperty("ADBE Vector Graphic - Fill");
+        var g = L.property("ADBE Root Vectors Group").property(1).property("ADBE Vectors Group");
+        g.property(1).property("ADBE Vector Rect Size").setValue([w, h]);
+        g.property(2).property("ADBE Vector Fill Color").setValue(B.color(color));
+        B.pos(L).setValue([x + w / 2, y + h / 2]);
+        return [L];
+    };
+
+    // A rectangle that grows to fit a text layer: padX/padY around the text's bounds.
+    B.plateFor = function (comp, name, textPiece, padX, padY, color) {
+        var T = B.main(textPiece);
+        var P = B.box(comp, name, 0, 0, 10, 10, color)[0];
+        var size = P.property("ADBE Root Vectors Group").property(1).property("ADBE Vectors Group").property(1).property("ADBE Vector Rect Size");
+        var ref = "thisComp.layer(\"" + T.name.replace(/"/g, "\\\"") + "\")";
+        try {
+            size.expression = "var r = " + ref + ".sourceRectAtTime(time, false);\n[r.width + " + (2 * padX) + ", r.height + " + (2 * padY) + "];";
+            B.pos(P).expression = "var L = " + ref + ";\nvar r = L.sourceRectAtTime(time, false);\n" +
+                "L.toComp([r.left + r.width / 2, r.top + r.height / 2]);";
+        } catch (e) {
+            var r = T.sourceRectAtTime(T.inPoint, false);
+            var p = B.pos(T).value;
+            size.setValue([r.width + 2 * padX, r.height + 2 * padY]);
+            B.pos(P).setValue([p[0] + r.left + r.width / 2, p[1] + r.top + r.height / 2]);
+        }
+        P.moveAfter(T);
+        return [P];
+    };
+
+    // An image from Images/, placed with its top-left corner at x, y (or centered: o.center).
+    B.image = function (comp, rel, x, y, o) {
+        o = o || {};
+        var item = B.footage("Images/" + rel);
+        if (!item) return [];
+        var L = comp.layers.add(item);
+        L.name = uniqueLayerName(comp, o.name || rel);
+        L.outPoint = comp.duration;
+        var s = o.scale || 100;
+        if (s !== 100) B.scaleProp(L).setValue([s, s, 100]);
+        var w = item.width * s / 100, h = item.height * s / 100;
+        B.pos(L).setValue(o.center ? [x, y] : [x + w / 2, y + h / 2]);
+        return [L];
+    };
+
+    // An image scaled to fit inside maxW x maxH, centered on cx, cy (team logos).
+    B.imageFit = function (comp, rel, cx, cy, maxW, maxH, name) {
+        var item = B.footage("Images/" + rel);
+        if (!item) return [];
+        var s = Math.min(100, Math.floor(Math.min(maxW / item.width, maxH / item.height) * 100));
+        return B.image(comp, rel, cx, cy, { center: true, scale: s, name: name });
+    };
+
+    // A framed panel: an outer edge color, then the fill, `edge` pixels in.
+    B.panel = function (comp, name, x, y, w, h, fill, edgeColor, edge) {
+        edge = edge === undefined ? 6 : edge;
+        var outer = B.box(comp, name + " edge", x, y, w, h, edgeColor || "gold");
+        var inner = B.box(comp, name, x + edge, y + edge, w - 2 * edge, h - 2 * edge, fill || "charDark");
+        return outer.concat(inner);
+    };
+
+    // Breaks a long title into two lines at the space nearest the middle.
+    B.twoLines = function (s) {
+        s = String(s);
+        var mid = s.length / 2, best = -1;
+        for (var i = 0; i < s.length; i++) if (s.charAt(i) === " " && (best < 0 || Math.abs(i - mid) < Math.abs(best - mid))) best = i;
+        return best < 0 ? s : s.substring(0, best) + "\n" + s.substring(best + 1);
+    };
+
+    // 123.4 -> "123.40"
+    B.pts = function (n) { return Number(n).toFixed(2); };
+
+    B.background = function (comp, kind) {
+        var piece = B.image(comp, "bg-" + (kind || "charcoal") + ".png", 0, 0, { name: "Background" });
+        if (!piece.length) piece = B.box(comp, "Background", 0, 0, B.W, B.H, kind === "black" ? "black" : "charcoal");
+        return piece;
+    };
+
+    function setStyle(L, face, k, color, align) {
+        var prop = B.textProp(L);
+        var td = prop.value;
+        td.font = face.name;
+        td.fontSize = Math.round(face.size * k * 1000) / 1000;
+        td.applyFill = true;
+        td.fillColor = B.color(color);
+        td.applyStroke = false;
+        td.tracking = 0;
+        td.justification = align === "center" ? ParagraphJustification.CENTER_JUSTIFY :
+            align === "right" ? ParagraphJustification.RIGHT_JUSTIFY : ParagraphJustification.LEFT_JUSTIFY;
+        prop.setValue(td);
+    }
+
+    // Text in a brand face. o: face ("jersey", "silk" or "silkBold"), k (pixels per font pixel),
+    // color, x, y (top of the capitals), align ("left", "center" or "right"), maxW (shrinks to fit),
+    // shadow (a color: a hard drop shadow one font pixel down and right), name, lineGap (font pixels).
+    B.text = function (comp, str, o) {
+        o = o || {};
+        var face = B.FONTS[o.face || "jersey"];
+        var k = o.k || 6;
+        var align = o.align || "left";
+        str = lines(str);
+        var count = str.split(B.NL).length;
+        var L = comp.layers.addText(str);
+        L.name = uniqueLayerName(comp, o.name || str);
+        setStyle(L, face, k, o.color || "cream", align);
+        if (o.maxW) {
+            var w = L.sourceRectAtTime(0, false).width;
+            while (w > o.maxW && k > (o.minK || 2)) {
+                k -= 1;
+                setStyle(L, face, k, o.color || "cream", align);
+                w = L.sourceRectAtTime(0, false).width;
+            }
+            if (w > o.maxW) {
+                var s = Math.floor(o.maxW / w * 100);
+                B.scaleProp(L).setValue([s, s, 100]);
+            }
+        }
+        if (count > 1) {
+            var prop = B.textProp(L), td = prop.value;
+            td.autoLeading = false;
+            td.leading = (face.cap + (o.lineGap || 4)) * k;
+            prop.setValue(td);
+        }
+        var y = o.y + face.cap * k;
+        B.pos(L).setValue([o.x, y]);
+        var piece = [L];
+        if (o.shadow) {
+            var S = comp.layers.addText(str);
+            S.name = uniqueLayerName(comp, L.name + " shadow");
+            setStyle(S, face, k, o.shadow, align);
+            if (count > 1) {
+                var sp = B.textProp(S), sd = sp.value;
+                sd.autoLeading = false;
+                sd.leading = B.textProp(L).value.leading;
+                sp.setValue(sd);
+            }
+            B.scaleProp(S).setValue(B.scaleProp(L).value);
+            B.pos(S).setValue([o.x + k, y + k]);
+            try { B.textProp(S).expression = "\"\" + thisComp.layer(\"" + L.name.replace(/"/g, "\\\"") + "\").text.sourceText"; } catch (e) {}
+            S.moveAfter(L);
+            piece = [S, L];
+        }
+        piece.k = k;                                   // the size it ended up at
+        return piece;
+    };
+
+    // Width of a piece's main text layer, in pixels.
+    B.width = function (piece) {
+        var L = B.main(piece);
+        return L.sourceRectAtTime(L.inPoint, false).width * B.scaleProp(L).value[0] / 100;
+    };
+
+    // Lets the text be edited from the Essential Graphics panel too.
+    B.expose = function (comp, piece, label) {
+        try {
+            B.textProp(B.main(piece)).addToMotionGraphicsTemplateAs(comp, label);
+        } catch (e) {}
+    };
+
+    // ------------------------------------------------------------ timing and 8-bit motion
+    B.hold = function (prop) {
+        for (var i = 1; i <= prop.numKeys; i++) prop.setInterpolationTypeAtKey(i, KeyframeInterpolationType.HOLD);
+    };
+
+    // Shown from t0 to t1 (seconds).
+    // (An entrance already set later than t0 is kept.)
+    B.during = function (piece, t0, t1) {
+        each(piece, function (L) {
+            if (t1 !== undefined && t1 !== null) L.outPoint = t1;
+            if (t0 && L.inPoint < t0) L.inPoint = t0;
+        });
+        return piece;
+    };
+
+    // Slides in from (dx, dy) away in `steps` hard steps, 2 frames apart, landing at t + steps * 2 frames.
+    B.slideIn = function (piece, t, dx, dy, steps) {
+        steps = steps || 4;
+        each(piece, function (L) {
+            var p = B.pos(L);
+            if (p.expression) { if (t > 0) L.inPoint = t; return; }    // a plate follows its text
+            var base = p.valueAtTime(t + 10, false);
+            for (var i = 0; i <= steps; i++) {
+                var r = 1 - i / steps, e = r * r;
+                p.setValueAtTime(t + B.f(i * 2), [base[0] + dx * e, base[1] + dy * e]);
+            }
+            B.hold(p);
+            if (t > 0) L.inPoint = t;
+        });
+        return piece;
+    };
+
+    B.slideOut = function (piece, t, dx, dy, steps) {
+        steps = steps || 4;
+        each(piece, function (L) {
+            var p = B.pos(L);
+            if (p.expression) { L.outPoint = t + B.f(steps * 2 + 1); return; }
+            var base = p.valueAtTime(t, false);
+            for (var i = 0; i <= steps; i++) {
+                var r = i / steps, e = r * r;
+                p.setValueAtTime(t + B.f(i * 2), [base[0] + dx * e, base[1] + dy * e]);
+            }
+            B.hold(p);
+            L.outPoint = t + B.f(steps * 2 + 1);
+        });
+        return piece;
+    };
+
+    // Pops in from nothing around its middle: 0 -> 120 % -> 100 %.
+    B.pop = function (piece, t) {
+        each(piece, function (L) {
+            var r = L.sourceRectAtTime(L.inPoint, false);
+            var a = B.anchor(L).value, p = B.pos(L).value;
+            var c = [r.left + r.width / 2, r.top + r.height / 2];
+            if (L instanceof TextLayer) {
+                B.anchor(L).setValue([c[0], c[1]]);
+                var s0 = B.scaleProp(L).value[0] / 100;
+                B.pos(L).setValue([p[0] + (c[0] - a[0]) * s0, p[1] + (c[1] - a[1]) * s0]);
+            }
+            var s = B.scaleProp(L), full = s.value[0];
+            s.setValueAtTime(t, [0, 0, 100]);
+            s.setValueAtTime(t + B.f(2), [full * 1.2, full * 1.2, 100]);
+            s.setValueAtTime(t + B.f(4), [full, full, 100]);
+            B.hold(s);
+            if (t > 0) L.inPoint = t;
+        });
+        return piece;
+    };
+
+    // Blinks on like an arcade cabinet: on and off every `every` frames, then stays on.
+    B.blinkIn = function (piece, t, times, every) {
+        times = times || 3;
+        every = every || 3;
+        each(piece, function (L) {
+            var o = B.opacity(L), full = o.value;
+            for (var i = 0; i < times * 2; i++) o.setValueAtTime(t + B.f(i * every), i % 2 === 0 ? full : 0);
+            o.setValueAtTime(t + B.f(times * 2 * every), full);
+            B.hold(o);
+            if (t > 0) L.inPoint = t;
+        });
+        return piece;
+    };
+
+    // Types the text on, one letter every `every` frames.
+    B.typeOn = function (piece, t, every) {
+        every = every || 1;
+        each(piece, function (L) {
+            var prop = B.textProp(L);
+            if (t > 0) L.inPoint = t;
+            if (prop.expression) return;               // a shadow follows its text
+            var td = prop.value, full = td.text;
+            for (var i = 1; i <= full.length; i++) {
+                var d = prop.value;
+                d.text = full.substring(0, i);
+                prop.setValueAtTime(t + B.f((i - 1) * every), d);
+            }
+            if (t > 0) L.inPoint = t;
+        });
+        return piece;
+    };
+
+    // Counts a number up from 0 to `to` over `frames` frames (decimals as in `to`).
+    B.countUp = function (piece, t, to, frames, prefix, suffix) {
+        var dec = (String(to).split(".")[1] || "").length;
+        frames = frames || 12;
+        each(piece, function (L) {
+            var prop = B.textProp(L);
+            if (prop.expression) return;
+            for (var i = 0; i <= frames; i += 2) {
+                var d = prop.value;
+                d.text = (prefix || "") + (Number(to) * i / frames).toFixed(dec) + (suffix || "");
+                prop.setValueAtTime(t + B.f(i), d);
+            }
+        });
+        return piece;
+    };
+
+    // An audio file from Audio/ starting at t.
+    B.sound = function (comp, rel, t) {
+        var item = B.footage("Audio/" + rel);
+        if (!item) return null;
+        var L = comp.layers.add(item);
+        L.name = uniqueLayerName(comp, rel);
+        L.startTime = t || 0;
+        return L;
+    };
+
+    // ------------------------------------------------------------ league building blocks
+    // The channel-header layout: a gold bar on the left, a Silkscreen eyebrow and a Jersey title.
+    B.header = function (comp, eyebrow, title, t, o) {
+        o = o || {};
+        var x = o.x || 120, y = o.y || 120, k = o.k || 10;
+        var n = String(title).split("\n").length;
+        var eb = B.text(comp, eyebrow, { face: "silk", k: 4, color: "gold", x: x, y: y });
+        var tt = B.text(comp, title, { face: "jersey", k: k, color: "cream", x: x, y: y + 44, maxW: o.maxW || 1300, shadow: "black" });
+        k = tt.k;
+        var bar = B.box(comp, "Header bar", x - 36, y - 6, 12, 44 + 10 * k * n + (n - 1) * 4 * k + 12, "gold");
+        if (t !== undefined) {
+            B.slideIn(bar, t, 0, -40, 3);
+            B.blinkIn(eb, t + B.f(4));
+            B.slideIn(tt, t + B.f(6), -60, 0, 4);
+        }
+        return { bar: bar, eyebrow: eb, title: tt, bottom: y + 44 + 10 * k * n + (n - 1) * 4 * k };
+    };
+
+    // The little sign-off line along the bottom.
+    B.signoff = function (comp, text) {
+        return B.text(comp, text || "BEER LEAGUE HOCKEY ASSOCIATION \u2022 EST. 2026", { face: "silk", k: 4, color: "muted", x: 120, y: 980 });
+    };
+
+    // A full-width band for a list row: label on the left, value on the right.
+    B.row = function (comp, y, left, right, o) {
+        o = o || {};
+        var h = o.h || 96, k = o.k || 6;
+        var plate = B.box(comp, "Row " + left, 120, y, B.W - 240, h, o.fill || "charDark");
+        var edge = B.box(comp, "Row edge " + left, 120, y, 12, h, o.edge || "gold");
+        var l = B.text(comp, left, { face: "jersey", k: k, color: o.leftColor || "cream", x: 168, y: y + (h - 10 * k) / 2, maxW: o.leftMaxW || 1100 });
+        var r = right === undefined || right === null || right === "" ? [] :
+            B.text(comp, right, { face: "jersey", k: k, color: o.rightColor || "gold", x: B.W - 168, y: y + (h - 10 * k) / 2, align: "right", maxW: o.rightMaxW || 520 });
+        return plate.concat(edge, l, r);
+    };
+
+    // A centered award card: label, the winner (one or more lines), a detail line. Shown t0 to t1.
+    B.awardCard = function (comp, t0, t1, label, team, detail, o) {
+        o = o || {};
+        var y = o.y || 300, h = o.h || 470;
+        var p = B.panel(comp, label, 240, y, 1440, h, "charcoal", o.edge || "gold", 8);
+        var lab = B.text(comp, label, { face: "silk", k: 6, color: o.edge || "gold", x: 960, y: y + 60, align: "center", maxW: 1300 });
+        var tm = B.text(comp, team, { face: "jersey", k: o.k || 12, color: "cream", x: 960, y: y + 150, align: "center", maxW: 1300, shadow: "black" });
+        var dt = B.text(comp, detail || "", { face: "jersey", k: 6, color: "gold", x: 960, y: y + h - 120, align: "center", maxW: 1300 });
+        var all = p.concat(lab, tm, dt);
+        B.slideIn(p.concat(lab), t0, 0, 900, 4);
+        B.pop(tm, t0 + B.f(12));
+        B.blinkIn(dt, t0 + B.f(20));
+        B.during(all, t0, t1);
+        return all;
+    };
+
+    // ------------------------------------------------------------ running a script
+    // A message in a dialog (EffectCraft's alert() only writes to the script output).
+    B.message = function (title, text) {
+        var lines = String(text).split("\n");
+        try {
+            var w = new Window("dialog", title);
+            w.orientation = "column";
+            w.alignChildren = "left";
+            for (var i = 0; i < lines.length; i++) w.add("statictext", undefined, lines[i] === "" ? " " : lines[i]);
+            w.defaultElement = w.add("button", undefined, "OK");
+            w.show();
+        } catch (e) {
+            alert(title + "\n\n" + text);
+        }
+    };
+
+    B.run = function (title, fn) {
+        app.beginUndoGroup(title);
+        try {
+            fn();
+            app.endUndoGroup();
+            var msg = title + ": built " + B.built.length + (B.built.length === 1 ? " composition" : " compositions") +
+                " in the \"" + B.KIT + "\" folder:\n" + B.built.join("\n") +
+                "\n\nCheck each one, then render it with Composition > Add to Render Queue (see the READ ME for settings).";
+            B.message(title, msg);
+        } catch (e) {
+            app.endUndoGroup();
+            B.log(e.stack || String(e));
+            B.message(title, title + " stopped: " + e.message + (e.line ? " (line " + e.line + ")" : "") +
+                "\n\nMost problems are in the DATA block: check the quotes and commas around what you changed.");
+            if (typeof $ !== "undefined" && $.engineName === "boa") throw e;   // EffectCraft also shows it with the line
+        }
+    };
+
+    return B;
+})();

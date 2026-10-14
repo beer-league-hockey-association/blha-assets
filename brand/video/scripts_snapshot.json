@@ -1,0 +1,1445 @@
+[
+ {
+  "section": "Before owners join",
+  "title": "Recruiting trailer (45 seconds)",
+  "notes": [
+   "Post it wherever you recruit and link it in invite messages. Templates: BLHA Hype Trailer, 01 Brand Kit, bed-hype-45s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting: the B slams in",
+    "Nothing. Let the sting play."
+   ],
+   [
+    "0:03",
+    "Arena and crowd (from the hype intro)",
+    "Twelve franchises. One league office. Built to last."
+   ],
+   [
+    "0:08",
+    "BLHA logo",
+    "This is the Beer League Hockey Association, a dynasty fantasy hockey league on Fantrax."
+   ],
+   [
+    "0:14",
+    "Card: 20 ACTIVE · 10 MINORS",
+    "Draft a franchise and keep it for years. Twenty active players, ten minor-league spots and a five-round draft every summer."
+   ],
+   [
+    "0:23",
+    "Card: TRADE ANYTHING",
+    "Trade players, picks and FAAB. No vetoes."
+   ],
+   [
+    "0:28",
+    "Dynasty Pot coins",
+    "Win three championships and the Dynasty Pot is yours."
+   ],
+   [
+    "0:33",
+    "Championship banners",
+    "Every season goes in the record book. Every champion gets a banner."
+   ],
+   [
+    "0:38",
+    "End card: FOUNDING OWNERS WANTED · $150 A SEASON · STARTUP DRAFT SUMMER 2027",
+    "Twelve founding owners. The Startup Draft is summer 2027. Message me to claim your franchise."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Before owners join",
+  "title": "Commissioner welcome (75 seconds, on camera)",
+  "notes": [
+   "Pin it in 👋🏻│welcome. Templates: BLHA Talking Head, 01 Brand Kit (lower third: [YOUR NAME] · COMMISSIONER at 0:03, end card at the close).",
+   "Hey, I'm [your first name], the Commissioner of the BLHA, and welcome to the league.",
+   "You're one of twelve founding owners. That means the record book starts with you: the first champion, the first trade of the year, the first banner in the rafters.",
+   "Here's how it works. Fantrax is where the hockey happens: your roster, your lineup, trades and scoring. Discord is the league office and the clubhouse. That's where you'll find the news, the votes, the rulings and a lot of chirping.",
+   "Before anything else, read the Constitution. It's short, and joining the league means you've agreed to it. Then pay your dues through Fantrax Treasurer, name your franchise and say hello in the GM lounge.",
+   "If you have a question about a rule, ask in rules-questions. If it's private, open a ticket and it comes straight to me.",
+   "Build something you're proud of. Trade often. Set your lineup. I'll see you at the draft."
+  ],
+  "rows": [],
+  "header": null
+ },
+ {
+  "section": "Before owners join",
+  "title": "Server tour (2 minutes 30 seconds, screen recording)",
+  "notes": [
+   "Pin it in 👋🏻│welcome and 📖│owner-handbook. Templates: BLHA Screen Tutorial, 01 Brand Kit (a section title for each category). Click into each category as you name it."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Server with every category collapsed",
+    "This is a two-and-a-half-minute tour of the BLHA server. Every category has one job."
+   ],
+   [
+    "0:08",
+    "🏛️ LEAGUE OFFICE",
+    "The League Office is official business. Start in welcome, read the Constitution, and keep an eye on announcements and the league calendar. The ledger shows dues and prizes, league-voting is where formal votes happen, and hall-of-champions and league-records keep the history."
+   ],
+   [
+    "0:30",
+    "📰 THE WIRE",
+    "The Wire is NHL news, posted automatically: breaking news, injuries, transactions and prospects. Talk about any of it in news-desk."
+   ],
+   [
+    "0:45",
+    "💼 GENERAL MANAGERS",
+    "General Managers is the clubhouse. GM lounge for league talk, game-day for live games and starting goalies, chirps-and-memes for trash talk, and off-topic and media for everything else."
+   ],
+   [
+    "1:05",
+    "🔄 TRADE CENTER",
+    "In the Trade Center, post who you'll move in trade-block and what you need in looking-to-acquire. Every finished trade lands in completed-trades."
+   ],
+   [
+    "1:20",
+    "🌱 SCOUTING and 💰 WAIVER WIRE",
+    "Scouting is one forum for every prospect. Waiver Wire covers FAAB strategy and who to watch before claims run."
+   ],
+   [
+    "1:32",
+    "🏆 LEAGUE COMPETITION",
+    "League Competition runs itself: the live scoreboard, standings, the Monday recap, the playoff race and the brackets. Opt in to lineup alerts and you'll get a heads-up when a reserve plays and a starter doesn't."
+   ],
+   [
+    "1:50",
+    "🧑🏻‍⚖️ COMMISSIONER'S OFFICE",
+    "Questions go to the Commissioner's Office. Ask about a rule in rules-questions, open a private ticket in open-a-ticket and read official rulings in rulings-log. The owner handbook has the week-to-week basics."
+   ],
+   [
+    "2:10",
+    "🎯 DRAFT CENTER and 🏒 FRANCHISE HQ",
+    "The Draft Center comes alive around each draft. Franchise HQ is yours: the franchise directory, your team's news and your roster."
+   ],
+   [
+    "2:22",
+    "Channels & Roles",
+    "Last thing: pick your notification roles under Channels and Roles, so you only get pinged for what you care about."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Before owners join",
+  "title": "The Constitution in 3 minutes (explainer)",
+  "notes": [
+   "Post it in 📜│constitution under the eight messages, and in 📖│owner-handbook. Templates: BLHA Explainer, 11 Explainer Cards."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Title: THE CONSTITUTION IN 3 MINUTES",
+    "This is the BLHA Constitution in three minutes. It's the short version. The full text in the constitution channel always wins."
+   ],
+   [
+    "0:10",
+    "Card: ROSTER",
+    "Every team has twenty active players: three centers, three left wings, three right wings, three forwards of any kind, six defensemen and two goalies. Add six reserves, ten minor-league spots and up to five IR spots."
+   ],
+   [
+    "0:28",
+    "Card: MINORS",
+    "A minor-leaguer has to be 25 or younger on the NHL's opening night, as Fantrax calculates it. Skaters stay eligible through 100 career NHL games, goalies through 50. When Fantrax flags a player, you have three days to move him."
+   ],
+   [
+    "0:45",
+    "Card: LINEUPS AND GOALIES",
+    "Lineups are daily. Each player locks about a minute before his game. Only four goalie starts count each week, and eight across the two-week Championship."
+   ],
+   [
+    "1:00",
+    "Card: WAIVERS",
+    "Free agents come through FAAB only. You get a thousand dollars of FAAB each season. Bids are hidden, a tie goes to the earliest bid, and claims run every day around 11 a.m. Eastern. You get five pickups a week."
+   ],
+   [
+    "1:18",
+    "Card: TRADES",
+    "Trades are unlimited, with no votes and no vetoes. You can trade players, draft picks and this season's FAAB. The deadline is 11:59 p.m. Eastern on the Sunday that ends Week 20."
+   ],
+   [
+    "1:34",
+    "Card: PAY FIRST, THEN TRADE",
+    "One rule to remember: before you trade away a future first- or second-round pick, your dues have to be paid through that pick's season. If they aren't, the trade gets reversed."
+   ],
+   [
+    "1:48",
+    "Card: PLAYOFFS",
+    "Six teams make the playoffs. The top two get byes, the bracket reseeds every round and the Championship lasts two weeks. The other six play a consolation bracket for a fifty-dollar FAAB bonus."
+   ],
+   [
+    "2:05",
+    "Card: DRAFT ORDER",
+    "The Annual Draft is five rounds every summer. The six non-playoff teams pick first, ordered by Potential Points, so benching your stars won't move you up."
+   ],
+   [
+    "2:20",
+    "Card: MONEY",
+    "Dues are a hundred and fifty dollars a season. Most of it goes to prizes: six-fifty for the champion, three-fifty for the runner-up, one-fifty for third and two hundred for the Presidents' Trophy. Two hundred a season builds the Dynasty Pot."
+   ],
+   [
+    "2:40",
+    "Card: CHANGING THE RULES",
+    "Rule changes happen in the offseason only, and they need eight of the twelve franchise votes."
+   ],
+   [
+    "2:48",
+    "End card",
+    "That's the league. Read the whole thing once. It's shorter than you think."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Before owners join",
+  "title": "How scoring works (60 seconds, explainer)",
+  "notes": [
+   "Post it in 📜│constitution and 🔎│scouting. Templates: BLHA Explainer, 11 Explainer Cards."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Title: HOW SCORING WORKS",
+    "Here's how a BLHA team scores points."
+   ],
+   [
+    "0:04",
+    "Card: SKATERS with every value",
+    "For skaters, a goal is five points and an assist is two point nine five. A shot on goal is point five five, a block point three five and a hit point two. Each penalty minute costs point five four."
+   ],
+   [
+    "0:20",
+    "Card: GOALIES with every value",
+    "Goalies get six and a half points just for starting, point four nine for every save, and lose five for every goal against. A goalie who scores or sets one up gets the same points as a skater."
+   ],
+   [
+    "0:35",
+    "Tiles: +15.90, +11.20, −14.19",
+    "So two goals, an assist, five shots and a hit is a fifteen-point-nine night. Thirty saves on thirty-two shots is eleven-twenty. And a goalie who gives up six on twenty-five shots costs you fourteen."
+   ],
+   [
+    "0:50",
+    "Card: NOT SCORED",
+    "There are no points for wins, shutouts, plus-minus or power-play bonuses. Shots, blocks and hits matter more than you'd think."
+   ],
+   [
+    "0:58",
+    "End card",
+    "Nothing to say."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Before owners join",
+  "title": "Where the money goes (45 seconds, explainer)",
+  "notes": [
+   "Post it in 💰│league-ledger. Templates: BLHA Explainer, 11 Explainer Cards."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Title: WHERE THE MONEY GOES",
+    "Every franchise pays a hundred and fifty dollars a season. Twelve franchises make eighteen hundred dollars, and here's where all of it goes."
+   ],
+   [
+    "0:08",
+    "Card: PRIZES",
+    "Six-fifty to the BLHA Champion, three-fifty to the runner-up, one-fifty for third place, and two hundred for the Presidents' Trophy, the best regular-season record."
+   ],
+   [
+    "0:20",
+    "Card: DYNASTY POT",
+    "Two hundred goes into the Dynasty Pot. The first franchise to win three championships in the same cycle takes all of it."
+   ],
+   [
+    "0:30",
+    "Card: RESERVE AND LEAGUE SERVICES",
+    "A hundred and fifty covers Fantrax Premium and other approved costs, and whatever's left joins the Dynasty Pot. The last hundred is the Commissioner's allocation for running the league."
+   ],
+   [
+    "0:40",
+    "Card: THE LEDGER",
+    "Every dollar is posted in the league ledger after each season."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Moving a player to minors (60 seconds)",
+  "notes": [
+   "Also post it in 📢│draft-announcements before the Startup Draft. This one matters most."
+  ],
+  "rows": [
+   [
+    "Title: MOVING A PLAYER TO MINORS",
+    "After the Startup Draft, every team has thirty-six players and a twenty-six-player limit. Ten of them have to go to minors, and you move them yourself."
+   ],
+   [
+    "Your roster in Fantrax, lineup editor open",
+    "Open your roster in Fantrax and go to the lineup editor. [show]"
+   ],
+   [
+    "Dragging a player into a Minors slot, then saving",
+    "Move a prospect into one of your ten minor-league slots, then save. [show]"
+   ],
+   [
+    "Card: WHO QUALIFIES",
+    "To qualify, a player has to be 25 or younger on the NHL's opening night, with a hundred or fewer career NHL games. For goalies it's fifty."
+   ],
+   [
+    "Card: IF HE STOPS QUALIFYING",
+    "If Fantrax flags one as ineligible later, you have three days to promote, trade or drop him. Any illegal roster has to be fixed within twenty-four hours."
+   ],
+   [
+    "Roster counts",
+    "Check your counts when you're done: twenty active, six reserve, ten minors."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Setting your daily lineup (45 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: SETTING YOUR LINEUP",
+    "Lineups in the BLHA are daily, and only your active players score."
+   ],
+   [
+    "Lineup page, today's games showing",
+    "Check who plays today and move anyone without a game to your reserves. [show]"
+   ],
+   [
+    "Card: 3 C · 3 LW · 3 RW · 3 F · 6 D · 2 G",
+    "You start three centers, three left wings, three right wings, three F, six defensemen and two goalies. The F slots take any forward."
+   ],
+   [
+    "Card: LOCKS",
+    "Each player locks about a minute before his own game, so you can still change players who haven't started."
+   ],
+   [
+    "Card: GOALIES",
+    "Only four goalie starts count each week, so plan your starts."
+   ],
+   [
+    "🔔│lineup-alerts",
+    "Want a reminder? Ask me to add you to Lineup Alerts and you'll get a ping around 3 p.m. when a starter has no game and a reserve does."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Paying dues with Fantrax Treasurer (45 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: PAYING YOUR DUES",
+    "Dues are a hundred and fifty dollars per franchise each season, and they're paid through Fantrax Treasurer."
+   ],
+   [
+    "Fantrax: the league's Treasurer page",
+    "Open the league in Fantrax and go to Treasurer. [show]"
+   ],
+   [
+    "Paying",
+    "Pay your dues there. [show]"
+   ],
+   [
+    "Card: WHEN IT COUNTS",
+    "Your payment counts once I confirm it and record it in the League Ledger."
+   ],
+   [
+    "📅│league-calendar",
+    "The deadline is on the league calendar, and it's always before that season's draft."
+   ],
+   [
+    "Card: PAY FIRST, THEN TRADE",
+    "Planning to trade a future first- or second-round pick? Those seasons have to be paid first. Open a ticket and we'll set it up."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Building your draft queue (45 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: YOUR DRAFT QUEUE",
+    "The Startup Draft is thirty-six rounds with a four-hour clock, so you won't be at your desk for every pick. That's what the queue is for."
+   ],
+   [
+    "Fantrax draft room: adding players to the queue",
+    "In the Fantrax draft room, add players to your queue and drag them into order. [show]"
+   ],
+   [
+    "Card: THE NIGHTLY PAUSE",
+    "The clock pauses every night from midnight to 8 a.m. Eastern. You can still pick then; the timer just stops."
+   ],
+   [
+    "Card: TIMEOUTS",
+    "If your clock runs out twice, I can switch on auto-draft for you, so keep your queue current."
+   ],
+   [
+    "🎙️│draft-room",
+    "Talk it over in draft-room, and the full board lands in draft-results."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Placing a FAAB bid (60 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: FAAB BIDS",
+    "Every free agent in the BLHA comes through a FAAB bid. There's no first-come, first-served."
+   ],
+   [
+    "Fantrax: a player's page, Claim, bid amount",
+    "Find the player, choose claim, type your bid and pick who you'll drop if your roster is full. [show]"
+   ],
+   [
+    "Card: $1,000 A SEASON",
+    "You get a thousand dollars of FAAB each season, and it doesn't roll over."
+   ],
+   [
+    "Card: HOW BIDS WORK",
+    "Bids are hidden and go up in one-dollar steps, and zero-dollar bids are allowed. If two bids tie, the one placed first wins."
+   ],
+   [
+    "Card: WHEN CLAIMS RUN",
+    "Claims run every day around 11 a.m. Eastern. You get five pickups a week."
+   ],
+   [
+    "💵│waiver-talk",
+    "Talk strategy in waiver-talk, and check waiver-watch for who's worth a bid."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Making a trade (60 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: MAKING A TRADE",
+    "Trades are unlimited, and there are no votes and no vetoes."
+   ],
+   [
+    "Fantrax: proposing a trade with players and a pick",
+    "Pick the team, add the players and picks on each side, and send it. [show]"
+   ],
+   [
+    "Card: WHAT YOU CAN TRADE",
+    "You can trade players, draft picks in the next three Annual Drafts and this season's FAAB. No conditional picks and no side deals."
+   ],
+   [
+    "Card: PAY FIRST, THEN TRADE",
+    "Trading away a future first or second? Your dues have to be paid through that pick's season first, or the trade gets reversed."
+   ],
+   [
+    "Card: DEADLINE",
+    "The deadline is 11:59 p.m. Eastern on the Sunday that ends Week 20. Trading reopens the day after the Stanley Cup Final."
+   ],
+   [
+    "📣│trade-block",
+    "Shop players in trade-block, post your needs in looking-to-acquire, and every finished deal shows up in completed-trades."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Using IR (30 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: INJURED RESERVE",
+    "You have up to five IR spots."
+   ],
+   [
+    "Fantrax: moving an injured player to IR",
+    "A player Fantrax lists as IR-eligible can move there, and he stops counting against your roster limit. [show]"
+   ],
+   [
+    "Card: COMING BACK",
+    "When he's activated, make room. A roster that goes over the limit has to be fixed within twenty-four hours."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Turning on Fantrax notifications (30 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: STAY IN THE LOOP",
+    "Thirty seconds now saves you a missed trade later."
+   ],
+   [
+    "Fantrax app: notification settings",
+    "In the Fantrax app, turn on notifications for trade offers, waiver results and lineup problems. [show]"
+   ],
+   [
+    "Discord: Channels & Roles",
+    "Then pick your league roles in Discord, so you only hear about what you care about."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Opening a ticket (40 seconds)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: PRIVATE HELP",
+    "Anything that shouldn't be public goes in a ticket."
+   ],
+   [
+    "🎟️│open-a-ticket: the button, the ticket type",
+    "Go to open-a-ticket, press the button and pick the ticket type. [show]"
+   ],
+   [
+    "The private ticket channel",
+    "A private channel opens that only you and I can see."
+   ],
+   [
+    "Card: APPEALS",
+    "To appeal a ruling, open an Appeal ticket within forty-eight hours. Three owners from franchises the ruling doesn't affect are drawn at random, and they decide by majority."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "How-tos",
+  "title": "Meet the League Bot (90 seconds, record once the bot is live)",
+  "notes": [],
+  "rows": [
+   [
+    "Title: THE LEAGUE BOT",
+    "The League Bot answers league questions right in Discord. It reads Fantrax and never changes anything there."
+   ],
+   [
+    "Typing /myteam",
+    "Slash myteam shows your roster counts, your picks, how far your dues are paid and this week's matchup. Only you see it."
+   ],
+   [
+    "Typing /rule prepayment",
+    "Slash rule shows any section of the Constitution. Slash deadlines lists the next dates."
+   ],
+   [
+    "Typing /minor and a name",
+    "Slash minor checks whether a player is minor-eligible."
+   ],
+   [
+    "Typing /tradecheck",
+    "Slash tradecheck checks a trade against the rules before you send it: picks, prepayment, roster limits and the deadline. It never grades a trade."
+   ],
+   [
+    "🏒│game-day: Pick'em and BLHA Bucks",
+    "In game-day there's a weekly Pick'em and BLHA Bucks, a play-money sportsbook on our matchups. You can't bet on your own."
+   ],
+   [
+    "🗳️│league-voting",
+    "Proposals, votes and the Awards Night ballot all run through the bot, one vote per franchise."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Draft",
+  "title": "Startup Draft hype (45 seconds)",
+  "notes": [
+   "Post it in 📢│draft-announcements the day before the draft opens, and pin it in 🎙️│draft-room. Templates: BLHA Hype Trailer, 09 Countdown (set it to the draft's start time), bed-hype-45s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting",
+    "Nothing. Let the sting play."
+   ],
+   [
+    "0:03",
+    "Empty rink",
+    "Every player in the pool is unowned. For one more day."
+   ],
+   [
+    "0:08",
+    "Card: 12 FRANCHISES · 36 ROUNDS",
+    "Twelve franchises. Thirty-six rounds. Four hundred and thirty-two picks."
+   ],
+   [
+    "0:14",
+    "Card: SNAKE · 4-HOUR CLOCK",
+    "It's a slow snake draft with a four-hour clock, and the clock sleeps from midnight to 8 AM Eastern."
+   ],
+   [
+    "0:21",
+    "Franchise logos flash by, one per beat",
+    "Whoever goes first sets the tone. Whoever goes last gets two picks in a row."
+   ],
+   [
+    "0:27",
+    "Card: QUEUE IT",
+    "Build your queue tonight. Two missed clocks and the Commissioner can turn on auto-draft for you."
+   ],
+   [
+    "0:33",
+    "09 Countdown",
+    "The rosters you build this week are the rosters you'll be trading for years."
+   ],
+   [
+    "0:39",
+    "End card: STARTUP DRAFT · [DATE] · [TIME] ET",
+    "The BLHA Startup Draft opens [day] at [time] Eastern. Be on the clock."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Draft",
+  "title": "Draft order draw (live, about 3 minutes, screen recording)",
+  "notes": [
+   "The Startup Draft order is a random draw by the Commissioner, published in Discord before the draft (13.2). Record the draw in one take with no cuts, so nobody can say it was redone. Post the full video in 📢│draft-announcements and the order in 📋│draft-results. Templates: BLHA Screen Tutorial, 01 Brand Kit (title card only).",
+   "Before you record: open a list randomizer (random.org's List Randomizer works), have the twelve franchise names in alphabetical order in a text file, and turn on the clock in the corner of your screen.",
+   "Use the same method, and the same rules (one press, no redraws), for any tie that goes to a random draw (15.4 and 15.5) and for Review Panel draws (19.4)."
+  ],
+  "rows": [
+   [
+    "Title card: STARTUP DRAFT ORDER DRAW",
+    "This is the official draw for the BLHA Startup Draft order. It's [date] at [time] Eastern."
+   ],
+   [
+    "The text file with all twelve franchises",
+    "Here are all twelve franchises, in alphabetical order. I'm copying the whole list, with nothing added and nothing left out."
+   ],
+   [
+    "Paste into the randomizer",
+    "I'm pasting them into a random list tool. I'll press the button once, and whatever comes back is the order. No redraws."
+   ],
+   [
+    "Press randomize",
+    "Here we go."
+   ],
+   [
+    "The result",
+    "Reading from the top. With the first pick in the BLHA Startup Draft: [franchise]. Second: [franchise]. (Read all twelve.)"
+   ],
+   [
+    "Zoom on the result",
+    "Remember, it's a snake. [Pick 12 franchise] picks twelfth and thirteenth. [Pick 1 franchise] waits until twenty-four for its second pick."
+   ],
+   [
+    "End card",
+    "The order is posted in draft-results. Get your queues ready."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Draft",
+  "title": "How the Annual Draft order works (60 seconds, explainer)",
+  "notes": [
+   "Post it in 📢│draft-announcements once the playoffs end, and pin it in 📖│owner-handbook. Templates: BLHA Explainer, 11 Explainer Cards, bed-tutorial-loop."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Title card: THE ANNUAL DRAFT ORDER",
+    "Every summer the BLHA holds a five-round draft. Here's how the order is set."
+   ],
+   [
+    "0:06",
+    "Card: 5 ROUNDS · LINEAR",
+    "It's linear, not a snake. Whatever pick you have in round one, you have in every round."
+   ],
+   [
+    "0:12",
+    "Card: PICKS 1.01 TO 1.06",
+    "The first six picks go to the six teams that missed the playoffs. They're ordered by Potential Points, lowest first."
+   ],
+   [
+    "0:20",
+    "Card: POTENTIAL POINTS",
+    "Potential Points is what your team would have scored with its best possible lineup every week, from your active and reserve players."
+   ],
+   [
+    "0:28",
+    "Card: BENCHING DOESN'T HELP",
+    "So sitting your stars to lose doesn't move you up. Your best lineup counts either way."
+   ],
+   [
+    "0:34",
+    "Card: 1.07 AND 1.08",
+    "Picks seven and eight go to the two quarterfinal losers, lower seed first."
+   ],
+   [
+    "0:40",
+    "Card: 1.09 TO 1.12",
+    "Then fourth place, third place, the runner-up, and the champion picks last."
+   ],
+   [
+    "0:47",
+    "Card: CONSOLATION",
+    "The consolation bracket doesn't change the order. Its winner gets fifty dollars of extra FAAB instead."
+   ],
+   [
+    "0:53",
+    "End card: DRAFT ORDER · 📋│draft-results",
+    "The full order goes up in draft-results as soon as the Championship is final."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Season",
+  "title": "Opening night (45 seconds)",
+  "notes": [
+   "Post it in 📢│announcements the morning of the NHL's opening night. Templates: BLHA Hype Trailer, 09 Countdown (set to the first puck drop), bed-hype-45s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting",
+    "Nothing. Let the sting play."
+   ],
+   [
+    "0:03",
+    "Arena lights up",
+    "The draft is done. The trades are in. Tonight, it counts."
+   ],
+   [
+    "0:08",
+    "Card: WEEK 1",
+    "Week one of the [year] BLHA season starts tonight."
+   ],
+   [
+    "0:12",
+    "Card: 22 WEEKS · EVERY TEAM TWICE",
+    "Twenty-two weeks. You play every franchise twice. The top six make the playoffs."
+   ],
+   [
+    "0:19",
+    "Card: SET YOUR LINEUP",
+    "Lineups lock about a minute before each player's game, so set yours before puck drop tonight."
+   ],
+   [
+    "0:25",
+    "Card: 4 GOALIE STARTS · 5 ADDS",
+    "Four goalie starts count each week, and you get five pickups. Spend them wisely."
+   ],
+   [
+    "0:31",
+    "Franchise logos",
+    "Twelve franchises. One Presidents' Trophy. One champion."
+   ],
+   [
+    "0:37",
+    "End card: PUCK DROP · [TIME] ET",
+    "Puck drops at [time] Eastern. Good luck, everybody. Except [rival franchise]."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Season",
+  "title": "Week in 60 Seconds (fill-in script, every week)",
+  "notes": [
+   "Post it in 📰│weekly-recap on Monday, after the League Bot's recap goes up. Pull every number from that recap, the Weekly Awards and the standings post. Templates: BLHA Week in 60, 02 Week in 60, bed-week-60s. Keep it to about 150 words. Cut a line before you rush one.",
+   "Optional lines to swap in when they happen: a trade (\"The big deal of the week: [team] sent [player] to [team] for [return].\"), a closest game under 2 points, a hat trick bounty, or the playoff line once the race starts (\"Six spots, [N] weeks left. [Team] is [X] points back of sixth.\")."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting, then WEEK [N] · [DATES]",
+    "This is the BLHA Week in 60. Week [N], [Monday date] to [Sunday date]."
+   ],
+   [
+    "0:05",
+    "Scores panel (all six matchups)",
+    "All six results: [Team] beat [Team], [score] to [score]. (Read the six, one line each, and keep moving.)"
+   ],
+   [
+    "0:22",
+    "Upset card",
+    "Upset of the week: [underdog] took down [favorite], [score] to [score]."
+   ],
+   [
+    "0:28",
+    "Three Stars panel",
+    "Your three stars. Third star, [team], [points]. Second star, [team], [points]. And the first star of the week, [team], with [points]."
+   ],
+   [
+    "0:38",
+    "Tough Luck / Lucky Win card",
+    "Tough luck for [team]: [points] and still a loss. And [team] stole one with just [points]."
+   ],
+   [
+    "0:45",
+    "Standings movers (up and down arrows)",
+    "In the standings, [team] climbs to [place]. [Team] slides to [place]. [Team] still leads at [record]."
+   ],
+   [
+    "0:53",
+    "Next week card",
+    "Next week: [team] and [team], the game of the week. See you Monday."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen (02 Week in 60)",
+   "Say"
+  ]
+ },
+ {
+  "section": "Season",
+  "title": "Monthly awards (60 seconds)",
+  "notes": [
+   "Post it in 📰│weekly-recap the morning the League Bot posts the Monthly Awards. Templates: BLHA Monthly Awards, 03 Monthly Awards, bed-week-60s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting, then [MONTH] AWARDS",
+    "The BLHA Monthly Awards for [month]."
+   ],
+   [
+    "0:05",
+    "Hard Luck card",
+    "Hard Luck goes to [team]: [points] points scored in [number] losses. Rough month."
+   ],
+   [
+    "0:15",
+    "Biggest Single Week card",
+    "Biggest Single Week: [team], with [points] points in Week [N]."
+   ],
+   [
+    "0:25",
+    "Best Record of the Month card",
+    "Best Record of the Month: [team] at [record]."
+   ],
+   [
+    "0:35",
+    "Manager of the Month card, with the 📅 Manager of the Month role",
+    "And the Manager of the Month, with the most points in [month]: [team], with [points]."
+   ],
+   [
+    "0:45",
+    "Role card: 📅 Manager of the Month",
+    "[Owner] wears the Manager of the Month role until next month's awards."
+   ],
+   [
+    "0:52",
+    "End card",
+    "Bragging rights only. No money, no picks. Still feels good. See you next month."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen (03 Monthly Awards)",
+   "Say"
+  ]
+ },
+ {
+  "section": "Season",
+  "title": "Trade deadline day (45 seconds)",
+  "notes": [
+   "Post it in 📢│announcements on the Monday after Week 20. Templates: BLHA Hype Trailer, 05 Trade Alert (one card per deal), bed-hype-45s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting, then TRADE DEADLINE",
+    "The BLHA trade deadline has passed."
+   ],
+   [
+    "0:04",
+    "Card: [N] TRADES THIS SEASON",
+    "[Number] trades this season, [number] of them in the final week."
+   ],
+   [
+    "0:10",
+    "05 Trade Alert cards, one per deadline deal",
+    "The big ones: [team] got [player] from [team] for [return]. (Two or three deals, one line each.)"
+   ],
+   [
+    "0:28",
+    "Card: BUYERS · SELLERS",
+    "[Team] went all in. [Team] is building for next year."
+   ],
+   [
+    "0:34",
+    "Card: TRADES REOPEN AFTER THE CUP FINAL",
+    "That's it until the day after the Stanley Cup Final. What you have now is what you're playing for."
+   ],
+   [
+    "0:41",
+    "End card",
+    "Two weeks left in the regular season. Let's go."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Season",
+  "title": "Trade alert (one line, about 8 seconds)",
+  "notes": [
+   "05 Trade Alert renders the whole clip. Post it in 🚨│completed-trades under the League Bot's trade post. Sound: sfx-alert. A voice line is optional.",
+   "Say: \"Trade alert. [Team] sends [player or pick] to [team] for [player or pick].\""
+  ],
+  "rows": [],
+  "header": null
+ },
+ {
+  "section": "Season",
+  "title": "Clinched and eliminated (one line, about 6 seconds)",
+  "notes": [
+   "06 Clinched renders the whole clip. Post it in 🏁│playoff-race. Sound: sfx-clinch. Use one of these:",
+   "• \"[Team] has clinched a playoff spot.\"",
+   "• \"[Team] has clinched a first-round bye.\"",
+   "• \"[Team] has clinched the Presidents' Trophy and the two hundred dollars that comes with it.\"",
+   "• \"[Team] has been eliminated from playoff contention. Next stop, the consolation bracket.\"",
+   "Only post a clinch once it's certain in the standings, tiebreakers included (15.4). If you're not sure, wait a week."
+  ],
+  "rows": [],
+  "header": null
+ },
+ {
+  "section": "Playoffs",
+  "title": "Bracket reveal (60 seconds)",
+  "notes": [
+   "Post it in 📢│announcements the Monday after Week 22, once the final standings are in. Templates: BLHA Playoff Show, 07 Playoff Bracket (fill in all six seeds), bed-hype-45s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting, then THE BLHA PLAYOFFS",
+    "Twenty-two weeks are done. Six teams are left. This is the [year] BLHA playoff bracket."
+   ],
+   [
+    "0:07",
+    "Seed 1 lights up",
+    "The one seed and the Presidents' Trophy winner: [team], at [record]. First-round bye."
+   ],
+   [
+    "0:14",
+    "Seed 2 lights up",
+    "The two seed, also with a bye: [team], [record]."
+   ],
+   [
+    "0:20",
+    "Seeds 3 and 6 slide in",
+    "In the quarterfinals, three versus six: [team] against [team]."
+   ],
+   [
+    "0:27",
+    "Seeds 4 and 5 slide in",
+    "And four versus five: [team] against [team]."
+   ],
+   [
+    "0:34",
+    "Card: RESEEDED EVERY ROUND",
+    "The bracket reseeds after every round, so the top seed left always plays the lowest seed left."
+   ],
+   [
+    "0:41",
+    "Card: QF 1 WEEK · SF 1 WEEK · FINAL 2 WEEKS",
+    "The quarterfinals and semis are one week each. The Championship is two weeks, total points."
+   ],
+   [
+    "0:49",
+    "Card: CONSOLATION BRACKET",
+    "The other six teams play a consolation bracket for fifty dollars of extra FAAB next season."
+   ],
+   [
+    "0:55",
+    "End card",
+    "The quarterfinals start tonight. Set your lineups."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen (07 Playoff Bracket)",
+   "Say"
+  ]
+ },
+ {
+  "section": "Playoffs",
+  "title": "Round preview (45 seconds, once per round)",
+  "notes": [
+   "Post it in 🏁│playoff-race the Monday each round starts. Templates: BLHA Playoff Show, 07 Playoff Bracket, bed-hype-45s. Read one block per matchup.",
+   "For the Championship preview, swap the last line for \"Two weeks. Total points. Eight goalie starts and ten pickups across both weeks.\""
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Bracket, current round highlighted",
+    "The [quarterfinals / semifinals] start tonight."
+   ],
+   [
+    "0:04",
+    "Matchup card: [SEED] [TEAM] vs [SEED] [TEAM]",
+    "[Higher seed] against [lower seed]. They split the season series [record]. (or: [Team] won both meetings.)"
+   ],
+   [
+    "0:12",
+    "Key player cards",
+    "Watch [player] for [team]. He has [points] points in the last [N] weeks. For [team], it's [player]."
+   ],
+   [
+    "0:20",
+    "Card: GAMES THIS WEEK",
+    "[Team] has [N] NHL games this week. [Team] has [N]. That could decide it."
+   ],
+   [
+    "0:26",
+    "Second matchup",
+    "(Repeat the three lines for the other matchup.)"
+   ],
+   [
+    "0:42",
+    "End card",
+    "One week. Win or go home."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Playoffs",
+  "title": "Championship hype (45 seconds)",
+  "notes": [
+   "Post it in 📢│announcements the Monday the Championship starts. Templates: BLHA Hype Trailer, 09 Countdown (set to the end of the second week), bed-hype-45s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting",
+    "Nothing. Let the sting play."
+   ],
+   [
+    "0:03",
+    "Both franchise logos, facing each other",
+    "[Team]. [Team]. Two weeks for the title."
+   ],
+   [
+    "0:09",
+    "Card: [SEED] vs [SEED] · [RECORDS]",
+    "The [seed] seed against the [seed] seed."
+   ],
+   [
+    "0:14",
+    "Each team's road through the bracket",
+    "[Team] got here by beating [team] and [team]. [Team] went through [team] and [team]."
+   ],
+   [
+    "0:22",
+    "Card: 2 WEEKS · TOTAL POINTS",
+    "It's two weeks, total points. A bad Monday won't sink you. A bad week might."
+   ],
+   [
+    "0:29",
+    "Card: $650 · BANNER · DYNASTY POT",
+    "The winner takes six hundred and fifty dollars, a banner in the hall of champions, and one step toward the Dynasty Pot."
+   ],
+   [
+    "0:37",
+    "09 Countdown",
+    "The runner-up gets three fifty. Nobody remembers the runner-up."
+   ],
+   [
+    "0:42",
+    "End card: THE BLHA CHAMPIONSHIP",
+    "The BLHA Championship starts tonight."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Playoffs",
+  "title": "Champion (30 seconds)",
+  "notes": [
+   "Post it in 📢│announcements and 🏆│hall-of-champions once the result is final in Fantrax. Templates: BLHA Playoff Show, 08 Champion Banner (team name, year, final score), bed-hype-45s with sfx-reveal on the banner."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Intro sting",
+    "Nothing. Let the sting play."
+   ],
+   [
+    "0:03",
+    "Final score card",
+    "Final, after two weeks: [team] [score], [team] [score]."
+   ],
+   [
+    "0:09",
+    "08 Champion Banner drops (sfx-reveal)",
+    "Your [year] BLHA Champion: the [city] [team]!"
+   ],
+   [
+    "0:15",
+    "Owner photo or franchise logo",
+    "Congratulations to [owner]. [One line about how they built it: a trade, a draft pick, a waiver steal.]"
+   ],
+   [
+    "0:22",
+    "Card: CHAMPIONSHIP [1 / 2 / 3] OF 3",
+    "That's [first / second] championship in this Dynasty Pot cycle. (If it's the third: \"That's three. The Dynasty Pot is theirs.\")"
+   ],
+   [
+    "0:27",
+    "End card",
+    "The banner goes up in hall-of-champions tonight."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Playoffs",
+  "title": "Third place and consolation (30 seconds)",
+  "notes": [
+   "Post it in 🏁│playoff-race once both are final. Templates: BLHA Playoff Show, 01 Brand Kit, bed-week-60s."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Title card: THIRD PLACE",
+    "The semifinal losers played for third, over the same two weeks as the Championship."
+   ],
+   [
+    "0:06",
+    "Score card",
+    "[Team] beat [team], [score] to [score], and takes third place and one hundred and fifty dollars."
+   ],
+   [
+    "0:14",
+    "Title card: CONSOLATION CHAMPION",
+    "And in the consolation bracket, [team] beat [team] in the final."
+   ],
+   [
+    "0:20",
+    "Card: +$50 FAAB NEXT SEASON",
+    "That's an extra fifty dollars of FAAB next season, one thousand and fifty in all."
+   ],
+   [
+    "0:26",
+    "End card",
+    "It doesn't change the draft order. It does change the trash talk."
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Offseason",
+  "title": "Season in review (3 to 4 minutes)",
+  "notes": [
+   "Play it at the start of Awards Night, then post it in 🏆│hall-of-champions. Templates: BLHA Season in Review, 01 Brand Kit (a section title for each chapter), 02 Week in 60 (score and standings panels), bed-tutorial-loop under the talking and bed-hype-45s under the playoff chapter. Write the lines from the season's Week in 60 scripts: the best moments are already in them."
+  ],
+  "rows": [
+   [
+    "Cold open",
+    "Intro sting, then [YEAR] SEASON IN REVIEW",
+    "Twenty-two weeks, four playoff rounds and [number] trades. This was the [year] BLHA season."
+   ],
+   [
+    "The draft",
+    "Draft board screenshot",
+    "It started at the draft. [Team] took [player] first overall. The steal of the draft was [player] in round [N]."
+   ],
+   [
+    "The early weeks",
+    "Standings after Week 5",
+    "[Team] got off to a [record] start. [Team] started [record] and didn't panic."
+   ],
+   [
+    "The trades",
+    "05 Trade Alert cards",
+    "The trade of the season: [summary]. The deadline belonged to [team]."
+   ],
+   [
+    "The race",
+    "Playoff-race standings",
+    "The race came down to week [N]. [Team] took the last spot by [points] points."
+   ],
+   [
+    "The Presidents' Trophy",
+    "Final standings",
+    "[Team] won the Presidents' Trophy at [record]."
+   ],
+   [
+    "The playoffs",
+    "Bracket, round by round",
+    "(One line per round. Name the upset if there was one.)"
+   ],
+   [
+    "The final",
+    "Final score card, then 08 Champion Banner",
+    "And [team] beat [team], [score] to [score], to win the [year] BLHA Championship."
+   ],
+   [
+    "Close",
+    "End card",
+    "That's the season. Now let's hand out some awards."
+   ]
+  ],
+  "header": [
+   "Chapter",
+   "On screen",
+   "Say (about 30 seconds each)"
+  ]
+ },
+ {
+  "section": "Offseason",
+  "title": "Awards Night host script (about 20 minutes, live or recorded)",
+  "notes": [
+   "Run it in a voice channel or record it and post it in 📢│announcements. It follows the Awards Night program, in the same order. Templates: BLHA Awards Night, 10 Awards Night (one card per award: name, the top three with points, winner), bed-awards-loop under the talking and sfx-reveal on every winner. Tally the 5-3-1 votes from 🗳️│league-voting before you start.",
+   "1. Welcome",
+   "Good evening, and welcome to the [year] BLHA Awards Night. I'm [name], your Commissioner. Tonight we close the book on the [year] season: the champions, the money and the five awards you voted on. Let's start with a look back.",
+   "(Play the Season in Review.)",
+   "2. The season's honors. Read each one and pause for the card.",
+   "• The consolation champion, with fifty dollars of extra FAAB next season: [team].",
+   "• The Presidents' Trophy, for the best regular-season record, and two hundred dollars: [team], at [record].",
+   "• Third place, and one hundred and fifty dollars: [team].",
+   "• The runner-up, and three hundred and fifty dollars: [team].",
+   "• And your [year] BLHA Champion, with six hundred and fifty dollars and a banner in the hall of champions: [team]. (Let the sting play. Give the champion's owner the floor if it's live.)",
+   "3. The owners' awards. Before the first one, say this:",
+   "Every franchise got one ballot: a first, second and third choice for each award, worth five, three and one points. Nobody could vote for their own franchise, their own pickups, or a trade they were part of. Bust of the Year is the one exception. These awards are for bragging rights. No money, no picks.",
+   "Then, for each award, the same three lines: \"The nominees for [award] are [third place], [second place] and [first place].\" Pause. \"And the winner, with [points] points, is... [winner].\" Then one sentence on why.",
+   "• Bust of the Year. \"We start with the one nobody wants: the season's biggest letdown.\"",
+   "• Comeback Franchise (from the league's second season on). \"The biggest climb in the standings from last season.\"",
+   "• Waiver Steal of the Year. \"The best pickup off the wire.\"",
+   "• Trade of the Year. \"The best deal of the season. The two teams in it couldn't vote for it.\"",
+   "• GM of the Year. \"And the last award of the night: the best job running a franchise this season.\"",
+   "If an award is tied after first-place votes, say: \"It's a tie, so the award is shared,\" and read both.",
+   "4. The Dynasty Pot",
+   "The Dynasty Pot now stands at [balance]. The first franchise to win three championships in this cycle takes all of it. [Team] has [number]. (If nobody has two: \"Nobody has two yet. It's wide open.\")",
+   "5. What's next",
+   "The Season Ledger goes up in league-ledger within thirty days, with every dollar in and out. Trading reopens the day after the Stanley Cup Final. The Annual Draft starts two to three weeks after the NHL Entry Draft, and dues are due before it. The dates are on the league calendar. Thank you all for a great season. See you at the draft."
+  ],
+  "rows": [],
+  "header": null
+ },
+ {
+  "section": "Offseason",
+  "title": "Dynasty Pot update (30 seconds)",
+  "notes": [
+   "Post it in 💰│league-ledger with the Season Ledger. Templates: BLHA Explainer, 11 Explainer Cards, bed-tutorial-loop."
+  ],
+  "rows": [
+   [
+    "0:00",
+    "Card: THE DYNASTY POT",
+    "The Dynasty Pot after the [year] season."
+   ],
+   [
+    "0:04",
+    "Card: $[BALANCE]",
+    "It's at [balance]. Two hundred dollars goes in every season, plus whatever the operating reserve didn't spend."
+   ],
+   [
+    "0:12",
+    "Card: CHAMPIONSHIPS THIS CYCLE, one row per team with at least one",
+    "[Team] has [number] championships. [Team] has [number]."
+   ],
+   [
+    "0:20",
+    "Card: FIRST TO 3 TAKES IT ALL",
+    "The first franchise to three championships in this cycle takes the whole pot. They don't have to be in a row."
+   ],
+   [
+    "0:27",
+    "End card",
+    "Who's next?"
+   ]
+  ],
+  "header": [
+   "Time",
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Offseason",
+  "title": "Rule changes explainer (60 to 90 seconds, after each vote)",
+  "notes": [
+   "Post it in 📢│announcements once a vote closes, whether the change passed or failed. Templates: BLHA Explainer, 11 Explainer Cards, bed-tutorial-loop.",
+   "Amendment votes only happen in the Offseason. The proposal goes up in league-voting at least 7 days before voting opens, and the vote is open for 7 days (20.2 and 20.3). The first vote can be held in the Offseason after Season 2027 (20.1)."
+  ],
+  "rows": [
+   [
+    "Title card: RULE CHANGE VOTE",
+    "The vote on [proposal] closed on [date]."
+   ],
+   [
+    "Card: [YES]-[NO] · 8 NEEDED",
+    "It got [number] yes votes out of twelve. A change needs eight. It [passed / did not pass]."
+   ],
+   [
+    "Card: WHAT CHANGES (old rule on the left, new rule on the right)",
+    "Here's what changes. Before, [old rule]. Starting [season], [new rule]."
+   ],
+   [
+    "Card: WHY",
+    "The reason, from the proposal: [one or two sentences]."
+   ],
+   [
+    "Card: STARTS [SEASON]",
+    "It starts next season, so nothing that already happened changes."
+   ],
+   [
+    "End card",
+    "The updated Constitution is posted in constitution."
+   ]
+  ],
+  "header": [
+   "On screen",
+   "Say"
+  ]
+ },
+ {
+  "section": "Offseason",
+  "title": "Winter Meetings recap (60 seconds)",
+  "notes": [
+   "Post it in 💬│gm-lounge the day after the meeting, for anyone who missed it. Templates: BLHA Talking Head, 01 Brand Kit (lower third, then a card per topic).",
+   "Thanks to everyone who came to the Winter Meetings. Here's the short version for everyone who couldn't make it.",
+   "First, the season review. [One or two lines.]",
+   "Second, ideas for rule changes. We talked about [idea] and [idea]. [Owner] is writing up [idea] as a proposal, and it'll go up in league-voting by [date]. Remember, nothing was decided tonight. Every change still needs a written proposal and eight votes.",
+   "Third, the calendar. The Annual Draft is [date range], and dues are due by [date].",
+   "And from the open floor, [anything worth sharing].",
+   "The full notes are pinned above this video. If you have an idea of your own, post it in league-suggestions."
+  ],
+  "rows": [],
+  "header": null
+ },
+ {
+  "section": "Offseason",
+  "title": "Wooden Spoon preview (only if owners adopt the Spoon)",
+  "notes": [
+   "The last-place franchise holds the Wooden Spoon role for the Offseason and writes a short preview of the next season, posted before Week 1. If the Spoon holder wants to record it, give them this outline. Post it in 📢│announcements. Templates: BLHA Talking Head, 01 Brand Kit.",
+   "• Who you are, and how you finished last (be honest, it's funnier).",
+   "• The team you think wins it all next season, and why.",
+   "• The team that's in trouble.",
+   "• One bold prediction.",
+   "• Why you won't be holding the Spoon next year."
+  ],
+  "rows": [],
+  "header": null
+ },
+ {
+  "section": "Offseason",
+  "title": "Owner spotlight (5 to 10 minutes, interview)",
+  "notes": [
+   "Talk on a Discord call, and have each of you record your own voice at the same time: you in SoundCraft, the owner with their phone's voice memo app. Clap once at the start so the two tracks are easy to line up in SoundCraft afterward. Post it in 💬│gm-lounge. Templates: BLHA Talking Head, 04 Franchise Cards for the open. Pick six to eight questions.",
+   "• How did you pick your franchise's name?",
+   "• Which NHL team do you cheer for, and how did that start?",
+   "• What's your plan: win now or build for later?",
+   "• Your best move so far, and the one you'd take back.",
+   "• Which owner is the toughest to trade with?",
+   "• The player you'd never trade.",
+   "• A prospect in your minors that the league should know about.",
+   "• Your lineup routine: daily, weekly or whenever you remember?",
+   "• Your bold prediction for this season.",
+   "• What would you change about the league?"
+  ],
+  "rows": [],
+  "header": null
+ }
+]

@@ -1,0 +1,166 @@
+BLHA VIDEO KIT
+==============
+
+Everything the league's videos are built from, for FilmCraft, EffectCraft and SoundCraft. The
+words for every video are in the "BLHA Video Scripts" doc; this kit holds the pieces those
+scripts name.
+
+  FilmCraft/     Nine timeline files (.otio) with one ready-made sequence per script, and the
+                 Media folder they use: the intro sting, the outro, the pixel wipe, the hype
+                 intro b-roll, the corner bug and the placeholder slates.
+  EffectCraft/   Eleven scripts that build the league's graphics (lower thirds, the Week in 60,
+                 trade alerts, the bracket, Awards Night and more), with their art and sounds.
+  SoundCraft/    Music beds, stings and sound effects, and the league soundboard, as WAV files.
+  Fonts/         Jersey 10 and Silkscreen, the two fonts every graphic uses.
+
+
+BEFORE YOU START (ONCE)
+-----------------------
+1. Unzip the kit somewhere it can stay, for example Documents/BLHA Video Kit. The timelines find
+   their media by where it sits next to them, so keep the four folders together and don't
+   rename anything inside them.
+2. Install the fonts. Open Fonts, double-click each .ttf file and choose Install (Mac: Install
+   Font). Then quit and reopen EffectCraft and FilmCraft so they see the fonts.
+3. Make a Renders folder inside EffectCraft. Every graphic you render goes there.
+4. Set up the voice session in SoundCraft (next section).
+
+
+THE VOICE SESSION IN SOUNDCRAFT (ONCE)
+--------------------------------------
+1. Open SoundCraft and choose File > New... Name the session BLHA Voiceover, set 48 kHz,
+   24-bit, WAV, and save it in the kit's SoundCraft folder.
+2. Track > New... Add 1 mono audio track and name it VO.
+3. Track > New... again. Add 2 stereo audio tracks and name them MUSIC and SFX.
+4. On the VO track, choose your microphone as the input and click the track's record-enable
+   button.
+5. File > Save As Template... and save it as BLHA Voiceover in the SoundCraft folder.
+
+Recording a voice track (each video):
+1. File > Open > Session... and pick the BLHA Voiceover template. Then File > Save Session As...
+   with the video's name, for example Week in 60 - Week 05.
+2. Optional: File > Import > Video... brings in the EffectCraft render so you can talk to the
+   picture, and File > Import > Audio... puts the music bed on MUSIC so you hear the pace.
+3. Record on VO. Pause 2 seconds between paragraphs; if you trip, pause and restart the
+   sentence. Loud parts should reach about -12 dB on the meter and never touch the red.
+4. Cut the misses, then mute MUSIC and SFX and choose File > Bounce Mix... as WAV, 48 kHz,
+   24-bit. Name it like VO - Week in 60 - Week 05.wav.
+
+
+MAKING A VIDEO (EVERY TIME)
+---------------------------
+1. Open the script in the BLHA Video Scripts doc and fill in its [brackets].
+2. If the video uses EffectCraft graphics (see the list below), build them:
+   a. Open the script file, for example EffectCraft/02 Week in 60.jsx, in a plain text editor
+      (TextEdit in plain-text mode, Notepad, or any code editor).
+   b. Change the words and numbers in the DATA block at the top. Keep the quotes around text
+      and the commas between lines. Stick to plain keyboard characters.
+   c. Save the file.
+   d. In EffectCraft: File > Scripts > Run Script File... and choose the file. The new
+      compositions appear in the project's "BLHA Video Kit" folder. A message lists them.
+   e. Open each one and play it through to check it.
+3. Render each composition: select it, Composition > Add to Render Queue. In the Render Queue,
+   click Output To and save into EffectCraft/Renders, then set the Output Module:
+     Full-screen graphics:   Format: H.264, Bitrate: 20 Mbps
+     Graphics that sit on top of other video (names ending in "(alpha)", lower thirds, section
+     titles, the corner bug):   Format: ProRes, ProRes 4444, Channels: RGB + Alpha
+   Then click Render.
+4. Record the voice in SoundCraft (above).
+5. In FilmCraft: File > Import... and choose the timeline file in FilmCraft/, for example
+   BLHA Week in 60.otio. Its sequences appear in the project. Double-click the one you're
+   making. If FilmCraft asks to link media, point it at the kit's FilmCraft/Media folder.
+6. Fill it in. Each dark slate with a dashed border is a placeholder that says what goes there.
+   Drag your render, camera clip or screen recording onto the same track at the same spot and
+   delete the slate. Put your voice WAV on A1 at 0:00. The markers along the top of the
+   timeline hold the script's lines at their times.
+7. Export: File > Export > Media... with
+     Format H.264, 1920 x 1080, 30 fps, audio AAC 48 kHz
+     Bitrate 12 Mbps for videos up to 5 minutes; 6 Mbps for longer ones (Awards Night, an owner
+     spotlight). If loudness normalization is offered, set it to -14 LUFS.
+8. Post it in the channel the script names.
+
+Tracks in every timeline: V1 picture, V2 graphics, V3 the corner bug, V4 the pixel wipes;
+A1 voice, A2 music (already turned down under the voice), A3 stings and effects, A4 the wipes'
+whooshes. Move anything you like; nothing is locked.
+
+
+WHICH PIECES EACH VIDEO USES
+----------------------------
+Recruiting trailer       BLHA Hype Trailer > Recruiting Trailer. Already cut from the hype intro;
+                         it only needs your voice.
+Startup Draft hype       BLHA Hype Trailer > Startup Draft Hype. EffectCraft: 11 Explainer Cards
+                         (set "Startup Draft Hype Cards", alpha), 09 Countdown, 04 Franchise Cards.
+Opening night            BLHA Hype Trailer > Opening Night. 11 (Opening Night Cards, alpha), 04.
+Trade deadline day       BLHA Hype Trailer > Trade Deadline Day. 11 (Trade Deadline Cards, alpha),
+                         05 Trade Alert for each big deal.
+Championship hype        BLHA Hype Trailer > Championship Hype. 11 (Championship Hype Cards,
+                         alpha), 04, 07 Playoff Bracket, 09.
+Commissioner welcome     BLHA Talking Head > Commissioner Welcome. 01 Brand Kit (lower third, end
+                         card).
+Winter Meetings recap,   BLHA Talking Head. 01 Brand Kit lower third.
+Wooden Spoon preview
+Owner spotlight          BLHA Talking Head > Owner Spotlight. 04 Franchise Cards.
+Server tour              BLHA Screen Tutorial > Server Tour. 01 Brand Kit section titles.
+How-tos (ten of them)    BLHA Screen Tutorial > How-to - ... 11 Explainer Cards (set "How-to
+                         Cards" makes one card per comp).
+Draft order draw         BLHA Screen Tutorial > Draft Order Draw. 11 (How-to Cards), 01 end card.
+Explainers (six)         BLHA Explainer. 11 Explainer Cards: one set per explainer, timed to its
+                         script, so the render drops in at 0:00.
+Week in 60 Seconds       BLHA Week in 60. 02 Week in 60.
+Monthly awards           BLHA Monthly Awards. 03 Monthly Awards.
+Trade alert              05 Trade Alert renders the whole clip with its sound. No timeline.
+Clinched / eliminated    06 Clinched renders the whole clip with its sound. No timeline.
+Bracket reveal, round    BLHA Playoff Show. 07 Playoff Bracket, 08 Champion Banner, 01 Brand Kit.
+previews, champion,
+third place
+Season in review         BLHA Season in Review. 01 Brand Kit, 02, 05, 07, 08.
+Awards Night             BLHA Awards Night. 10 Awards Night builds every graphic in program order.
+Franchise intro cards    04 Franchise Cards renders each card with its sound. No timeline.
+
+
+THE WEEKLY ROUTINE (WEEK IN 60, ABOUT 20 MINUTES)
+------------------------------------------------
+1. Monday, after the League Bot's recap, awards and standings are up in 📰│weekly-recap, copy
+   the numbers into DATA in EffectCraft/02 Week in 60.jsx and save.
+2. EffectCraft: run the script, check "Week in 60 - Week NN", render it as H.264.
+3. SoundCraft: record the Week in 60 script (File > Import > Video... the render to talk to it).
+4. FilmCraft: import BLHA Week in 60.otio (or reuse last week's project), drop the render on V1
+   at 0:00 and the voice on A1 at 0:00, export, post.
+
+
+WHAT'S IN SOUNDCRAFT
+--------------------
+Beds (music to talk over)
+  bed-hype-45s        45 s, 150 BPM. Quiet under the intro sting, the beat lands at 3.2 s, the
+                      final chord at 41.6 s. Hype videos.
+  bed-week-60s        60 s, voice-friendly, ends on a chord at 57.6 s. Week in 60, monthly
+                      awards, bracket reveal.
+  bed-tutorial-loop   38.4 s seamless loop. Talking heads, how-tos, explainers.
+  bed-awards-loop     40 s seamless loop. Awards Night.
+Stings and effects
+  sting-intro         3 s, matches the intro sting video (the B lands at 0.5 s).
+  sting-outro         3 s, for the outro.
+  sfx-whoosh          Under each pixel wipe; loudest on the cut.
+  sfx-alert           Trade alerts.
+  sfx-clinch          Clinches.
+  sfx-reveal          Winners and the champion's banner; the hit is on the first frame.
+Soundboard
+  The league's six soundboard sounds as WAV files: draft horn, final buzzer, gavel, goal horn,
+  on the clock and trade alert.
+Beds are at -16 LUFS and the stings at -14 LUFS, all 48 kHz, 24-bit.
+
+
+TEAM LOGOS FOR THE FRANCHISE CARDS
+----------------------------------
+Put each logo in EffectCraft/Images/Logos/ as a square PNG (1000 x 1000 or larger, transparent
+background) and write its file name in that franchise's logo line in 04 Franchise Cards.jsx.
+
+
+IF SOMETHING LOOKS WRONG
+------------------------
+- Text in the wrong font: the fonts aren't installed, or the app was open when you installed
+  them. Install them, quit and reopen.
+- "stopped:" message when a script runs: something in DATA is missing a quote or a comma.
+  The message names the line.
+- A slate or a clip shows as offline in FilmCraft: the kit's folders were moved apart or
+  renamed. Put them back together, or relink the clip to the file in FilmCraft/Media.
+- A second build of the same graphic gets " (2)" on its name. Nothing is ever overwritten.

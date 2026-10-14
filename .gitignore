@@ -9,3 +9,6 @@ automation/*/state/
 /archive/
 /site/
 automation/history/out/
+
+# Built BLHA Video Kit (tools/build_video_kit.py)
+brand/video/build/
