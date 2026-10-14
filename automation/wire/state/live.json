@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T18:15:42.356182Z",
+  "updated_at": "2026-10-14T18:30:38.471496Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9252,6 +9252,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T18:15:42.246239Z"
+    },
+    {
+      "key": "e7ccae79acb8f1a504b4e7b4",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-kiviranta/31187",
+      "fingerprint": "420068bc6d8ad066",
+      "title_norm": "joel kiviranta (dal) — kiviranta (lower body) will play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T18:30:38.380641Z"
+    },
+    {
+      "key": "28fcd48734509efb1b7475b6",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-place-aatu-raty-on-waivers",
+      "fingerprint": "4c47d975f4c5b2f4",
+      "title_norm": "canucks place aatu raty on waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T18:30:38.426357Z"
     }
   ],
   "known_sources": [
