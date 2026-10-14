@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T19:30:38.977388Z",
+  "updated_at": "2026-10-14T21:30:51.656069Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9312,6 +9312,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T19:30:38.956450Z"
+    },
+    {
+      "key": "0c1c5400a30ac37c34584572",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "df45d68fa52801f4",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will remain out vs. montreal on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T21:30:51.151943Z"
+    },
+    {
+      "key": "15899531eb37cdd23b113ead",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "8ec615fb9b6298b1",
+      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) is doubtful for thursday in toronto.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T21:30:51.549610Z"
     }
   ],
   "known_sources": [
