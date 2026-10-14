@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T03:00:44.389737Z",
+  "updated_at": "2026-10-14T03:15:32.751135Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8882,6 +8882,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T03:00:44.345614Z"
+    },
+    {
+      "key": "fcb8cdccdcec09c3ed797db2",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-chicago-blackhawks-game-recap-october-13-2026",
+      "fingerprint": "fef6410cac85b4b1",
+      "title_norm": "bedard gets assist, blackhawks win return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T03:15:31.646503Z"
+    },
+    {
+      "key": "b71996c998f3b1b50288566a",
+      "url": "https://www.nhl.com/news/minnesota-wild-winnipeg-jets-game-recap-october-13-2026",
+      "fingerprint": "599be00bf00353c1",
+      "title_norm": "scheifele's three points help jets pull away from wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T03:15:32.239011Z"
+    },
+    {
+      "key": "49851cbc72d827794386a706",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-beat-penguins-in-connor-bedards-season-debut",
+      "fingerprint": "c4c1469cf9a8ad9f",
+      "title_norm": "blackhawks beat penguins in connor bedard's season debut",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T03:15:32.726517Z"
     }
   ],
   "known_sources": [
