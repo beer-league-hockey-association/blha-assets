@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T06:30:35.525499Z",
+  "updated_at": "2026-10-14T07:45:32.455509Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9072,6 +9072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T06:30:35.484877Z"
+    },
+    {
+      "key": "41ecd5747f7c133ee8e7776a",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-learning-to-win-the-hard-way-with-newfound-defensive-prowess",
+      "fingerprint": "16042708e0d9d2f6",
+      "title_norm": "oilers learning to win the hard way with newfound defensive prowess",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T07:45:32.423076Z"
     }
   ],
   "known_sources": [
