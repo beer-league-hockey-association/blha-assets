@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T14:30:44.300592Z",
+  "updated_at": "2026-10-14T14:45:38.851386Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9122,6 +9122,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T14:30:44.188670Z"
+    },
+    {
+      "key": "e1a7788411b81b2df60de05e",
+      "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
+      "fingerprint": "c6d42862d47445a5",
+      "title_norm": "darnell nurse (sjs) — nurse (upper-body) left tuesday's game vs. boston and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T14:45:38.767734Z"
     }
   ],
   "known_sources": [
