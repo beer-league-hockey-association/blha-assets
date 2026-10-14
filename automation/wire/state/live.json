@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T21:45:31.494363Z",
+  "updated_at": "2026-10-14T23:00:38.950685Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9342,6 +9342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T21:45:31.468972Z"
+    },
+    {
+      "key": "cd03a1098a68174e3e37a21c",
+      "url": "https://torontosun.com/sports/hockey/nhl/toronto-maple-leafs/landon-sim-driven-confidence-each-marlies-shift",
+      "fingerprint": "3c0f8422679f3dc9",
+      "title_norm": "sim driven by confidence with each marlies shift",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-14T23:00:38.903281Z"
     }
   ],
   "known_sources": [
