@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T03:15:32.751135Z",
+  "updated_at": "2026-10-14T03:30:36.220443Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8912,6 +8912,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T03:15:32.726517Z"
+    },
+    {
+      "key": "cbb33285b674b980f9cac941",
+      "url": "https://www.sportsnet.ca/nhl/article/perfetti-scores-twice-as-jets-soar-past-wild",
+      "fingerprint": "ebf3051374d14198",
+      "title_norm": "perfetti scores twice as jets soar past wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T03:30:36.172052Z"
     }
   ],
   "known_sources": [
