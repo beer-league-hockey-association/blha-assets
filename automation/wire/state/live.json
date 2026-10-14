@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T16:30:44.744648Z",
+  "updated_at": "2026-10-14T16:45:34.599982Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9192,6 +9192,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-14T16:30:44.630882Z"
+    },
+    {
+      "key": "cc6a372310ab5c96ae343209",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-new-york-rangers-outlook-igor-shesterkin-injury-2026-27",
+      "fingerprint": "88bfcfcb7f01adfa",
+      "title_norm": "edge stats: rangers' outlook with shesterkin injured",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T16:45:34.504439Z"
     }
   ],
   "known_sources": [
