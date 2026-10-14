@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T05:30:38.271437Z",
+  "updated_at": "2026-10-14T05:45:34.970640Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9022,6 +9022,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T05:30:38.220939Z"
+    },
+    {
+      "key": "2fff70858cf4534ae3843ec7",
+      "url": "https://www.nhl.com/news/edmonton-oilers-los-angeles-kings-game-recap-october-13-2026",
+      "fingerprint": "a28f29ea40908549",
+      "title_norm": "mcdavid gets four points, oilers defeat slumping kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T05:45:34.655043Z"
+    },
+    {
+      "key": "9f75c14a7cbb68ce5a1e97ee",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-all-32-teams-play-in-frozen-frenzy",
+      "fingerprint": "8b5188b3bb1cf6b0",
+      "title_norm": "nhl roundup: all 32 teams play in frozen frenzy",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T05:45:34.922682Z"
     }
   ],
   "known_sources": [
