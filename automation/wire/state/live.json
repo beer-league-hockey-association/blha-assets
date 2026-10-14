@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T03:57:27.463027Z",
+  "updated_at": "2026-10-14T04:15:35.380530Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8942,6 +8942,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T03:57:27.365399Z"
+    },
+    {
+      "key": "cde53b67cd52a5f5784fcfc7",
+      "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
+      "fingerprint": "2b39c9817636911a",
+      "title_norm": "wyatt johnston (dal) — johnston (illness) will not travel to colorado for wednesday's game.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-14T04:15:34.628047Z"
+    },
+    {
+      "key": "a47972fc92ba7aa5e60cb500",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-utah-mammoth-game-recap-october-13-2026",
+      "fingerprint": "e95021a7aa846a37",
+      "title_norm": "mammoth hold off late surge in 3rd by maple leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T04:15:34.835575Z"
+    },
+    {
+      "key": "907117fa938218a85f382f8a",
+      "url": "https://www.sportsnet.ca/nhl/article/healthy-guhle-proving-worth-to-canadiens-hes-a-beast",
+      "fingerprint": "bd0fd4b724537b36",
+      "title_norm": "healthy guhle proving worth to canadiens: 'he's a beast'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T04:15:35.103796Z"
+    },
+    {
+      "key": "f3b363341a9ebea718b6ff3a",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-comeback-effort-falls-short-in-loss-to-mammoth",
+      "fingerprint": "3219c8bb4ec3a0d9",
+      "title_norm": "maple leafs' comeback effort falls short in loss to mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T04:15:35.347130Z"
     }
   ],
   "known_sources": [
