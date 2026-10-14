@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T15:45:39.375752Z",
+  "updated_at": "2026-10-14T16:00:44.516575Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9142,6 +9142,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T15:45:39.327948Z"
+    },
+    {
+      "key": "e977089510f5a1f9c1113f96",
+      "url": "https://www.sportsnet.ca/nhl/article/where-five-struggling-nhl-teams-land-on-the-panic-meter",
+      "fingerprint": "1c2e7d8d01ddc6ac",
+      "title_norm": "where five struggling nhl teams land on the panic meter",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T16:00:44.135344Z"
+    },
+    {
+      "key": "c24552da5184146be6ca4c60",
+      "url": "https://www.sportsnet.ca/nhl/article/in-wake-of-chris-tanev-injury-leafs-cant-wait-to-add-defenceman",
+      "fingerprint": "c90f266691ed04d1",
+      "title_norm": "in wake of chris tanev injury, maple leafs can't wait to add defenceman",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T16:00:44.476190Z"
     }
   ],
   "known_sources": [
