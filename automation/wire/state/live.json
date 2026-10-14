@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T01:30:40.428750Z",
+  "updated_at": "2026-10-14T01:45:35.722931Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8732,6 +8732,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T01:30:40.316396Z"
+    },
+    {
+      "key": "44cdeac3dc336095cd5a6766",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/9f035640-c4ce-4d03-859c-725322580183",
+      "fingerprint": "10ee8120b63d68fc",
+      "title_norm": "flames on sportsnet: calgary vs. anaheim",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T01:45:35.402837Z"
+    },
+    {
+      "key": "4c3d4b9537cf53cd90e2a243",
+      "url": "https://www.sportsnet.ca/nhl/article/tkachuk-brothers-lead-panthers-in-drubbing-of-blue-jackets",
+      "fingerprint": "1f459e3c590f16c0",
+      "title_norm": "tkachuk brothers lead panthers in drubbing of blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T01:45:35.699236Z"
     }
   ],
   "known_sources": [
