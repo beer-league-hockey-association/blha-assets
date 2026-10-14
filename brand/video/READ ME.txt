@@ -19,6 +19,8 @@ BEFORE YOU START (ONCE)
 1. Unzip the kit somewhere it can stay, for example Documents/BLHA Video Kit. The timelines find
    their media by where it sits next to them, so keep the four folders together and don't
    rename anything inside them.
+   The music beds come as a second download, "BLHA Video Kit - Music Beds.zip". Unzip it and
+   move its four .wav files into BLHA Video Kit/SoundCraft/Beds.
 2. Install the fonts. Open Fonts, double-click each .ttf file and choose Install (Mac: Install
    Font). Then quit and reopen EffectCraft and FilmCraft so they see the fonts.
 3. Make a Renders folder inside EffectCraft. Every graphic you render goes there.
@@ -146,7 +148,7 @@ Stings and effects
 Soundboard
   The league's six soundboard sounds as WAV files: draft horn, final buzzer, gavel, goal horn,
   on the clock and trade alert.
-Beds are at -16 LUFS and the stings at -14 LUFS, all 48 kHz, 24-bit.
+Beds are at -16 LUFS and the stings at -14 LUFS, all 48 kHz, 16-bit.
 
 
 TEAM LOGOS FOR THE FRANCHISE CARDS

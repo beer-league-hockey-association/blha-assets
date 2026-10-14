@@ -4,7 +4,7 @@ Everything is synthesised here in numpy as 8-bit chiptune, in the voice of the l
 and soundboard: two pulse channels (12.5 / 25 / 50 % duty), a 4-bit triangle bass and a noise kit.
 The beds reuse the hype intro's E minor theme so every league video sounds like the same league.
 
-Output: 48 kHz, 24-bit stereo WAV. Beds sit at -16 LUFS so a voice can ride on top; stings and
+Output: 48 kHz, 16-bit stereo WAV. Beds sit at -16 LUFS so a voice can ride on top; stings and
 effects at -14 LUFS (the soundboard's level). Loops are rendered three times over and the middle
 pass is kept, so their tails wrap around and the loop point is seamless.
 """
@@ -203,17 +203,20 @@ def master(x: np.ndarray, target: float, ceiling_db: float = -1.5, fade_in=0.0, 
     return x * 10 ** ((target - lufs(x)) / 20) if abs(lufs(x) - target) > 0.3 else x
 
 
-def write_wav24(path: Path, x: np.ndarray):
+def write_wav(path: Path, x: np.ndarray):
+    """16-bit stereo WAV with a little TPDF dither (plenty for chiptune, and the beds stay small
+    enough to send)."""
     path.parent.mkdir(parents=True, exist_ok=True)
     if x.ndim == 1:
         x = np.stack([x, x], 1)
-    pcm = np.clip(np.round(x * 8_388_607), -8_388_608, 8_388_607).astype("<i4")
-    raw = pcm.reshape(-1).view(np.uint8).reshape(-1, 4)[:, :3].tobytes()
+    rnd = np.random.RandomState(16)
+    dither = (rnd.uniform(-.5, .5, x.shape) + rnd.uniform(-.5, .5, x.shape))
+    pcm = np.clip(np.round(x * 32_767 + dither), -32_768, 32_767).astype("<i2")
     with wave.open(str(path), "wb") as w:
         w.setnchannels(2)
-        w.setsampwidth(3)
+        w.setsampwidth(2)
         w.setframerate(SR)
-        w.writeframes(raw)
+        w.writeframes(pcm.tobytes())
 
 
 def loop_render(build, loop_len: float) -> np.ndarray:
@@ -552,10 +555,10 @@ def build(out: Path, soundboard: Path) -> dict[str, dict]:
     for folder, table in (("Beds", BEDS), ("Stings and Effects", STINGS)):
         for name, fn in table.items():
             x = fn()
-            write_wav24(out / folder / f"{name}.wav", x)
+            write_wav(out / folder / f"{name}.wav", x)
             facts[name] = {"seconds": round(len(x) / SR, 3), "lufs": round(lufs(x), 1), "peak_db": round(20 * np.log10(np.abs(x).max()), 1)}
     for mp3 in sorted(soundboard.glob("*.mp3")):
         x = decode(mp3)
-        write_wav24(out / "Soundboard" / f"{mp3.stem}.wav", x)
+        write_wav(out / "Soundboard" / f"{mp3.stem}.wav", x)
         facts[mp3.stem] = {"seconds": round(len(x) / SR, 3), "lufs": round(lufs(x), 1), "peak_db": round(20 * np.log10(np.abs(x).max() + 1e-12), 1)}
     return facts

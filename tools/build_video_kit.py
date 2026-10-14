@@ -85,16 +85,28 @@ def build(out: Path) -> dict:
     return report
 
 
-def zip_kit(out: Path, zpath: Path):
+BEDS_NOTE = ("The four music beds come in the second download, \"BLHA Video Kit - Music Beds.zip\".\n"
+             "Unzip it and move the four .wav files into this folder.\n")
+
+
+def zip_kit(out: Path, zpath: Path) -> Path:
+    """Two zips that each fit a 30 MB upload: the kit without its music beds, and the beds."""
     zpath.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+    beds = out / "SoundCraft" / "Beds"
+    with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for p in sorted(out.rglob("*")):
             arc = Path(KIT_NAME) / p.relative_to(out)
             if p.is_dir():
                 z.write(p, str(arc) + "/")
-            else:
+            elif p.parent != beds:
                 stored = p.suffix.lower() in (".mp4", ".mov", ".png")
                 z.write(p, str(arc), compress_type=zipfile.ZIP_STORED if stored else zipfile.ZIP_DEFLATED)
+        z.writestr(str(Path(KIT_NAME) / "SoundCraft" / "Beds" / "PUT THE MUSIC BEDS HERE.txt"), BEDS_NOTE)
+    bpath = zpath.with_name(zpath.stem + " - Music Beds.zip")
+    with zipfile.ZipFile(bpath, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        for p in sorted(beds.glob("*.wav")):
+            z.write(p, f"BLHA Music Beds/{p.name}")
+    return bpath
 
 
 def main():
@@ -109,8 +121,9 @@ def main():
     for name, f in report["audio"].items():
         print(f"{name}: {f['seconds']} s, {f['lufs']} LUFS, peak {f['peak_db']} dB")
     if a.zip:
-        zip_kit(a.out, a.zip)
-        print(f"zip: {a.zip} ({a.zip.stat().st_size / 1e6:.1f} MB)")
+        beds = zip_kit(a.out, a.zip)
+        for z in (a.zip, beds):
+            print(f"zip: {z} ({z.stat().st_size / 2**20:.1f} MiB)")
 
 
 if __name__ == "__main__":

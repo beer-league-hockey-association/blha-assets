@@ -101,7 +101,7 @@ class Kit(unittest.TestCase):
                               ("Soundboard", ["blha-draft-horn", "blha-final-buzzer", "blha-gavel", "blha-goal-horn", "blha-on-the-clock", "blha-trade-alert"])):
             for n in names:
                 with wave.open(str(KIT / "SoundCraft" / folder / f"{n}.wav")) as w:
-                    self.assertEqual((w.getframerate(), w.getsampwidth(), w.getnchannels()), (48000, 3, 2), n)
+                    self.assertEqual((w.getframerate(), w.getsampwidth(), w.getnchannels()), (48000, 2, 2), n)
                     self.assertGreater(w.getnframes(), 0)
         with wave.open(str(KIT / "SoundCraft" / "Beds" / "bed-hype-45s.wav")) as w:
             self.assertEqual(w.getnframes(), 45 * 48000)
