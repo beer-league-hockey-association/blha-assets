@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T03:30:36.220443Z",
+  "updated_at": "2026-10-14T03:57:27.463027Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8922,6 +8922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T03:30:36.172052Z"
+    },
+    {
+      "key": "60477d27eb11a28562ccc5b0",
+      "url": "https://www.nhl.com/news/topic/game-recap/vegas-golden-knights-nashville-predators-game-recap-october-13-2026",
+      "fingerprint": "f0ef71060ad259ea",
+      "title_norm": "golden knights score 3 straight, pull away from preds",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T03:57:27.108928Z"
+    },
+    {
+      "key": "451f48c5485c920b5192e344",
+      "url": "https://www.nhl.com/news/colorado-avalanche-dallas-stars-game-recap-october-13-2026",
+      "fingerprint": "a9d551f25563ac51",
+      "title_norm": "necas scores twice, avalanche edge stars without makar",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T03:57:27.365399Z"
     }
   ],
   "known_sources": [
