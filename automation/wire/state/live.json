@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T05:15:43.811517Z",
+  "updated_at": "2026-10-14T05:30:38.271437Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9012,6 +9012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-14T05:15:43.774188Z"
+    },
+    {
+      "key": "38401f7424a7a40e0ffdb221",
+      "url": "https://www.sportsnet.ca/nhl/article/mcdavids-big-night-lifts-oilers-over-kings",
+      "fingerprint": "1e075c01db5a1814",
+      "title_norm": "mcdavid's big night lifts oilers over kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T05:30:38.220939Z"
     }
   ],
   "known_sources": [
