@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T14:45:38.851386Z",
+  "updated_at": "2026-10-14T15:45:39.375752Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9132,6 +9132,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-14T14:45:38.767734Z"
+    },
+    {
+      "key": "883d34828f8e8dd53d0eafe4",
+      "url": "https://www.sportsnet.ca/nhl/video/not-close-to-championship-quality-mckee-talks-current-leafs-d-corps",
+      "fingerprint": "c8b1cde7cb4277e3",
+      "title_norm": "'not close to championship quality': mckee talks current leafs d corps",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T15:45:39.327948Z"
     }
   ],
   "known_sources": [
