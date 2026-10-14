@@ -41,8 +41,9 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 sys.path.insert(0, str(ROOT))
 
+from blha import draft as dr  # noqa: E402
 from blha.fantrax import Fantrax, normalize_standings  # noqa: E402
-from blha.league import load_json, load_league, save_json  # noqa: E402
+from blha.league import load_json, load_league, save_json, timezone_of  # noqa: E402
 from discord_webhook import post_discord_webhook  # noqa: E402
 import desk  # noqa: E402
 
@@ -57,11 +58,34 @@ def pick_key(pick: dict[str, Any]) -> str:
 
 
 def snapshot(raw: Any) -> dict[str, str]:
-    """pick key -> current owner team id, from getDraftPicks."""
+    """pick key -> current owner team id, from getDraftPicks.
+
+    Future picks, plus the unmade picks of a draft whose order Fantrax has set:
+    those leave futureDraftPicks for currentDraftPicks, so without them a pick
+    traded between the order being set and the draft would go unnoticed. Current
+    rows count once they have a year and an original team (see read_picks)."""
     picks = raw.get("futureDraftPicks") if isinstance(raw, dict) else None
     if not isinstance(picks, list):
         raise ValueError("getDraftPicks has no futureDraftPicks list")
-    return {pick_key(p): str(p.get("currentOwnerTeamId") or "") for p in picks if isinstance(p, dict)}
+    out = {pick_key(p): str(p.get("currentOwnerTeamId") or "") for p in picks if isinstance(p, dict)}
+    for p in raw.get("currentDraftPicks") or []:
+        if isinstance(p, dict) and p.get("year") and p.get("originalOwnerTeamId") and p.get("currentOwnerTeamId"):
+            out[pick_key(p)] = str(p["currentOwnerTeamId"])
+    return out
+
+
+def read_picks(fx: Any, cfg: dict[str, Any]) -> dict[str, str]:
+    """snapshot() of Fantrax now, with current-draft picks given their year and original team from the draft."""
+    raw = fx.draft_picks()
+    current = raw.get("currentDraftPicks") if isinstance(raw, dict) else None
+    if any(isinstance(r, dict) and not (r.get("year") and r.get("originalOwnerTeamId")) for r in current or []):
+        try:
+            draft = dr.parse_results(fx.draft_results())
+        except Exception as exc:  # noqa: BLE001 - future picks are still checked
+            print(f"WARNING: could not read the draft ({exc.__class__.__name__}); current-draft picks are left out this run.")
+            draft = None
+        raw = dr.complete_current_picks(raw, draft, dr.draft_year(draft, timezone_of(cfg)))
+    return snapshot(raw)
 
 
 def changes(prev: dict[str, str], cur: dict[str, str]) -> list[dict[str, Any]]:
@@ -233,7 +257,7 @@ def build_task(found: list[dict[str, Any]], names: dict[str, str],
 def run(mode: str) -> int:
     cfg = load_league()
     fx = Fantrax(str(cfg["league_id"]), user_agent="BLHA-Pick-Trades/1.0")
-    cur = snapshot(fx.draft_picks())
+    cur = read_picks(fx, cfg)
     names = {r["teamId"]: r["teamName"] for r in normalize_standings(fx.standings())}
     state = load_json(STATE_PATH, {})
     prev = state.get("owners")

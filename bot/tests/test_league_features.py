@@ -786,6 +786,27 @@ class CacheTests(unittest.TestCase):
         cache.get("k", 10, lambda: loads.append(1) or "v")
         self.assertEqual(len(loads), 2)
 
+    def test_league_data_fills_in_a_set_drafts_picks(self) -> None:
+        # Fantrax's currentDraftPicks rows: holder, round and pick number only.
+        class Client:
+            reads = 0
+
+            def draft_picks(self):
+                return {"futureDraftPicks": [], "currentDraftPicks": [
+                    {"teamId": "b", "round": 1, "pick": 1}, {"teamId": "b", "round": 1, "pick": 2},
+                    {"teamId": "c", "round": 1, "pick": 3}]}
+
+            def draft_results(self):
+                Client.reads += 1
+                return {"draftDate": "2028-07-20T20:00:00.0-0400", "draftState": "scheduled",
+                        "draftOrder": ["a", "b", "c"], "draftPicks": []}
+        data = LeagueData(Client(), league_id="L", league_loader=lambda: {"timezone": "America/New_York"})
+        owned, away = team.picks_of(data.draft_picks(), "b")
+        self.assertEqual([(p["year"], p["round"], p["original"]) for p in owned], [(2028, 1, "b"), (2028, 1, "a")])
+        _, away = team.picks_of(data.draft_picks(), "a")
+        self.assertEqual([(p["year"], p["owner"]) for p in away], [(2028, "b")])
+        self.assertEqual(Client.reads, 1)
+
     def test_league_data_reuses_reads(self) -> None:
         clock = [0.0]
         client = FakeClient()

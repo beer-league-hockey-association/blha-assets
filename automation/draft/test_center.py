@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+import contextlib
 import copy
+import io
 import json
 import sys
 import unittest
@@ -262,6 +264,66 @@ class RenderTests(unittest.TestCase):
         self.assertEqual(center.clock_minutes("startup", CFG), 240)
         self.assertEqual(center.clock_minutes("annual", CFG), 480)
 
+
+
+class CurrentDraftPicksTest(unittest.TestCase):
+    """currentDraftPicks as Fantrax documents it: only the holder (teamId), round and pick number."""
+
+    def setUp(self) -> None:
+        self.draft = dr.parse_results(FIXTURE)
+        self.teams = [f"t{i}" for i in range(1, 13)]
+        self.linear = dr.Draft(None, "scheduled", None, None, list(self.teams))
+
+    def rows(self, draft: dr.Draft, overall: bool = True) -> list[dict]:
+        return [{"teamId": p.team_id, "round": p.round, "pick": p.overall if overall else p.in_round} for p in draft.picks]
+
+    def linear_rows(self, rounds: int = 5) -> list[dict]:
+        return [{"teamId": t, "round": r, "pick": (r - 1) * 12 + i} for r in range(1, rounds + 1)
+                for i, t in enumerate(self.teams, 1)]
+
+    def test_slot_team_runs_even_rounds_backward_only_in_a_snake(self) -> None:
+        order = ["a", "b", "c"]
+        self.assertEqual([dr.slot_team(order, 2, n, False) for n in (1, 2, 3)], ["a", "b", "c"])
+        self.assertEqual([dr.slot_team(order, 2, n, True) for n in (1, 2, 3)], ["c", "b", "a"])
+        self.assertEqual(dr.slot_team(order, 3, 1, True), "a")
+        self.assertEqual(dr.slot_team(order, 1, 4, False), "")
+
+    def test_real_snake_draft_gives_every_pick_its_own_team(self) -> None:
+        for overall in (True, False):
+            out = dr.complete_current_picks({"futureDraftPicks": [], "currentDraftPicks": self.rows(self.draft, overall)},
+                                            self.draft, 2026)["currentDraftPicks"]
+            self.assertEqual(len(out), len(self.draft.picks))
+            self.assertTrue(all(r["originalOwnerTeamId"] == r["currentOwnerTeamId"] == r["teamId"] for r in out))
+            self.assertEqual({r["year"] for r in out}, {2026})
+
+    def test_linear_annual_draft_and_a_traded_pick(self) -> None:
+        rows = self.linear_rows()
+        rows[14]["teamId"] = "t9"                       # round 2, pick 3 (15th overall) now belongs to t9
+        raw = {"futureDraftPicks": [], "currentDraftPicks": rows}
+        out = dr.complete_current_picks(raw, self.linear, 2028)["currentDraftPicks"]
+        self.assertEqual((out[14]["originalOwnerTeamId"], out[14]["currentOwnerTeamId"], out[14]["pickInRound"]),
+                         ("t3", "t9", 3))
+        self.assertEqual(dr.traded_slots(raw, self.linear), [{"round": 2, "pick": 3, "original": "t3", "current": "t9"}])
+        self.assertNotIn("originalOwnerTeamId", rows[14])   # the caller's data is left alone
+
+    def test_an_order_that_doesnt_fit_is_never_read_as_trades(self) -> None:
+        backward = dr.Draft(None, "scheduled", None, None, list(reversed(self.teams)))
+        with contextlib.redirect_stdout(io.StringIO()) as log:
+            out = dr.complete_current_picks({"futureDraftPicks": [], "currentDraftPicks": self.linear_rows()}, backward, 2028)
+        self.assertEqual(out["currentDraftPicks"], [])
+        self.assertIn("left out this run", log.getvalue())
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(dr.traded_slots({"currentDraftPicks": self.linear_rows()}, None), [])
+
+    def test_rows_that_already_name_both_teams_are_kept(self) -> None:
+        row = {"round": 1, "pick": 3, "originalOwnerTeamId": "a", "currentOwnerTeamId": "b"}
+        out = dr.complete_current_picks({"futureDraftPicks": [], "currentDraftPicks": [row]}, None, 2027)
+        self.assertEqual(out["currentDraftPicks"], [{**row, "year": 2027}])
+
+    def test_draft_year_is_the_date_in_league_time(self) -> None:
+        late = dr.Draft(datetime(2028, 1, 1, 3, 0, tzinfo=timezone.utc), "scheduled", None, None, [])
+        self.assertEqual(dr.draft_year(late, ET), 2027)
+        self.assertIsNone(dr.draft_year(None, ET))
 
 if __name__ == "__main__":
     unittest.main()

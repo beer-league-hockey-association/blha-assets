@@ -50,6 +50,9 @@ from blha.league import load_league, timezone_of  # noqa: E402
 from history.store import Archive, is_test_label, parse_asset  # noqa: E402
 
 TRACKED_STATUSES = {"MINORS", "IR"}
+# getTeamRosters gives each player's slot: ACTIVE, RESERVE, MINORS or INJURED_RESERVE
+# (Fantrax support, Oct 2026). The archive has always written IR.
+STATUS_NAMES = {"INJURED_RESERVE": "IR", "MINOR": "MINORS"}
 RESULT_RECHECK = timedelta(days=3)
 MAX_VANISHED_SHARE = 0.4
 
@@ -79,11 +82,16 @@ def roster_snapshot(raw: Any) -> dict[str, dict[str, str]]:
     for team_id, team in rosters.items():
         items = team.get("rosterItems") if isinstance(team, dict) else None
         out[str(team_id)] = {
-            str(item["id"]): str(item.get("status") or "").upper()
+            str(item["id"]): _status(item.get("status"))
             for item in items or []
             if isinstance(item, dict) and item.get("id")
         }
     return out
+
+
+def _status(value: Any) -> str:
+    status = str(value or "").upper()
+    return STATUS_NAMES.get(status, status)
 
 
 def roster_names(raw: Any) -> dict[str, str]:
@@ -92,7 +100,10 @@ def roster_names(raw: Any) -> dict[str, str]:
 
 
 def pick_snapshot(raw: Any, draft_year: int | None = None) -> dict[str, str]:
-    """pick key -> current owner, for future picks and (during a draft) current-draft picks."""
+    """pick key -> current owner, for future picks and (once a draft order is final) current-draft picks.
+
+    Current-draft rows need their original team and year filled in first
+    (blha.draft.complete_current_picks); rows still missing either are skipped."""
     if not isinstance(raw, dict) or not isinstance(raw.get("futureDraftPicks"), list):
         raise SnapshotError("getDraftPicks has no futureDraftPicks list")
     out: dict[str, str] = {}
@@ -384,12 +395,10 @@ def run(mode: str, *, now: datetime | None = None, fx: Any = None, archive: Arch
     except Exception as exc:  # the draft feed is optional for the archive
         print(f"WARNING: could not read draft results ({exc}); skipping draft checks this run.")
         draft = None
-    draft_year = None
-    when = draft and (draft.date or draft.start)
-    if when:
-        draft_year = when.astimezone(tz).year
+    draft_year = dr.draft_year(draft, tz)
     try:
-        picks: dict[str, str] | None = pick_snapshot(fx.draft_picks(), draft_year)
+        picks: dict[str, str] | None = pick_snapshot(dr.complete_current_picks(fx.draft_picks(), draft, draft_year),
+                                                     draft_year)
     except Exception as exc:
         print(f"WARNING: could not read draft-pick ownership ({exc}); keeping the saved copy.")
         picks = None

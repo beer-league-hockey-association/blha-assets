@@ -25,7 +25,9 @@ most recent one is posted. Nothing is posted twice.
 ## Where the information comes from
 
 - **Fantrax** (`getDraftResults`, `getDraftPicks`): draft date, state, order,
-  rounds, every pick, and traded current-draft picks.
+  rounds, every pick, and traded current-draft picks. Once the order is set,
+  Fantrax lists each unmade pick with only the team holding it, so the pick's
+  original team is read from the draft order.
 - **`automation/league.yaml` → `draft_center`:** the pick clock (4 hours for
   the Startup Draft, 8 for the Annual Draft) and the nightly pause
   (midnight to 8:00 AM ET), because Fantrax's data feed does not include them.

@@ -115,11 +115,34 @@ class LeagueData:
         return self.cache.get("info", TTL["info"], self.client.league_info)
 
     def rosters(self) -> dict[str, Any]:
-        """getTeamRosters for today (statuses ACTIVE, RESERVE, MINORS, IR)."""
+        """getTeamRosters for today (each player's slot: ACTIVE, RESERVE, MINORS or INJURED_RESERVE)."""
         return self.cache.get("rosters", TTL["rosters"], self.client.rosters)
 
     def draft_picks(self) -> dict[str, Any]:
-        return self.cache.get("picks", TTL["picks"], self.client.draft_picks)
+        """getDraftPicks. Once a draft's order is set, Fantrax moves that season's unmade picks to
+        currentDraftPicks without their year or original team; those are filled in from the draft."""
+        def load() -> dict[str, Any]:
+            raw = self.client.draft_picks()
+            current = raw.get("currentDraftPicks") if isinstance(raw, dict) else None
+            if not any(isinstance(r, dict) and not (r.get("year") and r.get("originalOwnerTeamId"))
+                       for r in current or []):
+                return raw
+            from blha import draft as dr
+            try:
+                draft = dr.parse_results(self.client.draft_results())
+            except Exception as exc:  # future picks still show
+                log.warning("getDraftResults unreadable, current-draft picks left out: %s", exc)
+                draft = None
+            return dr.complete_current_picks(raw, draft, dr.draft_year(draft, self._timezone()))
+        return self.cache.get("picks", TTL["picks"], load)
+
+    def _timezone(self) -> Any:
+        from zoneinfo import ZoneInfo
+        try:
+            from blha.league import load_league, timezone_of
+            return timezone_of(self._league_loader() if self._league_loader is not None else load_league())
+        except Exception:  # the league runs on Eastern Time (5.8)
+            return ZoneInfo("America/New_York")
 
     def player_ids(self) -> dict[str, Any]:
         return self.cache.get("players", TTL["players"], self.client.player_ids)
