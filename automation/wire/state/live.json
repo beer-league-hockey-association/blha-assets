@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T02:15:41.125187Z",
+  "updated_at": "2026-10-14T02:30:37.825460Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -8792,6 +8792,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T02:15:41.033302Z"
+    },
+    {
+      "key": "0078c0dfe1a91f860b2f308d",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-new-york-rangers-game-recap-october-13-2026",
+      "fingerprint": "b0b5377f6c896050",
+      "title_norm": "lafreniere stays hot, rangers cool off lightning",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:30:36.873897Z"
+    },
+    {
+      "key": "b87f2e1bb990303097c2d22a",
+      "url": "https://www.nhl.com/news/seattle-kraken-philadelphia-flyers-game-recap-october-13-2026",
+      "fingerprint": "1782cbc5ccb470ab",
+      "title_norm": "kraken recover in shootout, keep flyers winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T02:30:37.144222Z"
+    },
+    {
+      "key": "08b5d3b313274af6517063e7",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-three-game-win-streak-snapped-in-loss-to-blues",
+      "fingerprint": "91b425aeacedb9be",
+      "title_norm": "senators' three-game win streak snapped in loss to blues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T02:30:37.467054Z"
+    },
+    {
+      "key": "83af27393b595e0fe43b8fa0",
+      "url": "https://www.sportsnet.ca/nhl/article/bowness-says-blue-jackets-should-be-embarrassed-after-rout-by-panthers",
+      "fingerprint": "6d50541bd46e8116",
+      "title_norm": "bowness says blue jackets should be 'embarrassed' after rout by panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T02:30:37.475487Z"
     }
   ],
   "known_sources": [
