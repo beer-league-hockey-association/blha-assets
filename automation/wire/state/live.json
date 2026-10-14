@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T23:00:38.950685Z",
+  "updated_at": "2026-10-14T23:15:36.000276Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9352,6 +9352,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-14T23:00:38.903281Z"
+    },
+    {
+      "key": "0ce321659a9192b8a782d0a7",
+      "url": "https://www.nhl.com/news/detroit-red-wings-have-zero-interest-in-trading-simon-edvinsson",
+      "fingerprint": "ab2af9b80380380b",
+      "title_norm": "red wings have 'zero interest' in trading edvinsson",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T23:15:35.912295Z"
     }
   ],
   "known_sources": [
