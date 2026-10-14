@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T12:15:34.783863Z",
+  "updated_at": "2026-10-14T14:00:44.585388Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9092,6 +9092,26 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-14T12:15:34.746846Z"
+    },
+    {
+      "key": "d0f2c9b996488d6ed092f2d5",
+      "url": "https://www.nhl.com/news/alex-debrincat-signs-7-year-deal-with-detroit",
+      "fingerprint": "e5ae14915cc1ce64",
+      "title_norm": "red wings secure debrincat with 7-year deal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-14T14:00:44.469721Z"
+    },
+    {
+      "key": "6eab4855e354b2a0bc0be53e",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-officially-agree-to-seven-year-extension-with-alex-debrincat",
+      "fingerprint": "db696d084200b106",
+      "title_norm": "red wings officially agree to seven-year extension with alex debrincat",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-14T14:00:44.538872Z"
     }
   ],
   "known_sources": [
