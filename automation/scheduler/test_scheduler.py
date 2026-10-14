@@ -217,5 +217,172 @@ class ConfigTests(unittest.TestCase):
         self.assertFalse(scheduler.decide(slow, runs, now, ET, TOL).due)
 
 
+
+# --- GitHub hiccups ----------------------------------------------------------
+
+import contextlib
+import io
+import os
+import socket
+import sys
+import threading
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from unittest.mock import patch
+
+import requests
+
+from blha import github_api
+
+
+class _FlakyHandler(BaseHTTPRequestHandler):
+    """Answers each request from the server's script: a status code, or "drop"."""
+
+    def _answer(self) -> None:
+        self.server.hits[self.command] = self.server.hits.get(self.command, 0) + 1
+        length = int(self.headers.get("Content-Length") or 0)
+        if length:
+            self.rfile.read(length)
+        step = self.server.script.pop(0) if self.server.script else 200
+        if step == "drop":
+            self.connection.shutdown(socket.SHUT_RDWR)
+            self.close_connection = True
+            return
+        body = b'{"workflow_runs": []}'
+        self.send_response(step)
+        self.send_header("Content-Type", "application/json")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
+    do_GET = do_POST = _answer
+
+    def log_message(self, *args) -> None:
+        pass
+
+
+class RetrySessionTests(unittest.TestCase):
+    def serve(self, script: list) -> str:
+        server = ThreadingHTTPServer(("127.0.0.1", 0), _FlakyHandler)
+        server.script, server.hits = list(script), {}
+        threading.Thread(target=server.serve_forever, daemon=True).start()
+        self.addCleanup(server.server_close)
+        self.addCleanup(server.shutdown)
+        self.server = server
+        return f"http://127.0.0.1:{server.server_address[1]}/runs"
+
+    def session(self) -> requests.Session:
+        s = github_api.add_retries(requests.Session(), backoff_factor=0)
+        s.trust_env = False  # talk to the local server directly, not through a proxy
+        return s
+
+    def test_read_retries_a_bad_gateway(self) -> None:
+        url = self.serve([502, 200])
+        self.assertEqual(self.session().get(url, timeout=5).status_code, 200)
+        self.assertEqual(self.server.hits["GET"], 2)
+
+    def test_read_retries_a_dropped_connection(self) -> None:
+        url = self.serve(["drop", 200])
+        self.assertEqual(self.session().get(url, timeout=5).status_code, 200)
+        self.assertEqual(self.server.hits["GET"], 2)
+
+    def test_read_gives_up_after_three_retries(self) -> None:
+        url = self.serve([500, 500, 500, 500, 200])
+        response = self.session().get(url, timeout=5)
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(self.server.hits["GET"], 4)
+        with self.assertRaises(requests.HTTPError) as caught:
+            response.raise_for_status()
+        self.assertTrue(github_api.is_transient(caught.exception))
+
+    def test_a_write_that_reached_github_is_never_repeated(self) -> None:
+        url = self.serve([500, 204])
+        self.assertEqual(self.session().post(url, json={}, timeout=5).status_code, 500)
+        self.assertEqual(self.server.hits["POST"], 1)
+
+    def test_real_problems_are_not_transient(self) -> None:
+        for status in (401, 403, 404, 422):
+            self.assertFalse(github_api.is_transient(scheduler.DispatchError(status, "")), status)
+        for status in (429, 500, 502, 503, 504):
+            self.assertTrue(github_api.is_transient(scheduler.DispatchError(status, "")), status)
+        self.assertTrue(github_api.is_transient(requests.ConnectionError("Remote end closed connection")))
+        self.assertTrue(github_api.is_transient(requests.Timeout()))
+        self.assertFalse(github_api.is_transient(ValueError("bad schedule")))
+
+
+class _FakeGitHub:
+    """Stands in for the GitHub client: reads and dispatches follow a per-workflow plan."""
+
+    reads: dict = {}
+    dispatches: dict = {}
+    started: list = []
+
+    def __init__(self, *args) -> None:
+        pass
+
+    def recent_runs(self, workflow: str, per_page: int = 40) -> list:
+        outcome = self.reads.get(workflow)
+        if isinstance(outcome, BaseException):
+            raise outcome
+        return []  # never run, so every job is due
+
+    def dispatch_live(self, workflow: str, ref: str) -> None:
+        outcome = self.dispatches.get(workflow)
+        if isinstance(outcome, BaseException):
+            raise outcome
+        self.started.append(workflow)
+
+
+class SchedulerRunTests(unittest.TestCase):
+    JOBS = {"timezone": "America/New_York", "jobs": [
+        {"id": "wire", "workflow": "wire.yml", "every_minutes": 15},
+        {"id": "desk", "workflow": "desk.yml", "every_minutes": 15},
+    ]}
+
+    def run_scheduler(self, reads: dict | None = None, dispatches: dict | None = None) -> tuple[int, str]:
+        _FakeGitHub.reads, _FakeGitHub.dispatches, _FakeGitHub.started = reads or {}, dispatches or {}, []
+        out = io.StringIO()
+        with patch.object(scheduler, "GitHub", _FakeGitHub), \
+             patch.object(scheduler, "load_config", lambda: self.JOBS), \
+             patch.object(scheduler, "current_phase", lambda now: ("regular", "test")), \
+             patch.object(scheduler, "job_active", lambda job, phase, now: (True, "")), \
+             patch.object(scheduler, "paced", lambda job, now: (job, "")), \
+             patch.dict(os.environ, {"GITHUB_TOKEN": "t", "GITHUB_REPOSITORY": "o/r"}), \
+             patch.object(sys, "argv", ["scheduler.py"]), \
+             contextlib.redirect_stdout(out):
+            code = scheduler.main()
+        return code, out.getvalue()
+
+    def test_clean_run(self) -> None:
+        code, log = self.run_scheduler()
+        self.assertEqual(code, 0)
+        self.assertEqual(_FakeGitHub.started, ["wire.yml", "desk.yml"])
+
+    def test_a_start_github_fumbles_is_left_for_the_next_run(self) -> None:
+        # The Oct 11 and Oct 14, 2026 failures: one dispatch got HTTP 500.
+        code, log = self.run_scheduler(dispatches={"desk.yml": scheduler.DispatchError(500, "Failed to run workflow dispatch")})
+        self.assertEqual(code, 0)
+        self.assertIn("RETRY   desk: not started (HTTP 500)", log)
+        self.assertEqual(_FakeGitHub.started, ["wire.yml"])
+
+    def test_a_read_github_fumbles_is_left_for_the_next_run(self) -> None:
+        # The Oct 12 and Oct 13, 2026 failures: a 502 and a dropped connection on one read.
+        for exc in (requests.HTTPError(response=type("R", (), {"status_code": 502})()),
+                    requests.ConnectionError("Remote end closed connection without response")):
+            code, log = self.run_scheduler(reads={"wire.yml": exc})
+            self.assertEqual(code, 0, log)
+            self.assertIn("RETRY   wire: GitHub didn't answer", log)
+            self.assertEqual(_FakeGitHub.started, ["desk.yml"])
+
+    def test_a_real_problem_still_fails_the_run(self) -> None:
+        code, log = self.run_scheduler(dispatches={"desk.yml": scheduler.DispatchError(403, "Resource not accessible")})
+        self.assertEqual(code, 1)
+        self.assertIn("ERROR   desk: dispatch failed: HTTP 403", log)
+
+    def test_github_down_for_the_whole_run_fails_it(self) -> None:
+        down = requests.ConnectionError("down")
+        code, log = self.run_scheduler(reads={"wire.yml": down, "desk.yml": down})
+        self.assertEqual(code, 1)
+        self.assertIn("GitHub didn't answer any read this run", log)
+
 if __name__ == "__main__":
     unittest.main()

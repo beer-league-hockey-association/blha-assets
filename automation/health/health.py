@@ -29,6 +29,7 @@ if str(AUTOMATION_ROOT) not in sys.path:
     sys.path.insert(0, str(AUTOMATION_ROOT))
 
 from discord_webhook import post_discord_webhook
+from blha import github_api
 from blha.schedule import condition_started_at, current_season, job_active, load_schedule
 
 CONFIG_PATH = ROOT / "health_config.yaml"
@@ -272,7 +273,9 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
     if not token:
         raise RuntimeError("GITHUB_TOKEN is missing")
 
-    session = requests.Session()
+    # Retries GitHub's brief 5xx answers and dropped connections, so one bad
+    # answer doesn't become a "Could not read workflow status" alert.
+    session = github_api.add_retries(requests.Session())
     session.headers.update(github_headers(token))
     current = now_utc()
     issues: dict[str, dict[str, Any]] = {}
