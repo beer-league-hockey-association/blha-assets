@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T09:15:39.751365Z",
+  "updated_at": "2026-10-15T12:45:37.336942Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9472,6 +9472,26 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-15T09:15:39.712831Z"
+    },
+    {
+      "key": "00d586c4f5d9cb2da38dfc21",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/the-cat-gets-the-bag",
+      "fingerprint": "9095676726db27ff",
+      "title_norm": "32 thoughts podcast: the cat gets the bag",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T12:45:36.866504Z"
+    },
+    {
+      "key": "5b43f15ae76e43f93d914fcb",
+      "url": "https://www.sportsnet.ca/nhl/video/red-wings-interim-gm-horcoff-has-zero-interest-in-trading-simon-edvinsson",
+      "fingerprint": "0835dc0e637fae65",
+      "title_norm": "red wings interim gm horcoff has 'zero interest in trading simon edvinsson'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T12:45:37.309717Z"
     }
   ],
   "known_sources": [
