@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T04:30:41.736982Z",
+  "updated_at": "2026-10-15T06:00:43.495205Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9452,6 +9452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T04:30:41.686113Z"
+    },
+    {
+      "key": "bcc230aab607e214b10be8a3",
+      "url": "https://www.nhl.com/news/montreal-canadiens-washington-capitals-game-recap-october-14-2026",
+      "fingerprint": "d352aae45808b3a6",
+      "title_norm": "tuch's 3 points help capitals edge canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T06:00:43.386599Z"
     }
   ],
   "known_sources": [
