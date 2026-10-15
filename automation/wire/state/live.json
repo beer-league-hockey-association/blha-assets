@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T22:30:36.451624Z",
+  "updated_at": "2026-10-15T23:00:41.275860Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9842,6 +9842,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-15T22:30:36.382117Z"
+    },
+    {
+      "key": "d021894b672f30585f5ded35",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-place-miles-wood-on-injured-reserve",
+      "fingerprint": "e19fb61a6aacef1e",
+      "title_norm": "maple leafs place miles wood on injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T23:00:40.954437Z"
+    },
+    {
+      "key": "575671c1da429bf1b5ed86b8",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-activate-forward-filip-chytil-from-ir",
+      "fingerprint": "d8ae59bc87561f5b",
+      "title_norm": "canucks activate forward filip chytil from ir",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T23:00:41.230275Z"
+    },
+    {
+      "key": "9a78e7057fbc482d7eb0f7b8",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-acquire-forward-aatu-raty-in-trade-with-canucks",
+      "fingerprint": "e04fe9e726bd7beb",
+      "title_norm": "maple leafs acquire forward aatu raty in trade with canucks",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T23:00:41.232694Z"
     }
   ],
   "known_sources": [
