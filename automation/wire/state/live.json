@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T04:00:44.074921Z",
+  "updated_at": "2026-10-15T04:15:35.828653Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9422,6 +9422,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-15T04:00:43.984160Z"
+    },
+    {
+      "key": "fc24e3637690c8462e3acdfe",
+      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-biggest-surprises-early-2026-27",
+      "fingerprint": "46e8eb2d5df91136",
+      "title_norm": "national hockey list: surprises 2 weeks into season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T04:15:35.525599Z"
+    },
+    {
+      "key": "82e999894c3f425617486326",
+      "url": "https://www.sportsnet.ca/nhl/article/roope-hintz-scores-in-fourth-round-of-shootout-as-stars-outlast-avalanche",
+      "fingerprint": "72637a98639d4c21",
+      "title_norm": "roope hintz scores in fourth round of shootout as stars outlast avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T04:15:35.787424Z"
     }
   ],
   "known_sources": [
