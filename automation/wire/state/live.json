@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T06:00:43.495205Z",
+  "updated_at": "2026-10-15T09:15:39.751365Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9462,6 +9462,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-15T06:00:43.386599Z"
+    },
+    {
+      "key": "89358dd606bc19c97e14d916",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks---Week-3-e3qhehs",
+      "fingerprint": "42ed134f092882c8",
+      "title_norm": "trade talks - week 3",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-15T09:15:39.712831Z"
     }
   ],
   "known_sources": [
