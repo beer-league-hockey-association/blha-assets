@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T16:00:53.006367Z",
+  "updated_at": "2026-10-15T16:15:44.422100Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9652,6 +9652,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T16:00:52.972476Z"
+    },
+    {
+      "key": "6a3933b06db5d734b0317f87",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "d89d35cc98bc95dc",
+      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) is out thursday but has a chance to return on saturday vs. montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T16:15:43.349174Z"
+    },
+    {
+      "key": "201747eda2583c83495db24d",
+      "url": "https://www.sportsnet.ca/nhl/article/kings-among-teams-kicking-tires-on-connor-hellebuyck-trade",
+      "fingerprint": "78dab9feefb875bf",
+      "title_norm": "kings among teams kicking tires on connor hellebuyck trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T16:15:43.524054Z"
+    },
+    {
+      "key": "8bcd6c5f76bfa50066314b8f",
+      "url": "https://www.nhl.com/news/alex-debrincat-shows-belief-in-detroit-red-wings-with-long-term-deal",
+      "fingerprint": "4628f404bea53b18",
+      "title_norm": "debrincat shows belief in wings with long-term deal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T16:15:43.885954Z"
+    },
+    {
+      "key": "fe60d807b663a2448b6bfaa7",
+      "url": "https://www.nhl.com/news/ahl-notebook-nhl-eastern-conference-top-new-prospects",
+      "fingerprint": "2c145bad9b75e130",
+      "title_norm": "ahl notebook: nhl eastern conference top new prospects",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T16:15:44.314512Z"
     }
   ],
   "known_sources": [
