@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T17:30:37.226781Z",
+  "updated_at": "2026-10-15T17:45:41.125511Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9762,6 +9762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T17:30:37.166846Z"
+    },
+    {
+      "key": "4073dbe5b6253eb8813a6fa7",
+      "url": "https://www.dailyfaceoff.com/players/news/vladislav-namestnikov/1865",
+      "fingerprint": "56c2068e6c65643a",
+      "title_norm": "vladislav namestnikov (wpg) — namestnikov (undisclosed) will be a game-time decision in chicago on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T17:45:41.062102Z"
     }
   ],
   "known_sources": [
