@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T18:00:45.489106Z",
+  "updated_at": "2026-10-15T18:30:54.178912Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9792,6 +9792,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-15T18:00:45.420776Z"
+    },
+    {
+      "key": "7a26e95540643515a5b5d66d",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-aatu-raty-clears-waivers",
+      "fingerprint": "e09d41d751756c1c",
+      "title_norm": "canucks' aatu raty clears waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T18:30:54.136035Z"
     }
   ],
   "known_sources": [
