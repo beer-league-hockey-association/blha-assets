@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T17:00:45.519441Z",
+  "updated_at": "2026-10-15T17:15:37.212703Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9732,6 +9732,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T17:00:45.455928Z"
+    },
+    {
+      "key": "d86c7b8f478192e2e55f6824",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "55345a25fa24471e",
+      "title_norm": "josh morrissey (wpg) — morrissey is now considered week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T17:15:37.095470Z"
     }
   ],
   "known_sources": [
