@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T14:15:50.928970Z",
+  "updated_at": "2026-10-15T14:30:37.640965Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9512,6 +9512,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T14:15:50.884346Z"
+    },
+    {
+      "key": "526a19836a6813ab1347e6a9",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "e0df7d82b1cea629",
+      "title_norm": "chris tanev (tor) — tanev is week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T14:30:37.523032Z"
     }
   ],
   "known_sources": [
