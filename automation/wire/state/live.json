@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T00:15:33.770558Z",
+  "updated_at": "2026-10-15T00:45:36.293860Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9372,6 +9372,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T00:15:33.703871Z"
+    },
+    {
+      "key": "02c0a6f562b236dc91185e9d",
+      "url": "https://www.nhl.com/news/topic/short-shifts/hockey-fights-cancer-nhl-daily-digest-2026-27",
+      "fingerprint": "5b5f70d9837c92a2",
+      "title_norm": "hockey fights cancer daily digest",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T00:45:36.227863Z"
     }
   ],
   "known_sources": [
