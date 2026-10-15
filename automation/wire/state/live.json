@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T20:45:41.345359Z",
+  "updated_at": "2026-10-15T22:30:36.451624Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9832,6 +9832,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-15T20:45:41.249153Z"
+    },
+    {
+      "key": "7e9cba78d793c4496609de7b",
+      "url": "https://theahl.com/news/canucks-acquire-quillan-from-toronto",
+      "fingerprint": "8330e79d215140fc",
+      "title_norm": "canucks acquire quillan from toronto",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-15T22:30:36.382117Z"
     }
   ],
   "known_sources": [
