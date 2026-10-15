@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T14:44:11.629814Z",
+  "updated_at": "2026-10-15T15:00:51.537126Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9542,6 +9542,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T14:44:11.535554Z"
+    },
+    {
+      "key": "676512c9998ae1d3f6f8a8e9",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
+      "fingerprint": "637426c84f9913dc",
+      "title_norm": "jacob markstrom (fla) — markstrom will remain out on thursday but is likely to return vs. ottawa next wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:00:50.877408Z"
+    },
+    {
+      "key": "37f1eafc9578175148606ef0",
+      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
+      "fingerprint": "b16dec7b823191c6",
+      "title_norm": "radko gudas (fla) — gudas (undisclosed) is likely to return on wednesday vs. ottawa.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:00:51.174280Z"
+    },
+    {
+      "key": "9ad87c3c2ee1d0c128ba0759",
+      "url": "https://www.dailyfaceoff.com/players/news/emil-lilleberg/37940",
+      "fingerprint": "724c6aa152ee3687",
+      "title_norm": "emil lilleberg (tbl) — lilleberg (undisclosed) is expected to return vs. vancouver on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:00:51.452811Z"
     }
   ],
   "known_sources": [
