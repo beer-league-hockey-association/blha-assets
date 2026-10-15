@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T01:30:41.796837Z",
+  "updated_at": "2026-10-15T03:00:45.456962Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9392,6 +9392,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-15T01:30:41.729034Z"
+    },
+    {
+      "key": "0a06ed8b6fbd4966d9cc5d9c",
+      "url": "https://www.sportsnet.ca/nhl/article/alex-tuch-has-two-goals-and-an-assist-in-capitals-win-over-canadiens",
+      "fingerprint": "c046711f8e915b10",
+      "title_norm": "alex tuch has two goals and an assist in capitals' win over canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T03:00:44.986045Z"
+    },
+    {
+      "key": "247cccb81baa3949bc29df15",
+      "url": "https://www.nhl.com/news/dylan-garand-inner-arrogance-will-help-new-york",
+      "fingerprint": "bd0844c5f7decf67",
+      "title_norm": "fischler: garand's 'inner arrogance' will help rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T03:00:45.361562Z"
     }
   ],
   "known_sources": [
