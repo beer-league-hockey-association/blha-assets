@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T16:30:44.528578Z",
+  "updated_at": "2026-10-15T16:45:36.697520Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9702,6 +9702,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T16:30:44.474424Z"
+    },
+    {
+      "key": "84139c44eeba1d66215c26e0",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "63ac1ae77f87262c",
+      "title_norm": "bowen byram (chi) — byram (upper-body) is out vs. winnipeg and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T16:45:36.316826Z"
+    },
+    {
+      "key": "7897ca27f2651bed7e3a0018",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-chytil/2811",
+      "fingerprint": "a0c955bc362f7704",
+      "title_norm": "filip chytil (van) — chytil (upper-body) will make his season debut in florida on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T16:45:36.613153Z"
     }
   ],
   "known_sources": [
