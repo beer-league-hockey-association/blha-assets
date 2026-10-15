@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T04:15:35.828653Z",
+  "updated_at": "2026-10-15T04:30:41.736982Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9442,6 +9442,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T04:15:35.787424Z"
+    },
+    {
+      "key": "7e39c3d630c105efc64a82c8",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-dobes-fighting-for-starters-crease-after-another-frustrating-loss",
+      "fingerprint": "6328286d5b159606",
+      "title_norm": "canadiens' dobes fighting for starter's crease after another frustrating loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T04:30:41.686113Z"
     }
   ],
   "known_sources": [
