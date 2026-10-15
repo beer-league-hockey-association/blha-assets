@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T17:45:41.125511Z",
+  "updated_at": "2026-10-15T18:00:45.489106Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9772,6 +9772,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T17:45:41.062102Z"
+    },
+    {
+      "key": "7dcb4a13e4184f4196b11c17",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
+      "fingerprint": "708500c69a6fc5f4",
+      "title_norm": "mikael granlund (ana) — granlund is day-to-day with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T18:00:45.001419Z"
+    },
+    {
+      "key": "5d8940a0a3a85f4394938f14",
+      "url": "https://theahl.com/news/ahl-hall-of-fame-announces-class-of-2027",
+      "fingerprint": "719d3006e06d7e6a",
+      "title_norm": "ahl hall of fame announces class of 2027",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-15T18:00:45.420776Z"
     }
   ],
   "known_sources": [
