@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T12:45:37.336942Z",
+  "updated_at": "2026-10-15T14:15:50.928970Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9492,6 +9492,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T12:45:37.309717Z"
+    },
+    {
+      "key": "75af268189e5278ea1a8f375",
+      "url": "https://www.sportsnet.ca/nhl/article/ullmark-leading-senators-with-dream-like-start-to-season",
+      "fingerprint": "5a803e982cd15a80",
+      "title_norm": "ullmark leading senators with dream-like start to season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T14:15:50.124776Z"
+    },
+    {
+      "key": "aee61e0fa59a4b376fc9ba14",
+      "url": "https://www.sportsnet.ca/nhl/article/arizona-state-hires-dave-hakstol-as-head-coach",
+      "fingerprint": "dda23c8d949c8058",
+      "title_norm": "arizona state hires dave hakstol as head coach",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T14:15:50.884346Z"
     }
   ],
   "known_sources": [
