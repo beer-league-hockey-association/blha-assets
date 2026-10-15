@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T17:15:37.212703Z",
+  "updated_at": "2026-10-15T17:30:37.226781Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9742,6 +9742,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T17:15:37.095470Z"
+    },
+    {
+      "key": "58fe57a02dc70f1b8dff0b42",
+      "url": "https://www.sportsnet.ca/nhl/article/healthy-and-engaged-analyzing-auston-matthews-best-start-in-years",
+      "fingerprint": "398a5fa431286acb",
+      "title_norm": "healthy and engaged: analyzing auston matthews' best start in years",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T17:30:36.742796Z"
+    },
+    {
+      "key": "6590590e4dfb628354f534b7",
+      "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
+      "fingerprint": "728d7b0f6a1fe4ed",
+      "title_norm": "jason dickinson (edm) — dickinson (lower-body) is a game-time decision vs. utah.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T17:30:37.166846Z"
     }
   ],
   "known_sources": [
