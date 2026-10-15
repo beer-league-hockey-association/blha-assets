@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T15:00:51.537126Z",
+  "updated_at": "2026-10-15T15:30:40.735466Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9572,6 +9572,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T15:00:51.452811Z"
+    },
+    {
+      "key": "9db3d21332e869c4fa7809ae",
+      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
+      "fingerprint": "a234958b613196b0",
+      "title_norm": "william eklund (ott) — eklund (ankle) had surgery on wednesday and is expected to miss the next 10-12 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:30:40.016163Z"
+    },
+    {
+      "key": "16da0b699ec58c4778ab8064",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "1b81622e96c466c8",
+      "title_norm": "jake sanderson (ott) — sanderson (lower-body) skated on thursday but will not play vs. the islanders.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:30:40.311010Z"
+    },
+    {
+      "key": "61ac7cec8768e8cad5f5d727",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-why-landon-dupont-is-ranked-no-1-for-2027-nhl-draft",
+      "fingerprint": "668c07086fa6ff7b",
+      "title_norm": "scout's analysis: why landon dupont is ranked no. 1 for 2027 nhl draft",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:30:40.685474Z"
     }
   ],
   "known_sources": [
