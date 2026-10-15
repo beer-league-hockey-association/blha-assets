@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T19:45:40.692944Z",
+  "updated_at": "2026-10-15T20:00:44.193781Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9812,6 +9812,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T19:45:40.552752Z"
+    },
+    {
+      "key": "4c6a88f012aaea30b82763b0",
+      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
+      "fingerprint": "666519e9d9981030",
+      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) was a full participant in anaheim's practice on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T20:00:44.064002Z"
     }
   ],
   "known_sources": [
