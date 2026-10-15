@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-14T23:15:36.000276Z",
+  "updated_at": "2026-10-15T00:15:33.770558Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9362,6 +9362,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-14T23:15:35.912295Z"
+    },
+    {
+      "key": "f9c7011fc4fbdec9fdd39ab8",
+      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
+      "fingerprint": "80d8352d46f8ba76",
+      "title_norm": "nicolas roy (col) — roy (lower-body) will not play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T00:15:33.703871Z"
     }
   ],
   "known_sources": [
