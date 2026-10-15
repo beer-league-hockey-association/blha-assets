@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T15:30:40.735466Z",
+  "updated_at": "2026-10-15T15:45:41.802198Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9602,6 +9602,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T15:30:40.685474Z"
+    },
+    {
+      "key": "9e7406b4b64358095e8662c3",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "3053c1e5f10c1497",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will be a game-time decision vs. san jose on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:45:40.418115Z"
+    },
+    {
+      "key": "6abffa418f4d46a4a1e7f7b7",
+      "url": "https://www.dailyfaceoff.com/players/news/olli-maatta/1792",
+      "fingerprint": "e4136abd729b230d",
+      "title_norm": "olli maatta (min) — maatta (upper-body) is out vs. st. louis on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:45:40.898635Z"
+    },
+    {
+      "key": "2ded6fd1d7f57ace8237ea00",
+      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
+      "fingerprint": "a0c98222e7d9c4b0",
+      "title_norm": "justus annunen (nsh) — annunen (undisclosed) will be a game-time decision vs. san jose on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T15:45:41.278990Z"
+    },
+    {
+      "key": "386e54702eeb74788e69bb8d",
+      "url": "https://audioboom.com/posts/8964777",
+      "fingerprint": "5eb9ba81dac63fab",
+      "title_norm": "sell-high candidates; week 3 mailbag",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-15T15:45:41.778224Z"
     }
   ],
   "known_sources": [
