@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T16:15:44.422100Z",
+  "updated_at": "2026-10-15T16:30:44.528578Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9692,6 +9692,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-15T16:15:44.314512Z"
+    },
+    {
+      "key": "b7616982dba2b6905bd722ce",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-captain-check-for-all-32-teams",
+      "fingerprint": "16224d1a42f9c4df",
+      "title_norm": "nhl power rankings: captain check for all 32 teams",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T16:30:44.474424Z"
     }
   ],
   "known_sources": [
