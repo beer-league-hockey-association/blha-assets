@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T15:45:41.802198Z",
+  "updated_at": "2026-10-15T16:00:53.006367Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9642,6 +9642,16 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-10-15T15:45:41.778224Z"
+    },
+    {
+      "key": "30f3634030c93d1b955ed514",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-zub-to-make-season-debut-eklund-out-10-12-weeks",
+      "fingerprint": "dcd85acfbd5ece46",
+      "title_norm": "senators' zub to make season debut, eklund out 10-12 weeks",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-15T16:00:52.972476Z"
     }
   ],
   "known_sources": [
