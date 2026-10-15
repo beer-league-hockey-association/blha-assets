@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T00:45:36.293860Z",
+  "updated_at": "2026-10-15T01:30:41.796837Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9382,6 +9382,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-15T00:45:36.227863Z"
+    },
+    {
+      "key": "f668e1d952898fbc91189b4b",
+      "url": "https://www.nhl.com/news/blue-jackets-mathieu-olivier-fined-for-slashing-panthers-uvis-balinskis",
+      "fingerprint": "53eb03bcfd920a80",
+      "title_norm": "blue jackets' olivier fined maximum for slashing",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-15T01:30:41.729034Z"
     }
   ],
   "known_sources": [
