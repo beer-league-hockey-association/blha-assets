@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T20:00:44.193781Z",
+  "updated_at": "2026-10-15T20:45:41.345359Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9822,6 +9822,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T20:00:44.064002Z"
+    },
+    {
+      "key": "1479351b919c9f233ee1fe98",
+      "url": "https://theahl.com/news/reimer-joins-wolf-pack-on-tryout",
+      "fingerprint": "4dc619b79070378a",
+      "title_norm": "reimer joins wolf pack on tryout",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-15T20:45:41.249153Z"
     }
   ],
   "known_sources": [
