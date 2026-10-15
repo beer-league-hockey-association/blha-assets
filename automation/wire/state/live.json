@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T18:30:54.178912Z",
+  "updated_at": "2026-10-15T19:45:40.692944Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9802,6 +9802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T18:30:54.136035Z"
+    },
+    {
+      "key": "c32e299576097f586dc284e4",
+      "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
+      "fingerprint": "b6d55ca0477702ab",
+      "title_norm": "darnell nurse (sjs) — nurse (upper-body) is a game-time decision in nashville on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T19:45:40.552752Z"
     }
   ],
   "known_sources": [
