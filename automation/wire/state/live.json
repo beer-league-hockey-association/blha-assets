@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T23:15:33.646059Z",
+  "updated_at": "2026-10-15T23:45:37.423487Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9882,6 +9882,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-15T23:15:33.617537Z"
+    },
+    {
+      "key": "e6504aefc6dffd86e2003c96",
+      "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
+      "fingerprint": "cf2ba024f69e92b0",
+      "title_norm": "darnell nurse (sjs) — nurse (upper-body) will not play on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T23:45:37.073149Z"
+    },
+    {
+      "key": "20ac9c492c358bff2d1609a1",
+      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
+      "fingerprint": "cb3b31b1bb49fa89",
+      "title_norm": "justus annunen (nsh) — annunen (undisclosed) has been activated from ir and will backup on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-15T23:45:37.360400Z"
     }
   ],
   "known_sources": [
