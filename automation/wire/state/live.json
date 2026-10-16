@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T19:30:44.121764Z",
+  "updated_at": "2026-10-16T20:00:39.582111Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10652,6 +10652,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T19:30:44.021474Z"
+    },
+    {
+      "key": "f0814f687be2ec30db580d62",
+      "url": "https://www.flohockey.tv/articles/16244680-5-must-watch-ahl-games-this-weekend-oct-16-18-2026",
+      "fingerprint": "f4bdf0e4fbe087ad",
+      "title_norm": "5 games to watch this weekend",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-16T20:00:39.474595Z"
     }
   ],
   "known_sources": [
