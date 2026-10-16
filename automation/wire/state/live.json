@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T16:30:37.188821Z",
+  "updated_at": "2026-10-16T17:00:44.328507Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10512,6 +10512,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-16T16:30:37.124346Z"
+    },
+    {
+      "key": "269e504c6395bf7a417dfff0",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-sourdif/29606",
+      "fingerprint": "507be1b91396ef18",
+      "title_norm": "justin sourdif (wsh) — sourdif (illness) is questionable for saturday's game vs. new jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T17:00:43.702058Z"
+    },
+    {
+      "key": "4d4425633c55260e4fa115e3",
+      "url": "https://www.dailyfaceoff.com/players/news/walker-duehr/26313",
+      "fingerprint": "4571f22aa2ad857b",
+      "title_norm": "walker duehr (wpg) — duehr (lower-body) returned to winnipeg's practice in a regular jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T17:00:44.222711Z"
     }
   ],
   "known_sources": [
