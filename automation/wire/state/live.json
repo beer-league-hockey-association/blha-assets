@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T00:45:37.099336Z",
+  "updated_at": "2026-10-16T01:00:36.862664Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9932,6 +9932,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T00:45:37.024383Z"
+    },
+    {
+      "key": "0c233a3ceb319ec54efb7fb7",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
+      "fingerprint": "8814f452e39fc33f",
+      "title_norm": "brandon montour (sea) — montour left thursday's game with lower-body injury and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T01:00:36.798026Z"
     }
   ],
   "known_sources": [
