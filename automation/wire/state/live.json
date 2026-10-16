@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T17:00:44.328507Z",
+  "updated_at": "2026-10-16T17:30:37.981503Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10532,6 +10532,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T17:00:44.222711Z"
+    },
+    {
+      "key": "4526cc1e0125a2295c1531bf",
+      "url": "https://charlottecheckers.com/articles/marek-alscher-riding-momentum,-confidence-into-year-three",
+      "fingerprint": "351f4c797fc8ff3f",
+      "title_norm": "alscher riding momentum, confidence into year three",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-16T17:30:37.866648Z"
     }
   ],
   "known_sources": [
