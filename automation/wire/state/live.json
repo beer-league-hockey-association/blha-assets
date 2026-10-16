@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T16:00:48.914417Z",
+  "updated_at": "2026-10-16T16:15:42.364581Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10432,6 +10432,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T16:00:48.825430Z"
+    },
+    {
+      "key": "d9e557201032987d9570b32a",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-16-2026",
+      "fingerprint": "34cb60e47c513a33",
+      "title_norm": "on tap: pals crosby, mackinnon meet as pens visit avs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T16:15:40.868647Z"
+    },
+    {
+      "key": "e3061ff5b8a806ecca9010c1",
+      "url": "https://www.nhl.com/news/heroes-cup-tournament-to-benefit-tunnels-to-towers",
+      "fingerprint": "d5c66262b1148a21",
+      "title_norm": "heroes cup tournament to benefit tunnels to towers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T16:15:41.297766Z"
+    },
+    {
+      "key": "1cafe0378421b5326f1f743a",
+      "url": "https://www.nhl.com/news/top-players-in-2026-chl-usa-prospects-challenge-debated",
+      "fingerprint": "61317f66adc10a4e",
+      "title_norm": "top players in chl usa prospects challenge debated",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T16:15:41.589221Z"
+    },
+    {
+      "key": "17cfded0750c8ab0e55e82a6",
+      "url": "https://www.nhl.com/news/european-notebook-nhl-prospects-off-to-strong-starts",
+      "fingerprint": "9172f21cbd1422c8",
+      "title_norm": "european notebook: nhl prospects off to strong starts",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T16:15:41.958914Z"
+    },
+    {
+      "key": "b9410066d20441c13b2cc47a",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "0c77f4ec588719af",
+      "title_norm": "matt roy (wsh) — roy (lower-body) practiced in a regular practice jersey on friday and is questionable for saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T16:15:42.264607Z"
     }
   ],
   "known_sources": [
