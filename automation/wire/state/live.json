@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T18:00:42.216276Z",
+  "updated_at": "2026-10-16T18:30:46.852863Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10582,6 +10582,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T18:00:42.123377Z"
+    },
+    {
+      "key": "a0077e2ea3569a20975e93ef",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "7bad122ff6c293e0",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will remain out for saturday's game vs. new jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T18:30:45.935225Z"
+    },
+    {
+      "key": "9059dfbdd96776134d03e774",
+      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
+      "fingerprint": "71f6efb729999fc5",
+      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) will return vs. boston on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T18:30:46.210315Z"
+    },
+    {
+      "key": "d4812da469612afa8fac1e52",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
+      "fingerprint": "af5c584ee3d09cd9",
+      "title_norm": "mikael granlund (ana) — granlund (upper-body) will not play friday but will travel on the ducks' upcoming 4-game road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T18:30:46.452952Z"
+    },
+    {
+      "key": "a46d64099384942f81981ee9",
+      "url": "https://www.dailyfaceoff.com/players/news/vladislav-namestnikov/1865",
+      "fingerprint": "73d11c5affc1bae4",
+      "title_norm": "vladislav namestnikov (wpg) — namestnikov (undisclosed) is out week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T18:30:46.485723Z"
     }
   ],
   "known_sources": [
