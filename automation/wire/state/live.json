@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T02:15:41.877883Z",
+  "updated_at": "2026-10-16T02:30:40.339115Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10032,6 +10032,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T02:15:41.823759Z"
+    },
+    {
+      "key": "b9509005eff535a9c1da8204",
+      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
+      "fingerprint": "aff1dab749c6d4f8",
+      "title_norm": "john tavares (tor) — tavares (lower-body) left thursday's game vs. buffalo and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T02:30:39.681241Z"
+    },
+    {
+      "key": "29b7706ef959b3201b07657a",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-15-2026",
+      "fingerprint": "352e7fc836d8e951",
+      "title_norm": "status report: tanev week to week for maple leafs",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T02:30:39.885682Z"
+    },
+    {
+      "key": "c77609cbc3e89be7bbcea684",
+      "url": "https://www.nhl.com/news/seattle-kraken-tampa-bay-lightning-game-recap-october-15-2026",
+      "fingerprint": "1ac75f1fa4d7a5c4",
+      "title_norm": "hedman scores in ot, bolts recover against kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T02:30:40.229288Z"
     }
   ],
   "known_sources": [
