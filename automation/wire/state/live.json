@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T03:00:40.998132Z",
+  "updated_at": "2026-10-16T03:15:35.283948Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10122,6 +10122,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T03:00:40.883551Z"
+    },
+    {
+      "key": "6e4119e5c397ba244ff473af",
+      "url": "https://www.nhl.com/news/winnipeg-jets-chicago-blackhawks-game-recap-october-15-2026",
+      "fingerprint": "d1f2258afd20f1c3",
+      "title_norm": "bedard scores 1st of season, hawks recover for ot win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T03:15:34.937903Z"
+    },
+    {
+      "key": "2e7f004569d537f5360a225c",
+      "url": "https://www.sportsnet.ca/nhl/article/levshunov-scores-in-ot-as-blackhawks-beat-jets",
+      "fingerprint": "b23c6654c2c6b80b",
+      "title_norm": "levshunov scores in ot as blackhawks beat jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T03:15:35.248631Z"
     }
   ],
   "known_sources": [
