@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T02:45:34.952283Z",
+  "updated_at": "2026-10-16T03:00:40.998132Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10112,6 +10112,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T02:45:34.698549Z"
+    },
+    {
+      "key": "6dbb0b330afab0bbc5bc9cd2",
+      "url": "https://www.sportsnet.ca/nhl/article/sabres-josh-norris-in-concussion-protocol-after-collision-in-ot-win-vs-maple-leafs",
+      "fingerprint": "5269613b137bc629",
+      "title_norm": "sabres' josh norris in concussion protocol after collision in ot win vs. maple leafs",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T03:00:40.883551Z"
     }
   ],
   "known_sources": [
