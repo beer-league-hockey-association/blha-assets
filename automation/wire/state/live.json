@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T20:15:33.000551Z",
+  "updated_at": "2026-10-16T20:30:38.228940Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10672,6 +10672,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-16T20:15:32.906306Z"
+    },
+    {
+      "key": "3f08baecbd3e998c65622ac2",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-walman/2859",
+      "fingerprint": "2e7fbc85ee924c12",
+      "title_norm": "jake walman (edm) — walman (undisclosed) is likely to return in utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T20:30:37.635702Z"
+    },
+    {
+      "key": "db54269c171f68f8a9487a0d",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
+      "fingerprint": "41816162481af1ce",
+      "title_norm": "colton dach (edm) — dach (undisclosed) is likely to return in utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T20:30:37.908235Z"
+    },
+    {
+      "key": "e8c42842010ef302556ea48e",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "4566d1780f7261bb",
+      "title_norm": "zach hyman (edm) — hyman (upper-body) will return in utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T20:30:38.143083Z"
     }
   ],
   "known_sources": [
