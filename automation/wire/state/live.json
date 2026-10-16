@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T03:30:55.019252Z",
+  "updated_at": "2026-10-16T04:00:38.669716Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10182,6 +10182,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-16T03:30:54.913475Z"
+    },
+    {
+      "key": "92a9aecccae653088bf296ef",
+      "url": "https://www.nhl.com/news/utah-mammoth-edmonton-oilers-game-recap-october-15-2026",
+      "fingerprint": "cc66dd142f189590",
+      "title_norm": "mammoth hand oilers 1st regulation loss of season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T04:00:37.886911Z"
+    },
+    {
+      "key": "ce2addea0086fd344a47e6a8",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/b22394c1-8a00-4446-b2c0-f6d9dff7ee5c",
+      "fingerprint": "70e5befcf1aad291",
+      "title_norm": "flames on sportsnet: calgary vs. vegas",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T04:00:38.151718Z"
+    },
+    {
+      "key": "65d2b4dffc834a4ec7fcfdcd",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-lose-for-first-time-in-regulation-to-mammoth",
+      "fingerprint": "a08b2a311f0cae1e",
+      "title_norm": "oilers lose for first time in regulation to mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T04:00:38.618085Z"
     }
   ],
   "known_sources": [
