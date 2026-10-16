@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T17:30:37.981503Z",
+  "updated_at": "2026-10-16T17:45:34.635299Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10542,6 +10542,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-16T17:30:37.866648Z"
+    },
+    {
+      "key": "2ea3385875faf8e20b599707",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "e9367458464f7c33",
+      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) will remain out on saturday and will not travel to montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T17:45:32.972648Z"
+    },
+    {
+      "key": "c127e3e92788d652d7563737",
+      "url": "https://www.sportsnet.ca/nhl/article/a-detailed-look-at-gavin-mckennas-game-before-he-was-benched",
+      "fingerprint": "dbc93b2a577b1e95",
+      "title_norm": "a detailed look at gavin mckenna's game before he was benched",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T17:45:34.276983Z"
+    },
+    {
+      "key": "f5903786ba2450c79bc73d8c",
+      "url": "https://www.sportsnet.ca/nhl/article/should-all-be-very-angry-cooler-heads-not-prevailing-for-blue-jackets-bowness",
+      "fingerprint": "85f05ab3653e734c",
+      "title_norm": "'should all be very angry': cooler heads not prevailing for blue jackets' bowness",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T17:45:34.600182Z"
     }
   ],
   "known_sources": [
