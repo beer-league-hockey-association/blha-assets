@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T04:30:40.026131Z",
+  "updated_at": "2026-10-16T04:45:43.857918Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10222,6 +10222,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T04:30:39.935139Z"
+    },
+    {
+      "key": "92d0b313572bd9dfe7ceb9e9",
+      "url": "https://www.nhl.com/news/gavin-mckenna-absent-in-final-half-of-toronto-maple-leafs-loss-to-buffalo-sabres",
+      "fingerprint": "304f38e139ee34bb",
+      "title_norm": "mckenna doesn't see ice in final half of leafs ot loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T04:45:43.096404Z"
+    },
+    {
+      "key": "c6305c719e74f5f3563971d4",
+      "url": "https://www.sportsnet.ca/nhl/article/marchenko-breaks-out-tavares-leaves-injured-in-roller-coaster-maple-leafs-loss",
+      "fingerprint": "c847785c9b9bcba0",
+      "title_norm": "marchenko breaks out, tavares leaves injured in roller-coaster maple leafs loss",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T04:45:43.466838Z"
+    },
+    {
+      "key": "a8ac649f4ab1a7118f88ceb9",
+      "url": "https://www.sportsnet.ca/nhl/article/takeaways-canucks-can-find-positives-despite-sixth-straight-loss",
+      "fingerprint": "99717b0645971f58",
+      "title_norm": "takeaways: canucks can find positives despite sixth straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T04:45:43.797257Z"
     }
   ],
   "known_sources": [
