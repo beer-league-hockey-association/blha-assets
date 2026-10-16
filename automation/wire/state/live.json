@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T01:00:36.862664Z",
+  "updated_at": "2026-10-16T01:15:32.346748Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9942,6 +9942,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T01:00:36.798026Z"
+    },
+    {
+      "key": "86e75ca4ca7e3e48fffa3f0a",
+      "url": "https://www.sportsnet.ca/nhl/video/marchenko-completes-first-maple-leafs-hat-trick-vs-sabres",
+      "fingerprint": "5b4177189405b167",
+      "title_norm": "marchenko completes first maple leafs hat trick vs. sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T01:15:31.734160Z"
+    },
+    {
+      "key": "5d191ed4c834185205033cea",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-jason-dickinson-out-vs-mammoth-after-leaving-morning-skate",
+      "fingerprint": "b7df337df64c5ab8",
+      "title_norm": "oilers' jason dickinson out vs. mammoth after leaving morning skate",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T01:15:32.087296Z"
+    },
+    {
+      "key": "9997731943d04ca36f21d41d",
+      "url": "https://www.sportsnet.ca/nhl/article/david-perron-to-join-stars-for-20th-nhl-season",
+      "fingerprint": "bbcd01850e86d31a",
+      "title_norm": "david perron to join stars for 20th nhl season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T01:15:32.320843Z"
     }
   ],
   "known_sources": [
