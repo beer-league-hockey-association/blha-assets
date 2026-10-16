@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T15:00:50.023667Z",
+  "updated_at": "2026-10-16T15:30:34.570815Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10372,6 +10372,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T15:00:49.925038Z"
+    },
+    {
+      "key": "5a07a4ae282305db1ee49293",
+      "url": "https://www.nhl.com/news/david-perron-signs-one-year-contract-with-dallas-stars",
+      "fingerprint": "dfbe6d1fd9d5bffc",
+      "title_norm": "perron signs 1-year contract with stars",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T15:30:34.506424Z"
     }
   ],
   "known_sources": [
