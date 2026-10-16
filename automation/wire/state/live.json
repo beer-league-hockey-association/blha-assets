@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T05:15:33.939058Z",
+  "updated_at": "2026-10-16T05:30:35.502045Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10262,6 +10262,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-16T05:15:33.847991Z"
+    },
+    {
+      "key": "a10f0a54ad01108215afe195",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-alum-rasmus-andersson-preaches-patience-amid-rebuild",
+      "fingerprint": "a1ec2473f0d924dd",
+      "title_norm": "flames alum rasmus andersson preaches patience amid rebuild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T05:30:35.406676Z"
     }
   ],
   "known_sources": [
