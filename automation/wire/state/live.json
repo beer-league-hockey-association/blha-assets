@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T02:30:40.339115Z",
+  "updated_at": "2026-10-16T02:45:34.952283Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10062,6 +10062,56 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-16T02:30:40.229288Z"
+    },
+    {
+      "key": "f6ec86b8f66afa0221f5e1c7",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-benched-in-ot-loss-vs-sabres",
+      "fingerprint": "cc8f68df628b0f32",
+      "title_norm": "maple leafs' gavin mckenna benched in ot loss vs. sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T02:45:34.165360Z"
+    },
+    {
+      "key": "a2bb34674467edf7e6f9ea2e",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-detroit-red-wings-game-recap-october-15-2026",
+      "fingerprint": "245a63cd6d93e8ff",
+      "title_norm": "copp scores late, red wings keep flyers winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T02:45:34.400883Z"
+    },
+    {
+      "key": "9ce75e09cca22bcc3172c51d",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/7f5c5a21-6682-4d61-ba74-24112aab8954",
+      "fingerprint": "056ff9119c2dde49",
+      "title_norm": "oilers on sportsnet: edmonton vs. utah",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T02:45:34.678696Z"
+    },
+    {
+      "key": "ac749fe97fa4e87b442e4eb0",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-what-maple-leafs-get-in-raty-canucks-in-quillan",
+      "fingerprint": "6ecdabc0b1ed91d1",
+      "title_norm": "scout's analysis: what maple leafs get in raty, canucks in quillan",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T02:45:34.686729Z"
+    },
+    {
+      "key": "438f12088a3a00cfcee0eb05",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-sends-flyers-to-franchise-record-extending-ninth-straight-loss-to-start-season",
+      "fingerprint": "43c0f3a9437e0ccf",
+      "title_norm": "red wings sends flyers to franchise record-extending ninth straight loss to start season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T02:45:34.698549Z"
     }
   ],
   "known_sources": [
