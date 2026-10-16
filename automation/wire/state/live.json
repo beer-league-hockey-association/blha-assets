@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T14:45:35.347548Z",
+  "updated_at": "2026-10-16T15:00:50.023667Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10352,6 +10352,26 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-10-16T14:45:35.332453Z"
+    },
+    {
+      "key": "21c663460751976cacc6379c",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-sourdif/29606",
+      "fingerprint": "b41b5e485286701c",
+      "title_norm": "justin sourdif (wsh) — sourdif (illness) was absent from friday's practice.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T15:00:49.557669Z"
+    },
+    {
+      "key": "150af8219c2808005b9616ed",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "e35b71f1fd2df621",
+      "title_norm": "matt roy (wsh) — roy (lower-body) practiced in a regular practice jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T15:00:49.925038Z"
     }
   ],
   "known_sources": [
