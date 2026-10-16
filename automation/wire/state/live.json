@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T03:15:35.283948Z",
+  "updated_at": "2026-10-16T03:30:55.019252Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10142,6 +10142,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T03:15:35.248631Z"
+    },
+    {
+      "key": "fbaf2af3c303ed691c97c2d9",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "a0e457eea37b6272",
+      "title_norm": "jiri kulich (buf) — kulich (illness) was out on thursday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T03:30:54.012338Z"
+    },
+    {
+      "key": "fd72226afa18c79c3f8ac7da",
+      "url": "https://www.nhl.com/news/san-jose-sharks-nashville-predators-game-recap-october-15-2026",
+      "fingerprint": "da9c15204892b9a0",
+      "title_norm": "sharks win shootout after preds tie it in final second",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T03:30:54.243964Z"
+    },
+    {
+      "key": "36537d2f9db376fe78149c0e",
+      "url": "https://www.nhl.com/news/william-eklund-sidelined-10-12-weeks-after-ankle-surgery",
+      "fingerprint": "0c0b6e857bf5d22b",
+      "title_norm": "eklund out 10-12 weeks for sens after ankle surgery",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T03:30:54.618047Z"
+    },
+    {
+      "key": "e98793ed562a11e40aa1018f",
+      "url": "https://www.nhl.com/news/st-louis-blues-minnesota-wild-game-recap-october-15-2026",
+      "fingerprint": "d36f1f3f10c3654d",
+      "title_norm": "boldy scores hat trick, wild hold off late blues rally",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T03:30:54.913475Z"
     }
   ],
   "known_sources": [
