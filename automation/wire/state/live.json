@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T18:30:46.852863Z",
+  "updated_at": "2026-10-16T18:45:38.881884Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10622,6 +10622,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T18:30:46.485723Z"
+    },
+    {
+      "key": "2df7140afaf8163ce524147a",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-rebuild-provides-blueprint-for-flames-to-follow",
+      "fingerprint": "70c4a85c2d8ccb23",
+      "title_norm": "ducks' rebuild provides blueprint for flames to follow",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T18:45:38.816520Z"
     }
   ],
   "known_sources": [
