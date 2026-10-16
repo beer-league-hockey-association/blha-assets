@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T00:00:50.972511Z",
+  "updated_at": "2026-10-16T00:45:37.099336Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9922,6 +9922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T00:00:50.925198Z"
+    },
+    {
+      "key": "510f35cb768291581af14956",
+      "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
+      "fingerprint": "8a1a80c2d589a049",
+      "title_norm": "jason dickinson (edm) — dickinson (lower-body) will not play thursday vs. the mammoth.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T00:45:37.024383Z"
     }
   ],
   "known_sources": [
