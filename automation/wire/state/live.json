@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T13:45:37.489446Z",
+  "updated_at": "2026-10-16T14:15:39.590561Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10332,6 +10332,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T13:45:37.434187Z"
+    },
+    {
+      "key": "8d7e8bbdc702db26895dc189",
+      "url": "https://clevelandmonsters.com/ahl-all-star",
+      "fingerprint": "b6f75270c4a147bd",
+      "title_norm": "2027 ahl all-star classic tickets on sale now!",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-16T14:15:39.496357Z"
     }
   ],
   "known_sources": [
