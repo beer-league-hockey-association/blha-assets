@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T01:15:32.346748Z",
+  "updated_at": "2026-10-16T01:30:41.159603Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9972,6 +9972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T01:15:32.320843Z"
+    },
+    {
+      "key": "468315c9684f1be9b7dc723d",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-exits-vs-sabres-after-collision",
+      "fingerprint": "e909f2264498681d",
+      "title_norm": "maple leafs' john tavares exits vs. sabres after collision",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T01:30:41.030284Z"
     }
   ],
   "known_sources": [
