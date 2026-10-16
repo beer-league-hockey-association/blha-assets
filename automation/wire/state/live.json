@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T15:45:37.281625Z",
+  "updated_at": "2026-10-16T16:00:48.914417Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10412,6 +10412,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T15:45:37.188197Z"
+    },
+    {
+      "key": "5e76c244a3f84492c7dd6019",
+      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
+      "fingerprint": "1bbf515424cc72ce",
+      "title_norm": "luke evangelista (njd) — evangelista (illness) returned to new jersey's practice on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T16:00:48.499421Z"
+    },
+    {
+      "key": "39a0a5eea5accac074ff551b",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "b5145ef9d53be2ab",
+      "title_norm": "taylor hall (car) — hall (upper-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T16:00:48.825430Z"
     }
   ],
   "known_sources": [
