@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T17:45:34.635299Z",
+  "updated_at": "2026-10-16T18:00:42.216276Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10572,6 +10572,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T17:45:34.600182Z"
+    },
+    {
+      "key": "d62e23d8ac65f59713fb783d",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "6689eb35857a1ea0",
+      "title_norm": "jiri kulich (buf) — kulich (lower-body) is hopeful to return in montreal on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T18:00:42.123377Z"
     }
   ],
   "known_sources": [
