@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T04:00:38.669716Z",
+  "updated_at": "2026-10-16T04:30:40.026131Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10212,6 +10212,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T04:00:38.618085Z"
+    },
+    {
+      "key": "a1c66025a04e870c7e71aa40",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-norris/28056",
+      "fingerprint": "e4e9834ac20b16ae",
+      "title_norm": "josh norris (buf) — norris (concussion) left buffalo's game on thursday and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T04:30:39.935139Z"
     }
   ],
   "known_sources": [
