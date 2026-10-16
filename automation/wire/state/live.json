@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T04:45:43.857918Z",
+  "updated_at": "2026-10-16T05:15:33.939058Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10252,6 +10252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T04:45:43.797257Z"
+    },
+    {
+      "key": "d48e0d5f05b7b9c08cb8e084",
+      "url": "https://www.nhl.com/news/calgary-flames-vegas-golden-knights-game-recap-october-15-2026",
+      "fingerprint": "df60207cbb43b6d5",
+      "title_norm": "stone scores hat trick, golden knights cruise past flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T05:15:33.847991Z"
     }
   ],
   "known_sources": [
