@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T12:15:38.785187Z",
+  "updated_at": "2026-10-16T13:00:43.775751Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10312,6 +10312,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-16T12:15:38.759732Z"
+    },
+    {
+      "key": "cfac69119227fab3e89a532a",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-sidney-crosby-nathan-mackinnon-and-other-early-season-oddities",
+      "fingerprint": "e54d09b5defda837",
+      "title_norm": "friday four: sidney crosby, nathan mackinnon and other early-season oddities",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T13:00:43.655081Z"
     }
   ],
   "known_sources": [
