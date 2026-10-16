@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T06:15:37.799692Z",
+  "updated_at": "2026-10-16T08:30:37.673331Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10282,6 +10282,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T06:15:37.741878Z"
+    },
+    {
+      "key": "579932216a05fb440434fee3",
+      "url": "https://www.sportsnet.ca/nhl/article/pintos-shootout-winner-lifts-senators-past-islanders",
+      "fingerprint": "90a96395741fa224",
+      "title_norm": "pinto's shootout winner lifts senators past islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T08:30:37.638531Z"
     }
   ],
   "known_sources": [
