@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T11:15:36.394917Z",
+  "updated_at": "2026-10-16T12:15:38.785187Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10302,6 +10302,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T11:15:36.345261Z"
+    },
+    {
+      "key": "ca5f8dd31cb8a83a74aeef64",
+      "url": "https://dobberprospects.com/2026/10/16/october-ahl-report-watch-list-part-1",
+      "fingerprint": "590d811ad6acfc3d",
+      "title_norm": "october ahl report: watch list part 1",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-16T12:15:38.759732Z"
     }
   ],
   "known_sources": [
