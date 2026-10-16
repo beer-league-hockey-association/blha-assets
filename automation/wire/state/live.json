@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T08:30:37.673331Z",
+  "updated_at": "2026-10-16T11:15:36.394917Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10292,6 +10292,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T08:30:37.638531Z"
+    },
+    {
+      "key": "266f23b973c0abb7c69e3058",
+      "url": "https://www.sportsnet.ca/nhl/article/stone-has-third-period-hat-trick-in-golden-knights-win-over-flames",
+      "fingerprint": "4d49e3eda664c78c",
+      "title_norm": "stone has third-period hat trick in golden knights' win over flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T11:15:36.345261Z"
     }
   ],
   "known_sources": [
