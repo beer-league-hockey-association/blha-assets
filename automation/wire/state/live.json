@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T02:00:40.911441Z",
+  "updated_at": "2026-10-16T02:15:41.877883Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10002,6 +10002,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-16T02:00:40.842807Z"
+    },
+    {
+      "key": "eb434a35ea0076eb8676abcc",
+      "url": "https://www.nhl.com/news/vancouver-canucks-florida-panthers-game-recap-october-15-2026",
+      "fingerprint": "917f481b55c39f38",
+      "title_norm": "brady tkachuk scores second hat trick in row, lifts panthers past canucks in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T02:15:40.987696Z"
+    },
+    {
+      "key": "9b32ef4de5a68f0184c39977",
+      "url": "https://www.nhl.com/news/new-york-islanders-ottawa-senators-game-recap-october-15-2026",
+      "fingerprint": "21f25ed51a771fdf",
+      "title_norm": "ullmark, senators get past islanders in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-16T02:15:41.266743Z"
+    },
+    {
+      "key": "f65fcdc3bc6edd83203b9564",
+      "url": "https://www.sportsnet.ca/nhl/article/power-scores-in-overtime-as-sabres-rally-past-maple-leafs",
+      "fingerprint": "5662a5ebb169eec1",
+      "title_norm": "power scores in overtime as sabres rally past maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T02:15:41.823759Z"
     }
   ],
   "known_sources": [
