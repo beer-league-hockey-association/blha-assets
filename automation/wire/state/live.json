@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T15:30:34.570815Z",
+  "updated_at": "2026-10-16T15:45:37.281625Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10382,6 +10382,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-16T15:30:34.506424Z"
+    },
+    {
+      "key": "4bb34a6dac075928d3d22ea1",
+      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
+      "fingerprint": "3cfb81b1c4d1c807",
+      "title_norm": "seth jarvis (car) — jarvis (shoulder) is travelling with carolina on their upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T15:45:36.702758Z"
+    },
+    {
+      "key": "9c8135f872efa0f27ec2e256",
+      "url": "https://www.dailyfaceoff.com/players/news/florian-xhakaj/37772",
+      "fingerprint": "d47fc4a28dc7d1da",
+      "title_norm": "florian xhekaj (mtl) — xhekaj is expected to miss the next two weeks with a lower-body injruy.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T15:45:36.933352Z"
+    },
+    {
+      "key": "7d25a6c8d8aa5448b3c47994",
+      "url": "https://www.dailyfaceoff.com/players/news/oskar-back/29109",
+      "fingerprint": "f98990fed1d85445",
+      "title_norm": "oskar back (dal) — back (upper-body) has been placed on ir retroactive to october 14th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-16T15:45:37.188197Z"
     }
   ],
   "known_sources": [
