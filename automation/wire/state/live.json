@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-15T23:45:37.423487Z",
+  "updated_at": "2026-10-16T00:00:50.972511Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -9902,6 +9902,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-15T23:45:37.360400Z"
+    },
+    {
+      "key": "a5a087efdac70a90a379e99b",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-marchenko-goes-between-the-legs-and-roofs-highlight-reel-goal",
+      "fingerprint": "fc1d31fa0cb02faf",
+      "title_norm": "gotta see it: marchenko goes between the legs and roofs highlight-reel goal",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T00:00:50.576998Z"
+    },
+    {
+      "key": "600b6c78503434de4cc571f4",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-owner-ilitch-i-understand-fan-frustration",
+      "fingerprint": "230f04707dcb6460",
+      "title_norm": "red wings owner ilitch: 'i understand fan frustration'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-16T00:00:50.925198Z"
     }
   ],
   "known_sources": [
