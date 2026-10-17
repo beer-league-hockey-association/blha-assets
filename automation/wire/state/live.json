@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T05:00:42.290074Z",
+  "updated_at": "2026-10-17T05:15:32.774347Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10782,6 +10782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T05:00:42.173063Z"
+    },
+    {
+      "key": "ab564a711f4e013e4658f383",
+      "url": "https://www.sportsnet.ca/nhl/article/lindholm-sparks-streaking-bruins-comeback-win-over-ducks",
+      "fingerprint": "830e98aad9004798",
+      "title_norm": "lindholm sparks streaking bruins' comeback win over ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T05:15:32.712410Z"
     }
   ],
   "known_sources": [
