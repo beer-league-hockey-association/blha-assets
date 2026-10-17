@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T04:30:40.717199Z",
+  "updated_at": "2026-10-17T05:00:42.290074Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10762,6 +10762,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T04:30:40.672320Z"
+    },
+    {
+      "key": "7ac6e87d3b85be2aebb15bfe",
+      "url": "https://www.nhl.com/news/boston-bruins-anaheim-ducks-game-recap-october-16-2026",
+      "fingerprint": "53f03ebaf5a5d7e8",
+      "title_norm": "bruins' power play fuels comeback against ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T05:00:41.873014Z"
+    },
+    {
+      "key": "1ed6129696fc9dc5eee0d478",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-17-2026",
+      "fingerprint": "dbb93349281e23a7",
+      "title_norm": "on tap: b. tkachuk has shot at hat trick history",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T05:00:42.173063Z"
     }
   ],
   "known_sources": [
