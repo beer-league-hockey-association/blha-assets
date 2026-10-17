@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T15:00:40.079003Z",
+  "updated_at": "2026-10-17T15:30:42.354716Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10912,6 +10912,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T15:00:39.785246Z"
+    },
+    {
+      "key": "bcea6b4aaeb220d5519f45df",
+      "url": "https://www.dailyfaceoff.com/players/news/oliver-kapanen/34678",
+      "fingerprint": "7d5c8b5a11541cbf",
+      "title_norm": "oliver kapanen (mtl) — kapanen (lower body) will return to the lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:30:42.004467Z"
+    },
+    {
+      "key": "da9a9240188f7f1f56f1b35f",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "ce0f6266ece0768c",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) will be a game-time decision vs. ottawa on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:30:42.267568Z"
     }
   ],
   "known_sources": [
