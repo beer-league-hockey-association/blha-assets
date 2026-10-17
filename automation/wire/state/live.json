@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T15:45:29.954992Z",
+  "updated_at": "2026-10-17T16:00:33.412952Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10952,6 +10952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T15:45:29.915095Z"
+    },
+    {
+      "key": "c6d83d01dba2a838c9855bf1",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "c08a4c0d97525ab0",
+      "title_norm": "jake sanderson (ott) — sanderson (lower body) is getting closer, but will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T16:00:33.048598Z"
+    },
+    {
+      "key": "3eae8cde234746483293bc2a",
+      "url": "https://www.dailyfaceoff.com/players/news/jason-zucker/1898",
+      "fingerprint": "111ecce0b7e1a932",
+      "title_norm": "jason zucker (buf) — zucker (sports hernia) is hopeful to make his season debut on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T16:00:33.367039Z"
     }
   ],
   "known_sources": [
