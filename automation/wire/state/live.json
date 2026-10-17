@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T18:43:46.519826Z",
+  "updated_at": "2026-10-17T19:00:37.854155Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11122,6 +11122,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T18:43:46.467937Z"
+    },
+    {
+      "key": "c45dcc0714c76429fd167ae9",
+      "url": "https://www.sportsnet.ca/nhl/article/zach-hyman-returning-to-oilers-lineup-against-mammoth",
+      "fingerprint": "d521941879b554ea",
+      "title_norm": "zach hyman returning to oilers lineup against mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T19:00:37.444454Z"
+    },
+    {
+      "key": "8b3b85b718aad689bde62769",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-jake-sanderson-expected-to-return-wednesday-vs-panthers",
+      "fingerprint": "3e3a4c1d6b152a83",
+      "title_norm": "senators' jake sanderson expected to return wednesday vs. panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T19:00:37.786392Z"
     }
   ],
   "known_sources": [
