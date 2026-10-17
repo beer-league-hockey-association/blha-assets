@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T00:45:36.204187Z",
+  "updated_at": "2026-10-17T04:00:40.785233Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10722,6 +10722,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T00:45:36.079429Z"
+    },
+    {
+      "key": "928a7ec10082ae11b126a430",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-16-2026",
+      "fingerprint": "408156e3dd51832d",
+      "title_norm": "status report: jarvis could return this weekend",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T04:00:40.377795Z"
+    },
+    {
+      "key": "e5147af0a050278f9188da23",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-florian-xhekaj-out-two-weeks-matheson-still-day-to-day",
+      "fingerprint": "2c6214534da476a8",
+      "title_norm": "canadiens' florian xhekaj out two weeks, matheson still day-to-day",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T04:00:40.731009Z"
     }
   ],
   "known_sources": [
