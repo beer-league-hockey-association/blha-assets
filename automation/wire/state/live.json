@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T04:00:40.785233Z",
+  "updated_at": "2026-10-17T04:15:36.091054Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10742,6 +10742,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T04:00:40.731009Z"
+    },
+    {
+      "key": "5cdd2f2a0749325e2c928174",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-colorado-avalanche-game-recap-october-16-2026",
+      "fingerprint": "891eb3d30fa1d3f6",
+      "title_norm": "mackinnon has goal, three assists, avalanche rally past penguins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T04:15:36.014209Z"
     }
   ],
   "known_sources": [
