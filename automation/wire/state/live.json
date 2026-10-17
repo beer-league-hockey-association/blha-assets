@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T23:15:37.114803Z",
+  "updated_at": "2026-10-17T23:45:31.010311Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11332,6 +11332,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T23:15:37.079335Z"
+    },
+    {
+      "key": "004cc8abf3c7eed71b8a8073",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "57f7dadc5608c51c",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will remain out vs. st. louis on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T23:45:30.950405Z"
     }
   ],
   "known_sources": [
