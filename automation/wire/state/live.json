@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T16:15:31.987463Z",
+  "updated_at": "2026-10-17T16:26:05.745816Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11002,6 +11002,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T16:15:31.909638Z"
+    },
+    {
+      "key": "89240b4a5efccdaa803b2cfd",
+      "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
+      "fingerprint": "e04a233b08255e50",
+      "title_norm": "wyatt johnston (dal) — johnston (illness) will return to the lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T16:26:05.629809Z"
     }
   ],
   "known_sources": [
