@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T12:30:36.611354Z",
+  "updated_at": "2026-10-17T13:30:34.981503Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10812,6 +10812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T12:30:36.540581Z"
+    },
+    {
+      "key": "0fc7dad042de9d91fb66c7e6",
+      "url": "https://www.sportsnet.ca/nhl/article/meet-trailblazer-onni-hautamaki-finlands-first-nhl-official",
+      "fingerprint": "bd0d7164870da2e2",
+      "title_norm": "meet trailblazer onni hautamaki, finland's first nhl official",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T13:30:34.946137Z"
     }
   ],
   "known_sources": [
