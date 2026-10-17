@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T16:45:30.966215Z",
+  "updated_at": "2026-10-17T17:00:35.688864Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11032,6 +11032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T16:45:30.920253Z"
+    },
+    {
+      "key": "341fce9dcf90ce524d08fb24",
+      "url": "https://www.nhl.com/news/gavin-mckenna-had-good-talk-with-toronto-coach-jim-hiller-after-benching",
+      "fingerprint": "c8257e0303054a1c",
+      "title_norm": "mckenna had 'good talk' with leafs coach after benching",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T17:00:35.568371Z"
     }
   ],
   "known_sources": [
