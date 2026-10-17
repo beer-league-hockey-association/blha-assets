@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T05:15:32.774347Z",
+  "updated_at": "2026-10-17T09:15:32.938597Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10792,6 +10792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T05:15:32.712410Z"
+    },
+    {
+      "key": "af3b9de91e5b37c55fac516c",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Fantasy-Hockey-Week-4-Waiver-Wire-Best-Streamers--Adds--Drops--Schedule-Targets-e3qkrcn",
+      "fingerprint": "fda4bcb46050298c",
+      "title_norm": "fantasy hockey week 4 waiver wire: best streamers, adds, drops & schedule targets",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-17T09:15:32.884247Z"
     }
   ],
   "known_sources": [
