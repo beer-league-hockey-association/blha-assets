@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T22:56:47.146877Z",
+  "updated_at": "2026-10-17T23:15:37.114803Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11312,6 +11312,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T22:56:47.084472Z"
+    },
+    {
+      "key": "d336aaf5d41f118e4459ed2e",
+      "url": "https://www.nhl.com/news/vancouver-canucks-tampa-bay-lightning-game-recap-october-17-2026",
+      "fingerprint": "df049ae17198c2fd",
+      "title_norm": "kucherov scores twice, lightning rally past canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T23:15:36.818021Z"
+    },
+    {
+      "key": "c7f79401849448a5e852e3e8",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-blow-two-goal-lead-vs-lightning-in-seventh-straight-loss",
+      "fingerprint": "366bd1e867f0b584",
+      "title_norm": "canucks blow two-goal lead vs. lightning in seventh straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T23:15:37.079335Z"
     }
   ],
   "known_sources": [
