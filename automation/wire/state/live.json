@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T18:00:36.951837Z",
+  "updated_at": "2026-10-17T18:43:46.519826Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11112,6 +11112,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T18:00:36.883585Z"
+    },
+    {
+      "key": "2bb9075175bcad87f475e44d",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-waive-defenceman-jacob-bernard-docker",
+      "fingerprint": "4760010d7dc76b52",
+      "title_norm": "red wings waive defenceman jacob bernard-docker",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T18:43:46.467937Z"
     }
   ],
   "known_sources": [
