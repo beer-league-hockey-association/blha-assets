@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T14:45:49.747500Z",
+  "updated_at": "2026-10-17T15:00:40.079003Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10872,6 +10872,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T14:45:49.636526Z"
+    },
+    {
+      "key": "cfbb02c6c160bb5ab469fb81",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-sourdif/29606",
+      "fingerprint": "332ebb953e6bc568",
+      "title_norm": "justin sourdif (wsh) — sourdif (illness) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:00:39.062962Z"
+    },
+    {
+      "key": "eba51f09ad722cd2ddfca355",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "a18e93a78191c3b2",
+      "title_norm": "bowen byram (chi) — byram (upper body) will remain out vs. dallas on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:00:39.317909Z"
+    },
+    {
+      "key": "f9d24109a335863391c71095",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "ba496cb47247cecd",
+      "title_norm": "matt roy (wsh) — roy (lower body) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:00:39.768528Z"
+    },
+    {
+      "key": "f3406fddec5feab58fafce0b",
+      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
+      "fingerprint": "61f74d97a94c0370",
+      "title_norm": "radko gudas (fla) — gudas (undisclosed) will remain out on saturday, but could play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:00:39.785246Z"
     }
   ],
   "known_sources": [
