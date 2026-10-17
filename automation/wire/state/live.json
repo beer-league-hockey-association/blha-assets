@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T00:00:39.631368Z",
+  "updated_at": "2026-10-17T00:45:36.204187Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10712,6 +10712,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T00:00:39.511480Z"
+    },
+    {
+      "key": "6f85c320e2ff79e9a14b0627",
+      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
+      "fingerprint": "09c4f82ab6e4c86a",
+      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) will not play friday in colorado.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T00:45:36.079429Z"
     }
   ],
   "known_sources": [
