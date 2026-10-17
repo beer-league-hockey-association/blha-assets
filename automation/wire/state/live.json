@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T15:30:42.354716Z",
+  "updated_at": "2026-10-17T15:45:29.954992Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10932,6 +10932,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T15:30:42.267568Z"
+    },
+    {
+      "key": "844689eb5ff71332b99a0ec0",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
+      "fingerprint": "76e9e6e59bde921f",
+      "title_norm": "pavel zacha (bos) — zacha (undisclosed) left friday's game vs. anaheim and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:45:29.626459Z"
+    },
+    {
+      "key": "f89f972f640a8f2688cde4ec",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-reinbacher-kapanen-to-make-season-debuts-against-sabres",
+      "fingerprint": "3428ceb0906c0025",
+      "title_norm": "canadiens' reinbacher, kapanen to make season debuts against sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T15:45:29.915095Z"
     }
   ],
   "known_sources": [
