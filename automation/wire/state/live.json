@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T19:30:29.925495Z",
+  "updated_at": "2026-10-17T20:00:39.976104Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11162,6 +11162,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T19:30:29.891714Z"
+    },
+    {
+      "key": "df5bc38613cf5b056ae1bb8e",
+      "url": "https://www.dailyfaceoff.com/players/news/marco-rossi/29821",
+      "fingerprint": "5e7ee46c3ec1cda5",
+      "title_norm": "marco rossi (van) — rossi (illness) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T20:00:38.645092Z"
+    },
+    {
+      "key": "6d2e556b3039e6725a417e22",
+      "url": "https://www.nhl.com/news/rising-cap-salaries-have-teams-adjusting-on-fly",
+      "fingerprint": "d58f36bc84b6708f",
+      "title_norm": "rising cap, salaries have teams adjusting on fly",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T20:00:38.819940Z"
+    },
+    {
+      "key": "93a9e6c598c493dda86b9a6c",
+      "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-october-17-2026",
+      "fingerprint": "6e052025cea821d3",
+      "title_norm": "capitals score four straight goals, pull away from devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T20:00:39.110573Z"
+    },
+    {
+      "key": "acef82e02358fcdc3ad54a8e",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
+      "fingerprint": "a97e6e3a35ffff69",
+      "title_norm": "zachary l'heureux (col) — l'heureux (upper-body) will miss at least two more games.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T20:00:39.462068Z"
+    },
+    {
+      "key": "40509f6dea358670424ad5b6",
+      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
+      "fingerprint": "268747d47b8b6ce6",
+      "title_norm": "nicolas roy (col) — roy (lower body) will miss at least two more games.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T20:00:39.658699Z"
+    },
+    {
+      "key": "dcd13adfa2437b4eee350c91",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/c3f43687-708a-4469-a226-df8685b7b376",
+      "fingerprint": "e9003d8bd49497e1",
+      "title_norm": "canucks on sportsnet: vancouver vs. tampa bay",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T20:00:39.911046Z"
     }
   ],
   "known_sources": [
