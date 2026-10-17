@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T17:45:33.571852Z",
+  "updated_at": "2026-10-17T18:00:36.951837Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11082,6 +11082,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-17T17:45:33.470045Z"
+    },
+    {
+      "key": "c474c0e6f3da197eb41069fa",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
+      "fingerprint": "47fdcf6652266ca2",
+      "title_norm": "mikael granlund (ana) — granlund (upper body) returned to practice on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T18:00:35.644689Z"
+    },
+    {
+      "key": "2614b2c114587725327e07e8",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
+      "fingerprint": "350e905c34372a7f",
+      "title_norm": "colton dach (edm) — dach (undisclosed) will return to the lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T18:00:36.099054Z"
+    },
+    {
+      "key": "dc85c871400bc30fe7af4819",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-walman/2859",
+      "fingerprint": "c5b7b5014d1a3a15",
+      "title_norm": "jake walman (edm) — walman (undisclosed) will return to the lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T18:00:36.883585Z"
     }
   ],
   "known_sources": [
