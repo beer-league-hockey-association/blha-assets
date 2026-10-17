@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T16:00:33.412952Z",
+  "updated_at": "2026-10-17T16:15:31.987463Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10972,6 +10972,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T16:00:33.367039Z"
+    },
+    {
+      "key": "62f545ca0e22baf862536594",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "28b85bf23f3f7195",
+      "title_norm": "jiri kulich (buf) — kulich (lower body) will return to the lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T16:15:31.487697Z"
+    },
+    {
+      "key": "fa46a1badb6c783a025483ce",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-brady-tkachuk-florida-panthers-2026-27",
+      "fingerprint": "423882c977de9656",
+      "title_norm": "edge stats: b. tkachuk's back-to-back hat tricks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T16:15:31.703394Z"
+    },
+    {
+      "key": "c4fdaafc05bc2e61b0b6236b",
+      "url": "https://www.nhl.com/news/dave-coulier-helps-detroit-red-wings-raise-awareness-hockey-fights-cancer-night",
+      "fingerprint": "8b6d6ccb6a363cb4",
+      "title_norm": "coulier joins wings' hockey fights cancer efforts",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T16:15:31.909638Z"
     }
   ],
   "known_sources": [
