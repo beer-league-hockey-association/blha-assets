@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T04:15:36.091054Z",
+  "updated_at": "2026-10-17T04:30:40.717199Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10752,6 +10752,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T04:15:36.014209Z"
+    },
+    {
+      "key": "b47cb837d334d8fa0391215d",
+      "url": "https://www.sportsnet.ca/nhl/article/mackinnon-has-four-points-lehkonen-scores-twice-as-avalanche-win",
+      "fingerprint": "45b22e64208b99a2",
+      "title_norm": "mackinnon has four points, lehkonen scores twice as avalanche win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T04:30:40.672320Z"
     }
   ],
   "known_sources": [
