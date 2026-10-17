@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T19:00:37.854155Z",
+  "updated_at": "2026-10-17T19:15:32.190644Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11142,6 +11142,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T19:00:37.786392Z"
+    },
+    {
+      "key": "939e1ae4f7c78bcac6d6a98c",
+      "url": "https://www.sportsnet.ca/nhl/article/sources-connor-hellebuyck-suspension-ends-friday",
+      "fingerprint": "b27105c6e92b427a",
+      "title_norm": "sources: connor hellebuyck suspension ends friday",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T19:15:32.064963Z"
     }
   ],
   "known_sources": [
