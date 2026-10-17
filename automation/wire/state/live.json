@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T17:00:35.688864Z",
+  "updated_at": "2026-10-17T17:15:36.683317Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11042,6 +11042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T17:00:35.568371Z"
+    },
+    {
+      "key": "07ff663f26eed3256e884b68",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-talks-benching-tavares-injury",
+      "fingerprint": "ba0646bad80719c9",
+      "title_norm": "maple leafs' gavin mckenna talks benching, tavares injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T17:15:36.610555Z"
     }
   ],
   "known_sources": [
