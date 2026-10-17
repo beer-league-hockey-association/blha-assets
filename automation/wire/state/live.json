@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T19:15:32.190644Z",
+  "updated_at": "2026-10-17T19:30:29.925495Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11152,6 +11152,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T19:15:32.064963Z"
+    },
+    {
+      "key": "5addfd01d30653dd0202a936",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/3ecdb78e-67b3-4c15-b7df-046d346f3659",
+      "fingerprint": "e4670d819fa22ae8",
+      "title_norm": "nhl on sportsnet: jets vs. hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T19:30:29.891714Z"
     }
   ],
   "known_sources": [
