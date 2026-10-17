@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T17:30:38.072522Z",
+  "updated_at": "2026-10-17T17:45:33.571852Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11072,6 +11072,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-17T17:30:37.962609Z"
+    },
+    {
+      "key": "60fb1b36c260001bb88bbe64",
+      "url": "https://www.nhl.com/bruins/news/brunet-dipietro-hit-milestones-together-in-bruins-4-2-win-over-ducks",
+      "fingerprint": "499e5621366f0635",
+      "title_norm": "brunet, dipietro hit milestones together in boston's win",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-17T17:45:33.470045Z"
     }
   ],
   "known_sources": [
