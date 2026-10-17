@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T22:45:38.304019Z",
+  "updated_at": "2026-10-17T22:56:47.146877Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11272,6 +11272,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T22:45:38.243354Z"
+    },
+    {
+      "key": "10c25f9ffcb5b140b16f406f",
+      "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
+      "fingerprint": "1d06cc66ff9a35ae",
+      "title_norm": "darnell nurse (sjs) — nurse (upper-body) will return in detroit on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T22:56:46.224212Z"
+    },
+    {
+      "key": "c587a8543552ffd43b143d75",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-norris/28056",
+      "fingerprint": "138d80ad71604d65",
+      "title_norm": "josh norris (buf) — norris (concussion) will play in montreal on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T22:56:46.502642Z"
+    },
+    {
+      "key": "ce6b27af9c26861dac98c59d",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/512f2e9a-5df8-4af6-a1b3-f077129da676",
+      "fingerprint": "9463341caddaae10",
+      "title_norm": "saturday night hockey on sportsnet: islanders vs. maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T22:56:46.879908Z"
+    },
+    {
+      "key": "c0a1a2d8095afe47bb71637e",
+      "url": "https://www.sportsnet.ca/wp-content/uploads/2026/05/habs-2.jpg",
+      "fingerprint": "e380db6b0b8bb04d",
+      "title_norm": "saturday night hockey on sportsnet: sabres vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T22:56:47.084472Z"
     }
   ],
   "known_sources": [
