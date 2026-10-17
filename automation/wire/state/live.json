@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T13:30:34.981503Z",
+  "updated_at": "2026-10-17T14:15:32.716022Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10822,6 +10822,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T13:30:34.946137Z"
+    },
+    {
+      "key": "4052baa2564b15ea81b48462",
+      "url": "https://www.sportsnet.ca/nhl/article/whats-gone-wrong-for-flyers-during-nightmare-start",
+      "fingerprint": "937380fcf06377a9",
+      "title_norm": "what's gone wrong for flyers during nightmare start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T14:15:32.659803Z"
     }
   ],
   "known_sources": [
