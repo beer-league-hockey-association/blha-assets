@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T14:30:36.546038Z",
+  "updated_at": "2026-10-17T14:45:49.747500Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10842,6 +10842,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T14:30:36.445069Z"
+    },
+    {
+      "key": "90e495c6d541dc35c05a2a9a",
+      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
+      "fingerprint": "445d388e66049352",
+      "title_norm": "john tavares (tor) — tavares (lower body) is out week to week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T14:45:49.006540Z"
+    },
+    {
+      "key": "7f674029fb60561a32e9ef0e",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "e5955efd1e42fcf3",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) has been placed on ir retroactive to october 9th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T14:45:49.282423Z"
+    },
+    {
+      "key": "31d3b3347486fe0325f2dae4",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-17-2026",
+      "fingerprint": "eca07521ec11b463",
+      "title_norm": "status report: jarvis could make season debut for canes",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T14:45:49.636526Z"
     }
   ],
   "known_sources": [
