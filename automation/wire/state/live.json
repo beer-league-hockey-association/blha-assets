@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T14:15:32.716022Z",
+  "updated_at": "2026-10-17T14:30:36.546038Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10832,6 +10832,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T14:15:32.659803Z"
+    },
+    {
+      "key": "e096db983cc4879f354094fe",
+      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
+      "fingerprint": "114e20dd1e558422",
+      "title_norm": "radko gudas (fla) — gudas (undisclosed) will remain out on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T14:30:36.445069Z"
     }
   ],
   "known_sources": [
