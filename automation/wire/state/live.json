@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T20:00:39.976104Z",
+  "updated_at": "2026-10-17T21:45:31.817568Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11222,6 +11222,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T20:00:39.911046Z"
+    },
+    {
+      "key": "7d7e3e804afce49a247c428e",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
+      "fingerprint": "71ab57052fa933de",
+      "title_norm": "brandon montour (sea) — montour (lower body) will not play on saturday and is day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T21:45:31.407155Z"
+    },
+    {
+      "key": "01e9ba92c8a3719bd68e3abc",
+      "url": "https://www.sportsnet.ca/nhl/video/hellebuycks-future-remains-uncertain-as-suspension-nears-end",
+      "fingerprint": "da83139b451a8e8f",
+      "title_norm": "hellebuyck's future remains uncertain as suspension nears end",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T21:45:31.774103Z"
     }
   ],
   "known_sources": [
