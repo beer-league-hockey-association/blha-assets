@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T21:45:31.817568Z",
+  "updated_at": "2026-10-17T22:45:38.304019Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11242,6 +11242,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-17T21:45:31.774103Z"
+    },
+    {
+      "key": "c6b2f7a99038408cce778c5e",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "cf6998d0f469db8e",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) is out vs. ottawa on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-17T22:45:37.530859Z"
+    },
+    {
+      "key": "a4d17a505f246ddc2874a775",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-winnipeg-jets-game-recap-october-17-2026",
+      "fingerprint": "cdddbda7cb9e251c",
+      "title_norm": "jankowski extends goal streak, canes win 7th straight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T22:45:37.892670Z"
+    },
+    {
+      "key": "0ec88c6f622c6e16eada883f",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-sunk-by-ehlers-winner-in-loss-to-hurricanes",
+      "fingerprint": "045410e0e1fc99e2",
+      "title_norm": "jets sunk by ehlers' winner in loss to hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-17T22:45:38.243354Z"
     }
   ],
   "known_sources": [
