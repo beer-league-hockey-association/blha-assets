@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-16T20:30:38.228940Z",
+  "updated_at": "2026-10-17T00:00:39.631368Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -10702,6 +10702,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-16T20:30:38.143083Z"
+    },
+    {
+      "key": "a9608cc028c2102c30efb2c9",
+      "url": "https://www.nhl.com/news/columbus-coach-rick-bowness-blue-jackets-should-be-very-angry",
+      "fingerprint": "aa3952b82da08659",
+      "title_norm": "bowness: blue jackets 'should be very angry'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-17T00:00:39.511480Z"
     }
   ],
   "known_sources": [
