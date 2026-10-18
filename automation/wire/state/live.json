@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T16:30:37.707499Z",
+  "updated_at": "2026-10-18T17:45:31.347949Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11652,6 +11652,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T16:30:37.610422Z"
+    },
+    {
+      "key": "a44b445761ba7b4b5a9c540c",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-couturier/1777",
+      "fingerprint": "d7ada4ade209aa1e",
+      "title_norm": "sean couturier (phi) — couturier (undisclosed) will be a game-time decision on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T17:45:30.788524Z"
+    },
+    {
+      "key": "e4135c16ddd2d5c7f1e3f614",
+      "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
+      "fingerprint": "00c6e7464365487a",
+      "title_norm": "tyson foerster (phi) — foerster (hand) will be a game-time decision on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T17:45:31.035033Z"
+    },
+    {
+      "key": "9ff64ce2234ae295eb11054e",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
+      "fingerprint": "488d9f7baa6a68c7",
+      "title_norm": "jared spurgeon (min) — the wild have placed jared spurgeon (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T17:45:31.298821Z"
     }
   ],
   "known_sources": [
