@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T04:15:34.832912Z",
+  "updated_at": "2026-10-18T04:30:37.317573Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11572,6 +11572,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T04:15:34.768364Z"
+    },
+    {
+      "key": "2316efed8d460724e516c699",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-girard/2773",
+      "fingerprint": "449f6d01623afbaf",
+      "title_norm": "samuel girard (pit) — girard (undisclosed) left saturday's game and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T04:30:37.218692Z"
     }
   ],
   "known_sources": [
