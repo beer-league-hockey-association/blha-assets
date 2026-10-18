@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T19:00:40.742697Z",
+  "updated_at": "2026-10-18T20:00:39.342426Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11702,6 +11702,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T19:00:40.647833Z"
+    },
+    {
+      "key": "5077c00835f3f45b43339032",
+      "url": "https://www.dailyfaceoff.com/players/news/cameron-york/30422",
+      "fingerprint": "25965a98acc784ae",
+      "title_norm": "cam york (phi) — the flyers have placed cam york (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T20:00:39.249456Z"
     }
   ],
   "known_sources": [
