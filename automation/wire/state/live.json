@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T06:15:40.715160Z",
+  "updated_at": "2026-10-18T16:15:34.888112Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11632,6 +11632,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T06:15:40.675100Z"
+    },
+    {
+      "key": "9bb25dd3bbee0e627b4a3c4b",
+      "url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+      "fingerprint": "41817fd6391364a0",
+      "title_norm": "projected lineups, goalies for today",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T16:15:34.762563Z"
     }
   ],
   "known_sources": [
