@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T01:00:39.630550Z",
+  "updated_at": "2026-10-18T01:15:35.537875Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11372,6 +11372,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T01:00:39.515305Z"
+    },
+    {
+      "key": "64b193018abfa8de6aa33e0f",
+      "url": "https://www.nhl.com/news/seattle-kraken-florida-panthers-game-recap-october-17-2026",
+      "fingerprint": "89b280fd36dbef8c",
+      "title_norm": "verhaeghe, bennett continue panthers hat trick streak in win against kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T01:15:35.438676Z"
     }
   ],
   "known_sources": [
