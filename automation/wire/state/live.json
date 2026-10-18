@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T05:00:38.764722Z",
+  "updated_at": "2026-10-18T05:11:08.537217Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11602,6 +11602,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T05:00:38.709133Z"
+    },
+    {
+      "key": "a4eb7cb954478ba75c39a236",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-notches-five-points-oilers-crush-mammoth",
+      "fingerprint": "8899ab346d5a26d4",
+      "title_norm": "connor mcdavid notches five points, oilers crush mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T05:11:08.062054Z"
+    },
+    {
+      "key": "00744fe1d9356f7181ab0905",
+      "url": "https://www.nhl.com/news/edmonton-oilers-utah-mammoth-game-recap-october-17-2026",
+      "fingerprint": "23cf3250781174e7",
+      "title_norm": "mcdavid gets 5 points to extend season-opening streak as oilers cruise past mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T05:11:08.429371Z"
     }
   ],
   "known_sources": [
