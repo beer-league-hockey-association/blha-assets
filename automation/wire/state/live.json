@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T03:00:37.074012Z",
+  "updated_at": "2026-10-18T04:15:34.832912Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11542,6 +11542,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T03:00:36.971768Z"
+    },
+    {
+      "key": "2ca2505cfd87be1764ebad2f",
+      "url": "https://www.nhl.com/news/boston-bruins-los-angeles-kings-game-recap-october-17-2026",
+      "fingerprint": "e77f16c57e405836",
+      "title_norm": "bruins break tie in 3rd, keep kings winless",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T04:15:33.970793Z"
+    },
+    {
+      "key": "be2753af814a69e8fe40d5a4",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-fall-into-last-in-atlantic-with-loss-to-islanders",
+      "fingerprint": "020a2c172f1165ab",
+      "title_norm": "maple leafs fall into last in atlantic with loss to islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T04:15:34.362018Z"
+    },
+    {
+      "key": "72406b54063c3c1eab73cfe4",
+      "url": "https://www.sportsnet.ca/nhl/article/dominant-showing-in-win-over-sabres-a-welcome-development-for-canadiens-suzuki-line",
+      "fingerprint": "8fb5cfb7e5af5888",
+      "title_norm": "dominant showing in win over sabres a welcome development for canadiens' suzuki line",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T04:15:34.768364Z"
     }
   ],
   "known_sources": [
