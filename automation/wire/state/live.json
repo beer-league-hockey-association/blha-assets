@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T02:00:37.494181Z",
+  "updated_at": "2026-10-18T02:15:37.182218Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11482,6 +11482,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T02:00:37.098772Z"
+    },
+    {
+      "key": "2415ed53ce3892cd4fef190b",
+      "url": "https://www.nhl.com/news/ottawa-senators-philadelphia-flyers-game-recap-october-17-2026",
+      "fingerprint": "83a344da987a5efc",
+      "title_norm": "flyers hold off senators for 1st win of season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T02:15:36.759012Z"
+    },
+    {
+      "key": "34ce501417fd3d58770aaec0",
+      "url": "https://www.nhl.com/news/buffalo-sabres-montreal-canadiens-game-recap-october-17-2026",
+      "fingerprint": "59296f56bae5ee9f",
+      "title_norm": "caufield's second goal lifts canadiens past sabres in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T02:15:37.084038Z"
     }
   ],
   "known_sources": [
