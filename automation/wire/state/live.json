@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T02:15:37.182218Z",
+  "updated_at": "2026-10-18T02:30:43.716958Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11502,6 +11502,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T02:15:37.084038Z"
+    },
+    {
+      "key": "e8bef1159333fb5de4cd37d2",
+      "url": "https://www.sportsnet.ca/nhl/article/cole-caufield-scores-overtime-winner-as-canadiens-down-sabres",
+      "fingerprint": "8c64bb87d50e7904",
+      "title_norm": "cole caufield scores overtime winner as canadiens down sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T02:30:43.009984Z"
+    },
+    {
+      "key": "dacc05394011f21be8733ea1",
+      "url": "https://www.nhl.com/news/topic/game-recap/san-jose-sharks-detroit-red-wings-game-recap-october-17-2026",
+      "fingerprint": "3ce3eebdf67861ee",
+      "title_norm": "debrincat ties it late, red wings win in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T02:30:43.392122Z"
+    },
+    {
+      "key": "558c15d36089e685ec0bf290",
+      "url": "https://www.nhl.com/news/new-york-rangers-columbus-blue-jackets-game-recap-october-17-2026",
+      "fingerprint": "864aeb4fc5cfb0ad",
+      "title_norm": "johnson gets lone goal, jackets defeat rangers in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T02:30:43.603126Z"
     }
   ],
   "known_sources": [
