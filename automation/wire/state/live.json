@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T01:45:35.650575Z",
+  "updated_at": "2026-10-18T02:00:37.494181Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11422,6 +11422,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T01:45:35.596132Z"
+    },
+    {
+      "key": "da9c236c90f501f91d1741af",
+      "url": "https://www.nhl.com/news/dallas-stars-chicago-blackhawks-game-recap-october-17-2026",
+      "fingerprint": "20dda53552c91a55",
+      "title_norm": "hyry gets first multigoal game, stars blank blackhawks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T02:00:36.311536Z"
+    },
+    {
+      "key": "8afc8313dc62d027c88bb652",
+      "url": "https://www.nhl.com/news/new-york-islanders-toronto-maple-leafs-game-recap-october-17-2026",
+      "fingerprint": "9c64e876ff31d9e0",
+      "title_norm": "horvat has two points, islanders defeat slumping maple leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T02:00:36.775984Z"
+    },
+    {
+      "key": "9c18016f417d9f33bbb44252",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/efbfa6a8-22d8-4544-8067-33adf1767daa",
+      "fingerprint": "bc78092343473f18",
+      "title_norm": "saturday night hockey on sportsnet: oilers vs. mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T02:00:37.078247Z"
+    },
+    {
+      "key": "7f39043655f1b81b1894caa7",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-drop-third-straight-in-loss-to-islanders",
+      "fingerprint": "f734cb1ab81f9160",
+      "title_norm": "maple leafs drop third straight in loss to islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T02:00:37.084226Z"
+    },
+    {
+      "key": "7d24c36586a5fd0accd4f0c0",
+      "url": "https://www.sportsnet.ca/nhl/article/flyers-top-senators-to-secure-first-win-of-season-snap-nine-game-skid",
+      "fingerprint": "c64d4a587d4a4847",
+      "title_norm": "flyers top senators to secure first win of season, snap nine-game skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T02:00:37.094039Z"
+    },
+    {
+      "key": "33396e7994658b14fcb7575e",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-discuss-hellebuycks-potential-return",
+      "fingerprint": "889aa59624211e47",
+      "title_norm": "jets discuss hellebuyck's potential return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T02:00:37.098772Z"
     }
   ],
   "known_sources": [
