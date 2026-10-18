@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T00:30:37.389063Z",
+  "updated_at": "2026-10-18T01:00:39.630550Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11362,6 +11362,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T00:30:37.332349Z"
+    },
+    {
+      "key": "6cf2ecc382fb879327379fd4",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
+      "fingerprint": "f197ce3cfa0ae2ef",
+      "title_norm": "pavel zacha (bos) — zacha is out vs. los angeles with an upper-bobdy injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T01:00:39.515305Z"
     }
   ],
   "known_sources": [
