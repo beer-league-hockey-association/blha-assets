@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T01:30:40.948934Z",
+  "updated_at": "2026-10-18T01:45:35.650575Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11412,6 +11412,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-18T01:30:40.889616Z"
+    },
+    {
+      "key": "a43dd51cc69acb8db6250853",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-would-deal-prime-asset-for-difference-maker-on-blue-line",
+      "fingerprint": "1a235df3c67506b5",
+      "title_norm": "maple leafs would deal prime asset for difference-maker on blue line",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T01:45:35.596132Z"
     }
   ],
   "known_sources": [
