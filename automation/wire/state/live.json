@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T20:00:39.342426Z",
+  "updated_at": "2026-10-18T20:30:37.347732Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11712,6 +11712,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T20:00:39.249456Z"
+    },
+    {
+      "key": "9fb4a9df1b97ef968499d216",
+      "url": "https://www.nhl.com/news/topic/short-shifts/matthew-schaefer-joined-by-young-islanders-fan-cancer-patient",
+      "fingerprint": "d5d34389e0710e93",
+      "title_norm": "young fan with cancer joins schaefer for interview",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T20:30:36.745896Z"
+    },
+    {
+      "key": "22a36e612b8f70c72bbc72a8",
+      "url": "https://www.nhl.com/news/topic/short-shifts/anaheim-ducks-jeff-mallot-ufc-fighter-brother-mike",
+      "fingerprint": "9ed26218f3d179cd",
+      "title_norm": "ducks cheer on malott's ufc fighter brother",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T20:30:37.228679Z"
     }
   ],
   "known_sources": [
