@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T20:45:33.368325Z",
+  "updated_at": "2026-10-18T21:45:37.845928Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11742,6 +11742,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T20:45:33.263613Z"
+    },
+    {
+      "key": "4aabaa3a38c9de697b0ce3d6",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-gustavsson/4565",
+      "fingerprint": "c67bb24a23a1fe8f",
+      "title_norm": "filip gustavsson (min) — gustavsson (hip) is expected to be out for at least another month.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T21:45:37.763892Z"
     }
   ],
   "known_sources": [
