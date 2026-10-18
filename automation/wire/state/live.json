@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T05:11:08.537217Z",
+  "updated_at": "2026-10-18T06:15:40.715160Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11622,6 +11622,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T05:11:08.429371Z"
+    },
+    {
+      "key": "eafe99a08186aa9a6f3ab6e9",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-takeaways-mcdavid-leads-the-way-in-beatdown-of-mammoth",
+      "fingerprint": "4187bca65d78e1a1",
+      "title_norm": "oilers takeaways: mcdavid leads the way in beatdown of mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T06:15:40.675100Z"
     }
   ],
   "known_sources": [
