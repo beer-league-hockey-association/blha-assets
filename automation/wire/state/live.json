@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T16:15:34.888112Z",
+  "updated_at": "2026-10-18T16:30:37.707499Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11642,6 +11642,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T16:15:34.762563Z"
+    },
+    {
+      "key": "b15334ef07a7a9f9866a24a9",
+      "url": "https://www.dailyfaceoff.com/players/news/roope-hintz/2863",
+      "fingerprint": "e19ce43a65193f30",
+      "title_norm": "roope hintz (dal) — hintz left saturday's game with an undisclosed injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T16:30:37.610422Z"
     }
   ],
   "known_sources": [
