@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T02:30:43.716958Z",
+  "updated_at": "2026-10-18T03:00:37.074012Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11532,6 +11532,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T02:30:43.603126Z"
+    },
+    {
+      "key": "7adb90dae7c9a7f4760605f2",
+      "url": "https://www.nhl.com/news/st-louis-blues-nashville-predators-game-recap-october-17-2026",
+      "fingerprint": "8ed3a436a4a6d226",
+      "title_norm": "forsberg's goal, assist help predators defeat blues to stop skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T03:00:36.971768Z"
     }
   ],
   "known_sources": [
