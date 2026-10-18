@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T20:30:37.347732Z",
+  "updated_at": "2026-10-18T20:45:33.368325Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11732,6 +11732,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T20:30:37.228679Z"
+    },
+    {
+      "key": "93384e3fb4e53f2c6997ff01",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-kaprizov/26611",
+      "fingerprint": "844e64bd86a23c8f",
+      "title_norm": "kirill kaprizov (min) — kaprizov (undisclosed) will play sunday vs. the blue jackets.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T20:45:33.263613Z"
     }
   ],
   "known_sources": [
