@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-17T23:45:31.010311Z",
+  "updated_at": "2026-10-18T00:30:37.389063Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11342,6 +11342,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-17T23:45:30.950405Z"
+    },
+    {
+      "key": "6c16b2adf6988c554a27a815",
+      "url": "https://www.sportsnet.ca/nhl/article/islanders-maccelli-ritchie-exit-with-lower-body-injuries-vs-maple-leafs",
+      "fingerprint": "0a8a78dca91d4d49",
+      "title_norm": "islanders' maccelli, ritchie exit with lower-body injuries vs. maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T00:30:36.963886Z"
+    },
+    {
+      "key": "3676545e9997be704e171915",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-become-first-nhl-team-to-have-three-straight-natural-hat-tricks",
+      "fingerprint": "cb63e85c32f173b8",
+      "title_norm": "panthers become first nhl team to have three straight natural hat tricks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T00:30:37.332349Z"
     }
   ],
   "known_sources": [
