@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T04:30:37.317573Z",
+  "updated_at": "2026-10-18T05:00:38.764722Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11582,6 +11582,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T04:30:37.218692Z"
+    },
+    {
+      "key": "157fba594ff85797377fc288",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-vegas-golden-knights-game-recap-october-17-2026",
+      "fingerprint": "f39e337f1c830f2a",
+      "title_norm": "golden knights score six for second game in row, ease past penguins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-18T05:00:38.469845Z"
+    },
+    {
+      "key": "c26a2b95feaad86b85af5463",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-tuch-has-two-goals-assist-in-capitals-win-over-devils",
+      "fingerprint": "f079f2fa90edb7ae",
+      "title_norm": "nhl roundup: tuch has two goals, assist in capitals' win over devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T05:00:38.709133Z"
     }
   ],
   "known_sources": [
