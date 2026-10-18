@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T01:15:35.537875Z",
+  "updated_at": "2026-10-18T01:30:40.948934Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11382,6 +11382,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-18T01:15:35.438676Z"
+    },
+    {
+      "key": "2a8136f0957ba5eb96a8a276",
+      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
+      "fingerprint": "c177056187b2fb8d",
+      "title_norm": "thomas chabot (ott) — chabot (undisclosed) left saturday's game vs. philadelphia and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T01:30:40.344298Z"
+    },
+    {
+      "key": "044acc93ad9b4f88b3636674",
+      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-latest-on-connor-hellebuycks-situation",
+      "fingerprint": "3a1d392801cd9557",
+      "title_norm": "saturday headlines: latest on connor hellebuyck's situation",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T01:30:40.658000Z"
+    },
+    {
+      "key": "e1e4109491748192384a8f7f",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-disheartening-winless-road-trip-still-features-silver-linings",
+      "fingerprint": "a54bdbbb3b6e9687",
+      "title_norm": "canucks' disheartening, winless road trip still features silver linings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-18T01:30:40.889616Z"
     }
   ],
   "known_sources": [
