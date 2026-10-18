@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T17:45:31.347949Z",
+  "updated_at": "2026-10-18T19:00:40.742697Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11682,6 +11682,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T17:45:31.298821Z"
+    },
+    {
+      "key": "915d3a9b34ed43d9404771d2",
+      "url": "https://triblive.com/sports/fully-healthy-penguins-prospect-tanner-howe-takes-aim-at-reaching-the-nhl",
+      "fingerprint": "1ffd942cba3b587b",
+      "title_norm": "fully healthy, howe takes aim at reaching nhl",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-18T19:00:40.065000Z"
+    },
+    {
+      "key": "40e3b2ffdb64e4d69307001a",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "eaf7b02bfc5d3856",
+      "title_norm": "troy terry (ana) — terry (hip) is travelling on the ducks' four-game road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-18T19:00:40.647833Z"
     }
   ],
   "known_sources": [
