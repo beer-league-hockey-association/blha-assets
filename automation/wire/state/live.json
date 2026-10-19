@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T15:48:48.882859Z",
+  "updated_at": "2026-10-19T16:15:35.526787Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12102,6 +12102,36 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-10-19T15:48:48.856832Z"
+    },
+    {
+      "key": "3b527d9a8df34a84183f5911",
+      "url": "https://www.dailyfaceoff.com/players/news/mackenzie-blackwood/3792",
+      "fingerprint": "eed6a72c1448f8bd",
+      "title_norm": "mackenzie blackwood (col) — blackwood was the first goalie off the ice at the avalanche morning skate.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:15:34.806934Z"
+    },
+    {
+      "key": "b7c14b2af530d9c82ec8462c",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-ivar-stenberg-san-jose-sharks-2026-27",
+      "fingerprint": "66f94d772715e093",
+      "title_norm": "edge stats: stenberg's early impact with sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T16:15:35.156577Z"
+    },
+    {
+      "key": "0d4d19fb1251514eafbeefd5",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-notebook-lefty-righty-defence-balance-boosted-by-reinbacher",
+      "fingerprint": "3d3038af7c477b31",
+      "title_norm": "canadiens notebook: lefty-righty defence balance boosted by reinbacher",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:15:35.493429Z"
     }
   ],
   "known_sources": [
