@@ -345,11 +345,11 @@ def welcome_packet(art) -> Doc:
     header(b, pg, "03 • POINTS AND DOLLARS", "SCORING AND THE MONEY")
     b.T(pg, M, 128, COL, 370,
         ("H2", "SKATERS"),
-        (rows, "Goal\t+5.00"), (rows, "Assist\t+2.95"), (rows, "Shot on goal\t+0.55"), (rows, "Block\t+0.35"),
-        (rows, "Hit\t+0.20"), (rows, "Penalty minute\t−0.54"),
+        (rows, "Goal\t+5.00"), (rows, "Assist\t+2.97"), (rows, "Shot on goal\t+0.53"), (rows, "Block\t+0.44"),
+        (rows, "Hit\t+0.14"), (rows, "Penalty minute\t−0.36"),
         ("H2", "GOALIES"),
-        (rows, "Game started\t+6.50"), (rows, "Save\t+0.49"), (rows, "Goal against\t−5.00"), (rows, "Goal\t+5.00"),
-        (rows, "Assist\t+2.95"),
+        (rows, "Game started\t+5.00"), (rows, "Save\t+0.56"), (rows, "Goal against\t−5.00"), (rows, "Goal\t+5.00"),
+        (rows, "Assist\t+2.97"),
         ("Small", "Not scored: wins, shutouts, plus/minus, power-play bonuses, game-winning goals and faceoffs."))
     b.T(pg, COL2, 128, COL, 390,
         ("H2", "WHERE THE $1,800 GOES"),
@@ -370,10 +370,10 @@ def welcome_packet(art) -> Doc:
             "season first, or the whole trade is reversed (Article XII). Picks in rounds 3 to 5 need no prepayment.")
     b.T(pg, M, 604, CW, 18, ("H2", "SCORING IN ACTION"))
     tw = (CW - 36) / 4
-    for i, (big, label, note) in enumerate([("+15.90", "A BIG NIGHT", "2 goals, 1 assist, 5 shots and a hit"),
-                                            ("+2.57", "THE GRINDER", "3 shots, 4 blocks, 3 hits, 2 PIM"),
-                                            ("+11.20", "A SOLID START", "30 saves, 2 goals against"),
-                                            ("−14.19", "A ROUGH NIGHT", "19 saves, 6 goals against")]):
+    for i, (big, label, note) in enumerate([("+15.76", "A BIG NIGHT", "2 goals, 1 assist, 5 shots and a hit"),
+                                            ("+3.05", "THE GRINDER", "3 shots, 4 blocks, 3 hits, 2 PIM"),
+                                            ("+11.80", "A SOLID START", "30 saves, 2 goals against"),
+                                            ("−14.36", "A ROUGH NIGHT", "19 saves, 6 goals against")]):
         tile(b, pg, M + i * (tw + 12), 626, tw, 100, big, label, note)
     footer(b, pg, foot, 5)
 
@@ -545,15 +545,15 @@ def draft_sheet(art) -> Doc:
         ("Small3", "Slots 1 and 12 pick back to back at the turns."))
     b.T(pg, c3, top, w3, 440,
         ("H2", "SCORING"),
-        (r3, "Goal\t+5.00"), (r3, "Assist\t+2.95"), (r3, "Shot on goal\t+0.55"), (r3, "Block\t+0.35"),
-        (r3, "Hit\t+0.20"), (r3, "Penalty minute\t−0.54"),
-        (r3, "Goalie start\t+6.50"), (r3, "Save\t+0.49"), (r3, "Goal against\t−5.00"),
+        (r3, "Goal\t+5.00"), (r3, "Assist\t+2.97"), (r3, "Shot on goal\t+0.53"), (r3, "Block\t+0.44"),
+        (r3, "Hit\t+0.14"), (r3, "Penalty minute\t−0.36"),
+        (r3, "Goalie start\t+5.00"), (r3, "Save\t+0.56"), (r3, "Goal against\t−5.00"),
         ("H2", "WHAT DRIVES VALUE"),
         ("Bullet3", "A goal is worth about 1.7 assists."),
-        ("Bullet3", "Five shots (2.75) nearly match an assist."),
-        ("Bullet3", "3 blocks and 3 hits add 1.65 a night."),
-        ("Bullet3", "A fighting major costs 2.70."),
-        ("Bullet3", "30 saves on 32 shots: +11.20. A 19-save, 6-goal night: −14.19."),
+        ("Bullet3", "Five shots (2.65) nearly match an assist."),
+        ("Bullet3", "3 blocks and 3 hits add 1.74 a night."),
+        ("Bullet3", "A fighting major costs 1.80."),
+        ("Bullet3", "30 saves on 32 shots: +11.80. A 19-save, 6-goal night: −14.36."),
         ("Bullet3", "Only 4 goalie starts count a Week."),
         ("Small3", "No wins, shutouts, plus/minus or power-play bonuses."))
     callout(b, pg, M, 584, COL, 128, "PICKS AND TRADES",

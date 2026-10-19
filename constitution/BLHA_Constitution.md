@@ -171,18 +171,18 @@
 
 **SKATERS**
 • Goal — **+5.00**
-• Assist — **+2.95**
-• Shot on Goal — **+0.55**
-• Block — **+0.35**
-• Hit — **+0.20**
-• Penalty Minute — **-0.54**
+• Assist — **+2.97**
+• Shot on Goal — **+0.53**
+• Block — **+0.44**
+• Hit — **+0.14**
+• Penalty Minute — **-0.36**
 
 **GOALIES**
-• Game Started — **+6.50**
-• Save — **+0.49**
+• Game Started — **+5.00**
+• Save — **+0.56**
 • Goal Against — **-5.00**
 • Goalie Goal — **+5.00**
-• Goalie Assist — **+2.95**
+• Goalie Assist — **+2.97**
 
 **8.2** Goalie wins, shutouts, plus/minus, power-play bonuses, game-winning-goal bonuses, faceoff wins, and other unlisted scoring categories are not separately scored.
 

@@ -27,8 +27,8 @@ SHOWN = 12  # one field per owner
 MESSAGE_MAX = 6000  # Discord's limit for all embed text in one message
 
 FUN = "Just for fun: no money and no effect on the league."
-SCORING = ("**Scoring** (BLHA points on NHL playoff games): skaters goal 5, assist 2.95, shot 0.55, block 0.35, "
-           "hit 0.20, penalty minute -0.54; goalies start 6.5, save 0.49, goal against -5, goal 5, assist 2.95.")
+SCORING = ("**Scoring** (BLHA points on NHL playoff games): skaters goal 5, assist 2.97, shot 0.53, block 0.44, "
+           "hit 0.14, penalty minute -0.36; goalies start 5, save 0.56, goal against -5, goal 5, assist 2.97.")
 TIES = "Ties: most points from the goalie (box 10), then the earliest entry."
 
 

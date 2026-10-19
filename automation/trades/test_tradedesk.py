@@ -343,20 +343,20 @@ class FakeNhl:
 
 class ScoringTests(unittest.TestCase):
     def test_values_come_from_the_constitution(self):
-        self.assertEqual(tp.SKATER, {"goals": 5.0, "assists": 2.95, "shots": 0.55, "blockedShots": 0.35,
-                                     "hits": 0.20, "pim": -0.54})
-        self.assertEqual(tp.GOALIE, {"gamesStarted": 6.5, "saves": 0.49, "goalsAgainst": -5.0, "goals": 5.0,
-                                     "assists": 2.95})
+        self.assertEqual(tp.SKATER, {"goals": 5.0, "assists": 2.97, "shots": 0.53, "blockedShots": 0.44,
+                                     "hits": 0.14, "pim": -0.36})
+        self.assertEqual(tp.GOALIE, {"gamesStarted": 5.0, "saves": 0.56, "goalsAgainst": -5.0, "goals": 5.0,
+                                     "assists": 2.97})
 
     def test_skater_game_math(self):
         row = {"goals": 1, "assists": 2, "shots": 5, "pim": 2, "hits": 3, "blockedShots": 1}
-        # 5 + 5.90 + 2.75 - 1.08 + 0.60 + 0.35
-        self.assertAlmostEqual(tp.game_points(row, False), 13.52, places=6)
+        # 5 + 5.94 + 2.65 - 0.72 + 0.42 + 0.44
+        self.assertAlmostEqual(tp.game_points(row, False), 13.73, places=6)
 
     def test_goalie_game_math_matches_the_scoring_explainer(self):
-        # "28 saves on 30 shots -> +10.22" and "30-save shutout -> +21.20" (16_scoring_explained.json)
-        self.assertAlmostEqual(tp.game_points({"gamesStarted": 1, "shotsAgainst": 30, "goalsAgainst": 2}, True), 10.22, places=6)
-        self.assertAlmostEqual(tp.game_points({"gamesStarted": 1, "shotsAgainst": 30, "goalsAgainst": 0}, True), 21.20, places=6)
+        # "28 saves on 30 shots -> +10.68" and "30-save shutout -> +21.80" (16_scoring_explained.json)
+        self.assertAlmostEqual(tp.game_points({"gamesStarted": 1, "shotsAgainst": 30, "goalsAgainst": 2}, True), 10.68, places=6)
+        self.assertAlmostEqual(tp.game_points({"gamesStarted": 1, "shotsAgainst": 30, "goalsAgainst": 0}, True), 21.80, places=6)
 
     def test_nhl_seasons(self):
         self.assertEqual(tp.nhl_season(date(2027, 1, 15)), 20262027)
@@ -368,9 +368,9 @@ class ScoringTests(unittest.TestCase):
         stats = tp.NhlStats(nhl.get)
         prod = stats.production(8478402, False, date(2027, 1, 15), date(2028, 1, 15))
         # Jan 15 is the trade day (not counted); Feb 1 2028 is after the revisit (not counted).
-        g16 = 5 + 2 * 2.95 + 5 * 0.55 - 2 * 0.54 + 3 * 0.20 + 1 * 0.35
-        m01 = 2.95 + 2 * 0.55 + 2 * 0.35
-        o10 = 5 + 3 * 0.55 + 0.20
+        g16 = 5 + 2 * 2.97 + 5 * 0.53 - 2 * 0.36 + 3 * 0.14 + 1 * 0.44
+        m01 = 2.97 + 2 * 0.53 + 2 * 0.44
+        o10 = 5 + 3 * 0.53 + 0.14
         self.assertEqual(prod.games, 3)
         self.assertAlmostEqual(prod.points, round(g16 + m01 + o10, 2), places=6)
         self.assertEqual(prod.missing_box, 0)
@@ -386,7 +386,7 @@ class ScoringTests(unittest.TestCase):
     def test_goalie_production(self):
         prod = tp.NhlStats(FakeNhl().get).production(8478048, True, date(2027, 1, 15), date(2027, 7, 15))
         self.assertEqual(prod.games, 2)
-        self.assertAlmostEqual(prod.points, round(10.22 + 21.20 + 2.95, 2), places=6)
+        self.assertAlmostEqual(prod.points, round(10.68 + 21.80 + 2.97, 2), places=6)
         self.assertTrue(prod.goalie)
 
     def test_nhl_id_matching_uses_team_and_position_and_refuses_to_guess(self):
@@ -464,7 +464,7 @@ class RevisitTests(unittest.TestCase):
         self.assertEqual(embed["title"], "TRADE REVISIT — 6 months")
         fields = {f["name"]: f["value"] for f in embed["fields"]}
         # Test 2 received McDavid: Jan 16 and Mar 1 games count (Jan 15 is the trade day).
-        mcdavid = round((5 + 2 * 2.95 + 5 * 0.55 - 2 * 0.54 + 0.60 + 0.35) + (2.95 + 2 * 0.55 + 2 * 0.35), 2)
+        mcdavid = round((5 + 2 * 2.97 + 5 * 0.53 - 2 * 0.36 + 3 * 0.14 + 0.44) + (2.97 + 2 * 0.53 + 2 * 0.44), 2)
         self.assertIn(f"**{mcdavid:.2f} points**", fields["TEST 2 RECEIVED"])
         self.assertIn(f"Connor McDavid: {mcdavid:.2f} in 2 games", fields["TEST 2 RECEIVED"])
         self.assertIn("Zach Hyman: no NHL games since the trade", fields["TEST 1 RECEIVED"])

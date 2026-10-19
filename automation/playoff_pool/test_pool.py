@@ -249,13 +249,13 @@ class ScoringTests(unittest.TestCase):
         state, lines = scoring.parse_boxscore(FIXTURE["boxscores"]["2026030111"])
         self.assertEqual(state, "OFF")
         skater = lines[8470000]  # 2 G, 1 A, 5 SOG, 1 BLK, 2 HIT, 2 PIM
-        self.assertEqual(scoring.line_points(skater, False), 1000 + 295 + 275 + 35 + 40 - 108)
-        self.assertEqual(scoring.fmt(scoring.line_points(skater, False)), "15.37")
+        self.assertEqual(scoring.line_points(skater, False), 1000 + 297 + 265 + 44 + 28 - 72)
+        self.assertEqual(scoring.fmt(scoring.line_points(skater, False)), "15.62")
         goalie = lines[8479000]  # start, 30 saves, 2 GA, 1 A
         self.assertEqual(goalie, {"gs": 1, "sv": 30, "ga": 2, "g": 0, "a": 1})
-        self.assertEqual(scoring.line_points(goalie, True), 650 + 1470 - 1000 + 295)
+        self.assertEqual(scoring.line_points(goalie, True), 500 + 1680 - 1000 + 297)
         self.assertEqual(lines[8479031]["gs"], 0)
-        self.assertEqual(scoring.line_points(lines[8479030], True), 650 + 28 * 49 - 2000)
+        self.assertEqual(scoring.line_points(lines[8479030], True), 500 + 28 * 56 - 2000)
 
     def test_older_field_names_and_no_starter_flag(self) -> None:
         state, lines = scoring.parse_boxscore(FIXTURE["boxscores"]["2026030121"])
@@ -557,7 +557,7 @@ class RunTests(unittest.TestCase):
         self.assertIn("2 playoff games counted, through Saturday, April 17", embed["description"])
         names = [f["name"] for f in embed["fields"]]
         # Rink Rats 15.37 + 7.00 + 14.15; North Stars 9.09 + 7.80 + 15.71; Ice Dogs 6.85 + 3.87 + 0.22
-        self.assertEqual(names, ["1. Rink Rats — 36.52 pts", "2. North Stars — 32.60 pts", "3. Ice Dogs — 10.94 pts"])
+        self.assertEqual(names, ["1. Rink Rats — 37.39 pts", "2. North Stars — 33.49 pts", "3. Ice Dogs — 11.79 pts"])
         self.assertIn("pending=1", out)
         state = self.state()
         self.assertEqual(state["standings"]["on"], "2027-04-18")

@@ -2,8 +2,8 @@
 
 Output is measured from NHL regular-season stats since the draft (the Season
 that draft supplies onward), scored with BLHA scoring (Article VIII) as far as
-the NHL feed allows: skaters goals x5, assists x2.95, shots x0.55; goalies
-starts x6.5, saves x0.49, goals against x-5. Hits and blocks are not in the
+the NHL feed allows: skaters goals x5, assists x2.97, shots x0.53; goalies
+starts x5, saves x0.56, goals against x-5. Hits and blocks are not in the
 NHL's public player feed, so they are left out for everyone. Players are
 matched to NHL players by name, NHL team and position the same way as the
 minor-eligibility watch (automation/commissioner/minors.py).
@@ -37,8 +37,8 @@ FOOTER_DIVIDER = (
     "https://raw.githubusercontent.com/beer-league-hockey-association/blha-assets/main/"
     "discord/webhooks/shared/blha-footer-divider-1600x90.png?v=8bit-1"
 )
-SKATER = {"goals": 5.0, "assists": 2.95, "shots": 0.55}
-GOALIE = {"starts": 6.5, "saves": 0.49, "goals_against": -5.0, "goals": 5.0, "assists": 2.95}
+SKATER = {"goals": 5.0, "assists": 2.97, "shots": 0.53}
+GOALIE = {"starts": 5.0, "saves": 0.56, "goals_against": -5.0, "goals": 5.0, "assists": 2.97}
 MEASURE = ("NHL regular-season stats since the draft, scored the BLHA way where the NHL feed allows "
            "(goals, assists and shots; goalies: starts, saves and goals against). Hits and blocks are not in the NHL feed.")
 

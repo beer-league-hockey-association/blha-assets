@@ -3,10 +3,10 @@
 Scoring values come from the Constitution source (tools/constitution_source.py,
 Article VIII), so they can never drift from the rules:
 
-  skaters  Goal +5.00, Assist +2.95, Shot on Goal +0.55, Block +0.35, Hit +0.20,
-           Penalty Minute -0.54
-  goalies  Game Started +6.50, Save +0.49, Goal Against -5.00, Goalie Goal +5.00,
-           Goalie Assist +2.95
+  skaters  Goal +5.00, Assist +2.97, Shot on Goal +0.53, Block +0.44, Hit +0.14,
+           Penalty Minute -0.36
+  goalies  Game Started +5.00, Save +0.56, Goal Against -5.00, Goalie Goal +5.00,
+           Goalie Assist +2.97
 
 Data (read-only, NHL public API, https://github.com/Zmalski/NHL-API-Reference):
 

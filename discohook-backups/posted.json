@@ -51,12 +51,6 @@
       "fingerprint": 940673060,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258385613791333"
     },
-    "constitution/03_articles_vi_to_x.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 3768214010,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379"
-    },
     "constitution/04_articles_xi_to_xiii.json": {
       "channel": "constitution",
       "posted": "2026-10-07",
@@ -215,12 +209,6 @@
       "fingerprint": 2065454264,
       "message": "https://discord.com/channels/1554538666721018016/1554540618217427064/1557260237017456663"
     },
-    "league-office/16_scoring_explained.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 1615074019,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557425202743349290"
-    },
     "scouting/01_scouting_channel_intro.json": {
       "channel": "scouting",
       "posted": "2026-10-07",
@@ -313,6 +301,18 @@
       "posted": "2026-10-07",
       "fingerprint": 4230816491,
       "message": "https://discord.com/channels/1554538666721018016/1554562413876219984/1557429480258277418"
+    },
+    "constitution/03_articles_vi_to_x.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3768214010,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379"
+    },
+    "league-office/16_scoring_explained.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 1615074019,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557425202743349290"
     }
   }
 }

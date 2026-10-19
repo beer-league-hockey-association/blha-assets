@@ -1,8 +1,8 @@
 """Pool scoring: BLHA fantasy scoring (Constitution Article VIII) on NHL playoff games.
 
-  Skaters  goal +5, assist +2.95, shot on goal +0.55, block +0.35, hit +0.20,
-           penalty minute -0.54
-  Goalies  game started +6.5, save +0.49, goal against -5, goal +5, assist +2.95
+  Skaters  goal +5, assist +2.97, shot on goal +0.53, block +0.44, hit +0.14,
+           penalty minute -0.36
+  Goalies  game started +5, save +0.56, goal against -5, goal +5, assist +2.97
 
 Points are kept in hundredths (integers) so totals and ties are exact.
 
@@ -27,8 +27,8 @@ from typing import Any
 
 from .nhl_feed import number
 
-SKATER_POINTS = {"g": 500, "a": 295, "sog": 55, "blk": 35, "hit": 20, "pim": -54}
-GOALIE_POINTS = {"gs": 650, "sv": 49, "ga": -500, "g": 500, "a": 295}
+SKATER_POINTS = {"g": 500, "a": 297, "sog": 53, "blk": 44, "hit": 14, "pim": -36}
+GOALIE_POINTS = {"gs": 500, "sv": 56, "ga": -500, "g": 500, "a": 297}
 FINAL_STATES = {"OFF", "FINAL"}
 
 

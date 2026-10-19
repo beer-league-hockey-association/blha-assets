@@ -85,8 +85,8 @@ ALLOCATION = [
 ALLOCATION_TOTAL = 1800
 assert sum(a for _, a in ALLOCATION) == ALLOCATION_TOTAL == 12 * 150
 
-SKATERS = [("Goal", "+5.00"), ("Assist", "+2.95"), ("Shot on Goal", "+0.55"), ("Block", "+0.35"), ("Hit", "+0.20"), ("Penalty Minute", "-0.54")]
-GOALIES = [("Game Started", "+6.50"), ("Save", "+0.49"), ("Goal Against", "-5.00"), ("Goalie Goal", "+5.00"), ("Goalie Assist", "+2.95")]
+SKATERS = [("Goal", "+5.00"), ("Assist", "+2.97"), ("Shot on Goal", "+0.53"), ("Block", "+0.44"), ("Hit", "+0.14"), ("Penalty Minute", "-0.36")]
+GOALIES = [("Game Started", "+5.00"), ("Save", "+0.56"), ("Goal Against", "-5.00"), ("Goalie Goal", "+5.00"), ("Goalie Assist", "+2.97")]
 
 DATE_RULES = [
     ("Week 1", "Begins with the first Fantrax scoring period of the Season, aligned with the NHL regular-season opening."),
