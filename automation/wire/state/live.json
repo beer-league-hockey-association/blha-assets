@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T18:30:43.830191Z",
+  "updated_at": "2026-10-19T19:00:44.187477Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12362,6 +12362,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-19T18:30:43.711172Z"
+    },
+    {
+      "key": "a08af680f2a5e2fd2a067484",
+      "url": "https://www.sportsnet.ca/nhl/article/rumour-roundup-who-holds-keys-to-hellebuyck-trade",
+      "fingerprint": "61fcb4c0811b370e",
+      "title_norm": "rumour roundup: who holds keys to hellebuyck trade?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T19:00:44.149486Z"
     }
   ],
   "known_sources": [
