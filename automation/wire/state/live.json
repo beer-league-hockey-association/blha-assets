@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T15:15:35.308317Z",
+  "updated_at": "2026-10-19T15:30:48.544836Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12032,6 +12032,56 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-19T15:15:35.187521Z"
+    },
+    {
+      "key": "2be39d04e97b26a38bea5ce3",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
+      "fingerprint": "3650627ca27570a0",
+      "title_norm": "connor brown (njd) — brown (lower-body) returned to new jersey's practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:30:44.803095Z"
+    },
+    {
+      "key": "fe0c8ff23ddb8a8316f03e7f",
+      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
+      "fingerprint": "2b7a976a4ca851d5",
+      "title_norm": "luke evangelista (njd) — evangelista (illness) returned to new jersey's practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:30:45.009595Z"
+    },
+    {
+      "key": "78ce840ca24e8103dff04fe0",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "d7fff9b038c9ab0d",
+      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) returned to sabres' practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:30:47.971501Z"
+    },
+    {
+      "key": "5ca22f63f71b7d8499c1f3a2",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-enters-rarified-air-with-early-season-points-pace",
+      "fingerprint": "81ef6bef344a1524",
+      "title_norm": "connor mcdavid enters rarified air with early-season points pace",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:30:48.174839Z"
+    },
+    {
+      "key": "1547018be508b911c4a06b89",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "dffa7682e997f395",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) will be a game-time decision on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:30:48.232264Z"
     }
   ],
   "known_sources": [
