@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T17:15:37.712962Z",
+  "updated_at": "2026-10-19T17:30:40.147016Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12252,6 +12252,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T17:15:37.619141Z"
+    },
+    {
+      "key": "f25956b5d30b1f8edcc9c514",
+      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
+      "fingerprint": "4d456a4bf12970df",
+      "title_norm": "luke evangelista (njd) — evangelista (illness) will return vs. colorado on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:30:39.631381Z"
+    },
+    {
+      "key": "171450467628c85574ccbf61",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-recall-forward-brayden-yager-from-ahl",
+      "fingerprint": "3b4edf1bc8d94da5",
+      "title_norm": "jets recall forward brayden yager from ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:30:40.120771Z"
     }
   ],
   "known_sources": [
