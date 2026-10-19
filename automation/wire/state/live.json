@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T21:01:19.452067Z",
+  "updated_at": "2026-10-19T22:00:41.783900Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12462,6 +12462,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T21:01:19.403040Z"
+    },
+    {
+      "key": "7ea126f7afa5604e003db3c0",
+      "url": "https://www.nhl.com/news/winnipeg-jets-waiting-to-see-what-happens-with-goalie-connor-hellebuyck",
+      "fingerprint": "bc9f2f66635fc799",
+      "title_norm": "jets 'waiting to see' what happens with hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T22:00:41.142030Z"
+    },
+    {
+      "key": "d317c02ac6122ee02293ae5d",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-manny-malholtra-says-no-concern-thatcher-demko-misses-season",
+      "fingerprint": "768e3af74a73d46c",
+      "title_norm": "canucks' manny malholtra says no concern thatcher demko misses season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T22:00:41.735209Z"
     }
   ],
   "known_sources": [
