@@ -1,5 +1,5 @@
 {
-  "awards_week": 2,
+  "awards_week": 3,
   "bounties": {
     "claimed": {
       "first-hat-trick": {
@@ -18,8 +18,8 @@
     },
     "hat_trick_through": "2026-09-29"
   },
-  "bounties_week": 2,
-  "games_week": 3,
+  "bounties_week": 3,
+  "games_week": 4,
   "monthly_week": 0,
   "power_ranks": {
     "2": {
@@ -35,12 +35,26 @@
       "tau9p1cvmumuxout": 8,
       "vs89xezfmumuxp44": 11,
       "w9j9rgr1mumuxp9e": 12
+    },
+    "3": {
+      "2tml63mumumuxoqh": 6,
+      "4qdrdr4fmumuxplb": 3,
+      "6bzildyomumuxpe6": 2,
+      "8j6llh6gmumuxose": 7,
+      "93rjspsjmumuxpqw": 4,
+      "gb4or3npmumb3mgv": 1,
+      "gobvt8opmumuxoxm": 9,
+      "mvh0gxh2mumuxoo4": 5,
+      "qqpqauuamumuxp03": 10,
+      "tau9p1cvmumuxout": 8,
+      "vs89xezfmumuxp44": 11,
+      "w9j9rgr1mumuxp9e": 12
     }
   },
-  "preview_week": 3,
-  "rankings_week": 2,
-  "recap_week": 2,
+  "preview_week": 4,
+  "rankings_week": 3,
+  "recap_week": 3,
   "spoon_week": 1,
-  "standings_week": 2,
-  "updated_at": "2026-10-13T00:00:40.873428+00:00"
+  "standings_week": 3,
+  "updated_at": "2026-10-19T12:00:42.454695+00:00"
 }
