@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T16:15:35.526787Z",
+  "updated_at": "2026-10-19T16:30:44.331922Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12132,6 +12132,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T16:15:35.493429Z"
+    },
+    {
+      "key": "8f2ace37041eb758148b6512",
+      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
+      "fingerprint": "18457cb4cc0545b8",
+      "title_norm": "calum ritchie (nyi) — ritchie (lower-body) is not expected to play this week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:30:41.949291Z"
+    },
+    {
+      "key": "fd732c9a7ce64bde5c99dfa9",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
+      "fingerprint": "bf08bc8c90e00cde",
+      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) will return vs. philadelphia on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:30:43.527685Z"
+    },
+    {
+      "key": "7e299cb8569210d6881246ad",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
+      "fingerprint": "107aa8380b601641",
+      "title_norm": "logan o'connor (col) — o'connor (lower-body) is expected to return on friday vs. tampa bay.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:30:43.860364Z"
+    },
+    {
+      "key": "444c0fbd2247a9623e9f03ae",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
+      "fingerprint": "f446848eaea3bb1d",
+      "title_norm": "matt roy (wsh) — roy (lower-body) is expected to return vs. los angeles on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:30:43.872382Z"
+    },
+    {
+      "key": "dedda795edcb1f4f11cfb495",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "b1d9fc076b7baf52",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower-body) is expected to be out for the remainder of the week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:30:43.885799Z"
+    },
+    {
+      "key": "beff3e5caa76e5e534e85589",
+      "url": "https://www.sportsnet.ca/nhl/article/watch-live-senators-travis-green-steve-staios-speak-on-coachs-extension",
+      "fingerprint": "701197b224357e07",
+      "title_norm": "watch live: senators' travis green, steve staios speak on coach's extension",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T16:30:44.100687Z"
     }
   ],
   "known_sources": [
