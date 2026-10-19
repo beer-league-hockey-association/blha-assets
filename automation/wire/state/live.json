@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T01:00:36.811096Z",
+  "updated_at": "2026-10-19T03:15:36.586653Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11832,6 +11832,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T01:00:36.782834Z"
+    },
+    {
+      "key": "be24bf3c4e57240850e36cf8",
+      "url": "https://www.nhl.com/news/unmasked-new-ebug-rules-benefit-nhl-goalies-for-load-management",
+      "fingerprint": "3459fcf3a71fa6f0",
+      "title_norm": "unmasked: goalies enjoying having ebugs around",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T03:15:35.871411Z"
+    },
+    {
+      "key": "48eb26ef94144da62e849fbf",
+      "url": "https://www.nhl.com/news/topic/game-recap/carolina-hurricanes-calgary-flames-game-recap-october-18-2026",
+      "fingerprint": "0abfc0bef685747b",
+      "title_norm": "sharangovich scores late in third period to lift flames past hurricanes",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T03:15:36.220919Z"
+    },
+    {
+      "key": "86b151230b129a41e7338a98",
+      "url": "https://www.sportsnet.ca/nhl/article/sharangovich-nets-winner-as-flames-snap-hurricanes-seven-game-win-streak",
+      "fingerprint": "812b1c1e174e8f41",
+      "title_norm": "sharangovich nets winner as flames snap hurricanes' seven-game win streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T03:15:36.517176Z"
     }
   ],
   "known_sources": [
