@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T15:00:40.779004Z",
+  "updated_at": "2026-10-19T15:15:35.308317Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12022,6 +12022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T15:00:40.718092Z"
+    },
+    {
+      "key": "430d911eeff92b2d78b6f8c3",
+      "url": "https://www.nhl.com/news/travis-green-signs-deal-as-ottawa-coach-through-2030-2031-season",
+      "fingerprint": "8724e86b3c8e2445",
+      "title_norm": "senators sign coach green through 2030-31 season",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T15:15:35.187521Z"
     }
   ],
   "known_sources": [
