@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T20:30:44.058185Z",
+  "updated_at": "2026-10-19T21:01:19.452067Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12452,6 +12452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T20:30:43.811855Z"
+    },
+    {
+      "key": "e645243820b307de4038e5f6",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-unveils-rendering-for-heritage-classic-in-winnipeg",
+      "fingerprint": "17d2995153a8695f",
+      "title_norm": "nhl unveils rendering for heritage classic in winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T21:01:19.403040Z"
     }
   ],
   "known_sources": [
