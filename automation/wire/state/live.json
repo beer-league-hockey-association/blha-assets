@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T00:15:37.225275Z",
+  "updated_at": "2026-10-19T01:00:36.811096Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11812,6 +11812,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T00:15:37.177574Z"
+    },
+    {
+      "key": "b4050a1c942d1d94d145cef5",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-minnesota-wild-game-recap-october-18-2026",
+      "fingerprint": "18c449f739eecfb3",
+      "title_norm": "kaprizov scores league-leading 10th goal, wild edge blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T01:00:36.488781Z"
+    },
+    {
+      "key": "08571049449c3cd31829ecdb",
+      "url": "https://www.sportsnet.ca/nhl/article/kaprizov-wallstedt-carry-wild-past-blue-jackets",
+      "fingerprint": "6c20e0897c5c4137",
+      "title_norm": "kaprizov, wallstedt carry wild past blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T01:00:36.782834Z"
     }
   ],
   "known_sources": [
