@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-18T23:45:37.355436Z",
+  "updated_at": "2026-10-19T00:15:37.225275Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11772,6 +11772,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-18T23:45:37.266612Z"
+    },
+    {
+      "key": "4dc9f390ece10dce574bebdb",
+      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
+      "fingerprint": "62af8e40e89eeea4",
+      "title_norm": "calum ritchie (nyi) — ritchie left saturday's game with a lower-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T00:15:36.174552Z"
+    },
+    {
+      "key": "134540e503f902e2788b951b",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "fdc71a228d7a4d20",
+      "title_norm": "matias maccelli (nyi) — maccelli left saturday's game with a lower-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T00:15:36.542649Z"
+    },
+    {
+      "key": "a99904a84657b1496939b9c6",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/c7b3c721-ea16-45f7-8b3a-d0d7734e71f8",
+      "fingerprint": "1ca3a0418ea1a0b5",
+      "title_norm": "flames on sportsnet: calgary vs. carolina",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T00:15:36.903954Z"
+    },
+    {
+      "key": "dad7b32f16febd8fb1b7614b",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-hellebuyck-would-make-mammoth-a-cup-contender",
+      "fingerprint": "b81df83cb224b1a6",
+      "title_norm": "sunday overreactions: hellebuyck would make mammoth a cup contender",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T00:15:37.177574Z"
     }
   ],
   "known_sources": [
