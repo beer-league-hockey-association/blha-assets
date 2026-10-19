@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T14:45:36.466373Z",
+  "updated_at": "2026-10-19T15:00:40.779004Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12002,6 +12002,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T14:45:36.332459Z"
+    },
+    {
+      "key": "00c8ef868cff1facf25c3010",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-sign-head-coach-travis-green-to-multi-year-contract-extension",
+      "fingerprint": "cad745dae71b553f",
+      "title_norm": "senators sign head coach travis green to multi-year contract extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:00:40.361257Z"
+    },
+    {
+      "key": "96543a286b0b6a39b87ad6da",
+      "url": "https://www.sportsnet.ca/nhl/video/how-much-juice-do-we-expect-for-our-first-look-at-mckenna-vs-stenberg",
+      "fingerprint": "cdef647941e52f0c",
+      "title_norm": "how much juice do we expect for our first look at mckenna vs. stenberg?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:00:40.718092Z"
     }
   ],
   "known_sources": [
