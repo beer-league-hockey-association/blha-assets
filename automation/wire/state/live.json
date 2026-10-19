@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T19:30:42.506686Z",
+  "updated_at": "2026-10-19T19:45:48.507658Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12382,6 +12382,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T19:30:42.436009Z"
+    },
+    {
+      "key": "8a2673a3bfd7889f6d77e250",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "7a214d7253692b7a",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T19:45:48.383755Z"
     }
   ],
   "known_sources": [
