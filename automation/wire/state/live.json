@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T22:00:41.783900Z",
+  "updated_at": "2026-10-19T22:45:37.450034Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12482,6 +12482,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T22:00:41.735209Z"
+    },
+    {
+      "key": "63d9e11803ac1a0ed6881108",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-couturier/1777",
+      "fingerprint": "b203931f367d8977",
+      "title_norm": "sean couturier (phi) — couturier (undisclosed) is on the ice for warmups and is expected to play vs. colorado.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T22:45:36.867889Z"
+    },
+    {
+      "key": "acdd3fe5017ee3ddf9ded21d",
+      "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
+      "fingerprint": "72005138081a24dc",
+      "title_norm": "tyson foerster (phi) — foerster (hand) will not play monday vs. colorado.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T22:45:37.327498Z"
     }
   ],
   "known_sources": [
