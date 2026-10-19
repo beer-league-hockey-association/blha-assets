@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T14:00:45.062643Z",
+  "updated_at": "2026-10-19T14:45:36.466373Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11982,6 +11982,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-19T14:00:44.932676Z"
+    },
+    {
+      "key": "4a21dcceb8e4f9534b63a077",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "2e21ade4bc78ccdb",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) is expected to be out vs. colorado on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T14:45:36.111016Z"
+    },
+    {
+      "key": "eb7576e90f8e39691ea9bf61",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "6a0205988d9aa04c",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) returned to washington's practice in a non-contact jersey on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T14:45:36.332459Z"
     }
   ],
   "known_sources": [
