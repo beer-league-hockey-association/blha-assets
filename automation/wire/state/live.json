@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T18:00:37.740857Z",
+  "updated_at": "2026-10-19T18:15:36.124494Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12322,6 +12322,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T18:00:37.698657Z"
+    },
+    {
+      "key": "71fe499553b1ee6e7a1a8d72",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-thomas-chabot-out-one-to-two-weeks-with-upper-body-injury",
+      "fingerprint": "7e1228ec16ba9ff7",
+      "title_norm": "senators' thomas chabot out one to two weeks, jake sanderson returning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T18:15:36.035473Z"
     }
   ],
   "known_sources": [
