@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T09:15:36.240616Z",
+  "updated_at": "2026-10-19T12:00:48.736441Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11922,6 +11922,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-19T09:15:36.198252Z"
+    },
+    {
+      "key": "e5c30802bbea468ec7bafacb",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/the-buyck-stops-here",
+      "fingerprint": "63c2593d3a130e87",
+      "title_norm": "32 thoughts podcast: latest buzz on hellebuyck, larkin and the leafs' search",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T12:00:48.688377Z"
     }
   ],
   "known_sources": [
