@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T17:45:40.937121Z",
+  "updated_at": "2026-10-19T18:00:37.740857Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12302,6 +12302,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T17:45:40.903306Z"
+    },
+    {
+      "key": "2a96363160e294383381f601",
+      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
+      "fingerprint": "91c36a9c6e286538",
+      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) will be a game-time decision in utah on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T18:00:37.302526Z"
+    },
+    {
+      "key": "47b72787b9e9f42a31c1ee8c",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-girard/2773",
+      "fingerprint": "66b9f92a220249f9",
+      "title_norm": "samuel girard (pit) — girard (undisclosed) will be a game-time decision in utah on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T18:00:37.698657Z"
     }
   ],
   "known_sources": [
