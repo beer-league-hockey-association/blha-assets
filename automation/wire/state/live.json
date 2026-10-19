@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T13:45:35.060199Z",
+  "updated_at": "2026-10-19T14:00:45.062643Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11972,6 +11972,16 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-10-19T13:45:35.045677Z"
+    },
+    {
+      "key": "5b3fb9a8c2a1f0bc438057b5",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-19-2026",
+      "fingerprint": "78fc6dbd1b43c746",
+      "title_norm": "nhl on tap: rangers look to stay perfect at home",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T14:00:44.932676Z"
     }
   ],
   "known_sources": [
