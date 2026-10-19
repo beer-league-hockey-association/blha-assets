@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T12:00:48.736441Z",
+  "updated_at": "2026-10-19T13:15:34.504634Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11932,6 +11932,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T12:00:48.688377Z"
+    },
+    {
+      "key": "16dbb69fdcc4a63c2fb27175",
+      "url": "https://www.nhl.com/news/topic/short-shifts/flyers-rick-tocchet-gives-game-puck-to-radio-voice-jason-myrtetus",
+      "fingerprint": "36a49e16acac954b",
+      "title_norm": "tocchet gives game puck to flyers radio broadcaster",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T13:15:33.956607Z"
+    },
+    {
+      "key": "133188b4c16a7c946d9d3f21",
+      "url": "https://www.nhl.com/news/topic/short-shifts/tom-wilson-wife-taylor-cast-away-baby-halloween",
+      "fingerprint": "3fa8b55cfccf2bcc",
+      "title_norm": "wilsons share 'cast away' baby in halloween pic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T13:15:34.180666Z"
+    },
+    {
+      "key": "f6ac194247c68f7b2ccb75e3",
+      "url": "https://www.sportsnet.ca/nhl/article/report-maple-leafs-call-up-forward-vinni-lettieri-from-ahl",
+      "fingerprint": "076b10148344258a",
+      "title_norm": "report: maple leafs call up forward vinni lettieri from ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T13:15:34.450198Z"
     }
   ],
   "known_sources": [
