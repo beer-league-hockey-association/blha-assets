@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T13:15:34.504634Z",
+  "updated_at": "2026-10-19T13:45:35.060199Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11962,6 +11962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T13:15:34.450198Z"
+    },
+    {
+      "key": "4f9a8d8b13e3a3cd988182cb",
+      "url": "https://thehockeywriters.com/canucks-prospects-report-novotny-cootes-romani-shine-again",
+      "fingerprint": "2c3e337381be2bc0",
+      "title_norm": "canucks prospects report: novotny, cootes & romani shine again",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-19T13:45:35.045677Z"
     }
   ],
   "known_sources": [
