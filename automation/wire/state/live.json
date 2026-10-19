@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T16:30:44.331922Z",
+  "updated_at": "2026-10-19T17:15:37.712962Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12192,6 +12192,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T16:30:44.100687Z"
+    },
+    {
+      "key": "9e775b350a5a232cc0315c73",
+      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
+      "fingerprint": "e643453887a1cb86",
+      "title_norm": "thomas chabot (ott) — chabot is expected to miss the next 1-2 weeks with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:15:36.139089Z"
+    },
+    {
+      "key": "11ea013d6c0b0354ac9e08ad",
+      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
+      "fingerprint": "71e27c4c66fa9e32",
+      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) returned to pittsburgh's practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:15:36.376395Z"
+    },
+    {
+      "key": "2c75b61cb2e3e2c5f1ea0296",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-how-ivar-stenberg-has-started-with-the-sharks",
+      "fingerprint": "2e9dc26f37a519a8",
+      "title_norm": "scout's analysis: how ivar stenberg has started with the sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:15:36.801595Z"
+    },
+    {
+      "key": "c8b8c7220504e2376daca598",
+      "url": "https://www.nhl.com/news/topic/3-stars/brady-tkachuk-mcdavid-kaprizov-named-nhl-3-stars-of-week-october-19-2026",
+      "fingerprint": "095919554799f406",
+      "title_norm": "b. tkachuk, mcdavid, kaprizov named 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T17:15:37.011976Z"
+    },
+    {
+      "key": "f28b83704c63f24b63ccfd65",
+      "url": "https://theahl.com/news/bump-ahl-player-week",
+      "fingerprint": "b76aa3c2be2e301a",
+      "title_norm": "phantoms' bump named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:15:37.293039Z"
+    },
+    {
+      "key": "76c812b79657386531058671",
+      "url": "https://www.dailyfaceoff.com/players/news/roope-hintz/2863",
+      "fingerprint": "ced90a9c1fa2bdc5",
+      "title_norm": "roope hintz (dal) — hintz (hand) practiced on monday and is expected to play vs. boston on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:15:37.619141Z"
     }
   ],
   "known_sources": [
