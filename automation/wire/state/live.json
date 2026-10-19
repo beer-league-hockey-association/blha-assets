@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T22:45:37.450034Z",
+  "updated_at": "2026-10-19T23:00:44.413988Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12502,6 +12502,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T22:45:37.327498Z"
+    },
+    {
+      "key": "d2c7afdf2bb7757f66fa6bc3",
+      "url": "https://www.sportsnet.ca/nhl/article/everybodys-waiting-jets-in-spotlight-with-hellebuyck-suspension-nearing-end",
+      "fingerprint": "36755fb7af6cfcd3",
+      "title_norm": "'everybody's waiting': jets in spotlight with hellebuyck suspension nearing end",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T23:00:44.356329Z"
     }
   ],
   "known_sources": [
