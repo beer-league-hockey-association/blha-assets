@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T04:00:44.383803Z",
+  "updated_at": "2026-10-19T05:30:38.570307Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11902,6 +11902,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-19T04:00:43.795792Z"
+    },
+    {
+      "key": "e0703458da6c5901e0d3802b",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-youngsters-offer-glimpse-of-brighter-future-in-upset-of-hurricanes",
+      "fingerprint": "623e9ca3dd325be7",
+      "title_norm": "flames' youngsters offer glimpse of brighter future in upset of hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T05:30:38.491973Z"
     }
   ],
   "known_sources": [
