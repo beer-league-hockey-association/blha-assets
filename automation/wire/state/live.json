@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T23:00:44.413988Z",
+  "updated_at": "2026-10-19T23:15:39.028107Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12512,6 +12512,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T23:00:44.356329Z"
+    },
+    {
+      "key": "6c3fc7375b5da89e50c34428",
+      "url": "https://www.dailyfaceoff.com/players/news/william-nylander/2375",
+      "fingerprint": "1fe3951c4cd9a771",
+      "title_norm": "william nylander (tor) — nylander (illness) is on the ice for warmups; he's expected to play vs. the sharks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T23:15:38.909998Z"
     }
   ],
   "known_sources": [
