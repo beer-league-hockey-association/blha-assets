@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T03:15:36.586653Z",
+  "updated_at": "2026-10-19T04:00:44.383803Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11862,6 +11862,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T03:15:36.517176Z"
+    },
+    {
+      "key": "13cd6fc53ea9e61ee54531da",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-18-2026",
+      "fingerprint": "7c4c459d9ba57886",
+      "title_norm": "couturier, foerster questionable tonight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T04:00:43.290206Z"
+    },
+    {
+      "key": "da799b961846878271fa61cc",
+      "url": "https://www.nhl.com/news/color-of-hockey-katelyn-roberts-to-sing-new-york-sirens-song-in-pwhl",
+      "fingerprint": "110372e5ace4813b",
+      "title_norm": "color of hockey: roberts to sing sirens' song in pwhl",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T04:00:43.558352Z"
+    },
+    {
+      "key": "656bfec6cfb108452c87c3da",
+      "url": "https://www.nhl.com/news/gavin-mckenna-watch-no-1-pick-faces-macklin-celebrini-connor-mcdavid",
+      "fingerprint": "cee7bbdfacbc1722",
+      "title_norm": "mckenna watch: no. 1 pick faces celebrini, mcdavid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T04:00:43.776971Z"
+    },
+    {
+      "key": "26775106b3eedec32507c6e3",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-october-19-2026",
+      "fingerprint": "1fa46408f7d83550",
+      "title_norm": "nhl nationally televised games for week of oct. 19",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T04:00:43.795792Z"
     }
   ],
   "known_sources": [
