@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T18:15:36.124494Z",
+  "updated_at": "2026-10-19T18:30:43.830191Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12332,6 +12332,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T18:15:36.035473Z"
+    },
+    {
+      "key": "de2524426e22f3db74c86ce2",
+      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
+      "fingerprint": "45ed816e5f1405fd",
+      "title_norm": "mats zuccarello (lak) — zuccarello (undisclosed) practiced on monday and is trending toward returning on tuesday vs. washington.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T18:30:43.162321Z"
+    },
+    {
+      "key": "65c40de62ebafbdc9539883a",
+      "url": "https://www.sportsnet.ca/nhl/article/im-going-to-be-nervous-panthers-brady-tkachuk-on-ottawa-return",
+      "fingerprint": "9a31611821384376",
+      "title_norm": "'i'm going to be nervous': panthers' brady tkachuk on ottawa return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T18:30:43.407439Z"
+    },
+    {
+      "key": "6fa4a4bb2930faef399e474d",
+      "url": "https://www.nhl.com/news/anaheim-ducks-endure-travel-issues-to-new-york",
+      "fingerprint": "545350a6fa3f093b",
+      "title_norm": "ducks endure travel issues to new york 'like pros'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T18:30:43.711172Z"
     }
   ],
   "known_sources": [
