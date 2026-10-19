@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T17:30:40.147016Z",
+  "updated_at": "2026-10-19T17:45:40.937121Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12272,6 +12272,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T17:30:40.120771Z"
+    },
+    {
+      "key": "1d342570aa5c0e7411ad5486",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
+      "fingerprint": "afdf041818d35913",
+      "title_norm": "mikael granlund (ana) — granlund (upper-body) will return in new york on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:45:40.354963Z"
+    },
+    {
+      "key": "07cca6572fed9864b2f7ad93",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-helleson/30429",
+      "fingerprint": "677e9af3abf96415",
+      "title_norm": "drew helleson (ana) — helleson (lower-body) is out vs. new york on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:45:40.643259Z"
+    },
+    {
+      "key": "a9891b378cc3ccbaaa6ec300",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-notebook-mckenna-excited-for-stenberg-showdown",
+      "fingerprint": "81d25d3d962e55f2",
+      "title_norm": "maple leafs notebook: mckenna 'excited' for stenberg showdown",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T17:45:40.903306Z"
     }
   ],
   "known_sources": [
