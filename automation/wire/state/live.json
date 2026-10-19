@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T19:45:48.507658Z",
+  "updated_at": "2026-10-19T20:30:44.058185Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12392,6 +12392,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T19:45:48.383755Z"
+    },
+    {
+      "key": "fa1901d1ef3793273780b8b7",
+      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
+      "fingerprint": "5578a6fcdb43eaa3",
+      "title_norm": "calum ritchie (nyi) — ritchie (lower-body) will miss the next 4-6 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T20:30:42.768335Z"
+    },
+    {
+      "key": "de85e5b42cf4f0bc681dc423",
+      "url": "https://www.sportsnet.ca/nhl/article/sabres-captain-rasmus-dahlin-ready-to-return-vs-flyers-on-wednesday",
+      "fingerprint": "25d6229a6ad73bdb",
+      "title_norm": "sabres captain rasmus dahlin 'ready' to return vs. flyers on wednesday",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T20:30:43.038330Z"
+    },
+    {
+      "key": "37510e8d1f99730e3f4f9612",
+      "url": "https://www.nhl.com/news/brady-tkachuk-ready-for-special-return-to-ottawa-with-florida",
+      "fingerprint": "556255d89afee91e",
+      "title_norm": "b. tkachuk anticipates 'special' return to ottawa",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T20:30:43.264215Z"
+    },
+    {
+      "key": "a321863156bfdcde43acf832",
+      "url": "https://www.nhl.com/news/los-angeles-kings-hit-road-looking-for-first-win-of-season",
+      "fingerprint": "03adba452f5e72dc",
+      "title_norm": "kings looking for 1st win, hope to 'start rolling'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-19T20:30:43.536787Z"
+    },
+    {
+      "key": "94c9cbdde91c94d40dd7723c",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "d013dd9c8942b9f4",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower-body) will miss the next 2-4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T20:30:43.767796Z"
+    },
+    {
+      "key": "e09c7d77ba8e0c4bcc591175",
+      "url": "https://www.sportsnet.ca/nhl/article/travis-green-rewarded-as-senators-contention-window-opens",
+      "fingerprint": "7dd07bf512086774",
+      "title_norm": "travis green rewarded as senators' contention window opens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-19T20:30:43.811855Z"
     }
   ],
   "known_sources": [
