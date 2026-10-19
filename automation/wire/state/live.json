@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T05:30:38.570307Z",
+  "updated_at": "2026-10-19T09:15:36.240616Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -11912,6 +11912,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T05:30:38.491973Z"
+    },
+    {
+      "key": "bdaf2eda7d7422950b741ed9",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-4-e3qnhd7",
+      "fingerprint": "77db83bcb44ced6b",
+      "title_norm": "puzzling players: what do we do with these guys? | fantasy hockey week 4",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-19T09:15:36.198252Z"
     }
   ],
   "known_sources": [
