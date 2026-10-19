@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T15:30:48.544836Z",
+  "updated_at": "2026-10-19T15:48:48.882859Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12082,6 +12082,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-19T15:30:48.232264Z"
+    },
+    {
+      "key": "b92d4962c58f6164df7c7f9d",
+      "url": "https://www.dailyfaceoff.com/players/news/william-nylander/2375",
+      "fingerprint": "96b4573ae8fcff61",
+      "title_norm": "william nylander (tor) — nylander (illness) will be a game-time decision vs. san jose on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T15:48:48.440820Z"
+    },
+    {
+      "key": "76d7f000468dfda8fc608d11",
+      "url": "https://audioboom.com/posts/8966491",
+      "fingerprint": "6c49a56ec9042d17",
+      "title_norm": "week 4 pickups; sneaky rookies",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-19T15:48:48.856832Z"
     }
   ],
   "known_sources": [
