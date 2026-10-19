@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T19:00:44.187477Z",
+  "updated_at": "2026-10-19T19:30:42.506686Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12372,6 +12372,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T19:00:44.149486Z"
+    },
+    {
+      "key": "7b8161699b09ecfd4b5b5321",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
+      "fingerprint": "5c2bd47175eaf735",
+      "title_norm": "pavel zacha (bos) — zacha (upper-body) will be a game-time decision vs. dallas on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-19T19:30:42.436009Z"
     }
   ],
   "known_sources": [
