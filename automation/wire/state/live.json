@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T02:00:39.267183Z",
+  "updated_at": "2026-10-20T02:15:34.383738Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12622,6 +12622,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T02:00:39.218329Z"
+    },
+    {
+      "key": "a2586911cccd0955cd016639",
+      "url": "https://www.nhl.com/news/anaheim-ducks-new-york-rangers-game-recap-october-19-2026",
+      "fingerprint": "e4a421389148676a",
+      "title_norm": "garand makes 29 saves, rangers defeat ducks to stay undefeated at home",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T02:15:34.102863Z"
+    },
+    {
+      "key": "8921c1ef0924728db258a621",
+      "url": "https://www.sportsnet.ca/nhl/video/mckenna-dangles-in-tight-and-fires-home-beauty-to-give-leafs-lead-vs-sharks",
+      "fingerprint": "dda5a448c44ae7b2",
+      "title_norm": "mckenna dangles in tight and fires home beauty to give leafs lead vs. sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T02:15:34.347358Z"
     }
   ],
   "known_sources": [
