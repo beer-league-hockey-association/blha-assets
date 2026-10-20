@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T17:00:43.940906Z",
+  "updated_at": "2026-10-20T17:15:38.633403Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12912,6 +12912,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T17:00:43.803117Z"
+    },
+    {
+      "key": "f99adb2ff22f2f6f29a8a84e",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
+      "fingerprint": "c70a9ca6c51c3ee4",
+      "title_norm": "mikael backlund (cgy) — backlund (undisclosed) did not practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T17:15:38.232675Z"
+    },
+    {
+      "key": "8d1fec02f34a781f4bcb3f2c",
+      "url": "https://www.dailyfaceoff.com/players/news/ross-johnston/3759",
+      "fingerprint": "ac50dce5b0a8ca9a",
+      "title_norm": "ross johnston (stl) — johnston has been placed on ir with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T17:15:38.524083Z"
     }
   ],
   "known_sources": [
