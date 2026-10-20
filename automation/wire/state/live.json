@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T14:15:38.451066Z",
+  "updated_at": "2026-10-20T15:00:44.072348Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12782,6 +12782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-20T14:15:38.390061Z"
+    },
+    {
+      "key": "0a1e3c0a31c0f450580671eb",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
+      "fingerprint": "46b29f65f0331c98",
+      "title_norm": "connor brown (njd) — brown (lower-body) will make his season debut vs. colorado on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T15:00:43.946440Z"
     }
   ],
   "known_sources": [
