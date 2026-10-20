@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T01:00:41.155657Z",
+  "updated_at": "2026-10-20T02:00:39.267183Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12602,6 +12602,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T01:00:41.069969Z"
+    },
+    {
+      "key": "b8025c1bf89e24b09d3d47d8",
+      "url": "https://www.nhl.com/news/colorado-avalanche-philadelphia-flyers-game-recap-october-19-2026",
+      "fingerprint": "8bf2f7ddfa715883",
+      "title_norm": "michkov scores twice, flyers hold off avalanche",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T02:00:38.940009Z"
+    },
+    {
+      "key": "4aea4ef56b36e1e33041cd9b",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-top-ducks-to-remain-undefeated-at-home",
+      "fingerprint": "c97fa70da684a161",
+      "title_norm": "rangers top ducks to remain undefeated at home",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T02:00:39.218329Z"
     }
   ],
   "known_sources": [
