@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T21:15:39.896895Z",
+  "updated_at": "2026-10-20T22:00:37.316227Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13072,6 +13072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T21:15:39.838663Z"
+    },
+    {
+      "key": "45613ca5a57fb822f4dc75e3",
+      "url": "https://www.sportsnet.ca/nhl/article/why-brady-tkachuks-return-to-ottawa-promises-to-be-emotionally-charged",
+      "fingerprint": "ebe8e60db56f57ba",
+      "title_norm": "why brady tkachuk's return to ottawa promises to be emotionally charged",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T22:00:37.239797Z"
     }
   ],
   "known_sources": [
