@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T16:15:35.089010Z",
+  "updated_at": "2026-10-20T16:30:36.475801Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12862,6 +12862,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T16:15:34.711782Z"
+    },
+    {
+      "key": "2ba2be76b7796c2bf33eda81",
+      "url": "https://www.sportsnet.ca/nhl/article/brady-tkachuk-says-hell-donate-jerseys-thrown-on-ice-in-return-game-to-ottawa",
+      "fingerprint": "b12c40725fd01790",
+      "title_norm": "brady tkachuk says he'll donate jerseys thrown on ice in return game to ottawa",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:30:36.340486Z"
     }
   ],
   "known_sources": [
