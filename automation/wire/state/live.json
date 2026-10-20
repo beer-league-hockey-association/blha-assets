@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T20:00:44.120583Z",
+  "updated_at": "2026-10-20T20:15:45.429794Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13012,6 +13012,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T20:00:44.018098Z"
+    },
+    {
+      "key": "069c4817e3d716ab22c90c64",
+      "url": "https://www.inquirer.com/flyers/cole-knuble-nhl-debut-dad-mike-history-notre-dame-20261020.html",
+      "fingerprint": "34b5bd886af8e0eb",
+      "title_norm": "knuble living out own nhl dream on dad's ice",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-20T20:15:45.320272Z"
     }
   ],
   "known_sources": [
