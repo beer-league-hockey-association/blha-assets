@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T19:15:45.427938Z",
+  "updated_at": "2026-10-20T19:45:36.265103Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12992,6 +12992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-20T19:15:45.318727Z"
+    },
+    {
+      "key": "87a011e873bd9f37600cc91c",
+      "url": "https://www.sportsnet.ca/nhl/article/knies-marchenko-brace-for-emotional-reunions-as-maple-leafs-visit-blue-jackets",
+      "fingerprint": "ea7237f99bd551a4",
+      "title_norm": "knies, marchenko brace for emotional reunions as maple leafs visit blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T19:45:36.203023Z"
     }
   ],
   "known_sources": [
