@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T23:00:41.887587Z",
+  "updated_at": "2026-10-20T23:45:40.715326Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13112,6 +13112,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T23:00:41.829841Z"
+    },
+    {
+      "key": "75d0d0a0981077feff7384b7",
+      "url": "https://www.sportsnet.ca/nhl/video/marchenko-redirects-puck-past-greaves-to-score-against-former-team",
+      "fingerprint": "911e32566b2b19ae",
+      "title_norm": "marchenko redirects puck past greaves to score against former team",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T23:45:40.655466Z"
     }
   ],
   "known_sources": [
