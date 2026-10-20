@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T05:45:34.824827Z",
+  "updated_at": "2026-10-20T08:15:37.081461Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12752,6 +12752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T05:45:34.768967Z"
+    },
+    {
+      "key": "d0626556b78b587a86c33bb6",
+      "url": "https://www.sportsnet.ca/nhl/article/michkov-scores-twice-as-flyers-beat-avalanche-for-second-straight-win",
+      "fingerprint": "ad114364955a48e7",
+      "title_norm": "michkov scores twice as flyers beat avalanche for second straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T08:15:37.025904Z"
     }
   ],
   "known_sources": [
