@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T05:00:38.882884Z",
+  "updated_at": "2026-10-20T05:45:34.824827Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12742,6 +12742,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T05:00:38.853343Z"
+    },
+    {
+      "key": "ccf3161a8072dd63173cfe79",
+      "url": "https://www.sportsnet.ca/nhl/video/how-will-senators-fans-welcome-tkachuk-back-to-ottawa",
+      "fingerprint": "889228ab587f3730",
+      "title_norm": "how will senators fans welcome tkachuk back to ottawa?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T05:45:34.768967Z"
     }
   ],
   "known_sources": [
