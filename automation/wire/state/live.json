@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T04:15:32.604911Z",
+  "updated_at": "2026-10-20T04:45:39.390755Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12702,6 +12702,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-20T04:15:32.518153Z"
+    },
+    {
+      "key": "730451cd82c1638fa632ee42",
+      "url": "https://www.nhl.com/news/connor-mcdavid-off-to-torrid-start-with-edmonton-oilers",
+      "fingerprint": "c2f7993ed3339f3e",
+      "title_norm": "mcdavid thriving for 'detailed, structured' oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T04:45:38.701988Z"
+    },
+    {
+      "key": "d700c66023d1f2cd7254cba2",
+      "url": "https://www.nhl.com/news/jamie-benn-still-chasing-stanley-cup-with-dallas-stars",
+      "fingerprint": "58cba9b6e4fc0358",
+      "title_norm": "benn 'putting in the work' at age 37 with stars",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T04:45:39.014652Z"
+    },
+    {
+      "key": "e87d6cae633da78521bde546",
+      "url": "https://www.sportsnet.ca/nhl/article/big-time-player-mckenna-helps-maple-leafs-snap-skid",
+      "fingerprint": "f79a530359e1742d",
+      "title_norm": "'big-time player' mckenna helps maple leafs snap skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T04:45:39.319150Z"
     }
   ],
   "known_sources": [
