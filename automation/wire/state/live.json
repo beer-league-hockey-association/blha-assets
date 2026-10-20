@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T17:15:38.633403Z",
+  "updated_at": "2026-10-20T17:33:21.249143Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12932,6 +12932,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T17:15:38.524083Z"
+    },
+    {
+      "key": "e3c13518d76c390178e521da",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
+      "fingerprint": "0f8a25838aa646fa",
+      "title_norm": "brandon montour (sea) — montour (lower-body) will be a game-time decision vs. detroit on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T17:33:21.165721Z"
     }
   ],
   "known_sources": [
