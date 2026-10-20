@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T19:45:36.265103Z",
+  "updated_at": "2026-10-20T20:00:44.120583Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13002,6 +13002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T19:45:36.203023Z"
+    },
+    {
+      "key": "91157e36442fb1853cad68d0",
+      "url": "https://www.dailyfaceoff.com/players/news/nico-sturm/27037",
+      "fingerprint": "3e5724e69e4f0275",
+      "title_norm": "nico sturm (min) — sturm (upper-body) will return to minnesota's lineup in edmonton on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T20:00:44.018098Z"
     }
   ],
   "known_sources": [
