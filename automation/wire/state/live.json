@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T03:00:36.721005Z",
+  "updated_at": "2026-10-20T03:30:36.109593Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12662,6 +12662,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-20T03:00:36.646413Z"
+    },
+    {
+      "key": "9d49eb860cc0b88687387e1b",
+      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
+      "fingerprint": "7ba5aac2603c145c",
+      "title_norm": "bryan rust (pit) — rust left monday's game with a lower-body injury and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T03:30:36.016982Z"
     }
   ],
   "known_sources": [
