@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T18:45:39.086273Z",
+  "updated_at": "2026-10-20T19:15:45.427938Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12982,6 +12982,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T18:45:38.946832Z"
+    },
+    {
+      "key": "656ab8a7c3c30753e7ddfdf4",
+      "url": "https://www.nhl.com/news/brady-tkachuk-return-to-ottawa-will-be-fun-game-for-senators",
+      "fingerprint": "7733aeeaed1ff608",
+      "title_norm": "tkachuk return to ottawa will be 'fun game' for sens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T19:15:45.318727Z"
     }
   ],
   "known_sources": [
