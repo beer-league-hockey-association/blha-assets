@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T02:45:40.578945Z",
+  "updated_at": "2026-10-20T03:00:36.721005Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12652,6 +12652,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T02:45:40.511748Z"
+    },
+    {
+      "key": "eedef537c6819c68994cd191",
+      "url": "https://www.nhl.com/news/san-jose-sharks-toronto-maple-leafs-game-recap-october-19-2026",
+      "fingerprint": "c34f14a20d0f1eea",
+      "title_norm": "mckenna scores go-ahead goal in third, lifts maple leafs past stenberg, sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T03:00:36.646413Z"
     }
   ],
   "known_sources": [
