@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T03:30:36.109593Z",
+  "updated_at": "2026-10-20T03:45:35.985572Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12672,6 +12672,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T03:30:36.016982Z"
+    },
+    {
+      "key": "25290c8fe4964b8848c2af0a",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "c729dbbf2083fb9d",
+      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) left monday's game and is questionable for tuesday in montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T03:45:35.626625Z"
+    },
+    {
+      "key": "337e58b6edc3d9d476db4833",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-coach-joel-quenneville-our-top-guys-werent-very-good-vs-rangers",
+      "fingerprint": "137152da0d607cfc",
+      "title_norm": "ducks coach joel quenneville: 'our top guys weren't very good' vs. rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T03:45:35.931846Z"
     }
   ],
   "known_sources": [
