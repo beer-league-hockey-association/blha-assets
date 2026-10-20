@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T21:00:43.842442Z",
+  "updated_at": "2026-10-20T21:15:39.896895Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13052,6 +13052,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-20T21:00:43.767304Z"
+    },
+    {
+      "key": "ac13be8f426e1d3e3991b18e",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
+      "fingerprint": "0d73e5b2e437a18a",
+      "title_norm": "michael carcone (uta) — carone (upper-body) has been placed on ir and remains week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T21:15:39.547647Z"
+    },
+    {
+      "key": "6a440d3b54ba5174ba5042e9",
+      "url": "https://www.sportsnet.ca/nhl/article/q-and-a-with-devin-cooley-flames-goaltender-talks-latest-viral-moment",
+      "fingerprint": "33420d3b991183d7",
+      "title_norm": "q and a with devin cooley: flames goaltender talks latest viral moment",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T21:15:39.838663Z"
     }
   ],
   "known_sources": [
