@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T18:30:41.051601Z",
+  "updated_at": "2026-10-20T18:45:39.086273Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12972,6 +12972,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-20T18:30:40.947358Z"
+    },
+    {
+      "key": "24d455a2d1bb692ca0b952bb",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
+      "fingerprint": "e2ee9b49ac8aba05",
+      "title_norm": "mikael backlund (cgy) — backlund (upper-body did not practice on tuesday and is day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T18:45:38.946832Z"
     }
   ],
   "known_sources": [
