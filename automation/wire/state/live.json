@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T20:45:34.973422Z",
+  "updated_at": "2026-10-20T21:00:43.842442Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13032,6 +13032,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T20:45:34.865274Z"
+    },
+    {
+      "key": "1de206046f1f095fa388d379",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "e6f5a90af4371436",
+      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) is out vs. montreal on tuesday and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T21:00:43.510390Z"
+    },
+    {
+      "key": "60f3c30844dd2731044eba18",
+      "url": "https://www.nhl.com/news/ben-kindel-status-update-october-20-2026",
+      "fingerprint": "1adebd7df3db1b91",
+      "title_norm": "kindel stable after medical episode on pens plane",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T21:00:43.767304Z"
     }
   ],
   "known_sources": [
