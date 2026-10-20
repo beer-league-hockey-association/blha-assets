@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T16:30:36.475801Z",
+  "updated_at": "2026-10-20T16:45:37.191290Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12872,6 +12872,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T16:30:36.340486Z"
+    },
+    {
+      "key": "cdd7608a85e1d4cd7419e694",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-danforth/28122",
+      "fingerprint": "ae20d06a235db123",
+      "title_norm": "justin danforth (buf) — danforth (upper-body) did not practice on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:45:36.868014Z"
+    },
+    {
+      "key": "df2896c0ed5f89b9dc862d99",
+      "url": "https://www.dailyfaceoff.com/players/news/sam-carrick/1914",
+      "fingerprint": "2aebb20c4775365c",
+      "title_norm": "sam carrick (buf) — carrick (middle body) did not practice on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:45:37.103650Z"
     }
   ],
   "known_sources": [
