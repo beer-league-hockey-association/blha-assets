@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T20:15:45.429794Z",
+  "updated_at": "2026-10-20T20:45:34.973422Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13022,6 +13022,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-20T20:15:45.320272Z"
+    },
+    {
+      "key": "4d6102dd64b11840e03205cc",
+      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
+      "fingerprint": "41a1ea3ece4e91f2",
+      "title_norm": "ben kindel (pit) — kindel (undisclosed) is out indefinitely.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T20:45:34.865274Z"
     }
   ],
   "known_sources": [
