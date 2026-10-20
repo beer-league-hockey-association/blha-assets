@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T18:00:41.950148Z",
+  "updated_at": "2026-10-20T18:30:41.051601Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12952,6 +12952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T18:00:41.906254Z"
+    },
+    {
+      "key": "1f6e88b35a3487894c186c5e",
+      "url": "https://www.sportsnet.ca/nhl/article/how-gavin-mckennas-first-10-games-compare-to-other-first-overall-picks",
+      "fingerprint": "c1ec7b4133d29b5c",
+      "title_norm": "how gavin mckenna's first 10 games compare to other first-overall picks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T18:30:40.627168Z"
+    },
+    {
+      "key": "c4a3563e5ffb02cfae1e99f9",
+      "url": "https://www.nhl.com/senators/news/andlauer-reflects-on-a-foundation-growing-stronger-by-the-day-on-as-he-enters-his-fourth-season-as-senators-owner",
+      "fingerprint": "717bb65d6378bd07",
+      "title_norm": "sens' foundation growing stronger by the day",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-20T18:30:40.947358Z"
     }
   ],
   "known_sources": [
