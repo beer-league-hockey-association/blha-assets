@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T15:45:37.168732Z",
+  "updated_at": "2026-10-20T16:15:35.089010Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12802,6 +12802,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T15:45:37.099701Z"
+    },
+    {
+      "key": "dbf382632147d98dcaacb780",
+      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
+      "fingerprint": "4210ecd3a7283569",
+      "title_norm": "mats zuccarello (lak) — zuccarello (undisclosed) will return in washington on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:15:33.419537Z"
+    },
+    {
+      "key": "c728aaf5afbf926b99c94942",
+      "url": "https://www.nhl.com/news/gavin-mckenna-delivers-in-crucial-moment-as-maple-leafs-take-down-sharks",
+      "fingerprint": "331313b76d3da385",
+      "title_norm": "mckenna steps up, delivers in big moment for maple leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T16:15:33.785966Z"
+    },
+    {
+      "key": "9edd48719b0baf8d72c9f07b",
+      "url": "https://www.nhl.com/news/nhl-inspired-by-cabin-cottage-culture-for-heritage-classic-field-design",
+      "fingerprint": "a453a5078e8f2706",
+      "title_norm": "'cabin cottage culture' inspires heritage classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T16:15:34.016385Z"
+    },
+    {
+      "key": "bc5851730c32e6e154a5acf9",
+      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
+      "fingerprint": "a936c426a0a5bfc4",
+      "title_norm": "radko gudas (fla) — gudas (undisclosed) will return vs. ottawa on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:15:34.360431Z"
+    },
+    {
+      "key": "221afd42d1f18b9d142fa8ee",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
+      "fingerprint": "a47c528e8ca87d64",
+      "title_norm": "jacob markstrom (fla) — markstrom is expected to miss 10-14 days with an undisclosed injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:15:34.702633Z"
+    },
+    {
+      "key": "02df54188df4a8206bb45f1d",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
+      "fingerprint": "e5993fbb5ffde72b",
+      "title_norm": "jacob markstrom (fla) — markstrom (undisclosed) is expected to be out for the next two weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T16:15:34.711782Z"
     }
   ],
   "known_sources": [
