@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T22:00:37.316227Z",
+  "updated_at": "2026-10-20T22:45:36.091075Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13082,6 +13082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T22:00:37.239797Z"
+    },
+    {
+      "key": "6d7728713b29e6ddb76fe1e2",
+      "url": "https://www.dailyfaceoff.com/players/news/judd-caulfield/30440",
+      "fingerprint": "6bdefedf02c2afe5",
+      "title_norm": "judd caulfield (ana) — caulfield (personal) returned to anaheim for the birth of his child and will not play tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T22:45:36.020518Z"
     }
   ],
   "known_sources": [
