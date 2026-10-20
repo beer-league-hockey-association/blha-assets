@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-19T23:43:54.262001Z",
+  "updated_at": "2026-10-20T00:45:32.904755Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12552,6 +12552,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-19T23:43:54.202738Z"
+    },
+    {
+      "key": "9e99fbe953e5252abe38365b",
+      "url": "https://www.dailyfaceoff.com/players/news/john-marino/25570",
+      "fingerprint": "429b8466d7cb8b7c",
+      "title_norm": "john marino (uta) — marino (upper-body) will not play monday vs. the penguins.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T00:45:32.132781Z"
+    },
+    {
+      "key": "f8c690a91f7fe4a06a077bb4",
+      "url": "https://www.sportsnet.ca/nhl/article/report-trial-set-for-man-accused-of-killing-gaudreau-brothers",
+      "fingerprint": "7e4ff68f09c43daf",
+      "title_norm": "report: trial set for man accused of killing gaudreau brothers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T00:45:32.466999Z"
+    },
+    {
+      "key": "328093c143d27a303d5ed918",
+      "url": "https://www.sportsnet.ca/nhl/article/cole-knuble-son-of-mike-knuble-makes-nhl-debut-with-flyers",
+      "fingerprint": "6ef52650e7372a78",
+      "title_norm": "cole knuble, son of mike knuble, makes nhl debut with flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T00:45:32.870769Z"
     }
   ],
   "known_sources": [
