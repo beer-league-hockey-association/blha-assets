@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T16:45:37.191290Z",
+  "updated_at": "2026-10-20T17:00:43.940906Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12892,6 +12892,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T16:45:37.103650Z"
+    },
+    {
+      "key": "60753b26b126e936041e6e71",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
+      "fingerprint": "7707d0d6c30e2adc",
+      "title_norm": "pavel zacha (bos) — zacha (upper-body) will play in dallas on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T17:00:43.537387Z"
+    },
+    {
+      "key": "bac88ad4fc7901e191c4cd90",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-adam-engstrom-jakub-dobes-draw-in-against-sharks",
+      "fingerprint": "c9f605916f768eae",
+      "title_norm": "canadiens' adam engstrom, jakub dobes draw in against sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T17:00:43.803117Z"
     }
   ],
   "known_sources": [
