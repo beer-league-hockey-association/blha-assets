@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T08:15:37.081461Z",
+  "updated_at": "2026-10-20T13:45:41.832642Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12762,6 +12762,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T08:15:37.025904Z"
+    },
+    {
+      "key": "3a93651f4cc3a0bcbda6b52d",
+      "url": "https://www.sportsnet.ca/nhl/article/analyzing-why-matthew-knies-has-cooled-after-a-hot-start-for-blue-jackets",
+      "fingerprint": "7c407c41d9abee33",
+      "title_norm": "analyzing why matthew knies has cooled after a hot start for blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T13:45:41.710099Z"
     }
   ],
   "known_sources": [
