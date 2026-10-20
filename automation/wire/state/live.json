@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T15:00:44.072348Z",
+  "updated_at": "2026-10-20T15:45:37.168732Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12792,6 +12792,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T15:00:43.946440Z"
+    },
+    {
+      "key": "687250660e4e2bc59b5eec2b",
+      "url": "https://www.dailyfaceoff.com/players/news/esa-lindell/2517",
+      "fingerprint": "726cdd8b8b3a21c5",
+      "title_norm": "esa lindell (dal) — lindell (lower-body) will be out vs. boston on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-20T15:45:37.099701Z"
     }
   ],
   "known_sources": [
