@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T17:33:21.249143Z",
+  "updated_at": "2026-10-20T18:00:41.950148Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12942,6 +12942,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-20T17:33:21.165721Z"
+    },
+    {
+      "key": "37497481e454b21c99c0c3c8",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-fantilli-says-playing-with-disgruntled-teammate-would-be-nightmare",
+      "fingerprint": "0f4f584a56965395",
+      "title_norm": "blue jackets' fantilli says playing with disgruntled teammate would be 'nightmare'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T18:00:41.906254Z"
     }
   ],
   "known_sources": [
