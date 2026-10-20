@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T13:45:41.832642Z",
+  "updated_at": "2026-10-20T14:15:38.451066Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12772,6 +12772,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T13:45:41.710099Z"
+    },
+    {
+      "key": "29916e3ec04e651fffd98e39",
+      "url": "https://www.nhl.com/news/nhl-tonight-to-celebrate-5000th-episode-october-27-2026",
+      "fingerprint": "f3d658ee7a042ebd",
+      "title_norm": "'nhl tonight' to celebrate 5,000th episode on oct. 27",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-20T14:15:38.390061Z"
     }
   ],
   "known_sources": [
