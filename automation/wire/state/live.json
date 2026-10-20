@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T02:15:34.383738Z",
+  "updated_at": "2026-10-20T02:45:40.578945Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -12642,6 +12642,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T02:15:34.347358Z"
+    },
+    {
+      "key": "ebeddc8ef859c4b19439c9ee",
+      "url": "https://www.sportsnet.ca/nhl/article/mckenna-scores-game-winner-to-lift-leafs-over-sharks-snap-three-game-skid",
+      "fingerprint": "bb3ebbd338bf3e5a",
+      "title_norm": "mckenna scores game-winner to lift leafs over sharks, snap three-game skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-20T02:45:40.511748Z"
     }
   ],
   "known_sources": [
