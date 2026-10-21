@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T16:45:39.579544Z",
+  "updated_at": "2026-10-21T17:15:40.674419Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13582,6 +13582,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-21T16:45:39.460178Z"
+    },
+    {
+      "key": "107a7dbba491334ce6252760",
+      "url": "https://www.sportsnet.ca/nhl/article/marc-edouard-vlasic-says-hes-done-playing-hockey",
+      "fingerprint": "17eb18b013adf0ec",
+      "title_norm": "marc-edouard vlasic says he's done playing hockey",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T17:15:40.624018Z"
     }
   ],
   "known_sources": [
