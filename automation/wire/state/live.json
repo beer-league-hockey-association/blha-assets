@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T00:15:36.163514Z",
+  "updated_at": "2026-10-21T01:15:41.018853Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13142,6 +13142,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T00:15:36.122881Z"
+    },
+    {
+      "key": "61005bbc30824d5b7d548a72",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-jake-mccabe-exits-after-taking-stick-to-face-vs-blue-jackets",
+      "fingerprint": "42fb6cd9f7f5e5f7",
+      "title_norm": "maple leafs' jake mccabe exits after taking stick to face vs. blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T01:15:40.665270Z"
+    },
+    {
+      "key": "aaabf88f50479dd84ff6a481",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/4d399c02-6301-4b3d-a590-ff58165d3ff2",
+      "fingerprint": "8382bbfd400bc89c",
+      "title_norm": "oilers on sportsnet: edmonton vs. minnesota",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T01:15:40.977732Z"
     }
   ],
   "known_sources": [
