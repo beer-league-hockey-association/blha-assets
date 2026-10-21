@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T17:15:40.674419Z",
+  "updated_at": "2026-10-21T18:00:42.599353Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13592,6 +13592,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T17:15:40.624018Z"
+    },
+    {
+      "key": "84a5337251e90c2a94e273e6",
+      "url": "https://www.dailyfaceoff.com/players/news/dante-fabbro/2651",
+      "fingerprint": "17a353a27e77bfd2",
+      "title_norm": "dante fabbro (cbj) — fabbro (hand) has a chance to return on saturday vs. vegas.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T18:00:42.190875Z"
+    },
+    {
+      "key": "6bbb0e5c82e88342ac7ba311",
+      "url": "https://www.sportsnet.ca/nhl/article/early-analysis-what-are-this-years-maple-leafs",
+      "fingerprint": "5518e888b3e0bd36",
+      "title_norm": "early analysis: what are this year's maple leafs?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T18:00:42.538617Z"
     }
   ],
   "known_sources": [
