@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T05:00:38.841348Z",
+  "updated_at": "2026-10-21T05:15:36.437534Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13372,6 +13372,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T05:00:38.799205Z"
+    },
+    {
+      "key": "b18a69deced6d84051e54cae",
+      "url": "https://www.nhl.com/news/detroit-red-wings-seattle-kraken-game-recap-october-20-2026",
+      "fingerprint": "d05c5cec32ba7016",
+      "title_norm": "kraken recover in shootout after blowing 3-goal lea",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T05:15:35.899954Z"
+    },
+    {
+      "key": "809dc6472a827744c899b646",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-vancouver-canucks-game-recap-october-20-2026",
+      "fingerprint": "59c038cca267fd4a",
+      "title_norm": "hurricanes score six, pull away from slumping canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T05:15:36.110900Z"
+    },
+    {
+      "key": "6ecad6f9757e2f16bb912718",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-skid-hits-eight-games-with-loss-to-hurricanes",
+      "fingerprint": "800fd5eea4c05ab1",
+      "title_norm": "canucks' skid hits eight games with loss to hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T05:15:36.398730Z"
     }
   ],
   "known_sources": [
