@@ -335,11 +335,19 @@ class RetroTests(Fixture):
         seasons = retro.season_stats(landing, goalie=False)
         self.assertEqual(list(seasons), [20282029])
         self.assertEqual(seasons[20282029]["gp"], 70)
-        self.assertAlmostEqual(seasons[20282029]["value"], 12 * 5 + 23 * 2.95 + 140 * 0.55)
+        self.assertAlmostEqual(seasons[20282029]["value"], 12 * 5 + 23 * 2.97 + 140 * 0.53)
         goalie = retro.season_stats({"seasonTotals": [{"season": 20282029, "leagueAbbrev": "NHL", "gameTypeId": 2,
                                                        "gamesPlayed": 10, "gamesStarted": 9, "shotsAgainst": 300,
                                                        "goalsAgainst": 25}]}, goalie=True)
-        self.assertAlmostEqual(goalie[20282029]["value"], 9 * 6.5 + 275 * 0.49 - 25 * 5)
+        self.assertAlmostEqual(goalie[20282029]["value"], 9 * 5.0 + 275 * 0.56 - 25 * 5)
+
+    def test_retro_values_match_the_constitution(self) -> None:
+        import constitution_source as cs
+        sk = {k: float(v) for k, v in cs.SKATERS}
+        go = {k: float(v) for k, v in cs.GOALIES}
+        self.assertEqual(retro.SKATER, {"goals": sk["Goal"], "assists": sk["Assist"], "shots": sk["Shot on Goal"]})
+        self.assertEqual(retro.GOALIE, {"starts": go["Game Started"], "saves": go["Save"], "goals_against": go["Goal Against"],
+                                        "goals": go["Goalie Goal"], "assists": go["Goalie Assist"]})
 
     def test_fetch_stats_matches_like_the_minor_eligibility_watch(self) -> None:
         index = retro.minors.Index()

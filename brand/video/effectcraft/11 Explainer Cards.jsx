@@ -42,9 +42,9 @@ var DATA = {
         {
             name: "How Scoring Works", length: 60, cards: [
                 { at: 0, kind: "title", eyebrow: "HEAD-TO-HEAD POINTS", title: "HOW SCORING WORKS", sub: "EVERY VALUE IS IN ARTICLE VIII" },
-                { at: 4, kind: "card", eyebrow: "SKATERS", title: "EVERY VALUE", lines: ["GOAL  +5.00", "ASSIST  +2.95", "SHOT ON GOAL  +0.55", "BLOCK  +0.35", "HIT  +0.20", "PENALTY MINUTE  -0.54"] },
-                { at: 20, kind: "card", eyebrow: "GOALIES", title: "EVERY VALUE", lines: ["GAME STARTED  +6.50", "SAVE  +0.49", "GOAL AGAINST  -5.00", "GOALIE GOAL  +5.00", "GOALIE ASSIST  +2.95"] },
-                { at: 35, kind: "tiles", eyebrow: "WHAT A NIGHT LOOKS LIKE", title: "THREE NIGHTS", tiles: [["+15.90", "2 GOALS, AN ASSIST, 5 SHOTS, A HIT"], ["+11.20", "30 SAVES ON 32 SHOTS"], ["-14.19", "6 GOALS ON 25 SHOTS"]] },
+                { at: 4, kind: "card", eyebrow: "SKATERS", title: "EVERY VALUE", lines: ["GOAL  +5.00", "ASSIST  +2.97", "SHOT ON GOAL  +0.53", "BLOCK  +0.44", "HIT  +0.14", "PENALTY MINUTE  -0.36"] },
+                { at: 20, kind: "card", eyebrow: "GOALIES", title: "EVERY VALUE", lines: ["GAME STARTED  +5.00", "SAVE  +0.56", "GOAL AGAINST  -5.00", "GOALIE GOAL  +5.00", "GOALIE ASSIST  +2.97"] },
+                { at: 35, kind: "tiles", eyebrow: "WHAT A NIGHT LOOKS LIKE", title: "THREE NIGHTS", tiles: [["+15.76", "2 GOALS, AN ASSIST, 5 SHOTS, A HIT"], ["+11.80", "30 SAVES ON 32 SHOTS"], ["-14.36", "6 GOALS ON 25 SHOTS"]] },
                 { at: 50, kind: "card", eyebrow: "NOT SCORED", title: "NO POINTS FOR", lines: ["WINS", "SHUTOUTS", "PLUS-MINUS", "POWER-PLAY BONUSES", "SHOTS, BLOCKS AND HITS ADD UP"] },
                 { at: 58, kind: "end", title: "HOW SCORING WORKS", sub: "BEER LEAGUE HOCKEY ASSOCIATION" }
             ]

@@ -30,9 +30,9 @@ pick position.
    it once it has).
 3. **Scoring.** Every player scores **BLHA points** (Constitution Article VIII)
    in every NHL playoff game, from the game's boxscore:
-   - Skaters: goal 5, assist 2.95, shot on goal 0.55, block 0.35, hit 0.20,
-     penalty minute -0.54
-   - Goalies: game started 6.5, save 0.49, goal against -5, goal 5, assist 2.95
+   - Skaters: goal 5, assist 2.97, shot on goal 0.53, block 0.44, hit 0.14,
+     penalty minute -0.36
+   - Goalies: game started 5, save 0.56, goal against -5, goal 5, assist 2.97
 4. **Standings** post every morning (from 07:30 ET, only when something
    changed): every owner's points, best pick, goalie points and how many of
    their players are already eliminated.
