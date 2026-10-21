@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T20:45:38.617365Z",
+  "updated_at": "2026-10-21T21:45:37.498976Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13692,6 +13692,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T20:45:38.538927Z"
+    },
+    {
+      "key": "13af7981f479aef42201d725",
+      "url": "https://www.dailyfaceoff.com/players/news/j-t-compher/2751",
+      "fingerprint": "fb2e6efff99cebb7",
+      "title_norm": "j.t. compher (det) — compher (undisclosed) has a good chance to return in vancouver on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T21:45:37.411567Z"
     }
   ],
   "known_sources": [
