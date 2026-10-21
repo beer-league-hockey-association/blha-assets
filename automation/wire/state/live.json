@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T16:00:38.296659Z",
+  "updated_at": "2026-10-21T16:15:35.634393Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13542,6 +13542,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T16:00:38.265930Z"
+    },
+    {
+      "key": "116f2623f64b8de17e746b07",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-21-2026",
+      "fingerprint": "0d38044763ad8e66",
+      "title_norm": "on tap: michkov flies into buffalo on goal streak",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T16:15:35.487541Z"
     }
   ],
   "known_sources": [
