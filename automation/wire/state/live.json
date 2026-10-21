@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T02:15:35.907381Z",
+  "updated_at": "2026-10-21T03:00:56.667739Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13262,6 +13262,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T02:15:35.617770Z"
+    },
+    {
+      "key": "3a1d154673910ecdad35a679",
+      "url": "https://www.nhl.com/news/winnipeg-jets-st-louis-blues-game-recap-october-20-2026",
+      "fingerprint": "f21849467f0f6850",
+      "title_norm": "broberg scores go-ahead goal in 3rd, lifts blues past jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T03:00:51.295024Z"
+    },
+    {
+      "key": "30c5cbe0b57e935f3fb5ac35",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-give-up-late-goal-to-broberg-in-loss-to-blues",
+      "fingerprint": "f078ffec669671b1",
+      "title_norm": "jets give up late goal to broberg in loss to blues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T03:00:56.636600Z"
     }
   ],
   "known_sources": [
