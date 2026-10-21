@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T04:15:31.710890Z",
+  "updated_at": "2026-10-21T04:29:56.985555Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13312,6 +13312,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T04:15:31.656506Z"
+    },
+    {
+      "key": "f71f3a972cb04af724b34207",
+      "url": "https://www.nhl.com/news/minnesota-wild-edmonton-oilers-game-recap-october-20-2026",
+      "fingerprint": "605e6e7c26c3f1d1",
+      "title_norm": "bouchard scores in ot, oilers recover against wild to stay hot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T04:29:56.929793Z"
     }
   ],
   "known_sources": [
