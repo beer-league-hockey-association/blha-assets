@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-20T23:45:40.715326Z",
+  "updated_at": "2026-10-21T00:15:36.163514Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13122,6 +13122,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-20T23:45:40.655466Z"
+    },
+    {
+      "key": "25ba97ea6fdf2c3071a692f1",
+      "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
+      "fingerprint": "3a07af838690b1c7",
+      "title_norm": "quinton byfield (lak) — byfield left tuesday's game in washington with an upper-body injury and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T00:15:36.065001Z"
+    },
+    {
+      "key": "85279e3ba337f2f8985a3e5f",
+      "url": "https://www.sportsnet.ca/nhl/article/report-red-wings-dylan-larkin-expands-trade-list-to-10-teams",
+      "fingerprint": "7eddbe502b4b778b",
+      "title_norm": "report: red wings' dylan larkin expands trade list to 10 teams",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T00:15:36.122881Z"
     }
   ],
   "known_sources": [
