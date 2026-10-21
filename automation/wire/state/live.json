@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T18:45:37.142570Z",
+  "updated_at": "2026-10-21T19:30:36.151133Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13642,6 +13642,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T18:45:37.011832Z"
+    },
+    {
+      "key": "454128cc829d607e836e2235",
+      "url": "https://www.dailyfaceoff.com/players/news/parker-wotherspoon/3836",
+      "fingerprint": "565f306601a5c9e4",
+      "title_norm": "parker wotherspoon (vgk) — wotherspoon (upper body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T19:30:36.084957Z"
     }
   ],
   "known_sources": [
