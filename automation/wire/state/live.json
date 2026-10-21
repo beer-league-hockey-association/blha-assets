@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T20:00:37.736007Z",
+  "updated_at": "2026-10-21T20:15:38.480644Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13662,6 +13662,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T20:00:37.705758Z"
+    },
+    {
+      "key": "6e643231a30027f85414e063",
+      "url": "https://www.nhl.com/news/marat-khusnutdinov-signs-three-year-contract-with-boston-bruins",
+      "fingerprint": "288acc238d1ae5d4",
+      "title_norm": "khusnutdinov signs with bruins through 2029-30",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T20:15:38.018107Z"
+    },
+    {
+      "key": "133b7d7af408a45ed753afcb",
+      "url": "https://www.sportsnet.ca/nhl/article/nhls-top-12-ufas-of-2027-latest-rumours-reports",
+      "fingerprint": "aba0ef724a2597b6",
+      "title_norm": "nhl's top 12 ufas of 2027: latest rumours, reports",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T20:15:38.419233Z"
     }
   ],
   "known_sources": [
