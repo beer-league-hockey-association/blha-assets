@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T06:45:33.490862Z",
+  "updated_at": "2026-10-21T09:15:40.263772Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13442,6 +13442,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T06:45:33.452988Z"
+    },
+    {
+      "key": "4797ab4e3ed4cce5c1973eda",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/5-Fantasy-Hockey-Buy-Lows-to-Trade-For-NOW-e3qr7f4",
+      "fingerprint": "27d4ccd81e6bb11e",
+      "title_norm": "5 fantasy hockey buy lows to trade for now",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-21T09:15:40.210096Z"
     }
   ],
   "known_sources": [
