@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T15:00:49.119417Z",
+  "updated_at": "2026-10-21T15:15:38.234936Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13482,6 +13482,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T15:00:49.035892Z"
+    },
+    {
+      "key": "4f55f7896dbf44d40a33dfbf",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
+      "fingerprint": "683640d902d917e3",
+      "title_norm": "jake sanderson (ott) — sanderson (lower-body) will return vs. florida on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:15:37.316529Z"
+    },
+    {
+      "key": "458815ac0752c3d8fc9f4280",
+      "url": "https://montrealgazette.com/sports/hockey/laval-rocket/canadiens-habs-laval-rocket-defenceman-luke-mittelstad-ahl-hockey",
+      "fingerprint": "73f94e1dc2270078",
+      "title_norm": "mittelstadt provides early-season liftoff for laval rocket",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:15:37.604389Z"
+    },
+    {
+      "key": "38f7bbb218d050093916805c",
+      "url": "https://www.dailyfaceoff.com/players/news/sam-carrick/1914",
+      "fingerprint": "9ffcf4d5dc5b36a2",
+      "title_norm": "sam carrick (buf) — carrick (mid-body) is out vs. philadelphia on wednesday and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:15:37.848552Z"
+    },
+    {
+      "key": "b8fe55d86a7ebe8198034077",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-danforth/28122",
+      "fingerprint": "78d69070ad418458",
+      "title_norm": "justin danforth (buf) — danforth (lower-body) is out vs. philadelphia and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:15:38.153927Z"
     }
   ],
   "known_sources": [
