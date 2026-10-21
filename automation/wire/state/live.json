@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T15:15:38.234936Z",
+  "updated_at": "2026-10-21T15:45:39.046811Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13522,6 +13522,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T15:15:38.153927Z"
+    },
+    {
+      "key": "7919b1b662020861defe24ce",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "1ea87fa2efe357ce",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) practice in full on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:45:38.954142Z"
     }
   ],
   "known_sources": [
