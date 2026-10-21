@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T01:30:41.399617Z",
+  "updated_at": "2026-10-21T02:00:38.954321Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13192,6 +13192,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T01:30:41.313474Z"
+    },
+    {
+      "key": "eb5031d25841d0e57beb0995",
+      "url": "https://www.nhl.com/news/colorado-avalanche-new-jersey-devils-game-recap-october-20-2026",
+      "fingerprint": "b9f2e3cc265532f5",
+      "title_norm": "evangelista has two points in return, devils hold off avalanche",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T02:00:38.561108Z"
+    },
+    {
+      "key": "08f157034cdc07a11574aacd",
+      "url": "https://www.nhl.com/news/los-angeles-kings-washington-capitals-game-recap-october-20-2026",
+      "fingerprint": "72b678ef0983979b",
+      "title_norm": "kempe scores twice, kings top capitals in first win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T02:00:38.852409Z"
     }
   ],
   "known_sources": [
