@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T18:00:42.599353Z",
+  "updated_at": "2026-10-21T18:15:37.806690Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13612,6 +13612,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T18:00:42.538617Z"
+    },
+    {
+      "key": "3212e1e9e6d6efd2887cfb6e",
+      "url": "https://www.dailyfaceoff.com/players/news/anthony-cirelli/3842",
+      "fingerprint": "940b698dd4c3537c",
+      "title_norm": "anthony cirelli (tbl) — cirelli (undisclosed) left tuesday's game vs. vegas and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T18:15:37.261647Z"
+    },
+    {
+      "key": "5bdde21bc323d1e254420595",
+      "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
+      "fingerprint": "a2bf8dc07d9b5fb0",
+      "title_norm": "quinton byfield (lak) — byfield (upper-body) is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T18:15:37.676219Z"
     }
   ],
   "known_sources": [
