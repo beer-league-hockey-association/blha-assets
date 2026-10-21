@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T21:45:37.498976Z",
+  "updated_at": "2026-10-21T22:00:43.253717Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13702,6 +13702,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T21:45:37.411567Z"
+    },
+    {
+      "key": "5f821031728ed625324ff53a",
+      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
+      "fingerprint": "4ffa81d194bdbe7a",
+      "title_norm": "seth jarvis (car) — jarvis (shoulder) has been activated from the injured non-roster list.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T22:00:43.182501Z"
     }
   ],
   "known_sources": [
