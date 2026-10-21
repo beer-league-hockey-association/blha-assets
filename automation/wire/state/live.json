@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T20:15:38.480644Z",
+  "updated_at": "2026-10-21T20:45:38.617365Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13682,6 +13682,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T20:15:38.419233Z"
+    },
+    {
+      "key": "33e9474b51f3733df4267df3",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-nugent-hopkins/1733",
+      "fingerprint": "aa49ae68b3bd1ca7",
+      "title_norm": "ryan nugent-hopkins (edm) — nugent-hopkins (lower-body) will make his season debut on thursday vs. carolina.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T20:45:38.538927Z"
     }
   ],
   "known_sources": [
