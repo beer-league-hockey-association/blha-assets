@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T16:30:44.033477Z",
+  "updated_at": "2026-10-21T16:45:39.579544Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13562,6 +13562,26 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-21T16:30:43.983727Z"
+    },
+    {
+      "key": "a949892fba2f2e363eb8923d",
+      "url": "https://www.sportsnet.ca/nhl/article/blood-sweat-and-tears-brady-tkachuk-talks-return-to-ottawa",
+      "fingerprint": "b4ad93f676cc92e1",
+      "title_norm": "'blood, sweat and tears': brady tkachuk talks return to ottawa",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T16:45:39.175647Z"
+    },
+    {
+      "key": "7d2be6f318b9ee1eed9e5a62",
+      "url": "https://www.nhl.com/news/nhl-edge-stats-wednesday-night-hockey-amazon-prime-2026-27",
+      "fingerprint": "28b27a8e8d2e779c",
+      "title_norm": "edge stats: florida-ottawa 'wednesday night hockey'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T16:45:39.460178Z"
     }
   ],
   "known_sources": [
