@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T02:00:38.954321Z",
+  "updated_at": "2026-10-21T02:15:35.907381Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13212,6 +13212,56 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-21T02:00:38.852409Z"
+    },
+    {
+      "key": "be39559c8d34ffe35687010b",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-columbus-blue-jackets-game-recap-october-20-2026",
+      "fingerprint": "981614eb1aed6da4",
+      "title_norm": "marchenko scores in columbus return, leafs cruise",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T02:15:35.098951Z"
+    },
+    {
+      "key": "dd58978d8221256af0bd4aaa",
+      "url": "https://www.nhl.com/news/anaheim-ducks-new-york-islanders-game-recap-october-20-2026",
+      "fingerprint": "7ad6b5be63e901b6",
+      "title_norm": "islanders ride fast start to win against ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T02:15:35.330324Z"
+    },
+    {
+      "key": "802cd604a778ee71fc249596",
+      "url": "https://www.nhl.com/news/coaches-room-balancing-ice-time-accountability-key-in-helping-young-players-succeed",
+      "fingerprint": "c200221062b18de8",
+      "title_norm": "coaches room: balancing ice time for young players",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T02:15:35.567684Z"
+    },
+    {
+      "key": "cd66e201f4ed85beb25baae1",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-ride-four-goal-second-period-to-win-over-blue-jackets",
+      "fingerprint": "d8a3d7895511955e",
+      "title_norm": "maple leafs ride four-goal second period to win over blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T02:15:35.608080Z"
+    },
+    {
+      "key": "bcf0d0c3d7f6a001afb9ec84",
+      "url": "https://www.sportsnet.ca/nhl/article/celebrini-scores-ot-winner-as-canadiens-fall-to-sharks",
+      "fingerprint": "fd5a5159f0260134",
+      "title_norm": "celebrini scores ot winner as canadiens fall to sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T02:15:35.617770Z"
     }
   ],
   "known_sources": [
