@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T05:30:43.984283Z",
+  "updated_at": "2026-10-21T05:45:34.710308Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13412,6 +13412,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-21T05:30:43.863501Z"
+    },
+    {
+      "key": "7673f8c217f8ff3442868ddf",
+      "url": "https://www.nhl.com/news/topic/game-recap/tampa-bay-lightning-vegas-golden-knights-game-recap-october-20-2026",
+      "fingerprint": "2d3ecd0f7caa17d3",
+      "title_norm": "kucherov ties lightning record in win against golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T05:45:34.401622Z"
+    },
+    {
+      "key": "b09f8a7f7ca7e665623a46e0",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-ride-elite-power-play-to-win-over-tight-checking-wild",
+      "fingerprint": "779ef81875f3b125",
+      "title_norm": "oilers ride elite power play to win over tight-checking wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T05:45:34.638795Z"
     }
   ],
   "known_sources": [
