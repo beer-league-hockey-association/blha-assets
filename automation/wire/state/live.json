@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T01:15:41.018853Z",
+  "updated_at": "2026-10-21T01:30:41.399617Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13162,6 +13162,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T01:15:40.977732Z"
+    },
+    {
+      "key": "bfac70cd441acc500f6a7119",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-mccabe/2349",
+      "fingerprint": "374d764ee1531a00",
+      "title_norm": "jake mccabe (tor) — mccabe left tuesday's game with an undisclosed injury and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T01:30:40.694364Z"
+    },
+    {
+      "key": "dc2a1cadb9d235897f30df4f",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
+      "fingerprint": "1fd7df4ddb4a09c6",
+      "title_norm": "brandon montour (sea) — montour (lower-body) is on the ice for warmups and is expected to play vs. detroit.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T01:30:40.962685Z"
+    },
+    {
+      "key": "92f1645d1aa065342090f8b1",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
+      "fingerprint": "3999f096facf5c8e",
+      "title_norm": "jacob markstrom (fla) — the panthers placed jacob markstrom (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T01:30:41.313474Z"
     }
   ],
   "known_sources": [
