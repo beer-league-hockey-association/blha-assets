@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T04:45:36.122854Z",
+  "updated_at": "2026-10-21T05:00:38.841348Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13362,6 +13362,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T04:45:35.377973Z"
+    },
+    {
+      "key": "8468f9b90ea95ec5185eea79",
+      "url": "https://www.sportsnet.ca/nhl/article/marchenko-cowan-help-maple-leafs-earn-rout-in-columbus",
+      "fingerprint": "d46269757372ebe6",
+      "title_norm": "marchenko, cowan help maple leafs earn rout in columbus",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T05:00:38.799205Z"
     }
   ],
   "known_sources": [
