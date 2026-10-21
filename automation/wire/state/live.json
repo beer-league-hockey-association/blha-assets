@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T22:11:06.237480Z",
+  "updated_at": "2026-10-21T23:15:39.550650Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13722,6 +13722,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T22:11:06.208305Z"
+    },
+    {
+      "key": "87342bf3247a1391a9934470",
+      "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
+      "fingerprint": "23f16f8a36865c95",
+      "title_norm": "tyson foerster (phi) — foerster (hand) is on the ice for warmups and is expected to play wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T23:15:39.423658Z"
     }
   ],
   "known_sources": [
