@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T03:00:56.667739Z",
+  "updated_at": "2026-10-21T03:30:41.492367Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13282,6 +13282,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T03:00:56.636600Z"
+    },
+    {
+      "key": "48717682bab9ef70f52468a2",
+      "url": "https://www.sportsnet.ca/nhl/article/mikko-rantanen-completes-hat-trick-in-overtime-stars-beat-bruins",
+      "fingerprint": "45badfa3e21705a9",
+      "title_norm": "mikko rantanen completes hat trick in overtime, stars beat bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T03:30:41.027798Z"
+    },
+    {
+      "key": "bbf27a5cdee49a1963dc4434",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-ben-kindel-in-stable-condition-after-suffering-medical-episode-on-plane",
+      "fingerprint": "2a1f30a94554c2cc",
+      "title_norm": "penguins' ben kindel stable after medical episode on plane",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T03:30:41.436898Z"
     }
   ],
   "known_sources": [
