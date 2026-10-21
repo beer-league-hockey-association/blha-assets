@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T15:45:39.046811Z",
+  "updated_at": "2026-10-21T16:00:38.296659Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13532,6 +13532,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T15:45:38.954142Z"
+    },
+    {
+      "key": "39987d079c8aa0de91f22caf",
+      "url": "https://www.sportsnet.ca/nhl/article/easy-to-follow-celebrini-navigating-first-season-as-sharks-captain",
+      "fingerprint": "f9252d4517ef2ec7",
+      "title_norm": "'easy to follow': celebrini navigating first season as sharks captain",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T16:00:38.265930Z"
     }
   ],
   "known_sources": [
