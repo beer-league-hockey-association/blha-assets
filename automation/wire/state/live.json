@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T04:29:56.985555Z",
+  "updated_at": "2026-10-21T04:45:36.122854Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13322,6 +13322,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-21T04:29:56.929793Z"
+    },
+    {
+      "key": "dcdfafb2acee6d52ec893bf6",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-connor-mcdavid-sets-nhl-record-for-assists-through-first-nine-games",
+      "fingerprint": "ece6877dcd78ea41",
+      "title_norm": "oilers' connor mcdavid sets nhl record for assists through first nine games",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T04:45:34.777729Z"
+    },
+    {
+      "key": "4024e2cc252560cc73ebba56",
+      "url": "https://www.nhl.com/news/los-angeles-kings-hope-to-get-rolling-after-securing-first-win",
+      "fingerprint": "0b87cff69b931c63",
+      "title_norm": "kings hope to 'get rolling' after 1st win of season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T04:45:35.050843Z"
+    },
+    {
+      "key": "4874d99b62c5e3b6198fbb3d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-dobes-misses-chance-to-right-ship-with-costly-penalty",
+      "fingerprint": "cde24537d9084d02",
+      "title_norm": "canadiens' dobes misses chance to right ship with costly penalty",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T04:45:35.351996Z"
+    },
+    {
+      "key": "0a3e6b898ecf689d11535a0c",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-nugent-hopkins-to-return-thursday-vs-hurricanes",
+      "fingerprint": "b658978695f5bcd7",
+      "title_norm": "oilers' nugent-hopkins to return thursday vs. hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T04:45:35.377973Z"
     }
   ],
   "known_sources": [
