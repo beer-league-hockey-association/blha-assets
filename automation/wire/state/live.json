@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T14:45:39.840179Z",
+  "updated_at": "2026-10-21T15:00:49.119417Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13462,6 +13462,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T14:45:39.717505Z"
+    },
+    {
+      "key": "912da8e3f2e85199de4e236b",
+      "url": "https://www.dailyfaceoff.com/players/news/jason-zucker/1898",
+      "fingerprint": "a14428d6186f0ac1",
+      "title_norm": "jason zucker (buf) — zucker (sports hernia) will make his season debut vs. philadelphia on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:00:48.496705Z"
+    },
+    {
+      "key": "5e6a13254337582b3bdd88ba",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-podkolzin-off-to-flying-start-riding-shotgun-with-mcdavid-draisaitl",
+      "fingerprint": "df746b22467b8349",
+      "title_norm": "oilers' podkolzin off to flying start riding shotgun with mcdavid, draisaitl",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T15:00:49.035892Z"
     }
   ],
   "known_sources": [
