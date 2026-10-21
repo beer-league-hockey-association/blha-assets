@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T03:30:41.492367Z",
+  "updated_at": "2026-10-21T04:15:31.710890Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13302,6 +13302,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T03:30:41.436898Z"
+    },
+    {
+      "key": "99785defa0f3ddf2dd36a14e",
+      "url": "https://www.sportsnet.ca/article/bouchard-wires-ot-winner-on-birthday-as-oilers-beat-wild",
+      "fingerprint": "abda7d0b8d9d63f2",
+      "title_norm": "bouchard wires ot winner on birthday as oilers beat wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-21T04:15:31.656506Z"
     }
   ],
   "known_sources": [
