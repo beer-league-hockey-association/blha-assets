@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T05:15:36.437534Z",
+  "updated_at": "2026-10-21T05:30:43.984283Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13402,6 +13402,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-21T05:15:36.398730Z"
+    },
+    {
+      "key": "e935cf85dd85da24bfe5c287",
+      "url": "https://www.nhl.com/news/san-jose-sharks-montreal-canadiens-game-recap-october-20-2026",
+      "fingerprint": "25be370a3f2a9ddc",
+      "title_norm": "celebrini scores 2nd in ot, sharks rally to top habs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-21T05:30:43.863501Z"
     }
   ],
   "known_sources": [
