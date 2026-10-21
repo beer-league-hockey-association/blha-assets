@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T18:15:37.806690Z",
+  "updated_at": "2026-10-21T18:45:37.142570Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13632,6 +13632,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T18:15:37.676219Z"
+    },
+    {
+      "key": "3b0fcf97d5150fbfaa61e1e3",
+      "url": "https://www.dailyfaceoff.com/players/news/marco-rossi/29821",
+      "fingerprint": "170cbec4cb1b534a",
+      "title_norm": "marco rossi (van) — rossi (illness) returned to canucks' practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T18:45:37.011832Z"
     }
   ],
   "known_sources": [
