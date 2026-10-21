@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T09:15:40.263772Z",
+  "updated_at": "2026-10-21T14:45:39.840179Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13452,6 +13452,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-21T09:15:40.210096Z"
+    },
+    {
+      "key": "f1de4732e839d6e76de9706a",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
+      "fingerprint": "a1c6c70fdc8f8bd2",
+      "title_norm": "logan thompson (wsh) — thompson is day-to-day with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-21T14:45:39.717505Z"
     }
   ],
   "known_sources": [
