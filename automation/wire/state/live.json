@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T16:15:35.634393Z",
+  "updated_at": "2026-10-21T16:30:44.033477Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13552,6 +13552,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-21T16:15:35.487541Z"
+    },
+    {
+      "key": "c71af5272148fae1f2e9a509",
+      "url": "https://dobberprospects.com/2026/10/21/prospect-ramblings-calder-watch-garands-opportunity-and-the-protas-brothers",
+      "fingerprint": "1a80ba83b86ae51d",
+      "title_norm": "prospect ramblings – calder watch, garand's opportunity and the protas brothers",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-21T16:30:43.983727Z"
     }
   ],
   "known_sources": [
