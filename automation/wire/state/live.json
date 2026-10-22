@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T14:15:42.202296Z",
+  "updated_at": "2026-10-22T14:30:43.375408Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13922,6 +13922,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T14:15:42.103447Z"
+    },
+    {
+      "key": "9d647b378ede81c9cec392b8",
+      "url": "https://www.sportsnet.ca/nhl/article/former-nhl-player-ron-duguay-dies-at-69-after-a-bout-with-cancer",
+      "fingerprint": "80e3e4ca31aa2a74",
+      "title_norm": "former nhl player ron duguay dies at 69 after a bout with cancer",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T14:30:43.334895Z"
     }
   ],
   "known_sources": [
