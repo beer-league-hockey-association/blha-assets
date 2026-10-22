@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T01:15:34.830276Z",
+  "updated_at": "2026-10-22T02:30:32.133390Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13762,6 +13762,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T01:15:34.777013Z"
+    },
+    {
+      "key": "d810b60229546b1925b0a442",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-buffalo-sabres-game-recap-october-21-2026",
+      "fingerprint": "7348a8e4bf566d98",
+      "title_norm": "knuble nets first two nhl goals, flyers defeat sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T02:30:31.874253Z"
+    },
+    {
+      "key": "5e8a893dba43b00d0b5da11a",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-linus-ullmark-exits-vs-panthers-with-apparent-injury",
+      "fingerprint": "8a213ee10c367aa0",
+      "title_norm": "senators' linus ullmark exits vs. panthers with apparent injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T02:30:32.103483Z"
     }
   ],
   "known_sources": [
