@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T18:45:52.394171Z",
+  "updated_at": "2026-10-22T19:00:39.103518Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14222,6 +14222,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T18:45:52.295544Z"
+    },
+    {
+      "key": "0e2a8fa83a9ebc00b7a2b6b9",
+      "url": "https://www.dailyfaceoff.com/players/news/daniil-tarasov2/28133",
+      "fingerprint": "6583556d13be87e6",
+      "title_norm": "daniil tarasov (det) — tarasov is day-to-day with an undisclosed injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T19:00:39.053248Z"
     }
   ],
   "known_sources": [
