@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T18:00:42.248634Z",
+  "updated_at": "2026-10-22T18:15:43.811504Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14192,6 +14192,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T18:00:42.172169Z"
+    },
+    {
+      "key": "1679a2b3832605fbc2fbcf0c",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
+      "fingerprint": "91d515b9f54cac0e",
+      "title_norm": "jared spurgeon (min) — spurgeon (upper-body) will return in calgary on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T18:15:43.738774Z"
     }
   ],
   "known_sources": [
