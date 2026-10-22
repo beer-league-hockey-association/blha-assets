@@ -83,7 +83,7 @@
 
 **3.6** The League Services Allocation is paid to the Commissioner for recurring league administration, setup, records, Discord infrastructure, automation maintenance, league communications, and related management duties. Any increase to the League Services Allocation is a Material Amendment. On any vote that changes the League Services Allocation, the Commissioner's franchise does not vote and approval requires at least 8 of the other 11 franchises.
 
-**3.7** The League Operating Reserve may be used only for Fantrax Premium, League Bot hosting, and other disclosed, authorized league operating costs. Any portion of the reserve not spent in a Season stays in the reserve and carries forward to cover future operating costs. The reserve is never added to the Dynasty Pot or to prizes.
+**3.7** The League Operating Reserve may be used only for Fantrax Premium, League Bot hosting, and other disclosed, authorized league operating costs. Any portion of the reserve not spent in a Season stays in the reserve and carries forward to cover future operating costs. The reserve is never added to the Dynasty Pot or to prizes. If the league dissolves for any reason, the reserve balance is split evenly among the active, fully paid franchises (Article XX).
 
 **3.8** Guaranteed competitive prizes will not be reduced during an Active Season to cover an unanticipated operating overage. Any additional assessment or material change to the annual allocation requires league approval under this Constitution.
 
@@ -358,7 +358,7 @@
 
 **20.6** **Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is dated and posted, and prior versions are archived.
 
-**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV, and any remaining League Operating Reserve balance is distributed the same way. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them.
+**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV. If the BLHA dissolves for any reason, any League Operating Reserve balance is split evenly among the active, fully paid franchises. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them.
 
 **20.8** The latest published version of this Constitution is the controlling league document. Upon adoption of the Charter, all prior working drafts are superseded except as historical records.
 
