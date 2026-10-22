@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T02:45:36.088727Z",
+  "updated_at": "2026-10-22T03:00:40.376132Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13792,6 +13792,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T02:45:36.046976Z"
+    },
+    {
+      "key": "76416552e9f7c5eb70953d13",
+      "url": "https://www.nhl.com/news/topic/game-recap/florida-panthers-ottawa-senators-game-recap-october-21-2026",
+      "fingerprint": "6fd41a111cc042d7",
+      "title_norm": "senators roll past panthers in brady tkachuk's return to ottawa",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T03:00:39.965759Z"
+    },
+    {
+      "key": "162544617e75604d57a1f071",
+      "url": "https://www.nhl.com/news/florida-panthers-gm-bill-zito-hopes-to-attend-world-series",
+      "fingerprint": "444e8c7d1fa84bf4",
+      "title_norm": "florida gm eager to attend brewers' series return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T03:00:40.238596Z"
     }
   ],
   "known_sources": [
