@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T04:00:42.050165Z",
+  "updated_at": "2026-10-22T05:00:38.316930Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13862,6 +13862,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-22T04:00:41.915670Z"
+    },
+    {
+      "key": "9db62304bb2005a038664774",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-fans-steal-the-show-in-brady-tkachuks-emotionally-charged-return",
+      "fingerprint": "a1176919d0cbf944",
+      "title_norm": "senators fans steal the show in brady tkachuk's emotionally charged return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T05:00:38.196595Z"
     }
   ],
   "known_sources": [
