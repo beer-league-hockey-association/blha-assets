@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T22:45:35.829476Z",
+  "updated_at": "2026-10-22T23:00:40.730099Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14322,6 +14322,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T22:45:35.723537Z"
+    },
+    {
+      "key": "0b1e2801cf02a441bc177a60",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
+      "fingerprint": "015d07f31333b23c",
+      "title_norm": "pavel mintyukov (ana) — mintyukov is day-to-day with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T23:00:40.672883Z"
     }
   ],
   "known_sources": [
