@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T02:30:32.133390Z",
+  "updated_at": "2026-10-22T02:45:36.088727Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13782,6 +13782,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T02:30:32.103483Z"
+    },
+    {
+      "key": "ca8bc99455c579c87fc8b558",
+      "url": "https://www.sportsnet.ca/nhl/article/flyers-rookie-cole-knuble-scores-first-two-career-goals-in-victory-over-sabres",
+      "fingerprint": "83ee5bc951211470",
+      "title_norm": "flyers rookie cole knuble scores first two career goals in victory over sabres",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T02:45:36.046976Z"
     }
   ],
   "known_sources": [
