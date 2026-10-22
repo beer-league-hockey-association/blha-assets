@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T15:45:43.951633Z",
+  "updated_at": "2026-10-22T16:00:45.074167Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14032,6 +14032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T15:45:43.852600Z"
+    },
+    {
+      "key": "00c14d8a34bc81e00ad98288",
+      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
+      "fingerprint": "8b242a93b5ed1491",
+      "title_norm": "bryan rust (pit) — rust (lower-body) is out and will be evaluated in six weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T16:00:44.973122Z"
     }
   ],
   "known_sources": [
