@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T03:00:40.376132Z",
+  "updated_at": "2026-10-22T03:15:36.635234Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13812,6 +13812,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-22T03:00:40.238596Z"
+    },
+    {
+      "key": "d4e0dbaa26e3a6a4c3f52a74",
+      "url": "https://www.sportsnet.ca/nhl/video/senators-fans-boo-brady-tkachuk-during-tribute-video",
+      "fingerprint": "b21e65bce2110010",
+      "title_norm": "senators fans boo brady tkachuk during tribute video",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T03:15:36.493833Z"
     }
   ],
   "known_sources": [
