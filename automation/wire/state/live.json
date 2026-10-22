@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T09:15:33.993696Z",
+  "updated_at": "2026-10-22T13:45:39.212345Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13882,6 +13882,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-22T09:15:33.955208Z"
+    },
+    {
+      "key": "25e7ee539be160c97f0bf57c",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-assign-goalie-artur-akhtyamov-to-ahl",
+      "fingerprint": "e05bc1b35761153a",
+      "title_norm": "maple leafs assign goalie artur akhtyamov to ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T13:45:39.181790Z"
     }
   ],
   "known_sources": [
