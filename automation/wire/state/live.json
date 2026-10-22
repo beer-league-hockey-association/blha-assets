@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T17:00:41.858266Z",
+  "updated_at": "2026-10-22T17:15:33.766213Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14142,6 +14142,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T17:00:41.800261Z"
+    },
+    {
+      "key": "55aea5d54000b72fe3ac356c",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
+      "fingerprint": "f125175a4251d428",
+      "title_norm": "mikael backlund (cgy) — backlund (upper-body) is out vs. minnesota on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T17:15:33.691167Z"
     }
   ],
   "known_sources": [
