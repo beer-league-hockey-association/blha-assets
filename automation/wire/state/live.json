@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T15:15:40.548653Z",
+  "updated_at": "2026-10-22T15:29:45.598792Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13972,6 +13972,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-22T15:15:40.418298Z"
+    },
+    {
+      "key": "61339546f2e3cee2cde4401b",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-suzuki/2789",
+      "fingerprint": "515f89a008e05446",
+      "title_norm": "nick suzuki (mtl) — suzuki (upper-body) is expected to be out for the next 2-4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:29:45.275710Z"
+    },
+    {
+      "key": "c6b5ab029449bd64ab18b459",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "882a64e9e7a4e3b9",
+      "title_norm": "linus ullmark (ott) — ullmark (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:29:45.498977Z"
     }
   ],
   "known_sources": [
