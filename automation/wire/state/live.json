@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T18:15:43.811504Z",
+  "updated_at": "2026-10-22T18:45:52.394171Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14202,6 +14202,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T18:15:43.738774Z"
+    },
+    {
+      "key": "814aa03eb453d8e486a62fd7",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "3ab2b157dbf73ce7",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will return in boston on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T18:45:51.928985Z"
+    },
+    {
+      "key": "54b0a8ce63e38ea615db8822",
+      "url": "https://www.dailyfaceoff.com/players/news/daniil-tarasov2/28133",
+      "fingerprint": "f648a17efd8ac6f1",
+      "title_norm": "daniil tarasov (det) — tarasov (undisclosed) tweaked something vs. seattle on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T18:45:52.295544Z"
     }
   ],
   "known_sources": [
