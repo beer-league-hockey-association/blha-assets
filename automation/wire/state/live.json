@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T14:45:36.906185Z",
+  "updated_at": "2026-10-22T15:15:40.548653Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13942,6 +13942,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T14:45:36.874908Z"
+    },
+    {
+      "key": "79db2af1dae6949cc095bc08",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-mccabe/2349",
+      "fingerprint": "c08908ea8e89935e",
+      "title_norm": "jake mccabe (tor) — mccabe (upper-body) is expected to play vs. new york on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:15:39.897073Z"
+    },
+    {
+      "key": "ba7da704ae1142ae9d714010",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-ben-kindel-status-update-october-22-2026",
+      "fingerprint": "ea039bbf6ecc6442",
+      "title_norm": "kindel could resume practice with pens next week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T15:15:40.181262Z"
+    },
+    {
+      "key": "fdcb33265a2cf8b2b5e8858f",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-22-2026",
+      "fingerprint": "9e31ae770a2161ac",
+      "title_norm": "nhl status report: nugent-hopkins to make season debut",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T15:15:40.418298Z"
     }
   ],
   "known_sources": [
