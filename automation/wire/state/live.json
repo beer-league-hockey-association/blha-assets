@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T03:15:36.635234Z",
+  "updated_at": "2026-10-22T03:30:36.114853Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13822,6 +13822,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T03:15:36.493833Z"
+    },
+    {
+      "key": "5745a4e02fc78f66c6d1e4df",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-21-2026",
+      "fingerprint": "0679d298ba289a60",
+      "title_norm": "status report: sanderson back from injury for sens",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T03:30:35.977296Z"
     }
   ],
   "known_sources": [
