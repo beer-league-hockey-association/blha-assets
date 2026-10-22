@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T16:30:41.590152Z",
+  "updated_at": "2026-10-22T17:00:41.858266Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14112,6 +14112,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T16:30:41.556836Z"
+    },
+    {
+      "key": "c7f8ff000d2be6d4c0c375c3",
+      "url": "https://www.sportsnet.ca/nhl/article/how-the-montreal-canadiens-are-approaching-the-trade-market",
+      "fingerprint": "84cfda059d83a482",
+      "title_norm": "how the montreal canadiens are approaching the trade market",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T17:00:41.082549Z"
+    },
+    {
+      "key": "ab767f2c1c00847235e394ee",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-checking-in-on-the-new-guy",
+      "fingerprint": "800f271ddb0f53a1",
+      "title_norm": "nhl power rankings: checking in on the new guy",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T17:00:41.553669Z"
+    },
+    {
+      "key": "d8f0672c90eb5f999ad8b8bc",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-place-ullmark-on-injury-reserve",
+      "fingerprint": "29fde1b5b8991037",
+      "title_norm": "senators place linus ullmark on injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T17:00:41.800261Z"
     }
   ],
   "known_sources": [
