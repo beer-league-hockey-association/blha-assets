@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T23:00:40.730099Z",
+  "updated_at": "2026-10-22T23:15:33.307840Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14332,6 +14332,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T23:00:40.672883Z"
+    },
+    {
+      "key": "ca56e49a8f2ef4f6cbb48830",
+      "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
+      "fingerprint": "4b0ab8cd5c0dff01",
+      "title_norm": "quinton byfield (lak) — byfield (upper-body) will not play thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T23:15:33.173741Z"
     }
   ],
   "known_sources": [
