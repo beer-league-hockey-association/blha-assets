@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T03:45:38.843380Z",
+  "updated_at": "2026-10-22T04:00:42.050165Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13842,6 +13842,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T03:45:38.746037Z"
+    },
+    {
+      "key": "fbfa5c761a00132148ca74ec",
+      "url": "https://www.sportsnet.ca/nhl/video/senators-fans-torment-brady-tkachuk-with-chants-boos-for-entire-game",
+      "fingerprint": "9ac37c92a9f27caa",
+      "title_norm": "senators fans torment brady tkachuk with chants, boos for entire game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T04:00:41.442655Z"
+    },
+    {
+      "key": "a96adda83427147d9d15de3e",
+      "url": "https://www.nhl.com/news/matty-beniers-of-seattle-kraken-finding-comfort-with-new-roommates",
+      "fingerprint": "ca16f4983c387e68",
+      "title_norm": "beniers finds comfort at home with new roommates",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T04:00:41.915670Z"
     }
   ],
   "known_sources": [
