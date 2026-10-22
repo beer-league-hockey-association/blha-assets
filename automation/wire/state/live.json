@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T19:00:39.103518Z",
+  "updated_at": "2026-10-22T19:15:59.939947Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14232,6 +14232,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T19:00:39.053248Z"
+    },
+    {
+      "key": "6c3ec603ea37a14d3e09ea9e",
+      "url": "https://www.sportsnet.ca/nhl/article/is-it-ever-going-to-happen-what-life-is-like-for-an-nhl-holdout",
+      "fingerprint": "157bf0010fe1e47d",
+      "title_norm": "'is it ever going to happen?': what life is like for an nhl holdout",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T19:15:59.890987Z"
     }
   ],
   "known_sources": [
