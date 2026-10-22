@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T21:00:39.177424Z",
+  "updated_at": "2026-10-22T22:00:40.618957Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14292,6 +14292,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T21:00:39.088193Z"
+    },
+    {
+      "key": "c678aa7059a99c2b3d43341c",
+      "url": "https://www.sportsnet.ca/nhl/article/nikishin-not-part-of-hurricanes-trade-offer-to-jets-for-hellebuyck",
+      "fingerprint": "2be7b71bf2e53ff6",
+      "title_norm": "nikishin not part of hurricanes' trade offer to jets for hellebuyck",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T22:00:40.560786Z"
     }
   ],
   "known_sources": [
