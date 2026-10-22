@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T23:15:33.307840Z",
+  "updated_at": "2026-10-22T23:45:49.987048Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14342,6 +14342,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T23:15:33.173741Z"
+    },
+    {
+      "key": "1b7162798fd3092ddeaf4d7a",
+      "url": "https://www.dailyfaceoff.com/players/news/mitch-marner/2475",
+      "fingerprint": "2e2a2f3f377e310e",
+      "title_norm": "mitch marner (vgk) — marner (personal) will not play thursday in st. louis.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T23:45:49.663498Z"
+    },
+    {
+      "key": "b110ea7fcfac257859f7ae08",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-cooper-black-becomes-tallest-goalie-to-play-nhl-game",
+      "fingerprint": "854708a653d1346e",
+      "title_norm": "panthers' cooper black becomes tallest goalie to play nhl game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T23:45:49.925905Z"
     }
   ],
   "known_sources": [
