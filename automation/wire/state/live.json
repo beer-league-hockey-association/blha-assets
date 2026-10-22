@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T03:30:36.114853Z",
+  "updated_at": "2026-10-22T03:45:38.843380Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13832,6 +13832,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-22T03:30:35.977296Z"
+    },
+    {
+      "key": "73288d93c8d02936b73e903d",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "2af9732524df21a4",
+      "title_norm": "linus ullmark (ott) — ullmark left wednesday's game with a lower-body \"strain\" and will be evaluated on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T03:45:38.746037Z"
     }
   ],
   "known_sources": [
