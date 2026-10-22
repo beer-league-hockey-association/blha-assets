@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T15:29:45.598792Z",
+  "updated_at": "2026-10-22T15:45:43.951633Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13992,6 +13992,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T15:29:45.498977Z"
+    },
+    {
+      "key": "070c9e8a14209c346093ca54",
+      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
+      "fingerprint": "7862fc151f771058",
+      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will be a game-time decision in boston on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:45:42.943078Z"
+    },
+    {
+      "key": "47cbc4e1b81f33fab5619768",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-defenceman-jake-mccabe-in-lineup-vs-rangers",
+      "fingerprint": "8662533e9f8a2c2b",
+      "title_norm": "maple leafs defenceman jake mccabe in lineup vs. rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:45:43.252008Z"
+    },
+    {
+      "key": "8db1a8494501a51db84528ef",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-recall-forward-owen-beck-from-ahl-laval",
+      "fingerprint": "96713d1652c9e637",
+      "title_norm": "canadiens recall forward owen beck from ahl laval",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:45:43.486881Z"
+    },
+    {
+      "key": "1515ff3c418276f1569034d3",
+      "url": "https://www.dailyfaceoff.com/players/news/marshall-rifai/25666",
+      "fingerprint": "f358e9c90574a9cc",
+      "title_norm": "marshall rifai (tor) — rifai (undisclosed) is a game-time decision vs. new york on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T15:45:43.852600Z"
     }
   ],
   "known_sources": [
