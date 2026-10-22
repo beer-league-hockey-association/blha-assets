@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T17:15:33.766213Z",
+  "updated_at": "2026-10-22T17:45:39.064661Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14152,6 +14152,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T17:15:33.691167Z"
+    },
+    {
+      "key": "ad82576b2cc779ef0c69a594",
+      "url": "https://www.sportsnet.ca/nhl/article/real-kypers-trade-board-2-0-feeling-out-the-best-fits-for-larkin-hellebuyck",
+      "fingerprint": "930fb76462a7f415",
+      "title_norm": "real kyper's trade board 2.0: feeling out the best fits for larkin, hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T17:45:39.003755Z"
     }
   ],
   "known_sources": [
