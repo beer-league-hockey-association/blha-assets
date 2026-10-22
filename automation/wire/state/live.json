@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T16:00:45.074167Z",
+  "updated_at": "2026-10-22T16:15:38.486757Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14042,6 +14042,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-22T16:00:44.973122Z"
+    },
+    {
+      "key": "87fa71a90324dc30a92e3a4d",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-22-2026",
+      "fingerprint": "87c26376d7c5cfaa",
+      "title_norm": "on tap: schaefer can extend home point streak for isles",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T16:15:37.865498Z"
+    },
+    {
+      "key": "f7da9226464e126681f7a30b",
+      "url": "https://www.nhl.com/news/montreal-canadiens-nick-suzuki-injury-status-update-october-22-2026",
+      "fingerprint": "3ce9db371d18dc64",
+      "title_norm": "n. suzuki out 2-4 weeks, ironman streak to end at 546",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T16:15:38.070429Z"
+    },
+    {
+      "key": "70fd53e49e561542a3ec046f",
+      "url": "https://audioboom.com/posts/8967944",
+      "fingerprint": "867d1f88af0eecfe",
+      "title_norm": "week 4 mailbag; jarvis' return",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-22T16:15:38.452641Z"
     }
   ],
   "known_sources": [
