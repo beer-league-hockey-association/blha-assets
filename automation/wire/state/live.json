@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T05:00:38.316930Z",
+  "updated_at": "2026-10-22T09:15:33.993696Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13872,6 +13872,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T05:00:38.196595Z"
+    },
+    {
+      "key": "22f78e4288e9d8a59fb0c5be",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-4-e3qso6u",
+      "fingerprint": "0147741eac17f64b",
+      "title_norm": "trade talks week 4",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-22T09:15:33.955208Z"
     }
   ],
   "known_sources": [
