@@ -187,7 +187,7 @@
    [
     "2:20",
     "Card: MONEY",
-    "Dues are a hundred and fifty dollars a season. Most of it goes to prizes: six-fifty for the champion, three-fifty for the runner-up, one-fifty for third and two hundred for the Presidents' Trophy. Two hundred a season builds the Dynasty Pot."
+    "Dues are two hundred dollars a season. Most of it goes to prizes: eight-fifty for the champion, four-fifty for the runner-up, two hundred for third and two-fifty for the Presidents' Trophy. Three-fifty a season builds the Dynasty Pot."
    ],
    [
     "2:40",
@@ -260,22 +260,22 @@
    [
     "0:00",
     "Title: WHERE THE MONEY GOES",
-    "Every franchise pays a hundred and fifty dollars a season. Twelve franchises make eighteen hundred dollars, and here's where all of it goes."
+    "Every franchise pays two hundred dollars a season. Twelve franchises make twenty-four hundred dollars, and here's where all of it goes."
    ],
    [
     "0:08",
     "Card: PRIZES",
-    "Six-fifty to the BLHA Champion, three-fifty to the runner-up, one-fifty for third place, and two hundred for the Presidents' Trophy, the best regular-season record."
+    "Eight-fifty to the BLHA Champion, four-fifty to the runner-up, two hundred for third place, and two-fifty for the Presidents' Trophy, the best regular-season record."
    ],
    [
     "0:20",
     "Card: DYNASTY POT",
-    "Two hundred goes into the Dynasty Pot. The first franchise to win three championships in the same cycle takes all of it."
+    "Three-fifty goes into the Dynasty Pot. The first franchise to win three championships in the same cycle takes all of it."
    ],
    [
     "0:30",
     "Card: RESERVE AND LEAGUE SERVICES",
-    "A hundred and fifty covers Fantrax Premium and other approved costs, and whatever's left joins the Dynasty Pot. The last hundred is the Commissioner's allocation for running the league."
+    "Two hundred covers Fantrax Premium and other approved costs, and whatever's left stays in the reserve for future costs. The last hundred is the Commissioner's allocation for running the league."
    ],
    [
     "0:40",
@@ -368,7 +368,7 @@
   "rows": [
    [
     "Title: PAYING YOUR DUES",
-    "Dues are a hundred and fifty dollars per franchise each season, and they're paid through Fantrax Treasurer."
+    "Dues are two hundred dollars per franchise each season, and they're paid through Fantrax Treasurer."
    ],
    [
     "Fantrax: the league's Treasurer page",
@@ -979,7 +979,7 @@
    "06 Clinched renders the whole clip. Post it in 🏁│playoff-race. Sound: sfx-clinch. Use one of these:",
    "• \"[Team] has clinched a playoff spot.\"",
    "• \"[Team] has clinched a first-round bye.\"",
-   "• \"[Team] has clinched the Presidents' Trophy and the two hundred dollars that comes with it.\"",
+   "• \"[Team] has clinched the Presidents' Trophy and the two hundred and fifty dollars that comes with it.\"",
    "• \"[Team] has been eliminated from playoff contention. Next stop, the consolation bracket.\"",
    "Only post a clinch once it's certain in the standings, tiebreakers included (15.4). If you're not sure, wait a week."
   ],
@@ -1125,7 +1125,7 @@
    [
     "0:29",
     "Card: $850 · BANNER · DYNASTY POT",
-    "The winner takes six hundred and fifty dollars, a banner in the hall of champions, and one step toward the Dynasty Pot."
+    "The winner takes eight hundred and fifty dollars, a banner in the hall of champions, and one step toward the Dynasty Pot."
    ],
    [
     "0:37",
@@ -1203,7 +1203,7 @@
    [
     "0:06",
     "Score card",
-    "[Team] beat [team], [score] to [score], and takes third place and one hundred and fifty dollars."
+    "[Team] beat [team], [score] to [score], and takes third place and two hundred dollars."
    ],
    [
     "0:14",
@@ -1296,10 +1296,10 @@
    "(Play the Season in Review.)",
    "2. The season's honors. Read each one and pause for the card.",
    "• The consolation champion, with fifty dollars of extra FAAB next season: [team].",
-   "• The Presidents' Trophy, for the best regular-season record, and two hundred dollars: [team], at [record].",
-   "• Third place, and one hundred and fifty dollars: [team].",
-   "• The runner-up, and three hundred and fifty dollars: [team].",
-   "• And your [year] BLHA Champion, with six hundred and fifty dollars and a banner in the hall of champions: [team]. (Let the sting play. Give the champion's owner the floor if it's live.)",
+   "• The Presidents' Trophy, for the best regular-season record, and two hundred and fifty dollars: [team], at [record].",
+   "• Third place, and two hundred dollars: [team].",
+   "• The runner-up, and four hundred and fifty dollars: [team].",
+   "• And your [year] BLHA Champion, with eight hundred and fifty dollars and a banner in the hall of champions: [team]. (Let the sting play. Give the champion's owner the floor if it's live.)",
    "3. The owners' awards. Before the first one, say this:",
    "Every franchise got one ballot: a first, second and third choice for each award, worth five, three and one points. Nobody could vote for their own franchise, their own pickups, or a trade they were part of. Bust of the Year is the one exception. These awards are for bragging rights. No money, no picks.",
    "Then, for each award, the same three lines: \"The nominees for [award] are [third place], [second place] and [first place].\" Pause. \"And the winner, with [points] points, is... [winner].\" Then one sentence on why.",
@@ -1332,7 +1332,7 @@
    [
     "0:04",
     "Card: $[BALANCE]",
-    "It's at [balance]. Two hundred dollars goes in every season, plus whatever the operating reserve didn't spend."
+    "It's at [balance]. Three hundred and fifty dollars goes in every season."
    ],
    [
     "0:12",

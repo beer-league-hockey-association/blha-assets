@@ -90,7 +90,7 @@ tmpl("league-office/43_ledger_payment_confirmed.json", "PAYMENT CONFIRMED", "`[F
 tmpl("league-office/44_ledger_prize_payout.json", "PRIZE PAID", "`[PRIZE]` for **Season `[YEAR]`** has been paid to `[FRANCHISE]`.", "BLHA LEAGUE LEDGER",
      [("AMOUNT", "`$[AMOUNT]`"), ("PAID", "`[DATE]`"), ("REMAINING THIS SEASON", "`[PRIZES STILL UNPAID, OR NONE]`")], RECORD)
 tmpl("league-office/45_ledger_dynasty_pot.json", "DYNASTY POT UPDATE", "The pot stands at **`$[BALANCE]`**.", "BLHA LEAGUE LEDGER",
-     [("THIS SEASON ADDED", "`$[DUES CONTRIBUTION]` + `$[UNUSED OPERATING RESERVE]`"),
+     [("THIS SEASON ADDED", "`$[DUES CONTRIBUTION]` from dues"),
       ("CHAMPIONSHIPS THIS CYCLE", "`[FRANCHISE: COUNT]`"),
       ("CYCLE STARTED", "`[SEASON]`"), ("TO WIN", "Three BLHA Championships in the same active cycle (Article IV).")], RECORD)
 

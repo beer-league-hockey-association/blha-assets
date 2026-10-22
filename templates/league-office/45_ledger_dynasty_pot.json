@@ -10,7 +10,7 @@
       "fields": [
         {
           "name": "THIS SEASON ADDED",
-          "value": "`$[DUES CONTRIBUTION]` + `$[UNUSED OPERATING RESERVE]`",
+          "value": "`$[DUES CONTRIBUTION]` from dues",
           "inline": false
         },
         {
