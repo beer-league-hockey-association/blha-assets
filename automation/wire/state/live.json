@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T22:00:40.618957Z",
+  "updated_at": "2026-10-22T22:45:35.829476Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14302,6 +14302,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T22:00:40.560786Z"
+    },
+    {
+      "key": "17a605c0278c33fabf5a57d4",
+      "url": "https://www.nhl.com/news/luke-glendening-signs-one-year-deal-with-new-york-rangers",
+      "fingerprint": "ffd864e7ce050688",
+      "title_norm": "glendening signs 1-year, $850,000 deal with rangers",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T22:45:35.378158Z"
+    },
+    {
+      "key": "73e01758d799b6156536a82b",
+      "url": "https://www.dailyfaceoff.com/players/news/marshall-rifai/25666",
+      "fingerprint": "41de19fbf55be5ab",
+      "title_norm": "marshall rifai (tor) — rifai (undisclosed) will not play thursday vs. the rangers.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T22:45:35.723537Z"
     }
   ],
   "known_sources": [
