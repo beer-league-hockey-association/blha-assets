@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T19:15:59.939947Z",
+  "updated_at": "2026-10-22T19:30:43.555741Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14242,6 +14242,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T19:15:59.890987Z"
+    },
+    {
+      "key": "dcc39c8cc63a090296005bcc",
+      "url": "https://theahl.com/news/komarov-suspended-26oct22",
+      "fingerprint": "ed33655cd89f8048",
+      "title_norm": "americans' komarov suspended two games",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-22T19:30:43.441319Z"
     }
   ],
   "known_sources": [
