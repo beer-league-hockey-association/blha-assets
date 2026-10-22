@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T01:00:40.194453Z",
+  "updated_at": "2026-10-22T01:15:34.830276Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13742,6 +13742,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T01:00:40.137913Z"
+    },
+    {
+      "key": "75b5ffc32f3bb0d4c103a6f7",
+      "url": "https://www.sportsnet.ca/nhl/video/panthers-tkachuk-hears-boos-from-senators-fans-before-being-dumped-by-zub",
+      "fingerprint": "a1c3f40d49bd2ac6",
+      "title_norm": "panthers' tkachuk hears boos from senators fans before being dumped by zub",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T01:15:34.375762Z"
+    },
+    {
+      "key": "255953e82a36604493e4e3dc",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-gm-ryan-johnson-preaching-patience-as-losses-pile-up",
+      "fingerprint": "64ea1cecc6ef5fda",
+      "title_norm": "canucks gm ryan johnson preaching patience as losses pile up",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T01:15:34.777013Z"
     }
   ],
   "known_sources": [
