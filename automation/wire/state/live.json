@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T16:15:38.486757Z",
+  "updated_at": "2026-10-22T16:30:41.590152Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14072,6 +14072,46 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-10-22T16:15:38.452641Z"
+    },
+    {
+      "key": "a2fbdbc48483a8ac7dcdac6a",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "e29a576d2e5f8856",
+      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T16:30:40.179636Z"
+    },
+    {
+      "key": "45d9a7eb9c821c0cf0d1e81e",
+      "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
+      "fingerprint": "67d52c0d45497f9c",
+      "title_norm": "quinton byfield (lak) — byfield (upper-body) is a game-time decision on long island on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T16:30:40.833207Z"
+    },
+    {
+      "key": "a754fe0a36fe50d191292976",
+      "url": "https://www.nhl.com/news/nikolaj-ehlers-heating-up-ahead-of-carolina-hurricanes-clash-with-edmonton-oilers",
+      "fingerprint": "6c6ef3f3a0cf5058",
+      "title_norm": "ehlers heating up ahead of canes' clash with oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-22T16:30:41.178141Z"
+    },
+    {
+      "key": "526a7c7a3a66d5f75781ffae",
+      "url": "https://www.sportsnet.ca/nhl/article/cousins-tkachuk-both-fined-after-tempers-flared-in-ottawa",
+      "fingerprint": "6b8829b6cdef96a1",
+      "title_norm": "cousins, tkachuk both fined after tempers flared in ottawa",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T16:30:41.556836Z"
     }
   ],
   "known_sources": [
