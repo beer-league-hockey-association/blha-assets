@@ -51,7 +51,7 @@ AMENDMENTS: list[dict] = []
 
 GLANCE_STATS = [
     ("12", "Franchises"),
-    ("$150", "Annual dues"),
+    ("$200", "Annual dues"),
     ("22", "Regular-season weeks"),
     ("36", "Controlled spots (non-IR)"),
 ]
@@ -68,22 +68,22 @@ QUICK_REFERENCE = [
     ("Trades", "Unlimited, no vote or veto. Deadline: Sunday 11:59 PM ET at the end of Week 20. Reopens the day after the Stanley Cup Final."),
     ("Annual draft", "5 rounds, linear; begins 14–21 days after the NHL Entry Draft."),
     ("Playoffs", "6 teams; top 2 byes; reseeding; 1-week quarterfinals and semifinals; 2-week cumulative championship. Non-playoff teams play a consolation bracket."),
-    ("Dues", "$150 per franchise per season, due before that season's draft."),
+    ("Dues", "$200 per franchise per season, due before that season's draft."),
     ("Future picks", "Future 1st- and 2nd-round picks cannot be traded until all required future-season dues are paid and confirmed through the pick's season."),
     ("Dates", "Defined by formula in this Constitution; exact dates are published each season on the League Calendar."),
 ]
 
 ALLOCATION = [
-    ("BLHA Champion", 650),
-    ("Runner-Up", 350),
-    ("Third Place", 150),
-    ("Presidents' Trophy", 200),
-    ("Dynasty Pot", 200),
-    ("Fantrax / League Operating Reserve", 150),
+    ("BLHA Champion", 850),
+    ("Runner-Up", 450),
+    ("Third Place", 200),
+    ("Presidents' Trophy", 250),
+    ("Dynasty Pot", 350),
+    ("Fantrax / League Operating Reserve", 200),
     ("League Services Allocation", 100),
 ]
-ALLOCATION_TOTAL = 1800
-assert sum(a for _, a in ALLOCATION) == ALLOCATION_TOTAL == 12 * 150
+ALLOCATION_TOTAL = 2400
+assert sum(a for _, a in ALLOCATION) == ALLOCATION_TOTAL == 12 * 200
 
 SKATERS = [("Goal", "+5.00"), ("Assist", "+2.97"), ("Shot on Goal", "+0.53"), ("Block", "+0.44"), ("Hit", "+0.14"), ("Penalty Minute", "-0.36")]
 GOALIES = [("Game Started", "+5.00"), ("Save", "+0.56"), ("Goal Against", "-5.00"), ("Goalie Goal", "+5.00"), ("Goalie Assist", "+2.97")]
@@ -133,18 +133,18 @@ ARTICLES = [
         ],
     },
     {
-        "num": "III", "title": "Franchise Ownership, Dues, Expenses, and Prizes", "callout": None,
+        "num": "III", "title": "Ownership, Dues, and Prizes", "callout": None,
         "blocks": [
-            ("p", "Annual dues are **$150 per franchise**. A franchise is one dues obligation even when co-owners are present. The Commissioner pays the same annual franchise dues as every other franchise."),
+            ("p", "Annual dues are **$200 per franchise**. A franchise is one dues obligation even when co-owners are present. The Commissioner pays the same annual franchise dues as every other franchise."),
             ("p", "The dues deadline for each Season is published on the League Calendar with at least 30 days' notice and falls before that Season's draft: the Startup Draft for Season 2027 and the Annual Draft for later Seasons. A franchise must be fully paid by that deadline to participate in the draft or begin the Season, unless the Commissioner has announced a league-wide alternative payment schedule."),
             ("p", "The Commissioner announces the accepted payment methods. A payment counts only when the Commissioner has confirmed it and recorded it in the League Ledger."),
             ("p", "If a franchise is not fully paid by the deadline, the Commissioner gives written notice in Discord and by direct message. If payment is still not confirmed 7 days after the deadline, the franchise may be treated as orphaned under Article XVIII, including replacement of the owner."),
-            ("p", "The annual allocation of the $1,800 league pool (12 franchises × $150) is:"),
+            ("p", "The annual allocation of the $2,400 league pool (12 franchises × $200) is:"),
             ("allocation",),
             ("p", "The League Services Allocation is paid to the Commissioner for recurring league administration, setup, records, Discord infrastructure, automation maintenance, league communications, and related management duties. Any increase to the League Services Allocation is a Material Amendment. On any vote that changes the League Services Allocation, the Commissioner's franchise does not vote and approval requires at least 8 of the other 11 franchises."),
-            ("p", "The League Operating Reserve may be used only for Fantrax Premium and other disclosed, authorized league operating costs. Any portion of the $150 reserve remaining after the Season's authorized expenses are settled is added to the Dynasty Pot."),
+            ("p", "The League Operating Reserve may be used only for Fantrax Premium, League Bot hosting, and other disclosed, authorized league operating costs. Any portion of the reserve not spent in a Season stays in the reserve and carries forward to cover future operating costs. The reserve is never added to the Dynasty Pot or to prizes."),
             ("p", "Guaranteed competitive prizes will not be reduced during an Active Season to cover an unanticipated operating overage. Any additional assessment or material change to the annual allocation requires league approval under this Constitution."),
-            ("p", "Prizes are paid after the competition that earns them is final, and no later than 30 days after the BLHA Championship concludes. Within the same period the Commissioner publishes a Season Ledger in the League Ledger channel showing dues received, prizes paid, operating reserve spending, the League Services Allocation, and the Dynasty Pot balance."),
+            ("p", "Prizes are paid after the competition that earns them is final, and no later than 30 days after the BLHA Championship concludes. Within the same period the Commissioner publishes a Season Ledger in the League Ledger channel showing dues received, prizes paid, operating reserve spending and balance, the League Services Allocation, and the Dynasty Pot balance."),
             ("p", "Annual dues are non-refundable once the Annual Draft has begun (the Startup Draft for Season 2027), except that if the league dissolves before the Season, Article XX requires a distribution or refund. Future-season prepayments attached to a franchise are non-refundable if an owner voluntarily leaves the league."),
         ],
     },
@@ -153,7 +153,7 @@ ARTICLES = [
         "callout": ("DYNASTY POT", "The first franchise to win three BLHA Championships in the same active cycle wins the entire accumulated pot."),
         "blocks": [
             ("p", "The BLHA maintains a rolling Dynasty Pot designed to reward sustained championship success across multiple Seasons. The first Dynasty Pot cycle begins with Season 2027."),
-            ("p", "At least $200 from each Season's dues is added to the Dynasty Pot. Any unused portion of the annual League Operating Reserve is also added to the Dynasty Pot after the Season's authorized expenses are settled."),
+            ("p", "$350 from each Season's dues is added to the Dynasty Pot. Nothing else is added to it."),
             ("p", "The first franchise to win three BLHA Championships during the same active Dynasty Pot cycle wins the entire accumulated Dynasty Pot. Championships do not need to be consecutive."),
             ("p", "Championship credit belongs to the franchise, not the individual owner. An ownership change does not erase a franchise's championship count within the active cycle."),
             ("p", "The base Dynasty Pot contribution for the Season in which a franchise wins its third championship is added to the pot before the payout is calculated. The payout is made after the championship result is final and the Season's financial obligations are reconciled."),
@@ -163,7 +163,7 @@ ARTICLES = [
         ],
     },
     {
-        "num": "V", "title": "League Format, Schedule, and Calendar", "callout": None,
+        "num": "V", "title": "Format, Schedule, and Calendar", "callout": None,
         "blocks": [
             ("p", "The BLHA uses Head-to-Head Points scoring with daily lineups."),
             ("p", "The regular season consists of 22 fantasy Weeks. Each franchise plays every other franchise twice. The league does not use divisions or conferences."),
@@ -273,22 +273,22 @@ ARTICLES = [
         ],
     },
     {
-        "num": "XV", "title": "Regular Season, Standings, and Presidents' Trophy", "callout": None,
+        "num": "XV", "title": "Standings and Presidents' Trophy", "callout": None,
         "blocks": [
             ("p", "The regular season consists of 22 Weeks. Every franchise plays every other franchise twice."),
             ("p", "Regular-season standings and head-to-head results are recorded by Fantrax."),
-            ("p", "The Presidents' Trophy is awarded to the franchise with the best regular-season Head-to-Head record after Week 22 and carries the annual $200 prize. It is independent of postseason results."),
+            ("p", "The Presidents' Trophy is awarded to the franchise with the best regular-season Head-to-Head record after Week 22 and carries the annual $250 prize. It is independent of postseason results."),
             ("p", "**Standings tiebreakers.** These apply to every standings position, including the Presidents' Trophy, playoff qualification and seeding, and consolation seeding. If two or more franchises are tied: (1) regular-season fantasy points scored; (2) head-to-head record among the tied franchises; (3) the next configured Fantrax standings tiebreaker; (4) a random draw conducted by the Commissioner and recorded in Discord."),
             ("p", "**Draft-order ties.** If non-playoff franchises are tied on Potential Points / Max Points For, the franchise with fewer regular-season fantasy points scored selects earlier. If still tied, a random draw conducted by the Commissioner and recorded in Discord decides."),
         ],
     },
     {
-        "num": "XVI", "title": "Playoffs, Third Place, and Consolation",
+        "num": "XVI", "title": "Playoffs and Consolation",
         "callout": ("POSTSEASON", "Six playoff teams. Top two seeds receive byes. The BLHA Championship is a two-week cumulative matchup."),
         "blocks": [
             ("p", "Six franchises qualify for the BLHA Championship Playoffs, ranked by final regular-season standings. Seeds 1 and 2 receive first-round byes."),
             ("p", "**Quarterfinals:** Seed 3 vs. Seed 6 and Seed 4 vs. Seed 5. **Semifinals:** Seed 1 and Seed 2 join the four-team field; the playoff bracket reseeds after each round, with the highest remaining seed facing the lowest remaining seed. Quarterfinals and Semifinals are one fantasy Week each. The **BLHA Championship** is a two-week cumulative matchup."),
-            ("p", "The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $150 third-place prize. The Commissioner enters this matchup in Fantrax once the Semifinals are final."),
+            ("p", "The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $200 third-place prize. The Commissioner enters this matchup in Fantrax once the Semifinals are final."),
             ("p", "If Fantrax cannot technically stage the third-place matchup, the fallback is the Semifinal loser who scores the most fantasy points during the same two-week championship period. If the fallback total is exactly tied, the higher playoff seed receives third place."),
             ("p", "If any playoff, third-place, or consolation matchup ends in an exact tie, the higher seed advances or wins."),
             ("p", "The playoff schedule should end approximately six days before the NHL regular season concludes to reduce late-season NHL lineup volatility where the NHL schedule permits (Article V)."),
@@ -328,7 +328,7 @@ ARTICLES = [
         ],
     },
     {
-        "num": "XX", "title": "Amendments, Records, and Dissolution", "callout": None,
+        "num": "XX", "title": "Amendments and Records", "callout": None,
         "blocks": [
             ("p", "**Adoption.** The Commissioner finalizes this Constitution before any owner is invited to the league. Accepting a franchise is accepting this Constitution, and each owner agrees to be bound by it. The text as accepted (the Charter) is locked. No amendment vote may be held before the Offseason following Season 2027, and until then the Constitution changes only by clerical correction under Section 2.5."),
             ("p", "**Proposals.** Any franchise or the Commissioner may propose a Material Amendment in writing. A proposal must identify the affected rule, the proposed replacement language, and the intended effective date, and is posted in the voting channel at least 7 days before voting opens."),
@@ -336,7 +336,7 @@ ARTICLES = [
             ("p", "**Timing.** An approved amendment takes effect for the next Season, or on the later date it states. To apply to a Season it must be approved before that Season's dues deadline, so every owner knows the rules before paying."),
             ("p", "Amendments do not retroactively alter completed competition, previously earned prizes, or finalized transactions."),
             ("p", "**Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is dated and posted, and prior versions are archived."),
-            ("p", "**Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them."),
+            ("p", "**Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV, and any remaining League Operating Reserve balance is distributed the same way. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them."),
             ("p", "The latest published version of this Constitution is the controlling league document. Upon adoption of the Charter, all prior working drafts are superseded except as historical records."),
             ("history", [("Charter", "Adopted by owner acceptance. Effective Season 2027.")]),
         ],

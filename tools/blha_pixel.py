@@ -503,8 +503,11 @@ def splash(size=(1920, 1080), b=5):
 HEADER_W, HEADER_H, HEADER_K = 200, 67, 8
 
 
-def header(title: str, kicker: str, seed: int = 7) -> Image.Image:
-    """1600 x 533 channel header on a 200 x 67 art grid: gold eyebrow, big title, the B on the right."""
+SUBLINE = "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026"
+
+
+def header(title: str, kicker: str, seed: int = 7, sub: str = SUBLINE) -> Image.Image:
+    """1600 x 533 channel header on a 200 x 67 art grid: gold eyebrow, big title, small line, the B on the right."""
     a = art(HEADER_W, HEADER_H, CHARCOAL)
     grain(a, [CHAR_LT, CHAR_DK], .02, seed * 31)
     dither(a, 0, 56, HEADER_W, 9, STANDS)
@@ -517,7 +520,7 @@ def header(title: str, kicker: str, seed: int = 7) -> Image.Image:
     avail = 118 * HEADER_K
     fp = next(s for s in (8, 6, 4, 3) if font("jersey").width(title, s) + s <= avail)
     draw_text(img, title, "jersey", fp, x, 236 - 5 * fp, CREAM, shadow=BLACK)
-    draw_text(img, "BEER LEAGUE HOCKEY ASSOCIATION • EST. 2026", "silk", 4, x, 372, MUTED)
+    draw_text(img, sub, "silk", 4, x, 372, MUTED)
     return img
 
 

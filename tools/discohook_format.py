@@ -130,7 +130,8 @@ LEAGUE_OFFICE_HEADERS = {
     "06_hall_of_champions_channel_intro.json": "league-office/blha-champions-header.png",
     "07_league_records_channel_intro.json": "league-office/blha-records-header.png",
 }
-GENERIC_HEADER = BASE + "shared/blha-generic-header-1600x420.png" + HEADER_VERSION
+# The generic header was redrawn on its own (no repeated league name), so it carries its own version.
+GENERIC_HEADER = BASE + "shared/blha-generic-header-1600x420.png?v=8bit-2"
 WELCOME = "welcome/01_welcome.json"
 WELCOME_HEADER = "welcome/blha-welcome-banner.png"
 

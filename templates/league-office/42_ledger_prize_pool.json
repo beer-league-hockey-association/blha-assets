@@ -2,7 +2,7 @@
   "embeds": [
     {
       "title": "BLHA PRIZE POOL",
-      "description": "`[SEASON]` • 12 franchises × $150 = $1,800",
+      "description": "`[SEASON]` • 12 franchises × $200 = $2,400",
       "color": 13012757,
       "footer": {
         "text": "BLHA LEAGUE LEDGER"
@@ -10,32 +10,32 @@
       "fields": [
         {
           "name": "BLHA CHAMPION",
-          "value": "$650",
+          "value": "$850",
           "inline": false
         },
         {
           "name": "RUNNER-UP",
-          "value": "$350",
+          "value": "$450",
           "inline": false
         },
         {
           "name": "THIRD PLACE",
-          "value": "$150",
+          "value": "$200",
           "inline": false
         },
         {
           "name": "PRESIDENTS' TROPHY",
-          "value": "$200",
+          "value": "$250",
           "inline": false
         },
         {
           "name": "DYNASTY POT CONTRIBUTION",
-          "value": "$200",
+          "value": "$350",
           "inline": false
         },
         {
           "name": "FANTRAX / OPERATING RESERVE",
-          "value": "$150",
+          "value": "$200",
           "inline": false
         },
         {

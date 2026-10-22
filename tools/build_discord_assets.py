@@ -27,7 +27,8 @@ ROOT = Path(__file__).resolve().parents[1]
 WEBHOOKS = ROOT / "discord" / "webhooks"
 SERVER = ROOT / "discord" / "server"
 
-# (file under discord/webhooks, title, eyebrow, kit slug: brand/kit names it blha-<slug>-header-1600x533.png)
+# (file under discord/webhooks, title, eyebrow, kit slug: brand/kit names it blha-<slug>-header-1600x533.png,
+#  optional small line; the default repeats the league name, so a header titled with the name sets its own)
 HEADERS = [
     ("welcome/blha-welcome-banner.png", "WELCOME TO THE BLHA", "WELCOME TO THE ROOM", "welcome"),
     ("league-office/blha-constitution-header.png", "LEAGUE CONSTITUTION", "OFFICIAL BLHA RULEBOOK", "constitution"),
@@ -46,18 +47,20 @@ HEADERS = [
     ("franchise-hq/blha-franchise-hq-header.png", "FRANCHISE HQ", "YOUR CLUB, YOUR CALLS", "franchise-hq"),
     ("league-office/blha-champions-header.png", "BLHA CHAMPIONS", "PERMANENT LEAGUE HISTORY", "champions"),
     ("league-office/blha-records-header.png", "LEAGUE RECORDS", "THE PERMANENT RECORD", "records"),
-    ("shared/blha-generic-header-1600x420.png", "BEER LEAGUE HOCKEY ASSOCIATION", "OFFICIAL BLHA", "generic"),
+    ("shared/blha-generic-header-1600x420.png", "BEER LEAGUE HOCKEY ASSOCIATION", "FROM THE LEAGUE OFFICE", "generic",
+     "DYNASTY FANTASY HOCKEY • EST. 2026"),
 ]
 
 
-def make_header(title: str, kicker: str, seed: int = 7) -> Image.Image:
-    """1600 x 533 channel header (3:1): gold eyebrow, big title, the pixel B on the right."""
-    return px.header(title, kicker, seed)
+def make_header(title: str, kicker: str, seed: int = 7, sub: str = px.SUBLINE) -> Image.Image:
+    """1600 x 533 channel header (3:1): gold eyebrow, big title, small line, the pixel B on the right."""
+    return px.header(title, kicker, seed, sub)
 
 
 def all_headers() -> list[tuple[str, str, Image.Image]]:
     """(webhooks path, kit slug, image) for every header, in kit order."""
-    return [(rel, slug, make_header(title, kicker, seed=i + 3)) for i, (rel, title, kicker, slug) in enumerate(HEADERS)]
+    return [(h[0], h[3], make_header(h[1], h[2], seed=i + 3, sub=h[4] if len(h) > 4 else px.SUBLINE))
+            for i, h in enumerate(HEADERS)]
 
 
 def make_footer() -> Image.Image:

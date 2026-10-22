@@ -15,17 +15,17 @@
         },
         {
           "name": "PRIZE",
-          "value": "$650",
+          "value": "$850",
           "inline": false
         },
         {
           "name": "RUNNER-UP",
-          "value": "`[FRANCHISE]` • $350",
+          "value": "`[FRANCHISE]` • $450",
           "inline": false
         },
         {
           "name": "THIRD PLACE",
-          "value": "`[FRANCHISE]` • $150",
+          "value": "`[FRANCHISE]` • $200",
           "inline": false
         },
         {

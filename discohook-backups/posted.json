@@ -33,47 +33,17 @@
       "posted": "2026-10-07",
       "fingerprint": 3502283145
     },
-    "constitution/00_quick_reference_and_article_i.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 3199039621,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258369016799325"
-    },
-    "constitution/01_articles_ii_to_iii.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 3079471685,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258376600227843"
-    },
-    "constitution/02_articles_iv_to_v.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 940673060,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258385613791333"
-    },
     "constitution/04_articles_xi_to_xiii.json": {
       "channel": "constitution",
       "posted": "2026-10-07",
       "fingerprint": 921003983,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258400084140105"
     },
-    "constitution/05_articles_xiv_to_xvi.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 706232382,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258406971187293"
-    },
     "constitution/06_articles_xvii_to_xix.json": {
       "channel": "constitution",
       "posted": "2026-10-07",
       "fingerprint": 1896735968,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258413111648272"
-    },
-    "constitution/07_articles_xx.json": {
-      "channel": "constitution",
-      "posted": "2026-10-07",
-      "fingerprint": 3828200111,
-      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258436532772905"
     },
     "draft-center/01_draft_announcements_channel_intro.json": {
       "channel": "draft-announcements",
@@ -287,20 +257,26 @@
       "channel": "waiver-watch",
       "posted": "2026-10-07",
       "fingerprint": 3602392238
-    },
-    "welcome/01_welcome.json": {
-      "channel": "welcome",
-      "posted": "2026-10-07",
-      "fingerprint": 865165278,
-      "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
     }
   },
   "update_in_place": {
-    "league-competition/04_weekly_recap_channel_intro.json": {
-      "channel": "weekly-recap",
+    "constitution/00_quick_reference_and_article_i.json": {
+      "channel": "constitution",
       "posted": "2026-10-07",
-      "fingerprint": 4230816491,
-      "message": "https://discord.com/channels/1554538666721018016/1554562413876219984/1557429480258277418"
+      "fingerprint": 3199039621,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258369016799325"
+    },
+    "constitution/01_articles_ii_to_iii.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3079471685,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258376600227843"
+    },
+    "constitution/02_articles_iv_to_v.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 940673060,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258385613791333"
     },
     "constitution/03_articles_vi_to_x.json": {
       "channel": "constitution",
@@ -308,11 +284,35 @@
       "fingerprint": 3768214010,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258393205473379"
     },
+    "constitution/05_articles_xiv_to_xvi.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 706232382,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258406971187293"
+    },
+    "constitution/07_articles_xx.json": {
+      "channel": "constitution",
+      "posted": "2026-10-07",
+      "fingerprint": 3828200111,
+      "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557258436532772905"
+    },
+    "league-competition/04_weekly_recap_channel_intro.json": {
+      "channel": "weekly-recap",
+      "posted": "2026-10-07",
+      "fingerprint": 4230816491,
+      "message": "https://discord.com/channels/1554538666721018016/1554562413876219984/1557429480258277418"
+    },
     "league-office/16_scoring_explained.json": {
       "channel": "constitution",
       "posted": "2026-10-07",
       "fingerprint": 1615074019,
       "message": "https://discord.com/channels/1554538666721018016/1554540147092095056/1557425202743349290"
+    },
+    "welcome/01_welcome.json": {
+      "channel": "welcome",
+      "posted": "2026-10-07",
+      "fingerprint": 865165278,
+      "message": "https://discord.com/channels/1554538666721018016/1554540107497865316/1557257999171715190"
     }
   }
 }

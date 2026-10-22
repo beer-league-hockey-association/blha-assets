@@ -42,8 +42,8 @@ franchises: {}
 #                      end of that Season (automation/playoff_pool/), a
 #                      franchise key. Cosmetic only, like the Pool Shark role.
 #   dynasty_pot:
-#     dues:            dues added to the pot that Season (at least $200, Section 4.2)
-#     unused_reserve:  unused League Operating Reserve added after expenses (3.8, 4.2)
+#     dues:            dues added to the pot that Season ($350, Section 4.2). The
+#                      League Operating Reserve is never added to the pot (3.7).
 #     balance:         optional; the pot after this Season's additions, before any
 #                      payout, as published in the Season Ledger. Checked against
 #                      the contributions since the cycle began.
@@ -60,9 +60,8 @@ franchises: {}
 #       wooden_spoon: zamboni-drivers
 #       pool_shark: puck-luck
 #       dynasty_pot:
-#         dues: 200
-#         unused_reserve: 35
-#         balance: 235
+#         dues: 350
+#         balance: 350
 seasons: {}
 
 # ---------------------------------------------------------------------------

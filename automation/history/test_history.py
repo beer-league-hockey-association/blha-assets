@@ -36,8 +36,8 @@ HISTORY = {
     "seasons": {
         2027: {"champion": "north", "runner_up": "south", "third_place": "east", "presidents_trophy": "south",
                "consolation_champion": "west", "wooden_spoon": "west",
-               "dynasty_pot": {"dues": 200, "unused_reserve": 35, "balance": 235}},
-        2028: {"champion": "north", "dynasty_pot": {"dues": 200, "unused_reserve": 0, "balance": 435}},
+               "dynasty_pot": {"dues": 235, "balance": 235}},
+        2028: {"champion": "north", "dynasty_pot": {"dues": 200, "balance": 435}},
     },
     "dynasty_pot": {"first_cycle": 2027, "championships": {"north": 2}},
 }
@@ -144,10 +144,10 @@ class HistoryFileTests(unittest.TestCase):
         self.assertIn("does not match the champions", text)
 
     def test_cycle_is_won_at_three_titles_and_resets(self) -> None:
-        seasons = {2027: {"champion": "north", "dynasty_pot": {"dues": 200, "unused_reserve": 35}},
+        seasons = {2027: {"champion": "north", "dynasty_pot": {"dues": 235}},
                    2028: {"champion": "south", "dynasty_pot": {"dues": 200}},
                    2029: {"champion": "north", "dynasty_pot": {"dues": 200}},
-                   2030: {"champion": "north", "dynasty_pot": {"dues": 200, "unused_reserve": 10}},
+                   2030: {"champion": "north", "dynasty_pot": {"dues": 210}},
                    2031: {"champion": "south", "dynasty_pot": {"dues": 200}}}
         dynasty, errors = derive_dynasty(seasons, {"first_cycle": 2027})
         self.assertEqual(errors, [])
@@ -385,7 +385,7 @@ class ProfileTests(Fixture):
         self.assertEqual((s["balance"], s["cycle_started"], s["titles_to_win"]), (435, 2027, 3))
         self.assertEqual(s["rows"][0], {"key": "north", "name": "North Stars", "titles": 2, "color": "#1D4E89",
                                      "colors": ["#1D4E89", "#F4EFE4"]})
-        self.assertEqual(s["last_added"], {"season": 2028, "dues": 200.0, "unused_reserve": 0.0})
+        self.assertEqual(s["last_added"], {"season": 2028, "dues": 200.0})
 
     def test_franchise_profiles(self) -> None:
         by_key = {p["key"]: p for p in profiles.franchise_profiles(self.hist)}

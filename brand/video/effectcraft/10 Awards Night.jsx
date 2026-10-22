@@ -15,10 +15,10 @@ var DATA = {
     season: "2027-28",
     honors: [
         { label: "CONSOLATION CHAMPION", prize: "+$50 FAAB NEXT SEASON", team: "TEAM K" },
-        { label: "PRESIDENTS' TROPHY", prize: "$200", team: "TEAM A" },
-        { label: "THIRD PLACE", prize: "$150", team: "TEAM D" },
-        { label: "RUNNER-UP", prize: "$350", team: "TEAM C" },
-        { label: "BLHA CHAMPION", prize: "$650 AND A BANNER", team: "TEAM B" }
+        { label: "PRESIDENTS' TROPHY", prize: "$250", team: "TEAM A" },
+        { label: "THIRD PLACE", prize: "$200", team: "TEAM D" },
+        { label: "RUNNER-UP", prize: "$450", team: "TEAM C" },
+        { label: "BLHA CHAMPION", prize: "$850 AND A BANNER", team: "TEAM B" }
     ],
     awards: [
         { include: true, name: "BUST OF THE YEAR", about: "THE SEASON'S BIGGEST LETDOWN", shared: false,

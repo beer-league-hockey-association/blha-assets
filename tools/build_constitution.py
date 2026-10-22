@@ -237,7 +237,7 @@ def make_embeds() -> list[dict]:
     alloc = "\n".join(f"• {k} — **${v:,}**" for k, v in S.ALLOCATION)
     embeds.append({
         "title": "ANNUAL FINANCIAL ALLOCATION",
-        "description": f"12 franchises × $150 = **${S.ALLOCATION_TOTAL:,}** annual league pool.\n\n{alloc}\n• **TOTAL — ${S.ALLOCATION_TOTAL:,}**",
+        "description": f"12 franchises × $200 = **${S.ALLOCATION_TOTAL:,}** annual league pool.\n\n{alloc}\n• **TOTAL — ${S.ALLOCATION_TOTAL:,}**",
         "color": GOLD, "footer": {"text": S.FOOTER},
     })
     for art in S.ARTICLES:
@@ -250,14 +250,20 @@ def make_embeds() -> list[dict]:
     return embeds
 
 
+# Each of these articles starts a new message, so the messages already posted in
+# Discord keep the same articles (and file names) when an article grows or shrinks.
+MESSAGE_STARTS = {"II", "IV", "VI", "XI", "XIV", "XVII", "XX"}
+
+
 def pack_messages(embeds: list[dict]) -> list[list[dict]]:
     messages: list[list[dict]] = []
     cur: list[dict] = []
     size = 0
     for e in embeds:
         c = embed_chars(e)
+        starts = e.get("_article") in MESSAGE_STARTS and "(CONTINUED)" not in e["title"]
         # quick reference and allocation travel together; start a fresh message otherwise when full
-        if cur and (size + c > MAX_MESSAGE or len(cur) >= MAX_EMBEDS):
+        if cur and (starts or size + c > MAX_MESSAGE or len(cur) >= MAX_EMBEDS):
             messages.append(cur)
             cur, size = [], 0
         cur.append(e)
@@ -505,7 +511,7 @@ def build_pdf(path: Path) -> None:
     story += [Paragraph("Quick Reference", h_sec)]
     story += [label_table([[Paragraph(label(k), small), Paragraph(md(v), small)] for k, v in S.QUICK_REFERENCE], 1.3 * inch), Spacer(1, 10)]
     al_head = [Paragraph("Annual Financial Allocation", h_sec),
-               Paragraph(f"<b>12 franchises × $150 = ${S.ALLOCATION_TOTAL:,} annual league pool.</b>", ParagraphStyle("al", parent=small, textColor=GRAY, spaceAfter=5))]
+               Paragraph(f"<b>12 franchises × $200 = ${S.ALLOCATION_TOTAL:,} annual league pool.</b>", ParagraphStyle("al", parent=small, textColor=GRAY, spaceAfter=5))]
 
     def alloc_table():
         data = [[Paragraph(label("Annual allocation"), small), Paragraph(label("Amount"), right)]]

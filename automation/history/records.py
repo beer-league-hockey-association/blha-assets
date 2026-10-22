@@ -39,7 +39,7 @@ PODIUM = ("champion", "runner_up", "third_place")
 TOP_KEYS = {"franchises", "seasons", "dynasty_pot"}
 FRANCHISE_KEYS = {"name", "owner", "founded", "colors", "logo", "team_ids"}
 SEASON_KEYS = set(AWARDS) | {"dynasty_pot", "notes"}
-SEASON_POT_KEYS = {"dues", "unused_reserve", "balance"}
+SEASON_POT_KEYS = {"dues", "balance"}
 DYNASTY_KEYS = {"first_cycle", "titles_to_win", "championships"}
 FIRST_CYCLE = 2027      # Section 4.1
 TITLES_TO_WIN = 3       # Section 4.3
@@ -131,7 +131,7 @@ def validate(data: dict[str, Any], repo_root: Path = REPO_ROOT) -> list[str]:
         pot = row.get("dynasty_pot")
         if pot is not None:
             if not isinstance(pot, dict):
-                errors.append(f"{where}.dynasty_pot: must be a mapping with dues, unused_reserve, balance")
+                errors.append(f"{where}.dynasty_pot: must be a mapping with dues and balance")
             else:
                 for extra in sorted(set(pot) - SEASON_POT_KEYS):
                     errors.append(f"{where}.dynasty_pot: unknown field {extra!r}")
@@ -182,7 +182,7 @@ class Dynasty:
     active: Cycle
     past: list[Cycle]
     titles_to_win: int
-    last_added: dict[str, Any] | None = None   # the latest Season's contribution {season, dues, unused_reserve}
+    last_added: dict[str, Any] | None = None   # the latest Season's contribution {season, dues}
 
 
 def derive_dynasty(seasons: dict[Any, Any], settings: dict[str, Any] | None = None) -> tuple[Dynasty, list[str]]:
@@ -199,11 +199,11 @@ def derive_dynasty(seasons: dict[Any, Any], settings: dict[str, Any] | None = No
             continue
         row = seasons.get(year, seasons.get(str(year))) or {}
         pot = row.get("dynasty_pot") or {}
-        dues, reserve = float(pot.get("dues") or 0), float(pot.get("unused_reserve") or 0)
-        cur.balance += dues + reserve
+        dues = float(pot.get("dues") or 0)
+        cur.balance += dues
         cur.seasons.append(year)
         if pot:
-            last_added = {"season": year, "dues": dues, "unused_reserve": reserve}
+            last_added = {"season": year, "dues": dues}
         if "balance" in pot and abs(float(pot["balance"]) - cur.balance) > 0.005:
             errors.append(f"seasons.{year}.dynasty_pot.balance is {pot['balance']} but the contributions since "
                           f"Season {cur.started} add up to {cur.balance:g}")

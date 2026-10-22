@@ -15,7 +15,7 @@
 - **Trades:** Unlimited, no vote or veto. Deadline: Sunday 11:59 PM ET at the end of Week 20. Reopens the day after the Stanley Cup Final.
 - **Annual draft:** 5 rounds, linear; begins 14–21 days after the NHL Entry Draft.
 - **Playoffs:** 6 teams; top 2 byes; reseeding; 1-week quarterfinals and semifinals; 2-week cumulative championship. Non-playoff teams play a consolation bracket.
-- **Dues:** $150 per franchise per season, due before that season's draft.
+- **Dues:** $200 per franchise per season, due before that season's draft.
 - **Future picks:** Future 1st- and 2nd-round picks cannot be traded until all required future-season dues are paid and confirmed through the pick's season.
 - **Dates:** Defined by formula in this Constitution; exact dates are published each season on the League Calendar.
 
@@ -23,14 +23,14 @@
 
 | Allocation | Amount |
 |---|---:|
-| BLHA Champion | $650 |
-| Runner-Up | $350 |
-| Third Place | $150 |
-| Presidents' Trophy | $200 |
-| Dynasty Pot | $200 |
-| Fantrax / League Operating Reserve | $150 |
+| BLHA Champion | $850 |
+| Runner-Up | $450 |
+| Third Place | $200 |
+| Presidents' Trophy | $250 |
+| Dynasty Pot | $350 |
+| Fantrax / League Operating Reserve | $200 |
 | League Services Allocation | $100 |
-| **Total** | **$1,800** |
+| **Total** | **$2,400** |
 
 ## Article I — League Identity and Purpose
 
@@ -60,9 +60,9 @@
 
 **2.6** The current published Constitution controls when it conflicts with old messages, prior drafts, informal discussions, or outdated documents. The League Calendar implements this Constitution and cannot override it (Article V).
 
-## Article III — Franchise Ownership, Dues, Expenses, and Prizes
+## Article III — Ownership, Dues, and Prizes
 
-**3.1** Annual dues are **$150 per franchise**. A franchise is one dues obligation even when co-owners are present. The Commissioner pays the same annual franchise dues as every other franchise.
+**3.1** Annual dues are **$200 per franchise**. A franchise is one dues obligation even when co-owners are present. The Commissioner pays the same annual franchise dues as every other franchise.
 
 **3.2** The dues deadline for each Season is published on the League Calendar with at least 30 days' notice and falls before that Season's draft: the Startup Draft for Season 2027 and the Annual Draft for later Seasons. A franchise must be fully paid by that deadline to participate in the draft or begin the Season, unless the Commissioner has announced a league-wide alternative payment schedule.
 
@@ -70,24 +70,24 @@
 
 **3.4** If a franchise is not fully paid by the deadline, the Commissioner gives written notice in Discord and by direct message. If payment is still not confirmed 7 days after the deadline, the franchise may be treated as orphaned under Article XVIII, including replacement of the owner.
 
-**3.5** The annual allocation of the $1,800 league pool (12 franchises × $150) is:
+**3.5** The annual allocation of the $2,400 league pool (12 franchises × $200) is:
 
-• BLHA Champion — **$650**
-• Runner-Up — **$350**
-• Third Place — **$150**
-• Presidents' Trophy — **$200**
-• Dynasty Pot — **$200**
-• Fantrax / League Operating Reserve — **$150**
+• BLHA Champion — **$850**
+• Runner-Up — **$450**
+• Third Place — **$200**
+• Presidents' Trophy — **$250**
+• Dynasty Pot — **$350**
+• Fantrax / League Operating Reserve — **$200**
 • League Services Allocation — **$100**
-• **TOTAL — $1,800**
+• **TOTAL — $2,400**
 
 **3.6** The League Services Allocation is paid to the Commissioner for recurring league administration, setup, records, Discord infrastructure, automation maintenance, league communications, and related management duties. Any increase to the League Services Allocation is a Material Amendment. On any vote that changes the League Services Allocation, the Commissioner's franchise does not vote and approval requires at least 8 of the other 11 franchises.
 
-**3.7** The League Operating Reserve may be used only for Fantrax Premium and other disclosed, authorized league operating costs. Any portion of the $150 reserve remaining after the Season's authorized expenses are settled is added to the Dynasty Pot.
+**3.7** The League Operating Reserve may be used only for Fantrax Premium, League Bot hosting, and other disclosed, authorized league operating costs. Any portion of the reserve not spent in a Season stays in the reserve and carries forward to cover future operating costs. The reserve is never added to the Dynasty Pot or to prizes.
 
 **3.8** Guaranteed competitive prizes will not be reduced during an Active Season to cover an unanticipated operating overage. Any additional assessment or material change to the annual allocation requires league approval under this Constitution.
 
-**3.9** Prizes are paid after the competition that earns them is final, and no later than 30 days after the BLHA Championship concludes. Within the same period the Commissioner publishes a Season Ledger in the League Ledger channel showing dues received, prizes paid, operating reserve spending, the League Services Allocation, and the Dynasty Pot balance.
+**3.9** Prizes are paid after the competition that earns them is final, and no later than 30 days after the BLHA Championship concludes. Within the same period the Commissioner publishes a Season Ledger in the League Ledger channel showing dues received, prizes paid, operating reserve spending and balance, the League Services Allocation, and the Dynasty Pot balance.
 
 **3.10** Annual dues are non-refundable once the Annual Draft has begun (the Startup Draft for Season 2027), except that if the league dissolves before the Season, Article XX requires a distribution or refund. Future-season prepayments attached to a franchise are non-refundable if an owner voluntarily leaves the league.
 
@@ -97,7 +97,7 @@
 
 **4.1** The BLHA maintains a rolling Dynasty Pot designed to reward sustained championship success across multiple Seasons. The first Dynasty Pot cycle begins with Season 2027.
 
-**4.2** At least $200 from each Season's dues is added to the Dynasty Pot. Any unused portion of the annual League Operating Reserve is also added to the Dynasty Pot after the Season's authorized expenses are settled.
+**4.2** $350 from each Season's dues is added to the Dynasty Pot. Nothing else is added to it.
 
 **4.3** The first franchise to win three BLHA Championships during the same active Dynasty Pot cycle wins the entire accumulated Dynasty Pot. Championships do not need to be consecutive.
 
@@ -111,7 +111,7 @@
 
 **4.8** If the BLHA permanently dissolves before the Dynasty Pot is won, remaining Dynasty Pot funds are distributed equally among the active, fully paid franchises after any authorized outstanding league expenses are satisfied.
 
-## Article V — League Format, Schedule, and Calendar
+## Article V — Format, Schedule, and Calendar
 
 **5.1** The BLHA uses Head-to-Head Points scoring with daily lineups.
 
@@ -274,19 +274,19 @@
 
 **14.7** The same order repeats in Rounds 2 through 5. The consolation bracket does not alter annual draft position.
 
-## Article XV — Regular Season, Standings, and Presidents' Trophy
+## Article XV — Standings and Presidents' Trophy
 
 **15.1** The regular season consists of 22 Weeks. Every franchise plays every other franchise twice.
 
 **15.2** Regular-season standings and head-to-head results are recorded by Fantrax.
 
-**15.3** The Presidents' Trophy is awarded to the franchise with the best regular-season Head-to-Head record after Week 22 and carries the annual $200 prize. It is independent of postseason results.
+**15.3** The Presidents' Trophy is awarded to the franchise with the best regular-season Head-to-Head record after Week 22 and carries the annual $250 prize. It is independent of postseason results.
 
 **15.4** **Standings tiebreakers.** These apply to every standings position, including the Presidents' Trophy, playoff qualification and seeding, and consolation seeding. If two or more franchises are tied: (1) regular-season fantasy points scored; (2) head-to-head record among the tied franchises; (3) the next configured Fantrax standings tiebreaker; (4) a random draw conducted by the Commissioner and recorded in Discord.
 
 **15.5** **Draft-order ties.** If non-playoff franchises are tied on Potential Points / Max Points For, the franchise with fewer regular-season fantasy points scored selects earlier. If still tied, a random draw conducted by the Commissioner and recorded in Discord decides.
 
-## Article XVI — Playoffs, Third Place, and Consolation
+## Article XVI — Playoffs and Consolation
 
 > **POSTSEASON** — Six playoff teams. Top two seeds receive byes. The BLHA Championship is a two-week cumulative matchup.
 
@@ -294,7 +294,7 @@
 
 **16.2** **Quarterfinals:** Seed 3 vs. Seed 6 and Seed 4 vs. Seed 5. **Semifinals:** Seed 1 and Seed 2 join the four-team field; the playoff bracket reseeds after each round, with the highest remaining seed facing the lowest remaining seed. Quarterfinals and Semifinals are one fantasy Week each. The **BLHA Championship** is a two-week cumulative matchup.
 
-**16.3** The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $150 third-place prize. The Commissioner enters this matchup in Fantrax once the Semifinals are final.
+**16.3** The two Semifinal losers play a third-place matchup during the same two-week period as the BLHA Championship. The winner receives third place and the $200 third-place prize. The Commissioner enters this matchup in Fantrax once the Semifinals are final.
 
 **16.4** If Fantrax cannot technically stage the third-place matchup, the fallback is the Semifinal loser who scores the most fantasy points during the same two-week championship period. If the fallback total is exactly tied, the higher playoff seed receives third place.
 
@@ -344,7 +344,7 @@
 
 **19.7** All significant rulings, recusal decisions, and appeal outcomes are recorded in the rulings-log channel so that the league retains a permanent record.
 
-## Article XX — Amendments, Records, and Dissolution
+## Article XX — Amendments and Records
 
 **20.1** **Adoption.** The Commissioner finalizes this Constitution before any owner is invited to the league. Accepting a franchise is accepting this Constitution, and each owner agrees to be bound by it. The text as accepted (the Charter) is locked. No amendment vote may be held before the Offseason following Season 2027, and until then the Constitution changes only by clerical correction under Section 2.5.
 
@@ -358,7 +358,7 @@
 
 **20.6** **Records.** Official amendment results, effective dates, championship history, Presidents' Trophy winners, Dynasty Pot status, dues status, and other permanent league records are maintained in Discord and/or the league's designated archival system. Each adopted version of this Constitution is dated and posted, and prior versions are archived.
 
-**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them.
+**20.7** **Dissolution.** If the BLHA permanently dissolves, authorized outstanding league expenses are settled first. Remaining prize funds or other Season-specific funds are distributed according to the results already earned where reasonably possible. Any remaining Dynasty Pot balance is distributed equally among active, fully paid franchises as provided in Article IV, and any remaining League Operating Reserve balance is distributed the same way. If the BLHA dissolves before a Season's first lineup lock, that Season's dues not yet spent on authorized expenses are refunded to the franchises that paid them.
 
 **20.8** The latest published version of this Constitution is the controlling league document. Upon adoption of the Charter, all prior working drafts are superseded except as historical records.
 

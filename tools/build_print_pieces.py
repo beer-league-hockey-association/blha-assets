@@ -275,7 +275,7 @@ def welcome_packet(art) -> Doc:
     bg(pg, LETTER)
     header(b, pg, "01 • THE LEAGUE", "AT A GLANCE")
     tw = (CW - 24) / 3
-    for i, (big, label) in enumerate([("12", "FRANCHISES"), ("$150", "DUES A SEASON"), ("22", "WEEKS • H2H POINTS"),
+    for i, (big, label) in enumerate([("12", "FRANCHISES"), ("$200", "DUES A SEASON"), ("22", "WEEKS • H2H POINTS"),
                                       ("6", "PLAYOFF TEAMS"), ("$1,000", "FAAB A SEASON"), ("36", "ROSTER SPOTS + 5 IR")]):
         tile(b, pg, M + (i % 3) * (tw + 12), 134 + (i // 3) * 82, tw, 70, big, label)
     b.T(pg, M, 290, COL, 420,
@@ -352,14 +352,14 @@ def welcome_packet(art) -> Doc:
         (rows, "Assist\t+2.97"),
         ("Small", "Not scored: wins, shutouts, plus/minus, power-play bonuses, game-winning goals and faceoffs."))
     b.T(pg, COL2, 128, COL, 390,
-        ("H2", "WHERE THE $1,800 GOES"),
-        (rows, "BLHA Champion\t$650"), (rows, "Runner-Up\t$350"), (rows, "Third Place\t$150"),
-        (rows, "Presidents' Trophy\t$200"), (rows, "Dynasty Pot\t$200"), (rows, "Operating Reserve\t$150"),
-        (rows, "League Services\t$100"), (rows_b, "12 franchises × $150\t$1,800"),
-        ("Small", "The Operating Reserve pays for Fantrax Premium and other approved costs, and whatever is left joins the "
-                  "Dynasty Pot. League Services is the Commissioner's allocation for running the league (3.6)."),
+        ("H2", "WHERE THE $2,400 GOES"),
+        (rows, "BLHA Champion\t$850"), (rows, "Runner-Up\t$450"), (rows, "Third Place\t$200"),
+        (rows, "Presidents' Trophy\t$250"), (rows, "Dynasty Pot\t$350"), (rows, "Operating Reserve\t$200"),
+        (rows, "League Services\t$100"), (rows_b, "12 franchises × $200\t$2,400"),
+        ("Small", "The Operating Reserve pays for Fantrax Premium and other approved costs, and whatever is left stays in the "
+                  "reserve for future costs. League Services is the Commissioner's allocation for running the league (3.6)."),
         ("H2", "DUES"),
-        ("Body", "$150 per franchise, due before each season's draft, paid through Fantrax Treasurer. A payment counts once "
+        ("Body", "$200 per franchise, due before each season's draft, paid through Fantrax Treasurer. A payment counts once "
                  "the Commissioner confirms it in the League Ledger. Prizes are paid within 30 days after the Championship, "
                  "with a Season Ledger in {ch:league-ledger}."))
     callout(b, pg, M, 466, COL, 124, "THE DYNASTY POT",
@@ -385,7 +385,7 @@ def welcome_packet(art) -> Doc:
         b.P("Check", "**Accept your Fantrax invite** and claim your franchise.", "box"),
         b.P("Check", "**Start in** {ch:welcome} and pick your notification roles under Channels & Roles.", "box"),
         b.P("Check", "**Read the Constitution** in {ch:constitution}. Joining the league means accepting it.", "box"),
-        b.P("Check", "**Pay your $150 dues** through Fantrax Treasurer before the deadline on {ch:league-calendar}.", "box"),
+        b.P("Check", "**Pay your $200 dues** through Fantrax Treasurer before the deadline on {ch:league-calendar}.", "box"),
         b.P("Check", "**Name your franchise:** a city and a team name, a short abbreviation and your colors. "
                      "It goes up in {ch:franchise-directory}.", "box"),
         b.P("Check", "**Turn on Fantrax app notifications** for trades, claims and lineup problems.", "box"),
@@ -636,8 +636,8 @@ def awards_program(art) -> Doc:
     y += 6
     b.T(pg, m, y, cw, 16, ("H2", "THE SEASON'S HONORS"))
     y += 24
-    for label, note in [("BLHA CHAMPION", "$650"), ("RUNNER-UP", "$350"), ("THIRD PLACE", "$150"),
-                        ("PRESIDENTS' TROPHY", "$200"), ("CONSOLATION CHAMPION", "+$50 FAAB")]:
+    for label, note in [("BLHA CHAMPION", "$850"), ("RUNNER-UP", "$450"), ("THIRD PLACE", "$200"),
+                        ("PRESIDENTS' TROPHY", "$250"), ("CONSOLATION CHAMPION", "+$50 FAAB")]:
         b.T(pg, m, y, 150, 14, ("FieldLabel", label))
         b.T(pg, m + cw - 70, y, 70, 14, ("FieldNote", note))
         pg.items.append(Box(m, y + 21, cw, 0.75, "Charcoal"))

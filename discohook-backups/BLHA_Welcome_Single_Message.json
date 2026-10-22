@@ -11,7 +11,7 @@
     },
     {
       "title": "WELCOME TO THE BEER LEAGUE HOCKEY ASSOCIATION",
-      "description": "**BLHA** is a 12-franchise dynasty fantasy hockey league built around long-term roster construction, prospect development, an active trade market, daily competition, and permanent league history.\n\n**Fantrax runs the game. Discord runs the league.**",
+      "description": "**BLHA** is a 12-franchise dynasty fantasy hockey league built around long-term roster construction, prospect development, an active trade market, daily competition, and permanent league history.\n\n**Draft it. Build it. Keep it.**",
       "color": 16758812,
       "fields": [
         {
@@ -32,12 +32,12 @@
       "color": 16758812,
       "fields": [
         {
-          "name": "FANTRAX — AUTHORITATIVE GAME RECORD",
+          "name": "FANTRAX — THE GAME RECORD",
           "value": "Rosters • Lineups • Scoring • Adds/Drops • FAAB • Trades • Standings • Playoff Results\n\nIf a gameplay transaction or result exists in Fantrax, Fantrax is the authoritative record.",
           "inline": false
         },
         {
-          "name": "DISCORD — THE CLUBHOUSE + FRONT OFFICE",
+          "name": "DISCORD — THE LEAGUE OFFICE",
           "value": "Announcements • Voting • Trade Market • Scouting • League Discussion • Records • Draft-Day Communication • Commissioner Support",
           "inline": false
         },
@@ -89,7 +89,7 @@
           "inline": false
         },
         {
-          "name": "🧑🏻‍⚖️ COMMISSIONER'S OFFICE",
+          "name": "🧑🏻‍⚖️ COMMISSIONER’S OFFICE",
           "value": "Private tickets, public rules questions and league suggestions.",
           "inline": false
         },

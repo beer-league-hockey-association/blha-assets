@@ -56,8 +56,7 @@ def wrap_message(username: str, embed: dict[str, Any]) -> dict[str, Any]:
 def dynasty_message(summary: dict[str, Any], *, test: bool = False) -> dict[str, Any]:
     added = summary.get("last_added")
     if added:
-        added_text = (f"{money(added['dues'])} dues + {money(added['unused_reserve'])} unused operating reserve "
-                      f"(Season {added['season']})")
+        added_text = f"{money(added['dues'])} from dues (Season {added['season']})"
     else:
         added_text = "Nothing recorded yet."
     counts = [f"{r['name']}: {r['titles']}" for r in summary["rows"] if r["titles"]]

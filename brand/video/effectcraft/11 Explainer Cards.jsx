@@ -34,7 +34,7 @@ var DATA = {
                 { at: 94, kind: "card", eyebrow: "ONE RULE TO REMEMBER", title: "PAY FIRST, THEN TRADE", lines: ["TRADING AWAY A FUTURE 1ST OR 2ND?", "YOUR DUES MUST BE PAID THROUGH THAT PICK'S SEASON", "IF THEY AREN'T, THE TRADE IS REVERSED"] },
                 { at: 108, kind: "card", eyebrow: "ARTICLE XVI", title: "PLAYOFFS", lines: ["6 TEAMS, THE TOP 2 GET BYES", "RESEEDED EVERY ROUND", "A TWO-WEEK CHAMPIONSHIP", "CONSOLATION BRACKET: +$50 FAAB"], big: "6", bigLabel: "PLAYOFF TEAMS" },
                 { at: 125, kind: "card", eyebrow: "ARTICLE XIV", title: "DRAFT ORDER", lines: ["5 ROUNDS EVERY SUMMER", "NON-PLAYOFF TEAMS PICK FIRST", "ORDERED BY POTENTIAL POINTS", "BENCHING YOUR STARS WON'T MOVE YOU UP"] },
-                { at: 140, kind: "card", eyebrow: "ARTICLE III", title: "MONEY", lines: ["$150 DUES A SEASON", "CHAMPION $650, RUNNER-UP $350", "THIRD $150, PRESIDENTS' TROPHY $200", "DYNASTY POT $200 A SEASON"], big: "$1,800", bigLabel: "A SEASON" },
+                { at: 140, kind: "card", eyebrow: "ARTICLE III", title: "MONEY", lines: ["$200 DUES A SEASON", "CHAMPION $850, RUNNER-UP $450", "THIRD $200, PRESIDENTS' TROPHY $250", "DYNASTY POT $350 A SEASON"], big: "$2,400", bigLabel: "A SEASON" },
                 { at: 160, kind: "card", eyebrow: "ARTICLE XX", title: "CHANGING THE RULES", lines: ["OFFSEASON ONLY", "8 OF THE 12 FRANCHISE VOTES"], big: "8", bigLabel: "VOTES OF 12" },
                 { at: 168, kind: "end", title: "THAT'S THE LEAGUE", sub: "READ THE WHOLE THING ONCE. IT'S SHORTER THAN YOU THINK." }
             ]
@@ -51,10 +51,10 @@ var DATA = {
         },
         {
             name: "Where the Money Goes", length: 45, cards: [
-                { at: 0, kind: "title", eyebrow: "$150 X 12 FRANCHISES", title: "WHERE THE MONEY GOES", sub: "$1,800 A SEASON, EVERY DOLLAR ACCOUNTED FOR" },
-                { at: 8, kind: "card", eyebrow: "PRIZES", title: "WHO GETS PAID", lines: ["BLHA CHAMPION  $650", "RUNNER-UP  $350", "THIRD PLACE  $150", "PRESIDENTS' TROPHY  $200"], big: "$1,350", bigLabel: "IN PRIZES" },
-                { at: 20, kind: "card", eyebrow: "THE LONG GAME", title: "DYNASTY POT", lines: ["$200 GOES IN EVERY SEASON", "FIRST TO 3 TITLES IN A CYCLE TAKES IT ALL"], big: "$200", bigLabel: "A SEASON" },
-                { at: 30, kind: "card", eyebrow: "RUNNING THE LEAGUE", title: "RESERVE AND LEAGUE SERVICES", lines: ["$150: FANTRAX PREMIUM AND APPROVED COSTS", "WHAT'S LEFT JOINS THE DYNASTY POT", "$100: THE COMMISSIONER'S ALLOCATION"] },
+                { at: 0, kind: "title", eyebrow: "$200 X 12 FRANCHISES", title: "WHERE THE MONEY GOES", sub: "$2,400 A SEASON, EVERY DOLLAR ACCOUNTED FOR" },
+                { at: 8, kind: "card", eyebrow: "PRIZES", title: "WHO GETS PAID", lines: ["BLHA CHAMPION  $850", "RUNNER-UP  $450", "THIRD PLACE  $200", "PRESIDENTS' TROPHY  $250"], big: "$1,750", bigLabel: "IN PRIZES" },
+                { at: 20, kind: "card", eyebrow: "THE LONG GAME", title: "DYNASTY POT", lines: ["$350 GOES IN EVERY SEASON", "FIRST TO 3 TITLES IN A CYCLE TAKES IT ALL"], big: "$350", bigLabel: "A SEASON" },
+                { at: 30, kind: "card", eyebrow: "RUNNING THE LEAGUE", title: "RESERVE AND LEAGUE SERVICES", lines: ["$200: FANTRAX PREMIUM AND APPROVED COSTS", "WHAT'S LEFT STAYS IN THE RESERVE", "$100: THE COMMISSIONER'S ALLOCATION"] },
                 { at: 40, kind: "card", eyebrow: "EVERY DOLLAR", title: "THE LEDGER", lines: ["POSTED AFTER EACH SEASON", "IN THE LEAGUE LEDGER CHANNEL"] }
             ]
         },
@@ -74,7 +74,7 @@ var DATA = {
         {
             name: "Dynasty Pot Update", length: 30, cards: [
                 { at: 0, kind: "title", eyebrow: "AFTER THE [YEAR] SEASON", title: "THE DYNASTY POT", sub: "FIRST TO THREE TITLES TAKES IT ALL" },
-                { at: 4, kind: "card", eyebrow: "THE BALANCE", title: "IN THE POT", lines: ["$200 GOES IN EVERY SEASON", "PLUS WHAT THE RESERVE DIDN'T SPEND"], big: "$[BALANCE]", bigLabel: "AND GROWING" },
+                { at: 4, kind: "card", eyebrow: "THE BALANCE", title: "IN THE POT", lines: ["$350 GOES IN EVERY SEASON", "FIRST TO 3 TITLES TAKES IT ALL"], big: "$[BALANCE]", bigLabel: "AND GROWING" },
                 { at: 12, kind: "card", eyebrow: "THIS CYCLE", title: "CHAMPIONSHIPS", lines: ["[TEAM]: [NUMBER]", "[TEAM]: [NUMBER]"] },
                 { at: 20, kind: "big", title: "FIRST TO 3 TAKES IT ALL", sub: "THEY DON'T HAVE TO BE IN A ROW" },
                 { at: 27, kind: "end", title: "WHO'S NEXT?", sub: "BEER LEAGUE HOCKEY ASSOCIATION" }
@@ -120,7 +120,7 @@ var DATA = {
             name: "Championship Hype Cards", length: 45, alpha: true, cards: [
                 { at: 9, until: 14, kind: "big", title: "[SEED] VS [SEED]", sub: "[RECORD] \u2022 [RECORD]" },
                 { at: 22, until: 29, kind: "big", title: "2 WEEKS \u2022 TOTAL POINTS", sub: "8 GOALIE STARTS AND 10 PICKUPS ACROSS BOTH WEEKS" },
-                { at: 29, until: 37, kind: "big", title: "$650 \u2022 A BANNER", sub: "AND ONE STEP TOWARD THE DYNASTY POT" },
+                { at: 29, until: 37, kind: "big", title: "$850 \u2022 A BANNER", sub: "AND ONE STEP TOWARD THE DYNASTY POT" },
                 { at: 42, until: 45, kind: "end", title: "THE BLHA CHAMPIONSHIP", sub: "STARTS TONIGHT" }
             ]
         },
@@ -133,7 +133,7 @@ var DATA = {
                 { kind: "big", title: "3 C \u2022 3 LW \u2022 3 RW \u2022 3 F \u2022 6 D \u2022 2 G", sub: "THE F SLOTS TAKE ANY FORWARD" },
                 { kind: "card", eyebrow: "LINEUPS", title: "LOCKS", lines: ["EACH PLAYER LOCKS ABOUT A MINUTE BEFORE HIS GAME", "PLAYERS WHO HAVEN'T STARTED CAN STILL MOVE"] },
                 { kind: "card", eyebrow: "LINEUPS", title: "GOALIES", lines: ["4 GOALIE STARTS COUNT EACH WEEK", "PLAN YOUR STARTS"], big: "4", bigLabel: "A WEEK" },
-                { kind: "title", eyebrow: "HOW-TO", title: "PAYING YOUR DUES", sub: "$150 A SEASON THROUGH FANTRAX TREASURER" },
+                { kind: "title", eyebrow: "HOW-TO", title: "PAYING YOUR DUES", sub: "$200 A SEASON THROUGH FANTRAX TREASURER" },
                 { kind: "card", eyebrow: "DUES", title: "WHEN IT COUNTS", lines: ["ONCE THE COMMISSIONER CONFIRMS IT", "AND RECORDS IT IN THE LEAGUE LEDGER"] },
                 { kind: "card", eyebrow: "ONE RULE TO REMEMBER", title: "PAY FIRST, THEN TRADE", lines: ["TRADING A FUTURE 1ST OR 2ND?", "THOSE SEASONS HAVE TO BE PAID FIRST", "OPEN A TICKET TO SET IT UP"] },
                 { kind: "title", eyebrow: "HOW-TO", title: "YOUR DRAFT QUEUE", sub: "36 ROUNDS, A 4-HOUR CLOCK" },

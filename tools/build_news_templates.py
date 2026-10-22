@@ -81,9 +81,9 @@ tmpl("league-office/40_ledger_season_summary.json", "SEASON LEDGER", "`[SEASON]`
 tmpl("league-office/41_ledger_dues_status.json", "FRANCHISE DUES STATUS", "`[SEASON / DATE]`", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
      [("PAID AND CONFIRMED", "`[LIST FRANCHISES]`"), ("PREPAID FUTURE SEASONS", "`[FRANCHISE: THROUGH SEASON YYYY]` or none"),
       ("OUTSTANDING", "`[LIST FRANCHISES / NONE]`"), ("DEADLINE", "`[TIMESTAMP]`")], RECORD)
-tmpl("league-office/42_ledger_prize_pool.json", "BLHA PRIZE POOL", "`[SEASON]` • 12 franchises × $150 = $1,800", "BLHA LEAGUE LEDGER",
-     [("BLHA CHAMPION", "$650"), ("RUNNER-UP", "$350"), ("THIRD PLACE", "$150"), ("PRESIDENTS' TROPHY", "$200"),
-      ("DYNASTY POT CONTRIBUTION", "$200"), ("FANTRAX / OPERATING RESERVE", "$150"), ("LEAGUE SERVICES ALLOCATION", "$100")], RECORD)
+tmpl("league-office/42_ledger_prize_pool.json", "BLHA PRIZE POOL", "`[SEASON]` • 12 franchises × $200 = $2,400", "BLHA LEAGUE LEDGER",
+     [("BLHA CHAMPION", "$850"), ("RUNNER-UP", "$450"), ("THIRD PLACE", "$200"), ("PRESIDENTS' TROPHY", "$250"),
+      ("DYNASTY POT CONTRIBUTION", "$350"), ("FANTRAX / OPERATING RESERVE", "$200"), ("LEAGUE SERVICES ALLOCATION", "$100")], RECORD)
 tmpl("league-office/43_ledger_payment_confirmed.json", "PAYMENT CONFIRMED", "`[FRANCHISE]` is confirmed paid through **Season `[YEAR]`**.", "BLHA LEAGUE LEDGER • NO PAYMENT CREDENTIALS POSTED",
      [("COVERS", "`[SEASON DUES / FUTURE-SEASON PREPAYMENT THROUGH YEAR]`"), ("CONFIRMED", "`[DATE]`"),
       ("PICK TRADES", "`[FRANCHISE]` may now trade its 1st- and 2nd-round picks for drafts through **`[YEAR]`**. A pick trade made before payment is confirmed is reversed (Article XII).")], RECORD)
@@ -147,7 +147,7 @@ tmpl("league-office/62_commissioner_transition.json", "COMMISSIONER TRANSITION",
 # ----------------------------------------------------------------------- honors
 tmpl("league-office/70_champion_crowned.json", "THE BLHA CHAMPION", "\U0001F3C6 **`[FRANCHISE]`** wins the **Season `[YEAR]`** BLHA Championship.", "BLHA RECORDS DEPARTMENT",
      [("FINAL", "`[FRANCHISE]` `[SCORE]` over `[FRANCHISE]` `[SCORE]` (two-week cumulative)"),
-      ("PRIZE", "$650"), ("RUNNER-UP", "`[FRANCHISE]` • $350"), ("THIRD PLACE", "`[FRANCHISE]` • $150"),
+      ("PRIZE", "$850"), ("RUNNER-UP", "`[FRANCHISE]` • $450"), ("THIRD PLACE", "`[FRANCHISE]` • $200"),
       ("CHAMPIONSHIP COUNT", "`[FRANCHISE]` now has `[N]` in the current Dynasty Pot cycle.")], RECORD)
 tmpl("league-office/71_presidents_trophy.json", "PRESIDENTS' TROPHY", "\U0001F947 **`[FRANCHISE]`** finishes with the best regular-season record.", "BLHA RECORDS DEPARTMENT",
      [("RECORD", "`[W-L-T]` • `[POINTS FOR]`"), ("PRIZE", "$200"),
