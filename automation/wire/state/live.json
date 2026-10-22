@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-21T23:15:39.550650Z",
+  "updated_at": "2026-10-22T01:00:40.194453Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -13732,6 +13732,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-21T23:15:39.423658Z"
+    },
+    {
+      "key": "fe9df111fdebe4fc5dd58806",
+      "url": "https://www.sportsnet.ca/nhl/article/tkachuk-heavily-booed-by-ottawa-crowd-in-return-with-panthers",
+      "fingerprint": "052d39c3a5644e65",
+      "title_norm": "tkachuk heavily booed by ottawa crowd in return with panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-22T01:00:40.137913Z"
     }
   ],
   "known_sources": [
