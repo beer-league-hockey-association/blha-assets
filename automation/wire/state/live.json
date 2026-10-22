@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T20:15:39.044064Z",
+  "updated_at": "2026-10-22T21:00:39.177424Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14282,6 +14282,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T20:15:38.983158Z"
+    },
+    {
+      "key": "f17b5320f55b63d26eda971b",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "1113c025800580a7",
+      "title_norm": "linus ullmark (ott) — ullmark (lower-body) is expected to be out for 1-2 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T21:00:39.088193Z"
     }
   ],
   "known_sources": [
