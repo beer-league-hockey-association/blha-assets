@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T17:45:39.064661Z",
+  "updated_at": "2026-10-22T18:00:42.248634Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14162,6 +14162,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T17:45:39.003755Z"
+    },
+    {
+      "key": "a8806d599cd9b7838214eaf2",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "d020d976584c0b2f",
+      "title_norm": "bowen byram (chi) — byram (upper-body) is still considered day-to-day but is trending towards returning.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T18:00:41.125171Z"
+    },
+    {
+      "key": "8ade1dccb82980b6b3734070",
+      "url": "https://www.dailyfaceoff.com/players/news/andrew-mangiapane/4622",
+      "fingerprint": "35237d5a741c19a4",
+      "title_norm": "andrew mangiapane (chi) — mangiapane (lower-body) is cleared but expected to be a healthy scratch vs. montreal on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T18:00:41.522048Z"
+    },
+    {
+      "key": "822054b9698ee85c3c8542f3",
+      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
+      "fingerprint": "5730b11f9d26e5de",
+      "title_norm": "seth jarvis (car) — jarvis (shoulder) is hopeful to make his season debut in edmonton.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-22T18:00:42.172169Z"
     }
   ],
   "known_sources": [
