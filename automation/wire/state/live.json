@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T21:45:40.612820Z",
+  "updated_at": "2026-10-23T22:15:39.569395Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15152,6 +15152,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T21:45:40.553097Z"
+    },
+    {
+      "key": "24854e478046067e23ecf808",
+      "url": "https://www.sportsnet.ca/nhl/video/elliotte-friedman-breaks-down-hellebuyck-trade-between-jets-devils",
+      "fingerprint": "a34328c087f321c6",
+      "title_norm": "elliotte friedman breaks down hellebuyck trade between jets, devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T22:15:39.504495Z"
     }
   ],
   "known_sources": [
