@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T04:15:37.598338Z",
+  "updated_at": "2026-10-23T04:30:44.381781Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14622,6 +14622,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T04:15:37.470965Z"
+    },
+    {
+      "key": "2ca99a956a1c0b258b88ad2a",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-edmonton-oilers-game-recap-october-22-2026",
+      "fingerprint": "ad27fb41c7c87cfb",
+      "title_norm": "mcdavid, draisaitl each has five points, oilers defeat hurricanes in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T04:30:43.944692Z"
+    },
+    {
+      "key": "179804f7458b0b2b9e07b6d7",
+      "url": "https://www.sportsnet.ca/nhl/article/nugent-hopkins-scores-shootout-winner-to-give-oilers-victory-over-hurricanes",
+      "fingerprint": "0d7fdfd82f4dce83",
+      "title_norm": "nugent-hopkins scores shootout winner to give oilers victory over hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T04:30:44.154282Z"
+    },
+    {
+      "key": "85b376259c6304e43677b305",
+      "url": "https://www.sportsnet.ca/nhl/article/easy-to-feel-special-troy-stecher-plays-hero-as-maple-leafs-win-thriller",
+      "fingerprint": "532b9761e42edd27",
+      "title_norm": "'easy to feel special': troy stecher plays hero as maple leafs win thriller",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T04:30:44.325901Z"
     }
   ],
   "known_sources": [
