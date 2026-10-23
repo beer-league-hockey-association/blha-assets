@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T16:45:40.643933Z",
+  "updated_at": "2026-10-23T17:15:38.243342Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14942,6 +14942,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T16:45:40.538291Z"
+    },
+    {
+      "key": "3ea657d2904e37d770ebf86d",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
+      "fingerprint": "dc54cb22d1ebd558",
+      "title_norm": "mike matheson (mtl) — matheson (lower-body) will return in chicago on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T17:15:37.243887Z"
+    },
+    {
+      "key": "b839b8f5a25590e5e00812a0",
+      "url": "https://www.dailyfaceoff.com/players/news/dante-fabbro/2651",
+      "fingerprint": "56d721dbb45ff021",
+      "title_norm": "dante fabbro (cbj) — fabbro (hand) will remain out vs. vegas on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T17:15:37.803720Z"
+    },
+    {
+      "key": "0aa953ae7412488cb16387f2",
+      "url": "https://www.sportsnet.ca/nhl/article/loaded-hockey-world-reacts-to-blockbuster-hellebuyck-trade",
+      "fingerprint": "7ddfe818a19cafd5",
+      "title_norm": "'loaded': hockey world reacts to blockbuster hellebuyck trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T17:15:38.175876Z"
     }
   ],
   "known_sources": [
