@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T02:45:41.043745Z",
+  "updated_at": "2026-10-23T03:00:40.647649Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14542,6 +14542,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T02:45:40.918613Z"
+    },
+    {
+      "key": "e1469f8f695e7eea3e2f7adc",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-st-louis-blues-game-recap-october-22-2026",
+      "fingerprint": "e79a41546ddb9b6c",
+      "title_norm": "barron gets first career four-point game in blues win against golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T03:00:40.557940Z"
     }
   ],
   "known_sources": [
