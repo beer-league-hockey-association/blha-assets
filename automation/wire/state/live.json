@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T15:00:43.924146Z",
+  "updated_at": "2026-10-23T15:30:43.448556Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14772,6 +14772,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T15:00:43.833914Z"
+    },
+    {
+      "key": "4683f71cade917f6d1b49694",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-blankenburg/36299",
+      "fingerprint": "ac171ed981214663",
+      "title_norm": "nick blankenburg (tor) — blankenburg (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T15:30:43.003677Z"
+    },
+    {
+      "key": "18cea7a9b9ba8eb8685abfb3",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-working-on-connor-hellebuyck-trade-to-devils",
+      "fingerprint": "10330be76a53ba6d",
+      "title_norm": "jets working on connor hellebuyck trade to devils",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T15:30:43.040887Z"
+    },
+    {
+      "key": "131b87e7b0e05805fbab0fc8",
+      "url": "https://www.sportsnet.ca/nhl/article/why-nhl-save-percentages-continue-to-decline-despite-goalies-getting-better",
+      "fingerprint": "02d9d280883ffb0c",
+      "title_norm": "why nhl save percentages continue to decline despite goalies getting better",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T15:30:43.381318Z"
     }
   ],
   "known_sources": [
