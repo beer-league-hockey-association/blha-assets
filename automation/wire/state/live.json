@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T02:00:41.299953Z",
+  "updated_at": "2026-10-23T02:15:40.797537Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14452,6 +14452,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T02:00:41.255728Z"
+    },
+    {
+      "key": "8f4249f73415c753347b7267",
+      "url": "https://www.nhl.com/news/new-york-rangers-toronto-maple-leafs-game-recap-october-22-2026",
+      "fingerprint": "042d72027e80d770",
+      "title_norm": "stecher scores late, maple leafs win 3rd in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T02:15:39.820571Z"
+    },
+    {
+      "key": "087e9445a72dd041742b8dc9",
+      "url": "https://www.nhl.com/news/san-jose-sharks-ottawa-senators-game-recap-october-22-2026",
+      "fingerprint": "746fa82f4ea094ca",
+      "title_norm": "sharks score 6 to ease past senators",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T02:15:40.051282Z"
+    },
+    {
+      "key": "835f40ccc82b4af2a4a31334",
+      "url": "https://www.nhl.com/news/nashville-predators-boston-bruins-game-recap-october-22-2026",
+      "fingerprint": "8352ab47a4bece07",
+      "title_norm": "dipietro gets first career shutout, bruins defeat predators to stay hot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T02:15:40.357511Z"
+    },
+    {
+      "key": "d5afeb96f612cb56b73d6a6b",
+      "url": "https://www.sportsnet.ca/nhl/article/stecher-scores-in-final-minute-to-lift-maple-leafs-over-rangers",
+      "fingerprint": "e206d9e2c792dc95",
+      "title_norm": "stecher scores in final minute to lift maple leafs over rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T02:15:40.410360Z"
+    },
+    {
+      "key": "f5bc0ce30153c361e8088985",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/ae451ce0-707f-46ad-a0cc-02df7572ebef",
+      "fingerprint": "1e718cd8e9436da6",
+      "title_norm": "canucks on sportsnet: detroit vs. vancouver",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T02:15:40.418280Z"
+    },
+    {
+      "key": "8303559d772900a471f95ec1",
+      "url": "https://www.sportsnet.ca/nhl/article/balanced-scoring-attack-leads-sharks-to-victory-over-senators",
+      "fingerprint": "4705fe994d34330c",
+      "title_norm": "balanced scoring attack leads sharks to victory over senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T02:15:40.432742Z"
     }
   ],
   "known_sources": [
