@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T01:15:41.223892Z",
+  "updated_at": "2026-10-23T02:00:41.299953Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14422,6 +14422,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T01:15:41.157412Z"
+    },
+    {
+      "key": "887c5fbe096df25bbe05bf17",
+      "url": "https://www.nhl.com/news/anaheim-ducks-new-jersey-devils-game-recap-october-22-2026",
+      "fingerprint": "add5218201337183",
+      "title_norm": "gritsyuk scores again, devils push past slumping ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T02:00:40.645334Z"
+    },
+    {
+      "key": "eb9e5b4636f72eb09136d64b",
+      "url": "https://www.nhl.com/news/florida-panthers-pittsburgh-penguins-game-recap-october-22-2026",
+      "fingerprint": "7e81f441c0efecb8",
+      "title_norm": "silovs stops 26, penguins shut out panthers to end four-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T02:00:40.906781Z"
+    },
+    {
+      "key": "48ccfe3e4d80feada3dffbd8",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-fall-to-devils-for-fifth-straight-loss",
+      "fingerprint": "d9a80eb1649d0c30",
+      "title_norm": "ducks fall to devils for fifth straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T02:00:41.255728Z"
     }
   ],
   "known_sources": [
