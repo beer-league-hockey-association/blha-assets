@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T03:30:40.283180Z",
+  "updated_at": "2026-10-23T03:45:33.224169Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14592,6 +14592,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T03:30:40.210763Z"
+    },
+    {
+      "key": "77a9f2fa51e4a3a2ed05a5a9",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-becomes-fourth-player-to-record-30-points-in-first-10-games",
+      "fingerprint": "5cde9a95ca5685d9",
+      "title_norm": "connor mcdavid becomes fourth player to record 30 points in first 10 games",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T03:45:33.091670Z"
     }
   ],
   "known_sources": [
