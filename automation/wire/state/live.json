@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T19:00:44.949632Z",
+  "updated_at": "2026-10-23T19:15:34.475432Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15042,6 +15042,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T19:00:44.817520Z"
+    },
+    {
+      "key": "d8a0f879b9a908d6e18f5cea",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
+      "fingerprint": "8eb050ca1315deed",
+      "title_norm": "mattias ekholm (edm) — ekholm (concussion) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T19:15:34.108594Z"
+    },
+    {
+      "key": "706a8b03e9cf33cdb8957575",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-starting-jarry-vs-maple-leafs-levi-not-available",
+      "fingerprint": "8b2a62f433f87c0d",
+      "title_norm": "oilers starting jarry vs. maple leafs, levi not available",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T19:15:34.442435Z"
     }
   ],
   "known_sources": [
