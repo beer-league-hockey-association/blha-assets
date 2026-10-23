@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T00:00:40.023380Z",
+  "updated_at": "2026-10-23T00:30:38.891556Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14372,6 +14372,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T00:00:39.963216Z"
+    },
+    {
+      "key": "15e3700490fe334701a795d0",
+      "url": "https://www.nhl.com/news/nhl-and-winnipeg-jets-create-2026-heritage-classic-legacy-project",
+      "fingerprint": "afa1892d0cca5fde",
+      "title_norm": "nhl, jets create heritage classic legacy project",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T00:30:38.768627Z"
     }
   ],
   "known_sources": [
