@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T00:30:38.891556Z",
+  "updated_at": "2026-10-23T00:45:36.984521Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14382,6 +14382,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T00:30:38.768627Z"
+    },
+    {
+      "key": "c312f3a0cd991e12e1754958",
+      "url": "https://www.dailyfaceoff.com/players/news/maxim-shabanov/38466",
+      "fingerprint": "1375a89c677ad7f7",
+      "title_norm": "maxim shabanov (min) — shabanov (upper-body) will not play thursday in calgary.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T00:45:36.595137Z"
+    },
+    {
+      "key": "076e55bdeb4d0859d1bb655c",
+      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
+      "fingerprint": "15b144f7642b8cb0",
+      "title_norm": "seth jarvis (car) — jarvis (shoulder) will make his season debut on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T00:45:36.874854Z"
     }
   ],
   "known_sources": [
