@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T05:30:41.542978Z",
+  "updated_at": "2026-10-23T06:00:45.275764Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14702,6 +14702,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T05:30:41.425621Z"
+    },
+    {
+      "key": "058e7305eca2c8f39b64eb63",
+      "url": "https://www.sportsnet.ca/nhl/article/its-just-not-real-mcdavid-makes-even-more-history-in-oilers-shootout-win",
+      "fingerprint": "8fe8f7505baa9582",
+      "title_norm": "'it's just not real': mcdavid makes even more history in oilers' shootout win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T06:00:45.204047Z"
     }
   ],
   "known_sources": [
