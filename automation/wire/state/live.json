@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T20:00:50.928466Z",
+  "updated_at": "2026-10-23T20:15:39.344862Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15082,6 +15082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T20:00:50.797120Z"
+    },
+    {
+      "key": "9f120145518d4dabf3360423",
+      "url": "https://www.nhl.com/news/capitals-alex-tuch-set-for-different-first-game-against-sabres",
+      "fingerprint": "e17cc370bef801b6",
+      "title_norm": "tuch set for 'different' 1st game vs. sabres with caps",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T20:15:39.214460Z"
     }
   ],
   "known_sources": [
