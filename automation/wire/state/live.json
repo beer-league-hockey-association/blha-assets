@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T03:45:33.224169Z",
+  "updated_at": "2026-10-23T04:00:40.888490Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14602,6 +14602,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T03:45:33.091670Z"
+    },
+    {
+      "key": "30db118ed1423a58a0714528",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-fall-to-stars-in-ot-for-fourth-loss-in-a-row",
+      "fingerprint": "326dada33d9229a2",
+      "title_norm": "jets fall to stars in ot for fourth loss in a row",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T04:00:40.854482Z"
     }
   ],
   "known_sources": [
