@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T02:30:37.635905Z",
+  "updated_at": "2026-10-23T02:45:41.043745Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14532,6 +14532,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T02:30:37.554135Z"
+    },
+    {
+      "key": "913aa51bdba3cc63f894a938",
+      "url": "https://www.nhl.com/news/los-angeles-kings-new-york-islanders-game-recap-october-22-2026",
+      "fingerprint": "6e85f87987c24182",
+      "title_norm": "clarke's ot goal gives kings 2nd straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T02:45:40.918613Z"
     }
   ],
   "known_sources": [
