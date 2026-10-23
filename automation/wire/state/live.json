@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T05:00:37.784163Z",
+  "updated_at": "2026-10-23T05:30:41.542978Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14692,6 +14692,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T05:00:37.747061Z"
+    },
+    {
+      "key": "cbc28d9ce7d51ef81be19bfd",
+      "url": "https://www.nhl.com/news/utah-mammoth-seattle-kraken-game-recap-october-22-2026",
+      "fingerprint": "7a63f0747c3ce279",
+      "title_norm": "samoskevich, kraken recover again to edge mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T05:30:41.425621Z"
     }
   ],
   "known_sources": [
