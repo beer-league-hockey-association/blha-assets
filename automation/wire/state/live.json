@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T04:00:40.888490Z",
+  "updated_at": "2026-10-23T04:15:37.598338Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14612,6 +14612,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T04:00:40.854482Z"
+    },
+    {
+      "key": "a0e5e99054988ff42d89c6da",
+      "url": "https://www.nhl.com/news/minnesota-wild-calgary-flames-game-recap-october-22-2026",
+      "fingerprint": "9b13103cb603de10",
+      "title_norm": "cooley makes 36 saves, flames hang on to edge wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T04:15:37.470965Z"
     }
   ],
   "known_sources": [
