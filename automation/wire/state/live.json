@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T07:15:36.095070Z",
+  "updated_at": "2026-10-23T12:15:38.563727Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14732,6 +14732,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T07:15:36.027940Z"
+    },
+    {
+      "key": "beb915d36ee49472b1c027ac",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-how-realistic-is-200-points-for-oilers-connor-mcdavid",
+      "fingerprint": "e370b9923f317ab2",
+      "title_norm": "friday four: how realistic is 200 points for oilers' connor mcdavid?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T12:15:38.230486Z"
+    },
+    {
+      "key": "5f80ca32454597ccc2c4a808",
+      "url": "https://dobberprospects.com/2026/10/23/october-khl-report-top-draft-eligibles",
+      "fingerprint": "68ed88a3b3d8830c",
+      "title_norm": "october khl report: top draft eligibles",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-23T12:15:38.520920Z"
     }
   ],
   "known_sources": [
