@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T04:30:44.381781Z",
+  "updated_at": "2026-10-23T05:00:37.784163Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14652,6 +14652,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T04:30:44.325901Z"
+    },
+    {
+      "key": "ad192959f25e520b08c277ae",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
+      "fingerprint": "63b00501f331cfee",
+      "title_norm": "mattias ekholm (edm) — ekholm (upper-body) left thursday's game and is expected to miss a week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T05:00:36.748442Z"
+    },
+    {
+      "key": "c92dfaceb1708a6ada2db986",
+      "url": "https://www.dailyfaceoff.com/players/news/john-gibson/1870",
+      "fingerprint": "18e0b595d943b864",
+      "title_norm": "john gibson (det) — gibson (upper-body) left thursday's game vs. vancouver and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T05:00:36.959301Z"
+    },
+    {
+      "key": "c652e3f31bbce77b4caf911e",
+      "url": "https://www.nhl.com/news/detroit-red-wings-vancouver-canucks-game-recap-october-22-2026",
+      "fingerprint": "d1d56652513403ec",
+      "title_norm": "raymond, red wings hand canucks 9th straight loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T05:00:37.438083Z"
+    },
+    {
+      "key": "d6112de5a450299a9e9c9101",
+      "url": "https://www.sportsnet.ca/nhl/article/dragged-us-into-the-fight-fourth-line-leads-maple-leafs-to-win",
+      "fingerprint": "c644663b2ba90e45",
+      "title_norm": "'dragged us into the fight': fourth line leads maple leafs to win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T05:00:37.747061Z"
     }
   ],
   "known_sources": [
