@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T16:00:46.578032Z",
+  "updated_at": "2026-10-23T16:15:41.062259Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14852,6 +14852,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T16:00:46.515135Z"
+    },
+    {
+      "key": "6e5a85bcdecd1e11a52281e3",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
+      "fingerprint": "70c0868ab3396d04",
+      "title_norm": "logan thompson (wsh) — thompson (lower-body) missed practice again on friday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T16:15:38.819715Z"
+    },
+    {
+      "key": "c1103d8ea5e303845500f0fb",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-connor-mcdavid-edmonton-oilers-2026-27",
+      "fingerprint": "d3a1861587b3626d",
+      "title_norm": "nhl edge stats behind mcdavid's historic start",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T16:15:39.147702Z"
+    },
+    {
+      "key": "dba079063b95ca44cf15ebc0",
+      "url": "https://www.nhl.com/news/heritage-classic-blog-jake-evans",
+      "fingerprint": "578bb6f0d2704108",
+      "title_norm": "heritage blog: habs' evans ready for outdoors",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T16:15:39.974005Z"
+    },
+    {
+      "key": "f7172275abadc6b23854ceca",
+      "url": "https://www.nhl.com/news/former-new-york-rangers-captain-dave-maloney-recalls-good-times-with-ron-duguay",
+      "fingerprint": "1f150b6a16101e71",
+      "title_norm": "maloney recalls sasson ad, good times with duguay",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T16:15:40.572130Z"
+    },
+    {
+      "key": "dc29e4c6fa66915859f8575a",
+      "url": "https://www.nhl.com/news/dougie-hamilton-thriving-for-new-jersey-devils-following-trade-speculation",
+      "fingerprint": "8741fb20da911060",
+      "title_norm": "hamilton thriving for devils following trade speculation",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T16:15:40.581871Z"
     }
   ],
   "known_sources": [
