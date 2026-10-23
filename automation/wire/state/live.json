@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T00:45:36.984521Z",
+  "updated_at": "2026-10-23T01:15:41.223892Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14402,6 +14402,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T00:45:36.874854Z"
+    },
+    {
+      "key": "6b2b4518fb41c34603b5c826",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/bf182bd8-c21b-4ce9-8ce5-f46d2ad7b447",
+      "fingerprint": "92471146bc466514",
+      "title_norm": "oilers on sportsnet: edmonton vs. carolina",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T01:15:40.863287Z"
+    },
+    {
+      "key": "07b8afc0da6b5573b3e55117",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-sharks-askarov-reaches-across-open-net-to-make-insane-glove-save",
+      "fingerprint": "28d9e52b8747aaa9",
+      "title_norm": "gotta see it: sharks' askarov reaches across open net to make insane glove save",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T01:15:41.157412Z"
     }
   ],
   "known_sources": [
