@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T19:45:38.334320Z",
+  "updated_at": "2026-10-23T20:00:50.928466Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15072,6 +15072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T19:45:38.291253Z"
+    },
+    {
+      "key": "2620a0b88ecc47ac2b48e2a1",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-prepare-for-stiff-test-against-connor-mcdavid-oilers",
+      "fingerprint": "06758e3653216b85",
+      "title_norm": "maple leafs prepare for stiff test against connor mcdavid, oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T20:00:50.797120Z"
     }
   ],
   "known_sources": [
