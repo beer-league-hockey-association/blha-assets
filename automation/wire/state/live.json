@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-22T23:45:49.987048Z",
+  "updated_at": "2026-10-23T00:00:40.023380Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14362,6 +14362,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-22T23:45:49.925905Z"
+    },
+    {
+      "key": "d10606086f1904448a6490bd",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-looking-for-young-centres-in-trade-talks",
+      "fingerprint": "b3be4a508745f8cb",
+      "title_norm": "red wings looking for young centres in trade talks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T00:00:39.963216Z"
     }
   ],
   "known_sources": [
