@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T22:45:36.205498Z",
+  "updated_at": "2026-10-23T23:00:38.259222Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15172,6 +15172,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T22:45:36.068604Z"
+    },
+    {
+      "key": "b751fd7272fdf6bcce753edc",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-place-devon-levi-on-injured-reserve-recall-matt-tomkins-from-ahl",
+      "fingerprint": "2be28ca2f6bb9858",
+      "title_norm": "oilers place devon levi on injured reserve, recall matt tomkins from ahl",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T23:00:38.182834Z"
+    },
+    {
+      "key": "c19fc1411940a4a582b6ca04",
+      "url": "https://www.nhl.com/news/topic/trade-coverage/connor-hellebuyck-traded-to-new-jersey-devils-from-winnipeg-jets",
+      "fingerprint": "85705e4ba5badbb3",
+      "title_norm": "hellebuyck traded to devils by jets",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T23:00:38.185343Z"
     }
   ],
   "known_sources": [
