@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T21:30:38.127974Z",
+  "updated_at": "2026-10-23T21:45:40.612820Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15132,6 +15132,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T21:30:38.060113Z"
+    },
+    {
+      "key": "f7b9f6c6db45b8975585451e",
+      "url": "https://www.sportsnet.ca/nhl/article/win-today-how-babcocks-honest-day-by-day-approach-has-worked-for-oilers",
+      "fingerprint": "aa5a8eb114c8d7c0",
+      "title_norm": "'win today': how babcock's honest, day-by-day approach has worked for oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T21:45:40.264851Z"
+    },
+    {
+      "key": "88f7986d4b9a601aef27fab4",
+      "url": "https://www.sportsnet.ca/nhl/article/mcdavid-welcomes-hellebuycks-move-east-as-nhl-stars-react-to-blockbuster-trade",
+      "fingerprint": "8bb6cde69930272b",
+      "title_norm": "mcdavid welcomes hellebuyck's move east as nhl stars react to blockbuster trade",
+      "channel": "breaking-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T21:45:40.553097Z"
     }
   ],
   "known_sources": [
