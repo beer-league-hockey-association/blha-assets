@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T19:15:34.475432Z",
+  "updated_at": "2026-10-23T19:45:38.334320Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15062,6 +15062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T19:15:34.442435Z"
+    },
+    {
+      "key": "4f68dd55bee222f20b23bd08",
+      "url": "https://www.sportsnet.ca/nhl/article/namestnikov-placed-on-ir-amid-other-jets-roster-moves",
+      "fingerprint": "ac286bd05971a274",
+      "title_norm": "namestnikov placed on ir amid other jets roster moves",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T19:45:38.291253Z"
     }
   ],
   "known_sources": [
