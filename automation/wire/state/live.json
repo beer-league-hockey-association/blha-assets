@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T22:15:39.569395Z",
+  "updated_at": "2026-10-23T22:45:36.205498Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15162,6 +15162,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T22:15:39.504495Z"
+    },
+    {
+      "key": "4c34eb5b5099993687478e7c",
+      "url": "https://www.dailyfaceoff.com/players/news/devon-levi/33010",
+      "fingerprint": "490c9320a738ab93",
+      "title_norm": "devon levi (edm) — levi (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T22:45:36.068604Z"
     }
   ],
   "known_sources": [
