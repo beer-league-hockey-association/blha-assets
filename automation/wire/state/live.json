@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T18:30:40.441618Z",
+  "updated_at": "2026-10-23T19:00:44.949632Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15032,6 +15032,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T18:30:40.312727Z"
+    },
+    {
+      "key": "b9e23d635769e77932e8da94",
+      "url": "https://www.dailyfaceoff.com/players/news/devon-levi/33010",
+      "fingerprint": "c245e0d2d101b167",
+      "title_norm": "devon levi (edm) — levi (undisclosed) will not dress on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T19:00:44.817520Z"
     }
   ],
   "known_sources": [
