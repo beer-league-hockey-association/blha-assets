@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T03:00:40.647649Z",
+  "updated_at": "2026-10-23T03:15:37.388285Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14552,6 +14552,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T03:00:40.557940Z"
+    },
+    {
+      "key": "7d9ccc6b02b300b2aa424720",
+      "url": "https://www.nhl.com/news/winnipeg-jets-dallas-stars-game-recap-october-22-2026",
+      "fingerprint": "3aa358dc9ba1b692",
+      "title_norm": "hintz ties it late, lifts stars past jets in ot for fourth straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T03:15:37.025286Z"
+    },
+    {
+      "key": "eb7c476dc0c8eb569bb575b4",
+      "url": "https://www.sportsnet.ca/nhl/article/bruins-michael-dipietro-honours-late-mother-with-shutout-on-hockey-fights-cancer-night",
+      "fingerprint": "1e92825c0ee99b18",
+      "title_norm": "bruins' michael dipietro honours late mother with shutout on hockey fights cancer night",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T03:15:37.326672Z"
     }
   ],
   "known_sources": [
