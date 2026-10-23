@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T18:00:50.074724Z",
+  "updated_at": "2026-10-23T18:15:35.201881Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15002,6 +15002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T18:00:50.007585Z"
+    },
+    {
+      "key": "40b9f41f58b11b4c301e9490",
+      "url": "https://www.sportsnet.ca/nhl/video/why-bukala-loves-command-what-the-jets-got-in-return-for-hellebuyck",
+      "fingerprint": "907d64a8752a70de",
+      "title_norm": "why bukala loves command, what the jets got in return for hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T18:15:35.135965Z"
     }
   ],
   "known_sources": [
