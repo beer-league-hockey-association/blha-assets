@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T18:15:35.201881Z",
+  "updated_at": "2026-10-23T18:30:40.441618Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15012,6 +15012,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T18:15:35.135965Z"
+    },
+    {
+      "key": "2583bb90d311b2b58c68a45a",
+      "url": "https://www.dailyfaceoff.com/players/news/anthony-cirelli/3842",
+      "fingerprint": "812728af64d88b05",
+      "title_norm": "anthony cirelli (tbl) — cirelli (undisclosed) will play in colorado on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T18:30:40.034322Z"
+    },
+    {
+      "key": "6e5be18e73c066571f0afba9",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-23-2026",
+      "fingerprint": "e04bdb15307e7a25",
+      "title_norm": "nhl on tap: kucherov can stand alone in bolts' lore",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-23T18:30:40.312727Z"
     }
   ],
   "known_sources": [
