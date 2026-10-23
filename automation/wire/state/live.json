@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T06:00:45.275764Z",
+  "updated_at": "2026-10-23T06:15:29.595391Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14712,6 +14712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T06:00:45.204047Z"
+    },
+    {
+      "key": "33665535b9c1f5c5b375d7fe",
+      "url": "https://www.sportsnet.ca/nhl/article/devin-cooleys-masterpiece-sparks-flames-to-win-over-wild",
+      "fingerprint": "46399fb2a61537c9",
+      "title_norm": "devin cooley's masterpiece sparks flames to win over wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T06:15:29.545355Z"
     }
   ],
   "known_sources": [
