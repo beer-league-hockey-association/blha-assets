@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T06:15:29.595391Z",
+  "updated_at": "2026-10-23T07:15:36.095070Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14722,6 +14722,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T06:15:29.545355Z"
+    },
+    {
+      "key": "668f38fda961f071f6aa72f1",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-feel-fan-frustration-as-losing-streak-continues",
+      "fingerprint": "eb7dc717b3d863a6",
+      "title_norm": "canucks feel fan frustration as losing streak continues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T07:15:36.027940Z"
     }
   ],
   "known_sources": [
