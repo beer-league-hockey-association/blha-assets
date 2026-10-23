@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T03:15:37.388285Z",
+  "updated_at": "2026-10-23T03:30:40.283180Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14572,6 +14572,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T03:15:37.326672Z"
+    },
+    {
+      "key": "0d9c5905ef72f74469de8ded",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-mattias-ekholm-exits-vs-hurricanes-after-hard-fall",
+      "fingerprint": "7c0e76953236a951",
+      "title_norm": "oilers' mattias ekholm exits vs. hurricanes after hard fall",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T03:30:39.918326Z"
+    },
+    {
+      "key": "97307dd717396c93c4281492",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-captain-nick-suzuki-out-multiple-weeks-with-upper-body-injury",
+      "fingerprint": "5e174d083986ecda",
+      "title_norm": "canadiens captain nick suzuki out multiple weeks with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T03:30:40.210763Z"
     }
   ],
   "known_sources": [
