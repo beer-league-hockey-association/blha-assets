@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T16:15:41.062259Z",
+  "updated_at": "2026-10-23T16:45:40.643933Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14902,6 +14902,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-23T16:15:40.581871Z"
+    },
+    {
+      "key": "0dd990bbe4646e48f9d9a129",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "97774974fd7aa356",
+      "title_norm": "jiri kulich (buf) — kulich (upper-body) left practice on friday and is unsure if he will travel on buffalo's road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T16:45:39.771657Z"
+    },
+    {
+      "key": "df95a753179410d770308d1a",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-deal-connor-hellebuyck-to-devils-ending-trade-request-saga",
+      "fingerprint": "564f430660f42176",
+      "title_norm": "jets deal connor hellebuyck to devils, ending trade-request saga",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T16:45:40.059756Z"
+    },
+    {
+      "key": "8968f2fd41e7e5018291775f",
+      "url": "https://www.youtube.com/watch",
+      "fingerprint": "fc10fb5706670a40",
+      "title_norm": "getting to know the hamilton hammers",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-23T16:45:40.329720Z"
+    },
+    {
+      "key": "e1d11003a07c7c41dd7a4d3f",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "67335d78dfcd4823",
+      "title_norm": "rasmus ristolainen (phi) — ristolainen (upper-body) has a chance to return vs. anaheim on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T16:45:40.538291Z"
     }
   ],
   "known_sources": [
