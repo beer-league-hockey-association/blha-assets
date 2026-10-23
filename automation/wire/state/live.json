@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T14:15:43.928560Z",
+  "updated_at": "2026-10-23T15:00:43.924146Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14762,6 +14762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-23T14:15:43.851573Z"
+    },
+    {
+      "key": "b5695e331d8a81b21bdc4969",
+      "url": "https://www.dailyfaceoff.com/players/news/vincent-desharnais/25716",
+      "fingerprint": "2409abeb45253400",
+      "title_norm": "vincent desharnais (wsh) — desharnais underwent a successful appendectomy surgery and is expected to miss the next 4-6 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T15:00:43.833914Z"
     }
   ],
   "known_sources": [
