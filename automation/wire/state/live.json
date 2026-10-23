@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T12:15:38.563727Z",
+  "updated_at": "2026-10-23T14:15:43.928560Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14752,6 +14752,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-23T12:15:38.520920Z"
+    },
+    {
+      "key": "54e1dfcf28597fb3b443bfe6",
+      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
+      "fingerprint": "152218b1bc41c584",
+      "title_norm": "radek faksa (dal) — faksa (undisclosed) left thursday's game and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T14:15:43.851573Z"
     }
   ],
   "known_sources": [
