@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T17:45:44.372302Z",
+  "updated_at": "2026-10-23T18:00:50.074724Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14992,6 +14992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T17:45:44.334780Z"
+    },
+    {
+      "key": "6f7e8f067552c9e3a95784bc",
+      "url": "https://www.sportsnet.ca/nhl/article/whitecloud-committed-to-future-with-flames-calgary-is-home",
+      "fingerprint": "898ba60ad0aa2554",
+      "title_norm": "whitecloud committed to future with flames: 'calgary is home'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T18:00:50.007585Z"
     }
   ],
   "known_sources": [
