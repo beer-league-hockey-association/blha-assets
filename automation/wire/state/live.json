@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T17:15:38.243342Z",
+  "updated_at": "2026-10-23T17:45:44.372302Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14972,6 +14972,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T17:15:38.175876Z"
+    },
+    {
+      "key": "908cf977af3c4cd64ca1572d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-mike-matheson-to-return-vs-blackhawks",
+      "fingerprint": "b07a4cf372a8e838",
+      "title_norm": "canadiens' mike matheson to return vs. blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T17:45:44.062738Z"
+    },
+    {
+      "key": "4c634588df3c302e5bf57ace",
+      "url": "https://www.sportsnet.ca/nhl/article/how-panthers-style-system-is-igniting-oilers-blazing-start",
+      "fingerprint": "3f38bead2aec3a5f",
+      "title_norm": "how panthers-style system is igniting oilers' blazing start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-23T17:45:44.334780Z"
     }
   ],
   "known_sources": [
