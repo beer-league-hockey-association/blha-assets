@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-23T02:15:40.797537Z",
+  "updated_at": "2026-10-23T02:30:37.635905Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -14512,6 +14512,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-23T02:15:40.432742Z"
+    },
+    {
+      "key": "748b962a8d51d0c0921fbeb2",
+      "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
+      "fingerprint": "45e7debc038b5c73",
+      "title_norm": "igor chernyshov (sjs) — chernyshov (upper-body) left thursday's game vs. ottawa and will be out for a while.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T02:30:37.203656Z"
+    },
+    {
+      "key": "2d4cb3c8a7e2a4952d5d5862",
+      "url": "https://www.dailyfaceoff.com/players/news/marshall-rifai/25666",
+      "fingerprint": "916293b664ffc89a",
+      "title_norm": "marshall rifai (tor) — rifai is week-to-week with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-23T02:30:37.554135Z"
     }
   ],
   "known_sources": [
