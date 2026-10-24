@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T21:45:38.417302Z",
+  "updated_at": "2026-10-24T22:15:34.854991Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15702,6 +15702,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T21:45:38.357209Z"
+    },
+    {
+      "key": "23a22666172dd7211a6f465c",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
+      "fingerprint": "949e932feaf0fe58",
+      "title_norm": "logan thompson (wsh) — thompson (lower-body) has been placed on ir retroactive to october 20th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T22:15:34.402347Z"
+    },
+    {
+      "key": "22e66c5814f7819df896d17c",
+      "url": "https://www.nhl.com/news/los-angeles-kings-new-jersey-devils-game-recap-october-24-2026",
+      "fingerprint": "2eabaf9528ea25b2",
+      "title_norm": "pesce breaks tie in 3rd, boosts devils past kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T22:15:34.725976Z"
     }
   ],
   "known_sources": [
