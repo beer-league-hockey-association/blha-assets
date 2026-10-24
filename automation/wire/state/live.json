@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T01:15:37.613245Z",
+  "updated_at": "2026-10-24T03:15:31.587868Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15212,6 +15212,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T01:15:37.523108Z"
+    },
+    {
+      "key": "2fc9d5fe563426a89139e9aa",
+      "url": "https://www.nhl.com/news/montreal-canadiens-chicago-blackhawks-game-recap-october-23-2026",
+      "fingerprint": "6ce3f70248523c1c",
+      "title_norm": "evans scores twice, canadiens defeat blackhawks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T03:15:31.274797Z"
+    },
+    {
+      "key": "dd8f30279c9b0fc85c6a2361",
+      "url": "https://www.nhl.com/news/vincent-desharnais-out-4-6-weeks-for-washington",
+      "fingerprint": "a04db9061e3914d8",
+      "title_norm": "desharnais out 4-6 weeks for caps after appendectomy",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T03:15:31.485867Z"
     }
   ],
   "known_sources": [
