@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T20:15:35.701350Z",
+  "updated_at": "2026-10-24T21:00:35.507100Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15652,6 +15652,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T20:15:35.573957Z"
+    },
+    {
+      "key": "74f3fe0d580313e6363f6edb",
+      "url": "https://www.nhl.com/news/quinn-hughes-not-sure-what-to-expect-in-first-trip-back-to-vancouver",
+      "fingerprint": "26277fdd5742e4a4",
+      "title_norm": "hughes: 'i don't know what to expect' from canucks fans",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T21:00:35.413279Z"
     }
   ],
   "known_sources": [
