@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T17:15:41.112658Z",
+  "updated_at": "2026-10-24T17:45:34.170978Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15552,6 +15552,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T17:15:41.047111Z"
+    },
+    {
+      "key": "96936302711d034434df749d",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
+      "fingerprint": "0cad3bb36ef5dff2",
+      "title_norm": "jared mccann (sea) — mccann (lower-body) is out vs. minnesota on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T17:45:34.044914Z"
     }
   ],
   "known_sources": [
