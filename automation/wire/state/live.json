@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T06:15:31.671832Z",
+  "updated_at": "2026-10-24T09:43:58.068413Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15322,6 +15322,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T06:15:31.579465Z"
+    },
+    {
+      "key": "066943df3e7401051e0e4613",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Fantasy-Hockey-Week-5-Waiver-Wire-Best-Adds--Streamers--Drops-e3r0g0i",
+      "fingerprint": "62a396b71c4a7c18",
+      "title_norm": "fantasy hockey week 5 waiver wire: best adds, streamers & drops",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-24T09:43:58.035292Z"
     }
   ],
   "known_sources": [
