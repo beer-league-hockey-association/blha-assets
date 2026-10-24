@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T00:30:35.809032Z",
+  "updated_at": "2026-10-24T01:15:37.613245Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15202,6 +15202,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T00:30:35.735439Z"
+    },
+    {
+      "key": "6b1a969a0fc963d0fcc2d0ac",
+      "url": "https://www.nhl.com/news/winnipeg-jets-expecting-unreal-atmosphere-in-heritage-classic",
+      "fingerprint": "d915e88b0c908bb4",
+      "title_norm": "jets expect 'unreal' heritage classic atmosphere",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T01:15:37.523108Z"
     }
   ],
   "known_sources": [
