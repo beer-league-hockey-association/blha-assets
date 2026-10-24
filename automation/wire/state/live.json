@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T18:30:34.577501Z",
+  "updated_at": "2026-10-24T18:45:32.973688Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15602,6 +15602,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T18:30:34.521860Z"
+    },
+    {
+      "key": "0918dc9911af031b409e0457",
+      "url": "https://www.nhl.com/news/directv-adds-regional-channels-for-4-nhl-teams-in-multiyear-deal",
+      "fingerprint": "8594eb2bbd8de105",
+      "title_norm": "directv adds regional channels for 4 nhl teams",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T18:45:32.898371Z"
     }
   ],
   "known_sources": [
