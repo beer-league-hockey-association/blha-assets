@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T16:15:38.576080Z",
+  "updated_at": "2026-10-24T16:59:51.247034Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15502,6 +15502,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T16:15:38.463134Z"
+    },
+    {
+      "key": "e0126f2cbb763666fd25fe6e",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/32cd71ea-939d-4290-80d9-06a37b178cb4",
+      "fingerprint": "474388337f25752b",
+      "title_norm": "nhl on sportsnet: ducks vs. flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T16:59:51.179086Z"
     }
   ],
   "known_sources": [
