@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T20:00:42.109846Z",
+  "updated_at": "2026-10-24T20:15:35.701350Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15642,6 +15642,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T20:00:42.045882Z"
+    },
+    {
+      "key": "cf0b747d29e1d1a42d614572",
+      "url": "https://www.nhl.com/news/anaheim-ducks-philadelphia-flyers-game-recap-october-24-2026",
+      "fingerprint": "3d252a94a2d20a3f",
+      "title_norm": "ducks rally past flyers to end 5-game losing streak",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T20:15:35.573957Z"
     }
   ],
   "known_sources": [
