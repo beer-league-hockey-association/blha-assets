@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T15:15:33.111521Z",
+  "updated_at": "2026-10-24T15:30:38.170102Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15432,6 +15432,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T15:15:33.044669Z"
+    },
+    {
+      "key": "472ef61080d57c2d7a9014e0",
+      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
+      "fingerprint": "bda7807b5626af3c",
+      "title_norm": "thomas chabot (ott) — chabot (upper-body) will travel with and is expected to return during ottawa's upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T15:30:37.770994Z"
+    },
+    {
+      "key": "85481fb62cf958e9e41c8f7f",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "8b950b62cd447215",
+      "title_norm": "evgeni malkin (pit) — malkin (illness) is out vs. nashville on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T15:30:38.099793Z"
     }
   ],
   "known_sources": [
