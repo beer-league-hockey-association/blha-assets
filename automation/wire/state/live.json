@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T15:30:38.170102Z",
+  "updated_at": "2026-10-24T15:45:30.527248Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15452,6 +15452,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-24T15:30:38.099793Z"
+    },
+    {
+      "key": "3d68bd44fc344ab64bafb0a7",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "545d0d55200f0ac4",
+      "title_norm": "sean durzi (nyr) — durzi (undisclosed) will be a game-time decision in ottawa on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T15:45:30.450522Z"
     }
   ],
   "known_sources": [
