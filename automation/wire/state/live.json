@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T17:45:34.170978Z",
+  "updated_at": "2026-10-24T18:00:38.659350Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15562,6 +15562,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-24T17:45:34.044914Z"
+    },
+    {
+      "key": "d0451ca8aa035663d7bb826c",
+      "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
+      "fingerprint": "69fda717545d0952",
+      "title_norm": "igor chernyshov (sjs) — chernyshov (upper-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T18:00:38.251968Z"
+    },
+    {
+      "key": "57ae0f842cbff34ddb5eab62",
+      "url": "https://www.dailyfaceoff.com/players/news/adam-gaudette/4646",
+      "fingerprint": "8104882385b07e77",
+      "title_norm": "adam gaudette (sjs) — gaudette (upper-body) will make his season debut in ottawa on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T18:00:38.566246Z"
     }
   ],
   "known_sources": [
