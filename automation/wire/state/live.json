@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T04:30:34.445092Z",
+  "updated_at": "2026-10-24T05:00:37.463142Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15262,6 +15262,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T04:30:34.329637Z"
+    },
+    {
+      "key": "7c1980f5cebebcaf7e234c23",
+      "url": "https://www.nhl.com/news/2026-heritage-classic-rekindles-childhood-memories-for-montreal-canadiens",
+      "fingerprint": "4cd6695a81a8918b",
+      "title_norm": "heritage classic rekindles childhood memories for habs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T05:00:37.213905Z"
+    },
+    {
+      "key": "1bf3bdf6c287a51e3e70acfd",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-24-2026",
+      "fingerprint": "a657eec74baf9c16",
+      "title_norm": "nhl on tap: devils anticipate boost from hellebuyck deal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T05:00:37.367631Z"
     }
   ],
   "known_sources": [
