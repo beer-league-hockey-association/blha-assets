@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T10:30:39.729025Z",
+  "updated_at": "2026-10-24T12:30:43.588588Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15342,6 +15342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T10:30:39.680792Z"
+    },
+    {
+      "key": "12e5844b4ef7d71ec898ed81",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-maple-leafs-mike-babcock-set-to-reunite-as-foes-in-edmonton",
+      "fingerprint": "243d9725c3a820e1",
+      "title_norm": "quick shifts: maple leafs, mike babcock set to reunite as foes in edmonton",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T12:30:43.517128Z"
     }
   ],
   "known_sources": [
