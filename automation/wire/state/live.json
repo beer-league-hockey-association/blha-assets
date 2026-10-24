@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T03:15:31.587868Z",
+  "updated_at": "2026-10-24T04:00:35.446170Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15232,6 +15232,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T03:15:31.485867Z"
+    },
+    {
+      "key": "d4f258e8be6d5a21c70d07f5",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-23-2026",
+      "fingerprint": "714dcac0155d00a2",
+      "title_norm": "status report: blankenburg, rifai on leafs injury list",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T04:00:35.376304Z"
     }
   ],
   "known_sources": [
