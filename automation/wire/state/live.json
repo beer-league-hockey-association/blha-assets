@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T22:15:34.854991Z",
+  "updated_at": "2026-10-24T22:30:42.578022Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15722,6 +15722,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T22:15:34.725976Z"
+    },
+    {
+      "key": "8b6dc4166f85e0f4bdd2ddd8",
+      "url": "https://www.sportsnet.ca/nhl/article/i-just-feel-gratitude-hughes-reflects-on-canucks-tenure-ahead-of-return",
+      "fingerprint": "86cb399889d52299",
+      "title_norm": "'i just feel gratitude': hughes reflects on canucks tenure ahead of return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T22:30:42.518586Z"
     }
   ],
   "known_sources": [
