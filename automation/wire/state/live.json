@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T15:45:30.527248Z",
+  "updated_at": "2026-10-24T16:00:38.372318Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15462,6 +15462,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-24T15:45:30.450522Z"
+    },
+    {
+      "key": "6f9bbbeea5a89e966159e764",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "a68c25036b055a95",
+      "title_norm": "jiri kulich (buf) — kulich (upper-body) has travelled back to buffalo and is out vs. washington on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T16:00:37.523073Z"
+    },
+    {
+      "key": "b1004bc6444d2d49f5c0ca39",
+      "url": "https://www.sportsnet.ca/nhl/article/watch-live-devils-gm-sunny-mehta-goalie-connor-hellebuyck-speak-after-trade",
+      "fingerprint": "13a08f74e7d1cc9f",
+      "title_norm": "watch live: devils gm sunny mehta, goalie connor hellebuyck speak after trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T16:00:38.028065Z"
+    },
+    {
+      "key": "dc5f143423189053e1858fb5",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-johansson-to-start-vs-rangers-burakovsky-draws-back-in",
+      "fingerprint": "af30cec1e5a9e2e9",
+      "title_norm": "senators' johansson to start vs. rangers, burakovsky draws back in",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T16:00:38.338248Z"
     }
   ],
   "known_sources": [
