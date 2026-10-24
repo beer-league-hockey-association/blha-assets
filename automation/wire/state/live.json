@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T09:43:58.068413Z",
+  "updated_at": "2026-10-24T10:30:39.729025Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15332,6 +15332,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-24T09:43:58.035292Z"
+    },
+    {
+      "key": "7c60e923cfb1fd7c4c9ec999",
+      "url": "https://www.sportsnet.ca/nhl/article/mackinnon-has-four-points-as-avalanche-beat-lightning",
+      "fingerprint": "2c45401b23ff4539",
+      "title_norm": "mackinnon has four points as avalanche beat lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T10:30:39.680792Z"
     }
   ],
   "known_sources": [
