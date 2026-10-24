@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T15:00:40.437855Z",
+  "updated_at": "2026-10-24T15:15:33.111521Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15382,6 +15382,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-24T15:00:40.327817Z"
+    },
+    {
+      "key": "79b8d20aaf68fec8f3b0e6eb",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "e290423702a48e4c",
+      "title_norm": "victor hedman (tbl) — hedman (undisclosed) left friday's game vs. colorado and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T15:15:31.942615Z"
+    },
+    {
+      "key": "233fa802ca44d00c12b90f49",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-sourdif/29606",
+      "fingerprint": "cff7bf03b484e0aa",
+      "title_norm": "justin sourdif (wsh) — sourdif (illness) will return vs. buffalo on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T15:15:32.390073Z"
+    },
+    {
+      "key": "68e45f50707111845c8b93ee",
+      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
+      "fingerprint": "c9382dff761b0d9b",
+      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will return vs. buffalo on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T15:15:32.747198Z"
+    },
+    {
+      "key": "853df8c0643b85c07f3b6608",
+      "url": "https://www.nhl.com/news/new-jersey-trade-for-goalie-connor-hellebuyck-proof-devils-want-to-win-stanley-cup-now",
+      "fingerprint": "cc4b5e784a709367",
+      "title_norm": "hellebuyck trade proof devils want to win cup now",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T15:15:32.750406Z"
+    },
+    {
+      "key": "0871158c30347c5b359afe9e",
+      "url": "https://www.nhl.com/news/stanley-cup-visit-thrills-pikangikum-first-nation-community",
+      "fingerprint": "383c7693f467c62d",
+      "title_norm": "stanley cup visit thrills first nations community",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T15:15:33.044669Z"
     }
   ],
   "known_sources": [
