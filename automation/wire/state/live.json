@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T21:00:35.507100Z",
+  "updated_at": "2026-10-24T21:15:35.129929Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15662,6 +15662,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T21:00:35.413279Z"
+    },
+    {
+      "key": "a04940b3f648c7f13b2ae32f",
+      "url": "https://www.sportsnet.ca/nhl/article/quinn-hughes-on-wild-contract-talks-my-two-feet-are-planted-in-minnesota",
+      "fingerprint": "47df508cf5fb37aa",
+      "title_norm": "quinn hughes on wild contract talks: 'my two feet are planted in minnesota'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T21:15:34.772764Z"
+    },
+    {
+      "key": "99b95a19726c56864b7818ef",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-leo-carlsson-burns-flyers-with-goal-and-assist-in-win",
+      "fingerprint": "ed15d67ce6a76b7d",
+      "title_norm": "ducks' leo carlsson burns flyers with goal and assist in win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T21:15:35.001821Z"
     }
   ],
   "known_sources": [
