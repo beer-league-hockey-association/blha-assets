@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T12:30:43.588588Z",
+  "updated_at": "2026-10-24T14:00:40.478359Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15352,6 +15352,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T12:30:43.517128Z"
+    },
+    {
+      "key": "ce752cff41f888bfd20f453b",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-24-2026",
+      "fingerprint": "8863db39254d35e0",
+      "title_norm": "status report: levi placed on injured reserve by oilers",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T14:00:40.409400Z"
     }
   ],
   "known_sources": [
