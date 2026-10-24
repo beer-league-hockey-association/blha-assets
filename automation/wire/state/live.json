@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T05:45:30.920118Z",
+  "updated_at": "2026-10-24T06:15:31.671832Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15312,6 +15312,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T05:45:30.785044Z"
+    },
+    {
+      "key": "1d00c1ffa48e8df4f6813603",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-connor-hellebuyck-trade-to-new-jersey-devils-2026-27",
+      "fingerprint": "0f1ad38fc174bc29",
+      "title_norm": "edge stats: hellebuyck trade makes devils contender",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T06:15:31.579465Z"
     }
   ],
   "known_sources": [
