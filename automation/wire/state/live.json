@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T16:59:51.247034Z",
+  "updated_at": "2026-10-24T17:15:41.112658Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15512,6 +15512,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T16:59:51.179086Z"
+    },
+    {
+      "key": "41a026d668f5258a5ab600ea",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
+      "fingerprint": "0848452091d3d5ef",
+      "title_norm": "mattias ekholm (edm) — ekholm (concussion) is expected to miss edmonton's next three games.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T17:15:39.633483Z"
+    },
+    {
+      "key": "36eb8f0d4e94165774e147d1",
+      "url": "https://www.dailyfaceoff.com/players/news/devon-levi/33010",
+      "fingerprint": "7d711578e3aee915",
+      "title_norm": "devon levi (edm) — levi (undisclosed) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T17:15:39.891812Z"
+    },
+    {
+      "key": "1887a97ad47f069aaf79cab4",
+      "url": "https://www.dailyfaceoff.com/players/news/john-marino/25570",
+      "fingerprint": "15cf8554dbff70e0",
+      "title_norm": "john marino (uta) — marino (upper-body) is not considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T17:15:40.266983Z"
+    },
+    {
+      "key": "3dfb45d7d1c45025e42d71d4",
+      "url": "https://www.sportsnet.ca/nhl/video/hellebuyck-delays-message-to-jets-fans-out-of-respect-for-heritage-classic",
+      "fingerprint": "5412ccf08c948406",
+      "title_norm": "hellebuyck delays message to jets fans out of respect for heritage classic",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T17:15:41.047111Z"
     }
   ],
   "known_sources": [
