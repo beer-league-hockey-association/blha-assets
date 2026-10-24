@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T16:00:38.372318Z",
+  "updated_at": "2026-10-24T16:15:38.576080Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15492,6 +15492,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T16:00:38.338248Z"
+    },
+    {
+      "key": "89405d2f18072df63f29b354",
+      "url": "https://www.nhl.com/news/chl-notebook-harrington-novotny-schmidt-among-top-nhl-western-prospects",
+      "fingerprint": "11611e5ef9709fa3",
+      "title_norm": "chl notebook: quick-starting nhl western prospects",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T16:15:38.463134Z"
     }
   ],
   "known_sources": [
