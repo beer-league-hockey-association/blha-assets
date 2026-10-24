@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T05:28:56.898373Z",
+  "updated_at": "2026-10-24T05:45:30.920118Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15302,6 +15302,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T05:28:56.845585Z"
+    },
+    {
+      "key": "9b826c52bb60bfe18d65eed9",
+      "url": "https://www.nhl.com/news/winnipeg-jets-gm-comfortable-with-connor-hellebuyck-trade",
+      "fingerprint": "e08f1a2a153766f0",
+      "title_norm": "jets gm 'comfortable' with hellebuyck trade",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T05:45:30.785044Z"
     }
   ],
   "known_sources": [
