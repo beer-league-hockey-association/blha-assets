@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T22:30:42.578022Z",
+  "updated_at": "2026-10-24T23:00:42.157264Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15732,6 +15732,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T22:30:42.518586Z"
+    },
+    {
+      "key": "866461dc71a1eafc701ac027",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/4b95a8ae-fd20-45e6-a5b2-466abbc77590",
+      "fingerprint": "877503541f77f094",
+      "title_norm": "saturday night hockey on sportsnet: maple leafs vs. oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T23:00:42.093237Z"
     }
   ],
   "known_sources": [
