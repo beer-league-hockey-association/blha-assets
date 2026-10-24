@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T21:15:35.129929Z",
+  "updated_at": "2026-10-24T21:45:38.417302Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15682,6 +15682,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T21:15:35.001821Z"
+    },
+    {
+      "key": "184ca1aed6062f2b0dd2bd50",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-embraces-fresh-start-with-devils-postpones-message-to-jets-fans",
+      "fingerprint": "ccdcb18f6048c42e",
+      "title_norm": "hellebuyck embraces fresh start with devils, postpones message to jets fans",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T21:45:38.117220Z"
+    },
+    {
+      "key": "66ad9ef0ecfcf84a14b97d8e",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/hellebuyck-trade-insights-with-kevin-cheveldayoff",
+      "fingerprint": "2118a65e66993c72",
+      "title_norm": "32 thoughts podcast: hellebuyck trade insights with kevin cheveldayoff",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T21:45:38.357209Z"
     }
   ],
   "known_sources": [
