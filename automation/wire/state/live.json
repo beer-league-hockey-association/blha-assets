@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T23:00:42.157264Z",
+  "updated_at": "2026-10-24T23:30:41.477779Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15742,6 +15742,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T23:00:42.093237Z"
+    },
+    {
+      "key": "5d5a18efaf5564e92a788c3e",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/b586c4d4-3d58-46a6-9634-163ff66736e9",
+      "fingerprint": "f54600c11e2de636",
+      "title_norm": "saturday night hockey on sportsnet: rangers vs. senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T23:30:41.435226Z"
     }
   ],
   "known_sources": [
