@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T18:00:38.659350Z",
+  "updated_at": "2026-10-24T18:30:34.577501Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15582,6 +15582,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-24T18:00:38.566246Z"
+    },
+    {
+      "key": "77345fe725d2ae48695a9bba",
+      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
+      "fingerprint": "b3ee79b9feb04cb5",
+      "title_norm": "nicolas roy (col) — roy (lower-body) will travel but is questionable for sunday's game vs. nashville.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-24T18:30:34.483777Z"
+    },
+    {
+      "key": "5f52aec487157421d322390c",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-claim-defenceman-jack-st-ivany-off-waivers-from-jets",
+      "fingerprint": "3ba483b638c7c963",
+      "title_norm": "capitals claim defenceman jack st. ivany off waivers from jets",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-24T18:30:34.521860Z"
     }
   ],
   "known_sources": [
