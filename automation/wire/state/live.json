@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T04:00:35.446170Z",
+  "updated_at": "2026-10-24T04:15:32.553022Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15242,6 +15242,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T04:00:35.376304Z"
+    },
+    {
+      "key": "f4a60a245d555acb9c205d03",
+      "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro",
+      "fingerprint": "9f1e1321f405c0d4",
+      "title_norm": "heritage blog: ferraro of jets ready for 1st outdoor game",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T04:15:32.432407Z"
     }
   ],
   "known_sources": [
