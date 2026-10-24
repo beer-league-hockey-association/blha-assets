@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T04:15:32.553022Z",
+  "updated_at": "2026-10-24T04:30:34.445092Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15252,6 +15252,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-24T04:15:32.432407Z"
+    },
+    {
+      "key": "f35e7b7ffe30732024e7813c",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-colorado-avalanche-game-recap-october-23-2026",
+      "fingerprint": "2d44c5520bbfe47d",
+      "title_norm": "mackinnon has four points, avalanche defeat lightning to get back on track",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-24T04:30:34.329637Z"
     }
   ],
   "known_sources": [
