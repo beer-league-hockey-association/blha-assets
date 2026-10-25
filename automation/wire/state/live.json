@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T21:00:39.475868Z",
+  "updated_at": "2026-10-25T21:15:34.911394Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16212,6 +16212,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-25T21:00:39.397651Z"
+    },
+    {
+      "key": "bacdbde6428398398a9a8e30",
+      "url": "https://www.nhl.com/news/alexander-nikishin-one-year-contract-with-carolina-hurricanes",
+      "fingerprint": "72cc3024a25faf71",
+      "title_norm": "nikishin, hurricanes end stalemate with 1-year deal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T21:15:34.578627Z"
+    },
+    {
+      "key": "0344ae9fcb10c2fa1e675a15",
+      "url": "https://www.sportsnet.ca/nhl/article/sights-and-sounds-from-nhl-heritage-classic-in-winnipeg",
+      "fingerprint": "016bb7a87c0b54a0",
+      "title_norm": "sights and sounds from nhl heritage classic in winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T21:15:34.838912Z"
     }
   ],
   "known_sources": [
