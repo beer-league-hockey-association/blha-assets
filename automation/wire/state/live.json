@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T05:15:37.006569Z",
+  "updated_at": "2026-10-25T05:30:35.158365Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15972,6 +15972,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T05:15:36.885456Z"
+    },
+    {
+      "key": "cdc4f894d59df7ec5afafe96",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-pay-tribute-to-2004-team-with-workmanlike-victory",
+      "fingerprint": "3dcf2db93e2ca319",
+      "title_norm": "flames pay tribute to 2004 team with workmanlike victory",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T05:30:35.080890Z"
     }
   ],
   "known_sources": [
