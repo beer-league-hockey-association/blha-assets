@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T03:45:34.517288Z",
+  "updated_at": "2026-10-25T04:00:39.018070Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15922,6 +15922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T03:45:34.463530Z"
+    },
+    {
+      "key": "f154e0a72054bf4aeae6b82d",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-st-louis-blues-game-recap-october-24-2026",
+      "fingerprint": "2fa14d900e84c74d",
+      "title_norm": "kochetkov wins seventh straight start, hurricanes shut out blues",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T04:00:38.953210Z"
     }
   ],
   "known_sources": [
