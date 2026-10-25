@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T22:15:34.714682Z",
+  "updated_at": "2026-10-25T23:00:42.338221Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16242,6 +16242,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T22:15:34.599619Z"
+    },
+    {
+      "key": "b19bf84d583106a27ea97fab",
+      "url": "https://www.nhl.com/news/topic/trade-coverage/2026-27-nhl-trades",
+      "fingerprint": "087200b33dfec603",
+      "title_norm": "2026-27 nhl trade tracker",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T23:00:42.050334Z"
+    },
+    {
+      "key": "53b4c507bf1154b8af42b4c2",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/6c5d2c0f-a18f-43cd-9c9c-df9d3288dfd0",
+      "fingerprint": "02ef08ac8b650b05",
+      "title_norm": "heritage classic on sportsnet: canadiens vs. jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T23:00:42.262826Z"
     }
   ],
   "known_sources": [
