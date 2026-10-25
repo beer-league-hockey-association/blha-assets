@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T02:15:34.131857Z",
+  "updated_at": "2026-10-25T02:30:45.272126Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15862,6 +15862,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T02:15:33.815219Z"
+    },
+    {
+      "key": "adc154e4f597334d9357878b",
+      "url": "https://www.nhl.com/news/topic/game-recap/san-jose-sharks-boston-bruins-game-recap-october-24-2026",
+      "fingerprint": "709278d52fe94590",
+      "title_norm": "bruins rally past sharks in 3rd, point streak hits 8",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T02:30:44.919268Z"
+    },
+    {
+      "key": "0a3bb9e8aad78bab1c398eaa",
+      "url": "https://www.sportsnet.ca/nhl/article/surging-leafs-scorch-oilers-for-fourth-win-in-a-row",
+      "fingerprint": "871bcbb81977e481",
+      "title_norm": "surging leafs scorch oilers for fourth win in a row",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T02:30:45.220509Z"
     }
   ],
   "known_sources": [
