@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T17:15:37.761621Z",
+  "updated_at": "2026-10-25T19:15:43.901571Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16182,6 +16182,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-25T17:15:37.626681Z"
+    },
+    {
+      "key": "db9906d8adb39ebca5643141",
+      "url": "https://theahl.com/news/reimer-signs-with-rangers-after-posting-ahl-shutout",
+      "fingerprint": "e30135f250098390",
+      "title_norm": "reimer signs with rangers after posting ahl shutout",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-25T19:15:43.789872Z"
     }
   ],
   "known_sources": [
