@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T00:45:34.396046Z",
+  "updated_at": "2026-10-25T01:30:39.688537Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15782,6 +15782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T00:45:34.274886Z"
+    },
+    {
+      "key": "f069cf690536b679d143296f",
+      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-expect-hellebuyck-to-try-and-play-this-week",
+      "fingerprint": "58dcd723865088c4",
+      "title_norm": "saturday headlines: expect hellebuyck to try to play this week",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T01:30:39.629462Z"
     }
   ],
   "known_sources": [
