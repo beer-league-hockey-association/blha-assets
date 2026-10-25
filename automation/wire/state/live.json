@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T20:00:43.340788Z",
+  "updated_at": "2026-10-25T21:00:39.475868Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16202,6 +16202,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T20:00:43.264824Z"
+    },
+    {
+      "key": "0ba198b7134209b1cbeb0736",
+      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
+      "fingerprint": "78b9e52311d423cc",
+      "title_norm": "radek faksa (dal) — faksa (undisclosed) will not play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-25T21:00:39.397651Z"
     }
   ],
   "known_sources": [
