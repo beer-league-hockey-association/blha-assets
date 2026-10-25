@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T04:00:39.018070Z",
+  "updated_at": "2026-10-25T04:45:37.613997Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15932,6 +15932,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T04:00:38.953210Z"
+    },
+    {
+      "key": "9d5117484cc174357a02acec",
+      "url": "https://www.nhl.com/news/winnipeg-jets-will-reset-after-connor-hellebuyck-traded-to-new-jersey-devils",
+      "fingerprint": "2f1cb5c9e0880ba3",
+      "title_norm": "jets get 'relief,' reset with hellebuyck trade",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T04:45:37.203139Z"
+    },
+    {
+      "key": "55227f459e94078d0563f8b0",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-utah-mammoth-game-recap-october-24-2026",
+      "fingerprint": "c7f367af789d9a15",
+      "title_norm": "kucherov becomes lightning's all-time points leader in ot loss to mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T04:45:37.520473Z"
     }
   ],
   "known_sources": [
