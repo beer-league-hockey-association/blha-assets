@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T01:30:39.688537Z",
+  "updated_at": "2026-10-25T01:41:26.467876Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15792,6 +15792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T01:30:39.629462Z"
+    },
+    {
+      "key": "a4d8b0ae4d4c74c3b6f2011d",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-tried-trading-for-forward-to-flip-to-jets-for-hellebuyck",
+      "fingerprint": "0d27af3d44fec271",
+      "title_norm": "hurricanes tried trading for forward to flip to jets for hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T01:41:26.409610Z"
     }
   ],
   "known_sources": [
