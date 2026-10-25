@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T12:30:39.528164Z",
+  "updated_at": "2026-10-25T13:15:32.741565Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16032,6 +16032,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-25T12:30:39.491112Z"
+    },
+    {
+      "key": "d9923959715677ac5603f59c",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-gear-up-for-great-outdoors-at-heritage-classic-cant-wait",
+      "fingerprint": "cb333396aa0b3b6e",
+      "title_norm": "canadiens gear up for great outdoors at heritage classic: 'can't wait'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T13:15:32.692223Z"
     }
   ],
   "known_sources": [
