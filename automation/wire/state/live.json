@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T05:30:35.158365Z",
+  "updated_at": "2026-10-25T08:30:36.370741Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15982,6 +15982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T05:30:35.080890Z"
+    },
+    {
+      "key": "9a88902d4427b41ab1f24a18",
+      "url": "https://www.nhl.com/news/new-york-rangers-ottawa-senators-game-recap-october-24-2026",
+      "fingerprint": "4cc8875a2939a9b7",
+      "title_norm": "batherson gets hat trick, assist in senators win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T08:30:36.303566Z"
     }
   ],
   "known_sources": [
