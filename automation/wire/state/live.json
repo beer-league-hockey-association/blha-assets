@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T13:15:32.741565Z",
+  "updated_at": "2026-10-25T15:45:37.617907Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16042,6 +16042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T13:15:32.692223Z"
+    },
+    {
+      "key": "67f4659b1e5564ae2aabc712",
+      "url": "https://www.nhl.com/utah/video/tbl-at-uta-recap-6407368804112",
+      "fingerprint": "7f582fa3ef9e6250",
+      "title_norm": "simashev's first two nhl goals lift mammoth",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-25T15:45:37.508045Z"
     }
   ],
   "known_sources": [
