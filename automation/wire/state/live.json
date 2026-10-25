@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T02:00:43.731995Z",
+  "updated_at": "2026-10-25T02:15:34.131857Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15812,6 +15812,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T02:00:43.667653Z"
+    },
+    {
+      "key": "8c4048365eae46a2e5185aa2",
+      "url": "https://www.sportsnet.ca/nhl/article/nikita-kucherov-sets-lightning-all-time-points-record",
+      "fingerprint": "3178d932ea84fe4c",
+      "title_norm": "nikita kucherov sets lightning all-time points record",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T02:15:33.151856Z"
+    },
+    {
+      "key": "1bdebc399f00470bff3d5465",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-columbus-blue-jackets-game-recap-october-24-2026",
+      "fingerprint": "a53705cfcaee28dc",
+      "title_norm": "fantilli's ot goal lifts jackets past golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T02:15:33.466304Z"
+    },
+    {
+      "key": "d2737e03d2f561b4e83eeaec",
+      "url": "https://www.nhl.com/news/nashville-predators-pittsburgh-penguins-game-recap-october-24-2026",
+      "fingerprint": "3cab0f2b59deac2e",
+      "title_norm": "koivunen scores in ot, caps pens comeback against preds",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T02:15:33.755619Z"
+    },
+    {
+      "key": "6496a8fb5b1ab12f06b4af0b",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-edmonton-oilers-game-recap-october-24-2026",
+      "fingerprint": "4979d3bd8c4fc168",
+      "title_norm": "stolarz makes 30 saves, maple leafs slow down mcdavid, oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T02:15:33.772559Z"
+    },
+    {
+      "key": "33da767a533d3882f72e93b5",
+      "url": "https://www.sportsnet.ca/nhl/article/batherson-nets-hat-trick-as-senators-sink-rangers",
+      "fingerprint": "291bafba42b7f616",
+      "title_norm": "batherson nets hat trick as senators sink rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T02:15:33.815219Z"
     }
   ],
   "known_sources": [
