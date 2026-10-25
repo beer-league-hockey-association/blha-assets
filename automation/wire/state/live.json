@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T01:41:26.467876Z",
+  "updated_at": "2026-10-25T02:00:43.731995Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15802,6 +15802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T01:41:26.409610Z"
+    },
+    {
+      "key": "770c09d55bc4f775bc747777",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/9e308bab-2c28-44f7-a3bc-61b81b2d3d1b",
+      "fingerprint": "3eeefba90cd09a83",
+      "title_norm": "saturday night hockey on sportsnet: red wings vs. flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T02:00:43.667653Z"
     }
   ],
   "known_sources": [
