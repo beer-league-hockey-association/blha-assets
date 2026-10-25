@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T16:42:01.589483Z",
+  "updated_at": "2026-10-25T17:00:42.423335Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16162,6 +16162,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-25T16:42:01.456675Z"
+    },
+    {
+      "key": "0b472228d8fedbd4edbe410e",
+      "url": "https://www.sportsnet.ca/nhl/article/what-we-learned-from-connor-hellebuycks-first-weekend-with-the-devils",
+      "fingerprint": "c2ff9ad70b78aa22",
+      "title_norm": "what we learned from connor hellebuyck's first weekend with the devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T17:00:42.294004Z"
     }
   ],
   "known_sources": [
