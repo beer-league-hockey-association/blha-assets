@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T21:15:34.911394Z",
+  "updated_at": "2026-10-25T22:15:34.714682Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16232,6 +16232,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T21:15:34.838912Z"
+    },
+    {
+      "key": "1292ee587fb6bd849efc2057",
+      "url": "https://www.nhl.com/news/florida-panthers-chicago-blackhawks-game-recap-october-25-2026",
+      "fingerprint": "5e84368d0b56b25c",
+      "title_norm": "eller scores late, lifts panthers past blackhawks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T22:15:34.599619Z"
     }
   ],
   "known_sources": [
