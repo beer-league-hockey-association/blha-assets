@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T11:30:37.415006Z",
+  "updated_at": "2026-10-25T12:30:39.528164Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16012,6 +16012,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-25T11:30:37.356724Z"
+    },
+    {
+      "key": "ca4b27766086b0b1bc6462c1",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-can-blue-jackets-convince-werenski-to-stay",
+      "fingerprint": "fa65b32520f72d17",
+      "title_norm": "sunday overreactions: can blue jackets convince werenski to stay?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T12:30:39.170341Z"
+    },
+    {
+      "key": "487fa46d7fd9430187959462",
+      "url": "https://dobberprospects.com/2026/10/25/october-shl-report-dubs-of-the-month",
+      "fingerprint": "2c86887dce060606",
+      "title_norm": "october shl report: dubs of the month",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-25T12:30:39.491112Z"
     }
   ],
   "known_sources": [
