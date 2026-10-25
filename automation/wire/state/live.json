@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T03:00:39.821984Z",
+  "updated_at": "2026-10-25T03:45:34.517288Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15892,6 +15892,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T03:00:39.742852Z"
+    },
+    {
+      "key": "2940b24cb113188dbb9da950",
+      "url": "https://www.nhl.com/news/buffalo-sabres-washington-capitals-game-recap-october-24-2026",
+      "fingerprint": "07246debdca45b5a",
+      "title_norm": "tuch scores twice against former team, lifts capitals past sabres in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T03:45:33.821444Z"
+    },
+    {
+      "key": "55c425247aaa943d99934920",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-get-full-team-effort-in-blowout-win-over-mcdavids-oilers",
+      "fingerprint": "a1d2a52b66c031fd",
+      "title_norm": "maple leafs get full team effort in blowout win over mcdavid's oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T03:45:34.069928Z"
+    },
+    {
+      "key": "8ee77ef2b694d81d0c5187b0",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-lack-of-depth-proves-costly-in-loss-to-maple-leafs",
+      "fingerprint": "0aeaace5ab67b27b",
+      "title_norm": "oilers' lack of depth proves costly in loss to maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T03:45:34.463530Z"
     }
   ],
   "known_sources": [
