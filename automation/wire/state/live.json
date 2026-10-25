@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T05:00:39.029539Z",
+  "updated_at": "2026-10-25T05:15:37.006569Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15962,6 +15962,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T05:00:38.913858Z"
+    },
+    {
+      "key": "392cd3714bb3613f2c879884",
+      "url": "https://www.nhl.com/news/detroit-red-wings-calgary-flames-game-recap-october-24-2026",
+      "fingerprint": "49d9eae37d74cffb",
+      "title_norm": "farabee has three points, flames defeat red wings for third straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T05:15:36.885456Z"
     }
   ],
   "known_sources": [
