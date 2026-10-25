@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T04:45:37.613997Z",
+  "updated_at": "2026-10-25T05:00:39.029539Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15952,6 +15952,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-25T04:45:37.520473Z"
+    },
+    {
+      "key": "dd4767c6abba8b39dedbb073",
+      "url": "https://www.nhl.com/news/minnesota-wild-seattle-kraken-game-recap-october-24-2026",
+      "fingerprint": "ae616fe20173a828",
+      "title_norm": "coleman scores twice for wild in win against kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T05:00:38.913858Z"
     }
   ],
   "known_sources": [
