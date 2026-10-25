@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T19:15:43.901571Z",
+  "updated_at": "2026-10-25T20:00:43.340788Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16192,6 +16192,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-25T19:15:43.789872Z"
+    },
+    {
+      "key": "a07801fe2f38fb7e6712ca74",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/ef098a32-7acb-4cfd-9b18-bba059a2e43b",
+      "fingerprint": "27f609c25d455a4b",
+      "title_norm": "nhl on sportsnet: panthers vs. blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-25T20:00:43.264824Z"
     }
   ],
   "known_sources": [
