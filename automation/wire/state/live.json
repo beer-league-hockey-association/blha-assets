@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T02:30:45.272126Z",
+  "updated_at": "2026-10-25T03:00:39.821984Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15882,6 +15882,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T02:30:45.220509Z"
+    },
+    {
+      "key": "78aa3846eb35e41045912c4d",
+      "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro-october-24-2026",
+      "fingerprint": "6951f0be6557f716",
+      "title_norm": "heritage blog: ferraro, jets take practice outdoors",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T03:00:39.742852Z"
     }
   ],
   "known_sources": [
