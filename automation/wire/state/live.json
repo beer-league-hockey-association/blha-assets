@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T17:00:42.423335Z",
+  "updated_at": "2026-10-25T17:15:37.761621Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16172,6 +16172,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T17:00:42.294004Z"
+    },
+    {
+      "key": "d51b201aabd0b3dd97d5d9c1",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
+      "fingerprint": "7de3f41f9e74b47b",
+      "title_norm": "jared mccann (sea) — mccann (lower body) has been placed on ir and will be out for 10 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-25T17:15:37.626681Z"
     }
   ],
   "known_sources": [
