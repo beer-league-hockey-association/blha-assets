@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-24T23:30:41.477779Z",
+  "updated_at": "2026-10-25T00:30:36.656263Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -15752,6 +15752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-24T23:30:41.435226Z"
+    },
+    {
+      "key": "c989288ee34592729099e797",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
+      "fingerprint": "5152bbbf433ce8de",
+      "title_norm": "jared mccann (sea) — mccann (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-25T00:30:36.528207Z"
     }
   ],
   "known_sources": [
