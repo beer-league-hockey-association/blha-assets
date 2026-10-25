@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T15:45:37.617907Z",
+  "updated_at": "2026-10-25T16:15:32.793076Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16052,6 +16052,56 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-25T15:45:37.508045Z"
+    },
+    {
+      "key": "e16dc4011a4c6439dd209e1a",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-25-2026",
+      "fingerprint": "2a58c5afed965b75",
+      "title_norm": "on tap: canadiens, jets set for heritage classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T16:15:31.688925Z"
+    },
+    {
+      "key": "4492290c41e986fff7374f37",
+      "url": "https://www.nhl.com/news/trade-to-new-jersey-devils-going-to-fit-perfectly-for-connor-hellebuyck",
+      "fingerprint": "a23c6bec9bd0dc23",
+      "title_norm": "devils 'going to fit perfectly' for hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T16:15:31.866072Z"
+    },
+    {
+      "key": "7700fef46a1cf721a012e1ce",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-25-2026",
+      "fingerprint": "09901b930c9bc81c",
+      "title_norm": "status report: perron could make stars debut tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T16:15:32.120716Z"
+    },
+    {
+      "key": "37a6fa077b657300a9c5c900",
+      "url": "https://www.nhl.com/news/heritage-classic-blog-jake-evans-october-24-2026",
+      "fingerprint": "90b2ed9a08fe819f",
+      "title_norm": "heritage blog: evans, habs test out ice on outdoor rink",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T16:15:32.297720Z"
+    },
+    {
+      "key": "a801497ace2251b6d6b11044",
+      "url": "https://www.nhl.com/news/buffalo-sabres-early-struggles-continue-after-loss-to-washington-capitals",
+      "fingerprint": "f8be513b25f472ff",
+      "title_norm": "sabres struggling putting complete game together",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-25T16:15:32.309685Z"
     }
   ],
   "known_sources": [
