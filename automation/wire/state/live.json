@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T20:15:34.604444Z",
+  "updated_at": "2026-10-26T21:00:40.946707Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16732,6 +16732,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T20:15:34.534895Z"
+    },
+    {
+      "key": "dde426cd643ad200bd142dcd",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-activate-taylor-hall-from-injured-reserve",
+      "fingerprint": "0aaa426a2d2c5848",
+      "title_norm": "hurricanes activate taylor hall from injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T21:00:40.116363Z"
+    },
+    {
+      "key": "0da95246a41f610d013a2761",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-get-welcome-distraction-from-heritage-classic-look-for-on-ice-reset",
+      "fingerprint": "41349cdb8c4ffa3c",
+      "title_norm": "jets get welcome distraction from heritage classic, look for on-ice reset",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T21:00:40.883795Z"
     }
   ],
   "known_sources": [
