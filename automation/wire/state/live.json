@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T12:15:31.336088Z",
+  "updated_at": "2026-10-26T13:00:42.305642Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16462,6 +16462,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T12:15:31.282657Z"
+    },
+    {
+      "key": "479a30bfe22066cf742d84cc",
+      "url": "https://www.nhl.com/news/new-york-islanders-dallas-stars-game-recap-october-25-2026",
+      "fingerprint": "102d81a2fda74fbd",
+      "title_norm": "robertson scores twice, stars pull away from islanders for fifth straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T13:00:42.197589Z"
     }
   ],
   "known_sources": [
