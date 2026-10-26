@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T05:00:39.866879Z",
+  "updated_at": "2026-10-26T05:15:39.145298Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16392,6 +16392,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T05:00:39.793836Z"
+    },
+    {
+      "key": "e16b46d86ceac5fadb907931",
+      "url": "https://www.sportsnet.ca/nhl/article/kraken-forward-jared-mccann-sidelined-long-term-with-lower-body-injury",
+      "fingerprint": "9e62cfdaf731931f",
+      "title_norm": "kraken forward jared mccann sidelined long-term with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T05:15:39.012630Z"
     }
   ],
   "known_sources": [
