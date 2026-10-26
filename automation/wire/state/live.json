@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T07:15:37.130435Z",
+  "updated_at": "2026-10-26T08:45:59.454041Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16432,6 +16432,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T07:15:37.057466Z"
+    },
+    {
+      "key": "626699778a20b608594b0b99",
+      "url": "https://www.nhl.com/news/montreal-canadiens-winnipeg-jets-heritage-classic-game-recap-october-25-2026",
+      "fingerprint": "18fbb0be7d3aa40a",
+      "title_norm": "fowler saves 33, canadiens hold off jets in heritage classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T08:45:59.370423Z"
     }
   ],
   "known_sources": [
