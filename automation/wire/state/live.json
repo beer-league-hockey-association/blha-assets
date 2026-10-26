@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T18:45:38.487713Z",
+  "updated_at": "2026-10-26T19:00:42.535452Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16682,6 +16682,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-26T18:45:38.410059Z"
+    },
+    {
+      "key": "23f7b88aedbe157e9863199c",
+      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
+      "fingerprint": "a418d310f042d365",
+      "title_norm": "thomas chabot (ott) — chabot (upper-body) returned to ottawa's practice in a regular jersey on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T19:00:41.975517Z"
+    },
+    {
+      "key": "6327876d51e406a268f1cd6e",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chris-tanev-practises-for-first-time-since-injury",
+      "fingerprint": "4a56579e030efe4e",
+      "title_norm": "maple leafs' chris tanev practises for first time since injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T19:00:42.503724Z"
     }
   ],
   "known_sources": [
