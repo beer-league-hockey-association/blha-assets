@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T20:00:37.335398Z",
+  "updated_at": "2026-10-26T20:15:34.604444Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16722,6 +16722,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T20:00:37.264972Z"
+    },
+    {
+      "key": "2c591ffc0ecbd799a77aa377",
+      "url": "https://www.sportsnet.ca/nhl/article/ready-today-devils-hellebuyck-eager-to-be-thrown-back-into-fire",
+      "fingerprint": "2e21c920660d3dd8",
+      "title_norm": "'ready today': devils' hellebuyck eager to be thrown back into fire",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T20:15:34.534895Z"
     }
   ],
   "known_sources": [
