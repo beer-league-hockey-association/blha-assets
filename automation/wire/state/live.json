@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T09:15:38.609270Z",
+  "updated_at": "2026-10-26T12:15:31.336088Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16452,6 +16452,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-26T09:15:38.552587Z"
+    },
+    {
+      "key": "e52ca36c53a74bfb570064e0",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/heritage-and-hellebuyck",
+      "fingerprint": "6bb026a9b68d04b6",
+      "title_norm": "32 thoughts podcast: breaking down a hellebuyck of a trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T12:15:31.282657Z"
     }
   ],
   "known_sources": [
