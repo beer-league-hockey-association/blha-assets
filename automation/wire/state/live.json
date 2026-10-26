@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T21:00:40.946707Z",
+  "updated_at": "2026-10-26T21:15:37.473788Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16752,6 +16752,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T21:00:40.883795Z"
+    },
+    {
+      "key": "6aa4a11bcf0bf01930cf5941",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-26-2026",
+      "fingerprint": "b861c10e07121e56",
+      "title_norm": "status report: hall could play for hurricanes tomorrow",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T21:15:37.054327Z"
+    },
+    {
+      "key": "7457fdab2145c06823ac089a",
+      "url": "https://www.sportsnet.ca/nhl-draft/article/projected-no-1-pick-dupont-earns-top-grade-on-nhls-2027-draft-watch-list",
+      "fingerprint": "0d39c5a9e07a59f6",
+      "title_norm": "projected no. 1 pick dupont earns top grade on nhl's 2027 draft watch list",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T21:15:37.427169Z"
     }
   ],
   "known_sources": [
