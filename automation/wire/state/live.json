@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T17:45:35.752703Z",
+  "updated_at": "2026-10-26T18:45:38.487713Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16672,6 +16672,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T17:45:35.709910Z"
+    },
+    {
+      "key": "af8b461df55e750482b087ab",
+      "url": "https://www.nhl.com/news/quinn-hughes-hears-boos-cheers-during-vancouver-return",
+      "fingerprint": "c132d255379ca90c",
+      "title_norm": "hughes hears boos, cheers in vancouver return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T18:45:38.410059Z"
     }
   ],
   "known_sources": [
