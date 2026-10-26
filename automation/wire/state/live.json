@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T13:00:42.305642Z",
+  "updated_at": "2026-10-26T14:45:38.654452Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16472,6 +16472,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-26T13:00:42.197589Z"
+    },
+    {
+      "key": "8d5e1f81d7517775ed66f784",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
+      "fingerprint": "e6c9eb78db1fc08d",
+      "title_norm": "logan thompson (wsh) — thompson (lower-body) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T14:45:38.583298Z"
     }
   ],
   "known_sources": [
