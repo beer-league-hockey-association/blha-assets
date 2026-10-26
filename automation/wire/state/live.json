@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T02:45:37.426753Z",
+  "updated_at": "2026-10-26T03:00:42.744491Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16302,6 +16302,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T02:45:37.353133Z"
+    },
+    {
+      "key": "25bcc07e1b10ea4a6486eeb8",
+      "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-hears-boos-in-return-to-vancouver",
+      "fingerprint": "297895949806d05c",
+      "title_norm": "wild's quinn hughes hears boos in return to vancouver",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T03:00:42.673595Z"
     }
   ],
   "known_sources": [
