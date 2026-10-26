@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T03:15:39.411918Z",
+  "updated_at": "2026-10-26T03:43:04.633102Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16322,6 +16322,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-26T03:15:39.287868Z"
+    },
+    {
+      "key": "bab534cbac1f3fac5a69103f",
+      "url": "https://www.sportsnet.ca/nhl/video/wilds-hughes-scores-to-notch-500th-career-point-in-return-to-vancouver",
+      "fingerprint": "b6a48c58cb70fc03",
+      "title_norm": "wild's hughes scores to notch 500th career point in return to vancouver",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T03:43:04.587127Z"
     }
   ],
   "known_sources": [
