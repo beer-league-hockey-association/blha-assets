@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T05:30:43.407452Z",
+  "updated_at": "2026-10-26T07:15:37.130435Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16422,6 +16422,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-26T05:30:43.290754Z"
+    },
+    {
+      "key": "36db02d6eeae151da6c68f12",
+      "url": "https://www.sportsnet.ca/nhl/article/unfazed-hughes-burns-former-team-as-wild-hand-canucks-another-loss",
+      "fingerprint": "82c4bc952e36ca7d",
+      "title_norm": "unfazed hughes burns former team as wild hand canucks another loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T07:15:37.057466Z"
     }
   ],
   "known_sources": [
