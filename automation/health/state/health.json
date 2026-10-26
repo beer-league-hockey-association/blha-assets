@@ -1,3 +1,10 @@
 {
-  "active_issues": {}
+  "active_issues": {
+    "api:history-site": {
+      "detail": "Response ended prematurely",
+      "summary": "Could not read workflow status from GitHub",
+      "url": "",
+      "workflow": "BLHA History Site"
+    }
+  }
 }
