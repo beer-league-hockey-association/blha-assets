@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T22:30:38.620153Z",
+  "updated_at": "2026-10-26T22:45:35.955767Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16782,6 +16782,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T22:30:38.507443Z"
+    },
+    {
+      "key": "c42d4a35707b9eeb17bd08af",
+      "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
+      "fingerprint": "2187c747980bc160",
+      "title_norm": "quinton byfield (lak) — byfield (upper-body) is on the ice for warmups; he's expected to play in new york.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T22:45:35.819422Z"
     }
   ],
   "known_sources": [
