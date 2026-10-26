@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T15:45:41.137408Z",
+  "updated_at": "2026-10-26T16:00:40.408216Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16532,6 +16532,16 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-10-26T15:45:41.101247Z"
+    },
+    {
+      "key": "187d0f9b34fb7333bbf0548b",
+      "url": "https://www.sportsnet.ca/nhl/article/champion-hurricanes-still-the-team-to-beat-even-without-landing-hellebuyck",
+      "fingerprint": "eb84925f49b377df",
+      "title_norm": "champion hurricanes still the team to beat — even without landing hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T16:00:40.353515Z"
     }
   ],
   "known_sources": [
