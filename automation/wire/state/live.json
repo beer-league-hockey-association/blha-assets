@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T16:45:47.215589Z",
+  "updated_at": "2026-10-26T17:00:49.479414Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16592,6 +16592,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T16:45:47.112292Z"
+    },
+    {
+      "key": "92d25657d94097cec33eb5a1",
+      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
+      "fingerprint": "db4e22ad9758a159",
+      "title_norm": "mikael backlund (cgy) — backlund (upper-body) will be a game-time decision vs. toronto on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T17:00:49.350470Z"
     }
   ],
   "known_sources": [
