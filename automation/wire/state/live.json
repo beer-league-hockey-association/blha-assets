@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T16:24:45.385561Z",
+  "updated_at": "2026-10-26T16:45:47.215589Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16582,6 +16582,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T16:24:45.285333Z"
+    },
+    {
+      "key": "f8c3e4963afdd4f300624f1e",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "b82ad049b49b9063",
+      "title_norm": "rasmus ristolainen (phi) — ristolainen (upper-body) is expected to be out for approximately two weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T16:45:47.112292Z"
     }
   ],
   "known_sources": [
