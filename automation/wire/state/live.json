@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T23:15:35.903023Z",
+  "updated_at": "2026-10-26T23:45:37.236793Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16812,6 +16812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T23:15:35.842625Z"
+    },
+    {
+      "key": "24e8b8954a5a4c0aab03e674",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-thomas-chabot-sheds-non-contact-jersey-trending-in-right-direction",
+      "fingerprint": "5bb25ede70e32470",
+      "title_norm": "senators' thomas chabot sheds non-contact jersey, trending in right direction",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T23:45:37.099128Z"
     }
   ],
   "known_sources": [
