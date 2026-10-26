@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T22:45:35.955767Z",
+  "updated_at": "2026-10-26T23:00:44.029715Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16792,6 +16792,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T22:45:35.819422Z"
+    },
+    {
+      "key": "9b0fa8a2b308ced2a2ac2642",
+      "url": "https://www.nhl.com/news/nhl-fantasy-hockey-spin-connor-hellebuyck-new-jersey-devils-trade-2026-27",
+      "fingerprint": "bcc6fcca672a1cf7",
+      "title_norm": "fantasy spin: hellebuyck traded to devils",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T23:00:43.887555Z"
     }
   ],
   "known_sources": [
