@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T17:30:40.087957Z",
+  "updated_at": "2026-10-26T17:45:35.752703Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16652,6 +16652,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T17:30:39.983080Z"
+    },
+    {
+      "key": "1f5ad08dd5311ae185dcd703",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-connor-hellebuyck-says-hes-ready-to-play-could-debut-on-road-trip",
+      "fingerprint": "6ac53e229becd56f",
+      "title_norm": "devils' connor hellebuyck says he's ready to play, could debut on road trip",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T17:45:35.320170Z"
+    },
+    {
+      "key": "547b1e745b6107210687eae0",
+      "url": "https://www.sportsnet.ca/nhl/video/what-made-nikishin-wave-the-white-flag-in-talks-with-hurricanes",
+      "fingerprint": "fc0feef1ae7381bd",
+      "title_norm": "what made nikishin 'wave the white flag' in talks with hurricanes?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T17:45:35.709910Z"
     }
   ],
   "known_sources": [
