@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T17:00:49.479414Z",
+  "updated_at": "2026-10-26T17:15:35.547032Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16602,6 +16602,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T17:00:49.350470Z"
+    },
+    {
+      "key": "a89252c0a0c5ece632d4b782",
+      "url": "https://www.nhl.com/news/topic/3-stars/draisaitl-cooley-fowler-named-nhl-3-stars-of-week-october-26-2026",
+      "fingerprint": "f1263fd6c2c13f90",
+      "title_norm": "draisaitl, cooley, fowler named 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T17:15:34.807652Z"
+    },
+    {
+      "key": "f968bb4db95e74c79f4bcd72",
+      "url": "https://www.nhl.com/news/landon-dupont-central-scouting-preliminary-players-to-watch-2027-nhl-draft",
+      "fingerprint": "9864f399f7313c0a",
+      "title_norm": "dupont tops central scouting preliminary players to watch",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T17:15:35.097592Z"
+    },
+    {
+      "key": "c7d944e54bb7b7b8b3f6e672",
+      "url": "https://theahl.com/news/chromiak-ahl-player-week",
+      "fingerprint": "5b4e7dc0a1d2a220",
+      "title_norm": "reign's chromiak named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-26T17:15:35.434525Z"
     }
   ],
   "known_sources": [
