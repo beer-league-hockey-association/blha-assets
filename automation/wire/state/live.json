@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T19:30:37.687907Z",
+  "updated_at": "2026-10-26T20:00:37.335398Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16712,6 +16712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T19:30:37.638369Z"
+    },
+    {
+      "key": "79a9a7c9b18692360b6fbd03",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "635a7689c5687494",
+      "title_norm": "jiri kulich (buf) — kulich is in concussion protocol and remains in buffalo.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T20:00:37.264972Z"
     }
   ],
   "known_sources": [
