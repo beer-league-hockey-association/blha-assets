@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T03:00:42.744491Z",
+  "updated_at": "2026-10-26T03:15:39.411918Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16312,6 +16312,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T03:00:42.673595Z"
+    },
+    {
+      "key": "a9896cdfcdd5d426fba46e71",
+      "url": "https://www.nhl.com/news/colorado-avalanche-nashville-predators-game-recap-october-25-2026",
+      "fingerprint": "37c1f9e866bdb4a2",
+      "title_norm": "o'reilly has 4 points, predators roll past avalanche",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T03:15:39.287868Z"
     }
   ],
   "known_sources": [
