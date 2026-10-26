@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T17:15:35.547032Z",
+  "updated_at": "2026-10-26T17:30:40.087957Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16632,6 +16632,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-26T17:15:35.434525Z"
+    },
+    {
+      "key": "ff2d13e21bb2fc5f783627fa",
+      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
+      "fingerprint": "b0bc51701b0c4d62",
+      "title_norm": "calum ritchie (nyi) — ritchie (lower-body) has been placed on ir retroactive to october 17th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T17:30:39.741955Z"
+    },
+    {
+      "key": "b41bc7a96cc1c40530a12271",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "ccc0c4cfcd75a2e0",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower-body) has been placed on ir retroactive to october 17th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T17:30:39.983080Z"
     }
   ],
   "known_sources": [
