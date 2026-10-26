@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T05:15:39.145298Z",
+  "updated_at": "2026-10-26T05:30:43.407452Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16402,6 +16402,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T05:15:39.012630Z"
+    },
+    {
+      "key": "25be6385d478e17f563aa5b6",
+      "url": "https://www.nhl.com/news/gavin-mckenna-watch-maple-leafs-continue-western-trip",
+      "fingerprint": "a4683579affc4a20",
+      "title_norm": "mckenna watch: no. 1 pick continues western trip",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T05:30:42.897375Z"
+    },
+    {
+      "key": "8f3a2496fee2892e72c346a1",
+      "url": "https://www.nhl.com/news/heritage-classic-blog-jake-evans-october-25-2026",
+      "fingerprint": "8fcd7dd277d8bab7",
+      "title_norm": "heritage classic blog: jake evans",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T05:30:43.290754Z"
     }
   ],
   "known_sources": [
