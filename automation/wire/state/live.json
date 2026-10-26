@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-25T23:00:42.338221Z",
+  "updated_at": "2026-10-26T01:00:39.883718Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16262,6 +16262,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-25T23:00:42.262826Z"
+    },
+    {
+      "key": "f084de49f8418f10d0faae0e",
+      "url": "https://www.sportsnet.ca/nhl/video/canadiens-hutson-opens-scoring-at-heritage-classic",
+      "fingerprint": "0ab0884074cc101d",
+      "title_norm": "canadiens' hutson opens scoring at heritage classic",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T01:00:39.560750Z"
+    },
+    {
+      "key": "8d9d235056eed2eb9df70848",
+      "url": "https://www.sportsnet.ca/nhl/article/robertson-scores-twice-to-help-stars-beat-islanders",
+      "fingerprint": "c53f618c19fb7f34",
+      "title_norm": "robertson scores twice to help stars beat islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T01:00:39.824238Z"
     }
   ],
   "known_sources": [
