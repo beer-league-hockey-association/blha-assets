@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T23:00:44.029715Z",
+  "updated_at": "2026-10-26T23:15:35.903023Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16802,6 +16802,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-26T23:00:43.887555Z"
+    },
+    {
+      "key": "bde4db306967f592d2ee1c12",
+      "url": "https://www.sportsnet.ca/nhl/article/draisaitl-cooley-fowler-named-nhls-three-stars-of-the-week",
+      "fingerprint": "7dda0b109bc86faf",
+      "title_norm": "draisaitl, cooley, fowler named nhl's three stars of the week",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T23:15:35.842625Z"
     }
   ],
   "known_sources": [
