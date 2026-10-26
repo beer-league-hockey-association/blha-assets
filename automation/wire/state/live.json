@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T16:00:40.408216Z",
+  "updated_at": "2026-10-26T16:16:27.670075Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16542,6 +16542,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T16:00:40.353515Z"
+    },
+    {
+      "key": "b55c119b7000f21afe92f2ef",
+      "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro-october-26-2026",
+      "fingerprint": "930b306e447d4bf5",
+      "title_norm": "heritage blog: ferraro on 'top gun' entrance with jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T16:16:26.999508Z"
+    },
+    {
+      "key": "5e5c68bbf81dd9ba49fe8b84",
+      "url": "https://www.nhl.com/news/winnipeg-jets-look-to-build-on-lessons-of-2026-heritage-classic-loss",
+      "fingerprint": "e76c22f2fe58eb34",
+      "title_norm": "jets look to build on lessons of heritage classic loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T16:16:27.263729Z"
+    },
+    {
+      "key": "3dfdebf4300e2974adf5f382",
+      "url": "https://www.nhl.com/news/rookie-watch-ivar-stenberg-james-hagens-among-first-year-players-trending-up",
+      "fingerprint": "92c8cab9d8e36935",
+      "title_norm": "rookie watch: stenberg, hagens trending up",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T16:16:27.544066Z"
     }
   ],
   "known_sources": [
