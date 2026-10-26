@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T16:16:27.670075Z",
+  "updated_at": "2026-10-26T16:24:45.385561Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16572,6 +16572,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-26T16:16:27.544066Z"
+    },
+    {
+      "key": "084c25f79fbeb0f79fb97386",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "9aae4e4a8040baa2",
+      "title_norm": "taylor hall (car) — hall (upper-body) is expected to return vs. boston on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T16:24:45.285333Z"
     }
   ],
   "known_sources": [
