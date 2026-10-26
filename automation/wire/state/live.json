@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T19:00:42.535452Z",
+  "updated_at": "2026-10-26T19:30:37.687907Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16702,6 +16702,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T19:00:42.503724Z"
+    },
+    {
+      "key": "af29a32bb5dadb8bac6cd131",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gm-chayka-talks-defence-cowan-mckenna",
+      "fingerprint": "1061dd3966547fa6",
+      "title_norm": "maple leafs gm chayka talks defence, cowan, mckenna",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T19:30:37.638369Z"
     }
   ],
   "known_sources": [
