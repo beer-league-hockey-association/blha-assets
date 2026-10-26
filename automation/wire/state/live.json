@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T02:00:35.432232Z",
+  "updated_at": "2026-10-26T02:45:37.426753Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16292,6 +16292,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T02:00:35.395127Z"
+    },
+    {
+      "key": "ea6fb1fea09cb6c37b8e2244",
+      "url": "https://www.sportsnet.ca/nhl/article/fowler-leads-canadiens-over-jets-in-heritage-classic",
+      "fingerprint": "296f52a96e4cdf62",
+      "title_norm": "fowler leads canadiens over jets in heritage classic",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T02:45:37.353133Z"
     }
   ],
   "known_sources": [
