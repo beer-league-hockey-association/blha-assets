@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T04:30:38.344263Z",
+  "updated_at": "2026-10-26T05:00:39.866879Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16372,6 +16372,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T04:30:38.306421Z"
+    },
+    {
+      "key": "f4a375135794fa1eea2febfb",
+      "url": "https://www.nhl.com/news/minnesota-wild-vancouver-canucks-game-recap-october-25-2026",
+      "fingerprint": "64f1fc5899db1ebd",
+      "title_norm": "q. hughes reaches 500 points, wins return to vancouver",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T05:00:39.566245Z"
+    },
+    {
+      "key": "6ccc2e148969f3148bd9e121",
+      "url": "https://www.sportsnet.ca/nhl/article/hughes-scores-in-return-to-vancouver-as-canucks-lose-to-wild",
+      "fingerprint": "cfad08f78998f46c",
+      "title_norm": "hughes scores in return to vancouver as canucks lose to wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T05:00:39.793836Z"
     }
   ],
   "known_sources": [
