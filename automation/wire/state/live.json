@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T14:45:38.654452Z",
+  "updated_at": "2026-10-26T15:01:05.530629Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16482,6 +16482,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-26T14:45:38.583298Z"
+    },
+    {
+      "key": "ae0ff49556987b4a850bd183",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "fd10067e46e2a84c",
+      "title_norm": "taylor hall (car) — hall (upper-body) returned to carolina's practice in a regular jersey on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T15:01:05.438111Z"
     }
   ],
   "known_sources": [
