@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T01:00:39.883718Z",
+  "updated_at": "2026-10-26T02:00:35.432232Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16282,6 +16282,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T01:00:39.824238Z"
+    },
+    {
+      "key": "2f6197e9771e6ae4f65f5af7",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/fca9256f-3f5a-4032-84ef-0eaa659ba71b",
+      "fingerprint": "9cbaac9fda0f368c",
+      "title_norm": "canucks on sportsnet: hughes returns to vancouver with wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T02:00:35.395127Z"
     }
   ],
   "known_sources": [
