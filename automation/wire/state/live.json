@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T03:43:04.633102Z",
+  "updated_at": "2026-10-26T04:15:36.477831Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16332,6 +16332,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T03:43:04.587127Z"
+    },
+    {
+      "key": "91bcef6e699b490c405e1b43",
+      "url": "https://www.nhl.com/news/drew-doughty-wants-to-play-past-40-win-another-stanley-cup-championship-with-kings",
+      "fingerprint": "8594203b8525fcda",
+      "title_norm": "doughty talks career, kings captaincy with nhl.com",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T04:15:35.692416Z"
+    },
+    {
+      "key": "8bc7d7eaafc87a9507af533f",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-october-26-2026",
+      "fingerprint": "807f8cbf458ebbd8",
+      "title_norm": "nhl nationally televised games for week of oct. 26",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-26T04:15:35.976159Z"
+    },
+    {
+      "key": "30a393e42b3587545088074d",
+      "url": "https://www.sportsnet.ca/nhl/article/lars-eller-scores-late-goal-as-panthers-top-blackhawks",
+      "fingerprint": "d2e365d0b63f3934",
+      "title_norm": "lars eller scores late goal as panthers top blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-26T04:15:36.426169Z"
     }
   ],
   "known_sources": [
