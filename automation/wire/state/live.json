@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-26T21:15:37.473788Z",
+  "updated_at": "2026-10-26T22:30:38.620153Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16772,6 +16772,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-26T21:15:37.427169Z"
+    },
+    {
+      "key": "4ad1fa2fc392335a37481c6e",
+      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
+      "fingerprint": "5e21c2fc45a8d4be",
+      "title_norm": "mats zuccarello (lak) — zuccarello (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-26T22:30:38.507443Z"
     }
   ],
   "known_sources": [
