@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T18:45:43.910617Z",
+  "updated_at": "2026-10-27T19:00:46.875695Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17272,6 +17272,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T18:45:43.763090Z"
+    },
+    {
+      "key": "e81bee74932442555ef357fd",
+      "url": "https://www.dailyfaceoff.com/players/news/carter-hart/3874",
+      "fingerprint": "78f60778057a1b78",
+      "title_norm": "carter hart (vgk) — hart (lower-body) left vegas' morning skate on tuesday and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T19:00:46.769019Z"
     }
   ],
   "known_sources": [
