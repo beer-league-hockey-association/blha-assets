@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T15:45:40.936718Z",
+  "updated_at": "2026-10-27T16:15:36.015253Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17142,6 +17142,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T15:45:40.853271Z"
+    },
+    {
+      "key": "4a731a443cf492c664b90eab",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-27-2026",
+      "fingerprint": "3ee947d78b1ff6a4",
+      "title_norm": "on tap: celebrini, sharks start homestand vs. sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-27T16:15:35.568307Z"
+    },
+    {
+      "key": "5c3c41dbd3062f342347f25e",
+      "url": "https://www.dailyfaceoff.com/players/news/james-reimer/1438",
+      "fingerprint": "35f7de709d141f4a",
+      "title_norm": "james reimer (nyr) — reimer (upper-body) missed practice on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T16:15:35.951579Z"
     }
   ],
   "known_sources": [
