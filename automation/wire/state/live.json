@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T21:45:39.327421Z",
+  "updated_at": "2026-10-27T22:15:38.558403Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17332,6 +17332,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T21:45:39.261169Z"
+    },
+    {
+      "key": "35ee75fc208ec2ddb6c6a9da",
+      "url": "https://www.sportsnet.ca/nhl/article/why-oilers-are-slow-cooking-ike-howards-development",
+      "fingerprint": "ecc2408a67ec72b6",
+      "title_norm": "why oilers are slow-cooking ike howard's development",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T22:15:38.492477Z"
     }
   ],
   "known_sources": [
