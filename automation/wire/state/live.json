@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T02:30:43.643062Z",
+  "updated_at": "2026-10-27T03:00:44.567003Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16892,6 +16892,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T02:30:43.608708Z"
+    },
+    {
+      "key": "2da7bb38eee7b5ae4d013f76",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "4e3e75b0182562fa",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) left monday's game vs. calgary and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T03:00:44.092831Z"
+    },
+    {
+      "key": "3e8cb226e1ad655a7bfdf4e2",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-kirill-marchenko-exits-vs-flames-with-lower-body-injury",
+      "fingerprint": "328c7ddf749d227a",
+      "title_norm": "maple leafs' kirill marchenko exits vs. flames with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T03:00:44.435690Z"
     }
   ],
   "known_sources": [
