@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T14:15:42.629973Z",
+  "updated_at": "2026-10-27T14:30:41.093841Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17052,6 +17052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T14:15:42.518630Z"
+    },
+    {
+      "key": "f7120b33a1af7519f1e507c6",
+      "url": "https://www.nhl.com/news/nhl-monday-night-hockey-to-air-in-european-prime-time",
+      "fingerprint": "8299e9524474f964",
+      "title_norm": "nhl monday night hockey to air in european prime time",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-27T14:30:40.953376Z"
     }
   ],
   "known_sources": [
