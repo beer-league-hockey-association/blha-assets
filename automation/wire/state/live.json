@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T19:45:39.329012Z",
+  "updated_at": "2026-10-27T20:45:40.005303Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17302,6 +17302,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T19:45:39.263472Z"
+    },
+    {
+      "key": "49bdec74ef373cf99b52a89b",
+      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
+      "fingerprint": "4f16cd57716deecf",
+      "title_norm": "nicolas roy (col) — roy (lower body) was a full participant in tuesday's practice.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T20:45:39.685378Z"
+    },
+    {
+      "key": "1ad22e2993e45761502b541f",
+      "url": "https://www.sportsnet.ca/nhl/article/golden-knights-turn-to-adin-hill-after-carter-hart-exits-morning-skate-with-injury",
+      "fingerprint": "1e35b703478cbcca",
+      "title_norm": "golden knights turn to adin hill after carter hart exits morning skate with injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T20:45:39.941008Z"
     }
   ],
   "known_sources": [
