@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T14:30:41.093841Z",
+  "updated_at": "2026-10-27T14:45:41.335394Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17062,6 +17062,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-27T14:30:40.953376Z"
+    },
+    {
+      "key": "d02e9c42e8d0eb2bc280d0de",
+      "url": "https://www.dailyfaceoff.com/players/news/elmer-soderblom/30683",
+      "fingerprint": "0d7fff127897b1e7",
+      "title_norm": "elmer soderblom (pit) — soderblom is day-to-day with an upper-body injury and will not practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T14:45:40.779152Z"
+    },
+    {
+      "key": "d136e2ffcba7d494916a08d4",
+      "url": "https://www.dailyfaceoff.com/players/news/mark-jankowski/2711",
+      "fingerprint": "278ff6db55695743",
+      "title_norm": "mark jankowski (car) — jankowski (lower-body) participated in a full morning skate on monday but will not return vs. boston.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T14:45:40.980087Z"
+    },
+    {
+      "key": "19b77021411548a42d35765f",
+      "url": "https://www.dailyfaceoff.com/players/news/cameron-york/30422",
+      "fingerprint": "d74fc141f77164eb",
+      "title_norm": "cam york (phi) — york (upper-body) has been activated from ir and will return vs. columbus.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T14:45:41.223290Z"
     }
   ],
   "known_sources": [
