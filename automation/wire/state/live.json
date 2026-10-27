@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T03:00:44.567003Z",
+  "updated_at": "2026-10-27T03:45:35.440786Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16912,6 +16912,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T03:00:44.435690Z"
+    },
+    {
+      "key": "cc2c43bbabc4132cbabaaf7e",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-zach-hyman-exits-vs-red-wings-with-head-injury",
+      "fingerprint": "4b20ee19c416b352",
+      "title_norm": "oilers' zach hyman exits vs. red wings with head injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T03:45:35.293889Z"
     }
   ],
   "known_sources": [
