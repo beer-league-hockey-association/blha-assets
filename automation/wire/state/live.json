@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T17:00:46.691262Z",
+  "updated_at": "2026-10-27T17:15:36.477036Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17212,6 +17212,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T17:00:46.627303Z"
+    },
+    {
+      "key": "d27750d49b4473d08e395839",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "169e7f8f15ccb66a",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) will travel on winnipeg's upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T17:15:35.964757Z"
+    },
+    {
+      "key": "c4a90350f1385e2192a0f51c",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-to-make-first-start-for-devils-vs-stars",
+      "fingerprint": "91797b7910196151",
+      "title_norm": "hellebuyck to make first start for devils vs. stars",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T17:15:36.211826Z"
+    },
+    {
+      "key": "86242dc2e290f9cd415d63a4",
+      "url": "https://www.sportsnet.ca/nhl/article/nhls-most-interesting-goalie-situations-a-month-into-the-season",
+      "fingerprint": "720d2366bb54f290",
+      "title_norm": "nhl's most interesting goalie situations a month into the season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T17:15:36.403832Z"
     }
   ],
   "known_sources": [
