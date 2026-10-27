@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T14:45:41.335394Z",
+  "updated_at": "2026-10-27T15:15:41.139820Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17092,6 +17092,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T14:45:41.223290Z"
+    },
+    {
+      "key": "5d6dfdc13a14d0d77df8c6b4",
+      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
+      "fingerprint": "a145fadb9cd98c7b",
+      "title_norm": "ben kindel (pit) — kindel (medical) returned to pittsburgh's practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T15:15:41.046448Z"
     }
   ],
   "known_sources": [
