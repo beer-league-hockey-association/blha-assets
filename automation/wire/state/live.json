@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T17:15:36.477036Z",
+  "updated_at": "2026-10-27T17:45:43.271497Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17242,6 +17242,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T17:15:36.403832Z"
+    },
+    {
+      "key": "4be0d178561a1ab03b5b919c",
+      "url": "https://www.nhl.com/news/ben-kindel-practices-with-penguins-after-health-scare",
+      "fingerprint": "87cdb686ce15d2cd",
+      "title_norm": "kindel practices with pens week after health scare",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-27T17:45:42.745001Z"
+    },
+    {
+      "key": "ec902cb86f257f3bafbf6414",
+      "url": "https://www.dailyfaceoff.com/players/news/dante-fabbro/2651",
+      "fingerprint": "e55f86976a0d434c",
+      "title_norm": "dante fabbro (cbj) — fabbro (hand) has been activated from ir and will make his season debut on tuesday vs. philadelphia.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T17:45:43.161414Z"
     }
   ],
   "known_sources": [
