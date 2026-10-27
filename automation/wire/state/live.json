@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T02:15:35.297691Z",
+  "updated_at": "2026-10-27T02:30:43.643062Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16882,6 +16882,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-27T02:15:35.236669Z"
+    },
+    {
+      "key": "c201a42224b56ad9a4ec4bb0",
+      "url": "https://www.sportsnet.ca/nhl/article/kings-continue-hot-eastern-conference-trip-with-win-over-rangers",
+      "fingerprint": "c561bf50cecb22a7",
+      "title_norm": "kings continue hot eastern conference trip with win over rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T02:30:43.608708Z"
     }
   ],
   "known_sources": [
