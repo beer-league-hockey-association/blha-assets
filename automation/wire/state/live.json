@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T03:45:35.440786Z",
+  "updated_at": "2026-10-27T04:00:36.504024Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16922,6 +16922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T03:45:35.293889Z"
+    },
+    {
+      "key": "0bec83167d26c28235d1bd9e",
+      "url": "https://www.sportsnet.ca/nhl/article/auston-matthews-becomes-fastest-in-maple-leafs-history-to-reach-800-points",
+      "fingerprint": "8785c628bfda3f99",
+      "title_norm": "auston matthews becomes fastest in maple leafs history to reach 800 points",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T04:00:36.102578Z"
+    },
+    {
+      "key": "e354d39a942e4aa94bfc120e",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-calgary-flames-game-recap-october-26-2026",
+      "fingerprint": "c1b9ee7ede0becd8",
+      "title_norm": "gridin scores twice, sparks flames past maple leafs for fourth straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-27T04:00:36.390772Z"
     }
   ],
   "known_sources": [
