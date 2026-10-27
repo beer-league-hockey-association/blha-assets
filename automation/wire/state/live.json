@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T20:45:40.005303Z",
+  "updated_at": "2026-10-27T21:45:39.327421Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17322,6 +17322,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T20:45:39.941008Z"
+    },
+    {
+      "key": "7acd9ab69b064b57065daa7c",
+      "url": "https://www.sportsnet.ca/nhl/video/will-rust-be-a-factor-for-hellebuyck-in-devils-debut",
+      "fingerprint": "f750c46e67519060",
+      "title_norm": "will rust be a factor for hellebuyck in devils debut?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T21:45:39.261169Z"
     }
   ],
   "known_sources": [
