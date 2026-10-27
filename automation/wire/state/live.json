@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T05:45:35.938891Z",
+  "updated_at": "2026-10-27T06:15:38.138042Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17012,6 +17012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T05:45:35.869357Z"
+    },
+    {
+      "key": "020da91474956abfe1548325",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-thwarted-by-rookie-red-wings-goalie-as-depth-salvages-point",
+      "fingerprint": "a8abf8666c487293",
+      "title_norm": "oilers thwarted by rookie red wings goalie as depth salvages point",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T06:15:38.079705Z"
     }
   ],
   "known_sources": [
