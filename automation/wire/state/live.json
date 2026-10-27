@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T05:15:38.374741Z",
+  "updated_at": "2026-10-27T05:45:35.938891Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16982,6 +16982,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T05:15:38.287667Z"
+    },
+    {
+      "key": "b1b5bc3d7ae785eec9adaf65",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-auston-matthews-unhappy-with-delay-of-game-penalty",
+      "fingerprint": "d920545e480ea12f",
+      "title_norm": "maple leafs' auston matthews unhappy with delay-of-game penalty",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T05:45:35.356022Z"
+    },
+    {
+      "key": "f6aae6018ea2299895769a3f",
+      "url": "https://www.sportsnet.ca/nhl/article/cowan-tries-taking-blame-for-maple-leafs-loss",
+      "fingerprint": "6d5d4bc07767dd68",
+      "title_norm": "cowan tries taking blame for maple leafs loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T05:45:35.640244Z"
+    },
+    {
+      "key": "e06fe134a155d47b09b56fe4",
+      "url": "https://www.sportsnet.ca/nhl/article/youngsters-set-tone-for-flames-in-griddy-win",
+      "fingerprint": "e13e845cb813c7b4",
+      "title_norm": "youngsters set tone for flames in 'griddy' win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T05:45:35.869357Z"
     }
   ],
   "known_sources": [
