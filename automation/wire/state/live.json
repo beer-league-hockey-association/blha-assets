@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T04:00:36.504024Z",
+  "updated_at": "2026-10-27T05:00:39.307427Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16942,6 +16942,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-27T04:00:36.390772Z"
+    },
+    {
+      "key": "6a27de26ecad931cbc71421a",
+      "url": "https://www.nhl.com/news/detroit-red-wings-edmonton-oilers-game-recap-october-26-2026",
+      "fingerprint": "d2bdec85cc7b6868",
+      "title_norm": "postava wins 1st nhl start, red wings rally past oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-27T05:00:38.302278Z"
+    },
+    {
+      "key": "9e44c4bcb4f1ec27baa6e638",
+      "url": "https://www.sportsnet.ca/nhl/article/raymond-completes-red-wings-rally-with-shootout-winner-over-oilers",
+      "fingerprint": "17270d8c466a79f6",
+      "title_norm": "raymond completes red wings' rally with shootout winner over oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T05:00:39.234545Z"
     }
   ],
   "known_sources": [
