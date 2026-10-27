@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T19:15:40.011948Z",
+  "updated_at": "2026-10-27T19:45:39.329012Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17292,6 +17292,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T19:15:39.863063Z"
+    },
+    {
+      "key": "512a9950c9cdf9ecd6ee2e07",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-coach-paul-maurice-goes-to-bat-for-jets-after-hellebuyck-saga",
+      "fingerprint": "d53ac56136d09e3a",
+      "title_norm": "panthers coach paul maurice goes to bat for jets after hellebuyck saga",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T19:45:39.263472Z"
     }
   ],
   "known_sources": [
