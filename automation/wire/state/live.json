@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T15:15:41.139820Z",
+  "updated_at": "2026-10-27T15:30:39.585957Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17102,6 +17102,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T15:15:41.046448Z"
+    },
+    {
+      "key": "e298263db62c8aa45a2d1d96",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "db01b6d11241560c",
+      "title_norm": "troy terry (ana) — terry (hip) is hopeful to join the ducks for on-ice workouts in early november.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T15:30:39.522446Z"
     }
   ],
   "known_sources": [
