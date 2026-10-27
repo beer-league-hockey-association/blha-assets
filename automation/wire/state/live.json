@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T01:00:42.361822Z",
+  "updated_at": "2026-10-27T01:45:38.824632Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16862,6 +16862,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T01:00:42.299517Z"
+    },
+    {
+      "key": "f3ddc8d0cdcfbd3ebde3c604",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/916d0b62-ced6-4a02-96c8-5ca5c78b0796",
+      "fingerprint": "3ae9470e39829663",
+      "title_norm": "monday night hockey on sportsnet: oilers vs. red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T01:45:38.758244Z"
     }
   ],
   "known_sources": [
