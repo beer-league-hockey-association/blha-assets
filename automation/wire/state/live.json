@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T06:15:38.138042Z",
+  "updated_at": "2026-10-27T12:00:41.016922Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17022,6 +17022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T06:15:38.079705Z"
+    },
+    {
+      "key": "66310983ce50579850fa43a9",
+      "url": "https://dobberprospects.com/2026/10/27/october-ncaa-report-chl-to-ncaa-university-of-michigan-and-the-2027-nhl-draft",
+      "fingerprint": "74d0d7078c3ef8d6",
+      "title_norm": "october ncaa report: chl to ncaa, university of michigan, and the 2027 nhl draft",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-27T12:00:40.983490Z"
     }
   ],
   "known_sources": [
