@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T16:30:45.184013Z",
+  "updated_at": "2026-10-27T16:45:37.475821Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17192,6 +17192,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T16:30:45.069300Z"
+    },
+    {
+      "key": "01789c253745a3f3cd823f60",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
+      "fingerprint": "c13d5469a6a58bde",
+      "title_norm": "logan thompson (wsh) — thompson (lower-body) took full part in practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T16:45:37.318118Z"
     }
   ],
   "known_sources": [
