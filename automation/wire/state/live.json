@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T17:45:43.271497Z",
+  "updated_at": "2026-10-27T18:45:43.910617Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17262,6 +17262,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T17:45:43.161414Z"
+    },
+    {
+      "key": "f7c563051763f3cf7f1a06ba",
+      "url": "https://www.sportsnet.ca/nhl/article/jack-roslovic-playing-his-best-for-maple-leafs-but-later-than-he-wished",
+      "fingerprint": "e56d6ff9f3fe3fda",
+      "title_norm": "jack roslovic playing his best for maple leafs, but later than he wished",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T18:45:43.763090Z"
     }
   ],
   "known_sources": [
