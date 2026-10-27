@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T05:00:39.307427Z",
+  "updated_at": "2026-10-27T05:15:38.374741Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16962,6 +16962,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T05:00:39.234545Z"
+    },
+    {
+      "key": "a13fff0e752f91cd1826cee5",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "d83c4d2240569104",
+      "title_norm": "zach hyman (edm) — hyman (concussion) left monday's game and is expected to miss at least a week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T05:15:38.049346Z"
+    },
+    {
+      "key": "8e1244a23b4955e6eff48111",
+      "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
+      "fingerprint": "c3f531812c0b69a4",
+      "title_norm": "jason dickinson (edm) — dickinson (lower body) will return vs. calgary on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T05:15:38.287667Z"
     }
   ],
   "known_sources": [
