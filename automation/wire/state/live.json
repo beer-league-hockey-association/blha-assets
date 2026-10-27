@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T16:45:37.475821Z",
+  "updated_at": "2026-10-27T17:00:46.691262Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17202,6 +17202,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T16:45:37.318118Z"
+    },
+    {
+      "key": "c6ae958e083448ef744bad1c",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-ben-kindel-returns-to-practice-after-collapsing-on-plane",
+      "fingerprint": "fced683fff88fa38",
+      "title_norm": "penguins' ben kindel returns to practice after collapsing on plane",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T17:00:46.627303Z"
     }
   ],
   "known_sources": [
