@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T19:00:46.875695Z",
+  "updated_at": "2026-10-27T19:15:40.011948Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17282,6 +17282,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T19:00:46.769019Z"
+    },
+    {
+      "key": "878ccea52be72bbc5417e9e1",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
+      "fingerprint": "e2fa981b1ffa950c",
+      "title_norm": "mattias ekholm (edm) — ekholm (concussion) has a chance to return on wednesday vs. calgary.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T19:15:39.863063Z"
     }
   ],
   "known_sources": [
