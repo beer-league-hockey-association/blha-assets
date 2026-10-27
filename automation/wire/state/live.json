@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T00:15:33.542361Z",
+  "updated_at": "2026-10-27T00:30:38.989012Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -16842,6 +16842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T00:15:33.503985Z"
+    },
+    {
+      "key": "2c035746397ae3512bb91912",
+      "url": "https://www.sportsnet.ca/nhl/article/james-reimer-pulled-after-first-period-in-rangers-debut",
+      "fingerprint": "f0c6ea2437d5f029",
+      "title_norm": "james reimer pulled after first period in rangers debut",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-27T00:30:38.955341Z"
     }
   ],
   "known_sources": [
