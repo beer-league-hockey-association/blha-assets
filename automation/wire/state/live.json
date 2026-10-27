@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T22:15:38.558403Z",
+  "updated_at": "2026-10-27T23:45:35.750969Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17342,6 +17342,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-27T22:15:38.492477Z"
+    },
+    {
+      "key": "5453d5d0bc0b101c9a88305b",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "c4283bc4676ff5d3",
+      "title_norm": "taylor hall (car) — hall (undisclosed) will not play tuesday vs. the bruins.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T23:45:35.318563Z"
+    },
+    {
+      "key": "f5a9bad115abf54dbef4daf5",
+      "url": "https://www.dailyfaceoff.com/players/news/mark-jankowski/2711",
+      "fingerprint": "2a1fa3fd25d9aa9f",
+      "title_norm": "mark jankowski (car) — jankowski (lower-body) is on the ice for warmups and will play tuesday vs. boston.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-27T23:45:35.664262Z"
     }
   ],
   "known_sources": [
