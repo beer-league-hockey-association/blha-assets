@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T21:00:43.636551Z",
+  "updated_at": "2026-10-28T21:42:38.175275Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17952,6 +17952,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T21:00:43.562412Z"
+    },
+    {
+      "key": "6d35b9b5c0cf213111f16b24",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-dickinson-ekholm-expected-to-return-vs-flames",
+      "fingerprint": "c9adc013a0ec567d",
+      "title_norm": "oilers' dickinson, ekholm expected to return vs. flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T21:42:38.116480Z"
     }
   ],
   "known_sources": [
