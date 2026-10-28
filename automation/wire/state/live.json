@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T16:45:43.527477Z",
+  "updated_at": "2026-10-28T17:15:50.364642Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17782,6 +17782,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-28T16:45:43.414234Z"
+    },
+    {
+      "key": "b73185805ff135b01896a3a4",
+      "url": "https://www.nhl.com/news/jacob-fowler-sets-montreal-canadiens-record-for-saves-by-rookie",
+      "fingerprint": "58799b56d5540653",
+      "title_norm": "habs gave fowler 'a chance' to set rookie record",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T17:15:50.212972Z"
     }
   ],
   "known_sources": [
