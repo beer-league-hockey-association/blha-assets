@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T00:15:42.870516Z",
+  "updated_at": "2026-10-28T01:15:35.578879Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17402,6 +17402,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T00:15:42.732788Z"
+    },
+    {
+      "key": "c04808faf0312ae26ac418f9",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/a2a74a81-c9da-4be8-a85c-37ac1d8066bc",
+      "fingerprint": "6bb78327b8164a66",
+      "title_norm": "nhl on sportsnet: hellebuyck makes devils debut vs. stars",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T01:15:35.143126Z"
+    },
+    {
+      "key": "40510a70191a28c9b8d87661",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/6db5a277-6971-43f5-a582-16ee76b15896",
+      "fingerprint": "72098c82a3e9cc8a",
+      "title_norm": "nhl on sportsnet: bruins vs. hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T01:15:35.528002Z"
     }
   ],
   "known_sources": [
