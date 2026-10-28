@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T04:30:37.532028Z",
+  "updated_at": "2026-10-28T04:45:38.041362Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17562,6 +17562,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T04:30:37.443909Z"
+    },
+    {
+      "key": "44b820b285b1fe20994b59e7",
+      "url": "https://www.nhl.com/news/montreal-canadiens-st-louis-blues-game-recap-october-27-2026",
+      "fingerprint": "ea729b2fd734f5a1",
+      "title_norm": "fowler makes career-high 46 saves, canadiens blank blues for third win in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T04:45:37.919205Z"
     }
   ],
   "known_sources": [
