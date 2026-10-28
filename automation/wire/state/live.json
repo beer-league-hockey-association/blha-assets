@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T02:00:40.595315Z",
+  "updated_at": "2026-10-28T02:15:43.253152Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17432,6 +17432,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T02:00:40.524896Z"
+    },
+    {
+      "key": "3200fc608ee6bf0507e439bb",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-philadelphia-flyers-game-recap-october-27-2026",
+      "fingerprint": "742eb1bc9d1d1d50",
+      "title_norm": "blue jackets recover in ot after blowing 3-goal lead",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T02:15:42.848098Z"
+    },
+    {
+      "key": "deb8f7947666ba8597289293",
+      "url": "https://www.sportsnet.ca/hockey/article/hakstol-taking-asu-job-head-on-as-program-investigates-players-collapse",
+      "fingerprint": "c9b7785ab11b46ec",
+      "title_norm": "hakstol taking asu job head-on as program investigates player's collapse",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T02:15:43.190837Z"
     }
   ],
   "known_sources": [
