@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T03:15:33.701038Z",
+  "updated_at": "2026-10-28T03:30:42.797267Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17512,6 +17512,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T03:15:33.660002Z"
+    },
+    {
+      "key": "06ca6e1004758bdd83a37041",
+      "url": "https://www.nhl.com/news/new-york-islanders-nashville-predators-game-recap-october-27-2026",
+      "fingerprint": "493c94fb340c1415",
+      "title_norm": "varlamov gets 1st nhl win since 2024 for islanders",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T03:30:42.655640Z"
     }
   ],
   "known_sources": [
