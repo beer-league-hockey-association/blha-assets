@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T18:15:41.385705Z",
+  "updated_at": "2026-10-28T18:30:48.993505Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17842,6 +17842,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-28T18:15:41.279549Z"
+    },
+    {
+      "key": "85afe48020a775c61ff67fe9",
+      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
+      "fingerprint": "6010c6fd3fd2db9e",
+      "title_norm": "john tavares (tor) — tavares (lower body) remains week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:30:48.186084Z"
+    },
+    {
+      "key": "dbd3ec81b2676373902c2df7",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "6509bbecb04e0262",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower body) is out week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:30:48.490527Z"
+    },
+    {
+      "key": "aada5b1cf890fc706b43a342",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "890846bec2370471",
+      "title_norm": "chris tanev (tor) — tanev (upper body) returned to practice and has been upgraded to day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:30:48.888330Z"
+    },
+    {
+      "key": "073f52312077f6db44fc1620",
+      "url": "https://www.sportsnet.ca/nhl/article/thomas-chabot-nearing-return-as-senators-place-cameron-crotty-on-waivers",
+      "fingerprint": "aa7ceb2748e777d7",
+      "title_norm": "thomas chabot nearing return as senators place cameron crotty on waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:30:48.928962Z"
     }
   ],
   "known_sources": [
