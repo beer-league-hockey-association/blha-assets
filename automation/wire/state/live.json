@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T16:30:52.325919Z",
+  "updated_at": "2026-10-28T16:45:43.527477Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17762,6 +17762,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T16:30:52.173005Z"
+    },
+    {
+      "key": "36b098dfc9574f4acebe85ff",
+      "url": "https://www.dailyfaceoff.com/players/news/sam-steel/2663",
+      "fingerprint": "48f306c581adccc2",
+      "title_norm": "sam steel (dal) — steel (undisclosed) is expected to return vs. montreal on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T16:45:43.067451Z"
+    },
+    {
+      "key": "641c410886032e5159ca0a61",
+      "url": "https://www.dailyfaceoff.com/players/news/kyle-capobianco/2921",
+      "fingerprint": "0fdcbe6977fa2b50",
+      "title_norm": "kyle capobianco (dal) — capobianco (lower-body) will be out for at least a week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T16:45:43.414234Z"
     }
   ],
   "known_sources": [
