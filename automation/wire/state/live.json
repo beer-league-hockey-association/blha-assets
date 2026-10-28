@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T20:45:34.352658Z",
+  "updated_at": "2026-10-28T21:00:43.636551Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17942,6 +17942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T20:45:34.214540Z"
+    },
+    {
+      "key": "bf20cebf7d56f47d59f6913d",
+      "url": "https://www.sportsnet.ca/nhl/article/mckenna-unites-with-matthews-as-maple-leafs-juggle-lineup",
+      "fingerprint": "302f46d0e43e7b6d",
+      "title_norm": "mckenna unites with matthews as maple leafs juggle lineup",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T21:00:43.562412Z"
     }
   ],
   "known_sources": [
