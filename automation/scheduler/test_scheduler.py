@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -386,3 +387,41 @@ class SchedulerRunTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PauseTests(unittest.TestCase):
+    def setUp(self) -> None:
+        from blha import schedule as sched
+        self.sched = sched
+        self.cfg = {"timezone": "America/New_York", "paused_until": "2027-05-01",
+                    "jobs": [{"id": "wire", "workflow": "w.yml", "every_minutes": 15},
+                             {"id": "guard", "workflow": "g.yml", "daily_at": ["06:15"], "runs_while_paused": True}]}
+
+    def test_jobs_are_held_until_midnight_eastern(self) -> None:
+        wire, guard = self.cfg["jobs"]
+        before = utc("2027-05-01T03:59:00Z")  # 23:59 EDT on April 30
+        after = utc("2027-05-01T04:00:00Z")   # 00:00 EDT on May 1
+        self.assertIn("paused until 2027-05-01", self.sched.job_paused(wire, self.cfg, before))
+        self.assertIsNone(self.sched.job_paused(wire, self.cfg, after))
+
+    def test_runs_while_paused_job_is_never_held(self) -> None:
+        guard = self.cfg["jobs"][1]
+        self.assertIsNone(self.sched.job_paused(guard, self.cfg, utc("2026-11-01T12:00:00Z")))
+
+    def test_no_pause_line_means_no_pause(self) -> None:
+        cfg = {k: v for k, v in self.cfg.items() if k != "paused_until"}
+        self.assertIsNone(self.sched.paused(cfg, utc("2026-11-01T12:00:00Z")))
+        self.assertIsNone(self.sched.pause_end(cfg))
+
+    def test_bad_date_is_rejected(self) -> None:
+        import tempfile, yaml
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "schedule.yaml"
+            path.write_text(yaml.safe_dump({**self.cfg, "paused_until": "May 2027"}))
+            with self.assertRaises(ValueError):
+                self.sched.load_schedule(path)
+
+    def test_live_schedule_keeps_the_dormancy_guard_running(self) -> None:
+        cfg = self.sched.load_schedule()
+        running = [j["id"] for j in cfg["jobs"] if self.sched.job_paused(j, cfg, utc("2026-11-01T12:00:00Z")) is None]
+        self.assertEqual(running, ["dormancy-guard"])

@@ -61,7 +61,7 @@ class RuleTests(unittest.TestCase):
 
 
 class RunTests(unittest.TestCase):
-    def _run(self, gh, mode="live", saved=None, ok=True):
+    def _run(self, gh, mode="live", saved=None, ok=True, paused_until=None):
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         state = Path(tmp.name) / "dormancy.json"
@@ -73,7 +73,9 @@ class RunTests(unittest.TestCase):
             posts.append(payload)
             return ok, "delivered" if ok else "boom"
 
-        with patch.object(dormancy, "STATE_PATH", state), patch.object(dormancy, "post_discord_webhook", fake_post):
+        schedule = {"timezone": "America/New_York", "paused_until": paused_until, "jobs": []}
+        with patch.object(dormancy, "STATE_PATH", state), patch.object(dormancy, "post_discord_webhook", fake_post), \
+                patch.object(dormancy, "load_schedule", lambda: schedule):
             code = dormancy.run(mode, gh, NOW)
         return code, posts, state
 
@@ -107,6 +109,17 @@ class RunTests(unittest.TestCase):
         code, posts, _ = self._run(gh)
         self.assertEqual(code, 1)
         self.assertIn("Could not re-enable", posts[0]["embeds"][0]["description"])
+
+    def test_pause_keeps_workflows_on_but_posts_nothing(self):
+        gh = FakeGitHub(WF, 50)
+        code, posts, state = self._run(gh, paused_until="2027-05-01")
+        self.assertEqual((code, gh.enabled, posts), (0, [1], []))
+        self.assertFalse(state.exists())
+
+    def test_posts_again_once_the_pause_has_ended(self):
+        gh = FakeGitHub(WF, 50)
+        code, posts, _ = self._run(gh, paused_until="2026-12-01")
+        self.assertEqual((code, len(posts)), (0, 1))
 
 
 if __name__ == "__main__":

@@ -6,9 +6,10 @@ know which workflows are expected to be running right now).
 
 from __future__ import annotations
 
-from datetime import datetime, time, timedelta, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import yaml
 
@@ -23,6 +24,8 @@ def load_schedule(path: Path = SCHEDULE_PATH) -> dict[str, Any]:
     data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     if not isinstance(data.get("jobs"), list) or not data["jobs"]:
         raise ValueError("schedule.yaml must define a non-empty jobs list")
+    if data.get("paused_until") not in (None, ""):
+        pause_end(data)  # raises on a bad date
     for job in data["jobs"]:
         for name in job.get("phases") or []:
             if name not in season.PHASES:
@@ -38,6 +41,35 @@ def load_schedule(path: Path = SCHEDULE_PATH) -> dict[str, Any]:
             if not 0 < int(faster.get("every_minutes") or 0) < int(job["every_minutes"]):
                 raise ValueError(f"job {job.get('id')}: faster every_minutes must be shorter than the job's")
     return data
+
+
+def pause_end(schedule: dict[str, Any]) -> datetime | None:
+    """When the league-wide pause ends (midnight local time on ``paused_until``), as UTC.
+
+    None when schedule.yaml sets no pause.
+    """
+    raw = schedule.get("paused_until")
+    if raw in (None, ""):
+        return None
+    day = raw if isinstance(raw, date) else date.fromisoformat(str(raw).strip())
+    tz = ZoneInfo(str(schedule.get("timezone") or "America/New_York"))
+    return datetime.combine(day, time(0, 0), tzinfo=tz).astimezone(timezone.utc)
+
+
+def paused(schedule: dict[str, Any], now: datetime | None = None) -> str | None:
+    """The reason text while the pause is on, else None."""
+    end = pause_end(schedule)
+    now = now or datetime.now(timezone.utc)
+    if end is None or now >= end:
+        return None
+    return f"automation paused until {schedule['paused_until']}"
+
+
+def job_paused(job: dict[str, Any], schedule: dict[str, Any], now: datetime | None = None) -> str | None:
+    """The reason a job is held by the pause, or None if it may run."""
+    if job.get("runs_while_paused"):
+        return None
+    return paused(schedule, now)
 
 
 def current_season(now: datetime | None = None) -> tuple[str | None, str, datetime | None]:

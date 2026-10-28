@@ -40,7 +40,7 @@ sys.path.insert(0, str(ROOT.parent))
 
 from blha.schedule import SCHEDULE_PATH as CONFIG_PATH  # noqa: E402
 from blha import github_api  # noqa: E402
-from blha.schedule import current_phase, job_active, load_schedule, paced  # noqa: E402
+from blha.schedule import current_phase, job_active, job_paused, load_schedule, paced, paused  # noqa: E402
 
 # Runs that ended this way did no work, so they do not count as the job having
 # run. Failed runs DO count: retrying a failing job every 15 minutes would only
@@ -212,13 +212,22 @@ def main() -> int:
     now = datetime.now(timezone.utc)
     gh = GitHub(token, repository, api_base)
 
-    phase, phase_text = current_phase(now)
+    pause = paused(cfg, now)
+    if pause:
+        # Nothing season-gated runs during the pause, so Fantrax isn't read.
+        phase, phase_text = None, pause
+    else:
+        phase, phase_text = current_phase(now)
     print(
         f"BLHA SCHEDULER now={now.astimezone(tz).strftime('%Y-%m-%d %H:%M %Z')} "
         f"season={phase_text} dry_run={args.dry_run} ref={ref}"
     )
     started = errors = retries = checked = 0
     for job in cfg["jobs"]:
+        held = job_paused(job, cfg, now)
+        if held:
+            print(f"OFF     {job.get('id')}: {held}")
+            continue
         active, why = job_active(job, phase, now)
         if not active:
             print(f"OFF     {job.get('id')}: {why}")

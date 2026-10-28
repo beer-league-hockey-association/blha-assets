@@ -37,6 +37,7 @@ sys.path.insert(0, str(AUTOMATION))
 sys.path.insert(0, str(AUTOMATION / "commissioner"))
 
 from blha import github_api  # noqa: E402
+from blha.schedule import load_schedule, paused  # noqa: E402
 from blha.league import load_json, load_league, save_json  # noqa: E402
 from discord_webhook import post_discord_webhook  # noqa: E402
 import desk  # noqa: E402
@@ -135,6 +136,16 @@ def run(mode: str, gh: GitHub | None = None, now: datetime | None = None) -> int
             reenabled.append(w["name"])
             print(f"WOULD RE-ENABLE {w['name']}")
     warn = should_warn(last_commit, now, state.get("last_warned"))
+    try:
+        hold = paused(load_schedule(), now)
+    except Exception:
+        hold = None
+    if hold:
+        # The league is quiet on purpose: keep the workflows switched on, but
+        # post nothing to Discord until the pause ends.
+        if reenabled or failed or warn:
+            print(f"Not posting ({hold}).")
+        return 1 if failed else 0
     if not reenabled and not failed and not warn:
         print("Nothing to report.")
         return 0

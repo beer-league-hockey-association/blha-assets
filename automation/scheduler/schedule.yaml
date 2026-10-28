@@ -37,6 +37,14 @@
 
 timezone: America/New_York
 
+# League-wide pause. Until midnight (Eastern) on this date nothing posts to
+# Discord: the scheduler starts only jobs marked runs_while_paused, the health
+# monitor expects nothing, and the dormancy guard keeps the workflows switched
+# on without posting. On this date everything resumes by itself. To resume
+# early, set an earlier date; to stay paused, set a later one; to end the
+# pause for good, delete the line. Manual runs from the Actions tab still work.
+paused_until: "2027-05-01"
+
 # Allow a job to start a few minutes early relative to every_minutes. Without
 # this, small timer jitter would push a 15-minute job to every 30 minutes.
 interval_tolerance_minutes: 5
@@ -169,6 +177,7 @@ jobs:
   # that can happen. Also started daily by a second cron-job.org job.
   - id: dormancy-guard
     workflow: blha-dormancy-guard.yml
+    runs_while_paused: true
     daily_at: ["06:15"]
     retry_failures: 2
 

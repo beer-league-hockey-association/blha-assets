@@ -30,7 +30,7 @@ if str(AUTOMATION_ROOT) not in sys.path:
 
 from discord_webhook import post_discord_webhook
 from blha import github_api
-from blha.schedule import condition_started_at, current_season, job_active, load_schedule
+from blha.schedule import condition_started_at, current_season, job_active, job_paused, load_schedule, pause_end
 
 CONFIG_PATH = ROOT / "health_config.yaml"
 STATE_PATH = ROOT / "state" / "health.json"
@@ -288,10 +288,15 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
     phase, phase_text, phase_started = current_season(current)
     print(f"HEALTH season={phase_text}")
     try:
-        jobs_by_file = {str(job["workflow"]): job for job in load_schedule()["jobs"]}
+        schedule = load_schedule()
+        jobs_by_file = {str(job["workflow"]): job for job in schedule["jobs"]}
     except Exception as exc:
         print(f"HEALTH WARNING: could not read schedule.yaml: {exc}")
-        jobs_by_file = {}
+        schedule, jobs_by_file = {}, {}
+    try:
+        resumed = pause_end(schedule)
+    except Exception:
+        resumed = None
 
     for item in cfg.get("workflows") or []:
         if not isinstance(item, dict):
@@ -303,6 +308,14 @@ def collect_issues(cfg: dict[str, Any]) -> dict[str, dict[str, Any]]:
         if not workflow_file or max_age <= 0:
             continue
         job = jobs_by_file.get(workflow_file, {})
+        held = job_paused(job, schedule, current) if schedule else None
+        if held:
+            print(f"HEALTH SKIP [{workflow_id}]: {held}")
+            continue
+        # Just back from the pause: every job gets max_age for its first run.
+        if resumed and 0 <= (current - resumed).total_seconds() < max_age * 60:
+            print(f"HEALTH SKIP [{workflow_id}]: pause just ended; allowing first run")
+            continue
         if phase is None and job.get("phases"):
             # Fantrax couldn't be read, so we don't know if this job should be
             # running now; skip it rather than alert and then "recover".

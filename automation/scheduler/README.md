@@ -184,3 +184,15 @@ account; that would break GitHub's redirect for any old link still in use.
 | Scheduler log shows `RETRY …` | GitHub answered one request with a 5xx or dropped the connection | Nothing; the job is checked or started at the next run |
 | Scheduler log shows `ERROR … dispatch failed` | Bad token or permissions, or a workflow lost its `mode` input | Read the error text in the log |
 | Healthchecks.io says the check is down | No live scheduler run for over an hour | Check cron-job.org history and the Actions tab; a GitHub outage clears itself |
+
+## Pausing everything
+
+`paused_until` at the top of `schedule.yaml` holds every job until midnight
+Eastern on that date. While it's set, nothing posts to Discord: the scheduler
+starts only jobs marked `runs_while_paused` (just the dormancy guard, which
+quietly keeps GitHub from switching the workflows off), and the health
+monitor expects nothing. Everything resumes by itself on that date, and the
+health monitor gives each job its normal window for a first run before
+checking it. Set an earlier date to resume sooner, or delete the line to end
+the pause. Leave cron-job.org and Healthchecks.io running: the scheduler
+still checks in every 15 minutes, so the monitor stays quiet.
