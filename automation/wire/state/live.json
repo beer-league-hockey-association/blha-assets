@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T14:45:38.937639Z",
+  "updated_at": "2026-10-28T15:45:47.354415Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17682,6 +17682,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T14:45:38.797843Z"
+    },
+    {
+      "key": "e0a32d88a4f5b1858d4f4533",
+      "url": "https://www.sportsnet.ca/nhl/article/how-young-stars-have-changed-dynamic-of-maple-leafs-room",
+      "fingerprint": "bd5a217596e78f54",
+      "title_norm": "how young stars have changed dynamic of maple leafs' room",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T15:45:47.274782Z"
     }
   ],
   "known_sources": [
