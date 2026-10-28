@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T02:15:43.253152Z",
+  "updated_at": "2026-10-28T02:45:36.716557Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17452,6 +17452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T02:15:43.190837Z"
+    },
+    {
+      "key": "47f56a863a3384a0f7bac253",
+      "url": "https://www.sportsnet.ca/nhl/article/kent-johnson-lifts-blue-jackets-to-ot-win-after-flyers-rally-from-3-goal-deficit",
+      "fingerprint": "247fdd97ef115af5",
+      "title_norm": "kent johnson lifts blue jackets to ot win after flyers rally from 3-goal deficit",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T02:45:36.654475Z"
     }
   ],
   "known_sources": [
