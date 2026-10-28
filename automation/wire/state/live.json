@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T09:15:41.644037Z",
+  "updated_at": "2026-10-28T14:45:38.937639Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17672,6 +17672,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-28T09:15:41.585254Z"
+    },
+    {
+      "key": "e88f5b2921a551393f4aa577",
+      "url": "https://www.sportsnet.ca/nhl/article/unflappable-guy-matthew-schaefer-off-to-strong-sophomore-start-for-islanders",
+      "fingerprint": "acfd5ca2333c2a5d",
+      "title_norm": "'unflappable guy': matthew schaefer off to strong sophomore start for islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T14:45:38.797843Z"
     }
   ],
   "known_sources": [
