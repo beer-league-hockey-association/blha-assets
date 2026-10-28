@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T03:00:48.635543Z",
+  "updated_at": "2026-10-28T03:15:33.701038Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17482,6 +17482,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T03:00:48.522512Z"
+    },
+    {
+      "key": "803ea408a448175030dea3bd",
+      "url": "https://www.nhl.com/news/florida-panthers-winnipeg-jets-game-recap-october-27-2026",
+      "fingerprint": "777806c5d68028eb",
+      "title_norm": "tkachuks combine for 7 points in panthers win at jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T03:15:33.089540Z"
+    },
+    {
+      "key": "54a092e9e11f935a6d9bd137",
+      "url": "https://www.nhl.com/news/boston-bruins-carolina-hurricanes-game-recap-october-27-2026",
+      "fingerprint": "489a7ee7575faf30",
+      "title_norm": "kochetkov wins eighth straight to start season, hurricanes defeat bruins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T03:15:33.408327Z"
+    },
+    {
+      "key": "36e14fe2b4277d5614fa8814",
+      "url": "https://www.sportsnet.ca/nhl/article/jacob-fowler-posts-46-save-shutout-as-canadiens-beat-blues",
+      "fingerprint": "6e43cb41458972a3",
+      "title_norm": "fowler shines with 46-save shutout as canadiens beat blues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T03:15:33.660002Z"
     }
   ],
   "known_sources": [
