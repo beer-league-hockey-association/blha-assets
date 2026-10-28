@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T04:45:38.041362Z",
+  "updated_at": "2026-10-28T05:00:40.542747Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17572,6 +17572,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T04:45:37.919205Z"
+    },
+    {
+      "key": "0fc6757aebcad5fa492843ae",
+      "url": "https://www.dailyfaceoff.com/players/news/kyle-capobianco/2921",
+      "fingerprint": "00c24fb42d060a86",
+      "title_norm": "kyle capobianco (dal) — capobianco (lower-body) left tuesday's game vs. new jersey and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T05:00:40.466194Z"
     }
   ],
   "known_sources": [
