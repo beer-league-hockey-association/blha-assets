@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-27T23:45:35.750969Z",
+  "updated_at": "2026-10-28T00:00:39.788168Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17362,6 +17362,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-27T23:45:35.664262Z"
+    },
+    {
+      "key": "07dcab010d1d7187633e03d4",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-doughty/744",
+      "fingerprint": "af6382593c588a94",
+      "title_norm": "drew doughty (lak) — doughty (undisclosed) will not play tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T00:00:38.769632Z"
+    },
+    {
+      "key": "d05aabb81199e83218e5e3b3",
+      "url": "https://www.nhl.com/news/new-jersey-goalie-connor-hellebuyck-to-make-first-start-devils-debut-tonight-against-stars",
+      "fingerprint": "682ea3fe9a2b4190",
+      "title_norm": "hellebuyck to make first start for devils tonight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T00:00:39.052337Z"
+    },
+    {
+      "key": "76587f09135df4f5337a95db",
+      "url": "https://www.dailyfaceoff.com/players/news/corey-perry/36",
+      "fingerprint": "5d30fe6c5b690a6a",
+      "title_norm": "corey perry (lak) — perry (undisclosed) will not play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T00:00:39.732764Z"
     }
   ],
   "known_sources": [
