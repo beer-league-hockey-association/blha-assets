@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T15:45:47.354415Z",
+  "updated_at": "2026-10-28T16:15:41.319550Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17692,6 +17692,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T15:45:47.274782Z"
+    },
+    {
+      "key": "9cee7798dd14a0931dfb4240",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "83d241224cd50ba6",
+      "title_norm": "zach hyman (edm) — hyman (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T16:15:39.917859Z"
+    },
+    {
+      "key": "f3ae6e01ee11792489098bbc",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-28-2026",
+      "fingerprint": "af153155c434b4d1",
+      "title_norm": "on tap: ovechkin looks to tie backstrom in assists",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T16:15:40.164246Z"
+    },
+    {
+      "key": "14404bfb95753081aa4adcbd",
+      "url": "https://www.nhl.com/news/martin-brodeur-connor-hellebuyck-widens-window-of-winning",
+      "fingerprint": "41c46d38e1137631",
+      "title_norm": "brodeur: hellebuyck widens 'window of winning'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T16:15:40.499722Z"
+    },
+    {
+      "key": "3b39bc11426b287bde1c21bb",
+      "url": "https://www.dailyfaceoff.com/players/news/albert-johansson/30661",
+      "fingerprint": "ba2fe8744bf574dc",
+      "title_norm": "albert johansson (det) — johansson (undisclosed) will remain out on thursday vs. chicago.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T16:15:40.755382Z"
+    },
+    {
+      "key": "0f8d04776c6b77bc52e52927",
+      "url": "https://www.sportsnet.ca/nhl/video/if-larkin-waives-ntc-how-quickly-would-a-trade-to-montreal-happen",
+      "fingerprint": "70f4c96b3100a2d7",
+      "title_norm": "if larkin waives ntc, how quickly would a trade to montreal happen?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T16:15:41.279803Z"
     }
   ],
   "known_sources": [
