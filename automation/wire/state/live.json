@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T05:45:30.779243Z",
+  "updated_at": "2026-10-28T07:15:35.597954Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17652,6 +17652,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T05:45:30.716883Z"
+    },
+    {
+      "key": "b8c813a29b0a643b99447d42",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-lekkerimaki-leads-third-period-comeback-to-end-skid",
+      "fingerprint": "f68f9089921c8852",
+      "title_norm": "canucks takeaways: lekkerimaki leads third-period comeback to end skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T07:15:35.551182Z"
     }
   ],
   "known_sources": [
