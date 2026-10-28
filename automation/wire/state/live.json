@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T17:15:50.364642Z",
+  "updated_at": "2026-10-28T17:30:45.646433Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17792,6 +17792,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T17:15:50.212972Z"
+    },
+    {
+      "key": "21633f7108f509e843ac6d78",
+      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
+      "fingerprint": "82fa2ecc32e1854d",
+      "title_norm": "nicolas roy (col) — roy (lower-body) will return vs. new jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T17:30:45.537330Z"
     }
   ],
   "known_sources": [
