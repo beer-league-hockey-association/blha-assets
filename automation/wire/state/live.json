@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T20:00:45.073621Z",
+  "updated_at": "2026-10-28T20:45:34.352658Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17932,6 +17932,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-28T20:00:44.997234Z"
+    },
+    {
+      "key": "8d4c168a6054c71bd3eb7587",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-what-matvei-michkovs-trajectory-means-for-his-next-contract",
+      "fingerprint": "071681335dea40cd",
+      "title_norm": "scout's analysis: what matvei michkov's trajectory means for his next contract",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T20:45:34.214540Z"
     }
   ],
   "known_sources": [
