@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T19:15:43.529818Z",
+  "updated_at": "2026-10-28T20:00:45.073621Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17912,6 +17912,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T19:15:43.420951Z"
+    },
+    {
+      "key": "951b9aad5fcd6ced10b9bb5c",
+      "url": "https://www.dailyfaceoff.com/players/news/elmer-soderblom/30683",
+      "fingerprint": "2e9c48b4d33d52c7",
+      "title_norm": "elmer soderblom (pit) — soderblom (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T20:00:44.638089Z"
+    },
+    {
+      "key": "0b0137773043c215cdb2dab5",
+      "url": "https://www.dailyfaceoff.com/players/news/justin-brazeau/28622",
+      "fingerprint": "71ebbd028c3d993f",
+      "title_norm": "justin brazeau (pit) — brazeau (lower-body) has been activated from ir and assigned to wilkes-barre/scranton (ahl) on a conditioning loan.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T20:00:44.997234Z"
     }
   ],
   "known_sources": [
