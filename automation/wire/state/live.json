@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T17:45:42.863446Z",
+  "updated_at": "2026-10-28T18:15:41.385705Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17822,6 +17822,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T17:45:42.785025Z"
+    },
+    {
+      "key": "cad99ae6cc46502a74acf2db",
+      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
+      "fingerprint": "6bd062b9070c55e9",
+      "title_norm": "thomas chabot (ott) — chabot (upper body) is expected to return on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:15:40.978237Z"
+    },
+    {
+      "key": "b6c0a5e7971e678a7e263300",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
+      "fingerprint": "23dd21d84e98ac1e",
+      "title_norm": "pavel mintyukov (ana) — mintyukov (lower body) returned to practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:15:41.279549Z"
     }
   ],
   "known_sources": [
