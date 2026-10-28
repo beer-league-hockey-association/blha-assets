@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T22:30:40.524930Z",
+  "updated_at": "2026-10-28T23:45:41.396215Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17982,6 +17982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T22:30:40.462659Z"
+    },
+    {
+      "key": "dcc60b91fe4db4f54b3492a0",
+      "url": "https://www.nhl.com/news/nhl-edge-stats-kirill-kaprizov-goal-scoring-minnesota-wild-2026-27",
+      "fingerprint": "5ec23bcdac656002",
+      "title_norm": "edge stats behind kaprizov's historic goal-scoring",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T23:45:41.265685Z"
     }
   ],
   "known_sources": [
