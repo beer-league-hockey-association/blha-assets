@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T07:15:35.597954Z",
+  "updated_at": "2026-10-28T09:15:41.644037Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17662,6 +17662,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T07:15:35.551182Z"
+    },
+    {
+      "key": "a54f1fde99677b4ba5871ed0",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/5-Fantasy-Hockey-Sell-High-Candidates-You-Should-Shop-Now-e3r8a59",
+      "fingerprint": "8f120683f53019d3",
+      "title_norm": "5 fantasy hockey sell-high candidates you should shop now",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-28T09:15:41.585254Z"
     }
   ],
   "known_sources": [
