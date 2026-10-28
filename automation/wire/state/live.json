@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T04:15:43.057141Z",
+  "updated_at": "2026-10-28T04:30:37.532028Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17552,6 +17552,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T04:15:43.004543Z"
+    },
+    {
+      "key": "aa465249edbd2320b88fe09b",
+      "url": "https://www.nhl.com/news/minnesota-wild-utah-mammoth-game-recap-october-27-2026",
+      "fingerprint": "cacef007e17d027a",
+      "title_norm": "kaprizov has 2 points, wild defeat mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T04:30:37.443909Z"
     }
   ],
   "known_sources": [
