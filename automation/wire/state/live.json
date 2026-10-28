@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T22:00:45.972515Z",
+  "updated_at": "2026-10-28T22:30:40.524930Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17972,6 +17972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-28T22:00:45.881368Z"
+    },
+    {
+      "key": "bf0ef44c11e12b668b12554d",
+      "url": "https://www.sportsnet.ca/nhl/article/wild-gm-bill-guerin-talks-hughes-negotiations-i-havent-really-decided",
+      "fingerprint": "ffa7f0d99cfca630",
+      "title_norm": "wild gm bill guerin talks hughes negotiations: 'i haven't really decided'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T22:30:40.462659Z"
     }
   ],
   "known_sources": [
