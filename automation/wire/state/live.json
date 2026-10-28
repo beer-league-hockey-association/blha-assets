@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T17:30:45.646433Z",
+  "updated_at": "2026-10-28T17:45:42.863446Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17802,6 +17802,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-28T17:30:45.537330Z"
+    },
+    {
+      "key": "5018b35219a41422467405b0",
+      "url": "https://www.sportsnet.ca/nhl/article/where-the-nhl-salary-cap-could-soar-to-in-the-next-three-years",
+      "fingerprint": "eb5678b7938870da",
+      "title_norm": "where the nhl salary cap could soar to in the next three years",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T17:45:42.781342Z"
+    },
+    {
+      "key": "bed98e18dc2f878ac88d457b",
+      "url": "https://www.sportsnet.ca/nhl/article/despite-prohibitive-price-larkin-trade-to-canadiens-remains-possible",
+      "fingerprint": "308706d2b20af898",
+      "title_norm": "despite 'prohibitive' price, larkin trade to canadiens remains possible",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T17:45:42.785025Z"
     }
   ],
   "known_sources": [
