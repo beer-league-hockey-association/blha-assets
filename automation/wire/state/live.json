@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T18:30:48.993505Z",
+  "updated_at": "2026-10-28T18:45:42.940055Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17882,6 +17882,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T18:30:48.928962Z"
+    },
+    {
+      "key": "cc1e2817ddf6535ccb29018c",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-report-cards-grading-the-players-through-one-month",
+      "fingerprint": "1c8beab8969904d1",
+      "title_norm": "maple leafs report cards: grading the players through one month",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:45:42.604684Z"
+    },
+    {
+      "key": "fbf216d4da4e68b7b3ce8344",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-provide-injury-updates-for-several-players",
+      "fingerprint": "bfdda03a8edb6796",
+      "title_norm": "maple leafs provide injury updates for several players",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T18:45:42.873882Z"
     }
   ],
   "known_sources": [
