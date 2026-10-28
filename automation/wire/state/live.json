@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T05:30:40.399476Z",
+  "updated_at": "2026-10-28T05:45:30.779243Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17642,6 +17642,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T05:30:40.335269Z"
+    },
+    {
+      "key": "c087ee48f5f01c318b51697c",
+      "url": "https://www.nhl.com/news/buffalo-sabres-san-jose-sharks-game-recap-october-27-2026",
+      "fingerprint": "27577105f903dbc4",
+      "title_norm": "ellis makes 23 saves, sabres shut out sharks to end three-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T05:45:30.716883Z"
     }
   ],
   "known_sources": [
