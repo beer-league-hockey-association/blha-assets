@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T21:42:38.175275Z",
+  "updated_at": "2026-10-28T22:00:45.972515Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17962,6 +17962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T21:42:38.116480Z"
+    },
+    {
+      "key": "9817178cff6d46acb2b58207",
+      "url": "https://www.dailyfaceoff.com/players/news/dakota-joshua/25020",
+      "fingerprint": "271cce9c91df7621",
+      "title_norm": "dakota joshua (tor) — joshua (core) will be a game-time decision vs. seattle on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-28T22:00:45.881368Z"
     }
   ],
   "known_sources": [
