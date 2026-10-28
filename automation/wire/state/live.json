@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T18:45:42.940055Z",
+  "updated_at": "2026-10-28T19:15:43.529818Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17902,6 +17902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T18:45:42.873882Z"
+    },
+    {
+      "key": "caab058bb9e708622cb6781b",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-impresses-in-first-start-with-new-jersey-devils",
+      "fingerprint": "841ab01f319fb759",
+      "title_norm": "hellebuyck 'exceptional' in 1st start with devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T19:15:43.420951Z"
     }
   ],
   "known_sources": [
