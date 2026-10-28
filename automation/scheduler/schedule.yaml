@@ -43,7 +43,7 @@ timezone: America/New_York
 # on without posting. On this date everything resumes by itself. To resume
 # early, set an earlier date; to stay paused, set a later one; to end the
 # pause for good, delete the line. Manual runs from the Actions tab still work.
-paused_until: "2027-05-01"
+paused_until: "2027-06-22"
 
 # Allow a job to start a few minutes early relative to every_minutes. Without
 # this, small timer jitter would push a 15-minute job to every 30 minutes.
