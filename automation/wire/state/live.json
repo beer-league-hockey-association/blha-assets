@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T05:15:38.720210Z",
+  "updated_at": "2026-10-28T05:30:40.399476Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17612,6 +17612,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T05:15:38.679833Z"
+    },
+    {
+      "key": "8d1b53d185c17cb09dc00694",
+      "url": "https://www.nhl.com/news/vancouver-canucks-anaheim-ducks-game-recap-october-27-2026",
+      "fingerprint": "e2ebe7f70a170f26",
+      "title_norm": "canucks score 3 goals late, win in ot to end skid at 10",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-28T05:30:39.797652Z"
+    },
+    {
+      "key": "021d885886ff6a0cb0f7add3",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-rally-to-beat-ducks-in-ot-snap-10-game-skid",
+      "fingerprint": "a90637cae7b5a715",
+      "title_norm": "canucks rally to beat ducks in ot, snap 10-game losing streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T05:30:40.096778Z"
+    },
+    {
+      "key": "d029c389d84e11af97cc9052",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-begin-five-game-road-trip-with-loss-to-golden-knights",
+      "fingerprint": "3e8cc79efeafcafa",
+      "title_norm": "senators begin five-game road trip with loss to golden knights",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T05:30:40.335269Z"
     }
   ],
   "known_sources": [
