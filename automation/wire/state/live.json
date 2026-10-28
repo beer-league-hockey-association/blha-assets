@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T01:15:35.578879Z",
+  "updated_at": "2026-10-28T02:00:40.595315Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17422,6 +17422,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-28T01:15:35.528002Z"
+    },
+    {
+      "key": "0406772a9cb367faff5e7231",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/37e18cc4-2837-4f54-9f7f-27628cb9f878",
+      "fingerprint": "1795e8c38828d58f",
+      "title_norm": "canucks on sportsnet: vancouver vs. anaheim",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-28T02:00:40.524896Z"
     }
   ],
   "known_sources": [
