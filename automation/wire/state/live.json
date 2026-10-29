@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T14:30:38.810281Z",
+  "updated_at": "2026-10-29T15:00:41.816143Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18252,6 +18252,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T14:30:38.705108Z"
+    },
+    {
+      "key": "be67a80bcbb5ac2585d01e5d",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "1607043c1a53fa59",
+      "title_norm": "victor hedman (tbl) — hedman (lower-body) will return vs. winnipeg on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:00:41.004761Z"
+    },
+    {
+      "key": "6497691278700c6d3c6c5685",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "bd28804b5055b987",
+      "title_norm": "brandon hagel (tbl) — hagel (undisclosed) will play vs. winnipeg on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:00:41.688734Z"
     }
   ],
   "known_sources": [
