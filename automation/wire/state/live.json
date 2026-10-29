@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T12:30:37.090223Z",
+  "updated_at": "2026-10-29T14:00:43.756690Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18212,6 +18212,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T12:30:37.052148Z"
+    },
+    {
+      "key": "1f570f5af6c0b0672f3a6940",
+      "url": "https://theahl.com/news/crunch-showing-spark-after-uneven-start",
+      "fingerprint": "760899fe586a5e5d",
+      "title_norm": "crunch showing spark after uneven start",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-29T14:00:43.644750Z"
     }
   ],
   "known_sources": [
