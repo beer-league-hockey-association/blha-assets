@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T09:15:43.383473Z",
+  "updated_at": "2026-10-29T12:30:37.090223Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18202,6 +18202,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-29T09:15:43.249976Z"
+    },
+    {
+      "key": "77d962532ce91db15eb2b627",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/big-bob-defender",
+      "fingerprint": "ff8dde277d5c339f",
+      "title_norm": "32 thoughts podcast: in defence of sergei bobrovsky",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T12:30:37.052148Z"
     }
   ],
   "known_sources": [
