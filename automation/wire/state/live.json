@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T16:15:40.741754Z",
+  "updated_at": "2026-10-29T16:30:43.729070Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18412,6 +18412,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-29T16:15:40.622354Z"
+    },
+    {
+      "key": "bd903c06a100ec718625ea04",
+      "url": "https://www.dailyfaceoff.com/players/news/sam-steel/2663",
+      "fingerprint": "e09f46912fe097d6",
+      "title_norm": "sam steel (dal) — steel (undisclosed) will return vs. montreal on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T16:30:42.992330Z"
+    },
+    {
+      "key": "a61cf51bcf9d8ecd7ae7f40f",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-vlasic/30427",
+      "fingerprint": "74269d2063840c0c",
+      "title_norm": "alex vlasic (chi) — vlasic (illness) is questionable to play in detroit on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T16:30:43.292362Z"
+    },
+    {
+      "key": "fee3e52928e87ea0cf5b7c63",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-picking-out-potential-pumpkins",
+      "fingerprint": "19b7962eb324d927",
+      "title_norm": "nhl power rankings: picking out potential pumpkins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T16:30:43.676480Z"
     }
   ],
   "known_sources": [
