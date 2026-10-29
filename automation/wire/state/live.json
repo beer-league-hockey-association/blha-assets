@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T17:15:42.249867Z",
+  "updated_at": "2026-10-29T17:30:40.101554Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18482,6 +18482,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T17:15:42.173962Z"
+    },
+    {
+      "key": "761ece3cbd6de359a7cfe24a",
+      "url": "https://www.nhl.com/news/panthers-aleksander-barkov-could-return-in-four-weeks",
+      "fingerprint": "47ebc7424104ca89",
+      "title_norm": "barkov skates, could return to panthers in 4 weeks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T17:30:39.665994Z"
+    },
+    {
+      "key": "cdb90d9cc2d1f281158251d2",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-fiala/2455",
+      "fingerprint": "4f0860d65f9110f4",
+      "title_norm": "kevin fiala (lak) — fiala (lower-body) returned to practice in a non-contact jersey on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T17:30:39.994994Z"
     }
   ],
   "known_sources": [
