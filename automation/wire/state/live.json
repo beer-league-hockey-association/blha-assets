@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T00:30:38.910167Z",
+  "updated_at": "2026-10-29T00:45:35.170366Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18002,6 +18002,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T00:30:38.806654Z"
+    },
+    {
+      "key": "6ff0c061681b9e587fc421c6",
+      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-nhl-elite-matched-with-halloween-candy",
+      "fingerprint": "f64596fd650b69cb",
+      "title_norm": "national hockey list: halloween candy favorites",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T00:45:35.039764Z"
     }
   ],
   "known_sources": [
