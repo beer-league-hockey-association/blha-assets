@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T07:15:37.809116Z",
+  "updated_at": "2026-10-29T09:15:43.383473Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18192,6 +18192,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T07:15:37.737629Z"
+    },
+    {
+      "key": "eb8f7dc276df7af9a95abc51",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-5--Trading-Away-Seth-Jones--Targeting-Dorofeyev--Gauthier--and-More-e3rai3v",
+      "fingerprint": "4ae4b75875c78776",
+      "title_norm": "trade talks week 5 | trading away seth jones, targeting dorofeyev, gauthier, and more",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-29T09:15:43.249976Z"
     }
   ],
   "known_sources": [
