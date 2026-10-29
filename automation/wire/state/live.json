@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T20:00:38.249098Z",
+  "updated_at": "2026-10-29T21:30:34.735699Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18662,6 +18662,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T20:00:38.210779Z"
+    },
+    {
+      "key": "4ba01a5f8bcfa681c0b1c0f9",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-awaiting-update-on-injured-goaltender-devin-cooley",
+      "fingerprint": "f0873e9bbb6ccad4",
+      "title_norm": "flames awaiting update on injured goaltender devin cooley",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T21:30:34.700868Z"
     }
   ],
   "known_sources": [
