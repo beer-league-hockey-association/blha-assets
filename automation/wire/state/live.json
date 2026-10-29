@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-28T23:45:41.396215Z",
+  "updated_at": "2026-10-29T00:30:38.910167Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -17992,6 +17992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-28T23:45:41.265685Z"
+    },
+    {
+      "key": "6c6f6dd635da9d7c03b2dbe3",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
+      "fingerprint": "0a37b476d885c459",
+      "title_norm": "mattias ekholm (edm) — ekholm (concussion) will be back in the oilers lineup on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T00:30:38.806654Z"
     }
   ],
   "known_sources": [
