@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T01:00:43.093025Z",
+  "updated_at": "2026-10-29T01:45:31.320583Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18022,6 +18022,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-29T01:00:42.957765Z"
+    },
+    {
+      "key": "32ea130e12e73b845902e907",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-sets-nhl-record-with-13-game-season-opening-assist-streak",
+      "fingerprint": "af771d6998681b21",
+      "title_norm": "oilers' mcdavid sets nhl record with 13-game season-opening assist streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T01:45:31.274336Z"
     }
   ],
   "known_sources": [
