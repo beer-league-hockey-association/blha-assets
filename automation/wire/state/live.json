@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T21:30:34.735699Z",
+  "updated_at": "2026-10-29T21:45:36.145017Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18672,6 +18672,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T21:30:34.700868Z"
+    },
+    {
+      "key": "375714d08684d395204602fe",
+      "url": "https://www.nhl.com/news/dylan-larkin-out-of-red-wings-lineup-against-blackhawks",
+      "fingerprint": "e8c89939976e198c",
+      "title_norm": "larkin out for wings tonight, gm to address situation",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T21:45:35.543514Z"
+    },
+    {
+      "key": "3825bcfb724f88dac6d6add5",
+      "url": "https://www.dailyfaceoff.com/players/news/carter-hart/3874",
+      "fingerprint": "d1160b412a958480",
+      "title_norm": "carter hart (vgk) — hart (lower-body) has a chance to return on friday vs. new jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T21:45:35.808022Z"
+    },
+    {
+      "key": "8666b25ae11dc90b8b4e7d22",
+      "url": "https://www.sportsnet.ca/nhl/video/move-on-wait-for-a-deal-or-roll-the-dice-how-should-wild-handle-hughes",
+      "fingerprint": "914eb333988fe23c",
+      "title_norm": "move on, wait for a deal, or roll the dice: how should wild handle hughes?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T21:45:36.107862Z"
     }
   ],
   "known_sources": [
