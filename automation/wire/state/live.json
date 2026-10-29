@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T05:00:40.454316Z",
+  "updated_at": "2026-10-29T05:15:31.750727Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18142,6 +18142,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T05:00:40.381740Z"
+    },
+    {
+      "key": "c50cdead96981f938215597a",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-outlasted-by-kraken-despite-mckennas-big-game",
+      "fingerprint": "7c1e54c04e867d6b",
+      "title_norm": "maple leafs outlasted by kraken despite mckenna's big game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T05:15:31.707986Z"
     }
   ],
   "known_sources": [
