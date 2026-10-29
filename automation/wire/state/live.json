@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T16:00:45.662605Z",
+  "updated_at": "2026-10-29T16:15:40.741754Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18392,6 +18392,26 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-10-29T16:00:45.631772Z"
+    },
+    {
+      "key": "ab120386bf54671f19637601",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-29-2026",
+      "fingerprint": "e6f1272a1fefd52c",
+      "title_norm": "on tap: kane back in detroit looking for 900th assist",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T16:15:40.283852Z"
+    },
+    {
+      "key": "d2c6ad3f61b7209d408a18ea",
+      "url": "https://www.nhl.com/news/calgary-flames-edmonton-oilers-game-recap-october-28-2026",
+      "fingerprint": "68664365a9561784",
+      "title_norm": "mcdavid sets nhl assist streak mark in oilers win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T16:15:40.622354Z"
     }
   ],
   "known_sources": [
