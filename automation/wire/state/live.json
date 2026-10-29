@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T02:30:41.380733Z",
+  "updated_at": "2026-10-29T03:15:40.915614Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18082,6 +18082,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T02:30:41.304721Z"
+    },
+    {
+      "key": "e75f0f078ef029b780ee198b",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-manson/2400",
+      "fingerprint": "a7823d036c011f6e",
+      "title_norm": "josh manson (col) — manson (lower-body) left wednesday's game vs. new jersey and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T03:15:40.770800Z"
     }
   ],
   "known_sources": [
