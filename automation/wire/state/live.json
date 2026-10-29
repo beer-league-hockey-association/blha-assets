@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T15:00:41.816143Z",
+  "updated_at": "2026-10-29T15:30:41.097105Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18272,6 +18272,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T15:00:41.688734Z"
+    },
+    {
+      "key": "52038975aeef3ebce08d847a",
+      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
+      "fingerprint": "8c6a54fd958e8dcb",
+      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) will return vs. utah on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:30:40.100426Z"
+    },
+    {
+      "key": "9f532c61ba84e1247bfa730f",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "37d4707301d30a7d",
+      "title_norm": "taylor hall (car) — hall (upper-body) will remain out on thursday and is expected to miss a few more games.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:30:40.322155Z"
+    },
+    {
+      "key": "cfcc290dafb8682e84039981",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-girard/2773",
+      "fingerprint": "e9940c03d6365c70",
+      "title_norm": "samuel girard (pit) — girard (undisclosed) will be a game-time decision vs. utah on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:30:40.552357Z"
+    },
+    {
+      "key": "936292b70aae14b9401bb0cf",
+      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
+      "fingerprint": "bfcc6ac8bbc59327",
+      "title_norm": "ben kindel (pit) — kindel (undisclosed) will return to the lineup vs. utah on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:30:40.567179Z"
+    },
+    {
+      "key": "13348e2c7f3090a87274b83e",
+      "url": "https://www.dailyfaceoff.com/players/news/daniil-tarasov2/28133",
+      "fingerprint": "addfa78a6251c97b",
+      "title_norm": "daniil tarasov (det) — tarasov (undisclosed) will serve as the red wings' backup on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:30:40.584201Z"
+    },
+    {
+      "key": "df107e34318a44842cbf777a",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-larkin-out-vs-blackhawks-interim-gm-horcoff-to-address-situation",
+      "fingerprint": "a945befec0d20022",
+      "title_norm": "red wings' larkin out vs. blackhawks, interim gm horcoff to address situation",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:30:40.878523Z"
     }
   ],
   "known_sources": [
