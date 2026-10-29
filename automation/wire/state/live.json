@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T05:15:31.750727Z",
+  "updated_at": "2026-10-29T05:30:34.832507Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18152,6 +18152,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T05:15:31.707986Z"
+    },
+    {
+      "key": "b10deec99904fe995512fc74",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-wolf-gets-feet-wet-again-to-mixed-results-after-cooley-injury",
+      "fingerprint": "d656cbb08014172a",
+      "title_norm": "flames' wolf gets feet wet again to mixed results after cooley injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T05:30:34.435077Z"
+    },
+    {
+      "key": "31f00e6e9c2331931e1c663e",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-tuch-scores-twice-as-capitals-beat-flyers",
+      "fingerprint": "ddf798db8b8bfd82",
+      "title_norm": "nhl roundup: tuch scores twice as capitals beat flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T05:30:34.786595Z"
     }
   ],
   "known_sources": [
