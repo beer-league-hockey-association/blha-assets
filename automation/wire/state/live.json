@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T22:15:35.259532Z",
+  "updated_at": "2026-10-29T23:15:33.656364Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18722,6 +18722,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-29T22:15:35.113244Z"
+    },
+    {
+      "key": "1601bc8c47f29491e7c73e77",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-vlasic/30427",
+      "fingerprint": "21e5ffe968557279",
+      "title_norm": "alex vlasic (chi) — vlasic (illness) is on the ice for warmups and is expected to play thursday in detroit.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T23:15:33.546757Z"
     }
   ],
   "known_sources": [
