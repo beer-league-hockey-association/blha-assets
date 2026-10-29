@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T22:00:43.041073Z",
+  "updated_at": "2026-10-29T22:15:35.259532Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18712,6 +18712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T22:00:42.968348Z"
+    },
+    {
+      "key": "a2c09ccd699e043aaa0fd443",
+      "url": "https://www.nhl.com/news/dylan-larkin-will-no-longer-play-for-detroit-red-wings",
+      "fingerprint": "8cf988e988e15333",
+      "title_norm": "larkin suspended by red wings, won't play until traded",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T22:15:35.113244Z"
     }
   ],
   "known_sources": [
