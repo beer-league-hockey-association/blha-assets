@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T17:30:40.101554Z",
+  "updated_at": "2026-10-29T17:45:38.544708Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18502,6 +18502,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T17:30:39.994994Z"
+    },
+    {
+      "key": "a8819fdcc5322c2b6b5e6487",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "b20d75ac8e4cd58b",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) has been placed on ir and is still considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T17:45:38.124603Z"
+    },
+    {
+      "key": "6c9d593c2c5d58bdc5599c9b",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-morgan-frost-the-latest-to-say-he-wants-to-stay-in-calgary",
+      "fingerprint": "6ffe1bc682d53c60",
+      "title_norm": "flames' morgan frost the latest to say he wants to stay in calgary",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T17:45:38.471880Z"
     }
   ],
   "known_sources": [
