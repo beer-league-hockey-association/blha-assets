@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T16:45:36.919002Z",
+  "updated_at": "2026-10-29T17:00:42.681360Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18462,6 +18462,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T16:45:36.816472Z"
+    },
+    {
+      "key": "231d692cbd0f158a26e1ce7d",
+      "url": "https://www.nhl.com/wild/news/min-dotf-the-bickel-era-begins",
+      "fingerprint": "c303e1d9a271a5bd",
+      "title_norm": "bickel brings minnesota work ethic to iowa bench",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-29T17:00:42.618396Z"
     }
   ],
   "known_sources": [
