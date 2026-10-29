@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T15:45:36.452981Z",
+  "updated_at": "2026-10-29T16:00:45.662605Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18372,6 +18372,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T15:45:36.011543Z"
+    },
+    {
+      "key": "ce715f2633dd0118ce49e1a6",
+      "url": "https://www.dailyfaceoff.com/players/news/brock-faber/30792",
+      "fingerprint": "2e0f95ca5b8837be",
+      "title_norm": "brock faber (min) — faber's (upper-body) return-to-play protocol has been cleared, and should resume skating in the upcoming weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T16:00:45.165865Z"
+    },
+    {
+      "key": "e8a2233e39a4e6b781e9f8e8",
+      "url": "https://audioboom.com/posts/8970857",
+      "fingerprint": "d9698b5a5e46a754",
+      "title_norm": "week 5 mailbag; fowler's rapid rise",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-10-29T16:00:45.631772Z"
     }
   ],
   "known_sources": [
