@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T06:45:40.444075Z",
+  "updated_at": "2026-10-29T07:15:37.809116Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18182,6 +18182,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-29T06:45:40.322210Z"
+    },
+    {
+      "key": "2457a89d7ea929fe1d44497e",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-bobrovsky-allows-last-minute-goal-in-loss-to-kraken",
+      "fingerprint": "552d04bd8de141bf",
+      "title_norm": "maple leafs' bobrovsky allows last-minute goal in loss to kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T07:15:37.737629Z"
     }
   ],
   "known_sources": [
