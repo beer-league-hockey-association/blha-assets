@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T17:00:42.681360Z",
+  "updated_at": "2026-10-29T17:15:42.249867Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18472,6 +18472,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-29T17:00:42.618396Z"
+    },
+    {
+      "key": "8a39e633d2469123acf7aebc",
+      "url": "https://www.sportsnet.ca/nhl/article/dylan-larkin-to-stay-out-of-games-until-red-wings-complete-trade",
+      "fingerprint": "16c099f0f39f9e9a",
+      "title_norm": "dylan larkin to stay out of games until red wings complete trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T17:15:42.173962Z"
     }
   ],
   "known_sources": [
