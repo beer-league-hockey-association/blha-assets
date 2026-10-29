@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T23:15:33.656364Z",
+  "updated_at": "2026-10-29T23:30:34.552210Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18732,6 +18732,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T23:15:33.546757Z"
+    },
+    {
+      "key": "d1dd41990c61bab39141c54d",
+      "url": "https://www.nhl.com/news/ahl-notebook-nhl-west-conference-top-new-prospects",
+      "fingerprint": "116add54884305c3",
+      "title_norm": "ahl notebook: nhl west conference top new prospects",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T23:30:34.173064Z"
+    },
+    {
+      "key": "414aee82fc923b92fc6e4552",
+      "url": "https://www.nhl.com/news/nhl-draft-class-podcast-landon-dupont-players-to-watch-2027-draft",
+      "fingerprint": "8f678d7ed2419c9f",
+      "title_norm": "dupont, players to watch list on 'nhl draft class'",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T23:30:34.486697Z"
     }
   ],
   "known_sources": [
