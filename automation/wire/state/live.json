@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T03:15:40.915614Z",
+  "updated_at": "2026-10-29T03:45:37.154935Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18092,6 +18092,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T03:15:40.770800Z"
+    },
+    {
+      "key": "18fcc2cf3e7accaf9ca5b58f",
+      "url": "https://www.sportsnet.ca/nhl/article/jarry-earns-shutout-as-oilers-douse-flames-to-snap-two-game-losing-skid",
+      "fingerprint": "9b3473be3b91b1eb",
+      "title_norm": "jarry earns shutout as oilers douse flames to snap two-game losing skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T03:45:37.086938Z"
     }
   ],
   "known_sources": [
