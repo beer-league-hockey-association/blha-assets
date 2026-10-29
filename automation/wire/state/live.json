@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T01:45:31.320583Z",
+  "updated_at": "2026-10-29T02:00:39.331694Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18032,6 +18032,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T01:45:31.274336Z"
+    },
+    {
+      "key": "1961a15bf513bc34d65dce90",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/1c03840e-b908-4ca0-8115-c5043119138e",
+      "fingerprint": "84c21cd234b1a882",
+      "title_norm": "maple leafs on sportsnet: toronto vs. seattle",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T02:00:39.264731Z"
     }
   ],
   "known_sources": [
