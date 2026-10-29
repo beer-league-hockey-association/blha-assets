@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T14:15:36.726427Z",
+  "updated_at": "2026-10-29T14:30:38.810281Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18232,6 +18232,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T14:15:36.654461Z"
+    },
+    {
+      "key": "d0039e7d87c3bfb4448b7b7c",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "71796b8de62958c4",
+      "title_norm": "brandon hagel (tbl) — hagel (undisclosed) will be a game-time decision vs. winnipeg on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T14:30:38.497804Z"
+    },
+    {
+      "key": "f99dbabe89af608b94cf70a3",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "22330981a669d89e",
+      "title_norm": "zemgus girgensons (tbl) — girgensons (lower-body) will be out vs. winnipeg on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T14:30:38.705108Z"
     }
   ],
   "known_sources": [
