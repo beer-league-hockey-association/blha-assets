@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T05:30:34.832507Z",
+  "updated_at": "2026-10-29T06:45:40.444075Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18172,6 +18172,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T05:30:34.786595Z"
+    },
+    {
+      "key": "e42f4b94427e1cc1f7f1ca38",
+      "url": "https://www.nhl.com/news/kirill-marchenko-injury-status-update-october-28-2026",
+      "fingerprint": "ee04abdf701ce730",
+      "title_norm": "marchenko week to week for leafs with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T06:45:40.322210Z"
     }
   ],
   "known_sources": [
