@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T03:45:37.154935Z",
+  "updated_at": "2026-10-29T04:15:36.729415Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18102,6 +18102,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T03:45:37.086938Z"
+    },
+    {
+      "key": "655aca7b4ce44303803c8ae3",
+      "url": "https://www.nhl.com/news/new-jersey-devils-colorado-avalanche-game-recap-october-28-2026",
+      "fingerprint": "7cf067568574af59",
+      "title_norm": "avalanche score 4 in 3rd, surge past devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T04:15:36.418418Z"
+    },
+    {
+      "key": "f28f842240ac73fefa556eaa",
+      "url": "https://www.nhl.com/news/jackson-lacombe-boosted-by-olympic-experience-with-team-usa",
+      "fingerprint": "8cdfdcb7009b1568",
+      "title_norm": "ducks' lacombe 'one of the emerging stars in the league'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T04:15:36.600813Z"
     }
   ],
   "known_sources": [
