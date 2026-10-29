@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T02:00:39.331694Z",
+  "updated_at": "2026-10-29T02:15:39.316395Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18042,6 +18042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T02:00:39.264731Z"
+    },
+    {
+      "key": "72d01e4ecddbb07239fb3f48",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-devin-cooley-exits-vs-oilers-with-lower-body-injury",
+      "fingerprint": "5f81e50088c5abea",
+      "title_norm": "flames' devin cooley exits vs. oilers with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T02:15:39.269687Z"
     }
   ],
   "known_sources": [
