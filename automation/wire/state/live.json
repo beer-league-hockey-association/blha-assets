@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T18:00:39.550011Z",
+  "updated_at": "2026-10-29T18:15:42.095486Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18532,6 +18532,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T18:00:39.505214Z"
+    },
+    {
+      "key": "6f9657588f4b3b5ce7c45448",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
+      "fingerprint": "2ba8eccdb3c50537",
+      "title_norm": "victor olofsson (vgk) — olofsson (undisclosed) returned to practice in a non-contact jersey on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:15:41.667487Z"
+    },
+    {
+      "key": "67e8238070fc53f3fe9e4019",
+      "url": "https://www.sportsnet.ca/nhl/article/larkin-decides-to-sit-out-until-red-wings-complete-trade",
+      "fingerprint": "0434c88136d95c69",
+      "title_norm": "larkin decides to sit out until red wings complete trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:15:42.012097Z"
     }
   ],
   "known_sources": [
