@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T18:30:43.053548Z",
+  "updated_at": "2026-10-29T18:45:34.263767Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18582,6 +18582,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-29T18:30:42.938796Z"
+    },
+    {
+      "key": "f43042ae7dba5312846e2048",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-doughty/744",
+      "fingerprint": "81159cafaadc6873",
+      "title_norm": "drew doughty (lak) — doughty (undisclosed) will return vs. ottawa on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:45:33.852531Z"
+    },
+    {
+      "key": "db9dae60a0808bb00cf8b109",
+      "url": "https://www.dailyfaceoff.com/players/news/corey-perry/36",
+      "fingerprint": "57c9a6bf5d82ddfa",
+      "title_norm": "corey perry (lak) — perry (undisclosed) will return vs. ottawa on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:45:34.201138Z"
+    },
+    {
+      "key": "8b1b1083bdd26413a29c59d9",
+      "url": "https://www.sportsnet.ca/nhl/article/wild-claim-cameron-crotty-off-waivers-from-senators",
+      "fingerprint": "72d9e5ab7533fea5",
+      "title_norm": "wild claim cameron crotty off waivers from senators",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:45:34.224013Z"
     }
   ],
   "known_sources": [
