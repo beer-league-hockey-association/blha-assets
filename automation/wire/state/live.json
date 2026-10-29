@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T19:15:38.553400Z",
+  "updated_at": "2026-10-29T20:00:38.249098Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18652,6 +18652,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T19:15:38.447409Z"
+    },
+    {
+      "key": "d27bf08254cbb26b16c1e419",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-activate-kindel-and-girard-off-injured-reserve",
+      "fingerprint": "727f3c5f3075f749",
+      "title_norm": "penguins activate kindel and girard off injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T20:00:38.210779Z"
     }
   ],
   "known_sources": [
