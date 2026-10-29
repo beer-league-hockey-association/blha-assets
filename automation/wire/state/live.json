@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T18:15:42.095486Z",
+  "updated_at": "2026-10-29T18:30:43.053548Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18552,6 +18552,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T18:15:42.012097Z"
+    },
+    {
+      "key": "830f71551ed8799bf77b1403",
+      "url": "https://www.dailyfaceoff.com/players/news/warren-foegele/3911",
+      "fingerprint": "9e5ed883a94bb66e",
+      "title_norm": "warren foegele (ott) — foegele (undisclosed) is out on thursday and is expected to miss an extended period of time.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:30:42.314682Z"
+    },
+    {
+      "key": "bd4d4a2841e2ffbf2f5f01a2",
+      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
+      "fingerprint": "85776275a2a556e3",
+      "title_norm": "thomas chabot (ott) — chabot (upper-body) will return in los angeles on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:30:42.662627Z"
+    },
+    {
+      "key": "ecd2b77c9fe532cced281957",
+      "url": "https://theahl.com/news/iowa-inks-kaliyev-to-tryout",
+      "fingerprint": "a51923c006c2f014",
+      "title_norm": "iowa inks kaliyev to tryout",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:30:42.938796Z"
     }
   ],
   "known_sources": [
