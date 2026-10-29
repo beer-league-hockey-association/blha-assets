@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T17:45:38.544708Z",
+  "updated_at": "2026-10-29T18:00:39.550011Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18522,6 +18522,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T17:45:38.471880Z"
+    },
+    {
+      "key": "d8f4e9a6a822d7c26d6ba45b",
+      "url": "https://www.sportsnet.ca/nhl/article/former-toronto-metropolitan-university-d-artem-duda-to-make-nhl-debut-with-mammoth",
+      "fingerprint": "63d7dec65a445ba3",
+      "title_norm": "former toronto metropolitan university d artem duda to make nhl debut with mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T18:00:39.505214Z"
     }
   ],
   "known_sources": [
