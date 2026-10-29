@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T16:30:43.729070Z",
+  "updated_at": "2026-10-29T16:45:36.919002Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18442,6 +18442,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T16:30:43.676480Z"
+    },
+    {
+      "key": "fa4bc146440c5cfacbd2ab18",
+      "url": "https://www.sportsnet.ca/nhl/article/could-the-edmonton-oilers-be-eyeing-matt-rempe",
+      "fingerprint": "57a061de4c183f85",
+      "title_norm": "could the edmonton oilers be eyeing matt rempe?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T16:45:36.588814Z"
+    },
+    {
+      "key": "30a2ec4479c85df88aa1e290",
+      "url": "https://www.dailyfaceoff.com/players/news/kyle-capobianco/2921",
+      "fingerprint": "9da83cb10a7e8976",
+      "title_norm": "kyle capobianco (dal) — capobianco (lower-body) is expected to be out for the next four weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T16:45:36.816472Z"
     }
   ],
   "known_sources": [
