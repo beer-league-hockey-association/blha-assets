@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T15:30:41.097105Z",
+  "updated_at": "2026-10-29T15:45:36.452981Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18332,6 +18332,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-29T15:30:40.878523Z"
+    },
+    {
+      "key": "a2158c40cac08d6cc04cfe32",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-taylor-hall-to-miss-a-few-more-games-due-to-upper-body-injury",
+      "fingerprint": "2e78b82432a34857",
+      "title_norm": "hurricanes' taylor hall to miss a few more games due to upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:45:35.510882Z"
+    },
+    {
+      "key": "843b561ff1b3ce9247784e77",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
+      "fingerprint": "fb233a66b242c0e7",
+      "title_norm": "jared spurgeon (min) — spurgeon (undisclosed) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:45:35.785526Z"
+    },
+    {
+      "key": "1d7730098df6213ff146b14f",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "26d7f6183fcab062",
+      "title_norm": "brad marchand (fla) — marchand (leg) has resumed skating and is expected to be out for three more weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:45:35.993172Z"
+    },
+    {
+      "key": "1c4cd1195032463d745b77ae",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "59922195eeb4b164",
+      "title_norm": "aleksander barkov (fla) — barkov (lower-body) has started skating and is expected to be out for four more weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T15:45:36.011543Z"
     }
   ],
   "known_sources": [
