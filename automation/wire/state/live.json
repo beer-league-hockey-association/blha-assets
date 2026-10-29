@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T00:45:35.170366Z",
+  "updated_at": "2026-10-29T01:00:43.093025Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18012,6 +18012,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-29T00:45:35.039764Z"
+    },
+    {
+      "key": "2fe1239d237a107452f1d2f3",
+      "url": "https://www.nhl.com/news/minnesota-wild-bill-guerin-hasn-t-talked-quinn-hughes-contract-in-long-time",
+      "fingerprint": "34620a0674424ccd",
+      "title_norm": "guerin hasn't talked hughes contract in 'long time'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-29T01:00:42.957765Z"
     }
   ],
   "known_sources": [
