@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T19:00:44.089550Z",
+  "updated_at": "2026-10-29T19:15:38.553400Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18632,6 +18632,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T19:00:44.002550Z"
+    },
+    {
+      "key": "0b5fb6ae7867bce55260c07d",
+      "url": "https://www.dailyfaceoff.com/players/news/konsta-helenius/38139",
+      "fingerprint": "8e60df0bc71da986",
+      "title_norm": "konsta helenius (buf) — helenius (upper-body) it out vs. anaheim on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T19:15:37.937339Z"
+    },
+    {
+      "key": "fff1442cb8bae83964933b55",
+      "url": "https://www.dailyfaceoff.com/players/news/sam-carrick/1914",
+      "fingerprint": "a5d67ba275af00b0",
+      "title_norm": "sam carrick (buf) — carrick (mid-body) will return in anaheim on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-29T19:15:38.447409Z"
     }
   ],
   "known_sources": [
