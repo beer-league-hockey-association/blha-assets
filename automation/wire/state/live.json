@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T19:30:43.166072Z",
+  "updated_at": "2026-10-30T20:00:43.490313Z",
   "seen": [
     {
       "key": "59117bb78ecd3cc165fe5eab",
@@ -18792,6 +18792,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T19:30:43.080802Z"
+    },
+    {
+      "key": "4b078fce432208b56c8edf84",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-fiala/2455",
+      "fingerprint": "b88e5755bfa7c907",
+      "title_norm": "kevin fiala (lak) — fiala (lower-body) was a regular participant in friday's practice.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T20:00:43.084684Z"
+    },
+    {
+      "key": "1b3a95bf60ffabafd6c3888c",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-assign-nikita-klepov-to-ohls-spirit",
+      "fingerprint": "9ea7161bd0dc5333",
+      "title_norm": "ducks assign nikita klepov to ohl's spirit",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T20:00:43.416773Z"
     }
   ],
   "known_sources": [
