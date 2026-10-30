@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T01:45:44.340055Z",
+  "updated_at": "2026-10-30T02:00:42.075185Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18802,6 +18802,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T01:45:44.270054Z"
+    },
+    {
+      "key": "72081dfec84475003e2d47c1",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-carolina-hurricanes-game-recap-october-29-2026",
+      "fingerprint": "c0927e738da5bbe9",
+      "title_norm": "kochetkov wins ninth straight to open season, hurricanes hold off blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T02:00:41.741188Z"
+    },
+    {
+      "key": "a86046317d944ebb2c07a87b",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/46505af7-25cb-41ad-bd2d-18c0e666d7c2",
+      "fingerprint": "44db3dadb94edd8e",
+      "title_norm": "canucks on sportsnet: vancouver vs. san jose",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T02:00:41.996088Z"
     }
   ],
   "known_sources": [
