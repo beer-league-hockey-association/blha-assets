@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T00:45:33.337772Z",
+  "updated_at": "2026-10-30T01:15:30.080017Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18772,6 +18772,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T00:45:33.286713Z"
+    },
+    {
+      "key": "0874a587b0884a86c6521d84",
+      "url": "https://www.nhl.com/news/red-wings-will-wait-as-long-as-necessary-to-trade-dylan-larkin",
+      "fingerprint": "25fb35907253efa5",
+      "title_norm": "red wings will 'wait as long as necessary' to trade larkin",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T01:15:29.992432Z"
     }
   ],
   "known_sources": [
