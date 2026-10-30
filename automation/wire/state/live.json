@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T16:00:49.429405Z",
+  "updated_at": "2026-10-30T16:15:35.058829Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19122,6 +19122,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T16:00:49.339051Z"
+    },
+    {
+      "key": "b82b2e2727325aa9b82742bc",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "a44cd1b70fcb808f",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) returned to practice on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:15:34.370162Z"
+    },
+    {
+      "key": "0d5a925bb710cb39447b76ab",
+      "url": "https://www.dailyfaceoff.com/players/news/travis-konecny/2498",
+      "fingerprint": "6296edfc3b90a188",
+      "title_norm": "travis konecny (phi) — konecny (lower-body) returned to practice in a non-contact jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:15:34.640848Z"
+    },
+    {
+      "key": "12ed316c71c77645d4785e07",
+      "url": "https://www.nhl.com/news/hayden-hodgson-to-have-player-safety-hearing-for-actions-in-ottawa-senators-game",
+      "fingerprint": "88880bb09cee9da9",
+      "title_norm": "senators' hodgson to have player safety hearing",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T16:15:34.982810Z"
     }
   ],
   "known_sources": [
