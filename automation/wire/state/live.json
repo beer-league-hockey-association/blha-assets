@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T01:15:30.080017Z",
+  "updated_at": "2026-10-30T01:30:37.147655Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18782,6 +18782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T01:15:29.992432Z"
+    },
+    {
+      "key": "06d12778ffd893d6dfa31c81",
+      "url": "https://www.sportsnet.ca/nhl/article/lane-hutson-breaks-canadiens-record-for-most-assists-before-age-23",
+      "fingerprint": "7b2afb7a25331c3f",
+      "title_norm": "lane hutson breaks canadiens record for most assists before age 23",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T01:30:37.000108Z"
     }
   ],
   "known_sources": [
