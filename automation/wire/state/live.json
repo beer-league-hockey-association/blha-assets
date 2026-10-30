@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T02:30:37.168072Z",
+  "updated_at": "2026-10-30T02:58:58.140304Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18862,6 +18862,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T02:30:37.020751Z"
+    },
+    {
+      "key": "2844293dbe8db0a09559f6e7",
+      "url": "https://www.sportsnet.ca/nhl/article/caufield-newhook-each-score-twice-in-canadiens-win-over-stars",
+      "fingerprint": "78791341d74f0cd8",
+      "title_norm": "caufield, newhook each score twice in canadiens' win over stars",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T02:58:58.057943Z"
     }
   ],
   "known_sources": [
