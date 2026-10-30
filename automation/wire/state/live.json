@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T21:30:41.111955Z",
+  "updated_at": "2026-10-30T21:45:39.910556Z",
   "seen": [
     {
       "key": "59117bb78ecd3cc165fe5eab",
@@ -18862,6 +18862,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T21:30:40.964910Z"
+    },
+    {
+      "key": "af9e5d87b1af6ff4879be833",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-chytil/2811",
+      "fingerprint": "17f005afa0ef596a",
+      "title_norm": "filip chytil (van) — chytil (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T21:45:39.806340Z"
     }
   ],
   "known_sources": [
