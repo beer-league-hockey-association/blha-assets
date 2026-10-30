@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T03:15:36.806352Z",
+  "updated_at": "2026-10-30T03:30:36.563678Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18892,6 +18892,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T03:15:36.694173Z"
+    },
+    {
+      "key": "49158f9ece9bd2df5100209c",
+      "url": "https://www.nhl.com/news/washington-capitals-nashville-predators-game-recap-october-29-2026",
+      "fingerprint": "ff6a5f16e94f0e0b",
+      "title_norm": "tuch breaks tie in 3rd, capitals win 3rd straight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T03:30:36.420429Z"
     }
   ],
   "known_sources": [
