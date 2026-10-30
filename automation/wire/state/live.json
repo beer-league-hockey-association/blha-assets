@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T02:00:42.075185Z",
+  "updated_at": "2026-10-30T02:15:35.051557Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18822,6 +18822,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T02:00:41.996088Z"
+    },
+    {
+      "key": "e677cafb2713a7e7fb2ba813",
+      "url": "https://www.nhl.com/news/winnipeg-jets-tampa-bay-lightning-game-recap-october-29-2026",
+      "fingerprint": "c39e33e6338fa4d9",
+      "title_norm": "holmberg gets career-high 4 points, bolts defeat slumping jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T02:15:34.095985Z"
+    },
+    {
+      "key": "6bbf43da8c137d0d25824d6b",
+      "url": "https://www.nhl.com/news/utah-mammoth-pittsburgh-penguins-game-recap-october-29-2026",
+      "fingerprint": "8b3eacafdea184db",
+      "title_norm": "cooley completes hat trick with one second left, mammoth top penguins in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T02:15:34.346928Z"
+    },
+    {
+      "key": "2352f5a3f9649b46a1805e0f",
+      "url": "https://www.sportsnet.ca/nhl/article/holmberg-has-career-high-four-points-as-lightning-beat-jets-to-remain-unbeaten-at-home",
+      "fingerprint": "ee44896579a89cce",
+      "title_norm": "holmberg has career-high four points as lightning beat jets to remain unbeaten at home",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T02:15:35.000060Z"
     }
   ],
   "known_sources": [
