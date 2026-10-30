@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-29T23:45:36.392625Z",
+  "updated_at": "2026-10-30T00:45:33.337772Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18762,6 +18762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-29T23:45:36.247348Z"
+    },
+    {
+      "key": "22fb12292db01095453ac665",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebucks-creator-launches-new-website-after-red-wings-suspend-larkin",
+      "fingerprint": "8a9d889f45a517fb",
+      "title_norm": "hellebucks creator launches new website after red wings suspend larkin",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T00:45:33.286713Z"
     }
   ],
   "known_sources": [
