@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T14:15:35.989310Z",
+  "updated_at": "2026-10-30T14:30:43.325279Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19072,6 +19072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T14:15:35.901233Z"
+    },
+    {
+      "key": "961c6badbf8e4e0157e14fa6",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-issues-haunting-teams-at-halloween",
+      "fingerprint": "44d25bc2d65229e1",
+      "title_norm": "friday four: issues haunting teams at halloween",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T14:30:43.244963Z"
     }
   ],
   "known_sources": [
