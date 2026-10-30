@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T03:30:36.563678Z",
+  "updated_at": "2026-10-30T03:45:31.901396Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18902,6 +18902,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T03:30:36.420429Z"
+    },
+    {
+      "key": "5d3dbc3dc0b067a33a70d45d",
+      "url": "https://www.sportsnet.ca/nhl/article/seider-reacts-to-larkin-leaving-red-wings-turn-the-page",
+      "fingerprint": "a8576c4e8e8a60b8",
+      "title_norm": "seider reacts to larkin leaving red wings: 'turn the page'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T03:45:31.408038Z"
+    },
+    {
+      "key": "eb1009c4b1a987e77c494450",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-andre-burakovsky-exits-vs-kings-with-lower-body-injury",
+      "fingerprint": "06dc1fd6b375cf5f",
+      "title_norm": "senators' andre burakovsky exits vs. kings with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T03:45:31.853944Z"
     }
   ],
   "known_sources": [
