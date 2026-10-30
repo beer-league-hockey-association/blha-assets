@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T15:30:38.932474Z",
+  "updated_at": "2026-10-30T16:00:49.429405Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19092,6 +19092,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T15:30:38.809602Z"
+    },
+    {
+      "key": "6d688021ee7d9cab6f316862",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-30-2026",
+      "fingerprint": "43b1228c94391136",
+      "title_norm": "nhl on tap: devils likely to go back to hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T16:00:48.683788Z"
+    },
+    {
+      "key": "66164a7dbcc77ba9042d5829",
+      "url": "https://www.nhl.com/news/european-notebook-nhl-prospects-eight-defensemen-contributing-offense",
+      "fingerprint": "5a418ddf27ab6b42",
+      "title_norm": "european notebook: 8 defensemen contributing offense",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T16:00:49.083632Z"
+    },
+    {
+      "key": "6bbff2b66fc94cb7cbdefc3b",
+      "url": "https://www.sportsnet.ca/nhl/article/32-thoughts-whats-next-for-the-red-wings-and-dylan-larkin",
+      "fingerprint": "e809c0e7d34d520b",
+      "title_norm": "32 thoughts: what's next for the red wings and dylan larkin",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:00:49.339051Z"
     }
   ],
   "known_sources": [
