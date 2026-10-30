@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T18:45:33.832622Z",
+  "updated_at": "2026-10-30T19:00:39.850286Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19302,6 +19302,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T18:45:33.766351Z"
+    },
+    {
+      "key": "747a2aa76b6da0f23e28771e",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-zary/29510",
+      "fingerprint": "0c0e3556fff79615",
+      "title_norm": "connor zary (cgy) — zary underwent successful knee surgery and will be out week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T19:00:39.369827Z"
+    },
+    {
+      "key": "de5d12e52a4c5023f4f556db",
+      "url": "https://www.sportsnet.ca/nhl/article/mike-babcocks-oilers-overhaul-paying-off-through-structure-accountability",
+      "fingerprint": "8c7eda09ece74d53",
+      "title_norm": "mike babcock's oilers overhaul paying off through structure, accountability",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T19:00:39.766455Z"
     }
   ],
   "known_sources": [
