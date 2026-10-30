@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T17:15:37.259892Z",
+  "updated_at": "2026-10-30T18:00:44.159524Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19212,6 +19212,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-30T17:15:37.128346Z"
+    },
+    {
+      "key": "98a59d8e90a48b45c6f94390",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-parayko/2531",
+      "fingerprint": "4fc64ebce9850638",
+      "title_norm": "colton parayko (stl) — parayko (upper-body) missed practice on friday and is probably vs. detroit on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:00:43.542504Z"
+    },
+    {
+      "key": "af282e32ec363dc05c486d19",
+      "url": "https://www.dailyfaceoff.com/players/news/esa-lindell/2517",
+      "fingerprint": "41510d632c3bb4a2",
+      "title_norm": "esa lindell (dal) — lindell (lower-body) has a chance to return vs. columbus on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:00:43.763964Z"
+    },
+    {
+      "key": "b8e911d14a0a3fe8d8333f60",
+      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
+      "fingerprint": "45a2598f9e8a7db1",
+      "title_norm": "radek faksa (dal) — faksa (undisclosed) has a chance to return on saturday vs. columbus.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:00:44.035519Z"
     }
   ],
   "known_sources": [
