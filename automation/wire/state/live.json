@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T04:00:45.665542Z",
+  "updated_at": "2026-10-30T04:30:45.912401Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18932,6 +18932,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T04:00:45.600557Z"
+    },
+    {
+      "key": "a074228a45175aab4f29916f",
+      "url": "https://www.dailyfaceoff.com/players/news/brandt-clarke/30833",
+      "fingerprint": "6020c2518ead8f61",
+      "title_norm": "brandt clarke (lak) — clarke (upper-body) left thursday's game vs. ottawa and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T04:30:45.119817Z"
+    },
+    {
+      "key": "0620ce11814b0f5651de768f",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-complete-perfect-road-trip-without-suzuki",
+      "fingerprint": "a3f2917ab22875cf",
+      "title_norm": "canadiens complete perfect road trip without suzuki",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T04:30:45.827386Z"
     }
   ],
   "known_sources": [
