@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T07:00:35.558351Z",
+  "updated_at": "2026-10-30T09:00:45.117013Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T07:00:35.504263Z"
+    },
+    {
+      "key": "b966585c99508066ef252c44",
+      "url": "https://www.nhl.com/news/montreal-canadiens-dallas-stars-game-recap-october-29-2026",
+      "fingerprint": "8bb5cba6a177c28e",
+      "title_norm": "caufield, newhook each scores twice, canadiens top stars",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T09:00:44.980416Z"
     }
   ],
   "known_sources": [
