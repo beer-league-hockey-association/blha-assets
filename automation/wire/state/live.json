@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T01:30:37.147655Z",
+  "updated_at": "2026-10-30T01:45:44.340055Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18792,6 +18792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T01:30:37.000108Z"
+    },
+    {
+      "key": "6828a867cc686357d8739f01",
+      "url": "https://www.sportsnet.ca/nhl/article/daws-makes-jets-debut-in-relief-of-skinner",
+      "fingerprint": "9f658cb6c92862fe",
+      "title_norm": "daws makes jets debut in relief of skinner",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T01:45:44.270054Z"
     }
   ],
   "known_sources": [
