@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T02:58:58.140304Z",
+  "updated_at": "2026-10-30T03:15:36.806352Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18872,6 +18872,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T02:58:58.057943Z"
+    },
+    {
+      "key": "b3211fe03f6524db07da4b85",
+      "url": "https://www.nhl.com/news/new-york-islanders-minnesota-wild-game-recap-october-29-2026",
+      "fingerprint": "24b608ff1666b995",
+      "title_norm": "schaefer scores 2nd in ot, islanders edge wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T03:15:36.330886Z"
+    },
+    {
+      "key": "02ec938aa60a101a1d8fc0b9",
+      "url": "https://www.nhl.com/news/boston-bruins-st-louis-blues-game-recap-october-29-2026",
+      "fingerprint": "4bb8905a1d803896",
+      "title_norm": "thomas, broberg get 3 points each, blues top bruins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T03:15:36.694173Z"
     }
   ],
   "known_sources": [
