@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T12:15:37.732147Z",
+  "updated_at": "2026-10-30T14:15:35.989310Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19052,6 +19052,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T12:15:37.640340Z"
+    },
+    {
+      "key": "da48f082564c5a679878afec",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "e546db60c9788ef5",
+      "title_norm": "ryan pulock (nyi) — pulock (upper-body) left thursday's game vs. minnesota and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T14:15:35.586890Z"
+    },
+    {
+      "key": "d0828f634f60d785e5f5fd65",
+      "url": "https://www.sportsnet.ca/nhl/article/real-kyper-vs-bourne-how-should-maple-leafs-approach-the-trade-market",
+      "fingerprint": "d15aa9f03b4ae06f",
+      "title_norm": "real kyper vs. bourne: how should maple leafs approach the trade market?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T14:15:35.901233Z"
     }
   ],
   "known_sources": [
