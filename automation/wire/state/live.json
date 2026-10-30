@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T20:00:43.490313Z",
+  "updated_at": "2026-10-30T20:15:36.908258Z",
   "seen": [
     {
       "key": "59117bb78ecd3cc165fe5eab",
@@ -18812,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T20:00:43.416773Z"
+    },
+    {
+      "key": "dcd6cf1ea2a70140be5dada8",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chris-tanev-says-hes-ready-to-return-against-canucks",
+      "fingerprint": "4907f04655351dbf",
+      "title_norm": "maple leafs' chris tanev says he's ready to return against canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T20:15:36.839138Z"
     }
   ],
   "known_sources": [
