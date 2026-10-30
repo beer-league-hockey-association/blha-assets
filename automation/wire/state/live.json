@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T19:15:37.011958Z",
+  "updated_at": "2026-10-30T19:30:43.166072Z",
   "seen": [
     {
       "key": "59117bb78ecd3cc165fe5eab",
@@ -18782,6 +18782,16 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-10-30T19:15:36.777831Z"
+    },
+    {
+      "key": "f18874ca32ef2cb0df881b9a",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-chytil/2811",
+      "fingerprint": "2fb4169fbaf94379",
+      "title_norm": "filip chytil (van) — chytil (upper-body) missed practice on friday and is being evaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T19:30:43.080802Z"
     }
   ],
   "known_sources": [
