@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T05:30:37.144538Z",
+  "updated_at": "2026-10-30T06:00:38.894746Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18992,6 +18992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T05:30:37.040692Z"
+    },
+    {
+      "key": "ca72a599f4d52ce650b0a0a6",
+      "url": "https://www.sportsnet.ca/nhl/article/kings-beat-senators-in-ot-after-blowing-a-four-goal-lead-in-third-period",
+      "fingerprint": "aafa58896b46a44f",
+      "title_norm": "kings beat senators in ot after blowing a four-goal lead in third period",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T06:00:38.820731Z"
     }
   ],
   "known_sources": [
