@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T03:45:31.901396Z",
+  "updated_at": "2026-10-30T04:00:45.665542Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18922,6 +18922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T03:45:31.853944Z"
+    },
+    {
+      "key": "bf422399a0fb6b08a8a120a1",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-hodgson-ejected-for-boarding-kings-clarke",
+      "fingerprint": "26394e718c46d4f1",
+      "title_norm": "senators' hodgson ejected for boarding kings' clarke",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T04:00:45.600557Z"
     }
   ],
   "known_sources": [
