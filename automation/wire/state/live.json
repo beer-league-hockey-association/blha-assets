@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T16:15:35.058829Z",
+  "updated_at": "2026-10-30T16:30:46.835298Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19152,6 +19152,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T16:15:34.982810Z"
+    },
+    {
+      "key": "b24898f5aee87a921daaa88d",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-eriksson-ek/2494",
+      "fingerprint": "e1abb67123563022",
+      "title_norm": "joel eriksson ek (min) — eriksson ek (undisclosed) is at the doctor on friday, and his status for sunday vs. washington is up in the air.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:30:46.131365Z"
+    },
+    {
+      "key": "58a3b930cd02afb433c5bb65",
+      "url": "https://www.nhl.com/news/nhl-edge-stats-jacob-fowler-montreal-canadiens-2026-27",
+      "fingerprint": "c950fa56f3dd727d",
+      "title_norm": "edge stats: fowler's early case for calder trophy",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T16:30:46.393881Z"
+    },
+    {
+      "key": "4a4832da67690ad20115ed64",
+      "url": "https://www.dailyfaceoff.com/players/news/devin-cooley/32944",
+      "fingerprint": "ce936d36f87c8fc3",
+      "title_norm": "devin cooley (cgy) — cooley (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:30:46.709102Z"
     }
   ],
   "known_sources": [
