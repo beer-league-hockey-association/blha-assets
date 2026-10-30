@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T05:00:35.865765Z",
+  "updated_at": "2026-10-30T05:30:37.144538Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18972,6 +18972,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T05:00:35.821273Z"
+    },
+    {
+      "key": "01c857e231e018bb678dd28c",
+      "url": "https://www.nhl.com/news/buffalo-sabres-anaheim-ducks-game-recap-october-29-2026",
+      "fingerprint": "9cd0e89b6db0e63f",
+      "title_norm": "thompson gets hat trick, sabres outlast ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T05:30:36.850057Z"
+    },
+    {
+      "key": "49ba79bbb4c4040374b6a931",
+      "url": "https://www.nhl.com/news/ottawa-senators-los-angeles-kings-game-recap-october-29-2026",
+      "fingerprint": "88aecfb474fe80f7",
+      "title_norm": "kings blow 4-goal lead in 3rd, recover for ot win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T05:30:37.040692Z"
     }
   ],
   "known_sources": [
