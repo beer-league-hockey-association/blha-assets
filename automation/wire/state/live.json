@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T02:15:35.051557Z",
+  "updated_at": "2026-10-30T02:30:37.168072Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18852,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T02:15:35.000060Z"
+    },
+    {
+      "key": "1be806b5089f695b37ac7457",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-detroit-red-wings-game-recap-october-29-2026",
+      "fingerprint": "8908a0ce14be5b01",
+      "title_norm": "red wings defeat blackhawks after suspending larkin",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T02:30:37.020751Z"
     }
   ],
   "known_sources": [
