@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T09:30:38.233495Z",
+  "updated_at": "2026-10-30T12:15:37.732147Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19042,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T09:30:38.182798Z"
+    },
+    {
+      "key": "93dae395baf039f1c505fd9c",
+      "url": "https://www.sportsnet.ca/hockey/article/russia-must-be-allowed-to-return-to-international-hockey-court-rules",
+      "fingerprint": "de7b48632b6fa41f",
+      "title_norm": "russia must be allowed to return to international hockey, court rules",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T12:15:37.640340Z"
     }
   ],
   "known_sources": [
