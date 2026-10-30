@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T06:30:35.682188Z",
+  "updated_at": "2026-10-30T07:00:35.558351Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19012,6 +19012,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T06:30:35.551481Z"
+    },
+    {
+      "key": "d7ddbe454f98ebaf3b816f49",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-late-game-collapse-clouds-strong-road-effort",
+      "fingerprint": "70f5c4eb78c57ea2",
+      "title_norm": "canucks takeaways: late-game collapse clouds strong road effort",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T07:00:35.504263Z"
     }
   ],
   "known_sources": [
