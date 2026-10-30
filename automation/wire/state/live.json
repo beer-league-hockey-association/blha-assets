@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T20:30:47.656891Z",
+  "updated_at": "2026-10-30T21:00:40.886834Z",
   "seen": [
     {
       "key": "59117bb78ecd3cc165fe5eab",
@@ -18842,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T20:30:47.595139Z"
+    },
+    {
+      "key": "f5f29e7b459db0b8074f88cd",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-chytil/2811",
+      "fingerprint": "625f29135d96a8c5",
+      "title_norm": "filip chytil (van) — chytil (upper-body) will be out vs. toronto on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T21:00:40.786419Z"
     }
   ],
   "known_sources": [
