@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T14:30:43.325279Z",
+  "updated_at": "2026-10-30T15:30:38.932474Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T14:30:43.244963Z"
+    },
+    {
+      "key": "b1798cfc70bb73c7a5e4a58e",
+      "url": "https://www.dailyfaceoff.com/players/news/joonas-korpisalo/2556",
+      "fingerprint": "7c48811b69dc4930",
+      "title_norm": "joonas korpisalo (nyr) — korpisalo (lower-body) returned to practice on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T15:30:38.809602Z"
     }
   ],
   "known_sources": [
