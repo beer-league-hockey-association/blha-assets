@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T18:00:44.159524Z",
+  "updated_at": "2026-10-30T18:15:38.070102Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19242,6 +19242,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T18:00:44.035519Z"
+    },
+    {
+      "key": "99661e48e106a6f8b3a10630",
+      "url": "https://www.dailyfaceoff.com/players/news/ross-johnston/3759",
+      "fingerprint": "a5e6d27149f0d27f",
+      "title_norm": "ross johnston (stl) — johnston (lower-body) is travelling and expected to return during st. louis' road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:15:37.944844Z"
     }
   ],
   "known_sources": [
