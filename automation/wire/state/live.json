@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T21:00:40.886834Z",
+  "updated_at": "2026-10-30T21:30:41.111955Z",
   "seen": [
     {
       "key": "59117bb78ecd3cc165fe5eab",
@@ -18852,6 +18852,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T21:00:40.786419Z"
+    },
+    {
+      "key": "2112282fb6e91573752eba08",
+      "url": "https://www.sportsnet.ca/nhl/article/report-senators-place-forward-warren-foegele-on-il-with-knee-injury",
+      "fingerprint": "0b2dfb8acd4bc5af",
+      "title_norm": "report: senators place forward warren foegele on il with knee injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T21:30:40.964910Z"
     }
   ],
   "known_sources": [
