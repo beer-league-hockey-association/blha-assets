@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T23:00:41.385620Z",
+  "updated_at": "2026-10-30T23:15:38.077722Z",
   "seen": [
     {
       "key": "a7777e1f4e0a4ec95218be03",
@@ -18782,6 +18782,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T23:00:41.318103Z"
+    },
+    {
+      "key": "f15e7c5cb90e0baf0c0ab0c5",
+      "url": "https://www.sportsnet.ca/nhl/article/tanev-joshua-set-to-boost-maple-leafs-in-vancouver",
+      "fingerprint": "fc831c674be98832",
+      "title_norm": "tanev, joshua set to boost maple leafs in vancouver",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T23:15:37.777413Z"
+    },
+    {
+      "key": "27cd046554d450d4de9165f0",
+      "url": "https://www.sportsnet.ca/nhl/article/never-a-dull-moment-fans-react-to-kucherov-trade-request-from-lightning",
+      "fingerprint": "e0fb3dc26b397db7",
+      "title_norm": "'never a dull moment': fans react to kucherov trade request from lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T23:15:38.019394Z"
     }
   ],
   "known_sources": [
