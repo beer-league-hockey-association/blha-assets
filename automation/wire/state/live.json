@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T18:15:38.070102Z",
+  "updated_at": "2026-10-30T18:30:40.011048Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19252,6 +19252,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T18:15:37.944844Z"
+    },
+    {
+      "key": "591d04e3ba356e072e45789f",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-manson/2400",
+      "fingerprint": "5eb539ef3d5ea853",
+      "title_norm": "josh manson (col) — manson is expected to be out for eight weeks with an ankle injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:30:39.249727Z"
+    },
+    {
+      "key": "905cbb7119908f0c414f9ecd",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "1ca9f570e4807ab7",
+      "title_norm": "chris tanev (tor) — tanev (upper-body) is a possibility to return vs. vancouver on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:30:39.650292Z"
+    },
+    {
+      "key": "fd5c9434137969e57ca5b635",
+      "url": "https://www.sportsnet.ca/nhl/article/six-key-takeaways-from-the-first-month-of-the-nhl-season",
+      "fingerprint": "54fd1b3a3fb148ce",
+      "title_norm": "six key takeaways from the first month of the nhl season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:30:39.923021Z"
     }
   ],
   "known_sources": [
