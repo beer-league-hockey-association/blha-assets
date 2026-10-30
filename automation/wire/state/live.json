@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T18:30:40.011048Z",
+  "updated_at": "2026-10-30T18:45:33.832622Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19282,6 +19282,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T18:30:39.923021Z"
+    },
+    {
+      "key": "6fdc516e9d0ca298ab69c4bf",
+      "url": "https://www.sportsnet.ca/nhl/article/what-connor-hellebuyck-does-for-devils-run-at-the-stanley-cup",
+      "fingerprint": "afdae8bb9bb9331c",
+      "title_norm": "what connor hellebuyck does for devils' run at the stanley cup",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:45:33.357766Z"
+    },
+    {
+      "key": "54ae5a23d4566661c2a79dda",
+      "url": "https://www.dailyfaceoff.com/players/news/dakota-joshua/25020",
+      "fingerprint": "ae51c06caa590e2e",
+      "title_norm": "dakota joshua (tor) — joshua (core) is expected to return vs. vancouver on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T18:45:33.766351Z"
     }
   ],
   "known_sources": [
