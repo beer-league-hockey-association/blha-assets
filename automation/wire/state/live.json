@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T16:30:46.835298Z",
+  "updated_at": "2026-10-30T16:45:35.751576Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19182,6 +19182,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T16:30:46.709102Z"
+    },
+    {
+      "key": "29d942d425ce6c186bfa5480",
+      "url": "https://www.dailyfaceoff.com/players/news/brennan-othmann/30831",
+      "fingerprint": "acaea37890b14080",
+      "title_norm": "brennan othmann (cgy) — othmann (upper-body) is out on friday and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:45:35.457394Z"
+    },
+    {
+      "key": "687ba5a2e7f7e8edb497f106",
+      "url": "https://www.dailyfaceoff.com/players/news/devin-cooley/32944",
+      "fingerprint": "ed287c38751e3e85",
+      "title_norm": "devin cooley (cgy) — cooley (lower-body) has been placed on ir and is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T16:45:35.687213Z"
     }
   ],
   "known_sources": [
