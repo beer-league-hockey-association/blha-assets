@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T16:45:35.751576Z",
+  "updated_at": "2026-10-30T17:15:37.259892Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19202,6 +19202,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T16:45:35.687213Z"
+    },
+    {
+      "key": "bbb23d2839d4065e55ed5b18",
+      "url": "https://theahl.com/news/ahl-hockey-fights-cancer-campaign",
+      "fingerprint": "db8d7ef7c3dfb6aa",
+      "title_norm": "ahl joins nhl, nhlpa in hockey fights cancer campaign",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-30T17:15:37.128346Z"
     }
   ],
   "known_sources": [
