@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T22:30:34.367399Z",
+  "updated_at": "2026-10-30T23:00:41.385620Z",
   "seen": [
     {
       "key": "a7777e1f4e0a4ec95218be03",
@@ -18772,6 +18772,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-30T21:45:39.806340Z"
+    },
+    {
+      "key": "2b24c40158cd548f9b0fd8db",
+      "url": "https://www.sportsnet.ca/nhl/article/sources-nikita-kucherov-tells-lightning-he-wont-re-sign-asks-for-trade",
+      "fingerprint": "15a2ff9e514ea779",
+      "title_norm": "sources: nikita kucherov tells lightning he won't re-sign, asks for trade",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T23:00:41.318103Z"
     }
   ],
   "known_sources": [
