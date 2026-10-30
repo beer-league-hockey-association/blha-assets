@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T04:30:45.912401Z",
+  "updated_at": "2026-10-30T05:00:35.865765Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -18952,6 +18952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T04:30:45.827386Z"
+    },
+    {
+      "key": "24cd8717ccbf9371edfdf514",
+      "url": "https://www.nhl.com/news/vancouver-canucks-san-jose-sharks-game-recap-october-29-2026",
+      "fingerprint": "a07ad8bdd57f7696",
+      "title_norm": "smith scores 2, sharks rally to stun canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-30T05:00:35.426058Z"
+    },
+    {
+      "key": "426fc418c9a26f6d060de7b5",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-surrender-three-third-period-goals-blow-lead-vs-sharks",
+      "fingerprint": "2c6d9ee5029b1295",
+      "title_norm": "canucks surrender three late goals, blow lead vs. sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T05:00:35.821273Z"
     }
   ],
   "known_sources": [
