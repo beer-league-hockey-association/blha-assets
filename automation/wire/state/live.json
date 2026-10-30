@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T09:00:45.117013Z",
+  "updated_at": "2026-10-30T09:30:38.233495Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19032,6 +19032,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-30T09:00:44.980416Z"
+    },
+    {
+      "key": "2d9ac9f8e8f3b5c346cb28a0",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-schaefer-scores-in-ot-to-lift-islanders-past-wild",
+      "fingerprint": "e879c4c6fcaf3032",
+      "title_norm": "nhl roundup: schaefer scores in ot to lift islanders past wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-30T09:30:38.182798Z"
     }
   ],
   "known_sources": [
