@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-30T06:00:38.894746Z",
+  "updated_at": "2026-10-30T06:30:35.682188Z",
   "seen": [
     {
       "key": "771ee594d7ce1ddf2592b005",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-30T06:00:38.820731Z"
+    },
+    {
+      "key": "120c6e43dd3d55cbe0990ff5",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "747b9e9c289b322b",
+      "title_norm": "andre burakovsky (ott) — burakovsky (lower-body) left thursday's game vs. los angeles and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-30T06:30:35.551481Z"
     }
   ],
   "known_sources": [
