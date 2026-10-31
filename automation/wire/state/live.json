@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T03:00:44.368558Z",
+  "updated_at": "2026-10-31T03:15:39.469285Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18832,6 +18832,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-31T03:00:44.240544Z"
+    },
+    {
+      "key": "1bb1a29827627853f8c61c0c",
+      "url": "https://www.nhl.com/news/seattle-kraken-calgary-flames-game-recap-october-30-2026",
+      "fingerprint": "e3c3e8451c959402",
+      "title_norm": "coronato has four points, flames cruise past kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T03:15:39.359384Z"
     }
   ],
   "known_sources": [
