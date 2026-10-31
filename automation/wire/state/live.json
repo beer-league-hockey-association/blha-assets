@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T16:00:39.284618Z",
+  "updated_at": "2026-10-31T16:15:43.292239Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18812,6 +18812,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T16:00:38.757523Z"
+    },
+    {
+      "key": "94d6a7b7c648b47098b0b88a",
+      "url": "https://dobberprospects.com/2026/10/31/october-liiga-report-quarter-mark",
+      "fingerprint": "a7c8b63f8982bfd5",
+      "title_norm": "october liiga report: quarter mark",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-10-31T16:15:43.254005Z"
     }
   ],
   "known_sources": [
