@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T22:30:35.739413Z",
+  "updated_at": "2026-10-31T23:00:40.945165Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18782,6 +18782,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T22:30:35.681614Z"
+    },
+    {
+      "key": "a4f88807c888b00f3bbb7be1",
+      "url": "https://www.nhl.com/news/ottawa-senators-san-jose-sharks-game-recap-october-31-2026",
+      "fingerprint": "090f16e4acbcf45f",
+      "title_norm": "senators score 4 straight, pull away from sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T23:00:39.978934Z"
+    },
+    {
+      "key": "c9e4463de6f48dab22962eaf",
+      "url": "https://www.dailyfaceoff.com/players/news/kirby-dach/29585",
+      "fingerprint": "6f2b666e9581b75f",
+      "title_norm": "kirby dach (mtl) — dach (illness) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T23:00:40.327861Z"
+    },
+    {
+      "key": "fc679ac6df58d6178a4657d3",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/fe85fbb5-ff7c-4011-9a3d-46e215336500",
+      "fingerprint": "717243a0b126926c",
+      "title_norm": "saturday night hockey on sportsnet: maple leafs vs. canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T23:00:40.641200Z"
+    },
+    {
+      "key": "caaf4d34bd6bf027cdc639cc",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/00a5faec-15e8-46f8-9d92-85e718eb8b6c",
+      "fingerprint": "8a40e5221797d0d7",
+      "title_norm": "saturday night hockey on sportsnet: penguins vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T23:00:40.886113Z"
     }
   ],
   "known_sources": [
