@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T21:30:35.956448Z",
+  "updated_at": "2026-10-31T22:30:35.739413Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18772,6 +18772,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T21:30:35.889120Z"
+    },
+    {
+      "key": "290a4dafa2c422b146f17442",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-stifle-islanders-as-jarry-records-second-straight-shutout",
+      "fingerprint": "1c66f75a57c811fd",
+      "title_norm": "oilers stifle islanders as jarry records second straight shutout",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T22:30:35.681614Z"
     }
   ],
   "known_sources": [
