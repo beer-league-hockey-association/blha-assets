@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T20:00:40.336818Z",
+  "updated_at": "2026-10-31T20:15:36.059509Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18992,6 +18992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T20:00:40.222155Z"
+    },
+    {
+      "key": "6150894a72e8e4c9dc37ef6b",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/69b1c59f-0e35-413c-b5ca-5cdcc4a062f8",
+      "fingerprint": "5939c6b4b2c11610",
+      "title_norm": "nhl on sportsnet: sabres vs. kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T20:15:35.986377Z"
     }
   ],
   "known_sources": [
