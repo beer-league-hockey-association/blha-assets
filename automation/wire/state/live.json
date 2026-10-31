@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T19:15:35.593138Z",
+  "updated_at": "2026-10-31T19:30:39.057538Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18962,6 +18962,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T19:15:35.548769Z"
+    },
+    {
+      "key": "cac790c78045d7ff71500036",
+      "url": "https://www.dailyfaceoff.com/players/news/isaac-howard/33270",
+      "fingerprint": "260ccb3636eb5cb0",
+      "title_norm": "isaac howard (edm) — howard (lower body) left saturday's game and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T19:30:38.366206Z"
+    },
+    {
+      "key": "f042c77152720a3f25d5b4c6",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
+      "fingerprint": "8f422e31383dbb90",
+      "title_norm": "victor olofsson (vgk) — olofsson (undisclosed) will travel with vegas on its upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T19:30:38.961421Z"
     }
   ],
   "known_sources": [
