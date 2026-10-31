@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T18:15:36.568023Z",
+  "updated_at": "2026-10-31T18:30:38.031886Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18932,6 +18932,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T18:15:36.500426Z"
+    },
+    {
+      "key": "fef926162b9fcb7f62d88e9c",
+      "url": "https://www.dailyfaceoff.com/players/news/warren-foegele/3911",
+      "fingerprint": "39da0bc860e2c099",
+      "title_norm": "warren foegele (ott) — foegele (knee) will miss 3-4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:30:37.669178Z"
+    },
+    {
+      "key": "0382f77bc3c0e4fe5ce52209",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "2a7d4b0600212229",
+      "title_norm": "andre burakovsky (ott) — burakovsky (lower body) will miss 3-4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:30:37.957163Z"
     }
   ],
   "known_sources": [
