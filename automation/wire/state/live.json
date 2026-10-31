@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T15:30:42.869300Z",
+  "updated_at": "2026-10-31T16:00:39.284618Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18772,6 +18772,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T15:30:42.765256Z"
+    },
+    {
+      "key": "7da311f364b5a83273b44197",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-eriksson-ek/2494",
+      "fingerprint": "5e49c3bcb239b46a",
+      "title_norm": "joel eriksson ek (min) — eriksson ek (undisclosed) will play sunday in washington.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T16:00:38.219291Z"
+    },
+    {
+      "key": "1333ca59c01bb21c979a8819",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-parayko/2531",
+      "fingerprint": "b28477554db0f11c",
+      "title_norm": "colton parayko (stl) — parayko (upper-body) will not play saturday in detroit.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T16:00:38.480895Z"
+    },
+    {
+      "key": "9e8f75bfb13e1820a38b695d",
+      "url": "https://www.dailyfaceoff.com/players/news/brandt-clarke/30833",
+      "fingerprint": "f5bacd2aaa169de4",
+      "title_norm": "brandt clarke (lak) — clarke (upper-body) will play saturday vs. the sabres.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T16:00:38.741793Z"
+    },
+    {
+      "key": "774bb8c79868be0cbbf4e105",
+      "url": "https://www.dailyfaceoff.com/players/news/esa-lindell/2517",
+      "fingerprint": "cfe3a8a01f36dbf7",
+      "title_norm": "esa lindell (dal) — lindell (lower-body) is expected to be back in the stars lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T16:00:38.757523Z"
     }
   ],
   "known_sources": [
