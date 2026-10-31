@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T03:15:39.469285Z",
+  "updated_at": "2026-10-31T03:45:32.600779Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18842,6 +18842,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T03:15:39.359384Z"
+    },
+    {
+      "key": "dd9415dda47a22e2e8dfbb32",
+      "url": "https://www.sportsnet.ca/nhl/video/elliotte-friedman-sheds-light-on-kucherovs-trade-request",
+      "fingerprint": "4aaefe997bdee154",
+      "title_norm": "elliotte friedman sheds light on kucherov's trade request",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T03:45:32.561470Z"
     }
   ],
   "known_sources": [
