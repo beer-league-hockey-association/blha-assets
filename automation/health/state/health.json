@@ -1,3 +1,10 @@
 {
-  "active_issues": {}
+  "active_issues": {
+    "failed:starting-goalies": {
+      "detail": "Open the workflow run and review the failed step/log output.",
+      "summary": "Latest completed live run ended with failure",
+      "url": "https://github.com/beer-league-hockey-association/blha-assets/actions/runs/41215173074",
+      "workflow": "BLHA Starting Goalies"
+    }
+  }
 }
