@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T17:45:32.292069Z",
+  "updated_at": "2026-10-31T18:00:56.862427Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18872,6 +18872,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T17:45:32.210552Z"
+    },
+    {
+      "key": "6ea8f15a4e3aacb0abff201f",
+      "url": "https://www.dailyfaceoff.com/players/news/ian-moore/31897",
+      "fingerprint": "fad6a54d7e64045e",
+      "title_norm": "ian moore (ana) — moore (lower body) was a full participant at practice on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:00:55.441282Z"
+    },
+    {
+      "key": "dc7e10c5e13be54e298b6d73",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "0584d2217bed12d9",
+      "title_norm": "troy terry (ana) — terry (hip) was a full participant at practice on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:00:56.004388Z"
+    },
+    {
+      "key": "d5369847265df1a65367e55c",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-provorov/2478",
+      "fingerprint": "9cc9abd6a189967e",
+      "title_norm": "ivan provorov (cbj) — provorov (lower body) is hopeful to make his season debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:00:56.518768Z"
+    },
+    {
+      "key": "d15bbb75c15736fb0c14ff23",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/683a4499-b2be-436f-95ec-46a0a94907f9",
+      "fingerprint": "aab617dbaed601e7",
+      "title_norm": "oilers on sportsnet: edmonton vs. n.y. islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:00:56.788605Z"
     }
   ],
   "known_sources": [
