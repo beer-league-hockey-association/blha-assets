@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T16:30:37.961214Z",
+  "updated_at": "2026-10-31T17:00:38.109495Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18842,6 +18842,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T16:30:37.886004Z"
+    },
+    {
+      "key": "3e2d6bfd32b5eef92e7a02dd",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/478c8166-67c5-4911-996d-128091d5b588",
+      "fingerprint": "6609f53b3da5820b",
+      "title_norm": "nhl on sportsnet: blackhawks vs. bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T17:00:38.037799Z"
     }
   ],
   "known_sources": [
