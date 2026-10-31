@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T16:15:43.292239Z",
+  "updated_at": "2026-10-31T16:30:37.961214Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18822,6 +18822,26 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-10-31T16:15:43.254005Z"
+    },
+    {
+      "key": "7376028ee48f67c64dd05b2c",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "fdf74a33e25fb6c9",
+      "title_norm": "sean durzi (nyr) — durzi (undisclosed) will be a game-time decision on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T16:30:37.582149Z"
+    },
+    {
+      "key": "792593e2cf7488102270198d",
+      "url": "https://www.dailyfaceoff.com/players/news/braden-schneider/29483",
+      "fingerprint": "784eec371f5d41b7",
+      "title_norm": "braden schneider (nyr) — schneider (undisclosed) will be a game-time decision on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T16:30:37.886004Z"
     }
   ],
   "known_sources": [
