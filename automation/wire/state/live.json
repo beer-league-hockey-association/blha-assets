@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T21:00:37.319903Z",
+  "updated_at": "2026-10-31T21:30:35.956448Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18762,6 +18762,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-10-31T21:00:37.220678Z"
+    },
+    {
+      "key": "9bf4cd416b44870ff0f4f8a4",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-nashville-predators-game-recap-october-31-2026",
+      "fingerprint": "75d099c6379f1448",
+      "title_norm": "lightning fall to predators in shootout after kucherov's trade request",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T21:30:35.889120Z"
     }
   ],
   "known_sources": [
