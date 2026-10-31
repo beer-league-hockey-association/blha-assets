@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T17:15:35.068740Z",
+  "updated_at": "2026-10-31T17:45:32.292069Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18862,6 +18862,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T17:15:34.950259Z"
+    },
+    {
+      "key": "f78981531d97eb506731767a",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-cernak/2749",
+      "fingerprint": "99cbc422f487467e",
+      "title_norm": "erik cernak (tbl) — cernak (undisclosed) will not play on saturday and is day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T17:45:32.210552Z"
     }
   ],
   "known_sources": [
