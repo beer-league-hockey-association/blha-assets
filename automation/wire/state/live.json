@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T07:45:34.207721Z",
+  "updated_at": "2026-10-31T08:00:39.632697Z",
   "seen": [
     {
       "key": "26c810f6fcb605e3a4aa2a91",
@@ -18762,6 +18762,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T06:45:34.662604Z"
+    },
+    {
+      "key": "ea8bc272ba621ed0ed51110e",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-have-no-intention-of-trading-nikita-kucherov",
+      "fingerprint": "27510c474713f10b",
+      "title_norm": "bolts have no intention of trading kucherov, gm says",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T08:00:39.491659Z"
     }
   ],
   "known_sources": [
