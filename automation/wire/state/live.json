@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T01:00:36.112124Z",
+  "updated_at": "2026-10-31T01:15:33.800999Z",
   "seen": [
     {
       "key": "a7777e1f4e0a4ec95218be03",
@@ -18832,6 +18832,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T01:00:36.077206Z"
+    },
+    {
+      "key": "8fbd67b4518769caa0c9aa81",
+      "url": "https://www.nhl.com/news/new-jersey-devils-vegas-golden-knights-game-recap-october-30-2026",
+      "fingerprint": "67febe8a7a819e80",
+      "title_norm": "hellebuyck wins 2nd in row with devils, who defeat golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T01:15:33.675892Z"
     }
   ],
   "known_sources": [
