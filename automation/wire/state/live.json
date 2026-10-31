@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T00:00:44.303767Z",
+  "updated_at": "2026-10-31T00:45:33.952694Z",
   "seen": [
     {
       "key": "a7777e1f4e0a4ec95218be03",
@@ -18812,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T00:00:44.238364Z"
+    },
+    {
+      "key": "e8cb8cb2df6721e1fe5e0a59",
+      "url": "https://www.nhl.com/news/hayden-hodgson-suspended-two-games-for-actions-in-senators-game",
+      "fingerprint": "52bf9ee9e74469c0",
+      "title_norm": "hodgson suspended 2 games for actions in senators game",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T00:45:33.844994Z"
     }
   ],
   "known_sources": [
