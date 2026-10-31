@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T18:00:56.862427Z",
+  "updated_at": "2026-10-31T18:15:36.568023Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18912,6 +18912,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T18:00:56.788605Z"
+    },
+    {
+      "key": "44b235d8a3250df0c023c760",
+      "url": "https://www.dailyfaceoff.com/players/news/adrian-kempe/2747",
+      "fingerprint": "b02efee6df510548",
+      "title_norm": "adrian kempe (lak) — kempe (undisclosed) will not play on saturday and is day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:15:36.226069Z"
+    },
+    {
+      "key": "ec5e11c87f0df135a604862b",
+      "url": "https://www.sportsnet.ca/nhl/article/nothing-has-changed-for-lightning-amid-kucherov-trade-ask-says-cooper",
+      "fingerprint": "ed24a4eea2b4895e",
+      "title_norm": "'nothing has changed' for lightning amid kucherov trade ask, says cooper",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T18:15:36.500426Z"
     }
   ],
   "known_sources": [
