@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T08:00:39.632697Z",
+  "updated_at": "2026-10-31T09:15:38.165436Z",
   "seen": [
     {
       "key": "26c810f6fcb605e3a4aa2a91",
@@ -18772,6 +18772,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T08:00:39.491659Z"
+    },
+    {
+      "key": "9a5bb5322190671490f3af9d",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Week-6-Waiver-Wire-Best-Adds--Streams--Drops-e3rfd6i",
+      "fingerprint": "778199a9de95f82e",
+      "title_norm": "week 6 waiver wire: best adds, streams & drops",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-10-31T09:15:38.113816Z"
     }
   ],
   "known_sources": [
