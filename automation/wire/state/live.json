@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T19:30:39.057538Z",
+  "updated_at": "2026-10-31T20:00:40.336818Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18982,6 +18982,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T19:30:38.961421Z"
+    },
+    {
+      "key": "fe6d67ef6f744aa4f92438d2",
+      "url": "https://www.nhl.com/news/st-louis-blues-detroit-red-wings-game-recap-october-31-2026",
+      "fingerprint": "4fc36749a2428657",
+      "title_norm": "blues get three goals in third period to rally past red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T20:00:40.222155Z"
     }
   ],
   "known_sources": [
