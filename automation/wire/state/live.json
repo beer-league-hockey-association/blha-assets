@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T20:45:36.710151Z",
+  "updated_at": "2026-10-31T21:00:37.319903Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18752,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T20:45:36.641445Z"
+    },
+    {
+      "key": "f1198f71ccdc0e092a0943d6",
+      "url": "https://theahl.com/news/wild-shaking-things-up-as-they-try-to-snap-skid",
+      "fingerprint": "00c112d0194c7942",
+      "title_norm": "wild shaking things up as they try to snap skid",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-31T21:00:37.220678Z"
     }
   ],
   "known_sources": [
