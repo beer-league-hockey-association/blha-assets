@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T03:45:32.600779Z",
+  "updated_at": "2026-10-31T05:15:43.714600Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18852,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T03:45:32.561470Z"
+    },
+    {
+      "key": "9acdf436ef9cae11b4fd6aa0",
+      "url": "https://www.sportsnet.ca/nhl/article/klapkas-heavyweight-fight-sets-tone-in-flames-win-over-kraken",
+      "fingerprint": "4fd6753cbcd3b14e",
+      "title_norm": "klapka's heavyweight fight sets tone in flames' win over kraken",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T05:15:43.657662Z"
     }
   ],
   "known_sources": [
