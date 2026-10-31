@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T23:00:40.945165Z",
+  "updated_at": "2026-10-31T23:15:29.903158Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18822,6 +18822,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T23:00:40.886113Z"
+    },
+    {
+      "key": "4a0d8414d05c31f8794b1dc4",
+      "url": "https://www.nhl.com/news/buffalo-sabres-los-angeles-kings-game-recap-october-31-2026",
+      "fingerprint": "9168625b6c98a8dd",
+      "title_norm": "thompson scores two more, sabres edge kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T23:15:29.581221Z"
+    },
+    {
+      "key": "2217db3de3b0347b620d5f82",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-kirby-dach-out-vs-penguins-due-to-illness",
+      "fingerprint": "89f126fb528e6b3b",
+      "title_norm": "canadiens' kirby dach out vs. penguins due to illness",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T23:15:29.865828Z"
     }
   ],
   "known_sources": [
