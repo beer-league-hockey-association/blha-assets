@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T09:15:38.165436Z",
+  "updated_at": "2026-10-31T13:15:37.693138Z",
   "seen": [
     {
       "key": "26c810f6fcb605e3a4aa2a91",
@@ -18782,6 +18782,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-10-31T09:15:38.113816Z"
+    },
+    {
+      "key": "b68a791089dfd12dbf59f7f8",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-how-nikita-kucherovs-trade-request-helps-lightning",
+      "fingerprint": "8f9ef2f2576288a1",
+      "title_norm": "quick shifts: how nikita kucherov's trade request helps lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T13:15:37.547213Z"
     }
   ],
   "known_sources": [
