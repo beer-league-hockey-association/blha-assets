@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T05:15:43.714600Z",
+  "updated_at": "2026-10-31T06:45:34.716865Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18862,6 +18862,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T05:15:43.657662Z"
+    },
+    {
+      "key": "b955ce4a2429ae87362e4e04",
+      "url": "https://www.nhl.com/news/colorado-avalanche-josh-manson-injury-status-update-october-30-2026",
+      "fingerprint": "d746b78d521bc734",
+      "title_norm": "manson out 8 weeks for avalanche with ankle injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T06:45:34.224472Z"
+    },
+    {
+      "key": "b1ea8770fc933f891a6e76fc",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-hodgson-suspended-two-games-for-boarding-kings-clarke",
+      "fingerprint": "3c4954a96b75ff17",
+      "title_norm": "senators' hodgson suspended two games for boarding kings' clarke",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T06:45:34.662604Z"
     }
   ],
   "known_sources": [
