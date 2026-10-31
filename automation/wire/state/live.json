@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T02:00:37.399131Z",
+  "updated_at": "2026-10-31T02:15:33.671147Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18802,6 +18802,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T02:00:37.323308Z"
+    },
+    {
+      "key": "7aef4ddba87fc911fc10c7a1",
+      "url": "https://www.nhl.com/news/winnipeg-jets-florida-panthers-game-recap-october-30-2026",
+      "fingerprint": "e3ed5b11ae0981a6",
+      "title_norm": "lundell has hat trick, panthers win third straight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T02:15:33.299890Z"
+    },
+    {
+      "key": "49c75b3dfe22f7628c25e351",
+      "url": "https://www.sportsnet.ca/nhl/article/reeling-jets-fall-to-panthers-for-eighth-straight-loss",
+      "fingerprint": "377b5bef952832ed",
+      "title_norm": "reeling jets fall to panthers for eighth straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T02:15:33.602799Z"
     }
   ],
   "known_sources": [
