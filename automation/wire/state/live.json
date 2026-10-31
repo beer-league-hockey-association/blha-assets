@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T20:30:40.053902Z",
+  "updated_at": "2026-10-31T20:45:36.710151Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18732,6 +18732,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T20:30:39.940173Z"
+    },
+    {
+      "key": "aa60f5466eb99c99a723da54",
+      "url": "https://www.nhl.com/news/edmonton-oilers-new-york-islanders-game-recap-october-31-2026",
+      "fingerprint": "86b2c03b4fa10b46",
+      "title_norm": "mcdavid extends season-opening point streak to 14, oilers blank islanders",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-10-31T20:45:36.364497Z"
+    },
+    {
+      "key": "0d729aace9a37f8250e42856",
+      "url": "https://www.sportsnet.ca/nhl/article/lindholms-overtime-goal-lifts-bruins-past-blackhawks-as-pastrnak-moves-past-bergeron",
+      "fingerprint": "ee29b07a82216928",
+      "title_norm": "lindholm's overtime goal lifts bruins past blackhawks as pastrnak moves past bergeron",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T20:45:36.641445Z"
     }
   ],
   "known_sources": [
