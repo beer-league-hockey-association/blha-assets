@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T00:45:33.952694Z",
+  "updated_at": "2026-10-31T01:00:36.112124Z",
   "seen": [
     {
       "key": "a7777e1f4e0a4ec95218be03",
@@ -18822,6 +18822,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T00:45:33.844994Z"
+    },
+    {
+      "key": "d22c2e1b634a73e3381d7eb3",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-helps-devils-over-golden-knights-for-second-straight-win-since-trade",
+      "fingerprint": "bec58942d339b423",
+      "title_norm": "hellebuyck helps devils over golden knights for second straight win since trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T01:00:36.077206Z"
     }
   ],
   "known_sources": [
