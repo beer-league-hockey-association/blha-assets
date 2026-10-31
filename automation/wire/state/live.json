@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T18:30:38.031886Z",
+  "updated_at": "2026-10-31T19:15:35.593138Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18952,6 +18952,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-10-31T18:30:37.957163Z"
+    },
+    {
+      "key": "b4b950faa6fc7e051bae589c",
+      "url": "https://www.sportsnet.ca/nhl/article/matt-pavelich-first-linesman-in-hockey-hall-of-fame-dead-at-92",
+      "fingerprint": "f8c351da54ff4d4d",
+      "title_norm": "matt pavelich, first linesman in hockey hall of fame, dead at 92",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T19:15:35.548769Z"
     }
   ],
   "known_sources": [
