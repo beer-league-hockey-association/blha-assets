@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T01:30:35.590598Z",
+  "updated_at": "2026-10-31T01:45:38.619366Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18782,6 +18782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-10-31T01:15:33.675892Z"
+    },
+    {
+      "key": "8d111642ed32e79980f486dc",
+      "url": "https://www.sportsnet.ca/nhl/article/lightning-have-no-intention-of-trading-nikita-kucherov",
+      "fingerprint": "b71a7aa50876957e",
+      "title_norm": "lightning 'have no intention' of trading nikita kucherov",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T01:45:38.457160Z"
     }
   ],
   "known_sources": [
