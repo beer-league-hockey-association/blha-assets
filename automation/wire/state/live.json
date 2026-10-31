@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T23:15:29.903158Z",
+  "updated_at": "2026-10-31T23:30:35.585160Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18842,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T23:15:29.865828Z"
+    },
+    {
+      "key": "2a2ded636262bba37a772e84",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-beat-sharks-to-tie-franchise-record-for-most-october-wins",
+      "fingerprint": "8c242223d81a6faf",
+      "title_norm": "senators beat sharks to tie franchise record for most october wins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-10-31T23:30:35.519899Z"
     }
   ],
   "known_sources": [
