@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T15:00:38.520673Z",
+  "updated_at": "2026-10-31T15:30:42.869300Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18742,6 +18742,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T13:15:37.547213Z"
+    },
+    {
+      "key": "db4ef3c2048919c7405c015e",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-suzuki/2789",
+      "fingerprint": "897b6b76b66e755f",
+      "title_norm": "nick suzuki (mtl) — suzuki (upper-body) participated in saturday's morning skate but will not play vs. the penguins.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T15:30:42.201692Z"
+    },
+    {
+      "key": "e5ad844fc2b7509afcc723bc",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
+      "fingerprint": "a806f7db04c53b0c",
+      "title_norm": "mike matheson (mtl) — matheson will miss two weeks with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T15:30:42.427059Z"
+    },
+    {
+      "key": "bc434d4a9988c292ce29c0b1",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "c2d5121ea4e451c4",
+      "title_norm": "chris tanev (tor) — tanev (upper-body) has been activated from ir and is expected to play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T15:30:42.765256Z"
     }
   ],
   "known_sources": [
