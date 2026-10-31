@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T02:15:33.671147Z",
+  "updated_at": "2026-10-31T03:00:44.368558Z",
   "seen": [
     {
       "key": "58a12ab891b7ecda0d4da55f",
@@ -18822,6 +18822,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T02:15:33.602799Z"
+    },
+    {
+      "key": "285d82daaaac1a9f24776aca",
+      "url": "https://theahl.com/news/tynan-reaches-700-ahl-points",
+      "fingerprint": "99720cb9707a8450",
+      "title_norm": "tynan reaches 700 ahl points",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-10-31T03:00:44.240544Z"
     }
   ],
   "known_sources": [
