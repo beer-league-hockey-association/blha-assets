@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T17:00:38.109495Z",
+  "updated_at": "2026-10-31T17:15:35.068740Z",
   "seen": [
     {
       "key": "bb5470fec6a71aa1c667a800",
@@ -18852,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T17:00:38.037799Z"
+    },
+    {
+      "key": "1dcbb3190def2837b5e492b0",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "22b2ceb4d9b3d998",
+      "title_norm": "ryan pulock (nyi) — pulock (upper body) will not play on saturday and is being reevaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-10-31T17:15:34.950259Z"
     }
   ],
   "known_sources": [
