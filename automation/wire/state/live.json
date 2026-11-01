@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T20:30:32.524991Z",
+  "updated_at": "2026-11-01T20:42:44.449758Z",
   "seen": [
     {
       "key": "219b35385396e6f267d06cf9",
@@ -18692,6 +18692,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T20:00:41.948451Z"
+    },
+    {
+      "key": "544f0c525943a050b1e80f0a",
+      "url": "https://www.dailyfaceoff.com/players/news/john-marino/25570",
+      "fingerprint": "73993fdb67a3f059",
+      "title_norm": "john marino (uta) — marino (upper-body) has been placed on ir retroactive to october 17th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T20:42:43.711734Z"
+    },
+    {
+      "key": "a62fdcb95d7d35bdd17b5afa",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
+      "fingerprint": "16416d637950ba90",
+      "title_norm": "michael carcone (uta) — carcone (upper-body) has been activated from ir and will play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T20:42:44.124940Z"
+    },
+    {
+      "key": "3b8acf9dd1529333dec7f6eb",
+      "url": "https://www.dailyfaceoff.com/players/news/kailer-yamamoto/2796",
+      "fingerprint": "22a8a608a5477dc5",
+      "title_norm": "kailer yamamoto (uta) — yamamoto (upper-body) is day-to-day and will not play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T20:42:44.369926Z"
     }
   ],
   "known_sources": [
