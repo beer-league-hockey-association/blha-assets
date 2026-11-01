@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T23:00:40.117791Z",
+  "updated_at": "2026-11-01T23:15:30.944585Z",
   "seen": [
-    {
-      "key": "57b4907133e02c543d48261e",
-      "url": "https://www.sportsnet.ca/nhl/article/red-wings-fans-loudly-boo-dylan-larkin-before-home-opener",
-      "fingerprint": "464d2024d8e577e5",
-      "title_norm": "red wings fans loudly boo dylan larkin before home opener",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T23:15:30.378218Z"
-    },
     {
       "key": "40ed329a3e59b17d050f2fb4",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/5249386a-8fa7-4f52-a591-cd422a88b7b3",
@@ -18732,6 +18722,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T23:00:40.045414Z"
+    },
+    {
+      "key": "9ebd24f97c2f781cdb0b788d",
+      "url": "https://www.nhl.com/news/scott-arniel-not-concerned-about-his-job-status-as-winnipeg-jets-struggle",
+      "fingerprint": "5ae39f57de01f4ec",
+      "title_norm": "arniel not concerned about job security as jets coach",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T23:15:30.879182Z"
+    },
+    {
+      "key": "45ebe6499d4f1168a8dfda5a",
+      "url": "https://www.nhl.com/news/topic/trade-coverage/shane-wright-traded-to-nashville-predators-by-seattle-kraken-for-matthew-wood",
+      "fingerprint": "8e3117208d6a0447",
+      "title_norm": "wright traded to predators by kraken for wood",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T23:15:30.881192Z"
     }
   ],
   "known_sources": [
