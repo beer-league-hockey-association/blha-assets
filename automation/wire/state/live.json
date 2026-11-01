@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T23:30:41.580582Z",
+  "updated_at": "2026-11-01T23:45:37.506337Z",
   "seen": [
     {
       "key": "40ed329a3e59b17d050f2fb4",
@@ -18752,6 +18752,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T23:30:41.531866Z"
+    },
+    {
+      "key": "0bf92e2ba34d8a2a41dd87fa",
+      "url": "https://www.nhl.com/news/minnesota-wild-washington-capitals-game-recap-november-1-2026",
+      "fingerprint": "6f0e6bd7852ff3cb",
+      "title_norm": "wallstedt makes 26 saves, wild pull away from capitals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T23:45:37.201232Z"
+    },
+    {
+      "key": "787ee40c8e4206308e86070a",
+      "url": "https://www.sportsnet.ca/nhl/video/oilers-mcdavid-flies-by-rangers-defence-to-score-in-opening-minute",
+      "fingerprint": "5d7de39b2bb6f66e",
+      "title_norm": "oilers' mcdavid flies by rangers defence to score in opening minute",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T23:45:37.430331Z"
     }
   ],
   "known_sources": [
