@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T12:30:30.752086Z",
+  "updated_at": "2026-11-01T13:45:31.880193Z",
   "seen": [
     {
       "key": "d096f34b71a335ac6d7f02d9",
@@ -18742,6 +18742,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-01T09:15:33.511304Z"
+    },
+    {
+      "key": "bdeec976a04c8f08294899b3",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-lightning-wild-cant-risk-losing-stars-for-nothing",
+      "fingerprint": "ffe70e04974ea308",
+      "title_norm": "sunday overreactions: lightning, wild can't risk losing stars for nothing",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T13:45:31.837606Z"
     }
   ],
   "known_sources": [
