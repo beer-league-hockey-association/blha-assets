@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T16:15:32.231122Z",
+  "updated_at": "2026-11-01T16:26:50.880559Z",
   "seen": [
-    {
-      "key": "fa7707eeeaf44511918990b7",
-      "url": "https://www.nhl.com/news/nhl-emergency-backup-goalies-list",
-      "fingerprint": "1924843ac8c06560",
-      "title_norm": "list of nhl ebugs for 2026-27 season",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T16:15:33.377027Z"
-    },
-    {
-      "key": "4397fb53fa4f2a1457936a62",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "c366bf0a7cc306ae",
-      "title_norm": "jake sanderson (ott) — sanderson (undisclosed) practiced on friday but remains questionable to play saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-02T16:15:33.627783Z"
-    },
-    {
-      "key": "e8f8e697efe90eb83ff6a0b1",
-      "url": "https://www.dailyfaceoff.com/players/news/warren-foegele/3911",
-      "fingerprint": "37a40e77fe4b7fb5",
-      "title_norm": "warren foegele (ott) — foegele (undisclosed) will play in the senators season opener on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-02T16:15:33.981220Z"
-    },
     {
       "key": "29d0051870f87c8a0990b04a",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-2-2026",
@@ -18702,6 +18672,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T13:45:31.837606Z"
+    },
+    {
+      "key": "da28021ae79e8d7a87af4406",
+      "url": "https://www.sportsnet.ca/nhl/article/bruins-nikita-zadorov-fined-5000-for-roughing-blackhawks-alex-vlasic",
+      "fingerprint": "50254285b4b7b142",
+      "title_norm": "bruins' nikita zadorov fined $5,000 for roughing blackhawks' alex vlasic",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T16:26:50.748213Z"
     }
   ],
   "known_sources": [
