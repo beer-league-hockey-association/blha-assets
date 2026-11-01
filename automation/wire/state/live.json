@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T22:00:49.992442Z",
+  "updated_at": "2026-11-01T22:30:38.252528Z",
   "seen": [
-    {
-      "key": "fbd483182a1f3586706f54ec",
-      "url": "https://www.flohockey.tv/articles/16220898-why-the-ahl-is-must-watch-hockey-this-season",
-      "fingerprint": "c47e74ec7f076e55",
-      "title_norm": "why the ahl is must-watch hockey this season",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-02T22:15:34.113310Z"
-    },
-    {
-      "key": "0191dbfe6a8e3945dad370ae",
-      "url": "https://www.dailyfaceoff.com/players/news/andreas-englund/2716",
-      "fingerprint": "3663311237919de2",
-      "title_norm": "andreas englund (det) — the red wings have activated andreas englund from the immigration non-roster list.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-02T22:15:34.433648Z"
-    },
-    {
-      "key": "37966100ee545a45dcf24109",
-      "url": "https://www.dailyfaceoff.com/players/news/dylan-larkin/2522",
-      "fingerprint": "6652c333c0679236",
-      "title_norm": "dylan larkin (det) — the red wings have placed dylan larkin (upper-body) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-02T22:15:34.649745Z"
-    },
-    {
-      "key": "4f940e8afbde9744a647d28a",
-      "url": "https://www.sportsnet.ca/nhl/article/penguins-andrei-kuzmenko-discusses-tragic-death-of-father",
-      "fingerprint": "baf4ae7c9f7750f4",
-      "title_norm": "penguins' andrei kuzmenko discusses tragic death of father",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T22:30:34.656897Z"
-    },
     {
       "key": "57b4907133e02c543d48261e",
       "url": "https://www.sportsnet.ca/nhl/article/red-wings-fans-loudly-boo-dylan-larkin-before-home-opener",
