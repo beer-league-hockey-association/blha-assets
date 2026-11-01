@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T05:15:34.686799Z",
+  "updated_at": "2026-11-01T05:30:36.809547Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18952,6 +18952,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-01T05:15:34.555162Z"
+    },
+    {
+      "key": "24080d7f80a4646aba9660f2",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-fall-to-avalanche-after-makars-four-assist-night",
+      "fingerprint": "07f4e35154835a51",
+      "title_norm": "flames fall to avalanche after makar's four-assist night",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T05:30:36.740806Z"
     }
   ],
   "known_sources": [
