@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T22:30:38.252528Z",
+  "updated_at": "2026-11-01T22:45:39.564772Z",
   "seen": [
     {
       "key": "57b4907133e02c543d48261e",
@@ -18682,6 +18682,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T21:15:38.043822Z"
+    },
+    {
+      "key": "901b7f4ddb125de0c8d20b5d",
+      "url": "https://www.dailyfaceoff.com/players/news/isaiah-george/33251",
+      "fingerprint": "b1d0c3457bc7cd96",
+      "title_norm": "isaiah george (nyi) — the islanders assigned isaiah george to hamilton (ahl).",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T22:45:38.894659Z"
+    },
+    {
+      "key": "2a9a4550f2dc84ec27744d24",
+      "url": "https://www.sportsnet.ca/nhl/article/kraken-trading-shane-wright-to-predators-for-matthew-wood",
+      "fingerprint": "30540b7ccdbb40da",
+      "title_norm": "kraken trading shane wright to predators for matthew wood",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T22:45:39.132739Z"
+    },
+    {
+      "key": "9c3c89edf0404e230ee93a36",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "3954e0967e21f1dc",
+      "title_norm": "sean durzi (nyr) — durzi (undisclosed) will not play sunday vs. the oilers.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T22:45:39.509762Z"
     }
   ],
   "known_sources": [
