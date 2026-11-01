@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T20:42:44.449758Z",
+  "updated_at": "2026-11-01T21:00:37.466199Z",
   "seen": [
     {
       "key": "219b35385396e6f267d06cf9",
@@ -18722,6 +18722,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-01T20:42:44.369926Z"
+    },
+    {
+      "key": "978dfa1e07911880c55a146d",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/78e07a3d-caea-4ed5-b181-50f038aa7da6",
+      "fingerprint": "b42b568982176f4e",
+      "title_norm": "nhl on sportsnet: mammoth vs. flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T21:00:37.426925Z"
     }
   ],
   "known_sources": [
