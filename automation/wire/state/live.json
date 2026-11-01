@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T02:45:32.166072Z",
+  "updated_at": "2026-11-01T03:15:38.447818Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18902,6 +18902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T02:45:32.069649Z"
+    },
+    {
+      "key": "c455bd83f9c94def87c38c12",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-dallas-stars-game-recap-october-31-2026",
+      "fingerprint": "1fab02159cd4713d",
+      "title_norm": "rantanen stays hot, stars defeat blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T03:15:38.346480Z"
     }
   ],
   "known_sources": [
