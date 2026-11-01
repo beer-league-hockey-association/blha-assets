@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T20:00:42.010683Z",
+  "updated_at": "2026-11-01T20:15:34.324391Z",
   "seen": [
-    {
-      "key": "2f45a981599a9eb9513a0e2c",
-      "url": "https://www.nhl.com/news/utah-mammoth-show-they-are-ready-for-high-expectations",
-      "fingerprint": "1ec2a388abf3e1b6",
-      "title_norm": "mammoth show they're ready for high expectations",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T20:15:30.508149Z"
-    },
-    {
-      "key": "a153795353579f844b14a4ff",
-      "url": "https://www.nhl.com/news/igor-shesterkin-celebrates-first-goalie-goal-in-new-york-rangers-history",
-      "fingerprint": "3953e3aeaef69a06",
-      "title_norm": "'unbelievable feelings' for shesterkin's goalie goal",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T20:15:30.728927Z"
-    },
     {
       "key": "3954c359de4c3a6b26d81d88",
       "url": "https://www.sportsnet.ca/nhl/article/why-left-wing-assignment-is-welcome-return-for-maple-leafs-marchenko",
