@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T21:15:38.119761Z",
+  "updated_at": "2026-11-01T21:30:38.865854Z",
   "seen": [
-    {
-      "key": "219b35385396e6f267d06cf9",
-      "url": "https://www.sportsnet.ca/nhl/video/maple-leafs-gm-chayka-talks-analytics-trade-possibilities-state-of-roster",
-      "fingerprint": "895ca13f8e1766da",
-      "title_norm": "maple leafs gm chayka talks analytics, trade possibilities, state of roster",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T21:30:34.265297Z"
-    },
     {
       "key": "5b3f045bc37c70f5e45c1bdf",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gm-john-chayka-talks-data-goaltending-mckenna",
