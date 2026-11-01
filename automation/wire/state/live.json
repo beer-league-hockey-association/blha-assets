@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-10-31T23:30:35.585160Z",
+  "updated_at": "2026-11-01T00:00:41.241089Z",
   "seen": [
     {
       "key": "330390da5277b6ddf2210a8e",
@@ -18852,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-10-31T23:30:35.519899Z"
+    },
+    {
+      "key": "3b418daa1d250e1ff1ae6ae2",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-sidney-crosby-sets-nhl-record-for-assists-with-single-franchise",
+      "fingerprint": "5df9b745179754df",
+      "title_norm": "penguins' sidney crosby sets nhl record for assists with single franchise",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T00:00:41.110563Z"
     }
   ],
   "known_sources": [
