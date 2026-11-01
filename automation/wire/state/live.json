@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T16:45:34.461329Z",
+  "updated_at": "2026-11-01T17:15:37.128057Z",
   "seen": [
-    {
-      "key": "29d0051870f87c8a0990b04a",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-2-2026",
-      "fingerprint": "aeb32e0e82c4cb90",
-      "title_norm": "status report: kuzmenko back at practice for penguins",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T17:15:32.938464Z"
-    },
-    {
-      "key": "b868e2b683502b1a0d1d4e9f",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-2-2026",
-      "fingerprint": "461b83278230e4ec",
-      "title_norm": "on tap: robertson out to help stars sparkle in opener",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T17:15:33.531774Z"
-    },
-    {
-      "key": "5e621df8201f8d8ca20f9027",
-      "url": "https://www.nhl.com/news/topic/short-shifts/jack-hughes-stick-new-jersey-devils-fan",
-      "fingerprint": "e61c2a41c9654d8f",
-      "title_norm": "lucky fan catches hughes' stick after ot goal",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T17:15:33.882047Z"
-    },
-    {
-      "key": "2e3664b527f746da85f7b67d",
-      "url": "https://www.sportsnet.ca/nhl/article/sandersons-return-to-practice-bodes-well-for-senators-season-opener",
-      "fingerprint": "a78a8154ade50051",
-      "title_norm": "sanderson's return to practice bodes well for senators' season opener",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T17:15:34.279259Z"
-    },
-    {
-      "key": "0c0e36c131db88b6df111ae1",
-      "url": "https://www.sportsnet.ca/nhl/article/two-horses-named-after-johnny-gaudreau-running-in-same-race",
-      "fingerprint": "c2cffb7f5d73a723",
-      "title_norm": "two horses named after johnny gaudreau running in same race",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T17:15:34.299180Z"
-    },
     {
       "key": "4c6566c96d0acf1b0e26582a",
       "url": "https://www.dailyfaceoff.com/players/news/olen-zellweger/34623",
@@ -18692,6 +18642,66 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-01T16:45:34.351909Z"
+    },
+    {
+      "key": "a0a8a6cfad3365c7b1a31ca8",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-1-2026",
+      "fingerprint": "285e0978343170a4",
+      "title_norm": "status report: konecny, tippett may return for flyers",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T17:15:35.868101Z"
+    },
+    {
+      "key": "585131aab8801344a7947fb7",
+      "url": "https://www.nhl.com/news/gavin-mckenna-gets-closest-he-will-find-to-rookie-year-homecoming-with-toronto-maple-leafs",
+      "fingerprint": "6c938a9c8f16edf7",
+      "title_norm": "mckenna gets closest he'll find to rookie homecoming",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T17:15:36.095730Z"
+    },
+    {
+      "key": "ec0e33bae52c696d2c636e58",
+      "url": "https://www.nhl.com/news/keith-tkachuk-leadership-made-him-fit-for-hall-of-fame-says-jeremy-roenick",
+      "fingerprint": "e3f5bb2d28ec8598",
+      "title_norm": "leadership, compete made k. tkachuk worthy of hall",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T17:15:36.440843Z"
+    },
+    {
+      "key": "cc7fd8ed57257ed8173bff94",
+      "url": "https://www.nhl.com/news/david-pastrnak-praised-for-passing-bergeron-on-bruins-all-time-goals-list",
+      "fingerprint": "e701fe0f33915935",
+      "title_norm": "bucyk says pastrnak will pass him on bruins goal list",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T17:15:36.808692Z"
+    },
+    {
+      "key": "6913e3729237f11eab193e31",
+      "url": "https://www.nhl.com/news/san-jose-sharks-welcome-cancer-survivor-to-meet-michael-misa",
+      "fingerprint": "226994846e220cd8",
+      "title_norm": "sharks welcome cancer survivor to meet misa",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T17:15:37.034709Z"
+    },
+    {
+      "key": "967c92c383b74b9616b2a303",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-acquire-goalie-remi-poirier-from-devils-for-pick",
+      "fingerprint": "af2818a3147f39bf",
+      "title_norm": "capitals acquire goalie remi poirier from devils for pick",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T17:15:37.075777Z"
     }
   ],
   "known_sources": [
