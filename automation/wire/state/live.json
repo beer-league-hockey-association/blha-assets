@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T03:15:38.447818Z",
+  "updated_at": "2026-11-01T04:00:46.408982Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18912,6 +18912,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-01T03:15:38.346480Z"
+    },
+    {
+      "key": "e4bdfee78bdbe70ca4db940f",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-talk-kucherov-trade-possibility-after-win-over-canucks",
+      "fingerprint": "a321e9088051e064",
+      "title_norm": "maple leafs talk kucherov trade possibility after win over canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T04:00:46.335019Z"
     }
   ],
   "known_sources": [
