@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T02:15:36.219964Z",
+  "updated_at": "2026-11-01T02:45:32.166072Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18892,6 +18892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T02:15:36.150910Z"
+    },
+    {
+      "key": "4b3faee09c7c2402d85377d7",
+      "url": "https://www.sportsnet.ca/nhl/article/tage-thompson-scores-twice-in-sabres-win-over-kings",
+      "fingerprint": "711326ff1045f682",
+      "title_norm": "nhl roundup: tage thompson scores twice in sabres' win over kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T02:45:32.069649Z"
     }
   ],
   "known_sources": [
