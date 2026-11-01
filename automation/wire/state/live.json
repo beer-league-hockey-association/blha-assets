@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T00:15:37.766617Z",
+  "updated_at": "2026-11-01T01:30:35.604513Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18832,6 +18832,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T00:15:37.739302Z"
+    },
+    {
+      "key": "779a8fc40de3a101dc9f00e6",
+      "url": "https://www.sportsnet.ca/nhl/article/kucherov-would-consider-trade-to-maple-leafs-or-canadiens",
+      "fingerprint": "8d411611aaf5bbfe",
+      "title_norm": "kucherov would consider trade to maple leafs or canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T01:30:34.604397Z"
+    },
+    {
+      "key": "2984eadec53fc3cc2310f919",
+      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-could-kucherov-change-his-mind",
+      "fingerprint": "66035b49385cd1b6",
+      "title_norm": "saturday headlines: could kucherov change his mind?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T01:30:34.947418Z"
+    },
+    {
+      "key": "284c30a557584354026c6672",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-dylan-larkin-may-alter-trade-list",
+      "fingerprint": "359244555028687e",
+      "title_norm": "red wings' dylan larkin may alter trade list",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T01:30:35.538049Z"
     }
   ],
   "known_sources": [
