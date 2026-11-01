@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T17:15:37.128057Z",
+  "updated_at": "2026-11-01T17:30:39.012104Z",
   "seen": [
     {
       "key": "4c6566c96d0acf1b0e26582a",
@@ -18702,6 +18702,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T17:15:37.075777Z"
+    },
+    {
+      "key": "aa8ec6efc1fad90fde1184c5",
+      "url": "https://www.dailyfaceoff.com/players/news/isaac-howard/33270",
+      "fingerprint": "ff18c72bf0e11971",
+      "title_norm": "isaac howard (edm) — howard (lower-body) will not play on sunday and will be re-evaluted; but it's believed that he avoided serious injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T17:30:38.880154Z"
     }
   ],
   "known_sources": [
