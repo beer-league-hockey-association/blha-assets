@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T00:00:41.241089Z",
+  "updated_at": "2026-11-01T00:15:37.766617Z",
   "seen": [
-    {
-      "key": "330390da5277b6ddf2210a8e",
-      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-first-overall-draft-picks-of-all-time",
-      "fingerprint": "9f70a53bb91523a4",
-      "title_norm": "national hockey list: top no. 1 picks of all-time",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T00:07:01.696336Z"
-    },
-    {
-      "key": "60dd181cd2f7a18ad4e412f6",
-      "url": "https://www.nhl.com/news/new-york-islanders-toronto-maple-leafs-game-recap-september-30-2026",
-      "fingerprint": "ad2b9869a8772bc5",
-      "title_norm": "maple leafs edge islanders to give hiller 1st win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T00:07:02.057024Z"
-    },
-    {
-      "key": "13634308da741683cb92dfc8",
-      "url": "https://theahl.com/news/kraken-flyers-announce-trade",
-      "fingerprint": "7f62119b6bbe95cf",
-      "title_norm": "kraken, flyers trade ahl forwards",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-02T00:07:02.485402Z"
-    },
-    {
-      "key": "fa40bcee197342b28208307b",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-devon-levi-ready-to-seize-opportunity-in-net-more-in-the-toolbox",
-      "fingerprint": "e835dd4d16a5dcd9",
-      "title_norm": "oilers' devon levi ready to seize opportunity in net: 'more in the toolbox'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T00:07:02.705458Z"
-    },
-    {
-      "key": "22447997b0958d3a7ab6b933",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-head-coach-scott-arniel-its-not-comfortable-to-be-in-contract-year",
-      "fingerprint": "1be348e0bab66fdf",
-      "title_norm": "jets' head coach scott arniel: 'it's not comfortable' to be in contract year",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T00:07:02.720378Z"
-    },
     {
       "key": "d431c125913158de58c3f9b0",
       "url": "https://www.nhl.com/news/aleksander-barkov-leaves-in-second-period-for-florida-panthers-following-fall",
@@ -18862,6 +18812,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T00:00:41.110563Z"
+    },
+    {
+      "key": "d765fc0c806cd3fe09e51b48",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-nikita-kucherov-contract-his-business-say-teammates",
+      "fingerprint": "2497e9f26ee021af",
+      "title_norm": "kucherov's contract 'his business' say teammates",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T00:15:37.546175Z"
+    },
+    {
+      "key": "934ad13c5a0ea3cff7ca5620",
+      "url": "https://www.sportsnet.ca/nhl/video/canadiens-kapanen-anderson-stun-penguins-with-two-goals-in-24-seconds",
+      "fingerprint": "e0585301c2669f6f",
+      "title_norm": "canadiens' kapanen, anderson stun penguins with two goals in 24 seconds",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T00:15:37.739302Z"
     }
   ],
   "known_sources": [
