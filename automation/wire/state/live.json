@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T18:15:38.981370Z",
+  "updated_at": "2026-11-01T18:45:37.785986Z",
   "seen": [
     {
       "key": "2f45a981599a9eb9513a0e2c",
@@ -18662,6 +18662,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-01T18:15:38.864200Z"
+    },
+    {
+      "key": "06474549079702f5985ba22b",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "5465dc25081d04bf",
+      "title_norm": "owen tippett (phi) — tippett (upper-body) has been activated from ir and is expected to play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T18:45:37.099528Z"
+    },
+    {
+      "key": "fa043e73d73dcb288cb055a7",
+      "url": "https://www.dailyfaceoff.com/players/news/travis-konecny/2498",
+      "fingerprint": "72311c24c0bb0239",
+      "title_norm": "travis konecny (phi) — konecny (lower-body) has been activated from ir and is expected to play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T18:45:37.381877Z"
+    },
+    {
+      "key": "7fdd7095bf51dc4bfd3a198e",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "71865aaa9a0bbf52",
+      "title_norm": "andre burakovsky (ott) — the senators have placed andre burakovsky (lower-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T18:45:37.673026Z"
     }
   ],
   "known_sources": [
