@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T22:45:39.564772Z",
+  "updated_at": "2026-11-01T23:00:40.117791Z",
   "seen": [
     {
       "key": "57b4907133e02c543d48261e",
@@ -18712,6 +18712,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-01T22:45:39.509762Z"
+    },
+    {
+      "key": "986567eca4154c2d86777520",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-beniers/30804",
+      "fingerprint": "bd001e83b1439dae",
+      "title_norm": "matty beniers (sea) — beniers (undisclosed) missed sunday's practice but is expected to rejoin practice on tuesday/",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-01T23:00:39.701363Z"
+    },
+    {
+      "key": "9b45bd75f5987c8638d92ea4",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/30a80e8c-96db-4cc0-ad2e-7888fc1f1259",
+      "fingerprint": "6883e6f9f3b36f72",
+      "title_norm": "oilers on sportsnet: edmonton vs. new york rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T23:00:40.045414Z"
     }
   ],
   "known_sources": [
