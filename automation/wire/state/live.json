@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T16:26:50.880559Z",
+  "updated_at": "2026-11-01T16:45:34.461329Z",
   "seen": [
     {
       "key": "29d0051870f87c8a0990b04a",
@@ -18682,6 +18682,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T16:26:50.748213Z"
+    },
+    {
+      "key": "c18746da6fadcb84a73f82e8",
+      "url": "https://www.nhl.com/news/boston-bruins-goalie-michael-dipietro-went-through-hell-on-road-to-nhl",
+      "fingerprint": "83603981df9914f6",
+      "title_norm": "dipietro's hard road to nhl inspired by late mom",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-01T16:45:34.351909Z"
     }
   ],
   "known_sources": [
