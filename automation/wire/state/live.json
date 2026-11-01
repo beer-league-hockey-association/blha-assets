@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T04:00:46.408982Z",
+  "updated_at": "2026-11-01T04:15:32.056160Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18922,6 +18922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T04:00:46.335019Z"
+    },
+    {
+      "key": "605193e3e9160af74b7feaf4",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-evans-among-veterans-stepping-up-in-suzukis-absence",
+      "fingerprint": "9d1fc80323448cfe",
+      "title_norm": "canadiens' evans among veterans stepping up in suzuki's absence",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T04:15:31.787371Z"
+    },
+    {
+      "key": "386169ee89cda8eeb965acac",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-starting-to-deliver-on-effort-competitiveness-despite-loss",
+      "fingerprint": "140e39db6b7c303e",
+      "title_norm": "canucks starting to deliver on effort, competitiveness despite loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T04:15:32.004690Z"
     }
   ],
   "known_sources": [
