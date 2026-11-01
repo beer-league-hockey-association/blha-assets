@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T23:15:30.944585Z",
+  "updated_at": "2026-11-01T23:30:41.580582Z",
   "seen": [
     {
       "key": "40ed329a3e59b17d050f2fb4",
@@ -18742,6 +18742,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-01T23:15:30.881192Z"
+    },
+    {
+      "key": "e9b367cfe8bde4717db0724d",
+      "url": "https://www.sportsnet.ca/nhl/article/two-early-goals-lift-wild-to-win-over-capitals",
+      "fingerprint": "9cdd60552c292f4b",
+      "title_norm": "two early goals lift wild to win over capitals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T23:30:41.531866Z"
     }
   ],
   "known_sources": [
