@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T20:15:34.324391Z",
+  "updated_at": "2026-11-01T20:30:32.524991Z",
   "seen": [
-    {
-      "key": "3954c359de4c3a6b26d81d88",
-      "url": "https://www.sportsnet.ca/nhl/article/why-left-wing-assignment-is-welcome-return-for-maple-leafs-marchenko",
-      "fingerprint": "2c9cc3df9750e9c8",
-      "title_norm": "why left-wing assignment is welcome return for maple leafs' marchenko",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T20:25:51.246941Z"
-    },
     {
       "key": "219b35385396e6f267d06cf9",
       "url": "https://www.sportsnet.ca/nhl/video/maple-leafs-gm-chayka-talks-analytics-trade-possibilities-state-of-roster",
