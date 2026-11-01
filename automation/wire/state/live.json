@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T19:15:33.833662Z",
+  "updated_at": "2026-11-01T19:30:38.148597Z",
   "seen": [
     {
       "key": "2f45a981599a9eb9513a0e2c",
@@ -18702,6 +18702,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-01T19:15:33.757351Z"
+    },
+    {
+      "key": "0dd9530c7c2a2a84b00e3d2d",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-defenceman-nick-jensen-clears-waivers",
+      "fingerprint": "59c5b477ad1733ea",
+      "title_norm": "ducks defenceman nick jensen clears waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T19:30:38.096366Z"
     }
   ],
   "known_sources": [
