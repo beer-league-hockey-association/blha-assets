@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T01:30:35.604513Z",
+  "updated_at": "2026-11-01T02:15:36.219964Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18862,6 +18862,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T01:30:35.538049Z"
+    },
+    {
+      "key": "d9b803e38d24d172b52557f6",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-vancouver-canucks-game-recap-october-31-2026",
+      "fingerprint": "19622574b2a84e5b",
+      "title_norm": "nylander, matthews help maple leafs hold off canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T02:15:35.475835Z"
+    },
+    {
+      "key": "a3ce6bdb03b6594517f2203d",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/fc826801-f980-403d-84b6-99d8f273bce0",
+      "fingerprint": "e0ad7fc225476b71",
+      "title_norm": "saturday night hockey on sportsnet: flames vs. avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T02:15:35.887201Z"
+    },
+    {
+      "key": "bf61f6baab8da95b7509fe10",
+      "url": "https://www.sportsnet.ca/nhl/article/anderson-scores-twice-canadiens-down-penguins-for-fifth-straight-win",
+      "fingerprint": "5bd978b867e84feb",
+      "title_norm": "anderson scores twice, canadiens down penguins for fifth straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-01T02:15:36.150910Z"
     }
   ],
   "known_sources": [
