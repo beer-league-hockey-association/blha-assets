@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T17:30:39.012104Z",
+  "updated_at": "2026-11-01T18:00:39.174397Z",
   "seen": [
-    {
-      "key": "4c6566c96d0acf1b0e26582a",
-      "url": "https://www.dailyfaceoff.com/players/news/olen-zellweger/34623",
-      "fingerprint": "ffd74d10115ecb81",
-      "title_norm": "olen zellweger (buf) — zellweger (concussion) has been cleared to make his sabres debut on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-02T17:45:29.271020Z"
-    },
-    {
-      "key": "0d254480b9ef4ee3f8481112",
-      "url": "https://www.dailyfaceoff.com/players/news/seamus-casey/33266",
-      "fingerprint": "45f630aa7f21eb05",
-      "title_norm": "seamus casey (njd) — casey underwent knee surgery and is expected to be out for 8-to-10 weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-02T17:45:29.496929Z"
-    },
-    {
-      "key": "564c071322be3188559ae0b1",
-      "url": "https://www.sportsnet.ca/nhl/article/bobrovsky-disrupting-mckennas-rookie-lap-happened-by-accident",
-      "fingerprint": "45329c154833fa5c",
-      "title_norm": "bobrovsky disrupting mckenna's rookie lap 'happened by accident'",
-      "channel": "prospect-wire",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T17:45:29.778089Z"
-    },
     {
       "key": "62f890944942e47687a81e4c",
       "url": "https://theahl.com/news/storylines-to-watch-in-2026-27",
