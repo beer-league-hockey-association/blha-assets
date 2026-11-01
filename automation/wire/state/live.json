@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T04:15:32.056160Z",
+  "updated_at": "2026-11-01T05:15:34.686799Z",
   "seen": [
     {
       "key": "d431c125913158de58c3f9b0",
@@ -18942,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T04:15:32.004690Z"
+    },
+    {
+      "key": "603124a3965c8af7ac521c53",
+      "url": "https://www.nhl.com/news/calgary-flames-colorado-avalanche-game-recap-october-31-2026",
+      "fingerprint": "f3cc0f3c5e3697ed",
+      "title_norm": "lehkonen scores twice, avalanche cruise past flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T05:15:34.555162Z"
     }
   ],
   "known_sources": [
