@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T16:00:37.312129Z",
+  "updated_at": "2026-11-01T16:15:32.231122Z",
   "seen": [
-    {
-      "key": "fe3f8b69ef8984634dae9e09",
-      "url": "https://www.nhl.com/news/evan-bouchard-elite-as-it-gets-edmonton-teammates-say",
-      "fingerprint": "2b1e81d0531afd63",
-      "title_norm": "bouchard 'elite as it gets,' oilers teammates say",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T16:15:31.740204Z"
-    },
-    {
-      "key": "86cbff91a3dda6ad97af878f",
-      "url": "https://www.nhl.com/news/young-nhl-players-find-ways-to-get-used-to-adulting-out-on-their-own",
-      "fingerprint": "ad549e86a2778812",
-      "title_norm": "young nhl players find ways to get used to adulting",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-02T16:15:32.013513Z"
-    },
     {
       "key": "fa7707eeeaf44511918990b7",
       "url": "https://www.nhl.com/news/nhl-emergency-backup-goalies-list",
