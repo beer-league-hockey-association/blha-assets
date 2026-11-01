@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T18:45:37.785986Z",
+  "updated_at": "2026-11-01T19:15:33.833662Z",
   "seen": [
     {
       "key": "2f45a981599a9eb9513a0e2c",
@@ -18692,6 +18692,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-01T18:45:37.673026Z"
+    },
+    {
+      "key": "789e8723b906df5ac8bf1c85",
+      "url": "https://www.nhl.com/news/mcdavid-kaprizov-kochetkov-named-3-stars-of-the-month-for-october-2026",
+      "fingerprint": "bd4e9f24b17a0022",
+      "title_norm": "mcdavid, kaprizov, kochetkov named 3 stars of month",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T19:15:33.757351Z"
     }
   ],
   "known_sources": [
