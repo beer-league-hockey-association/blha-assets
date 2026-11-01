@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T18:00:39.174397Z",
+  "updated_at": "2026-11-01T18:15:38.981370Z",
   "seen": [
-    {
-      "key": "62f890944942e47687a81e4c",
-      "url": "https://theahl.com/news/storylines-to-watch-in-2026-27",
-      "fingerprint": "c1e98200e93a6014",
-      "title_norm": "storylines to watch in 2026-27",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-02T18:15:37.670964Z"
-    },
-    {
-      "key": "25932b55f6f007a04d9e4fd5",
-      "url": "https://www.flohockey.tv/articles/16220256-top-nhl-prospects-in-ahls-central-division",
-      "fingerprint": "a653781753512b9e",
-      "title_norm": "augustine and stramel lead top nhl prospects in ahl central division",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-02T18:15:37.868352Z"
-    },
-    {
-      "key": "b69d938be4b5dc3ebf59f359",
-      "url": "https://www.sportsnet.ca/nhl/article/when-signing-an-rfa-to-a-long-term-deal-can-be-the-wrong-call",
-      "fingerprint": "1307eff96ce6e790",
-      "title_norm": "when signing an rfa to a long-term deal can be the wrong call",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-02T18:15:38.159078Z"
-    },
     {
       "key": "2f45a981599a9eb9513a0e2c",
       "url": "https://www.nhl.com/news/utah-mammoth-show-they-are-ready-for-high-expectations",
@@ -18682,6 +18652,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-01T17:30:38.880154Z"
+    },
+    {
+      "key": "9fd1a7d662cb08465f578224",
+      "url": "https://www.nhl.com/news/jacob-fowler-named-nhl-rookie-of-the-month-for-november-2026",
+      "fingerprint": "f4ef3615ec624f71",
+      "title_norm": "habs goalie fowler named rookie of month",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T18:15:38.864200Z"
     }
   ],
   "known_sources": [
