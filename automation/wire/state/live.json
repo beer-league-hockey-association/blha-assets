@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T06:00:50.662077Z",
+  "updated_at": "2026-11-01T09:15:33.572949Z",
   "seen": [
     {
       "key": "a485e4f93923122eb4711c4a",
@@ -18812,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T05:30:36.740806Z"
+    },
+    {
+      "key": "4d8935796fe5c615c666ec80",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-montreal-canadiens-game-recap-october-31-2026",
+      "fingerprint": "c8b27b9b79fd6351",
+      "title_norm": "anderson, canadiens hold off penguins for fifth win in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-01T09:15:33.511304Z"
     }
   ],
   "known_sources": [
