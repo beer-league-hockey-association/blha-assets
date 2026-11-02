@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T21:30:35.125428Z",
+  "updated_at": "2026-11-02T21:45:40.085720Z",
   "seen": [
     {
       "key": "3333d13bf6b75f75696dd9fa",
@@ -18932,6 +18932,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T21:00:41.783878Z"
+    },
+    {
+      "key": "700f8c14497545cf65eb68ff",
+      "url": "https://www.sportsnet.ca/nhl/article/cowan-matthews-reunite-as-maple-leafs-shuffle-lines-for-mammoth-test",
+      "fingerprint": "3c39bb3dca65a58b",
+      "title_norm": "cowan, matthews reunite as maple leafs shuffle lines for mammoth test",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T21:45:40.017756Z"
     }
   ],
   "known_sources": [
