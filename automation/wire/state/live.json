@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T22:00:41.078645Z",
+  "updated_at": "2026-11-02T22:15:48.509152Z",
   "seen": [
     {
       "key": "659b473f40d41adfe1aeee83",
@@ -18942,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T22:00:41.007949Z"
+    },
+    {
+      "key": "ef23a6e037b79fc3289ab921",
+      "url": "https://www.coloradoeagles.com/news/detail/from-sweden-to-the-states-gustav-stjernbergs-journey-to-the-ahl",
+      "fingerprint": "2c7577e2f4817c13",
+      "title_norm": "stjernberg's journey leads him to colorado",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-02T22:15:48.405263Z"
     }
   ],
   "known_sources": [
