@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T03:15:36.288666Z",
+  "updated_at": "2026-11-02T03:45:36.502414Z",
   "seen": [
-    {
-      "key": "ad4ab52a2e22667fda88f5ab",
-      "url": "https://www.nhl.com/news/boston-bruins-winnipeg-jets-game-recap-october-2-2026",
-      "fingerprint": "64a911d2f1b299c0",
-      "title_norm": "peterka's ot goal caps bruins late comeback against jets",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T03:30:31.445488Z"
-    },
-    {
-      "key": "288daa029c0c521a68f1769a",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-lose-in-overtime-to-bruins-in-season-opener",
-      "fingerprint": "de9bda2c57e635db",
-      "title_norm": "jets lose in overtime to bruins in season opener",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T03:45:31.277136Z"
-    },
-    {
-      "key": "72358dd311455fd6596cdd26",
-      "url": "https://www.sportsnet.ca/nhl/article/blues-carlo-ejected-for-kneeing-stars-hintz",
-      "fingerprint": "eddee5dfc6f1f94c",
-      "title_norm": "blues' carlo ejected for kneeing stars' hintz",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T03:45:31.535728Z"
-    },
     {
       "key": "247c2159ccdde21c17e73ad6",
       "url": "https://www.nhl.com/news/kirill-marchenko-already-getting-comfortable-with-toronto",
@@ -18752,6 +18722,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T03:15:36.222480Z"
+    },
+    {
+      "key": "028d2b7d14bdbc58767578b9",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-journeyman-matt-tomkins-earns-win-in-first-msg-start",
+      "fingerprint": "9dbccc98659967fa",
+      "title_norm": "oilers' journeyman matt tomkins earns win in first msg start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T03:45:36.421514Z"
     }
   ],
   "known_sources": [
