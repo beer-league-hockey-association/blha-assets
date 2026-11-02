@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T00:00:41.030947Z",
+  "updated_at": "2026-11-02T00:30:42.519462Z",
   "seen": [
-    {
-      "key": "40ed329a3e59b17d050f2fb4",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/5249386a-8fa7-4f52-a591-cd422a88b7b3",
-      "fingerprint": "094f0c057ffc9631",
-      "title_norm": "nhl on sportsnet: capitals vs. hurricanes",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T00:30:35.270867Z"
-    },
-    {
-      "key": "687d2ccdb2eed0df29a03298",
-      "url": "https://www.sportsnet.ca/juniors/article/asu-asks-for-independent-review-of-mayich-incident",
-      "fingerprint": "c869de58753f05a8",
-      "title_norm": "asu asks for independent review of mayich incident",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T00:30:35.507850Z"
-    },
     {
       "key": "66e467041d0eb18733bed923",
       "url": "https://www.nhl.com/news/maple-leafs-thanksgiving-visit-to-covenant-house-toronto",
@@ -18782,6 +18762,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T00:00:40.905208Z"
+    },
+    {
+      "key": "92a5a6d2a68f884e3111a437",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
+      "fingerprint": "1c2da1fb4b2cf829",
+      "title_norm": "pavel mintyukov (ana) — mintyukov (lower-body) has been activated from ir and will play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T00:30:42.412936Z"
     }
   ],
   "known_sources": [
