@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T05:15:36.048801Z",
+  "updated_at": "2026-11-02T06:15:37.022555Z",
   "seen": [
     {
       "key": "c29f1237680322ecd28da54b",
@@ -18732,6 +18732,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T05:00:43.969459Z"
+    },
+    {
+      "key": "2b6f0a44e60332ea230f11a6",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-wild-strike-quick-to-end-capitals-winning-streak",
+      "fingerprint": "25b88f16829a28e2",
+      "title_norm": "nhl roundup: wild strike quick to end capitals' winning streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T06:15:36.972554Z"
     }
   ],
   "known_sources": [
