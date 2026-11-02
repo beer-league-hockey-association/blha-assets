@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T02:00:40.427269Z",
+  "updated_at": "2026-11-02T02:15:35.794342Z",
   "seen": [
-    {
-      "key": "a5faffe5b591a6f916feb81c",
-      "url": "https://www.nhl.com/news/washington-capitals-carolina-hurricanes-game-recap-october-2-2026",
-      "fingerprint": "f29ee1abd4dfee8f",
-      "title_norm": "tuch scores twice in debut, capitals cruise past hurricanes",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T02:15:29.928392Z"
-    },
-    {
-      "key": "2ae56988900f9f528a91bcf5",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-connor-extends-record-for-opening-night-goals",
-      "fingerprint": "d83c7df065b865d1",
-      "title_norm": "jets' connor extends record for opening-night goals",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T02:15:30.274577Z"
-    },
     {
       "key": "ad4ab52a2e22667fda88f5ab",
       "url": "https://www.nhl.com/news/boston-bruins-winnipeg-jets-game-recap-october-2-2026",
@@ -18752,6 +18732,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T02:00:40.366332Z"
+    },
+    {
+      "key": "00c0602e8454bbecdb1f1bef",
+      "url": "https://www.nhl.com/news/minnesota-wild-find-boring-fits-just-fine-in-win-against-washington-capitals",
+      "fingerprint": "ec38d80c41d399a1",
+      "title_norm": "wild find 'boring' fits just fine in win against caps",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T02:15:35.684211Z"
     }
   ],
   "known_sources": [
