@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T04:45:35.173948Z",
+  "updated_at": "2026-11-02T05:00:44.034806Z",
   "seen": [
     {
       "key": "27813a9cd37403cfddcc3975",
@@ -18722,6 +18722,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T04:15:32.236501Z"
+    },
+    {
+      "key": "0cba523dc2c9247209bb7028",
+      "url": "https://www.nhl.com/news/nhl-chat-room-steven-stamkos-talks-predators-former-lightning-teammate-nikita-kucherov",
+      "fingerprint": "c5a4c665d2095571",
+      "title_norm": "stamkos talks preds, former teammate kucherov",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T05:00:42.736994Z"
+    },
+    {
+      "key": "347ac5fea6e6410ab3347c80",
+      "url": "https://www.nhl.com/news/gavin-mckenna-watch-toronto-maple-leafs-prepare-for-six-game-homestand",
+      "fingerprint": "6b053fa70f6d4e56",
+      "title_norm": "mckenna watch: leafs prepare for 6-game homestand",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T05:00:43.010533Z"
+    },
+    {
+      "key": "5e1cf907a7dbc72ddee7044b",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-november-2-2026",
+      "fingerprint": "c1cc209f6496d858",
+      "title_norm": "nhl nationally televised games for week of nov. 2",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T05:00:43.969459Z"
     }
   ],
   "known_sources": [
