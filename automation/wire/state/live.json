@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T16:46:03.546826Z",
+  "updated_at": "2026-11-02T17:00:50.182109Z",
   "seen": [
-    {
-      "key": "26c538a1e7394ebdb2554d04",
-      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
-      "fingerprint": "cf04d34a2d316598",
-      "title_norm": "ben kindel (pit) — kindel (lower body) has been activated from ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T17:00:39.740080Z"
-    },
     {
       "key": "af241312fc916823d73fdd07",
       "url": "https://www.sportsnet.ca/nhl/article/blackhawks-byram-to-miss-home-coming-against-sabres-because-of-family-matter",
@@ -18782,6 +18772,26 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-02T16:46:03.526273Z"
+    },
+    {
+      "key": "a55615d706b37826ebeed94d",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "36bce8ed237271ba",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) practiced in a non-contact jersey on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:00:49.733366Z"
+    },
+    {
+      "key": "0fe802e51adaa70a48c2583c",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-markstrom-to-return-from-injury-vs-devils",
+      "fingerprint": "eae4beaa04779759",
+      "title_norm": "panthers' markstrom to return from injury vs. devils",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:00:50.118415Z"
     }
   ],
   "known_sources": [
