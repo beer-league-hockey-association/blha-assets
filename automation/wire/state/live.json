@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T05:00:44.034806Z",
+  "updated_at": "2026-11-02T05:15:36.048801Z",
   "seen": [
-    {
-      "key": "27813a9cd37403cfddcc3975",
-      "url": "https://www.nhl.com/news/new-york-rangers-igor-shesterkin-goalie-goal-stirs-memories-for-ron-hextall",
-      "fingerprint": "186f6e11c79af594",
-      "title_norm": "shesterkin goalie goal stirs memories for hextall",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T05:15:28.040679Z"
-    },
-    {
-      "key": "e72a35010894893813d85f3f",
-      "url": "https://www.nhl.com/news/anaheim-ducks-vegas-golden-knights-game-recap-october-2-2026",
-      "fingerprint": "43700268f7409cba",
-      "title_norm": "ducks build early four-goal lead, hold off late rally by golden knights",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T05:15:28.296331Z"
-    },
     {
       "key": "c29f1237680322ecd28da54b",
       "url": "http://youtube.com/flohockey",
