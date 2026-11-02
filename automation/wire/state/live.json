@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-01T23:45:37.506337Z",
+  "updated_at": "2026-11-02T00:00:41.030947Z",
   "seen": [
     {
       "key": "40ed329a3e59b17d050f2fb4",
@@ -18772,6 +18772,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-01T23:45:37.430331Z"
+    },
+    {
+      "key": "bbd17744dfe8918781461760",
+      "url": "https://www.nhl.com/news/utah-mammoth-philadelphia-flyers-game-recap-november-1-2026",
+      "fingerprint": "2c89b6ecab62f0cc",
+      "title_norm": "konecny has 2 points in return, flyers hold off mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T00:00:40.905208Z"
     }
   ],
   "known_sources": [
