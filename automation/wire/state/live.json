@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T20:00:41.817363Z",
+  "updated_at": "2026-11-02T20:15:40.277594Z",
   "seen": [
     {
       "key": "66d62415bdbf3f6fc602c61a",
@@ -18932,6 +18932,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T20:00:41.693709Z"
+    },
+    {
+      "key": "115d46797fc918ea2cf710fe",
+      "url": "https://theahl.com/news/eyssimont-ahl-player-month",
+      "fingerprint": "f3f8548e2a397975",
+      "title_norm": "bruins' eyssimont named ahl player of the month for october",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-02T20:15:40.170202Z"
     }
   ],
   "known_sources": [
