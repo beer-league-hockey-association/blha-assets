@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T19:30:46.399777Z",
+  "updated_at": "2026-11-02T20:00:41.817363Z",
   "seen": [
     {
       "key": "66d62415bdbf3f6fc602c61a",
@@ -18922,6 +18922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T19:30:46.357650Z"
+    },
+    {
+      "key": "bc9406afd83f0c3e44fab928",
+      "url": "https://www.nhl.com/news/hometown-remix-jerseys-bring-fresh-hyperlocal-look-to-32-nhl-teams",
+      "fingerprint": "a2ae8c10a7f180e4",
+      "title_norm": "hometown remix uniforms unveiled by nhl, fanatics",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T20:00:41.693709Z"
     }
   ],
   "known_sources": [
