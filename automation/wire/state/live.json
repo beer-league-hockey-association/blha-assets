@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T18:45:40.249523Z",
+  "updated_at": "2026-11-02T19:30:46.399777Z",
   "seen": [
     {
       "key": "66d62415bdbf3f6fc602c61a",
@@ -18912,6 +18912,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T18:45:40.148847Z"
+    },
+    {
+      "key": "f1c8b92575f7014eeb5204f9",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-place-forward-bo-groulx-on-waivers",
+      "fingerprint": "1fca4534f142ea97",
+      "title_norm": "maple leafs place forward bo groulx on waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T19:30:46.357650Z"
     }
   ],
   "known_sources": [
