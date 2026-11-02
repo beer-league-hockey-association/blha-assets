@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T23:15:38.495848Z",
+  "updated_at": "2026-11-02T23:45:38.982709Z",
   "seen": [
-    {
-      "key": "b42b08958eb361a2e5705fc1",
-      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
-      "fingerprint": "c2e1d0bb03e48e17",
-      "title_norm": "justus annunen (nsh) — annunen (undisclosed) is day-to-day and will not dress on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T23:45:32.603348Z"
-    },
     {
       "key": "e8e1e272f935ae6a38a65748",
       "url": "https://www.dailyfaceoff.com/players/news/alexey-toropchenko/28113",
