@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T22:15:48.509152Z",
+  "updated_at": "2026-11-02T22:45:40.203902Z",
   "seen": [
     {
       "key": "659b473f40d41adfe1aeee83",
@@ -18952,6 +18952,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-02T22:15:48.405263Z"
+    },
+    {
+      "key": "726cee7626db94d25d8f709a",
+      "url": "https://www.sportsnet.ca/nhl/article/long-island-cancer-centre-unveils-room-named-for-late-mother-of-islanders-schaefer",
+      "fingerprint": "70d49826fe3ae2da",
+      "title_norm": "long island cancer centre unveils room named for late mother of islanders' schaefer",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T22:45:40.133209Z"
     }
   ],
   "known_sources": [
