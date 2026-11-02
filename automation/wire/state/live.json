@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T20:15:40.277594Z",
+  "updated_at": "2026-11-02T20:45:36.458667Z",
   "seen": [
     {
       "key": "66d62415bdbf3f6fc602c61a",
@@ -18942,6 +18942,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-02T20:15:40.170202Z"
+    },
+    {
+      "key": "39588e965b0477bdb22e4f02",
+      "url": "https://www.sportsnet.ca/nhl/article/plug-and-play-nugent-hopkins-closing-in-on-monster-milestone-for-oilers",
+      "fingerprint": "08240dbc63d7ab85",
+      "title_norm": "'plug-and-play' nugent-hopkins closing in on monster milestone for oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T20:45:36.154636Z"
+    },
+    {
+      "key": "b4b4873fc4b7a09f3ee39927",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-greer-placed-on-ir-after-hit-from-senators-cozens",
+      "fingerprint": "5a7a16ae8400863f",
+      "title_norm": "ducks' greer placed on ir after hit from senators' cozens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T20:45:36.391490Z"
     }
   ],
   "known_sources": [
