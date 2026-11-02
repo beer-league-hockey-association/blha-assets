@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T17:31:00.382053Z",
+  "updated_at": "2026-11-02T17:45:41.149681Z",
   "seen": [
-    {
-      "key": "19f6683b35b5c4ffc3d87782",
-      "url": "https://www.nhl.com/news/alex-tuch-scores-2-in-outstanding-debut-for-washington-capitals",
-      "fingerprint": "ca8c28d48e4eb222",
-      "title_norm": "tuch enjoys 'outstanding' debut with capitals",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T17:45:26.539244Z"
-    },
     {
       "key": "ed02173bf867ee1f3e4259f3",
       "url": "https://www.dailyfaceoff.com/players/news/jacob-trouba/2099",
@@ -18842,6 +18832,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T17:31:00.247217Z"
+    },
+    {
+      "key": "e9339c853b29a06c59259213",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-benson/33544",
+      "fingerprint": "d3365acb9fd66aad",
+      "title_norm": "zach benson (buf) — benson (undisclosed) missed practice on monday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:45:40.876932Z"
+    },
+    {
+      "key": "24d67ead4b553b045805aea3",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "dcae56e14efe97df",
+      "title_norm": "bowen byram (chi) — byram (upper-body) has yet to be cleared to return to chicago's practices.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:45:41.051407Z"
     }
   ],
   "known_sources": [
