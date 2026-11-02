@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T15:30:53.761605Z",
+  "updated_at": "2026-11-02T15:45:51.673842Z",
   "seen": [
-    {
-      "key": "9dc4ab911b39687962d50102",
-      "url": "https://www.dailyfaceoff.com/players/news/jacob-melanson/31241",
-      "fingerprint": "21968cdd6b2be6e4",
-      "title_norm": "jacob melanson (sea) — melanson (upper body) is week-to-week and has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T15:45:30.209085Z"
-    },
-    {
-      "key": "a20907ce1664e8560c3cbabc",
-      "url": "https://www.dailyfaceoff.com/players/news/mackie-samoskevich/31226",
-      "fingerprint": "aecdf6457cdca367",
-      "title_norm": "mackie samoskevich (sea) — samoskevich (upper body) has been activated from ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T15:45:31.201651Z"
-    },
     {
       "key": "6fff5e5d7b2b1e45db5174f0",
       "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
@@ -18762,6 +18742,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T15:30:53.652116Z"
+    },
+    {
+      "key": "03a75d52078a8cdb7a3086d5",
+      "url": "https://theahl.com/news/allard-suspended-26nov02",
+      "fingerprint": "d66c16f14866ce5f",
+      "title_norm": "crunch's allard suspended three games",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-02T15:45:51.587940Z"
     }
   ],
   "known_sources": [
