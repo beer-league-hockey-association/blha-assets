@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T02:15:35.794342Z",
+  "updated_at": "2026-11-02T03:15:36.288666Z",
   "seen": [
     {
       "key": "ad4ab52a2e22667fda88f5ab",
@@ -18742,6 +18742,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T02:15:35.684211Z"
+    },
+    {
+      "key": "91a005f27c66d07ffd2cf7a0",
+      "url": "https://www.sportsnet.ca/nhl/article/mcdavid-becomes-fastest-player-in-nhl-history-to-reach-30-assists-in-a-season",
+      "fingerprint": "802072ccb2561ed5",
+      "title_norm": "mcdavid becomes fastest player in nhl history to reach 30 assists in a season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T03:15:36.222480Z"
     }
   ],
   "known_sources": [
