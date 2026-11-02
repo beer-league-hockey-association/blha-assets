@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T15:15:35.770405Z",
+  "updated_at": "2026-11-02T15:30:53.761605Z",
   "seen": [
-    {
-      "key": "d2c55b5087345b131532c8c4",
-      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
-      "fingerprint": "e0dea03911731aac",
-      "title_norm": "mathew barzal (nyi) — barzal (knee) is hopeful to begin skating before the end of next week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T15:30:36.762422Z"
-    },
     {
       "key": "9dc4ab911b39687962d50102",
       "url": "https://www.dailyfaceoff.com/players/news/jacob-melanson/31241",
@@ -18762,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T15:15:35.713821Z"
+    },
+    {
+      "key": "a4bf1d7cffe39d86dc03df22",
+      "url": "https://www.dailyfaceoff.com/players/news/kirby-dach/29585",
+      "fingerprint": "ef6c911385a48ad2",
+      "title_norm": "kirby dach (mtl) — dach (illness) will miss monday's practice.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T15:30:53.652116Z"
     }
   ],
   "known_sources": [
