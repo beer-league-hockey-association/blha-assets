@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T15:45:51.673842Z",
+  "updated_at": "2026-11-02T16:00:48.535796Z",
   "seen": [
-    {
-      "key": "6fff5e5d7b2b1e45db5174f0",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "1c2489648017c3aa",
-      "title_norm": "jake sanderson (ott) — sanderson (undisclosed) is expected to play in toronto on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T16:00:44.801444Z"
-    },
     {
       "key": "7bfbaab24b353a5ba1b6a8eb",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-3-2026",
@@ -18752,6 +18742,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-02T15:45:51.587940Z"
+    },
+    {
+      "key": "76dc63e3c691f179c387a791",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "90371034e7c0618f",
+      "title_norm": "evgeni malkin (pit) — malkin (lower-body) will miss practice on monday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:00:47.340271Z"
+    },
+    {
+      "key": "16cc3cc10cbb28fd050ad51f",
+      "url": "https://www.dailyfaceoff.com/players/news/elmer-soderblom/30683",
+      "fingerprint": "d7697bd2e2e26ab4",
+      "title_norm": "elmer soderblom (pit) — soderblom (upper-body) is now considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:00:47.585716Z"
+    },
+    {
+      "key": "42b4d66ccfa71ae784d40723",
+      "url": "https://www.dailyfaceoff.com/players/news/kaedan-korczak/28524",
+      "fingerprint": "415d97a5c1247b02",
+      "title_norm": "kaedan korczak (pit) — korczak (lower-body) missed practice on monday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:00:48.477820Z"
     }
   ],
   "known_sources": [
