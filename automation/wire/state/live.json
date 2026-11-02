@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T01:45:34.918546Z",
+  "updated_at": "2026-11-02T02:00:40.427269Z",
   "seen": [
-    {
-      "key": "9469401b6b90967a85d02bbb",
-      "url": "https://www.sportsnet.ca/nhl/article/alex-tuch-scores-pair-in-capitals-debut-washington-beats-hurricanes",
-      "fingerprint": "b56b48205fcd04d0",
-      "title_norm": "alex tuch scores pair in capitals debut, washington beats hurricanes",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T02:00:34.775348Z"
-    },
-    {
-      "key": "63f082ddc162a41a739fe1f0",
-      "url": "https://www.sportsnet.ca/nhl/article/rangers-garand-posts-first-career-shutout-in-win-over-red-wings",
-      "fingerprint": "746a667caef4ae06",
-      "title_norm": "rangers' garand posts first career shutout in win over red wings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T02:00:35.095693Z"
-    },
     {
       "key": "a5faffe5b591a6f916feb81c",
       "url": "https://www.nhl.com/news/washington-capitals-carolina-hurricanes-game-recap-october-2-2026",
@@ -18752,6 +18732,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T01:45:34.823091Z"
+    },
+    {
+      "key": "2d68321b96a9b1c47e58842a",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-has-goal-and-assist-to-lead-oilers-past-rangers",
+      "fingerprint": "c9eab54acb1ffe3c",
+      "title_norm": "connor mcdavid has goal and assist to lead oilers past rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T02:00:40.025819Z"
+    },
+    {
+      "key": "8d17bc8ec71a63c43c62e614",
+      "url": "https://www.nhl.com/news/edmonton-oilers-new-york-rangers-game-recap-november-1-2026",
+      "fingerprint": "ce70072c49ca3b45",
+      "title_norm": "mcdavid pushes season-opening point streak to 15 in oilers' win against rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T02:00:40.366332Z"
     }
   ],
   "known_sources": [
