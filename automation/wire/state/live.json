@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T18:30:43.544673Z",
+  "updated_at": "2026-11-02T18:45:40.249523Z",
   "seen": [
-    {
-      "key": "d265be1030c7cbb19c7bc9a8",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-jake-debrusk-out-against-flames-with-illness",
-      "fingerprint": "b32a0f1bd97cf7bd",
-      "title_norm": "canucks' jake debrusk out against flames with illness",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T18:45:29.952275Z"
-    },
     {
       "key": "66d62415bdbf3f6fc602c61a",
       "url": "https://www.nhl.com/news/former-nhl-defenseman-lyle-odelein-dies-at-58",
@@ -18912,6 +18902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T18:30:43.470278Z"
+    },
+    {
+      "key": "3d50c15b40b91cafc499a2c8",
+      "url": "https://www.dailyfaceoff.com/players/news/a-j-greer/2706",
+      "fingerprint": "829054b05e1f7751",
+      "title_norm": "a.j. greer (ana) — greer has been placed on ir with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:45:40.148847Z"
     }
   ],
   "known_sources": [
