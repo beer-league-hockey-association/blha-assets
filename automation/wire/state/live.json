@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T17:45:41.149681Z",
+  "updated_at": "2026-11-02T18:00:50.941195Z",
   "seen": [
     {
       "key": "ed02173bf867ee1f3e4259f3",
@@ -18852,6 +18852,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T17:45:41.051407Z"
+    },
+    {
+      "key": "ed80f2527c8429040720e859",
+      "url": "https://www.dailyfaceoff.com/players/news/evan-rodrigues/2620",
+      "fingerprint": "57df7f7a2e31574d",
+      "title_norm": "evan rodrigues (njd) — rodrigues (illness) missed practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:00:50.567534Z"
+    },
+    {
+      "key": "4480d93d5622e6801d50f2fc",
+      "url": "https://www.sportsnet.ca/nhl/article/lightnings-kucherov-says-trade-request-was-due-to-poor-communication-and-respect",
+      "fingerprint": "b0c893b8f0c17ce9",
+      "title_norm": "lightning's kucherov says trade request was due to 'poor communication and respect'",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:00:50.597553Z"
+    },
+    {
+      "key": "da23640ef269e0551b793978",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-tab-sergei-bobrovsky-for-start-against-mammoth",
+      "fingerprint": "fb2133e5989f08b1",
+      "title_norm": "maple leafs tab sergei bobrovsky for start against mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:00:50.874363Z"
     }
   ],
   "known_sources": [
