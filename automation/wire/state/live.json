@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T03:45:36.502414Z",
+  "updated_at": "2026-11-02T04:15:32.308473Z",
   "seen": [
     {
       "key": "247c2159ccdde21c17e73ad6",
@@ -18732,6 +18732,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T03:45:36.421514Z"
+    },
+    {
+      "key": "d50e60ddddedb18800e5f12e",
+      "url": "https://www.sportsnet.ca/nhl/article/cutter-gauthier-has-hat-trick-in-ducks-victory-over-senators",
+      "fingerprint": "b5737789e5485e20",
+      "title_norm": "cutter gauthier has hat trick in ducks' victory over senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T04:15:32.236501Z"
     }
   ],
   "known_sources": [
