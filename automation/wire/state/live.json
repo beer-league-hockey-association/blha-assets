@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T16:00:48.535796Z",
+  "updated_at": "2026-11-02T16:15:47.340988Z",
   "seen": [
     {
       "key": "7bfbaab24b353a5ba1b6a8eb",
@@ -18772,6 +18772,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T16:00:48.477820Z"
+    },
+    {
+      "key": "194195f11b1dc75fe8f8cb83",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "7d959b938d5c2211",
+      "title_norm": "jiri kulich (buf) — kulich (concussion) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:15:46.231992Z"
+    },
+    {
+      "key": "08e258e940968b999bef681c",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-timmins/2797",
+      "fingerprint": "57ba2fdd12a02c93",
+      "title_norm": "conor timmins (buf) — timmins (lower-body) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:15:46.553143Z"
+    },
+    {
+      "key": "430a77d3c8d269d00d9a2b23",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-lyon/2873",
+      "fingerprint": "dee9f72564b06d68",
+      "title_norm": "alex lyon (buf) — lyon (upper-body) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:15:46.897104Z"
+    },
+    {
+      "key": "ff8598c4303c28eb2b70125d",
+      "url": "https://www.sportsnet.ca/nhl/article/why-time-might-be-right-for-capitals-to-make-big-swing",
+      "fingerprint": "ded4237ecb412bbd",
+      "title_norm": "why time might be right for capitals to make big swing",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T16:15:47.265454Z"
     }
   ],
   "known_sources": [
