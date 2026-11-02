@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T18:15:49.803291Z",
+  "updated_at": "2026-11-02T18:30:43.544673Z",
   "seen": [
-    {
-      "key": "845d835085e63b6bce876e5a",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
-      "fingerprint": "8015f487d6609ed6",
-      "title_norm": "jake debrusk (van) — debrusk (illness) will not play on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T18:30:35.499410Z"
-    },
-    {
-      "key": "a70b8a41983d50209d2f448e",
-      "url": "https://www.sportsnet.ca/nhl/article/report-panthers-place-captain-aleksander-barkov-on-ltir-with-leg-injury",
-      "fingerprint": "441812aacf03815a",
-      "title_norm": "panthers place captain aleksander barkov on ltir with leg injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T18:30:35.906580Z"
-    },
     {
       "key": "d265be1030c7cbb19c7bc9a8",
       "url": "https://www.sportsnet.ca/nhl/article/canucks-jake-debrusk-out-against-flames-with-illness",
@@ -18882,6 +18862,56 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-02T18:15:49.691098Z"
+    },
+    {
+      "key": "007306c4a46696c4d38e5bed",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "55e52deae65cdfcc",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) is hopeful to return by the weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:30:42.591216Z"
+    },
+    {
+      "key": "071b73618849940bbc904e84",
+      "url": "https://www.dailyfaceoff.com/players/news/dawson-mercer/29327",
+      "fingerprint": "f8b76228df8e8c35",
+      "title_norm": "dawson mercer (wpg) — mercer (upper-body) missed practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:30:42.848275Z"
+    },
+    {
+      "key": "22ae1c159991e04f059731d1",
+      "url": "https://www.nhl.com/news/nikita-kucherov-says-trade-request-to-tampa-bay-about-poor-communication-respect",
+      "fingerprint": "75ba440412abef57",
+      "title_norm": "kucherov: trade request to bolts not about money",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T18:30:42.852068Z"
+    },
+    {
+      "key": "f0b6fab1382be5da0beeacce",
+      "url": "https://www.dailyfaceoff.com/players/news/cole-koepke/29652",
+      "fingerprint": "69130e64b09a821b",
+      "title_norm": "cole koepke (wpg) — koepke (undisclosed) returned to practice on monday and is expected to be ready for the next game.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:30:43.165553Z"
+    },
+    {
+      "key": "15478966c2fd34266d37c440",
+      "url": "https://www.sportsnet.ca/nhl/video/lightnings-kucherov-on-trade-request-never-about-the-money",
+      "fingerprint": "0a095019bc542f63",
+      "title_norm": "lightning's kucherov on trade request: 'never about the money'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:30:43.470278Z"
     }
   ],
   "known_sources": [
