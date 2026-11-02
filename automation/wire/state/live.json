@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T18:00:50.941195Z",
+  "updated_at": "2026-11-02T18:15:49.803291Z",
   "seen": [
-    {
-      "key": "ed02173bf867ee1f3e4259f3",
-      "url": "https://www.dailyfaceoff.com/players/news/jacob-trouba/2099",
-      "fingerprint": "3fa307b0ebffdf08",
-      "title_norm": "jacob trouba (sjs) — trouba (illness) will be a game-time decision on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T18:15:31.071011Z"
-    },
-    {
-      "key": "7c3cf81fb79271db3e7bfd6e",
-      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
-      "fingerprint": "eb3fa9fc7ebc13af",
-      "title_norm": "aleksander barkov (fla) — barkov (lower body) has been placed on ltir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-03T18:15:31.338306Z"
-    },
     {
       "key": "845d835085e63b6bce876e5a",
       "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
@@ -18882,6 +18862,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T18:00:50.874363Z"
+    },
+    {
+      "key": "1900e96784773b04be2af7ab",
+      "url": "https://www.nhl.com/news/thompson-jarry-carlsson-named-nhl-3-stars-of-week-november-2-2026",
+      "fingerprint": "a24316d5bbcdc63a",
+      "title_norm": "t. thompson, jarry, carlsson named 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T18:15:49.384335Z"
+    },
+    {
+      "key": "de3aec45a91b9ba9ada28445",
+      "url": "https://theahl.com/news/hebig-ahl-player-week",
+      "fingerprint": "3e24a756e0982a79",
+      "title_norm": "roadrunners' hebig named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-02T18:15:49.691098Z"
     }
   ],
   "known_sources": [
