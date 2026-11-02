@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T06:15:37.022555Z",
+  "updated_at": "2026-11-02T10:15:38.060666Z",
   "seen": [
     {
       "key": "c29f1237680322ecd28da54b",
@@ -18742,6 +18742,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T06:15:36.972554Z"
+    },
+    {
+      "key": "a84a4358a89b437965e2204a",
+      "url": "https://www.nhl.com/news/ottawa-senators-anaheim-ducks-game-recap-november-1-2026",
+      "fingerprint": "45d33fe5c44e2cf5",
+      "title_norm": "ducks race past senators, powered by gauthier hat trick",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T10:15:36.795033Z"
+    },
+    {
+      "key": "2f1c928cb19fed54781eef70",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-6-e3ritbe",
+      "fingerprint": "e173346a8e4b432c",
+      "title_norm": "puzzling players: what do we do with these guys? | fantasy hockey week 6",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-02T10:15:38.001499Z"
     }
   ],
   "known_sources": [
