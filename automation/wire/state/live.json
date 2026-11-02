@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T17:15:36.227610Z",
+  "updated_at": "2026-11-02T17:31:00.382053Z",
   "seen": [
     {
       "key": "19f6683b35b5c4ffc3d87782",
@@ -18832,6 +18832,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T17:15:36.118153Z"
+    },
+    {
+      "key": "7e70a45702ae76280110cf9d",
+      "url": "https://www.dailyfaceoff.com/players/news/konsta-helenius/38139",
+      "fingerprint": "ea6c2b36074a4948",
+      "title_norm": "konsta helenius (buf) — helenius (upper-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:31:00.247217Z"
     }
   ],
   "known_sources": [
