@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T16:30:36.211104Z",
+  "updated_at": "2026-11-02T16:46:03.546826Z",
   "seen": [
-    {
-      "key": "a68e00a85dfee6f30986b13d",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-assistant-daniel-alfredsson-ready-to-switch-sides-in-battle-of-ontario",
-      "fingerprint": "6b161ea1103636f5",
-      "title_norm": "maple leafs assistant daniel alfredsson ready to switch sides in battle of ontario",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T16:45:31.240849Z"
-    },
     {
       "key": "26c538a1e7394ebdb2554d04",
       "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
@@ -18782,6 +18772,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-02T16:30:36.084799Z"
+    },
+    {
+      "key": "4e4ecb71a0080765282ea58e",
+      "url": "https://audioboom.com/posts/8972216",
+      "fingerprint": "50c17f819b7ab9da",
+      "title_norm": "week 6 pickups; kucherov situation",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-11-02T16:46:03.526273Z"
     }
   ],
   "known_sources": [
