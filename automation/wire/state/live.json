@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T17:00:50.182109Z",
+  "updated_at": "2026-11-02T17:15:36.227610Z",
   "seen": [
-    {
-      "key": "af241312fc916823d73fdd07",
-      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-byram-to-miss-home-coming-against-sabres-because-of-family-matter",
-      "fingerprint": "978a0317c0d04063",
-      "title_norm": "blackhawks' byram to miss home-coming against sabres because of family matter",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T17:15:31.417536Z"
-    },
     {
       "key": "19f6683b35b5c4ffc3d87782",
       "url": "https://www.nhl.com/news/alex-tuch-scores-2-in-outstanding-debut-for-washington-capitals",
@@ -18792,6 +18782,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T17:00:50.118415Z"
+    },
+    {
+      "key": "010afdbfea6fe8b69e46bf9d",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-zegras/30202",
+      "fingerprint": "c3c21a6badc1c69b",
+      "title_norm": "trevor zegras (phi) — zegras (lower-body) is practicing on monday after leaving last game due to injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:15:35.075273Z"
+    },
+    {
+      "key": "5b15ddf97afa95b06ef52c85",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-2-2026",
+      "fingerprint": "79059b0eeb7c63fd",
+      "title_norm": "on tap: bruins can extend home win streak to 6 games",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T17:15:35.300960Z"
+    },
+    {
+      "key": "b1815fd106a304f033698cb6",
+      "url": "https://www.nhl.com/news/rookie-watch-montreal-canadiens-goalie-jacob-fowler-named-top-first-year-player-for-october",
+      "fingerprint": "6f9af6b9200a84b6",
+      "title_norm": "rookie watch: fowler earns top honor for october",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-02T17:15:35.550901Z"
+    },
+    {
+      "key": "1d991fef8ff55e3edb6c48d0",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "9c8c9491d1288f87",
+      "title_norm": "zemgus girgensons (tbl) — girgensons (lower-body) will remain out vs. detroit on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:15:35.828454Z"
+    },
+    {
+      "key": "8dc8679c016dc6c16185322d",
+      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
+      "fingerprint": "338eda86f24bc884",
+      "title_norm": "radek faksa (dal) — faksa (undisclosed) is expected to return in washington on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T17:15:36.118153Z"
     }
   ],
   "known_sources": [
