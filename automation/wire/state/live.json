@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T00:30:42.519462Z",
+  "updated_at": "2026-11-02T00:45:37.538668Z",
   "seen": [
-    {
-      "key": "66e467041d0eb18733bed923",
-      "url": "https://www.nhl.com/news/maple-leafs-thanksgiving-visit-to-covenant-house-toronto",
-      "fingerprint": "b08a93b87347d4d3",
-      "title_norm": "leafs glad to 'lend a hand' serving thanksgiving meals",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T00:45:30.113895Z"
-    },
     {
       "key": "030caeb6a799170f4adbc4c2",
       "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-evan-bouchard-edmonton-oilers-2026-27",
@@ -18772,6 +18762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-02T00:30:42.412936Z"
+    },
+    {
+      "key": "66d5e76b31ce89328728dd71",
+      "url": "https://lakingsinsider.com/2026/11/01/martin-chromiaks-impressive-debut-put-the-focus-on-how-he-was-playing-not-just-that-he-was-playing",
+      "fingerprint": "4911025149bbcf7d",
+      "title_norm": "chromiak impressive in long-awaited nhl debut",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-02T00:45:37.426604Z"
     }
   ],
   "known_sources": [
