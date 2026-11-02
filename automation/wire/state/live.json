@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T14:00:45.750669Z",
+  "updated_at": "2026-11-02T15:15:35.770405Z",
   "seen": [
     {
       "key": "d2c55b5087345b131532c8c4",
@@ -18752,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T14:00:45.680879Z"
+    },
+    {
+      "key": "c19bff02f15440d81c0db543",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-unveils-hometown-remix-jerseys-for-all-32-teams",
+      "fingerprint": "b8931642b768e3a8",
+      "title_norm": "nhl unveils hometown remix jerseys for all 32 teams",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T15:15:35.713821Z"
     }
   ],
   "known_sources": [
