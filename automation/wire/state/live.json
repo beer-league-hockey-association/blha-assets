@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T12:45:43.990859Z",
+  "updated_at": "2026-11-02T13:45:38.532885Z",
   "seen": [
     {
       "key": "d2c55b5087345b131532c8c4",
@@ -18732,6 +18732,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-02T10:15:38.001499Z"
+    },
+    {
+      "key": "46aa9fe802afc5fffc688168",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-notebook-texier-confident-guhle-throwing-it-back-kreider-coming",
+      "fingerprint": "0566b073eab034e4",
+      "title_norm": "canadiens notebook: texier confident, guhle throwing it back, kreider coming",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T13:45:38.475202Z"
     }
   ],
   "known_sources": [
