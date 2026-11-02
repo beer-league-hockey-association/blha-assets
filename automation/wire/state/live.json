@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T13:45:38.532885Z",
+  "updated_at": "2026-11-02T14:00:45.750669Z",
   "seen": [
     {
       "key": "d2c55b5087345b131532c8c4",
@@ -18742,6 +18742,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T13:45:38.475202Z"
+    },
+    {
+      "key": "f45f89609250c605ea5e46fb",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/time-to-move-on",
+      "fingerprint": "aa2e9767b75ab711",
+      "title_norm": "32 thoughts podcast: unpacking what's behind nikita kucherov's trade request",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-02T14:00:45.680879Z"
     }
   ],
   "known_sources": [
