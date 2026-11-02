@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-02T20:45:36.458667Z",
+  "updated_at": "2026-11-02T21:00:41.907824Z",
   "seen": [
-    {
-      "key": "66d62415bdbf3f6fc602c61a",
-      "url": "https://www.nhl.com/news/former-nhl-defenseman-lyle-odelein-dies-at-58",
-      "fingerprint": "ffdd8650296a9bfe",
-      "title_norm": "odelein dies at 58, was 1st blue jackets captain",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-03T21:00:33.061380Z"
-    },
-    {
-      "key": "7c49b378739e5a9a12540260",
-      "url": "https://www.sportsnet.ca/nhl/article/longtime-nhl-defenceman-lyle-odelein-dead-at-58",
-      "fingerprint": "468801a5ef8f42bc",
-      "title_norm": "longtime nhl defenceman lyle odelein dead at 58",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-03T21:00:33.441565Z"
-    },
     {
       "key": "dcd92efd041890d9528eeb3f",
       "url": "https://www.nhl.com/news/panthers-aleksander-barkov-placed-on-long-term-injured-reserve",
@@ -18962,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T20:45:36.391490Z"
+    },
+    {
+      "key": "06f88994efc1c7a2e3caba04",
+      "url": "https://www.dailyfaceoff.com/players/news/brandt-clarke/30833",
+      "fingerprint": "b0bca33f9ad7e79a",
+      "title_norm": "brandt clarke (lak) — clarke (upper-body) left practice on monday and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-02T21:00:41.783878Z"
     }
   ],
   "known_sources": [
