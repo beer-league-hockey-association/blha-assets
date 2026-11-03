@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T21:00:57.212072Z",
+  "updated_at": "2026-11-03T21:46:00.774150Z",
   "seen": [
-    {
-      "key": "0289815cd595bccfb70c51be",
-      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
-      "fingerprint": "df1695a53ed13058",
-      "title_norm": "brad marchand (fla) — marchand (undisclosed) will return to florida's lineup on sunday in anaheim.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T21:45:31.558875Z"
-    },
     {
       "key": "b61ef53ad15246ea5a346391",
       "url": "https://www.sportsnet.ca/nhl/article/panthers-brad-marchand-set-for-season-debut-against-ducks",
