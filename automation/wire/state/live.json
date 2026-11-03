@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T19:16:30.140993Z",
+  "updated_at": "2026-11-03T19:46:06.664569Z",
   "seen": [
     {
       "key": "c90845c50bd76051912ad15b",
@@ -18892,6 +18892,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-03T19:01:35.921299Z"
+    },
+    {
+      "key": "c9fd168183af474ff2991fc4",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-forward-group-set-to-be-bolstered-by-john-tavares-impending-return",
+      "fingerprint": "98daa03c5c6b6f1f",
+      "title_norm": "maple leafs forward group set to be bolstered by john tavares' impending return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T19:46:05.661537Z"
+    },
+    {
+      "key": "b627a1ca65696cfc92222d05",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-legend-jarome-iginla-battling-health-issues",
+      "fingerprint": "511759992d847a18",
+      "title_norm": "flames legend jarome iginla battling health issues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T19:46:06.578525Z"
     }
   ],
   "known_sources": [
