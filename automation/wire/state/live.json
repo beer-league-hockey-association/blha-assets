@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T17:45:55.468415Z",
+  "updated_at": "2026-11-03T18:01:05.613436Z",
   "seen": [
-    {
-      "key": "86d29afabc0cab44d7996eb9",
-      "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
-      "fingerprint": "62ffc6df542bc35b",
-      "title_norm": "logan o'connor (col) — o'connor (lower-body) practiced in a regular jersey on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T18:00:42.769668Z"
-    },
     {
       "key": "21fb1e1ea7372ce9defe8583",
       "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
