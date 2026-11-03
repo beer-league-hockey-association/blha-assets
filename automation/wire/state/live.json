@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T03:30:40.905111Z",
+  "updated_at": "2026-11-03T03:45:34.899389Z",
   "seen": [
-    {
-      "key": "349bd679ed235daf085d2d6e",
-      "url": "https://www.sportsnet.ca/nhl/article/lots-of-iron-maple-leafs-loss-to-senators-not-all-puck-luck",
-      "fingerprint": "377781b4533c403e",
-      "title_norm": "'lots of iron': maple leafs' loss to senators not all puck luck",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T03:45:29.749111Z"
-    },
-    {
-      "key": "41b682711f9d2086e827a8b2",
-      "url": "https://www.sportsnet.ca/nhl/article/didnt-give-up-a-touchdown-oilers-lock-down-tidy-win-over-kraken",
-      "fingerprint": "4a253927b0d7d4cf",
-      "title_norm": "'didn't give up a touchdown': oilers lock down tidy win over kraken",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T03:45:30.466702Z"
-    },
     {
       "key": "daf23a9cfa804ce8e3dbc60a",
       "url": "https://www.nhl.com/news/st-louis-blues-colorado-avalanche-game-recap-october-3-2026",
@@ -18752,6 +18732,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T03:30:40.780094Z"
+    },
+    {
+      "key": "d784a94deacc77f8b1688e94",
+      "url": "https://www.dailyfaceoff.com/players/news/patrick-kane/305",
+      "fingerprint": "d3745648af01f71c",
+      "title_norm": "patrick kane (chi) — kane (undisclosed) left monday's game vs. colorado and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T03:45:34.611420Z"
+    },
+    {
+      "key": "be47e4a535f017778a7f5461",
+      "url": "https://www.nhl.com/news/patrick-kane-leaves-game-for-chicago-blackhawks-against-colorado-avalanche",
+      "fingerprint": "e5e656565bc6d5b0",
+      "title_norm": "kane leaves game for blackhawks against avalanche",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T03:45:34.795289Z"
     }
   ],
   "known_sources": [
