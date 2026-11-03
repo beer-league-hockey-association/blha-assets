@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T05:00:51.937483Z",
+  "updated_at": "2026-11-03T05:15:34.948532Z",
   "seen": [
     {
       "key": "1a91430654ada1e11dae3594",
@@ -18772,6 +18772,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-03T05:00:51.824021Z"
+    },
+    {
+      "key": "abc0173957dc8b48f547ad96",
+      "url": "https://www.sportsnet.ca/nhl/article/klapka-and-stromgren-step-up-to-back-wolf-in-flames-win-over-sharks",
+      "fingerprint": "3bdf9b4b8cd2ccb5",
+      "title_norm": "klapka and stromgren step up to back wolf in flames' win over sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T05:15:34.869506Z"
     }
   ],
   "known_sources": [
