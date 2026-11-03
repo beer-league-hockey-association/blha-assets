@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T22:45:44.729956Z",
+  "updated_at": "2026-11-03T23:30:47.387363Z",
   "seen": [
-    {
-      "key": "85904572ca212160a84d6ccb",
-      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
-      "fingerprint": "c1301a3122d54496",
-      "title_norm": "joe veleno (nyr) — veleno (lower-body) left sunday's game vs. utah and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T23:15:28.953760Z"
-    },
     {
       "key": "be7d7d4ac9c1bdb714316ee8",
       "url": "https://www.dailyfaceoff.com/players/news/gustav-forsling/2431",
