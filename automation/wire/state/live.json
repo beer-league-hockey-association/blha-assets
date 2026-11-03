@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T17:30:56.935341Z",
+  "updated_at": "2026-11-03T17:45:55.468415Z",
   "seen": [
     {
       "key": "86d29afabc0cab44d7996eb9",
@@ -18852,6 +18852,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-03T17:30:56.844018Z"
+    },
+    {
+      "key": "f077fa0bc89d1c3551328ee8",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-forward-isaac-howard-out-a-couple-weeks-per-babcock",
+      "fingerprint": "8d46c8385ea40817",
+      "title_norm": "oilers forward isaac howard out 'a couple weeks,' per babcock",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:45:55.381977Z"
     }
   ],
   "known_sources": [
