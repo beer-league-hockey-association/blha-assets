@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T16:00:51.707946Z",
+  "updated_at": "2026-11-03T16:15:41.498539Z",
   "seen": [
     {
       "key": "c6f5faf2a3ac2b6bfb8497e1",
@@ -18722,6 +18722,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-03T15:45:39.213247Z"
+    },
+    {
+      "key": "6f1ebc838aa650fb1cf32e24",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "29cf810ada34bb63",
+      "title_norm": "evgeni malkin (pit) — malkin (lower-body) will be out vs. vegas and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T16:15:40.864258Z"
+    },
+    {
+      "key": "32b96e1da3e034f7cd3cbac9",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-suzuki/2789",
+      "fingerprint": "fbd25a492aafb929",
+      "title_norm": "nick suzuki (mtl) — suzuki (upper-body) will remain out vs. winnipeg on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T16:15:41.109327Z"
+    },
+    {
+      "key": "8f9a9339d05592ce37b5fd1d",
+      "url": "https://www.dailyfaceoff.com/players/news/kaedan-korczak/28524",
+      "fingerprint": "585f4adc7988eb35",
+      "title_norm": "kaedan korczak (pit) — korczak (lower-body) will be a game-time decision vs. vegas on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T16:15:41.382197Z"
     }
   ],
   "known_sources": [
