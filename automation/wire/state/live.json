@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T18:15:56.488557Z",
+  "updated_at": "2026-11-03T18:30:59.174370Z",
   "seen": [
     {
       "key": "9ac92bf3877492bcab055103",
@@ -18842,6 +18842,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T17:45:55.381977Z"
+    },
+    {
+      "key": "090f0a8e918ba6872fc5b9ab",
+      "url": "https://www.dailyfaceoff.com/players/news/curtis-douglas/27811",
+      "fingerprint": "a633e4d95d9af400",
+      "title_norm": "curtis douglas (sea) — douglas (upper-body) missed practice on tuesday and is day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T18:30:58.834260Z"
+    },
+    {
+      "key": "211f9711d97358b8446d3c7f",
+      "url": "https://www.dailyfaceoff.com/players/news/brock-faber/30792",
+      "fingerprint": "a6f55de41caec8ce",
+      "title_norm": "brock faber (min) — faber (head) has begun working out and is close to returning to practice with minnesota.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T18:30:59.049050Z"
     }
   ],
   "known_sources": [
