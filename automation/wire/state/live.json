@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T04:45:34.981946Z",
+  "updated_at": "2026-11-03T05:00:51.937483Z",
   "seen": [
-    {
-      "key": "85d47a3569e7c2df2f0f62ed",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-know-bad-second-period-habits-must-be-addressed-with-urgency",
-      "fingerprint": "633da1cba4934312",
-      "title_norm": "canadiens know bad second-period habits must be addressed with urgency",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T04:45:34.981641Z"
-    },
-    {
-      "key": "01ef245fade84b24ddc64a57",
-      "url": "https://www.sportsnet.ca/nhl/article/penalty-trouble-power-play-stumbles-sink-maple-leafs-against-rival-senators",
-      "fingerprint": "b313cdcc565ad0cb",
-      "title_norm": "penalty trouble, power-play stumbles sink maple leafs against rival senators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T04:45:35.408548Z"
-    },
     {
       "key": "1a91430654ada1e11dae3594",
       "url": "https://www.nhl.com/news/los-angeles-kings-san-jose-sharks-game-recap-october-3-2026",
@@ -18772,6 +18752,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T04:45:34.916572Z"
+    },
+    {
+      "key": "f5bc5379547bfcd8d9dae756",
+      "url": "https://www.nhl.com/news/nhl-fanatics-hometown-remix-jersey-descriptions",
+      "fingerprint": "b23ae5cf23fbb401",
+      "title_norm": "a look at all 32 hometown remix jerseys",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T05:00:48.420939Z"
+    },
+    {
+      "key": "757f0776a760f65baa1cc8f9",
+      "url": "https://www.nhl.com/news/calgary-flames-san-jose-sharks-game-recap-november-2-2026",
+      "fingerprint": "edb168304bb3b858",
+      "title_norm": "klapka has two points, flames edge sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T05:00:51.824021Z"
     }
   ],
   "known_sources": [
