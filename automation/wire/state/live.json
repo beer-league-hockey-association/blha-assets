@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T05:30:40.042431Z",
+  "updated_at": "2026-11-03T05:45:39.408337Z",
   "seen": [
     {
       "key": "8aca247f7787e5ac3aaf40ab",
@@ -18752,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T05:15:34.869506Z"
+    },
+    {
+      "key": "6057cd976aaf73abdc9a56a6",
+      "url": "https://www.sportsnet.ca/nhl/article/takeaways-wolf-continues-return-to-form-as-flames-beat-sharks",
+      "fingerprint": "a6ce09490eca25f2",
+      "title_norm": "takeaways: wolf continues return to form as flames beat sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T05:45:39.326298Z"
     }
   ],
   "known_sources": [
