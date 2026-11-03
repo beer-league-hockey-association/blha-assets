@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T18:30:59.174370Z",
+  "updated_at": "2026-11-03T18:46:10.000673Z",
   "seen": [
-    {
-      "key": "9ac92bf3877492bcab055103",
-      "url": "https://www.nhl.com/news/nhl-nhlpa-industry-growth-fund-red-wings-donate-zamboni-to-michigan-rink",
-      "fingerprint": "6b8771cc52df713c",
-      "title_norm": "nhl/nhlpa, red wings donate zamboni to michigan rink",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T18:45:02.650011Z"
-    },
     {
       "key": "f6541fb1c226b9950d2c6ace",
       "url": "https://www.dailyfaceoff.com/players/news/alexey-toropchenko/28113",
@@ -18862,6 +18852,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-03T18:30:59.049050Z"
+    },
+    {
+      "key": "80f5946a0f1e0915664df49d",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-beniers/30804",
+      "fingerprint": "60475ed1924cb458",
+      "title_norm": "matty beniers (sea) — beniers (undisclosed) returned to practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T18:46:09.337570Z"
+    },
+    {
+      "key": "df6d6fd65ebbfb21df56a3e7",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "38b49700600f00d2",
+      "title_norm": "linus ullmark (ott) — ullmark (lower-body) returned to the ice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T18:46:09.647497Z"
+    },
+    {
+      "key": "9052cdb43335114d6a48502c",
+      "url": "https://www.sportsnet.ca/nhl/article/weegar-loves-watching-russia-play-hockey-but-says-europe-may-see-it-differently",
+      "fingerprint": "d57e41714de4f5c9",
+      "title_norm": "weegar loves watching russia play hockey, but says europe may see it differently",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T18:46:09.928570Z"
     }
   ],
   "known_sources": [
