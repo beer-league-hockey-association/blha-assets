@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T00:30:41.177623Z",
+  "updated_at": "2026-11-03T01:00:36.451808Z",
   "seen": [
     {
       "key": "cd8d3877334af7c0a95bc1de",
@@ -18892,6 +18892,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-03T00:15:36.947310Z"
+    },
+    {
+      "key": "26b272e14d6695c2f63721a6",
+      "url": "https://www.nhl.com/news/matthew-schaefer-family-honors-mom-with-dedicated-kids-room-at-cancer-center",
+      "fingerprint": "5252528b010a4b4d",
+      "title_norm": "schaefer, family honor mom with child support room",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T01:00:36.007567Z"
+    },
+    {
+      "key": "657cbc85fcc866b12fcf203e",
+      "url": "https://www.sportsnet.ca/nhl/article/gallagher-drawing-on-past-experience-to-navigate-canucks-rebuild",
+      "fingerprint": "26a1355e6f29a6e1",
+      "title_norm": "gallagher drawing on past experience to navigate canucks' rebuild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T01:00:36.411480Z"
     }
   ],
   "known_sources": [
