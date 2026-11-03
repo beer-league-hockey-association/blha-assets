@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T01:00:36.451808Z",
+  "updated_at": "2026-11-03T01:30:41.793167Z",
   "seen": [
-    {
-      "key": "cd8d3877334af7c0a95bc1de",
-      "url": "https://www.nhl.com/news/radko-gudas-returns-to-anaheim-to-face-ducks-with-panthers",
-      "fingerprint": "386fa7a0d75f3bcd",
-      "title_norm": "gudas familiar foe in quick return to anaheim",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T01:16:05.963518Z"
-    },
-    {
-      "key": "133cb21d7d207d66e5d80e4d",
-      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
-      "fingerprint": "c48cd1a2aabb0a0c",
-      "title_norm": "matt roy (wsh) — roy (lower body) left saturday's game and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T01:16:06.262631Z"
-    },
-    {
-      "key": "94edfc554e18d0023dc66603",
-      "url": "https://www.sportsnet.ca/nhl/article/simon-edvinsson-prefers-trade-from-red-wings",
-      "fingerprint": "9c4915e844e8466b",
-      "title_norm": "simon edvinsson prefers trade from red wings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T01:16:06.542870Z"
-    },
-    {
-      "key": "6282a4add6c23115a1d891f4",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
-      "fingerprint": "34ca3a2a5d700af9",
-      "title_norm": "rasmus ristolainen (phi) — ristolainen (undisclosed) left saturday's game and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T01:30:33.112925Z"
-    },
     {
       "key": "7a21481b6de52d1666e9ae6c",
       "url": "https://www.dailyfaceoff.com/players/news/jacob-trouba/2099",
