@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T07:00:37.488787Z",
+  "updated_at": "2026-11-03T14:15:36.238757Z",
   "seen": [
-    {
-      "key": "0a8b409529d7cccebb355635",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-4-2026",
-      "fingerprint": "1c249ef3cd5f25de",
-      "title_norm": "on tap: ducks set for home opener against panthers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T14:15:33.182619Z"
-    },
     {
       "key": "4516f6060cdfbceee3a68154",
       "url": "https://www.sportsnet.ca/nhl/article/goaltender-leevi-merilainen-makes-good-on-chance-with-canucks-in-win",
