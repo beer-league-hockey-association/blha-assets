@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T05:45:39.408337Z",
+  "updated_at": "2026-11-03T06:30:34.545846Z",
   "seen": [
-    {
-      "key": "8aca247f7787e5ac3aaf40ab",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-third-period-scoring-spree-continues-in-win-over-flames",
-      "fingerprint": "c41b5bf1e0655b57",
-      "title_norm": "canucks takeaways: third-period scoring spree continues in win over flames",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T06:30:34.219295Z"
-    },
     {
       "key": "aa390780c057bd12e1b871d2",
       "url": "https://www.sportsnet.ca/nhl/article/overturned-call-turns-tide-as-flames-squander-lead-against-canucks",
