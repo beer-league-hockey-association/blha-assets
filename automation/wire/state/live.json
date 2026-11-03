@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T06:45:37.812333Z",
+  "updated_at": "2026-11-03T07:00:37.488787Z",
   "seen": [
-    {
-      "key": "0cfd42aba42bc642dca7d6b8",
-      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-beat-the-flyers-in-ot-for-their-first-win-as-aho-scores-2",
-      "fingerprint": "ad7c184d7f082e2a",
-      "title_norm": "nhl roundup: hurricanes beat flyers in ot for their first win as aho scores twice",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T07:00:34.480176Z"
-    },
     {
       "key": "0a8b409529d7cccebb355635",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-4-2026",
