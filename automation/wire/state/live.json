@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T14:30:48.968665Z",
+  "updated_at": "2026-11-03T15:30:42.392318Z",
   "seen": [
     {
       "key": "02ab80ec5f5722b42e491019",
@@ -18712,6 +18712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T05:45:39.326298Z"
+    },
+    {
+      "key": "7d633ab6386c017e7c3c4e8f",
+      "url": "https://www.marlies.ca/articles/toronto-marlies-reveal-2026-calder-cup-championship-ring",
+      "fingerprint": "8cfde3bbe697ecd1",
+      "title_norm": "marlies reveal 2026 calder cup championship ring",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-03T15:30:42.300811Z"
     }
   ],
   "known_sources": [
