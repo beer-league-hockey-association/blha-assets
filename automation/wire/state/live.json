@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T00:00:40.865942Z",
+  "updated_at": "2026-11-03T00:15:37.057959Z",
   "seen": [
     {
       "key": "4730c441fe45f3c8103b5b95",
@@ -18902,6 +18902,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-02T23:00:40.772204Z"
+    },
+    {
+      "key": "217de001f6f739c0b4c88090",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-praises-teammates-ahead-of-likely-home-debut",
+      "fingerprint": "9b007354c6e56bfe",
+      "title_norm": "hellebuyck lauds devils ahead of likely home debut",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T00:15:36.624165Z"
+    },
+    {
+      "key": "175df13d3799ef3e6d6ec72e",
+      "url": "https://www.nhl.com/news/sergei-bobrovsky-looking-to-become-winningest-nhl-goalie-born-outside-north-america",
+      "fingerprint": "5d7093c4dba295aa",
+      "title_norm": "bobrovsky to start for leafs, can pass lundqvist",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T00:15:36.947310Z"
     }
   ],
   "known_sources": [
