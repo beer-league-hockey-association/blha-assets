@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T19:01:36.034135Z",
+  "updated_at": "2026-11-03T19:16:30.140993Z",
   "seen": [
-    {
-      "key": "f6541fb1c226b9950d2c6ace",
-      "url": "https://www.dailyfaceoff.com/players/news/alexey-toropchenko/28113",
-      "fingerprint": "955cb4b550c2706f",
-      "title_norm": "alexey toropchenko (stl) — toropchenko will be re-evaluated in six weeks for an upper-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T19:15:28.121545Z"
-    },
     {
       "key": "c90845c50bd76051912ad15b",
       "url": "https://www.sportsnet.ca/nhl/article/kyle-connor-scores-a-pair-of-power-play-goals-as-jets-squeak-past-red-wings",
