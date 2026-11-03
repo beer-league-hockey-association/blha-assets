@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T18:01:05.613436Z",
+  "updated_at": "2026-11-03T18:15:56.488557Z",
   "seen": [
-    {
-      "key": "21fb1e1ea7372ce9defe8583",
-      "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
-      "fingerprint": "a494dc38641e0aa7",
-      "title_norm": "zachary l'heureux (col) — l'heureux (lower-body) was a full participant in colorado's practice on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T18:15:29.859006Z"
-    },
     {
       "key": "9ac92bf3877492bcab055103",
       "url": "https://www.nhl.com/news/nhl-nhlpa-industry-growth-fund-red-wings-donate-zamboni-to-michigan-rink",
