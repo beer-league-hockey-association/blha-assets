@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T22:15:43.859360Z",
+  "updated_at": "2026-11-03T22:45:44.729956Z",
   "seen": [
     {
       "key": "85904572ca212160a84d6ccb",
@@ -18912,6 +18912,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T22:15:43.772168Z"
+    },
+    {
+      "key": "3ae59afe767cdb3e3917ee94",
+      "url": "https://www.sportsnet.ca/world-juniors/article/prime-minister-mark-carney-says-russia-will-not-be-allowed-to-compete-at-world-juniors",
+      "fingerprint": "36acf4ccfe9d8771",
+      "title_norm": "prime minister mark carney says russia will not be allowed to compete at world juniors",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T22:45:44.643754Z"
     }
   ],
   "known_sources": [
