@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T17:15:45.526082Z",
+  "updated_at": "2026-11-03T17:30:56.935341Z",
   "seen": [
     {
       "key": "86d29afabc0cab44d7996eb9",
@@ -18822,6 +18822,36 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-03T17:15:44.956736Z"
+    },
+    {
+      "key": "ef4c0dc46bbef53e5e6cff9d",
+      "url": "https://www.dailyfaceoff.com/players/news/dawson-mercer/29327",
+      "fingerprint": "0b05c629d4b55aa5",
+      "title_norm": "dawson mercer (wpg) — mercer (upper-body) will play in montreal on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:30:55.935306Z"
+    },
+    {
+      "key": "37ad6e25bb65fe29141ecc84",
+      "url": "https://www.dailyfaceoff.com/players/news/isaac-howard/33270",
+      "fingerprint": "280c33537c1b27a4",
+      "title_norm": "isaac howard (edm) — howard (lower-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:30:56.284150Z"
+    },
+    {
+      "key": "2fb6cac19cc864b1d18a5ac7",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-lyon/2873",
+      "fingerprint": "4f0bfd7175e508e4",
+      "title_norm": "alex lyon (buf) — lyon (upper-body) is days away from return to buffalo's lineup.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:30:56.844018Z"
     }
   ],
   "known_sources": [
