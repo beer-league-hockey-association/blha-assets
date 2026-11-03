@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T03:45:34.899389Z",
+  "updated_at": "2026-11-03T04:00:41.853658Z",
   "seen": [
     {
       "key": "daf23a9cfa804ce8e3dbc60a",
@@ -18752,6 +18752,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-03T03:45:34.795289Z"
+    },
+    {
+      "key": "bf9585c1b7440db8c7d29eb4",
+      "url": "https://www.sportsnet.ca/nhl/article/pastrnak-scores-lone-shootout-goal-to-give-bruins-win-over-golden-knights",
+      "fingerprint": "77be4892008e5966",
+      "title_norm": "pastrnak scores lone shootout goal to give bruins win over golden knights",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T04:00:41.783803Z"
     }
   ],
   "known_sources": [
