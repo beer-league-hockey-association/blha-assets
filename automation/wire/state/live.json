@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T02:45:46.742170Z",
+  "updated_at": "2026-11-03T03:00:40.860890Z",
   "seen": [
     {
       "key": "cccfb6b4cf091490dc5b69af",
@@ -18752,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T02:30:38.311774Z"
+    },
+    {
+      "key": "258bccd20efce167cbae4310",
+      "url": "https://www.nhl.com/news/detroit-red-wings-florida-panthers-game-recap-november-2-2026",
+      "fingerprint": "a4418b585d3928e6",
+      "title_norm": "brandsegg-nygard, faulk lift red wings past panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T03:00:40.738276Z"
     }
   ],
   "known_sources": [
