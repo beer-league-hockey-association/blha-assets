@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T18:46:10.000673Z",
+  "updated_at": "2026-11-03T19:01:36.034135Z",
   "seen": [
     {
       "key": "f6541fb1c226b9950d2c6ace",
@@ -18882,6 +18882,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T18:46:09.928570Z"
+    },
+    {
+      "key": "a4f566fd76e9c1470a3e794b",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "e307d43cffa7dfd0",
+      "title_norm": "taylor hall (car) — hall (upper-body) is unlikely to return in nashville on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T19:01:35.622336Z"
+    },
+    {
+      "key": "1d05698d7f7a2e1bdc5e62b5",
+      "url": "https://www.nhl.com/news/ryan-nugent-hopkins-set-to-make-edmonton-oilers-history",
+      "fingerprint": "28781850bb8145aa",
+      "title_norm": "nugent-hopkins set to make oilers history",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T19:01:35.921299Z"
     }
   ],
   "known_sources": [
