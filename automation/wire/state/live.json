@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T17:00:46.020513Z",
+  "updated_at": "2026-11-03T17:15:45.526082Z",
   "seen": [
-    {
-      "key": "a9de8807a2141ddf1e1bbf7d",
-      "url": "https://www.nhl.com/news/tampa-bay-lightning-get-back-to-winning-battles-in-victory-over-washington-capitals",
-      "fingerprint": "5688149337b840c5",
-      "title_norm": "bolts get back to 'winning battles' in home opener",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T17:15:29.959466Z"
-    },
-    {
-      "key": "f260569b28a018ec65e60260",
-      "url": "https://www.dailyfaceoff.com/players/news/emil-lilleberg/37940",
-      "fingerprint": "54dfbb48dff7fe83",
-      "title_norm": "emil lilleberg (tbl) — lilleberg (undisclosed) left saturday's game vs. washington and is being further evaluated.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T17:15:30.267091Z"
-    },
     {
       "key": "86d29afabc0cab44d7996eb9",
       "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
@@ -18762,6 +18742,86 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T17:00:45.971266Z"
+    },
+    {
+      "key": "1dff7adf315a3ab4668e52f6",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-benson/33544",
+      "fingerprint": "8353099d4c74ad94",
+      "title_norm": "zach benson (buf) — benson (undisclosed) practiced on tuesday and is expected to return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:15:43.608412Z"
+    },
+    {
+      "key": "de30e162c5bd51721403f8bb",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "6aaf59bfa229d3e0",
+      "title_norm": "bowen byram (chi) — byram (upper-body) has been placed on ir retroactive to october 15th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:15:43.976441Z"
+    },
+    {
+      "key": "dd87f556ce48c559fd93714b",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-3-2026",
+      "fingerprint": "5d57dd59d94a9ced",
+      "title_norm": "on tap: mcdavid puts streak up against hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T17:15:44.257491Z"
+    },
+    {
+      "key": "e668a173e61bf5b0b2164c7d",
+      "url": "https://www.nhl.com/news/hometown-remix-jerseys-receive-rave-reviews-from-nhl-players",
+      "fingerprint": "ea3b2dfdc1abce32",
+      "title_norm": "players love 'pretty funky' hometown remix jerseys",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T17:15:44.482064Z"
+    },
+    {
+      "key": "7dab70121355252399be6bf9",
+      "url": "https://www.nhl.com/news/pekka-rinne-evolved-from-long-shot-to-hockey-hall-of-famer",
+      "fingerprint": "40fdb9ba6e87f2b2",
+      "title_norm": "rinne evolved from long shot to hall of famer",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-03T17:15:44.666050Z"
+    },
+    {
+      "key": "ca19341cae799ffaf4156308",
+      "url": "https://theahl.com/news/mittelstadt-ahl-rookie-month",
+      "fingerprint": "56df040697b214d2",
+      "title_norm": "rocket's mittelstadt named ahl rookie of the month for october",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:15:44.878181Z"
+    },
+    {
+      "key": "2fcd79b1073ac895ae3b0f53",
+      "url": "https://www.sportsnet.ca/nhl/article/checking-in-on-early-returns-of-maple-leafs-go-to-goalie-sergei-bobrovsky",
+      "fingerprint": "068b27da9cca16a4",
+      "title_norm": "checking in on early returns of maple leafs' go-to goalie sergei bobrovsky",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:15:44.926352Z"
+    },
+    {
+      "key": "205c5bad7fd97f51c83ce009",
+      "url": "https://dobberprospects.com/2026/11/03/november-ohl-report-four-forwards-turning-heads-in-the-ohls-western-conference",
+      "fingerprint": "0f6e0009d46622bb",
+      "title_norm": "november ohl report: four forwards turning heads in the ohl's western conference",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-03T17:15:44.956736Z"
     }
   ],
   "known_sources": [
