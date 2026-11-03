@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T16:45:40.691044Z",
+  "updated_at": "2026-11-03T17:00:46.020513Z",
   "seen": [
     {
       "key": "a9de8807a2141ddf1e1bbf7d",
@@ -18752,6 +18752,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-03T16:45:40.606215Z"
+    },
+    {
+      "key": "69ed3b09657354a98279aea8",
+      "url": "https://www.sportsnet.ca/nhl/article/golden-knights-bowman-not-facing-additional-discipline-for-elbowing-bruins-poitras",
+      "fingerprint": "c5704951baa63b34",
+      "title_norm": "golden knights' bowman not facing additional discipline for elbowing bruins' poitras",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T17:00:45.971266Z"
     }
   ],
   "known_sources": [
