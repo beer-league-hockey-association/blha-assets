@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T22:00:50.965442Z",
+  "updated_at": "2026-11-03T22:15:43.859360Z",
   "seen": [
-    {
-      "key": "4f3104b633ea116dc603189d",
-      "url": "https://www.nhl.com/news/topic/fantasy/nhl-fantasy-hockey-top-250-200-rankings-drafts-players-big-board-281505474",
-      "fingerprint": "106c952b49e9a789",
-      "title_norm": "fantasy hockey top 200 player rankings for 2026-27",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T22:15:34.867760Z"
-    },
     {
       "key": "85904572ca212160a84d6ccb",
       "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
@@ -18912,6 +18902,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-03T21:00:57.070088Z"
+    },
+    {
+      "key": "da1a797832dd38d3257cdf18",
+      "url": "https://www.sportsnet.ca/nhl/article/taking-stock-of-early-nhl-playoff-picture",
+      "fingerprint": "0f89e36e19925854",
+      "title_norm": "taking stock of early nhl playoff picture",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T22:15:43.772168Z"
     }
   ],
   "known_sources": [
