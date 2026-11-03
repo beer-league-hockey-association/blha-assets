@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T15:45:39.332335Z",
+  "updated_at": "2026-11-03T16:00:51.707946Z",
   "seen": [
-    {
-      "key": "02ab80ec5f5722b42e491019",
-      "url": "https://www.nhl.com/news/oilers-devon-levi-trying-to-make-most-of-chance-as-nhl-goalie",
-      "fingerprint": "cdf62fdab33d90b0",
-      "title_norm": "levi trying to make most of chance with oilers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T15:46:07.139790Z"
-    },
     {
       "key": "c6f5faf2a3ac2b6bfb8497e1",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-4-2026",
