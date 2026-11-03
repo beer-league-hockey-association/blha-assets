@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T14:15:36.238757Z",
+  "updated_at": "2026-11-03T14:30:48.968665Z",
   "seen": [
-    {
-      "key": "4516f6060cdfbceee3a68154",
-      "url": "https://www.sportsnet.ca/nhl/article/goaltender-leevi-merilainen-makes-good-on-chance-with-canucks-in-win",
-      "fingerprint": "5b0350fc35bf6e7a",
-      "title_norm": "goaltender leevi merilainen makes good on chance with canucks in win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T14:30:31.339357Z"
-    },
     {
       "key": "02ab80ec5f5722b42e491019",
       "url": "https://www.nhl.com/news/oilers-devon-levi-trying-to-make-most-of-chance-as-nhl-goalie",
