@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T04:15:37.249480Z",
+  "updated_at": "2026-11-03T04:45:34.981946Z",
   "seen": [
     {
       "key": "85d47a3569e7c2df2f0f62ed",
@@ -18762,6 +18762,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-03T04:15:37.120097Z"
+    },
+    {
+      "key": "cb5b7144d76674f0c0127b02",
+      "url": "https://www.sportsnet.ca/nhl/article/kadri-schwartz-lead-avalanche-past-blackhawks-for-third-straight-win",
+      "fingerprint": "4fc10cf80d06f117",
+      "title_norm": "kadri, schwartz lead avalanche past blackhawks for third straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T04:45:34.916572Z"
     }
   ],
   "known_sources": [
