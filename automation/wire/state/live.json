@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T19:46:06.664569Z",
+  "updated_at": "2026-11-03T20:00:55.880428Z",
   "seen": [
-    {
-      "key": "c90845c50bd76051912ad15b",
-      "url": "https://www.sportsnet.ca/nhl/article/kyle-connor-scores-a-pair-of-power-play-goals-as-jets-squeak-past-red-wings",
-      "fingerprint": "e89a2b675486f2d9",
-      "title_norm": "kyle connor scores a pair of power-play goals as jets squeak past red wings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-04T20:00:50.879084Z"
-    },
     {
       "key": "e40de0f55e294746e06725be",
       "url": "https://www.nhl.com/news/winnipeg-jets-detroit-red-wings-game-recap-october-4-2026",
