@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T16:15:41.498539Z",
+  "updated_at": "2026-11-03T16:45:40.691044Z",
   "seen": [
-    {
-      "key": "c6f5faf2a3ac2b6bfb8497e1",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-4-2026",
-      "fingerprint": "62c23bf92e68068f",
-      "title_norm": "status report: sens' sanderson reaggravates injury",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T16:45:35.756094Z"
-    },
-    {
-      "key": "987761c3878bef84ac30b562",
-      "url": "https://www.nhl.com/news/daniel-alfredsson-emotional-seeing-senators-again-with-maple-leafs",
-      "fingerprint": "57a1b60c1ecfb0f0",
-      "title_norm": "alfredsson 'emotional' seeing sens again with leafs",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-04T16:45:36.051094Z"
-    },
     {
       "key": "a9de8807a2141ddf1e1bbf7d",
       "url": "https://www.nhl.com/news/tampa-bay-lightning-get-back-to-winning-battles-in-victory-over-washington-capitals",
@@ -18752,6 +18732,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-03T16:15:41.382197Z"
+    },
+    {
+      "key": "1f518feb751f4fe267ae3f49",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-cernak/2749",
+      "fingerprint": "e5eb285bc1498799",
+      "title_norm": "erik cernak (tbl) — cernak (undisclosed) will return vs. detroit on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T16:45:40.299356Z"
+    },
+    {
+      "key": "07eaa0626a742429ffef9c8e",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-poitras/33196",
+      "fingerprint": "09dd672d56359e75",
+      "title_norm": "matthew poitras (bos) — poitras (upper-body) missed practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-03T16:45:40.606215Z"
     }
   ],
   "known_sources": [
