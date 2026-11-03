@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T20:16:19.867460Z",
+  "updated_at": "2026-11-03T20:31:17.962968Z",
   "seen": [
     {
       "key": "0289815cd595bccfb70c51be",
@@ -18902,6 +18902,26 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-11-03T20:16:19.862414Z"
+    },
+    {
+      "key": "f8e544ef1aa23fa2d5aedaff",
+      "url": "https://www.sportsnet.ca/nhl/video/hagens-takes-rookie-scoring-lead-but-is-fowler-clear-cut-calder-frontrunner",
+      "fingerprint": "a30c57e2b2c652d3",
+      "title_norm": "hagens takes rookie scoring lead, but is fowler clear-cut calder frontrunner?",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T20:31:17.882113Z"
+    },
+    {
+      "key": "67be1b2c9d5c2db49dc6fe87",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-brad-lambert-placed-on-waivers-maple-leafs-bo-groulx-clears",
+      "fingerprint": "21fd4d8f3d83dcd5",
+      "title_norm": "jets' brad lambert placed on waivers, maple leafs' bo groulx clears",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-03T20:31:17.897182Z"
     }
   ],
   "known_sources": [
