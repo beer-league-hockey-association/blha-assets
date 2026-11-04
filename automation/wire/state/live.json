@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T15:45:37.389483Z",
+  "updated_at": "2026-11-04T16:00:43.455103Z",
   "seen": [
-    {
-      "key": "9c805eda4aed5468c23f1b1e",
-      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
-      "fingerprint": "4f9a1c424902bd0c",
-      "title_norm": "justus annunen (nsh) — annunen (undisclosed) returned to practice on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T15:45:50.227537Z"
-    },
     {
       "key": "83098e44f2f3d3dad220f4af",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-5-2026",
@@ -18952,6 +18942,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-04T15:45:37.268440Z"
+    },
+    {
+      "key": "6e1d5cb9c655cd330901602d",
+      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
+      "fingerprint": "3f9e308f6804294b",
+      "title_norm": "jiri kulich (buf) — kulich (concussion) is available to return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T16:00:42.960873Z"
+    },
+    {
+      "key": "34377322c86dd5f15718bf89",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-timmins/2797",
+      "fingerprint": "0ee4f3a6f11419c8",
+      "title_norm": "conor timmins (buf) — timmins (lower-body) is available to return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T16:00:43.393375Z"
     }
   ],
   "known_sources": [
