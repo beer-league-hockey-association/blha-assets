@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T13:30:37.989490Z",
+  "updated_at": "2026-11-04T14:00:49.349479Z",
   "seen": [
-    {
-      "key": "fe33b0a8ea670a86d359a467",
-      "url": "https://www.nhl.com/news/color-of-hockey-hispanic-trainers-making-their-mark-in-pro-game",
-      "fingerprint": "4c866cc957f9839b",
-      "title_norm": "hispanic trainers making their mark in ahl",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-05T13:45:37.654045Z"
-    },
-    {
-      "key": "7ee9233e377e3a94205898f9",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "4f520cda377b712b",
-      "title_norm": "jake sanderson (ott) — sanderson (lower-body) is expected to miss the final two games of the senators' road-trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T14:00:39.616244Z"
-    },
     {
       "key": "7fc9b43a312e018d2b27df6c",
       "url": "https://www.sportsnet.ca/nhl/article/canadiens-forward-ivan-demidov-misses-practice",
