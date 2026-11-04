@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T02:15:34.895843Z",
+  "updated_at": "2026-11-04T03:00:49.948183Z",
   "seen": [
     {
       "key": "534f5fbc1493f001b8e08534",
@@ -18912,6 +18912,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T02:15:34.837200Z"
+    },
+    {
+      "key": "43f4b9ef9adae7f07f1789b5",
+      "url": "https://www.nhl.com/news/minnesota-wild-philadelphia-flyers-game-recap-november-3-2026",
+      "fingerprint": "8cc9702b33f5b0ee",
+      "title_norm": "wild run point streak to 6 with win against flyers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:00:48.871603Z"
+    },
+    {
+      "key": "0fe5515a00acc44e15394ffb",
+      "url": "https://www.nhl.com/news/detroit-red-wings-tampa-bay-lightning-game-recap-november-3-2026",
+      "fingerprint": "d98978bafc36f318",
+      "title_norm": "point gets first multigoal game of season, lightning edge red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:00:49.296218Z"
+    },
+    {
+      "key": "1022b001ac2de2cc23a55f55",
+      "url": "https://www.sportsnet.ca/nhl/article/mammoth-break-tie-late-to-beat-maple-leafs",
+      "fingerprint": "7716a2d34b19cb38",
+      "title_norm": "mammoth break tie late to beat maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T03:00:49.900512Z"
     }
   ],
   "known_sources": [
