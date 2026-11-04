@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T01:00:44.322754Z",
+  "updated_at": "2026-11-04T01:30:45.009850Z",
   "seen": [
     {
       "key": "534f5fbc1493f001b8e08534",
@@ -18862,6 +18862,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T00:45:37.859114Z"
+    },
+    {
+      "key": "398213af1d0f754aa43234a7",
+      "url": "https://www.dailyfaceoff.com/players/news/john-gibson/1870",
+      "fingerprint": "01e9dbaa11888654",
+      "title_norm": "john gibson (det) — gibson (lower-body) left tuesday's game vs. tampa bay and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T01:30:44.869833Z"
     }
   ],
   "known_sources": [
