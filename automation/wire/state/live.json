@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T16:30:55.840977Z",
+  "updated_at": "2026-11-04T16:45:45.053474Z",
   "seen": [
-    {
-      "key": "a87159e466d5a419423e8e2a",
-      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
-      "fingerprint": "3605b842312ca8c8",
-      "title_norm": "connor brown (njd) — brown (lower-body) skated on monday but is not expected back this week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T16:45:31.882783Z"
-    },
-    {
-      "key": "f3fe02e6048ac2e79f43f92e",
-      "url": "https://www.dailyfaceoff.com/players/news/danila-yurov/36363",
-      "fingerprint": "ed9d1a285bca8aed",
-      "title_norm": "danila yurov (min) — yurov (upper-body) left minnesota's practice early on monday and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T16:45:32.135875Z"
-    },
     {
       "key": "1332ed7d981f0ceee3e4d748",
       "url": "https://theahl.com/news/firebirds-nyman-ahl-player-week",
@@ -18892,6 +18872,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-04T16:15:41.683814Z"
+    },
+    {
+      "key": "71aed9345766b53188891227",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "b0979044df2f19ba",
+      "title_norm": "jack roslovic (tor) — roslovic (maintenance) missed practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T16:45:44.527116Z"
+    },
+    {
+      "key": "b20f78558bf2fd0bc732a06b",
+      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
+      "fingerprint": "9bf7b0cab16c5fe0",
+      "title_norm": "john tavares (tor) — tavares (lower-body) returned to practice in a non-contact jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T16:45:44.743994Z"
+    },
+    {
+      "key": "f3139c1bf867d81c9fb68019",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-hellebuyck-cites-family-as-reason-for-difficult-trade-request",
+      "fingerprint": "c71be9e4515f8bf0",
+      "title_norm": "connor hellebuyck cites family as reason for 'difficult' trade request",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T16:45:44.969784Z"
     }
   ],
   "known_sources": [
