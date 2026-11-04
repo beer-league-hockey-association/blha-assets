@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T02:00:38.092271Z",
+  "updated_at": "2026-11-04T02:15:34.895843Z",
   "seen": [
     {
       "key": "534f5fbc1493f001b8e08534",
@@ -18882,6 +18882,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-04T02:00:38.006682Z"
+    },
+    {
+      "key": "b8082b7f563975ad413b8ee6",
+      "url": "https://www.sportsnet.ca/nhl/article/stars-miro-heiskanen-exits-vs-capitals-with-upper-body-injury",
+      "fingerprint": "b2e043a9d29b7d72",
+      "title_norm": "stars' miro heiskanen exits vs. capitals with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T02:15:33.910113Z"
+    },
+    {
+      "key": "3bb8be33b14dfee7ed21673a",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-tom-willander-a-late-scratch-vs-ducks-with-lower-body-injury",
+      "fingerprint": "10c22f298172a5a9",
+      "title_norm": "canucks' tom willander a late scratch vs. ducks with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T02:15:34.326540Z"
+    },
+    {
+      "key": "3f424b179a2f81c745238e0b",
+      "url": "https://www.sportsnet.ca/nhl/video/lowe-congratulates-nugent-hopkins-for-breaking-oilers-record",
+      "fingerprint": "1c220099b306b565",
+      "title_norm": "lowe congratulates nugent-hopkins for breaking oilers record",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T02:15:34.837200Z"
     }
   ],
   "known_sources": [
