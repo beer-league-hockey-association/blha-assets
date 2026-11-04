@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T03:15:37.039485Z",
+  "updated_at": "2026-11-04T03:30:36.844985Z",
   "seen": [
-    {
-      "key": "33210ff01a119944868a0139",
-      "url": "https://www.nhl.com/news/florida-panthers-anaheim-ducks-game-recap-october-4-2026",
-      "fingerprint": "6781e23f9edccf39",
-      "title_norm": "ducks recover in ot, overcome marchand's late goal for panthers in season debut",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T03:30:35.445173Z"
-    },
-    {
-      "key": "28adb903487b7f708bb9cf39",
-      "url": "https://www.sportsnet.ca/nhl/article/granlund-scores-in-ot-gauthier-gets-two-goals-in-ducks-win-over-panthers",
-      "fingerprint": "13f4d0413f3f67b1",
-      "title_norm": "granlund scores in ot, gauthier gets two goals in ducks' win over panthers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T03:30:35.904929Z"
-    },
     {
       "key": "40ea4c38f0399e5b4f2bf0a8",
       "url": "https://www.sportsnet.ca/nhl/article/flames-stay-winless-after-loss-to-kraken",
@@ -18992,6 +18972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T03:15:36.791712Z"
+    },
+    {
+      "key": "d682c54a97ea8509decca37e",
+      "url": "https://www.nhl.com/news/st-louis-blues-new-york-rangers-game-recap-november-3-2026",
+      "fingerprint": "e4a03b0d4780c862",
+      "title_norm": "garand makes 32 saves, rangers end 4-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:30:36.721984Z"
     }
   ],
   "known_sources": [
