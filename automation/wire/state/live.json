@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T06:30:40.913976Z",
+  "updated_at": "2026-11-04T07:00:35.785674Z",
   "seen": [
     {
       "key": "a154f893debe9714a66ee86e",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T06:30:40.832991Z"
+    },
+    {
+      "key": "851ecea775a635c2f3fa3516",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-battle-to-the-end-in-combative-loss-to-ducks",
+      "fingerprint": "35b7be9e9c14fec7",
+      "title_norm": "canucks battle to the end in combative loss to ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T07:00:35.724426Z"
     }
   ],
   "known_sources": [
