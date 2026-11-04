@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T21:15:29.913175Z",
+  "updated_at": "2026-11-04T21:45:34.895858Z",
   "seen": [
     {
       "key": "0d972a9a5960d70465c84c8c",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T20:30:43.833458Z"
+    },
+    {
+      "key": "7012ae134b4a82bbd7aebaa6",
+      "url": "https://www.sportsnet.ca/nhl/article/why-hillers-maple-leafs-need-more-from-william-nylander",
+      "fingerprint": "f3171993ca2eef0f",
+      "title_norm": "maple leafs' nylander piling up points but says he needs to do more",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T21:45:34.844939Z"
     }
   ],
   "known_sources": [
