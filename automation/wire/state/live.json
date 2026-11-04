@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T22:15:30.788210Z",
+  "updated_at": "2026-11-04T22:30:51.852831Z",
   "seen": [
-    {
-      "key": "427c6c56d3c295ca8e68e8e2",
-      "url": "https://www.sportsnet.ca/nhl/article/whats-next-for-flames-connor-zary-after-being-placed-on-waivers",
-      "fingerprint": "769dfaff64107eac",
-      "title_norm": "what's next for flames' connor zary after being placed on waivers",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T22:15:36.981445Z"
-    },
     {
       "key": "e6cf9e944a21925be4fc7265",
       "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
@@ -19012,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T22:00:39.674602Z"
+    },
+    {
+      "key": "9ceaf5929566b9c65ee6fda7",
+      "url": "https://www.dailyfaceoff.com/players/news/albert-johansson/30661",
+      "fingerprint": "cbea749ea4f18690",
+      "title_norm": "albert johansson (det) — johansson (undisclosed) has been placed on ir retroactive to october 24th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T22:30:51.779523Z"
     }
   ],
   "known_sources": [
