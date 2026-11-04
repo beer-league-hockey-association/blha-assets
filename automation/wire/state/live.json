@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T15:30:41.709340Z",
+  "updated_at": "2026-11-04T15:45:37.389483Z",
   "seen": [
     {
       "key": "9c805eda4aed5468c23f1b1e",
@@ -18942,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T14:30:40.937069Z"
+    },
+    {
+      "key": "134eec00a72695cc653673e9",
+      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
+      "fingerprint": "2f121bad06e6c005",
+      "title_norm": "mathew barzal (nyi) — barzal (lower-body) returned to practice in a non-contact jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T15:45:37.268440Z"
     }
   ],
   "known_sources": [
