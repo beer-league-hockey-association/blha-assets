@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T19:45:32.245844Z",
+  "updated_at": "2026-11-04T20:15:41.643607Z",
   "seen": [
     {
       "key": "5642d239504c4671c2e2ab80",
@@ -19032,6 +19032,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T19:45:32.203607Z"
+    },
+    {
+      "key": "59a4630b5e4344e399d23eeb",
+      "url": "https://www.flohockey.tv/articles/16348550-every-ahl-team-is-playing-this-saturday-heres-what-to-know",
+      "fingerprint": "9211dae860e8c424",
+      "title_norm": "every ahl team is playing saturday: here's what to know",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-04T20:15:41.516657Z"
     }
   ],
   "known_sources": [
