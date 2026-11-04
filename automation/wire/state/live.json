@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T00:30:38.527317Z",
+  "updated_at": "2026-11-04T00:45:37.934731Z",
   "seen": [
-    {
-      "key": "a937e2ecdb4b10d1870e2612",
-      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-canucks-pettersson-boosting-trade-value",
-      "fingerprint": "d8eedc24758af1bc",
-      "title_norm": "sunday overreactions: canucks' pettersson boosting trade value",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T00:45:34.253063Z"
-    },
     {
       "key": "c044d3caf3f64df4c6f04b67",
       "url": "https://www.nhl.com/news/utah-mammoth-new-york-rangers-game-recap-october-4-2026",
@@ -18882,6 +18872,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T00:30:38.391152Z"
+    },
+    {
+      "key": "2d68ab10fa119f78929e8615",
+      "url": "https://www.dailyfaceoff.com/players/news/jonathan-marchessault2/2399",
+      "fingerprint": "a85e5da7331b773c",
+      "title_norm": "jonathan marchessault (nsh) — marchessault (lower-body) will not play tuesday vs. the hurricanes.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T00:45:37.559071Z"
+    },
+    {
+      "key": "2563d61c2489b61858492a5c",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/c5262322-b629-49f0-bace-9e779ff28565",
+      "fingerprint": "b06b02b893bea033",
+      "title_norm": "oilers on sportsnet: edmonton vs. devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T00:45:37.859114Z"
     }
   ],
   "known_sources": [
