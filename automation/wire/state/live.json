@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T05:15:38.213137Z",
+  "updated_at": "2026-11-04T05:45:34.982451Z",
   "seen": [
     {
       "key": "2a701876b53e1aa2ad0d9fef",
@@ -18992,6 +18992,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T05:15:38.074313Z"
+    },
+    {
+      "key": "ed098ae1226e1760c181fb5b",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-on-wrong-side-of-history-in-skid-stopping-comeback-win-for-jets",
+      "fingerprint": "f4c49e4fce3ff320",
+      "title_norm": "canadiens on wrong side of history in skid-stopping comeback win for jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T05:45:33.711284Z"
+    },
+    {
+      "key": "47bf8143bdeb770f8627e022",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-lose-momentum-after-raddysh-penalty-in-loss-to-mammoth",
+      "fingerprint": "ce9830639a026af8",
+      "title_norm": "maple leafs lose momentum after raddysh penalty in loss to mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T05:45:34.669123Z"
+    },
+    {
+      "key": "b0792db2cff79843bb48d24d",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-continue-to-look-like-different-team-despite-loss-to-speedy-devils",
+      "fingerprint": "0a6ac5e91e2c97f2",
+      "title_norm": "oilers continue to look like different team despite loss to speedy devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T05:45:34.913951Z"
     }
   ],
   "known_sources": [
