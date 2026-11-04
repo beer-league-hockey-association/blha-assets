@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T19:30:38.706893Z",
+  "updated_at": "2026-11-04T19:45:32.245844Z",
   "seen": [
     {
       "key": "5642d239504c4671c2e2ab80",
@@ -19012,6 +19012,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T19:30:38.632342Z"
+    },
+    {
+      "key": "3a4e5c7af4bc00eb08c8ed69",
+      "url": "https://theahl.com/news/fast-start-puts-roadrunners-ahead-of-pack",
+      "fingerprint": "4058bfe50e436dc0",
+      "title_norm": "fast start puts roadrunners ahead of pack",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-04T19:45:31.844894Z"
+    },
+    {
+      "key": "1fa08b98ae0347bde6b1b76f",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-tavares-could-return-saturday-roslovic-misses-practice",
+      "fingerprint": "efaa9eda3a2c2957",
+      "title_norm": "maple leafs' tavares could return saturday, roslovic misses practice",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T19:45:32.203607Z"
     }
   ],
   "known_sources": [
