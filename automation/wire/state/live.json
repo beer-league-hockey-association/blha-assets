@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T18:15:43.117549Z",
+  "updated_at": "2026-11-04T18:30:44.257033Z",
   "seen": [
-    {
-      "key": "0a7761f31b304b1f6ae3bbbb",
-      "url": "https://www.nhl.com/news/anders-lee-settles-in-with-utah-already-making-impact",
-      "fingerprint": "9e517a07ae15f8d7",
-      "title_norm": "lee settles in with mammoth, already making impact",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T18:30:41.937886Z"
-    },
-    {
-      "key": "ceaeb95890edaab4b8a2a3c5",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-place-connor-zary-brayden-pachal-on-waivers",
-      "fingerprint": "95c52f9eb8761928",
-      "title_norm": "flames place connor zary, brayden pachal on waivers",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T18:30:42.006043Z"
-    },
     {
       "key": "c80cb6759b2e28335ea8b342",
       "url": "https://www.sportsnet.ca/nhl/article/no-reason-to-panic-maple-leafs-patient-despite-mckenna-lines-rough-start",
@@ -18992,6 +18972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-04T18:15:43.002920Z"
+    },
+    {
+      "key": "dfd0bc0562dc7833147703c2",
+      "url": "https://www.dailyfaceoff.com/players/news/patrick-kane/305",
+      "fingerprint": "c61fa2abcab79424",
+      "title_norm": "patrick kane (chi) — kane (undisclosed) is out vs. florida on wednesday and is not travelling with the team.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T18:30:44.115453Z"
     }
   ],
   "known_sources": [
