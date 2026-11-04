@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T00:00:42.912175Z",
+  "updated_at": "2026-11-04T00:15:41.439307Z",
   "seen": [
-    {
-      "key": "f6d4b23daeb429cc9dc3550f",
-      "url": "https://www.nhl.com/news/topic/short-shifts/johnny-gaudreau-horses-belmont-park-breeders-cup",
-      "fingerprint": "5a7028a00e1ade7e",
-      "title_norm": "horse named for j. gaudreau finishes 2nd at belmont",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T00:15:28.617021Z"
-    },
     {
       "key": "a937e2ecdb4b10d1870e2612",
       "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-canucks-pettersson-boosting-trade-value",
