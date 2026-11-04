@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T17:15:49.566284Z",
+  "updated_at": "2026-11-04T17:30:41.351571Z",
   "seen": [
-    {
-      "key": "1f1a04313fa3ff37565d360c",
-      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
-      "fingerprint": "4b147c43d762e160",
-      "title_norm": "joe veleno (nyr) — veleno (lower-body) is out vs. new york on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T17:30:32.908926Z"
-    },
-    {
-      "key": "1d590678c6cb14fb792295f9",
-      "url": "https://www.sportsnet.ca/nhl/article/shesterkin-bouchard-cotter-named-nhls-three-stars-of-the-week",
-      "fingerprint": "13a571a47582df3c",
-      "title_norm": "shesterkin, bouchard, cotter named nhl's three stars of the week",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T17:30:33.376278Z"
-    },
     {
       "key": "bd343f25cd2ea4fdd27bfaac",
       "url": "https://www.nhl.com/news/topic/3-stars/shesterkin-bouchard-cotter-named-nhl-3-stars-of-week-october-5-2026",
@@ -18992,6 +18972,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T17:15:49.204337Z"
+    },
+    {
+      "key": "4e169c5947663f27f2b44cb4",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "50c4caa933c6c23b",
+      "title_norm": "ryan pulock (nyi) — pulock (upper body) practiced in a non-contact jersey and is 2-4 weeks away.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:30:39.514311Z"
+    },
+    {
+      "key": "462e807c4f136a058ed3925f",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "5c466435943d6e22",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower body) practiced in a non-contact jersey and is 2-4 weeks away.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:30:39.961226Z"
+    },
+    {
+      "key": "04464f1f80cb0eb1014362cb",
+      "url": "https://www.sportsnet.ca/nhl/article/voters-reject-proposed-taxes-tied-to-planned-new-arena-for-dallas-stars",
+      "fingerprint": "c0e2e1f0a5158a42",
+      "title_norm": "voters reject proposed taxes tied to planned new arena for dallas stars",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:30:41.292681Z"
     }
   ],
   "known_sources": [
