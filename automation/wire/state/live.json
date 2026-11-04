@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T18:00:43.928966Z",
+  "updated_at": "2026-11-04T18:15:43.117549Z",
   "seen": [
-    {
-      "key": "2f81afd3da15f34d68a78548",
-      "url": "https://www.sportsnet.ca/nhl/article/bettman-no-trade-comments-an-attack-on-player-rights-says-nhlpa-exec-hainsey",
-      "fingerprint": "ae61c3f8eb94e070",
-      "title_norm": "bettman no-trade comments an 'attack' on player rights, says nhlpa exec hainsey",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T18:15:42.002364Z"
-    },
     {
       "key": "0a7761f31b304b1f6ae3bbbb",
       "url": "https://www.nhl.com/news/anders-lee-settles-in-with-utah-already-making-impact",
@@ -18982,6 +18972,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T18:00:43.789657Z"
+    },
+    {
+      "key": "583ed83f5a742e376f468eb3",
+      "url": "https://www.dailyfaceoff.com/players/news/miro-heiskanen/2803",
+      "fingerprint": "62a03e85a0d61915",
+      "title_norm": "miro heiskanen (dal) — heiskanen (upper body) did not practice on wednesday and is day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T18:15:42.679046Z"
+    },
+    {
+      "key": "9b171d26cb31542019ac96ed",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-lindgren/4632",
+      "fingerprint": "b6eb0accd96bfa86",
+      "title_norm": "ryan lindgren (sea) — lindgren (upper body) practiced in a non-contact jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T18:15:43.002920Z"
     }
   ],
   "known_sources": [
