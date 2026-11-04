@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T14:00:49.349479Z",
+  "updated_at": "2026-11-04T14:30:41.007996Z",
   "seen": [
     {
       "key": "7fc9b43a312e018d2b27df6c",
@@ -19012,6 +19012,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-04T12:15:44.773403Z"
+    },
+    {
+      "key": "24129b0ac5e7dc2972a28c98",
+      "url": "https://www.sportsnet.ca/hockey/article/iihf-maintains-opposition-to-russias-reinstatement-silent-on-canadas-position",
+      "fingerprint": "953836c7dec1f27f",
+      "title_norm": "iihf maintains opposition to russia's reinstatement, silent on canada's position",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T14:30:40.937069Z"
     }
   ],
   "known_sources": [
