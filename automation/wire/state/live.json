@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T16:45:45.053474Z",
+  "updated_at": "2026-11-04T17:00:47.683258Z",
   "seen": [
     {
       "key": "1332ed7d981f0ceee3e4d748",
@@ -18902,6 +18902,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T16:45:44.969784Z"
+    },
+    {
+      "key": "051a44c066924496caab204b",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "b29f9e2edcbaa04b",
+      "title_norm": "linus ullmark (ott) — ullmark (lower-body) travelled on ottawa's road trip but will not return in buffalo on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:00:46.946177Z"
+    },
+    {
+      "key": "d624506c5ee8f576134233df",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-kleven/30802",
+      "fingerprint": "d6bc05ffc704c09c",
+      "title_norm": "tyler kleven (ott) — kleven (illness) is out vs. buffalo on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:00:47.147227Z"
+    },
+    {
+      "key": "3f7e695aab20e4dd34122eb1",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-first-ranking-of-top-32-prospects-for-2027-nhl-draft",
+      "fingerprint": "6dae0bba29c2fb93",
+      "title_norm": "scout's analysis: first ranking of top 32 prospects for 2027 nhl draft",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:00:47.391827Z"
+    },
+    {
+      "key": "3be6777eee9251e3ebe92679",
+      "url": "https://www.sportsnet.ca/nhl/article/heavy-meat-sauce-mammoth-aiming-to-stake-claim-among-central-division-juggernauts",
+      "fingerprint": "21b03821d09bf93a",
+      "title_norm": "'heavy meat sauce': mammoth aiming to stake claim among central division juggernauts",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:00:47.599046Z"
     }
   ],
   "known_sources": [
