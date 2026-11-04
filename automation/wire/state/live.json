@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-03T23:30:47.387363Z",
+  "updated_at": "2026-11-04T00:00:42.912175Z",
   "seen": [
-    {
-      "key": "be7d7d4ac9c1bdb714316ee8",
-      "url": "https://www.dailyfaceoff.com/players/news/gustav-forsling/2431",
-      "fingerprint": "e974fca74b6a28df",
-      "title_norm": "gustav forsling (fla) — forsling (upper-body) is expected to return in anaheim on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T23:45:29.471371Z"
-    },
-    {
-      "key": "ac890ea0e80b46889801fc01",
-      "url": "https://www.dailyfaceoff.com/players/news/aaron-ekblad/2363",
-      "fingerprint": "97b74689b9109025",
-      "title_norm": "aaron ekblad (fla) — ekblad (undisclosed) is out vs. anaheim on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-04T23:45:29.728633Z"
-    },
-    {
-      "key": "4f64c36b247895948712024f",
-      "url": "https://www.dailyfaceoff.com/players/news/joel-hanley/2605",
-      "fingerprint": "42a6b92e4862e4c0",
-      "title_norm": "joel hanley (cgy) — hanley will be a healthy scratch vs. seattle on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T00:00:33.541800Z"
-    },
-    {
-      "key": "dc0c1277453cb4bf2436b16b",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-on-sportsnet-calgary-vs-seattle-10",
-      "fingerprint": "4491f2824a5df447",
-      "title_norm": "flames on sportsnet: calgary vs. seattle",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T00:00:33.943755Z"
-    },
     {
       "key": "f6d4b23daeb429cc9dc3550f",
       "url": "https://www.nhl.com/news/topic/short-shifts/johnny-gaudreau-horses-belmont-park-breeders-cup",
