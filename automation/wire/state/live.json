@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T04:45:31.406980Z",
+  "updated_at": "2026-11-04T05:00:39.138926Z",
   "seen": [
     {
       "key": "2a701876b53e1aa2ad0d9fef",
@@ -18962,6 +18962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T04:30:36.476594Z"
+    },
+    {
+      "key": "e421b939f8cc09f46e7b591b",
+      "url": "https://www.nhl.com/news/winnipeg-jets-montreal-canadiens-game-recap-november-3-2026",
+      "fingerprint": "56a01f20792b9557",
+      "title_norm": "jets rally from four goals down late in 3rd, shock canadiens in ot to end skid at nine",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T05:00:39.039468Z"
     }
   ],
   "known_sources": [
