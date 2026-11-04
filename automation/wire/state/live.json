@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T07:00:35.785674Z",
+  "updated_at": "2026-11-04T12:15:44.858852Z",
   "seen": [
     {
       "key": "a154f893debe9714a66ee86e",
@@ -19032,6 +19032,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T07:00:35.724426Z"
+    },
+    {
+      "key": "c29f1237680322ecd28da54b",
+      "url": "http://youtube.com/flohockey",
+      "fingerprint": "c3defc94aaf7ef31",
+      "title_norm": "griffins host stars in ahltv youtube freeview tonight",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-04T12:15:44.773403Z"
     }
   ],
   "known_sources": [
