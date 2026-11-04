@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T03:30:36.844985Z",
+  "updated_at": "2026-11-04T03:45:38.237420Z",
   "seen": [
-    {
-      "key": "40ea4c38f0399e5b4f2bf0a8",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-stay-winless-after-loss-to-kraken",
-      "fingerprint": "0e9081a74ebc12a6",
-      "title_norm": "flames stay winless after loss to kraken",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T03:45:29.039805Z"
-    },
     {
       "key": "db421d7e5c56568b7fd51d6b",
       "url": "https://www.nhl.com/news/topic/trophy-tracker/trophy-tracker-flyers-porter-martone-preseason-choice-for-calder-trophy-as-top-rookie",
@@ -18982,6 +18972,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T03:30:36.721984Z"
+    },
+    {
+      "key": "0452b771d9d459b39f02b62b",
+      "url": "https://www.nhl.com/news/edmonton-oilers-new-jersey-devils-game-recap-november-3-2026",
+      "fingerprint": "0b70af4c372c832a",
+      "title_norm": "jack hughes scores twice for devils, hellebuyck wins home debut against oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:45:35.362226Z"
+    },
+    {
+      "key": "2c51e5fc41be12c94262aaec",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-jets-score-four-goals-in-under-two-minutes-to-stun-canadiens",
+      "fingerprint": "815afb96ddab6a5e",
+      "title_norm": "gotta see it: jets score four goals in two minutes to stun canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T03:45:37.904230Z"
+    },
+    {
+      "key": "4b61d4a6a5ad35c452ea2e51",
+      "url": "https://www.sportsnet.ca/nhl/article/what-happened-hockey-world-reacts-to-jets-improbable-comeback",
+      "fingerprint": "dce9610932cd9ae3",
+      "title_norm": "'what happened?': hockey world reacts to jets' improbable comeback",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T03:45:38.163145Z"
     }
   ],
   "known_sources": [
