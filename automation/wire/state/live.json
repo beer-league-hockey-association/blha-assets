@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T17:45:54.555394Z",
+  "updated_at": "2026-11-04T18:00:43.928966Z",
   "seen": [
-    {
-      "key": "381b67c64985b1c1d2b3a20d",
-      "url": "https://www.sportsnet.ca/nhl/article/how-travis-green-plans-to-lead-senators-in-year-3",
-      "fingerprint": "4076d23a53251697",
-      "title_norm": "how travis green plans to lead senators in year 3",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T18:00:38.976481Z"
-    },
     {
       "key": "2f81afd3da15f34d68a78548",
       "url": "https://www.sportsnet.ca/nhl/article/bettman-no-trade-comments-an-attack-on-player-rights-says-nhlpa-exec-hainsey",
@@ -18982,6 +18972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-04T17:45:54.436949Z"
+    },
+    {
+      "key": "320a47c5433f91bc04f9a4a2",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-wishes-winnipeg-jets-and-fans-nothing-but-the-best",
+      "fingerprint": "d9d171d6a83cdd02",
+      "title_norm": "hellebuyck wishes jets, fans 'nothing but the best'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T18:00:43.789657Z"
     }
   ],
   "known_sources": [
