@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T05:45:34.982451Z",
+  "updated_at": "2026-11-04T06:00:35.850385Z",
   "seen": [
-    {
-      "key": "2a701876b53e1aa2ad0d9fef",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-standards-on-the-rise-after-2-2-start-weve-still-got-better",
-      "fingerprint": "ca0dbe60f43e1291",
-      "title_norm": "canucks' standards on the rise after 2-2 start: 'we've still got better'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T06:00:35.535438Z"
-    },
     {
       "key": "a154f893debe9714a66ee86e",
       "url": "https://www.nhl.com/news/nhl-and-sofascore-announce-global-multiyear-partnership",
