@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T19:00:45.262516Z",
+  "updated_at": "2026-11-04T19:15:37.387341Z",
   "seen": [
     {
       "key": "5642d239504c4671c2e2ab80",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T19:00:45.177498Z"
+    },
+    {
+      "key": "03d60c9473112b1b63ff27ab",
+      "url": "https://www.sportsnet.ca/nhl/video/all-about-helping-the-team-friedman-on-nugent-hopkins-impact-with-oilers",
+      "fingerprint": "02849eea9cf04fbd",
+      "title_norm": "'all about helping the team': friedman on nugent-hopkins' impact with oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T19:15:37.305265Z"
     }
   ],
   "known_sources": [
