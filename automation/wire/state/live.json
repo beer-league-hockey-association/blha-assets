@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T20:15:41.643607Z",
+  "updated_at": "2026-11-04T20:30:43.916934Z",
   "seen": [
     {
       "key": "5642d239504c4671c2e2ab80",
@@ -19042,6 +19042,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-04T20:15:41.516657Z"
+    },
+    {
+      "key": "289b38213dfa3f1f8d077efd",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-pick-up-the-pieces-after-embarrassing-unacceptable-collapse-against-jets",
+      "fingerprint": "0e34cfdf5c4ea05a",
+      "title_norm": "canadiens pick up the pieces after 'embarrassing, unacceptable' collapse against jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T20:30:43.833458Z"
     }
   ],
   "known_sources": [
