@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T21:45:34.895858Z",
+  "updated_at": "2026-11-04T22:00:39.736490Z",
   "seen": [
     {
       "key": "0d972a9a5960d70465c84c8c",
@@ -19012,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T21:45:34.844939Z"
+    },
+    {
+      "key": "8147717b331e23ea4b3d7347",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-bobrovsky-talks-goalie-interference-theres-lots-of-grey-area",
+      "fingerprint": "cccf14165e9b5588",
+      "title_norm": "maple leafs' bobrovsky talks goalie interference: 'there's lots of grey area'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T22:00:39.674602Z"
     }
   ],
   "known_sources": [
