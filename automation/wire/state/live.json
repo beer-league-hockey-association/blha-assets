@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T04:15:32.420013Z",
+  "updated_at": "2026-11-04T04:30:36.552402Z",
   "seen": [
     {
       "key": "43d4a869e2b2f8a14add4fc3",
@@ -18982,6 +18982,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T04:15:32.345542Z"
+    },
+    {
+      "key": "0ca147d00ebd1104036b0306",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-fall-to-hellebuyck-devils-in-shootout",
+      "fingerprint": "b0633ca90dc1d615",
+      "title_norm": "oilers fall to hellebuyck, devils in shootout",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T04:30:36.259494Z"
+    },
+    {
+      "key": "ce9cbe26dcc5b784b0a9f898",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-explode-for-seven-goals-in-win-over-avalanche",
+      "fingerprint": "d814480e8cd6613d",
+      "title_norm": "blue jackets explode for seven goals in win over avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T04:30:36.476594Z"
     }
   ],
   "known_sources": [
