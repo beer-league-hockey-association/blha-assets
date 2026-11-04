@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T19:15:37.387341Z",
+  "updated_at": "2026-11-04T19:30:38.706893Z",
   "seen": [
     {
       "key": "5642d239504c4671c2e2ab80",
@@ -18992,6 +18992,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T19:15:37.305265Z"
+    },
+    {
+      "key": "e190688f2c841d2f026c9cbc",
+      "url": "https://www.dailyfaceoff.com/players/news/adam-gaudette/4646",
+      "fingerprint": "7febc338f792a9ac",
+      "title_norm": "adam gaudette (sjs) — gaudette is expected to be a healthy scratch vs. los angeles on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T19:30:38.592936Z"
+    },
+    {
+      "key": "c1f2b83ca14ddbdce5f772e0",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-andrae-heinen-hit-waivers-as-jets-lambert-clears",
+      "fingerprint": "98692ec3d4733682",
+      "title_norm": "blue jackets' andrae, heinen hit waivers as jets' lambert clears",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T19:30:38.632342Z"
     }
   ],
   "known_sources": [
