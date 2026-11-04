@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T16:00:43.455103Z",
+  "updated_at": "2026-11-04T16:15:41.804445Z",
   "seen": [
-    {
-      "key": "83098e44f2f3d3dad220f4af",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-5-2026",
-      "fingerprint": "bd593096ec20e2c0",
-      "title_norm": "on tap: sharks-stars showcased on prime in canada",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T16:00:45.781490Z"
-    },
-    {
-      "key": "62dddaf0c61e039cba6f617a",
-      "url": "https://www.nhl.com/news/topic/fantasy/nhl-fantasy-hockey-waiver-wire-pickups-2026-2027-season",
-      "fingerprint": "080ff20184ab5055",
-      "title_norm": "fantasy top 10 waiver wire pickups; new podcast",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T16:00:46.063260Z"
-    },
-    {
-      "key": "b520d2a16a17cce9d2fe3ba9",
-      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
-      "fingerprint": "1be0b9697ff8abcd",
-      "title_norm": "connor bedard (chi) — bedard (shoulder) is participating in chicago's practice on monday in a non-contact jersey.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T16:15:31.094969Z"
-    },
-    {
-      "key": "158ac87f9d81902aa749a8b1",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
-      "fingerprint": "978a5f49e8542f81",
-      "title_norm": "rasmus ristolainen (phi) — ristolainen (undisclosed) will be a game-time decision in tampa bay on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T16:15:31.423147Z"
-    },
     {
       "key": "92a260b6d2fb762647f99487",
       "url": "https://www.sportsnet.ca/nhl/article/sidney-crosby-ponders-alex-ovechkin-rivalry-after-retirement-announcement",
@@ -18962,6 +18922,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-04T16:00:43.393375Z"
+    },
+    {
+      "key": "b18f157e5f21530bb385336b",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-poitras/33196",
+      "fingerprint": "c04ccc825bcbd359",
+      "title_norm": "matthew poitras (bos) — poitras (upper-body) returned to practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T16:15:41.683814Z"
     }
   ],
   "known_sources": [
