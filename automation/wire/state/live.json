@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T17:00:47.683258Z",
+  "updated_at": "2026-11-04T17:15:49.566284Z",
   "seen": [
-    {
-      "key": "1332ed7d981f0ceee3e4d748",
-      "url": "https://theahl.com/news/firebirds-nyman-ahl-player-week",
-      "fingerprint": "5004ae29a6e77e12",
-      "title_norm": "firebirds' nyman named ahl player of the week",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-05T17:15:37.772110Z"
-    },
-    {
-      "key": "4ff40637712998c12519e608",
-      "url": "https://www.dailyfaceoff.com/players/news/damon-severson/2038",
-      "fingerprint": "c2c04f65f8f9fce4",
-      "title_norm": "damon severson (cbj) — severson (shoulder) was a full participant in practice on monday and is expected to return on friday vs. pittsburgh.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-05T17:15:38.126587Z"
-    },
     {
       "key": "1f1a04313fa3ff37565d360c",
       "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
@@ -18942,6 +18922,76 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T17:00:47.599046Z"
+    },
+    {
+      "key": "d039a0a72300d696e1b27ae8",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "0b8a5aa2c8cf9559",
+      "title_norm": "evgeni malkin (pit) — malkin (lower body) returned to practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-04T17:15:48.086998Z"
+    },
+    {
+      "key": "84f8e09f2d495f7e51532694",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-4-2026",
+      "fingerprint": "b572a2e8081f8b35",
+      "title_norm": "on tap: bedard can join blackhawks' exclusive list",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T17:15:48.342862Z"
+    },
+    {
+      "key": "a82244f9a6f9d117a947d2f1",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-4-2026",
+      "fingerprint": "cbb8d3f7b711aa3a",
+      "title_norm": "status report: heiskanen injured in stars win",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T17:15:48.592025Z"
+    },
+    {
+      "key": "9e2d0a5566fe4a169d19fc1e",
+      "url": "https://www.nhl.com/news/brandt-clarke-happy-to-be-a-key-contributor-for-los-angeles-kings",
+      "fingerprint": "0918c40e0378f24b",
+      "title_norm": "clarke 'happy to be a key contributor' for kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T17:15:48.889530Z"
+    },
+    {
+      "key": "1ff85ecef87fb5aa096953b4",
+      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-active-players-trending-towards-hall-of-fame",
+      "fingerprint": "21655a9b1b8394b2",
+      "title_norm": "national hockey list: trending toward hall of fame",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T17:15:49.168023Z"
+    },
+    {
+      "key": "2bc9fd71601ca5180822d056",
+      "url": "https://www.nhl.com/news/brian-burke-impacted-many-at-all-levels-on-his-path-to-hockey-hall-of-fame-as-builder",
+      "fingerprint": "c5ea9e05fb33303f",
+      "title_norm": "burke's legacy impacted many on path to hall of fame",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T17:15:49.184833Z"
+    },
+    {
+      "key": "490030918d6c780b737a0d83",
+      "url": "https://www.nhl.com/news/nhl-partners-with-dusseldorf-s-ko-on-ice-ahead-of-global-series",
+      "fingerprint": "c4aef508679f02e5",
+      "title_norm": "nhl, dusseldorf's ko on ice announce partnership",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T17:15:49.204337Z"
     }
   ],
   "known_sources": [
