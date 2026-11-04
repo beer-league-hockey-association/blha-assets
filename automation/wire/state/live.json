@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T22:00:39.736490Z",
+  "updated_at": "2026-11-04T22:15:30.788210Z",
   "seen": [
-    {
-      "key": "0d972a9a5960d70465c84c8c",
-      "url": "https://www.nhl.com/news/topic/short-shifts/social-media-reacts-to-ovechkins-retirement-announcement",
-      "fingerprint": "bb6354e8369a65d9",
-      "title_norm": "social media reacts to ovechkin's announcement",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T22:00:41.231139Z"
-    },
     {
       "key": "427c6c56d3c295ca8e68e8e2",
       "url": "https://www.sportsnet.ca/nhl/article/whats-next-for-flames-connor-zary-after-being-placed-on-waivers",
