@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T03:00:49.948183Z",
+  "updated_at": "2026-11-04T03:15:37.039485Z",
   "seen": [
-    {
-      "key": "534f5fbc1493f001b8e08534",
-      "url": "https://www.nhl.com/news/calgary-flames-seattle-kraken-game-recap-october-4-2026",
-      "fingerprint": "02a49d0a8ea1cf1c",
-      "title_norm": "samoskevich scores twice, kraken cruise past flames again",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T03:15:35.215751Z"
-    },
     {
       "key": "33210ff01a119944868a0139",
       "url": "https://www.nhl.com/news/florida-panthers-anaheim-ducks-game-recap-october-4-2026",
@@ -18942,6 +18932,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T03:00:49.900512Z"
+    },
+    {
+      "key": "cbf029805ec18d0ba908f3b8",
+      "url": "https://www.nhl.com/news/utah-mammoth-toronto-maple-leafs-game-recap-november-3-2026",
+      "fingerprint": "777806a326950b39",
+      "title_norm": "schmaltz breaks tie in 3rd, mammoth edge maple leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:15:36.238451Z"
+    },
+    {
+      "key": "ef86319c6f5d943077ea0e3b",
+      "url": "https://www.nhl.com/news/dallas-stars-washington-capitals-game-recap-november-3-2026",
+      "fingerprint": "ae6436b67e017648",
+      "title_norm": "robertson scores hat trick, stars hold off capitals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:15:36.493242Z"
+    },
+    {
+      "key": "f6860a4bc075051c7d10bf88",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-pittsburgh-penguins-game-recap-november-3-2026",
+      "fingerprint": "90f55c693c937796",
+      "title_norm": "hertl's late goal lifts golden knights past pens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:15:36.728400Z"
+    },
+    {
+      "key": "96ef77062c07763a89f9e170",
+      "url": "https://www.nhl.com/news/colorado-avalanche-columbus-blue-jackets-game-recap-november-3-2026",
+      "fingerprint": "993f9816be7ebd0f",
+      "title_norm": "coyle has 4 points, columbus eases past colorado",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T03:15:36.734687Z"
+    },
+    {
+      "key": "5600476237d5911b2117f432",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-stun-canadiens-with-five-late-goals-to-snap-nine-game-skid",
+      "fingerprint": "9f1aa7ce4c2de740",
+      "title_norm": "jets stun canadiens with five late goals to snap nine-game skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T03:15:36.781041Z"
+    },
+    {
+      "key": "f6ee5974a9822de633639250",
+      "url": "https://www.sportsnet.ca/nhl/article/robertsons-speedy-natural-hat-trick-paces-stars-to-win-over-caps",
+      "fingerprint": "da7fc1852a1dcbc7",
+      "title_norm": "robertson's speedy natural hat trick paces stars to win over caps",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T03:15:36.791712Z"
     }
   ],
   "known_sources": [
