@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T03:45:38.237420Z",
+  "updated_at": "2026-11-04T04:00:41.782432Z",
   "seen": [
     {
       "key": "db421d7e5c56568b7fd51d6b",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T03:45:38.163145Z"
+    },
+    {
+      "key": "c284154a3fa95cb95b478ce5",
+      "url": "https://www.sportsnet.ca/nhl/article/lightnings-kucherov-has-two-helpers-in-first-home-game-since-asking-for-trade",
+      "fingerprint": "32a947b9a9ef3f90",
+      "title_norm": "lightning's kucherov has two helpers in first home game since asking for trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T04:00:41.709039Z"
     }
   ],
   "known_sources": [
