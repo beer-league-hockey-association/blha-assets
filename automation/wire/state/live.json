@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T05:00:39.138926Z",
+  "updated_at": "2026-11-04T05:15:38.213137Z",
   "seen": [
     {
       "key": "2a701876b53e1aa2ad0d9fef",
@@ -18972,6 +18972,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-04T05:00:39.039468Z"
+    },
+    {
+      "key": "f28a7a4194b154e53df3ee4e",
+      "url": "https://www.nhl.com/news/anaheim-ducks-vancouver-canucks-game-recap-november-3-2026",
+      "fingerprint": "074fdfb151ec0a8a",
+      "title_norm": "gauthier has second straight hat trick, ducks hold on",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T05:15:37.770842Z"
+    },
+    {
+      "key": "50e8a8e674113245d7b03639",
+      "url": "https://www.nhl.com/news/seth-jones-trying-to-be-best-player-he-can-for-florida-panthers-after-foot-injury-last-season",
+      "fingerprint": "3bf5a94d227525c4",
+      "title_norm": "'awesome' jones doing it all for panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T05:15:38.074313Z"
     }
   ],
   "known_sources": [
