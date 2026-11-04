@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T00:15:41.439307Z",
+  "updated_at": "2026-11-04T00:30:38.527317Z",
   "seen": [
     {
       "key": "a937e2ecdb4b10d1870e2612",
@@ -18862,6 +18862,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-03T22:45:44.643754Z"
+    },
+    {
+      "key": "bf8ffe2ddb61eb265341130f",
+      "url": "https://www.nhl.com/news/pekka-rinne-was-a-hall-of-fame-person-as-well-as-goalie-says-ben-vanderklok",
+      "fingerprint": "befa84a854e97cbb",
+      "title_norm": "rinne a hall of famer on, off the ice, says vanderklok",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T00:30:38.124091Z"
+    },
+    {
+      "key": "4f3104b633ea116dc603189d",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-fantasy-hockey-top-250-200-rankings-drafts-players-big-board-281505474",
+      "fingerprint": "1bccfaada7d606e1",
+      "title_norm": "fantasy top 200 rankings; new podcast episode",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-04T00:30:38.391152Z"
     }
   ],
   "known_sources": [
