@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T04:30:36.552402Z",
+  "updated_at": "2026-11-04T04:45:31.406980Z",
   "seen": [
-    {
-      "key": "43d4a869e2b2f8a14add4fc3",
-      "url": "https://www.sportsnet.ca/nhl/video/bauer-and-kolesar-drop-the-gloves-after-hard-hit-on-compher",
-      "fingerprint": "ae1044db3b7995af",
-      "title_norm": "bauer and kolesar drop the gloves after hard hit on compher",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T04:30:38.078084Z"
-    },
-    {
-      "key": "3dfed804402d75d0dfcaedf5",
-      "url": "https://www.sportsnet.ca/nhl/video/golden-knights-marner-shows-patience-before-burying-first-goal-of-season",
-      "fingerprint": "b27659e44fa09ae9",
-      "title_norm": "golden knights' marner shows patience before burying first goal of season",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T04:30:38.310588Z"
-    },
-    {
-      "key": "f0470d4292ed0a358c030284",
-      "url": "https://www.nhl.com/news/brad-marchand-scores-in-season-debut-for-florida-panthers",
-      "fingerprint": "940df354612960af",
-      "title_norm": "marchand scores in season debut for panthers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-05T04:45:28.968987Z"
-    },
-    {
-      "key": "a2ddb9f9535b961bbb7aa7d6",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-disconnected-play-sets-painful-tone-for-first-year-of-rebuild",
-      "fingerprint": "70474800c369f1d3",
-      "title_norm": "flames' disconnected play sets painful tone for first year of rebuild",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-05T04:45:29.204060Z"
-    },
     {
       "key": "2a701876b53e1aa2ad0d9fef",
       "url": "https://www.sportsnet.ca/nhl/article/canucks-standards-on-the-rise-after-2-2-start-weve-still-got-better",
