@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T06:00:35.850385Z",
+  "updated_at": "2026-11-04T06:30:40.913976Z",
   "seen": [
     {
       "key": "a154f893debe9714a66ee86e",
@@ -19012,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T05:45:34.913951Z"
+    },
+    {
+      "key": "70b1ae64d6853cb46c8c4789",
+      "url": "https://www.sportsnet.ca/nhl/article/gauthier-scores-three-ducks-hold-off-vancouver-canucks-for-narrow-win",
+      "fingerprint": "b45a65825d491f60",
+      "title_norm": "gauthier scores three, ducks hold off canucks for narrow win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-04T06:30:40.832991Z"
     }
   ],
   "known_sources": [
