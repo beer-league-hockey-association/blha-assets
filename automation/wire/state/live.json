@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T18:45:38.714055Z",
+  "updated_at": "2026-11-05T19:00:36.815330Z",
   "seen": [
-    {
-      "key": "6d90445f2857460cdaab59ef",
-      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
-      "fingerprint": "f768306e65b72d65",
-      "title_norm": "aleksander barkov (fla) — barkov (lower body) is expected to miss six to eight weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T18:45:39.065613Z"
-    },
-    {
-      "key": "18f4f8dcfe8441fcc23f4c26",
-      "url": "https://www.sportsnet.ca/nhl/article/panthers-aleksander-barkov-out-six-to-eight-weeks-with-leg-injury",
-      "fingerprint": "b918ceebb0aa7698",
-      "title_norm": "panthers' aleksander barkov out six to eight weeks with leg injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T18:45:39.440370Z"
-    },
-    {
-      "key": "4479685cdd4fbc6b936185d3",
-      "url": "https://www.nhl.com/news/aleksander-barkov-injury-status-update-october-6-2026",
-      "fingerprint": "994c99621dd06cbd",
-      "title_norm": "barkov out 6-8 weeks for panthers, won't need surgery",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T19:00:34.153377Z"
-    },
     {
       "key": "189b11a61e314b642c3c85bb",
       "url": "https://www.sportsnet.ca/nhl/video/why-larkins-decision-to-re-join-red-wings-caught-nhl-world-off-guard",
