@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T06:15:43.004466Z",
+  "updated_at": "2026-11-05T06:30:37.452835Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -18962,6 +18962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T06:15:42.913555Z"
+    },
+    {
+      "key": "0067102191568f5f2547f52a",
+      "url": "https://www.nhl.com/news/ncaa-notebook-undrafted-forwards-to-watch",
+      "fingerprint": "0424903379d82865",
+      "title_norm": "ncaa notebook: undrafted forwards to watch",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T06:30:37.377408Z"
     }
   ],
   "known_sources": [
