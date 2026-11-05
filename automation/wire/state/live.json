@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T10:45:35.054751Z",
+  "updated_at": "2026-11-05T12:30:47.109945Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -19002,6 +19002,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-05T10:45:34.990685Z"
+    },
+    {
+      "key": "cc2ce9d657a7afd0f64b5654",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-ridly-greig-day-to-day-with-lower-body-injury",
+      "fingerprint": "057091c3af311f82",
+      "title_norm": "senators' ridly greig day-to-day with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T12:30:47.025925Z"
     }
   ],
   "known_sources": [
