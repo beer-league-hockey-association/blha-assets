@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T00:15:40.149959Z",
+  "updated_at": "2026-11-05T00:30:38.197775Z",
   "seen": [
     {
       "key": "e711dcd7696329eb2d71fe01",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-04T22:45:32.898012Z"
+    },
+    {
+      "key": "70d023575554a804f5293cab",
+      "url": "https://www.dailyfaceoff.com/players/news/ridly-greig/30383",
+      "fingerprint": "813ad5d65571bfc0",
+      "title_norm": "ridly greig (ott) — greig (undisclosed) will not play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T00:30:38.081805Z"
     }
   ],
   "known_sources": [
