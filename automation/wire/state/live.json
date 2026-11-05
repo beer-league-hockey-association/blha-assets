@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T14:00:49.754724Z",
+  "updated_at": "2026-11-05T14:15:38.461534Z",
   "seen": [
-    {
-      "key": "8a802fc5091c1adb941e5878",
-      "url": "https://www.nhl.com/news/washington-capitals-owner-ted-leonsis-to-receive-2026-lester-patrick-trophy",
-      "fingerprint": "46d9cdf07af9801f",
-      "title_norm": "capitals owner to receive lester patrick trophy",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T14:15:36.923510Z"
-    },
-    {
-      "key": "96089be916af3b3fa7e09528",
-      "url": "https://www.nhl.com/news/ovechkin-grew-hockey-in-washington-dc-along-with-his-legacy",
-      "fingerprint": "6c2444960f9bf169",
-      "title_norm": "ovechkin grew hockey along with his legacy",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T14:15:37.247850Z"
-    },
     {
       "key": "83e1aece650dd0de4a6f0672",
       "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
