@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T12:45:37.197792Z",
+  "updated_at": "2026-11-05T14:00:49.754724Z",
   "seen": [
-    {
-      "key": "28a50cac62a5152636963547",
-      "url": "https://thehockeywriters.com/3-nhl-rookie-standouts-from-week-1-bjorck-helenius-hutson",
-      "fingerprint": "669131a0ecf8b542",
-      "title_norm": "3 nhl rookie standouts from week 1: björck, helenius, & hutson",
-      "channel": "prospect-wire",
-      "source_id": "thw_prospects",
-      "tier": 2,
-      "seen_at": "2026-10-06T14:00:39.456885Z"
-    },
     {
       "key": "8a802fc5091c1adb941e5878",
       "url": "https://www.nhl.com/news/washington-capitals-owner-ted-leonsis-to-receive-2026-lester-patrick-trophy",
@@ -19022,6 +19012,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T12:45:37.043394Z"
+    },
+    {
+      "key": "28a50cac62a5152636963547",
+      "url": "https://thehockeywriters.com/3-nhl-rookie-standouts-from-week-1-bjorck-helenius-hutson",
+      "fingerprint": "669131a0ecf8b542",
+      "title_norm": "3 nhl rookie standouts from week 1: björck, helenius, & hutson",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-05T14:00:49.743373Z"
     }
   ],
   "known_sources": [
