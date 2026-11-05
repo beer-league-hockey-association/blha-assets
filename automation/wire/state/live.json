@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T21:15:36.158937Z",
+  "updated_at": "2026-11-05T21:30:38.833868Z",
   "seen": [
     {
       "key": "2d89d7ff385b54cc68ad72d2",
@@ -18932,6 +18932,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T21:15:36.078047Z"
+    },
+    {
+      "key": "40bc4006deb75144a5e90a29",
+      "url": "https://www.sportsnet.ca/nhl/article/five-early-front-runners-for-nhl-rookie-of-the-year",
+      "fingerprint": "a23709a134a8f523",
+      "title_norm": "five early frontrunners for nhl rookie of the year",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T21:30:38.771176Z"
     }
   ],
   "known_sources": [
