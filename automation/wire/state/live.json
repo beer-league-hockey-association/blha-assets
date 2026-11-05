@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T16:15:49.623679Z",
+  "updated_at": "2026-11-05T16:30:42.006653Z",
   "seen": [
-    {
-      "key": "abb4aedce24d16b13f942b0a",
-      "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
-      "fingerprint": "cfd1ba541128077a",
-      "title_norm": "joe veleno (nyr) — veleno (lower-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T16:30:32.231219Z"
-    },
     {
       "key": "7331a32fdc35ba8a488ceaec",
       "url": "https://www.sportsnet.ca/nhl/article/you-hear-about-it-gavin-mckenna-talks-early-point-slump-in-toronto",
@@ -18872,6 +18862,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T16:15:49.555770Z"
+    },
+    {
+      "key": "164b47dc216fbd00ce1d7ea5",
+      "url": "https://www.dailyfaceoff.com/players/news/john-gibson/1870",
+      "fingerprint": "aea3213b4f652692",
+      "title_norm": "john gibson (det) — gibson is day-to-day with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T16:30:41.034972Z"
+    },
+    {
+      "key": "96d15e275ff976c0f58c28e4",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-captain-nick-suzuki-returning-to-lineup-vs-mammoth",
+      "fingerprint": "ddbea9be8438484b",
+      "title_norm": "canadiens captain nick suzuki returning to lineup vs. mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T16:30:41.370289Z"
+    },
+    {
+      "key": "ca5a6452aa0e7403ccb84bdd",
+      "url": "https://www.sportsnet.ca/nhl/article/to-the-relief-of-the-senators-and-his-psyche-samuel-ersson-is-back",
+      "fingerprint": "b9bec88c9fa61101",
+      "title_norm": "to the relief of the senators and his psyche, samuel ersson is back",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T16:30:41.710681Z"
+    },
+    {
+      "key": "c492568b04863c6f0ffb6585",
+      "url": "https://audioboom.com/posts/8973698",
+      "fingerprint": "1096a25f7d348929",
+      "title_norm": "week 6 mailbag; catton for real?",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-11-05T16:30:41.984531Z"
     }
   ],
   "known_sources": [
