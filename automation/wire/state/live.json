@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T22:15:34.354350Z",
+  "updated_at": "2026-11-05T23:00:43.788988Z",
   "seen": [
-    {
-      "key": "2bf857b72aed0fcfc7ce5d1a",
-      "url": "https://www.dailyfaceoff.com/players/news/dylan-larkin/2522",
-      "fingerprint": "dc87aacd55e3d649",
-      "title_norm": "dylan larkin (det) — larkin (upper-body) is expected to return and make his season debut vs. ottawa on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T22:45:33.808201Z"
-    },
-    {
-      "key": "0abb0f998e45e24de27c641f",
-      "url": "https://www.dailyfaceoff.com/players/news/danila-yurov/36363",
-      "fingerprint": "4423c957425a4284",
-      "title_norm": "danila yurov (min) — yurov (upper-body) will play in buffalo on tuesday after originally being a game-time decision.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T23:00:42.240814Z"
-    },
-    {
-      "key": "2338163856a675327d9f71e6",
-      "url": "https://www.dailyfaceoff.com/players/news/alexandre-carrier/2732",
-      "fingerprint": "c460cf1fd9fa9ff9",
-      "title_norm": "alexandre carrier (mtl) — carrier (undisclosed) will play vs. carolina on tuesday after originally being a game-time decision.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T23:00:42.542891Z"
-    },
     {
       "key": "290a643625aa4686abd863a4",
       "url": "https://www.nhl.com/news/michael-bunting-signs-one-year-contract-with-philadelphia-flyers",
@@ -18922,6 +18892,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-05T21:45:35.721072Z"
+    },
+    {
+      "key": "cf4364aa9ed29c0a7e40c6ed",
+      "url": "https://www.dailyfaceoff.com/players/news/matthew-poitras/33196",
+      "fingerprint": "3d0a12b7d85f04cb",
+      "title_norm": "matthew poitras (bos) — poitras (upper-body) is out vs. pittsburgh on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T23:00:43.705090Z"
     }
   ],
   "known_sources": [
