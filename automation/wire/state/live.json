@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T18:15:37.620766Z",
+  "updated_at": "2026-11-05T18:30:39.992467Z",
   "seen": [
-    {
-      "key": "e8fc7ae5ecafc68b26a745fd",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-connor-zary-brayden-pachal-clear-waivers",
-      "fingerprint": "283cb2d709e4e791",
-      "title_norm": "flames' connor zary, brayden pachal clear waivers",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T18:15:41.564150Z"
-    },
-    {
-      "key": "4075cf5db1768f31006a63c0",
-      "url": "https://www.sportsnet.ca/nhl/article/flyers-to-sign-veteran-forward-michael-bunting",
-      "fingerprint": "a72a3fdbd0d0c8e1",
-      "title_norm": "flyers to sign veteran forward michael bunting",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T18:15:41.565111Z"
-    },
     {
       "key": "5e40764e233f747bfb035a3a",
       "url": "https://www.dailyfaceoff.com/players/news/logan-o-connor/24994",
@@ -18972,6 +18952,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T18:15:37.549061Z"
+    },
+    {
+      "key": "8c1479058c59f1f33dec36a4",
+      "url": "https://www.dailyfaceoff.com/players/news/devin-cooley/32944",
+      "fingerprint": "2bae8a88d02626e2",
+      "title_norm": "devin cooley (cgy) — cooley (lower-body) has been activated off ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T18:30:39.903006Z"
     }
   ],
   "known_sources": [
