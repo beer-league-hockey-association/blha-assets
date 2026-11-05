@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T06:45:35.355007Z",
+  "updated_at": "2026-11-05T07:00:41.303548Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T06:45:35.291891Z"
+    },
+    {
+      "key": "5cc687370059aa1cf5e3144a",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-healthy-culture-allowing-room-for-growth-after-tough-start",
+      "fingerprint": "c32ca72c392ae09b",
+      "title_norm": "flames' healthy culture allowing room for growth after tough start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T07:00:41.208083Z"
     }
   ],
   "known_sources": [
