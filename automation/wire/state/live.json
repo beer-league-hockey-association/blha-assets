@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T07:00:41.303548Z",
+  "updated_at": "2026-11-05T10:45:35.054751Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -18992,6 +18992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T07:00:41.208083Z"
+    },
+    {
+      "key": "1d0fd63e17e96b71f26dc269",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-6-e3rpmeg",
+      "fingerprint": "1988992799769eb0",
+      "title_norm": "trade talks week 6",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-05T10:45:34.990685Z"
     }
   ],
   "known_sources": [
