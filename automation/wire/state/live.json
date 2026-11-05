@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T06:30:37.452835Z",
+  "updated_at": "2026-11-05T06:45:35.355007Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -18972,6 +18972,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T06:30:37.377408Z"
+    },
+    {
+      "key": "fb35a7ed350ab3b46b13fd4e",
+      "url": "https://www.sportsnet.ca/nhl/article/reports-sharks-hold-players-only-meeting-after-rout-by-kings",
+      "fingerprint": "98ad011da269ad49",
+      "title_norm": "reports: sharks hold players-only meeting after rout by kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T06:45:35.291891Z"
     }
   ],
   "known_sources": [
