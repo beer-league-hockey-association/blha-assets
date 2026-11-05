@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T17:30:37.328702Z",
+  "updated_at": "2026-11-05T17:45:38.942212Z",
   "seen": [
-    {
-      "key": "bce41ca91b1d2a5a6c2ec06b",
-      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
-      "fingerprint": "5e181408d08e91ec",
-      "title_norm": "bryan rust (pit) — rust (upper-body) was a full participant in tuesday's practice.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T17:30:41.055663Z"
-    },
-    {
-      "key": "410f1fa4e7978840473243ad",
-      "url": "https://www.sportsnet.ca/nhl/article/demidov-injury-a-big-challenge-for-canadiens-to-overcome",
-      "fingerprint": "b29d1398edb85e07",
-      "title_norm": "demidov injury a big challenge for canadiens to overcome",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T17:45:36.702026Z"
-    },
     {
       "key": "e8fc7ae5ecafc68b26a745fd",
       "url": "https://www.sportsnet.ca/nhl/article/flames-connor-zary-brayden-pachal-clear-waivers",
@@ -18962,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T17:30:37.217814Z"
+    },
+    {
+      "key": "661815297d9d27302f16f678",
+      "url": "https://www.dailyfaceoff.com/players/news/miro-heiskanen/2803",
+      "fingerprint": "16125ae62720d3d6",
+      "title_norm": "miro heiskanen (dal) — heiskanen (upper-body) will be out vs. columbus on thursday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T17:45:38.816998Z"
     }
   ],
   "known_sources": [
