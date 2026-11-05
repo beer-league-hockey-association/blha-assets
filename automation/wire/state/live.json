@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T23:00:43.788988Z",
+  "updated_at": "2026-11-05T23:45:38.640448Z",
   "seen": [
-    {
-      "key": "290a643625aa4686abd863a4",
-      "url": "https://www.nhl.com/news/michael-bunting-signs-one-year-contract-with-philadelphia-flyers",
-      "fingerprint": "1da3a6d9ace53e8c",
-      "title_norm": "bunting signs 1-year contract with flyers",
-      "channel": "nhl-transactions",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T23:45:35.151895Z"
-    },
-    {
-      "key": "afa2b021ecdeb4cb80ef1f0b",
-      "url": "https://www.nhl.com/news/pk-subban-to-star-in-new-animated-series-screech-owls",
-      "fingerprint": "a94c954ddf59fad4",
-      "title_norm": "subban star, executive producer of new animated series",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T23:45:35.509677Z"
-    },
     {
       "key": "4969e20c87b980e37a1e8ea1",
       "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-mckenna-helps-set-up-tavares-goal-for-first-career-nhl-point",
