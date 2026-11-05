@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T02:30:38.183420Z",
+  "updated_at": "2026-11-05T02:45:31.595947Z",
   "seen": [
-    {
-      "key": "7f02337be6c458ba39357c6a",
-      "url": "https://www.sportsnet.ca/nhl/article/vasilevskiy-tied-for-20th-on-all-time-wins-list-after-lightning-beat-flyers",
-      "fingerprint": "c687b337d1baa007",
-      "title_norm": "vasilevskiy tied for 20th on all-time wins list after lightning beat flyers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T02:30:42.618718Z"
-    },
     {
       "key": "be1824f61ba9f821563dc1f5",
       "url": "https://www.nhl.com/news/ottawa-senators-boston-bruins-game-recap-october-5-2026",
