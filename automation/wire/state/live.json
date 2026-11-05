@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T06:00:43.166245Z",
+  "updated_at": "2026-11-05T06:15:43.004466Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -18932,6 +18932,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T06:00:43.049999Z"
+    },
+    {
+      "key": "8f19ecaa84002a7cd6cdd698",
+      "url": "https://www.nhl.com/news/calgary-flames-seattle-kraken-game-recap-november-4-2026",
+      "fingerprint": "98268adfb36cb17f",
+      "title_norm": "beniers scores in ot, propels kraken past flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T06:15:42.436564Z"
+    },
+    {
+      "key": "dd409a674e445c7460461bac",
+      "url": "https://www.nhl.com/news/san-jose-sharks-los-angeles-kings-game-recap-november-4-2026",
+      "fingerprint": "64157103a3929b1c",
+      "title_norm": "kempe has hat trick, assist in return, kings ease past sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T06:15:42.663082Z"
+    },
+    {
+      "key": "c084157f9975de4b38f851f7",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-fall-to-kraken-for-first-overtime-loss-of-season",
+      "fingerprint": "804897d78045cb20",
+      "title_norm": "flames fall to kraken for first overtime loss of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T06:15:42.913555Z"
     }
   ],
   "known_sources": [
