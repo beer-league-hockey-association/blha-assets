@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T14:15:38.461534Z",
+  "updated_at": "2026-11-05T14:45:38.988770Z",
   "seen": [
-    {
-      "key": "83e1aece650dd0de4a6f0672",
-      "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
-      "fingerprint": "99fc79823dbaf15f",
-      "title_norm": "ivan demidov (mtl) — demidov (lower-body) will be out for the next two to four weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T14:45:36.166757Z"
-    },
-    {
-      "key": "825cfb5ebe8c2826dede06c4",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-ivan-demidov-out-two-to-four-weeks-with-lower-body-injury",
-      "fingerprint": "2cf6d5b6da7075f1",
-      "title_norm": "canadiens' ivan demidov out two to four weeks with lower-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T14:45:36.380183Z"
-    },
     {
       "key": "0950a2b9beafd3e132705ac7",
       "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
