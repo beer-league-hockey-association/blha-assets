@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T19:00:36.815330Z",
+  "updated_at": "2026-11-05T19:15:43.469548Z",
   "seen": [
-    {
-      "key": "189b11a61e314b642c3c85bb",
-      "url": "https://www.sportsnet.ca/nhl/video/why-larkins-decision-to-re-join-red-wings-caught-nhl-world-off-guard",
-      "fingerprint": "9f6b313abb00635a",
-      "title_norm": "why larkin's decision to re-join red wings caught nhl world off guard",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T19:15:32.720861Z"
-    },
     {
       "key": "70655587adb434fc1696d8b0",
       "url": "https://www.sportsnet.ca/nhl/article/should-feel-a-little-uneasy-zary-demotion-sends-message-to-flames",
@@ -18902,6 +18892,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T18:45:38.661374Z"
+    },
+    {
+      "key": "a3617472f5f55b7e42025665",
+      "url": "https://theahl.com/news/ahl-hall-of-fame-90th-anniversary-class",
+      "fingerprint": "7972a3a08c18f104",
+      "title_norm": "ahl hall of fame welcomes special 90th anniversary class",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-05T19:15:42.884434Z"
+    },
+    {
+      "key": "983329e9e70fef2ed764d392",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
+      "fingerprint": "818c15fdd610f208",
+      "title_norm": "victor olofsson (vgk) — olofsson (undisclosed) will return in detroit on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T19:15:43.160466Z"
+    },
+    {
+      "key": "e5654a9316971fe7912dcf64",
+      "url": "https://www.dailyfaceoff.com/players/news/curtis-douglas/27811",
+      "fingerprint": "6e539b9438a600cd",
+      "title_norm": "curtis douglas (sea) — douglas (upper-body) has been placed on ir retroactive to october 30th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T19:15:43.367370Z"
     }
   ],
   "known_sources": [
