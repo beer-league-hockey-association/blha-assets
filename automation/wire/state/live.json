@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T04:45:33.658933Z",
+  "updated_at": "2026-11-05T06:00:43.166245Z",
   "seen": [
     {
       "key": "28a50cac62a5152636963547",
@@ -18912,6 +18912,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T04:00:44.472762Z"
+    },
+    {
+      "key": "85453fc4203b336ec18a24a6",
+      "url": "https://www.nhl.com/news/patrice-bergeron-sacrifice-fortitude-made-him-worthy-of-hockey-hall-of-fame-says-brad-marchand",
+      "fingerprint": "c5f5add406059d2e",
+      "title_norm": "sacrifice, fortitude made bergeron worthy of hall",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T06:00:40.321670Z"
+    },
+    {
+      "key": "c90350f2ceb60b1506a47cde",
+      "url": "https://www.nhl.com/news/hall-of-famer-brian-burke-full-package-and-the-real-deal-gary-bettman-says",
+      "fingerprint": "8c884be81e0d32f9",
+      "title_norm": "hall of famer burke 'real deal,' bettman says",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T06:00:43.049999Z"
     }
   ],
   "known_sources": [
