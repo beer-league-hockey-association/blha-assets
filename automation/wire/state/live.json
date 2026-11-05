@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T01:45:37.418459Z",
+  "updated_at": "2026-11-05T02:15:40.035325Z",
   "seen": [
-    {
-      "key": "bea286f29c5330e61c3653d5",
-      "url": "https://www.nhl.com/news/philadelphia-flyers-tampa-bay-lightning-game-recap-october-5-2026",
-      "fingerprint": "288e1c5b8dfb61bc",
-      "title_norm": "lightning pull away late in 3rd, keep flyers winless",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T02:15:32.102217Z"
-    },
-    {
-      "key": "cac419f4134ce292d82c5f5b",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-goalie-linus-ullmark-exits-vs-bruins",
-      "fingerprint": "8a190cf95ac669bf",
-      "title_norm": "senators goalie linus ullmark exits vs. bruins",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T02:15:32.481552Z"
-    },
     {
       "key": "7f02337be6c458ba39357c6a",
       "url": "https://www.sportsnet.ca/nhl/article/vasilevskiy-tied-for-20th-on-all-time-wins-list-after-lightning-beat-flyers",
