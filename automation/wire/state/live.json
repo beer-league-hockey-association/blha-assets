@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T21:30:38.833868Z",
+  "updated_at": "2026-11-05T21:45:35.863188Z",
   "seen": [
-    {
-      "key": "2d89d7ff385b54cc68ad72d2",
-      "url": "https://www.sportsnet.ca/nhl/article/sharks-celebrini-misses-practice-considered-day-to-day",
-      "fingerprint": "0a4aa261c456b7df",
-      "title_norm": "sharks' celebrini misses practice, considered day-to-day",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T21:30:45.905316Z"
-    },
     {
       "key": "12064441becd4ff2b8be9b15",
       "url": "https://www.sportsnet.ca/nhl/article/5-takeaways-from-the-winnipeg-jets-opening-week",
@@ -18942,6 +18932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T21:30:38.771176Z"
+    },
+    {
+      "key": "9bacb2c2a09e95ece178b422",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "288864154eab9568",
+      "title_norm": "taylor hall (car) — hall (upper-body) is hopeful to return on thursday in new york.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T21:45:35.721072Z"
     }
   ],
   "known_sources": [
