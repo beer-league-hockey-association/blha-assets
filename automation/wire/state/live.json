@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T19:15:43.469548Z",
+  "updated_at": "2026-11-05T20:15:40.714591Z",
   "seen": [
-    {
-      "key": "70655587adb434fc1696d8b0",
-      "url": "https://www.sportsnet.ca/nhl/article/should-feel-a-little-uneasy-zary-demotion-sends-message-to-flames",
-      "fingerprint": "7e05952ad22d7620",
-      "title_norm": "'should feel a little uneasy': zary demotion sends message to flames",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T20:15:35.421882Z"
-    },
     {
       "key": "0b0ba8120595ac7847ba54c6",
       "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
@@ -18922,6 +18912,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-05T19:15:43.367370Z"
+    },
+    {
+      "key": "42e20da8be4133f2c0f9fad0",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-put-goalie-james-reimer-on-waivers-after-one-start",
+      "fingerprint": "8566a10ff4dbea17",
+      "title_norm": "rangers put goalie james reimer on waivers after one start",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T20:15:40.636937Z"
     }
   ],
   "known_sources": [
