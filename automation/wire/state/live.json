@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T17:15:39.129930Z",
+  "updated_at": "2026-11-05T17:30:37.328702Z",
   "seen": [
     {
       "key": "bce41ca91b1d2a5a6c2ec06b",
@@ -18942,6 +18942,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-05T17:15:39.003174Z"
+    },
+    {
+      "key": "fe6cc03b608a3e4377af4ce5",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-parayko/2531",
+      "fingerprint": "3199e278c6ecc1f3",
+      "title_norm": "colton parayko (stl) — parayko (upper-body) will return vs. new jersey on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T17:30:36.963519Z"
+    },
+    {
+      "key": "2e5b2b57c13ac9ce87956c90",
+      "url": "https://www.sportsnet.ca/nhl/article/why-rejuvenated-morgan-rielly-is-giving-maple-leafs-value",
+      "fingerprint": "403e2ab58733c96d",
+      "title_norm": "why rejuvenated morgan rielly is giving maple leafs value",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T17:30:37.217814Z"
     }
   ],
   "known_sources": [
