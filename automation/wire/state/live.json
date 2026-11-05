@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-04T23:15:34.031160Z",
+  "updated_at": "2026-11-05T00:15:40.149959Z",
   "seen": [
-    {
-      "key": "389e79de60b0f8cf499e672f",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "32291f370a04bb64",
-      "title_norm": "macklin celebrini (sjs) — celebrini was a late scratch on monday due to a lower-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T00:15:30.244327Z"
-    },
     {
       "key": "e711dcd7696329eb2d71fe01",
       "url": "https://www.sportsnet.ca/nhl/article/sharks-macklin-celebrini-ruled-out-vs-stars-with-lower-body-injury",
