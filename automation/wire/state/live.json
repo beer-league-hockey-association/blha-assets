@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T00:45:44.355458Z",
+  "updated_at": "2026-11-05T01:45:37.418459Z",
   "seen": [
-    {
-      "key": "e3e0724a0d0de5e3bfb83dd7",
-      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
-      "fingerprint": "9d57c3b841ce9672",
-      "title_norm": "linus ullmark (ott) — ullmark (undisclosed) did not return to the crease for the third period.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T01:45:34.486313Z"
-    },
     {
       "key": "bea286f29c5330e61c3653d5",
       "url": "https://www.nhl.com/news/philadelphia-flyers-tampa-bay-lightning-game-recap-october-5-2026",
@@ -18982,6 +18972,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T00:45:44.196130Z"
+    },
+    {
+      "key": "00b71492da5c1c0c8d6831d4",
+      "url": "https://www.sportsnet.ca/nhl/article/evander-kane-heading-to-khl-agent-says",
+      "fingerprint": "585285cb519bedee",
+      "title_norm": "evander kane heading to khl, agent says",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T01:45:37.294232Z"
     }
   ],
   "known_sources": [
