@@ -1,98 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T15:30:55.453531Z",
+  "updated_at": "2026-11-05T16:15:49.623679Z",
   "seen": [
-    {
-      "key": "9fc3676e99ae8653ad529f46",
-      "url": "https://www.dailyfaceoff.com/players/news/danila-yurov/36363",
-      "fingerprint": "8e207d261b30ee35",
-      "title_norm": "danila yurov (min) — yurov (upper-body) will be a game-time decision in buffalo on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T15:45:36.288029Z"
-    },
-    {
-      "key": "dac1006bce3163155518c2c3",
-      "url": "https://www.nhl.com/news/dylan-larkin-playing-injury-status-2026-2027",
-      "fingerprint": "5eeb32c7566e1650",
-      "title_norm": "larkin could make season debut for wings tonight",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T15:45:36.564699Z"
-    },
-    {
-      "key": "d8fe9a48e0fd1ca702672e53",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-anthony-stolarz-to-start-against-predators",
-      "fingerprint": "7bb6a8e78996317e",
-      "title_norm": "maple leafs' anthony stolarz to start against predators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T15:45:37.095046Z"
-    },
-    {
-      "key": "561fe36ecb3b18ebf0889fe4",
-      "url": "https://www.sportsnet.ca/nhl/article/islanders-goalie-semyon-varlamov-set-for-first-start-in-nearly-two-years",
-      "fingerprint": "7160c975892fc6e7",
-      "title_norm": "islanders goalie semyon varlamov set for first start in nearly two years",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T15:45:37.365762Z"
-    },
-    {
-      "key": "bcfe6addf7068af666b6d7ca",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
-      "fingerprint": "0f7ab1be96e3fbab",
-      "title_norm": "jake debrusk (van) — debrusk (illness) returned to vancouver's practice on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T16:00:46.174074Z"
-    },
-    {
-      "key": "c91a1c8a089e5291dfce95ab",
-      "url": "https://www.nhl.com/news/new-york-islanders-semyon-varlamov-to-make-first-start-since-2024",
-      "fingerprint": "8a88e6915505b516",
-      "title_norm": "varlamov to make 1st nhl start since 2024",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T16:00:46.450480Z"
-    },
-    {
-      "key": "92b6f10d6404023282fe525f",
-      "url": "https://www.nhl.com/news/patrick-kane-looks-to-help-blackhawks-get-first-win-in-united-center-return",
-      "fingerprint": "986c7cbdff972e7c",
-      "title_norm": "win in kane's return to united center would be 'huge'",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T16:00:46.708580Z"
-    },
-    {
-      "key": "20f7e6f160030123f899ebcc",
-      "url": "https://www.nhl.com/news/zizing-em-up-nhl-thrilling-first-week-of-2026-27-season",
-      "fingerprint": "97aa2cf320b1510a",
-      "title_norm": "zizing 'em up: nhl's thrilling 1st week had it all",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T16:00:46.991812Z"
-    },
-    {
-      "key": "d8a94fe03ef4e3b1ab943845",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-6-2026",
-      "fingerprint": "a15cb3b4a2ae3b05",
-      "title_norm": "status report: annunen placed on ir by predators",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-06T16:15:37.584932Z"
-    },
     {
       "key": "abb4aedce24d16b13f942b0a",
       "url": "https://www.dailyfaceoff.com/players/news/joseph-veleno/26350",
@@ -18932,6 +18842,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T15:15:45.012352Z"
+    },
+    {
+      "key": "29997376f22f5d4d4ccdd7a9",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-suzuki/2789",
+      "fingerprint": "2fbbe42d1afbc027",
+      "title_norm": "nick suzuki (mtl) — suzuki (upper-body) will return vs. utah on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T16:15:48.849828Z"
+    },
+    {
+      "key": "a1cd2f736758cd8a6307d922",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "c1795919e6604438",
+      "title_norm": "evgeni malkin (pit) — malkin (lower-body) will return to the lineup vs. boston on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T16:15:49.177373Z"
+    },
+    {
+      "key": "e486eebfec710d852d64d586",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-checking-on-the-rookies",
+      "fingerprint": "fb2d5e34f0766a33",
+      "title_norm": "nhl power rankings: checking on the rookies",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T16:15:49.555770Z"
     }
   ],
   "known_sources": [
