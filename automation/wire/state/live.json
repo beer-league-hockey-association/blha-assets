@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T02:15:40.035325Z",
+  "updated_at": "2026-11-05T02:30:38.183420Z",
   "seen": [
     {
       "key": "7f02337be6c458ba39357c6a",
@@ -18962,6 +18962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T01:45:37.294232Z"
+    },
+    {
+      "key": "6dc5268bb4789ce7ea94de38",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
+      "fingerprint": "3f8917e8f4d5af25",
+      "title_norm": "ivan demidov (mtl) — demidov (fractured ankle) is still considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T02:30:38.021038Z"
     }
   ],
   "known_sources": [
