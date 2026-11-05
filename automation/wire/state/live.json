@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T03:00:49.840089Z",
+  "updated_at": "2026-11-05T03:30:39.535639Z",
   "seen": [
-    {
-      "key": "7c1b7b7fa0b085b08523645c",
-      "url": "https://www.sportsnet.ca/nhl/article/oettinger-earns-17th-career-shutout-as-stars-beat-sharks",
-      "fingerprint": "6dee31325b820397",
-      "title_norm": "oettinger earns 17th career shutout as stars beat sharks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T03:15:31.248110Z"
-    },
     {
       "key": "4a246b318102ca0421cffbe3",
       "url": "https://www.sportsnet.ca/nhl/article/stutzles-three-points-lifts-undefeated-senators-to-victory-over-bruins",
@@ -18932,6 +18922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T03:00:49.789589Z"
+    },
+    {
+      "key": "9c1b0957640ff00e7887d494",
+      "url": "https://www.nhl.com/news/ottawa-senators-buffalo-sabres-game-recap-november-4-2026",
+      "fingerprint": "ca234e58ffffc8f3",
+      "title_norm": "amadio scores winner late in 3rd, sens edge sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T03:30:39.378702Z"
     }
   ],
   "known_sources": [
