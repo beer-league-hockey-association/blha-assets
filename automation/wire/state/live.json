@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T20:30:36.445248Z",
+  "updated_at": "2026-11-05T21:15:36.158937Z",
   "seen": [
-    {
-      "key": "0b0ba8120595ac7847ba54c6",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "1577283bfeebeb51",
-      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is considered day-to-day but is still being evaluated.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-06T21:15:30.686206Z"
-    },
-    {
-      "key": "6ef30dbc2137a6e55db3147a",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-ullmark-not-dressed-vs-red-wings",
-      "fingerprint": "0f3652910ad92b7b",
-      "title_norm": "senators' ullmark not dressed vs. red wings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T21:15:31.017509Z"
-    },
     {
       "key": "2d89d7ff385b54cc68ad72d2",
       "url": "https://www.sportsnet.ca/nhl/article/sharks-celebrini-misses-practice-considered-day-to-day",
@@ -18932,6 +18912,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-05T20:30:36.387284Z"
+    },
+    {
+      "key": "e263c090f18939a4f1606145",
+      "url": "https://www.nhl.com/news/patrice-bergeron-ability-to-connect-with-teammates-helped-pave-hall-of-fame-path",
+      "fingerprint": "8e9052eaecb75f51",
+      "title_norm": "bergeron's ability to connect helped pave hall path",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T21:15:35.819600Z"
+    },
+    {
+      "key": "0295ffa584c0b08544285e17",
+      "url": "https://www.nhl.com/news/2026-nhl-global-series-highlights-week-of-hockey-in-helsinki-finland",
+      "fingerprint": "f3854b30ae7826f6",
+      "title_norm": "incredible week of hockey starting in helsinki",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T21:15:36.078047Z"
     }
   ],
   "known_sources": [
