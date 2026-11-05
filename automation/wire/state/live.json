@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T17:00:51.691782Z",
+  "updated_at": "2026-11-05T17:15:39.129930Z",
   "seen": [
-    {
-      "key": "7331a32fdc35ba8a488ceaec",
-      "url": "https://www.sportsnet.ca/nhl/article/you-hear-about-it-gavin-mckenna-talks-early-point-slump-in-toronto",
-      "fingerprint": "748b227de9cff421",
-      "title_norm": "'you hear about it': gavin mckenna talks early point slump in toronto",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-06T17:15:33.387405Z"
-    },
     {
       "key": "bce41ca91b1d2a5a6c2ec06b",
       "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
@@ -18922,6 +18912,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T17:00:51.577638Z"
+    },
+    {
+      "key": "3830898df301ab7dcce26394",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "1d8be60f5bac8583",
+      "title_norm": "sean durzi (nyr) — durzi will remain out on thursday and is not expected to travel to start the rangers' upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T17:15:38.477916Z"
+    },
+    {
+      "key": "c42a04ba5d71468fd08349cb",
+      "url": "https://www.dailyfaceoff.com/players/news/joonas-korpisalo/2556",
+      "fingerprint": "461da70a0f8df75b",
+      "title_norm": "joonas korpisalo (nyr) — korpisalo (lower-body) is expected to join the rangers on their upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T17:15:38.748736Z"
+    },
+    {
+      "key": "80a39ff4beeaa914270d78ee",
+      "url": "https://www.dailyfaceoff.com/players/news/brock-faber/30792",
+      "fingerprint": "d249b4aec2ad1397",
+      "title_norm": "brock faber (min) — faber (skull fracture) returned to practice on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T17:15:39.003174Z"
     }
   ],
   "known_sources": [
