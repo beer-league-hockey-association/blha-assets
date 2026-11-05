@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T16:30:42.006653Z",
+  "updated_at": "2026-11-05T17:00:51.691782Z",
   "seen": [
     {
       "key": "7331a32fdc35ba8a488ceaec",
@@ -18902,6 +18902,26 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-05T16:30:41.984531Z"
+    },
+    {
+      "key": "5ce0168086e53b10c035f356",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-5-2026",
+      "fingerprint": "d9ca2ac5edaeb80b",
+      "title_norm": "on tap: canes at islanders 1 week from global series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T17:00:51.325979Z"
+    },
+    {
+      "key": "9dd3c09a9d565045a240cb61",
+      "url": "https://www.nhl.com/news/florida-panthers-brad-marchand-injury-status-update-november-5-2026",
+      "fingerprint": "d2b34496b42bc6fa",
+      "title_norm": "marchand likely out for panthers until next month",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-05T17:00:51.577638Z"
     }
   ],
   "known_sources": [
