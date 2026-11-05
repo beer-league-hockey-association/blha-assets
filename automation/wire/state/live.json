@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T17:45:38.942212Z",
+  "updated_at": "2026-11-05T18:15:37.620766Z",
   "seen": [
     {
       "key": "e8fc7ae5ecafc68b26a745fd",
@@ -18952,6 +18952,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-05T17:45:38.816998Z"
+    },
+    {
+      "key": "5578e0b362e3f4ff1beab0a2",
+      "url": "https://www.sportsnet.ca/nhl/article/the-kucherov-calculator-why-the-lightning-are-playing-the-long-game",
+      "fingerprint": "5e28e23561e5de24",
+      "title_norm": "the kucherov calculator: why lightning are playing the long game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T18:15:37.358948Z"
+    },
+    {
+      "key": "b4b5c27fab0c33400b841184",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-brad-marchand-feared-injury-could-be-worse-eager-to-resume-play",
+      "fingerprint": "032c1dfc1fe6cfe3",
+      "title_norm": "panthers' brad marchand feared injury could be worse, eager to resume play",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T18:15:37.549061Z"
     }
   ],
   "known_sources": [
