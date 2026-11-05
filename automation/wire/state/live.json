@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T14:45:38.988770Z",
+  "updated_at": "2026-11-05T15:15:45.091521Z",
   "seen": [
     {
       "key": "0950a2b9beafd3e132705ac7",
@@ -18982,6 +18982,26 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-11-05T14:00:49.743373Z"
+    },
+    {
+      "key": "f3852a84c55a97a12abc1610",
+      "url": "https://theahl.com/news/jeannot-gilbert-1940-2026",
+      "fingerprint": "77eed1be17e5838c",
+      "title_norm": "jeannot gilbert (1940-2026)",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-05T15:15:44.685244Z"
+    },
+    {
+      "key": "5fc3893428637a7fadab1473",
+      "url": "https://www.sportsnet.ca/nhl/article/winnipeg-jets-recall-forward-brayden-yager-from-ahl",
+      "fingerprint": "53d202d3fdc86aa3",
+      "title_norm": "winnipeg jets recall forward brayden yager from ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T15:15:45.012352Z"
     }
   ],
   "known_sources": [
