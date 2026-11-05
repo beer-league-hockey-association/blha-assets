@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T03:45:44.158174Z",
+  "updated_at": "2026-11-05T04:00:44.552815Z",
   "seen": [
     {
       "key": "506d09b3f4d226b65eff565c",
@@ -18932,6 +18932,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-05T03:45:44.077948Z"
+    },
+    {
+      "key": "cb8348973534574353adc856",
+      "url": "https://www.sportsnet.ca/nhl/article/amadios-clutch-goal-lifts-senators-past-sabres",
+      "fingerprint": "856fe28ca1f72e27",
+      "title_norm": "amadio's clutch goal lifts senators past sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T04:00:44.272395Z"
+    },
+    {
+      "key": "f83fc62c97e768cef6ca629f",
+      "url": "https://www.sportsnet.ca/nhl/article/vilmanis-has-first-two-goal-game-panthers-top-blackhawks-to-cap-homestand",
+      "fingerprint": "2bfe1d31d2194288",
+      "title_norm": "vilmanis has first two-goal game, panthers top blackhawks to cap homestand",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-05T04:00:44.472762Z"
     }
   ],
   "known_sources": [
