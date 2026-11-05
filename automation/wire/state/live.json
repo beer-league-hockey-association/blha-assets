@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T20:15:40.714591Z",
+  "updated_at": "2026-11-05T20:30:36.445248Z",
   "seen": [
     {
       "key": "0b0ba8120595ac7847ba54c6",
@@ -18922,6 +18922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-05T20:15:40.636937Z"
+    },
+    {
+      "key": "f69be3d15078c6ea9ebd79d4",
+      "url": "https://www.dailyfaceoff.com/players/news/tristan-jarry/2626",
+      "fingerprint": "5379680760891074",
+      "title_norm": "tristan jarry (edm) — jarry (illness) is expected to back up vs. anaheim on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-05T20:30:36.387284Z"
     }
   ],
   "known_sources": [
