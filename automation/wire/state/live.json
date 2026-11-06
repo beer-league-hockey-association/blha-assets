@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T03:45:37.526391Z",
+  "updated_at": "2026-11-06T04:15:34.804934Z",
   "seen": [
-    {
-      "key": "58df746bda0fce445a923320",
-      "url": "https://www.nhl.com/news/dan-rosen-national-hockey-list-predicting-nhl-award-winners",
-      "fingerprint": "0d60769f8d6b63aa",
-      "title_norm": "national hockey list: predicting nhl award winners",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T04:00:40.655107Z"
-    },
     {
       "key": "04d69558c6b272d61fc8eb18",
       "url": "https://www.nhl.com/news/alex-ovechkin-1st-home-opener-was-one-for-the-ages",
@@ -18782,6 +18772,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T03:45:37.404524Z"
+    },
+    {
+      "key": "dce9af064c6d528c5cfeb2bb",
+      "url": "https://www.nhl.com/news/anaheim-ducks-edmonton-oilers-game-recap-november-5-2026",
+      "fingerprint": "9c45440cd22cbb45",
+      "title_norm": "sennecke has three points, ducks withstand late rally from oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T04:15:34.434974Z"
+    },
+    {
+      "key": "8fa0aee5e5cd0bcee416b3be",
+      "url": "https://www.sportsnet.ca/nhl/article/mintyukov-sennecke-each-score-twice-as-ducks-hand-oilers-second-straight-loss",
+      "fingerprint": "83e67e14e84140a5",
+      "title_norm": "mintyukov, sennecke each score twice as ducks hand oilers second straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T04:15:34.750793Z"
     }
   ],
   "known_sources": [
