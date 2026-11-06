@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T15:00:38.803174Z",
+  "updated_at": "2026-11-06T15:15:40.316416Z",
   "seen": [
-    {
-      "key": "167127ea4fa51b49e0ef26f9",
-      "url": "https://www.dailyfaceoff.com/players/news/josh-doan/32990",
-      "fingerprint": "cfd44f3ec81985ce",
-      "title_norm": "josh doan (buf) — doan is dealing with a lower-body injury after being limited in tuesday's game vs. minnesota.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T15:00:49.291183Z"
-    },
     {
       "key": "bc8c0d6d1f8b2b6566ede182",
       "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
