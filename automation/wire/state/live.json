@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T16:45:36.881111Z",
+  "updated_at": "2026-11-06T17:00:44.981174Z",
   "seen": [
-    {
-      "key": "63cbb3ba5538b84ba1b21de6",
-      "url": "https://www.dailyfaceoff.com/players/news/sam-montembeault/4479",
-      "fingerprint": "3becca8ec8a94145",
-      "title_norm": "sam montembeault (mtl) — montembeault left wednesday's practice with a lower-body injury and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T16:46:13.903889Z"
-    },
-    {
-      "key": "2ef733baed131c0d0ec00b48",
-      "url": "https://www.dailyfaceoff.com/players/news/joel-kiviranta/31187",
-      "fingerprint": "9a7966d3f91082e1",
-      "title_norm": "joel kiviranta (dal) — kiviranta (lower-body) is expected to miss the remainder of dallas' road trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T16:46:14.087122Z"
-    },
-    {
-      "key": "dfeaadba54a50b487952fcdb",
-      "url": "https://www.sportsnet.ca/nhl/article/why-red-wings-need-to-sign-simon-edvinsson-to-a-fair-deal",
-      "fingerprint": "c4cb70dd5a29f6ac",
-      "title_norm": "why red wings need to sign simon edvinsson to a fair deal",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T16:46:14.124799Z"
-    },
     {
       "key": "90a3d2b30f9b881c278894f6",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-7-2026",
@@ -18702,6 +18672,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T16:45:36.848069Z"
+    },
+    {
+      "key": "99f313505dbd44975ed36c35",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-timmins/2797",
+      "fingerprint": "cc106b767f4a5dcf",
+      "title_norm": "conor timmins (buf) — timmins (lower-body) will make his season debut vs. columbus on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:00:44.930920Z"
     }
   ],
   "known_sources": [
