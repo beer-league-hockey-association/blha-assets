@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T05:45:30.593241Z",
+  "updated_at": "2026-11-06T06:30:40.057752Z",
   "seen": [
     {
       "key": "256079bd1bf972138e20ae70",
@@ -18722,6 +18722,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T05:45:30.534494Z"
+    },
+    {
+      "key": "f6a56cda2446eecdbf55e824",
+      "url": "https://www.nhl.com/news/oilers-connor-mcdavid-continues-torrid-pace-despite-hit-from-ducks-drew-helleson",
+      "fingerprint": "5495c2eeb6bc0118",
+      "title_norm": "mcdavid continues torrid pace following 'dangerous' hit",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T06:30:39.936340Z"
     }
   ],
   "known_sources": [
