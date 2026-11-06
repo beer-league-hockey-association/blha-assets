@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T04:45:35.674879Z",
+  "updated_at": "2026-11-06T05:00:37.257638Z",
   "seen": [
-    {
-      "key": "5380ebe32149be12fcaef195",
-      "url": "https://www.nhl.com/news/vegas-golden-knights-seattle-kraken-game-recap-october-6-2026",
-      "fingerprint": "8ef48d13e4a9a43c",
-      "title_norm": "hertl, eichel each has 4 points, vegas cruises",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T05:00:35.154792Z"
-    },
     {
       "key": "dbb0fe013302a2add30da2a5",
       "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
