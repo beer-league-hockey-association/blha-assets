@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T18:00:43.169235Z",
+  "updated_at": "2026-11-06T18:30:36.857421Z",
   "seen": [
-    {
-      "key": "9639a392ef1286d90053f4b8",
-      "url": "https://www.nhl.com/news/alex-ovechkin-best-moments-on-home-ice-discussed-by-nhl-writers",
-      "fingerprint": "53aabd976cb84ef3",
-      "title_norm": "roundtable: ovechkin's best moments on home ice",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T18:15:43.365664Z"
-    },
-    {
-      "key": "c19f8ce70df4fad6d910a4a2",
-      "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
-      "fingerprint": "08e2d159ad58ac29",
-      "title_norm": "jason dickinson (edm) — dickinson (undisclosed) will make his season debut in anaheim on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T18:15:43.744622Z"
-    },
     {
       "key": "ad9348d9b49ac3974c2e496e",
       "url": "https://rss.com/podcasts/prospects2pros/3215792",
