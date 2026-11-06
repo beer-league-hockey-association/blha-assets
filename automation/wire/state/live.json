@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T05:15:29.831758Z",
+  "updated_at": "2026-11-06T05:30:34.858424Z",
   "seen": [
-    {
-      "key": "dbb0fe013302a2add30da2a5",
-      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
-      "fingerprint": "cdb881a78d7c0392",
-      "title_norm": "victor olofsson (vgk) — olofsson left tuesday's game vs. seattle with an undisclosed injury and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T05:15:39.221692Z"
-    },
-    {
-      "key": "064cbc30bc147ce613b42d87",
-      "url": "https://www.sportsnet.ca/nhl/article/mckenna-matthews-share-first-big-moment-in-maple-leafs-comeback-win",
-      "fingerprint": "1de62377edb337c4",
-      "title_norm": "mckenna finds breakthrough moment in maple leafs' comeback thriller",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T05:15:39.573138Z"
-    },
     {
       "key": "85e3205b5ce37bbd43746bc0",
       "url": "https://www.nhl.com/news/florida-panthers-los-angeles-kings-game-recap-october-6-2026",
