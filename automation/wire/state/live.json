@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T19:15:35.613006Z",
+  "updated_at": "2026-11-06T19:30:36.170713Z",
   "seen": [
     {
       "key": "10e4e71f6789f820b7af18cc",
@@ -18692,6 +18692,26 @@
       "source_id": "pod_prospects2pros",
       "tier": 2,
       "seen_at": "2026-11-06T19:15:35.592812Z"
+    },
+    {
+      "key": "b830251a38a59b02c580b740",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-john-tavares-playing-status-update-november-6-2026",
+      "fingerprint": "5fb26fe2c4124c51",
+      "title_norm": "tavares expected to rejoin leafs lineup saturday",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T19:30:35.789258Z"
+    },
+    {
+      "key": "2452de3d363c941079396f62",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-6-2026",
+      "fingerprint": "a282b3afa49c0abf",
+      "title_norm": "status report: timmons to make season debut tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T19:30:36.066130Z"
     }
   ],
   "known_sources": [
