@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T03:15:41.319691Z",
+  "updated_at": "2026-11-06T03:30:34.085185Z",
   "seen": [
     {
       "key": "01209733f764eddd23d38c75",
@@ -18742,6 +18742,46 @@
       "source_id": "pod_rotowire_hockey",
       "tier": 2,
       "seen_at": "2026-11-06T03:15:40.771387Z"
+    },
+    {
+      "key": "0df8997bf4f1f290b5bda0e1",
+      "url": "https://www.nhl.com/news/dallas-stars-columbus-blue-jackets-game-recap-november-5-2026",
+      "fingerprint": "b40c3a2477ecd225",
+      "title_norm": "werenski ties it late, jackets top stars in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:30:32.774234Z"
+    },
+    {
+      "key": "7c7d601582c0ce1e43e4e2d7",
+      "url": "https://www.nhl.com/news/st-louis-blues-new-jersey-devils-game-recap-november-5-2026",
+      "fingerprint": "26b8f89b2a760de9",
+      "title_norm": "bratt wins it in ot after devils blow three-goal lead in third against blues",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:30:33.148334Z"
+    },
+    {
+      "key": "826163fc03612904deda24e9",
+      "url": "https://www.sportsnet.ca/nhl/article/caufield-scores-ot-winner-as-canadiens-come-back-to-beat-mammoth",
+      "fingerprint": "a51a37c3c38823a6",
+      "title_norm": "caufield scores ot winner as canadiens come back to beat mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T03:30:33.610323Z"
+    },
+    {
+      "key": "f33202262a856749878d5e41",
+      "url": "https://www.sportsnet.ca/nhl/video/caufield-buries-overtime-winner-to-lift-canadiens-over-mammoth",
+      "fingerprint": "43331517eef26580",
+      "title_norm": "caufield buries overtime winner to lift canadiens over mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T03:30:33.619053Z"
     }
   ],
   "known_sources": [
