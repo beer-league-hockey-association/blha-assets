@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T20:45:33.981276Z",
+  "updated_at": "2026-11-06T21:15:41.183887Z",
   "seen": [
-    {
-      "key": "aab8c0bc767a9a05a4ac6ebf",
-      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
-      "fingerprint": "6c7c45a6556c0022",
-      "title_norm": "colton dach (edm) — dach (undisclosed) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T21:00:51.415680Z"
-    },
     {
       "key": "6fbbb1b05d7dbe1f1415f80e",
       "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
@@ -18702,6 +18692,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T20:45:33.946836Z"
+    },
+    {
+      "key": "f5ef0321135b064cb27b1803",
+      "url": "https://www.nhl.com/news/anaheim-ducks-cutter-gauthier-making-history-with-goal-power-play-streaks",
+      "fingerprint": "0c38d61ac85b4f43",
+      "title_norm": "gauthier making history with goal, power-play streaks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T21:15:41.052768Z"
     }
   ],
   "known_sources": [
