@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T01:00:40.418305Z",
+  "updated_at": "2026-11-06T01:15:44.331499Z",
   "seen": [
-    {
-      "key": "af059afb6a7bf9956511e957",
-      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-mckenna-snipes-first-career-goal-with-maple-leafs",
-      "fingerprint": "021dce0bfcfcf3e6",
-      "title_norm": "gotta see it: gavin mckenna snipes first career goal with maple leafs",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T01:15:29.633912Z"
-    },
     {
       "key": "bbfbab842186b7e14d41402f",
       "url": "https://www.nhl.com/news/quinton-byfield-wants-to-help-fill-void-for-kings-after-anze-kopitar-retirement",
