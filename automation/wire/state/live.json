@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T15:15:40.316416Z",
+  "updated_at": "2026-11-06T15:30:35.840090Z",
   "seen": [
     {
       "key": "bc8c0d6d1f8b2b6566ede182",
@@ -18712,6 +18712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T14:15:34.761416Z"
+    },
+    {
+      "key": "78e390450a730e55467634ce",
+      "url": "https://www.sportsnet.ca/ice-hockey-world-championship/article/german-government-wants-to-keep-hockey-worlds-as-russias-return-leads-to-boycott",
+      "fingerprint": "b58de1ac69cc4ac2",
+      "title_norm": "german government wants to keep hockey worlds as russia's return leads to boycott",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T15:30:35.810085Z"
     }
   ],
   "known_sources": [
