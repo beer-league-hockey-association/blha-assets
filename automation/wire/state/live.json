@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T00:00:39.288594Z",
+  "updated_at": "2026-11-06T00:30:36.349685Z",
   "seen": [
     {
       "key": "4969e20c87b980e37a1e8ea1",
@@ -18932,6 +18932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T00:00:39.244876Z"
+    },
+    {
+      "key": "30b3c95ce3a43e30c1b8b8df",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-emergency-goaltender-brett-epp-to-serve-as-backup-vs-ducks",
+      "fingerprint": "7fd6590b9d6ffb47",
+      "title_norm": "oilers' emergency goaltender brett epp to serve as backup vs. ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T00:30:36.311322Z"
     }
   ],
   "known_sources": [
