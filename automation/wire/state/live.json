@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T11:45:30.786572Z",
+  "updated_at": "2026-11-06T13:15:34.165780Z",
   "seen": [
     {
       "key": "256079bd1bf972138e20ae70",
@@ -18742,6 +18742,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T11:45:30.752563Z"
+    },
+    {
+      "key": "dffa0027db8968b35e33bd4a",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-most-interesting-landing-spots-for-nikita-kucherov",
+      "fingerprint": "8db62702add03cbf",
+      "title_norm": "friday four: most interesting landing spots for nikita kucherov",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T13:15:33.779643Z"
+    },
+    {
+      "key": "dc575472fb977abd30c6fb3e",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-passionate-in-response-to-dangerous-hit",
+      "fingerprint": "5f4620a5e27a7b12",
+      "title_norm": "oilers' mcdavid passionate in response to 'dangerous' hit",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T13:15:34.113147Z"
     }
   ],
   "known_sources": [
