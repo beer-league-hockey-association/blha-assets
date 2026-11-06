@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T18:45:36.403576Z",
+  "updated_at": "2026-11-06T19:15:35.613006Z",
   "seen": [
-    {
-      "key": "ad9348d9b49ac3974c2e496e",
-      "url": "https://rss.com/podcasts/prospects2pros/3215792",
-      "fingerprint": "da3da6eb6628de34",
-      "title_norm": "prospects2pros constitution review 26-27",
-      "channel": "media",
-      "source_id": "pod_prospects2pros",
-      "tier": 2,
-      "seen_at": "2026-10-07T19:00:44.524292Z"
-    },
-    {
-      "key": "9764901d174ceeba282715c6",
-      "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
-      "fingerprint": "a3b026481e5d0656",
-      "title_norm": "nick foligno (min) — foligno (upper-body) left tuesday's game vs. buffalo and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T19:15:34.448060Z"
-    },
     {
       "key": "10e4e71f6789f820b7af18cc",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-low-risk-hallander-adds-depth-compete-to-forward-corps",
@@ -18702,6 +18682,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-06T18:45:36.284394Z"
+    },
+    {
+      "key": "ad9348d9b49ac3974c2e496e",
+      "url": "https://rss.com/podcasts/prospects2pros/3215792",
+      "fingerprint": "da3da6eb6628de34",
+      "title_norm": "prospects2pros constitution review 26-27",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-11-06T19:15:35.592812Z"
     }
   ],
   "known_sources": [
