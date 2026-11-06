@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T14:30:37.753909Z",
+  "updated_at": "2026-11-06T14:45:33.716194Z",
   "seen": [
-    {
-      "key": "3ff9d17539fa425e4344ae30",
-      "url": "https://www.sportsnet.ca/nhl/article/nhl-unveils-canadiens-jets-heritage-classic-jerseys",
-      "fingerprint": "e1422501e9d00edf",
-      "title_norm": "nhl unveils canadiens, jets heritage classic jerseys",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T14:30:39.441606Z"
-    },
     {
       "key": "6305e2d73a680f348cb06f7a",
       "url": "https://www.dailyfaceoff.com/players/news/zachary-l-heureux/31229",
