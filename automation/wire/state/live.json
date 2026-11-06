@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T19:45:36.137556Z",
+  "updated_at": "2026-11-06T20:15:37.554128Z",
   "seen": [
-    {
-      "key": "10e4e71f6789f820b7af18cc",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-low-risk-hallander-adds-depth-compete-to-forward-corps",
-      "fingerprint": "f974a094a8f666d1",
-      "title_norm": "oilers notebook: low-risk hallander adds depth, compete to forward corps",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T20:00:45.257754Z"
-    },
-    {
-      "key": "80d439097be3272f0a0eba53",
-      "url": "https://www.sportsnet.ca/nhl/article/how-the-panthers-can-navigate-aleksander-barkovs-absence",
-      "fingerprint": "ca00c0de50478310",
-      "title_norm": "how the panthers can navigate aleksander barkov's absence",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T20:15:33.182011Z"
-    },
     {
       "key": "f19c921be7d8527715cf59b8",
       "url": "https://theahl.com/news/firebirds-trio-off-to-white-hot-start",
