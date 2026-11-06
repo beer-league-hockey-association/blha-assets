@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T03:30:34.085185Z",
+  "updated_at": "2026-11-06T03:45:37.526391Z",
   "seen": [
-    {
-      "key": "01209733f764eddd23d38c75",
-      "url": "https://www.nhl.com/news/st-louis-blues-chicago-blackhawks-game-recap-october-6-2026",
-      "fingerprint": "15a363ad6f07ff1f",
-      "title_norm": "blackhawks top blues for 1st win in kane homecoming",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T03:30:42.531557Z"
-    },
-    {
-      "key": "3f4eba7e7fd2c0576a23c4cb",
-      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-sabres-beat-wild-in-overtime-after-two-goal-comeback",
-      "fingerprint": "a079ffe7abbc77a9",
-      "title_norm": "nhl roundup: sabres beat wild in overtime after two-goal comeback",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T03:45:34.228012Z"
-    },
     {
       "key": "58df746bda0fce445a923320",
       "url": "https://www.nhl.com/news/dan-rosen-national-hockey-list-predicting-nhl-award-winners",
@@ -18782,6 +18762,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T03:30:33.619053Z"
+    },
+    {
+      "key": "b208cbeedb786846d9f38c52",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-tampa-bay-lightning-game-recap-november-5-2026",
+      "fingerprint": "e7650899e72a6dc2",
+      "title_norm": "mikheyev, lightning remain undefeated at home",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:45:37.162471Z"
+    },
+    {
+      "key": "7e9f947e85d60fec7d7c6583",
+      "url": "https://www.nhl.com/news/utah-mammoth-montreal-canadiens-game-recap-november-5-2026",
+      "fingerprint": "1f57a9359d6863ba",
+      "title_norm": "suzuki has three points in return, canadiens rally for ot win against mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:45:37.404524Z"
     }
   ],
   "known_sources": [
