@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T21:15:41.183887Z",
+  "updated_at": "2026-11-06T23:15:36.149330Z",
   "seen": [
-    {
-      "key": "6fbbb1b05d7dbe1f1415f80e",
-      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
-      "fingerprint": "7225ea81b3985da0",
-      "title_norm": "bryan rust (pit) — rust (upper-body) will make his season debut on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T23:15:32.201628Z"
-    },
     {
       "key": "010f633414f7582848a53350",
       "url": "https://www.sportsnet.ca/nhl/article/jets-josh-morrissey-exits-vs-avalanche-with-upper-body-injury",
