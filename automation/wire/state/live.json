@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T16:30:41.958155Z",
+  "updated_at": "2026-11-06T16:45:36.881111Z",
   "seen": [
     {
       "key": "63cbb3ba5538b84ba1b21de6",
@@ -18662,6 +18662,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-06T16:30:41.833885Z"
+    },
+    {
+      "key": "95067a15b93cfc1762bedb2f",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-gustavsson/4565",
+      "fingerprint": "5a851d6611c6010a",
+      "title_norm": "filip gustavsson (min) — gustavsson (hip) will travel with minnesota on their upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T16:45:35.952863Z"
+    },
+    {
+      "key": "b6e5fc1ba9c0a275b1ca9aaf",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
+      "fingerprint": "e377ca435c566dee",
+      "title_norm": "nick foligno (min) — nick foligno (upper-body) will remain out on friday but has a chance to return on saturday vs. tampa bay.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T16:45:36.215158Z"
+    },
+    {
+      "key": "761e3fb87d2c95dc71bb64d5",
+      "url": "https://www.dailyfaceoff.com/players/news/marcus-foligno/1689",
+      "fingerprint": "f9bfcd47614a7f64",
+      "title_norm": "marcus foligno (min) — marcus foligno (lower-body) will remain out on friday but has a chance to return vs. tampa bay on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T16:45:36.471191Z"
+    },
+    {
+      "key": "61e11570bde50104b6d627e2",
+      "url": "https://www.sportsnet.ca/nhl/article/which-players-could-maple-leafs-least-afford-to-lose-in-race-for-playoff-spot",
+      "fingerprint": "16717e561438e4fc",
+      "title_norm": "which players could maple leafs least afford to lose in race for playoff spot?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T16:45:36.848069Z"
     }
   ],
   "known_sources": [
