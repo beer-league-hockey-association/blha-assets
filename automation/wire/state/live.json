@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T20:15:37.554128Z",
+  "updated_at": "2026-11-06T20:30:46.788195Z",
   "seen": [
-    {
-      "key": "f19c921be7d8527715cf59b8",
-      "url": "https://theahl.com/news/firebirds-trio-off-to-white-hot-start",
-      "fingerprint": "337268977eb7fbd6",
-      "title_norm": "firebirds trio off to white-hot start",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-07T20:30:39.175850Z"
-    },
-    {
-      "key": "8315b6971575c7cc674b9209",
-      "url": "https://www.sportsnet.ca/nhl/article/how-newfound-stability-is-helping-flames-wolf-keep-perspective",
-      "fingerprint": "b8107f9c6b1667b8",
-      "title_norm": "how newfound stability is helping flames' wolf keep perspective",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T20:30:39.446471Z"
-    },
     {
       "key": "aab8c0bc767a9a05a4ac6ebf",
       "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
@@ -18702,6 +18682,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T19:45:36.090673Z"
+    },
+    {
+      "key": "b9c6803fe31084c23edcaeea",
+      "url": "https://www.nhl.com/news/minnesota-wild-brock-faber-knows-skull-injury-could-have-been-a-lot-worse",
+      "fingerprint": "25f95f5f3e9b1747",
+      "title_norm": "faber knows injury 'could have been a lot worse'",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T20:30:46.658481Z"
     }
   ],
   "known_sources": [
