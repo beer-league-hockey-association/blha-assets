@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T02:30:41.602274Z",
+  "updated_at": "2026-11-06T02:45:34.028793Z",
   "seen": [
-    {
-      "key": "a85280f4f0e39a636c43f981",
-      "url": "https://www.sportsnet.ca/nhl/article/hall-scores-twice-as-hurricanes-spoil-canadiens-home-opener",
-      "fingerprint": "b270d28dff48f08c",
-      "title_norm": "hall scores twice as hurricanes spoil canadiens home opener",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T02:30:41.844096Z"
-    },
-    {
-      "key": "f05a9cbf197b61bb4722955d",
-      "url": "https://www.nhl.com/news/new-york-islanders-new-york-rangers-game-recap-october-6-2026",
-      "fingerprint": "b5294a999420b9ec",
-      "title_norm": "lafreniere hat trick helps rangers win 4th in row",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T02:45:33.707397Z"
-    },
     {
       "key": "ddb4269bb5324918694f3413",
       "url": "https://www.sportsnet.ca/nhl/article/senators-fall-to-red-wings-for-first-loss",
@@ -18812,6 +18792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T02:30:41.527033Z"
+    },
+    {
+      "key": "ae5618a120cdea9dbc42eb1d",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-oilers-mcdavid-scores-spectacular-shorthanded-goal-vs-ducks",
+      "fingerprint": "e6b6a00448c06eb0",
+      "title_norm": "gotta see it: oilers' mcdavid scores spectacular shorthanded goal vs. ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T02:45:33.957758Z"
     }
   ],
   "known_sources": [
