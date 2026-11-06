@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T19:30:36.170713Z",
+  "updated_at": "2026-11-06T19:45:36.137556Z",
   "seen": [
     {
       "key": "10e4e71f6789f820b7af18cc",
@@ -18712,6 +18712,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T19:30:36.066130Z"
+    },
+    {
+      "key": "deb7afb9515628b6d4dae485",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-goalie-james-reimer-clears-waivers",
+      "fingerprint": "d04bd1fa066cabc4",
+      "title_norm": "rangers goalie james reimer clears waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T19:45:36.090673Z"
     }
   ],
   "known_sources": [
