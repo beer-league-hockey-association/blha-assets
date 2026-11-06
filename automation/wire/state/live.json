@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T05:30:34.858424Z",
+  "updated_at": "2026-11-06T05:45:30.593241Z",
   "seen": [
-    {
-      "key": "85e3205b5ce37bbd43746bc0",
-      "url": "https://www.nhl.com/news/florida-panthers-los-angeles-kings-game-recap-october-6-2026",
-      "fingerprint": "bc9f935813c3185e",
-      "title_norm": "panthers edge kings but lose marchand to injury",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T05:30:36.639787Z"
-    },
     {
       "key": "256079bd1bf972138e20ae70",
       "url": "https://www.flohockey.tv/articles/16231987-ahl-games-this-weekend-5-must-watch-matchups-on-flohockey",
@@ -18722,6 +18712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T05:15:29.799892Z"
+    },
+    {
+      "key": "fb90cc5b3ce867e60a7eaac9",
+      "url": "https://www.nhl.com/news/nashville-predators-colorado-avalanche-game-recap-november-5-2026",
+      "fingerprint": "5e3be0c1a5b82b78",
+      "title_norm": "stamkos scores in ot, predators edge avalanche for third straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T05:45:30.534494Z"
     }
   ],
   "known_sources": [
