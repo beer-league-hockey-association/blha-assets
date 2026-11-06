@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T17:00:44.981174Z",
+  "updated_at": "2026-11-06T17:15:42.363937Z",
   "seen": [
-    {
-      "key": "90a3d2b30f9b881c278894f6",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-7-2026",
-      "fingerprint": "e3ecd4670a1f0d94",
-      "title_norm": "status report: rust game-time decision for penguins",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T17:15:36.179724Z"
-    },
-    {
-      "key": "b040eb32d2a7b58cf935884d",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-goalie-samuel-montembeault-suffers-injury-in-practice",
-      "fingerprint": "47196f119b8d6838",
-      "title_norm": "canadiens goalie samuel montembeault suffers injury in practice",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T17:15:36.496797Z"
-    },
-    {
-      "key": "757ab9dd4228e55276bfab67",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-acquire-f-filip-hallander-from-penguins-for-d-spencer-stastney",
-      "fingerprint": "d743d431b14c0e68",
-      "title_norm": "oilers acquire f filip hallander from penguins for d spencer stastney",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T17:15:36.498544Z"
-    },
     {
       "key": "33cda1f19d8c3b8b650f9f11",
       "url": "https://www.sportsnet.ca/nhl/article/nhls-romance-themed-audiobooks-disappear-after-opening-week-of-season",
@@ -18682,6 +18652,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-06T17:00:44.930920Z"
+    },
+    {
+      "key": "4df62edef4b5bc5661b7626e",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-6-2026",
+      "fingerprint": "023958098193dd18",
+      "title_norm": "on tap: kaprizov looks to continue goal binge for wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T17:15:40.071923Z"
+    },
+    {
+      "key": "2c2e6c52688b076e264e6844",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-leaders-for-2026-27-season",
+      "fingerprint": "9a035d93f0a94880",
+      "title_norm": "xhekaj sets hardest shot resulting in goal of season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T17:15:41.684404Z"
+    },
+    {
+      "key": "a0414e2fae1c3050ba38d38b",
+      "url": "https://www.nhl.com/news/2027-nhl-draft-notebook-swiss-prospect-jonah-neuenschwander-blooming-from-young-age",
+      "fingerprint": "6ec00606c804790d",
+      "title_norm": "draft notebook: swiss center blooms from age 15 debut",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T17:15:42.035986Z"
+    },
+    {
+      "key": "4520a73e1a1ecb154e603f97",
+      "url": "https://www.nhl.com/news/alex-ovechkin-hosts-children-impacted-by-cancer-at-washington-capitals-facility",
+      "fingerprint": "c005a62ae5eb2890",
+      "title_norm": "ovechkin opens 'office' to kids impacted by cancer",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T17:15:42.051872Z"
     }
   ],
   "known_sources": [
