@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T20:30:46.788195Z",
+  "updated_at": "2026-11-06T20:45:33.981276Z",
   "seen": [
     {
       "key": "aab8c0bc767a9a05a4ac6ebf",
@@ -18692,6 +18692,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T20:30:46.658481Z"
+    },
+    {
+      "key": "034a4c02f14d01fac853eab1",
+      "url": "https://www.sportsnet.ca/nhl/article/remarkable-gretzky-gives-mcdavid-flowers-amid-historically-hot-start",
+      "fingerprint": "ee554fa0736f3b29",
+      "title_norm": "'remarkable': gretzky gives mcdavid flowers amid historically hot start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T20:45:33.946836Z"
     }
   ],
   "known_sources": [
