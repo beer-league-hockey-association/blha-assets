@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T17:45:34.374271Z",
+  "updated_at": "2026-11-06T18:00:43.169235Z",
   "seen": [
-    {
-      "key": "f4038eed771f2147a81394d4",
-      "url": "https://www.dailyfaceoff.com/players/news/alexander-romanov-29623/29623",
-      "fingerprint": "27dcc14cec74b700",
-      "title_norm": "alexander romanov (nyi) — romanov will undergo surgery to repair an acl tear and miss 6-8 months.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T17:45:37.284209Z"
-    },
-    {
-      "key": "c3078ba726ec7f8314875fb3",
-      "url": "https://www.nhl.com/news/alexander-romanov-to-miss-rest-of-2026-2027-season",
-      "fingerprint": "2178f3de267eaed2",
-      "title_norm": "romanov likely to miss rest of season with torn acl",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-07T17:58:28.700448Z"
-    },
-    {
-      "key": "ffd43edc9765cda199fbb2e0",
-      "url": "https://www.sportsnet.ca/nhl/article/whats-working-and-what-needs-work-early-positives-concerns-for-maple-leafs",
-      "fingerprint": "a9f241cb7f975491",
-      "title_norm": "what's working and what needs work? early positives, concerns for maple leafs",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T17:58:28.936403Z"
-    },
-    {
-      "key": "a603130437b42cb62fecd467",
-      "url": "https://www.sportsnet.ca/nhl/article/islanders-d-alexander-romanov-out-six-to-eight-months-with-torn-acl",
-      "fingerprint": "b4d41d9246945714",
-      "title_norm": "islanders d alexander romanov out six to eight months with torn acl",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T17:58:29.137545Z"
-    },
     {
       "key": "9639a392ef1286d90053f4b8",
       "url": "https://www.nhl.com/news/alex-ovechkin-best-moments-on-home-ice-discussed-by-nhl-writers",
