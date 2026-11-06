@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-05T23:45:38.640448Z",
+  "updated_at": "2026-11-06T00:00:39.288594Z",
   "seen": [
     {
       "key": "4969e20c87b980e37a1e8ea1",
@@ -18882,6 +18882,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-05T23:00:43.705090Z"
+    },
+    {
+      "key": "0b95d774b53615ab6dcfa249",
+      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
+      "fingerprint": "4742918ce6521a3d",
+      "title_norm": "taylor hall (car) — hall (upper-body) will be back in the hurricanes lineup on thursday,",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T00:00:37.532117Z"
+    },
+    {
+      "key": "c6fd1800a4af071593533e4f",
+      "url": "https://www.nhl.com/news/nhl-ticketmaster-to-help-blind-low-vision-fans",
+      "fingerprint": "e8dada2d677cf6a0",
+      "title_norm": "ticketmaster, nhl, onecourt enhance fan access",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T00:00:37.966843Z"
+    },
+    {
+      "key": "254883f31adf7de8705a741d",
+      "url": "https://www.dailyfaceoff.com/players/news/elias-salomonsson/36380",
+      "fingerprint": "d1e338a4736d2623",
+      "title_norm": "elias salomonsson (wpg) — salomonsson (illness) will not play thursday vs. the canucks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T00:00:38.354928Z"
+    },
+    {
+      "key": "f3adda1bded297e2f9eec020",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "5182c29a7520192d",
+      "title_norm": "zemgus girgensons (tbl) — girgensons (lower-body) will return to the lightning lineup on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T00:00:38.685784Z"
+    },
+    {
+      "key": "6db127d2100e2d08da64fee4",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/c9a2d1a2-15c6-4565-9be5-3a3446be6b37",
+      "fingerprint": "126fbdf1ca224a0d",
+      "title_norm": "canucks on sportsnet: vancouver vs. winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T00:00:39.244876Z"
     }
   ],
   "known_sources": [
