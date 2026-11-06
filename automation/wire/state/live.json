@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T14:00:41.415106Z",
+  "updated_at": "2026-11-06T14:15:34.819294Z",
   "seen": [
     {
       "key": "53416f0be4cb6420be7a201a",
@@ -18752,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T13:15:34.113147Z"
+    },
+    {
+      "key": "400f795d8a20ef5247a6c96b",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-nab-five-goals-for-sixth-straight-game-in-win-over-oilers",
+      "fingerprint": "3ca3cb5fa7abca54",
+      "title_norm": "ducks nab five goals for sixth straight game in win over oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T14:15:34.761416Z"
     }
   ],
   "known_sources": [
