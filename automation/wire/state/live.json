@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T05:00:37.257638Z",
+  "updated_at": "2026-11-06T05:15:29.831758Z",
   "seen": [
     {
       "key": "dbb0fe013302a2add30da2a5",
@@ -18722,6 +18722,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T04:15:34.750793Z"
+    },
+    {
+      "key": "14578efbb782fd6803052500",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-show-character-in-comeback-win-over-mammoth",
+      "fingerprint": "acf90334ca584bbc",
+      "title_norm": "canadiens show character in comeback win over mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T05:15:29.582237Z"
+    },
+    {
+      "key": "b3032f0a6de3ec3de7a2c613",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-take-step-back-in-lopsided-loss-to-jets",
+      "fingerprint": "7e03bfa4f2079b1d",
+      "title_norm": "canucks take step back in lopsided loss to jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T05:15:29.799892Z"
     }
   ],
   "known_sources": [
