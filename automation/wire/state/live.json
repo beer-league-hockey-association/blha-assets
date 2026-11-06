@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T15:30:35.840090Z",
+  "updated_at": "2026-11-06T15:44:55.762143Z",
   "seen": [
-    {
-      "key": "bc8c0d6d1f8b2b6566ede182",
-      "url": "https://www.dailyfaceoff.com/players/news/matt-roy/4512",
-      "fingerprint": "84b5397f0a27ff60",
-      "title_norm": "matt roy (wsh) — roy (lower-body) is out vs. pittsburgh and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T15:30:39.367061Z"
-    },
-    {
-      "key": "02332c0289b88adb8c73ff87",
-      "url": "https://www.dailyfaceoff.com/players/news/dominic-james/32816",
-      "fingerprint": "f13da7eb83cbfa94",
-      "title_norm": "dominic james (tbl) — james (hand) is expected to return on thursday vs. minnesota.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T15:30:42.151768Z"
-    },
     {
       "key": "e0effeff78f4ce2f7f080595",
       "url": "https://www.dailyfaceoff.com/players/news/alexander-romanov-29623/29623",
@@ -18722,6 +18702,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T15:30:35.810085Z"
+    },
+    {
+      "key": "7f175c0b1f556c8da3001a5c",
+      "url": "https://theahl.com/news/hammers-sign-fabbri-stranges-to-tryouts",
+      "fingerprint": "cdd597bc01abc420",
+      "title_norm": "hammers sign fabbri, stranges to tryouts",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-06T15:44:55.656146Z"
     }
   ],
   "known_sources": [
