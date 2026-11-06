@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T17:30:47.484899Z",
+  "updated_at": "2026-11-06T17:45:34.374271Z",
   "seen": [
     {
       "key": "f4038eed771f2147a81394d4",
@@ -18732,6 +18732,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-06T17:30:47.187315Z"
+    },
+    {
+      "key": "f49cfefbd800b9e9a96cbde1",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-tavares-heading-toward-return-vs-canadiens-after-regular-practice",
+      "fingerprint": "b53daf2297a8bc80",
+      "title_norm": "maple leafs' tavares 'heading toward' return vs. canadiens after regular practice",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:45:34.059859Z"
+    },
+    {
+      "key": "00f78abb4af4fd9b2428459a",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-ridly-greig-doubtful-to-play-against-mammoth",
+      "fingerprint": "b927c4f15a60ed42",
+      "title_norm": "senators' ridly greig doubtful to play against mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:45:34.336856Z"
     }
   ],
   "known_sources": [
