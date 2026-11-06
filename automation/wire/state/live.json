@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T03:00:42.967607Z",
+  "updated_at": "2026-11-06T03:15:41.319691Z",
   "seen": [
-    {
-      "key": "9e51c8125d3ea140f80565ed",
-      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
-      "fingerprint": "e86f999a6eac4088",
-      "title_norm": "jonas siegenthaler (njd) — siegenthaler left tuesday's game vs. utah with an undisclosed injury and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-07T03:15:34.787458Z"
-    },
     {
       "key": "01209733f764eddd23d38c75",
       "url": "https://www.nhl.com/news/st-louis-blues-chicago-blackhawks-game-recap-october-6-2026",
@@ -18662,6 +18652,96 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T03:00:42.848924Z"
+    },
+    {
+      "key": "e326a4984059b67e81069308",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-new-york-islanders-game-recap-november-5-2026",
+      "fingerprint": "256a43f65d5763f0",
+      "title_norm": "carrier breaks tie in 3rd, hurricanes edge islanders",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:15:39.082310Z"
+    },
+    {
+      "key": "83a3ce3ed26e4a88ba6dbb67",
+      "url": "https://www.nhl.com/news/vancouver-canucks-winnipeg-jets-game-recap-november-5-2026",
+      "fingerprint": "3efaece5d1ae9549",
+      "title_norm": "jets start fast, score 6 to cruise past canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:15:39.356549Z"
+    },
+    {
+      "key": "827528d5bc5144e9ca486a25",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-detroit-red-wings-game-recap-november-5-2026",
+      "fingerprint": "1ea794ebfc7692f9",
+      "title_norm": "connelly lifts golden knights past red wings with late goal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-06T03:15:39.672863Z"
+    },
+    {
+      "key": "2e90db4826979e7e9fbf08df",
+      "url": "https://www.sportsnet.ca/nhl/article/mercer-has-two-points-as-jets-cruise-past-canucks-for-second-straight-win",
+      "fingerprint": "4ed9164ca58620ec",
+      "title_norm": "mercer has two points as jets cruise past canucks for second straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T03:15:39.740963Z"
+    },
+    {
+      "key": "4f8757bb0e2e5e01897e9345",
+      "url": "https://www.sportsnet.ca/nhl/article/zacha-scores-twice-to-lead-bruins-to-victory-over-struggling-penguins",
+      "fingerprint": "7a02f93773d3406e",
+      "title_norm": "zacha scores twice to lead bruins to victory over struggling penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T03:15:39.760152Z"
+    },
+    {
+      "key": "023b1b1f8bbc5dd466c4661c",
+      "url": "https://keepingkarlsson.com/",
+      "fingerprint": "3e6291958ac32dd8",
+      "title_norm": "short shifts - nov. 4th 2026",
+      "channel": "media",
+      "source_id": "pod_keeping_karlsson",
+      "tier": 2,
+      "seen_at": "2026-11-06T03:15:40.073468Z"
+    },
+    {
+      "key": "1c5b14ec8bddf56ec94f357a",
+      "url": "https://rss.com/podcasts/prospects2pros/3138151",
+      "fingerprint": "a162bf4f0194e729",
+      "title_norm": "the 2026 nhl draft - elite prospects and claude.",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-11-06T03:15:40.548883Z"
+    },
+    {
+      "key": "53f3ba25039dc8f42828a4a2",
+      "url": "https://rss.com/podcasts/prospects2pros/2956172",
+      "fingerprint": "5051d90595df3c72",
+      "title_norm": "2026 nhl draft recap",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-11-06T03:15:40.767247Z"
+    },
+    {
+      "key": "ae6c19eab284520922bf34a3",
+      "url": "https://www.rotowire.com/hockey",
+      "fingerprint": "d05374fc49dbc211",
+      "title_norm": "puckcast - week 5 - one month into 2026-27 season",
+      "channel": "media",
+      "source_id": "pod_rotowire_hockey",
+      "tier": 2,
+      "seen_at": "2026-11-06T03:15:40.771387Z"
     }
   ],
   "known_sources": [
