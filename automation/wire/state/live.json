@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T06:30:40.057752Z",
+  "updated_at": "2026-11-06T11:45:30.786572Z",
   "seen": [
     {
       "key": "256079bd1bf972138e20ae70",
@@ -18732,6 +18732,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T06:30:39.936340Z"
+    },
+    {
+      "key": "f98b50e6f001bb64303e0295",
+      "url": "https://www.sportsnet.ca/nhl/article/stamkos-scores-ot-winner-as-predators-top-avalanche",
+      "fingerprint": "c851534f87056387",
+      "title_norm": "stamkos scores ot winner as predators top avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T11:45:30.752563Z"
     }
   ],
   "known_sources": [
