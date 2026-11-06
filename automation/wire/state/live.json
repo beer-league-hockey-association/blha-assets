@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T17:15:42.363937Z",
+  "updated_at": "2026-11-06T17:30:47.484899Z",
   "seen": [
-    {
-      "key": "33cda1f19d8c3b8b650f9f11",
-      "url": "https://www.sportsnet.ca/nhl/article/nhls-romance-themed-audiobooks-disappear-after-opening-week-of-season",
-      "fingerprint": "bb0d8e8dfba28389",
-      "title_norm": "nhl's romance-themed audiobooks disappear after opening week of season",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-07T17:30:42.850800Z"
-    },
     {
       "key": "f4038eed771f2147a81394d4",
       "url": "https://www.dailyfaceoff.com/players/news/alexander-romanov-29623/29623",
@@ -18692,6 +18682,56 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T17:15:42.051872Z"
+    },
+    {
+      "key": "2e7e2f3c4e324d9593fb31fc",
+      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
+      "fingerprint": "75d40d0c53b44863",
+      "title_norm": "john tavares (tor) — tavares (lower-body) has a good chance to return vs. montreal on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:30:46.126554Z"
+    },
+    {
+      "key": "ca30398f9ac4cb1f819f12f0",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "c97e5999a81598ff",
+      "title_norm": "linus ullmark (ott) — ullmark (lower-body) has a chance to return vs. utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:30:46.527849Z"
+    },
+    {
+      "key": "bb76e112032d09d862d998a7",
+      "url": "https://www.dailyfaceoff.com/players/news/matt-kessel/30737",
+      "fingerprint": "cab92b5008923c32",
+      "title_norm": "matthew kessel (nyi) — kessel (upper-body) left friday's practice and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:30:46.890801Z"
+    },
+    {
+      "key": "ab900a80a6789ac59b55a49a",
+      "url": "https://www.dailyfaceoff.com/players/news/ridly-greig/30383",
+      "fingerprint": "c9287b94f88eb1bf",
+      "title_norm": "ridly greig (ott) — greig (undisclosed) missed practice on friday and is doubtful vs. utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:30:46.905629Z"
+    },
+    {
+      "key": "3d68ec33e9ccebbe0048b514",
+      "url": "https://www.sportsnet.ca/nhl/article/which-nhlers-could-make-up-hockey-hall-of-fame-class-of-2027",
+      "fingerprint": "5b84d46bf92a3be0",
+      "title_norm": "which nhlers could make up hockey hall of fame class of 2027?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-06T17:30:47.187315Z"
     }
   ],
   "known_sources": [
