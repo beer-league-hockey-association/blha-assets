@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T23:00:36.871135Z",
+  "updated_at": "2026-11-07T23:15:33.149002Z",
   "seen": [
-    {
-      "key": "8c02de9a8fef5a81761604d5",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-hoyt-stanley-to-make-nhl-debut-vs-flyers",
-      "fingerprint": "73d0da2914a0a22c",
-      "title_norm": "senators' hoyt stanley to make nhl debut vs. flyers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T23:00:41.430385Z"
-    },
     {
       "key": "5628b0293e25fea1e19a92c1",
       "url": "https://www.sportsnet.ca/nhl/article/sharks-star-celebrini-a-game-time-decision-vs-blues",
