@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T15:30:38.046009Z",
+  "updated_at": "2026-11-07T15:45:32.651999Z",
   "seen": [
-    {
-      "key": "f1462066bd788a1b4469aa7e",
-      "url": "https://www.sportsnet.ca/nhl/article/linus-ullmark-to-start-in-senators-home-opener-vs-flyers",
-      "fingerprint": "ed7ecf1a78795ef6",
-      "title_norm": "linus ullmark to start in senators' home opener vs. flyers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T15:30:40.063628Z"
-    },
     {
       "key": "9a5061d5673d54f37ecb7693",
       "url": "https://audioboom.com/posts/8962164",
