@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T17:30:37.135231Z",
+  "updated_at": "2026-11-07T17:45:37.738733Z",
   "seen": [
-    {
-      "key": "bf384d85640935245b7803ee",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-debrusk/2490",
-      "fingerprint": "d838c6b07314ba19",
-      "title_norm": "jake debrusk (van) — debrusk (illness) is expected to return in carolina on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T17:30:42.032598Z"
-    },
-    {
-      "key": "6579040843161abbc3769f31",
-      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
-      "fingerprint": "1598ef464bb6054e",
-      "title_norm": "jonas siegenthaler (njd) — siegenthaler (undisclosed) has a chance to return on saturday vs. vancouver.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T17:30:42.389451Z"
-    },
     {
       "key": "718a1bcc2fcb81c05e2021c4",
       "url": "https://www.nhl.com/news/carolina-hurricanes-set-jarvis-injury-status-update-practicing-with-team",
@@ -18752,6 +18732,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T17:30:37.004437Z"
+    },
+    {
+      "key": "f02d94b31af8314e11885af7",
+      "url": "https://www.dailyfaceoff.com/players/news/mason-mctavish/30834",
+      "fingerprint": "508d36057bf03d97",
+      "title_norm": "mason mctavish (stl) — mctavish (undisclosed) will play vs. nashville on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T17:45:37.013521Z"
+    },
+    {
+      "key": "ce2abe4ed52c11ed8c063fc6",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-vinni-lettieri-is-fighting-to-survive-in-the-nhl",
+      "fingerprint": "ff95501a507523f8",
+      "title_norm": "quick shifts: vinni lettieri is fighting to survive in the nhl",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T17:45:37.391880Z"
+    },
+    {
+      "key": "83f0da8496a9ae1a42a082d1",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/718a4f2b-faff-477d-a25a-e0717cafcbdc",
+      "fingerprint": "6ee802d7c744ae7f",
+      "title_norm": "nhl on sportsnet: panthers vs. capitals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T17:45:37.684437Z"
     }
   ],
   "known_sources": [
