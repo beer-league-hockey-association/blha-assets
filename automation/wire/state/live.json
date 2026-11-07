@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T19:00:36.266452Z",
+  "updated_at": "2026-11-07T19:15:36.328812Z",
   "seen": [
-    {
-      "key": "f7c23d7bb669371d01069d9f",
-      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
-      "fingerprint": "a2a4803aa36d0538",
-      "title_norm": "victor olofsson (vgk) — olofsson (undisclosed) is considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T19:01:13.960693Z"
-    },
     {
       "key": "401fb385e1881ce048b7f3c6",
       "url": "https://charlottecheckers.com/articles/full-summer-of-training-fueling-nate-smith-s-strong-start",
@@ -18792,6 +18782,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T19:00:36.135101Z"
+    },
+    {
+      "key": "be21d0820b08a9f20c386eee",
+      "url": "https://www.sportsnet.ca/nhl/article/zach-hyman-devon-levi-return-to-oilers-lineup-vs-canucks",
+      "fingerprint": "a3cfcfd5821eda47",
+      "title_norm": "zach hyman, devon levi return to oilers lineup vs. canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T19:15:35.938752Z"
+    },
+    {
+      "key": "27a6ac2e684de114f4e2896b",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-vilmanis-exits-vs-capitals-after-hit-from-behind-by-wilson",
+      "fingerprint": "8a6ac29ac88034e5",
+      "title_norm": "panthers' vilmanis exits vs. capitals after hit from behind by wilson",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T19:15:36.287055Z"
     }
   ],
   "known_sources": [
