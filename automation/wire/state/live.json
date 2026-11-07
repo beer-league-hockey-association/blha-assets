@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T10:15:33.684867Z",
+  "updated_at": "2026-11-07T13:30:37.229135Z",
   "seen": [
-    {
-      "key": "c1fab061b78e0997bb0422f9",
-      "url": "https://www.sportsnet.ca/nhl/article/who-could-red-wings-target-in-potential-simon-edvinsson-trade",
-      "fingerprint": "f4f364243031b58a",
-      "title_norm": "who could red wings target in potential simon edvinsson trade?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T13:15:48.051888Z"
-    },
     {
       "key": "42e3267e1af45a82454ce07e",
       "url": "https://theahl.com/news/beaudoin-family-savor-opportunity-with-rangers",
