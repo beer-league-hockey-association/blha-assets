@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T19:45:29.313917Z",
+  "updated_at": "2026-11-07T20:15:37.758314Z",
   "seen": [
-    {
-      "key": "85ecfdb7352e467af75d70f2",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-mckenna-moved-down-to-third-line-cowan-to-take-his-place",
-      "fingerprint": "fade4b2caeec1330",
-      "title_norm": "maple leafs' mckenna moved down to third line, cowan to take his place",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T20:00:40.149372Z"
-    },
     {
       "key": "87b6d32fd426fc6f34748f81",
       "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
