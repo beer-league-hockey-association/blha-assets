@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T03:00:35.250327Z",
+  "updated_at": "2026-11-07T03:15:31.791667Z",
   "seen": [
-    {
-      "key": "e284eada118523ddf85b17da",
-      "url": "https://www.nhl.com/news/colorado-avalanche-winnipeg-jets-game-recap-october-7-2026",
-      "fingerprint": "e30771fb8f1c41f7",
-      "title_norm": "connor has game-winner with 1 minute left, jets top avs",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T03:00:43.184969Z"
-    },
-    {
-      "key": "56c272315e7dde3b5a13edd4",
-      "url": "https://www.sportsnet.ca/nhl/article/connors-two-goals-help-jets-eke-out-win-over-avalanche",
-      "fingerprint": "6a2b6861a2ea6576",
-      "title_norm": "connor's two goals help jets eke out win over avalanche",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T03:00:43.458220Z"
-    },
     {
       "key": "74fbd2f2cd9f414976c12822",
       "url": "https://www.nhl.com/news/trophy-tracker-vezina-lightning-andrei-vasilevskiy-early-choice-as-top-goalie",
@@ -18702,6 +18682,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-07T03:00:35.176544Z"
+    },
+    {
+      "key": "132316646387661feb047793",
+      "url": "https://www.sportsnet.ca/nhl/article/norris-scores-twice-as-sabres-beat-blue-jackets",
+      "fingerprint": "2d7254dcfb5e3f86",
+      "title_norm": "norris scores twice as sabres beat blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T03:15:31.746530Z"
     }
   ],
   "known_sources": [
