@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T19:30:36.415237Z",
+  "updated_at": "2026-11-07T19:45:29.313917Z",
   "seen": [
-    {
-      "key": "401fb385e1881ce048b7f3c6",
-      "url": "https://charlottecheckers.com/articles/full-summer-of-training-fueling-nate-smith-s-strong-start",
-      "fingerprint": "a8105fb76848e7c3",
-      "title_norm": "full summer of training fueling strong start for checkers' smith",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-08T19:30:40.430511Z"
-    },
     {
       "key": "85ecfdb7352e467af75d70f2",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-mckenna-moved-down-to-third-line-cowan-to-take-his-place",
@@ -18812,6 +18802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T19:30:36.386833Z"
+    },
+    {
+      "key": "a19e13bfb9349228579c5585",
+      "url": "https://www.sportsnet.ca/nhl/article/james-reimer-placed-on-unconditional-waivers",
+      "fingerprint": "fd4041e88906f427",
+      "title_norm": "james reimer placed on unconditional waivers by rangers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T19:45:29.279519Z"
     }
   ],
   "known_sources": [
