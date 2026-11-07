@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T04:30:34.414946Z",
+  "updated_at": "2026-11-07T04:45:40.035887Z",
   "seen": [
     {
       "key": "373dd8f33b1a4a26e6ba831d",
@@ -18712,6 +18712,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-07T04:30:34.315933Z"
+    },
+    {
+      "key": "2492b75ce2082827601444ec",
+      "url": "https://www.sportsnet.ca/nhl/article/i-feel-like-i-belong-zayne-parekh-coming-into-his-own-with-flames",
+      "fingerprint": "bb1cfb2c42bd1cff",
+      "title_norm": "'i feel like i belong': zayne parekh coming into his own with flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T04:45:39.904091Z"
     }
   ],
   "known_sources": [
