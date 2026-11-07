@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T19:15:36.328812Z",
+  "updated_at": "2026-11-07T19:30:36.415237Z",
   "seen": [
     {
       "key": "401fb385e1881ce048b7f3c6",
@@ -18802,6 +18802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T19:15:36.287055Z"
+    },
+    {
+      "key": "627731888a36600a1bca8609",
+      "url": "https://www.sportsnet.ca/cfl/article/blue-bombers-qb-zach-collaros-active-for-east-final-vs-alouettes",
+      "fingerprint": "46644700d962bb53",
+      "title_norm": "blue bombers qb zach collaros active for east final vs. alouettes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T19:30:36.386833Z"
     }
   ],
   "known_sources": [
