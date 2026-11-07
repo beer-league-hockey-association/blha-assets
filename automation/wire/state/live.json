@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T14:00:33.281695Z",
+  "updated_at": "2026-11-07T14:30:37.267451Z",
   "seen": [
     {
       "key": "4b3982ac4e134edf99ce5dd1",
@@ -18702,6 +18702,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-07T10:15:33.659772Z"
+    },
+    {
+      "key": "89e167547056f69cca149b97",
+      "url": "https://www.sportsnet.ca/ice-hockey-world-championship/article/iihf-issues-statement-on-russian-and-belarusian-participation-in-tournaments",
+      "fingerprint": "5f0e10cf6e179bf3",
+      "title_norm": "iihf issues statement on russian and belarusian participation in tournaments",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T14:30:37.219974Z"
     }
   ],
   "known_sources": [
