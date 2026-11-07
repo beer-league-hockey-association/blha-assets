@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T22:11:54.354046Z",
+  "updated_at": "2026-11-07T22:45:32.861013Z",
   "seen": [
     {
       "key": "d72ae6d05ad675290dbffa58",
@@ -18792,6 +18792,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T22:11:54.288406Z"
+    },
+    {
+      "key": "d8d5d47bc8c97d1a376ef6c1",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-josh-morrissey-sheds-non-contact-jersey-at-practice",
+      "fingerprint": "0c9bac1f2f1afab4",
+      "title_norm": "jets' josh morrissey sheds non-contact jersey at practice",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T22:45:32.466409Z"
+    },
+    {
+      "key": "1e061a132b908552f0d641f5",
+      "url": "https://www.sportsnet.ca/nhl/article/extremely-grateful-price-bergeron-headline-2026-hockey-hall-of-fame-class",
+      "fingerprint": "d93c8561a72a6f68",
+      "title_norm": "'extremely grateful': price, bergeron headline 2026 hockey hall of fame class",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T22:45:32.818162Z"
     }
   ],
   "known_sources": [
