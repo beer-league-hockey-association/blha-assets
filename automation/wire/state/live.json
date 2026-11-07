@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T05:30:35.697052Z",
+  "updated_at": "2026-11-07T05:45:27.685432Z",
   "seen": [
-    {
-      "key": "586e024a771983e7438ee9ac",
-      "url": "https://www.nhl.com/news/washington-capitals-fans-feel-privileged-to-have-witnessed-alex-ovechkin-era",
-      "fingerprint": "d692210442d93081",
-      "title_norm": "capitals fans 'privileged' to have seen ovechkin era",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T05:30:40.894817Z"
-    },
     {
       "key": "f5720a0905fbd7ec2f35150b",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-flip-script-on-ducks-with-dominant-final-40-we-got-competitive",
