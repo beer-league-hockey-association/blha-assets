@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T16:30:37.753439Z",
+  "updated_at": "2026-11-07T16:45:32.780402Z",
   "seen": [
     {
       "key": "182b3a41837b09ae4d8fa465",
@@ -18762,6 +18762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T16:30:37.491191Z"
+    },
+    {
+      "key": "88f2018e53d6e76d66c6a810",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
+      "fingerprint": "f533c398f9773c08",
+      "title_norm": "jordan staal (car) — staal (calf tear) returned to carolina's practice as an extra on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:45:32.683734Z"
     }
   ],
   "known_sources": [
