@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T04:45:40.035887Z",
+  "updated_at": "2026-11-07T05:30:35.697052Z",
   "seen": [
-    {
-      "key": "373dd8f33b1a4a26e6ba831d",
-      "url": "https://www.nhl.com/news/edmonton-oilers-anaheim-ducks-game-recap-october-7-2026",
-      "fingerprint": "38795b10ca069c35",
-      "title_norm": "bouchard scores twice for oilers in win against ducks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T05:15:33.840579Z"
-    },
-    {
-      "key": "0cd5d803035899dfb838a03e",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-use-five-goal-second-period-to-top-ducks",
-      "fingerprint": "177af78f8d0abe24",
-      "title_norm": "oilers use five-goal second period to top ducks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T05:15:34.032448Z"
-    },
     {
       "key": "586e024a771983e7438ee9ac",
       "url": "https://www.nhl.com/news/washington-capitals-fans-feel-privileged-to-have-witnessed-alex-ovechkin-era",
@@ -18722,6 +18702,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T04:45:39.904091Z"
+    },
+    {
+      "key": "9ef6d26cdb27f5e60e0151ea",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-7-2026",
+      "fingerprint": "54a50918a2d15cc4",
+      "title_norm": "on tap: canes try to stay hot before global series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T05:30:34.772700Z"
+    },
+    {
+      "key": "ccddc3c81fa05402af84c810",
+      "url": "https://www.nhl.com/news/carey-price-set-huge-example-on-and-off-ice-en-route-to-hockey-hall-of-fame-says-pk-subban",
+      "fingerprint": "052c52920a93c3a3",
+      "title_norm": "price set huge example on way to hall: subban",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T05:30:35.314668Z"
+    },
+    {
+      "key": "7bd3e2cdc94a7658ea103fd3",
+      "url": "https://www.nhl.com/news/chl-notebook-top-players-at-quarter-mark-of-season",
+      "fingerprint": "a01b7521db4d42a1",
+      "title_norm": "chl notebook: top players at quarter mark of season",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T05:30:35.574164Z"
     }
   ],
   "known_sources": [
