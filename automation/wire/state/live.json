@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T14:30:37.267451Z",
+  "updated_at": "2026-11-07T15:00:42.872586Z",
   "seen": [
-    {
-      "key": "4b3982ac4e134edf99ce5dd1",
-      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
-      "fingerprint": "aa69657780b006d5",
-      "title_norm": "mathew barzal (nyi) — barzal (knee) skated on his own on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T14:45:39.996161Z"
-    },
-    {
-      "key": "16f60b4d2d151aaa6f62358e",
-      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
-      "fingerprint": "47fc296ff28b24f1",
-      "title_norm": "seth jarvis (car) — jarvis (shoulder) took part in thursday's morning skate in a regular jersey.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T14:45:40.273047Z"
-    },
     {
       "key": "8b1c4feddd2b17ceb5c0ae69",
       "url": "https://www.dailyfaceoff.com/players/news/dominic-james/32816",
@@ -18712,6 +18692,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T14:30:37.219974Z"
+    },
+    {
+      "key": "edb060f0ef85a71e6e4a0b0d",
+      "url": "https://www.nhl.com/news/mark-jankowski-has-taken-advantage-of-big-opportunity-with-carolina-hurricanes",
+      "fingerprint": "e08fe9041a75c8c7",
+      "title_norm": "jankowski 'huge part' of canes ahead of global series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T15:00:42.744204Z"
     }
   ],
   "known_sources": [
