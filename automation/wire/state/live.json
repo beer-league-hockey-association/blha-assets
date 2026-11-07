@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T02:45:35.594465Z",
+  "updated_at": "2026-11-07T03:00:35.250327Z",
   "seen": [
     {
       "key": "e284eada118523ddf85b17da",
@@ -18692,6 +18692,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T02:30:38.697793Z"
+    },
+    {
+      "key": "a9fa33536606c4fb924ae65f",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-buffalo-sabres-game-recap-november-6-2026",
+      "fingerprint": "abefb25d260e3782",
+      "title_norm": "norris scores 2, power has 3 assists, sabres cruise",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T03:00:35.176544Z"
     }
   ],
   "known_sources": [
