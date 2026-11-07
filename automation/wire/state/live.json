@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T15:15:38.472911Z",
+  "updated_at": "2026-11-07T15:30:38.046009Z",
   "seen": [
     {
       "key": "f1462066bd788a1b4469aa7e",
@@ -18722,6 +18722,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T15:15:38.365731Z"
+    },
+    {
+      "key": "1f9368c6cb6b3fd0e763db63",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-lundell/33026",
+      "fingerprint": "35e548ec6d95dbb2",
+      "title_norm": "anton lundell (fla) — lundell (undisclosed) is out vs. washington and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T15:30:37.336104Z"
+    },
+    {
+      "key": "eeb9f678f5a7f261598a4d65",
+      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
+      "fingerprint": "95628f041b8b2518",
+      "title_norm": "mathew barzal (nyi) — barzal (lower-body) was a full participant in new york's practice on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T15:30:37.713100Z"
+    },
+    {
+      "key": "87c385d7a19527cd6a46be80",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-mccarron/2156",
+      "fingerprint": "0d0fd28293d04484",
+      "title_norm": "michael mccarron (min) — mccarron (undisclosed) is questionable vs. tampa bay on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T15:30:37.970207Z"
     }
   ],
   "known_sources": [
