@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T17:00:46.992787Z",
+  "updated_at": "2026-11-07T17:15:32.212208Z",
   "seen": [
     {
       "key": "61590528af1e0dd132ac9610",
@@ -18742,6 +18742,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T17:00:46.897709Z"
+    },
+    {
+      "key": "fc6ce4cfd4f5b0095db049a3",
+      "url": "https://www.dailyfaceoff.com/players/news/james-hagens/37375",
+      "fingerprint": "83283f2633389555",
+      "title_norm": "james hagens (bos) — hagens (undisclosed) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T17:15:31.926297Z"
+    },
+    {
+      "key": "1fe23772e10a9ef16fdf0b69",
+      "url": "https://www.sportsnet.ca/nhl/video/feel-like-myself-again-maple-leafs-matthews-on-his-current-physical-level",
+      "fingerprint": "53b3d44d72526e3d",
+      "title_norm": "'feel like myself again': maple leafs' matthews on his current physical level",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T17:15:32.183223Z"
     }
   ],
   "known_sources": [
