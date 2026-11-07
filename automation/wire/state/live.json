@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T07:00:36.039604Z",
+  "updated_at": "2026-11-07T10:15:33.684867Z",
   "seen": [
     {
       "key": "c1fab061b78e0997bb0422f9",
@@ -18712,6 +18712,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-07T05:30:35.574164Z"
+    },
+    {
+      "key": "35c1388d1b15b6008cb13990",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Fantasy-Hockey-Waiver-Wire-Week-7--Best-Adds--Streams--Drops--Cross-the-Streams-e3ruidk",
+      "fingerprint": "26530704ca2bdb75",
+      "title_norm": "fantasy hockey waiver wire week 7 | best adds, streams & drops | cross the streams",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-07T10:15:33.659772Z"
     }
   ],
   "known_sources": [
