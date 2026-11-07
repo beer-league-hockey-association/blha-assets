@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T02:15:30.650567Z",
+  "updated_at": "2026-11-07T02:30:38.843790Z",
   "seen": [
     {
       "key": "6d11928f944fd5ca11ceccbe",
@@ -18702,6 +18702,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T01:15:35.568096Z"
+    },
+    {
+      "key": "3a2d4c784e3163f87c3ff73f",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-sean-monahan-exits-vs-sabres-with-lower-body-injury",
+      "fingerprint": "32d5de52bbbb219f",
+      "title_norm": "blue jackets' sean monahan exits vs. sabres with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T02:30:38.697793Z"
     }
   ],
   "known_sources": [
