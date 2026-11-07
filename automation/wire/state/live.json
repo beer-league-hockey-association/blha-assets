@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T23:15:33.149002Z",
+  "updated_at": "2026-11-07T23:45:34.330180Z",
   "seen": [
-    {
-      "key": "5628b0293e25fea1e19a92c1",
-      "url": "https://www.sportsnet.ca/nhl/article/sharks-star-celebrini-a-game-time-decision-vs-blues",
-      "fingerprint": "1c056ed5a6e29c03",
-      "title_norm": "sharks star celebrini a game-time decision vs. blues",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T23:30:38.316918Z"
-    },
-    {
-      "key": "d70939c40edba710213b31f5",
-      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
-      "fingerprint": "58171e88a7294b2a",
-      "title_norm": "william eklund (ott) — eklund suffered a lower-body injury and had to be helped off the ice vs. philadelphia.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T23:45:31.544211Z"
-    },
-    {
-      "key": "e34ceafb7a5de18587023419",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "8dd71e63d96ed822",
-      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is not on the ice for warmups; will not play thursday in st. louis.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T23:45:31.820452Z"
-    },
     {
       "key": "a647fe03dfbfa0cca2008506",
       "url": "https://www.sportsnet.ca/nhl/article/with-top-line-rolling-jets-still-searching-for-more-depth-scoring",
@@ -18772,6 +18742,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T22:45:32.818162Z"
+    },
+    {
+      "key": "3c2216d4f21d6bfb496fd1ef",
+      "url": "https://www.dailyfaceoff.com/players/news/ridly-greig/30383",
+      "fingerprint": "1062d7652fc5f482",
+      "title_norm": "ridly greig (ott) — greig (undisclosed) will be out vs. utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T23:45:34.017419Z"
+    },
+    {
+      "key": "124f14142478a8095e9b6af8",
+      "url": "https://www.dailyfaceoff.com/players/news/nate-schmidt/2093",
+      "fingerprint": "93bcb7c9c5743e3b",
+      "title_norm": "nate schmidt (uta) — schmidt (upper-body) is out vs. ottawa and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T23:45:34.246394Z"
     }
   ],
   "known_sources": [
