@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T03:15:31.791667Z",
+  "updated_at": "2026-11-07T04:00:39.201482Z",
   "seen": [
     {
       "key": "74fbd2f2cd9f414976c12822",
@@ -18692,6 +18692,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T03:15:31.746530Z"
+    },
+    {
+      "key": "bc8e9510a7db9e277ea4c576",
+      "url": "https://www.nhl.com/news/san-jose-sharks-minnesota-wild-game-recap-november-6-2026",
+      "fingerprint": "4d307d304bcb7699",
+      "title_norm": "kaprizov scores again, adds three assists in wild win against sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T04:00:39.108705Z"
     }
   ],
   "known_sources": [
