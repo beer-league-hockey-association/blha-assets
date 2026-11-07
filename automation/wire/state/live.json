@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T04:00:39.201482Z",
+  "updated_at": "2026-11-07T04:15:33.024874Z",
   "seen": [
-    {
-      "key": "74fbd2f2cd9f414976c12822",
-      "url": "https://www.nhl.com/news/trophy-tracker-vezina-lightning-andrei-vasilevskiy-early-choice-as-top-goalie",
-      "fingerprint": "cbab5cb5b50c219b",
-      "title_norm": "vezina tracker: 2-time winner early-season favorite",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T04:15:32.967448Z"
-    },
     {
       "key": "5c21a7f82d837e459feae0c5",
       "url": "https://www.nhl.com/news/top-2027-nhl-draft-prospect-landon-dupont-among-ncaa-players-to-watch",
@@ -18702,6 +18692,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-07T04:00:39.108705Z"
+    },
+    {
+      "key": "9eede4d191e0035be097cf74",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-allow-four-unanswered-goals-in-loss-to-ducks",
+      "fingerprint": "560af6227793091e",
+      "title_norm": "flames allow four unanswered goals in loss to ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T04:15:32.689025Z"
+    },
+    {
+      "key": "2652bc93ff01293bf0f9ae01",
+      "url": "https://www.sportsnet.ca/nhl/article/kaprizov-has-nhl-leading-16th-goal-adds-3-assists-to-lead-wild-past-sharks",
+      "fingerprint": "15710d915908e82a",
+      "title_norm": "kaprizov has nhl-leading 16th goal, adds 3 assists to lead wild past sharks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T04:15:32.990702Z"
     }
   ],
   "known_sources": [
