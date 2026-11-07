@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T21:00:37.579723Z",
+  "updated_at": "2026-11-07T21:30:31.343008Z",
   "seen": [
-    {
-      "key": "7a83241ba9b11dad5853b3f6",
-      "url": "https://www.sportsnet.ca/nhl/article/panthers-brad-marchand-out-week-to-week-with-leg-injury",
-      "fingerprint": "06a8be2c66bf8d03",
-      "title_norm": "panthers' brad marchand out week-to-week with leg injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T21:15:41.296675Z"
-    },
     {
       "key": "177a8319f0f91266f83af8b8",
       "url": "https://www.nhl.com/news/florida-panthers-aleksander-barkov-injury-status-update-october-8-2026",
