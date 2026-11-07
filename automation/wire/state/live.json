@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T00:57:04.969353Z",
+  "updated_at": "2026-11-07T01:15:35.610504Z",
   "seen": [
     {
       "key": "010f633414f7582848a53350",
@@ -18702,6 +18702,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T00:57:04.916578Z"
+    },
+    {
+      "key": "811caf04041d268836d1e688",
+      "url": "https://www.nhl.com/news/carey-price-inspired-by-montreal-canadiens-legends-on-way-to-hockey-hall-of-fame",
+      "fingerprint": "70ad314f1b20c068",
+      "title_norm": "price inspired by canadiens legends on way to hall",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T01:15:35.044064Z"
+    },
+    {
+      "key": "86543561528456163802d83f",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-bahl/27807",
+      "fingerprint": "f251e01372083e98",
+      "title_norm": "kevin bahl (cgy) — bahl (lower-body) is out vs. anaheim on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T01:15:35.332226Z"
+    },
+    {
+      "key": "db9e4394ebaef704c966bfdb",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-kevin-bahl-out-vs-ducks-with-lower-body-injury",
+      "fingerprint": "084f7fe609610928",
+      "title_norm": "flames' kevin bahl out vs. ducks with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T01:15:35.568096Z"
     }
   ],
   "known_sources": [
