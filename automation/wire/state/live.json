@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T21:30:31.343008Z",
+  "updated_at": "2026-11-07T22:11:54.354046Z",
   "seen": [
-    {
-      "key": "177a8319f0f91266f83af8b8",
-      "url": "https://www.nhl.com/news/florida-panthers-aleksander-barkov-injury-status-update-october-8-2026",
-      "fingerprint": "bdf0392157bb34bc",
-      "title_norm": "barkov will be back 'as soon as possible' for panthers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T22:00:42.065044Z"
-    },
-    {
-      "key": "9d3dd3ed6206d7b3c72e5dbc",
-      "url": "https://www.sportsnet.ca/nhl/video/really-happy-for-him-matthews-on-marners-run-to-stanley-cup-final",
-      "fingerprint": "4dde16443871559b",
-      "title_norm": "'really happy for him': matthews on marner's run to stanley cup final",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T22:00:42.482848Z"
-    },
     {
       "key": "d72ae6d05ad675290dbffa58",
       "url": "https://www.dailyfaceoff.com/players/news/josh-doan/32990",
@@ -18802,6 +18782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-07T21:00:37.440714Z"
+    },
+    {
+      "key": "0466e023284a40a98b670253",
+      "url": "https://www.dailyfaceoff.com/players/news/alberts-smits/38784",
+      "fingerprint": "1ce8a9928ac77515",
+      "title_norm": "alberts smits (nyr) — smits (upper-body) is a late scratch vs. seattle.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T22:11:54.288406Z"
     }
   ],
   "known_sources": [
