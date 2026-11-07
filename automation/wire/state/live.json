@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T18:45:31.110177Z",
+  "updated_at": "2026-11-07T19:00:36.266452Z",
   "seen": [
     {
       "key": "f7c23d7bb669371d01069d9f",
@@ -18782,6 +18782,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T18:30:38.112190Z"
+    },
+    {
+      "key": "10b350bd858a974ea0ac0962",
+      "url": "https://www.dailyfaceoff.com/players/news/sandis-vilmanis/36428",
+      "fingerprint": "77a15546c6ed606d",
+      "title_norm": "sandis vilmanis (fla) — vilmanis (undisclosed) left saturday's game vs. washington and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T19:00:36.135101Z"
     }
   ],
   "known_sources": [
