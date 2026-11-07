@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T20:15:37.758314Z",
+  "updated_at": "2026-11-07T20:30:40.474402Z",
   "seen": [
-    {
-      "key": "87b6d32fd426fc6f34748f81",
-      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
-      "fingerprint": "98bc839dc78a68c3",
-      "title_norm": "brad marchand (fla) — marchand (lower-body) is reportedly expected to miss a \"few weeks.\"",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T20:30:39.122025Z"
-    },
     {
       "key": "3fcd8ebaeaacaf2cb82c2f35",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-evan-bouchard-proving-critics-wrong-with-hot-start",
@@ -18802,6 +18792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T19:45:29.279519Z"
+    },
+    {
+      "key": "1db237a0712bccf136344199",
+      "url": "https://www.nhl.com/news/florida-panthers-washington-capitals-game-recap-november-7-2026",
+      "fingerprint": "5ed06690ae36b0fd",
+      "title_norm": "capitals rally with three straight, hold off panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T20:30:40.401694Z"
     }
   ],
   "known_sources": [
