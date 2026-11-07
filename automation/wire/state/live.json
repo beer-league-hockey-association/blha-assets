@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T20:45:32.109312Z",
+  "updated_at": "2026-11-07T21:00:37.579723Z",
   "seen": [
-    {
-      "key": "3fcd8ebaeaacaf2cb82c2f35",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-evan-bouchard-proving-critics-wrong-with-hot-start",
-      "fingerprint": "e0fb7f731542b69a",
-      "title_norm": "oilers' evan bouchard proving critics wrong with hot start",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T20:45:36.585663Z"
-    },
     {
       "key": "7a83241ba9b11dad5853b3f6",
       "url": "https://www.sportsnet.ca/nhl/article/panthers-brad-marchand-out-week-to-week-with-leg-injury",
@@ -18812,6 +18802,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-07T20:45:32.012242Z"
+    },
+    {
+      "key": "c7d6fee03e1252e514e16256",
+      "url": "https://www.nhl.com/news/st-louis-blues-nashville-predators-game-recap-november-7-2026",
+      "fingerprint": "1e92a17d1fae926a",
+      "title_norm": "stamkos lifts predators past blues for 4th straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T21:00:37.440714Z"
     }
   ],
   "known_sources": [
