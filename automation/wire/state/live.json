@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T16:45:32.780402Z",
+  "updated_at": "2026-11-07T17:00:46.992787Z",
   "seen": [
-    {
-      "key": "182b3a41837b09ae4d8fa465",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "8a056755133e6340",
-      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) will be a game-time decision in st. louis on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T16:45:39.111681Z"
-    },
-    {
-      "key": "973e3e631a6397391c1095b7",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "db37f1939e5739e5",
-      "title_norm": "jake sanderson (ott) — sanderson (lower-body) skated on thursday but will not play vs. philadelphia.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T16:45:40.234792Z"
-    },
-    {
-      "key": "617cb33b4be8fa47b8f1b6db",
-      "url": "https://www.dailyfaceoff.com/players/news/mikhail-sergachev/2639",
-      "fingerprint": "797bee3dbfef604f",
-      "title_norm": "mikhail sergachev (uta) — sergachev (upper-body) will play in boston on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T16:45:40.557062Z"
-    },
-    {
-      "key": "b563521655b2f773292f46b0",
-      "url": "https://www.dailyfaceoff.com/players/news/ryan-lindgren/4632",
-      "fingerprint": "976ce326a2c88ba4",
-      "title_norm": "ryan lindgren (sea) — lindgren (upper-body) is expected to miss the next 4-6 weeks after being placed on ir on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-08T16:45:40.603891Z"
-    },
     {
       "key": "61590528af1e0dd132ac9610",
       "url": "https://www.nhl.com/news/macklin-celebrini-game-time-decision-for-san-jose-vs-st-louis",
@@ -18772,6 +18732,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T16:45:32.683734Z"
+    },
+    {
+      "key": "5f7d2b9edb8d146d9e79dd61",
+      "url": "https://www.dailyfaceoff.com/players/news/mason-mctavish/30834",
+      "fingerprint": "7b8a89261878f87b",
+      "title_norm": "mason mctavish (stl) — mctavish (undisclosed) is a game-time decision vs. nashville on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T17:00:46.897709Z"
     }
   ],
   "known_sources": [
