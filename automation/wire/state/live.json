@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T15:45:32.651999Z",
+  "updated_at": "2026-11-07T16:00:36.340399Z",
   "seen": [
-    {
-      "key": "9a5061d5673d54f37ecb7693",
-      "url": "https://audioboom.com/posts/8962164",
-      "fingerprint": "15b881b633f3180f",
-      "title_norm": "larkin's fantasy value; week 2 mailbag",
-      "channel": "media",
-      "source_id": "pod_nhl_fantasy_on_ice",
-      "tier": 2,
-      "seen_at": "2026-10-08T15:45:38.149316Z"
-    },
     {
       "key": "a443e7434738b4f9e76a68d9",
       "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
@@ -18742,6 +18732,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T15:30:37.970207Z"
+    },
+    {
+      "key": "5a9e17fec86e0f3966095634",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "89b0ebeb43d36407",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) is a full participant in winnipeg's practice on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:00:35.854970Z"
+    },
+    {
+      "key": "2ab00ad587021df4f14f0cf9",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-7-2026",
+      "fingerprint": "6febb250c0916a3a",
+      "title_norm": "status report: heiskanen doubtful for stars tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-07T16:00:36.025499Z"
+    },
+    {
+      "key": "1bf89ca6f1c2a3c5fe554a75",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "2383fc2a6f69fb8f",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower-body) practiced in full on saturday but will not return vs. new jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:00:36.240701Z"
     }
   ],
   "known_sources": [
