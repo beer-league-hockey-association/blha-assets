@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-06T23:15:36.149330Z",
+  "updated_at": "2026-11-07T00:57:04.969353Z",
   "seen": [
     {
       "key": "010f633414f7582848a53350",
@@ -18692,6 +18692,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-06T21:15:41.052768Z"
+    },
+    {
+      "key": "6b8d7f68d30f5c144218df47",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-pettersson-rediscovering-his-game-in-healthier-environment",
+      "fingerprint": "636f7fb3c35f233b",
+      "title_norm": "canucks' pettersson rediscovering his game in healthier environment",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-07T00:57:04.916578Z"
     }
   ],
   "known_sources": [
