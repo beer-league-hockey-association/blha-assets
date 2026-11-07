@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T02:30:38.843790Z",
+  "updated_at": "2026-11-07T02:45:35.594465Z",
   "seen": [
-    {
-      "key": "6d11928f944fd5ca11ceccbe",
-      "url": "https://www.nhl.com/news/pittsburgh-penguins-washington-capitals-game-recap-october-7-2026",
-      "fingerprint": "c7eb920b7b26548d",
-      "title_norm": "wilson has 3 points, capitals top penguins in ovechkin's last home opener",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T02:45:35.257286Z"
-    },
-    {
-      "key": "0cb9a0fbe55f4d6b067a871b",
-      "url": "https://www.sportsnet.ca/nhl/article/capitals-top-penguins-in-ovechkins-final-home-opener-in-washington",
-      "fingerprint": "c32dff68148f671c",
-      "title_norm": "capitals top penguins in ovechkin's final home opener in washington",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-08T02:45:35.558489Z"
-    },
     {
       "key": "e284eada118523ddf85b17da",
       "url": "https://www.nhl.com/news/colorado-avalanche-winnipeg-jets-game-recap-october-7-2026",
