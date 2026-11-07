@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T20:30:40.474402Z",
+  "updated_at": "2026-11-07T20:45:32.109312Z",
   "seen": [
     {
       "key": "3fcd8ebaeaacaf2cb82c2f35",
@@ -18802,6 +18802,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-07T20:30:40.401694Z"
+    },
+    {
+      "key": "75fd5aa419041bfc50375a64",
+      "url": "https://theahl.com/news/shine-griffins-back-to-their-winning-ways",
+      "fingerprint": "f35320fe24a91cc8",
+      "title_norm": "shine, griffins back to their winning ways",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-07T20:45:32.012242Z"
     }
   ],
   "known_sources": [
