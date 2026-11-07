@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T16:15:34.133071Z",
+  "updated_at": "2026-11-07T16:30:37.753439Z",
   "seen": [
-    {
-      "key": "9513908070e2ec0f7ef8f2c9",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-8-2026",
-      "fingerprint": "6ff68637f860281b",
-      "title_norm": "nhl on tap: smith could take center stage for sharks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T16:15:40.647289Z"
-    },
-    {
-      "key": "2c81288dce8ee84905ed3e0f",
-      "url": "https://www.nhl.com/news/nhl-unveils-uniforms-for-2026-nhl-heritage-classic",
-      "fingerprint": "e8ee5a2987bf24ad",
-      "title_norm": "nhl unveils jets, habs uniforms for heritage classic",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-08T16:15:40.910137Z"
-    },
     {
       "key": "182b3a41837b09ae4d8fa465",
       "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
@@ -18742,6 +18722,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T16:15:34.014999Z"
+    },
+    {
+      "key": "5bdb2b931260f79afe629f9c",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "a1c3c10b89ee40a3",
+      "title_norm": "jack roslovic (tor) — roslovic (undisclosed) will play vs. montreal on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:30:37.039572Z"
+    },
+    {
+      "key": "d960140389329ecd1524a549",
+      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
+      "fingerprint": "d302a57bf9c463ae",
+      "title_norm": "john tavares (tor) — tavares (lower-body) will return vs. montreal on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:30:37.228657Z"
+    },
+    {
+      "key": "cfb59e4984b559cf4802d24e",
+      "url": "https://www.dailyfaceoff.com/players/news/elias-salomonsson/36380",
+      "fingerprint": "aadb3d0f472501e5",
+      "title_norm": "elias salomonsson (wpg) — salomonsson (illness) missed practice on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:30:37.474715Z"
+    },
+    {
+      "key": "3f928f8ec0e303fc88f8e179",
+      "url": "https://www.dailyfaceoff.com/players/news/ridly-greig/30383",
+      "fingerprint": "fc85139b1815afb2",
+      "title_norm": "ridly greig (ott) — greig (undisclosed) will be a game-time decision vs. utah on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T16:30:37.491191Z"
     }
   ],
   "known_sources": [
