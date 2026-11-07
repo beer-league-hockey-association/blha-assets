@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T17:45:37.738733Z",
+  "updated_at": "2026-11-07T18:00:34.973141Z",
   "seen": [
     {
       "key": "718a1bcc2fcb81c05e2021c4",
@@ -18762,6 +18762,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-07T17:45:37.684437Z"
+    },
+    {
+      "key": "b99dcd82c9a53b03154805fd",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "1aa8c0d81b161b2b",
+      "title_norm": "zach hyman (edm) — hyman (concussion) is expected to return vs. vancouver on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T18:00:33.513808Z"
+    },
+    {
+      "key": "23964ca77b36f2975847974d",
+      "url": "https://www.dailyfaceoff.com/players/news/devon-levi/33010",
+      "fingerprint": "62fa925b227a71b6",
+      "title_norm": "devon levi (edm) — levi (undisclosed) is expected to start vs. vancouver on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T18:00:34.421507Z"
+    },
+    {
+      "key": "d13b0156b71f5602b8243dcb",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-turcotte-30420/30420",
+      "fingerprint": "efad3341a7ac3683",
+      "title_norm": "alex turcotte (lak) — turcotte (undisclosed) is expected to return vs. pittsburgh on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-07T18:00:34.924347Z"
     }
   ],
   "known_sources": [
