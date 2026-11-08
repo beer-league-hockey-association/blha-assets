@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T01:15:30.310844Z",
+  "updated_at": "2026-11-08T01:45:30.255283Z",
   "seen": [
     {
       "key": "882afcc636999894a506c781",
@@ -18792,6 +18792,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T01:15:30.266898Z"
+    },
+    {
+      "key": "3acbb023190466b037ac4354",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-morgan-rielly-exits-vs-canadiens-with-lower-body-injury",
+      "fingerprint": "cad7caa8013e3a66",
+      "title_norm": "maple leafs' morgan rielly exits vs. canadiens with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T01:45:30.189833Z"
     }
   ],
   "known_sources": [
