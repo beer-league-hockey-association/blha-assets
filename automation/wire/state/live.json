@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T05:00:43.395057Z",
+  "updated_at": "2026-11-08T05:15:34.848641Z",
   "seen": [
-    {
-      "key": "d788d94cff99de8385df9946",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-oliver-ekman-larsson-injured-vs-golden-knights",
-      "fingerprint": "d1920e29848df049",
-      "title_norm": "maple leafs' oliver ekman-larsson injured vs. golden knights",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T05:00:43.625575Z"
-    },
-    {
-      "key": "824f906200f5ded0cb6e2657",
-      "url": "https://www.sportsnet.ca/nhl/article/newhook-line-helps-canadiens-restore-balance-despite-loss",
-      "fingerprint": "45671009fdfa3361",
-      "title_norm": "newhook line helps canadiens restore balance despite loss",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T05:00:43.866470Z"
-    },
     {
       "key": "a9b3055d476d45dc54b6f16a",
       "url": "https://www.nhl.com/news/toronto-maple-leafs-vegas-golden-knights-game-recap-october-8-2026",
@@ -18812,6 +18792,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T04:45:31.761177Z"
+    },
+    {
+      "key": "ecb345746873cf5c5dff0eb7",
+      "url": "https://www.nhl.com/news/detroit-red-wings-colorado-avalanche-game-recap-november-7-2026",
+      "fingerprint": "b0e2e23cd91a8973",
+      "title_norm": "necas has 4 points, blackwood, avs blank red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T05:15:34.150708Z"
+    },
+    {
+      "key": "451a738f0eca31680c9052b3",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-hurt-by-turnovers-in-loss-to-canadiens",
+      "fingerprint": "f31e68b0675b29f5",
+      "title_norm": "maple leafs hurt by turnovers in loss to canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T05:15:34.489647Z"
+    },
+    {
+      "key": "9c6b5b5fc3b462a0048b4064",
+      "url": "https://www.sportsnet.ca/nhl/article/crosby-takes-sole-possession-of-6th-on-scoring-list-in-penguins-win-over-kings",
+      "fingerprint": "c24bd7e232b1e79b",
+      "title_norm": "crosby takes sole possession of 6th on scoring list in penguins' win over kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T05:15:34.819873Z"
     }
   ],
   "known_sources": [
