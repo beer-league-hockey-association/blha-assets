@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T06:15:39.193671Z",
+  "updated_at": "2026-11-08T06:30:38.447957Z",
   "seen": [
     {
       "key": "889a64736828641c8effcf83",
@@ -18832,6 +18832,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T06:15:39.088968Z"
+    },
+    {
+      "key": "a7020d36bbb7ce7767fc2610",
+      "url": "https://www.nhl.com/news/blackhawks-players-only-meeting-after-loss-to-hurricanes",
+      "fingerprint": "53568f91fd5bfbd9",
+      "title_norm": "blackhawks hold players-only meeting after loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T06:30:38.340799Z"
     }
   ],
   "known_sources": [
