@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T05:30:38.782746Z",
+  "updated_at": "2026-11-08T06:00:42.404790Z",
   "seen": [
-    {
-      "key": "92100e0223b60a78dd1834c9",
-      "url": "https://www.sportsnet.ca/nhl/article/winless-flames-find-silver-lining-with-castagnas-debut",
-      "fingerprint": "215e48589c0a8428",
-      "title_norm": "winless flames find silver lining with castagna's debut",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T05:45:34.455839Z"
-    },
     {
       "key": "889a64736828641c8effcf83",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-still-searching-for-chemistry-after-blowing-three-goal-lead",
@@ -18822,6 +18812,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T05:30:38.672382Z"
+    },
+    {
+      "key": "7d8c497612a8708a616b9078",
+      "url": "https://www.nhl.com/news/oilers-ryan-nugent-hopkins-injured-after-being-struck-in-head-by-puck",
+      "fingerprint": "d72e3666e680afb5",
+      "title_norm": "nugent-hopkins leaves game, struck in head by puck",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T06:00:42.293729Z"
     }
   ],
   "known_sources": [
