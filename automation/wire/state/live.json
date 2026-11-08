@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T04:45:31.815486Z",
+  "updated_at": "2026-11-08T05:00:43.395057Z",
   "seen": [
-    {
-      "key": "46c36c9047011d212780557c",
-      "url": "https://www.nhl.com/news/david-pastrnak-blossoming-in-first-season-as-boston-bruins-captain",
-      "fingerprint": "df8af6994c44e1f0",
-      "title_norm": "pastrnak blossoming in 1st season as bruins captain",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T04:45:34.474681Z"
-    },
     {
       "key": "d788d94cff99de8385df9946",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-oliver-ekman-larsson-injured-vs-golden-knights",
