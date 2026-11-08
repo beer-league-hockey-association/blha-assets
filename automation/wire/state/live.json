@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T00:45:37.737053Z",
+  "updated_at": "2026-11-08T01:15:30.310844Z",
   "seen": [
-    {
-      "key": "60cce4f6e8fc98af3667012a",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/761029cb-c029-4d21-a260-3d54ec8c4c9e",
-      "fingerprint": "8bc113b752f3fa18",
-      "title_norm": "flames on sportsnet: colorado vs. calgary",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T01:00:39.638693Z"
-    },
     {
       "key": "882afcc636999894a506c781",
       "url": "https://www.nhl.com/news/philadelphia-flyers-ottawa-senators-game-recap-october-8-2026",
@@ -18792,6 +18782,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T00:15:35.897432Z"
+    },
+    {
+      "key": "08cb2aa58e4839567c3799ed",
+      "url": "https://www.nhl.com/news/new-york-rangers-seattle-kraken-game-recap-november-7-2026",
+      "fingerprint": "de8c00b5304b501e",
+      "title_norm": "korpisalo makes 25 saves in debut for rangers, who hold off kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T01:15:30.266898Z"
     }
   ],
   "known_sources": [
