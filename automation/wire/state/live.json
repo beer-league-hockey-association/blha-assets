@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T03:00:37.362766Z",
+  "updated_at": "2026-11-08T03:15:35.615212Z",
   "seen": [
-    {
-      "key": "58c257ca9fd8af18980722ce",
-      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks---Week-2-e3q4ec1",
-      "fingerprint": "cb67cb5cdd28beb5",
-      "title_norm": "trade talks - week 2",
-      "channel": "media",
-      "source_id": "pod_apples_ginos",
-      "tier": 2,
-      "seen_at": "2026-10-09T03:00:41.273564Z"
-    },
     {
       "key": "e53980763a2b04fb5b72e8b1",
       "url": "https://www.nhl.com/news/san-jose-sharks-st-louis-blues-game-recap-october-8-2026",
@@ -18762,6 +18752,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T03:00:37.312807Z"
+    },
+    {
+      "key": "8e5937bfc8d8fe1c4389b304",
+      "url": "https://www.nhl.com/news/montreal-canadiens-toronto-maple-leafs-game-recap-november-7-2026",
+      "fingerprint": "b344125e172ce317",
+      "title_norm": "newhook, canadiens hold off maple leafs to push point streak to 10",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T03:15:34.718128Z"
+    },
+    {
+      "key": "d63d3b22794d786e3cfde9fe",
+      "url": "https://www.sportsnet.ca/nhl/article/newhook-scores-twice-as-canadiens-beat-maple-leafs",
+      "fingerprint": "9f9acee486642501",
+      "title_norm": "newhook scores twice as canadiens beat maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T03:15:35.202461Z"
+    },
+    {
+      "key": "fa14ba3af2c827984a939c46",
+      "url": "https://www.sportsnet.ca/nhl/article/cousins-scores-late-winner-to-lift-senators-past-mammoth",
+      "fingerprint": "d95939f928f6385a",
+      "title_norm": "cousins scores late winner to lift senators past mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T03:15:35.584919Z"
     }
   ],
   "known_sources": [
