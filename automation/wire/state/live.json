@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T06:00:42.404790Z",
+  "updated_at": "2026-11-08T06:15:39.193671Z",
   "seen": [
     {
       "key": "889a64736828641c8effcf83",
@@ -18822,6 +18822,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T06:00:42.293729Z"
+    },
+    {
+      "key": "d41548f4219c6306e113fa8f",
+      "url": "https://www.nhl.com/news/vancouver-canucks-edmonton-oilers-game-recap-november-7-2026",
+      "fingerprint": "1a56c1fa6de6f2dd",
+      "title_norm": "draisaitl scores twice, oilers hold off canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T06:15:39.088968Z"
     }
   ],
   "known_sources": [
