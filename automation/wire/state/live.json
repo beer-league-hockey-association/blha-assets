@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T15:30:36.877949Z",
+  "updated_at": "2026-11-08T15:45:34.732808Z",
   "seen": [
     {
       "key": "7d60f86800c03ea3148c4d3e",
@@ -18782,6 +18782,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T13:30:35.080292Z"
+    },
+    {
+      "key": "7ea566e779b9682449303d7c",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-bahl/27807",
+      "fingerprint": "1e045f23b1a2b2bb",
+      "title_norm": "kevin bahl (cgy) — bahl (lower body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T15:45:34.667896Z"
     }
   ],
   "known_sources": [
