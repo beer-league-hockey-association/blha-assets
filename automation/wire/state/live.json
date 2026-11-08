@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T17:30:40.992065Z",
+  "updated_at": "2026-11-08T17:45:36.396157Z",
   "seen": [
     {
       "key": "ba1b89cb825a7733d072387d",
@@ -18782,6 +18782,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T17:30:40.900476Z"
+    },
+    {
+      "key": "0e61c0912922bc9f4dbb44ec",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-lundell/33026",
+      "fingerprint": "4c7df148c2b2d73b",
+      "title_norm": "anton lundell (fla) — lundell (undisclosed) is taking warm-ups and is expected to play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T17:45:36.271133Z"
     }
   ],
   "known_sources": [
