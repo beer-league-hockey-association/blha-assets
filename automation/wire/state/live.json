@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T02:15:32.402375Z",
+  "updated_at": "2026-11-08T02:30:40.718350Z",
   "seen": [
-    {
-      "key": "0ab54d90e719ac7c806de828",
-      "url": "https://www.nhl.com/news/nashville-predators-montreal-canadiens-game-recap-october-8-2026",
-      "fingerprint": "8e03bb883902bbc7",
-      "title_norm": "o'reilly's late goal lifts predators past canadiens",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T02:30:33.541340Z"
-    },
-    {
-      "key": "28403ea4358e53170f1a13cf",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-collapse-late-in-loss-to-predators",
-      "fingerprint": "8e20de3125226140",
-      "title_norm": "canadiens collapse late in loss to predators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T02:30:33.926727Z"
-    },
     {
       "key": "86a04a42504c7f4f456a19b5",
       "url": "https://www.nhl.com/news/chicago-blackhawks-new-york-islanders-game-recap-october-8-2026",
@@ -18742,6 +18722,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T01:45:30.189833Z"
+    },
+    {
+      "key": "3b23c8dd4ce52861e7695b52",
+      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-penguins-blackhawks-could-be-active-on-trade-market",
+      "fingerprint": "ff855965dfb6add0",
+      "title_norm": "saturday headlines: penguins, blackhawks could be active on trade market",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T02:30:38.631623Z"
+    },
+    {
+      "key": "2bf24f19cb958db784bb7d04",
+      "url": "https://www.sportsnet.ca/nhl/article/trade-noise-getting-louder-around-blues-binnington",
+      "fingerprint": "d005b19382ba7361",
+      "title_norm": "trade noise getting louder around blues' binnington",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T02:30:38.866259Z"
+    },
+    {
+      "key": "20f9e78ae3db34c05c1e8bb9",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-expect-hage-zharovsky-to-join-team-at-end-of-season",
+      "fingerprint": "19db2fd825350ce1",
+      "title_norm": "canadiens expect hage, zharovsky to join team at end of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T02:30:40.434967Z"
+    },
+    {
+      "key": "93ad70ac62e90c6a1d85cf68",
+      "url": "https://www.sportsnet.ca/nhl/article/agent-for-blackhawks-byram-explains-absence",
+      "fingerprint": "b686737afe82b94d",
+      "title_norm": "agent for blackhawks' byram explains absence",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T02:30:40.443778Z"
     }
   ],
   "known_sources": [
