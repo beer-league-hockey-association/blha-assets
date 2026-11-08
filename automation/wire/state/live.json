@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T00:00:37.294635Z",
+  "updated_at": "2026-11-08T00:15:36.191783Z",
   "seen": [
     {
       "key": "94b7eb264c1b86483b853e6e",
@@ -18762,6 +18762,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T00:00:37.254258Z"
+    },
+    {
+      "key": "2544aaa91268a6f91d92d47d",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-returns-to-lineup-vs-canadiens",
+      "fingerprint": "fc594a8cd07ad75f",
+      "title_norm": "maple leafs' john tavares returns to lineup vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T00:15:35.111143Z"
+    },
+    {
+      "key": "6fbac45bec3b3d42dc18bd3f",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/0ce1b293-42f5-4eae-a527-299abda4b6d5",
+      "fingerprint": "4eb506ed31fe3bec",
+      "title_norm": "saturday night hockey on sportsnet: maple leafs vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T00:15:35.561766Z"
+    },
+    {
+      "key": "70d7b12ab85637dfbe8892d5",
+      "url": "https://www.sportsnet.ca/nhl/video/chris-cuthbert-reflects-on-his-broadcasting-career-and-favourite-calls",
+      "fingerprint": "44c42ae6a546fcc4",
+      "title_norm": "chris cuthbeart reflects on his hall of fame career and favourite calls",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T00:15:35.883742Z"
+    },
+    {
+      "key": "50d3c8bd80d0ef688b3f3009",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/3d394e16-cdca-493e-8876-68d183beb755",
+      "fingerprint": "99e15f94067bb491",
+      "title_norm": "saturday night hockey on sportsnet: senators vs. mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T00:15:35.897432Z"
     }
   ],
   "known_sources": [
