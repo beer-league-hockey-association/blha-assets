@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T21:15:37.449410Z",
+  "updated_at": "2026-11-08T21:30:36.873890Z",
   "seen": [
-    {
-      "key": "3aa168e2a02fbb617f8e161f",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "4e06201620b39a8a",
-      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is a game-time decision on saturday vs. edmonton.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T21:15:37.496072Z"
-    },
     {
       "key": "0e28f1630f74dbeea71ec5ea",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-9-2026",
@@ -18802,6 +18792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T21:15:37.351439Z"
+    },
+    {
+      "key": "3da6fd625a7d31b9ae02a172",
+      "url": "https://www.nhl.com/news/florida-panthers-boston-bruins-game-recap-november-8-2026",
+      "fingerprint": "cf653cb0aeafaf76",
+      "title_norm": "swayman makes 40 saves, bruins defeat panthers for fourth straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T21:30:36.767866Z"
     }
   ],
   "known_sources": [
