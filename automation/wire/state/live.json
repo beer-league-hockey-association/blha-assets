@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T15:45:34.732808Z",
+  "updated_at": "2026-11-08T16:00:40.060139Z",
   "seen": [
     {
       "key": "7d60f86800c03ea3148c4d3e",
@@ -18792,6 +18792,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T15:45:34.667896Z"
+    },
+    {
+      "key": "c75f60e6a902813e79c7e4e3",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-lundell/33026",
+      "fingerprint": "8256bacc5134e040",
+      "title_norm": "anton lundell (fla) — lundell (undisclosed) will be a game-time decision on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:00:39.414295Z"
+    },
+    {
+      "key": "ecd9c41b79edc68dbed89750",
+      "url": "https://www.nhl.com/news/class-of-26-savors-humbling-hockey-hall-of-fame-ring-ceremony",
+      "fingerprint": "68aa032fc7077995",
+      "title_norm": "class of '26 savors 'humbling' hall ring ceremony",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T16:00:39.735208Z"
+    },
+    {
+      "key": "88d812fa42d662b3a072ef66",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-bahl/27807",
+      "fingerprint": "09ecc2afb5faed25",
+      "title_norm": "kevin bahl (cgy) — bahl (achilles) has been placed on ir and will have season-ending surgery.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:00:39.989759Z"
     }
   ],
   "known_sources": [
