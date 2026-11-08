@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T04:15:37.704793Z",
+  "updated_at": "2026-11-08T04:30:36.636922Z",
   "seen": [
     {
       "key": "46c36c9047011d212780557c",
@@ -18792,6 +18792,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T04:15:37.584231Z"
+    },
+    {
+      "key": "b6455a22f54a9359d0d9fecd",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-minnesota-wild-game-recap-november-7-2026",
+      "fingerprint": "2fe6677beff3b06a",
+      "title_norm": "kucherov scores in ot, bolts rally past wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T04:30:36.191275Z"
+    },
+    {
+      "key": "fa0d623c99b20d428c772d06",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-bedard-calls-blowout-loss-to-hurricanes-embarrassing",
+      "fingerprint": "d30eb10c24670da8",
+      "title_norm": "blackhawks' bedard calls blowout loss to hurricanes 'embarrassing'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T04:30:36.608110Z"
     }
   ],
   "known_sources": [
