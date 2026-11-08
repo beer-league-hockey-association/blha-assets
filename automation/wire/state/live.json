@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T19:15:36.190200Z",
+  "updated_at": "2026-11-08T19:30:39.419650Z",
   "seen": [
     {
       "key": "85ba4458b98b1a71d150ee69",
@@ -18852,6 +18852,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T18:15:34.431282Z"
+    },
+    {
+      "key": "2aad3cb69b5f751a568b26bf",
+      "url": "https://www.buffalohockeybeat.com/sabres-prospect-jake-richard-excelling-in-first-weeks-with-rochester-amerks",
+      "fingerprint": "96343c7402316f11",
+      "title_norm": "rookie richard excelling in first weeks with amerks",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-08T19:30:39.320329Z"
     }
   ],
   "known_sources": [
