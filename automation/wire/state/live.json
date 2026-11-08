@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T08:15:33.763534Z",
+  "updated_at": "2026-11-08T09:30:36.514035Z",
   "seen": [
     {
       "key": "0fce062e6395797af00019f2",
@@ -18832,6 +18832,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T08:00:41.105941Z"
+    },
+    {
+      "key": "708d2e67d88a4c1d6ec2e07e",
+      "url": "https://www.nhl.com/news/utah-mammoth-ottawa-senators-game-recap-november-7-2026",
+      "fingerprint": "d3786196987e9dfc",
+      "title_norm": "cousins breaks tie late, lifts senators past mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T09:30:36.407395Z"
     }
   ],
   "known_sources": [
