@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T05:15:34.848641Z",
+  "updated_at": "2026-11-08T05:30:38.782746Z",
   "seen": [
-    {
-      "key": "a9b3055d476d45dc54b6f16a",
-      "url": "https://www.nhl.com/news/toronto-maple-leafs-vegas-golden-knights-game-recap-october-8-2026",
-      "fingerprint": "fd8d19630fb4da3b",
-      "title_norm": "golden knights rally from down three, edge maple leafs in shootout",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T05:30:36.828676Z"
-    },
     {
       "key": "92100e0223b60a78dd1834c9",
       "url": "https://www.sportsnet.ca/nhl/article/winless-flames-find-silver-lining-with-castagnas-debut",
@@ -18822,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T05:15:34.819873Z"
+    },
+    {
+      "key": "2b3f6d24047469195489f4e8",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-los-angeles-kings-game-recap-november-7-2026",
+      "fingerprint": "ff6866ce6d19e7ad",
+      "title_norm": "crosby, novak each scores 2, penguins top kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T05:30:38.672382Z"
     }
   ],
   "known_sources": [
