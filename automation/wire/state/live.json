@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T16:00:40.060139Z",
+  "updated_at": "2026-11-08T16:15:33.271850Z",
   "seen": [
-    {
-      "key": "7d60f86800c03ea3148c4d3e",
-      "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
-      "fingerprint": "a9dc87ed35cd8d22",
-      "title_norm": "nick foligno (min) — foligno has been placed on ir with an upper-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:00:41.088653Z"
-    },
-    {
-      "key": "2bb5bcf2552f5a43c22a546c",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-9-2026",
-      "fingerprint": "bfe294b36f872752",
-      "title_norm": "on tap: connor, jets look to stay hot vs. ducks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T16:15:32.855855Z"
-    },
-    {
-      "key": "db1803fe2ea74c2d6778e04e",
-      "url": "https://www.dailyfaceoff.com/players/news/damon-severson/2038",
-      "fingerprint": "6ec404c727d564cf",
-      "title_norm": "damon severson (cbj) — severson (shoulder) was activated off ir and is expected to make his season debut vs. pittsburgh on friday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:15:33.146930Z"
-    },
     {
       "key": "bf87d48e2d0a2a5aefd8712f",
       "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
@@ -18822,6 +18792,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T16:00:39.989759Z"
+    },
+    {
+      "key": "d214f53ba439f73ca1d42d44",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-rielly/1935",
+      "fingerprint": "714bb0e201367516",
+      "title_norm": "morgan rielly (tor) — rielly (lower body) exited saturday's game and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:15:32.385755Z"
+    },
+    {
+      "key": "1c4c9ee3eed4dfd363fd7530",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "b5b931da24c4de09",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper body) will remain out of the lineup on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:15:32.643093Z"
+    },
+    {
+      "key": "0b0c7815ea26ed193953bd1e",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-8-2026",
+      "fingerprint": "dedcc4333470bf47",
+      "title_norm": "status report: bahl to have surgery, out for season",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T16:15:33.024887Z"
+    },
+    {
+      "key": "4b010355c224ca3dccf307b0",
+      "url": "https://www.nhl.com/news/topic/short-shifts/joe-vanella-talks-islanders-fandom-during-the-traitors",
+      "fingerprint": "e37b4037900934d7",
+      "title_norm": "vanella talks islanders fandom during 'the traitors'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T16:15:33.183946Z"
+    },
+    {
+      "key": "f160b4525a6128dea52a12fe",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-devin-cooley-to-start-vs-flyers-brayden-pachal-recalled-from-ahl",
+      "fingerprint": "0a0776d68c4eb24a",
+      "title_norm": "flames' devin cooley to start vs. flyers, brayden pachal recalled from ahl",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:15:33.240289Z"
     }
   ],
   "known_sources": [
