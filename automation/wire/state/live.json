@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T21:30:36.873890Z",
+  "updated_at": "2026-11-08T21:45:32.636209Z",
   "seen": [
-    {
-      "key": "0e28f1630f74dbeea71ec5ea",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-9-2026",
-      "fingerprint": "022b944344a0b7f5",
-      "title_norm": "status report: tavares out for leafs after birth of son",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T21:30:39.228624Z"
-    },
-    {
-      "key": "c7ec67d55e02cf61c54f75ae",
-      "url": "https://www.nhl.com/news/san-jose-sharks-macklin-celebrini-injury-status-update-october-9-2026",
-      "fingerprint": "8a27fa04b259bf2b",
-      "title_norm": "celebrini to be game-time decision tomorrow",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T21:45:31.404206Z"
-    },
     {
       "key": "1e844c1665e7cdbbac25cba9",
       "url": "https://www.nhl.com/news/matt-dumba-retires-from-nhl-after-13-seasons",
@@ -18802,6 +18782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T21:30:36.767866Z"
+    },
+    {
+      "key": "2b6733ecab5cc58072299a09",
+      "url": "https://www.sportsnet.ca/nhl/article/bruins-beat-panthers-as-teams-combine-for-126-penalty-minutes",
+      "fingerprint": "7ebc42329c0bd77e",
+      "title_norm": "bruins beat panthers as teams combine for 126 penalty minutes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T21:45:32.604910Z"
     }
   ],
   "known_sources": [
