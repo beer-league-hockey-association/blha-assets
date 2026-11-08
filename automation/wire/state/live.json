@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T23:15:32.826568Z",
+  "updated_at": "2026-11-08T23:30:36.043085Z",
   "seen": [
-    {
-      "key": "45976a27be45c6c6011ed3be",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-healthy-hallander-eager-to-make-most-of-fresh-start",
-      "fingerprint": "ea89d1d4d00ce72a",
-      "title_norm": "oilers notebook: healthy hallander eager to make most of fresh start",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T23:15:33.723683Z"
-    },
-    {
-      "key": "8e371fdb8b79d58d88e767ee",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-send-jayden-struble-to-predators-for-second-round-pick",
-      "fingerprint": "b7cb1fb273331211",
-      "title_norm": "canadiens send jayden struble to predators for second-round pick",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T23:15:34.003573Z"
-    },
-    {
-      "key": "f606bc5bb22ff485252427d7",
-      "url": "https://www.nhl.com/news/topic/trade-coverage/jayden-struble-traded-to-nashville-predators-by-montreal-canadiens-for-pick",
-      "fingerprint": "4ecd6692854cda1f",
-      "title_norm": "struble traded to predators by canadiens for pick",
-      "channel": "nhl-transactions",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T23:30:35.218674Z"
-    },
-    {
-      "key": "9e9e6ed5737906cff8652f57",
-      "url": "https://www.nhl.com/news/san-jose-sharks-darnell-nurse-ready-for-matchup-against-former-team-edmonton-oilers",
-      "fingerprint": "ef632d1f687a9884",
-      "title_norm": "sharks' nurse set for 'weird' matchup against oilers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T23:30:35.479697Z"
-    },
     {
       "key": "b1593033b7cdb4838f26fb79",
       "url": "https://www.sportsnet.ca/nhl/article/cam-talbot-sets-goaltending-record-by-playing-for-ninth-team",
@@ -18822,6 +18782,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T23:15:32.739761Z"
+    },
+    {
+      "key": "0f96bc549f9fdbd4c7b89d2d",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-buffalo-sabres-game-recap-november-8-2026",
+      "fingerprint": "1c035dbc57746729",
+      "title_norm": "hertl scores twice in third, vegas pulls away",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T23:30:35.680354Z"
+    },
+    {
+      "key": "4c741001d9d13db46ecb9672",
+      "url": "https://www.sportsnet.ca/nhl/article/hertl-scores-pair-golden-knights-beat-sabres-for-third-win-in-a-row",
+      "fingerprint": "2d403b08f135c7d3",
+      "title_norm": "hertl scores pair, golden knights beat sabres for third win in a row",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T23:30:36.006816Z"
     }
   ],
   "known_sources": [
