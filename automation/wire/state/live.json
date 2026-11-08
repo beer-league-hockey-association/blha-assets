@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T06:30:38.447957Z",
+  "updated_at": "2026-11-08T06:45:35.498320Z",
   "seen": [
     {
       "key": "889a64736828641c8effcf83",
@@ -18842,6 +18842,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T06:30:38.340799Z"
+    },
+    {
+      "key": "87cf3fe414422e125e48b9d8",
+      "url": "https://www.sportsnet.ca/nhl/video/is-mcdavid-on-pace-to-break-gretzkys-single-season-points-record",
+      "fingerprint": "6415f29ef65ace27",
+      "title_norm": "oilers' mcdavid continues record start with three more points vs. canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T06:45:35.455248Z"
     }
   ],
   "known_sources": [
