@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T14:15:38.100022Z",
+  "updated_at": "2026-11-08T14:45:37.668593Z",
   "seen": [
-    {
-      "key": "2dd1664154deb3e623bae9a4",
-      "url": "https://www.sportsnet.ca/nhl/article/tkachuk-less-senators-showcasing-many-promising-signs",
-      "fingerprint": "d5e5feea39ee994e",
-      "title_norm": "tkachuk-less senators showcasing many promising signs",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T14:30:37.319309Z"
-    },
     {
       "key": "f4a9789a66210b5ec9a9eafb",
       "url": "https://www.dailyfaceoff.com/players/news/bo-horvat/2141",
