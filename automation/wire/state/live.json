@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T06:45:35.498320Z",
+  "updated_at": "2026-11-08T07:15:31.563849Z",
   "seen": [
-    {
-      "key": "889a64736828641c8effcf83",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-still-searching-for-chemistry-after-blowing-three-goal-lead",
-      "fingerprint": "3ff394db818542da",
-      "title_norm": "maple leafs still searching for chemistry after blowing three-goal lead",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T07:00:40.464744Z"
-    },
     {
       "key": "d00a5638a62983310fb0b379",
       "url": "https://www.nhl.com/news/vancouver-canucks-carolina-hurricanes-game-recap-october-8-2026",
