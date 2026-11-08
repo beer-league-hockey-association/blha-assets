@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T02:30:40.718350Z",
+  "updated_at": "2026-11-08T03:00:37.362766Z",
   "seen": [
-    {
-      "key": "86a04a42504c7f4f456a19b5",
-      "url": "https://www.nhl.com/news/chicago-blackhawks-new-york-islanders-game-recap-october-8-2026",
-      "fingerprint": "a953ec67315adc6d",
-      "title_norm": "horvat stays hot with two goals, islanders defeat blackhawks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T02:45:40.347609Z"
-    },
     {
       "key": "58c257ca9fd8af18980722ce",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks---Week-2-e3q4ec1",
@@ -18762,6 +18752,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T02:30:40.443778Z"
+    },
+    {
+      "key": "02d29aa6df64de5429a5ce3a",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/8a5fe348-82f8-4f90-a538-3249bbf54541",
+      "fingerprint": "e7c384465ead1691",
+      "title_norm": "saturday night hockey on sportsnet: canucks vs. oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T03:00:37.312807Z"
     }
   ],
   "known_sources": [
