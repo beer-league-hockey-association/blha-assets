@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-07T23:45:34.330180Z",
+  "updated_at": "2026-11-08T00:00:37.294635Z",
   "seen": [
-    {
-      "key": "a647fe03dfbfa0cca2008506",
-      "url": "https://www.sportsnet.ca/nhl/article/with-top-line-rolling-jets-still-searching-for-more-depth-scoring",
-      "fingerprint": "baef220c3bbdc9c1",
-      "title_norm": "with top line rolling, jets still searching for more depth scoring",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T00:00:37.071326Z"
-    },
     {
       "key": "94b7eb264c1b86483b853e6e",
       "url": "https://www.sportsnet.ca/nhl/article/senators-william-eklund-exits-vs-flyers-with-lower-body-injury",
@@ -18762,6 +18752,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-07T23:45:34.246394Z"
+    },
+    {
+      "key": "7e98b238136ab97ca369feb4",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-foligno/1081",
+      "fingerprint": "bb39fdfdfb41093c",
+      "title_norm": "nick foligno (min) — foligno (upper-body) will return vs. tampa bay on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T00:00:37.254258Z"
     }
   ],
   "known_sources": [
