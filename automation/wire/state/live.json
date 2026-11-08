@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T18:00:42.698611Z",
+  "updated_at": "2026-11-08T18:15:34.483061Z",
   "seen": [
-    {
-      "key": "59fbb6699b73588e6e5969a0",
-      "url": "https://www.dailyfaceoff.com/players/news/dillon-dube/3907",
-      "fingerprint": "2716cfeecbe9335b",
-      "title_norm": "dillon dube (stl) — dube (upper-body) is doubtful for saturday's game vs. columbus.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T18:15:33.402204Z"
-    },
-    {
-      "key": "648b6755f6ce9d350ea300cc",
-      "url": "https://www.dailyfaceoff.com/players/news/william-trudeau/32461",
-      "fingerprint": "205e81a14cad39fd",
-      "title_norm": "william trudeau (nsh) — trudeau has been placed on ir with an upper-body injury and is considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T18:15:33.625176Z"
-    },
     {
       "key": "24db4618bc8395b5c269eb50",
       "url": "https://www.dailyfaceoff.com/players/news/filip-gustavsson/4565",
@@ -18842,6 +18822,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T18:00:42.218659Z"
+    },
+    {
+      "key": "b2e957db8d6d68222f0c3fd0",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-monahan/2138",
+      "fingerprint": "b818a7a8c4d95985",
+      "title_norm": "sean monahan (cbj) — monahan (lower body) is expected to play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:15:33.439464Z"
+    },
+    {
+      "key": "f07e87e49764e773f27fba9b",
+      "url": "https://www.nhl.com/news/islanders-logan-stanley-fined-maximum-for-slashing",
+      "fingerprint": "3b9ec404269b53a4",
+      "title_norm": "stanley fined maximum for slashing in islanders game",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T18:15:33.675306Z"
+    },
+    {
+      "key": "a0d6b4edd8d7b85bbb7b2eee",
+      "url": "https://www.dailyfaceoff.com/players/news/denton-mateychuk/31514",
+      "fingerprint": "137d83f6d515fc37",
+      "title_norm": "denton mateychuk (cbj) — mateychuk (upper body) left practice early and will be reevaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:15:34.084043Z"
+    },
+    {
+      "key": "bec767132d6d4c9eb846d3be",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-provorov/2478",
+      "fingerprint": "04298e579192dd88",
+      "title_norm": "ivan provorov (cbj) — voronkov (upper body) is expected to play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:15:34.431282Z"
     }
   ],
   "known_sources": [
