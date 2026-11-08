@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T21:00:37.938278Z",
+  "updated_at": "2026-11-08T21:15:37.449410Z",
   "seen": [
-    {
-      "key": "022600d1114c6e7551772fbd",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "5e573463dfcbe036",
-      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) has a chance to return on saturday vs. edmonton.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T21:00:39.055630Z"
-    },
-    {
-      "key": "35dcfeb415f328bf53fbf8e0",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-to-miss-game-vs-avalanche-after-birth-of-son",
-      "fingerprint": "0e5cded5d37b68c8",
-      "title_norm": "maple leafs' john tavares to miss game vs. avalanche after birth of son",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T21:00:39.388619Z"
-    },
-    {
-      "key": "58627ea066fb5f8ebd525742",
-      "url": "https://www.dailyfaceoff.com/players/news/kiefer-sherwood/4675",
-      "fingerprint": "5d94fb3ca3894312",
-      "title_norm": "kiefer sherwood (sjs) — sherwood (upper-body) will be a game-time decision vs. edmonton on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T21:15:37.326293Z"
-    },
     {
       "key": "3aa168e2a02fbb617f8e161f",
       "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
@@ -18822,6 +18792,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T20:30:36.739359Z"
+    },
+    {
+      "key": "409329779d63cec1086cf303",
+      "url": "https://www.sportsnet.ca/nhl/video/brady-tkachuk-drops-mitts-with-bruins-zadorov-after-opening-draw",
+      "fingerprint": "55ae5ead5a64a8c3",
+      "title_norm": "brady tkachuk drops mitts with bruins' zadorov after opening draw",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T21:15:37.351439Z"
     }
   ],
   "known_sources": [
