@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T12:00:36.082567Z",
+  "updated_at": "2026-11-08T13:30:35.137736Z",
   "seen": [
-    {
-      "key": "a49110aa8d4157cc739a9f7d",
-      "url": "https://www.sportsnet.ca/nhl/article/friday-four-which-early-season-injury-will-be-most-impactful",
-      "fingerprint": "0a5805c5685deb53",
-      "title_norm": "friday four: which early season injury will be most impactful?",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T13:15:36.951834Z"
-    },
     {
       "key": "d109b52b61bb4ee56117d469",
       "url": "https://www.dailyfaceoff.com/players/news/oliver-ekman-larsson/1172",
@@ -18822,6 +18812,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-08T09:30:36.407395Z"
+    },
+    {
+      "key": "39b5a9e2b24eaaffb4a762e8",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-will-blackhawks-rebuild-ever-turn-a-corner",
+      "fingerprint": "a30969b686a6719a",
+      "title_norm": "sunday overreactions: will blackhawks' rebuild ever turn a corner?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T13:30:35.080292Z"
     }
   ],
   "known_sources": [
