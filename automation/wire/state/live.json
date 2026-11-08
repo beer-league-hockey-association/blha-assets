@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T04:30:36.636922Z",
+  "updated_at": "2026-11-08T04:45:31.815486Z",
   "seen": [
     {
       "key": "46c36c9047011d212780557c",
@@ -18812,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T04:30:36.608110Z"
+    },
+    {
+      "key": "f8b0d20401ddf39a241918ca",
+      "url": "https://www.sportsnet.ca/nhl/article/fowler-channels-prices-poise-as-canadiens-hold-off-maple-leafs",
+      "fingerprint": "dc5788d339f06686",
+      "title_norm": "fowler channels price's poise as canadiens hold off maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T04:45:31.761177Z"
     }
   ],
   "known_sources": [
