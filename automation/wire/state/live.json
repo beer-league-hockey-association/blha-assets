@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T20:30:36.835661Z",
+  "updated_at": "2026-11-08T20:45:31.626500Z",
   "seen": [
-    {
-      "key": "8140926c41be8fd0ba3fae92",
-      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
-      "fingerprint": "eb7325aef12e95e8",
-      "title_norm": "mats zuccarello (lak) — zuccarello (upper-body) is considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T20:30:44.513777Z"
-    },
-    {
-      "key": "01939af83d98f071e3381177",
-      "url": "https://www.dailyfaceoff.com/players/news/alex-turcotte-30420/30420",
-      "fingerprint": "d81e24dde6e62b3b",
-      "title_norm": "alex turcotte (lak) — turcotte (undisclosed) missed practice on friday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T20:30:44.823975Z"
-    },
     {
       "key": "60317520963b384d1cf55ceb",
       "url": "https://dobberprospects.com/2026/10/09/october-whl-report-prospect-watch",
