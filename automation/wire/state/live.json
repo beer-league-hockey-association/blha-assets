@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T17:45:36.396157Z",
+  "updated_at": "2026-11-08T18:00:42.698611Z",
   "seen": [
-    {
-      "key": "ba1b89cb825a7733d072387d",
-      "url": "https://www.nhl.com/news/ottawa-senators-william-eklund-injury-status-update-october-9-2026",
-      "fingerprint": "e3ad915828aa8e05",
-      "title_norm": "eklund out 'extended' period of time for senators",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T17:45:37.025167Z"
-    },
-    {
-      "key": "fb587094af84f891f4c7b637",
-      "url": "https://www.sportsnet.ca/nhl/article/how-maple-leafs-marchenko-is-making-presence-felt",
-      "fingerprint": "5b35394c9c84fa38",
-      "title_norm": "how maple leafs' marchenko is making presence felt",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T18:00:35.942414Z"
-    },
     {
       "key": "59fbb6699b73588e6e5969a0",
       "url": "https://www.dailyfaceoff.com/players/news/dillon-dube/3907",
@@ -18792,6 +18772,76 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T17:45:36.271133Z"
+    },
+    {
+      "key": "55a91625dc20c4f2bbbe63f7",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "f37a2fa37007d38a",
+      "title_norm": "ryan pulock (nyi) — pulock (upper body) will travel on the upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:00:40.467723Z"
+    },
+    {
+      "key": "6555d1b60175e2e6ffaf6004",
+      "url": "https://www.nhl.com/news/global-series-gives-carolina-hurricanes-chance-to-bond-overseas",
+      "fingerprint": "f0110b128373b09c",
+      "title_norm": "global series gives hurricanes chance to bond overseas",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T18:00:40.737729Z"
+    },
+    {
+      "key": "d01677ce11162f60531931d2",
+      "url": "https://www.nhl.com/news/kraken-kaapo-kakko-excited-to-play-global-series-in-finland-vs-hurricanes",
+      "fingerprint": "ea21f1cf9eb95f6e",
+      "title_norm": "kakko, kraken going global to face canes in finland",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T18:00:41.003913Z"
+    },
+    {
+      "key": "cd0e52009161e5752c1b8d23",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "13c28d08a458df79",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower body) will travel on the upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:00:41.292932Z"
+    },
+    {
+      "key": "4b6fe4ad76b70f0f922a194b",
+      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
+      "fingerprint": "29f9deaa7b85c604",
+      "title_norm": "mathew barzal (nyi) — barzal (lower body) will travel on the upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:00:41.817482Z"
+    },
+    {
+      "key": "670520458bc3db4702651a87",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/d265b558-eae5-40af-a99c-35a6b46eb5f9",
+      "fingerprint": "fe54c5b5505cf030",
+      "title_norm": "nhl on sportsnet: panthers vs. bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:00:42.201971Z"
+    },
+    {
+      "key": "ed9b89c386d4ac0e5c0d5fd1",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-activate-linus-ullmark-from-injured-reserve",
+      "fingerprint": "df72a1e6f9c013f5",
+      "title_norm": "senators activate linus ullmark from injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T18:00:42.218659Z"
     }
   ],
   "known_sources": [
