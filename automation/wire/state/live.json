@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T22:30:36.114527Z",
+  "updated_at": "2026-11-08T23:15:32.826568Z",
   "seen": [
-    {
-      "key": "f8e6df116a4f6d40df1e0cf9",
-      "url": "https://www.dailyfaceoff.com/players/news/nick-bjugstad/2107",
-      "fingerprint": "5ad9d693bac9281e",
-      "title_norm": "nick bjugstad (njd) — the devils have placed nick bjugstad (pectoral) on ltir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T23:00:44.239586Z"
-    },
     {
       "key": "45976a27be45c6c6011ed3be",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-notebook-healthy-hallander-eager-to-make-most-of-fresh-start",
@@ -18822,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T22:30:36.021081Z"
+    },
+    {
+      "key": "e880e140baa08d3735ca35fe",
+      "url": "https://www.dailyfaceoff.com/players/news/ville-koivunen/34677",
+      "fingerprint": "1db99094937f6a7e",
+      "title_norm": "ville koivunen (pit) — koivunen (lower body) is day-to-day and will not play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T23:15:32.739761Z"
     }
   ],
   "known_sources": [
