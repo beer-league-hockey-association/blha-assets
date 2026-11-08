@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T00:15:36.191783Z",
+  "updated_at": "2026-11-08T00:45:37.737053Z",
   "seen": [
-    {
-      "key": "94b7eb264c1b86483b853e6e",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-william-eklund-exits-vs-flyers-with-lower-body-injury",
-      "fingerprint": "4d324d446dc06d65",
-      "title_norm": "senators' william eklund exits vs. flyers with lower-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T00:30:35.734071Z"
-    },
     {
       "key": "60cce4f6e8fc98af3667012a",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/761029cb-c029-4d21-a260-3d54ec8c4c9e",
