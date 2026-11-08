@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T20:15:34.524945Z",
+  "updated_at": "2026-11-08T20:30:36.835661Z",
   "seen": [
     {
       "key": "8140926c41be8fd0ba3fae92",
@@ -18842,6 +18842,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-08T19:30:39.320329Z"
+    },
+    {
+      "key": "87e2851b4668483b1de12e63",
+      "url": "https://www.dailyfaceoff.com/players/news/yanni-gourde/2566",
+      "fingerprint": "99975b308cf61805",
+      "title_norm": "yanni gourde (tbl) — gourde (hip) has been activated from ir and is expected to make his season debut on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-08T20:30:36.739359Z"
     }
   ],
   "known_sources": [
