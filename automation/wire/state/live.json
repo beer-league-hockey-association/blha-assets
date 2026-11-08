@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T03:15:35.615212Z",
+  "updated_at": "2026-11-08T03:30:35.776647Z",
   "seen": [
-    {
-      "key": "e53980763a2b04fb5b72e8b1",
-      "url": "https://www.nhl.com/news/san-jose-sharks-st-louis-blues-game-recap-october-8-2026",
-      "fingerprint": "0eabfacc3c48672f",
-      "title_norm": "nurse scores in ot, sharks defeat blues",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T03:15:37.054452Z"
-    },
-    {
-      "key": "b738b0e5fb21c8bf38aeebd8",
-      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-nazar-gets-match-penalty-for-hit-that-injures-islanders-horvat",
-      "fingerprint": "a572448554899fba",
-      "title_norm": "blackhawks' nazar gets match penalty for hit that injures islanders' horvat",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T03:15:37.330513Z"
-    },
     {
       "key": "d9341e155f987da6bb15c9e9",
       "url": "https://www.nhl.com/news/colorado-avalanche-calgary-flames-game-recap-october-8-2026",
@@ -18782,6 +18762,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T03:15:35.584919Z"
+    },
+    {
+      "key": "99a80a6b3067a640983a78a3",
+      "url": "https://www.nhl.com/news/new-jersey-devils-new-york-islanders-game-recap-november-7-2026",
+      "fingerprint": "bc9aa3282d9fdb20",
+      "title_norm": "jack hughes goal in ot caps devils' comeback against islanders",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T03:30:35.246365Z"
+    },
+    {
+      "key": "fdfbcd24fcf0e81213590465",
+      "url": "https://www.sportsnet.ca/nhl/article/jack-hughes-scores-in-overtime-as-devils-rally-past-islanders",
+      "fingerprint": "e742d919a75d07df",
+      "title_norm": "jack hughes scores in overtime as devils rally past islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T03:30:35.520094Z"
+    },
+    {
+      "key": "ca5d1e2ef0f016c7f2c5753b",
+      "url": "https://www.sportsnet.ca/nhl/article/ref-appears-to-offer-canadiens-fowler-an-apple",
+      "fingerprint": "5148d3521cea8ffe",
+      "title_norm": "ref appears to offer canadiens' fowler an apple",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T03:30:35.747941Z"
     }
   ],
   "known_sources": [
