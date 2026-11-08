@@ -1,88 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T16:30:35.747526Z",
+  "updated_at": "2026-11-08T16:45:35.969175Z",
   "seen": [
-    {
-      "key": "bf87d48e2d0a2a5aefd8712f",
-      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
-      "fingerprint": "256bb97d27a46abd",
-      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) will be out on friday vs. anaheim and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:30:38.641236Z"
-    },
-    {
-      "key": "d7814324b6a58d5c2cde0867",
-      "url": "https://www.nhl.com/news/frank-nazar-to-have-player-safety-hearing-for-actions-in-chicago-blackhawks-game",
-      "fingerprint": "dd8e7858e73e8228",
-      "title_norm": "blackhawks' nazar to have player safety hearing",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T16:30:39.013157Z"
-    },
-    {
-      "key": "85eab915ed5b7fa341e06d01",
-      "url": "https://www.dailyfaceoff.com/players/news/sam-montembeault/4479",
-      "fingerprint": "acb3fc2e8881b1ea",
-      "title_norm": "sam montembeault (mtl) — montembeault (lower-body) is expected to be out for the next 10 to 14 days.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:30:39.299977Z"
-    },
-    {
-      "key": "2ec3e0b320e250fc6945f0f2",
-      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
-      "fingerprint": "e3727e702644da1e",
-      "title_norm": "brad marchand (fla) — marchand (lower-body) is expected to miss the next six weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:30:39.526957Z"
-    },
-    {
-      "key": "2796a10ae5fd9ecfade8720b",
-      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
-      "fingerprint": "f13f5b3e73ec83dc",
-      "title_norm": "andre burakovsky (ott) — burakovsky (upper-body) has a chance to return vs. nashville on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:30:39.540285Z"
-    },
-    {
-      "key": "3af002c265863e50b80dfcba",
-      "url": "https://www.dailyfaceoff.com/players/news/william-trudeau/32461",
-      "fingerprint": "e42451762edf8b73",
-      "title_norm": "william trudeau (nsh) — trudeau has been placed on ir with an upper-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:30:39.553598Z"
-    },
-    {
-      "key": "c79eae5648752f366cbe1487",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-call-up-miles-wood-from-ahl",
-      "fingerprint": "a01b05612d9ff560",
-      "title_norm": "maple leafs call up miles wood from ahl",
-      "channel": "prospect-wire",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:30:39.867514Z"
-    },
-    {
-      "key": "7c2b0efbe68052855012d045",
-      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
-      "fingerprint": "d72965122be7ead5",
-      "title_norm": "william eklund (ott) — eklund (ankle) is out for an extended period of time.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T16:45:35.950334Z"
-    },
     {
       "key": "a46d8abc7733775928545be1",
       "url": "https://www.nhl.com/news/florida-panthers-brad-marchand-injury-status-update-october-9-2026",
@@ -18852,6 +18772,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T16:30:35.705580Z"
+    },
+    {
+      "key": "33a1241cba0b7518350475ca",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-wilson-wont-face-supplemental-discipline-for-hit-on-vilmanis",
+      "fingerprint": "d1b3646015c010ee",
+      "title_norm": "capitals' wilson won't face supplemental discipline for hit on vilmanis",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:45:35.732402Z"
+    },
+    {
+      "key": "78c55d734b231df8e193dd91",
+      "url": "https://www.sportsnet.ca/nhl/article/report-leafs-call-up-d-cole-mcward-send-f-vinni-lettieri-to-ahl",
+      "fingerprint": "5f4aff8cc09085ed",
+      "title_norm": "report: leafs call up d cole mcward, send f vinni lettieri to ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:45:35.930656Z"
     }
   ],
   "known_sources": [
