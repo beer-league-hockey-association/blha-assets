@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T03:30:35.776647Z",
+  "updated_at": "2026-11-08T04:00:43.229626Z",
   "seen": [
     {
       "key": "d9341e155f987da6bb15c9e9",
@@ -18792,6 +18792,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T03:30:35.747941Z"
+    },
+    {
+      "key": "1b1ba37eafba8deb77bc603a",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-connor-mcdavid-ties-adam-oates-with-assists-in-18-consecutive-games",
+      "fingerprint": "8c416ab5c0b3dafe",
+      "title_norm": "oilers' connor mcdavid ties adam oates with assists in 18 consecutive games",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T04:00:42.826033Z"
+    },
+    {
+      "key": "de13ffe668351f624782a41b",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-carolina-hurricanes-game-recap-november-7-2026",
+      "fingerprint": "a71592be5188ce8d",
+      "title_norm": "hurricanes score 9 in win, roll into global series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-08T04:00:43.112086Z"
     }
   ],
   "known_sources": [
