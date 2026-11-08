@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T22:00:39.385929Z",
+  "updated_at": "2026-11-08T22:30:36.114527Z",
   "seen": [
-    {
-      "key": "1e844c1665e7cdbbac25cba9",
-      "url": "https://www.nhl.com/news/matt-dumba-retires-from-nhl-after-13-seasons",
-      "fingerprint": "5b1a5c3a89cafeae",
-      "title_norm": "dumba retires after 13 nhl seasons",
-      "channel": "breaking-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-09T22:15:36.460047Z"
-    },
-    {
-      "key": "b92e90cf1186a94dde08b307",
-      "url": "https://www.cbc.ca/news/canada/hamilton/hamilton-hammers-home-opener-toronto-marlies-9.7374440",
-      "fingerprint": "46f138a22067ebe2",
-      "title_norm": "hamilton native scanlin excited for chance to play at home",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-09T22:15:36.746783Z"
-    },
     {
       "key": "f8e6df116a4f6d40df1e0cf9",
       "url": "https://www.dailyfaceoff.com/players/news/nick-bjugstad/2107",
@@ -18832,6 +18812,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-08T22:00:39.112172Z"
+    },
+    {
+      "key": "5fd94213196b9f2c6924103c",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-morgan-rielly-chris-tanev-out-vs-devils",
+      "fingerprint": "b99ae5d1086a0a6e",
+      "title_norm": "maple leafs' morgan rielly, chris tanev out vs. devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T22:30:36.021081Z"
     }
   ],
   "known_sources": [
