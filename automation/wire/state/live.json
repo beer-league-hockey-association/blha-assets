@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T07:15:31.563849Z",
+  "updated_at": "2026-11-08T08:00:41.153484Z",
   "seen": [
     {
       "key": "d00a5638a62983310fb0b379",
@@ -18842,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T06:45:35.455248Z"
+    },
+    {
+      "key": "4dec3a0401f7099ebe25dc06",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-match-effort-by-high-powered-oilers-but-crumble-in-third-period",
+      "fingerprint": "3fa1e31c1e8e0ba4",
+      "title_norm": "canucks match effort by high-powered oilers but crumble in third period",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T08:00:41.105941Z"
     }
   ],
   "known_sources": [
