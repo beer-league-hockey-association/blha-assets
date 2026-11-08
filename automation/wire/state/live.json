@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T19:30:39.419650Z",
+  "updated_at": "2026-11-08T20:15:34.524945Z",
   "seen": [
-    {
-      "key": "85ba4458b98b1a71d150ee69",
-      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
-      "fingerprint": "e40bb557cd14c039",
-      "title_norm": "zach hyman (edm) — hyman (upper-body) returned to oilers' practice on friday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T20:00:39.576733Z"
-    },
-    {
-      "key": "9e6a109c001cb5cad120c1af",
-      "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
-      "fingerprint": "516f65e2d9c65c9d",
-      "title_norm": "michael carcone (uta) — carcone (undisclosed) is a game-time decision for saturday vs. buffalo.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T20:15:33.924198Z"
-    },
     {
       "key": "8140926c41be8fd0ba3fae92",
       "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
