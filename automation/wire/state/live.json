@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T16:15:33.271850Z",
+  "updated_at": "2026-11-08T16:30:35.747526Z",
   "seen": [
     {
       "key": "bf87d48e2d0a2a5aefd8712f",
@@ -18842,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T16:15:33.240289Z"
+    },
+    {
+      "key": "9cfaa17a289d8dfb34499f0a",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-defenceman-kevin-bahl-to-undergo-season-ending-achilles-surgery",
+      "fingerprint": "503f0d6edc2f27ab",
+      "title_norm": "flames defenceman kevin bahl to undergo season-ending achilles surgery",
+      "channel": "breaking-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-08T16:30:35.705580Z"
     }
   ],
   "known_sources": [
