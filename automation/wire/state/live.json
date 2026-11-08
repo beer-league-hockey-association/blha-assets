@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T09:30:36.514035Z",
+  "updated_at": "2026-11-08T12:00:36.082567Z",
   "seen": [
-    {
-      "key": "0fce062e6395797af00019f2",
-      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
-      "fingerprint": "26ba1449fa5f15c1",
-      "title_norm": "mavrik bourque (nsh) — bourque (upper body) left thursday's game and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T11:45:36.553733Z"
-    },
-    {
-      "key": "fdb59e7f89d54947e93a4c48",
-      "url": "https://www.dailyfaceoff.com/players/news/william-trudeau/32461",
-      "fingerprint": "c30353578ceffc94",
-      "title_norm": "william trudeau (nsh) — trudeau (upper body) left thursday's game and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-09T11:45:36.839382Z"
-    },
     {
       "key": "a49110aa8d4157cc739a9f7d",
       "url": "https://www.sportsnet.ca/nhl/article/friday-four-which-early-season-injury-will-be-most-impactful",
