@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T21:15:35.055175Z",
+  "updated_at": "2026-11-09T21:45:35.539098Z",
   "seen": [
-    {
-      "key": "4d1a45896e67f00d34a55489",
-      "url": "https://www.sportsnet.ca/nhl/article/nick-blankenburg-to-make-maple-leafs-debut-vs-avalanche",
-      "fingerprint": "c87e99864618341b",
-      "title_norm": "nick blankenburg to make maple leafs debut vs. avalanche",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T21:30:42.671793Z"
-    },
     {
       "key": "9b9aa432f22f96d681a144e8",
       "url": "https://www.dailyfaceoff.com/players/news/marcus-foligno/1689",
