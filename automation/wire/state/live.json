@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T10:15:38.862721Z",
+  "updated_at": "2026-11-09T12:45:32.467906Z",
   "seen": [
-    {
-      "key": "be1786084464dec16f3ab3e9",
-      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-is-the-real-auston-matthews-back",
-      "fingerprint": "ac83b1ef96cedc7a",
-      "title_norm": "quick shifts: is the real auston matthews back?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T12:30:38.412420Z"
-    },
     {
       "key": "f77572fcae37102243a87a5b",
       "url": "https://www.dailyfaceoff.com/players/news/bo-horvat/2141",
