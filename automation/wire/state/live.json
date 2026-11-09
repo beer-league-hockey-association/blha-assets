@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T14:00:40.316567Z",
+  "updated_at": "2026-11-09T15:00:43.000766Z",
   "seen": [
-    {
-      "key": "da198e7ce76001e6997bff0d",
-      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
-      "fingerprint": "376c61f3fb82e87e",
-      "title_norm": "william eklund (ott) — the senators are placing william eklund (ankle) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T14:45:37.363480Z"
-    },
-    {
-      "key": "36c446ee0360bffe4c1cfff8",
-      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
-      "fingerprint": "ff4c4aa43c66ec56",
-      "title_norm": "andre burakovsky (ott) — burakovsky (upper-body) is being activated from ir and is expected to make his senators debut on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T14:45:37.608550Z"
-    },
-    {
-      "key": "690b240bdcd18f753a0cf85a",
-      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
-      "fingerprint": "ae1ecee34f27cde0",
-      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) missed saturday's practice and is questionable to play sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T15:00:41.223342Z"
-    },
-    {
-      "key": "7aca46c253860c28c523a0fe",
-      "url": "https://www.dailyfaceoff.com/players/news/kaiden-guhle/32947",
-      "fingerprint": "e003a42ad68a30e5",
-      "title_norm": "kaiden guhle (mtl) — guhle (groin) will make his season debut on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T15:00:41.531983Z"
-    },
     {
       "key": "16f3299446fde3363b1bc358",
       "url": "https://www.sportsnet.ca/nhl/article/canadiens-kaiden-guhle-to-make-season-debut-vs-red-wings",
