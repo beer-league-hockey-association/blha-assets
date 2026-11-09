@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T05:15:31.928151Z",
+  "updated_at": "2026-11-09T05:30:39.308862Z",
   "seen": [
     {
       "key": "e94437984f11ff6a890b8a18",
@@ -18882,6 +18882,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T05:15:31.898765Z"
+    },
+    {
+      "key": "832826576d65363fbffe317b",
+      "url": "https://www.sportsnet.ca/nhl/article/injuries-continue-to-pile-up-as-maple-leafs-fall-to-devils",
+      "fingerprint": "8e1a15ea98987d3a",
+      "title_norm": "injuries continue to pile up as maple leafs fall to devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T05:30:39.260838Z"
     }
   ],
   "known_sources": [
