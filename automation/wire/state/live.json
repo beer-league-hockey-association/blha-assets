@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T18:45:39.373658Z",
+  "updated_at": "2026-11-09T19:00:46.748922Z",
   "seen": [
-    {
-      "key": "9839742587af3a68aad76a31",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-walman/2859",
-      "fingerprint": "aedd42515e1aad89",
-      "title_norm": "jake walman (edm) — walman (undisclosed) will not play saturday in san jose.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:00:39.555921Z"
-    },
-    {
-      "key": "8db402d77b7d7c39e310008c",
-      "url": "https://www.dailyfaceoff.com/players/news/shakir-mukhamadullin/33038",
-      "fingerprint": "df76155ce5bd6dd1",
-      "title_norm": "shakir mukhamadullin (edm) — mukhamadulkin will be back in the sharks lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:00:39.755568Z"
-    },
     {
       "key": "09d1bd006fab671da77be586",
       "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
@@ -18822,6 +18802,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T18:45:39.335451Z"
+    },
+    {
+      "key": "bd35bf468ed200a4593aa48f",
+      "url": "https://www.nhl.com/news/topic/global-series/global-series-finland-blog-jesperi-kotkaniemi-november-9-2026",
+      "fingerprint": "65c829e2a2e63465",
+      "title_norm": "global series finland blog: jesperi kotkaniemi",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T19:00:46.370002Z"
+    },
+    {
+      "key": "45f0c8df35cbb7c1b6258a77",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-cutter-gauthier-anaheim-ducks-goal-scoring-2026-27",
+      "fingerprint": "68add50569fe9b58",
+      "title_norm": "edge stats: gauthier enters 'rocket' trophy race",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T19:00:46.639118Z"
     }
   ],
   "known_sources": [
