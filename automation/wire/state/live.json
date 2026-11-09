@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T23:30:39.026204Z",
+  "updated_at": "2026-11-09T23:45:42.865981Z",
   "seen": [
-    {
-      "key": "e5e210bf44f9bb567aa6ed4a",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-expect-zach-hyman-to-return-tuesday-vs-kings-babcock-says",
-      "fingerprint": "ce8bd23a80bc5cdc",
-      "title_norm": "oilers expect zach hyman to return tuesday vs. kings, babcock says",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T23:30:39.724398Z"
-    },
-    {
-      "key": "ca5a4e7d9af3ad00bed34dc2",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-10-2026",
-      "fingerprint": "359351b45bd0b5af",
-      "title_norm": "status report: dube out at least 8 weeks for blues",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T23:30:40.018480Z"
-    },
     {
       "key": "7869cfae82c1229b27efabc9",
       "url": "https://www.dailyfaceoff.com/players/news/oliver-ekman-larsson/1172",
