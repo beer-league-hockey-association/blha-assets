@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T04:15:33.067228Z",
+  "updated_at": "2026-11-09T05:00:45.588221Z",
   "seen": [
-    {
-      "key": "6c1b3126cc1eb8ed73e42a03",
-      "url": "https://www.sportsnet.ca/nhl/article/injury-to-canadiens-montembeault-tough-blow-in-quest-for-redemption",
-      "fingerprint": "bd216ccc47967398",
-      "title_norm": "injury to canadiens' montembeault tough blow in quest for redemption",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T04:45:41.037314Z"
-    },
     {
       "key": "e94437984f11ff6a890b8a18",
       "url": "https://www.nhl.com/news/chicago-blackhawks-frank-nazar-suspended-two-games-for-illegal-check",
@@ -18852,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T04:15:33.036750Z"
+    },
+    {
+      "key": "287da1b26d8e73c2bf03ae4a",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-brayden-yager-savours-first-nhl-goal-dream-come-true",
+      "fingerprint": "99e68ae0269cd634",
+      "title_norm": "jets' brayden yager savours first nhl goal: 'dream come true",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T05:00:45.546731Z"
     }
   ],
   "known_sources": [
