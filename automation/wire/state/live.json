@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T19:00:46.748922Z",
+  "updated_at": "2026-11-09T19:15:39.243776Z",
   "seen": [
     {
       "key": "09d1bd006fab671da77be586",
@@ -18822,6 +18822,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-09T19:00:46.639118Z"
+    },
+    {
+      "key": "1f9f71955a428d15c1160b19",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "79a08c45fb7cd68d",
+      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) will return vs. new york on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T19:15:39.126237Z"
     }
   ],
   "known_sources": [
