@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T17:15:41.161479Z",
+  "updated_at": "2026-11-09T17:30:44.412705Z",
   "seen": [
     {
       "key": "28195c5093b1521c495bf3d2",
@@ -18782,6 +18782,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-09T17:15:40.834112Z"
+    },
+    {
+      "key": "4b030046a08178887756b28f",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "d4cfdd69eabae25a",
+      "title_norm": "sean durzi (nyr) — durzi (undisclosed) skated in a non-contact jersey at monday's practice.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T17:30:43.965064Z"
+    },
+    {
+      "key": "f7636848570434988c28931a",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-evans/4708",
+      "fingerprint": "8e255a9c8cb345e3",
+      "title_norm": "jake evans (mtl) — evans (hand) left practice on monday and is being evaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T17:30:44.326413Z"
     }
   ],
   "known_sources": [
