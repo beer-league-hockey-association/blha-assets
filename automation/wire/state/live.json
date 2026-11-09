@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T22:15:33.232780Z",
+  "updated_at": "2026-11-09T22:45:34.622625Z",
   "seen": [
-    {
-      "key": "31712931b516db25d643748d",
-      "url": "https://www.nhl.com/news/vancouver-canucks-new-jersey-devils-game-recap-october-10-2026",
-      "fingerprint": "0a57decf680711c2",
-      "title_norm": "hischier, bratt lift devils past canucks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T22:45:31.559153Z"
-    },
-    {
-      "key": "40094f97828f4552883b32a5",
-      "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
-      "fingerprint": "d0667424d34a921d",
-      "title_norm": "michael carcone (uta) — carcone (upper-body) will be out saturday vs. buffalo and is considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T22:45:31.894677Z"
-    },
-    {
-      "key": "8c8d0c443bad8c8317bb79f7",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-fall-to-devils-suffer-second-consecutive-lopsided-defeat",
-      "fingerprint": "6b84cd71654ca3e1",
-      "title_norm": "canucks fall to devils, suffer second consecutive lopsided defeat",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T22:45:32.146873Z"
-    },
     {
       "key": "77d21cb7addaaf61d6456015",
       "url": "https://www.nhl.com/news/edmonton-oilers-san-jose-sharks-game-recap-october-10-2026",
@@ -18762,6 +18732,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-09T21:15:34.971308Z"
+    },
+    {
+      "key": "2d8c6b88eddc2f153099c6e9",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-manson/2400",
+      "fingerprint": "9301aea2c193e6a4",
+      "title_norm": "josh manson (col) — manson (ankle) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T22:45:34.513972Z"
     }
   ],
   "known_sources": [
