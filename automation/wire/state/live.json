@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T20:15:38.387649Z",
+  "updated_at": "2026-11-09T20:30:37.013080Z",
   "seen": [
-    {
-      "key": "6bbc3eb94815142ada89c916",
-      "url": "https://www.sportsnet.ca/nhl/article/flyers-season-opening-skid-hits-six-in-blowout-loss-to-bruins",
-      "fingerprint": "68cf457adc721abb",
-      "title_norm": "flyers' season-opening skid hits six in blowout loss to bruins",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T20:15:38.405192Z"
-    },
-    {
-      "key": "46bca996b65f84e3f9033143",
-      "url": "https://www.nhl.com/news/seattle-kraken-jacob-melanson-injury-status-update-october-10-2026",
-      "fingerprint": "720b60f7b5e43a88",
-      "title_norm": "melanson out indefinitely for kraken after aneurysm",
-      "channel": "breaking-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T20:30:33.484648Z"
-    },
     {
       "key": "4d1a45896e67f00d34a55489",
       "url": "https://www.sportsnet.ca/nhl/article/nick-blankenburg-to-make-maple-leafs-debut-vs-avalanche",
@@ -18792,6 +18772,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-09T20:15:38.344176Z"
+    },
+    {
+      "key": "c6b221c4fda1d04a23aa7c64",
+      "url": "https://www.sportsnet.ca/nhl/video/seravalli-discusses-devils-decision-to-sit-hellebuyck-vs-jets",
+      "fingerprint": "49a983333d7bfba7",
+      "title_norm": "seravalli discusses devils' decision to sit hellebuyck vs. jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T20:30:36.986816Z"
     }
   ],
   "known_sources": [
