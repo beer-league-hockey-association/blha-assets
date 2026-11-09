@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T22:00:37.758618Z",
+  "updated_at": "2026-11-09T22:15:33.232780Z",
   "seen": [
-    {
-      "key": "f1c83853115f45b7e73844d6",
-      "url": "https://www.sportsnet.ca/nhl/article/why-maple-leafs-are-dressing-7-defencemen-vs-avalanche",
-      "fingerprint": "93b87766c3019fdb",
-      "title_norm": "why maple leafs are dressing 7 defencemen vs. avalanche",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T22:00:38.885004Z"
-    },
     {
       "key": "31712931b516db25d643748d",
       "url": "https://www.nhl.com/news/vancouver-canucks-new-jersey-devils-game-recap-october-10-2026",
