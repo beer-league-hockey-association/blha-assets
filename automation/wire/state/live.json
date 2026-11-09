@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T02:15:36.435674Z",
+  "updated_at": "2026-11-09T02:45:32.111908Z",
   "seen": [
-    {
-      "key": "e68ef9bc291ebc9aa9ed50d2",
-      "url": "https://www.nhl.com/news/pittsburgh-penguins-columbus-blue-jackets-game-recap-october-9-2026",
-      "fingerprint": "96d07c0803b7fd7c",
-      "title_norm": "talbot stops 20 in debut, jackets top pens in shootout",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T02:30:42.238255Z"
-    },
-    {
-      "key": "81085e9c4ae1225906def114",
-      "url": "https://www.sportsnet.ca/nhl/article/jenner-lifts-capitals-over-rangers-after-shesterkins-exit",
-      "fingerprint": "53179fc37a5a1c49",
-      "title_norm": "jenner lifts capitals over rangers after shesterkin's exit",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T02:30:42.563141Z"
-    },
-    {
-      "key": "b2356434c3a231231504ce1b",
-      "url": "https://www.sportsnet.ca/nhl/article/johnson-scores-lone-goal-in-shootout-to-give-blue-jackets-win-over-penguins",
-      "fingerprint": "d9afd1ff11dcbfcd",
-      "title_norm": "johnson scores lone goal in shootout to give blue jackets win over penguins",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T02:45:30.039272Z"
-    },
     {
       "key": "33a0e4c6271506ca27690a57",
       "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
@@ -18842,6 +18812,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-09T02:15:36.385012Z"
+    },
+    {
+      "key": "595f907209df77ce6db42e65",
+      "url": "https://www.sportsnet.ca/nhl/article/scheifeles-winner-with-1-6-seconds-remaining-lifts-jets-over-lightning",
+      "fingerprint": "921e60c30a15ab6e",
+      "title_norm": "scheifele's winner with 1.6 seconds remaining lifts jets over lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T02:45:31.783871Z"
+    },
+    {
+      "key": "a557b0fbc8da4b1d39898515",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-colton-sissons-leaves-with-injury-vs-devils",
+      "fingerprint": "b024972c96291a69",
+      "title_norm": "maple leafs' colton sissons leaves with injury vs. devils",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T02:45:32.073240Z"
     }
   ],
   "known_sources": [
