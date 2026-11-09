@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T00:15:34.743650Z",
+  "updated_at": "2026-11-09T00:30:35.648938Z",
   "seen": [
-    {
-      "key": "9064bbd7c53dae7ad57ec1d5",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/28c82d8a-9109-4284-991e-adbbcdbf0505",
-      "fingerprint": "f09bd9cc4049d7ec",
-      "title_norm": "nhl on sportsnet: winnipeg vs. anaheim",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T00:15:37.068501Z"
-    },
     {
       "key": "b5957ac813b5881b9c4e05d6",
       "url": "https://www.sportsnet.ca/nhl/article/rangers-goalie-igor-shesterkin-exits-vs-capitals-with-apparent-leg-injury",
@@ -18832,6 +18822,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T00:15:34.717563Z"
+    },
+    {
+      "key": "589a175b8c696cb5f6a809fe",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "d53fc336c9106151",
+      "title_norm": "jack roslovic (tor) — roslovic (lower body) is out day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:30:35.164144Z"
+    },
+    {
+      "key": "6c15bc194ba4ec242e6942c7",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-roslovic-scratched-from-lineup-vs-devils-lettieri-in",
+      "fingerprint": "0081493728d3ee23",
+      "title_norm": "maple leafs' roslovic scratched from lineup vs. devils, lettieri in",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:30:35.618684Z"
     }
   ],
   "known_sources": [
