@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T09:26:09.914604Z",
+  "updated_at": "2026-11-09T09:47:11.173351Z",
   "seen": [
     {
       "key": "be1786084464dec16f3ab3e9",
@@ -18882,6 +18882,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-09T05:45:35.085026Z"
+    },
+    {
+      "key": "dfa732f06604e22325b7dbc0",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-calgary-flames-game-recap-november-8-2026",
+      "fingerprint": "eede80a88126d905",
+      "title_norm": "coronato scores in ot, flames rally past flyers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T09:47:11.079565Z"
     }
   ],
   "known_sources": [
