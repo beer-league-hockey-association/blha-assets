@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T02:45:32.111908Z",
+  "updated_at": "2026-11-09T03:15:36.673051Z",
   "seen": [
-    {
-      "key": "33a0e4c6271506ca27690a57",
-      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
-      "fingerprint": "8054f8864dddb9f8",
-      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) is not expected to play saturday in ottawa.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T03:00:42.065010Z"
-    },
-    {
-      "key": "915396206dc6d95fadff11d3",
-      "url": "https://www.nhl.com/news/anaheim-ducks-winnipeg-jets-game-recap-october-9-2026",
-      "fingerprint": "6fc88cf6ea2a7559",
-      "title_norm": "granlund, washe each has two points, ducks slow down jets",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T03:15:36.368198Z"
-    },
     {
       "key": "eafe921b7838f8fcadf806ab",
       "url": "https://www.sportsnet.ca/nhl/article/jets-sent-to-first-regulation-loss-by-caufield-ducks",
@@ -18832,6 +18812,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T02:45:32.073240Z"
+    },
+    {
+      "key": "321f6cbba8e73e024c11ea33",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-say-connor-hellebuyck-wont-play-in-return-to-winnipeg-vs-jets",
+      "fingerprint": "45278328d4ce65a9",
+      "title_norm": "devils say connor hellebuyck won't play vs. jets in return to winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T03:15:36.043585Z"
+    },
+    {
+      "key": "755e60b3f645c7147091b24e",
+      "url": "https://www.nhl.com/news/new-jersey-devils-toronto-maple-leafs-game-recap-november-8-2026",
+      "fingerprint": "0446af01af3666c1",
+      "title_norm": "hellebuyck makes 23 saves, devils shut out maple leafs to win fifth straight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T03:15:36.341847Z"
+    },
+    {
+      "key": "4be964cdca01f8cc9514373d",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-beat-maple-leafs-as-hellebuyck-posts-shutout",
+      "fingerprint": "70dc899d68fc0057",
+      "title_norm": "devils beat maple leafs as hellebuyck posts shutout",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T03:15:36.619276Z"
     }
   ],
   "known_sources": [
