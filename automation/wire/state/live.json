@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T19:30:40.001073Z",
+  "updated_at": "2026-11-09T19:45:41.065646Z",
   "seen": [
-    {
-      "key": "a806fbadf0d8c8563fe696d8",
-      "url": "https://www.dailyfaceoff.com/players/news/kiefer-sherwood/4675",
-      "fingerprint": "b20b94ca3ef5df20",
-      "title_norm": "kiefer sherwood (sjs) — sherwood (upper-body) will play vs. edmonton after originally being a game-time decision.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:45:34.278198Z"
-    },
-    {
-      "key": "889bf6e80a9a75fd5fafd6e3",
-      "url": "https://www.dailyfaceoff.com/players/news/macklin-celebrini/37106",
-      "fingerprint": "f5d69db4ebabd1e4",
-      "title_norm": "macklin celebrini (sjs) — celebrini (lower-body) is expected to play vs. edmonton on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:45:34.632452Z"
-    },
-    {
-      "key": "73af2be64f08fd53bc04575a",
-      "url": "https://www.dailyfaceoff.com/players/news/adam-gaudette/4646",
-      "fingerprint": "07da8d72ba5f5b4a",
-      "title_norm": "adam gaudette (sjs) — gaudette (upper-body) will not return on saturday vs. edmonton.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:45:35.010169Z"
-    },
-    {
-      "key": "04f7f19d2ca42837b36f838c",
-      "url": "https://www.dailyfaceoff.com/players/news/jacob-melanson/31241",
-      "fingerprint": "39561d28bde5202f",
-      "title_norm": "jacob melanson (sea) — melanson will be out indefinitely after suffering an upper-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:45:35.020511Z"
-    },
     {
       "key": "4159d28f5b9d7a13ec28f45c",
       "url": "https://www.nhl.com/news/philadelphia-flyers-boston-bruins-game-recap-october-10-2026",
@@ -18822,6 +18782,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T19:30:39.954227Z"
+    },
+    {
+      "key": "c66f60f9775ef82bae491062",
+      "url": "https://www.sportsnet.ca/nhl/article/spotlight-on-flames-defenceman-nemec-after-bahl-injury",
+      "fingerprint": "61eab720bd98c6ba",
+      "title_norm": "spotlight on flames defenceman nemec after bahl injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T19:45:40.611786Z"
+    },
+    {
+      "key": "ea9e26be11cc15204894fd74",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-chytil-willander-remain-out-with-injuries",
+      "fingerprint": "52e38bc5f5ba0a32",
+      "title_norm": "canucks' chytil, willander remain out with injuries",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T19:45:41.018599Z"
     }
   ],
   "known_sources": [
