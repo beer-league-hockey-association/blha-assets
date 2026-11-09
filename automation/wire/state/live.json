@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T00:30:35.648938Z",
+  "updated_at": "2026-11-09T00:45:34.012127Z",
   "seen": [
     {
       "key": "b5957ac813b5881b9c4e05d6",
@@ -18842,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T00:30:35.618684Z"
+    },
+    {
+      "key": "c5eaf32e19dd466c4021595c",
+      "url": "https://www.sportsnet.ca/nhl/video/hockey-hall-of-fame-class-of-26-inductees-receive-jackets",
+      "fingerprint": "ffcffda600f16ac2",
+      "title_norm": "hockey hall of fame class of '26 inductees receive jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:45:33.957342Z"
     }
   ],
   "known_sources": [
