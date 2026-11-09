@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T15:00:43.000766Z",
+  "updated_at": "2026-11-09T15:30:36.977222Z",
   "seen": [
-    {
-      "key": "16f3299446fde3363b1bc358",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-kaiden-guhle-to-make-season-debut-vs-red-wings",
-      "fingerprint": "d555940766f75e4f",
-      "title_norm": "canadiens' kaiden guhle to make season debut vs. red wings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T15:30:36.889034Z"
-    },
     {
       "key": "c53bf7e43e0b485509539aaf",
       "url": "https://www.dailyfaceoff.com/players/news/teuvo-teravainen/2128",
@@ -18862,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T13:15:36.459059Z"
+    },
+    {
+      "key": "05b7db31e797e87711becba0",
+      "url": "https://www.flohockey.tv/collections/6752010-continue-watching/video",
+      "fingerprint": "9f50b1796daefad1",
+      "title_norm": "how are 19-year-old chl prospects doing in the ahl?",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-09T15:30:36.903422Z"
     }
   ],
   "known_sources": [
