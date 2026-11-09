@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T20:30:37.013080Z",
+  "updated_at": "2026-11-09T21:00:46.983497Z",
   "seen": [
     {
       "key": "4d1a45896e67f00d34a55489",
@@ -18782,6 +18782,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T20:30:36.986816Z"
+    },
+    {
+      "key": "c9a54e590e7fa121d059b005",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-fiala/2455",
+      "fingerprint": "a7e8eb0c70669b05",
+      "title_norm": "kevin fiala (lak) — fiala (lower-body) has a chance to return vs. nashville on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T21:00:46.897253Z"
     }
   ],
   "known_sources": [
