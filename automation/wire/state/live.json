@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T16:30:38.998346Z",
+  "updated_at": "2026-11-09T16:45:38.082508Z",
   "seen": [
     {
       "key": "367f6a3a05fbdce8c1372433",
@@ -18802,6 +18802,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-09T16:30:38.929501Z"
+    },
+    {
+      "key": "e1ea0418ac0091dd281ab872",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-reclaiming-mighty-status-behind-youthful-scoring-surge",
+      "fingerprint": "e02906d67634091d",
+      "title_norm": "ducks reclaiming mighty status behind youthful scoring surge",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T16:45:38.036839Z"
     }
   ],
   "known_sources": [
