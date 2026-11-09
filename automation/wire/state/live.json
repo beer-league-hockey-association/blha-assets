@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T03:45:34.821356Z",
+  "updated_at": "2026-11-09T04:15:33.067228Z",
   "seen": [
-    {
-      "key": "22927266582bc87bc6c35f89",
-      "url": "https://www.nhl.com/news/topic/game-recap/new-york-rangers-washington-capitals-game-recap-october-9-2026",
-      "fingerprint": "61a89bcd46976be2",
-      "title_norm": "jenner's first goal with capitals helps cool off rangers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T04:00:41.227292Z"
-    },
     {
       "key": "6c1b3126cc1eb8ed73e42a03",
       "url": "https://www.sportsnet.ca/nhl/article/injury-to-canadiens-montembeault-tough-blow-in-quest-for-redemption",
@@ -18832,6 +18822,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T03:30:34.781101Z"
+    },
+    {
+      "key": "566140d68d4c092e4f975956",
+      "url": "https://www.nhl.com/news/hockey-hall-of-fame-class-talks-peskiest-opponents",
+      "fingerprint": "a963861577941b09",
+      "title_norm": "hockey hall of fame class talks peskiest opponents",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T04:15:32.466629Z"
+    },
+    {
+      "key": "2c11862de246f37d2f819c8f",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-anaheim-ducks-game-recap-november-8-2026",
+      "fingerprint": "106ddb90f8484222",
+      "title_norm": "gauthier scores third hat trick in five games, ducks defeat penguins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T04:15:32.767142Z"
+    },
+    {
+      "key": "3b6dfa11efe20ca80486ff47",
+      "url": "https://www.sportsnet.ca/nhl/video/im-disappointed-but-i-understand-hellbuyck-on-not-starting-in-winnipeg",
+      "fingerprint": "594d484c5fb50c66",
+      "title_norm": "'i'm disappointed but i understand': hellebuyck on not starting in winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T04:15:33.036750Z"
     }
   ],
   "known_sources": [
