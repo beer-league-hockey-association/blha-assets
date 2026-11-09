@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T19:15:39.243776Z",
+  "updated_at": "2026-11-09T19:30:40.001073Z",
   "seen": [
-    {
-      "key": "09d1bd006fab671da77be586",
-      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
-      "fingerprint": "6af37f48a10f6f80",
-      "title_norm": "jonas siegenthaler (njd) — siegenthaler (undisclosed) will play vs. vancouver on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:26:52.267646Z"
-    },
-    {
-      "key": "6b9039e1b513346dc39d8e52",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/06babba9-0525-41c2-82c1-c952e6c3c6cd",
-      "fingerprint": "034efe4a0e81d307",
-      "title_norm": "canucks on sportsnet: vancouver vs. new jersey",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:26:52.523583Z"
-    },
-    {
-      "key": "74417aee6cd03aa00fb06bfc",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-walman-out-hallander-in-against-sharks",
-      "fingerprint": "6a5b5d0299072e87",
-      "title_norm": "oilers' walman out, hallander in against sharks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T19:26:52.765892Z"
-    },
     {
       "key": "a806fbadf0d8c8563fe696d8",
       "url": "https://www.dailyfaceoff.com/players/news/kiefer-sherwood/4675",
@@ -18832,6 +18802,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-09T19:15:39.126237Z"
+    },
+    {
+      "key": "50d21a121176bf6c307b50a8",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-mailloux/30862",
+      "fingerprint": "7646b66dc03ed7ac",
+      "title_norm": "logan mailloux (stl) — mailloux (hand) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T19:30:39.671894Z"
+    },
+    {
+      "key": "c744e2664e97796c5897d0f3",
+      "url": "https://www.sportsnet.ca/nhl/article/arniel-blasts-devils-decision-not-to-play-hellebuyck-vs-jets-goalie-gave-up-on-us",
+      "fingerprint": "ef2a8c7d2ce9cbe3",
+      "title_norm": "arniel criticizes devils' decision not to play hellebuyck vs. jets: goalie 'gave up on us'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T19:30:39.954227Z"
     }
   ],
   "known_sources": [
