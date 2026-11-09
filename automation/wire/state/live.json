@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T02:00:24.715119Z",
+  "updated_at": "2026-11-09T02:15:36.435674Z",
   "seen": [
-    {
-      "key": "8b381f87a410c6ebebc9b3fb",
-      "url": "https://www.nhl.com/news/seattle-kraken-detroit-red-wings-game-recap-october-9-2026",
-      "fingerprint": "3206f53fe392e065",
-      "title_norm": "kraken score four goals in second period, surge past red wings",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T02:00:34.502996Z"
-    },
     {
       "key": "e68ef9bc291ebc9aa9ed50d2",
       "url": "https://www.nhl.com/news/pittsburgh-penguins-columbus-blue-jackets-game-recap-october-9-2026",
@@ -18832,6 +18822,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T02:00:24.683698Z"
+    },
+    {
+      "key": "139e6352a3c8d9f094609156",
+      "url": "https://www.dailyfaceoff.com/players/news/brayden-point/2456",
+      "fingerprint": "9e70bfeb7e480e3a",
+      "title_norm": "brayden point (tbl) — point (undisclosed) left sunday's game and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T02:15:36.037415Z"
+    },
+    {
+      "key": "71bf73f35bd8ef05d594fe5b",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-winnipeg-jets-game-recap-november-8-2026",
+      "fingerprint": "92ff6338206f1ab6",
+      "title_norm": "scheifele scores with 1.6 seconds left, jets recover against lightning",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T02:15:36.385012Z"
     }
   ],
   "known_sources": [
