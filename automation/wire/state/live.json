@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T12:45:32.467906Z",
+  "updated_at": "2026-11-09T13:15:36.509828Z",
   "seen": [
     {
       "key": "f77572fcae37102243a87a5b",
@@ -18902,6 +18902,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-09T10:15:38.821954Z"
+    },
+    {
+      "key": "7410970eb00b23828e028d6e",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-arber-xhekaj-finding-comfort-zone-in-depth-role",
+      "fingerprint": "81adaa9fa2595689",
+      "title_norm": "canadiens' arber xhekaj finding comfort zone in depth role",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T13:15:36.459059Z"
     }
   ],
   "known_sources": [
