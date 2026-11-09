@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T05:30:39.308862Z",
+  "updated_at": "2026-11-09T05:45:35.197417Z",
   "seen": [
     {
       "key": "e94437984f11ff6a890b8a18",
@@ -18892,6 +18892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T05:30:39.260838Z"
+    },
+    {
+      "key": "ee410961bc4ae8347c125d4f",
+      "url": "https://www.nhl.com/news/winnipeg-jets-feeling-good-after-a-tough-stretch-with-new-jersey-devils-due",
+      "fingerprint": "9e84fcb63065a7f1",
+      "title_norm": "jets 'feeling good' after a tough stretch with devils due",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T05:45:35.085026Z"
     }
   ],
   "known_sources": [
