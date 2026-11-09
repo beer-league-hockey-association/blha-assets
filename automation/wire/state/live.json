@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T19:45:41.065646Z",
+  "updated_at": "2026-11-09T20:15:38.387649Z",
   "seen": [
-    {
-      "key": "4159d28f5b9d7a13ec28f45c",
-      "url": "https://www.nhl.com/news/philadelphia-flyers-boston-bruins-game-recap-october-10-2026",
-      "fingerprint": "71d7c1ad25513325",
-      "title_norm": "minten has three points, bruins keep flyers winless",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T20:00:39.472408Z"
-    },
-    {
-      "key": "8bf6bc40240db1fd9440c064",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/df391ef3-cdcc-43c5-a7c1-f4dd87491d24",
-      "fingerprint": "cd365bc61907f810",
-      "title_norm": "oilers on sportsnet: edmonton vs. san jose",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T20:00:39.806204Z"
-    },
-    {
-      "key": "f0da95d1a4d7c5e277c4c3df",
-      "url": "https://www.sportsnet.ca/nhl/article/sharks-macklin-celebrini-returns-to-lineup-against-oilers",
-      "fingerprint": "49533c60bc51a1af",
-      "title_norm": "sharks' macklin celebrini returns to lineup against oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T20:15:38.088255Z"
-    },
     {
       "key": "6bbc3eb94815142ada89c916",
       "url": "https://www.sportsnet.ca/nhl/article/flyers-season-opening-skid-hits-six-in-blowout-loss-to-bruins",
@@ -18802,6 +18772,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T19:45:41.018599Z"
+    },
+    {
+      "key": "54346a702c45b323574a7ec5",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "ed8a70e33501abdf",
+      "title_norm": "dylan guenther (uta) — guenther (maintenance) missed practice on monday and is questionable for wednesday vs. vegas.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T20:15:37.910128Z"
+    },
+    {
+      "key": "18382e78fc8d3fa3aa9dcda1",
+      "url": "https://dobberprospects.com/2026/11/09/november-whl-report-prospects-leading-the-way",
+      "fingerprint": "0623811d06002d77",
+      "title_norm": "november whl report: prospects leading the way",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-09T20:15:38.344176Z"
     }
   ],
   "known_sources": [
