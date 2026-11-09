@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T15:45:35.184122Z",
+  "updated_at": "2026-11-09T16:00:41.853782Z",
   "seen": [
-    {
-      "key": "13ff28da46dca3756838277d",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-activate-andre-burakovsky-for-season-debut-against-predators",
-      "fingerprint": "24eec642578af9aa",
-      "title_norm": "senators activate andre burakovsky for season debut against predators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T16:00:37.491916Z"
-    },
     {
       "key": "936551b82c26a8864b668e56",
       "url": "https://www.sportsnet.ca/nhl/article/heartbreak-on-the-line-gabriel-landeskog-talks-comeback-sweep-makar-alfredsson",
