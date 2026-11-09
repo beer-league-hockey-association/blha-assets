@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T09:47:11.173351Z",
+  "updated_at": "2026-11-09T10:15:38.862721Z",
   "seen": [
     {
       "key": "be1786084464dec16f3ab3e9",
@@ -18892,6 +18892,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-09T09:47:11.079565Z"
+    },
+    {
+      "key": "a31997eda0ea0fa67ae7125b",
+      "url": "https://www.sportsnet.ca/nhl/article/cutter-gauthier-posts-third-hat-trick-this-month-ducks-beat-penguins",
+      "fingerprint": "0b0781ac7f905bc5",
+      "title_norm": "nhl roundup: gauthier posts third hat trick this month, ducks beat penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T10:15:38.572317Z"
+    },
+    {
+      "key": "45238d1da54e0315a01b466f",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-7-e3s1pm5",
+      "fingerprint": "e39bc8ac254d2e21",
+      "title_norm": "puzzling players: what do we do with these guys? | fantasy hockey week 7",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-09T10:15:38.821954Z"
     }
   ],
   "known_sources": [
