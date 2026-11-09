@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T18:30:46.622526Z",
+  "updated_at": "2026-11-09T18:45:39.373658Z",
   "seen": [
     {
       "key": "9839742587af3a68aad76a31",
@@ -18792,6 +18792,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-09T18:30:46.536754Z"
+    },
+    {
+      "key": "9da73bd3ce9f6919d6dd1334",
+      "url": "https://www.nhl.com/news/topic/global-series/seattle-kraken-practice-in-helsinki-ready-for-team-bonding-at-global-series-finland",
+      "fingerprint": "c0e9d2d341291b52",
+      "title_norm": "kraken can become 'close-knit group' at global series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T18:45:38.796149Z"
+    },
+    {
+      "key": "28789a387943a7499c754199",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-ridly-greig-says-he-will-return-to-lineup-vs-capitals",
+      "fingerprint": "142913d0ec062044",
+      "title_norm": "senators' ridly greig says he will return to lineup vs. capitals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T18:45:39.078428Z"
+    },
+    {
+      "key": "b9cef1edf1c133d70bb5cdad",
+      "url": "https://www.sportsnet.ca/ahl/article/top-maple-leafs-prospect-ben-danford-out-with-broken-wrist",
+      "fingerprint": "9e0f3676a8aee1af",
+      "title_norm": "top maple leafs prospect ben danford out with broken wrist",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T18:45:39.335451Z"
     }
   ],
   "known_sources": [
