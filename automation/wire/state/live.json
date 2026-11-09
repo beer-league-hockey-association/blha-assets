@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T05:00:45.588221Z",
+  "updated_at": "2026-11-09T05:15:31.928151Z",
   "seen": [
     {
       "key": "e94437984f11ff6a890b8a18",
@@ -18852,6 +18852,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T05:00:45.546731Z"
+    },
+    {
+      "key": "b8e6a744889d459751178ac0",
+      "url": "https://www.nhl.com/news/rookie-watch-ducks-judd-caulfield-flyers-oliver-bonk-earning-trust",
+      "fingerprint": "1de31a068105fa92",
+      "title_norm": "rookie watch: caulfield earning trust with ducks",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T05:15:31.481586Z"
+    },
+    {
+      "key": "0b8615d931f2919bfa267130",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-november-9-2026",
+      "fingerprint": "9a5925b428f3107a",
+      "title_norm": "nhl nationally televised games for week of nov. 9",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T05:15:31.675938Z"
+    },
+    {
+      "key": "4b598de87f80ffe1d96e131d",
+      "url": "https://www.sportsnet.ca/nhl/article/farabees-complete-game-continues-to-shine-as-flames-rally-past-flyers",
+      "fingerprint": "1eb5f9a6e0a85631",
+      "title_norm": "farabee's complete game continues to shine as flames rally past flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T05:15:31.898765Z"
     }
   ],
   "known_sources": [
