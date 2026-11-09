@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-08T23:30:36.043085Z",
+  "updated_at": "2026-11-09T00:00:46.907681Z",
   "seen": [
-    {
-      "key": "b1593033b7cdb4838f26fb79",
-      "url": "https://www.sportsnet.ca/nhl/article/cam-talbot-sets-goaltending-record-by-playing-for-ninth-team",
-      "fingerprint": "9e7d8598746568a2",
-      "title_norm": "cam talbot sets goaltending record by playing for ninth team",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T00:00:37.721388Z"
-    },
     {
       "key": "9064bbd7c53dae7ad57ec1d5",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/28c82d8a-9109-4284-991e-adbbcdbf0505",
@@ -18802,6 +18792,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-08T23:30:36.006816Z"
+    },
+    {
+      "key": "90d2972d51ed0435cfebe95c",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/be609dce-f9ec-438f-961f-a16ce9ed7109",
+      "fingerprint": "d1996fe5a647c724",
+      "title_norm": "flames on sportsnet: calgary vs. philadelphia",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:00:46.870961Z"
     }
   ],
   "known_sources": [
