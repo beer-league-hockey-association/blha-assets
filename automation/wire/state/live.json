@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T16:15:39.410027Z",
+  "updated_at": "2026-11-09T16:30:38.998346Z",
   "seen": [
     {
       "key": "367f6a3a05fbdce8c1372433",
@@ -18792,6 +18792,16 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-09T16:15:39.393496Z"
+    },
+    {
+      "key": "9494b91ce1f2185f239b13d0",
+      "url": "https://www.dailyfaceoff.com/players/news/jonathan-marchessault2/2399",
+      "fingerprint": "f638747a0de0115d",
+      "title_norm": "jonathan marchessault (nsh) — marchessault (lower-body) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T16:30:38.929501Z"
     }
   ],
   "known_sources": [
