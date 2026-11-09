@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T22:45:34.622625Z",
+  "updated_at": "2026-11-09T23:00:44.043501Z",
   "seen": [
-    {
-      "key": "77d21cb7addaaf61d6456015",
-      "url": "https://www.nhl.com/news/edmonton-oilers-san-jose-sharks-game-recap-october-10-2026",
-      "fingerprint": "2fc599292433286f",
-      "title_norm": "oilers defeat sharks despite celebrini goal in return",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-10T23:00:33.703374Z"
-    },
-    {
-      "key": "ec80b7a30cc1b885428b4dfe",
-      "url": "https://www.dailyfaceoff.com/players/news/emil-lilleberg/37940",
-      "fingerprint": "7101bf5288bcecfe",
-      "title_norm": "emil lilleberg (tbl) — lilleberg (undisclosed) has potential to return vs. new york on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T23:00:33.955724Z"
-    },
-    {
-      "key": "ec81dc5d4813550b4796271b",
-      "url": "https://www.sportsnet.ca/wp-content/uploads/2026/10/matthews-necas.jpg",
-      "fingerprint": "437808406d815976",
-      "title_norm": "saturday night hockey on sportsnet: toronto vs. colorado",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T23:00:34.245474Z"
-    },
-    {
-      "key": "3cc50ae8a9b324fb341d6ecc",
-      "url": "https://www.sportsnet.ca/wp-content/uploads/2026/01/Untitled-design-11.jpg",
-      "fingerprint": "25dfbb39f8271aca",
-      "title_norm": "saturday night hockey on sportsnet: montreal vs. detroit",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T23:00:34.481661Z"
-    },
     {
       "key": "6a7432bd529507c50cf537e1",
       "url": "https://www.sportsnet.ca/nhl/article/mcdavid-oilers-down-sharks-for-fourth-straight-win",
@@ -18742,6 +18702,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-09T22:45:34.513972Z"
+    },
+    {
+      "key": "a5c625be02efd30650a83264",
+      "url": "https://www.sportsnet.ca/nhl/video/kypreos-devils-statement-on-hellebuyck-insults-our-intelligence",
+      "fingerprint": "042fed84d80d65ea",
+      "title_norm": "kypreos: devils' statement on hellebuyck 'insults our intelligence'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T23:00:44.012882Z"
     }
   ],
   "known_sources": [
