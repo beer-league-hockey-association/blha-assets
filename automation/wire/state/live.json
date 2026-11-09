@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T17:45:33.024665Z",
+  "updated_at": "2026-11-09T18:00:48.301756Z",
   "seen": [
-    {
-      "key": "28195c5093b1521c495bf3d2",
-      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
-      "fingerprint": "aa15c9cff5b3d412",
-      "title_norm": "johnathan kovacevic (njd) — the devils have activated johnathan kovacevic (knee) from ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T17:45:34.888265Z"
-    },
     {
       "key": "701dc925f9afe2f85a38a116",
       "url": "https://www.dailyfaceoff.com/players/news/samuel-honzek/37733",
@@ -18812,6 +18802,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-09T17:45:32.954184Z"
+    },
+    {
+      "key": "b12a20335094c09ac650d26f",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
+      "fingerprint": "2028e2e41e3c44f7",
+      "title_norm": "conor garland (cbj) — garland (upper-body) is out vs. florida on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T18:00:47.959249Z"
+    },
+    {
+      "key": "b08c29366d266abf0a854b31",
+      "url": "https://theahl.com/news/griffins-shine-ahl-player-week",
+      "fingerprint": "9f6da20d8925dcb3",
+      "title_norm": "griffins' shine named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-09T18:00:48.218896Z"
     }
   ],
   "known_sources": [
