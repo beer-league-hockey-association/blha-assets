@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T23:00:44.043501Z",
+  "updated_at": "2026-11-09T23:30:39.026204Z",
   "seen": [
-    {
-      "key": "6a7432bd529507c50cf537e1",
-      "url": "https://www.sportsnet.ca/nhl/article/mcdavid-oilers-down-sharks-for-fourth-straight-win",
-      "fingerprint": "acaa284430bf8e5e",
-      "title_norm": "mcdavid, oilers down sharks for fourth straight win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-10T23:15:34.086825Z"
-    },
     {
       "key": "e5e210bf44f9bb567aa6ed4a",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-expect-zach-hyman-to-return-tuesday-vs-kings-babcock-says",
