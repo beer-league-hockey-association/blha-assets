@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T01:30:33.332354Z",
+  "updated_at": "2026-11-09T02:00:24.715119Z",
   "seen": [
     {
       "key": "8b381f87a410c6ebebc9b3fb",
@@ -18822,6 +18822,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T01:30:33.265830Z"
+    },
+    {
+      "key": "781894ee2395d08e8d9b35b5",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-scheifele-slaps-home-buzzer-beating-winner-vs-lightning",
+      "fingerprint": "7d5986af9657c21e",
+      "title_norm": "gotta see it: scheifele slaps home buzzer-beating winner vs. lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T02:00:24.683698Z"
     }
   ],
   "known_sources": [
