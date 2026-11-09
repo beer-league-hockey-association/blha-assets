@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T21:45:35.539098Z",
+  "updated_at": "2026-11-09T22:00:37.758618Z",
   "seen": [
-    {
-      "key": "9b9aa432f22f96d681a144e8",
-      "url": "https://www.dailyfaceoff.com/players/news/marcus-foligno/1689",
-      "fingerprint": "23afcc00dc23385b",
-      "title_norm": "marcus foligno (min) — foligno (undisclosed) is out vs. florida on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T21:45:35.935247Z"
-    },
-    {
-      "key": "23a02de6288101dac48b8ca9",
-      "url": "https://www.dailyfaceoff.com/players/news/zach-bogosian/53",
-      "fingerprint": "575195aa7e8699f0",
-      "title_norm": "zach bogosian (min) — bogosian (undisclosed) is out vs. florida on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T21:45:36.221415Z"
-    },
     {
       "key": "f1c83853115f45b7e73844d6",
       "url": "https://www.sportsnet.ca/nhl/article/why-maple-leafs-are-dressing-7-defencemen-vs-avalanche",
