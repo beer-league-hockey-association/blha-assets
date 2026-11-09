@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T21:00:46.983497Z",
+  "updated_at": "2026-11-09T21:15:35.055175Z",
   "seen": [
     {
       "key": "4d1a45896e67f00d34a55489",
@@ -18792,6 +18792,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-09T21:00:46.897253Z"
+    },
+    {
+      "key": "4f9f93dc50350b90f540ffdb",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-not-starting-against-jets-in-winnipeg-a-disappointment-scott-arniel-says",
+      "fingerprint": "779a9135ab033f40",
+      "title_norm": "arniel says hellebuyck 'just gave up on' jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T21:15:34.971308Z"
     }
   ],
   "known_sources": [
