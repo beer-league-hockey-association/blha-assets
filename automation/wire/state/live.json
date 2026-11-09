@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T00:00:46.907681Z",
+  "updated_at": "2026-11-09T00:15:34.743650Z",
   "seen": [
     {
       "key": "9064bbd7c53dae7ad57ec1d5",
@@ -18802,6 +18802,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T00:00:46.870961Z"
+    },
+    {
+      "key": "7cb722ecd11d23770028fb95",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "8a66c0a9b8533e1a",
+      "title_norm": "jack roslovic (tor) — roslovic (undisclosed) took part in warmups but was a late scratch on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:15:34.172277Z"
+    },
+    {
+      "key": "b15688567929839b292816b0",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "3c743de3a45d0b48",
+      "title_norm": "jack roslovic (tor) — roslovic (undisclosed) was a late scratch sunday vs. new jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:15:34.470647Z"
+    },
+    {
+      "key": "5e73d512b3fd1022b3808bf9",
+      "url": "https://www.sportsnet.ca/nhl/article/report-blackhawks-not-making-coaching-change-amid-slump",
+      "fingerprint": "1b48de348fc48877",
+      "title_norm": "report: blackhawks not making coaching change amid slump",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T00:15:34.717563Z"
     }
   ],
   "known_sources": [
