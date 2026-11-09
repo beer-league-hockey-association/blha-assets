@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T17:00:45.259022Z",
+  "updated_at": "2026-11-09T17:15:41.161479Z",
   "seen": [
-    {
-      "key": "05a589364b2d7b05846f1f4c",
-      "url": "https://www.dailyfaceoff.com/players/news/kailer-yamamoto/2796",
-      "fingerprint": "05c5aa4e9234fbe6",
-      "title_norm": "kailer yamamoto (uta) — yamamoto will make his season debut on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T17:15:32.997555Z"
-    },
     {
       "key": "28195c5093b1521c495bf3d2",
       "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
@@ -18732,6 +18722,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T16:45:38.036839Z"
+    },
+    {
+      "key": "dc74af86365aa2050fffb8b2",
+      "url": "https://www.nhl.com/news/topic/global-series/global-series-finland-blog-berkly-catton",
+      "fingerprint": "71ea5b42230cb427",
+      "title_norm": "global series finland blog: berkly catton",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T17:15:39.515354Z"
+    },
+    {
+      "key": "350084aa12d6385d11dffd49",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "ec58f2fd2d6a81ab",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) practiced in a regular jersey on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T17:15:39.829506Z"
+    },
+    {
+      "key": "688ac27fdee3ad003cae57fc",
+      "url": "https://www.nhl.com/news/new-jersey-devils-hellebuyck-will-not-start-against-winnipeg-jets",
+      "fingerprint": "117893d729deb02b",
+      "title_norm": "hellebuyck will not start for devils in winnipeg return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T17:15:40.276804Z"
+    },
+    {
+      "key": "94574ac93acd6446950ade13",
+      "url": "https://www.nhl.com/news/gavin-mckenna-watch-connor-mcdavid-edmonton-oilers-await-toronto-maple-leafs-for-rematch",
+      "fingerprint": "0081a041841f2647",
+      "title_norm": "mckenna watch: mcdavid, oilers rematch await leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T17:15:40.534954Z"
+    },
+    {
+      "key": "8764167b03da5bdf02eabbf7",
+      "url": "https://www.nhl.com/news/hockey-hall-of-fame-inductees-entertain-fans",
+      "fingerprint": "b7bfa9e8ff02b698",
+      "title_norm": "hockey hall of fame entertains at fan forum",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-09T17:15:40.552534Z"
+    },
+    {
+      "key": "3763828e9d8731a7817021f5",
+      "url": "https://www.dailyfaceoff.com/players/news/alberts-smits/38784",
+      "fingerprint": "e84645e3a01446d3",
+      "title_norm": "alberts smits (nyr) — smits is week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-09T17:15:40.834112Z"
     }
   ],
   "known_sources": [
