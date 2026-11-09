@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T01:00:39.616122Z",
+  "updated_at": "2026-11-09T01:30:33.332354Z",
   "seen": [
-    {
-      "key": "104a61ea620657a9ba2628f5",
-      "url": "https://www.dailyfaceoff.com/players/news/igor-shesterkin/25267",
-      "fingerprint": "275c8094bd09ad78",
-      "title_norm": "igor shesterkin (nyr) — shesterkin left friday's game with a lower-body injury and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-10T01:15:35.337363Z"
-    },
     {
       "key": "8b381f87a410c6ebebc9b3fb",
       "url": "https://www.nhl.com/news/seattle-kraken-detroit-red-wings-game-recap-october-9-2026",
@@ -18822,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T00:45:33.957342Z"
+    },
+    {
+      "key": "0650bedd5a0e19b411454275",
+      "url": "https://www.sportsnet.ca/nhl/article/lightnings-brayden-point-exits-early-vs-jets",
+      "fingerprint": "045da5879a4b052c",
+      "title_norm": "lightning's brayden point exits early vs. jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-09T01:30:33.265830Z"
     }
   ],
   "known_sources": [
