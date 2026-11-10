@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T03:30:37.978754Z",
+  "updated_at": "2026-11-10T03:45:36.277111Z",
   "seen": [
     {
       "key": "ec79b5171a2c6648d3969b5e",
@@ -18502,6 +18502,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T03:15:34.222295Z"
+    },
+    {
+      "key": "3afa3d137882b5171ca2fd73",
+      "url": "https://www.sportsnet.ca/nhl/video/jets-disappointed-as-devils-choose-to-sit-hellebuyck-in-return",
+      "fingerprint": "92cd70e1a6c8bd04",
+      "title_norm": "jets disappointed as devils choose to sit hellebuyck in return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T03:45:36.221256Z"
     }
   ],
   "known_sources": [
