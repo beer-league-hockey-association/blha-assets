@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T19:00:42.687383Z",
+  "updated_at": "2026-11-10T19:15:40.564369Z",
   "seen": [
     {
       "key": "42f6afa2f462e2424d0ff876",
@@ -18832,6 +18832,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T19:00:42.632647Z"
+    },
+    {
+      "key": "82bf733ff9f9d33ded4aa665",
+      "url": "https://www.dailyfaceoff.com/players/news/parker-wotherspoon/3836",
+      "fingerprint": "fe88681027d75f79",
+      "title_norm": "parker wotherspoon (vgk) — wotherspoon (lower-body) was a full participant in practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T19:15:39.972053Z"
+    },
+    {
+      "key": "3fa77280f8139cc68b1a09cd",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "57d4eac145c343d8",
+      "title_norm": "erik gustafsson (lak) — gustafsson (undisclosed) missed tuesday's morning skate.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T19:15:40.195534Z"
+    },
+    {
+      "key": "ede1635809b1ce98a31c8cb7",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-explains-why-he-wanted-to-leave-winnipeg",
+      "fingerprint": "9bf7bf09200fafe6",
+      "title_norm": "hellebuyck explains why he wanted to leave winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T19:15:40.494116Z"
     }
   ],
   "known_sources": [
