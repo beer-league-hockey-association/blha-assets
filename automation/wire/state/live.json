@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T04:15:37.653992Z",
+  "updated_at": "2026-11-10T04:30:40.145458Z",
   "seen": [
-    {
-      "key": "ebbfdecdaf81d275336cf108",
-      "url": "https://www.sportsnet.ca/nhl/article/tough-loss-of-tanev-tempers-maple-leafs-wild-comeback-vs-avalanche",
-      "fingerprint": "8ce6870187a61565",
-      "title_norm": "'tough' loss of tanev tempers maple leafs' wild comeback vs. avalanche",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T04:30:33.947465Z"
-    },
     {
       "key": "272f9d39286fa035957fa919",
       "url": "https://www.nhl.com/news/new-york-rangers-goalie-igor-shesterkin-out-for-season",
