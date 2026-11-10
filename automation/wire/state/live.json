@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T20:15:34.343246Z",
+  "updated_at": "2026-11-10T20:30:40.767148Z",
   "seen": [
-    {
-      "key": "96059a3c3bb570c70503b4c8",
-      "url": "https://www.nhl.com/news/ryan-craig-has-write-stuff-to-become-vegas-coach",
-      "fingerprint": "abf94859dd38c0b1",
-      "title_norm": "lessons learned, relationships formed on craig's road to nhl",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-11T20:15:37.074334Z"
-    },
-    {
-      "key": "e30e53ce1370199579e2a0d9",
-      "url": "https://www.sportsnet.ca/nhl/article/blankys-the-man-blankenburg-earns-maple-leafs-respect-the-hard-way",
-      "fingerprint": "2437d2a3fe8d00ea",
-      "title_norm": "'blanky's the man!': blankenburg earns maple leafs' respect the hard way",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T20:30:38.934254Z"
-    },
     {
       "key": "6c8444fb25bcc5b1da513690",
       "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
@@ -18882,6 +18862,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-10T20:15:34.275292Z"
+    },
+    {
+      "key": "a419e1af486ca3fc805a0682",
+      "url": "https://www.dailyfaceoff.com/players/news/noah-hanifin/2473",
+      "fingerprint": "95c9e3559c356f8b",
+      "title_norm": "noah hanifin (vgk) — hanifin (undisclosed) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T20:30:39.780003Z"
+    },
+    {
+      "key": "e2b3fbd5bcfa400354cf196c",
+      "url": "https://www.sportsnet.ca/nhl/article/barkov-marchand-could-return-to-florida-lineup-within-two-weeks-maurice",
+      "fingerprint": "3793ca445e06da36",
+      "title_norm": "barkov, marchand could return to florida lineup 'within two weeks': maurice",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T20:30:40.740694Z"
     }
   ],
   "known_sources": [
