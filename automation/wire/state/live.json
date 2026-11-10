@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T01:45:32.703367Z",
+  "updated_at": "2026-11-10T02:00:38.253880Z",
   "seen": [
-    {
-      "key": "dfdc1d9037f5f9b0986d1a49",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-among-teams-looking-at-flames-connor-zary",
-      "fingerprint": "7166af961e9ec71a",
-      "title_norm": "canucks among teams looking at flames' connor zary",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T01:45:34.810442Z"
-    },
     {
       "key": "6f4cf80fadf63e8d8b005703",
       "url": "https://www.nhl.com/news/carolina-hurricanes-chicago-blackhawks-game-recap-october-10-2026",
