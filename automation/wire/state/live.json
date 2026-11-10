@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T06:45:31.245239Z",
+  "updated_at": "2026-11-10T07:15:35.412898Z",
   "seen": [
     {
       "key": "5b51b44e71e08770c2a83326",
@@ -18552,6 +18552,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T06:45:31.221126Z"
+    },
+    {
+      "key": "08db619f8b2c39c64f351784",
+      "url": "https://www.sportsnet.ca/nhl/article/slow-start-dooms-canucks-in-loss-to-flyers",
+      "fingerprint": "737abc894debfa24",
+      "title_norm": "slow start dooms canucks in loss to flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T07:15:35.380818Z"
     }
   ],
   "known_sources": [
