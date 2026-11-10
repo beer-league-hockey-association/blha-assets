@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T05:30:37.782095Z",
+  "updated_at": "2026-11-10T05:45:29.124046Z",
   "seen": [
     {
       "key": "1be6f5f06ecfb0422b0580b2",
@@ -18512,6 +18512,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-10T05:30:37.696978Z"
+    },
+    {
+      "key": "ec760f594a642a82ce0ef027",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-vancouver-canucks-game-recap-november-9-2026",
+      "fingerprint": "2d0a9b7dd42548dd",
+      "title_norm": "woll, flyers hold off canucks, snap three-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T05:45:28.654095Z"
+    },
+    {
+      "key": "e976a0a940c06bb5f6c82f86",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-fall-to-flyers-as-late-rally-comes-up-short-in-sixth-straight-loss",
+      "fingerprint": "eb2ec50844724a98",
+      "title_norm": "canucks fall to flyers as late rally comes up short in sixth straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T05:45:28.869629Z"
+    },
+    {
+      "key": "2964b90656e0a12e79f10711",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-jake-evans-being-evaluated-after-suffering-injury-during-practice",
+      "fingerprint": "eb6675ac094fd33d",
+      "title_norm": "canadiens' jake evans being evaluated after suffering injury during practice",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T05:45:29.099394Z"
     }
   ],
   "known_sources": [
