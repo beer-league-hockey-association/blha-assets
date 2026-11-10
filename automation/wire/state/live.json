@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T02:00:38.253880Z",
+  "updated_at": "2026-11-10T02:15:35.225035Z",
   "seen": [
-    {
-      "key": "6f4cf80fadf63e8d8b005703",
-      "url": "https://www.nhl.com/news/carolina-hurricanes-chicago-blackhawks-game-recap-october-10-2026",
-      "fingerprint": "a2d7f2ac0da84060",
-      "title_norm": "hurricanes top blackhawks for fourth straight win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T02:00:41.632474Z"
-    },
-    {
-      "key": "0cd75455d538a6f6113e52b6",
-      "url": "https://www.nhl.com/news/dallas-stars-pittsburgh-penguins-game-recap-october-10-2026",
-      "fingerprint": "5e699a4da7efc599",
-      "title_norm": "penguins recover, defeat stars in shootout",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T02:15:30.512587Z"
-    },
-    {
-      "key": "7bc88e32ddba5ea4d303acf1",
-      "url": "https://www.nhl.com/news/toronto-maple-leafs-colorado-avalanche-game-recap-october-10-2026",
-      "fingerprint": "6c83b61bfa4a3429",
-      "title_norm": "nylander ties career high with five points, maple leafs cool off avalanche",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T02:15:30.784028Z"
-    },
     {
       "key": "c352613b04950b5fed0692ab",
       "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-dont-expect-connor-hellebuyck-to-rangers",
