@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T03:15:34.271344Z",
+  "updated_at": "2026-11-10T03:30:37.978754Z",
   "seen": [
-    {
-      "key": "937447a9c9068ea09be64faf",
-      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
-      "fingerprint": "f01cfb059f86c4f4",
-      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) left saturday's game vs. calgary and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T03:30:35.242794Z"
-    },
     {
       "key": "ec79b5171a2c6648d3969b5e",
       "url": "https://www.nhl.com/news/utah-mammoth-buffalo-sabres-game-recap-october-10-2026",
