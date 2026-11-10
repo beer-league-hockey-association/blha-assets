@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T17:15:42.689611Z",
+  "updated_at": "2026-11-10T17:30:46.323547Z",
   "seen": [
     {
       "key": "b2780648533d8bfcd9066578",
@@ -18732,6 +18732,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T17:15:42.620637Z"
+    },
+    {
+      "key": "2071a829be27beafc1d573b2",
+      "url": "https://www.nhl.com/news/2026-hockey-hall-of-fame-induction-speech-highlights",
+      "fingerprint": "5b2d0f8a72fc8ac3",
+      "title_norm": "2026 hall of fame induction speech highlights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T17:30:45.742937Z"
+    },
+    {
+      "key": "685df0b51bfcd144775d7177",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "7e4333a3dfdfa992",
+      "title_norm": "aleksander barkov (fla) — barkov (lower-body) is within two weeks of returning to the lineup.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:30:46.005545Z"
+    },
+    {
+      "key": "b815b2bad765e4947606c11a",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "99d9d818d97b1507",
+      "title_norm": "brad marchand (fla) — marchand (leg) is expected back within the next two weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:30:46.226881Z"
     }
   ],
   "known_sources": [
