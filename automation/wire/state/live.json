@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T19:15:40.564369Z",
+  "updated_at": "2026-11-10T19:30:36.207288Z",
   "seen": [
-    {
-      "key": "42f6afa2f462e2424d0ff876",
-      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
-      "fingerprint": "c5a04139f1b50c6e",
-      "title_norm": "zach hyman (edm) — hyman (upper-body) is expected to return on tuesday in los angeles.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T19:30:35.675907Z"
-    },
     {
       "key": "96059a3c3bb570c70503b4c8",
       "url": "https://www.nhl.com/news/ryan-craig-has-write-stuff-to-become-vegas-coach",
@@ -18862,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T19:15:40.494116Z"
+    },
+    {
+      "key": "6e6a089f47e7d0a9156a0d2f",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-claim-cameron-crotty-off-waivers-from-wild",
+      "fingerprint": "21ffc211165ca06e",
+      "title_norm": "canucks claim cameron crotty off waivers from wild",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T19:30:36.180456Z"
     }
   ],
   "known_sources": [
