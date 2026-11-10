@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T23:00:40.447553Z",
+  "updated_at": "2026-11-10T23:15:35.847962Z",
   "seen": [
     {
       "key": "c7dfeb5269007ab8de175098",
@@ -18902,6 +18902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T23:00:40.406203Z"
+    },
+    {
+      "key": "b77d82fc3792ec9cc97c63bd",
+      "url": "https://www.nhl.com/news/2026-nhl-global-series-finland-great-opportunity-for-jani-nyman-seattle-kraken",
+      "fingerprint": "bd56eaadc1b2ed6f",
+      "title_norm": "global series finland 'great opportunity' for nyman",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-10T23:15:35.793489Z"
     }
   ],
   "known_sources": [
