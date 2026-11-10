@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T01:00:46.140910Z",
+  "updated_at": "2026-11-10T01:15:40.398963Z",
   "seen": [
-    {
-      "key": "4ae539d85ea3f98e016dd714",
-      "url": "https://www.nhl.com/news/minnesota-wild-florida-panthers-game-recap-october-10-2026",
-      "fingerprint": "1af1b0ace0148883",
-      "title_norm": "kaprizov's 3 goals, assist power wild past panthers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T01:15:34.952684Z"
-    },
-    {
-      "key": "7cedad9c9cc84fd59221d3cd",
-      "url": "https://www.sportsnet.ca/nhl/article/abysmal-penalty-killing-continues-to-sink-canucks-not-sustainable",
-      "fingerprint": "90c94750648d6729",
-      "title_norm": "abysmal penalty killing continues to sink canucks: 'not sustainable'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T01:15:35.179072Z"
-    },
     {
       "key": "d1fefe8b39d1b56307c4fc84",
       "url": "https://www.sportsnet.ca/nhl/article/could-alexander-nikishin-return-to-hurricanes",
