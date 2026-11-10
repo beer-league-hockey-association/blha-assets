@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T17:00:47.293468Z",
+  "updated_at": "2026-11-10T17:15:42.689611Z",
   "seen": [
     {
       "key": "b2780648533d8bfcd9066578",
@@ -18682,6 +18682,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T17:00:47.253606Z"
+    },
+    {
+      "key": "49ef02f84aa4d8f1a540b17f",
+      "url": "https://www.dailyfaceoff.com/players/news/marco-kasper/36364",
+      "fingerprint": "83a79151c3658287",
+      "title_norm": "marco kasper (det) — kasper (upper-body) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:15:41.494243Z"
+    },
+    {
+      "key": "189aea19ecc02c0032ceed0b",
+      "url": "https://www.dailyfaceoff.com/players/news/cale-makar/2788",
+      "fingerprint": "3db8c404a6831729",
+      "title_norm": "cale makar (col) — makar (undisclosed) is expected to play vs. toronto on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:15:41.762225Z"
+    },
+    {
+      "key": "671863efc339c9c908557a32",
+      "url": "https://www.nhl.com/news/nikolaj-ehlers-global-series-finland-excited-to-see-family-represent-carolina-hurricanes",
+      "fingerprint": "f40c66388b4f7bea",
+      "title_norm": "global series finland 'easier' trip for ehlers family",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T17:15:42.002082Z"
+    },
+    {
+      "key": "909143757497da3628a77f57",
+      "url": "https://www.nhl.com/news/nhl-expands-media-rights-agreement-with-rtl-deutschland-for-free-to-air-coverage",
+      "fingerprint": "50987586a54f107d",
+      "title_norm": "nhl expands media rights deal with rtl deutschland",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T17:15:42.250115Z"
+    },
+    {
+      "key": "c83dc4e4d912c8751c3fc9b5",
+      "url": "https://www.dailyfaceoff.com/players/news/mason-appleton/4582",
+      "fingerprint": "81cdbe259f5d12d6",
+      "title_norm": "mason appleton (det) — appleton (undisclosed) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:15:42.620637Z"
     }
   ],
   "known_sources": [
