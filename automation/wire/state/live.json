@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T02:45:36.660183Z",
+  "updated_at": "2026-11-10T03:00:39.820689Z",
   "seen": [
-    {
-      "key": "dd7807db8bef534ec4418f03",
-      "url": "https://www.nhl.com/news/tampa-bay-lightning-new-york-islanders-game-recap-october-10-2026",
-      "fingerprint": "336a95cc43680829",
-      "title_norm": "hagel's hat trick lifts bolts past isles late",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T03:00:39.301943Z"
-    },
-    {
-      "key": "c73294221670a67c644b6582",
-      "url": "https://x.com/ahlbruins/status/2109095999172223060",
-      "fingerprint": "82294a28106c9ea5",
-      "title_norm": "zajicek credited with goal in bruins' win",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-11T03:00:39.514251Z"
-    },
     {
       "key": "c949bee70869cd018eaed75e",
       "url": "https://www.sportsnet.ca/nhl/article/fowler-flawless-for-canadiens-as-bolduc-nets-shootout-winner-against-red-wings",
@@ -18522,6 +18502,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T01:00:46.096954Z"
+    },
+    {
+      "key": "f726f24cb834aa405c919fe3",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/3d4e23b2-2e22-4d27-8824-9bce640cd8ba",
+      "fingerprint": "2948f7d2ed8ec279",
+      "title_norm": "monday night hockey on sportsnet: canucks vs. flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T03:00:39.779429Z"
     }
   ],
   "known_sources": [
