@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T04:00:36.776172Z",
+  "updated_at": "2026-11-10T04:15:37.653992Z",
   "seen": [
     {
       "key": "ebbfdecdaf81d275336cf108",
@@ -18512,6 +18512,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-10T04:00:36.714926Z"
+    },
+    {
+      "key": "78f13e0269c36d6388b2ea17",
+      "url": "https://www.nhl.com/news/new-york-rangers-edmonton-oilers-game-recap-november-9-2026",
+      "fingerprint": "ae095ae12af0f031",
+      "title_norm": "mcdavid pushes season-opening point streak to 19 in oilers win against rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T04:15:36.999004Z"
+    },
+    {
+      "key": "03fa36355d9e0c834886b248",
+      "url": "https://www.sportsnet.ca/nhl/article/draisaitl-scores-twice-as-oilers-stop-rolling-rangers-with-victory",
+      "fingerprint": "468b5c34a58e3281",
+      "title_norm": "draisaitl scores twice as oilers stop rolling rangers with victory",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T04:15:37.224702Z"
+    },
+    {
+      "key": "eaf99ecf0aeb4be8a4153640",
+      "url": "https://www.sportsnet.ca/nhl/article/how-class-of-2026-overcame-long-odds-to-reach-hockey-hall-of-fame",
+      "fingerprint": "50013dd34201d5b8",
+      "title_norm": "how class of 2026 overcame long odds to reach hockey hall of fame",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T04:15:37.412582Z"
+    },
+    {
+      "key": "130a0d380599b1d2772c56c9",
+      "url": "https://www.sportsnet.ca/nhl/article/mcdavids-historic-assist-streak-ends-in-oilers-win-over-rangers",
+      "fingerprint": "8e03deae36b9257c",
+      "title_norm": "mcdavid's historic assist streak ends in oilers' win over rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T04:15:37.430151Z"
     }
   ],
   "known_sources": [
