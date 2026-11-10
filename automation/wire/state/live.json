@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T05:45:29.124046Z",
+  "updated_at": "2026-11-10T06:30:38.790810Z",
   "seen": [
     {
       "key": "1be6f5f06ecfb0422b0580b2",
@@ -18542,6 +18542,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T05:45:29.099394Z"
+    },
+    {
+      "key": "bb992eba6057f8d74de24511",
+      "url": "https://www.nhl.com/news/new-york-islanders-san-jose-sharks-game-recap-november-9-2026",
+      "fingerprint": "1789fd658877194c",
+      "title_norm": "sharks win 8-round shootout to end 5-game slide",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T06:30:38.703074Z"
     }
   ],
   "known_sources": [
