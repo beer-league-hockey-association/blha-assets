@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T00:30:39.590713Z",
+  "updated_at": "2026-11-10T01:00:46.140910Z",
   "seen": [
-    {
-      "key": "681bc39f5253a26c8e1c205f",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chris-tanev-exits-vs-avalanche-with-upper-body-injury",
-      "fingerprint": "a721241a8b1c9da8",
-      "title_norm": "maple leafs' chris tanev exits vs. avalanche with upper-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T00:45:36.078889Z"
-    },
-    {
-      "key": "c38651aa46b5734b61580c14",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-play-to-babcocks-vision-in-meat-grinder-win-over-sharks",
-      "fingerprint": "10537bf6bf28ace8",
-      "title_norm": "oilers play to babcock's vision in meat-grinder win over sharks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T01:00:41.881773Z"
-    },
     {
       "key": "4ae539d85ea3f98e016dd714",
       "url": "https://www.nhl.com/news/minnesota-wild-florida-panthers-game-recap-october-10-2026",
@@ -18662,6 +18642,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-09T23:00:44.012882Z"
+    },
+    {
+      "key": "62dddaf0c61e039cba6f617a",
+      "url": "https://www.nhl.com/news/topic/fantasy/nhl-fantasy-hockey-waiver-wire-pickups-2026-2027-season",
+      "fingerprint": "de6f679acbfcdfa6",
+      "title_norm": "fantasy top 10 pickups for this week; new podcast",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T01:00:45.714857Z"
+    },
+    {
+      "key": "573dc2fe298c76c9fe050881",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/8e440888-dc8d-42bb-9a06-0892c0c45405",
+      "fingerprint": "f996ba09b46dcf51",
+      "title_norm": "monday night hockey on sportsnet: oilers vs. rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T01:00:46.096954Z"
     }
   ],
   "known_sources": [
