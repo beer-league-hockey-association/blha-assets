@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T20:00:41.165221Z",
+  "updated_at": "2026-11-10T20:15:34.343246Z",
   "seen": [
     {
       "key": "96059a3c3bb570c70503b4c8",
@@ -18872,6 +18872,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T20:00:41.128021Z"
+    },
+    {
+      "key": "7e594619ae0a24ef84e89579",
+      "url": "https://www.nhl.com/news/nhl-commissioner-gary-bettman-talks-possibility-of-russia-playing-in-next-world-cup-of-hockey",
+      "fingerprint": "9e0da52c0dd29c8c",
+      "title_norm": "bettman: russia playing in next world cup still tbd",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T20:15:34.275292Z"
     }
   ],
   "known_sources": [
