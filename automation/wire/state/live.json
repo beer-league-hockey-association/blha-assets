@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T15:30:35.533009Z",
+  "updated_at": "2026-11-10T16:00:43.413299Z",
   "seen": [
-    {
-      "key": "d5e8f77ec231acbdc98f3d04",
-      "url": "https://www.nhl.com/news/trophy-tracker-hart-sharks-macklin-celebrini-early-choice-as-nhl-mvp",
-      "fingerprint": "12e401f1b660644e",
-      "title_norm": "hart tracker: celebrini early-season favorite",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T16:00:40.117886Z"
-    },
-    {
-      "key": "6b921bf68419ac9219c2876d",
-      "url": "https://www.nhl.com/news/topic/short-shifts/chicago-blackhawks-moment-of-silence-for-bears-mike-ditka",
-      "fingerprint": "6c0cfd4c99e9ec03",
-      "title_norm": "blackhawks hold moment of silence for mike ditka",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T16:00:40.575524Z"
-    },
-    {
-      "key": "d3598dc6be1d214e12941dbe",
-      "url": "https://www.dailyfaceoff.com/players/news/cameron-crotty/28075",
-      "fingerprint": "5ceeed075db1b18c",
-      "title_norm": "cameron crotty (ott) — crotty (undisclosed) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T16:00:40.927906Z"
-    },
     {
       "key": "993a678d4f8263a852919b50",
       "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
@@ -18612,6 +18582,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T15:30:35.495832Z"
+    },
+    {
+      "key": "5935c81b6d7ccc914a0fb848",
+      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
+      "fingerprint": "c333941c739c8355",
+      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) will return vs. new jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:00:41.362204Z"
+    },
+    {
+      "key": "bca4a7efdb107b8fe7582509",
+      "url": "https://www.nhl.com/news/quinn-hughes-could-stay-with-minnesota-wild-past-trade-deadline-if-unsigned",
+      "fingerprint": "3df47c0eced22198",
+      "title_norm": "wild could keep hughes past trade deadline: guerin",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T16:00:41.779607Z"
+    },
+    {
+      "key": "67ad2688ae5978a5e745c595",
+      "url": "https://www.nhl.com/news/detroit-red-wings-interim-gm-shawn-horcoff-talks-dylan-larkin-simon-edvinsson",
+      "fingerprint": "1809f4ac4d0fa47c",
+      "title_norm": "wings 'status quo' with larkin, edvinsson: gm says",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T16:00:42.338725Z"
+    },
+    {
+      "key": "472fde77a8758f3192c7b83d",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-evans/4708",
+      "fingerprint": "9c1b56bb5b0a7de0",
+      "title_norm": "jake evans (mtl) — evans (hand) will be a game-time decision vs. minnesota on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:00:42.634477Z"
+    },
+    {
+      "key": "c44267b035df3c547cc17dce",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-anderson2/21932",
+      "fingerprint": "c68b4b0d8494cbb1",
+      "title_norm": "josh anderson (mtl) — anderson (personal) will return vs. minnesota on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:00:43.098348Z"
+    },
+    {
+      "key": "5767fe6c9c87b007f7a6313f",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-give-injury-updates-on-sissons-rielly-marchenko",
+      "fingerprint": "0e04a878a20dd8be",
+      "title_norm": "maple leafs give injury updates on sissons, rielly, marchenko",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:00:43.127083Z"
     }
   ],
   "known_sources": [
