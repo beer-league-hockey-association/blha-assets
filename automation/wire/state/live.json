@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T20:30:40.767148Z",
+  "updated_at": "2026-11-10T20:45:38.723232Z",
   "seen": [
-    {
-      "key": "6c8444fb25bcc5b1da513690",
-      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
-      "fingerprint": "01983a94fc7fd6db",
-      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will not play sunday vs. the kraken.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T20:45:30.681083Z"
-    },
     {
       "key": "3b664d1b67b0b6aa86c85ed2",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/dc0cd5d4-3848-4564-9648-ae5db1973580",
@@ -18882,6 +18872,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T20:30:40.740694Z"
+    },
+    {
+      "key": "ebd9a28670ddcafb6a1783af",
+      "url": "https://www.nhl.com/news/topic/global-series/chance-to-be-in-native-finland-with-carolina-hurricanes-a-bonus-for-juuso-valimaki",
+      "fingerprint": "cea5a3af15418b6b",
+      "title_norm": "being in finland with canes 'a bonus' for valimaki",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T20:45:38.188386Z"
+    },
+    {
+      "key": "326d2d836f5c100ec7ee9d84",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "eb713613e4b05319",
+      "title_norm": "erik gustafsson (lak) — gustafsson (undisclosed) is out vs. nashville and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T20:45:38.626622Z"
     }
   ],
   "known_sources": [
