@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T03:00:39.820689Z",
+  "updated_at": "2026-11-10T03:15:34.271344Z",
   "seen": [
-    {
-      "key": "c949bee70869cd018eaed75e",
-      "url": "https://www.sportsnet.ca/nhl/article/fowler-flawless-for-canadiens-as-bolduc-nets-shootout-winner-against-red-wings",
-      "fingerprint": "d6215bc3f0ac7f5a",
-      "title_norm": "fowler flawless for canadiens as bolduc nets shootout winner against red wings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T03:00:39.840515Z"
-    },
     {
       "key": "937447a9c9068ea09be64faf",
       "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
@@ -18512,6 +18502,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T03:00:39.779429Z"
+    },
+    {
+      "key": "7747c0b8d6961763209b0ac2",
+      "url": "https://www.sportsnet.ca/nhl/article/price-leads-2026-induction-class-into-hockey-hall-of-fame",
+      "fingerprint": "5bf710dd68dab55d",
+      "title_norm": "price leads 2026 induction class into hockey hall of fame",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T03:15:34.222295Z"
     }
   ],
   "known_sources": [
