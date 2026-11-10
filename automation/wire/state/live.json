@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-09T23:45:42.865981Z",
+  "updated_at": "2026-11-10T00:30:39.590713Z",
   "seen": [
-    {
-      "key": "7869cfae82c1229b27efabc9",
-      "url": "https://www.dailyfaceoff.com/players/news/oliver-ekman-larsson/1172",
-      "fingerprint": "dd529be3e87ee888",
-      "title_norm": "oliver ekman-larsson (tor) — ekman-larsson (undisclosed) will play vs. colorado on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T00:30:36.564559Z"
-    },
-    {
-      "key": "d46fac3b98e0f002e4bc427f",
-      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
-      "fingerprint": "91b458a03fe12ad0",
-      "title_norm": "chris tanev (tor) — tanev (upper-body) left saturday's game vs. colorado and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T00:30:36.830839Z"
-    },
     {
       "key": "681bc39f5253a26c8e1c205f",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chris-tanev-exits-vs-avalanche-with-upper-body-injury",
