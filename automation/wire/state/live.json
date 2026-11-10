@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T07:15:35.412898Z",
+  "updated_at": "2026-11-10T12:30:38.372653Z",
   "seen": [
-    {
-      "key": "5b51b44e71e08770c2a83326",
-      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-time-for-maple-leafs-to-shift-tavares-to-wing",
-      "fingerprint": "65ae32a266885467",
-      "title_norm": "sunday overreactions: time for maple leafs to shift tavares to wing",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T12:30:35.772492Z"
-    },
     {
       "key": "d5e8f77ec231acbdc98f3d04",
       "url": "https://www.nhl.com/news/trophy-tracker-hart-sharks-macklin-celebrini-early-choice-as-nhl-mvp",
