@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T17:30:46.323547Z",
+  "updated_at": "2026-11-10T17:45:40.351833Z",
   "seen": [
     {
       "key": "b2780648533d8bfcd9066578",
@@ -18762,6 +18762,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T17:30:46.226881Z"
+    },
+    {
+      "key": "61bb1e6db968ba39d023b008",
+      "url": "https://www.dailyfaceoff.com/players/news/alex-lyon/2873",
+      "fingerprint": "f8aee909a2c76841",
+      "title_norm": "alex lyon (buf) — lyon (upper-body) will travel with buffalo on their upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:45:39.948245Z"
+    },
+    {
+      "key": "c876654cccdc10dad3ae6f45",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-mailloux/30862",
+      "fingerprint": "b07a45dc9f2fd5aa",
+      "title_norm": "logan mailloux (stl) — mailloux (hand) will make his season debut vs. detroit on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:45:40.255144Z"
     }
   ],
   "known_sources": [
