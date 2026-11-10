@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T16:15:35.464806Z",
+  "updated_at": "2026-11-10T16:30:41.401931Z",
   "seen": [
-    {
-      "key": "7e94a267314cde2ed2c78a3e",
-      "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
-      "fingerprint": "05d9f6983fa16c13",
-      "title_norm": "ryan poehling (ana) — poehling (lower-body) left saturday's game vs. calgary and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T16:30:33.624964Z"
-    },
-    {
-      "key": "4614901189939478a8b0df39",
-      "url": "https://www.nhl.com/news/new-jersey-devils-evan-rodrigues-fined-for-high-sticking",
-      "fingerprint": "5fadcde5254bb391",
-      "title_norm": "rodrigues fined maximum of $5,000 for high-sticking",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T16:30:34.023542Z"
-    },
     {
       "key": "b2780648533d8bfcd9066578",
       "url": "https://www.dailyfaceoff.com/players/news/travis-konecny/2498",
@@ -18622,6 +18602,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T16:00:43.127083Z"
+    },
+    {
+      "key": "ba0b40ac5888b6647fa40624",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-josh-morrissey-to-return-vs-devils",
+      "fingerprint": "8bf9b23d9544f863",
+      "title_norm": "jets' josh morrissey to return vs. devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:30:40.967745Z"
+    },
+    {
+      "key": "922deee886e418e290939e4a",
+      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
+      "fingerprint": "6751bf0fc3a9288a",
+      "title_norm": "linus ullmark (ott) — ullmark (lower-body) will remain out vs. washington on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:30:41.345387Z"
     }
   ],
   "known_sources": [
