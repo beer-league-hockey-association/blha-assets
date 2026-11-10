@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T05:15:39.734072Z",
+  "updated_at": "2026-11-10T05:30:37.782095Z",
   "seen": [
-    {
-      "key": "c892f193d2c4916951f1ab9c",
-      "url": "https://www.nhl.com/news/los-angeles-kings-vegas-golden-knights-game-recap-october-10-2026",
-      "fingerprint": "2a22f1574c9229f7",
-      "title_norm": "marner scores in ot, golden knights edge kings",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T05:30:34.519580Z"
-    },
     {
       "key": "1be6f5f06ecfb0422b0580b2",
       "url": "https://www.sportsnet.ca/nhl/article/sunievs-first-goal-a-reminder-of-what-flames-rebuilding-season-is-about",
@@ -18512,6 +18502,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T05:15:39.678742Z"
+    },
+    {
+      "key": "02a61ed7473d8923a4261f60",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-9-2026",
+      "fingerprint": "ae6e5205b2b5310b",
+      "title_norm": "status report: smits week to week for rangers",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T05:30:37.696978Z"
     }
   ],
   "known_sources": [
