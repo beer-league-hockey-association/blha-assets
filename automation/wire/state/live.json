@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T20:45:38.723232Z",
+  "updated_at": "2026-11-10T22:00:41.530403Z",
   "seen": [
-    {
-      "key": "3b664d1b67b0b6aa86c85ed2",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/dc0cd5d4-3848-4564-9648-ae5db1973580",
-      "fingerprint": "b01900bfa6e91eed",
-      "title_norm": "canucks on sportsnet: vancouver vs. new york rangers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T22:00:39.036936Z"
-    },
     {
       "key": "006cf616515cf50a62aa8e05",
       "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
@@ -18892,6 +18882,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T20:45:38.626622Z"
+    },
+    {
+      "key": "71f98ee0572d07fdc1c69e54",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-van-riemsdyk/2383",
+      "fingerprint": "02e51a83aa275088",
+      "title_norm": "trevor van riemsdyk (pit) — van riemsdyk (lower-body) was a full participant in practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T22:00:40.919356Z"
+    },
+    {
+      "key": "96a5a600e5aea3ca9f867a5b",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-quarter-mark-report-few-bright-spots-in-dark-days-of-rebuild",
+      "fingerprint": "d6230b290a94f2c3",
+      "title_norm": "canucks quarter-mark report: few bright spots in dark days of rebuild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T22:00:41.476481Z"
     }
   ],
   "known_sources": [
