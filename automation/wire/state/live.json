@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T19:30:36.207288Z",
+  "updated_at": "2026-11-10T20:00:41.165221Z",
   "seen": [
     {
       "key": "96059a3c3bb570c70503b4c8",
@@ -18862,6 +18862,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T19:30:36.180456Z"
+    },
+    {
+      "key": "962a697a90bdcab09efcb8ad",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-nhlpa-to-discuss-salary-cap-options-in-new-year",
+      "fingerprint": "acb7f8f67979fb16",
+      "title_norm": "nhl, nhlpa to discuss salary-cap options in new year",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T20:00:41.128021Z"
     }
   ],
   "known_sources": [
