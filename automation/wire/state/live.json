@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T18:45:35.571747Z",
+  "updated_at": "2026-11-10T19:00:42.687383Z",
   "seen": [
-    {
-      "key": "9c17396ba4d8483df92ac19b",
-      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
-      "fingerprint": "ad9fd2593a366340",
-      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will be a game-time decision on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T19:00:35.509405Z"
-    },
-    {
-      "key": "527f4bb334e5155d436547b6",
-      "url": "https://www.nhl.com/news/blackhawks-connor-bedard-nearing-return-after-full-contact-practice",
-      "fingerprint": "ebf6f82593e07a59",
-      "title_norm": "bedard joins blackhawks for full-contact practice",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T19:00:35.853442Z"
-    },
     {
       "key": "42f6afa2f462e2424d0ff876",
       "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
@@ -18832,6 +18812,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T18:45:35.521819Z"
+    },
+    {
+      "key": "ac698906860064cec23e9de6",
+      "url": "https://theahl.com/news/road-to-the-hall-for-new-inductees-wound-through-ahl",
+      "fingerprint": "82c3d1df69a0228b",
+      "title_norm": "road to the hall for new inductees wound through ahl",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-10T19:00:42.378413Z"
+    },
+    {
+      "key": "72ffe771584378a3bd82a8c8",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "a46e0311d81417d0",
+      "title_norm": "troy terry (ana) — terry (hip) has a chance to return vs. nashville on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T19:00:42.632647Z"
     }
   ],
   "known_sources": [
