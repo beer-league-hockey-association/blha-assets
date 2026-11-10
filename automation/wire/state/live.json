@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T17:45:40.351833Z",
+  "updated_at": "2026-11-10T18:00:44.694111Z",
   "seen": [
     {
       "key": "b2780648533d8bfcd9066578",
@@ -18782,6 +18782,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T17:45:40.255144Z"
+    },
+    {
+      "key": "d45435ddadc11e7220a58622",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
+      "fingerprint": "e83c1a2f54361815",
+      "title_norm": "colton dach (edm) — dach (illness) returned to practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:00:43.181918Z"
+    },
+    {
+      "key": "8811e0ea0a5ad4a9d6cde04a",
+      "url": "https://www.dailyfaceoff.com/players/news/brennan-othmann/30831",
+      "fingerprint": "32c2f4930bfdb16f",
+      "title_norm": "brennan othmann (cgy) — othmann (upper-body) will return to the lineup vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:00:43.421479Z"
+    },
+    {
+      "key": "cec3430ee3ddca2f454141e8",
+      "url": "https://www.dailyfaceoff.com/players/news/marco-kasper/36364",
+      "fingerprint": "d3d83925e9052d85",
+      "title_norm": "marco kasper (det) — kasper (upper-body) has been activated from ir and will return in st. louis.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:00:43.777014Z"
+    },
+    {
+      "key": "202e30911807e890b08d2be2",
+      "url": "https://www.dailyfaceoff.com/players/news/mason-appleton/4582",
+      "fingerprint": "cac52e80cfe81f37",
+      "title_norm": "mason appleton (det) — appleton (undisclosed) has been activated from ir and will return vs. st. louis.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:00:43.827760Z"
+    },
+    {
+      "key": "3ce294c1b60b564f5341e45c",
+      "url": "https://www.sportsnet.ca/nhl/article/the-story-behind-jake-middletons-tribute-to-his-grandfathers-wartime-sacrifice",
+      "fingerprint": "c60a1e7428555370",
+      "title_norm": "the story behind jake middleton's tribute to his grandfather's wartime sacrifice",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:00:44.261598Z"
     }
   ],
   "known_sources": [
