@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T18:00:44.694111Z",
+  "updated_at": "2026-11-10T18:30:41.521420Z",
   "seen": [
-    {
-      "key": "b2780648533d8bfcd9066578",
-      "url": "https://www.dailyfaceoff.com/players/news/travis-konecny/2498",
-      "fingerprint": "699d399f62d60017",
-      "title_norm": "travis konecny (phi) — the flyers have placed travis konecny (lower-body) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T18:15:33.803605Z"
-    },
     {
       "key": "ede2fad7fba3cf7b867b3262",
       "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
