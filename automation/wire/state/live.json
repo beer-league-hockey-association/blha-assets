@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T16:30:41.401931Z",
+  "updated_at": "2026-11-10T16:45:40.478102Z",
   "seen": [
     {
       "key": "b2780648533d8bfcd9066578",
@@ -18622,6 +18622,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T16:30:41.345387Z"
+    },
+    {
+      "key": "e5bea9cd10a8a67a70958e7a",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-honzek/37733",
+      "fingerprint": "cfb959947f97cd52",
+      "title_norm": "samuel honzek (cgy) — honzek (lower-body) was a full participant in practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:45:39.180453Z"
+    },
+    {
+      "key": "c97b1693065c936681a99045",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "70ebfcab128888c5",
+      "title_norm": "jack roslovic (tor) — roslovic (lower-body) will be a game-time decision vs. colorado on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:45:39.449775Z"
+    },
+    {
+      "key": "4e8ebeee297f4ec4795af105",
+      "url": "https://www.sportsnet.ca/nhl/article/analyzing-whats-behind-alex-ovechkins-slow-start",
+      "fingerprint": "14d5a020a44f4837",
+      "title_norm": "analyzing what's behind alex ovechkin's slow start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:45:39.833952Z"
+    },
+    {
+      "key": "7773f4f920365e22adc363d4",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-mccarron/2156",
+      "fingerprint": "0a238a6739c3f0b1",
+      "title_norm": "michael mccarron (min) — mccarron (undisclosed) will be a game-time decision vs. montreal on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:45:40.131970Z"
+    },
+    {
+      "key": "1724dd0c2bfac43cf82d5ebf",
+      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
+      "fingerprint": "0c368d2a7a9e34fe",
+      "title_norm": "jared spurgeon (min) — spurgeon (undisclosed) will be activated off ir and return in montreal on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T16:45:40.145647Z"
     }
   ],
   "known_sources": [
