@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T18:30:41.521420Z",
+  "updated_at": "2026-11-10T18:45:35.571747Z",
   "seen": [
-    {
-      "key": "ede2fad7fba3cf7b867b3262",
-      "url": "https://www.dailyfaceoff.com/players/news/victor-olofsson/4718",
-      "fingerprint": "714812015b926a53",
-      "title_norm": "victor olofsson (vgk) — the golden knights have placed victor olofsson (undisclosed) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T18:45:33.463393Z"
-    },
     {
       "key": "9c17396ba4d8483df92ac19b",
       "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
@@ -18822,6 +18812,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T18:00:44.261598Z"
+    },
+    {
+      "key": "7503133fcaf6206d90f2a65f",
+      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
+      "fingerprint": "49fb129fa7b321eb",
+      "title_norm": "mats zuccarello (lak) — zuccarello (upper-body) will return vs. nashville on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:45:35.203173Z"
+    },
+    {
+      "key": "7c39fb3465d8dbebce4b0a51",
+      "url": "https://www.sportsnet.ca/nhl/video/devils-hellebuyck-understands-respects-decision-to-sit-vs-jets",
+      "fingerprint": "785047fa8e9a33a5",
+      "title_norm": "devils' hellebuyck understands, respects decision to sit vs. jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T18:45:35.521819Z"
     }
   ],
   "known_sources": [
