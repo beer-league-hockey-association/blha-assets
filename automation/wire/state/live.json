@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T03:45:36.277111Z",
+  "updated_at": "2026-11-10T04:00:36.776172Z",
   "seen": [
-    {
-      "key": "ec79b5171a2c6648d3969b5e",
-      "url": "https://www.nhl.com/news/utah-mammoth-buffalo-sabres-game-recap-october-10-2026",
-      "fingerprint": "7fe9c429a9fc614c",
-      "title_norm": "mammoth score four straight, pull away to defeat sabres",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-11T03:45:38.768190Z"
-    },
     {
       "key": "ebbfdecdaf81d275336cf108",
       "url": "https://www.sportsnet.ca/nhl/article/tough-loss-of-tanev-tempers-maple-leafs-wild-comeback-vs-avalanche",
@@ -18512,6 +18502,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T03:45:36.221256Z"
+    },
+    {
+      "key": "a0a09958ab640f31fcdd3599",
+      "url": "https://www.nhl.com/news/hockey-hall-of-fame-2026-inductees-walk-the-red-carpet",
+      "fingerprint": "315024f4cecdfbe8",
+      "title_norm": "stories flow about class of 2026 before hall induction",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-10T04:00:36.714926Z"
     }
   ],
   "known_sources": [
