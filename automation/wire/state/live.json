@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T12:30:38.372653Z",
+  "updated_at": "2026-11-10T14:45:33.960741Z",
   "seen": [
     {
       "key": "d5e8f77ec231acbdc98f3d04",
@@ -18552,6 +18552,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T07:15:35.380818Z"
+    },
+    {
+      "key": "7a643fa72b0a5adc8d585324",
+      "url": "https://www.sportsnet.ca/nhl/article/evander-kane-signs-with-khls-sibir-novosibirsk",
+      "fingerprint": "95cc1c0a387cb285",
+      "title_norm": "evander kane signs with khl's sibir novosibirsk",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T14:45:33.911265Z"
     }
   ],
   "known_sources": [
