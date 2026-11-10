@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T01:15:40.398963Z",
+  "updated_at": "2026-11-10T01:45:32.703367Z",
   "seen": [
-    {
-      "key": "d1fefe8b39d1b56307c4fc84",
-      "url": "https://www.sportsnet.ca/nhl/article/could-alexander-nikishin-return-to-hurricanes",
-      "fingerprint": "78f4074d18c256a6",
-      "title_norm": "could alexander nikishin return to hurricanes?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T01:30:40.030415Z"
-    },
-    {
-      "key": "0e734a3666df9fbbc337799f",
-      "url": "https://www.sportsnet.ca/nhl/article/kaprizov-has-hat-trick-wild-top-panthers-to-spoil-floridas-home-opener",
-      "fingerprint": "47236484282a727b",
-      "title_norm": "kaprizov has hat trick, wild top panthers to spoil florida's home opener",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T01:30:40.357233Z"
-    },
     {
       "key": "dfdc1d9037f5f9b0986d1a49",
       "url": "https://www.sportsnet.ca/nhl/article/canucks-among-teams-looking-at-flames-connor-zary",
