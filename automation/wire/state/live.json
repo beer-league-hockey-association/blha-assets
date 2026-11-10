@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T06:30:38.790810Z",
+  "updated_at": "2026-11-10T06:45:31.245239Z",
   "seen": [
-    {
-      "key": "1be6f5f06ecfb0422b0580b2",
-      "url": "https://www.sportsnet.ca/nhl/article/sunievs-first-goal-a-reminder-of-what-flames-rebuilding-season-is-about",
-      "fingerprint": "feb5e4fa992ba4e1",
-      "title_norm": "suniev's first goal a reminder of what flames' rebuilding season is about",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-11T06:30:41.926497Z"
-    },
     {
       "key": "5b51b44e71e08770c2a83326",
       "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-time-for-maple-leafs-to-shift-tavares-to-wing",
@@ -18552,6 +18542,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-10T06:30:38.703074Z"
+    },
+    {
+      "key": "f6c14e5e2980c9e41e4133e6",
+      "url": "https://www.sportsnet.ca/nhl/article/stenberg-leads-sharks-past-islanders-in-shootout-to-stop-5-game-skid",
+      "fingerprint": "9c876744138928ed",
+      "title_norm": "stenberg leads sharks past islanders in shootout to stop 5-game skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T06:45:31.221126Z"
     }
   ],
   "known_sources": [
