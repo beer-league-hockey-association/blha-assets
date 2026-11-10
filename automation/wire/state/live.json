@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T22:00:41.530403Z",
+  "updated_at": "2026-11-10T23:00:40.447553Z",
   "seen": [
-    {
-      "key": "006cf616515cf50a62aa8e05",
-      "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
-      "fingerprint": "c9254ea38df89b62",
-      "title_norm": "jordan staal (car) — staal (lower-body) will not play sunday in philadelphia.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-11T23:00:35.522229Z"
-    },
     {
       "key": "c7dfeb5269007ab8de175098",
       "url": "https://www.sportsnet.ca/nhl/article/kraken-overcame-alex-ovechkins-first-goal-of-season-to-beat-capitals",
@@ -18902,6 +18892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T22:00:41.476481Z"
+    },
+    {
+      "key": "f5b4c3f8f5bb8c97ebaa5458",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-to-explore-replay-assist-technology-for-officials",
+      "fingerprint": "2845611348db3199",
+      "title_norm": "nhl to explore replay assist technology for officials",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T23:00:40.406203Z"
     }
   ],
   "known_sources": [
