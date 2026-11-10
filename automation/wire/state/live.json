@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T16:45:40.478102Z",
+  "updated_at": "2026-11-10T17:00:47.293468Z",
   "seen": [
     {
       "key": "b2780648533d8bfcd9066578",
@@ -18672,6 +18672,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-10T16:45:40.145647Z"
+    },
+    {
+      "key": "1a57c1cadd3f5df9f2a6c0b4",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-tanev-says-he-wants-to-play-more",
+      "fingerprint": "f0abd50d78300d73",
+      "title_norm": "maple leafs' tanev says he wants to play more",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T17:00:47.253606Z"
     }
   ],
   "known_sources": [
