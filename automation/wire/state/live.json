@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T14:45:33.960741Z",
+  "updated_at": "2026-11-10T15:30:35.533009Z",
   "seen": [
     {
       "key": "d5e8f77ec231acbdc98f3d04",
@@ -18562,6 +18562,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-10T14:45:33.911265Z"
+    },
+    {
+      "key": "32d8863f82034fea6722f515",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-rielly/1935",
+      "fingerprint": "d970a4437421088c",
+      "title_norm": "morgan rielly (tor) — rielly (lower-body) is still considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T15:30:34.477817Z"
+    },
+    {
+      "key": "66edf4320e38dc6594bb512e",
+      "url": "https://www.dailyfaceoff.com/players/news/brayden-point/2456",
+      "fingerprint": "4f962e590bcaddd6",
+      "title_norm": "brayden point (tbl) — point (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T15:30:34.764867Z"
+    },
+    {
+      "key": "c83c40e398075116da5402b5",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-sissons/2030",
+      "fingerprint": "c374460fd7853a84",
+      "title_norm": "colton sissons (tor) — sissons (lower-body) is out week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-10T15:30:34.946551Z"
+    },
+    {
+      "key": "39187e126e2387319dd3fb6f",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-send-vinni-lettieri-to-marlies-recall-ryan-tverberg",
+      "fingerprint": "04b60329a2e70dd4",
+      "title_norm": "maple leafs send vinni lettieri to marlies, recall ryan tverberg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T15:30:35.235296Z"
+    },
+    {
+      "key": "3f64cdec2b319936aacc1801",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-recall-goalie-jackson-parsons-from-ahl-belleville",
+      "fingerprint": "35f81a830c4db42d",
+      "title_norm": "senators recall goalie jackson parsons from ahl belleville",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-10T15:30:35.495832Z"
     }
   ],
   "known_sources": [
