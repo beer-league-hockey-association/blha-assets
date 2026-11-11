@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T15:45:39.195116Z",
+  "updated_at": "2026-11-11T16:05:17.583865Z",
   "seen": [
     {
       "key": "9cf77b402fc8f81b82f1b298",
@@ -19132,6 +19132,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T15:30:49.529152Z"
+    },
+    {
+      "key": "fcde38a94184b0af8ea7f5bd",
+      "url": "https://www.dailyfaceoff.com/players/news/louis-crevier/29897",
+      "fingerprint": "6fe8b2a622bbf753",
+      "title_norm": "louis crevier (buf) — crevier (undisclosed) will be a game-time decision vs. tampa bay on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T16:05:17.275443Z"
+    },
+    {
+      "key": "e8f5d368e185d9e4f94901e2",
+      "url": "https://www.sportsnet.ca/nhl/article/briere-says-flyers-have-no-plan-to-trade-michkov",
+      "fingerprint": "31704c357b9be2bb",
+      "title_norm": "briere says flyers have no plan to trade michkov",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T16:05:17.547891Z"
     }
   ],
   "known_sources": [
