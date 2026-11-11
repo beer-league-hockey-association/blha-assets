@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T00:45:35.821743Z",
+  "updated_at": "2026-11-11T01:15:35.008350Z",
   "seen": [
-    {
-      "key": "6d0a1761b04023b45cfdb982",
-      "url": "https://www.nhl.com/news/vancouver-canucks-new-york-rangers-game-recap-october-11-2026",
-      "fingerprint": "9bc6efc82a7ce728",
-      "title_norm": "garand makes 19 saves, rangers defeat canucks in first game without shesterkin",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-12T01:00:40.919273Z"
-    },
     {
       "key": "6fb68d6a95bebafe5f896a09",
       "url": "https://www.sportsnet.ca/nhl/article/canucks-sunk-by-three-third-period-goals-in-loss-to-rangers",
