@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T04:00:41.674635Z",
+  "updated_at": "2026-11-11T04:15:35.671724Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19082,6 +19082,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T03:45:36.441523Z"
+    },
+    {
+      "key": "76fb9fd12642dcb5f237a337",
+      "url": "https://www.nhl.com/news/detroit-red-wings-st-louis-blues-game-recap-november-10-2026",
+      "fingerprint": "7dab293d1e01d26d",
+      "title_norm": "hofer makes 30 saves, blues hand wings 4th loss in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T04:15:35.314358Z"
+    },
+    {
+      "key": "e00a0b250038509d8ee99ccc",
+      "url": "https://www.sportsnet.ca/nhl/video/he-deserves-that-st-louis-reflects-on-special-pre-game-ceremony-for-price",
+      "fingerprint": "a05eaa5c04b8d870",
+      "title_norm": "'he deserves that': st. louis reflects on special pre-game ceremony for price",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T04:15:35.614584Z"
     }
   ],
   "known_sources": [
