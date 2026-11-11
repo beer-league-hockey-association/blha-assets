@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T23:00:42.912781Z",
+  "updated_at": "2026-11-11T23:15:43.902745Z",
   "seen": [
-    {
-      "key": "528ad3d4c1bb69dfd25db072",
-      "url": "https://www.nhl.com/news/matt-duchene-has-surgery-will-be-out-3-months-for-dallas",
-      "fingerprint": "8b477621f3fa7908",
-      "title_norm": "duchene has surgery, will be out 3 months for stars",
-      "channel": "breaking-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-12T23:00:43.249216Z"
-    },
     {
       "key": "cf2c5d2b42cba2271f6f7999",
       "url": "https://www.dailyfaceoff.com/players/news/parker-wotherspoon/3836",
