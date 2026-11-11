@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T20:15:43.702822Z",
+  "updated_at": "2026-11-11T21:00:44.948466Z",
   "seen": [
     {
       "key": "cc23c00ae47c55a3ee7b9d51",
@@ -19022,6 +19022,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T19:45:32.370513Z"
+    },
+    {
+      "key": "27d66eb7e85d180596e61645",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-doughty/744",
+      "fingerprint": "590a7e9f82972380",
+      "title_norm": "drew doughty (lak) — doughty (lower-body) missed practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T21:00:44.330314Z"
+    },
+    {
+      "key": "dcce52a71f26f0b987a59b7f",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-caufield-questions-late-slashing-call-maybe-they-should-have-to-answer",
+      "fingerprint": "ca7f2f43763eee36",
+      "title_norm": "canadiens' caufield questions late slashing call: 'maybe they should have to answer'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T21:00:44.911622Z"
     }
   ],
   "known_sources": [
