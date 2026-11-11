@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T19:30:39.613820Z",
+  "updated_at": "2026-11-11T19:45:32.466705Z",
   "seen": [
     {
       "key": "bbb8c3224243083f0e060687",
@@ -19042,6 +19042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T19:30:39.491663Z"
+    },
+    {
+      "key": "4f53f03fea0bf28a58538fab",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "77c109dd0e5a17f8",
+      "title_norm": "dylan guenther (uta) — guenther (maintenance) will be a game-time decision in vegas on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T19:45:32.370513Z"
     }
   ],
   "known_sources": [
