@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T16:46:39.995726Z",
+  "updated_at": "2026-11-11T17:01:06.878314Z",
   "seen": [
-    {
-      "key": "559a3cee78aabb16dbaca9ba",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/ee61d77c-9531-491d-bf23-309a05617d67",
-      "fingerprint": "c9ab621773a942ba",
-      "title_norm": "nhl on sportsnet: sabres vs. panthers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T17:00:41.176859Z"
-    },
     {
       "key": "a196d4e7f4aabd2cb0d1b42a",
       "url": "https://www.nhl.com/news/topic/3-stars/matthews-oettinger-lafreniere-named-nhl-3-stars-of-week-october-12-2026",
@@ -19062,6 +19052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T16:46:39.946447Z"
+    },
+    {
+      "key": "b1b2742c4899acce83067daf",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "77171cb226476f9d",
+      "title_norm": "bowen byram (chi) — byram (upper-body) is practicing in a non-contact jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T17:01:06.783430Z"
     }
   ],
   "known_sources": [
