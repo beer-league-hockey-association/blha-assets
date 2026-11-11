@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T22:21:37.108711Z",
+  "updated_at": "2026-11-11T22:45:37.452658Z",
   "seen": [
     {
       "key": "78349413e9152a778fa33e21",
@@ -19072,6 +19072,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T22:21:37.042154Z"
+    },
+    {
+      "key": "a7df2e3f1a27e3a690eac2c8",
+      "url": "https://www.dailyfaceoff.com/players/news/anthony-mantha/2151",
+      "fingerprint": "cf283b17b402c0cc",
+      "title_norm": "anthony mantha (njd) — mantha (throat) has been placed on ltir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T22:45:37.354316Z"
     }
   ],
   "known_sources": [
