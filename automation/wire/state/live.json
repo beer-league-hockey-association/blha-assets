@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T17:01:06.878314Z",
+  "updated_at": "2026-11-11T17:15:35.663244Z",
   "seen": [
     {
       "key": "a196d4e7f4aabd2cb0d1b42a",
@@ -19062,6 +19062,86 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T17:01:06.783430Z"
+    },
+    {
+      "key": "8350b74290685217bd9df9d5",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-11-2026",
+      "fingerprint": "9fb1e0e9a4ad93fc",
+      "title_norm": "on tap: veterans appreciation doubleheader on tnt",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:34.559279Z"
+    },
+    {
+      "key": "eb80e7ef690850578b37c647",
+      "url": "https://www.nhl.com/news/topic/global-series/seattle-kraken-prepared-for-two-hard-games-against-carolina-hurricanes-in-finland",
+      "fingerprint": "15f640cfda14b20b",
+      "title_norm": "kraken set for 2 'hard games' vs. canes in finland",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:34.811770Z"
+    },
+    {
+      "key": "a3faba58727b32a4c1567110",
+      "url": "https://www.nhl.com/news/trevor-connelly-thriving-as-rookie-with-vegas-golden-knights",
+      "fingerprint": "f27f937aed05d742",
+      "title_norm": "connelly thriving in 1st season with golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:35.008996Z"
+    },
+    {
+      "key": "af757fe0b2504dd1f0394bb0",
+      "url": "https://www.nhl.com/news/colorado-avalanche-seeking-road-forward-on-four-game-road-trip",
+      "fingerprint": "7b57ae4047237e44",
+      "title_norm": "avalanche seeking road forward on 4-game trip",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:35.020051Z"
+    },
+    {
+      "key": "cb129c329f802b6b4b8dcaef",
+      "url": "https://www.nhl.com/news/devin-cooley-in-spotlight-for-post-game-interviews-with-calgary-flames",
+      "fingerprint": "4f9599d3f27136c7",
+      "title_norm": "cooley in spotlight for thought-provoking interviews",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:35.031492Z"
+    },
+    {
+      "key": "7a720fd2b3a02331005383b4",
+      "url": "https://www.nhl.com/news/nhl-announces-open-practices-for-global-series-germany",
+      "fingerprint": "7e472072f0d1b392",
+      "title_norm": "nhl announces open practices for global series germany",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:35.045573Z"
+    },
+    {
+      "key": "3ba428095bab988b8c151694",
+      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-global-series-finland-carolina-hurricanes-seattle-kraken-2026",
+      "fingerprint": "5a342d322d1a91aa",
+      "title_norm": "key edge stats for 2026 nhl global series finland",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:15:35.056826Z"
+    },
+    {
+      "key": "233e65bcfd4afb837b64a5bf",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-cousins/1893",
+      "fingerprint": "628a7fb5116e2abd",
+      "title_norm": "nick cousins (ott) — cousins (undisclosed) will be out for at least the next 7-10 days.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T17:15:35.415264Z"
     }
   ],
   "known_sources": [
