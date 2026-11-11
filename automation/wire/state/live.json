@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T04:15:35.671724Z",
+  "updated_at": "2026-11-11T04:30:32.909033Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19102,6 +19102,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T04:15:35.614584Z"
+    },
+    {
+      "key": "81b523035fb91178605b011b",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-fans-give-carey-price-a-heros-welcome-as-goalie-enters-ring-of-honour",
+      "fingerprint": "cf0c209b51256b06",
+      "title_norm": "canadiens fans give carey price a hero's welcome as goalie enters ring of honour",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T04:30:32.666720Z"
+    },
+    {
+      "key": "1704d7aa84658ddc70c22cc7",
+      "url": "https://www.sportsnet.ca/nhl/video/youve-given-me-a-home-price-thanks-canadiens-fans-after-hall-of-fame-nod",
+      "fingerprint": "4bc8a6641aae6d75",
+      "title_norm": "'you've given me a home': price thanks canadiens fans after hall of fame nod",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T04:30:32.866056Z"
     }
   ],
   "known_sources": [
