@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T09:15:45.744894Z",
+  "updated_at": "2026-11-11T10:27:38.623708Z",
   "seen": [
     {
       "key": "bc7ea2c535d3a4b68776b913",
@@ -19212,6 +19212,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T09:15:45.691654Z"
+    },
+    {
+      "key": "c8624ced8b54056b32a5253b",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/BUY-LOW-4-Fantasy-Hockey-Trade-Targets--Boldy--Miller--Guenther--Byfield-e3s6mdh",
+      "fingerprint": "270af3bb8f0ae649",
+      "title_norm": "buy low: 4 fantasy hockey trade targets | boldy, miller, guenther & byfield",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-11T10:27:38.595263Z"
     }
   ],
   "known_sources": [
