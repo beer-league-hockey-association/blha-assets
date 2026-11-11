@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T10:27:38.623708Z",
+  "updated_at": "2026-11-11T11:15:32.830099Z",
   "seen": [
-    {
-      "key": "bc7ea2c535d3a4b68776b913",
-      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-jordan-staal-out-vs-flyers-with-lower-body-injury",
-      "fingerprint": "227fa9dfad76b537",
-      "title_norm": "hurricanes' jordan staal misses game vs. flyers with lower-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T11:00:45.404769Z"
-    },
     {
       "key": "1a1c6bf7ffaf7d60287fc9d0",
       "url": "https://www.sportsnet.ca/nhl/longform/an-oral-history-of-matthews-historic-four-goal-debut-one-of-those-nights",
