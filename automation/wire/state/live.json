@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T23:15:43.902745Z",
+  "updated_at": "2026-11-11T23:30:38.313787Z",
   "seen": [
     {
       "key": "cf2c5d2b42cba2271f6f7999",
@@ -19062,6 +19062,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T22:45:37.354316Z"
+    },
+    {
+      "key": "44624cf6c856e6f211cd15fd",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-gm-kyle-davidson-defends-coach-jeff-blashill-amid-slow-start",
+      "fingerprint": "174691578b61c82a",
+      "title_norm": "blackhawks gm kyle davidson defends coach jeff blashill amid slow start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T23:30:38.289652Z"
     }
   ],
   "known_sources": [
