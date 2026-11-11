@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T06:30:33.009449Z",
+  "updated_at": "2026-11-11T06:45:42.630148Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19202,6 +19202,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T06:30:32.971329Z"
+    },
+    {
+      "key": "f72baf70a1b61dfdea3f22b3",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-predators-saros-records-28th-career-shutout-in-win-over-kings",
+      "fingerprint": "e458cfd807412661",
+      "title_norm": "nhl roundup: predators' saros records 28th career shutout in win over kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T06:45:42.578949Z"
     }
   ],
   "known_sources": [
