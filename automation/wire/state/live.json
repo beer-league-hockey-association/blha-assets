@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T02:30:40.518801Z",
+  "updated_at": "2026-11-11T02:55:50.338358Z",
   "seen": [
     {
       "key": "eabd5687d42e4f084c84844f",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T02:30:40.462055Z"
+    },
+    {
+      "key": "66605694b5a27143a312fced",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-says-concerns-for-family-uncertain-career-path-led-to-winnipeg-jets-trade",
+      "fingerprint": "006e79fe7369a06b",
+      "title_norm": "hellebuyck explains why he asked out of winnipeg",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T02:55:50.211432Z"
     }
   ],
   "known_sources": [
