@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T03:15:35.362821Z",
+  "updated_at": "2026-11-11T03:30:39.729556Z",
   "seen": [
-    {
-      "key": "eabd5687d42e4f084c84844f",
-      "url": "https://www.sportsnet.ca/nhl/article/slap-in-the-face-canucks-outworked-overmatched-in-latest-road-trip-loss",
-      "fingerprint": "c01ddb3cab082166",
-      "title_norm": "'slap in the face': canucks outworked, overmatched in latest road-trip loss",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T03:15:41.334179Z"
-    },
     {
       "key": "4d8e7d956734f6a98ce4da98",
       "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-october-12-2026",
@@ -19062,6 +19052,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T03:15:35.305260Z"
+    },
+    {
+      "key": "14ec33b331d94728c1e450d3",
+      "url": "https://www.sportsnet.ca/nhl/article/mercer-scores-twice-as-jets-beat-hellebuyck-less-devils",
+      "fingerprint": "47da73962dbdc5fe",
+      "title_norm": "mercer scores twice as jets beat hellebuyck-less devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T03:30:39.418466Z"
+    },
+    {
+      "key": "0818915ef5f6c069f0ccfed4",
+      "url": "https://www.sportsnet.ca/nhl/video/mercer-on-volume-of-jets-crowd-vs-devils-i-was-pumped-to-hear-it",
+      "fingerprint": "da41a5ffcdc3ba54",
+      "title_norm": "mercer on volume of jets' crowd vs. devils: 'i was pumped to hear it'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T03:30:39.671660Z"
     }
   ],
   "known_sources": [
