@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T03:30:39.729556Z",
+  "updated_at": "2026-11-11T03:45:36.498988Z",
   "seen": [
     {
       "key": "4d8e7d956734f6a98ce4da98",
@@ -19072,6 +19072,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T03:30:39.671660Z"
+    },
+    {
+      "key": "6d99b68e49242421b6495001",
+      "url": "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-recap-november-10-2026",
+      "fingerprint": "94bc8ce204e008f4",
+      "title_norm": "bennett scores twice, florida holds off columbus",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T03:45:35.866514Z"
+    },
+    {
+      "key": "c8fcb550b1d116f2997f4f67",
+      "url": "https://www.nhl.com/news/minnesota-wild-montreal-canadiens-game-recap-november-10-2026",
+      "fingerprint": "b747874d8e0b047f",
+      "title_norm": "kaprizov, wild recover against canadiens in ot, push point streak to nine",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T03:45:36.161788Z"
+    },
+    {
+      "key": "a6621ff29c21205d1a45852f",
+      "url": "https://www.sportsnet.ca/nhl/video/hiller-on-maple-leafs-challenges-i-dont-want-to-make-excuses",
+      "fingerprint": "c6706cd15e7cd5aa",
+      "title_norm": "hiller on maple leafs' challenges: 'i don't want to make excuses'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T03:45:36.441523Z"
     }
   ],
   "known_sources": [
