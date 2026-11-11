@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T18:30:35.390467Z",
+  "updated_at": "2026-11-11T18:45:38.797983Z",
   "seen": [
-    {
-      "key": "7259e10a80d17937b4017475",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
-      "fingerprint": "df30521f0a22a0e0",
-      "title_norm": "rasmus dahlin (buf) — dahlin (upper-body) left monday's game vs. florida and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T18:45:34.211448Z"
-    },
-    {
-      "key": "ee8ee39eb36478127e50470e",
-      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
-      "fingerprint": "2ab379721318784e",
-      "title_norm": "chris tanev (tor) — tanev (upper-body) has been placed on ir retroactive to october 10th.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T18:45:35.076864Z"
-    },
     {
       "key": "11452a6fa6b5383219a85ca9",
       "url": "https://www.sportsnet.ca/nhl/article/sabres-rasmus-dahlin-exits-game-against-panthers-with-upper-body-injury",
@@ -19052,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T18:30:35.324429Z"
+    },
+    {
+      "key": "e18fe6485243bce517b24015",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
+      "fingerprint": "80dca818fb152bc7",
+      "title_norm": "rasmus ristolainen (phi) — ristolainen (upper body) will be a game-time decision on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T18:45:38.689660Z"
     }
   ],
   "known_sources": [
