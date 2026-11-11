@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T04:30:32.909033Z",
+  "updated_at": "2026-11-11T05:15:30.868972Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19122,6 +19122,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T04:30:32.866056Z"
+    },
+    {
+      "key": "f6c2ca63a1f91e7294f57853",
+      "url": "https://www.nhl.com/news/topic/global-series/carolina-hurricanes-seattle-kraken-global-series-finland-perfect-time-for-taylor-hall-1000th-game",
+      "fingerprint": "e289eeffbf8781bb",
+      "title_norm": "hurricanes' hall goes global for 1,000th nhl game",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T05:15:30.560630Z"
+    },
+    {
+      "key": "817104deebaaac7a02a9a3d6",
+      "url": "https://www.sportsnet.ca/nhl/article/new-look-kadri-line-builds-momentum-in-avalanches-win-over-maple-leafs",
+      "fingerprint": "812a32f4f3f303f7",
+      "title_norm": "new-look kadri line builds momentum in avalanche's win over maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T05:15:30.831349Z"
     }
   ],
   "known_sources": [
