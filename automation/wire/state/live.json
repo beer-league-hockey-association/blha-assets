@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T06:15:36.023653Z",
+  "updated_at": "2026-11-11T06:30:33.009449Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19172,6 +19172,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T06:15:35.921849Z"
+    },
+    {
+      "key": "615d6f58ed4fc872e7126a0d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-fall-to-wild-in-ot-as-kaprizov-scores-winner",
+      "fingerprint": "09f1c68be9888fa3",
+      "title_norm": "st. louis says wild's hughes 'sold' broken stick as late penalty sinks canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T06:30:32.517972Z"
+    },
+    {
+      "key": "b72928d141798f960ee758eb",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-cousins-exits-after-big-hit-from-capitals-chychrun",
+      "fingerprint": "88323ad26e4098ff",
+      "title_norm": "senators' cousins exits after big hit from capitals' chychrun",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T06:30:32.728066Z"
+    },
+    {
+      "key": "6013ad574ba69bd01bd07298",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chayka-understands-tanevs-reaction-to-load-management",
+      "fingerprint": "bab219a89b6ed82f",
+      "title_norm": "maple leafs' chayka understands tanev's reaction to load management",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T06:30:32.971329Z"
     }
   ],
   "known_sources": [
