@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T05:15:30.868972Z",
+  "updated_at": "2026-11-11T05:30:33.381129Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19142,6 +19142,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T05:15:30.831349Z"
+    },
+    {
+      "key": "55de24253b73e0168240fbad",
+      "url": "https://www.sportsnet.ca/nhl/article/price-tribute-should-leave-lasting-impression-on-young-canadiens",
+      "fingerprint": "3d17e8dcb1899be2",
+      "title_norm": "price tribute should leave lasting impression on young canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T05:30:33.346987Z"
     }
   ],
   "known_sources": [
