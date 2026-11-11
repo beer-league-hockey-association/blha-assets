@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T21:00:44.948466Z",
+  "updated_at": "2026-11-11T21:15:40.369067Z",
   "seen": [
     {
       "key": "cc23c00ae47c55a3ee7b9d51",
@@ -19042,6 +19042,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T21:00:44.911622Z"
+    },
+    {
+      "key": "309e564345585abf14d3825e",
+      "url": "https://www.nhl.com/news/matvei-michkov-happy-with-philadelphia-flyers-amid-reports",
+      "fingerprint": "d0bcc578ae7b2143",
+      "title_norm": "michkov happy with flyers amid reports he wants out",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T21:15:39.768733Z"
+    },
+    {
+      "key": "5e72a920204f1bcbee22cc10",
+      "url": "https://www.nhl.com/news/topic/global-series/carolina-hurricanes-sebastian-aho-back-in-finland-2026-nhl-global-series",
+      "fingerprint": "71b8b14683464656",
+      "title_norm": "aho's nhl dream took shape in finland at age 13",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T21:15:40.073740Z"
+    },
+    {
+      "key": "91730292895ade85dcd5d6e4",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-sunny-mehta-honored-by-newark-deli-with-namesake-burger-dessert",
+      "fingerprint": "a2343af316a9e31b",
+      "title_norm": "devils gm has burger named after him by local deli",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T21:15:40.301528Z"
     }
   ],
   "known_sources": [
