@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T02:55:50.338358Z",
+  "updated_at": "2026-11-11T03:15:35.362821Z",
   "seen": [
     {
       "key": "eabd5687d42e4f084c84844f",
@@ -19032,6 +19032,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T02:55:50.211432Z"
+    },
+    {
+      "key": "454c17de088d29c9110c9ec9",
+      "url": "https://www.nhl.com/news/washington-capitals-ottawa-senators-game-recap-november-10-2026",
+      "fingerprint": "4864ec7199ea8382",
+      "title_norm": "hutson scores in ot, capitals rally past senators",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T03:15:34.655389Z"
+    },
+    {
+      "key": "2b8ff505edf314a281e8700c",
+      "url": "https://www.nhl.com/news/colorado-avalanche-toronto-maple-leafs-game-recap-november-10-2026",
+      "fingerprint": "da84f1a56f8bd56d",
+      "title_norm": "landeskog scores twice, avalanche pull away from maple leafs in third period",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T03:15:34.944716Z"
+    },
+    {
+      "key": "b64e50ac81a7e93cf60dac70",
+      "url": "https://www.sportsnet.ca/nhl/video/senators-cousins-heads-to-locker-room-after-seismic-hit-from-chychrun",
+      "fingerprint": "7005daae523f1772",
+      "title_norm": "senators' cousins heads to locker room after seismic hit from chychrun",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T03:15:35.305260Z"
     }
   ],
   "known_sources": [
