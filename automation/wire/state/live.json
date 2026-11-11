@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T00:15:36.392249Z",
+  "updated_at": "2026-11-11T00:30:37.711170Z",
   "seen": [
     {
       "key": "6d0a1761b04023b45cfdb982",
@@ -18942,6 +18942,86 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T00:15:36.330462Z"
+    },
+    {
+      "key": "9f19bddf75a47bf0f4aacd93",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-fans-give-hellebuyck-chilly-reception-in-return-to-winnipeg",
+      "fingerprint": "ea16e5d72b5b8240",
+      "title_norm": "jets fans give hellebuyck chilly reception in return to winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:36.764972Z"
+    },
+    {
+      "key": "bd8eda10902bd8c100cb51ff",
+      "url": "https://www.sportsnet.ca/nhl/video/devils-hellebuyck-hears-boos-during-pre-game-skate-in-winnipeg",
+      "fingerprint": "54c781ab83fd820f",
+      "title_norm": "devils' hellebuyck hears boos during pre-game skate in winnipeg",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.028912Z"
+    },
+    {
+      "key": "bfd7177ba291ea1892228caf",
+      "url": "https://www.sportsnet.ca/nhl/video/what-is-nhl-salary-cap-smoothing-and-why-does-it-matter",
+      "fingerprint": "ef8f8e79076b0128",
+      "title_norm": "what is nhl salary cap 'smoothing' and why does it matter?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.394301Z"
+    },
+    {
+      "key": "0054c98a4117f8f180a401da",
+      "url": "https://www.sportsnet.ca/nhl/video/price-on-habs-goalie-tandem-both-have-same-mindset-and-compete-level",
+      "fingerprint": "e044fbf590bc92d4",
+      "title_norm": "price on habs' goalie tandem: 'both have same mindset and compete level'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.403084Z"
+    },
+    {
+      "key": "66caae236ab7228e16dd09da",
+      "url": "https://www.sportsnet.ca/nhl/video/malhotra-canucks-looking-to-improve-not-point-fingers-and-blame",
+      "fingerprint": "6dbaabdee1e76b16",
+      "title_norm": "malhotra: canucks looking to improve, not 'point fingers and blame'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.410781Z"
+    },
+    {
+      "key": "7bac332dc27a6e0fa780505c",
+      "url": "https://www.sportsnet.ca/nhl/video/how-concerned-should-flyers-be-by-mitchkov-seeler-argument",
+      "fingerprint": "8155df928ec0ea73",
+      "title_norm": "how concerned should flyers be by michkov, seeler argument?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.417838Z"
+    },
+    {
+      "key": "812fb79b0348a14c21bd4719",
+      "url": "https://www.sportsnet.ca/nhl/video/bettman-talks-iihf-situation-instant-replay-no-trade-clauses",
+      "fingerprint": "5e730d2fe77916ec",
+      "title_norm": "bettman talks iihf situation, instant replay, no-trade clauses",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.425325Z"
+    },
+    {
+      "key": "56be14c758e090780d05ad81",
+      "url": "https://www.sportsnet.ca/nhl/video/maple-leafs-hiller-tanev-talk-load-management",
+      "fingerprint": "148a9a90f3b39700",
+      "title_norm": "maple leafs' hiller, tanev talk load management",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:30:37.431636Z"
     }
   ],
   "known_sources": [
