@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-10T23:15:35.847962Z",
+  "updated_at": "2026-11-11T00:00:44.623934Z",
   "seen": [
     {
       "key": "c7dfeb5269007ab8de175098",
@@ -18912,6 +18912,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-10T23:15:35.793489Z"
+    },
+    {
+      "key": "b61502ca413d3a32887124a2",
+      "url": "https://www.sportsnet.ca/nhl/article/wild-could-keep-unsigned-quinn-hughes-past-trade-deadline-gm-says",
+      "fingerprint": "09584828cdfc26cf",
+      "title_norm": "wild could keep unsigned quinn hughes past trade deadline, gm says",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:00:43.662081Z"
+    },
+    {
+      "key": "79b99c94da42c90d6b2f8b35",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-evans/4708",
+      "fingerprint": "8868a950f0e7ecd2",
+      "title_norm": "jake evans (mtl) — evans (hand) will play tuesday vs. the wild.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:00:44.011846Z"
+    },
+    {
+      "key": "705e7b7de54ba2c64f3fc10d",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-sends-mixed-message-to-jets-fans-seeking-closure",
+      "fingerprint": "72673790d76984b4",
+      "title_norm": "hellebuyck sends mixed message to jets fans seeking closure",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:00:44.579145Z"
     }
   ],
   "known_sources": [
