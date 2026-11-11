@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T17:45:39.859472Z",
+  "updated_at": "2026-11-11T17:59:49.913346Z",
   "seen": [
     {
       "key": "cf3092642cc86bfcc00c68f0",
@@ -19062,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T17:45:39.805408Z"
+    },
+    {
+      "key": "f9185d65196f7e7e3725f5b1",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-11-2026",
+      "fingerprint": "e23be4b018fd3762",
+      "title_norm": "status report: point placed on ir by lightning",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T17:59:49.827799Z"
     }
   ],
   "known_sources": [
