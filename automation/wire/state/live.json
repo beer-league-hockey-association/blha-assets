@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T15:15:47.171642Z",
+  "updated_at": "2026-11-11T15:30:49.627764Z",
   "seen": [
     {
       "key": "11782db1870bbd01ffc4f5a1",
@@ -19122,6 +19122,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T15:03:00.306189Z"
+    },
+    {
+      "key": "5122fc38e35f298fc8bc3c82",
+      "url": "https://www.dailyfaceoff.com/players/news/brock-faber/30792",
+      "fingerprint": "a077eca7445f64da",
+      "title_norm": "brock faber (min) — faber (fractured skull) has a chance to return on saturday vs. boston.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T15:30:49.095012Z"
+    },
+    {
+      "key": "ad43fc313992c9f75c4025ba",
+      "url": "https://www.dailyfaceoff.com/players/news/jonathan-huberdeau/1798",
+      "fingerprint": "6c010426584053de",
+      "title_norm": "jonathan huberdeau (cgy) — huburdeau (hip) practiced in a regular jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T15:30:49.529152Z"
     }
   ],
   "known_sources": [
