@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T05:30:33.381129Z",
+  "updated_at": "2026-11-11T05:45:33.182688Z",
   "seen": [
     {
       "key": "7c474882467fd277fbeed6e4",
@@ -19152,6 +19152,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T05:30:33.346987Z"
+    },
+    {
+      "key": "dd194e9e8bd4cd16dc175ee7",
+      "url": "https://www.nhl.com/news/new-jersey-devils-winnipeg-jets-game-recap-november-10-2026",
+      "fingerprint": "65dc6d4188480255",
+      "title_norm": "mercer, jets get emotional win against devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T05:45:33.113652Z"
     }
   ],
   "known_sources": [
