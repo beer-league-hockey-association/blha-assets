@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T19:15:34.729893Z",
+  "updated_at": "2026-11-11T19:30:39.613820Z",
   "seen": [
-    {
-      "key": "e0eea63928965badd07c1320",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-re-joins-team-in-utah-after-birth-of-son",
-      "fingerprint": "9955a6022325d720",
-      "title_norm": "maple leafs' john tavares re-joins team in utah after birth of son",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T19:15:40.394204Z"
-    },
-    {
-      "key": "861be21202ecbd9aec26c29c",
-      "url": "https://www.dailyfaceoff.com/players/news/barclay-goodrow/2395",
-      "fingerprint": "190e3af5345152d4",
-      "title_norm": "barclay goodrow (sjs) — goodrow (illness) missed practice on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T19:30:36.229834Z"
-    },
     {
       "key": "bbb8c3224243083f0e060687",
       "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
@@ -19052,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T19:15:34.650129Z"
+    },
+    {
+      "key": "9357258c8577bd4fd127ec51",
+      "url": "https://www.nhl.com/news/winnipeg-jets-hope-win-over-new-jersey-devils-brings-closure-to-connor-hellebuyck-saga",
+      "fingerprint": "d4df0e0ff7b6255b",
+      "title_norm": "jets hope win brings closure to hellebuyck saga",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T19:30:39.491663Z"
     }
   ],
   "known_sources": [
