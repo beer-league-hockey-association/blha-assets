@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T00:30:37.711170Z",
+  "updated_at": "2026-11-11T00:45:35.821743Z",
   "seen": [
     {
       "key": "6d0a1761b04023b45cfdb982",
@@ -19022,6 +19022,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T00:30:37.431636Z"
+    },
+    {
+      "key": "d62c78c9d1d55256ec2a72e5",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-canadiens-fans-give-price-four-minute-ovation-in-return-to-montreal",
+      "fingerprint": "31e4ef61ecf234d5",
+      "title_norm": "gotta see it: canadiens fans give price four minute ovation in return to montreal",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:45:35.542358Z"
+    },
+    {
+      "key": "4b25f8c29a819f44dd43bf8c",
+      "url": "https://www.sportsnet.ca/nhl/video/raddysh-wires-a-rocket-up-high-for-first-goal-with-maple-leafs",
+      "fingerprint": "672e0881256fb38b",
+      "title_norm": "raddysh wires a rocket up high for first goal with maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:45:35.778221Z"
     }
   ],
   "known_sources": [
