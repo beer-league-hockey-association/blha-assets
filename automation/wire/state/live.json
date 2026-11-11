@@ -1,68 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T17:15:35.663244Z",
+  "updated_at": "2026-11-11T17:30:42.430358Z",
   "seen": [
-    {
-      "key": "a196d4e7f4aabd2cb0d1b42a",
-      "url": "https://www.nhl.com/news/topic/3-stars/matthews-oettinger-lafreniere-named-nhl-3-stars-of-week-october-12-2026",
-      "fingerprint": "e4e3c7f1b90e792f",
-      "title_norm": "matthews, oettinger, lafreniere named 3 stars of week",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-12T17:15:41.646784Z"
-    },
-    {
-      "key": "46e3f0c86a1eee84329007a9",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-12-2026",
-      "fingerprint": "bdcdd1cba1c2620a",
-      "title_norm": "status report: sanderson, zub still out for senators",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-12T17:15:41.894160Z"
-    },
-    {
-      "key": "b902c712875c8dafd73fa37e",
-      "url": "https://theahl.com/news/griffins-postava-ahl-player-week",
-      "fingerprint": "2552eb9cded290a4",
-      "title_norm": "griffins' postava named ahl player of the week",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-12T17:15:42.445606Z"
-    },
-    {
-      "key": "99eb05382ce9d2f713210f9d",
-      "url": "https://www.sportsnet.ca/hockey/article/arizona-state-close-to-hiring-avalanche-assistant-dave-hakstol-as-head-coach",
-      "fingerprint": "21ef88da310e3c36",
-      "title_norm": "arizona state close to hiring avalanche assistant dave hakstol as head coach",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T17:15:42.737144Z"
-    },
-    {
-      "key": "45d3ff7a0b3fcd1092d9f0ad",
-      "url": "https://www.dailyfaceoff.com/players/news/joel-kiviranta/31187",
-      "fingerprint": "3189243b70a7bb2c",
-      "title_norm": "joel kiviranta (dal) — kiviranta (lower-body) is expected to return vs. colorado on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T17:30:38.150674Z"
-    },
-    {
-      "key": "5a4ff9d77ece34488f454e4a",
-      "url": "https://www.sportsnet.ca/nhl/article/goaltender-leevi-merilainen-getting-chance-to-showcase-skills-with-canucks",
-      "fingerprint": "4fab822285c8a25d",
-      "title_norm": "goaltender leevi merilainen getting chance to showcase skills with canucks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T17:30:38.381135Z"
-    },
     {
       "key": "997c73942e17528bd3f99051",
       "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
