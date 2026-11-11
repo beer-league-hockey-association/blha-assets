@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T19:00:41.184194Z",
+  "updated_at": "2026-11-11T19:15:34.729893Z",
   "seen": [
     {
       "key": "e0eea63928965badd07c1320",
@@ -19042,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T19:00:41.131596Z"
+    },
+    {
+      "key": "2483a2b85b79f6c29d7b9b5e",
+      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
+      "fingerprint": "a149ffa34aad84b5",
+      "title_norm": "troy terry (ana) — terry (hip) will make his season debut on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T19:15:34.650129Z"
     }
   ],
   "known_sources": [
