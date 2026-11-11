@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T22:45:37.452658Z",
+  "updated_at": "2026-11-11T23:00:42.912781Z",
   "seen": [
-    {
-      "key": "78349413e9152a778fa33e21",
-      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
-      "fingerprint": "d382417f94d1ef6c",
-      "title_norm": "luke evangelista (njd) — evangelista (illness) is on the ice for warmups and is expected to play monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T22:45:38.763455Z"
-    },
     {
       "key": "528ad3d4c1bb69dfd25db072",
       "url": "https://www.nhl.com/news/matt-duchene-has-surgery-will-be-out-3-months-for-dallas",
