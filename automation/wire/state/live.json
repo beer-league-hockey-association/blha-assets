@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T21:15:40.369067Z",
+  "updated_at": "2026-11-11T21:41:24.212917Z",
   "seen": [
-    {
-      "key": "cc23c00ae47c55a3ee7b9d51",
-      "url": "https://www.buffalohockeybeat.com/newcomer-matt-villalta-gives-rochester-amerks-no-1-goalie-sabres-depth",
-      "fingerprint": "be5b8e674f73aac0",
-      "title_norm": "villalta gives sabres depth in net",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-12T21:30:38.952208Z"
-    },
     {
       "key": "674d6956758c50e10ff1fa11",
       "url": "https://theahl.com/news/penguins-acquire-johnson-from-buffalo",
