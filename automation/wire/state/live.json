@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T00:00:44.623934Z",
+  "updated_at": "2026-11-11T00:15:36.392249Z",
   "seen": [
-    {
-      "key": "c7dfeb5269007ab8de175098",
-      "url": "https://www.sportsnet.ca/nhl/article/kraken-overcame-alex-ovechkins-first-goal-of-season-to-beat-capitals",
-      "fingerprint": "1f051f5be2698305",
-      "title_norm": "kraken overcome alex ovechkin's first goal of season to beat capitals",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T00:15:34.486093Z"
-    },
-    {
-      "key": "5a87d6908c6b2551e5655036",
-      "url": "https://www.nhl.com/news/seattle-kraken-washington-capitals-game-recap-october-11-2026",
-      "fingerprint": "5e7dc8592c13a074",
-      "title_norm": "kraken overcome ovi's 1st goal of season, top caps",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-12T00:15:34.796603Z"
-    },
     {
       "key": "6d0a1761b04023b45cfdb982",
       "url": "https://www.nhl.com/news/vancouver-canucks-new-york-rangers-game-recap-october-11-2026",
@@ -18942,6 +18922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T00:00:44.579145Z"
+    },
+    {
+      "key": "7cb264f7892bea048fd65dc1",
+      "url": "https://www.nhl.com/news/hockey-hall-of-fame-candidates-for-2027-class",
+      "fingerprint": "6f1c974168005723",
+      "title_norm": "pavelski, brind'amour among hof candidates next year",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T00:15:36.041454Z"
+    },
+    {
+      "key": "aa12fbe6b9071e2e496c819d",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-mccarron/2156",
+      "fingerprint": "2b567ab2015abf14",
+      "title_norm": "michael mccarron (min) — mccarron (upper-body) will be in the wild lineup on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T00:15:36.330462Z"
     }
   ],
   "known_sources": [
