@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T21:41:24.212917Z",
+  "updated_at": "2026-11-11T22:00:52.572534Z",
   "seen": [
-    {
-      "key": "674d6956758c50e10ff1fa11",
-      "url": "https://theahl.com/news/penguins-acquire-johnson-from-buffalo",
-      "fingerprint": "0e16a99886f5e0fa",
-      "title_norm": "penguins acquire johnson from buffalo",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-12T21:45:49.985494Z"
-    },
     {
       "key": "78349413e9152a778fa33e21",
       "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
@@ -19062,6 +19052,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T21:15:40.301528Z"
+    },
+    {
+      "key": "635e18ab78a930e24f93c324",
+      "url": "https://www.sportsnet.ca/nhl/article/cant-help-it-nathan-mackinnons-competitive-fire-still-raging-for-avalanche",
+      "fingerprint": "cec304ab4dc07ef5",
+      "title_norm": "'can't help it': nathan mackinnon's competitive fire still raging for avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T22:00:52.445763Z"
     }
   ],
   "known_sources": [
