@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T17:59:49.913346Z",
+  "updated_at": "2026-11-11T18:15:36.905679Z",
   "seen": [
-    {
-      "key": "cf3092642cc86bfcc00c68f0",
-      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
-      "fingerprint": "46f0a6abedc7020e",
-      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) practiced, but did not take part in line rushes on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T18:00:41.021637Z"
-    },
-    {
-      "key": "493699c2fea5c96bc086ac23",
-      "url": "https://www.dailyfaceoff.com/players/news/trevor-van-riemsdyk/2383",
-      "fingerprint": "42bcda6219c536b6",
-      "title_norm": "trevor van riemsdyk (pit) — van riemsdyk (lower-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-12T18:00:41.295361Z"
-    },
     {
       "key": "a3ae26c381c94e9b85d3f4e9",
       "url": "https://www.nhl.com/news/player-poll-breakout-stars-in-frozen-frenzy-2026",
