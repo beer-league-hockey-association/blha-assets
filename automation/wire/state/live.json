@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T11:15:32.830099Z",
+  "updated_at": "2026-11-11T12:45:32.198725Z",
   "seen": [
     {
       "key": "1a1c6bf7ffaf7d60287fc9d0",
@@ -19212,6 +19212,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-11T10:27:38.595263Z"
+    },
+    {
+      "key": "5d6c7dedff87b68e538962ed",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-woes-continue-in-another-home-loss",
+      "fingerprint": "2ce856e67aee5d8c",
+      "title_norm": "maple leafs' woes continue in another home loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T12:45:32.163921Z"
     }
   ],
   "known_sources": [
