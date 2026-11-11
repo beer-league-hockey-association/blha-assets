@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T06:45:42.630148Z",
+  "updated_at": "2026-11-11T09:15:45.744894Z",
   "seen": [
-    {
-      "key": "7c474882467fd277fbeed6e4",
-      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-for-Week-3-e3qbu8e",
-      "fingerprint": "5cba99eaf935f2a4",
-      "title_norm": "puzzling players for week 3",
-      "channel": "media",
-      "source_id": "pod_apples_ginos",
-      "tier": 2,
-      "seen_at": "2026-10-12T09:14:21.053446Z"
-    },
     {
       "key": "bc7ea2c535d3a4b68776b913",
       "url": "https://www.sportsnet.ca/nhl/article/hurricanes-jordan-staal-out-vs-flyers-with-lower-body-injury",
@@ -19212,6 +19202,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T06:45:42.578949Z"
+    },
+    {
+      "key": "f62c7a2e6c24ed86b6627944",
+      "url": "https://www.sportsnet.ca/nhl/article/hutson-scores-in-overtime-as-capitals-squeeze-past-senators",
+      "fingerprint": "72db0b796c1cea19",
+      "title_norm": "hutson scores in overtime as capitals squeeze past senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T09:15:45.691654Z"
     }
   ],
   "known_sources": [
