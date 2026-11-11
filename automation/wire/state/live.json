@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T18:15:36.905679Z",
+  "updated_at": "2026-11-11T18:30:35.390467Z",
   "seen": [
-    {
-      "key": "a3ae26c381c94e9b85d3f4e9",
-      "url": "https://www.nhl.com/news/player-poll-breakout-stars-in-frozen-frenzy-2026",
-      "fingerprint": "5f43e471dddcd5a9",
-      "title_norm": "player poll: breakout stars in frozen frenzy",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-12T18:15:41.465205Z"
-    },
     {
       "key": "7259e10a80d17937b4017475",
       "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
@@ -19052,6 +19042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-11T17:59:49.827799Z"
+    },
+    {
+      "key": "0501be06d744622a538a6afa",
+      "url": "https://www.dailyfaceoff.com/players/news/miro-heiskanen/2803",
+      "fingerprint": "7494db5715f9fbe2",
+      "title_norm": "miro heiskanen (dal) — heiskanen (upper-body) will remain out vs. winnipeg on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-11T18:30:35.324429Z"
     }
   ],
   "known_sources": [
