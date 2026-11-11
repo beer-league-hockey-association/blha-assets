@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T14:32:36.264415Z",
+  "updated_at": "2026-11-11T15:03:00.389265Z",
   "seen": [
     {
       "key": "02070f6a9fba28a5eaa37321",
@@ -19182,6 +19182,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-11T14:17:02.780880Z"
+    },
+    {
+      "key": "674279444c92584c5d9abeef",
+      "url": "https://www.nhl.com/news/nhl-helps-erase-debt-in-recognition-of-veterans-day",
+      "fingerprint": "4ba9365438ea9d15",
+      "title_norm": "nhl, buffalo, vegas erase $1.5m of debt for veterans",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T15:03:00.306189Z"
     }
   ],
   "known_sources": [
