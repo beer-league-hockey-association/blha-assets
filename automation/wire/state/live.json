@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T22:00:52.572534Z",
+  "updated_at": "2026-11-11T22:21:37.108711Z",
   "seen": [
     {
       "key": "78349413e9152a778fa33e21",
@@ -19062,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T22:00:52.445763Z"
+    },
+    {
+      "key": "0e166d076e1e3ad21e044581",
+      "url": "https://www.nhl.com/news/connor-bedard-says-blackhawks-have-100-percent-belief-in-jeff-blashill-as-coach",
+      "fingerprint": "30ebf037cd40df62",
+      "title_norm": "bedard: blackhawks believe in coach '100 percent'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-11T22:21:37.042154Z"
     }
   ],
   "known_sources": [
