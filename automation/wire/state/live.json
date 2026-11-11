@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T01:15:35.008350Z",
+  "updated_at": "2026-11-11T01:30:36.980763Z",
   "seen": [
-    {
-      "key": "6fb68d6a95bebafe5f896a09",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-sunk-by-three-third-period-goals-in-loss-to-rangers",
-      "fingerprint": "a7097fe566552134",
-      "title_norm": "canucks sunk by three third-period goals in loss to rangers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T01:15:36.783239Z"
-    },
     {
       "key": "a0f93672e29fe2a2d632b72d",
       "url": "https://www.nhl.com/news/carolina-hurricanes-philadelphia-flyers-game-recap-october-11-2026",
@@ -19032,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T00:45:35.778221Z"
+    },
+    {
+      "key": "daf7600ef14824b4a9cee780",
+      "url": "https://www.sportsnet.ca/nhl/video/jets-mercer-spins-in-fires-home-perfect-shot-in-first-game-vs-devils",
+      "fingerprint": "a6b535b26f6f196f",
+      "title_norm": "jets' mercer spins in fires home perfect shot in first game vs. devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-11T01:30:36.923854Z"
     }
   ],
   "known_sources": [
