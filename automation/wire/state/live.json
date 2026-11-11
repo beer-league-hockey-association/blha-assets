@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T12:45:32.198725Z",
+  "updated_at": "2026-11-11T13:15:33.880372Z",
   "seen": [
-    {
-      "key": "1a1c6bf7ffaf7d60287fc9d0",
-      "url": "https://www.sportsnet.ca/nhl/longform/an-oral-history-of-matthews-historic-four-goal-debut-one-of-those-nights",
-      "fingerprint": "3c6153f49324b416",
-      "title_norm": "an oral history of matthews' historic four-goal debut: 'one of those nights'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-12T13:00:43.796339Z"
-    },
     {
       "key": "2a632736db2b47400a612eb5",
       "url": "https://www.sportsnet.ca/podcasts/32-thoughts/a-stuffed-weekend",
@@ -19222,6 +19212,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T12:45:32.163921Z"
+    },
+    {
+      "key": "bd1ab0dcee7cdb19dc5c9249",
+      "url": "https://dobberprospects.com/2026/11/11/november-qmjhl-report-undrafted-late-bloomers",
+      "fingerprint": "286bf6fb2fd699b9",
+      "title_norm": "november qmjhl report: undrafted, late bloomers",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-11T13:15:33.853334Z"
     }
   ],
   "known_sources": [
