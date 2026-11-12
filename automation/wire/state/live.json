@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T11:15:33.861411Z",
+  "updated_at": "2026-11-12T12:45:42.794423Z",
   "seen": [
-    {
-      "key": "9082e49086a6a701a365dadb",
-      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
-      "fingerprint": "428fb1153c90dee0",
-      "title_norm": "brad marchand (fla) — the panthers placed brad marchand (leg) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T12:30:39.515509Z"
-    },
     {
       "key": "dc6b966efa189257018ac23a",
       "url": "https://www.nhl.com/news/connor-bedard-2026-season-debut-date-for-chicago",
