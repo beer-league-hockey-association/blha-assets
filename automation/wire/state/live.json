@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T16:30:36.034024Z",
+  "updated_at": "2026-11-12T16:45:46.588557Z",
   "seen": [
     {
       "key": "ac1c9259ddc60c4fdd7145fe",
@@ -19022,6 +19022,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T16:30:35.996879Z"
+    },
+    {
+      "key": "1dc8684e5f0e311d049a8f08",
+      "url": "https://www.dailyfaceoff.com/players/news/zack-macewen/4489",
+      "fingerprint": "56806a4760bde551",
+      "title_norm": "zack macewen (tor) — macewen (wrist) will be a game-time decision vs. minnesota on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T16:45:46.163030Z"
+    },
+    {
+      "key": "7e086644eaf555ea13eaa0a9",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-facing-fears-ahead-of-friday-the-13th",
+      "fingerprint": "f8d2a2f50d1c0bde",
+      "title_norm": "nhl power rankings: facing fears ahead of friday the 13th",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T16:45:46.530827Z"
     }
   ],
   "known_sources": [
