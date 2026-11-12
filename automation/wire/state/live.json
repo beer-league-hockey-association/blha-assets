@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T20:30:39.225061Z",
+  "updated_at": "2026-11-12T21:00:39.254605Z",
   "seen": [
     {
       "key": "b8e6353e4756cdb289c5cc6e",
@@ -19052,6 +19052,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T20:15:30.465163Z"
+    },
+    {
+      "key": "562e0e734386f56629d8520d",
+      "url": "https://www.dailyfaceoff.com/players/news/konsta-helenius/38139",
+      "fingerprint": "9a1751b5c0e826cb",
+      "title_norm": "konsta helenius (buf) — helenius (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T21:00:38.589224Z"
+    },
+    {
+      "key": "95f151ec741b7369967bb0e9",
+      "url": "https://www.nhl.com/news/minnesota-wild-gm-bill-guerin-talks-on-yurov-for-red-wings-larkin-trade-report",
+      "fingerprint": "85d7c074b2194957",
+      "title_norm": "wild gm guerin coy on yurov-for-larkin report",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T21:00:38.820263Z"
+    },
+    {
+      "key": "e5490f3f5993eac194d0942c",
+      "url": "https://www.sportsnet.ca/nhl/article/finnish-native-sebastian-aho-scores-pair-hurricanes-beat-kraken-in-finland",
+      "fingerprint": "3bc52924519685fc",
+      "title_norm": "finnish native sebastian aho scores pair, hurricanes beat kraken in finland",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T21:00:39.195725Z"
     }
   ],
   "known_sources": [
