@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T06:00:42.657445Z",
+  "updated_at": "2026-11-12T06:15:34.325734Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19052,6 +19052,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T06:00:42.532524Z"
+    },
+    {
+      "key": "a7f6e9dee1376364816cf266",
+      "url": "https://www.nhl.com/news/nashville-predators-anaheim-ducks-game-recap-november-11-2026",
+      "fingerprint": "9f3e80650908a41b",
+      "title_norm": "predators overcome gauthier, ducks to win 6th in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T06:15:34.212441Z"
     }
   ],
   "known_sources": [
