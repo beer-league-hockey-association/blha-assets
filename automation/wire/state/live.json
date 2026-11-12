@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T06:15:34.325734Z",
+  "updated_at": "2026-11-12T06:30:43.013249Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19062,6 +19062,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T06:15:34.212441Z"
+    },
+    {
+      "key": "744af7151171cd60717b75e4",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-san-jose-sharks-game-recap-november-11-2026",
+      "fingerprint": "7e060814cb076cbb",
+      "title_norm": "kindel, penguins recover to edge sharks in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T06:30:42.919241Z"
     }
   ],
   "known_sources": [
