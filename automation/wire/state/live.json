@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T14:30:44.537833Z",
+  "updated_at": "2026-11-12T15:00:45.710638Z",
   "seen": [
-    {
-      "key": "d1dc482c50d9c956f38aa5e0",
-      "url": "https://www.dailyfaceoff.com/players/news/matt-grzelcyk/2723",
-      "fingerprint": "ff3caf6818cfb63a",
-      "title_norm": "matt grzelcyk (buf) — grzelycyk (undisclosed) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:00:41.193335Z"
-    },
-    {
-      "key": "082ed6d132900536e1619ea4",
-      "url": "https://www.sportsnet.ca/nhl/article/ducks-call-up-roger-mcqueen-for-possible-nhl-debut",
-      "fingerprint": "0ffb6ab38ee61fdb",
-      "title_norm": "ducks call up roger mcqueen for possible nhl debut",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:00:41.533092Z"
-    },
-    {
-      "key": "67ab9b5231047ab1a118c468",
-      "url": "https://dobberprospects.com/2026/10/13/october-qmjhl-report-hot-starts-for-rookies",
-      "fingerprint": "f3019efeda7ce8d4",
-      "title_norm": "october qmjhl report: hot starts for rookies",
-      "channel": "prospect-wire",
-      "source_id": "dobber_prospects",
-      "tier": 2,
-      "seen_at": "2026-10-13T15:00:41.836566Z"
-    },
     {
       "key": "766d9faa67a44dcac1586a2b",
       "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
@@ -19062,6 +19032,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T14:30:44.405405Z"
+    },
+    {
+      "key": "261d71a71cf99db97d00020a",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-12-2026",
+      "fingerprint": "6ee3a2e5baaab9ba",
+      "title_norm": "on tap: hurricanes, kraken on global stage",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T15:00:44.779079Z"
+    },
+    {
+      "key": "dadbf2b050229cf663c7bedd",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-quarter-mark-report-card-toronto-needs-improvement",
+      "fingerprint": "6c00b2f840d15dfc",
+      "title_norm": "maple leafs quarter-mark report card: toronto needs improvement",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T15:00:45.214143Z"
+    },
+    {
+      "key": "36e40e59dc0488c52c58bc12",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-how-the-maple-leafs-top-prospects-are-developing",
+      "fingerprint": "c11fd77048b91b1c",
+      "title_norm": "scout's analysis: how the maple leafs' top prospects are developing",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T15:00:45.674158Z"
     }
   ],
   "known_sources": [
