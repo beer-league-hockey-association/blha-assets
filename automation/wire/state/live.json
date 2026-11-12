@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T04:30:35.105388Z",
+  "updated_at": "2026-11-12T04:45:37.118358Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -18992,6 +18992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T03:45:37.783527Z"
+    },
+    {
+      "key": "4c700cb52226e6d4de08b3ab",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-gauthier-matches-105-year-old-record-with-goal-vs-predators",
+      "fingerprint": "7d459819f59dd150",
+      "title_norm": "ducks' gauthier matches 105-year-old record with goal vs. predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T04:45:37.070789Z"
     }
   ],
   "known_sources": [
