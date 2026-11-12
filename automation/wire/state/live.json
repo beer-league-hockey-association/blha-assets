@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T02:30:37.383501Z",
+  "updated_at": "2026-11-12T02:45:27.348556Z",
   "seen": [
-    {
-      "key": "dfba0459b5742dc6255aa5ee",
-      "url": "https://www.sportsnet.ca/nhl/article/tim-stutzle-and-the-senators-beat-the-devils-to-keep-their-hot-start-going",
-      "fingerprint": "3507c0c1315c3f66",
-      "title_norm": "stutzle, senators keep rolling with road win over devils",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T02:30:37.419985Z"
-    },
     {
       "key": "3765d3961f31f5a9cd3905f9",
       "url": "https://www.nhl.com/news/vegas-golden-knights-minnesota-wild-game-recap-october-12-2026",
