@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T19:15:36.010094Z",
+  "updated_at": "2026-11-12T19:30:51.213695Z",
   "seen": [
     {
       "key": "168b86ffacc7d5c6e4c7df24",
@@ -19012,6 +19012,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T19:00:39.830430Z"
+    },
+    {
+      "key": "7775c0ec3571cbc85eacae5b",
+      "url": "https://www.dailyfaceoff.com/players/news/jean-gabriel-pageau/2057",
+      "fingerprint": "81082acb118caccd",
+      "title_norm": "jean-gabriel pageau (nyi) — pageau (lower-body) is out vs. los angeles on thursday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:30:50.385693Z"
+    },
+    {
+      "key": "17296d5c5b8751367b65c4b4",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "503f0d4591558556",
+      "title_norm": "ryan pulock (nyi) — pulock (upper-body) will return in los angeles on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:30:50.625129Z"
+    },
+    {
+      "key": "536395f5706ee85e72b44dd7",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-cooley/33387",
+      "fingerprint": "9ae89a94b8a8c0ac",
+      "title_norm": "logan cooley (uta) — cooley (upper-body) will remain out vs. st. louis and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:30:50.839478Z"
+    },
+    {
+      "key": "87e3d7669351b8921eab38c2",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-schmaltz/2678",
+      "fingerprint": "58d40d0eece58d4d",
+      "title_norm": "nick schmaltz (uta) — schmaltz (lower-body) will be a game-time decision vs. st. louis on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:30:50.853851Z"
+    },
+    {
+      "key": "1f515efc6518dce8a8182a9e",
+      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
+      "fingerprint": "1f35e9c3a0e0ea7f",
+      "title_norm": "matias maccelli (nyi) — maccelli (lower-body) will return in los angeles on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:30:50.924370Z"
+    },
+    {
+      "key": "a5cc9646d021ae05423336ad",
+      "url": "https://www.dailyfaceoff.com/players/news/nate-schmidt/2093",
+      "fingerprint": "03e268eeabe0f98b",
+      "title_norm": "nate schmidt (uta) — schmidt (upper-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:30:50.935389Z"
     }
   ],
   "known_sources": [
