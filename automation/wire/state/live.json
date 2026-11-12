@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T05:45:33.712067Z",
+  "updated_at": "2026-11-12T06:00:42.657445Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19042,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T05:45:33.676425Z"
+    },
+    {
+      "key": "9e27a5514b9b23a576b6ac1f",
+      "url": "https://www.nhl.com/news/utah-mammoth-vegas-golden-knights-game-recap-november-11-2026",
+      "fingerprint": "e0a533680b6e7204",
+      "title_norm": "barbashev scores twice, vegas wins 4th straight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T06:00:42.532524Z"
     }
   ],
   "known_sources": [
