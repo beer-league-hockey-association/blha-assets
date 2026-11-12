@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T22:00:38.951277Z",
+  "updated_at": "2026-11-12T22:15:33.660633Z",
   "seen": [
-    {
-      "key": "96d7c7a50556a4eb50cca3ec",
-      "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
-      "fingerprint": "711842101c2efa5a",
-      "title_norm": "conor garland (cbj) — garland (illness) is on the ice for warmups; he's expected to play vs. the panthers.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T22:00:42.275423Z"
-    },
-    {
-      "key": "24c6b77c537b1ea0e4f8e27c",
-      "url": "https://www.nhl.com/news/2026-team-usa-milano-cortina-gold-medalists-getting-hero-treatment",
-      "fingerprint": "7405d6c2436ae309",
-      "title_norm": "team usa gold medalists getting hero treatment",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-13T22:00:42.483781Z"
-    },
     {
       "key": "1098f16d3286c2ca5f5d64cf",
       "url": "https://www.dailyfaceoff.com/players/news/alex-tuch/2739",
@@ -19092,6 +19072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T22:00:38.890312Z"
+    },
+    {
+      "key": "e084e821e4f81ff3aecaa3d1",
+      "url": "https://www.dailyfaceoff.com/players/news/patrick-kane/305",
+      "fingerprint": "9ece37d8e708d7c6",
+      "title_norm": "patrick kane (chi) — kane (upper-body) has been activated from ir and is expected to return vs. buffalo.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T22:15:33.582680Z"
     }
   ],
   "known_sources": [
