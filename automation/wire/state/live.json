@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T04:45:37.118358Z",
+  "updated_at": "2026-11-12T05:15:36.023825Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19002,6 +19002,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T04:45:37.070789Z"
+    },
+    {
+      "key": "c79d6e16e490f86b527d37fa",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-edmonton-oilers-game-recap-november-11-2026",
+      "fingerprint": "c281d60b09262035",
+      "title_norm": "mcdavid's season-opening point streak hits 20, oilers top flyers in ot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T05:15:35.397317Z"
+    },
+    {
+      "key": "d6c947199374717b2b2df946",
+      "url": "https://www.sportsnet.ca/nhl/article/bouchard-nets-ot-winner-as-oilers-hold-off-flyers",
+      "fingerprint": "27b8c8603bc2126a",
+      "title_norm": "bouchard nets ot winner to lift oilers past flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T05:15:35.696913Z"
+    },
+    {
+      "key": "15c8c98af64b870afd9ffcfa",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-takeaways-parekhs-ability-to-excite-a-major-development",
+      "fingerprint": "99a66425ea69d47e",
+      "title_norm": "flames takeaways: parekh's ability to excite a major development",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T05:15:35.961751Z"
     }
   ],
   "known_sources": [
