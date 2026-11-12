@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T21:30:36.848695Z",
+  "updated_at": "2026-11-12T22:00:38.951277Z",
   "seen": [
     {
       "key": "96d7c7a50556a4eb50cca3ec",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T21:15:51.205470Z"
+    },
+    {
+      "key": "d59404c3067aff27f9abcb09",
+      "url": "https://www.sportsnet.ca/nhl/article/amid-the-storm-canucks-sedins-not-shying-away-from-blowback",
+      "fingerprint": "b4d5b24c9b2ad0a9",
+      "title_norm": "amid the storm, canucks' sedins not shying away from blowback",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T22:00:38.890312Z"
     }
   ],
   "known_sources": [
