@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T17:00:46.385634Z",
+  "updated_at": "2026-11-12T17:15:42.894627Z",
   "seen": [
-    {
-      "key": "ac1c9259ddc60c4fdd7145fe",
-      "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
-      "fingerprint": "7577c86d18e8a11f",
-      "title_norm": "ryan poehling (ana) — the ducks have placed ryan poehling (lower-body) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:00:46.682883Z"
-    },
-    {
-      "key": "2a78fb9b15b06ee9d77fca48",
-      "url": "https://www.sportsnet.ca/nhl/article/its-early-but-a-look-at-each-nhl-teams-start",
-      "fingerprint": "10af47db78270f89",
-      "title_norm": "it's early but … a look at each nhl team's start",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:00:46.985245Z"
-    },
-    {
-      "key": "82354888d237181f1731e81e",
-      "url": "https://www.sportsnet.ca/nhl/article/wild-place-nico-sturm-on-ir-call-up-kirkland",
-      "fingerprint": "fb2c2a5e4b4f8046",
-      "title_norm": "wild place nico sturm on ir, call up kirkland",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:00:47.324117Z"
-    },
-    {
-      "key": "a60245acabb537acef4c15d0",
-      "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
-      "fingerprint": "bc38b17e2dd74b82",
-      "title_norm": "ryan poehling (ana) — ryan poehling (sprained mcl) has been placed on ir and is expected to miss the next 6-8 weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:15:36.583985Z"
-    },
-    {
-      "key": "94176d94b1894b6c7d5b6ef2",
-      "url": "https://www.nhl.com/news/frozen-frenzy-to-spotlight-hockey-fights-cancer",
-      "fingerprint": "e68998cb21d260e3",
-      "title_norm": "frozen frenzy to spotlight hockey fights cancer",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-13T17:15:36.942565Z"
-    },
     {
       "key": "a249e1308b4f20c826d27ce0",
       "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
@@ -19092,6 +19042,16 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-12T17:00:45.983563Z"
+    },
+    {
+      "key": "3095e9ab8018a1330abed479",
+      "url": "https://www.nhl.com/news/topic/short-shifts/goal-of-season-nashville-predators-nils-hoglander",
+      "fingerprint": "2e1291c151117d85",
+      "title_norm": "watch: hoglander with goal-of-year candidate",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T17:15:42.750973Z"
     }
   ],
   "known_sources": [
