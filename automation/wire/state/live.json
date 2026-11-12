@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T02:45:27.348556Z",
+  "updated_at": "2026-11-12T03:15:37.286243Z",
   "seen": [
     {
       "key": "3765d3961f31f5a9cd3905f9",
@@ -19012,6 +19012,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T02:15:39.772405Z"
+    },
+    {
+      "key": "62b84b597a089db751bd0204",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-buffalo-sabres-game-recap-november-11-2026",
+      "fingerprint": "e90ece5f68c99a44",
+      "title_norm": "kucherov's hat trick, carlson's five points spark lightning against sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T03:15:37.207481Z"
     }
   ],
   "known_sources": [
