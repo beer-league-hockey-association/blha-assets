@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T17:15:42.894627Z",
+  "updated_at": "2026-11-12T17:30:36.460847Z",
   "seen": [
     {
       "key": "a249e1308b4f20c826d27ce0",
@@ -19052,6 +19052,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T17:15:42.750973Z"
+    },
+    {
+      "key": "e72f82dd3275ca85878ddfd3",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-12-2026",
+      "fingerprint": "3149a4dca419c824",
+      "title_norm": "status report: ullmark to return for senators tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T17:30:36.390493Z"
     }
   ],
   "known_sources": [
