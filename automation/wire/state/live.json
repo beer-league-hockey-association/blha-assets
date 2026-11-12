@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T15:00:45.710638Z",
+  "updated_at": "2026-11-12T15:30:49.181385Z",
   "seen": [
-    {
-      "key": "766d9faa67a44dcac1586a2b",
-      "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
-      "fingerprint": "a6e9b7b20ecce51f",
-      "title_norm": "jordan staal (car) — staal has a calf tear and is expected to miss the next 1-2 months.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:30:37.981905Z"
-    },
     {
       "key": "a745f4ce0ee18e8e2d1d7f34",
       "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
@@ -19062,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T15:00:45.674158Z"
+    },
+    {
+      "key": "fb3ea46ff5829bde0d26dda6",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-sissons/2030",
+      "fingerprint": "9fd0952f0b765daa",
+      "title_norm": "colton sissons (tor) — sissons (lower-body) has been placed on ir and is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T15:30:49.082660Z"
     }
   ],
   "known_sources": [
