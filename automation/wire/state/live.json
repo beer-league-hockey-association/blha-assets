@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T20:01:10.232953Z",
+  "updated_at": "2026-11-12T20:15:30.517219Z",
   "seen": [
     {
       "key": "6b24a8585b0bab98650e910d",
@@ -19062,6 +19062,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T20:01:10.082317Z"
+    },
+    {
+      "key": "0374852de9d81401013bc253",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-seattle-kraken-global-series-game-recap-november-12-2026",
+      "fingerprint": "40cd9fc5114ac16a",
+      "title_norm": "aho lifts hurricanes to global series win against kraken in home country",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T20:15:30.465163Z"
     }
   ],
   "known_sources": [
