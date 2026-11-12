@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T19:00:39.879699Z",
+  "updated_at": "2026-11-12T19:15:36.010094Z",
   "seen": [
-    {
-      "key": "9b657149e53c176278be84e7",
-      "url": "https://theahl.com/news/garand-ready-to-seize-the-moment-with-rangers",
-      "fingerprint": "8577be347667333c",
-      "title_norm": "garand ready to seize the moment with rangers",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-13T19:00:44.794070Z"
-    },
     {
       "key": "168b86ffacc7d5c6e4c7df24",
       "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
