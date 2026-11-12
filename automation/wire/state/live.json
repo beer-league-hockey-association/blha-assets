@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T05:15:36.023825Z",
+  "updated_at": "2026-11-12T05:45:33.712067Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19032,6 +19032,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T05:15:35.961751Z"
+    },
+    {
+      "key": "69e31f3a308182c78c7e4779",
+      "url": "https://www.sportsnet.ca/nhl/article/kucherov-has-natural-hat-trick-in-lightning-romp-over-sabres",
+      "fingerprint": "41e7dc2e0d27a1c2",
+      "title_norm": "nhl roundup: kucherov has natural hat trick in lightning romp over sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T05:45:33.676425Z"
     }
   ],
   "known_sources": [
