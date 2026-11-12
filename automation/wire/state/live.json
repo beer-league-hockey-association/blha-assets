@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-11T23:46:04.880578Z",
+  "updated_at": "2026-11-12T00:14:14.953422Z",
   "seen": [
-    {
-      "key": "dfca28e8b75f373efa540096",
-      "url": "https://www.sportsnet.ca/nhl/article/undrafted-owen-michaels-quickly-making-impact-with-oilers",
-      "fingerprint": "819c7aabdb623c4f",
-      "title_norm": "undrafted owen michaels quickly making impact with oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T00:00:44.182728Z"
-    },
-    {
-      "key": "d5e69f0d1f0a4701e3210197",
-      "url": "https://www.sportsnet.ca/nhl/article/devils-mantha-assessed-major-penalty-for-boarding-senators-matinpalo",
-      "fingerprint": "24f43729d23f8d2c",
-      "title_norm": "devils' mantha assessed major penalty for boarding senators' matinpalo",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T00:00:44.525078Z"
-    },
     {
       "key": "5cd12752481b93611e0f89b3",
       "url": "https://www.dailyfaceoff.com/players/news/nikolas-matinpalo/37937",
