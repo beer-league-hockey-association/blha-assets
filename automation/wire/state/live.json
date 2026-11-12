@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T15:30:49.181385Z",
+  "updated_at": "2026-11-12T15:45:51.016635Z",
   "seen": [
-    {
-      "key": "a745f4ce0ee18e8e2d1d7f34",
-      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
-      "fingerprint": "40be7cbdc2c97722",
-      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will be a game-time decision vs. vegas on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:45:33.878814Z"
-    },
-    {
-      "key": "691d57ea0518be4482a5ec04",
-      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
-      "fingerprint": "318dfbc94847d1fc",
-      "title_norm": "connor bedard (chi) — bedard (shoulder) is expected to make his season debut vs. pittsburgh on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:45:34.214367Z"
-    },
-    {
-      "key": "982a0ba05d03e82658294da9",
-      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
-      "fingerprint": "353f075e8c50aea5",
-      "title_norm": "justus annunen (nsh) — annunen (undisclosed) will be a game-time decision vs. vegas on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:45:34.418644Z"
-    },
-    {
-      "key": "da9dc669c3a2cbd8e570718d",
-      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-staal-out-1-2-months-with-partially-torn-calf-brindamour-says",
-      "fingerprint": "dc103da53f6c3ceb",
-      "title_norm": "hurricanes' staal out 1-2 months with partially torn calf, brind'amour says",
-      "channel": "breaking-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T15:45:34.622510Z"
-    },
     {
       "key": "8445ea745722eb16b48a2cc1",
       "url": "https://www.nhl.com/news/carolina-hurricanes-jordan-staal-injury-status-report-october-13-2026",
@@ -19062,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T15:30:49.082660Z"
+    },
+    {
+      "key": "c3d4f212ac8d38469ffe265c",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-recall-brendan-brisson-from-ahl-place-colton-sissons-on-ir",
+      "fingerprint": "376771379414fba3",
+      "title_norm": "maple leafs recall brendan brisson from ahl, place colton sissons on ir",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T15:45:50.975572Z"
     }
   ],
   "known_sources": [
