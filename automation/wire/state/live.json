@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T03:30:39.388096Z",
+  "updated_at": "2026-11-12T03:45:37.874283Z",
   "seen": [
     {
       "key": "5166050417068185004f36e2",
@@ -19002,6 +19002,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T03:15:37.207481Z"
+    },
+    {
+      "key": "888d7be968a1fae9b602eefa",
+      "url": "https://www.nhl.com/news/new-york-rangers-calgary-flames-game-recap-november-11-2026",
+      "fingerprint": "892f353b30fb59b5",
+      "title_norm": "zibanejad scores twice, rangers defeat flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T03:45:37.783527Z"
     }
   ],
   "known_sources": [
