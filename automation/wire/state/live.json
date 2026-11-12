@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T21:15:51.297185Z",
+  "updated_at": "2026-11-12T21:30:36.848695Z",
   "seen": [
-    {
-      "key": "b8e6353e4756cdb289c5cc6e",
-      "url": "https://www.dailyfaceoff.com/players/news/nikolas-matinpalo/37937",
-      "fingerprint": "f1c90f9d16fccbad",
-      "title_norm": "nikolas matinpalo (ott) — matinpalo (upper-body) is out vs. st. louis on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T21:30:35.660602Z"
-    },
     {
       "key": "96d7c7a50556a4eb50cca3ec",
       "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
