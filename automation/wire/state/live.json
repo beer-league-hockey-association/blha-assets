@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T12:45:42.794423Z",
+  "updated_at": "2026-11-12T13:15:40.892036Z",
   "seen": [
     {
       "key": "dc6b966efa189257018ac23a",
@@ -19082,6 +19082,26 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-12T11:15:33.793463Z"
+    },
+    {
+      "key": "56eaf0354002ccbe8fc32bf5",
+      "url": "https://www.nhl.com/news/seattle-kraken-nikke-kokko-embracing-nhl-global-series-finland-homecoming",
+      "fingerprint": "bdc7d1fe76a06215",
+      "title_norm": "firebirds' kokko embracing finland homecoming with kraken",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-12T13:15:40.484018Z"
+    },
+    {
+      "key": "99e4380c7e5a0bdcc2ebae36",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/more-theses-than-an-academic-journal",
+      "fingerprint": "1c3c140733481bf2",
+      "title_norm": "32 thoughts podcast: latest on michkov, mcdavid, hellebuyck",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T13:15:40.838171Z"
     }
   ],
   "known_sources": [
