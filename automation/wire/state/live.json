@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T19:30:51.213695Z",
+  "updated_at": "2026-11-12T19:45:32.998362Z",
   "seen": [
     {
       "key": "168b86ffacc7d5c6e4c7df24",
@@ -19072,6 +19072,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T19:30:50.935389Z"
+    },
+    {
+      "key": "22a556e674586a73571fb025",
+      "url": "https://www.sportsnet.ca/nhl/article/kevin-fiala-to-make-2026-27-debut-against-islanders-thursday",
+      "fingerprint": "5527344e9502af4c",
+      "title_norm": "kevin fiala to make 2026-27 debut against islanders on thursday",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:45:32.944399Z"
     }
   ],
   "known_sources": [
