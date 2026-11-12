@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T19:45:32.998362Z",
+  "updated_at": "2026-11-12T20:01:10.232953Z",
   "seen": [
-    {
-      "key": "168b86ffacc7d5c6e4c7df24",
-      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
-      "fingerprint": "4eb976cfbbe3aea5",
-      "title_norm": "johnathan kovacevic (njd) — kovacevic (knee) will make his season debut on tuesday in detroit.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T20:00:40.583479Z"
-    },
-    {
-      "key": "4d14e7422189f8b696ebea05",
-      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
-      "fingerprint": "3c0f5ed6bc6f0eaa",
-      "title_norm": "radko gudas (fla) — gudas (undisclosed) is out vs. columbus on tuesday and considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T20:00:40.807651Z"
-    },
-    {
-      "key": "f5ff5cfc0da85720167b8913",
-      "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
-      "fingerprint": "030b960509b9559e",
-      "title_norm": "jacob markstrom (fla) — markstrom (undisclosed) will be out vs. columbus on tuesday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T20:00:41.100811Z"
-    },
     {
       "key": "6b24a8585b0bab98650e910d",
       "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
@@ -19082,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T19:45:32.944399Z"
+    },
+    {
+      "key": "6769e7ffe56712a0338f84eb",
+      "url": "https://www.dailyfaceoff.com/players/news/drew-doughty/744",
+      "fingerprint": "e26e26e3875c5f17",
+      "title_norm": "drew doughty (lak) — doughty (lower-body) is expected to play vs. the islanders on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T20:01:10.082317Z"
     }
   ],
   "known_sources": [
