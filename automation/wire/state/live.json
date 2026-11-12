@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T18:45:37.878719Z",
+  "updated_at": "2026-11-12T19:00:39.879699Z",
   "seen": [
     {
       "key": "9b657149e53c176278be84e7",
@@ -19012,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T18:45:37.847929Z"
+    },
+    {
+      "key": "cc79615bf94ef022dd270312",
+      "url": "https://www.dailyfaceoff.com/players/news/kevin-fiala/2455",
+      "fingerprint": "087e4dcdee5a39c1",
+      "title_norm": "kevin fiala (lak) — fiala (lower-body) will make his season debut vs. new york on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T19:00:39.830430Z"
     }
   ],
   "known_sources": [
