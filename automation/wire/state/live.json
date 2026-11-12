@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T00:14:14.953422Z",
+  "updated_at": "2026-11-12T00:30:56.445556Z",
   "seen": [
-    {
-      "key": "5cd12752481b93611e0f89b3",
-      "url": "https://www.dailyfaceoff.com/players/news/nikolas-matinpalo/37937",
-      "fingerprint": "72e2a6d1bdb9b75d",
-      "title_norm": "nikolas matinpalo (ott) — matinpalo suffered an upper-body injury on monday and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T00:30:32.990101Z"
-    },
     {
       "key": "70b694a64e690359a6465fee",
       "url": "https://www.sportsnet.ca/nhl/article/wilds-nico-sturm-injured-after-taking-puck-to-head",
