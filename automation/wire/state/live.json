@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T06:45:33.496939Z",
+  "updated_at": "2026-11-12T11:15:33.861411Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T06:45:33.439064Z"
+    },
+    {
+      "key": "250e4fdee29a424fbe48862d",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-7--Time-to-Buy-Brandt-Clarke--Is-Auston-Matthews-Top-5-e3s8b0m",
+      "fingerprint": "483378c23978d170",
+      "title_norm": "trade talks week 7 | time to buy brandt clarke, is auston matthews top 5?",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-12T11:15:33.793463Z"
     }
   ],
   "known_sources": [
