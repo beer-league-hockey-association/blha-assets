@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T17:30:36.460847Z",
+  "updated_at": "2026-11-12T17:45:37.067224Z",
   "seen": [
-    {
-      "key": "a249e1308b4f20c826d27ce0",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
-      "fingerprint": "15981cf8cee99c2f",
-      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) did not travel to montreal and will be out tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:30:44.996132Z"
-    },
-    {
-      "key": "886d44bc3b454b43955f2083",
-      "url": "https://www.sportsnet.ca/nhl/article/avalanche-defenceman-cale-makar-awaiting-childbirth-out-against-stars",
-      "fingerprint": "0104984e8cb7b9ae",
-      "title_norm": "avalanche defenceman cale makar awaiting childbirth, out against stars",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:30:45.412018Z"
-    },
-    {
-      "key": "8f173a711843d240971a5ff4",
-      "url": "https://www.sportsnet.ca/nhl/video/is-senators-red-hot-start-to-the-season-sustainable",
-      "fingerprint": "48fb50a85ecc3c22",
-      "title_norm": "is senators' red-hot start to the season sustainable?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:30:45.795651Z"
-    },
-    {
-      "key": "b13ad8f8b20e99881dd27eed",
-      "url": "https://www.dailyfaceoff.com/players/news/alex-tuch/2739",
-      "fingerprint": "f3dbc0f4725b3b29",
-      "title_norm": "alex tuch (wsh) — tuch (undisclosed) will be a game-time decision in carolina on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:45:33.405822Z"
-    },
-    {
-      "key": "8c16192f8ec8e9b5d789e7e3",
-      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-bedard-expected-to-make-season-debut-vs-penguins",
-      "fingerprint": "4c4d808a89a6cbc3",
-      "title_norm": "blackhawks' bedard set for season debut vs. penguins",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T17:45:33.704407Z"
-    },
     {
       "key": "b84c75b1db8463380ba1f304",
       "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
@@ -19062,6 +19012,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T17:30:36.390493Z"
+    },
+    {
+      "key": "4d1bea6e8a95265fb371d413",
+      "url": "https://www.sportsnet.ca/nhl/article/breaking-down-the-many-layers-of-the-quinn-hughes-situation-with-the-wild",
+      "fingerprint": "b970f291af345afa",
+      "title_norm": "the case for wild to keep quinn hughes past trade deadline",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T17:45:36.922708Z"
     }
   ],
   "known_sources": [
