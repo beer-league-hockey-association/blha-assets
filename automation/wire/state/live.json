@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T16:15:38.068166Z",
+  "updated_at": "2026-11-12T16:30:36.034024Z",
   "seen": [
-    {
-      "key": "8047558ba9fb98c7a94d9236",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-blasting-out-of-gates-despite-rash-of-early-season-injuries",
-      "fingerprint": "6cb126745b041310",
-      "title_norm": "senators blasting out of gates despite rash of early-season injuries",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T16:15:40.854283Z"
-    },
     {
       "key": "ac1c9259ddc60c4fdd7145fe",
       "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
@@ -19022,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T16:15:38.016618Z"
+    },
+    {
+      "key": "d63a046d4239634636ef9e43",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-linus-ullmark-to-start-vs-avalanche",
+      "fingerprint": "8d3f0d1356ff2de2",
+      "title_norm": "senators' linus ullmark to start vs. avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T16:30:35.996879Z"
     }
   ],
   "known_sources": [
