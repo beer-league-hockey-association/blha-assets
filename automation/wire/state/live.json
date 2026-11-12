@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T22:15:33.660633Z",
+  "updated_at": "2026-11-12T22:45:34.506591Z",
   "seen": [
-    {
-      "key": "1098f16d3286c2ca5f5d64cf",
-      "url": "https://www.dailyfaceoff.com/players/news/alex-tuch/2739",
-      "fingerprint": "7b1e7bd57c1f45e4",
-      "title_norm": "alex tuch (wsh) — tuch (undisclosed) is on the ice for warmups; he's expected to play tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T22:30:39.061930Z"
-    },
     {
       "key": "717248cc87c49e524bb96c43",
       "url": "https://www.sportsnet.ca/nhl/article/senators-zub-sanderson-close-to-return-matinpalo-out-vs-blues",
@@ -19082,6 +19072,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T22:15:33.582680Z"
+    },
+    {
+      "key": "e6cf23c53a7966c8367bf6a4",
+      "url": "https://www.nhl.com/news/henrik-daniel-sedin-disappointed-by-vancouver-canucks-tough-start",
+      "fingerprint": "272c1190e13b5493",
+      "title_norm": "sedins say they're losing sleep over canucks' start",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-12T22:45:34.400302Z"
     }
   ],
   "known_sources": [
