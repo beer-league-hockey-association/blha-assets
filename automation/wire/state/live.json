@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T16:45:46.588557Z",
+  "updated_at": "2026-11-12T17:00:46.385634Z",
   "seen": [
     {
       "key": "ac1c9259ddc60c4fdd7145fe",
@@ -19042,6 +19042,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T16:45:46.530827Z"
+    },
+    {
+      "key": "747e5a72f10ade1141de0896",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
+      "fingerprint": "098bf11a5b877f06",
+      "title_norm": "mike matheson (mtl) — matheson (lower-body) will return in boston on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T17:00:44.857220Z"
+    },
+    {
+      "key": "52c46fb230dd7a5ba4c53811",
+      "url": "https://www.dailyfaceoff.com/players/news/patrick-kane/305",
+      "fingerprint": "07a40959829d46c8",
+      "title_norm": "patrick kane (chi) — kane (upper-body) will be a game-time decision vs. buffalo on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T17:00:45.265964Z"
+    },
+    {
+      "key": "502451435d95764843564473",
+      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
+      "fingerprint": "ae97809a742aa48a",
+      "title_norm": "johnathan kovacevic (njd) — kovacevic (undisclosed) is out vs. washington and expected to miss some time.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T17:00:45.574282Z"
+    },
+    {
+      "key": "ff8262c4a639d21f9ef7b791",
+      "url": "https://www.dailyfaceoff.com/players/news/brett-pesce/2541",
+      "fingerprint": "2e88d4b103f25ab1",
+      "title_norm": "brett pesce (njd) — pesce (illness) is out vs. washington on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T17:00:45.585684Z"
+    },
+    {
+      "key": "74921f377b51ccf8917b33e7",
+      "url": "https://audioboom.com/posts/8976420",
+      "fingerprint": "cbf8ac52fd2cdeb1",
+      "title_norm": "week 7 mailbag; fiala, barzal nearing return",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-11-12T17:00:45.983563Z"
     }
   ],
   "known_sources": [
