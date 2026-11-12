@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T06:30:43.013249Z",
+  "updated_at": "2026-11-12T06:45:33.496939Z",
   "seen": [
     {
       "key": "9082e49086a6a701a365dadb",
@@ -19072,6 +19072,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-12T06:30:42.919241Z"
+    },
+    {
+      "key": "54a81d735fe5ba5760b8643a",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-beat-flyers-in-ot-as-goaltending-shows-signs-of-stability",
+      "fingerprint": "db14c71e07982e72",
+      "title_norm": "oilers beat flyers in ot as goaltending shows signs of stability",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T06:45:33.439064Z"
     }
   ],
   "known_sources": [
