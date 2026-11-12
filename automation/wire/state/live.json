@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T17:45:37.067224Z",
+  "updated_at": "2026-11-12T18:00:57.619157Z",
   "seen": [
-    {
-      "key": "b84c75b1db8463380ba1f304",
-      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
-      "fingerprint": "8ff5f94a51a56906",
-      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) will be out on tuesday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T18:00:39.066213Z"
-    },
     {
       "key": "26d6c08ed2fa2986d9abf55a",
       "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
@@ -19022,6 +19012,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T17:45:36.922708Z"
+    },
+    {
+      "key": "a7b50bd2ecdfa0faf02a1035",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-quarter-mark-report-card-edmonton-off-to-very-promising-start",
+      "fingerprint": "009b4a2c5357537e",
+      "title_norm": "oilers quarter-mark report card: edmonton off to very promising start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T18:00:57.149005Z"
+    },
+    {
+      "key": "7cc5471f09b840d914f2b1dc",
+      "url": "https://www.sportsnet.ca/nhl/article/sedins-unhappy-with-canucks-results-weighing-options-amid-dismal-season",
+      "fingerprint": "7f30d06de04ccd2f",
+      "title_norm": "sedins unhappy with canucks' results, weighing options amid dismal season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T18:00:57.563901Z"
     }
   ],
   "known_sources": [
