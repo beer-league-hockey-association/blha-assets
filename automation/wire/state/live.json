@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T21:00:39.254605Z",
+  "updated_at": "2026-11-12T21:15:51.297185Z",
   "seen": [
     {
       "key": "b8e6353e4756cdb289c5cc6e",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T21:00:39.195725Z"
+    },
+    {
+      "key": "01fb68698fd9852b74a3fe82",
+      "url": "https://www.sportsnet.ca/nhl/article/mammoths-logan-cooley-will-remain-sidelined-against-st-louis",
+      "fingerprint": "f516656bbc911022",
+      "title_norm": "report: mammoth's logan cooley will remain sidelined against st. louis",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T21:15:51.205470Z"
     }
   ],
   "known_sources": [
