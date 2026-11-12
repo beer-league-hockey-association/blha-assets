@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T18:00:57.619157Z",
+  "updated_at": "2026-11-12T18:45:37.878719Z",
   "seen": [
-    {
-      "key": "26d6c08ed2fa2986d9abf55a",
-      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
-      "fingerprint": "e39e08d72b63dc42",
-      "title_norm": "zach hyman (edm) — hyman (upper-body) will not return on tuesday vs. los angeles.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T18:30:43.453430Z"
-    },
-    {
-      "key": "a157f163e1ea2f7f633cfc6e",
-      "url": "https://www.dailyfaceoff.com/players/news/barclay-goodrow/2395",
-      "fingerprint": "4183f244f28e1b7a",
-      "title_norm": "barclay goodrow (sjs) — goodrow (illness) is expected to play on tuesday vs. boston.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T18:30:43.777354Z"
-    },
-    {
-      "key": "dca4046c9795c88646d806e9",
-      "url": "https://www.dailyfaceoff.com/players/news/drew-helleson/30429",
-      "fingerprint": "248f2763ea104894",
-      "title_norm": "drew helleson (ana) — helleson (lower-body) has been activated off ir and will make his season debut on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T18:45:33.382002Z"
-    },
     {
       "key": "9b657149e53c176278be84e7",
       "url": "https://theahl.com/news/garand-ready-to-seize-the-moment-with-rangers",
@@ -19032,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T18:00:57.563901Z"
+    },
+    {
+      "key": "34b490e54061fb704c143512",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-decide-to-sit-tanev-vs-wild-because-of-load-management-plan",
+      "fingerprint": "ac185aa52bebd776",
+      "title_norm": "maple leafs decide to sit tanev vs. wild because of load-management plan",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T18:45:37.847929Z"
     }
   ],
   "known_sources": [
