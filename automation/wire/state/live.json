@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T02:00:41.472097Z",
+  "updated_at": "2026-11-12T02:15:40.447842Z",
   "seen": [
-    {
-      "key": "eda6ba0f86f228d021d7bf78",
-      "url": "https://www.nhl.com/news/ottawa-senators-new-jersey-devils-game-recap-october-12-2026",
-      "fingerprint": "f7669c5052660695",
-      "title_norm": "stutzle has 2 points, senators defeat devils",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-13T02:15:37.674258Z"
-    },
     {
       "key": "5bc604148f8c393e92805b81",
       "url": "https://www.dailyfaceoff.com/players/news/nico-sturm/27037",
@@ -19012,6 +19002,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-12T02:00:41.415162Z"
+    },
+    {
+      "key": "a3c834ca0aa6a684e90abd2e",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-cooley/33387",
+      "fingerprint": "2c9c05dbba9d0090",
+      "title_norm": "logan cooley (uta) — cooley (upper-body) will not play on wednesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T02:15:39.200086Z"
+    },
+    {
+      "key": "8468e2ec0c4bba0cbbf776d7",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "33c73dacd233757f",
+      "title_norm": "dylan guenther (uta) — guenther (upper-body) has been placed on ir and is expected to miss 2-to-4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T02:15:39.460236Z"
+    },
+    {
+      "key": "c7438dff4d1c4262fb46392e",
+      "url": "https://www.dailyfaceoff.com/players/news/nate-schmidt/2093",
+      "fingerprint": "28b7372918bca56c",
+      "title_norm": "nate schmidt (uta) — the mammoth have placed nate schmidt (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T02:15:39.754577Z"
+    },
+    {
+      "key": "6d1b0e89148c46dbae3be265",
+      "url": "https://www.dailyfaceoff.com/players/news/kailer-yamamoto/2796",
+      "fingerprint": "6d7bb7491f570adc",
+      "title_norm": "kailer yamamoto (uta) — yamamoto (upper-body) has been activated from ir and will play wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-12T02:15:39.772405Z"
     }
   ],
   "known_sources": [
