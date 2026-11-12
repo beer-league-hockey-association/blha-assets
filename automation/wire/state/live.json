@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T00:30:56.445556Z",
+  "updated_at": "2026-11-12T02:00:41.472097Z",
   "seen": [
-    {
-      "key": "70b694a64e690359a6465fee",
-      "url": "https://www.sportsnet.ca/nhl/article/wilds-nico-sturm-injured-after-taking-puck-to-head",
-      "fingerprint": "b7b1435788dcaf21",
-      "title_norm": "wild's nico sturm injured after taking puck to head",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-13T01:45:33.730034Z"
-    },
     {
       "key": "eda6ba0f86f228d021d7bf78",
       "url": "https://www.nhl.com/news/ottawa-senators-new-jersey-devils-game-recap-october-12-2026",
@@ -19012,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-11T23:30:38.289652Z"
+    },
+    {
+      "key": "979a27c114c88d75016552c9",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/af64a8ee-76cb-448e-83a9-f231b14faf82",
+      "fingerprint": "376fc4b2f0989cf7",
+      "title_norm": "oilers on sportsnet: edmonton vs. philadelphia",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-12T02:00:41.415162Z"
     }
   ],
   "known_sources": [
