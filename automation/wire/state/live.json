@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T04:30:40.961385Z",
+  "updated_at": "2026-11-13T04:45:33.446022Z",
   "seen": [
     {
       "key": "00f1d84e610358044a67967c",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T04:30:40.825701Z"
+    },
+    {
+      "key": "428e1c7d05aad28a560def4e",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-rout-bruins-but-continue-to-surrender-own-blue-line",
+      "fingerprint": "99ba656f94a394af",
+      "title_norm": "canadiens rout bruins but continue to surrender own blue line",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T04:45:33.411027Z"
     }
   ],
   "known_sources": [
