@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T01:30:37.871882Z",
+  "updated_at": "2026-11-13T01:45:34.824358Z",
   "seen": [
-    {
-      "key": "28dc86e58c2987ef0bd3a3ce",
-      "url": "https://www.nhl.com/news/florida-panthers-columbus-blue-jackets-game-recap-october-13-2026",
-      "fingerprint": "c1e37232a83c3438",
-      "title_norm": "brady tkachuk scores natural hat trick, powers panthers past blue jackets",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T01:30:40.316396Z"
-    },
     {
       "key": "44cdeac3dc336095cd5a6766",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/9f035640-c4ce-4d03-859c-725322580183",
@@ -19042,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-13T01:30:37.729456Z"
+    },
+    {
+      "key": "249d753a9d18ed9863d571cc",
+      "url": "https://www.nhl.com/news/global-series-finland-blog-seattle-kraken-berkly-catton-november-12-2026",
+      "fingerprint": "1dfd9eb2c8d73840",
+      "title_norm": "global series finland blog: kraken's berkly catton",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T01:45:34.748258Z"
     }
   ],
   "known_sources": [
