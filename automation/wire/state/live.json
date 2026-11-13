@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T03:00:47.773623Z",
+  "updated_at": "2026-11-13T03:15:38.380486Z",
   "seen": [
-    {
-      "key": "fcb8cdccdcec09c3ed797db2",
-      "url": "https://www.nhl.com/news/pittsburgh-penguins-chicago-blackhawks-game-recap-october-13-2026",
-      "fingerprint": "fef6410cac85b4b1",
-      "title_norm": "bedard gets assist, blackhawks win return",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T03:15:31.646503Z"
-    },
-    {
-      "key": "b71996c998f3b1b50288566a",
-      "url": "https://www.nhl.com/news/minnesota-wild-winnipeg-jets-game-recap-october-13-2026",
-      "fingerprint": "599be00bf00353c1",
-      "title_norm": "scheifele's three points help jets pull away from wild",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T03:15:32.239011Z"
-    },
-    {
-      "key": "49851cbc72d827794386a706",
-      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-beat-penguins-in-connor-bedards-season-debut",
-      "fingerprint": "c4c1469cf9a8ad9f",
-      "title_norm": "blackhawks beat penguins in connor bedard's season debut",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T03:15:32.726517Z"
-    },
     {
       "key": "cbb33285b674b980f9cac941",
       "url": "https://www.sportsnet.ca/nhl/article/perfetti-scores-twice-as-jets-soar-past-wild",
@@ -18962,6 +18932,76 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T03:00:47.713072Z"
+    },
+    {
+      "key": "2461828a04a67ac631e02fa0",
+      "url": "https://www.nhl.com/news/montreal-canadiens-boston-bruins-game-recap-november-12-2026",
+      "fingerprint": "0381bc728604f97b",
+      "title_norm": "habs cruise past bruins, push point streak to 12",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T03:15:37.153996Z"
+    },
+    {
+      "key": "fb910dfb0e25b3fdef667d17",
+      "url": "https://www.nhl.com/news/washington-capitals-new-jersey-devils-game-recap-november-12-2026",
+      "fingerprint": "75b8f4eb13cc3a0a",
+      "title_norm": "kolyachonok scores go-ahead goal in 3rd, devils stay hot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T03:15:37.392533Z"
+    },
+    {
+      "key": "0d383d25e9fd29e399eff360",
+      "url": "https://www.nhl.com/news/colorado-avalanche-ottawa-senators-game-recap-november-12-2026",
+      "fingerprint": "99eb0b2ac2da7ba5",
+      "title_norm": "pinto scores 2nd of game in ot, sens rally past avs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T03:15:37.661797Z"
+    },
+    {
+      "key": "6caf45af85254622ae66ec86",
+      "url": "https://www.nhl.com/news/minnesota-wild-toronto-maple-leafs-game-recap-november-12-2026",
+      "fingerprint": "a8ab7d6af92a7378",
+      "title_norm": "boldy scores hat trick, wild defeat maple leafs to extend point streak to 10",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T03:15:37.683015Z"
+    },
+    {
+      "key": "26f7dbaf49e93cc384751f3b",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-snap-bruins-seven-game-home-win-streak",
+      "fingerprint": "3fb284c98ca34d78",
+      "title_norm": "canadiens snap bruins' seven-game home win streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T03:15:37.731321Z"
+    },
+    {
+      "key": "ddc9de223fb58d59d7a4d5a1",
+      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-makes-26-saves-as-devils-beat-capitals",
+      "fingerprint": "5def59b668a4e9a8",
+      "title_norm": "hellebuyck makes 26 saves as devils beat capitals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T03:15:37.747883Z"
+    },
+    {
+      "key": "28987ff8a474059f736e1980",
+      "url": "https://rss.com/podcasts/prospects2pros/3316200",
+      "fingerprint": "d6c09b181ea8744e",
+      "title_norm": "2027 nhl draft scouting - zhilkin vs walos",
+      "channel": "media",
+      "source_id": "pod_prospects2pros",
+      "tier": 2,
+      "seen_at": "2026-11-13T03:15:38.016283Z"
     }
   ],
   "known_sources": [
