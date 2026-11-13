@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T03:30:49.096707Z",
+  "updated_at": "2026-11-13T03:45:44.951234Z",
   "seen": [
     {
       "key": "60477d27eb11a28562ccc5b0",
@@ -19002,6 +19002,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T03:30:49.044442Z"
+    },
+    {
+      "key": "e15a1aba15ba78a8a291c091",
+      "url": "https://www.nhl.com/news/detroit-red-wings-florida-panthers-game-recap-november-12-2026",
+      "fingerprint": "bf74a82231e60547",
+      "title_norm": "panthers score 4 straight, rally past red wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T03:45:44.646696Z"
+    },
+    {
+      "key": "c2b3ff988ce6c73f00fa1248",
+      "url": "https://www.sportsnet.ca/nhl/article/pinto-scores-ot-winner-on-birthday-as-senators-beat-avalanche",
+      "fingerprint": "f76bc178727644a9",
+      "title_norm": "pinto scores ot winner on birthday as senators beat avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T03:45:44.920479Z"
     }
   ],
   "known_sources": [
