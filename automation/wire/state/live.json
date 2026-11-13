@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T15:45:57.559017Z",
+  "updated_at": "2026-11-13T16:00:56.117759Z",
   "seen": [
-    {
-      "key": "e977089510f5a1f9c1113f96",
-      "url": "https://www.sportsnet.ca/nhl/article/where-five-struggling-nhl-teams-land-on-the-panic-meter",
-      "fingerprint": "1c2e7d8d01ddc6ac",
-      "title_norm": "where five struggling nhl teams land on the panic meter",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T16:00:44.135344Z"
-    },
-    {
-      "key": "c24552da5184146be6ca4c60",
-      "url": "https://www.sportsnet.ca/nhl/article/in-wake-of-chris-tanev-injury-leafs-cant-wait-to-add-defenceman",
-      "fingerprint": "c90f266691ed04d1",
-      "title_norm": "in wake of chris tanev injury, maple leafs can't wait to add defenceman",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T16:00:44.476190Z"
-    },
     {
       "key": "f18df8a5f98ae2929fdc3c93",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-14-2026",
