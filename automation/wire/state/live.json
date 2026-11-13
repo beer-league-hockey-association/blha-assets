@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T18:00:46.660985Z",
+  "updated_at": "2026-11-13T18:30:44.854748Z",
   "seen": [
-    {
-      "key": "da2e9e5b52c0ec763b8e02b8",
-      "url": "https://www.nhl.com/news/connor-bedard-shines-in-return-to-ice-with-chicago-blackhawks",
-      "fingerprint": "ac5f1f6126e1294f",
-      "title_norm": "bedard gets back to 'what i live for' in season debut",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T18:15:42.246239Z"
-    },
-    {
-      "key": "e7ccae79acb8f1a504b4e7b4",
-      "url": "https://www.dailyfaceoff.com/players/news/joel-kiviranta/31187",
-      "fingerprint": "420068bc6d8ad066",
-      "title_norm": "joel kiviranta (dal) — kiviranta (lower body) will play on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-14T18:30:38.380641Z"
-    },
-    {
-      "key": "28fcd48734509efb1b7475b6",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-place-aatu-raty-on-waivers",
-      "fingerprint": "4c47d975f4c5b2f4",
-      "title_norm": "canucks place aatu raty on waivers",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T18:30:38.426357Z"
-    },
     {
       "key": "e4b5a1f0680c2dd0a0c137dd",
       "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
@@ -19012,6 +18982,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-13T18:00:46.523194Z"
+    },
+    {
+      "key": "9f4d1c36b5c29d5bae74427f",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
+      "fingerprint": "02fd3e25508d46de",
+      "title_norm": "conor garland (cbj) — garland (upper-body) is without a timeline to return to the lineup.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T18:30:44.707454Z"
     }
   ],
   "known_sources": [
