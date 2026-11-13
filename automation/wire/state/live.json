@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T06:00:49.627635Z",
+  "updated_at": "2026-11-13T06:17:17.878976Z",
   "seen": [
-    {
-      "key": "88baefd726c8e7c765c7e755",
-      "url": "https://www.nhl.com/news/boston-bruins-san-jose-sharks-game-recap-october-13-2026",
-      "fingerprint": "87e3d569bd77b5ca",
-      "title_norm": "mcavoy scores in season debut, bruins defeat sharks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T06:15:34.311362Z"
-    },
-    {
-      "key": "caf260d96cb2344d2441574b",
-      "url": "https://www.sportsnet.ca/nhl/article/stolarz-maple-leafs-too-leaky-in-high-scoring-loss-to-mammoth",
-      "fingerprint": "d1aad094755a67ce",
-      "title_norm": "stolarz, maple leafs too leaky in high-scoring loss to mammoth",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T06:15:34.622997Z"
-    },
     {
       "key": "061079521f42367d1ed2dbdf",
       "url": "https://www.sportsnet.ca/nhl/article/winning-is-fun-flames-use-strong-finish-to-secure-first-victory",
@@ -18982,6 +18962,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-13T05:45:33.187578Z"
+    },
+    {
+      "key": "741ed6ea850cbf836da9c82e",
+      "url": "https://www.nhl.com/news/new-york-islanders-los-angeles-kings-game-recap-november-12-2026",
+      "fingerprint": "75563104993c4e01",
+      "title_norm": "islanders defeat kings, stop losing streak at 4",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T06:17:17.759921Z"
     }
   ],
   "known_sources": [
