@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T05:00:40.996927Z",
+  "updated_at": "2026-11-13T05:30:44.842742Z",
   "seen": [
-    {
-      "key": "d1432b06998c5d763a535d2b",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-break-tie-late-beat-ducks-for-first-win",
-      "fingerprint": "1faed5097f9e98e4",
-      "title_norm": "flames break tie late, beat ducks for first win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T05:15:43.774188Z"
-    },
-    {
-      "key": "38401f7424a7a40e0ffdb221",
-      "url": "https://www.sportsnet.ca/nhl/article/mcdavids-big-night-lifts-oilers-over-kings",
-      "fingerprint": "1e075c01db5a1814",
-      "title_norm": "mcdavid's big night lifts oilers over kings",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T05:30:38.220939Z"
-    },
     {
       "key": "2fff70858cf4534ae3843ec7",
       "url": "https://www.nhl.com/news/edmonton-oilers-los-angeles-kings-game-recap-october-13-2026",
@@ -18992,6 +18972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T04:45:33.411027Z"
+    },
+    {
+      "key": "2a88ce8475dde11d2f8afaa3",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-confidence-shaken-as-home-slump-continues",
+      "fingerprint": "d5683b7809ed993b",
+      "title_norm": "maple leafs' confidence shaken as home slump continues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T05:30:44.775831Z"
     }
   ],
   "known_sources": [
