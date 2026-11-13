@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T22:00:41.262829Z",
+  "updated_at": "2026-11-13T22:15:45.496602Z",
   "seen": [
     {
       "key": "cd03a1098a68174e3e37a21c",
@@ -19052,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T22:00:41.125752Z"
+    },
+    {
+      "key": "a8ffe8148026356139d56957",
+      "url": "https://www.sportsnet.ca/nhl/article/report-nhl-expected-to-extend-texas-expansion-evaluation-process",
+      "fingerprint": "fa2d730623792aea",
+      "title_norm": "report: nhl expected to extend texas expansion evaluation process",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T22:15:45.473248Z"
     }
   ],
   "known_sources": [
