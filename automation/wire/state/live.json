@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T21:45:34.895745Z",
+  "updated_at": "2026-11-13T22:00:41.262829Z",
   "seen": [
     {
       "key": "cd03a1098a68174e3e37a21c",
@@ -19042,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T21:45:34.834593Z"
+    },
+    {
+      "key": "399a47d3bc9b9231533728b1",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-superstar-connor-mcdavid-brings-his-gretzky-vibe-to-toronto",
+      "fingerprint": "11282afdf5b7819e",
+      "title_norm": "oilers superstar connor mcdavid brings his gretzky vibe to toronto",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T22:00:41.125752Z"
     }
   ],
   "known_sources": [
