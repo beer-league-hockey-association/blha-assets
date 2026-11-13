@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T04:15:38.453755Z",
+  "updated_at": "2026-11-13T04:30:40.961385Z",
   "seen": [
     {
       "key": "00f1d84e610358044a67967c",
@@ -18992,6 +18992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-13T04:15:38.355501Z"
+    },
+    {
+      "key": "d65af6d11c030f807a4f6edc",
+      "url": "https://www.sportsnet.ca/nhl/article/mark-scheifele-dawson-mercer-score-two-goals-each-as-jets-roar-past-stars",
+      "fingerprint": "518dbe9cfefd0a57",
+      "title_norm": "mark scheifele, dawson mercer score two goals each as jets roar past stars",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T04:30:40.825701Z"
     }
   ],
   "known_sources": [
