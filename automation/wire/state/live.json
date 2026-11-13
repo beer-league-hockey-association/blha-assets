@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T04:45:33.446022Z",
+  "updated_at": "2026-11-13T05:00:40.996927Z",
   "seen": [
-    {
-      "key": "00f1d84e610358044a67967c",
-      "url": "https://www.nhl.com/news/calgary-flames-anaheim-ducks-game-recap-october-13-2026",
-      "fingerprint": "c80d47c36cfd4a42",
-      "title_norm": "pospisil scores late, flames edge ducks for 1st win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T05:00:37.323848Z"
-    },
-    {
-      "key": "23265b97a78b2d065e194be7",
-      "url": "https://www.sportsnet.ca/nhl/article/buiums-struggles-continue-for-canucks-as-losses-pile-up",
-      "fingerprint": "6077c70ff907da87",
-      "title_norm": "buium's struggles continue for canucks as losses pile up",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T05:00:37.603706Z"
-    },
     {
       "key": "d1432b06998c5d763a535d2b",
       "url": "https://www.sportsnet.ca/nhl/article/flames-break-tie-late-beat-ducks-for-first-win",
