@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T02:15:48.438025Z",
+  "updated_at": "2026-11-13T02:30:42.216263Z",
   "seen": [
-    {
-      "key": "0078c0dfe1a91f860b2f308d",
-      "url": "https://www.nhl.com/news/tampa-bay-lightning-new-york-rangers-game-recap-october-13-2026",
-      "fingerprint": "b0b5377f6c896050",
-      "title_norm": "lafreniere stays hot, rangers cool off lightning",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T02:30:36.873897Z"
-    },
-    {
-      "key": "b87f2e1bb990303097c2d22a",
-      "url": "https://www.nhl.com/news/seattle-kraken-philadelphia-flyers-game-recap-october-13-2026",
-      "fingerprint": "1782cbc5ccb470ab",
-      "title_norm": "kraken recover in shootout, keep flyers winless",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T02:30:37.144222Z"
-    },
-    {
-      "key": "08b5d3b313274af6517063e7",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-three-game-win-streak-snapped-in-loss-to-blues",
-      "fingerprint": "91b425aeacedb9be",
-      "title_norm": "senators' three-game win streak snapped in loss to blues",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T02:30:37.467054Z"
-    },
-    {
-      "key": "83af27393b595e0fe43b8fa0",
-      "url": "https://www.sportsnet.ca/nhl/article/bowness-says-blue-jackets-should-be-embarrassed-after-rout-by-panthers",
-      "fingerprint": "6d50541bd46e8116",
-      "title_norm": "bowness says blue jackets should be 'embarrassed' after rout by panthers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T02:30:37.475487Z"
-    },
     {
       "key": "d9c0cb802080a02a4fd6994e",
       "url": "https://www.nhl.com/news/st-louis-blues-ottawa-senators-game-recap-october-13-2026",
@@ -18992,6 +18952,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T02:15:48.298764Z"
+    },
+    {
+      "key": "78bb67c127cdc54e71a0e4df",
+      "url": "https://www.nhl.com/news/nathan-mackinnon-cale-makar-exit-game-for-colorado-avalanche",
+      "fingerprint": "a5c4df1c73f5caac",
+      "title_norm": "mackinnon, makar leave with lower-body injuries for avs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T02:30:41.663296Z"
+    },
+    {
+      "key": "e51fec4f2c0dda2a77218973",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanche-stars-mackinnon-makar-injured-vs-senators",
+      "fingerprint": "0b47974fe3c1c419",
+      "title_norm": "avalanche stars mackinnon, makar injured vs. senators",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T02:30:41.976407Z"
+    },
+    {
+      "key": "88958fb740ab2ff949767890",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-dylan-demelo-exits-vs-stars-with-lower-body-injury",
+      "fingerprint": "954053e0ad02ccfb",
+      "title_norm": "jets' dylan demelo exits vs. stars with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T02:30:42.176073Z"
     }
   ],
   "known_sources": [
