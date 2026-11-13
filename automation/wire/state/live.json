@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T02:45:33.502923Z",
+  "updated_at": "2026-11-13T03:00:47.773623Z",
   "seen": [
-    {
-      "key": "d9c0cb802080a02a4fd6994e",
-      "url": "https://www.nhl.com/news/st-louis-blues-ottawa-senators-game-recap-october-13-2026",
-      "fingerprint": "6acd4d885d4abeca",
-      "title_norm": "suter, neighbours, mctavish each scores 2 in blues win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T02:45:34.608140Z"
-    },
-    {
-      "key": "284a84a5578a88fa97e70f39",
-      "url": "https://www.nhl.com/news/vancouver-canucks-new-york-islanders-game-recap-october-13-2026",
-      "fingerprint": "7de0230787f5e0df",
-      "title_norm": "palmieri scores 1st 2 goals of season in islanders win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T02:45:35.326194Z"
-    },
-    {
-      "key": "45d4e0c32e69de3463fe5fba",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/f47bec47-ea22-488e-b1d1-3936fbc615e2",
-      "fingerprint": "509162db25bf9953",
-      "title_norm": "oilers on sportsnet: edmonton vs. los angeles",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T02:45:35.828719Z"
-    },
-    {
-      "key": "45a08bacf2023a43f7db7463",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-sent-to-fifth-straight-loss-by-islanders",
-      "fingerprint": "9da8acbc31e394d7",
-      "title_norm": "canucks sent to fifth straight loss by islanders",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T02:45:35.851627Z"
-    },
-    {
-      "key": "402ec81551667168d04e83f5",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-ridly-greig-leaves-game-early-with-strain",
-      "fingerprint": "9728e81bf1a4cfc6",
-      "title_norm": "senators' ridly greig leaves game early with strain",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T03:00:44.345614Z"
-    },
     {
       "key": "fcb8cdccdcec09c3ed797db2",
       "url": "https://www.nhl.com/news/pittsburgh-penguins-chicago-blackhawks-game-recap-october-13-2026",
@@ -18992,6 +18942,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T02:45:33.428733Z"
+    },
+    {
+      "key": "596683e38656690f00c1e149",
+      "url": "https://www.nhl.com/news/tampa-bay-lightning-columbus-blue-jackets-game-recap-november-12-2026",
+      "fingerprint": "9c5137781534db10",
+      "title_norm": "hagel has 2 goals, assist for lightning in win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T03:00:47.411434Z"
+    },
+    {
+      "key": "2df92251fe81f7684242e525",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-fall-to-wild-for-fifth-straight-home-loss",
+      "fingerprint": "24f21949a74f62b8",
+      "title_norm": "maple leafs fall to wild for fifth straight home loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T03:00:47.713072Z"
     }
   ],
   "known_sources": [
