@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T12:30:34.492119Z",
+  "updated_at": "2026-11-13T12:45:45.318882Z",
   "seen": [
     {
       "key": "d0f2c9b996488d6ed092f2d5",
@@ -18942,6 +18942,66 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-13T06:17:17.759921Z"
+    },
+    {
+      "key": "9f3dea5e77e62d4d419ffc46",
+      "url": "https://www.dailyfaceoff.com/players/news/lian-bichsel/36369",
+      "fingerprint": "7507b92a59c63db1",
+      "title_norm": "lian bichsel (dal) — bichsel left thursday's game with a lower-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T12:45:44.405864Z"
+    },
+    {
+      "key": "761a64e81a2e64a481235b4b",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-kreider/1926",
+      "fingerprint": "f01e6ec6dd950c8b",
+      "title_norm": "chris kreider (mtl) — kreider left thursday's game with a lower-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T12:45:44.651974Z"
+    },
+    {
+      "key": "644659a61e154a6656217a94",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-monahan/2138",
+      "fingerprint": "8e79eeca0f2ef8c0",
+      "title_norm": "sean monahan (cbj) — monahan left thursday's game with an upper-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T12:45:44.881535Z"
+    },
+    {
+      "key": "6aa19c6420b19daac6caa4f1",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-eriksson-ek/2494",
+      "fingerprint": "6e2d9e1d93b51a2d",
+      "title_norm": "joel eriksson ek (min) — eriksson ek left thursday's game with an upper-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T12:45:44.897610Z"
+    },
+    {
+      "key": "33eb6d18c6168c456a52f144",
+      "url": "https://www.dailyfaceoff.com/players/news/cale-makar/2788",
+      "fingerprint": "eae05c6882b6b67a",
+      "title_norm": "cale makar (col) — makar left thursday's game with a lower-body injury and is questionable to play saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T12:45:44.915505Z"
+    },
+    {
+      "key": "e47c3fd68de0b71203cebff9",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-demelo/2033",
+      "fingerprint": "943e900735f2527e",
+      "title_norm": "dylan demelo (wpg) — demelo left thursday's game with a lower-body injury and will be out week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T12:45:44.953068Z"
     }
   ],
   "known_sources": [
