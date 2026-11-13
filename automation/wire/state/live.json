@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T17:45:35.822463Z",
+  "updated_at": "2026-11-13T18:00:46.660985Z",
   "seen": [
     {
       "key": "da2e9e5b52c0ec763b8e02b8",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T17:45:35.775627Z"
+    },
+    {
+      "key": "aabc7cedbe5a578bffd83a02",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-13-2026",
+      "fingerprint": "bdbcb4daa0e6e606",
+      "title_norm": "status report: faber could make season debut saturday",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T18:00:46.523194Z"
     }
   ],
   "known_sources": [
