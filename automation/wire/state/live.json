@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T18:30:44.854748Z",
+  "updated_at": "2026-11-13T19:00:54.158316Z",
   "seen": [
-    {
-      "key": "e4b5a1f0680c2dd0a0c137dd",
-      "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
-      "fingerprint": "5ea2a633873d4f6a",
-      "title_norm": "wyatt johnston (dal) — johnston (illness) is hopeful to return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-14T18:56:33.454641Z"
-    },
     {
       "key": "b46bbda89afaf77aede28f28",
       "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-olivier-fined-5000-for-slashing-panthers-balinskis",
@@ -18992,6 +18982,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-13T18:30:44.707454Z"
+    },
+    {
+      "key": "067d89ea627634d5cf6b0319",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-monahan/2138",
+      "fingerprint": "06aa01eb42df45c1",
+      "title_norm": "sean monahan (cbj) — monahan (lower-body) is considered day-to-day but will undergo further evaluation.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:00:53.311858Z"
+    },
+    {
+      "key": "82c083ff9435e6633321fff4",
+      "url": "https://www.nhl.com/news/esa-tikkanen-honored-as-fourth-recipient-of-borje-salming-courage-award",
+      "fingerprint": "bb3f58aed517becd",
+      "title_norm": "tikkanen moved to tears after receiving salming award",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T19:00:53.623155Z"
+    },
+    {
+      "key": "50f7db532617b588a9f038d7",
+      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
+      "fingerprint": "3c49d1de80bd9fd1",
+      "title_norm": "johnathan kovacevic (njd) — kovacevic (ankle) has been placed on ir retroactive to november 10th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:00:54.089029Z"
     }
   ],
   "known_sources": [
