@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T20:30:47.871476Z",
+  "updated_at": "2026-11-13T21:45:34.895745Z",
   "seen": [
-    {
-      "key": "0c1c5400a30ac37c34584572",
-      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
-      "fingerprint": "df45d68fa52801f4",
-      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will remain out vs. montreal on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-14T21:30:51.151943Z"
-    },
-    {
-      "key": "15899531eb37cdd23b113ead",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-dahlin/4786",
-      "fingerprint": "8ec615fb9b6298b1",
-      "title_norm": "rasmus dahlin (buf) — dahlin (lower-body) is doubtful for thursday in toronto.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-14T21:30:51.549610Z"
-    },
-    {
-      "key": "1c514ea4def271d53ce99fb5",
-      "url": "https://www.sportsnet.ca/nhl/article/how-early-season-goalie-market-impacts-potential-hellebuyck-trade",
-      "fingerprint": "bf48ab932801e8a4",
-      "title_norm": "how early-season goalie market impacts potential hellebuyck trade",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T21:45:31.468972Z"
-    },
     {
       "key": "cd03a1098a68174e3e37a21c",
       "url": "https://torontosun.com/sports/hockey/nhl/toronto-maple-leafs/landon-sim-driven-confidence-each-marlies-shift",
@@ -19062,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-13T20:30:47.725251Z"
+    },
+    {
+      "key": "1cb9743969bcb0a2af7573d6",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-shake-up-routine-at-rogers-centre-as-another-tough-test-looms",
+      "fingerprint": "caeda373f7ae937b",
+      "title_norm": "maple leafs shake up routine at rogers centre as another tough test looms",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T21:45:34.834593Z"
     }
   ],
   "known_sources": [
