@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T16:30:44.347417Z",
+  "updated_at": "2026-11-13T16:45:50.016721Z",
   "seen": [
-    {
-      "key": "f0db25d625b2165096dd82b0",
-      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
-      "fingerprint": "cd30af6fc0ce0b30",
-      "title_norm": "mike matheson (mtl) — matheson (lower-body) is out on wednesday and considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-14T16:30:44.630882Z"
-    },
-    {
-      "key": "cc6a372310ab5c96ae343209",
-      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-new-york-rangers-outlook-igor-shesterkin-injury-2026-27",
-      "fingerprint": "88bfcfcb7f01adfa",
-      "title_norm": "edge stats: rangers' outlook with shesterkin injured",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T16:45:34.504439Z"
-    },
     {
       "key": "666a40a634cf1f21017dbe2a",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-14-2026",
@@ -18952,6 +18932,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-13T16:30:44.215995Z"
+    },
+    {
+      "key": "83fef0a9439013a0f7aa6527",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-demelo/2033",
+      "fingerprint": "e237768a65dc9044",
+      "title_norm": "dylan demelo (wpg) — demelo (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T16:45:49.627625Z"
+    },
+    {
+      "key": "6d0ae5ddcc140c29474512a4",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-indicates-finlands-block-on-russian-athletes-could-affect-future-games-there",
+      "fingerprint": "49034b9ebe58881d",
+      "title_norm": "nhl indicates finland's block on russian athletes could affect future games there",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T16:45:49.963354Z"
     }
   ],
   "known_sources": [
