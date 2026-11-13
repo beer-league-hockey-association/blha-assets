@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T19:30:43.916156Z",
+  "updated_at": "2026-11-13T19:45:59.195829Z",
   "seen": [
     {
       "key": "0c1c5400a30ac37c34584572",
@@ -19022,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-13T19:30:43.790164Z"
+    },
+    {
+      "key": "1160dce4727bf3be6a2a178c",
+      "url": "https://theahl.com/news/wild-sign-anderson-to-ahl-deal",
+      "fingerprint": "47bd0cdf519e6e44",
+      "title_norm": "wild sign anderson to ahl deal",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:45:59.155063Z"
     }
   ],
   "known_sources": [
