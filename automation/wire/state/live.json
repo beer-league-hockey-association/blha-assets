@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T15:00:45.438273Z",
+  "updated_at": "2026-11-13T15:45:57.559017Z",
   "seen": [
-    {
-      "key": "883d34828f8e8dd53d0eafe4",
-      "url": "https://www.sportsnet.ca/nhl/video/not-close-to-championship-quality-mckee-talks-current-leafs-d-corps",
-      "fingerprint": "c8b1cde7cb4277e3",
-      "title_norm": "'not close to championship quality': mckee talks current leafs d corps",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T15:45:39.327948Z"
-    },
     {
       "key": "e977089510f5a1f9c1113f96",
       "url": "https://www.sportsnet.ca/nhl/article/where-five-struggling-nhl-teams-land-on-the-panic-meter",
@@ -18982,6 +18972,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-13T14:45:37.999279Z"
+    },
+    {
+      "key": "292ca2ec0e59c53c83868e2a",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-have-hurricanes-have-become-a-model-franchise",
+      "fingerprint": "2453e14dca0f9841",
+      "title_norm": "friday four: how hurricanes have become a model franchise",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T15:45:57.488829Z"
     }
   ],
   "known_sources": [
