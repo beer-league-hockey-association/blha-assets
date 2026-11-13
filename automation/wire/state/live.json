@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T06:30:38.620965Z",
+  "updated_at": "2026-11-13T07:46:47.069002Z",
   "seen": [
-    {
-      "key": "41ecd5747f7c133ee8e7776a",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-learning-to-win-the-hard-way-with-newfound-defensive-prowess",
-      "fingerprint": "16042708e0d9d2f6",
-      "title_norm": "oilers learning to win the hard way with newfound defensive prowess",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T07:45:32.423076Z"
-    },
     {
       "key": "ae3c39061217fc71269444df",
       "url": "https://dobberprospects.com/2026/10/14/the-pharling-files",
