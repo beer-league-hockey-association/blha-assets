@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T02:00:54.940843Z",
+  "updated_at": "2026-11-13T02:15:48.438025Z",
   "seen": [
-    {
-      "key": "f7a9ffc1b904c633dde0563b",
-      "url": "https://www.nhl.com/news/2026-heritage-classic-rink-build-personal-for-nhl-executive-derek-king",
-      "fingerprint": "16cb4de9d8f42191",
-      "title_norm": "heritage classic rink build personal for nhl vp",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T02:15:40.795813Z"
-    },
-    {
-      "key": "90bf368d125bebe498a4871b",
-      "url": "https://www.nhl.com/news/buffalo-sabres-montreal-canadiens-game-recap-october-13-2026",
-      "fingerprint": "b44d95907a5ceb3a",
-      "title_norm": "bolduc scores shootout winner again, canadiens recover to defeat sabres",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T02:15:41.033302Z"
-    },
     {
       "key": "0078c0dfe1a91f860b2f308d",
       "url": "https://www.nhl.com/news/tampa-bay-lightning-new-york-rangers-game-recap-october-13-2026",
@@ -19002,6 +18982,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-13T01:45:34.748258Z"
+    },
+    {
+      "key": "5371907a0b0736d2b4844abd",
+      "url": "https://www.sportsnet.ca/nhl/article/wilds-joel-eriksson-ek-exits-vs-maple-leafs-with-injury",
+      "fingerprint": "112612abcf730b16",
+      "title_norm": "wild's joel eriksson ek exits vs. maple leafs with injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T02:15:48.298764Z"
     }
   ],
   "known_sources": [
