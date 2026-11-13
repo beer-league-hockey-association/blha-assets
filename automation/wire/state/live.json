@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T17:30:40.554106Z",
+  "updated_at": "2026-11-13T17:45:35.822463Z",
   "seen": [
-    {
-      "key": "abe28428aaea1c9cd5d2c9b2",
-      "url": "https://www.nhl.com/news/outdoor-fan-festival-to-set-stage-for-heritage-classic",
-      "fingerprint": "2e42c8f56adfd559",
-      "title_norm": "outdoor fan festival to set stage at heritage classic",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T17:30:44.360833Z"
-    },
     {
       "key": "da2e9e5b52c0ec763b8e02b8",
       "url": "https://www.nhl.com/news/connor-bedard-shines-in-return-to-ice-with-chicago-blackhawks",
@@ -18962,6 +18952,56 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-13T17:30:40.435854Z"
+    },
+    {
+      "key": "8188430d0c75a602f9e767b7",
+      "url": "https://www.dailyfaceoff.com/players/news/miro-heiskanen/2803",
+      "fingerprint": "52af2e8325bccf6b",
+      "title_norm": "miro heiskanen (dal) — heiskanen (upper-body) has a chance to return vs. buffalo on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T17:45:33.756269Z"
+    },
+    {
+      "key": "4b8cfd9dd67f30bf9a0ec4b7",
+      "url": "https://www.dailyfaceoff.com/players/news/lian-bichsel/36369",
+      "fingerprint": "cdc5db8a683f2847",
+      "title_norm": "lian bichsel (dal) — bichsel (lower-body) is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T17:45:34.117890Z"
+    },
+    {
+      "key": "7d08303ca67e13caa97b62b3",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-13-2026",
+      "fingerprint": "f0084774b98afe09",
+      "title_norm": "nhl on tap: streaks collide for preds, golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T17:45:35.082083Z"
+    },
+    {
+      "key": "de0f0f5e4c9ae4eaff5d3ef6",
+      "url": "https://www.dailyfaceoff.com/players/news/jonathan-huberdeau/1798",
+      "fingerprint": "e4d9820bb0b5b656",
+      "title_norm": "jonathan huberdeau (cgy) — huberdeau (hip) has been skating but will not travel on calgary's upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T17:45:35.389515Z"
+    },
+    {
+      "key": "74a54292c85cedda02f423f6",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-place-dylan-demelo-on-ir-recall-henry-thrun",
+      "fingerprint": "b5910d88ddb359bd",
+      "title_norm": "jets place dylan demelo on ir, recall henry thrun",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T17:45:35.775627Z"
     }
   ],
   "known_sources": [
