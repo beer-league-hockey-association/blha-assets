@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T20:01:34.952760Z",
+  "updated_at": "2026-11-13T20:30:47.871476Z",
   "seen": [
     {
       "key": "0c1c5400a30ac37c34584572",
@@ -19052,6 +19052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-13T20:01:34.867879Z"
+    },
+    {
+      "key": "ef0be264bfc3c34fd34dee05",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "e6f6c54a084cff20",
+      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) will be a game-time decision in utah on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T20:30:47.725251Z"
     }
   ],
   "known_sources": [
