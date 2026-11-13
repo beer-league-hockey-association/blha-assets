@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T19:45:59.195829Z",
+  "updated_at": "2026-11-13T20:01:34.952760Z",
   "seen": [
     {
       "key": "0c1c5400a30ac37c34584572",
@@ -19032,6 +19032,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-13T19:45:59.155063Z"
+    },
+    {
+      "key": "16fe94275ff5cfedf12eb370",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-garland/3791",
+      "fingerprint": "40f6060927fc957b",
+      "title_norm": "conor garland (cbj) — garland (upper-body) has been placed on ir retroactive to november 6th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T20:01:34.259877Z"
+    },
+    {
+      "key": "215c2a34475f6ef57d8bc16a",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "7e0139c91ce9029e",
+      "title_norm": "erik gustafsson (lak) — gustafsson (undisclosed) returned to practice on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T20:01:34.867879Z"
     }
   ],
   "known_sources": [
