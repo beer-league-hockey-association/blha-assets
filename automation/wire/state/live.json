@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T14:45:38.109804Z",
+  "updated_at": "2026-11-13T15:00:45.438273Z",
   "seen": [
-    {
-      "key": "e1a7788411b81b2df60de05e",
-      "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
-      "fingerprint": "c6d42862d47445a5",
-      "title_norm": "darnell nurse (sjs) — nurse (upper-body) left tuesday's game vs. boston and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-14T14:45:38.767734Z"
-    },
     {
       "key": "883d34828f8e8dd53d0eafe4",
       "url": "https://www.sportsnet.ca/nhl/video/not-close-to-championship-quality-mckee-talks-current-leafs-d-corps",
