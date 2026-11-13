@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T17:00:38.151030Z",
+  "updated_at": "2026-11-13T17:15:54.762364Z",
   "seen": [
-    {
-      "key": "666a40a634cf1f21017dbe2a",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-14-2026",
-      "fingerprint": "3b79f6af075b3730",
-      "title_norm": "status report: hall injury 'doesn't look good' for canes",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-14T17:00:43.921528Z"
-    },
-    {
-      "key": "f8b46f9998f1c34158548649",
-      "url": "https://www.sportsnet.ca/nhl/article/red-wings-interim-gm-shawn-horcoff-zero-interest-in-trading-edvinsson",
-      "fingerprint": "bd2339c62eb9a9ab",
-      "title_norm": "red wings interim gm shawn horcoff: 'zero interest in trading' edvinsson",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T17:00:44.402569Z"
-    },
-    {
-      "key": "fd690f887e06019564294012",
-      "url": "https://www.sportsnet.ca/nhl/article/nhlpa-boss-marty-walsh-on-no-trade-clauses-its-the-players-right",
-      "fingerprint": "e3ac0b9572c6b802",
-      "title_norm": "nhlpa boss marty walsh on no-trade clauses: 'it's the player's right'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T17:15:37.734851Z"
-    },
     {
       "key": "abe28428aaea1c9cd5d2c9b2",
       "url": "https://www.nhl.com/news/outdoor-fan-festival-to-set-stage-for-heritage-classic",
@@ -18962,6 +18932,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T17:00:38.112014Z"
+    },
+    {
+      "key": "c041132447d20a5b1e943230",
+      "url": "https://www.nhl.com/news/2027-nhl-draft-diary-dima-zhilkin-november-13-2026",
+      "fingerprint": "26440b183f73e7b0",
+      "title_norm": "2027 nhl draft diary: dima zhilkin",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T17:15:54.273034Z"
+    },
+    {
+      "key": "313b446425f8ccc131de31fb",
+      "url": "https://www.nhl.com/news/european-notebook-nhl-prospects-shine-at-u20-five-nations-tournament",
+      "fingerprint": "502c7547a662caaf",
+      "title_norm": "european notebook: nhl hopefuls star at five nations",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T17:15:54.629139Z"
     }
   ],
   "known_sources": [
