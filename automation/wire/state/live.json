@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T23:15:36.539223Z",
+  "updated_at": "2026-11-13T23:30:49.604477Z",
   "seen": [
     {
       "key": "f9c7011fc4fbdec9fdd39ab8",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T23:15:36.489498Z"
+    },
+    {
+      "key": "c61a479984cb1489202d8e68",
+      "url": "https://www.sportsnet.ca/nhl/article/sudden-faa-ground-stop-throws-sports-weekend-into-chaos",
+      "fingerprint": "2d91e5663f5b55ac",
+      "title_norm": "sudden faa ground stop throws sports weekend into chaos",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T23:30:49.569303Z"
     }
   ],
   "known_sources": [
