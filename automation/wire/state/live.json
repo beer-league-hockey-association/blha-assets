@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-12T23:45:39.364127Z",
+  "updated_at": "2026-11-13T00:00:52.455699Z",
   "seen": [
-    {
-      "key": "26c150b63d8675183db64226",
-      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
-      "fingerprint": "7e8c923194b601c0",
-      "title_norm": "jared spurgeon (min) — spurgeon (upper-body) will not play tuesday in winnipeg.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-13T23:56:12.843273Z"
-    },
     {
       "key": "bc6c12df5b97bff1c319d852",
       "url": "https://www.dailyfaceoff.com/players/news/reid-schaefer/32867",
@@ -19112,6 +19102,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-12T23:45:39.018347Z"
+    },
+    {
+      "key": "7b53622313d324a0307e5d9c",
+      "url": "https://www.dailyfaceoff.com/players/news/patrick-kane/305",
+      "fingerprint": "026e7974629cd8e1",
+      "title_norm": "patrick kane (chi) — the blackhawks have activated patrick kane (upper-body) from ir; he's expected to play on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T00:00:51.942746Z"
+    },
+    {
+      "key": "ad100572b1cc79e3bf53f194",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/7b61e582-2524-4418-bc56-721870b0c895",
+      "fingerprint": "a4ce10fde8fcd6e1",
+      "title_norm": "maple leafs on sportsnet: toronto vs. minnesota",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T00:00:52.415461Z"
     }
   ],
   "known_sources": [
