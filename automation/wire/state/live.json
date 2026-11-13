@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T22:45:46.203616Z",
+  "updated_at": "2026-11-13T23:00:48.914274Z",
   "seen": [
-    {
-      "key": "cd03a1098a68174e3e37a21c",
-      "url": "https://torontosun.com/sports/hockey/nhl/toronto-maple-leafs/landon-sim-driven-confidence-each-marlies-shift",
-      "fingerprint": "3c0f8422679f3dc9",
-      "title_norm": "sim driven by confidence with each marlies shift",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-14T23:00:38.903281Z"
-    },
     {
       "key": "0ce321659a9192b8a782d0a7",
       "url": "https://www.nhl.com/news/detroit-red-wings-have-zero-interest-in-trading-simon-edvinsson",
@@ -19082,6 +19072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T22:45:46.143134Z"
+    },
+    {
+      "key": "533afbcc5b9d8f7774b73116",
+      "url": "https://www.sportsnet.ca/nhl/article/im-sure-he-will-oilers-great-jari-kurri-optimistic-mcdavid-reaches-200-points",
+      "fingerprint": "a8bb2d9ad45d9d0b",
+      "title_norm": "'i'm sure he will': oilers great jari kurri optimistic mcdavid reaches 200 points",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T23:00:48.875185Z"
     }
   ],
   "known_sources": [
