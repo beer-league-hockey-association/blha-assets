@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T05:30:44.842742Z",
+  "updated_at": "2026-11-13T05:45:33.279690Z",
   "seen": [
     {
       "key": "2fff70858cf4534ae3843ec7",
@@ -18982,6 +18982,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T05:30:44.775831Z"
+    },
+    {
+      "key": "a8e0f037537af1fd16cebc78",
+      "url": "https://www.nhl.com/news/st-louis-blues-utah-mammoth-game-recap-november-12-2026",
+      "fingerprint": "6c1c9c8dd753d47d",
+      "title_norm": "hofer, blues top mammoth in double shutout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T05:45:32.988757Z"
+    },
+    {
+      "key": "690f4ca51f9d3e98fca482de",
+      "url": "https://www.nhl.com/news/nhl-fantasy-hockey-podcast-betting-pools-futures-301027246",
+      "fingerprint": "aee674d49f25abb8",
+      "title_norm": "'nhl fantasy on ice' podcast available now",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T05:45:33.187578Z"
     }
   ],
   "known_sources": [
