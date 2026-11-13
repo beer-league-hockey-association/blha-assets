@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T16:45:50.016721Z",
+  "updated_at": "2026-11-13T17:00:38.151030Z",
   "seen": [
     {
       "key": "666a40a634cf1f21017dbe2a",
@@ -18952,6 +18952,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T16:45:49.963354Z"
+    },
+    {
+      "key": "6c317652a9c99e5661d67dd9",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-proving-to-be-nhls-most-curious-rebuild",
+      "fingerprint": "e14ea93d4ee54358",
+      "title_norm": "blackhawks proving to be nhl's most curious rebuild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T17:00:38.112014Z"
     }
   ],
   "known_sources": [
