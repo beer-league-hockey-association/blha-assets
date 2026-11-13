@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T03:15:38.380486Z",
+  "updated_at": "2026-11-13T03:30:49.096707Z",
   "seen": [
-    {
-      "key": "cbb33285b674b980f9cac941",
-      "url": "https://www.sportsnet.ca/nhl/article/perfetti-scores-twice-as-jets-soar-past-wild",
-      "fingerprint": "ebf3051374d14198",
-      "title_norm": "perfetti scores twice as jets soar past wild",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T03:30:36.172052Z"
-    },
     {
       "key": "60477d27eb11a28562ccc5b0",
       "url": "https://www.nhl.com/news/topic/game-recap/vegas-golden-knights-nashville-predators-game-recap-october-13-2026",
@@ -19002,6 +18992,16 @@
       "source_id": "pod_prospects2pros",
       "tier": 2,
       "seen_at": "2026-11-13T03:15:38.016283Z"
+    },
+    {
+      "key": "3e1e2b2346c505029a473190",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-erase-three-goal-deficit-top-red-wings-behind-two-goals-from-lundell",
+      "fingerprint": "6b9ecae91e6e733b",
+      "title_norm": "panthers erase three-goal deficit, top red wings behind two goals from lundell",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T03:30:49.044442Z"
     }
   ],
   "known_sources": [
