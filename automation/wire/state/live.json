@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T22:15:45.496602Z",
+  "updated_at": "2026-11-13T22:45:46.203616Z",
   "seen": [
     {
       "key": "cd03a1098a68174e3e37a21c",
@@ -19062,6 +19062,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T22:15:45.473248Z"
+    },
+    {
+      "key": "d368a680a213b631e13fbfc1",
+      "url": "https://www.nhl.com/news/mark-scheifele-on-verge-of-passing-dale-hawerchuk-as-winnipeg-jets-all-time-leading-scorer",
+      "fingerprint": "01a1bcae9e4116ac",
+      "title_norm": "scheifele can pass idol hawerchuk as jets' top scorer",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-13T22:45:45.887981Z"
+    },
+    {
+      "key": "09a0321962c8d5b839ed8af6",
+      "url": "https://www.sportsnet.ca/nhl/article/babcock-returns-to-toronto-as-head-coach-of-oilers",
+      "fingerprint": "331942c12779c2fb",
+      "title_norm": "babcock returns to toronto as head coach of oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T22:45:46.143134Z"
     }
   ],
   "known_sources": [
