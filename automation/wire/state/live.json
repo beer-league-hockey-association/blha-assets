@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T02:30:42.216263Z",
+  "updated_at": "2026-11-13T02:45:33.502923Z",
   "seen": [
     {
       "key": "d9c0cb802080a02a4fd6994e",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T02:30:42.176073Z"
+    },
+    {
+      "key": "4c5ac8d01e5d20958fc7382d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-chris-kreider-exits-vs-bruins-with-apparent-injury",
+      "fingerprint": "0805d4c78f6749ca",
+      "title_norm": "canadiens' chris kreider exits vs. bruins with apparent injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T02:45:33.428733Z"
     }
   ],
   "known_sources": [
