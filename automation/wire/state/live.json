@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T19:00:54.158316Z",
+  "updated_at": "2026-11-13T19:15:51.823206Z",
   "seen": [
-    {
-      "key": "b46bbda89afaf77aede28f28",
-      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-olivier-fined-5000-for-slashing-panthers-balinskis",
-      "fingerprint": "fbfde5f6f2a6989b",
-      "title_norm": "blue jackets' olivier fined $5,000 for slashing panthers' balinskis",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T19:15:45.176741Z"
-    },
     {
       "key": "8f853e407ceb6a8751c6d74b",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-face-new-reality-as-albertas-time-change-brings-challenges",
@@ -19012,6 +19002,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-13T19:00:54.089029Z"
+    },
+    {
+      "key": "72d11bbb0597f98ebcf4840b",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-defenceman-tom-willander-available-to-play-vs-rangers",
+      "fingerprint": "c1e0af1099acfa6f",
+      "title_norm": "canucks defenceman tom willander available to play vs. rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:15:50.700328Z"
+    },
+    {
+      "key": "6ce07119693ae5ad2dc63b72",
+      "url": "https://theahl.com/news/amerks-griffin-della-penna-hockey-fights-cancer",
+      "fingerprint": "c7eb3d5103b9c039",
+      "title_norm": "cancer journey provided valuable lessons for amerks' new voice",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:15:50.946115Z"
+    },
+    {
+      "key": "9e554d3f6d65636338cca73c",
+      "url": "https://www.sportsnet.ca/nhl/article/five-thoughts-about-the-nhl-at-the-quarter-mark",
+      "fingerprint": "136519aa5c71f2d1",
+      "title_norm": "five thoughts about the nhl at the quarter mark",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:15:51.774493Z"
     }
   ],
   "known_sources": [
