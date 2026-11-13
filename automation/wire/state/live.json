@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T19:15:51.823206Z",
+  "updated_at": "2026-11-13T19:30:43.916156Z",
   "seen": [
-    {
-      "key": "8f853e407ceb6a8751c6d74b",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-face-new-reality-as-albertas-time-change-brings-challenges",
-      "fingerprint": "c22702720e6d1f3e",
-      "title_norm": "oilers face new reality as alberta's time change brings challenges",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T19:30:38.657778Z"
-    },
-    {
-      "key": "c9e8804ef4a80c1ecbbce701",
-      "url": "https://www.sportsnet.ca/nhl/article/surreal-emergency-backup-goalies-getting-second-crack-at-nhl-dream",
-      "fingerprint": "5bce9ba214255035",
-      "title_norm": "'surreal': emergency backup goalies getting second crack at nhl dream",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-14T19:30:38.956450Z"
-    },
     {
       "key": "0c1c5400a30ac37c34584572",
       "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
@@ -19032,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T19:15:51.774493Z"
+    },
+    {
+      "key": "9073b74c2bcbe65aa83e0e1f",
+      "url": "https://www.dailyfaceoff.com/players/news/isak-rosen/34670",
+      "fingerprint": "0a10b623615b955e",
+      "title_norm": "isak rosen (wpg) — rosen (undisclosed) is out vs. chicago on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-13T19:30:43.790164Z"
     }
   ],
   "known_sources": [
