@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T14:15:36.029635Z",
+  "updated_at": "2026-11-14T14:30:47.238754Z",
   "seen": [
-    {
-      "key": "75af268189e5278ea1a8f375",
-      "url": "https://www.sportsnet.ca/nhl/article/ullmark-leading-senators-with-dream-like-start-to-season",
-      "fingerprint": "5a803e982cd15a80",
-      "title_norm": "ullmark leading senators with dream-like start to season",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T14:15:50.124776Z"
-    },
-    {
-      "key": "aee61e0fa59a4b376fc9ba14",
-      "url": "https://www.sportsnet.ca/nhl/article/arizona-state-hires-dave-hakstol-as-head-coach",
-      "fingerprint": "dda23c8d949c8058",
-      "title_norm": "arizona state hires dave hakstol as head coach",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T14:15:50.884346Z"
-    },
-    {
-      "key": "526a19836a6813ab1347e6a9",
-      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
-      "fingerprint": "e0df7d82b1cea629",
-      "title_norm": "chris tanev (tor) — tanev is week-to-week with an upper-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T14:30:37.523032Z"
-    },
     {
       "key": "5c689d58786b07da4ae930c4",
       "url": "https://www.dailyfaceoff.com/players/news/cameron-crotty/28075",
