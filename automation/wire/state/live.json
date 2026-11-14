@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T17:30:37.626541Z",
+  "updated_at": "2026-11-14T17:45:33.370778Z",
   "seen": [
     {
       "key": "4073dbe5b6253eb8813a6fa7",
@@ -18982,6 +18982,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-14T17:15:32.037328Z"
+    },
+    {
+      "key": "7aedc11d30e0dfc5bed8802c",
+      "url": "https://www.nhl.com/news/nathan-mackinnon-cale-makar-injury-update-colorado-avalanche-november-14-2026",
+      "fingerprint": "6b6fd8a73af5a46e",
+      "title_norm": "mackinnon out 1 month, makar 2 weeks for avalanche",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-14T17:45:33.255247Z"
     }
   ],
   "known_sources": [
