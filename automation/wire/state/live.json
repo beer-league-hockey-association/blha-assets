@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T22:45:47.236871Z",
+  "updated_at": "2026-11-14T23:15:40.342955Z",
   "seen": [
-    {
-      "key": "d021894b672f30585f5ded35",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-place-miles-wood-on-injured-reserve",
-      "fingerprint": "e19fb61a6aacef1e",
-      "title_norm": "maple leafs place miles wood on injured reserve",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T23:00:40.954437Z"
-    },
-    {
-      "key": "575671c1da429bf1b5ed86b8",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-activate-forward-filip-chytil-from-ir",
-      "fingerprint": "d8ae59bc87561f5b",
-      "title_norm": "canucks activate forward filip chytil from ir",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T23:00:41.230275Z"
-    },
-    {
-      "key": "9a78e7057fbc482d7eb0f7b8",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-acquire-forward-aatu-raty-in-trade-with-canucks",
-      "fingerprint": "e04fe9e726bd7beb",
-      "title_norm": "maple leafs acquire forward aatu raty in trade with canucks",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T23:00:41.232694Z"
-    },
-    {
-      "key": "35cf54dadd3ef0c204a6b5c5",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/a5d965d1-ffba-4465-9c7a-34ecf29bd490",
-      "fingerprint": "1b8f4c4d456d4576",
-      "title_norm": "canucks on sportsnet: vancouver vs. florida",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T23:15:33.617537Z"
-    },
     {
       "key": "e6504aefc6dffd86e2003c96",
       "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
@@ -19062,6 +19022,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T22:45:47.181835Z"
+    },
+    {
+      "key": "e15fb961726ee58f3e07ada4",
+      "url": "https://www.dailyfaceoff.com/players/news/anthony-cirelli/3842",
+      "fingerprint": "5c84a9d10c1c1f0c",
+      "title_norm": "anthony cirelli (tbl) — cirelli (lower-body) will not play on saturday but the lightning are hopeful he'll play tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T23:15:39.893573Z"
+    },
+    {
+      "key": "71865fd36055022c9fb2236c",
+      "url": "https://www.dailyfaceoff.com/players/news/yanni-gourde/2566",
+      "fingerprint": "26f79c12927a6af6",
+      "title_norm": "yanni gourde (tbl) — gourde (maintenance) will be back in the lightning lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T23:15:40.287648Z"
     }
   ],
   "known_sources": [
