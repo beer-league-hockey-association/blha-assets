@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T00:15:44.093072Z",
+  "updated_at": "2026-11-14T01:00:56.314362Z",
   "seen": [
-    {
-      "key": "02c0a6f562b236dc91185e9d",
-      "url": "https://www.nhl.com/news/topic/short-shifts/hockey-fights-cancer-nhl-daily-digest-2026-27",
-      "fingerprint": "5b5f70d9837c92a2",
-      "title_norm": "hockey fights cancer daily digest",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-15T00:45:36.227863Z"
-    },
     {
       "key": "f668e1d952898fbc91189b4b",
       "url": "https://www.nhl.com/news/blue-jackets-mathieu-olivier-fined-for-slashing-panthers-uvis-balinskis",
@@ -19092,6 +19082,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-14T00:15:44.006301Z"
+    },
+    {
+      "key": "7dc46a59b87c5c3266554391",
+      "url": "https://www.nhl.com/news/unmasked-goalies-relating-to-devin-cooley-flow-state-unconscious-brain",
+      "fingerprint": "3c059ced05663fb0",
+      "title_norm": "unmasked: cooley's flow state, unconscious brain",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-14T01:00:56.269114Z"
     }
   ],
   "known_sources": [
