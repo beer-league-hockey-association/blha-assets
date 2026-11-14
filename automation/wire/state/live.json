@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T06:15:35.464754Z",
+  "updated_at": "2026-11-14T06:30:37.619222Z",
   "seen": [
     {
       "key": "89358dd606bc19c97e14d916",
@@ -19072,6 +19072,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T06:15:35.415781Z"
+    },
+    {
+      "key": "b466048793a28844ad3b5a7a",
+      "url": "https://www.nhl.com/news/nashville-predators-vegas-golden-knights-game-recap-november-13-2026",
+      "fingerprint": "42a30a3365c19cf2",
+      "title_norm": "nashville tops vegas in shootout for 7th win in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-14T06:30:37.219355Z"
+    },
+    {
+      "key": "d23924284d5ac5abcc17cbb7",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-still-looking-for-complete-effort-despite-week-of-rest",
+      "fingerprint": "8c54159c743a581b",
+      "title_norm": "canucks still looking for complete effort despite week of rest",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T06:30:37.559397Z"
     }
   ],
   "known_sources": [
