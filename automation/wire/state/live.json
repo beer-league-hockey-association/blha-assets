@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T14:30:47.238754Z",
+  "updated_at": "2026-11-14T14:45:43.268754Z",
   "seen": [
-    {
-      "key": "5c689d58786b07da4ae930c4",
-      "url": "https://www.dailyfaceoff.com/players/news/cameron-crotty/28075",
-      "fingerprint": "15c0616df8caceed",
-      "title_norm": "cameron crotty (ott) — crotty (undisclosed) is expected to return vs. the islanders on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T14:44:11.177313Z"
-    },
-    {
-      "key": "9705a03c42b80fc507b42795",
-      "url": "https://www.dailyfaceoff.com/players/news/artem-zub/27678",
-      "fingerprint": "ec346705c038a921",
-      "title_norm": "artem zub (ott) — zub (knee) is expected to return vs. the islanders on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T14:44:11.535554Z"
-    },
     {
       "key": "676512c9998ae1d3f6f8a8e9",
       "url": "https://www.dailyfaceoff.com/players/news/jacob-markstrom/594",
@@ -19062,6 +19042,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-14T14:15:35.922375Z"
+    },
+    {
+      "key": "b9ada403b2ec77bf3d741d2a",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-captain-jordan-staal-activated-from-injured-reserve",
+      "fingerprint": "feeb09307292ca7c",
+      "title_norm": "hurricanes captain jordan staal activated from injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T14:45:43.161726Z"
     }
   ],
   "known_sources": [
