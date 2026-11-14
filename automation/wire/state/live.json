@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T16:45:38.657310Z",
+  "updated_at": "2026-11-14T17:00:56.315471Z",
   "seen": [
-    {
-      "key": "5a9177a535fd31970f547ddf",
-      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
-      "fingerprint": "6272198bff87e84f",
-      "title_norm": "luke evangelista (njd) — evangelista (illness) will remain out vs. new york on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T17:00:45.455928Z"
-    },
     {
       "key": "d86c7b8f478192e2e55f6824",
       "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
@@ -18962,6 +18952,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T16:45:38.614031Z"
+    },
+    {
+      "key": "6691830b977ec244c5310bbd",
+      "url": "https://www.dailyfaceoff.com/players/news/cale-makar/2788",
+      "fingerprint": "2ef2b78b4067f641",
+      "title_norm": "cale makar (col) — makar (lower-body) will not play saturday in montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T17:00:54.024015Z"
+    },
+    {
+      "key": "e3fc6da9c37f6a860fa0cd34",
+      "url": "https://www.dailyfaceoff.com/players/news/nathan-mackinnon/2130",
+      "fingerprint": "44b87f6079b9ad9a",
+      "title_norm": "nathan mackinnon (col) — mackinnon (lower-body) will not play saturday in montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T17:00:54.722338Z"
+    },
+    {
+      "key": "151c697f28e01f0ed174831f",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-eriksson-ek/2494",
+      "fingerprint": "6b2dfa55122051e2",
+      "title_norm": "joel eriksson ek (min) — eriksson ek (upper-body) will play saturday in boston.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T17:00:55.002095Z"
+    },
+    {
+      "key": "7a8b33cdd60e5dcee6ceb572",
+      "url": "https://www.dailyfaceoff.com/players/news/brock-faber/30792",
+      "fingerprint": "da93ce537f3b6f3f",
+      "title_norm": "brock faber (min) — faber (skull) has been activated from ir and will make his season debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T17:00:55.054127Z"
+    },
+    {
+      "key": "253f5dda946b319bb749bf13",
+      "url": "https://www.sportsnet.ca/nhl/article/wild-defenceman-brock-faber-set-to-make-season-debut-against-bruins",
+      "fingerprint": "a7d93e7ec6b6eeb7",
+      "title_norm": "wild defenceman brock faber set to make season debut against bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T17:00:55.411809Z"
     }
   ],
   "known_sources": [
