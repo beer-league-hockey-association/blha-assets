@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T09:30:41.263184Z",
+  "updated_at": "2026-11-14T10:45:30.459263Z",
   "seen": [
     {
       "key": "00d586c4f5d9cb2da38dfc21",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T06:30:37.559397Z"
+    },
+    {
+      "key": "1237d188b01eb2027f31c1a7",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Week-8-Waiver-Wire-Best-Adds--Drops--Streaming-Targets--Fantasy-Hockey-2026-27-e3sc1tq",
+      "fingerprint": "5f4bbd6ee663b0c9",
+      "title_norm": "week 8 waiver wire: best adds, drops & streaming targets | fantasy hockey 2026-27",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-14T10:45:30.410937Z"
     }
   ],
   "known_sources": [
