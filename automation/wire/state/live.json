@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T23:15:40.342955Z",
+  "updated_at": "2026-11-14T23:45:36.469782Z",
   "seen": [
     {
       "key": "e6504aefc6dffd86e2003c96",
@@ -19042,6 +19042,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-14T23:15:40.287648Z"
+    },
+    {
+      "key": "a34a59f40eca0c9888212aad",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
+      "fingerprint": "65192ef6cc81c7d3",
+      "title_norm": "mike matheson (mtl) — matheson (lower-body) will not play saturday vs. the avalanche.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T23:45:35.882440Z"
+    },
+    {
+      "key": "fa4682bd598ff3f68cc113aa",
+      "url": "https://www.dailyfaceoff.com/players/news/pius-suter/32940",
+      "fingerprint": "578ab2fcbd99f0be",
+      "title_norm": "pius suter (stl) — suter (illness) is on the ice for warmups and expected to play saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T23:45:36.140625Z"
+    },
+    {
+      "key": "3dc59f80d23908f73cab4746",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-complete-second-four-goal-comeback-of-season-vs-blackhawks",
+      "fingerprint": "bfdca14ded7f5ec6",
+      "title_norm": "jets complete second four-goal comeback of season vs. blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T23:45:36.393744Z"
     }
   ],
   "known_sources": [
