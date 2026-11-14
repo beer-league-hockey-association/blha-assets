@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T18:00:47.209906Z",
+  "updated_at": "2026-11-14T18:15:47.324420Z",
   "seen": [
     {
       "key": "7a26e95540643515a5b5d66d",
@@ -18972,6 +18972,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T18:00:47.181845Z"
+    },
+    {
+      "key": "c6b097bc781abc6cb383846d",
+      "url": "https://www.dailyfaceoff.com/players/news/miro-heiskanen/2803",
+      "fingerprint": "38fbb557d5885562",
+      "title_norm": "miro heiskanen (dal) — heiskanen (upper-body) is doubtful to play sunday vs. the panthers.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T18:15:45.743464Z"
+    },
+    {
+      "key": "a89a13af66a3de1fbefb3578",
+      "url": "https://www.dailyfaceoff.com/players/news/pius-suter/32940",
+      "fingerprint": "a236aa15819308fe",
+      "title_norm": "pius suter (stl) — suter (illness) will be a game-time decision on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T18:15:46.688004Z"
+    },
+    {
+      "key": "6ef0d90d8c41ac41e754f70c",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/d9ec29ac-5bc8-4677-947e-b51e25063261",
+      "fingerprint": "a98621491a9f047b",
+      "title_norm": "nhl global series on sportsnet: kraken vs. hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T18:15:46.999156Z"
+    },
+    {
+      "key": "4642f774e52a1453863572d5",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-why-zack-macewen-has-been-good-fit-for-maple-leafs",
+      "fingerprint": "b1cfda4604df2b44",
+      "title_norm": "quick shifts: why zack macewen has been good fit for maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T18:15:47.288305Z"
     }
   ],
   "known_sources": [
