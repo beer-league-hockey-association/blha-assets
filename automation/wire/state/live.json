@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T18:15:47.324420Z",
+  "updated_at": "2026-11-14T18:45:32.533071Z",
   "seen": [
-    {
-      "key": "7a26e95540643515a5b5d66d",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-aatu-raty-clears-waivers",
-      "fingerprint": "e09d41d751756c1c",
-      "title_norm": "canucks' aatu raty clears waivers",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T18:30:54.136035Z"
-    },
     {
       "key": "c32e299576097f586dc284e4",
       "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
