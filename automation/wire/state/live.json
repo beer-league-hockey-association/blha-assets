@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T15:30:33.950739Z",
+  "updated_at": "2026-11-14T15:45:36.756206Z",
   "seen": [
-    {
-      "key": "9db3d21332e869c4fa7809ae",
-      "url": "https://www.dailyfaceoff.com/players/news/william-eklund/34666",
-      "fingerprint": "a234958b613196b0",
-      "title_norm": "william eklund (ott) — eklund (ankle) had surgery on wednesday and is expected to miss the next 10-12 weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T15:30:40.016163Z"
-    },
-    {
-      "key": "16da0b699ec58c4778ab8064",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "1b81622e96c466c8",
-      "title_norm": "jake sanderson (ott) — sanderson (lower-body) skated on thursday but will not play vs. the islanders.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T15:30:40.311010Z"
-    },
-    {
-      "key": "61ac7cec8768e8cad5f5d727",
-      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-why-landon-dupont-is-ranked-no-1-for-2027-nhl-draft",
-      "fingerprint": "668c07086fa6ff7b",
-      "title_norm": "scout's analysis: why landon dupont is ranked no. 1 for 2027 nhl draft",
-      "channel": "prospect-wire",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T15:30:40.685474Z"
-    },
     {
       "key": "9e7406b4b64358095e8662c3",
       "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
@@ -19052,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-14T15:30:33.866768Z"
+    },
+    {
+      "key": "0079bc25965183f0fa4fcdf7",
+      "url": "https://www.nhl.com/news/nhl-legends-kurri-and-tikkanen-talk-oilers-mcdavid-at-nhl-global-series-finland",
+      "fingerprint": "8f31517f6ea8273a",
+      "title_norm": "mcdavid can get 200 points, kurri says",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-14T15:45:36.656353Z"
     }
   ],
   "known_sources": [
