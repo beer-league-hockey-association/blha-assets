@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T17:00:56.315471Z",
+  "updated_at": "2026-11-14T17:15:32.098884Z",
   "seen": [
     {
       "key": "d86c7b8f478192e2e55f6824",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T17:00:55.411809Z"
+    },
+    {
+      "key": "9d84acd4c84be8119101c805",
+      "url": "https://theahl.com/news/hache-suspended-26nov14",
+      "fingerprint": "ef64c3f5d1ae1333",
+      "title_norm": "rocket's haché suspended one game",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-14T17:15:32.037328Z"
     }
   ],
   "known_sources": [
