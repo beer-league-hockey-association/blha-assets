@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T10:45:30.459263Z",
+  "updated_at": "2026-11-14T13:00:36.370072Z",
   "seen": [
-    {
-      "key": "00d586c4f5d9cb2da38dfc21",
-      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/the-cat-gets-the-bag",
-      "fingerprint": "9095676726db27ff",
-      "title_norm": "32 thoughts podcast: the cat gets the bag",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T12:45:36.866504Z"
-    },
-    {
-      "key": "5b43f15ae76e43f93d914fcb",
-      "url": "https://www.sportsnet.ca/nhl/video/red-wings-interim-gm-horcoff-has-zero-interest-in-trading-simon-edvinsson",
-      "fingerprint": "0835dc0e637fae65",
-      "title_norm": "red wings interim gm horcoff has 'zero interest in trading simon edvinsson'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-15T12:45:37.309717Z"
-    },
     {
       "key": "75af268189e5278ea1a8f375",
       "url": "https://www.sportsnet.ca/nhl/article/ullmark-leading-senators-with-dream-like-start-to-season",
