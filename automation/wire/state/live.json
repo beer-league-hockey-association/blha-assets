@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T15:45:36.756206Z",
+  "updated_at": "2026-11-14T16:00:41.446693Z",
   "seen": [
-    {
-      "key": "9e7406b4b64358095e8662c3",
-      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
-      "fingerprint": "3053c1e5f10c1497",
-      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will be a game-time decision vs. san jose on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T15:45:40.418115Z"
-    },
-    {
-      "key": "6abffa418f4d46a4a1e7f7b7",
-      "url": "https://www.dailyfaceoff.com/players/news/olli-maatta/1792",
-      "fingerprint": "e4136abd729b230d",
-      "title_norm": "olli maatta (min) — maatta (upper-body) is out vs. st. louis on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T15:45:40.898635Z"
-    },
-    {
-      "key": "2ded6fd1d7f57ace8237ea00",
-      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
-      "fingerprint": "a0c98222e7d9c4b0",
-      "title_norm": "justus annunen (nsh) — annunen (undisclosed) will be a game-time decision vs. san jose on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T15:45:41.278990Z"
-    },
-    {
-      "key": "386e54702eeb74788e69bb8d",
-      "url": "https://audioboom.com/posts/8964777",
-      "fingerprint": "5eb9ba81dac63fab",
-      "title_norm": "sell-high candidates; week 3 mailbag",
-      "channel": "media",
-      "source_id": "pod_nhl_fantasy_on_ice",
-      "tier": 2,
-      "seen_at": "2026-10-15T15:45:41.778224Z"
-    },
     {
       "key": "30f3634030c93d1b955ed514",
       "url": "https://www.sportsnet.ca/nhl/article/senators-zub-to-make-season-debut-eklund-out-10-12-weeks",
@@ -19032,6 +18992,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-14T15:45:36.656353Z"
+    },
+    {
+      "key": "744259073a1662375b29a0a3",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-monahan/2138",
+      "fingerprint": "8bd38ba1ec52911b",
+      "title_norm": "sean monahan (cbj) — monahan (upper-body) will not play on saturday; he's considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T16:00:40.858447Z"
+    },
+    {
+      "key": "86f8a745a2d1b3c709f5558a",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-kreider/1926",
+      "fingerprint": "712011969a2471e0",
+      "title_norm": "chris kreider (mtl) — kreider (lower-body) will miss 6-to-8 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T16:00:41.332237Z"
     }
   ],
   "known_sources": [
