@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T21:30:40.346173Z",
+  "updated_at": "2026-11-14T22:30:44.443018Z",
   "seen": [
-    {
-      "key": "7e9cba78d793c4496609de7b",
-      "url": "https://theahl.com/news/canucks-acquire-quillan-from-toronto",
-      "fingerprint": "8330e79d215140fc",
-      "title_norm": "canucks acquire quillan from toronto",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-15T22:30:36.382117Z"
-    },
     {
       "key": "d021894b672f30585f5ded35",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-place-miles-wood-on-injured-reserve",
@@ -19052,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T21:30:40.325253Z"
+    },
+    {
+      "key": "0fada8a9121966ea88031ff3",
+      "url": "https://www.sportsnet.ca/nhl/article/mark-scheifele-sets-jets-franchise-points-record-with-goal",
+      "fingerprint": "bcb46fae98de63aa",
+      "title_norm": "mark scheifele sets jets' franchise points record with goal",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T22:30:44.390807Z"
     }
   ],
   "known_sources": [
