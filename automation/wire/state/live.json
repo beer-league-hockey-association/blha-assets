@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T21:15:33.239149Z",
+  "updated_at": "2026-11-14T21:30:40.346173Z",
   "seen": [
     {
       "key": "7e9cba78d793c4496609de7b",
@@ -19042,6 +19042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-14T21:15:33.154324Z"
+    },
+    {
+      "key": "eb6d7cac023e1f4190a06739",
+      "url": "https://www.sportsnet.ca/nhl/article/islanders-mathew-barzal-to-make-season-debut-vs-ducks",
+      "fingerprint": "f351cb1a5d42a58d",
+      "title_norm": "islanders' mathew barzal to make season debut vs. ducks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T21:30:40.325253Z"
     }
   ],
   "known_sources": [
