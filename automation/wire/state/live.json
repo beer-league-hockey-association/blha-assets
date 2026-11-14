@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T03:15:31.454793Z",
+  "updated_at": "2026-11-14T04:00:45.963538Z",
   "seen": [
-    {
-      "key": "666888d45ac52cdfa3e4e8ff",
-      "url": "https://www.nhl.com/news/dallas-stars-colorado-avalanche-game-recap-october-14-2026",
-      "fingerprint": "6326fcf44a266c38",
-      "title_norm": "hintz wins it in shootout, stars defeat avalanche",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-15T04:00:43.984160Z"
-    },
     {
       "key": "fc24e3637690c8462e3acdfe",
       "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-biggest-surprises-early-2026-27",
