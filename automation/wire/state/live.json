@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T01:30:45.327337Z",
+  "updated_at": "2026-11-14T01:45:41.779135Z",
   "seen": [
     {
       "key": "0a06ed8b6fbd4966d9cc5d9c",
@@ -19082,6 +19082,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-14T01:00:56.269114Z"
+    },
+    {
+      "key": "c389e76949d13173f67e88b2",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-chytil/2811",
+      "fingerprint": "bec78d9247ed0eee",
+      "title_norm": "filip chytil (van) — chytil (upper-body) is on the ice for warmups and will play friday vs. the rangers.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T01:45:41.723645Z"
     }
   ],
   "known_sources": [
