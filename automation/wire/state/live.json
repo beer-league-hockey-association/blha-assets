@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-13T23:30:49.604477Z",
+  "updated_at": "2026-11-14T00:15:44.093072Z",
   "seen": [
-    {
-      "key": "f9c7011fc4fbdec9fdd39ab8",
-      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
-      "fingerprint": "80d8352d46f8ba76",
-      "title_norm": "nicolas roy (col) — roy (lower-body) will not play on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T00:15:33.703871Z"
-    },
     {
       "key": "02c0a6f562b236dc91185e9d",
       "url": "https://www.nhl.com/news/topic/short-shifts/hockey-fights-cancer-nhl-daily-digest-2026-27",
@@ -19092,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-13T23:30:49.569303Z"
+    },
+    {
+      "key": "95d3363f6dd10d16eee09123",
+      "url": "https://www.nhl.com/news/mike-babcock-not-sentimental-over-toronto-return-with-oilers",
+      "fingerprint": "7995152093fcc825",
+      "title_norm": "babcock not getting sentimental for toronto return",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-14T00:15:44.006301Z"
     }
   ],
   "known_sources": [
