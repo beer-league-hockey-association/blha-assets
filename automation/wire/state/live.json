@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T18:45:32.533071Z",
+  "updated_at": "2026-11-14T19:30:39.888744Z",
   "seen": [
     {
       "key": "c32e299576097f586dc284e4",
@@ -19002,6 +19002,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T18:15:47.288305Z"
+    },
+    {
+      "key": "9972fe758ae71b4cc7b0f4fc",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-cooley/33387",
+      "fingerprint": "04302c893bfa1bad",
+      "title_norm": "logan cooley (uta) — cooley (upper-body) remains day-to-day and will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T19:30:39.398684Z"
+    },
+    {
+      "key": "e78903dcd12f76ac6c206473",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-schmaltz/2678",
+      "fingerprint": "4436e88b611f80ba",
+      "title_norm": "nick schmaltz (uta) — schmaltz (lower-body) will not play on saturday and is still being evaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T19:30:39.585544Z"
+    },
+    {
+      "key": "d479d778080b19329437f784",
+      "url": "https://www.dailyfaceoff.com/players/news/mathew-barzal/2482",
+      "fingerprint": "7e04e71f21c5eb8f",
+      "title_norm": "mathew barzal (nyi) — barzal (knee) has been activated and is expected to make his season debut on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T19:30:39.787893Z"
     }
   ],
   "known_sources": [
