@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T22:30:44.443018Z",
+  "updated_at": "2026-11-14T22:45:47.236871Z",
   "seen": [
     {
       "key": "d021894b672f30585f5ded35",
@@ -19052,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T22:30:44.390807Z"
+    },
+    {
+      "key": "352270dedb89fe8a2820c41e",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-mark-scheifele-scores-to-become-jets-all-time-points-leader",
+      "fingerprint": "a1c2346f16dcb2e2",
+      "title_norm": "gotta see it: mark scheifele scores to become jets' all-time points leader",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T22:45:47.181835Z"
     }
   ],
   "known_sources": [
