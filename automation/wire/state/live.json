@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T19:30:39.888744Z",
+  "updated_at": "2026-11-14T19:45:34.810786Z",
   "seen": [
     {
       "key": "c32e299576097f586dc284e4",
@@ -19032,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-14T19:30:39.787893Z"
+    },
+    {
+      "key": "f028186dc842d85119bd41b1",
+      "url": "https://www.dailyfaceoff.com/players/news/artemi-panarin/2519",
+      "fingerprint": "e4853e22a2cabc8a",
+      "title_norm": "artemi panarin (lak) — panarin (personal) will not play saturday vs. the flames.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T19:45:34.729372Z"
     }
   ],
   "known_sources": [
