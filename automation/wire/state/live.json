@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T20:15:35.004733Z",
+  "updated_at": "2026-11-14T20:30:36.555198Z",
   "seen": [
     {
       "key": "1479351b919c9f233ee1fe98",
@@ -19022,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-14T19:45:34.729372Z"
+    },
+    {
+      "key": "1c6e3c3a21c714948c0de617",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/92a7c1f4-f8aa-4460-8a95-60d49204db89",
+      "fingerprint": "6d0222f68c340c26",
+      "title_norm": "jets on sportsnet: winnipeg vs. chicago",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T20:30:36.499510Z"
     }
   ],
   "known_sources": [
