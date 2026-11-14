@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T14:00:46.996732Z",
+  "updated_at": "2026-11-14T14:15:36.029635Z",
   "seen": [
     {
       "key": "75af268189e5278ea1a8f375",
@@ -19082,6 +19082,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-14T14:00:46.945328Z"
+    },
+    {
+      "key": "f2b5ded3541b9a358a6bb165",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-staal/1246",
+      "fingerprint": "15213e7c761ead53",
+      "title_norm": "jordan staal (car) — staal (calf) has been activated from ir and will play saturday vs. seattle.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T14:15:35.922375Z"
     }
   ],
   "known_sources": [
