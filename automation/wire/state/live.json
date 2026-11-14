@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T05:00:47.888186Z",
+  "updated_at": "2026-11-14T05:15:31.114998Z",
   "seen": [
     {
       "key": "bcc230aab607e214b10be8a3",
@@ -19062,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T05:00:47.831491Z"
+    },
+    {
+      "key": "820f00d8a5be973f39b8fc05",
+      "url": "https://www.nhl.com/news/new-york-rangers-vancouver-canucks-game-recap-november-13-2026",
+      "fingerprint": "21cd98230b0ed064",
+      "title_norm": "rangers get four goals in second, top canucks for fifth win in six games",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-14T05:15:31.050618Z"
     }
   ],
   "known_sources": [
