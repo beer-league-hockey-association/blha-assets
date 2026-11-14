@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T20:30:36.555198Z",
+  "updated_at": "2026-11-14T21:00:38.291432Z",
   "seen": [
-    {
-      "key": "1479351b919c9f233ee1fe98",
-      "url": "https://theahl.com/news/reimer-joins-wolf-pack-on-tryout",
-      "fingerprint": "4dc619b79070378a",
-      "title_norm": "reimer joins wolf pack on tryout",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-15T20:45:41.249153Z"
-    },
     {
       "key": "7e9cba78d793c4496609de7b",
       "url": "https://theahl.com/news/canucks-acquire-quillan-from-toronto",
@@ -19032,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T20:30:36.499510Z"
+    },
+    {
+      "key": "fe79e48f4cf63f03d6c0e63e",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "ca0489ca73952cc3",
+      "title_norm": "alexander wennberg (sjs) — wennberg (undisclosed) will not play saturday in utah.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T21:00:38.185118Z"
     }
   ],
   "known_sources": [
