@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T20:00:39.074436Z",
+  "updated_at": "2026-11-14T20:15:35.004733Z",
   "seen": [
-    {
-      "key": "4c6a88f012aaea30b82763b0",
-      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
-      "fingerprint": "666519e9d9981030",
-      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) was a full participant in anaheim's practice on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T20:00:44.064002Z"
-    },
     {
       "key": "1479351b919c9f233ee1fe98",
       "url": "https://theahl.com/news/reimer-joins-wolf-pack-on-tryout",
