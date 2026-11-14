@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T15:15:41.977627Z",
+  "updated_at": "2026-11-14T15:30:33.950739Z",
   "seen": [
     {
       "key": "9db3d21332e869c4fa7809ae",
@@ -19042,6 +19042,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-14T15:15:41.875199Z"
+    },
+    {
+      "key": "7a687100a07c262ea622a905",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-lindgren/4632",
+      "fingerprint": "97938c56fad48bb8",
+      "title_norm": "ryan lindgren (sea) — lindgren (lower-body) has been activated from ir and will play saturday against carolina.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-14T15:30:33.866768Z"
     }
   ],
   "known_sources": [
