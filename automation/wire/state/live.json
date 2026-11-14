@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T04:30:42.795629Z",
+  "updated_at": "2026-11-14T05:00:47.888186Z",
   "seen": [
     {
       "key": "bcc230aab607e214b10be8a3",
@@ -19052,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T03:15:31.423269Z"
+    },
+    {
+      "key": "48a00770663846b01fa33811",
+      "url": "https://www.sportsnet.ca/nhl/article/journeyman-gawdin-stars-to-lead-rangers-to-win-over-canucks",
+      "fingerprint": "47a8fac5c1ee82bd",
+      "title_norm": "journeyman gawdin stars in hometown to lead rangers over canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-14T05:00:47.831491Z"
     }
   ],
   "known_sources": [
