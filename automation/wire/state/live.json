@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T06:30:42.412497Z",
+  "updated_at": "2026-11-15T06:45:38.762175Z",
   "seen": [
     {
       "key": "579932216a05fb440434fee3",
@@ -19022,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T06:30:42.297712Z"
+    },
+    {
+      "key": "c4e97cd079a157a4913c2523",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-takeaways-wolf-does-best-quick-impression-in-win-over-kings",
+      "fingerprint": "61d71aea618f6b4e",
+      "title_norm": "flames takeaways: wolf does best quick impression in win over kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T06:45:38.728456Z"
     }
   ],
   "known_sources": [
