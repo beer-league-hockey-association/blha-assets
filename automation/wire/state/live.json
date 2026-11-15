@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T18:45:34.539031Z",
+  "updated_at": "2026-11-15T19:00:44.561110Z",
   "seen": [
-    {
-      "key": "2df7140afaf8163ce524147a",
-      "url": "https://www.sportsnet.ca/nhl/article/ducks-rebuild-provides-blueprint-for-flames-to-follow",
-      "fingerprint": "70c4a85c2d8ccb23",
-      "title_norm": "ducks' rebuild provides blueprint for flames to follow",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T18:45:38.816520Z"
-    },
     {
       "key": "500b570d4bd9a9bf16f42a04",
       "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
