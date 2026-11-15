@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T06:15:44.536963Z",
+  "updated_at": "2026-11-15T06:30:42.412497Z",
   "seen": [
     {
       "key": "579932216a05fb440434fee3",
@@ -18992,6 +18992,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-15T06:00:41.914972Z"
+    },
+    {
+      "key": "9b3dd328d6848cd78e92cc01",
+      "url": "https://www.dailyfaceoff.com/players/news/bo-horvat/2141",
+      "fingerprint": "efcc0e6520590b97",
+      "title_norm": "bo horvat (nyi) — horvat (undisclosed) left saturday's game vs. anaheim and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T06:30:41.813052Z"
+    },
+    {
+      "key": "0f4e0661f3b5d1149f407e70",
+      "url": "https://www.nhl.com/news/calgary-flames-los-angeles-kings-game-recap-november-14-2026",
+      "fingerprint": "24e586e1a942db0c",
+      "title_norm": "gridin breaks tie in 3rd, flames edge kings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T06:30:42.042430Z"
+    },
+    {
+      "key": "bcec78c02c43385c740e06f9",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-stanley/2652",
+      "fingerprint": "3a028d28548a1d20",
+      "title_norm": "logan stanley (nyi) — stanley (lower-body) left saturday's game vs. anaheim and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T06:30:42.297712Z"
     }
   ],
   "known_sources": [
