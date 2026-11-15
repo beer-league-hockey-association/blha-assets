@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T03:15:50.822644Z",
+  "updated_at": "2026-11-15T03:30:50.815879Z",
   "seen": [
     {
       "key": "fbaf2af3c303ed691c97c2d9",
@@ -19022,6 +19022,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T03:15:49.815574Z"
+    },
+    {
+      "key": "17c9858ec477bec6e1322851",
+      "url": "https://www.nhl.com/news/new-jersey-devils-washington-capitals-game-recap-november-14-2026",
+      "fingerprint": "963a12033652ee27",
+      "title_norm": "hellebuyck makes 43 saves to help devils stay hot",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:30:50.157137Z"
+    },
+    {
+      "key": "91b0590e19ceb522733a9210",
+      "url": "https://www.nhl.com/news/topic/Blackwood%20makes%2025%20saves%20for%20Colorado%20in%20first%20game%20without%20MacKinnon,%20Makar/colorado-avalanche-montreal-canadiens-game-recap-november-14-2026",
+      "fingerprint": "51264ccd7f7f8fd3",
+      "title_norm": "lehkonen, avs end canadiens' 12-game point streak",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:30:50.408324Z"
+    },
+    {
+      "key": "84a0d3d5679ae6a26a956d61",
+      "url": "https://www.nhl.com/news/ottawa-senators-pittsburgh-penguins-game-recap-november-14-2026",
+      "fingerprint": "f12b1b3b8d97fcb3",
+      "title_norm": "senators stay hot, top penguins, extend point streak to 5",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:30:50.580588Z"
+    },
+    {
+      "key": "08feb521e00b6af66a697a00",
+      "url": "https://www.nhl.com/news/edmonton-oilers-toronto-maple-leafs-game-recap-november-14-2026",
+      "fingerprint": "d2c5c1984caeee54",
+      "title_norm": "mcdavid's season-opening point streak hits 21, oilers blank maple leafs",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:30:50.593152Z"
+    },
+    {
+      "key": "0b5031a5440d0990313ada3c",
+      "url": "https://www.sportsnet.ca/nhl/article/giroux-stutzle-score-as-senators-top-penguins",
+      "fingerprint": "7651d80346794b7e",
+      "title_norm": "giroux, stutzle score as senators top penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:30:50.611386Z"
     }
   ],
   "known_sources": [
