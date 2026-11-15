@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T13:00:39.063401Z",
+  "updated_at": "2026-11-15T13:15:28.805096Z",
   "seen": [
-    {
-      "key": "cfac69119227fab3e89a532a",
-      "url": "https://www.sportsnet.ca/nhl/article/friday-four-sidney-crosby-nathan-mackinnon-and-other-early-season-oddities",
-      "fingerprint": "e54d09b5defda837",
-      "title_norm": "friday four: sidney crosby, nathan mackinnon and other early-season oddities",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T13:00:43.655081Z"
-    },
     {
       "key": "e68c4f83b66b8a53f023c56e",
       "url": "https://www.sportsnet.ca/nhl/article/why-canadiens-should-be-encouraged-by-early-season-process-despite-record",
