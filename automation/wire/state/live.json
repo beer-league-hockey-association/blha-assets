@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T00:00:40.246169Z",
+  "updated_at": "2026-11-15T00:15:35.352583Z",
   "seen": [
-    {
-      "key": "a5a087efdac70a90a379e99b",
-      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-marchenko-goes-between-the-legs-and-roofs-highlight-reel-goal",
-      "fingerprint": "fc1d31fa0cb02faf",
-      "title_norm": "gotta see it: marchenko goes between the legs and roofs highlight-reel goal",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T00:00:50.576998Z"
-    },
-    {
-      "key": "600b6c78503434de4cc571f4",
-      "url": "https://www.sportsnet.ca/nhl/article/red-wings-owner-ilitch-i-understand-fan-frustration",
-      "fingerprint": "230f04707dcb6460",
-      "title_norm": "red wings owner ilitch: 'i understand fan frustration'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T00:00:50.925198Z"
-    },
     {
       "key": "510f35cb768291581af14956",
       "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
@@ -19082,6 +19062,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T00:00:40.168402Z"
+    },
+    {
+      "key": "59eb901410b1990b540ddbff",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-mike-matheson-out-vs-avalanche",
+      "fingerprint": "54994fc241520523",
+      "title_norm": "canadiens' mike matheson out vs. avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T00:15:34.508371Z"
+    },
+    {
+      "key": "057f5b5a8772813377ee5d5a",
+      "url": "https://www.nhl.com/news/blue-jackets-coach-rick-bowness-to-miss-second-straight-game-with-health-issue",
+      "fingerprint": "fa18d4e4f50c1026",
+      "title_norm": "blue jackets coach bowness misses 2nd straight game",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T00:15:34.698461Z"
+    },
+    {
+      "key": "4b55d387520fce0721fa439b",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/1c461dcc-fe7c-40a0-a0af-5f091e66966c",
+      "fingerprint": "fa2cbc6c7c396b65",
+      "title_norm": "saturday night hockey on sportsnet: oilers vs. maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T00:15:34.916009Z"
+    },
+    {
+      "key": "a9a999aade95bb68e18382a9",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/14ad04f2-b35e-471c-8a54-130a16577402",
+      "fingerprint": "64872f0b5a1df2cb",
+      "title_norm": "saturday night hockey on sportsnet: avalanche vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T00:15:35.105198Z"
+    },
+    {
+      "key": "a6d8830fa29e8156d8ece356",
+      "url": "https://www.sportsnet.ca/nhl/article/report-maple-leafs-rielly-scratched-vs-oilers-with-lower-body-injury",
+      "fingerprint": "126eb4637a5fb55a",
+      "title_norm": "report: maple leafs' rielly scratched vs. oilers with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T00:15:35.295167Z"
     }
   ],
   "known_sources": [
