@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T22:15:36.791321Z",
+  "updated_at": "2026-11-15T22:30:35.431626Z",
   "seen": [
     {
       "key": "a9608cc028c2102c30efb2c9",
@@ -18832,6 +18832,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T22:15:36.693495Z"
+    },
+    {
+      "key": "7f86dec08dacbbf097f19dc0",
+      "url": "https://www.dailyfaceoff.com/players/news/denver-barkey/35098",
+      "fingerprint": "8b91451cecb55d0e",
+      "title_norm": "denver barkey (phi) — barkey (illness) is out vs. edmonton on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T22:30:35.336835Z"
     }
   ],
   "known_sources": [
