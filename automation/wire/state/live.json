@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T16:45:32.938072Z",
+  "updated_at": "2026-11-15T17:15:33.869402Z",
   "seen": [
-    {
-      "key": "269e504c6395bf7a417dfff0",
-      "url": "https://www.dailyfaceoff.com/players/news/justin-sourdif/29606",
-      "fingerprint": "507be1b91396ef18",
-      "title_norm": "justin sourdif (wsh) — sourdif (illness) is questionable for saturday's game vs. new jersey.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T17:00:43.702058Z"
-    },
-    {
-      "key": "4d4425633c55260e4fa115e3",
-      "url": "https://www.dailyfaceoff.com/players/news/walker-duehr/26313",
-      "fingerprint": "4571f22aa2ad857b",
-      "title_norm": "walker duehr (wpg) — duehr (lower-body) returned to winnipeg's practice in a regular jersey on friday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T17:00:44.222711Z"
-    },
     {
       "key": "4526cc1e0125a2295c1531bf",
       "url": "https://charlottecheckers.com/articles/marek-alscher-riding-momentum,-confidence-into-year-three",
@@ -18862,6 +18842,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T16:45:32.861465Z"
+    },
+    {
+      "key": "aed133aa1139c926feec5117",
+      "url": "https://www.nhl.com/news/mark-scheifele-passes-mentor-dale-hawerchuk-to-set-winnipeg-jets-scoring-mark",
+      "fingerprint": "e961e5cedbea6fea",
+      "title_norm": "scheifele 'very blessed' to set jets scoring record",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T17:15:32.606020Z"
+    },
+    {
+      "key": "fa47c45b7b230af625c75c80",
+      "url": "https://www.nhl.com/news/topic/nhl-global-series/sebastian-aho-savors-carolina-hurricanes-global-series-sweep-in-homeland",
+      "fingerprint": "b264f93f418fb570",
+      "title_norm": "aho savors canes' global series sweep in homeland",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T17:15:33.258018Z"
+    },
+    {
+      "key": "c736766e88a22b6b3d995310",
+      "url": "https://www.nhl.com/news/canadiens-chris-kreider-out-6-8-weeks-with-lower-body-injury",
+      "fingerprint": "9b2d7efb459df98c",
+      "title_norm": "kreider out 6-8 weeks for canadiens with injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T17:15:33.500583Z"
+    },
+    {
+      "key": "5a2282baecb08d14dbc0ea0d",
+      "url": "https://www.nhl.com/news/topic/nhl-global-series/seattle-kraken-have-got-to-be-better-after-2026-global-series-finland",
+      "fingerprint": "f35678a351bd7006",
+      "title_norm": "kraken have 'got to be better' after global series",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T17:15:33.740712Z"
     }
   ],
   "known_sources": [
