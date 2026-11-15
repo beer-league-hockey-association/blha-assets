@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T23:00:35.837958Z",
+  "updated_at": "2026-11-15T23:30:38.384206Z",
   "seen": [
     {
       "key": "a9608cc028c2102c30efb2c9",
@@ -18852,6 +18852,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-15T23:00:35.760861Z"
+    },
+    {
+      "key": "8386db5fdddd43afbdad7dba",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-nugent-hopkins/1733",
+      "fingerprint": "8c594c3c52191b0c",
+      "title_norm": "ryan nugent-hopkins (edm) — nugent-hopkins (undisclosed) is out vs. philadelphia on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T23:30:38.288374Z"
     }
   ],
   "known_sources": [
