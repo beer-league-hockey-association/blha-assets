@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T00:30:37.189350Z",
+  "updated_at": "2026-11-15T01:00:46.206861Z",
   "seen": [
-    {
-      "key": "510f35cb768291581af14956",
-      "url": "https://www.dailyfaceoff.com/players/news/jason-dickinson/2160",
-      "fingerprint": "8a1a80c2d589a049",
-      "title_norm": "jason dickinson (edm) — dickinson (lower-body) will not play thursday vs. the mammoth.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T00:45:37.024383Z"
-    },
-    {
-      "key": "0c233a3ceb319ec54efb7fb7",
-      "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
-      "fingerprint": "8814f452e39fc33f",
-      "title_norm": "brandon montour (sea) — montour left thursday's game with lower-body injury and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T01:00:36.798026Z"
-    },
     {
       "key": "86e75ca4ca7e3e48fffa3f0a",
       "url": "https://www.sportsnet.ca/nhl/video/marchenko-completes-first-maple-leafs-hat-trick-vs-sabres",
