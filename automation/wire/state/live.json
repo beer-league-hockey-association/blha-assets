@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T18:15:34.976287Z",
+  "updated_at": "2026-11-15T18:30:35.640490Z",
   "seen": [
     {
       "key": "a0077e2ea3569a20975e93ef",
@@ -18862,6 +18862,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T18:15:34.924277Z"
+    },
+    {
+      "key": "36fce0c09211eb8a0ef53aa7",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-neighbours/29498",
+      "fingerprint": "1ec5cc1c131c17fb",
+      "title_norm": "jake neighbours (stl) — neighbours (upper-body) is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T18:30:35.310931Z"
+    },
+    {
+      "key": "8c2e8a1282c8ef51732c57c0",
+      "url": "https://www.dailyfaceoff.com/players/news/philip-broberg/30607",
+      "fingerprint": "e26c5ff85b0367cc",
+      "title_norm": "philip broberg (stl) — broberg (lower-body) is not practicing on sunday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T18:30:35.534291Z"
     }
   ],
   "known_sources": [
