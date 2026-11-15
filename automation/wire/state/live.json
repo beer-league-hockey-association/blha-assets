@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T20:30:34.508530Z",
+  "updated_at": "2026-11-15T20:45:36.058011Z",
   "seen": [
-    {
-      "key": "3f08baecbd3e998c65622ac2",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-walman/2859",
-      "fingerprint": "2e7fbc85ee924c12",
-      "title_norm": "jake walman (edm) — walman (undisclosed) is likely to return in utah on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T20:30:37.635702Z"
-    },
-    {
-      "key": "db54269c171f68f8a9487a0d",
-      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
-      "fingerprint": "41816162481af1ce",
-      "title_norm": "colton dach (edm) — dach (undisclosed) is likely to return in utah on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T20:30:37.908235Z"
-    },
-    {
-      "key": "e8c42842010ef302556ea48e",
-      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
-      "fingerprint": "4566d1780f7261bb",
-      "title_norm": "zach hyman (edm) — hyman (upper-body) will return in utah on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T20:30:38.143083Z"
-    },
     {
       "key": "a9608cc028c2102c30efb2c9",
       "url": "https://www.nhl.com/news/columbus-coach-rick-bowness-blue-jackets-should-be-very-angry",
