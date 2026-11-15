@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T14:15:36.953005Z",
+  "updated_at": "2026-11-15T14:30:34.594318Z",
   "seen": [
-    {
-      "key": "8d7e8bbdc702db26895dc189",
-      "url": "https://clevelandmonsters.com/ahl-all-star",
-      "fingerprint": "b6f75270c4a147bd",
-      "title_norm": "2027 ahl all-star classic tickets on sale now!",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-16T14:15:39.496357Z"
-    },
     {
       "key": "6d2cf5c6c5ff1864322c1e99",
       "url": "https://thehockeywriters.com/top-5-khl-prospects-off-to-a-great-start-of-2026-27",
