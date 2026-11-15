@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T23:30:38.384206Z",
+  "updated_at": "2026-11-15T23:45:35.530798Z",
   "seen": [
     {
       "key": "a9608cc028c2102c30efb2c9",
@@ -18862,6 +18862,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T23:30:38.288374Z"
+    },
+    {
+      "key": "f37b662d7f7648833f049b55",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "e1dfc5f9858b2ae0",
+      "title_norm": "alexander wennberg (sjs) — wennberg (undisclosed) is out vs. nashville on sunday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T23:45:35.429613Z"
     }
   ],
   "known_sources": [
