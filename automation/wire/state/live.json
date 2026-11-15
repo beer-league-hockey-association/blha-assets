@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T05:45:39.452097Z",
+  "updated_at": "2026-11-15T06:00:42.051589Z",
   "seen": [
     {
       "key": "82d5410a69f5bc7842d9e103",
@@ -18992,6 +18992,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-15T05:45:39.316003Z"
+    },
+    {
+      "key": "164ce8fe28d1aaebd30c422c",
+      "url": "https://www.nhl.com/news/new-york-islanders-anaheim-ducks-game-recap-november-14-2026",
+      "fingerprint": "062609ad71e2054f",
+      "title_norm": "holmstrom scores hat trick, islanders cruise past ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T06:00:41.914972Z"
     }
   ],
   "known_sources": [
