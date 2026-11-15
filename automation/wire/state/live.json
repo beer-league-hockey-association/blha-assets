@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T18:30:35.640490Z",
+  "updated_at": "2026-11-15T18:45:34.539031Z",
   "seen": [
-    {
-      "key": "a0077e2ea3569a20975e93ef",
-      "url": "https://www.dailyfaceoff.com/players/news/pierre-luc-dubois/2636",
-      "fingerprint": "7bad122ff6c293e0",
-      "title_norm": "pierre-luc dubois (wsh) — dubois (illness) will remain out for saturday's game vs. new jersey.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T18:30:45.935225Z"
-    },
-    {
-      "key": "9059dfbdd96776134d03e774",
-      "url": "https://www.dailyfaceoff.com/players/news/cutter-gauthier/33248",
-      "fingerprint": "71f6efb729999fc5",
-      "title_norm": "cutter gauthier (ana) — gauthier (upper-body) will return vs. boston on friday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T18:30:46.210315Z"
-    },
-    {
-      "key": "d4812da469612afa8fac1e52",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
-      "fingerprint": "af5c584ee3d09cd9",
-      "title_norm": "mikael granlund (ana) — granlund (upper-body) will not play friday but will travel on the ducks' upcoming 4-game road trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T18:30:46.452952Z"
-    },
-    {
-      "key": "a46d64099384942f81981ee9",
-      "url": "https://www.dailyfaceoff.com/players/news/vladislav-namestnikov/1865",
-      "fingerprint": "73d11c5affc1bae4",
-      "title_norm": "vladislav namestnikov (wpg) — namestnikov (undisclosed) is out week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T18:30:46.485723Z"
-    },
     {
       "key": "2df7140afaf8163ce524147a",
       "url": "https://www.sportsnet.ca/nhl/article/ducks-rebuild-provides-blueprint-for-flames-to-follow",
@@ -18882,6 +18842,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T18:30:35.534291Z"
+    },
+    {
+      "key": "a898c94a41af735408e4f18f",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
+      "fingerprint": "6ea445a77186dd9c",
+      "title_norm": "mike matheson (mtl) — matheson (lower-body) will not make montreal's upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T18:45:34.159651Z"
+    },
+    {
+      "key": "3dc75bd827cd9fd16f61543f",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-anderson2/21932",
+      "fingerprint": "d7600fc718237b8d",
+      "title_norm": "josh anderson (mtl) — anderson (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T18:45:34.483932Z"
     }
   ],
   "known_sources": [
