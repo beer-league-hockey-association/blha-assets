@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T05:05:24.090477Z",
+  "updated_at": "2026-11-15T05:15:35.189298Z",
   "seen": [
-    {
-      "key": "d48e0d5f05b7b9c08cb8e084",
-      "url": "https://www.nhl.com/news/calgary-flames-vegas-golden-knights-game-recap-october-15-2026",
-      "fingerprint": "df60207cbb43b6d5",
-      "title_norm": "stone scores hat trick, golden knights cruise past flames",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T05:15:33.847991Z"
-    },
     {
       "key": "a10f0a54ad01108215afe195",
       "url": "https://www.sportsnet.ca/nhl/article/flames-alum-rasmus-andersson-preaches-patience-amid-rebuild",
@@ -18982,6 +18972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T05:05:24.048642Z"
+    },
+    {
+      "key": "f3582fa83a1a929fdcfe5380",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-have-hill-to-climb-after-winless-homestand",
+      "fingerprint": "0628099b1dee3f25",
+      "title_norm": "maple leafs have hill to climb after winless homestand",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T05:15:35.110456Z"
     }
   ],
   "known_sources": [
