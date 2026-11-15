@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T12:30:34.125259Z",
+  "updated_at": "2026-11-15T13:00:39.063401Z",
   "seen": [
     {
       "key": "cfac69119227fab3e89a532a",
@@ -19012,6 +19012,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-15T09:30:41.050211Z"
+    },
+    {
+      "key": "09d288fee5abcc0d83aa007d",
+      "url": "https://dobberprospects.com/2026/11/15/november-ahl-report-1st-month-standouts",
+      "fingerprint": "61c5a5e2dd31b133",
+      "title_norm": "november ahl report: 1st month standouts",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-15T13:00:39.030197Z"
     }
   ],
   "known_sources": [
