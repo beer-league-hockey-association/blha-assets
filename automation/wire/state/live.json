@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T16:30:36.014071Z",
+  "updated_at": "2026-11-15T16:45:32.938072Z",
   "seen": [
-    {
-      "key": "d8bddc266c56bb8119296c43",
-      "url": "https://www.dailyfaceoff.com/players/news/juraj-slafkovsky/35721",
-      "fingerprint": "b9289706ea75a7f4",
-      "title_norm": "juraj slafkovsky (mtl) — slafkovsky (maintenance) missed friday's practice but will be available to play saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T16:30:36.591852Z"
-    },
-    {
-      "key": "b67d77c076fe8378d89cd7a1",
-      "url": "https://www.dailyfaceoff.com/players/news/oliver-kapanen/34678",
-      "fingerprint": "49d6db6c892f22b0",
-      "title_norm": "oliver kapanen (mtl) — kapanen (lower-body) was a full participant in friday's practice.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T16:30:36.854958Z"
-    },
-    {
-      "key": "d07d5eeae151ff5c46f898a2",
-      "url": "https://www.nhl.com/news/carolina-hurricanes-taylor-hall-injury-status-report-october-16-2026",
-      "fingerprint": "688e4235f707a9a2",
-      "title_norm": "hall week to week for canes with upper-body injury",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T16:30:37.124346Z"
-    },
     {
       "key": "269e504c6395bf7a417dfff0",
       "url": "https://www.dailyfaceoff.com/players/news/justin-sourdif/29606",
@@ -18872,6 +18842,26 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-11-15T14:58:59.052790Z"
+    },
+    {
+      "key": "52ccc7394953534e536b1c21",
+      "url": "https://www.dailyfaceoff.com/players/news/igor-shesterkin/25267",
+      "fingerprint": "09352383d8ef8041",
+      "title_norm": "igor shesterkin (nyr) — shesterkin (lower-body) has been placed on season ending injury reserve.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T16:45:32.480343Z"
+    },
+    {
+      "key": "90bbd81e2453dc45fcd52a57",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-van-riemsdyk/2383",
+      "fingerprint": "cdfd5ea04f05dfca",
+      "title_norm": "trevor van riemsdyk (pit) — van riemsdyk (lower-body) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T16:45:32.861465Z"
     }
   ],
   "known_sources": [
