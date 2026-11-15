@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T05:15:35.189298Z",
+  "updated_at": "2026-11-15T05:30:32.110450Z",
   "seen": [
     {
       "key": "a10f0a54ad01108215afe195",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T05:15:35.110456Z"
+    },
+    {
+      "key": "1a81d25ab395d21ef0da1051",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-tight-defensive-play-boosted-by-levis-goaltending",
+      "fingerprint": "6311409194e1c337",
+      "title_norm": "oilers' tight defensive play boosted by levi's goaltending",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T05:30:32.072159Z"
     }
   ],
   "known_sources": [
