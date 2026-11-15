@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T17:15:33.869402Z",
+  "updated_at": "2026-11-15T17:30:35.656699Z",
   "seen": [
     {
       "key": "4526cc1e0125a2295c1531bf",
@@ -18882,6 +18882,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-15T17:15:33.740712Z"
+    },
+    {
+      "key": "a6acc5d5a608ecf6f06f5e0c",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-ryan-leonard-fined-for-high-sticking-devils-cody-glass",
+      "fingerprint": "d14da2c828294f00",
+      "title_norm": "capitals' ryan leonard fined for high sticking devils' cody glass",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T17:30:35.265807Z"
+    },
+    {
+      "key": "090e4c3e3ae7e1459bf120b5",
+      "url": "https://www.dailyfaceoff.com/players/news/philip-broberg/30607",
+      "fingerprint": "3180bde679eddf1c",
+      "title_norm": "philip broberg (stl) — broberg (lower-body) is not practicing on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T17:30:35.575865Z"
     }
   ],
   "known_sources": [
