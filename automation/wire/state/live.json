@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T06:00:42.051589Z",
+  "updated_at": "2026-11-15T06:15:44.536963Z",
   "seen": [
-    {
-      "key": "82d5410a69f5bc7842d9e103",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-babcock-caught-leaning-on-stars-i-played-them-too-much",
-      "fingerprint": "ad4aaa216fc87908",
-      "title_norm": "oilers' babcock caught leaning on stars: 'i played them too much'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T06:15:37.741878Z"
-    },
     {
       "key": "579932216a05fb440434fee3",
       "url": "https://www.sportsnet.ca/nhl/article/pintos-shootout-winner-lifts-senators-past-islanders",
