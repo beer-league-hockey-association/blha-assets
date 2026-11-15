@@ -1,68 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T02:00:55.439950Z",
+  "updated_at": "2026-11-15T02:30:46.422979Z",
   "seen": [
-    {
-      "key": "eb434a35ea0076eb8676abcc",
-      "url": "https://www.nhl.com/news/vancouver-canucks-florida-panthers-game-recap-october-15-2026",
-      "fingerprint": "917f481b55c39f38",
-      "title_norm": "brady tkachuk scores second hat trick in row, lifts panthers past canucks in ot",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T02:15:40.987696Z"
-    },
-    {
-      "key": "9b32ef4de5a68f0184c39977",
-      "url": "https://www.nhl.com/news/new-york-islanders-ottawa-senators-game-recap-october-15-2026",
-      "fingerprint": "21f25ed51a771fdf",
-      "title_norm": "ullmark, senators get past islanders in shootout",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T02:15:41.266743Z"
-    },
-    {
-      "key": "f65fcdc3bc6edd83203b9564",
-      "url": "https://www.sportsnet.ca/nhl/article/power-scores-in-overtime-as-sabres-rally-past-maple-leafs",
-      "fingerprint": "5662a5ebb169eec1",
-      "title_norm": "power scores in overtime as sabres rally past maple leafs",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T02:15:41.823759Z"
-    },
-    {
-      "key": "b9509005eff535a9c1da8204",
-      "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
-      "fingerprint": "aff1dab749c6d4f8",
-      "title_norm": "john tavares (tor) — tavares (lower-body) left thursday's game vs. buffalo and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T02:30:39.681241Z"
-    },
-    {
-      "key": "29b7706ef959b3201b07657a",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-15-2026",
-      "fingerprint": "352e7fc836d8e951",
-      "title_norm": "status report: tanev week to week for maple leafs",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T02:30:39.885682Z"
-    },
-    {
-      "key": "c77609cbc3e89be7bbcea684",
-      "url": "https://www.nhl.com/news/seattle-kraken-tampa-bay-lightning-game-recap-october-15-2026",
-      "fingerprint": "1ac75f1fa4d7a5c4",
-      "title_norm": "hedman scores in ot, bolts recover against kraken",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T02:30:40.229288Z"
-    },
     {
       "key": "f6ec86b8f66afa0221f5e1c7",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-benched-in-ot-loss-vs-sabres",
@@ -19052,6 +18992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T02:00:55.412137Z"
+    },
+    {
+      "key": "645ec2efc62fbda15b0e3adc",
+      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-senators-and-burakovsky-looking-for-fresh-start",
+      "fingerprint": "886f89a29ccbf5ec",
+      "title_norm": "saturday headlines: senators and burakovsky looking for fresh start",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T02:30:46.376189Z"
     }
   ],
   "known_sources": [
