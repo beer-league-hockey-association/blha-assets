@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T21:00:45.637482Z",
+  "updated_at": "2026-11-15T22:15:36.791321Z",
   "seen": [
     {
       "key": "a9608cc028c2102c30efb2c9",
@@ -18812,6 +18812,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-15T21:00:45.528960Z"
+    },
+    {
+      "key": "045d74b5e7ccd3d988d0745e",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
+      "fingerprint": "8c8960df674a9345",
+      "title_norm": "mike matheson (mtl) — matheson (lower-body) is expected to be out for 2-3 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T22:15:36.425376Z"
+    },
+    {
+      "key": "4967189e7b697ec83e727843",
+      "url": "https://www.dailyfaceoff.com/players/news/josh-anderson2/21932",
+      "fingerprint": "cd167bf1e07d5696",
+      "title_norm": "josh anderson (mtl) — anderson (lower-body) will be out for approximately 3-4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T22:15:36.693495Z"
     }
   ],
   "known_sources": [
