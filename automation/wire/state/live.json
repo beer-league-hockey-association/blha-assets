@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T14:00:53.602651Z",
+  "updated_at": "2026-11-15T14:15:36.953005Z",
   "seen": [
     {
       "key": "8d7e8bbdc702db26895dc189",
@@ -19002,6 +19002,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-15T13:00:39.030197Z"
+    },
+    {
+      "key": "e8683635ed1eaab14e273da0",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-what-would-penguins-rebuild-mean-for-crosby",
+      "fingerprint": "2d9588251bb5d95c",
+      "title_norm": "sunday overreactions: what would penguins rebuild mean for crosby?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T14:15:36.897847Z"
     }
   ],
   "known_sources": [
