@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T08:45:35.075837Z",
+  "updated_at": "2026-11-15T09:30:41.186136Z",
   "seen": [
     {
       "key": "266f23b973c0abb7c69e3058",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T06:45:38.728456Z"
+    },
+    {
+      "key": "d62785d956b06b9caf79e368",
+      "url": "https://www.nhl.com/news/buffalo-sabres-dallas-stars-game-recap-november-14-2026",
+      "fingerprint": "fa219dc51f274c25",
+      "title_norm": "benn gets 1,000th point, stars shut out sabres",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T09:30:41.050211Z"
     }
   ],
   "known_sources": [
