@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T15:15:30.645520Z",
+  "updated_at": "2026-11-15T15:45:32.277999Z",
   "seen": [
-    {
-      "key": "5a07a4ae282305db1ee49293",
-      "url": "https://www.nhl.com/news/david-perron-signs-one-year-contract-with-dallas-stars",
-      "fingerprint": "dfbe6d1fd9d5bffc",
-      "title_norm": "perron signs 1-year contract with stars",
-      "channel": "nhl-transactions",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T15:30:34.506424Z"
-    },
     {
       "key": "4bb34a6dac075928d3d22ea1",
       "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
