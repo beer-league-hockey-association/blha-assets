@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-14T23:45:36.469782Z",
+  "updated_at": "2026-11-15T00:00:40.246169Z",
   "seen": [
-    {
-      "key": "e6504aefc6dffd86e2003c96",
-      "url": "https://www.dailyfaceoff.com/players/news/darnell-nurse/2139",
-      "fingerprint": "cf2ba024f69e92b0",
-      "title_norm": "darnell nurse (sjs) — nurse (upper-body) will not play on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T23:45:37.073149Z"
-    },
-    {
-      "key": "20ac9c492c358bff2d1609a1",
-      "url": "https://www.dailyfaceoff.com/players/news/justus-annunen/29146",
-      "fingerprint": "cb3b31b1bb49fa89",
-      "title_norm": "justus annunen (nsh) — annunen (undisclosed) has been activated from ir and will backup on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-15T23:45:37.360400Z"
-    },
     {
       "key": "a5a087efdac70a90a379e99b",
       "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-marchenko-goes-between-the-legs-and-roofs-highlight-reel-goal",
@@ -19072,6 +19052,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-14T23:45:36.393744Z"
+    },
+    {
+      "key": "48792c939d0ba06e5c79f8ef",
+      "url": "https://www.nhl.com/news/winnipeg-jets-chicago-blackhawks-game-recap-november-14-2026",
+      "fingerprint": "806baead7fe34def",
+      "title_norm": "jets rally from down 4, top hawks for 6th win in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T00:00:39.523398Z"
+    },
+    {
+      "key": "a676a74201bf061390bc3417",
+      "url": "https://www.nhl.com/news/topic/nhl-global-series",
+      "fingerprint": "1868553672d49886",
+      "title_norm": "complete global series finland coverage",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T00:00:39.844384Z"
+    },
+    {
+      "key": "b1c85243f35c7d542e13fc82",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "d9acbeec193be402",
+      "title_norm": "chris tanev (tor) — tanev (rest) will be back in the maple leafs lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-15T00:00:40.168402Z"
     }
   ],
   "known_sources": [
