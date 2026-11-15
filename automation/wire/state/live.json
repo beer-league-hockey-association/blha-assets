@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T19:45:35.954645Z",
+  "updated_at": "2026-11-15T20:00:47.008879Z",
   "seen": [
-    {
-      "key": "f0814f687be2ec30db580d62",
-      "url": "https://www.flohockey.tv/articles/16244680-5-must-watch-ahl-games-this-weekend-oct-16-18-2026",
-      "fingerprint": "f4bdf0e4fbe087ad",
-      "title_norm": "5 games to watch this weekend",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-16T20:00:39.474595Z"
-    },
     {
       "key": "a91ea60828606279adfbbf31",
       "url": "https://theahl.com/news/reinforcements-on-the-way",
@@ -18842,6 +18832,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T19:45:35.932546Z"
+    },
+    {
+      "key": "5cb7743068d615b91601500c",
+      "url": "https://www.nhl.com/news/capitals-ryan-leonard-fined-maximum-for-high-sticking",
+      "fingerprint": "ec67a17aedcb5917",
+      "title_norm": "caps' leonard fined maximum for high-sticking",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T20:00:46.949886Z"
     }
   ],
   "known_sources": [
