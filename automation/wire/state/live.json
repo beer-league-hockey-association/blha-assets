@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T14:45:36.474633Z",
+  "updated_at": "2026-11-15T14:58:59.062270Z",
   "seen": [
     {
       "key": "21c663460751976cacc6379c",
@@ -18992,6 +18992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T14:15:36.897847Z"
+    },
+    {
+      "key": "6d2cf5c6c5ff1864322c1e99",
+      "url": "https://thehockeywriters.com/top-5-khl-prospects-off-to-a-great-start-of-2026-27",
+      "fingerprint": "51674b945edc4aca",
+      "title_norm": "top 5 khl prospects off to a great start of 2026-27",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-15T14:58:59.052790Z"
     }
   ],
   "known_sources": [
