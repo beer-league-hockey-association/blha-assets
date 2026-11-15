@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T01:15:43.872914Z",
+  "updated_at": "2026-11-15T01:45:51.065741Z",
   "seen": [
-    {
-      "key": "468315c9684f1be9b7dc723d",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-john-tavares-exits-vs-sabres-after-collision",
-      "fingerprint": "e909f2264498681d",
-      "title_norm": "maple leafs' john tavares exits vs. sabres after collision",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T01:30:41.030284Z"
-    },
     {
       "key": "1a60d3c51251b17380b126d5",
       "url": "https://www.nhl.com/news/new-york-rangers-new-jersey-devils-game-recap-october-15-2026",
