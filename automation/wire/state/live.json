@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T00:15:35.352583Z",
+  "updated_at": "2026-11-15T00:30:37.189350Z",
   "seen": [
     {
       "key": "510f35cb768291581af14956",
@@ -19112,6 +19112,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T00:15:35.295167Z"
+    },
+    {
+      "key": "b7aa34b2c0abfe1e0e37a2a0",
+      "url": "https://www.nhl.com/news/topic/nhl-global-series/seattle-kraken-carolina-hurricanes-global-series-game-recap-november-14-2026",
+      "fingerprint": "f3e0eacc5ed87b36",
+      "title_norm": "hurricanes complete two-game sweep of kraken at global series finland",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T00:30:37.099056Z"
     }
   ],
   "known_sources": [
