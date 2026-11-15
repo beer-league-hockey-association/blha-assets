@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T20:45:36.058011Z",
+  "updated_at": "2026-11-15T21:00:45.637482Z",
   "seen": [
     {
       "key": "a9608cc028c2102c30efb2c9",
@@ -18802,6 +18802,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-15T20:00:46.949886Z"
+    },
+    {
+      "key": "255ef57a5d9be4bee461a98a",
+      "url": "https://www.nhl.com/news/topic/short-shifts/russell-crowe-gladiator-edmonton-oilers-devon-levi",
+      "fingerprint": "476f3abdf8a00dbe",
+      "title_norm": "levi's 'gladiator' pregame ritual endorsed by crowe",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T21:00:45.528960Z"
     }
   ],
   "known_sources": [
