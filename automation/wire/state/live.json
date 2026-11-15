@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T13:15:28.805096Z",
+  "updated_at": "2026-11-15T14:00:53.602651Z",
   "seen": [
-    {
-      "key": "e68c4f83b66b8a53f023c56e",
-      "url": "https://www.sportsnet.ca/nhl/article/why-canadiens-should-be-encouraged-by-early-season-process-despite-record",
-      "fingerprint": "3f8760cd1ed58d6c",
-      "title_norm": "why canadiens should be encouraged by early-season process despite record",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T13:45:37.434187Z"
-    },
     {
       "key": "8d7e8bbdc702db26895dc189",
       "url": "https://clevelandmonsters.com/ahl-all-star",
