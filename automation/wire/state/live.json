@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T03:00:39.976771Z",
+  "updated_at": "2026-11-15T03:15:50.822644Z",
   "seen": [
-    {
-      "key": "6dbb0b330afab0bbc5bc9cd2",
-      "url": "https://www.sportsnet.ca/nhl/article/sabres-josh-norris-in-concussion-protocol-after-collision-in-ot-win-vs-maple-leafs",
-      "fingerprint": "5269613b137bc629",
-      "title_norm": "sabres' josh norris in concussion protocol after collision in ot win vs. maple leafs",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T03:00:40.883551Z"
-    },
-    {
-      "key": "6e4119e5c397ba244ff473af",
-      "url": "https://www.nhl.com/news/winnipeg-jets-chicago-blackhawks-game-recap-october-15-2026",
-      "fingerprint": "d1f2258afd20f1c3",
-      "title_norm": "bedard scores 1st of season, hawks recover for ot win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-16T03:15:34.937903Z"
-    },
-    {
-      "key": "2e7f004569d537f5360a225c",
-      "url": "https://www.sportsnet.ca/nhl/article/levshunov-scores-in-ot-as-blackhawks-beat-jets",
-      "fingerprint": "b23c6654c2c6b80b",
-      "title_norm": "levshunov scores in ot as blackhawks beat jets",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T03:15:35.248631Z"
-    },
     {
       "key": "fbaf2af3c303ed691c97c2d9",
       "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
@@ -19002,6 +18972,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T03:00:39.747818Z"
+    },
+    {
+      "key": "b1c13a2240d154f39ab73f05",
+      "url": "https://www.sportsnet.ca/nhl/article/stars-captain-jamie-benn-records-1000th-nhl-point-vs-sabres",
+      "fingerprint": "feae7b645c418284",
+      "title_norm": "stars captain jamie benn records 1,000th nhl point vs. sabres",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:15:49.227564Z"
+    },
+    {
+      "key": "0ce7a43cf3fb91426b83da88",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-columbus-blue-jackets-game-recap-november-14-2026",
+      "fingerprint": "2119394f466d3a3c",
+      "title_norm": "barkey gets first multigoal game, flyers top jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:15:49.506773Z"
+    },
+    {
+      "key": "ffd1b842cc2dce4b6ba5af06",
+      "url": "https://www.nhl.com/news/minnesota-wild-boston-bruins-game-recap-november-14-2026",
+      "fingerprint": "8e2e77a9d8297e4d",
+      "title_norm": "wild cruise past bruins, run point streak to 11 games",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:15:49.754787Z"
+    },
+    {
+      "key": "347e0cbe3115fdcdc4602475",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-fall-to-shorthanded-avalanche",
+      "fingerprint": "2ed61e61676196fb",
+      "title_norm": "canadiens fall to shorthanded avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:15:49.799065Z"
+    },
+    {
+      "key": "e2ba5cdd5f9033532eac2cf9",
+      "url": "https://www.sportsnet.ca/nhl/article/tkachuk-brothers-power-panthers-to-win-after-hall-of-fame-father-honoured-by-blues",
+      "fingerprint": "ac98d6e5216b1318",
+      "title_norm": "tkachuk brothers power panthers to win after hall of fame father honoured by blues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:15:49.815574Z"
     }
   ],
   "known_sources": [
