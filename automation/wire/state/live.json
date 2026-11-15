@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T02:45:37.146805Z",
+  "updated_at": "2026-11-15T03:00:39.976771Z",
   "seen": [
     {
       "key": "6dbb0b330afab0bbc5bc9cd2",
@@ -18952,6 +18952,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T02:30:46.376189Z"
+    },
+    {
+      "key": "3ba5f5552984c1313643d6fe",
+      "url": "https://www.nhl.com/news/topic/game-recap/detroit-red-wings-tampa-bay-lightning-game-recap-november-14-2026",
+      "fingerprint": "c2469da3dce65ccc",
+      "title_norm": "tarasov gets shutout, red wings end 5-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:00:39.153576Z"
+    },
+    {
+      "key": "0017d750b33cf1527154bcdf",
+      "url": "https://www.nhl.com/news/florida-panthers-st-louis-blues-game-recap-november-14-2026",
+      "fingerprint": "3c4e94f77c079b95",
+      "title_norm": "tkachuks spark panthers to shutout win against blues after st. louis honors dad",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T03:00:39.452182Z"
+    },
+    {
+      "key": "10ce7815433baf2e95506403",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/1d0d451d-59be-46e9-87e3-b3f17424ce35",
+      "fingerprint": "c82340a418bd3d68",
+      "title_norm": "saturday night hockey on sportsnet: flames vs. kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:00:39.721581Z"
+    },
+    {
+      "key": "4215d5d3ef1a99e0421711a9",
+      "url": "https://www.sportsnet.ca/nhl/article/levi-mcdavid-help-oilers-hand-maple-leafs-sixth-straight-home-loss",
+      "fingerprint": "9c59fe49df85299b",
+      "title_norm": "levi, mcdavid help oilers hand maple leafs sixth straight home loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:00:39.732981Z"
+    },
+    {
+      "key": "01d3cbbec70afe696bbac782",
+      "url": "https://www.sportsnet.ca/nhl/article/flyers-briere-jones-tell-michkov-hes-staying",
+      "fingerprint": "204a0151f24729ec",
+      "title_norm": "flyers' briere, jones tell michkov he's staying",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T03:00:39.747818Z"
     }
   ],
   "known_sources": [
