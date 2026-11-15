@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T19:00:44.561110Z",
+  "updated_at": "2026-11-15T19:45:35.954645Z",
   "seen": [
-    {
-      "key": "500b570d4bd9a9bf16f42a04",
-      "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
-      "fingerprint": "cd5bdeb4b91b32a0",
-      "title_norm": "wyatt johnston (dal) — johnston (illness) is a possibility to return in chicago on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T19:30:43.746344Z"
-    },
-    {
-      "key": "29d950d038d16845de7ee742",
-      "url": "https://www.dailyfaceoff.com/players/news/oskar-back/29109",
-      "fingerprint": "0f91cad017243ef8",
-      "title_norm": "oskar back (dal) — back (broken finger) will be out for the next 4-6 weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T19:30:44.021474Z"
-    },
     {
       "key": "f0814f687be2ec30db580d62",
       "url": "https://www.flohockey.tv/articles/16244680-5-must-watch-ahl-games-this-weekend-oct-16-18-2026",
@@ -18852,6 +18832,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T18:45:34.483932Z"
+    },
+    {
+      "key": "21a602523bd639e7a7771837",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanche-claim-defenceman-mike-reilly-off-waivers-from-hurricanes",
+      "fingerprint": "0b61b48e5eee788f",
+      "title_norm": "avalanche claim defenceman mike reilly off waivers from hurricanes",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-15T19:45:35.932546Z"
     }
   ],
   "known_sources": [
