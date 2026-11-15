@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T04:00:46.341712Z",
+  "updated_at": "2026-11-15T04:30:39.939635Z",
   "seen": [
-    {
-      "key": "a1c66025a04e870c7e71aa40",
-      "url": "https://www.dailyfaceoff.com/players/news/joshua-norris/28056",
-      "fingerprint": "e4e9834ac20b16ae",
-      "title_norm": "josh norris (buf) — norris (concussion) left buffalo's game on thursday and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-16T04:30:39.935139Z"
-    },
     {
       "key": "92d0b313572bd9dfe7ceb9e9",
       "url": "https://www.nhl.com/news/gavin-mckenna-absent-in-final-half-of-toronto-maple-leafs-loss-to-buffalo-sabres",
@@ -19002,6 +18992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T03:30:50.611386Z"
+    },
+    {
+      "key": "356eaca6ae9a26cc7f3fbf3c",
+      "url": "https://www.nhl.com/kraken/news/seattle-kraken-jagger-firkus-debut-parents-travel-to-finland-nhl-global-series",
+      "fingerprint": "463e4542e7f461e1",
+      "title_norm": "with parents on hand, firkus makes nhl debut in helsinki",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-15T04:30:39.827593Z"
     }
   ],
   "known_sources": [
