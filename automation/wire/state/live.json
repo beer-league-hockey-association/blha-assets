@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T05:30:32.110450Z",
+  "updated_at": "2026-11-15T05:45:39.452097Z",
   "seen": [
-    {
-      "key": "a10f0a54ad01108215afe195",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-alum-rasmus-andersson-preaches-patience-amid-rebuild",
-      "fingerprint": "a1ec2473f0d924dd",
-      "title_norm": "flames alum rasmus andersson preaches patience amid rebuild",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-16T05:30:35.406676Z"
-    },
     {
       "key": "82d5410a69f5bc7842d9e103",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-babcock-caught-leaning-on-stars-i-played-them-too-much",
@@ -18992,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-15T05:30:32.072159Z"
+    },
+    {
+      "key": "b0f703e70703d5c7dfc4691d",
+      "url": "https://www.nhl.com/news/san-jose-sharks-utah-mammoth-game-recap-november-14-2026",
+      "fingerprint": "43546ce0989b1d11",
+      "title_norm": "sharks recover, get past mammoth in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-15T05:45:39.316003Z"
     }
   ],
   "known_sources": [
