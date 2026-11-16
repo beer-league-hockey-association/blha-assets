@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T03:45:46.155039Z",
+  "updated_at": "2026-11-16T04:00:41.353158Z",
   "seen": [
-    {
-      "key": "928a7ec10082ae11b126a430",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-16-2026",
-      "fingerprint": "408156e3dd51832d",
-      "title_norm": "status report: jarvis could return this weekend",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T04:00:40.377795Z"
-    },
-    {
-      "key": "e5147af0a050278f9188da23",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-florian-xhekaj-out-two-weeks-matheson-still-day-to-day",
-      "fingerprint": "2c6214534da476a8",
-      "title_norm": "canadiens' florian xhekaj out two weeks, matheson still day-to-day",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T04:00:40.731009Z"
-    },
     {
       "key": "5cdd2f2a0749325e2c928174",
       "url": "https://www.nhl.com/news/pittsburgh-penguins-colorado-avalanche-game-recap-october-16-2026",
@@ -18932,6 +18912,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T03:45:46.088424Z"
+    },
+    {
+      "key": "9aede1a20d3307a1db616831",
+      "url": "https://www.sportsnet.ca/nhl/article/cutter-gauthier-extends-goal-streak-to-nine-games-leading-ducks-past-flames",
+      "fingerprint": "59a439350023408c",
+      "title_norm": "cutter gauthier extends goal streak to nine games, leading ducks past flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T04:00:40.836577Z"
+    },
+    {
+      "key": "915ac2637ff49aa093f88b5e",
+      "url": "https://www.nhl.com/news/calgary-flames-anaheim-ducks-game-recap-november-15-2026",
+      "fingerprint": "a4cb85d7e20d5255",
+      "title_norm": "gauthier stays hot, ducks ease past flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T04:00:41.053913Z"
+    },
+    {
+      "key": "6b5b594271d2a3cb91bc8d61",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/1ba53af4-197b-445a-bf06-93634ca24002",
+      "fingerprint": "3200815882423aa8",
+      "title_norm": "canucks on sportsnet: vancouver vs. vegas",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T04:00:41.311995Z"
     }
   ],
   "known_sources": [
