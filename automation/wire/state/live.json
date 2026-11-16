@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T23:00:45.171331Z",
+  "updated_at": "2026-11-16T23:30:33.546321Z",
   "seen": [
-    {
-      "key": "d336aaf5d41f118e4459ed2e",
-      "url": "https://www.nhl.com/news/vancouver-canucks-tampa-bay-lightning-game-recap-october-17-2026",
-      "fingerprint": "df049ae17198c2fd",
-      "title_norm": "kucherov scores twice, lightning rally past canucks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T23:15:36.818021Z"
-    },
-    {
-      "key": "c7f79401849448a5e852e3e8",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-blow-two-goal-lead-vs-lightning-in-seventh-straight-loss",
-      "fingerprint": "366bd1e867f0b584",
-      "title_norm": "canucks blow two-goal lead vs. lightning in seventh straight loss",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T23:15:37.079335Z"
-    },
     {
       "key": "004cc8abf3c7eed71b8a8073",
       "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
