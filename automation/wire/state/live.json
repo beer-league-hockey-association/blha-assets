@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T19:15:35.129757Z",
+  "updated_at": "2026-11-16T19:30:38.426330Z",
   "seen": [
-    {
-      "key": "5addfd01d30653dd0202a936",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/3ecdb78e-67b3-4c15-b7df-046d346f3659",
-      "fingerprint": "e4670d819fa22ae8",
-      "title_norm": "nhl on sportsnet: jets vs. hurricanes",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T19:30:29.891714Z"
-    },
     {
       "key": "df5bc38613cf5b056ae1bb8e",
       "url": "https://www.dailyfaceoff.com/players/news/marco-rossi/29821",
@@ -18942,6 +18932,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-16T19:00:57.975319Z"
+    },
+    {
+      "key": "1c640b9d5c0b3653b77df139",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-activate-isaac-howard-loan-him-to-ahl-bakersfield",
+      "fingerprint": "683f1925f976434a",
+      "title_norm": "oilers activate isaac howard, loan him to ahl bakersfield",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T19:30:37.730021Z"
+    },
+    {
+      "key": "76312d61e6d7245c379ef04f",
+      "url": "https://www.dailyfaceoff.com/players/news/artem-duda/36382",
+      "fingerprint": "a0a619eff5e2a38e",
+      "title_norm": "artem duda (uta) — duda (lower-body) will be a game-time decision vs. vancouver on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T19:30:38.060408Z"
+    },
+    {
+      "key": "e9afa59b8b0333eeb74c3e04",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-scheifele-leads-nhls-three-stars-after-setting-franchise-scoring-record",
+      "fingerprint": "907137452e3b3cde",
+      "title_norm": "jets' scheifele leads nhl's three stars after setting franchise scoring record",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T19:30:38.397030Z"
     }
   ],
   "known_sources": [
