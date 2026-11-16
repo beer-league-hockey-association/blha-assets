@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T15:30:55.144919Z",
+  "updated_at": "2026-11-16T16:00:42.138720Z",
   "seen": [
-    {
-      "key": "844689eb5ff71332b99a0ec0",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
-      "fingerprint": "76e9e6e59bde921f",
-      "title_norm": "pavel zacha (bos) — zacha (undisclosed) left friday's game vs. anaheim and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T15:45:29.626459Z"
-    },
-    {
-      "key": "f89f972f640a8f2688cde4ec",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-reinbacher-kapanen-to-make-season-debuts-against-sabres",
-      "fingerprint": "3428ceb0906c0025",
-      "title_norm": "canadiens' reinbacher, kapanen to make season debuts against sabres",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T15:45:29.915095Z"
-    },
-    {
-      "key": "c6d83d01dba2a838c9855bf1",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
-      "fingerprint": "c08a4c0d97525ab0",
-      "title_norm": "jake sanderson (ott) — sanderson (lower body) is getting closer, but will not play on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T16:00:33.048598Z"
-    },
-    {
-      "key": "3eae8cde234746483293bc2a",
-      "url": "https://www.dailyfaceoff.com/players/news/jason-zucker/1898",
-      "fingerprint": "111ecce0b7e1a932",
-      "title_norm": "jason zucker (buf) — zucker (sports hernia) is hopeful to make his season debut on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T16:00:33.367039Z"
-    },
     {
       "key": "62f545ca0e22baf862536594",
       "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
@@ -18912,6 +18872,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T15:30:55.090444Z"
+    },
+    {
+      "key": "c18588787ecf715a9abc6d19",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "a1bda770f1502976",
+      "title_norm": "kirill marchenko (tor) — marchenko remains week-to-week with a lower-body injury",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T16:00:41.218245Z"
+    },
+    {
+      "key": "7ba0434d41ebc3173184a57f",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-rielly/1935",
+      "fingerprint": "556f23e0ebd42725",
+      "title_norm": "morgan rielly (tor) — rielly (lower-body) will participate in practice on monday but is still considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T16:00:41.503446Z"
+    },
+    {
+      "key": "06650c5dfd120bb5bb82f763",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "6e99d1f71e76df71",
+      "title_norm": "sean durzi (nyr) — durzi (undisclosed) participated in a regular jersey for monday's morning skate.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T16:00:41.803711Z"
+    },
+    {
+      "key": "0c9249b3aab94ba1c6cdd2dc",
+      "url": "https://www.dailyfaceoff.com/players/news/hayden-hodgson/23173",
+      "fingerprint": "3c733de2dbcdfc25",
+      "title_norm": "hayden hodgson (ott) — hodgson (lower-body) is not practicing on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T16:00:41.813940Z"
     }
   ],
   "known_sources": [
