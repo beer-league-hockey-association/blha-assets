@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T17:15:32.319727Z",
+  "updated_at": "2026-11-16T17:30:58.546261Z",
   "seen": [
-    {
-      "key": "07ff663f26eed3256e884b68",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-talks-benching-tavares-injury",
-      "fingerprint": "ba0646bad80719c9",
-      "title_norm": "maple leafs' gavin mckenna talks benching, tavares injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T17:15:36.610555Z"
-    },
-    {
-      "key": "9da45119c28a11acb6ceff12",
-      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
-      "fingerprint": "ccd5f8065127680e",
-      "title_norm": "mats zuccarello (lak) — zuccarello (undisclosed) will not play on saturday but will join la on its upcoming road trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T17:30:37.501063Z"
-    },
-    {
-      "key": "ecf5ea2d38afdcbefd8f17c6",
-      "url": "https://www.nhl.com/news/dallas-stars-hope-to-begin-contract-talks-with-jason-robertson-in-december",
-      "fingerprint": "063dbd82269cb899",
-      "title_norm": "stars, robertson could talk contract in december",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T17:30:37.962609Z"
-    },
     {
       "key": "60fb1b36c260001bb88bbe64",
       "url": "https://www.nhl.com/bruins/news/brunet-dipietro-hit-milestones-together-in-bruins-4-2-win-over-ducks",
