@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T23:30:33.546321Z",
+  "updated_at": "2026-11-16T23:46:46.502359Z",
   "seen": [
-    {
-      "key": "004cc8abf3c7eed71b8a8073",
-      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
-      "fingerprint": "57f7dadc5608c51c",
-      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will remain out vs. st. louis on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T23:45:30.950405Z"
-    },
     {
       "key": "6c16b2adf6988c554a27a815",
       "url": "https://www.sportsnet.ca/nhl/article/islanders-maccelli-ritchie-exit-with-lower-body-injuries-vs-maple-leafs",
