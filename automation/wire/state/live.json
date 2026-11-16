@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T21:45:35.101838Z",
+  "updated_at": "2026-11-16T22:00:36.525906Z",
   "seen": [
     {
       "key": "c6b2f7a99038408cce778c5e",
@@ -18912,6 +18912,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T20:30:40.213029Z"
+    },
+    {
+      "key": "fa0ec26f908614365e1e7986",
+      "url": "https://www.dailyfaceoff.com/players/news/olli-maatta/1792",
+      "fingerprint": "7bd35dfa39b33c57",
+      "title_norm": "olli maatta (min) — maatta (upper-body) has been placed on ir and is expected to miss a week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T22:00:36.224806Z"
+    },
+    {
+      "key": "4d63ec4a14541b95dee433e4",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chayka-endorses-hiller-amid-losing-streak",
+      "fingerprint": "5099c431c5df3ae8",
+      "title_norm": "maple leafs' chayka endorses hiller amid losing streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T22:00:36.491118Z"
     }
   ],
   "known_sources": [
