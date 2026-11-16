@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T00:45:33.593589Z",
+  "updated_at": "2026-11-16T01:00:46.899366Z",
   "seen": [
-    {
-      "key": "6f85c320e2ff79e9a14b0627",
-      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
-      "fingerprint": "09c4f82ab6e4c86a",
-      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) will not play friday in colorado.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T00:45:36.079429Z"
-    },
     {
       "key": "928a7ec10082ae11b126a430",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-16-2026",
@@ -18892,6 +18882,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T00:45:33.497916Z"
+    },
+    {
+      "key": "77290adcd1ab8c1bff87ef45",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/4ff2da58-3661-458d-9c17-24cbe813d11d",
+      "fingerprint": "10ee8120b63d68fc",
+      "title_norm": "flames on sportsnet: calgary vs. anaheim",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T01:00:46.836462Z"
     }
   ],
   "known_sources": [
