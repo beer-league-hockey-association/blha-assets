@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T15:15:34.113011Z",
+  "updated_at": "2026-11-16T15:30:55.144919Z",
   "seen": [
-    {
-      "key": "bcea6b4aaeb220d5519f45df",
-      "url": "https://www.dailyfaceoff.com/players/news/oliver-kapanen/34678",
-      "fingerprint": "7d5c8b5a11541cbf",
-      "title_norm": "oliver kapanen (mtl) — kapanen (lower body) will return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T15:30:42.004467Z"
-    },
-    {
-      "key": "da9a9240188f7f1f56f1b35f",
-      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
-      "fingerprint": "ce0f6266ece0768c",
-      "title_norm": "owen tippett (phi) — tippett (upper-body) will be a game-time decision vs. ottawa on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T15:30:42.267568Z"
-    },
     {
       "key": "844689eb5ff71332b99a0ec0",
       "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
@@ -18922,6 +18902,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T15:15:34.058912Z"
+    },
+    {
+      "key": "b7e22ad97f8778dd783999d8",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-quarter-mark-report-card-ottawa-surprising-with-relentless-play",
+      "fingerprint": "b04c3b2d7e325dab",
+      "title_norm": "senators quarter-mark report card: ottawa surprising with relentless play",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T15:30:55.090444Z"
     }
   ],
   "known_sources": [
