@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T17:00:45.639783Z",
+  "updated_at": "2026-11-16T17:15:32.319727Z",
   "seen": [
     {
       "key": "07ff663f26eed3256e884b68",
@@ -18932,6 +18932,26 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-16T17:00:45.349877Z"
+    },
+    {
+      "key": "794805fdcc3b27cfedf4fe70",
+      "url": "https://www.dailyfaceoff.com/players/news/jean-gabriel-pageau/2057",
+      "fingerprint": "b2424b6de34ba9b6",
+      "title_norm": "jean-gabriel pageau (nyi) — pageau (lower-body) has a chance to return vs. columbus on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T17:15:32.029204Z"
+    },
+    {
+      "key": "30014631c1152c7b33fec428",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-bertuzzi/2392",
+      "fingerprint": "8288f24225ea2b8f",
+      "title_norm": "tyler bertuzzi (chi) — bertuzzi (undisclosed) missed practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T17:15:32.248995Z"
     }
   ],
   "known_sources": [
