@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T18:00:42.888092Z",
+  "updated_at": "2026-11-16T18:15:35.844714Z",
   "seen": [
     {
       "key": "2bb9075175bcad87f475e44d",
@@ -18902,6 +18902,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T18:00:42.821206Z"
+    },
+    {
+      "key": "45749979ae36025702d0fd93",
+      "url": "https://www.dailyfaceoff.com/players/news/jake-neighbours/29498",
+      "fingerprint": "ef8d65f2e77963e0",
+      "title_norm": "jake neighbours (stl) — neighbours (upper-body) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:15:34.987769Z"
+    },
+    {
+      "key": "24ef883f286928b377450bac",
+      "url": "https://www.nhl.com/news/topic/3-stars/scheifele-wallstedt-ehlers-named-nhl-3-stars-of-week-november-16-2026",
+      "fingerprint": "63cc258db98f87b0",
+      "title_norm": "scheifele, wallstedt, ehlers named 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T18:15:35.272191Z"
+    },
+    {
+      "key": "b23c571c1b4a20401bd5cf19",
+      "url": "https://theahl.com/news/griffins-leonard-ahl-player-week",
+      "fingerprint": "507eb303df91a02e",
+      "title_norm": "griffins' leonard named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:15:35.504873Z"
+    },
+    {
+      "key": "5f6b9da7a0c324360dfc3c62",
+      "url": "https://www.dailyfaceoff.com/players/news/philip-broberg/30607",
+      "fingerprint": "550e56b836210078",
+      "title_norm": "philip broberg (stl) — broberg (lower-body) returned to practice on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:15:35.775205Z"
     }
   ],
   "known_sources": [
