@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T10:15:44.778463Z",
+  "updated_at": "2026-11-16T12:45:49.996857Z",
   "seen": [
-    {
-      "key": "cbcfac548bcee2bf01f56d06",
-      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-where-should-maple-leafs-look-for-defence-trade",
-      "fingerprint": "f9eda25b6e1e4b74",
-      "title_norm": "quick shifts: where should maple leafs look for defence trade?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T12:30:36.540581Z"
-    },
     {
       "key": "0fc7dad042de9d91fb66c7e6",
       "url": "https://www.sportsnet.ca/nhl/article/meet-trailblazer-onni-hautamaki-finlands-first-nhl-official",
