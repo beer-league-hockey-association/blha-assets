@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T00:15:54.366029Z",
+  "updated_at": "2026-11-16T00:45:33.593589Z",
   "seen": [
     {
       "key": "6f85c320e2ff79e9a14b0627",
@@ -18862,6 +18862,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-15T23:45:35.429613Z"
+    },
+    {
+      "key": "9c9a0c39f42f84aafd5c9fbb",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-15-2026",
+      "fingerprint": "ecdcc602a0fdd5db",
+      "title_norm": "status report: heiskanen out for stars tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T00:45:32.951725Z"
+    },
+    {
+      "key": "d90a110e4a7701ded0b360ad",
+      "url": "https://www.nhl.com/news/brock-faber-makes-season-debut-for-wild-after-skull-fracture",
+      "fingerprint": "01fbdb9d391f03a6",
+      "title_norm": "faber 'didn't miss a beat' in season debut for wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T00:45:33.260792Z"
+    },
+    {
+      "key": "e1e536136787d90a8dd2f93d",
+      "url": "https://www.dailyfaceoff.com/players/news/ian-moore/31897",
+      "fingerprint": "1899071725e33445",
+      "title_norm": "ian moore (ana) — moore (lower-body) was activated off ir and is expected to return vs. calgary on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T00:45:33.497916Z"
     }
   ],
   "known_sources": [
