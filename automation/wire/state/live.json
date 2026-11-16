@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T16:45:34.463607Z",
+  "updated_at": "2026-11-16T17:00:45.639783Z",
   "seen": [
-    {
-      "key": "341fce9dcf90ce524d08fb24",
-      "url": "https://www.nhl.com/news/gavin-mckenna-had-good-talk-with-toronto-coach-jim-hiller-after-benching",
-      "fingerprint": "c8257e0303054a1c",
-      "title_norm": "mckenna had 'good talk' with leafs coach after benching",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T17:00:35.568371Z"
-    },
     {
       "key": "07ff663f26eed3256e884b68",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-talks-benching-tavares-injury",
@@ -18872,6 +18862,76 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T16:30:49.514532Z"
+    },
+    {
+      "key": "c1247ad56acf6b60abed127d",
+      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
+      "fingerprint": "476e9ce240571776",
+      "title_norm": "calum ritchie (nyi) — ritchie (lower-body) returned to practice on monday in a non-contact jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T17:00:43.389522Z"
+    },
+    {
+      "key": "87c07727b842531541e8f26c",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-16-2026",
+      "fingerprint": "74e7fed5232dcfd1",
+      "title_norm": "on tap: original six series begins with habs-rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T17:00:43.676960Z"
+    },
+    {
+      "key": "42daf4437d7ad5520b42d820",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-16-2026",
+      "fingerprint": "0339b89a9408f1d2",
+      "title_norm": "status report: cooley, schamaltz questionable for utah",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T17:00:43.918969Z"
+    },
+    {
+      "key": "7ad9acb47b61f22db6824a30",
+      "url": "https://www.nhl.com/news/karl-stewart-discusses-new-role-as-nhl-central-scouting-director",
+      "fingerprint": "fb08578016d2e810",
+      "title_norm": "stewart discusses new role with nhl central scouting",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T17:00:44.240168Z"
+    },
+    {
+      "key": "d4bc8497e5e84a5ad91e0ebd",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-stanley/2652",
+      "fingerprint": "c325c3d70017b7c7",
+      "title_norm": "logan stanley (nyi) — stanley (lower-body) is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T17:00:44.507670Z"
+    },
+    {
+      "key": "5b5be1d82c44f7f7cf949164",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-teams-feeling-crease-crunch-in-early-going",
+      "fingerprint": "b2b023eaf35f5e36",
+      "title_norm": "nhl teams feeling crease crunch in early going",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T17:00:45.318306Z"
+    },
+    {
+      "key": "deb5aff37a92d8ac0cfcaa25",
+      "url": "https://audioboom.com/posts/8977510",
+      "fingerprint": "19b0c8cc3647c022",
+      "title_norm": "week 8 pickups; 1st quarter awards",
+      "channel": "media",
+      "source_id": "pod_nhl_fantasy_on_ice",
+      "tier": 2,
+      "seen_at": "2026-11-16T17:00:45.349877Z"
     }
   ],
   "known_sources": [
