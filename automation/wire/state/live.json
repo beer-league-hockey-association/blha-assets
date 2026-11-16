@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T18:15:35.844714Z",
+  "updated_at": "2026-11-16T18:45:36.353006Z",
   "seen": [
-    {
-      "key": "2bb9075175bcad87f475e44d",
-      "url": "https://www.sportsnet.ca/nhl/article/red-wings-waive-defenceman-jacob-bernard-docker",
-      "fingerprint": "4760010d7dc76b52",
-      "title_norm": "red wings waive defenceman jacob bernard-docker",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T18:43:46.467937Z"
-    },
     {
       "key": "c45dcc0714c76429fd167ae9",
       "url": "https://www.sportsnet.ca/nhl/article/zach-hyman-returning-to-oilers-lineup-against-mammoth",
@@ -18942,6 +18932,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T18:15:35.775205Z"
+    },
+    {
+      "key": "844d863cd3f85326256dd565",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-bertuzzi/2392",
+      "fingerprint": "fc08e259eede153f",
+      "title_norm": "tyler bertuzzi (chi) — bertuzzi (upper-body) is likely able to play vs. toronto on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:45:35.939467Z"
+    },
+    {
+      "key": "28984af7e149e2c24f16ad4a",
+      "url": "https://www.dailyfaceoff.com/players/news/cole-smith/32926",
+      "fingerprint": "22b10358b0f292b3",
+      "title_norm": "cole smith (chi) — smith (undisclosed) missed practice on monday but is likely to play tuesday vs. toronto.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:45:36.279762Z"
+    },
+    {
+      "key": "ce745dc3c990dfa6bc20d5d9",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-quarter-mark-report-card-signs-of-progress-scuttling-rebuild",
+      "fingerprint": "47262807d2cfd57e",
+      "title_norm": "flames quarter-mark report card: signs of progress scuttling rebuild",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:45:36.304578Z"
     }
   ],
   "known_sources": [
