@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T01:00:46.899366Z",
+  "updated_at": "2026-11-16T02:15:36.877865Z",
   "seen": [
     {
       "key": "928a7ec10082ae11b126a430",
@@ -18892,6 +18892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T01:00:46.836462Z"
+    },
+    {
+      "key": "2e7e4e2d72068b673a65c3df",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-ties-gretzkys-record-for-fewest-games-to-record-40-assists",
+      "fingerprint": "bced8ada565da44e",
+      "title_norm": "oilers' mcdavid ties gretzky's record for fewest games to record 40 assists",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T02:15:36.849870Z"
     }
   ],
   "known_sources": [
