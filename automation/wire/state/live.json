@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T09:26:59.732411Z",
+  "updated_at": "2026-11-16T10:15:44.778463Z",
   "seen": [
     {
       "key": "cbcfac548bcee2bf01f56d06",
@@ -18972,6 +18972,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T07:15:45.758824Z"
+    },
+    {
+      "key": "46d4211bc657fe64ae819656",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-anderson-matheson-to-miss-multiple-weeks-with-lower-body-injuries",
+      "fingerprint": "12e1505d34e71339",
+      "title_norm": "canadiens' anderson, matheson to miss multiple weeks with lower-body injuries",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T10:15:44.510765Z"
+    },
+    {
+      "key": "8bfe748d8e79e453ff4a6b29",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-8-e3sf1ga",
+      "fingerprint": "45e55e2c97c059fc",
+      "title_norm": "puzzling players: what do we do with these guys? | fantasy hockey week 8",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-16T10:15:44.750444Z"
     }
   ],
   "known_sources": [
