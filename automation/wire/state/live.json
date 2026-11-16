@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T05:00:41.946624Z",
+  "updated_at": "2026-11-16T05:15:30.854651Z",
   "seen": [
-    {
-      "key": "1ed6129696fc9dc5eee0d478",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-17-2026",
-      "fingerprint": "dbb93349281e23a7",
-      "title_norm": "on tap: b. tkachuk has shot at hat trick history",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T05:00:42.173063Z"
-    },
     {
       "key": "ab564a711f4e013e4658f383",
       "url": "https://www.sportsnet.ca/nhl/article/lindholm-sparks-streaking-bruins-comeback-win-over-ducks",
@@ -18952,6 +18942,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-16T05:00:41.890924Z"
+    },
+    {
+      "key": "10f650364e74dfc906214cd4",
+      "url": "https://www.nhl.com/news/vancouver-canucks-vegas-golden-knights-game-recap-november-15-2026",
+      "fingerprint": "91d572827fc49f2c",
+      "title_norm": "chytil, karlsson each has 2 goals, canucks end 7-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T05:15:30.351550Z"
+    },
+    {
+      "key": "9f6b86dad6b46108cc78583c",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-snap-seven-game-skid-with-win-over-golden-knights",
+      "fingerprint": "c46563149c993597",
+      "title_norm": "canucks snap seven-game skid with win over golden knights",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T05:15:30.601011Z"
+    },
+    {
+      "key": "5e4bb42f41e9027bf41c467e",
+      "url": "https://www.sportsnet.ca/nhl/article/sharks-snap-predators-seven-game-win-streak",
+      "fingerprint": "b0e3a18567ecb258",
+      "title_norm": "sharks snap predators' seven-game win streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T05:15:30.826256Z"
     }
   ],
   "known_sources": [
