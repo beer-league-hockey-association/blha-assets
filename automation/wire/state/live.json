@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T17:45:36.670103Z",
+  "updated_at": "2026-11-16T18:00:42.888092Z",
   "seen": [
-    {
-      "key": "c474c0e6f3da197eb41069fa",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
-      "fingerprint": "47fdcf6652266ca2",
-      "title_norm": "mikael granlund (ana) — granlund (upper body) returned to practice on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T18:00:35.644689Z"
-    },
-    {
-      "key": "2614b2c114587725327e07e8",
-      "url": "https://www.dailyfaceoff.com/players/news/colton-dach/32903",
-      "fingerprint": "350e905c34372a7f",
-      "title_norm": "colton dach (edm) — dach (undisclosed) will return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T18:00:36.099054Z"
-    },
-    {
-      "key": "dc85c871400bc30fe7af4819",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-walman/2859",
-      "fingerprint": "c5b7b5014d1a3a15",
-      "title_norm": "jake walman (edm) — walman (undisclosed) will return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T18:00:36.883585Z"
-    },
     {
       "key": "2bb9075175bcad87f475e44d",
       "url": "https://www.sportsnet.ca/nhl/article/red-wings-waive-defenceman-jacob-bernard-docker",
@@ -18922,6 +18892,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T17:45:36.573171Z"
+    },
+    {
+      "key": "44d1494ae85f3a9cd4dc2ec9",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-gustavsson/4565",
+      "fingerprint": "d5c45778a8436d37",
+      "title_norm": "filip gustavsson (min) — gustavsson (hip) is hopeful to be medically cleared on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T18:00:42.821206Z"
     }
   ],
   "known_sources": [
