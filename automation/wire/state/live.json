@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T13:30:41.094493Z",
+  "updated_at": "2026-11-16T13:45:33.402832Z",
   "seen": [
     {
       "key": "4052baa2564b15ea81b48462",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T13:30:41.046342Z"
+    },
+    {
+      "key": "ea4738d9ddc37c7da4b78ade",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-quarter-mark-report-card-montreal-living-up-to-expectations",
+      "fingerprint": "b66ea286b1420dad",
+      "title_norm": "canadiens quarter-mark report card: montreal living up to expectations",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T13:45:33.374057Z"
     }
   ],
   "known_sources": [
