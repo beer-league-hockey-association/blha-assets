@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T04:30:37.527448Z",
+  "updated_at": "2026-11-16T04:45:31.552060Z",
   "seen": [
-    {
-      "key": "b47cb837d334d8fa0391215d",
-      "url": "https://www.sportsnet.ca/nhl/article/mackinnon-has-four-points-lehkonen-scores-twice-as-avalanche-win",
-      "fingerprint": "45b22e64208b99a2",
-      "title_norm": "mackinnon has four points, lehkonen scores twice as avalanche win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T04:30:40.672320Z"
-    },
     {
       "key": "7ac6e87d3b85be2aebb15bfe",
       "url": "https://www.nhl.com/news/boston-bruins-anaheim-ducks-game-recap-october-16-2026",
