@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T14:15:33.527444Z",
+  "updated_at": "2026-11-16T14:30:44.079566Z",
   "seen": [
-    {
-      "key": "e096db983cc4879f354094fe",
-      "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
-      "fingerprint": "114e20dd1e558422",
-      "title_norm": "radko gudas (fla) — gudas (undisclosed) will remain out on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T14:30:36.445069Z"
-    },
     {
       "key": "90e495c6d541dc35c05a2a9a",
       "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
