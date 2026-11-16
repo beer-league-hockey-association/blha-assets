@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T16:30:49.547347Z",
+  "updated_at": "2026-11-16T16:45:34.463607Z",
   "seen": [
-    {
-      "key": "0d7341b518ca74f8cf50787a",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-buchnevich/2673",
-      "fingerprint": "b7788b0addf2c9a3",
-      "title_norm": "pavel buchnevich (stl) — buchnevich (personal) will return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T16:45:30.670491Z"
-    },
-    {
-      "key": "f9e67e04e507f15d0f285bb4",
-      "url": "https://www.dailyfaceoff.com/players/news/ross-johnston/3759",
-      "fingerprint": "aa06285db393fe25",
-      "title_norm": "ross johnston (stl) — johnston (undisclosed) is not expected to play on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T16:45:30.920253Z"
-    },
     {
       "key": "341fce9dcf90ce524d08fb24",
       "url": "https://www.nhl.com/news/gavin-mckenna-had-good-talk-with-toronto-coach-jim-hiller-after-benching",
