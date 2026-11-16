@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T16:00:42.138720Z",
+  "updated_at": "2026-11-16T16:30:49.547347Z",
   "seen": [
-    {
-      "key": "62f545ca0e22baf862536594",
-      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
-      "fingerprint": "28b85bf23f3f7195",
-      "title_norm": "jiri kulich (buf) — kulich (lower body) will return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T16:15:31.487697Z"
-    },
-    {
-      "key": "fa46a1badb6c783a025483ce",
-      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-brady-tkachuk-florida-panthers-2026-27",
-      "fingerprint": "423882c977de9656",
-      "title_norm": "edge stats: b. tkachuk's back-to-back hat tricks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T16:15:31.703394Z"
-    },
-    {
-      "key": "c4fdaafc05bc2e61b0b6236b",
-      "url": "https://www.nhl.com/news/dave-coulier-helps-detroit-red-wings-raise-awareness-hockey-fights-cancer-night",
-      "fingerprint": "8b6d6ccb6a363cb4",
-      "title_norm": "coulier joins wings' hockey fights cancer efforts",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T16:15:31.909638Z"
-    },
-    {
-      "key": "89240b4a5efccdaa803b2cfd",
-      "url": "https://www.dailyfaceoff.com/players/news/wyatt-johnston/30835",
-      "fingerprint": "e04a233b08255e50",
-      "title_norm": "wyatt johnston (dal) — johnston (illness) will return to the lineup on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-17T16:26:05.629809Z"
-    },
     {
       "key": "0d7341b518ca74f8cf50787a",
       "url": "https://www.dailyfaceoff.com/players/news/pavel-buchnevich/2673",
@@ -18912,6 +18872,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-16T16:00:41.813940Z"
+    },
+    {
+      "key": "dfda2789fc97fed3f318c7b5",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-dorofeyev/30622",
+      "fingerprint": "a7affa0af0bba216",
+      "title_norm": "pavel dorofeyev (nyr) — dorofeyev (undisclosed) will be a game-time decision vs. montreal on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T16:30:49.142961Z"
+    },
+    {
+      "key": "f19d133d43a89e53ae5dd15d",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-call-up-first-rounder-tyler-boucher-from-ahl",
+      "fingerprint": "fea1a31dad862ad1",
+      "title_norm": "senators call up first-rounder tyler boucher from ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T16:30:49.514532Z"
     }
   ],
   "known_sources": [
