@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T20:00:48.686170Z",
+  "updated_at": "2026-11-16T20:15:32.667306Z",
   "seen": [
     {
       "key": "7d7e3e804afce49a247c428e",
@@ -18912,6 +18912,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-16T20:00:48.639835Z"
+    },
+    {
+      "key": "7dbdf0d9b75e976b21de5de1",
+      "url": "https://www.nhl.com/news/jaromir-jagr-hoping-for-farewell-hockey-game-next-summer",
+      "fingerprint": "75546fa239aa9d53",
+      "title_norm": "jagr hopes to host farewell hockey game next summer",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T20:15:32.583032Z"
     }
   ],
   "known_sources": [
