@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T04:45:31.552060Z",
+  "updated_at": "2026-11-16T05:00:41.946624Z",
   "seen": [
-    {
-      "key": "7ac6e87d3b85be2aebb15bfe",
-      "url": "https://www.nhl.com/news/boston-bruins-anaheim-ducks-game-recap-october-16-2026",
-      "fingerprint": "53f03ebaf5a5d7e8",
-      "title_norm": "bruins' power play fuels comeback against ducks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T05:00:41.873014Z"
-    },
     {
       "key": "1ed6129696fc9dc5eee0d478",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-17-2026",
@@ -18942,6 +18932,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-16T04:15:34.234037Z"
+    },
+    {
+      "key": "3becbd0528e5d2dc3812fc57",
+      "url": "https://www.nhl.com/news/nashville-predators-san-jose-sharks-game-recap-november-15-2026",
+      "fingerprint": "c97a1cd8e6b68ec4",
+      "title_norm": "celebrini, sharks halt predators winning streak at 7",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T05:00:41.625171Z"
+    },
+    {
+      "key": "1795301dcd814a03bbeb18a7",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-november-16-2026",
+      "fingerprint": "fed135a72b176e64",
+      "title_norm": "nhl nationally televised games for week of nov. 16",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T05:00:41.890924Z"
     }
   ],
   "known_sources": [
