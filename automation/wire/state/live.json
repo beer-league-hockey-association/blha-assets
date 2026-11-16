@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T18:45:36.353006Z",
+  "updated_at": "2026-11-16T19:00:58.040095Z",
   "seen": [
-    {
-      "key": "c45dcc0714c76429fd167ae9",
-      "url": "https://www.sportsnet.ca/nhl/article/zach-hyman-returning-to-oilers-lineup-against-mammoth",
-      "fingerprint": "d521941879b554ea",
-      "title_norm": "zach hyman returning to oilers lineup against mammoth",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T19:00:37.444454Z"
-    },
-    {
-      "key": "8b3b85b718aad689bde62769",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-jake-sanderson-expected-to-return-wednesday-vs-panthers",
-      "fingerprint": "3e3a4c1d6b152a83",
-      "title_norm": "senators' jake sanderson expected to return wednesday vs. panthers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T19:00:37.786392Z"
-    },
     {
       "key": "939e1ae4f7c78bcac6d6a98c",
       "url": "https://www.sportsnet.ca/nhl/article/sources-connor-hellebuyck-suspension-ends-friday",
@@ -18962,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T18:45:36.304578Z"
+    },
+    {
+      "key": "0ff3b10af648082cb108478c",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-coach-rick-bowness-planning-to-return-during-road-trip",
+      "fingerprint": "db62d2df9ee2b72c",
+      "title_norm": "bowness planning on jackets return during road trip",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T19:00:57.975319Z"
     }
   ],
   "known_sources": [
