@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T13:45:33.402832Z",
+  "updated_at": "2026-11-16T14:15:33.527444Z",
   "seen": [
-    {
-      "key": "4052baa2564b15ea81b48462",
-      "url": "https://www.sportsnet.ca/nhl/article/whats-gone-wrong-for-flyers-during-nightmare-start",
-      "fingerprint": "937380fcf06377a9",
-      "title_norm": "what's gone wrong for flyers during nightmare start",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-17T14:15:32.659803Z"
-    },
     {
       "key": "e096db983cc4879f354094fe",
       "url": "https://www.dailyfaceoff.com/players/news/radko-gudas/1366",
@@ -18992,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T13:45:33.374057Z"
+    },
+    {
+      "key": "4d9386960e8a0d5c2b476416",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-quarter-mark-report-card-winnipeg-still-searching-for-identity",
+      "fingerprint": "9b8d4712673104f8",
+      "title_norm": "jets quarter-mark report card: winnipeg still searching for identity",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T14:15:33.499269Z"
     }
   ],
   "known_sources": [
