@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T02:15:36.877865Z",
+  "updated_at": "2026-11-16T03:30:42.722935Z",
   "seen": [
     {
       "key": "928a7ec10082ae11b126a430",
@@ -18902,6 +18902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T02:15:36.849870Z"
+    },
+    {
+      "key": "ebcbd5b24e3a288e237223dc",
+      "url": "https://www.nhl.com/news/topic/short-shifts/henrik-lundqvist-goalie-goal-rangers-alumni-classic",
+      "fingerprint": "a3cb4bfdc67cb2ef",
+      "title_norm": "lundqvist scores goalie goal at rangers alumni classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T03:30:42.616194Z"
     }
   ],
   "known_sources": [
