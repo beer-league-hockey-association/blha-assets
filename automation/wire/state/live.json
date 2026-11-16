@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T15:00:46.165256Z",
+  "updated_at": "2026-11-16T15:15:34.113011Z",
   "seen": [
     {
       "key": "bcea6b4aaeb220d5519f45df",
@@ -18912,6 +18912,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T14:15:33.499269Z"
+    },
+    {
+      "key": "aa2a1bb9a41bc6c683e7b97d",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-myers/176",
+      "fingerprint": "616c9873915a8716",
+      "title_norm": "tyler myers (dal) — myers (upper-body) left sunday's game vs. florida and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-16T15:15:34.058912Z"
     }
   ],
   "known_sources": [
