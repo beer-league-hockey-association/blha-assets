@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T03:30:42.722935Z",
+  "updated_at": "2026-11-16T03:45:46.155039Z",
   "seen": [
     {
       "key": "928a7ec10082ae11b126a430",
@@ -18912,6 +18912,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-16T03:30:42.616194Z"
+    },
+    {
+      "key": "7b3a44373ca4a3e310b7314e",
+      "url": "https://www.nhl.com/news/edmonton-oilers-philadelphia-flyers-game-recap-november-15-2026",
+      "fingerprint": "d5128d89b535a5e5",
+      "title_norm": "mcdavid pushes season-opening point streak to 22 in oilers win against flyers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T03:45:45.273073Z"
+    },
+    {
+      "key": "cfef5ec891aadea3fba87920",
+      "url": "https://www.sportsnet.ca/nhl/article/draisaitl-mcdavid-record-three-points-each-in-oilers-win-over-flyers",
+      "fingerprint": "7d3a4c96c3e8f89e",
+      "title_norm": "draisaitl, mcdavid record three points each in oilers' win over flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T03:45:46.088424Z"
     }
   ],
   "known_sources": [
