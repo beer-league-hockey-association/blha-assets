@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-15T23:45:35.530798Z",
+  "updated_at": "2026-11-16T00:15:54.366029Z",
   "seen": [
-    {
-      "key": "a9608cc028c2102c30efb2c9",
-      "url": "https://www.nhl.com/news/columbus-coach-rick-bowness-blue-jackets-should-be-very-angry",
-      "fingerprint": "aa3952b82da08659",
-      "title_norm": "bowness: blue jackets 'should be very angry'",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-17T00:00:39.511480Z"
-    },
     {
       "key": "6f85c320e2ff79e9a14b0627",
       "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
