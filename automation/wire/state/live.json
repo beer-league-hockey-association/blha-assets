@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T04:00:41.353158Z",
+  "updated_at": "2026-11-16T04:15:34.317761Z",
   "seen": [
     {
       "key": "5cdd2f2a0749325e2c928174",
@@ -18942,6 +18942,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T04:00:41.311995Z"
+    },
+    {
+      "key": "aeb0a8af52d084efe981daed",
+      "url": "https://www.sportsnet.ca/nhl/article/jason-robertson-scores-overtime-goal-to-lift-stars-past-panthers",
+      "fingerprint": "4d691a5e1cd96daa",
+      "title_norm": "jason robertson scores overtime goal to lift stars past panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-16T04:15:34.015045Z"
+    },
+    {
+      "key": "157a05aa6644a20967eef98b",
+      "url": "https://www.nhl.com/news/florida-panthers-dallas-stars-game-recap-november-15-2026",
+      "fingerprint": "66d1b4de796052ec",
+      "title_norm": "robertson has deciding goal in ot, stars top panthers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-16T04:15:34.234037Z"
     }
   ],
   "known_sources": [
