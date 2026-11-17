@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T00:15:45.188557Z",
+  "updated_at": "2026-11-17T00:30:33.307520Z",
   "seen": [
     {
       "key": "6c16b2adf6988c554a27a815",
@@ -18852,6 +18852,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T00:15:45.092837Z"
+    },
+    {
+      "key": "423cf6efab5e9b968f38eb9e",
+      "url": "https://www.nhl.com/news/calder-trophy-tracker-montreal-canadiens-jacob-fowler-early-favorite-november-16-2026",
+      "fingerprint": "8840a1098c331a34",
+      "title_norm": "trophy tracker: fowler pick for calder at 1st quarter",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T00:30:33.241387Z"
     }
   ],
   "known_sources": [
