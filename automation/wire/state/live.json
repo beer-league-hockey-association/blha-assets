@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T19:00:41.413348Z",
+  "updated_at": "2026-11-17T19:30:38.135355Z",
   "seen": [
     {
       "key": "5077c00835f3f45b43339032",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T19:00:41.359810Z"
+    },
+    {
+      "key": "76f724da9a244786d9e0ab15",
+      "url": "https://www.dailyfaceoff.com/players/news/scott-wedgewood/1873",
+      "fingerprint": "b456dee0f873cf95",
+      "title_norm": "scott wedgewood (col) — wedgewood (illness) left colorado's practice on tuesday and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T19:30:37.989507Z"
     }
   ],
   "known_sources": [
