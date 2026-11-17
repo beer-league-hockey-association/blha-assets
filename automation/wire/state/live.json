@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T04:00:49.457423Z",
+  "updated_at": "2026-11-17T04:30:37.140197Z",
   "seen": [
-    {
-      "key": "2ca2505cfd87be1764ebad2f",
-      "url": "https://www.nhl.com/news/boston-bruins-los-angeles-kings-game-recap-october-17-2026",
-      "fingerprint": "e77f16c57e405836",
-      "title_norm": "bruins break tie in 3rd, keep kings winless",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-18T04:15:33.970793Z"
-    },
-    {
-      "key": "be2753af814a69e8fe40d5a4",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-fall-into-last-in-atlantic-with-loss-to-islanders",
-      "fingerprint": "020a2c172f1165ab",
-      "title_norm": "maple leafs fall into last in atlantic with loss to islanders",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-18T04:15:34.362018Z"
-    },
-    {
-      "key": "72406b54063c3c1eab73cfe4",
-      "url": "https://www.sportsnet.ca/nhl/article/dominant-showing-in-win-over-sabres-a-welcome-development-for-canadiens-suzuki-line",
-      "fingerprint": "8fb5cfb7e5af5888",
-      "title_norm": "dominant showing in win over sabres a welcome development for canadiens' suzuki line",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-18T04:15:34.768364Z"
-    },
     {
       "key": "2316efed8d460724e516c699",
       "url": "https://www.dailyfaceoff.com/players/news/samuel-girard/2773",
