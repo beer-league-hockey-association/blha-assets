@@ -412,5 +412,74 @@
     "played": true,
     "playoff": false,
     "start": "2026-11-03T00:00:00+00:00"
+  },
+  "7": {
+    "end": "2026-11-17T00:29:59+00:00",
+    "matchups": [
+      {
+        "away": {
+          "score": 0.0,
+          "team": "qqpqauuamumuxp03"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "8j6llh6gmumuxose"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "tau9p1cvmumuxout"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "w9j9rgr1mumuxp9e"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "93rjspsjmumuxpqw"
+        },
+        "home": {
+          "score": 18.02,
+          "team": "gb4or3npmumb3mgv"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "2tml63mumumuxoqh"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "6bzildyomumuxpe6"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "4qdrdr4fmumuxplb"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "mvh0gxh2mumuxoo4"
+        }
+      },
+      {
+        "away": {
+          "score": 0.0,
+          "team": "vs89xezfmumuxp44"
+        },
+        "home": {
+          "score": 0.0,
+          "team": "gobvt8opmumuxoxm"
+        }
+      }
+    ],
+    "period": 7,
+    "played": true,
+    "playoff": false,
+    "start": "2026-11-10T01:00:00+00:00"
   }
 }
