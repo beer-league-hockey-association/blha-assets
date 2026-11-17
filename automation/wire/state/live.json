@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T00:00:49.818401Z",
+  "updated_at": "2026-11-17T00:15:45.188557Z",
   "seen": [
     {
       "key": "6c16b2adf6988c554a27a815",
@@ -18842,6 +18842,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T00:00:49.785662Z"
+    },
+    {
+      "key": "86eb8c240615a3071bc12350",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-dorofeyev/30622",
+      "fingerprint": "a4c0c89eb91056cd",
+      "title_norm": "pavel dorofeyev (nyr) — dorofeyev (undisclosed) will not play monday vs. montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T00:15:45.092837Z"
     }
   ],
   "known_sources": [
