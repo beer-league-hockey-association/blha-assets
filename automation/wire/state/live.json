@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T23:30:34.389522Z",
+  "updated_at": "2026-11-17T23:45:30.140380Z",
   "seen": [
     {
       "key": "ba6056e0a477e7edae77ee05",
@@ -19062,6 +19062,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T23:30:34.115956Z"
+    },
+    {
+      "key": "307a042e3579c76ba80b41c3",
+      "url": "https://www.sportsnet.ca/nhl/article/scheifele-rewriting-record-books-of-resurgent-winnipeg-jets",
+      "fingerprint": "f055fcf023dab78a",
+      "title_norm": "scheifele rewriting record books of resurgent winnipeg jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T23:45:30.093213Z"
     }
   ],
   "known_sources": [
