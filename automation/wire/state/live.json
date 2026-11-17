@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T20:30:40.312259Z",
+  "updated_at": "2026-11-17T20:45:31.638854Z",
   "seen": [
     {
       "key": "93384e3fb4e53f2c6997ff01",
@@ -19032,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T20:00:55.728984Z"
+    },
+    {
+      "key": "3471b04cbb6e91f4b605e54f",
+      "url": "https://www.sportsnet.ca/nhl/article/blues-jecho-cleared-to-return-from-nhl-nhlpa-player-assistance-program",
+      "fingerprint": "58d360608e43182f",
+      "title_norm": "blues' jecho cleared to return from nhl/nhlpa player assistance program",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T20:45:31.600637Z"
     }
   ],
   "known_sources": [
