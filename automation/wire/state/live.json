@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T22:26:03.909869Z",
+  "updated_at": "2026-11-17T23:30:34.389522Z",
   "seen": [
     {
       "key": "ba6056e0a477e7edae77ee05",
@@ -19022,6 +19022,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-17T21:30:40.228323Z"
+    },
+    {
+      "key": "987b1f07ee2576a3f86c34a7",
+      "url": "https://www.dailyfaceoff.com/players/news/anthony-cirelli/3842",
+      "fingerprint": "d5744de547b3323a",
+      "title_norm": "anthony cirelli (tbl) — cirelli (lower-body) will play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T23:30:33.498685Z"
+    },
+    {
+      "key": "fa7e948b73eba011e7f1c430",
+      "url": "https://www.dailyfaceoff.com/players/news/brayden-point/2456",
+      "fingerprint": "85dc00fd8a71c0c4",
+      "title_norm": "brayden point (tbl) — point (undisclosed) will play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T23:30:33.814501Z"
+    },
+    {
+      "key": "22391065913e05d0e6ced2ed",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "7fe7583458a7fded",
+      "title_norm": "brandon hagel (tbl) — hagel (upper-body) will not play on tuesday; he's considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T23:30:34.086639Z"
+    },
+    {
+      "key": "ab81332fd333ca78c16ae27c",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-cernak/2749",
+      "fingerprint": "cfa3ac5e0a74845e",
+      "title_norm": "erik cernak (tbl) — cernak (upper-body) will play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T23:30:34.115956Z"
     }
   ],
   "known_sources": [
