@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T18:00:41.664093Z",
+  "updated_at": "2026-11-17T18:45:34.408124Z",
   "seen": [
     {
       "key": "915d3a9b34ed43d9404771d2",
@@ -19012,6 +19012,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T18:00:41.628691Z"
+    },
+    {
+      "key": "8361e6735ce779e56cbec1c1",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "b3f2a4156ba2ac60",
+      "title_norm": "dylan guenther (uta) — guenther (upper-body) practiced in a non-contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T18:45:33.994575Z"
+    },
+    {
+      "key": "c2a0a82dac8516874a13b9f3",
+      "url": "https://www.dailyfaceoff.com/players/news/alexandre-texier/4759",
+      "fingerprint": "10cbe06ed42a75cc",
+      "title_norm": "alexandre texier (mtl) — texier (illness) missed practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T18:45:34.322645Z"
     }
   ],
   "known_sources": [
