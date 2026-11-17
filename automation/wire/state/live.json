@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T14:30:42.536454Z",
+  "updated_at": "2026-11-17T14:45:41.056145Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18762,6 +18762,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-17T14:30:42.507608Z"
+    },
+    {
+      "key": "5e9e6e9cf229c340964d1b98",
+      "url": "https://theahl.com/news/fischer-suspended-26nov17",
+      "fingerprint": "9b0984197e0787d7",
+      "title_norm": "thunderbirds' fischer suspended three games",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-17T14:45:40.952440Z"
     }
   ],
   "known_sources": [
