@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T06:00:49.958790Z",
+  "updated_at": "2026-11-17T06:15:48.527614Z",
   "seen": [
-    {
-      "key": "eafe99a08186aa9a6f3ab6e9",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-takeaways-mcdavid-leads-the-way-in-beatdown-of-mammoth",
-      "fingerprint": "4187bca65d78e1a1",
-      "title_norm": "oilers takeaways: mcdavid leads the way in beatdown of mammoth",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-18T06:15:40.675100Z"
-    },
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
       "url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
