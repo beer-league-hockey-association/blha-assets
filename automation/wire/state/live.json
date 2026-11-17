@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T04:30:37.140197Z",
+  "updated_at": "2026-11-17T04:45:46.701993Z",
   "seen": [
-    {
-      "key": "2316efed8d460724e516c699",
-      "url": "https://www.dailyfaceoff.com/players/news/samuel-girard/2773",
-      "fingerprint": "449f6d01623afbaf",
-      "title_norm": "samuel girard (pit) — girard (undisclosed) left saturday's game and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T04:30:37.218692Z"
-    },
     {
       "key": "157fba594ff85797377fc288",
       "url": "https://www.nhl.com/news/pittsburgh-penguins-vegas-golden-knights-game-recap-october-17-2026",
