@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T14:45:41.056145Z",
+  "updated_at": "2026-11-17T15:15:44.212055Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18772,6 +18772,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-17T14:45:40.952440Z"
+    },
+    {
+      "key": "e6e4b856e4bca976a0f4bc5b",
+      "url": "https://www.dailyfaceoff.com/players/news/isak-rosen/34670",
+      "fingerprint": "0dffb53a1d06ea4b",
+      "title_norm": "isak rosen (wpg) — rosen (undisclosed) has been placed on ir retroactive to november 12th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T15:15:43.816131Z"
+    },
+    {
+      "key": "817620199f5e9a2717eb2c32",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-17-2026",
+      "fingerprint": "853e4c909103bfed",
+      "title_norm": "status report: rielly could return for leafs tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T15:15:44.087935Z"
     }
   ],
   "known_sources": [
