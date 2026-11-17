@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T13:00:36.653993Z",
+  "updated_at": "2026-11-17T13:30:33.620376Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18732,6 +18732,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-17T13:00:36.621697Z"
+    },
+    {
+      "key": "19a7a804e0f1f4b9f80e8d8d",
+      "url": "https://www.sportsnet.ca/nhl/article/one-question-facing-each-nhl-team-at-the-season-quarter-mark",
+      "fingerprint": "60ac3bbd9f25e0fb",
+      "title_norm": "one question facing each nhl team at the season quarter mark",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T13:30:33.576435Z"
     }
   ],
   "known_sources": [
