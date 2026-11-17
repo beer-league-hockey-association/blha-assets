@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T15:45:34.728609Z",
+  "updated_at": "2026-11-17T16:00:41.860939Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18822,6 +18822,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T15:45:34.624933Z"
+    },
+    {
+      "key": "21d5d03da8d12ff5d7be0527",
+      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
+      "fingerprint": "174e757938a933f3",
+      "title_norm": "bowen byram (chi) — byram (upper-body) will miss chicago's next two games.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T16:00:41.021608Z"
+    },
+    {
+      "key": "02974eca4888d3a1e23837c1",
+      "url": "https://www.hamiltonhammers.com/news/detail/chaffee-making-the-most-of-his-nhl-opportunity",
+      "fingerprint": "7f81cce9ca65adf4",
+      "title_norm": "chaffee making most of nhl opportunity",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-17T16:00:41.327677Z"
+    },
+    {
+      "key": "676cc376ec138ca2c01cc09b",
+      "url": "https://www.dailyfaceoff.com/players/news/cole-smith/32926",
+      "fingerprint": "2777060857b55f89",
+      "title_norm": "cole smith (chi) — smith (undisclosed) will play vs. toronto on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T16:00:41.581753Z"
+    },
+    {
+      "key": "f72c9301c32de7147d94a97b",
+      "url": "https://www.sportsnet.ca/nhl/article/gaudreau-brothers-to-be-honoured-with-statue-outside-childhood-rink",
+      "fingerprint": "43a93430badb0c0e",
+      "title_norm": "gaudreau brothers to be honoured with statue outside childhood rink",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T16:00:41.805908Z"
     }
   ],
   "known_sources": [
