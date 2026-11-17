@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T04:45:46.701993Z",
+  "updated_at": "2026-11-17T05:15:36.211766Z",
   "seen": [
-    {
-      "key": "157fba594ff85797377fc288",
-      "url": "https://www.nhl.com/news/pittsburgh-penguins-vegas-golden-knights-game-recap-october-17-2026",
-      "fingerprint": "f39e337f1c830f2a",
-      "title_norm": "golden knights score six for second game in row, ease past penguins",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-18T05:00:38.469845Z"
-    },
-    {
-      "key": "c26a2b95feaad86b85af5463",
-      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-tuch-has-two-goals-assist-in-capitals-win-over-devils",
-      "fingerprint": "f079f2fa90edb7ae",
-      "title_norm": "nhl roundup: tuch has two goals, assist in capitals' win over devils",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-18T05:00:38.709133Z"
-    },
-    {
-      "key": "a4eb7cb954478ba75c39a236",
-      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-notches-five-points-oilers-crush-mammoth",
-      "fingerprint": "8899ab346d5a26d4",
-      "title_norm": "connor mcdavid notches five points, oilers crush mammoth",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-18T05:11:08.062054Z"
-    },
-    {
-      "key": "00744fe1d9356f7181ab0905",
-      "url": "https://www.nhl.com/news/edmonton-oilers-utah-mammoth-game-recap-october-17-2026",
-      "fingerprint": "23cf3250781174e7",
-      "title_norm": "mcdavid gets 5 points to extend season-opening streak as oilers cruise past mammoth",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-18T05:11:08.429371Z"
-    },
     {
       "key": "eafe99a08186aa9a6f3ab6e9",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-takeaways-mcdavid-leads-the-way-in-beatdown-of-mammoth",
@@ -18702,6 +18662,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-17T04:00:49.375056Z"
+    },
+    {
+      "key": "6d06e9678df1474ae59eca3b",
+      "url": "https://www.nhl.com/news/norris-trophy-tracker-oilers-evan-bouchard-early-favorite-november-17-2026",
+      "fingerprint": "0a5e64b54cbb1032",
+      "title_norm": "trophy tracker: bouchard pick for norris at 1st quarter",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T05:15:36.101052Z"
     }
   ],
   "known_sources": [
