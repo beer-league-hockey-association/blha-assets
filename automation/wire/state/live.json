@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T19:30:38.135355Z",
+  "updated_at": "2026-11-17T19:45:41.237918Z",
   "seen": [
     {
       "key": "5077c00835f3f45b43339032",
@@ -19032,6 +19032,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T19:30:37.989507Z"
+    },
+    {
+      "key": "a5d93c333e3da0340a0bb04f",
+      "url": "https://www.dailyfaceoff.com/players/news/kiefer-sherwood/4675",
+      "fingerprint": "d6a096d114ee9f57",
+      "title_norm": "kiefer sherwood (sjs) — sherwood is considered week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T19:45:41.105879Z"
     }
   ],
   "known_sources": [
