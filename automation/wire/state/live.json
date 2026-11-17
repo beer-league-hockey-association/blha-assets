@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T12:15:46.395988Z",
+  "updated_at": "2026-11-17T13:00:36.653993Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18722,6 +18722,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T12:15:46.344926Z"
+    },
+    {
+      "key": "cb6a3ce0aa62393d501698a9",
+      "url": "https://dobberprospects.com/2026/11/17/pharling-files-sustaining-pace-over-the-first-quarter",
+      "fingerprint": "79612a1ada10af5c",
+      "title_norm": "pharling files: sustaining pace over the first quarter",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-17T13:00:36.621697Z"
     }
   ],
   "known_sources": [
