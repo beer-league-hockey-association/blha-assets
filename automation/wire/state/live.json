@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T00:45:34.681964Z",
+  "updated_at": "2026-11-17T01:15:38.626183Z",
   "seen": [
-    {
-      "key": "6cf2ecc382fb879327379fd4",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
-      "fingerprint": "f197ce3cfa0ae2ef",
-      "title_norm": "pavel zacha (bos) — zacha is out vs. los angeles with an upper-bobdy injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T01:00:39.515305Z"
-    },
-    {
-      "key": "64b193018abfa8de6aa33e0f",
-      "url": "https://www.nhl.com/news/seattle-kraken-florida-panthers-game-recap-october-17-2026",
-      "fingerprint": "89b280fd36dbef8c",
-      "title_norm": "verhaeghe, bennett continue panthers hat trick streak in win against kraken",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-18T01:15:35.438676Z"
-    },
     {
       "key": "2a8136f0957ba5eb96a8a276",
       "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
