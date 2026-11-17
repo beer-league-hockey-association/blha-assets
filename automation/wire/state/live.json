@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T02:00:41.898852Z",
+  "updated_at": "2026-11-17T02:15:39.677157Z",
   "seen": [
-    {
-      "key": "2415ed53ce3892cd4fef190b",
-      "url": "https://www.nhl.com/news/ottawa-senators-philadelphia-flyers-game-recap-october-17-2026",
-      "fingerprint": "83a344da987a5efc",
-      "title_norm": "flyers hold off senators for 1st win of season",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-18T02:15:36.759012Z"
-    },
-    {
-      "key": "34ce501417fd3d58770aaec0",
-      "url": "https://www.nhl.com/news/buffalo-sabres-montreal-canadiens-game-recap-october-17-2026",
-      "fingerprint": "59296f56bae5ee9f",
-      "title_norm": "caufield's second goal lifts canadiens past sabres in ot",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-18T02:15:37.084038Z"
-    },
     {
       "key": "e8bef1159333fb5de4cd37d2",
       "url": "https://www.sportsnet.ca/nhl/article/cole-caufield-scores-overtime-winner-as-canadiens-down-sabres",
