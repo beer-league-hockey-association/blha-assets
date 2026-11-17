@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T06:15:48.527614Z",
+  "updated_at": "2026-11-17T07:30:33.801855Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18702,6 +18702,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T06:00:49.897272Z"
+    },
+    {
+      "key": "3fff3b7a55b536872fdea88f",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-tolopilos-stellar-outing-fuels-second-straight-win",
+      "fingerprint": "91c96a79d2b5eae4",
+      "title_norm": "canucks takeaways: tolopilo's stellar outing fuels second straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T07:30:33.755985Z"
     }
   ],
   "known_sources": [
