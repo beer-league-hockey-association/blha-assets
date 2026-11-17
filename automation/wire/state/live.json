@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T17:30:35.905274Z",
+  "updated_at": "2026-11-17T17:45:33.220997Z",
   "seen": [
-    {
-      "key": "a44b445761ba7b4b5a9c540c",
-      "url": "https://www.dailyfaceoff.com/players/news/sean-couturier/1777",
-      "fingerprint": "d7ada4ade209aa1e",
-      "title_norm": "sean couturier (phi) — couturier (undisclosed) will be a game-time decision on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T17:45:30.788524Z"
-    },
-    {
-      "key": "e4135c16ddd2d5c7f1e3f614",
-      "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
-      "fingerprint": "00c6e7464365487a",
-      "title_norm": "tyson foerster (phi) — foerster (hand) will be a game-time decision on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T17:45:31.035033Z"
-    },
-    {
-      "key": "9ff64ce2234ae295eb11054e",
-      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
-      "fingerprint": "488d9f7baa6a68c7",
-      "title_norm": "jared spurgeon (min) — the wild have placed jared spurgeon (upper-body) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T17:45:31.298821Z"
-    },
     {
       "key": "915d3a9b34ed43d9404771d2",
       "url": "https://triblive.com/sports/fully-healthy-penguins-prospect-tanner-howe-takes-aim-at-reaching-the-nhl",
@@ -18992,6 +18962,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T17:30:35.643805Z"
+    },
+    {
+      "key": "ac16dc1420e6a372835945d2",
+      "url": "https://www.dailyfaceoff.com/players/news/jonathan-marchessault2/2399",
+      "fingerprint": "51723479ddbd7305",
+      "title_norm": "jonathan marchessault (nsh) — marchessault (lower-body) will return in minnesota on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:45:32.078327Z"
+    },
+    {
+      "key": "7edbe9e3a10a428607f77db1",
+      "url": "https://www.dailyfaceoff.com/players/news/brayden-point/2456",
+      "fingerprint": "25abcba7d251906b",
+      "title_norm": "brayden point (tbl) — point (undisclosed) is expected to return vs. washington on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:45:32.764832Z"
+    },
+    {
+      "key": "2f19d469f009f37c2da099c7",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-geekie/31505",
+      "fingerprint": "194be33190b70e8b",
+      "title_norm": "conor geekie (tbl) — geekie (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:45:33.148515Z"
     }
   ],
   "known_sources": [
