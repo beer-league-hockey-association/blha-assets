@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T03:00:57.207707Z",
+  "updated_at": "2026-11-17T03:45:45.435817Z",
   "seen": [
     {
       "key": "2ca2505cfd87be1764ebad2f",
@@ -18692,6 +18692,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T02:30:33.911273Z"
+    },
+    {
+      "key": "f63b477d7b61264e2f037c2e",
+      "url": "https://www.nhl.com/news/color-of-hockey-forward-aj-garcia-has-shot-to-excel-in-ushl-for-fargo-force",
+      "fingerprint": "849df86284734cc0",
+      "title_norm": "color of hockey: garcia has shot to excel in ushl",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T03:45:44.894776Z"
+    },
+    {
+      "key": "7e4d3214cfeb6ce8f52262ae",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-give-up-three-unanswered-goals-in-loss-to-rangers",
+      "fingerprint": "c710e306260538bc",
+      "title_norm": "canadiens give up three unanswered goals in loss to rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T03:45:45.165087Z"
+    },
+    {
+      "key": "35354e4e205e01d5e523019c",
+      "url": "https://www.sportsnet.ca/nhl/video/what-do-maple-leafs-need-to-do-to-turn-season-around",
+      "fingerprint": "f8cd50f068c9389b",
+      "title_norm": "what do maple leafs need to do to turn season around?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T03:45:45.388366Z"
     }
   ],
   "known_sources": [
