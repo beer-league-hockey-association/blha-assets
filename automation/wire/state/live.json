@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T16:15:35.045537Z",
+  "updated_at": "2026-11-17T16:30:34.865049Z",
   "seen": [
     {
       "key": "b15334ef07a7a9f9866a24a9",
@@ -18892,6 +18892,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T16:15:34.999590Z"
+    },
+    {
+      "key": "10e6d978195c704603191a8f",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-assign-jonathan-huberdeau-to-ahl-on-conditioning-loan",
+      "fingerprint": "8582383db30236cf",
+      "title_norm": "flames assign jonathan huberdeau to ahl on conditioning loan",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T16:30:34.822237Z"
     }
   ],
   "known_sources": [
