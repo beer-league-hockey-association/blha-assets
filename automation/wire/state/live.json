@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T16:45:39.993366Z",
+  "updated_at": "2026-11-17T17:00:46.453653Z",
   "seen": [
     {
       "key": "a44b445761ba7b4b5a9c540c",
@@ -18912,6 +18912,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-17T16:45:39.884260Z"
+    },
+    {
+      "key": "318d67849c047c4294d9a1ae",
+      "url": "https://www.dailyfaceoff.com/players/news/hayden-hodgson/23173",
+      "fingerprint": "e18a3dc44f032ff2",
+      "title_norm": "hayden hodgson (ott) — hodgson (lower-body) is out vs. winnipeg on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:00:45.678925Z"
+    },
+    {
+      "key": "e69b132df36a45e710277331",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "9510fe33deed505e",
+      "title_norm": "erik gustafsson (lak) — gustafsson (undisclosed) will return to the lineup in boston on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:00:46.375552Z"
     }
   ],
   "known_sources": [
