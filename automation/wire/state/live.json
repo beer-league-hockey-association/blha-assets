@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-16T23:46:46.502359Z",
+  "updated_at": "2026-11-17T00:00:49.818401Z",
   "seen": [
     {
       "key": "6c16b2adf6988c554a27a815",
@@ -18832,6 +18832,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-16T22:00:36.491118Z"
+    },
+    {
+      "key": "44886d79130a95fce414c70c",
+      "url": "https://watch.sportsnet.ca/event/Montreal_New_York_Rangers_229278",
+      "fingerprint": "2f06391dda9b7daf",
+      "title_norm": "monday night hockey on sportsnet: canadiens vs. rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T00:00:49.785662Z"
     }
   ],
   "known_sources": [
