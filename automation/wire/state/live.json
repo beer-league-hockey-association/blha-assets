@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T05:45:37.675010Z",
+  "updated_at": "2026-11-17T06:00:49.958790Z",
   "seen": [
     {
       "key": "eafe99a08186aa9a6f3ab6e9",
@@ -18702,6 +18702,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T05:45:37.614888Z"
+    },
+    {
+      "key": "9e180a408884256ca4f3b4ae",
+      "url": "https://www.sportsnet.ca/nhl/article/boesers-late-power-play-goal-lifts-canucks-to-win-over-mammoth",
+      "fingerprint": "305d77155e448d1c",
+      "title_norm": "boeser's late power-play goal lifts canucks to win over mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T06:00:49.897272Z"
     }
   ],
   "known_sources": [
