@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T03:45:45.435817Z",
+  "updated_at": "2026-11-17T04:00:49.457423Z",
   "seen": [
     {
       "key": "2ca2505cfd87be1764ebad2f",
@@ -18722,6 +18722,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T03:45:45.388366Z"
+    },
+    {
+      "key": "c76d59ff6838f8c18b88fc8f",
+      "url": "https://www.sportsnet.ca/nhl/article/injured-maple-leafs-defenceman-morgan-rielly-returns-to-practice",
+      "fingerprint": "d19a53d3acb95998",
+      "title_norm": "injured maple leafs defenceman morgan rielly returns to practice",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T04:00:49.162646Z"
+    },
+    {
+      "key": "10ce7f31a5a7de860e62abb9",
+      "url": "https://www.nhl.com/news/montreal-canadiens-new-york-rangers-game-recap-november-16-2026",
+      "fingerprint": "9cf9918ba7fc3244",
+      "title_norm": "cuylle scores twice, rangers win centennial game against canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T04:00:49.375056Z"
     }
   ],
   "known_sources": [
