@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T21:00:52.731757Z",
+  "updated_at": "2026-11-17T21:30:40.355875Z",
   "seen": [
     {
       "key": "4aabaa3a38c9de697b0ce3d6",
@@ -19032,6 +19032,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T20:45:31.600637Z"
+    },
+    {
+      "key": "067004949a306c49564d0052",
+      "url": "https://www.nhl.com/news/anthony-mantha-johnathan-kovacevic-out-for-devils-at-least-one-month",
+      "fingerprint": "7528a3669af84ccf",
+      "title_norm": "mantha, kovacevic out at least 1 month for devils",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T21:30:40.228323Z"
     }
   ],
   "known_sources": [
