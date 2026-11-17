@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T18:45:34.408124Z",
+  "updated_at": "2026-11-17T19:00:41.413348Z",
   "seen": [
-    {
-      "key": "915d3a9b34ed43d9404771d2",
-      "url": "https://triblive.com/sports/fully-healthy-penguins-prospect-tanner-howe-takes-aim-at-reaching-the-nhl",
-      "fingerprint": "1ffd942cba3b587b",
-      "title_norm": "fully healthy, howe takes aim at reaching nhl",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-18T19:00:40.065000Z"
-    },
-    {
-      "key": "40e3b2ffdb64e4d69307001a",
-      "url": "https://www.dailyfaceoff.com/players/news/troy-terry/4645",
-      "fingerprint": "eaf7b02bfc5d3856",
-      "title_norm": "troy terry (ana) — terry (hip) is travelling on the ducks' four-game road trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T19:00:40.647833Z"
-    },
     {
       "key": "5077c00835f3f45b43339032",
       "url": "https://www.dailyfaceoff.com/players/news/cameron-york/30422",
@@ -19032,6 +19012,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T18:45:34.322645Z"
+    },
+    {
+      "key": "94032cc4f218196ecd60e7ae",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-huberdeau-seeks-more-answers-as-he-returns-to-action",
+      "fingerprint": "4a88b2e165abd5b4",
+      "title_norm": "flames' huberdeau seeks more answers as he returns to action",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T19:00:41.359810Z"
     }
   ],
   "known_sources": [
