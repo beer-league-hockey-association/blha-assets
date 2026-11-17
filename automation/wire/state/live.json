@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T17:00:46.453653Z",
+  "updated_at": "2026-11-17T17:30:35.905274Z",
   "seen": [
     {
       "key": "a44b445761ba7b4b5a9c540c",
@@ -18932,6 +18932,66 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T17:00:46.375552Z"
+    },
+    {
+      "key": "5c4a0b70be3b2899d5bf2227",
+      "url": "https://www.dailyfaceoff.com/players/news/anthony-mantha/2151",
+      "fingerprint": "44aff1305aa1d204",
+      "title_norm": "anthony mantha (njd) — mantha had surgery on monday to repair a fracture in his throat and is expected out for a month.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:30:34.803626Z"
+    },
+    {
+      "key": "7325cdc9e8995701a12dceac",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-rielly/1935",
+      "fingerprint": "107ce066d8a76ce7",
+      "title_norm": "morgan rielly (tor) — rielly (lower-body) is expected to return in chicago on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:30:35.115740Z"
+    },
+    {
+      "key": "f966c39c07f628ddb0b92df7",
+      "url": "https://www.dailyfaceoff.com/players/news/william-wallinder/33029",
+      "fingerprint": "13fecf5642e7d5d2",
+      "title_norm": "william wallinder (det) — wallinder is day-to-day with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:30:35.358319Z"
+    },
+    {
+      "key": "520157a802e30360a2822963",
+      "url": "https://www.dailyfaceoff.com/players/news/johnathan-kovacevic/28131",
+      "fingerprint": "11a1dc44d062c11b",
+      "title_norm": "johnathan kovacevic (njd) — kovacevic (ankle sprain) is expected to miss the next 4-6 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:30:35.371841Z"
+    },
+    {
+      "key": "d34ad7497f1ba5f6f89d6a57",
+      "url": "https://www.dailyfaceoff.com/players/news/pytor-kochetkov/30486",
+      "fingerprint": "397a14a117f4bd3e",
+      "title_norm": "pyotr kochetkov (car) — kochetkov (illness) missed practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:30:35.382648Z"
+    },
+    {
+      "key": "6f43d2d935ee0578ab020096",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-rielly-to-return-bobrovsky-to-start-against-blackhawks",
+      "fingerprint": "3b31fde2a9ac954e",
+      "title_norm": "maple leafs' rielly to return, bobrovsky to start against blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T17:30:35.643805Z"
     }
   ],
   "known_sources": [
