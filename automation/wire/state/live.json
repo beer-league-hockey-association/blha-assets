@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T16:30:34.865049Z",
+  "updated_at": "2026-11-17T16:45:39.993366Z",
   "seen": [
-    {
-      "key": "b15334ef07a7a9f9866a24a9",
-      "url": "https://www.dailyfaceoff.com/players/news/roope-hintz/2863",
-      "fingerprint": "e19ce43a65193f30",
-      "title_norm": "roope hintz (dal) — hintz left saturday's game with an undisclosed injury and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T16:30:37.610422Z"
-    },
     {
       "key": "a44b445761ba7b4b5a9c540c",
       "url": "https://www.dailyfaceoff.com/players/news/sean-couturier/1777",
@@ -18902,6 +18892,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T16:30:34.822237Z"
+    },
+    {
+      "key": "2160bb68144a7c2504054ad7",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-17-2026",
+      "fingerprint": "eacf9cd875f31f35",
+      "title_norm": "on tap: mcdavid on 22-game run for streaking oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-17T16:45:39.627967Z"
+    },
+    {
+      "key": "7569b8b2d5928e09dbeb935c",
+      "url": "https://theahl.com/news/flames-assign-huberdeau-to-wranglers-on-conditioning-loan",
+      "fingerprint": "7a9f8bbb3ccb48cf",
+      "title_norm": "flames assign huberdeau to wranglers on conditioning loan",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-17T16:45:39.884260Z"
     }
   ],
   "known_sources": [
