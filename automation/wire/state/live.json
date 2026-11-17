@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T07:30:33.801855Z",
+  "updated_at": "2026-11-17T12:15:46.395988Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18712,6 +18712,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T07:30:33.755985Z"
+    },
+    {
+      "key": "6f43125ccb53509b347765fb",
+      "url": "https://www.sportsnet.ca/nhl/article/rangers-dorofeyev-last-minute-scratch-vs-montreal-due-to-injury",
+      "fingerprint": "a3d97e2b27ae1ade",
+      "title_norm": "rangers' dorofeyev last minute scratch vs. montreal due to injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T12:15:46.344926Z"
     }
   ],
   "known_sources": [
