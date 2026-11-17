@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T19:45:41.237918Z",
+  "updated_at": "2026-11-17T20:00:55.805181Z",
   "seen": [
-    {
-      "key": "5077c00835f3f45b43339032",
-      "url": "https://www.dailyfaceoff.com/players/news/cameron-york/30422",
-      "fingerprint": "25965a98acc784ae",
-      "title_norm": "cam york (phi) — the flyers have placed cam york (upper-body) on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T20:00:39.249456Z"
-    },
     {
       "key": "9fb4a9df1b97ef968499d216",
       "url": "https://www.nhl.com/news/topic/short-shifts/matthew-schaefer-joined-by-young-islanders-fan-cancer-patient",
@@ -19042,6 +19032,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T19:45:41.105879Z"
+    },
+    {
+      "key": "19ec97979534fc99d56eb4cd",
+      "url": "https://www.dailyfaceoff.com/players/news/miro-heiskanen/2803",
+      "fingerprint": "c3de3e20dbb6b2a0",
+      "title_norm": "miro heiskanen (dal) — heiskanen (upper-body) will return in vegas on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T20:00:55.454194Z"
+    },
+    {
+      "key": "6c36ce3650db4aca6c15e01c",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-myers/176",
+      "fingerprint": "54a6c329d4eab111",
+      "title_norm": "tyler myers (dal) — myers (upper-body) is out vs. vegas on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T20:00:55.728984Z"
     }
   ],
   "known_sources": [
