@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T15:15:44.212055Z",
+  "updated_at": "2026-11-17T15:45:34.728609Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18792,6 +18792,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-17T15:15:44.087935Z"
+    },
+    {
+      "key": "27667487ab5ff48e4ea3de8d",
+      "url": "https://www.dailyfaceoff.com/players/news/jean-gabriel-pageau/2057",
+      "fingerprint": "6059ec8efabd2ad4",
+      "title_norm": "jean-gabriel pageau (nyi) — pageau (lower-body) will be a game-time decision vs. columbus on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T15:45:34.194530Z"
+    },
+    {
+      "key": "c4c633b482663c20914d48f3",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-place-isak-rosen-on-injured-reserve-recall-danny-zhilkin-from-ahl",
+      "fingerprint": "c77e6abc08fd91a7",
+      "title_norm": "jets place isak rosen on injured reserve, recall danny zhilkin from ahl",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T15:45:34.436660Z"
+    },
+    {
+      "key": "1b030a218bdfd12e45764c9f",
+      "url": "https://www.dailyfaceoff.com/players/news/denver-barkey/35098",
+      "fingerprint": "ce7cdcebc24649e7",
+      "title_norm": "denver barkey (phi) — barkey (illness) is expected to return vs. buffalo on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T15:45:34.624933Z"
     }
   ],
   "known_sources": [
