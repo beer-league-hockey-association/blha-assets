@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T17:45:33.220997Z",
+  "updated_at": "2026-11-17T18:00:41.664093Z",
   "seen": [
     {
       "key": "915d3a9b34ed43d9404771d2",
@@ -18992,6 +18992,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-17T17:45:33.148515Z"
+    },
+    {
+      "key": "1a08de64a7d8e743c10f59d8",
+      "url": "https://www.sportsnet.ca/nhl/article/how-the-winnipeg-jets-saved-their-season-from-the-brink",
+      "fingerprint": "daf5606e2ebd91fa",
+      "title_norm": "how the winnipeg jets saved their season from the brink",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T18:00:41.247876Z"
+    },
+    {
+      "key": "b68902674ea4676421d3ca91",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-re-assign-g-nikita-tolopilo-to-ahl-one-day-after-stellar-performance",
+      "fingerprint": "b930cc657230033b",
+      "title_norm": "canucks re-assign g nikita tolopilo to ahl one day after stellar performance",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T18:00:41.628691Z"
     }
   ],
   "known_sources": [
