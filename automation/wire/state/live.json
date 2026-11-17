@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T14:00:56.931934Z",
+  "updated_at": "2026-11-17T14:30:42.536454Z",
   "seen": [
     {
       "key": "9bb25dd3bbee0e627b4a3c4b",
@@ -18752,6 +18752,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-17T14:00:56.809528Z"
+    },
+    {
+      "key": "983d8e2de4a7c8329d853959",
+      "url": "https://theahl.com/news/iowa-henderson-organizations-make-trade",
+      "fingerprint": "1cb6171b2449dfc3",
+      "title_norm": "iowa, henderson organizations make trade",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-17T14:30:42.507608Z"
     }
   ],
   "known_sources": [
