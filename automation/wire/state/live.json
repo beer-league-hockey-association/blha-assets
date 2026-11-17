@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T02:15:39.677157Z",
+  "updated_at": "2026-11-17T02:30:33.968425Z",
   "seen": [
     {
       "key": "e8bef1159333fb5de4cd37d2",
@@ -18702,6 +18702,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-17T00:30:33.241387Z"
+    },
+    {
+      "key": "4114dbeb6f115d8537efea8d",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-cooley/33387",
+      "fingerprint": "aa0e4c94b8fa692b",
+      "title_norm": "logan cooley (uta) — cooley (upper-body) is expected to play monday vs. the canucks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T02:30:33.495922Z"
+    },
+    {
+      "key": "4b5f1ac6211d50c571ea67a1",
+      "url": "https://www.dailyfaceoff.com/players/news/artem-duda/36382",
+      "fingerprint": "e2a7f421b695b2e2",
+      "title_norm": "artem duda (uta) — duda (lower-body) will not play monday vs. the canucks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-17T02:30:33.720497Z"
+    },
+    {
+      "key": "09167eef5249e30fb3643fb2",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/4b2cdfc6-7cbe-4113-9e25-cbe4cce2d0ba",
+      "fingerprint": "4a4b0a89347194b1",
+      "title_norm": "monday night hockey on sportsnet: canucks vs. mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-17T02:30:33.911273Z"
     }
   ],
   "known_sources": [
