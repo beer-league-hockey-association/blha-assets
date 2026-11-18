@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T19:15:37.053658Z",
+  "updated_at": "2026-11-18T19:45:34.199526Z",
   "seen": [
-    {
-      "key": "7b8161699b09ecfd4b5b5321",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
-      "fingerprint": "5c2bd47175eaf735",
-      "title_norm": "pavel zacha (bos) — zacha (upper-body) will be a game-time decision vs. dallas on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T19:30:42.436009Z"
-    },
     {
       "key": "8a2673a3bfd7889f6d77e250",
       "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
@@ -19092,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T19:15:36.984868Z"
+    },
+    {
+      "key": "0bfe426cef5d08d82b6dd1fc",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
+      "fingerprint": "f67151de63475f68",
+      "title_norm": "mattias samuelsson (buf) — samuelsson (maintenance) missed practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T19:45:34.099928Z"
     }
   ],
   "known_sources": [
