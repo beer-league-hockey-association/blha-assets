@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T16:45:46.574284Z",
+  "updated_at": "2026-11-18T17:00:41.180949Z",
   "seen": [
     {
       "key": "9e775b350a5a232cc0315c73",
@@ -19092,6 +19092,86 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T16:30:41.517462Z"
+    },
+    {
+      "key": "74880fb28de537128af1ba46",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-18-2026",
+      "fingerprint": "2cb4b10d48985484",
+      "title_norm": "on tap: original six series closes with bruins-wings",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T17:00:39.743809Z"
+    },
+    {
+      "key": "9fdb6c47f086484ce72dda4d",
+      "url": "https://www.nhl.com/news/jack-adams-trophy-tracker-bruins-marco-sturm-early-favorite-after-strong-start",
+      "fingerprint": "2d6a7c9a65cefe8e",
+      "title_norm": "trophy tracker: sturm is adams pick at 1st quarter",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T17:00:39.915345Z"
+    },
+    {
+      "key": "86aa5428abaa5219ee3ea65f",
+      "url": "https://www.nhl.com/news/cutter-gauthier-playing-with-confidence-for-anaheim-ducks",
+      "fingerprint": "4178e438bed72285",
+      "title_norm": "gauthier 'playing with a lot of confidence' for ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T17:00:40.190474Z"
+    },
+    {
+      "key": "a8dee32c10e1c33f7c48e2b8",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-18-2026",
+      "fingerprint": "b83227566134f22e",
+      "title_norm": "status report: barkov, marchand 'both close' for florida",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T17:00:40.485513Z"
+    },
+    {
+      "key": "76741d6463220a696b638b0f",
+      "url": "https://www.nhl.com/news/topic/short-shifts/brian-boucher-celebrates-son-tyler-boucher-first-nhl-goal",
+      "fingerprint": "12ba98e07ee72199",
+      "title_norm": "boucher has priceless reaction to son's 1st nhl goal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T17:00:40.495029Z"
+    },
+    {
+      "key": "c05a75848cef2ff02b2df9f9",
+      "url": "https://www.nhl.com/news/new-york-islanders-matthew-schaefer-first-career-hat-trick-adds-to-record-book",
+      "fingerprint": "16d236a77f8a42e0",
+      "title_norm": "edge stats: schaefer's historic start to career",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T17:00:40.503205Z"
+    },
+    {
+      "key": "85d7e30d6b03bd75bfa3ee16",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "b7029d6f370ea22a",
+      "title_norm": "connor bedard (chi) — bedard is expected to miss some time, as he determines the severity of his shoulder injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T17:00:40.702634Z"
+    },
+    {
+      "key": "31f0660debc8f740ac09529c",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-unveils-uniforms-for-winter-classic-between-mammoth-and-avalanche",
+      "fingerprint": "b2923f4aa8af20c6",
+      "title_norm": "nhl unveils uniforms for winter classic between mammoth and avalanche",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T17:00:40.741307Z"
     }
   ],
   "known_sources": [
