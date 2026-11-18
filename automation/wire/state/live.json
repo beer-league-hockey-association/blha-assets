@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T18:45:31.872989Z",
+  "updated_at": "2026-11-18T19:00:42.341739Z",
   "seen": [
     {
       "key": "a08af680f2a5e2fd2a067484",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T18:30:38.059116Z"
+    },
+    {
+      "key": "45e8cd86b68e5da38a58006d",
+      "url": "https://www.dailyfaceoff.com/players/news/mikhail-sergachev/2639",
+      "fingerprint": "80ec8fb681e50d94",
+      "title_norm": "mikhail sergachev (uta) — sergachev (undisclosed) will be a game-time decision vs. colorado on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T19:00:42.243533Z"
     }
   ],
   "known_sources": [
