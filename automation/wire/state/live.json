@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T00:15:36.340432Z",
+  "updated_at": "2026-11-18T00:30:35.066459Z",
   "seen": [
-    {
-      "key": "134540e503f902e2788b951b",
-      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
-      "fingerprint": "fdc71a228d7a4d20",
-      "title_norm": "matias maccelli (nyi) — maccelli left saturday's game with a lower-body injury and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T00:15:36.542649Z"
-    },
-    {
-      "key": "a99904a84657b1496939b9c6",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/c7b3c721-ea16-45f7-8b3a-d0d7734e71f8",
-      "fingerprint": "1ca3a0418ea1a0b5",
-      "title_norm": "flames on sportsnet: calgary vs. carolina",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T00:15:36.903954Z"
-    },
-    {
-      "key": "dad7b32f16febd8fb1b7614b",
-      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-hellebuyck-would-make-mammoth-a-cup-contender",
-      "fingerprint": "b81df83cb224b1a6",
-      "title_norm": "sunday overreactions: hellebuyck would make mammoth a cup contender",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T00:15:37.177574Z"
-    },
     {
       "key": "b4050a1c942d1d94d145cef5",
       "url": "https://www.nhl.com/news/columbus-blue-jackets-minnesota-wild-game-recap-october-18-2026",
