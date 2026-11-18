@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T03:15:33.960086Z",
+  "updated_at": "2026-11-18T03:30:32.554386Z",
   "seen": [
-    {
-      "key": "be24bf3c4e57240850e36cf8",
-      "url": "https://www.nhl.com/news/unmasked-new-ebug-rules-benefit-nhl-goalies-for-load-management",
-      "fingerprint": "3459fcf3a71fa6f0",
-      "title_norm": "unmasked: goalies enjoying having ebugs around",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T03:15:35.871411Z"
-    },
-    {
-      "key": "48eb26ef94144da62e849fbf",
-      "url": "https://www.nhl.com/news/topic/game-recap/carolina-hurricanes-calgary-flames-game-recap-october-18-2026",
-      "fingerprint": "0abfc0bef685747b",
-      "title_norm": "sharangovich scores late in third period to lift flames past hurricanes",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T03:15:36.220919Z"
-    },
-    {
-      "key": "86b151230b129a41e7338a98",
-      "url": "https://www.sportsnet.ca/nhl/article/sharangovich-nets-winner-as-flames-snap-hurricanes-seven-game-win-streak",
-      "fingerprint": "812b1c1e174e8f41",
-      "title_norm": "sharangovich nets winner as flames snap hurricanes' seven-game win streak",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T03:15:36.517176Z"
-    },
     {
       "key": "13cd6fc53ea9e61ee54531da",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-18-2026",
@@ -19202,6 +19172,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T03:15:33.736844Z"
+    },
+    {
+      "key": "ec22841fdd2cc4088d261c9c",
+      "url": "https://www.nhl.com/news/connor-bedard-leaves-chicago-blackhawks-game-with-upper-body-injury",
+      "fingerprint": "b0db5e9657e00ad5",
+      "title_norm": "bedard leaves blackhawks win with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:30:32.242709Z"
+    },
+    {
+      "key": "6e69e5abae404a70980ac4e7",
+      "url": "https://www.nhl.com/news/washington-capitals-tampa-bay-lightning-game-recap-november-17-2026",
+      "fingerprint": "a394fba01f491bab",
+      "title_norm": "guentzel scores twice, lightning hand capitals third straight loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:30:32.496557Z"
     }
   ],
   "known_sources": [
