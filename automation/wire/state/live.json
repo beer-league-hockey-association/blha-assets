@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T03:00:37.542312Z",
+  "updated_at": "2026-11-18T03:15:33.960086Z",
   "seen": [
     {
       "key": "be24bf3c4e57240850e36cf8",
@@ -19142,6 +19142,66 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T03:00:37.504035Z"
+    },
+    {
+      "key": "43bd5706da575e8fc4c4bd18",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-cutter-gauthier-extends-goal-streak-to-10-games",
+      "fingerprint": "38b6fbb9c3df2f3c",
+      "title_norm": "ducks' cutter gauthier extends goal streak to 10 games",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T03:15:33.155591Z"
+    },
+    {
+      "key": "ed64d28f6653285330b09f77",
+      "url": "https://www.sportsnet.ca/nhl/article/matthew-schaefer-records-first-nhl-hat-trick-as-islanders-beat-blue-jackets",
+      "fingerprint": "dc1d22be57a9d4c7",
+      "title_norm": "matthew schaefer records first nhl hat trick as islanders beat blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T03:15:33.400850Z"
+    },
+    {
+      "key": "77d8ec1e2e0aac5014da4579",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-new-york-islanders-game-recap-november-17-2026",
+      "fingerprint": "5077d6bd3a41ceac",
+      "title_norm": "schaefer gets 1st career hat trick in islanders win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:15:33.664798Z"
+    },
+    {
+      "key": "9d05d000f1311cda32588930",
+      "url": "https://www.nhl.com/news/utah-mammoth-look-to-end-skid-vs-avalanche-ahead-of-winter-classic",
+      "fingerprint": "c6ee1f8138d21f44",
+      "title_norm": "mammoth look to end skid among winter classic prep",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:15:33.678307Z"
+    },
+    {
+      "key": "e7cbcbb306ffae81fb4007da",
+      "url": "https://www.nhl.com/news/los-angeles-kings-boston-bruins-game-recap-november-17-2026",
+      "fingerprint": "3f7691113ec34dea",
+      "title_norm": "kuemper makes 29 saves, kings shut out bruins to end four-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:15:33.701524Z"
+    },
+    {
+      "key": "47a6a9e8fdd4f01ed75f1995",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/abb71f95-f9c9-4a89-88f5-34b3f6e6660c",
+      "fingerprint": "01359519131d5593",
+      "title_norm": "flames on sportsnet: calgary vs. san jose",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T03:15:33.736844Z"
     }
   ],
   "known_sources": [
