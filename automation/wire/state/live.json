@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T02:45:38.235497Z",
+  "updated_at": "2026-11-18T03:00:37.542312Z",
   "seen": [
     {
       "key": "be24bf3c4e57240850e36cf8",
@@ -19092,6 +19092,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T02:45:38.165983Z"
+    },
+    {
+      "key": "0b50a3a0e06c921f0451262c",
+      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
+      "fingerprint": "25ea52951c9dde99",
+      "title_norm": "alexander wennberg (sjs) — wennberg (undisclosed) will play tuesday vs. the flames.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T03:00:36.027927Z"
+    },
+    {
+      "key": "3577dd7d1ba7798b1df80e62",
+      "url": "https://www.nhl.com/news/buffalo-sabres-philadelphia-flyers-game-recap-november-17-2026",
+      "fingerprint": "f794575d8321c1bb",
+      "title_norm": "dvorak, flyers hand sabres 5th straight loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:00:36.367469Z"
+    },
+    {
+      "key": "548d73f34c28fc8426d342fe",
+      "url": "https://www.nhl.com/news/ottawa-senators-winnipeg-jets-game-recap-november-17-2026",
+      "fingerprint": "f1d3a01c31aa0603",
+      "title_norm": "boucher scores first nhl goal, senators cool off jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T03:00:36.827441Z"
+    },
+    {
+      "key": "9662e042656cf699aa84c063",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-connor-bedard-exits-vs-maple-leafs-with-apparent-injury",
+      "fingerprint": "ab9580f03632cd76",
+      "title_norm": "blackhawks' connor bedard exits vs. maple leafs with apparent injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T03:00:37.182063Z"
+    },
+    {
+      "key": "a0cdc9a5e1f1a81185532c93",
+      "url": "https://www.sportsnet.ca/nhl/article/stars-keep-rolling-as-oilers-beat-panthers-for-sixth-straight-win",
+      "fingerprint": "5e749c1453e1ad8d",
+      "title_norm": "stars keep rolling as oilers beat panthers for sixth straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T03:00:37.504035Z"
     }
   ],
   "known_sources": [
