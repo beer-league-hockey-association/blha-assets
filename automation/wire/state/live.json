@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T05:45:32.253912Z",
+  "updated_at": "2026-11-18T06:15:32.704146Z",
   "seen": [
     {
       "key": "bdaf2eda7d7422950b741ed9",
@@ -19222,6 +19222,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T05:45:32.198563Z"
+    },
+    {
+      "key": "513b2204275533c565d44893",
+      "url": "https://www.nhl.com/news/calgary-flames-san-jose-sharks-game-recap-november-17-2026",
+      "fingerprint": "30dddca93859183a",
+      "title_norm": "castagna scores 1st 2 nhl goals, helps flames defeat sharks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T06:15:32.584110Z"
     }
   ],
   "known_sources": [
