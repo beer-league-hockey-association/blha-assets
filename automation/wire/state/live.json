@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T20:45:30.891011Z",
+  "updated_at": "2026-11-18T21:00:39.876866Z",
   "seen": [
     {
       "key": "e645243820b307de4038e5f6",
@@ -19052,6 +19052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T20:45:30.832298Z"
+    },
+    {
+      "key": "24400c4410513ba16e69526b",
+      "url": "https://www.sportsnet.ca/nhl/article/revisiting-pre-season-questions-matthews-back-but-maple-leafs-struggling",
+      "fingerprint": "fe3562954179b30f",
+      "title_norm": "revisiting pre-season questions: matthews back, but maple leafs struggling",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T21:00:39.825937Z"
     }
   ],
   "known_sources": [
