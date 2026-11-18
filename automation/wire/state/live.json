@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T23:00:35.018741Z",
+  "updated_at": "2026-11-18T23:15:37.191879Z",
   "seen": [
-    {
-      "key": "d2c7afdf2bb7757f66fa6bc3",
-      "url": "https://www.sportsnet.ca/nhl/article/everybodys-waiting-jets-in-spotlight-with-hellebuyck-suspension-nearing-end",
-      "fingerprint": "36755fb7af6cfcd3",
-      "title_norm": "'everybody's waiting': jets in spotlight with hellebuyck suspension nearing end",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T23:00:44.356329Z"
-    },
     {
       "key": "6c3fc7375b5da89e50c34428",
       "url": "https://www.dailyfaceoff.com/players/news/william-nylander/2375",
