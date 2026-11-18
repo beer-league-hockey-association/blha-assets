@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T01:15:39.803712Z",
+  "updated_at": "2026-11-18T01:30:49.492046Z",
   "seen": [
     {
       "key": "be24bf3c4e57240850e36cf8",
@@ -19062,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T01:15:39.732782Z"
+    },
+    {
+      "key": "50b3d25471c8fccb5eba514a",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-extends-point-streak-to-hit-historic-milestone",
+      "fingerprint": "62fdb38649b66ece",
+      "title_norm": "oilers' mcdavid extends point streak to hit historic milestone",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T01:30:49.455761Z"
     }
   ],
   "known_sources": [
