@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T17:30:38.897604Z",
+  "updated_at": "2026-11-18T17:45:33.899265Z",
   "seen": [
-    {
-      "key": "f25956b5d30b1f8edcc9c514",
-      "url": "https://www.dailyfaceoff.com/players/news/luke-evangelista/29787",
-      "fingerprint": "4d456a4bf12970df",
-      "title_norm": "luke evangelista (njd) — evangelista (illness) will return vs. colorado on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T17:30:39.631381Z"
-    },
-    {
-      "key": "171450467628c85574ccbf61",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-recall-forward-brayden-yager-from-ahl",
-      "fingerprint": "3b4edf1bc8d94da5",
-      "title_norm": "jets recall forward brayden yager from ahl",
-      "channel": "prospect-wire",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T17:30:40.120771Z"
-    },
     {
       "key": "1d342570aa5c0e7411ad5486",
       "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
