@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-17T23:45:30.140380Z",
+  "updated_at": "2026-11-18T00:00:48.799476Z",
   "seen": [
-    {
-      "key": "ba6056e0a477e7edae77ee05",
-      "url": "https://www.dailyfaceoff.com/players/news/mark-jankowski/2711",
-      "fingerprint": "21892e56a7790eab",
-      "title_norm": "mark jankowski (car) — jankowski (lower-body) will not play sunday in calgary.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-18T23:45:37.266612Z"
-    },
     {
       "key": "4dc9f390ece10dce574bebdb",
       "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
@@ -19072,6 +19062,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-17T23:45:30.093213Z"
+    },
+    {
+      "key": "7294ca793602b4666edce511",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-lomberg/3905",
+      "fingerprint": "6464f7e3d1985116",
+      "title_norm": "ryan lomberg (cbj) — lomberg (undisclosed) will not play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T00:00:48.295307Z"
+    },
+    {
+      "key": "6ad1959fd9d5c069fdcc8d61",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/0689108f-a600-4d41-b213-04280057e82d",
+      "fingerprint": "f340d309bf8d5b87",
+      "title_norm": "oilers on sportsnet: edmonton vs. florida",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T00:00:48.755152Z"
     }
   ],
   "known_sources": [
