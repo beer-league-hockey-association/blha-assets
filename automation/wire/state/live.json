@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T07:15:34.745705Z",
+  "updated_at": "2026-11-18T09:00:43.522428Z",
   "seen": [
     {
       "key": "bdaf2eda7d7422950b741ed9",
@@ -19252,6 +19252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T07:15:34.673149Z"
+    },
+    {
+      "key": "bc939d150cad60366952d0d0",
+      "url": "https://www.sportsnet.ca/nhl/article/boucher-nets-winner-in-debut-senators-cool-off-jets",
+      "fingerprint": "4b1e42a421a10b0b",
+      "title_norm": "boucher nets winner in debut, senators cool off jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T09:00:43.482510Z"
     }
   ],
   "known_sources": [
