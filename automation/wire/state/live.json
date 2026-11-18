@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T04:30:36.392733Z",
+  "updated_at": "2026-11-18T04:45:46.025047Z",
   "seen": [
     {
       "key": "e0703458da6c5901e0d3802b",
@@ -19192,6 +19192,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T04:30:36.279113Z"
+    },
+    {
+      "key": "455122231abc0eb7efa89382",
+      "url": "https://www.nhl.com/news/anaheim-ducks-st-louis-blues-game-recap-november-17-2026",
+      "fingerprint": "233a18995d6e57bf",
+      "title_norm": "gauthier scores another hat trick, but blues hold on late",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T04:45:45.898973Z"
     }
   ],
   "known_sources": [
