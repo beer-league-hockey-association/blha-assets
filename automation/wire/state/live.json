@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T00:00:48.799476Z",
+  "updated_at": "2026-11-18T00:15:36.340432Z",
   "seen": [
-    {
-      "key": "4dc9f390ece10dce574bebdb",
-      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
-      "fingerprint": "62af8e40e89eeea4",
-      "title_norm": "calum ritchie (nyi) — ritchie left saturday's game with a lower-body injury and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T00:15:36.174552Z"
-    },
     {
       "key": "134540e503f902e2788b951b",
       "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
@@ -19082,6 +19072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T00:00:48.755152Z"
+    },
+    {
+      "key": "8aa31b5e6cdedde6df00d0bb",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-rielly/1935",
+      "fingerprint": "62e9db2a628b6862",
+      "title_norm": "morgan rielly (tor) — rielly (lower-body) will play tuesday in chicago.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T00:15:36.206711Z"
     }
   ],
   "known_sources": [
