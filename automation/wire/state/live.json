@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T18:00:52.907396Z",
+  "updated_at": "2026-11-18T18:16:02.151454Z",
   "seen": [
-    {
-      "key": "71fe499553b1ee6e7a1a8d72",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-thomas-chabot-out-one-to-two-weeks-with-upper-body-injury",
-      "fingerprint": "7e1228ec16ba9ff7",
-      "title_norm": "senators' thomas chabot out one to two weeks, jake sanderson returning",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T18:15:36.035473Z"
-    },
     {
       "key": "de2524426e22f3db74c86ce2",
       "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
@@ -19072,6 +19062,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T18:00:52.839997Z"
+    },
+    {
+      "key": "b22e108e1bf975aae841849b",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "e99dfb2128b7e5d1",
+      "title_norm": "brandon hagel (tbl) — hagel is considered day-to-day with a lower-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T18:16:01.214258Z"
+    },
+    {
+      "key": "c6579b81845b6e361edb2162",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "dff5d3b33b3609ed",
+      "title_norm": "zemgus girgensons (tbl) — girgensons is day-to-day with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T18:16:01.662698Z"
+    },
+    {
+      "key": "353f95c88907e5452f7c74e8",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-gm-dubas-wont-sacrifice-future-to-make-playoffs",
+      "fingerprint": "7ba0e71b35fcabb6",
+      "title_norm": "penguins gm dubas won't sacrifice future to make playoffs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T18:16:02.112344Z"
     }
   ],
   "known_sources": [
