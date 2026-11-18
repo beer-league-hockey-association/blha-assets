@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T18:16:02.151454Z",
+  "updated_at": "2026-11-18T18:30:38.104207Z",
   "seen": [
     {
       "key": "de2524426e22f3db74c86ce2",
@@ -19092,6 +19092,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T18:16:02.112344Z"
+    },
+    {
+      "key": "1f7e92ef0ba0470053fd581d",
+      "url": "https://www.dailyfaceoff.com/players/news/john-marino/25570",
+      "fingerprint": "8233603ced817ad2",
+      "title_norm": "john marino (uta) — marino (upper-body) returned to practice in a full-contact jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T18:30:37.859062Z"
+    },
+    {
+      "key": "5bd6344d3100a28c82aa0177",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-bedard-having-right-shoulder-evaluated-after-game-exit",
+      "fingerprint": "d1592746e99deafe",
+      "title_norm": "blackhawks' bedard having right shoulder evaluated after game exit",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T18:30:38.059116Z"
     }
   ],
   "known_sources": [
