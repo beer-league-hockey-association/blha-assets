@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T01:00:49.393691Z",
+  "updated_at": "2026-11-18T01:15:39.803712Z",
   "seen": [
     {
       "key": "be24bf3c4e57240850e36cf8",
@@ -19052,6 +19052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T01:00:49.295463Z"
+    },
+    {
+      "key": "d307956a10a91231bf9c88d1",
+      "url": "https://www.sportsnet.ca/nhl/video/oilers-mcdavid-finishes-at-doorstep-for-first-power-play-goal-of-season",
+      "fingerprint": "b4453840e031a544",
+      "title_norm": "oilers' mcdavid finishes at doorstep for first power-play goal of season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T01:15:39.732782Z"
     }
   ],
   "known_sources": [
