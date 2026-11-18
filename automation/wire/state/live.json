@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T10:15:35.001117Z",
+  "updated_at": "2026-11-18T11:45:47.952328Z",
   "seen": [
     {
       "key": "e5c30802bbea468ec7bafacb",
@@ -19262,6 +19262,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T10:15:34.900640Z"
+    },
+    {
+      "key": "4149eeab0033e111b200a6f3",
+      "url": "https://www.dailyfaceoff.com/players/news/samuel-honzek/37733",
+      "fingerprint": "5f39bb2e27b09dd4",
+      "title_norm": "samuel honzek (cgy) — honzek is week-to-week with a wrist injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T11:45:47.872461Z"
     }
   ],
   "known_sources": [
