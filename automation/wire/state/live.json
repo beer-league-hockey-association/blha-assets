@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T17:00:41.180949Z",
+  "updated_at": "2026-11-18T17:15:33.160240Z",
   "seen": [
     {
       "key": "9e775b350a5a232cc0315c73",
@@ -19172,6 +19172,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T17:00:40.741307Z"
+    },
+    {
+      "key": "b547a1b435f96f2a5fec77c5",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-schmaltz/2678",
+      "fingerprint": "daddd2b8d4aabe23",
+      "title_norm": "nick schmaltz (uta) — schmaltz (lower-body) has been placed on ir and is considered week-to-week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T17:15:33.060065Z"
     }
   ],
   "known_sources": [
