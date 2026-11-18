@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T04:45:46.025047Z",
+  "updated_at": "2026-11-18T05:00:47.472157Z",
   "seen": [
     {
       "key": "e0703458da6c5901e0d3802b",
@@ -19202,6 +19202,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T04:45:45.898973Z"
+    },
+    {
+      "key": "c554f3503bb0008ede835e9c",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-lineup-shuffle-pays-off-in-decisive-win-over-panthers",
+      "fingerprint": "f66d8aacb3ae9f85",
+      "title_norm": "oilers' lineup shuffle pays off in decisive win over panthers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T05:00:47.430767Z"
     }
   ],
   "known_sources": [
