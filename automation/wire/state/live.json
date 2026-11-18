@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T14:00:45.603402Z",
+  "updated_at": "2026-11-18T14:45:32.707906Z",
   "seen": [
     {
       "key": "4a21dcceb8e4f9534b63a077",
@@ -19242,6 +19242,16 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-11-18T14:00:45.579961Z"
+    },
+    {
+      "key": "47d9b461cd666956dd38a241",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-must-replace-andersons-energy-get-more-from-dobson",
+      "fingerprint": "5839a73bdd1142fe",
+      "title_norm": "canadiens must replace anderson's energy, get more from dobson",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T14:45:32.671349Z"
     }
   ],
   "known_sources": [
