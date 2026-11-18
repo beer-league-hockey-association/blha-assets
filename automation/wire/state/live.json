@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T00:30:35.066459Z",
+  "updated_at": "2026-11-18T00:45:34.764270Z",
   "seen": [
     {
       "key": "b4050a1c942d1d94d145cef5",
@@ -19052,6 +19052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T00:15:36.206711Z"
+    },
+    {
+      "key": "f8b39c41c8d038acbbf7a001",
+      "url": "https://www.sportsnet.ca/nhl/article/hagel-geekie-out-with-injuries-for-lightning-vs-capitals",
+      "fingerprint": "48e48860dff13cde",
+      "title_norm": "hagel, geekie out with injuries for lightning vs. capitals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T00:45:34.732311Z"
     }
   ],
   "known_sources": [
