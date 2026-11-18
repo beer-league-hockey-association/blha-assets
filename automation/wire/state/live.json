@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T15:00:45.252789Z",
+  "updated_at": "2026-11-18T15:15:35.257905Z",
   "seen": [
-    {
-      "key": "430d911eeff92b2d78b6f8c3",
-      "url": "https://www.nhl.com/news/travis-green-signs-deal-as-ottawa-coach-through-2030-2031-season",
-      "fingerprint": "8724e86b3c8e2445",
-      "title_norm": "senators sign coach green through 2030-31 season",
-      "channel": "nhl-transactions",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T15:15:35.187521Z"
-    },
     {
       "key": "2be39d04e97b26a38bea5ce3",
       "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
@@ -19212,6 +19202,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T14:45:32.671349Z"
+    },
+    {
+      "key": "e449c234c4e80e6208d54e73",
+      "url": "https://theahl.com/news/huberdeau-excited-for-return-to-action",
+      "fingerprint": "5ff0ba159c4080ee",
+      "title_norm": "huberdeau 'excited' for return to action",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-18T15:15:35.144844Z"
     }
   ],
   "known_sources": [
