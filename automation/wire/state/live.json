@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T20:00:42.403147Z",
+  "updated_at": "2026-11-18T20:30:36.044458Z",
   "seen": [
     {
       "key": "fa1901d1ef3793273780b8b7",
@@ -19092,6 +19092,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T20:00:42.281274Z"
+    },
+    {
+      "key": "d8ae7e9275a98661ee8b1c48",
+      "url": "https://www.sportsnet.ca/nhl/article/things-we-think-we-know-oilers-forging-different-identity-under-babcock",
+      "fingerprint": "8c817c3848b7deb9",
+      "title_norm": "things we (think we) know: oilers forging different identity under babcock",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T20:30:35.993598Z"
     }
   ],
   "known_sources": [
