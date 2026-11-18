@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T22:15:35.738543Z",
+  "updated_at": "2026-11-18T22:45:36.910392Z",
   "seen": [
-    {
-      "key": "63d9e11803ac1a0ed6881108",
-      "url": "https://www.dailyfaceoff.com/players/news/sean-couturier/1777",
-      "fingerprint": "b203931f367d8977",
-      "title_norm": "sean couturier (phi) — couturier (undisclosed) is on the ice for warmups and is expected to play vs. colorado.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T22:45:36.867889Z"
-    },
     {
       "key": "acdd3fe5017ee3ddf9ded21d",
       "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
@@ -19052,6 +19042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T22:15:35.635368Z"
+    },
+    {
+      "key": "9a91093fdf88552700e3b510",
+      "url": "https://www.dailyfaceoff.com/players/news/isac-lundestrom/4804",
+      "fingerprint": "7f17d48980f25d43",
+      "title_norm": "isac lundestrom (cbj) — lundestrom (achilies) has been activated from ir and is available vs. chicago on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T22:45:36.817616Z"
     }
   ],
   "known_sources": [
