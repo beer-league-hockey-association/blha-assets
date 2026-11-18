@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T19:45:34.199526Z",
+  "updated_at": "2026-11-18T20:00:42.403147Z",
   "seen": [
-    {
-      "key": "8a2673a3bfd7889f6d77e250",
-      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
-      "fingerprint": "7a214d7253692b7a",
-      "title_norm": "owen tippett (phi) — tippett (upper-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T19:45:48.383755Z"
-    },
     {
       "key": "fa1901d1ef3793273780b8b7",
       "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
@@ -19092,6 +19082,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T19:45:34.099928Z"
+    },
+    {
+      "key": "b20337794b99a23e12c1c4da",
+      "url": "https://www.nhl.com/news/sidney-crosby-knows-pittsburgh-penguins-need-turnaround-to-keep-core-intact",
+      "fingerprint": "2a537923e57931fc",
+      "title_norm": "crosby knows pens need turnaround to keep core intact",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T20:00:42.281274Z"
     }
   ],
   "known_sources": [
