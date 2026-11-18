@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T23:15:37.191879Z",
+  "updated_at": "2026-11-18T23:30:35.322575Z",
   "seen": [
-    {
-      "key": "6c3fc7375b5da89e50c34428",
-      "url": "https://www.dailyfaceoff.com/players/news/william-nylander/2375",
-      "fingerprint": "1fe3951c4cd9a771",
-      "title_norm": "william nylander (tor) — nylander (illness) is on the ice for warmups; he's expected to play vs. the sharks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T23:15:38.909998Z"
-    },
     {
       "key": "529bfba853d6064ef4fed198",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-william-nylander-in-lineup-vs-sharks",
@@ -19032,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T22:45:36.817616Z"
+    },
+    {
+      "key": "0f3e8daf4cfc7d1cd7dfb547",
+      "url": "https://www.sportsnet.ca/nhl/article/wild-keep-winning-big-with-best-start-in-franchise-history",
+      "fingerprint": "ee093dcccfd75acf",
+      "title_norm": "wild keep winning big with best start in franchise history",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T23:30:35.278204Z"
     }
   ],
   "known_sources": [
