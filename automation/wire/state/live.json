@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T01:30:49.492046Z",
+  "updated_at": "2026-11-18T02:15:40.605527Z",
   "seen": [
     {
       "key": "be24bf3c4e57240850e36cf8",
@@ -19072,6 +19072,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T01:30:49.455761Z"
+    },
+    {
+      "key": "dca634d60f205dd83a3f0a1e",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-sam-honzek-out-week-to-week-in-ahl-with-wrist-injury",
+      "fingerprint": "28df6c9bf5f44ac0",
+      "title_norm": "flames' sam honzek out week-to-week in ahl with wrist injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T02:15:40.559761Z"
     }
   ],
   "known_sources": [
