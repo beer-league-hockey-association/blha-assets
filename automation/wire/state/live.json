@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T04:00:49.951911Z",
+  "updated_at": "2026-11-18T04:15:31.184820Z",
   "seen": [
     {
       "key": "e0703458da6c5901e0d3802b",
@@ -19172,6 +19172,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T04:00:49.908210Z"
+    },
+    {
+      "key": "b529b41fc41a9931c9e1685a",
+      "url": "https://www.sportsnet.ca/nhl/article/matt-boldy-scores-2-goals-as-wild-cruise-to-win-over-predators",
+      "fingerprint": "d9c005a1da033bd2",
+      "title_norm": "matt boldy scores 2 goals as wild cruise to win over predators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T04:15:31.112547Z"
     }
   ],
   "known_sources": [
