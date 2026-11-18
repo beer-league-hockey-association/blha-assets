@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T06:15:32.704146Z",
+  "updated_at": "2026-11-18T06:30:41.279244Z",
   "seen": [
     {
       "key": "bdaf2eda7d7422950b741ed9",
@@ -19232,6 +19232,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T06:15:32.584110Z"
+    },
+    {
+      "key": "4bc0f74e4b4d49e3e102ca95",
+      "url": "https://www.nhl.com/news/dallas-stars-vegas-golden-knights-game-recap-november-17-2026",
+      "fingerprint": "4e75159c769e6237",
+      "title_norm": "heiskanen scores ot winner in return, stars rally late past golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T06:30:41.242326Z"
     }
   ],
   "known_sources": [
