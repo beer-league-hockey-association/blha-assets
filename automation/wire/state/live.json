@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T21:00:39.876866Z",
+  "updated_at": "2026-11-18T21:15:45.415008Z",
   "seen": [
-    {
-      "key": "e645243820b307de4038e5f6",
-      "url": "https://www.sportsnet.ca/nhl/article/nhl-unveils-rendering-for-heritage-classic-in-winnipeg",
-      "fingerprint": "17d2995153a8695f",
-      "title_norm": "nhl unveils rendering for heritage classic in winnipeg",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T21:01:19.403040Z"
-    },
     {
       "key": "7ea126f7afa5604e003db3c0",
       "url": "https://www.nhl.com/news/winnipeg-jets-waiting-to-see-what-happens-with-goalie-connor-hellebuyck",
