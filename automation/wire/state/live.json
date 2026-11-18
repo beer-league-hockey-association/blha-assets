@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T21:30:34.855418Z",
+  "updated_at": "2026-11-18T22:15:35.738543Z",
   "seen": [
-    {
-      "key": "7ea126f7afa5604e003db3c0",
-      "url": "https://www.nhl.com/news/winnipeg-jets-waiting-to-see-what-happens-with-goalie-connor-hellebuyck",
-      "fingerprint": "bc9f2f66635fc799",
-      "title_norm": "jets 'waiting to see' what happens with hellebuyck",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T22:00:41.142030Z"
-    },
-    {
-      "key": "d317c02ac6122ee02293ae5d",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-manny-malholtra-says-no-concern-thatcher-demko-misses-season",
-      "fingerprint": "768e3af74a73d46c",
-      "title_norm": "canucks' manny malholtra says no concern thatcher demko misses season",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T22:00:41.735209Z"
-    },
     {
       "key": "63d9e11803ac1a0ed6881108",
       "url": "https://www.dailyfaceoff.com/players/news/sean-couturier/1777",
@@ -19062,6 +19042,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T21:30:34.782613Z"
+    },
+    {
+      "key": "9820e3c2ccdfb0677a073553",
+      "url": "https://www.nhl.com/news/coach-rick-bowness-returns-to-columbus-blue-jackets-after-missing-three-games",
+      "fingerprint": "4e64c1ff2aaaddee",
+      "title_norm": "bowness back with blue jackets, will coach tomorrow",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T22:15:35.635368Z"
     }
   ],
   "known_sources": [
