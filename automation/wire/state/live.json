@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T19:00:42.341739Z",
+  "updated_at": "2026-11-18T19:15:37.053658Z",
   "seen": [
-    {
-      "key": "a08af680f2a5e2fd2a067484",
-      "url": "https://www.sportsnet.ca/nhl/article/rumour-roundup-who-holds-keys-to-hellebuyck-trade",
-      "fingerprint": "61fcb4c0811b370e",
-      "title_norm": "rumour roundup: who holds keys to hellebuyck trade?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T19:00:44.149486Z"
-    },
     {
       "key": "7b8161699b09ecfd4b5b5321",
       "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
@@ -19092,6 +19082,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T19:00:42.243533Z"
+    },
+    {
+      "key": "e0e4e9c9e513931689f70b2e",
+      "url": "https://www.sportsnet.ca/nhl/article/mcdavid-on-a-mission-as-he-chases-200-point-season-and-stanley-cup",
+      "fingerprint": "3bdad89c6278dfab",
+      "title_norm": "mcdavid on a mission as he chases 200-point season and stanley cup",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T19:15:36.984868Z"
     }
   ],
   "known_sources": [
