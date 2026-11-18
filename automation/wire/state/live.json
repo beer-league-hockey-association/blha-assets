@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T00:45:34.764270Z",
+  "updated_at": "2026-11-18T01:00:49.393691Z",
   "seen": [
-    {
-      "key": "b4050a1c942d1d94d145cef5",
-      "url": "https://www.nhl.com/news/columbus-blue-jackets-minnesota-wild-game-recap-october-18-2026",
-      "fingerprint": "18c449f739eecfb3",
-      "title_norm": "kaprizov scores league-leading 10th goal, wild edge blue jackets",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T01:00:36.488781Z"
-    },
-    {
-      "key": "08571049449c3cd31829ecdb",
-      "url": "https://www.sportsnet.ca/nhl/article/kaprizov-wallstedt-carry-wild-past-blue-jackets",
-      "fingerprint": "6c20e0897c5c4137",
-      "title_norm": "kaprizov, wallstedt carry wild past blue jackets",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T01:00:36.782834Z"
-    },
     {
       "key": "be24bf3c4e57240850e36cf8",
       "url": "https://www.nhl.com/news/unmasked-new-ebug-rules-benefit-nhl-goalies-for-load-management",
@@ -19062,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T00:45:34.732311Z"
+    },
+    {
+      "key": "1a77afc489e22db3258a432c",
+      "url": "https://www.dailyfaceoff.com/players/news/beckett-sennecke/36637",
+      "fingerprint": "ffd6b380f6daa832",
+      "title_norm": "beckett sennecke (ana) — sennecke (illness) will not play on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T01:00:49.295463Z"
     }
   ],
   "known_sources": [
