@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T21:15:45.415008Z",
+  "updated_at": "2026-11-18T21:30:34.855418Z",
   "seen": [
     {
       "key": "7ea126f7afa5604e003db3c0",
@@ -19052,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T21:00:39.825937Z"
+    },
+    {
+      "key": "666cceac638359c5ebf8f945",
+      "url": "https://www.nhl.com/news/brian-boucher-proud-dad-watching-son-tyler-nhl-debut",
+      "fingerprint": "4e0764fa8d15976a",
+      "title_norm": "boucher 'so proud' watching son's nhl debut with sens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T21:30:34.782613Z"
     }
   ],
   "known_sources": [
