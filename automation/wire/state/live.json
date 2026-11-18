@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T23:30:35.322575Z",
+  "updated_at": "2026-11-18T23:45:31.303656Z",
   "seen": [
-    {
-      "key": "529bfba853d6064ef4fed198",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-william-nylander-in-lineup-vs-sharks",
-      "fingerprint": "defe026f4cec162f",
-      "title_norm": "maple leafs' william nylander in lineup vs. sharks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T23:43:53.525658Z"
-    },
-    {
-      "key": "d0403d51ae5e9e7ad1f9dd45",
-      "url": "https://www.nhl.com/news/pk-subban-keeping-busy-with-screech-owls-work-as-espn-analyst",
-      "fingerprint": "8dc44e42608d736e",
-      "title_norm": "subban talks 'screech owls,' busy days with nhl.com",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T23:43:53.950639Z"
-    },
-    {
-      "key": "9276a6c66d91a0df2996d7b6",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/5fcefbc1-fea4-4aaa-9770-f83adf66f515",
-      "fingerprint": "aa4267a02833a7ad",
-      "title_norm": "maple leafs on sportsnet: toronto vs. san jose",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T23:43:54.202738Z"
-    },
     {
       "key": "9e99fbe953e5252abe38365b",
       "url": "https://www.dailyfaceoff.com/players/news/john-marino/25570",
