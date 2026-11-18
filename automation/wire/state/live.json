@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T17:45:33.899265Z",
+  "updated_at": "2026-11-18T18:00:52.907396Z",
   "seen": [
-    {
-      "key": "1d342570aa5c0e7411ad5486",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-granlund/1934",
-      "fingerprint": "afdf041818d35913",
-      "title_norm": "mikael granlund (ana) — granlund (upper-body) will return in new york on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T17:45:40.354963Z"
-    },
-    {
-      "key": "07cca6572fed9864b2f7ad93",
-      "url": "https://www.dailyfaceoff.com/players/news/drew-helleson/30429",
-      "fingerprint": "677e9af3abf96415",
-      "title_norm": "drew helleson (ana) — helleson (lower-body) is out vs. new york on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T17:45:40.643259Z"
-    },
-    {
-      "key": "a9891b378cc3ccbaaa6ec300",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-notebook-mckenna-excited-for-stenberg-showdown",
-      "fingerprint": "81d25d3d962e55f2",
-      "title_norm": "maple leafs notebook: mckenna 'excited' for stenberg showdown",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T17:45:40.903306Z"
-    },
-    {
-      "key": "2a96363160e294383381f601",
-      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
-      "fingerprint": "91c36a9c6e286538",
-      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) will be a game-time decision in utah on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T18:00:37.302526Z"
-    },
-    {
-      "key": "47b72787b9e9f42a31c1ee8c",
-      "url": "https://www.dailyfaceoff.com/players/news/samuel-girard/2773",
-      "fingerprint": "66b9f92a220249f9",
-      "title_norm": "samuel girard (pit) — girard (undisclosed) will be a game-time decision in utah on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T18:00:37.698657Z"
-    },
     {
       "key": "71fe499553b1ee6e7a1a8d72",
       "url": "https://www.sportsnet.ca/nhl/article/senators-thomas-chabot-out-one-to-two-weeks-with-upper-body-injury",
@@ -19112,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T17:30:38.847276Z"
+    },
+    {
+      "key": "ec6ca7ec4f1b291c7718a4d6",
+      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
+      "fingerprint": "eb45c93295a1be0a",
+      "title_norm": "jonas siegenthaler (njd) — siegenthaler (illness) will be a game-time decision vs. montreal on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T18:00:52.839997Z"
     }
   ],
   "known_sources": [
