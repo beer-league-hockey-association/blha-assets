@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T16:15:46.825354Z",
+  "updated_at": "2026-11-18T16:30:41.556385Z",
   "seen": [
     {
       "key": "8f2ace37041eb758148b6512",
@@ -19142,6 +19142,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T16:15:46.769972Z"
+    },
+    {
+      "key": "35542438f9055bfeacff693c",
+      "url": "https://www.sportsnet.ca/nhl/article/boston-college-to-retire-johnny-gaudreaus-no-13",
+      "fingerprint": "095e1188b03d6168",
+      "title_norm": "boston college to retire johnny gaudreau's no. 13",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T16:30:41.517462Z"
     }
   ],
   "known_sources": [
