@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T22:45:36.910392Z",
+  "updated_at": "2026-11-18T23:00:35.018741Z",
   "seen": [
-    {
-      "key": "acdd3fe5017ee3ddf9ded21d",
-      "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
-      "fingerprint": "72005138081a24dc",
-      "title_norm": "tyson foerster (phi) — foerster (hand) will not play monday vs. colorado.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T22:45:37.327498Z"
-    },
     {
       "key": "d2c7afdf2bb7757f66fa6bc3",
       "url": "https://www.sportsnet.ca/nhl/article/everybodys-waiting-jets-in-spotlight-with-hellebuyck-suspension-nearing-end",
