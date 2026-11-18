@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T09:15:38.181679Z",
+  "updated_at": "2026-11-18T10:15:35.001117Z",
   "seen": [
     {
       "key": "e5c30802bbea468ec7bafacb",
@@ -19252,6 +19252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T09:00:43.482510Z"
+    },
+    {
+      "key": "246715d1da0c12f18b17d3d1",
+      "url": "https://www.nhl.com/news/nashville-predators-minnesota-wild-game-recap-november-17-2026",
+      "fingerprint": "9286a009a7a84d3a",
+      "title_norm": "boldy has 3 points, wild cruise past predators",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-18T10:15:34.900640Z"
     }
   ],
   "known_sources": [
