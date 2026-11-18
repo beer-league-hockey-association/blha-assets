@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T16:00:44.440768Z",
+  "updated_at": "2026-11-18T16:15:46.825354Z",
   "seen": [
-    {
-      "key": "3b527d9a8df34a84183f5911",
-      "url": "https://www.dailyfaceoff.com/players/news/mackenzie-blackwood/3792",
-      "fingerprint": "eed6a72c1448f8bd",
-      "title_norm": "mackenzie blackwood (col) — blackwood was the first goalie off the ice at the avalanche morning skate.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-19T16:15:34.806934Z"
-    },
-    {
-      "key": "b7c14b2af530d9c82ec8462c",
-      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-ivar-stenberg-san-jose-sharks-2026-27",
-      "fingerprint": "66f94d772715e093",
-      "title_norm": "edge stats: stenberg's early impact with sharks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-19T16:15:35.156577Z"
-    },
-    {
-      "key": "0d4d19fb1251514eafbeefd5",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-notebook-lefty-righty-defence-balance-boosted-by-reinbacher",
-      "fingerprint": "3d3038af7c477b31",
-      "title_norm": "canadiens notebook: lefty-righty defence balance boosted by reinbacher",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T16:15:35.493429Z"
-    },
     {
       "key": "8f2ace37041eb758148b6512",
       "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
@@ -19142,6 +19112,36 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-18T15:15:35.144844Z"
+    },
+    {
+      "key": "2bdf7ee2073641eabc8518d3",
+      "url": "https://www.dailyfaceoff.com/players/news/william-wallinder/33029",
+      "fingerprint": "469bbed5ef525cd9",
+      "title_norm": "william wallinder (det) — wallinder (upper-body) is hopeful to return vs. new york on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T16:15:46.199282Z"
+    },
+    {
+      "key": "aeb0ae82d39ae19f248cce55",
+      "url": "https://www.dailyfaceoff.com/players/news/albert-johansson/30661",
+      "fingerprint": "091d3aa2aa8cab3b",
+      "title_norm": "albert johansson (det) — johansson (undisclosed) is hopeful to return on saturday vs. the islanders.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T16:15:46.476047Z"
+    },
+    {
+      "key": "f00b2bc1f515eb44dcfc594d",
+      "url": "https://www.dailyfaceoff.com/players/news/pytor-kochetkov/30486",
+      "fingerprint": "24cbe42460d6ab69",
+      "title_norm": "pyotr kochetkov (car) — kochetkov (illness) returned to practice on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T16:15:46.769972Z"
     }
   ],
   "known_sources": [
