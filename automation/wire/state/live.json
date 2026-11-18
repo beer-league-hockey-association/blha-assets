@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T11:45:47.952328Z",
+  "updated_at": "2026-11-18T12:00:43.337736Z",
   "seen": [
     {
       "key": "e5c30802bbea468ec7bafacb",
@@ -19272,6 +19272,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-18T11:45:47.872461Z"
+    },
+    {
+      "key": "cd696df5916596e3773384ab",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "dc6674c7673d393f",
+      "title_norm": "zemgus girgensons (tbl) — girgensons left tuesday's game with an undisclosed injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-18T12:00:43.230462Z"
     }
   ],
   "known_sources": [
