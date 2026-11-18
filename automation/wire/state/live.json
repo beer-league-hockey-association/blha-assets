@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T06:30:41.279244Z",
+  "updated_at": "2026-11-18T07:15:34.745705Z",
   "seen": [
     {
       "key": "bdaf2eda7d7422950b741ed9",
@@ -19242,6 +19242,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-18T06:30:41.242326Z"
+    },
+    {
+      "key": "a97c36b5f03e889fdeab5b7a",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-takeaways-rookie-jonathan-castagna-hits-milestone-in-win",
+      "fingerprint": "f94b8735ec379fc1",
+      "title_norm": "flames takeaways: rookie jonathan castagna hits milestone in win",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T07:15:34.673149Z"
     }
   ],
   "known_sources": [
