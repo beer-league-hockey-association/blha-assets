@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T02:15:40.605527Z",
+  "updated_at": "2026-11-18T02:45:38.235497Z",
   "seen": [
     {
       "key": "be24bf3c4e57240850e36cf8",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T02:15:40.559761Z"
+    },
+    {
+      "key": "cb81389edb9b28bbd1ccd956",
+      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-maple-leafs-see-two-goal-deficit-erased-by-ref-reversal",
+      "fingerprint": "1bd0f2a9ef537f4f",
+      "title_norm": "gotta see it: maple leafs see two-goal deficit erased by ref reversal",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T02:45:38.165983Z"
     }
   ],
   "known_sources": [
