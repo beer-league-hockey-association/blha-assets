@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T05:00:47.472157Z",
+  "updated_at": "2026-11-18T05:45:32.253912Z",
   "seen": [
-    {
-      "key": "e0703458da6c5901e0d3802b",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-youngsters-offer-glimpse-of-brighter-future-in-upset-of-hurricanes",
-      "fingerprint": "623e9ca3dd325be7",
-      "title_norm": "flames' youngsters offer glimpse of brighter future in upset of hurricanes",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-19T05:30:38.491973Z"
-    },
     {
       "key": "bdaf2eda7d7422950b741ed9",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-4-e3qnhd7",
@@ -19212,6 +19202,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T05:00:47.430767Z"
+    },
+    {
+      "key": "90c2f5f731011ce3ba9099b9",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-loss-to-blackhawks-really-disappointing-for-hiller",
+      "fingerprint": "e1c3e29c02091ba5",
+      "title_norm": "maple leafs' loss to blackhawks 'really disappointing' for hiller",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T05:45:31.958139Z"
+    },
+    {
+      "key": "8db0e44e5903d533b0c41ac4",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-kings-blank-bruins-to-snap-losing-streak",
+      "fingerprint": "21dbf18851fceaa2",
+      "title_norm": "nhl roundup: kings blank bruins to snap losing streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-18T05:45:32.198563Z"
     }
   ],
   "known_sources": [
