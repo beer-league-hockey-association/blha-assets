@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T15:45:35.355368Z",
+  "updated_at": "2026-11-19T16:00:51.801386Z",
   "seen": [
-    {
-      "key": "687250660e4e2bc59b5eec2b",
-      "url": "https://www.dailyfaceoff.com/players/news/esa-lindell/2517",
-      "fingerprint": "726cdd8b8b3a21c5",
-      "title_norm": "esa lindell (dal) — lindell (lower-body) will be out vs. boston on tuesday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T15:45:37.099701Z"
-    },
     {
       "key": "dbf382632147d98dcaacb780",
       "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
@@ -19022,6 +19012,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T15:45:35.234507Z"
+    },
+    {
+      "key": "f96671bf20918b2ae1f1f0bb",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "c3cecc4aaf8771f0",
+      "title_norm": "brandon hagel (tbl) — hagel (lower-body) has been placed on ir retroactive to november 15th.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T16:00:51.411070Z"
+    },
+    {
+      "key": "51a51f93ec2e28fa79655d0d",
+      "url": "https://www.flohockey.tv/articles/16416207-5-must-watch-ahl-games-this-weekend-nov-20-22-2026",
+      "fingerprint": "f4bdf0e4fbe087ad",
+      "title_norm": "5 games to watch this weekend",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-19T16:00:51.676470Z"
     }
   ],
   "known_sources": [
