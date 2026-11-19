@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T15:15:39.543635Z",
+  "updated_at": "2026-11-19T15:45:35.355368Z",
   "seen": [
     {
       "key": "687250660e4e2bc59b5eec2b",
@@ -19012,6 +19012,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-19T15:15:39.414868Z"
+    },
+    {
+      "key": "37bf7fa1768af6da8479f1b7",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-blankenburg/36299",
+      "fingerprint": "6b9a43c2ad108592",
+      "title_norm": "nick blankenburg (tor) — blankenburg (undisclosed) has returned to morning skate in a non-contact jersey.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T15:45:35.234507Z"
     }
   ],
   "known_sources": [
