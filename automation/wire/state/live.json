@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T05:45:47.854544Z",
+  "updated_at": "2026-11-19T06:00:46.730802Z",
   "seen": [
     {
       "key": "d0626556b78b587a86c33bb6",
@@ -18952,6 +18952,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-19T05:45:47.731293Z"
+    },
+    {
+      "key": "02354b2315ddb03e61d2aa3f",
+      "url": "https://www.nhl.com/news/prime-watch-party-a-hit-with-montreal-canadien-fans",
+      "fingerprint": "a8ec710087ddc750",
+      "title_norm": "prime watch party a hit with montreal fans",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T06:00:46.605650Z"
     }
   ],
   "known_sources": [
