@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T05:15:33.879612Z",
+  "updated_at": "2026-11-19T05:30:31.112341Z",
   "seen": [
     {
       "key": "ccf3161a8072dd63173cfe79",
@@ -18942,6 +18942,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T04:45:37.974032Z"
+    },
+    {
+      "key": "0ffcb819c8324763f26eac15",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-restore-balance-in-bounce-back-win-over-devils",
+      "fingerprint": "dd83d73b70a8878e",
+      "title_norm": "canadiens restore balance in bounce-back win over devils",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T05:30:31.058611Z"
     }
   ],
   "known_sources": [
