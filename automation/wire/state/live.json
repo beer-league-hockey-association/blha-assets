@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T04:15:35.881004Z",
+  "updated_at": "2026-11-19T04:45:38.114533Z",
   "seen": [
     {
       "key": "730451cd82c1638fa632ee42",
@@ -18972,6 +18972,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T04:15:35.835959Z"
+    },
+    {
+      "key": "dd7fa0b754159eb265a96458",
+      "url": "https://www.dailyfaceoff.com/players/news/gavin-brindley/33176",
+      "fingerprint": "e6e0d641e1494a92",
+      "title_norm": "gavin brindley (col) — brindley (upper body) left wednesday's game vs. utah and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T04:45:37.974032Z"
     }
   ],
   "known_sources": [
