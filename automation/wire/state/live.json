@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T19:15:31.749074Z",
+  "updated_at": "2026-11-19T19:30:50.734487Z",
   "seen": [
-    {
-      "key": "656ab8a7c3c30753e7ddfdf4",
-      "url": "https://www.nhl.com/news/brady-tkachuk-return-to-ottawa-will-be-fun-game-for-senators",
-      "fingerprint": "7733aeeaed1ff608",
-      "title_norm": "tkachuk return to ottawa will be 'fun game' for sens",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-20T19:15:45.318727Z"
-    },
     {
       "key": "87a011e873bd9f37600cc91c",
       "url": "https://www.sportsnet.ca/nhl/article/knies-marchenko-brace-for-emotional-reunions-as-maple-leafs-visit-blue-jackets",
@@ -19072,6 +19062,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T19:15:31.646928Z"
+    },
+    {
+      "key": "af83d22c4933d5fdda654b33",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-coach-rick-bowness-ready-to-lead-team-after-missing-three-games",
+      "fingerprint": "aafe5be09b67d3ad",
+      "title_norm": "bowness 'back in the fight' with blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T19:30:50.671248Z"
     }
   ],
   "known_sources": [
