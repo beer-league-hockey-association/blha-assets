@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T03:45:35.133496Z",
+  "updated_at": "2026-11-19T04:00:36.661874Z",
   "seen": [
-    {
-      "key": "25290c8fe4964b8848c2af0a",
-      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
-      "fingerprint": "c729dbbf2083fb9d",
-      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) left monday's game and is questionable for tuesday in montreal.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T03:45:35.626625Z"
-    },
-    {
-      "key": "337e58b6edc3d9d476db4833",
-      "url": "https://www.sportsnet.ca/nhl/article/ducks-coach-joel-quenneville-our-top-guys-werent-very-good-vs-rangers",
-      "fingerprint": "137152da0d607cfc",
-      "title_norm": "ducks coach joel quenneville: 'our top guys weren't very good' vs. rangers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T03:45:35.931846Z"
-    },
     {
       "key": "e7b65c736577ba86fbe6c307",
       "url": "https://www.nhl.com/news/pittsburgh-penguins-utah-mammoth-game-recap-october-19-2026",
@@ -18972,6 +18952,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T03:45:35.071569Z"
+    },
+    {
+      "key": "d3aa88fbc9aa2f8869344b3d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-end-power-play-drought-in-win-hand-hellebuyck-1st-devils-loss",
+      "fingerprint": "c56a3892be6b3b7a",
+      "title_norm": "canadiens end power-play drought in win, hand hellebuyck 1st devils loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T04:00:36.624611Z"
     }
   ],
   "known_sources": [
