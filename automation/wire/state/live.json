@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T05:00:37.543659Z",
+  "updated_at": "2026-11-19T05:15:33.879612Z",
   "seen": [
-    {
-      "key": "8c63fb18db7bb7ace3722007",
-      "url": "https://www.sportsnet.ca/nhl/video/jets-face-hellebuyck-decision-ahead-of-heritage-classic",
-      "fingerprint": "98f25d5e3a97575b",
-      "title_norm": "jets face hellebuyck decision ahead of heritage classic",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T05:00:38.853343Z"
-    },
     {
       "key": "ccf3161a8072dd63173cfe79",
       "url": "https://www.sportsnet.ca/nhl/video/how-will-senators-fans-welcome-tkachuk-back-to-ottawa",
