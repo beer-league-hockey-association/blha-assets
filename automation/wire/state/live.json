@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T16:15:41.925311Z",
+  "updated_at": "2026-11-19T16:45:36.779292Z",
   "seen": [
-    {
-      "key": "2ba2be76b7796c2bf33eda81",
-      "url": "https://www.sportsnet.ca/nhl/article/brady-tkachuk-says-hell-donate-jerseys-thrown-on-ice-in-return-game-to-ottawa",
-      "fingerprint": "b12c40725fd01790",
-      "title_norm": "brady tkachuk says he'll donate jerseys thrown on ice in return game to ottawa",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T16:30:36.340486Z"
-    },
     {
       "key": "cdd7608a85e1d4cd7419e694",
       "url": "https://www.dailyfaceoff.com/players/news/justin-danforth/28122",
@@ -18992,6 +18982,36 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-19T16:15:41.918321Z"
+    },
+    {
+      "key": "4f1643fe7b88eb6c19dbd554",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "3aff48a84402245d",
+      "title_norm": "connor bedard (chi) — bedard (shoulder) will not travel on the upcoming road trip and is without a timeline to return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T16:45:36.111763Z"
+    },
+    {
+      "key": "284439e64ddf69e1059d2326",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-demelo/2033",
+      "fingerprint": "f3bbec149891fa06",
+      "title_norm": "dylan demelo (wpg) — demelo (lower-body) is expected to be out for 4-6 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T16:45:36.373357Z"
+    },
+    {
+      "key": "5d38cdcb9d72cc86555ebc39",
+      "url": "https://www.dailyfaceoff.com/players/news/nicholas-robertson/29254",
+      "fingerprint": "6d9476dbc6c019c9",
+      "title_norm": "nicholas robertson (pit) — robertson (undisclosed) left morning skate early and will be a game-time decision vs. st. louis.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T16:45:36.686767Z"
     }
   ],
   "known_sources": [
