@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T17:45:32.316271Z",
+  "updated_at": "2026-11-19T18:00:51.580063Z",
   "seen": [
-    {
-      "key": "37497481e454b21c99c0c3c8",
-      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-fantilli-says-playing-with-disgruntled-teammate-would-be-nightmare",
-      "fingerprint": "0f4f584a56965395",
-      "title_norm": "blue jackets' fantilli says playing with disgruntled teammate would be 'nightmare'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T18:00:41.906254Z"
-    },
     {
       "key": "1f6e88b35a3487894c186c5e",
       "url": "https://www.sportsnet.ca/nhl/article/how-gavin-mckennas-first-10-games-compare-to-other-first-overall-picks",
@@ -19022,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T17:45:32.245251Z"
+    },
+    {
+      "key": "630625f97fc907fc5e600971",
+      "url": "https://www.dailyfaceoff.com/players/news/william-wallinder/33029",
+      "fingerprint": "bc35eaf4ce7670ee",
+      "title_norm": "william wallinder (det) — wallinder (upper-body) is questionable for saturday vs. new york.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:00:51.475620Z"
     }
   ],
   "known_sources": [
