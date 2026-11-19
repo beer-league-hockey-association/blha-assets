@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T03:00:38.440350Z",
+  "updated_at": "2026-11-19T03:30:43.135250Z",
   "seen": [
-    {
-      "key": "9d49eb860cc0b88687387e1b",
-      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
-      "fingerprint": "7ba5aac2603c145c",
-      "title_norm": "bryan rust (pit) — rust left monday's game with a lower-body injury and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T03:30:36.016982Z"
-    },
     {
       "key": "25290c8fe4964b8848c2af0a",
       "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
@@ -18932,6 +18922,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T03:00:38.306998Z"
+    },
+    {
+      "key": "bb095e704c156693e1ba162c",
+      "url": "https://www.nhl.com/news/boston-bruins-detroit-red-wings-game-recap-november-18-2026",
+      "fingerprint": "1a493c9587737de4",
+      "title_norm": "pastrnak has goal, assist, bruins end 3-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T03:30:42.470295Z"
+    },
+    {
+      "key": "34866ce6b7960f98e1bac86c",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-bolduc/31240",
+      "fingerprint": "ccb2c6805506ddfa",
+      "title_norm": "zack bolduc (mtl) — bolduc (undisclosed) left wednesday game vs. new jersey and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T03:30:42.801484Z"
+    },
+    {
+      "key": "264a70813f5dd5a98aeda831",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-bolduc-exits-vs-devils-with-apparent-injury",
+      "fingerprint": "cccff2d277ab5b77",
+      "title_norm": "canadiens' bolduc exits vs. devils with apparent injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T03:30:43.090464Z"
     }
   ],
   "known_sources": [
