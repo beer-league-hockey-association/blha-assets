@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-18T23:45:31.303656Z",
+  "updated_at": "2026-11-19T00:30:39.649685Z",
   "seen": [
     {
       "key": "9e99fbe953e5252abe38365b",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-18T23:30:35.278204Z"
+    },
+    {
+      "key": "01c2cb34d87a0c630718e579",
+      "url": "https://www.dailyfaceoff.com/players/news/jonas-siegenthaler/3782",
+      "fingerprint": "3a101910ce2b28b4",
+      "title_norm": "jonas siegenthaler (njd) — siegenthaler (illness) is on the ice for warmups and expected to play wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T00:30:39.552242Z"
     }
   ],
   "known_sources": [
