@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T22:00:40.290957Z",
+  "updated_at": "2026-11-19T23:00:47.486125Z",
   "seen": [
-    {
-      "key": "6d7728713b29e6ddb76fe1e2",
-      "url": "https://www.dailyfaceoff.com/players/news/judd-caulfield/30440",
-      "fingerprint": "6bdefedf02c2afe5",
-      "title_norm": "judd caulfield (ana) — caulfield (personal) returned to anaheim for the birth of his child and will not play tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T22:45:36.020518Z"
-    },
-    {
-      "key": "c7d824073dfa09d38b4e4314",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/b0d0e175-3802-4eeb-9b34-a2d768cd35b5",
-      "fingerprint": "7494afc78dd23caa",
-      "title_norm": "maple leafs on sportsnet: toronto vs. columbus",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T23:00:41.825847Z"
-    },
-    {
-      "key": "222dfd676fac1acab77f9fd7",
-      "url": "https://www.sportsnet.ca/nhl/video/happy-to-be-here-marchenko-talks-trade-to-toronto-and-first-leafs-hat-trick",
-      "fingerprint": "a1dc22b637f76d1a",
-      "title_norm": "'happy to be here': marchenko talks trade to toronto and first leafs hat trick",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T23:00:41.829841Z"
-    },
     {
       "key": "75d0d0a0981077feff7384b7",
       "url": "https://www.sportsnet.ca/nhl/video/marchenko-redirects-puck-past-greaves-to-score-against-former-team",
@@ -19012,6 +18982,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T21:30:39.474499Z"
+    },
+    {
+      "key": "04ae21afcab2c3a5811d0409",
+      "url": "https://www.sportsnet.ca/nhl/article/how-scheifele-proved-doubters-wrong-and-etched-name-into-jets-lore",
+      "fingerprint": "e7f4e2a1252eb3d5",
+      "title_norm": "how scheifele proved doubters wrong and etched name into jets lore",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T23:00:47.161468Z"
+    },
+    {
+      "key": "fe9ba2deab4426ac32769c7f",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-checking-in-on-all-32-coaches",
+      "fingerprint": "a9885e48ca919668",
+      "title_norm": "nhl power rankings: checking in on all 32 coaches",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T23:00:47.435945Z"
     }
   ],
   "known_sources": [
