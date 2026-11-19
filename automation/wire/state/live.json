@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T13:45:35.161408Z",
+  "updated_at": "2026-11-19T14:00:37.835591Z",
   "seen": [
-    {
-      "key": "3a93651f4cc3a0bcbda6b52d",
-      "url": "https://www.sportsnet.ca/nhl/article/analyzing-why-matthew-knies-has-cooled-after-a-hot-start-for-blue-jackets",
-      "fingerprint": "7c407c41d9abee33",
-      "title_norm": "analyzing why matthew knies has cooled after a hot start for blue jackets",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T13:45:41.710099Z"
-    },
     {
       "key": "29916e3ec04e651fffd98e39",
       "url": "https://www.nhl.com/news/nhl-tonight-to-celebrate-5000th-episode-october-27-2026",
