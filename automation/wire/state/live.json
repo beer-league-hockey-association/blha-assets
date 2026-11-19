@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T05:30:31.112341Z",
+  "updated_at": "2026-11-19T05:45:47.854544Z",
   "seen": [
-    {
-      "key": "ccf3161a8072dd63173cfe79",
-      "url": "https://www.sportsnet.ca/nhl/video/how-will-senators-fans-welcome-tkachuk-back-to-ottawa",
-      "fingerprint": "889228ab587f3730",
-      "title_norm": "how will senators fans welcome tkachuk back to ottawa?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T05:45:34.768967Z"
-    },
     {
       "key": "d0626556b78b587a86c33bb6",
       "url": "https://www.sportsnet.ca/nhl/article/michkov-scores-twice-as-flyers-beat-avalanche-for-second-straight-win",
@@ -18952,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T05:30:31.058611Z"
+    },
+    {
+      "key": "eb17d126c310b8a4c5e9b53d",
+      "url": "https://www.nhl.com/news/winter-classic-jerseys-for-colorado-avalanche-utah-mammoth-reach-new-heights",
+      "fingerprint": "1cfde3222c049199",
+      "title_norm": "mammoth players, fans love winter classic jerseys",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T05:45:47.731293Z"
     }
   ],
   "known_sources": [
