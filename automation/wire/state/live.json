@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T08:00:34.049632Z",
+  "updated_at": "2026-11-19T08:30:45.481149Z",
   "seen": [
-    {
-      "key": "d0626556b78b587a86c33bb6",
-      "url": "https://www.sportsnet.ca/nhl/article/michkov-scores-twice-as-flyers-beat-avalanche-for-second-straight-win",
-      "fingerprint": "ad114364955a48e7",
-      "title_norm": "michkov scores twice as flyers beat avalanche for second straight win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T08:15:37.025904Z"
-    },
     {
       "key": "3a93651f4cc3a0bcbda6b52d",
       "url": "https://www.sportsnet.ca/nhl/article/analyzing-why-matthew-knies-has-cooled-after-a-hot-start-for-blue-jackets",
