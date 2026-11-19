@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T18:30:37.335681Z",
+  "updated_at": "2026-11-19T18:45:43.540006Z",
   "seen": [
-    {
-      "key": "1f6e88b35a3487894c186c5e",
-      "url": "https://www.sportsnet.ca/nhl/article/how-gavin-mckennas-first-10-games-compare-to-other-first-overall-picks",
-      "fingerprint": "c1ec7b4133d29b5c",
-      "title_norm": "how gavin mckenna's first 10 games compare to other first-overall picks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T18:30:40.627168Z"
-    },
-    {
-      "key": "c4a3563e5ffb02cfae1e99f9",
-      "url": "https://www.nhl.com/senators/news/andlauer-reflects-on-a-foundation-growing-stronger-by-the-day-on-as-he-enters-his-fourth-season-as-senators-owner",
-      "fingerprint": "717bb65d6378bd07",
-      "title_norm": "sens' foundation growing stronger by the day",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-20T18:30:40.947358Z"
-    },
-    {
-      "key": "24d455a2d1bb692ca0b952bb",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
-      "fingerprint": "e2ee9b49ac8aba05",
-      "title_norm": "mikael backlund (cgy) — backlund (upper-body did not practice on tuesday and is day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T18:45:38.946832Z"
-    },
     {
       "key": "656ab8a7c3c30753e7ddfdf4",
       "url": "https://www.nhl.com/news/brady-tkachuk-return-to-ottawa-will-be-fun-game-for-senators",
@@ -19052,6 +19022,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T18:30:37.268858Z"
+    },
+    {
+      "key": "a21499fbe2c7eef643e1e3bc",
+      "url": "https://www.dailyfaceoff.com/players/news/beckett-sennecke/36637",
+      "fingerprint": "5bcb3e613e50c562",
+      "title_norm": "beckett sennecke (ana) — sennecke (illness) is expected to return vs. colorado on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:45:42.712265Z"
+    },
+    {
+      "key": "3628165753ff1e98347cc814",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "cef84635a937c6b6",
+      "title_norm": "brad marchand (fla) — marchand (knee) is nearing a return and will be evaluated by doctors on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:45:43.199808Z"
+    },
+    {
+      "key": "8b0d9eed4d77a55e93f420f5",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "0e9a1af698fcb640",
+      "title_norm": "aleksander barkov (fla) — barkov (knee) is nearing a return and will be evaluated by doctors on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:45:43.453688Z"
     }
   ],
   "known_sources": [
