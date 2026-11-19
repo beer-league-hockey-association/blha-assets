@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T06:00:46.730802Z",
+  "updated_at": "2026-11-19T06:30:45.846407Z",
   "seen": [
     {
       "key": "d0626556b78b587a86c33bb6",
@@ -18962,6 +18962,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-19T06:00:46.605650Z"
+    },
+    {
+      "key": "21721bcd01fd55e0e49f7793",
+      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-nhl-awards-leader-at-quarter-mark",
+      "fingerprint": "a48260ab1ef8b365",
+      "title_norm": "rosen's nhl awards leaders after 1st quarter",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T06:30:45.291663Z"
+    },
+    {
+      "key": "7e74b3208f8c54630a75a3de",
+      "url": "https://www.nhl.com/news/colorado-avalanche-utah-mammoth-game-recap-november-18-2026",
+      "fingerprint": "0238b490184df311",
+      "title_norm": "trocheck, stenlund help mammoth defeat avalanche to end six-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T06:30:45.730541Z"
     }
   ],
   "known_sources": [
