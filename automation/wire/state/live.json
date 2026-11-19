@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T18:59:38.632901Z",
+  "updated_at": "2026-11-19T19:15:31.749074Z",
   "seen": [
     {
       "key": "656ab8a7c3c30753e7ddfdf4",
@@ -19062,6 +19062,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T18:59:38.555769Z"
+    },
+    {
+      "key": "6e15bd3bf42411e4ee2b11a5",
+      "url": "https://www.dailyfaceoff.com/players/news/beckett-sennecke/36637",
+      "fingerprint": "05d01b7f5bcec7db",
+      "title_norm": "beckett sennecke (ana) — sennecke (illness) will return in colorado on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T19:15:31.646928Z"
     }
   ],
   "known_sources": [
