@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T03:30:43.135250Z",
+  "updated_at": "2026-11-19T03:45:35.133496Z",
   "seen": [
     {
       "key": "25290c8fe4964b8848c2af0a",
@@ -18952,6 +18952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T03:30:43.090464Z"
+    },
+    {
+      "key": "76e56b2f031fe1c11a1182dc",
+      "url": "https://www.nhl.com/news/montreal-canadiens-new-jersey-devils-game-recap-november-18-2026",
+      "fingerprint": "35dfa908bcd98556",
+      "title_norm": "canadiens hand hellebuyck first loss in eight games with devils",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T03:45:34.815461Z"
+    },
+    {
+      "key": "902474bc0786c5fe47fc2f0f",
+      "url": "https://www.sportsnet.ca/nhl/article/bruins-beat-red-wings-spoil-detroits-centennial-celebration-game",
+      "fingerprint": "af001076253ac54c",
+      "title_norm": "bruins beat red wings, spoil detroit's centennial celebration game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T03:45:35.071569Z"
     }
   ],
   "known_sources": [
