@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T19:30:50.734487Z",
+  "updated_at": "2026-11-19T19:45:32.857648Z",
   "seen": [
     {
       "key": "87a011e873bd9f37600cc91c",
@@ -19072,6 +19072,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-19T19:30:50.671248Z"
+    },
+    {
+      "key": "bb629c5e1b4fd013ea8b2b52",
+      "url": "https://www.nhl.com/news/drew-doughty-confident-he-will-sign-new-contract-with-kings",
+      "fingerprint": "e5553cf914d4e17b",
+      "title_norm": "doughty confident he'll sign new deal with kings",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T19:45:32.426805Z"
+    },
+    {
+      "key": "621807d4e3513063c5c36b04",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanches-landeskog-kelly-fined-for-incidents-with-mammoth",
+      "fingerprint": "2dbc56cbb3101a54",
+      "title_norm": "avalanche's landeskog, kelly fined for incidents with mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T19:45:32.795534Z"
     }
   ],
   "known_sources": [
