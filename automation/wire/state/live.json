@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T23:00:47.486125Z",
+  "updated_at": "2026-11-19T23:45:32.429948Z",
   "seen": [
     {
       "key": "75d0d0a0981077feff7384b7",
@@ -19002,6 +19002,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T23:00:47.435945Z"
+    },
+    {
+      "key": "23172f34598f0a142c763468",
+      "url": "https://www.dailyfaceoff.com/players/news/jean-gabriel-pageau/2057",
+      "fingerprint": "a382d4dceb152710",
+      "title_norm": "jean-gabriel pageau (nyi) — pageau (lower-body) is on the ice for warmups and is expected to play in winnipeg.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T23:45:32.080875Z"
+    },
+    {
+      "key": "ce114b9eaa533f748f273d95",
+      "url": "https://www.dailyfaceoff.com/players/news/nicholas-robertson/29254",
+      "fingerprint": "cd8f1bf105d914c2",
+      "title_norm": "nicholas robertson (pit) — robertson (undisclosed) will not play thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T23:45:32.331294Z"
     }
   ],
   "known_sources": [
