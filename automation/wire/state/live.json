@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T20:31:03.829541Z",
+  "updated_at": "2026-11-19T20:45:47.395000Z",
   "seen": [
-    {
-      "key": "4d6102dd64b11840e03205cc",
-      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
-      "fingerprint": "41a1ea3ece4e91f2",
-      "title_norm": "ben kindel (pit) — kindel (undisclosed) is out indefinitely.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T20:45:34.865274Z"
-    },
     {
       "key": "1de206046f1f095fa388d379",
       "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
