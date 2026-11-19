@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T17:30:39.414489Z",
+  "updated_at": "2026-11-19T17:45:32.316271Z",
   "seen": [
-    {
-      "key": "e3c13518d76c390178e521da",
-      "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
-      "fingerprint": "0f8a25838aa646fa",
-      "title_norm": "brandon montour (sea) — montour (lower-body) will be a game-time decision vs. detroit on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T17:33:21.165721Z"
-    },
     {
       "key": "37497481e454b21c99c0c3c8",
       "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-fantilli-says-playing-with-disgruntled-teammate-would-be-nightmare",
@@ -19002,6 +18992,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T17:30:39.302651Z"
+    },
+    {
+      "key": "8bfa4f2c399306fb07e470bc",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-dorofeyev/30622",
+      "fingerprint": "ff13105fc077cdcb",
+      "title_norm": "pavel dorofeyev (nyr) — dorofeyev (undisclosed) skated on thursday but is still day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T17:45:31.834043Z"
+    },
+    {
+      "key": "8acd3bdad1018133b5c3caac",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-bolduc/31240",
+      "fingerprint": "7d0ec505ce5d7172",
+      "title_norm": "zack bolduc (mtl) — bolduc (undisclosed) will be out vs. carolina on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T17:45:32.060545Z"
+    },
+    {
+      "key": "f2057753b6d057bc7ab79d50",
+      "url": "https://www.sportsnet.ca/nhl/article/sources-edvinsson-passed-on-offer-sheets-to-avoid-staying-in-detroit",
+      "fingerprint": "85d45725d1392ca1",
+      "title_norm": "sources: edvinsson passed on offer sheets to avoid staying in detroit",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T17:45:32.245251Z"
     }
   ],
   "known_sources": [
