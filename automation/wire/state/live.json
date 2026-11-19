@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T18:45:43.540006Z",
+  "updated_at": "2026-11-19T18:59:38.632901Z",
   "seen": [
     {
       "key": "656ab8a7c3c30753e7ddfdf4",
@@ -19052,6 +19052,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T18:45:43.453688Z"
+    },
+    {
+      "key": "c33ce47838efe7d19a34cfd3",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-melanson/31241",
+      "fingerprint": "22d90e21f8643399",
+      "title_norm": "jacob melanson (sea) — melanson (upper-body) is a game-time decision vs. vancouver on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:59:38.555769Z"
     }
   ],
   "known_sources": [
