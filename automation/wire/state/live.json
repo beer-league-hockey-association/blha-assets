@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T06:30:45.846407Z",
+  "updated_at": "2026-11-19T08:00:34.049632Z",
   "seen": [
     {
       "key": "d0626556b78b587a86c33bb6",
@@ -18982,6 +18982,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-19T06:30:45.730541Z"
+    },
+    {
+      "key": "06c603d196ef45b69f5edeab",
+      "url": "https://www.nhl.com/news/utah-mammoth-colorado-avalanche-stoke-rivalry-ahead-of-winter-classic",
+      "fingerprint": "5a1fd2f909f22d5a",
+      "title_norm": "mammoth, avalanche stoke rivalry ahead of winter classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T08:00:33.979018Z"
     }
   ],
   "known_sources": [
