@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T17:00:56.748551Z",
+  "updated_at": "2026-11-19T17:15:50.826088Z",
   "seen": [
-    {
-      "key": "f99adb2ff22f2f6f29a8a84e",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
-      "fingerprint": "c70a9ca6c51c3ee4",
-      "title_norm": "mikael backlund (cgy) — backlund (undisclosed) did not practice on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T17:15:38.232675Z"
-    },
-    {
-      "key": "8d1fec02f34a781f4bcb3f2c",
-      "url": "https://www.dailyfaceoff.com/players/news/ross-johnston/3759",
-      "fingerprint": "ac50dce5b0a8ca9a",
-      "title_norm": "ross johnston (stl) — johnston has been placed on ir with a lower-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T17:15:38.524083Z"
-    },
     {
       "key": "e3c13518d76c390178e521da",
       "url": "https://www.dailyfaceoff.com/players/news/brandon-montour/2724",
@@ -18982,6 +18962,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T17:00:56.688097Z"
+    },
+    {
+      "key": "bd55fc6cfda44111de0f6a7b",
+      "url": "https://www.dailyfaceoff.com/players/news/jean-gabriel-pageau/2057",
+      "fingerprint": "854f2dbbb01e6ce0",
+      "title_norm": "jean-gabriel pageau (nyi) — pageau (lower-body) is a game-time decision in winnipeg on thursday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T17:15:50.215781Z"
+    },
+    {
+      "key": "2c201b4c04bfc4777c06fc27",
+      "url": "https://www.nhl.com/news/blackhawks-connor-bedard-may-need-shoulder-surgery",
+      "fingerprint": "967b22f07f7a0fe4",
+      "title_norm": "bedard may need surgery, no timeline for return",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-19T17:15:50.464042Z"
+    },
+    {
+      "key": "01fcb83d15bcbad89b078213",
+      "url": "https://www.sportsnet.ca/nhl/video/maple-leafs-hiller-details-lineup-changes-ahead-of-tilt-with-kings",
+      "fingerprint": "15164fbe1925528c",
+      "title_norm": "maple leafs' hiller details lineup changes ahead of tilt with kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T17:15:50.782791Z"
     }
   ],
   "known_sources": [
