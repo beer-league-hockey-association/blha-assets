@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T15:00:42.519464Z",
+  "updated_at": "2026-11-19T15:15:39.543635Z",
   "seen": [
-    {
-      "key": "0a1e3c0a31c0f450580671eb",
-      "url": "https://www.dailyfaceoff.com/players/news/connor-brown/2181",
-      "fingerprint": "46b29f65f0331c98",
-      "title_norm": "connor brown (njd) — brown (lower-body) will make his season debut vs. colorado on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T15:00:43.946440Z"
-    },
     {
       "key": "687250660e4e2bc59b5eec2b",
       "url": "https://www.dailyfaceoff.com/players/news/esa-lindell/2517",
@@ -19012,6 +19002,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-19T15:00:42.393768Z"
+    },
+    {
+      "key": "b8883eb18c0c77d11b5323ba",
+      "url": "https://www.nhl.com/senators/news/after-the-buzzer-a-fairytale-evening-for-the-boucher-family-ends-in-fitting-fashion",
+      "fingerprint": "a5185f1c5baddb68",
+      "title_norm": "boucher's fairy-tale evening ends in fitting fashion",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-19T15:15:39.414868Z"
     }
   ],
   "known_sources": [
