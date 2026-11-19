@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T02:45:33.053486Z",
+  "updated_at": "2026-11-19T03:00:38.440350Z",
   "seen": [
-    {
-      "key": "ebeddc8ef859c4b19439c9ee",
-      "url": "https://www.sportsnet.ca/nhl/article/mckenna-scores-game-winner-to-lift-leafs-over-sharks-snap-three-game-skid",
-      "fingerprint": "bb3ebbd338bf3e5a",
-      "title_norm": "mckenna scores game-winner to lift leafs over sharks, snap three-game skid",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T02:45:40.511748Z"
-    },
-    {
-      "key": "eedef537c6819c68994cd191",
-      "url": "https://www.nhl.com/news/san-jose-sharks-toronto-maple-leafs-game-recap-october-19-2026",
-      "fingerprint": "c34f14a20d0f1eea",
-      "title_norm": "mckenna scores go-ahead goal in third, lifts maple leafs past stenberg, sharks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-20T03:00:36.646413Z"
-    },
     {
       "key": "9d49eb860cc0b88687387e1b",
       "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
@@ -18932,6 +18912,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T02:45:32.938094Z"
+    },
+    {
+      "key": "f5938a783d6ac251ba669ae4",
+      "url": "https://www.dailyfaceoff.com/players/news/scott-wedgewood/1873",
+      "fingerprint": "09df6284cdd23690",
+      "title_norm": "scott wedgewood (col) — wedgewood (illness) will serve as the backup on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T03:00:38.048202Z"
+    },
+    {
+      "key": "160fa173d4b4eea6edadc064",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-brock-boeser-embracing-leadership-role-amid-rebuilding-season",
+      "fingerprint": "347cc43a90be3f49",
+      "title_norm": "canucks' brock boeser embracing leadership role amid rebuilding season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T03:00:38.306998Z"
     }
   ],
   "known_sources": [
