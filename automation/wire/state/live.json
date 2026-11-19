@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T14:30:36.190372Z",
+  "updated_at": "2026-11-19T14:45:40.614391Z",
   "seen": [
     {
       "key": "0a1e3c0a31c0f450580671eb",
@@ -18992,6 +18992,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T13:45:35.110045Z"
+    },
+    {
+      "key": "955d2d034cd43a2f5de716da",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-looking-at-the-top-calder-trophy-candidates",
+      "fingerprint": "d3d51a392719c3b0",
+      "title_norm": "scout's analysis: looking at the top calder trophy candidates",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T14:45:40.554250Z"
     }
   ],
   "known_sources": [
