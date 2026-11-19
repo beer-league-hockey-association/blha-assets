@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T02:30:39.174400Z",
+  "updated_at": "2026-11-19T02:45:33.053486Z",
   "seen": [
     {
       "key": "ebeddc8ef859c4b19439c9ee",
@@ -18922,6 +18922,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T00:30:39.552242Z"
+    },
+    {
+      "key": "0e9fde076e1850fe0f013b95",
+      "url": "https://www.dailyfaceoff.com/players/news/mikhail-sergachev/2639",
+      "fingerprint": "f1f9968a5f563238",
+      "title_norm": "mikhail sergachev (uta) — sergachev (undisclosed) is on the ice for warmups and will play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-19T02:45:32.938094Z"
     }
   ],
   "known_sources": [
