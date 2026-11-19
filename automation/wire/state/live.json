@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T12:45:31.672221Z",
+  "updated_at": "2026-11-19T13:45:35.161408Z",
   "seen": [
     {
       "key": "3a93651f4cc3a0bcbda6b52d",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T12:45:31.640271Z"
+    },
+    {
+      "key": "a5a427e54274b7845f8f8663",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/gta-grand-trade-anxiety",
+      "fingerprint": "c1b615611f1240d7",
+      "title_norm": "32 thoughts podcast: breaking down what's next for the maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T13:45:35.110045Z"
     }
   ],
   "known_sources": [
