@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T14:45:40.614391Z",
+  "updated_at": "2026-11-19T15:00:42.519464Z",
   "seen": [
     {
       "key": "0a1e3c0a31c0f450580671eb",
@@ -19002,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T14:45:40.554250Z"
+    },
+    {
+      "key": "e71dcd38cfab6737887afb0c",
+      "url": "https://www.nhl.com/news/topic/short-shifts/flames-support-jonathan-huberdeau-in-first-game-back",
+      "fingerprint": "70031933f009a2ca",
+      "title_norm": "flames, families support huberdeau in first game back",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-19T15:00:42.393768Z"
     }
   ],
   "known_sources": [
