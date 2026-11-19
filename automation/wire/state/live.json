@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T18:15:36.450861Z",
+  "updated_at": "2026-11-19T18:30:37.335681Z",
   "seen": [
     {
       "key": "1f6e88b35a3487894c186c5e",
@@ -19032,6 +19032,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T18:15:36.372138Z"
+    },
+    {
+      "key": "57048e986009d425a2530d67",
+      "url": "https://www.sportsnet.ca/nhl/article/mckenna-promoted-nylander-dropped-as-maple-leafs-mix-lines",
+      "fingerprint": "00e00c65098dc79f",
+      "title_norm": "mckenna promoted, nylander dropped as maple leafs mix lines",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:30:36.972667Z"
+    },
+    {
+      "key": "dee29c6908bf49c2a529f57c",
+      "url": "https://www.sportsnet.ca/nhl/article/what-we-know-and-dont-know-about-maple-leafs-2027-first-round-pick",
+      "fingerprint": "374dc31251d3dfd1",
+      "title_norm": "what we know (and don't know) about maple leafs' 2027 first-round pick",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T18:30:37.268858Z"
     }
   ],
   "known_sources": [
