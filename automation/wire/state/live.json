@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T04:00:36.661874Z",
+  "updated_at": "2026-11-19T04:15:35.881004Z",
   "seen": [
-    {
-      "key": "e7b65c736577ba86fbe6c307",
-      "url": "https://www.nhl.com/news/pittsburgh-penguins-utah-mammoth-game-recap-october-19-2026",
-      "fingerprint": "951b5c8568ef9415",
-      "title_norm": "mammoth hold off late surge in 3rd by penguins",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-20T04:15:32.518153Z"
-    },
     {
       "key": "730451cd82c1638fa632ee42",
       "url": "https://www.nhl.com/news/connor-mcdavid-off-to-torrid-start-with-edmonton-oilers",
@@ -18962,6 +18952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-19T04:00:36.624611Z"
+    },
+    {
+      "key": "660e413143b3111e9787a6bb",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-tyler-boucher-to-have-father-brian-boucher-call-game-vs-flyers",
+      "fingerprint": "c4d2b2282fb9b527",
+      "title_norm": "senators' tyler boucher to have father brian boucher call game vs. flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T04:15:35.601091Z"
+    },
+    {
+      "key": "2bfd0bea1b1ef0af08433973",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-huberdeau-dishes-trio-of-assists-in-first-ahl-rehab-game",
+      "fingerprint": "20a9f584466c3e80",
+      "title_norm": "flames' huberdeau dishes trio of assists in first ahl rehab game",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T04:15:35.835959Z"
     }
   ],
   "known_sources": [
