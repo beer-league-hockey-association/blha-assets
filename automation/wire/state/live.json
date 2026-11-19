@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T08:30:45.481149Z",
+  "updated_at": "2026-11-19T10:15:33.602505Z",
   "seen": [
     {
       "key": "3a93651f4cc3a0bcbda6b52d",
@@ -18982,6 +18982,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-19T08:00:33.979018Z"
+    },
+    {
+      "key": "e3ddaf5a4278a4db66d3e8b5",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-8--Is-Schaefer-A-Top-5-D-Man-Already-e3slh7i",
+      "fingerprint": "431219f909d5d3b9",
+      "title_norm": "trade talks week 8 | is schaefer a top 5 d-man already?",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-19T10:15:33.540762Z"
     }
   ],
   "known_sources": [
