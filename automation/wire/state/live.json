@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T16:45:36.779292Z",
+  "updated_at": "2026-11-19T17:00:56.748551Z",
   "seen": [
-    {
-      "key": "cdd7608a85e1d4cd7419e694",
-      "url": "https://www.dailyfaceoff.com/players/news/justin-danforth/28122",
-      "fingerprint": "ae20d06a235db123",
-      "title_norm": "justin danforth (buf) — danforth (upper-body) did not practice on tuesday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T16:45:36.868014Z"
-    },
-    {
-      "key": "df2896c0ed5f89b9dc862d99",
-      "url": "https://www.dailyfaceoff.com/players/news/sam-carrick/1914",
-      "fingerprint": "2aebb20c4775365c",
-      "title_norm": "sam carrick (buf) — carrick (middle body) did not practice on tuesday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T16:45:37.103650Z"
-    },
-    {
-      "key": "60753b26b126e936041e6e71",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-zacha/2481",
-      "fingerprint": "7707d0d6c30e2adc",
-      "title_norm": "pavel zacha (bos) — zacha (upper-body) will play in dallas on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T17:00:43.537387Z"
-    },
-    {
-      "key": "bac88ad4fc7901e191c4cd90",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-adam-engstrom-jakub-dobes-draw-in-against-sharks",
-      "fingerprint": "c9f605916f768eae",
-      "title_norm": "canadiens' adam engstrom, jakub dobes draw in against sharks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T17:00:43.803117Z"
-    },
     {
       "key": "f99adb2ff22f2f6f29a8a84e",
       "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
@@ -19012,6 +18972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T16:45:36.686767Z"
+    },
+    {
+      "key": "5cec1fc7f7db1ac878bdbccb",
+      "url": "https://www.sportsnet.ca/nhl/article/bedard-to-remain-out-while-blackhawks-weigh-rehab-vs-surgery",
+      "fingerprint": "b2cd11f68f08e82c",
+      "title_norm": "bedard to remain out while blackhawks weigh rehab vs. surgery",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-19T17:00:56.688097Z"
     }
   ],
   "known_sources": [
