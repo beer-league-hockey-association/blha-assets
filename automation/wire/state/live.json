@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T20:45:47.395000Z",
+  "updated_at": "2026-11-19T21:15:32.310278Z",
   "seen": [
-    {
-      "key": "1de206046f1f095fa388d379",
-      "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
-      "fingerprint": "e6f5a90af4371436",
-      "title_norm": "alexander wennberg (sjs) — wennberg (upper-body) is out vs. montreal on tuesday and considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-20T21:00:43.510390Z"
-    },
-    {
-      "key": "60f3c30844dd2731044eba18",
-      "url": "https://www.nhl.com/news/ben-kindel-status-update-october-20-2026",
-      "fingerprint": "1adebd7df3db1b91",
-      "title_norm": "kindel stable after medical episode on pens plane",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-20T21:00:43.767304Z"
-    },
     {
       "key": "ac13be8f426e1d3e3991b18e",
       "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
