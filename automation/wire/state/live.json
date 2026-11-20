@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T19:30:45.444019Z",
+  "updated_at": "2026-11-20T20:00:52.176599Z",
   "seen": [
-    {
-      "key": "dabfcd1ae16a18a16b6c884b",
-      "url": "https://www.sportsnet.ca/nhl/article/from-cowboy-boots-to-kilometres-calgary-left-its-mark-on-coleman",
-      "fingerprint": "3bd7c8bb103f2596",
-      "title_norm": "from cowboy boots to kilometres, calgary left its mark on coleman",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T20:00:37.705758Z"
-    },
     {
       "key": "6e643231a30027f85414e063",
       "url": "https://www.nhl.com/news/marat-khusnutdinov-signs-three-year-contract-with-boston-bruins",
@@ -19052,6 +19042,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T19:30:45.399157Z"
+    },
+    {
+      "key": "09fda91eb9acb88addfb5c43",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-sorting-surprising-teams-into-contenders-or-pretenders",
+      "fingerprint": "05502301a294c294",
+      "title_norm": "friday four: sorting surprising teams into contenders or pretenders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T20:00:52.132978Z"
     }
   ],
   "known_sources": [
