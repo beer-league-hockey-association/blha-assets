@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T18:30:40.514906Z",
+  "updated_at": "2026-11-20T18:45:41.977093Z",
   "seen": [
-    {
-      "key": "3b0fcf97d5150fbfaa61e1e3",
-      "url": "https://www.dailyfaceoff.com/players/news/marco-rossi/29821",
-      "fingerprint": "170cbec4cb1b534a",
-      "title_norm": "marco rossi (van) — rossi (illness) returned to canucks' practice on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T18:45:37.011832Z"
-    },
     {
       "key": "454128cc829d607e836e2235",
       "url": "https://www.dailyfaceoff.com/players/news/parker-wotherspoon/3836",
