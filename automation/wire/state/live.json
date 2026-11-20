@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T18:45:41.977093Z",
+  "updated_at": "2026-11-20T19:30:45.444019Z",
   "seen": [
-    {
-      "key": "454128cc829d607e836e2235",
-      "url": "https://www.dailyfaceoff.com/players/news/parker-wotherspoon/3836",
-      "fingerprint": "565f306601a5c9e4",
-      "title_norm": "parker wotherspoon (vgk) — wotherspoon (upper body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T19:30:36.084957Z"
-    },
     {
       "key": "dabfcd1ae16a18a16b6c884b",
       "url": "https://www.sportsnet.ca/nhl/article/from-cowboy-boots-to-kilometres-calgary-left-its-mark-on-coleman",
@@ -19042,6 +19032,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T18:30:40.466723Z"
+    },
+    {
+      "key": "161cf7c5877f29cd5d73cb47",
+      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
+      "fingerprint": "220b3c88a6ec0205",
+      "title_norm": "bryan rust (pit) — rust (lower-body) returned to practice in a non-contact jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T19:30:45.364319Z"
+    },
+    {
+      "key": "c5dc2528d29ac390ce86f6a0",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-place-g-clay-stevenson-on-waivers",
+      "fingerprint": "7c6b9c69846e88e0",
+      "title_norm": "jets place g clay stevenson on waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T19:30:45.399157Z"
     }
   ],
   "known_sources": [
