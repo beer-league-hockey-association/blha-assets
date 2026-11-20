@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T02:15:39.165346Z",
+  "updated_at": "2026-11-20T02:30:40.018800Z",
   "seen": [
     {
       "key": "3a1d154673910ecdad35a679",
@@ -18922,6 +18922,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T01:30:36.232978Z"
+    },
+    {
+      "key": "a0e9b512b0c8f37d89547d0a",
+      "url": "https://www.sportsnet.ca/nhl/article/rory-mcilroy-attends-maple-leafs-game-reads-starting-lineup",
+      "fingerprint": "0770ad8ec99f260e",
+      "title_norm": "rory mcilroy attends maple leafs game, reads starting lineup",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T02:30:39.984692Z"
     }
   ],
   "known_sources": [
