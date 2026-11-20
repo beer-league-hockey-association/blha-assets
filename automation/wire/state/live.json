@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T04:00:46.715786Z",
+  "updated_at": "2026-11-20T04:15:37.390367Z",
   "seen": [
-    {
-      "key": "99785defa0f3ddf2dd36a14e",
-      "url": "https://www.sportsnet.ca/article/bouchard-wires-ot-winner-on-birthday-as-oilers-beat-wild",
-      "fingerprint": "abda7d0b8d9d63f2",
-      "title_norm": "bouchard wires ot winner on birthday as oilers beat wild",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T04:15:31.656506Z"
-    },
     {
       "key": "f71f3a972cb04af724b34207",
       "url": "https://www.nhl.com/news/minnesota-wild-edmonton-oilers-game-recap-october-20-2026",
@@ -19032,6 +19022,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T04:00:46.619762Z"
+    },
+    {
+      "key": "1d3ba1e6c8d104a9e4fb4399",
+      "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-exits-in-win-over-flames",
+      "fingerprint": "5f040f3a31160c5a",
+      "title_norm": "wild's quinn hughes exits in win over flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T04:15:36.466931Z"
+    },
+    {
+      "key": "a408c5e97552890e64ec59cd",
+      "url": "https://www.nhl.com/news/minnesota-wild-calgary-flames-game-recap-november-19-2026",
+      "fingerprint": "b7bf5bc4eda42cae",
+      "title_norm": "hughes, kaprizov, wild keep streaking, top flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T04:15:36.726078Z"
+    },
+    {
+      "key": "ce5fd5710c5bada9def33bb5",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/4bf2cdff-45fc-499a-beac-5d9075b2574c",
+      "fingerprint": "b2f0ca5fedf82639",
+      "title_norm": "canucks on sportsnet: vancouver vs. seattle",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T04:15:37.062750Z"
+    },
+    {
+      "key": "0c9f89578022047afad45ca8",
+      "url": "https://www.sportsnet.ca/nhl/article/kaprizov-extends-point-streak-as-wild-beat-flames-for-fifth-straight-win",
+      "fingerprint": "c20ea766e5cbf517",
+      "title_norm": "kaprizov extends point streak as wild beat flames for fifth straight win",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T04:15:37.075231Z"
     }
   ],
   "known_sources": [
