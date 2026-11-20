@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T09:00:50.816707Z",
+  "updated_at": "2026-11-20T09:15:41.360811Z",
   "seen": [
-    {
-      "key": "4797ab4e3ed4cce5c1973eda",
-      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/5-Fantasy-Hockey-Buy-Lows-to-Trade-For-NOW-e3qr7f4",
-      "fingerprint": "27d4ccd81e6bb11e",
-      "title_norm": "5 fantasy hockey buy lows to trade for now",
-      "channel": "media",
-      "source_id": "pod_apples_ginos",
-      "tier": 2,
-      "seen_at": "2026-10-21T09:15:40.210096Z"
-    },
     {
       "key": "f1de4732e839d6e76de9706a",
       "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
