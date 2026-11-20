@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T00:00:45.096131Z",
+  "updated_at": "2026-11-20T00:15:32.430213Z",
   "seen": [
     {
       "key": "25ba97ea6fdf2c3071a692f1",
@@ -19022,6 +19022,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T00:00:45.025966Z"
+    },
+    {
+      "key": "4cb9aad9dadd974f0360116a",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/445a1244-a26f-4e6a-8247-4dd3cc3c6d98",
+      "fingerprint": "c28e544c0050e6c0",
+      "title_norm": "maple leafs on sportsnet: toronto vs. los angeles",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T00:15:32.392755Z"
     }
   ],
   "known_sources": [
