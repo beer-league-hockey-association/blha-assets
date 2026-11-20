@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T06:15:32.027969Z",
+  "updated_at": "2026-11-20T07:00:50.758902Z",
   "seen": [
-    {
-      "key": "a9953fc8668c499975b6cd25",
-      "url": "https://www.sportsnet.ca/nhl/article/another-third-period-letdown-sends-canucks-to-eighth-straight-loss",
-      "fingerprint": "1ec7a791cde83979",
-      "title_norm": "another third-period letdown sends canucks to eighth straight loss",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T06:45:33.452988Z"
-    },
     {
       "key": "4797ab4e3ed4cce5c1973eda",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/5-Fantasy-Hockey-Buy-Lows-to-Trade-For-NOW-e3qr7f4",
