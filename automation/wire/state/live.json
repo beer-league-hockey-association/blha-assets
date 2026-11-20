@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T16:45:43.280215Z",
+  "updated_at": "2026-11-20T17:00:42.844311Z",
   "seen": [
     {
       "key": "107a7dbba491334ce6252760",
@@ -18932,6 +18932,86 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-20T16:30:55.569266Z"
+    },
+    {
+      "key": "d177563e8e8710f108b34563",
+      "url": "https://www.dailyfaceoff.com/players/news/oliver-bjorkstrand/2603",
+      "fingerprint": "e7419734d0573f84",
+      "title_norm": "oliver bjorkstrand (nyr) — bjorkstrand missed practice on friday and is out with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T17:00:40.881838Z"
+    },
+    {
+      "key": "afb4d5a098a94d243aba0888",
+      "url": "https://www.dailyfaceoff.com/players/news/mathieu-olivier/23595",
+      "fingerprint": "e3530aa61c0bf83c",
+      "title_norm": "mathieu olivier (cbj) — olivier (undisclosed) left thursday's game vs. chicago and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T17:00:41.158397Z"
+    },
+    {
+      "key": "171e6386dcf8528f1e3c6a99",
+      "url": "https://www.nhl.com/news/new-york-rangers-finding-physical-identity-among-strong-start-to-season",
+      "fingerprint": "7756c160d169fce2",
+      "title_norm": "rangers finding identity among strong start",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T17:00:41.341519Z"
+    },
+    {
+      "key": "d7887cc7bcfcc2236f20d4da",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-goalie-tandem-vladar-woll-elevated-through-early-season-struggles",
+      "fingerprint": "dd584fb30bca2ca1",
+      "title_norm": "flyers goalie coach steady hand during struggles",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T17:00:41.715622Z"
+    },
+    {
+      "key": "a4f2cea652b2c14de0684906",
+      "url": "https://www.nhl.com/news/state-your-case-carolina-hurricanes-or-edmonton-oilers-as-top-team-in-nhl",
+      "fingerprint": "bd986df784e6df57",
+      "title_norm": "state your case: hurricanes vs. oilers as top team",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T17:00:41.993822Z"
+    },
+    {
+      "key": "63bdb83bdf61168865dcd2e0",
+      "url": "https://www.nhl.com/news/ovechkin-franchise-record-assist-overshadowed-as-washington-capitals-struggle",
+      "fingerprint": "5d61c06443d36e5a",
+      "title_norm": "ovechkin's latest record overshadowed by caps' struggles",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T17:00:42.005618Z"
+    },
+    {
+      "key": "c06529b1983bcc9fe8d29028",
+      "url": "https://www.nhl.com/news/topic/nhl-draft/usa-hockey-national-team-development-program-players-to-watch-at-chl-usa-prospects-challenge",
+      "fingerprint": "a08414a1c2945c96",
+      "title_norm": "ntdp players to watch at chl usa prospects challenge",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T17:00:42.252534Z"
+    },
+    {
+      "key": "3ab16fc9743014c6b89746b6",
+      "url": "https://www.dailyfaceoff.com/players/news/vincent-desharnais/25716",
+      "fingerprint": "bfca47c5ab309da5",
+      "title_norm": "vincent desharnais (wsh) — desharnais (appendectomy surgery) returned to practice in a full contact jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T17:00:42.284506Z"
     }
   ],
   "known_sources": [
