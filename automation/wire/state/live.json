@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T14:15:40.790882Z",
+  "updated_at": "2026-11-20T15:00:53.578294Z",
   "seen": [
-    {
-      "key": "f1de4732e839d6e76de9706a",
-      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
-      "fingerprint": "a1c6c70fdc8f8bd2",
-      "title_norm": "logan thompson (wsh) — thompson is day-to-day with a lower-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T14:45:39.717505Z"
-    },
-    {
-      "key": "912da8e3f2e85199de4e236b",
-      "url": "https://www.dailyfaceoff.com/players/news/jason-zucker/1898",
-      "fingerprint": "a14428d6186f0ac1",
-      "title_norm": "jason zucker (buf) — zucker (sports hernia) will make his season debut vs. philadelphia on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T15:00:48.496705Z"
-    },
-    {
-      "key": "5e6a13254337582b3bdd88ba",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-podkolzin-off-to-flying-start-riding-shotgun-with-mcdavid-draisaitl",
-      "fingerprint": "df746b22467b8349",
-      "title_norm": "oilers' podkolzin off to flying start riding shotgun with mcdavid, draisaitl",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T15:00:49.035892Z"
-    },
     {
       "key": "4f55f7896dbf44d40a33dfbf",
       "url": "https://www.dailyfaceoff.com/players/news/jake-sanderson/30807",
