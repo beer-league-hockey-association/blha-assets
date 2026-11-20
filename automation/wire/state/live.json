@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T08:00:38.544644Z",
+  "updated_at": "2026-11-20T09:00:50.816707Z",
   "seen": [
     {
       "key": "4797ab4e3ed4cce5c1973eda",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T08:00:38.493757Z"
+    },
+    {
+      "key": "86fd367fb3140176cdedd085",
+      "url": "https://www.sportsnet.ca/nhl/article/morrissey-nets-ot-winner-for-first-goal-of-season-as-jets-beat-islanders",
+      "fingerprint": "5bedff2e2a767fc6",
+      "title_norm": "morrissey nets ot winner for first goal of season as jets beat islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T09:00:50.789006Z"
     }
   ],
   "known_sources": [
