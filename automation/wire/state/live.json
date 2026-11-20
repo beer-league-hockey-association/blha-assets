@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T09:15:41.360811Z",
+  "updated_at": "2026-11-20T10:15:32.158749Z",
   "seen": [
     {
       "key": "f1de4732e839d6e76de9706a",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T09:00:50.789006Z"
+    },
+    {
+      "key": "bfd19d7892656f308fc3909a",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/DEEP-CUTS-5-Under-the-Radar-Fantasy-Hockey-Targets--Under-15-Rostered-e3sn2hs",
+      "fingerprint": "2109ac75014b4893",
+      "title_norm": "deep cuts: 5 under-the-radar fantasy hockey targets | under 15% rostered",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-20T10:15:32.129774Z"
     }
   ],
   "known_sources": [
