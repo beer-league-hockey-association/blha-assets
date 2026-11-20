@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T21:00:42.804638Z",
+  "updated_at": "2026-11-20T21:15:47.292905Z",
   "seen": [
     {
       "key": "13af7981f479aef42201d725",
@@ -19022,6 +19022,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T20:00:52.132978Z"
+    },
+    {
+      "key": "4e1c4cb2e839ced2666b21ae",
+      "url": "https://www.nhl.com/news/hart-trophy-tracker-connor-mcdavid-unanimous-pick-as-league-mvp-with-edmonton-oilers",
+      "fingerprint": "bf90670b9c85b7bb",
+      "title_norm": "hart tracker: mcdavid pick for mvp at 1st quarter",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T21:15:46.947340Z"
+    },
+    {
+      "key": "9bb25dd3bbee0e627b4a3c4b",
+      "url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+      "fingerprint": "0155eb13ae1a4bf1",
+      "title_norm": "projected lineups, goalies for saturday",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T21:15:47.222654Z"
     }
   ],
   "known_sources": [
