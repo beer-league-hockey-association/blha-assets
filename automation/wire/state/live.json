@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T15:45:47.761240Z",
+  "updated_at": "2026-11-20T16:00:45.416643Z",
   "seen": [
-    {
-      "key": "39987d079c8aa0de91f22caf",
-      "url": "https://www.sportsnet.ca/nhl/article/easy-to-follow-celebrini-navigating-first-season-as-sharks-captain",
-      "fingerprint": "f9252d4517ef2ec7",
-      "title_norm": "'easy to follow': celebrini navigating first season as sharks captain",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T16:00:38.265930Z"
-    },
     {
       "key": "116f2623f64b8de17e746b07",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-21-2026",
