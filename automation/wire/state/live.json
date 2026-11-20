@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T23:15:35.609334Z",
+  "updated_at": "2026-11-20T23:30:37.996366Z",
   "seen": [
-    {
-      "key": "87342bf3247a1391a9934470",
-      "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
-      "fingerprint": "23f16f8a36865c95",
-      "title_norm": "tyson foerster (phi) — foerster (hand) is on the ice for warmups and is expected to play wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T23:15:39.423658Z"
-    },
     {
       "key": "fe9df111fdebe4fc5dd58806",
       "url": "https://www.sportsnet.ca/nhl/article/tkachuk-heavily-booed-by-ottawa-crowd-in-return-with-panthers",
@@ -19072,6 +19062,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T23:15:35.556045Z"
+    },
+    {
+      "key": "a03a642f0b3a956314e37eb5",
+      "url": "https://www.nhl.com/news/max-sasson-traded-to-new-york-rangers-from-vancouver-canucks",
+      "fingerprint": "5a281384bab9b785",
+      "title_norm": "sasson traded to rangers from canucks",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T23:30:37.882048Z"
+    },
+    {
+      "key": "32cac1823592d0e0363d6f6e",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-trade-max-sasson-to-rangers-for-fourth-round-pick",
+      "fingerprint": "3a71979fe8881b45",
+      "title_norm": "canucks trade max sasson to rangers for fourth-round pick",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T23:30:37.936207Z"
     }
   ],
   "known_sources": [
