@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T02:30:40.018800Z",
+  "updated_at": "2026-11-20T03:00:37.196053Z",
   "seen": [
     {
       "key": "3a1d154673910ecdad35a679",
@@ -18932,6 +18932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T02:30:39.984692Z"
+    },
+    {
+      "key": "0aa756f0e8ba106e35178eb8",
+      "url": "https://www.nhl.com/news/new-york-islanders-winnipeg-jets-game-recap-november-19-2026",
+      "fingerprint": "866ba604a28460f8",
+      "title_norm": "morrissey's ot goal lifts jets past islanders",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T03:00:37.121016Z"
     }
   ],
   "known_sources": [
