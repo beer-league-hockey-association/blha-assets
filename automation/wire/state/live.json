@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T00:30:40.747411Z",
+  "updated_at": "2026-11-20T01:00:35.821642Z",
   "seen": [
     {
       "key": "61005bbc30824d5b7d548a72",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T00:30:40.679739Z"
+    },
+    {
+      "key": "d2b900a66723131bd68cf211",
+      "url": "https://www.sportsnet.ca/nhl/video/matthews-picks-his-spot-on-the-power-play-for-early-maple-leafs-lead",
+      "fingerprint": "ca85728bf515b6a4",
+      "title_norm": "matthews picks his spot on the power play for early maple leafs' lead",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T01:00:35.757536Z"
     }
   ],
   "known_sources": [
