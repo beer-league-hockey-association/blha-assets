@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T03:00:37.196053Z",
+  "updated_at": "2026-11-20T03:15:41.750054Z",
   "seen": [
-    {
-      "key": "3a1d154673910ecdad35a679",
-      "url": "https://www.nhl.com/news/winnipeg-jets-st-louis-blues-game-recap-october-20-2026",
-      "fingerprint": "f21849467f0f6850",
-      "title_norm": "broberg scores go-ahead goal in 3rd, lifts blues past jets",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-21T03:00:51.295024Z"
-    },
-    {
-      "key": "30c5cbe0b57e935f3fb5ac35",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-give-up-late-goal-to-broberg-in-loss-to-blues",
-      "fingerprint": "f078ffec669671b1",
-      "title_norm": "jets give up late goal to broberg in loss to blues",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T03:00:56.636600Z"
-    },
     {
       "key": "48717682bab9ef70f52468a2",
       "url": "https://www.sportsnet.ca/nhl/article/mikko-rantanen-completes-hat-trick-in-overtime-stars-beat-bruins",
@@ -18942,6 +18922,76 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T03:00:37.121016Z"
+    },
+    {
+      "key": "246fb8bcf95333070e9a88da",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavids-season-opening-point-streak-ends-at-23-games",
+      "fingerprint": "c97fd079c130489c",
+      "title_norm": "connor mcdavid's season-opening point streak ends at 23 games",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:15:40.506056Z"
+    },
+    {
+      "key": "c5258391e2833696e40b0e61",
+      "url": "https://www.nhl.com/news/montreal-canadiens-carolina-hurricanes-game-recap-november-19-2026",
+      "fingerprint": "1e065fa837e55679",
+      "title_norm": "hutson's 2nd of game lifts habs to ot win against canes",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T03:15:40.732873Z"
+    },
+    {
+      "key": "39a5a19096c30e8d98115329",
+      "url": "https://www.nhl.com/news/st-louis-blues-pittsburgh-penguins-game-recap-november-19-2026",
+      "fingerprint": "050efcf8cc7d42d5",
+      "title_norm": "snuggerud scores 2, thomas has 3 assists in blues win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T03:15:40.995006Z"
+    },
+    {
+      "key": "ff4cb8c3891334a1ad7cf2c0",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-ottawa-senators-game-recap-november-19-2026",
+      "fingerprint": "a546f0056e943066",
+      "title_norm": "flyers rally from down 3, stun senators in overtime",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T03:15:41.007251Z"
+    },
+    {
+      "key": "5c35450b932385d5dcac6572",
+      "url": "https://www.nhl.com/news/buffalo-sabres-washington-capitals-game-recap-november-19-2026",
+      "fingerprint": "a63d6ffad3506fb8",
+      "title_norm": "quinn scores twice, sabres defeat capitals to end five-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T03:15:41.030117Z"
+    },
+    {
+      "key": "b873b437d4f7bebf56ffb02c",
+      "url": "https://www.sportsnet.ca/nhl/article/hutson-strikes-twice-including-ot-winner-as-canadiens-beat-hurricanes",
+      "fingerprint": "adb5671e75c2a540",
+      "title_norm": "hutson strikes twice, including ot winner, as canadiens beat hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:15:41.078018Z"
+    },
+    {
+      "key": "d285c660435e87be6d344848",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-blow-late-lead-fall-to-flyers-in-ot",
+      "fingerprint": "d6f9a171e8a13308",
+      "title_norm": "senators blow late lead, fall to flyers in ot",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:15:41.088089Z"
     }
   ],
   "known_sources": [
