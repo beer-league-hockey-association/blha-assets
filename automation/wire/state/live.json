@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T06:00:43.959128Z",
+  "updated_at": "2026-11-20T06:15:32.027969Z",
   "seen": [
     {
       "key": "a9953fc8668c499975b6cd25",
@@ -19002,6 +19002,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T06:00:43.843362Z"
+    },
+    {
+      "key": "bb1372770bd610d53a5521ae",
+      "url": "https://www.sportsnet.ca/nhl/article/drew-doughty-opens-up-about-free-agency-trade-noise-asking-price-injury",
+      "fingerprint": "b0ffcd6b8602d598",
+      "title_norm": "drew doughty opens up about free agency, trade noise, asking price, injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T06:15:31.762109Z"
+    },
+    {
+      "key": "00c3ca7eb5fd1ba39ce35138",
+      "url": "https://www.nhl.com/news/dallas-stars-vegas-golden-knights-game-recap-november-19-2026",
+      "fingerprint": "b4ad5f3bdc03247b",
+      "title_norm": "stars rally late again, defeat golden knights in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T06:15:31.965627Z"
     }
   ],
   "known_sources": [
