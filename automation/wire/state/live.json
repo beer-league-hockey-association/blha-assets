@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T01:15:42.404676Z",
+  "updated_at": "2026-11-20T01:30:36.298408Z",
   "seen": [
     {
       "key": "bfac70cd441acc500f6a7119",
@@ -19012,6 +19012,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T01:00:35.757536Z"
+    },
+    {
+      "key": "fca32f0fd2abc6d62c639904",
+      "url": "https://www.nhl.com/news/connor-mcdavid-leon-draisaitl-works-of-art-at-edmonton-grocery",
+      "fingerprint": "d33b76ad559c6288",
+      "title_norm": "mcdavid, draisaitl are works of art at edmonton grocery",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T01:30:36.232978Z"
     }
   ],
   "known_sources": [
