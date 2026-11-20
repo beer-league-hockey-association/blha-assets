@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T22:30:39.786133Z",
+  "updated_at": "2026-11-20T23:15:35.609334Z",
   "seen": [
     {
       "key": "87342bf3247a1391a9934470",
@@ -19062,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T22:30:39.724816Z"
+    },
+    {
+      "key": "b47ca816082255bdcad00345",
+      "url": "https://www.sportsnet.ca/nhl/article/nemec-gets-unlikely-assist-from-flames-equipment-manager-ben-dumaine",
+      "fingerprint": "66d9de749d78cdec",
+      "title_norm": "nemec gets unlikely assist from flames equipment manager ben dumaine",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T23:15:35.556045Z"
     }
   ],
   "known_sources": [
