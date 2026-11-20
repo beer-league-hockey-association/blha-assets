@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T16:15:48.900744Z",
+  "updated_at": "2026-11-20T16:30:55.633069Z",
   "seen": [
-    {
-      "key": "c71af5272148fae1f2e9a509",
-      "url": "https://dobberprospects.com/2026/10/21/prospect-ramblings-calder-watch-garands-opportunity-and-the-protas-brothers",
-      "fingerprint": "1a80ba83b86ae51d",
-      "title_norm": "prospect ramblings – calder watch, garand's opportunity and the protas brothers",
-      "channel": "prospect-wire",
-      "source_id": "dobber_prospects",
-      "tier": 2,
-      "seen_at": "2026-10-21T16:30:43.983727Z"
-    },
     {
       "key": "a949892fba2f2e363eb8923d",
       "url": "https://www.sportsnet.ca/nhl/article/blood-sweat-and-tears-brady-tkachuk-talks-return-to-ottawa",
@@ -18942,6 +18932,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-20T14:15:40.678276Z"
+    },
+    {
+      "key": "fa555fd874e21fbc9b5a8873",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "79c26d11ce031d87",
+      "title_norm": "evgeni malkin (pit) — malkin (upper-body) is considered day-to-day and will not travel with the team this weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T16:30:55.301861Z"
+    },
+    {
+      "key": "539d42a04fbaa3f3f3824ee3",
+      "url": "https://www.dailyfaceoff.com/players/news/nicholas-robertson/29254",
+      "fingerprint": "17838d7490e6537f",
+      "title_norm": "nicholas robertson (pit) — robertson (lower-body) has been placed on ir and will be re-evaluated in two weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T16:30:55.569266Z"
     }
   ],
   "known_sources": [
