@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T07:00:50.758902Z",
+  "updated_at": "2026-11-20T08:00:38.544644Z",
   "seen": [
     {
       "key": "4797ab4e3ed4cce5c1973eda",
@@ -19012,6 +19012,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T06:15:31.965627Z"
+    },
+    {
+      "key": "5989080da6d72b6257e1c397",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-abandon-winning-form-as-short-lived-streak-comes-to-end",
+      "fingerprint": "f11cbf39a0bb0cef",
+      "title_norm": "canucks abandon winning form as short-lived streak comes to end",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T08:00:38.493757Z"
     }
   ],
   "known_sources": [
