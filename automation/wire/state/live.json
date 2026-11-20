@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T21:15:47.292905Z",
+  "updated_at": "2026-11-20T21:30:37.366991Z",
   "seen": [
     {
       "key": "13af7981f479aef42201d725",
@@ -19042,6 +19042,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T21:15:47.222654Z"
+    },
+    {
+      "key": "527db2577dea53bbf1532ac2",
+      "url": "https://www.dailyfaceoff.com/players/news/gavin-brindley/33176",
+      "fingerprint": "4784eca642a8d036",
+      "title_norm": "gavin brindley (col) — brindley (concussion) is expected to be out for a while.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T21:30:37.102891Z"
+    },
+    {
+      "key": "b28340a44dde91d44bcf6eee",
+      "url": "https://www.nhl.com/news/nhl-com-roundtable-14-game-saturday-best-games-highlighted",
+      "fingerprint": "8c0a9a1d1e78242e",
+      "title_norm": "nhl.com writers pick best of 14-game saturday schedule",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T21:30:37.272397Z"
     }
   ],
   "known_sources": [
