@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T03:45:44.195297Z",
+  "updated_at": "2026-11-20T04:00:46.715786Z",
   "seen": [
     {
       "key": "99785defa0f3ddf2dd36a14e",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T03:45:44.153922Z"
+    },
+    {
+      "key": "d791907948594ce7f60a6891",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-chicago-blackhawks-game-recap-november-19-2026",
+      "fingerprint": "2995ee1a0c128450",
+      "title_norm": "blue jackets get win in bowness' return to bench",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T04:00:46.619762Z"
     }
   ],
   "known_sources": [
