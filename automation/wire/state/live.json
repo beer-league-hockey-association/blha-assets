@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T04:30:33.108249Z",
+  "updated_at": "2026-11-20T04:45:33.780061Z",
   "seen": [
     {
       "key": "dcdfafb2acee6d52ec893bf6",
@@ -19052,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T04:15:37.075231Z"
+    },
+    {
+      "key": "a783e5a0baa37ed337a77484",
+      "url": "https://www.sportsnet.ca/nhl/article/two-oilers-streaks-snapped-in-stingy-loss-to-lightning",
+      "fingerprint": "6b04fcbabcbbdb09",
+      "title_norm": "two oilers streaks snapped in stingy loss to lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T04:45:33.712146Z"
     }
   ],
   "known_sources": [
