@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T17:00:42.844311Z",
+  "updated_at": "2026-11-20T17:30:39.653758Z",
   "seen": [
-    {
-      "key": "107a7dbba491334ce6252760",
-      "url": "https://www.sportsnet.ca/nhl/article/marc-edouard-vlasic-says-hes-done-playing-hockey",
-      "fingerprint": "17eb18b013adf0ec",
-      "title_norm": "marc-edouard vlasic says he's done playing hockey",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T17:15:40.624018Z"
-    },
     {
       "key": "84a5337251e90c2a94e273e6",
       "url": "https://www.dailyfaceoff.com/players/news/dante-fabbro/2651",
@@ -19012,6 +19002,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-20T17:00:42.284506Z"
+    },
+    {
+      "key": "1e70d2d25cee5d1798d85bba",
+      "url": "https://www.dailyfaceoff.com/players/news/albert-johansson/30661",
+      "fingerprint": "dca8a1a0f6f3f16d",
+      "title_norm": "albert johansson (det) — johansson (undisclosed) will return vs. the islanders on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T17:30:39.324716Z"
+    },
+    {
+      "key": "81ce2ee063c1dca1ee6399b1",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-coach-jim-hiller-under-the-microscope-after-winless-streak",
+      "fingerprint": "dce9139ab9068581",
+      "title_norm": "maple leafs coach jim hiller under the microscope after winless streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T17:30:39.615191Z"
     }
   ],
   "known_sources": [
