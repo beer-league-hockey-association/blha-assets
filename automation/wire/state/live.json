@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-19T23:45:32.429948Z",
+  "updated_at": "2026-11-20T00:00:45.096131Z",
   "seen": [
-    {
-      "key": "75d0d0a0981077feff7384b7",
-      "url": "https://www.sportsnet.ca/nhl/video/marchenko-redirects-puck-past-greaves-to-score-against-former-team",
-      "fingerprint": "911e32566b2b19ae",
-      "title_norm": "marchenko redirects puck past greaves to score against former team",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-20T23:45:40.655466Z"
-    },
     {
       "key": "25ba97ea6fdf2c3071a692f1",
       "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
@@ -19022,6 +19012,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-19T23:45:32.331294Z"
+    },
+    {
+      "key": "68e5f27736d299410e6b8f49",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-19-2026",
+      "fingerprint": "420e84b9d1b52004",
+      "title_norm": "on tap: stone can set golden knights' points record",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T00:00:45.025966Z"
     }
   ],
   "known_sources": [
