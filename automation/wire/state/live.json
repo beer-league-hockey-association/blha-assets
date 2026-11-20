@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T22:15:36.386940Z",
+  "updated_at": "2026-11-20T22:30:39.786133Z",
   "seen": [
     {
       "key": "87342bf3247a1391a9934470",
@@ -19052,6 +19052,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-20T22:15:36.289125Z"
+    },
+    {
+      "key": "50ec12c63e2218ae45ab3fe6",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-look-to-draw-inspiration-from-mcilroys-journey",
+      "fingerprint": "202b7c5713b4a6da",
+      "title_norm": "maple leafs look to draw inspiration from mcilroy's journey",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T22:30:39.724816Z"
     }
   ],
   "known_sources": [
