@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T03:30:37.359238Z",
+  "updated_at": "2026-11-20T03:45:44.195297Z",
   "seen": [
-    {
-      "key": "48717682bab9ef70f52468a2",
-      "url": "https://www.sportsnet.ca/nhl/article/mikko-rantanen-completes-hat-trick-in-overtime-stars-beat-bruins",
-      "fingerprint": "45badfa3e21705a9",
-      "title_norm": "mikko rantanen completes hat trick in overtime, stars beat bruins",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T03:30:41.027798Z"
-    },
-    {
-      "key": "bbf27a5cdee49a1963dc4434",
-      "url": "https://www.sportsnet.ca/nhl/article/penguins-ben-kindel-in-stable-condition-after-suffering-medical-episode-on-plane",
-      "fingerprint": "2a1f30a94554c2cc",
-      "title_norm": "penguins' ben kindel stable after medical episode on plane",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T03:30:41.436898Z"
-    },
     {
       "key": "99785defa0f3ddf2dd36a14e",
       "url": "https://www.sportsnet.ca/article/bouchard-wires-ot-winner-on-birthday-as-oilers-beat-wild",
@@ -19022,6 +19002,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T03:30:37.298135Z"
+    },
+    {
+      "key": "e156e26dd5f96530bc28d380",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-auston-matthews-fine-despite-weird-fall-in-ot",
+      "fingerprint": "db3ff801b80b6619",
+      "title_norm": "maple leafs' auston matthews 'fine' despite weird fall in ot",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:45:43.812671Z"
+    },
+    {
+      "key": "c2d7a3db0cd29a79eb8b8822",
+      "url": "https://www.sportsnet.ca/nhl/article/kempe-scores-shootout-winner-kings-hand-maple-leafs-eighth-straight-loss",
+      "fingerprint": "55ac5fa9d2e4ea6d",
+      "title_norm": "maple leafs get a point but fall to kings in shootout",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:45:44.153922Z"
     }
   ],
   "known_sources": [
