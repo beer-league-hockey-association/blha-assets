@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T05:00:39.021686Z",
+  "updated_at": "2026-11-20T05:30:45.307003Z",
   "seen": [
-    {
-      "key": "b18a69deced6d84051e54cae",
-      "url": "https://www.nhl.com/news/detroit-red-wings-seattle-kraken-game-recap-october-20-2026",
-      "fingerprint": "d05c5cec32ba7016",
-      "title_norm": "kraken recover in shootout after blowing 3-goal lea",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-21T05:15:35.899954Z"
-    },
-    {
-      "key": "809dc6472a827744c899b646",
-      "url": "https://www.nhl.com/news/carolina-hurricanes-vancouver-canucks-game-recap-october-20-2026",
-      "fingerprint": "59c038cca267fd4a",
-      "title_norm": "hurricanes score six, pull away from slumping canucks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-21T05:15:36.110900Z"
-    },
-    {
-      "key": "6ecad6f9757e2f16bb912718",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-skid-hits-eight-games-with-loss-to-hurricanes",
-      "fingerprint": "800fd5eea4c05ab1",
-      "title_norm": "canucks' skid hits eight games with loss to hurricanes",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T05:15:36.398730Z"
-    },
-    {
-      "key": "e935cf85dd85da24bfe5c287",
-      "url": "https://www.nhl.com/news/san-jose-sharks-montreal-canadiens-game-recap-october-20-2026",
-      "fingerprint": "25be370a3f2a9ddc",
-      "title_norm": "celebrini scores 2nd in ot, sharks rally to top habs",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-21T05:30:43.863501Z"
-    },
     {
       "key": "7673f8c217f8ff3442868ddf",
       "url": "https://www.nhl.com/news/topic/game-recap/tampa-bay-lightning-vegas-golden-knights-game-recap-october-20-2026",
@@ -19042,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T05:00:38.970508Z"
+    },
+    {
+      "key": "a8ec83a728b9d362d84815f6",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gain-point-but-fall-to-kings-to-extend-winless-streak",
+      "fingerprint": "4837068a5e9b07d6",
+      "title_norm": "maple leafs gain point, but fall to kings to extend winless streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T05:30:45.253279Z"
     }
   ],
   "known_sources": [
