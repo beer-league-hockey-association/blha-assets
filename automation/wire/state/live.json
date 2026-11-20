@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T18:00:38.282250Z",
+  "updated_at": "2026-11-20T18:15:40.118617Z",
   "seen": [
-    {
-      "key": "84a5337251e90c2a94e273e6",
-      "url": "https://www.dailyfaceoff.com/players/news/dante-fabbro/2651",
-      "fingerprint": "17a353a27e77bfd2",
-      "title_norm": "dante fabbro (cbj) — fabbro (hand) has a chance to return on saturday vs. vegas.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T18:00:42.190875Z"
-    },
-    {
-      "key": "6bbb0e5c82e88342ac7ba311",
-      "url": "https://www.sportsnet.ca/nhl/article/early-analysis-what-are-this-years-maple-leafs",
-      "fingerprint": "5518e888b3e0bd36",
-      "title_norm": "early analysis: what are this year's maple leafs?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T18:00:42.538617Z"
-    },
-    {
-      "key": "3212e1e9e6d6efd2887cfb6e",
-      "url": "https://www.dailyfaceoff.com/players/news/anthony-cirelli/3842",
-      "fingerprint": "940b698dd4c3537c",
-      "title_norm": "anthony cirelli (tbl) — cirelli (undisclosed) left tuesday's game vs. vegas and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T18:15:37.261647Z"
-    },
-    {
-      "key": "5bdde21bc323d1e254420595",
-      "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
-      "fingerprint": "a2bf8dc07d9b5fb0",
-      "title_norm": "quinton byfield (lak) — byfield (upper-body) is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T18:15:37.676219Z"
-    },
     {
       "key": "3b0fcf97d5150fbfaa61e1e3",
       "url": "https://www.dailyfaceoff.com/players/news/marco-rossi/29821",
@@ -19042,6 +19002,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T18:00:38.244658Z"
+    },
+    {
+      "key": "0853716c61c8a5c3f5295685",
+      "url": "https://www.nhl.com/news/colorado-avalanche-utah-mammoth-winter-classic-merchandise-sets-sales-record",
+      "fingerprint": "5ce53527969a7d67",
+      "title_norm": "winter classic sets merchandise sales record",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T18:15:40.021749Z"
     }
   ],
   "known_sources": [
