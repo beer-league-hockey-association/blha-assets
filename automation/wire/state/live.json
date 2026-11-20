@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T22:00:38.807241Z",
+  "updated_at": "2026-11-20T22:15:36.386940Z",
   "seen": [
-    {
-      "key": "5f821031728ed625324ff53a",
-      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
-      "fingerprint": "4ffa81d194bdbe7a",
-      "title_norm": "seth jarvis (car) — jarvis (shoulder) has been activated from the injured non-roster list.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-21T22:00:43.182501Z"
-    },
-    {
-      "key": "f8847d2dba0dff2d1a964ef0",
-      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-activate-seth-jarvis-from-injured-reserve",
-      "fingerprint": "22220509fb22da7c",
-      "title_norm": "hurricanes activate seth jarvis from injured reserve",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T22:11:06.208305Z"
-    },
     {
       "key": "87342bf3247a1391a9934470",
       "url": "https://www.dailyfaceoff.com/players/news/tyson-foerster/29750",
@@ -19052,6 +19032,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T21:30:37.272397Z"
+    },
+    {
+      "key": "4f0bebff5040c38dad6171b4",
+      "url": "https://www.nhl.com/news/utah-stadium-rice-eccles-perfect-setting-for-winter-classic-between-avalanche-mammoth",
+      "fingerprint": "3549443041ea1acb",
+      "title_norm": "utah stadium perfect setting for winter classic",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T22:15:36.046535Z"
+    },
+    {
+      "key": "ddfb51ad7b735d5d51ffb601",
+      "url": "https://theahl.com/news/monsters-acquire-mayhew",
+      "fingerprint": "f353da1e0c10020d",
+      "title_norm": "monsters acquire mayhew",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-20T22:15:36.289125Z"
     }
   ],
   "known_sources": [
