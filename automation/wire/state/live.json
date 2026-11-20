@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T17:30:39.653758Z",
+  "updated_at": "2026-11-20T17:45:41.213029Z",
   "seen": [
     {
       "key": "84a5337251e90c2a94e273e6",
@@ -19022,6 +19022,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T17:30:39.615191Z"
+    },
+    {
+      "key": "a5704b5d1c3ebe169fa606bf",
+      "url": "https://www.dailyfaceoff.com/players/news/cole-hutson/37137",
+      "fingerprint": "8fe2b77285b97523",
+      "title_norm": "cole hutson (wsh) — hutson (maintenance) missed practice on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T17:45:41.114623Z"
     }
   ],
   "known_sources": [
