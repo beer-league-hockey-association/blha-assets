@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T04:15:37.390367Z",
+  "updated_at": "2026-11-20T04:30:33.108249Z",
   "seen": [
-    {
-      "key": "f71f3a972cb04af724b34207",
-      "url": "https://www.nhl.com/news/minnesota-wild-edmonton-oilers-game-recap-october-20-2026",
-      "fingerprint": "605e6e7c26c3f1d1",
-      "title_norm": "bouchard scores in ot, oilers recover against wild to stay hot",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-21T04:29:56.929793Z"
-    },
     {
       "key": "dcdfafb2acee6d52ec893bf6",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-connor-mcdavid-sets-nhl-record-for-assists-through-first-nine-games",
