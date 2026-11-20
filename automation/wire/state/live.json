@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T18:15:40.118617Z",
+  "updated_at": "2026-11-20T18:30:40.514906Z",
   "seen": [
     {
       "key": "3b0fcf97d5150fbfaa61e1e3",
@@ -19012,6 +19012,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-20T18:15:40.021749Z"
+    },
+    {
+      "key": "fbb6c5ce01e6487fe45f719e",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "71ea54431c8246fd",
+      "title_norm": "dylan guenther (uta) — guenther (upper-body) returned to practice in a full-contact jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T18:30:39.654289Z"
+    },
+    {
+      "key": "39d31c08675923ab94568352",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-mcmichael/29203",
+      "fingerprint": "e5b234127dbc1e89",
+      "title_norm": "connor mcmichael (stl) — mcmichael (undisclosed) is out vs. new jersey on saturday and considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-20T18:30:39.819441Z"
+    },
+    {
+      "key": "2494c57c314db70a36dc05b1",
+      "url": "https://www.sportsnet.ca/nhl/article/hiller-maple-leafs-marchenko-could-be-close-to-return",
+      "fingerprint": "a5d43840c5d6074f",
+      "title_norm": "hiller: maple leafs' marchenko could be 'close' to return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T18:30:40.188993Z"
+    },
+    {
+      "key": "1c638d5e3eb6a23fc3e1181d",
+      "url": "https://www.sportsnet.ca/nhl/article/kings-kempe-fined-for-high-sticking-maple-leafs-joshua",
+      "fingerprint": "b1d4794fe3ac0bae",
+      "title_norm": "kings' kempe fined for high-sticking maple leafs' joshua",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T18:30:40.466723Z"
     }
   ],
   "known_sources": [
