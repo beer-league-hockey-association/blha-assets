@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T03:15:41.750054Z",
+  "updated_at": "2026-11-20T03:30:37.359238Z",
   "seen": [
     {
       "key": "48717682bab9ef70f52468a2",
@@ -18992,6 +18992,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T03:15:41.088089Z"
+    },
+    {
+      "key": "c169c94d9be512d0cb82c457",
+      "url": "https://www.nhl.com/news/los-angeles-kings-toronto-maple-leafs-game-recap-november-19-2026",
+      "fingerprint": "34cb996c0b9c681f",
+      "title_norm": "kings win in shootout, hand leafs 8th straight loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-20T03:30:36.901333Z"
+    },
+    {
+      "key": "521db473ac41ba64d2a8dfe4",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/cea54df3-5550-41be-852a-c6bdf44cce29",
+      "fingerprint": "cb85740dfa27486d",
+      "title_norm": "flames on sportsnet: calgary vs. minnesota",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:30:37.141058Z"
+    },
+    {
+      "key": "23d58c88e75d6be107b00b7e",
+      "url": "https://www.sportsnet.ca/nhl/article/sabres-beat-capitals-sending-washington-to-4th-straight-loss",
+      "fingerprint": "631b2d0260465162",
+      "title_norm": "sabres beat capitals, sending washington to fourth straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-20T03:30:37.298135Z"
     }
   ],
   "known_sources": [
