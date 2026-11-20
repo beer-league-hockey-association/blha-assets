@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T16:30:55.633069Z",
+  "updated_at": "2026-11-20T16:45:43.280215Z",
   "seen": [
-    {
-      "key": "a949892fba2f2e363eb8923d",
-      "url": "https://www.sportsnet.ca/nhl/article/blood-sweat-and-tears-brady-tkachuk-talks-return-to-ottawa",
-      "fingerprint": "b4ad93f676cc92e1",
-      "title_norm": "'blood, sweat and tears': brady tkachuk talks return to ottawa",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-21T16:45:39.175647Z"
-    },
-    {
-      "key": "7d2be6f318b9ee1eed9e5a62",
-      "url": "https://www.nhl.com/news/nhl-edge-stats-wednesday-night-hockey-amazon-prime-2026-27",
-      "fingerprint": "28b27a8e8d2e779c",
-      "title_norm": "edge stats: florida-ottawa 'wednesday night hockey'",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-21T16:45:39.460178Z"
-    },
     {
       "key": "107a7dbba491334ce6252760",
       "url": "https://www.sportsnet.ca/nhl/article/marc-edouard-vlasic-says-hes-done-playing-hockey",
