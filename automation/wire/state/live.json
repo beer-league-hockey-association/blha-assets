@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T22:15:40.490321Z",
+  "updated_at": "2026-11-21T22:45:38.408058Z",
   "seen": [
-    {
-      "key": "17a605c0278c33fabf5a57d4",
-      "url": "https://www.nhl.com/news/luke-glendening-signs-one-year-deal-with-new-york-rangers",
-      "fingerprint": "ffd864e7ce050688",
-      "title_norm": "glendening signs 1-year, $850,000 deal with rangers",
-      "channel": "nhl-transactions",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T22:45:35.378158Z"
-    },
-    {
-      "key": "73e01758d799b6156536a82b",
-      "url": "https://www.dailyfaceoff.com/players/news/marshall-rifai/25666",
-      "fingerprint": "41de19fbf55be5ab",
-      "title_norm": "marshall rifai (tor) — rifai (undisclosed) will not play thursday vs. the rangers.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T22:45:35.723537Z"
-    },
     {
       "key": "0b1e2801cf02a441bc177a60",
       "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
@@ -18952,6 +18932,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T22:15:40.425639Z"
+    },
+    {
+      "key": "36cdf167d0697b695dae57e0",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-o-reilly/362",
+      "fingerprint": "5cd5d54637cf8a55",
+      "title_norm": "ryan o'reilly (nsh) — o'reilly (undisclosed) is on the ice for warmups and is expected to play saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T22:45:36.008538Z"
+    },
+    {
+      "key": "012e1d35136b05612c708181",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-get-reality-check-in-loss-to-defending-champion-hurricanes",
+      "fingerprint": "18d54ff8397a9984",
+      "title_norm": "oilers get reality check in loss to defending champion hurricanes",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T22:45:38.339930Z"
     }
   ],
   "known_sources": [
