@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T09:15:34.732554Z",
+  "updated_at": "2026-11-21T10:15:34.104147Z",
   "seen": [
     {
       "key": "25e7ee539be160c97f0bf57c",
@@ -18972,6 +18972,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-21T04:45:36.850913Z"
+    },
+    {
+      "key": "32b367a8c34490423e62accf",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Week-9-Waiver-Wire-A-Streaming-Nightmare----Crossing-the-Streams-e3sp668",
+      "fingerprint": "ca9de0586a40c0b9",
+      "title_norm": "week 9 waiver wire: a streaming nightmare?! | crossing the streams",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-21T10:15:34.064715Z"
     }
   ],
   "known_sources": [
