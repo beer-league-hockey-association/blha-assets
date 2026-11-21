@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T03:30:38.882639Z",
+  "updated_at": "2026-11-21T03:45:43.864489Z",
   "seen": [
-    {
-      "key": "73288d93c8d02936b73e903d",
-      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
-      "fingerprint": "2af9732524df21a4",
-      "title_norm": "linus ullmark (ott) — ullmark left wednesday's game with a lower-body \"strain\" and will be evaluated on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T03:45:38.746037Z"
-    },
     {
       "key": "fbfa5c761a00132148ca74ec",
       "url": "https://www.sportsnet.ca/nhl/video/senators-fans-torment-brady-tkachuk-with-chants-boos-for-entire-game",
