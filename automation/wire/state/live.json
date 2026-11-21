@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T00:15:33.041714Z",
+  "updated_at": "2026-11-21T01:00:43.869089Z",
   "seen": [
-    {
-      "key": "fe9df111fdebe4fc5dd58806",
-      "url": "https://www.sportsnet.ca/nhl/article/tkachuk-heavily-booed-by-ottawa-crowd-in-return-with-panthers",
-      "fingerprint": "052d39c3a5644e65",
-      "title_norm": "tkachuk heavily booed by ottawa crowd in return with panthers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T01:00:40.137913Z"
-    },
     {
       "key": "75b5ffc32f3bb0d4c103a6f7",
       "url": "https://www.sportsnet.ca/nhl/video/panthers-tkachuk-hears-boos-from-senators-fans-before-being-dumped-by-zub",
