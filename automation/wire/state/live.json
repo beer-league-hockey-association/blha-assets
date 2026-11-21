@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T16:15:34.408766Z",
+  "updated_at": "2026-11-21T16:30:37.879620Z",
   "seen": [
-    {
-      "key": "87fa71a90324dc30a92e3a4d",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-22-2026",
-      "fingerprint": "87c26376d7c5cfaa",
-      "title_norm": "on tap: schaefer can extend home point streak for isles",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T16:15:37.865498Z"
-    },
-    {
-      "key": "f7da9226464e126681f7a30b",
-      "url": "https://www.nhl.com/news/montreal-canadiens-nick-suzuki-injury-status-update-october-22-2026",
-      "fingerprint": "3ce9db371d18dc64",
-      "title_norm": "n. suzuki out 2-4 weeks, ironman streak to end at 546",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T16:15:38.070429Z"
-    },
-    {
-      "key": "70fd53e49e561542a3ec046f",
-      "url": "https://audioboom.com/posts/8967944",
-      "fingerprint": "867d1f88af0eecfe",
-      "title_norm": "week 4 mailbag; jarvis' return",
-      "channel": "media",
-      "source_id": "pod_nhl_fantasy_on_ice",
-      "tier": 2,
-      "seen_at": "2026-10-22T16:15:38.452641Z"
-    },
     {
       "key": "a2fbdbc48483a8ac7dcdac6a",
       "url": "https://www.dailyfaceoff.com/players/news/alexander-wennberg/2145",
@@ -18932,6 +18902,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T16:15:34.010188Z"
+    },
+    {
+      "key": "e5df7223cd43a6834b3c3242",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-defenceman-david-reinbacher-draws-in-against-flyers",
+      "fingerprint": "524727d5446c5f96",
+      "title_norm": "canadiens defenceman david reinbacher draws in against flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:30:37.325403Z"
+    },
+    {
+      "key": "4744efd9cd86b91f524746f9",
+      "url": "https://www.dailyfaceoff.com/players/news/nick-cousins/1893",
+      "fingerprint": "944444d4f75babe1",
+      "title_norm": "nick cousins (ott) — cousins (upper-body) will be back in the senators lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:30:37.571610Z"
+    },
+    {
+      "key": "8534df29d095c837eb24d46a",
+      "url": "https://www.sportsnet.ca/nhl/article/nick-cousins-returning-to-senators-lineup-against-kings",
+      "fingerprint": "9fd2f89ad23a9379",
+      "title_norm": "nick cousins returning to senators lineup against kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:30:37.826286Z"
     }
   ],
   "known_sources": [
