@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T17:15:34.512740Z",
+  "updated_at": "2026-11-21T18:00:54.507406Z",
   "seen": [
-    {
-      "key": "ad82576b2cc779ef0c69a594",
-      "url": "https://www.sportsnet.ca/nhl/article/real-kypers-trade-board-2-0-feeling-out-the-best-fits-for-larkin-hellebuyck",
-      "fingerprint": "930fb76462a7f415",
-      "title_norm": "real kyper's trade board 2.0: feeling out the best fits for larkin, hellebuyck",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T17:45:39.003755Z"
-    },
-    {
-      "key": "a8806d599cd9b7838214eaf2",
-      "url": "https://www.dailyfaceoff.com/players/news/bowen-byram/28523",
-      "fingerprint": "d020d976584c0b2f",
-      "title_norm": "bowen byram (chi) — byram (upper-body) is still considered day-to-day but is trending towards returning.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T18:00:41.125171Z"
-    },
-    {
-      "key": "8ade1dccb82980b6b3734070",
-      "url": "https://www.dailyfaceoff.com/players/news/andrew-mangiapane/4622",
-      "fingerprint": "35237d5a741c19a4",
-      "title_norm": "andrew mangiapane (chi) — mangiapane (lower-body) is cleared but expected to be a healthy scratch vs. montreal on friday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T18:00:41.522048Z"
-    },
-    {
-      "key": "822054b9698ee85c3c8542f3",
-      "url": "https://www.dailyfaceoff.com/players/news/seth-jarvis/29549",
-      "fingerprint": "5730b11f9d26e5de",
-      "title_norm": "seth jarvis (car) — jarvis (shoulder) is hopeful to make his season debut in edmonton.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T18:00:42.172169Z"
-    },
     {
       "key": "1679a2b3832605fbc2fbcf0c",
       "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
@@ -18902,6 +18862,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T17:15:34.457584Z"
+    },
+    {
+      "key": "6fda593c9e9cd5a23c30c7ab",
+      "url": "https://www.dailyfaceoff.com/players/news/elias-pettersson/2801",
+      "fingerprint": "fca60c0dd29648ea",
+      "title_norm": "elias pettersson (van) — pettersson (upper-body) will not play on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T18:00:54.396993Z"
     }
   ],
   "known_sources": [
