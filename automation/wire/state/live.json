@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T20:15:41.002208Z",
+  "updated_at": "2026-11-21T20:45:39.273757Z",
   "seen": [
     {
       "key": "f17b5320f55b63d26eda971b",
@@ -18882,6 +18882,46 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-21T20:15:40.934006Z"
+    },
+    {
+      "key": "648081baf08aea3ac27781be",
+      "url": "https://www.dailyfaceoff.com/players/news/nathan-mackinnon/2130",
+      "fingerprint": "6d904bce22f4d26d",
+      "title_norm": "nathan mackinnon (col) — mackinnon (lower-body) is expected to be out for 12 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T20:45:38.131197Z"
+    },
+    {
+      "key": "f1e551e12e57bc38382e2a30",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-zach-hyman-exits-against-hurricanes-due-to-illness",
+      "fingerprint": "1336e9eb02dc5ecf",
+      "title_norm": "oilers' zach hyman exits against hurricanes due to illness",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T20:45:38.424003Z"
+    },
+    {
+      "key": "d45978f3472d001e8e0a68a1",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-have-openings-with-pettersson-injured-sasson-gone",
+      "fingerprint": "58fdaaf019861acf",
+      "title_norm": "canucks have openings with pettersson injured, sasson gone",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T20:45:38.824882Z"
+    },
+    {
+      "key": "f66ddbe44f2388065dbd4b1b",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/6bcdf1c2-883a-4eb5-a875-8c50c387506f",
+      "fingerprint": "6e8cd7ba9c05da39",
+      "title_norm": "flames on sportsnet: calgary vs. chicago",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T20:45:39.212408Z"
     }
   ],
   "known_sources": [
