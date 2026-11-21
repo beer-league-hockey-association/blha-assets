@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T05:00:41.948177Z",
+  "updated_at": "2026-11-21T09:15:34.732554Z",
   "seen": [
-    {
-      "key": "22f78e4288e9d8a59fb0c5be",
-      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-4-e3qso6u",
-      "fingerprint": "0147741eac17f64b",
-      "title_norm": "trade talks week 4",
-      "channel": "media",
-      "source_id": "pod_apples_ginos",
-      "tier": 2,
-      "seen_at": "2026-10-22T09:15:33.955208Z"
-    },
     {
       "key": "25e7ee539be160c97f0bf57c",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-assign-goalie-artur-akhtyamov-to-ahl",
