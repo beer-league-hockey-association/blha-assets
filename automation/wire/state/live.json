@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T15:30:35.974391Z",
+  "updated_at": "2026-11-21T15:45:32.095828Z",
   "seen": [
     {
       "key": "070c9e8a14209c346093ca54",
@@ -18922,6 +18922,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T15:15:44.922037Z"
+    },
+    {
+      "key": "bc7fe9ca4fe81132d6af63bb",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-upgrade-injured-marchenko-blankenburg-to-day-to-day",
+      "fingerprint": "171e1d6dd43ffe8b",
+      "title_norm": "maple leafs upgrade injured marchenko, blankenburg to day-to-day",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T15:45:32.050354Z"
     }
   ],
   "known_sources": [
