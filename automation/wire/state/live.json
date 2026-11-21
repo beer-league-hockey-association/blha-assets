@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T01:15:51.127382Z",
+  "updated_at": "2026-11-21T02:00:41.112685Z",
   "seen": [
     {
       "key": "d810b60229546b1925b0a442",
@@ -19062,6 +19062,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-21T00:15:32.977895Z"
+    },
+    {
+      "key": "127472605d2ce9fd58b7b912",
+      "url": "https://www.nhl.com/news/flames-jonathan-huberdeau-touched-by-support-in-return-to-ice",
+      "fingerprint": "020a73d96d7e75fe",
+      "title_norm": "huberdeau 'touched' by flames support in return to ice",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T02:00:41.050578Z"
     }
   ],
   "known_sources": [
