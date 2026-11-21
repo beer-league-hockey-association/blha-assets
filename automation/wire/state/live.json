@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T03:00:40.098474Z",
+  "updated_at": "2026-11-21T03:15:38.524584Z",
   "seen": [
-    {
-      "key": "162544617e75604d57a1f071",
-      "url": "https://www.nhl.com/news/florida-panthers-gm-bill-zito-hopes-to-attend-world-series",
-      "fingerprint": "444e8c7d1fa84bf4",
-      "title_norm": "florida gm eager to attend brewers' series return",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T03:00:40.238596Z"
-    },
-    {
-      "key": "d4e0dbaa26e3a6a4c3f52a74",
-      "url": "https://www.sportsnet.ca/nhl/video/senators-fans-boo-brady-tkachuk-during-tribute-video",
-      "fingerprint": "b21e65bce2110010",
-      "title_norm": "senators fans boo brady tkachuk during tribute video",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T03:15:36.493833Z"
-    },
     {
       "key": "5745a4e02fc78f66c6d1e4df",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-21-2026",
