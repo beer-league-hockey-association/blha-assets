@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T18:00:54.507406Z",
+  "updated_at": "2026-11-21T18:15:38.359799Z",
   "seen": [
     {
       "key": "1679a2b3832605fbc2fbcf0c",
@@ -18872,6 +18872,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T18:00:54.396993Z"
+    },
+    {
+      "key": "3d5d3fbaf4a9aabd41ba9b04",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-moore/2878",
+      "fingerprint": "4c001247351df578",
+      "title_norm": "trevor moore (lak) — moore (undisclosed) skated on saturday but is not expected to play in ottawa.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T18:15:37.980391Z"
+    },
+    {
+      "key": "24b587e3dbbbabf2e6430ee8",
+      "url": "https://www.dailyfaceoff.com/players/news/artemi-panarin/2519",
+      "fingerprint": "67a553c25622acf7",
+      "title_norm": "artemi panarin (lak) — panarin (personal) skated on saturday but is not expected to play in ottawa.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T18:15:38.266429Z"
     }
   ],
   "known_sources": [
