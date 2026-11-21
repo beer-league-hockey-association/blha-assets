@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T16:45:34.348047Z",
+  "updated_at": "2026-11-21T17:00:40.147921Z",
   "seen": [
     {
       "key": "c7f8ff000d2be6d4c0c375c3",
@@ -18902,6 +18902,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T16:45:34.277664Z"
+    },
+    {
+      "key": "8c8941f9e79bb60126433e51",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-21-2026",
+      "fingerprint": "37221f3465d2670c",
+      "title_norm": "status report: bjorkstrand, smits out 2-3 months",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T17:00:40.083692Z"
     }
   ],
   "known_sources": [
