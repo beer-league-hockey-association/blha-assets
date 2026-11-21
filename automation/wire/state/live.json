@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T19:30:47.140672Z",
+  "updated_at": "2026-11-21T19:45:35.684118Z",
   "seen": [
     {
       "key": "50f9d2f131fded457f229006",
@@ -18892,6 +18892,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-21T19:30:47.069314Z"
+    },
+    {
+      "key": "fb9aefb109a120b6f0b52dcb",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-place-sennecke-on-injured-reserve-recall-myatovic",
+      "fingerprint": "0d7079fed34d7423",
+      "title_norm": "ducks place sennecke on injured reserve, recall myatovic",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T19:45:35.639339Z"
     }
   ],
   "known_sources": [
