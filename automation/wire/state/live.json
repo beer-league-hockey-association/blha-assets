@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T22:45:38.408058Z",
+  "updated_at": "2026-11-21T23:00:44.599970Z",
   "seen": [
-    {
-      "key": "0b1e2801cf02a441bc177a60",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
-      "fingerprint": "015d07f31333b23c",
-      "title_norm": "pavel mintyukov (ana) — mintyukov is day-to-day with a lower-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T23:00:40.672883Z"
-    },
     {
       "key": "ca56e49a8f2ef4f6cbb48830",
       "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
@@ -18952,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T22:45:38.339930Z"
+    },
+    {
+      "key": "278aa14c4706e5995e1f5c5b",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-kaiser-ejected-for-hit-that-injures-flames-pospisil",
+      "fingerprint": "c973ba5989238b5c",
+      "title_norm": "blackhawks' kaiser ejected for hit that injures flames' pospisil",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T23:00:44.539658Z"
     }
   ],
   "known_sources": [
