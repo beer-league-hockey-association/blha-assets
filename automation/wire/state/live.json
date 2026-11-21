@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T14:00:44.691529Z",
+  "updated_at": "2026-11-21T14:15:42.715108Z",
   "seen": [
-    {
-      "key": "94b5b5df46e15d78ec3bf3d6",
-      "url": "https://www.nhl.com/news/ron-duguay-dead-at-age-69",
-      "fingerprint": "372e725089516717",
-      "title_norm": "popular rangers legend duguay dies at 69",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T14:15:41.569446Z"
-    },
-    {
-      "key": "dfb1c2e45a579a560b4cc63c",
-      "url": "https://www.dailyfaceoff.com/players/news/benjamin-kindel/37573",
-      "fingerprint": "9daf5d90314092c0",
-      "title_norm": "ben kindel (pit) — kindel (undisclosed) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T14:15:41.876418Z"
-    },
-    {
-      "key": "06eb3878a0c070199ed41025",
-      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
-      "fingerprint": "5a738b09f9f0a192",
-      "title_norm": "bryan rust (pit) — rust (lower-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T14:15:42.103447Z"
-    },
     {
       "key": "9d647b378ede81c9cec392b8",
       "url": "https://www.sportsnet.ca/nhl/article/former-nhl-player-ron-duguay-dies-at-69-after-a-bout-with-cancer",
