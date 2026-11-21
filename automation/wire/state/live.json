@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T19:45:35.684118Z",
+  "updated_at": "2026-11-21T20:15:41.002208Z",
   "seen": [
-    {
-      "key": "50f9d2f131fded457f229006",
-      "url": "https://www.nhl.com/news/brady-tkachuk-hears-full-force-from-ottawa-senators-fans-in-return",
-      "fingerprint": "bf9d9957ceb943d5",
-      "title_norm": "tkachuk hears full force from senators fans in return",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T20:15:38.150087Z"
-    },
-    {
-      "key": "78ae8f5a57f1b234170baf44",
-      "url": "https://theahl.com/news/phantoms-providing-needed-lift-in-philadelphia",
-      "fingerprint": "7755ba271a4e9a94",
-      "title_norm": "phantoms providing needed lift in philadelphia",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-22T20:15:38.587195Z"
-    },
-    {
-      "key": "e0eb1006b6497cf8173c61b4",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-facing-unprecedented-adversity-in-suzukis-absence",
-      "fingerprint": "58c402f39a84d77b",
-      "title_norm": "canadiens facing unprecedented adversity in suzuki's absence",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T20:15:38.983158Z"
-    },
     {
       "key": "f17b5320f55b63d26eda971b",
       "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
@@ -18902,6 +18872,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T19:45:35.639339Z"
+    },
+    {
+      "key": "b375e4572c5bd27d284f027e",
+      "url": "https://theahl.com/news/capitals-get-stevenson-back",
+      "fingerprint": "4be83880547d1bdc",
+      "title_norm": "capitals get stevenson back",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-21T20:15:40.934006Z"
     }
   ],
   "known_sources": [
