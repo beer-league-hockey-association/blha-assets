@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-20T23:30:37.996366Z",
+  "updated_at": "2026-11-21T00:15:33.041714Z",
   "seen": [
     {
       "key": "fe9df111fdebe4fc5dd58806",
@@ -19082,6 +19082,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-20T23:30:37.936207Z"
+    },
+    {
+      "key": "82416fb114390e1cde9fdd70",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-21-2026",
+      "fingerprint": "bbd5a1463202d9ec",
+      "title_norm": "nhl on tap: white-hot wild eye 6th straight victory",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T00:15:32.977895Z"
     }
   ],
   "known_sources": [
