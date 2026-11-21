@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T14:45:40.130139Z",
+  "updated_at": "2026-11-21T15:15:44.982618Z",
   "seen": [
-    {
-      "key": "79db2af1dae6949cc095bc08",
-      "url": "https://www.dailyfaceoff.com/players/news/jake-mccabe/2349",
-      "fingerprint": "c08908ea8e89935e",
-      "title_norm": "jake mccabe (tor) — mccabe (upper-body) is expected to play vs. new york on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T15:15:39.897073Z"
-    },
-    {
-      "key": "ba7da704ae1142ae9d714010",
-      "url": "https://www.nhl.com/news/pittsburgh-penguins-ben-kindel-status-update-october-22-2026",
-      "fingerprint": "ea039bbf6ecc6442",
-      "title_norm": "kindel could resume practice with pens next week",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T15:15:40.181262Z"
-    },
-    {
-      "key": "fdcb33265a2cf8b2b5e8858f",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-22-2026",
-      "fingerprint": "9e31ae770a2161ac",
-      "title_norm": "nhl status report: nugent-hopkins to make season debut",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-22T15:15:40.418298Z"
-    },
     {
       "key": "61339546f2e3cee2cde4401b",
       "url": "https://www.dailyfaceoff.com/players/news/nick-suzuki/2789",
@@ -18932,6 +18902,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T13:30:44.168597Z"
+    },
+    {
+      "key": "1c695aacb4df0d11b3d30776",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "4b74bd7aa3fed769",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) has been upgraded to day-to-day; will skate in a non-contact jersey on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T15:15:41.709930Z"
+    },
+    {
+      "key": "f628270bb0778f5c2cf4e376",
+      "url": "https://www.nhl.com/news/nhl-shop-holiday-gift-guide-2026",
+      "fingerprint": "02c8155a4d6dd159",
+      "title_norm": "nhl, nhlshop.com holiday gift guide",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T15:15:41.978595Z"
+    },
+    {
+      "key": "b4725f8b9832094e7e85724d",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "7975ca98038d51c7",
+      "title_norm": "brad marchand (fla) — marchand (knee) will not play saturday vs. the sabres.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T15:15:42.239465Z"
+    },
+    {
+      "key": "6e3530214f301a20e805ff5c",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "690f8820ec86552e",
+      "title_norm": "aleksander barkov (fla) — barkov (knee) will not play saturday vs. the sabres.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T15:15:44.922037Z"
     }
   ],
   "known_sources": [
