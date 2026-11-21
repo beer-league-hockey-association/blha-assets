@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T18:45:37.863026Z",
+  "updated_at": "2026-11-21T19:00:44.956693Z",
   "seen": [
-    {
-      "key": "814aa03eb453d8e486a62fd7",
-      "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
-      "fingerprint": "3ab2b157dbf73ce7",
-      "title_norm": "mavrik bourque (nsh) — bourque (upper-body) will return in boston on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T18:45:51.928985Z"
-    },
-    {
-      "key": "54b0a8ce63e38ea615db8822",
-      "url": "https://www.dailyfaceoff.com/players/news/daniil-tarasov2/28133",
-      "fingerprint": "f648a17efd8ac6f1",
-      "title_norm": "daniil tarasov (det) — tarasov (undisclosed) tweaked something vs. seattle on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T18:45:52.295544Z"
-    },
-    {
-      "key": "0e2a8fa83a9ebc00b7a2b6b9",
-      "url": "https://www.dailyfaceoff.com/players/news/daniil-tarasov2/28133",
-      "fingerprint": "6583556d13be87e6",
-      "title_norm": "daniil tarasov (det) — tarasov is day-to-day with an undisclosed injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T19:00:39.053248Z"
-    },
     {
       "key": "6c3ec603ea37a14d3e09ea9e",
       "url": "https://www.sportsnet.ca/nhl/article/is-it-ever-going-to-happen-what-life-is-like-for-an-nhl-holdout",
@@ -18912,6 +18882,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T18:45:37.727844Z"
+    },
+    {
+      "key": "b4a6ae8830361fa628cf0c1d",
+      "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-out-against-canucks",
+      "fingerprint": "6a1cd087a6a2ccfe",
+      "title_norm": "wild's quinn hughes out against canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T19:00:44.899046Z"
     }
   ],
   "known_sources": [
