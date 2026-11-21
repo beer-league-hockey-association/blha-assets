@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T16:00:41.113190Z",
+  "updated_at": "2026-11-21T16:15:34.408766Z",
   "seen": [
-    {
-      "key": "00c14d8a34bc81e00ad98288",
-      "url": "https://www.dailyfaceoff.com/players/news/bryan-rust/2407",
-      "fingerprint": "8b242a93b5ed1491",
-      "title_norm": "bryan rust (pit) — rust (lower-body) is out and will be evaluated in six weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T16:00:44.973122Z"
-    },
     {
       "key": "87fa71a90324dc30a92e3a4d",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-22-2026",
@@ -18902,6 +18892,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T16:00:40.996701Z"
+    },
+    {
+      "key": "f927da1e741bdc3a2a839795",
+      "url": "https://www.dailyfaceoff.com/players/news/oliver-bjorkstrand/2603",
+      "fingerprint": "5993a338316321ff",
+      "title_norm": "oliver bjorkstrand (nyr) — bjorkstrand (upper-body) will miss 2-to-3 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:15:33.507054Z"
+    },
+    {
+      "key": "b9e1097a07b086dc0ba5a388",
+      "url": "https://www.dailyfaceoff.com/players/news/zachary-bolduc/31240",
+      "fingerprint": "e8180663ff137165",
+      "title_norm": "zack bolduc (mtl) — bolduc (upper-body) will return to the canadiens lineup on saturday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:15:33.823082Z"
+    },
+    {
+      "key": "1863a222642a66d1a31ee2f4",
+      "url": "https://www.dailyfaceoff.com/players/news/alberts-smits/38784",
+      "fingerprint": "ea7bded88e025690",
+      "title_norm": "alberts smits (nyr) — šmits (upper-body) will miss 2-to-3 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:15:33.996833Z"
+    },
+    {
+      "key": "80cc4e8576793e5586e90cea",
+      "url": "https://www.dailyfaceoff.com/players/news/brendan-gallagher/1791",
+      "fingerprint": "cf41c5b233194367",
+      "title_norm": "brendan gallagher (van) — the canucks have placed brendan gallagher (lower-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T16:15:34.010188Z"
     }
   ],
   "known_sources": [
