@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T17:00:40.147921Z",
+  "updated_at": "2026-11-21T17:15:34.512740Z",
   "seen": [
-    {
-      "key": "c7f8ff000d2be6d4c0c375c3",
-      "url": "https://www.sportsnet.ca/nhl/article/how-the-montreal-canadiens-are-approaching-the-trade-market",
-      "fingerprint": "84cfda059d83a482",
-      "title_norm": "how the montreal canadiens are approaching the trade market",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T17:00:41.082549Z"
-    },
-    {
-      "key": "ab767f2c1c00847235e394ee",
-      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-checking-in-on-the-new-guy",
-      "fingerprint": "800f271ddb0f53a1",
-      "title_norm": "nhl power rankings: checking in on the new guy",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T17:00:41.553669Z"
-    },
-    {
-      "key": "d8f0672c90eb5f999ad8b8bc",
-      "url": "https://www.sportsnet.ca/nhl/article/senators-place-ullmark-on-injury-reserve",
-      "fingerprint": "29fde1b5b8991037",
-      "title_norm": "senators place linus ullmark on injured reserve",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T17:00:41.800261Z"
-    },
-    {
-      "key": "55aea5d54000b72fe3ac356c",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
-      "fingerprint": "f125175a4251d428",
-      "title_norm": "mikael backlund (cgy) — backlund (upper-body) is out vs. minnesota on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T17:15:33.691167Z"
-    },
     {
       "key": "ad82576b2cc779ef0c69a594",
       "url": "https://www.sportsnet.ca/nhl/article/real-kypers-trade-board-2-0-feeling-out-the-best-fits-for-larkin-hellebuyck",
@@ -18912,6 +18872,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-21T17:00:40.083692Z"
+    },
+    {
+      "key": "da4f19f9afaea01597fceed8",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "a24be9436bb9e294",
+      "title_norm": "ryan pulock (nyi) — pulock (upper-body) will not play saturday in detroit.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T17:15:33.944437Z"
+    },
+    {
+      "key": "27f6d90fbb838062e21690f4",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-scratch-oliver-ekman-larsson-against-blue-jackets",
+      "fingerprint": "b604f5f10f148cf1",
+      "title_norm": "maple leafs scratch oliver ekman-larsson against blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T17:15:34.217136Z"
+    },
+    {
+      "key": "6b5e83f96a94b93513843f54",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-place-gallagher-on-ir-recall-mueller-quillan-tolopilo-from-ahl",
+      "fingerprint": "2bf3efd7a31c0a24",
+      "title_norm": "canucks place gallagher on ir, recall mueller, quillan, tolopilo from ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T17:15:34.457584Z"
     }
   ],
   "known_sources": [
