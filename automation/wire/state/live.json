@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T04:15:35.683078Z",
+  "updated_at": "2026-11-21T04:45:36.949962Z",
   "seen": [
     {
       "key": "9db62304bb2005a038664774",
@@ -18982,6 +18982,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T02:45:55.125901Z"
+    },
+    {
+      "key": "e20c6b8e67de6f6159d90249",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-20-2026",
+      "fingerprint": "facb721ef7c651c5",
+      "title_norm": "status report: malkin out for penguins on saturday",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T04:45:36.850913Z"
     }
   ],
   "known_sources": [
