@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T10:15:34.104147Z",
+  "updated_at": "2026-11-21T13:30:44.271443Z",
   "seen": [
     {
       "key": "25e7ee539be160c97f0bf57c",
@@ -18982,6 +18982,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-21T10:15:34.064715Z"
+    },
+    {
+      "key": "a06dd9c320018963e65e7e78",
+      "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-how-should-maple-leafs-handle-gavin-mckenna",
+      "fingerprint": "b4ad5aa4aa45e76d",
+      "title_norm": "quick shifts: how should maple leafs handle gavin mckenna?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T13:30:44.168597Z"
     }
   ],
   "known_sources": [
