@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T18:15:38.359799Z",
+  "updated_at": "2026-11-21T18:30:37.176342Z",
   "seen": [
-    {
-      "key": "1679a2b3832605fbc2fbcf0c",
-      "url": "https://www.dailyfaceoff.com/players/news/jared-spurgeon/1557",
-      "fingerprint": "91d515b9f54cac0e",
-      "title_norm": "jared spurgeon (min) — spurgeon (upper-body) will return in calgary on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T18:15:43.738774Z"
-    },
     {
       "key": "814aa03eb453d8e486a62fd7",
       "url": "https://www.dailyfaceoff.com/players/news/mavrik-bourque/29958",
