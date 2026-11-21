@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T14:15:42.715108Z",
+  "updated_at": "2026-11-21T14:45:40.130139Z",
   "seen": [
-    {
-      "key": "9d647b378ede81c9cec392b8",
-      "url": "https://www.sportsnet.ca/nhl/article/former-nhl-player-ron-duguay-dies-at-69-after-a-bout-with-cancer",
-      "fingerprint": "80e3e4ca31aa2a74",
-      "title_norm": "former nhl player ron duguay dies at 69 after a bout with cancer",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T14:30:43.334895Z"
-    },
-    {
-      "key": "ba3f964e5a6b549850515d59",
-      "url": "https://www.sportsnet.ca/nhl/article/penguins-ben-kindel-back-in-pittsburgh-after-collapsing-on-team-plane",
-      "fingerprint": "8d12509fd5c7b736",
-      "title_norm": "penguins' ben kindel back in pittsburgh after collapsing on team plane",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T14:45:36.874908Z"
-    },
     {
       "key": "79db2af1dae6949cc095bc08",
       "url": "https://www.dailyfaceoff.com/players/news/jake-mccabe/2349",
