@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T22:00:40.643704Z",
+  "updated_at": "2026-11-21T22:15:40.490321Z",
   "seen": [
     {
       "key": "17a605c0278c33fabf5a57d4",
@@ -18942,6 +18942,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T21:30:32.473202Z"
+    },
+    {
+      "key": "5a4cb7d5f5b9dbf7ca561262",
+      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-surge-past-oilers-for-victory",
+      "fingerprint": "cbfcf5cc409ab415",
+      "title_norm": "hurricanes surge past oilers for victory",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-21T22:15:40.425639Z"
     }
   ],
   "known_sources": [
