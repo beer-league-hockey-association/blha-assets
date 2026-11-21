@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T20:45:39.273757Z",
+  "updated_at": "2026-11-21T21:00:46.795124Z",
   "seen": [
-    {
-      "key": "f17b5320f55b63d26eda971b",
-      "url": "https://www.dailyfaceoff.com/players/news/linus-ullmark/2534",
-      "fingerprint": "1113c025800580a7",
-      "title_norm": "linus ullmark (ott) — ullmark (lower-body) is expected to be out for 1-2 weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T21:00:39.088193Z"
-    },
     {
       "key": "c678aa7059a99c2b3d43341c",
       "url": "https://www.sportsnet.ca/nhl/article/nikishin-not-part-of-hurricanes-trade-offer-to-jets-for-hellebuyck",
@@ -18922,6 +18912,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-21T20:45:39.212408Z"
+    },
+    {
+      "key": "c62c866dcde7e6f5c5b46810",
+      "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+      "fingerprint": "bfdcc13e13e90b9e",
+      "title_norm": "hughes to miss remainder of wild's 3-game trip",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T21:00:46.269885Z"
+    },
+    {
+      "key": "a4649754a3d04599398d109f",
+      "url": "https://www.dailyfaceoff.com/players/news/curtis-douglas/27811",
+      "fingerprint": "52fb49517afd505d",
+      "title_norm": "curtis douglas (sea) — the kraken have activated curtis douglas (upper-body) from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T21:00:46.692318Z"
     }
   ],
   "known_sources": [
