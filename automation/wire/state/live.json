@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T21:00:46.795124Z",
+  "updated_at": "2026-11-21T21:30:32.552219Z",
   "seen": [
     {
       "key": "c678aa7059a99c2b3d43341c",
@@ -18932,6 +18932,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T21:00:46.692318Z"
+    },
+    {
+      "key": "cfd49e9c25ea4a46b92e3b4f",
+      "url": "https://www.nhl.com/news/edmonton-oilers-carolina-hurricanes-game-recap-november-21-2026",
+      "fingerprint": "83ddb58b50f3780b",
+      "title_norm": "hurricanes score five in second period in win against oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-21T21:30:32.283271Z"
+    },
+    {
+      "key": "c2339d56d21eb03eb9964cbe",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-o-reilly/362",
+      "fingerprint": "1614f9ed14ba75dd",
+      "title_norm": "ryan o'reilly (nsh) — o'reilly (undisclosed) will be a game-time decision saturday vs. the penguins.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T21:30:32.473202Z"
     }
   ],
   "known_sources": [
