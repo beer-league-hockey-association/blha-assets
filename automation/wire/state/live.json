@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T18:30:37.176342Z",
+  "updated_at": "2026-11-21T18:45:37.863026Z",
   "seen": [
     {
       "key": "814aa03eb453d8e486a62fd7",
@@ -18882,6 +18882,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-21T18:15:38.266429Z"
+    },
+    {
+      "key": "ceab817c835309360c7c177f",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-geekie/31505",
+      "fingerprint": "fce2df0a6fc0cee5",
+      "title_norm": "conor geekie (tbl) — geekie is out indefinitely with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T18:45:36.484996Z"
+    },
+    {
+      "key": "66a99e9bb7ce2610f143c7af",
+      "url": "https://www.dailyfaceoff.com/players/news/beckett-sennecke/36637",
+      "fingerprint": "d0d442263102e24a",
+      "title_norm": "beckett sennecke (ana) — the ducks have placed beckett sennecke (upper-body) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T18:45:37.479927Z"
+    },
+    {
+      "key": "140669865b5d0d9c6354a3a5",
+      "url": "https://www.dailyfaceoff.com/players/news/quinn-hughes/4794",
+      "fingerprint": "2121333850178687",
+      "title_norm": "quinn hughes (min) — hughes (upper-body) will miss the final two games of the wild's road-trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-21T18:45:37.727844Z"
     }
   ],
   "known_sources": [
