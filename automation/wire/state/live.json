@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T16:45:40.266376Z",
+  "updated_at": "2026-11-22T17:00:37.524700Z",
   "seen": [
-    {
-      "key": "8968f2fd41e7e5018291775f",
-      "url": "https://www.youtube.com/watch",
-      "fingerprint": "fc10fb5706670a40",
-      "title_norm": "getting to know the hamilton hammers",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-23T16:45:40.329720Z"
-    },
-    {
-      "key": "e1d11003a07c7c41dd7a4d3f",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
-      "fingerprint": "67335d78dfcd4823",
-      "title_norm": "rasmus ristolainen (phi) — ristolainen (upper-body) has a chance to return vs. anaheim on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T16:45:40.538291Z"
-    },
     {
       "key": "3ea657d2904e37d770ebf86d",
       "url": "https://www.dailyfaceoff.com/players/news/michael-matheson/2583",
@@ -18902,6 +18882,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-22T15:45:36.612607Z"
+    },
+    {
+      "key": "ad27ca9688c2d4c8e9d1ff7f",
+      "url": "https://www.youtube.com/watch",
+      "fingerprint": "a97ea916e0937457",
+      "title_norm": "huberdeau notches three assists in wranglers debut",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-22T17:00:37.458545Z"
     }
   ],
   "known_sources": [
