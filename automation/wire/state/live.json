@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T02:45:35.781310Z",
+  "updated_at": "2026-11-22T03:00:42.828947Z",
   "seen": [
-    {
-      "key": "913aa51bdba3cc63f894a938",
-      "url": "https://www.nhl.com/news/los-angeles-kings-new-york-islanders-game-recap-october-22-2026",
-      "fingerprint": "6e85f87987c24182",
-      "title_norm": "clarke's ot goal gives kings 2nd straight win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T02:45:40.918613Z"
-    },
-    {
-      "key": "e1469f8f695e7eea3e2f7adc",
-      "url": "https://www.nhl.com/news/vegas-golden-knights-st-louis-blues-game-recap-october-22-2026",
-      "fingerprint": "e79a41546ddb9b6c",
-      "title_norm": "barron gets first career four-point game in blues win against golden knights",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T03:00:40.557940Z"
-    },
     {
       "key": "7d9ccc6b02b300b2aa424720",
       "url": "https://www.nhl.com/news/winnipeg-jets-dallas-stars-game-recap-october-22-2026",
@@ -18942,6 +18922,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T02:45:35.735404Z"
+    },
+    {
+      "key": "c594fb3965eb78dd3fd07b55",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gavin-mckenna-wont-play-in-world-juniors",
+      "fingerprint": "cb77c8a5e289b3f2",
+      "title_norm": "maple leafs' gavin mckenna not going to world juniors",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T03:00:41.966871Z"
+    },
+    {
+      "key": "caaf579453d3ebe2d0996af2",
+      "url": "https://www.nhl.com/news/new-york-islanders-detroit-red-wings-game-recap-november-21-2026",
+      "fingerprint": "55a07e3fd4be4b7e",
+      "title_norm": "palat scores twice, islanders run point streak to 7",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T03:00:42.236860Z"
+    },
+    {
+      "key": "f26077f5f5cd6839217c780a",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/83f3c9e7-4c33-42b0-8e26-d2b14290fb53",
+      "fingerprint": "3c69a03ef2fb4e29",
+      "title_norm": "saturday night hockey on sportsnet: wild vs. canucks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T03:00:42.533476Z"
+    },
+    {
+      "key": "7e4114362aa15374969e5a5d",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-give-up-late-goal-fall-to-flyers",
+      "fingerprint": "4c69fb78f4859cf4",
+      "title_norm": "canadiens give up late goal, fall to flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T03:00:42.785113Z"
     }
   ],
   "known_sources": [
