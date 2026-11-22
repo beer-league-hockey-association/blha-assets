@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T06:45:47.960425Z",
+  "updated_at": "2026-11-22T07:15:40.710414Z",
   "seen": [
-    {
-      "key": "668f38fda961f071f6aa72f1",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-feel-fan-frustration-as-losing-streak-continues",
-      "fingerprint": "eb7dc717b3d863a6",
-      "title_norm": "canucks feel fan frustration as losing streak continues",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T07:15:36.027940Z"
-    },
     {
       "key": "beb915d36ee49472b1c027ac",
       "url": "https://www.sportsnet.ca/nhl/article/friday-four-how-realistic-is-200-points-for-oilers-connor-mcdavid",
