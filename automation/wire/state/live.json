@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T21:45:33.299480Z",
+  "updated_at": "2026-11-22T22:00:53.509691Z",
   "seen": [
-    {
-      "key": "f7b9f6c6db45b8975585451e",
-      "url": "https://www.sportsnet.ca/nhl/article/win-today-how-babcocks-honest-day-by-day-approach-has-worked-for-oilers",
-      "fingerprint": "aa5a8eb114c8d7c0",
-      "title_norm": "'win today': how babcock's honest, day-by-day approach has worked for oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T21:45:40.264851Z"
-    },
-    {
-      "key": "88f7986d4b9a601aef27fab4",
-      "url": "https://www.sportsnet.ca/nhl/article/mcdavid-welcomes-hellebuycks-move-east-as-nhl-stars-react-to-blockbuster-trade",
-      "fingerprint": "8bb6cde69930272b",
-      "title_norm": "mcdavid welcomes hellebuyck's move east as nhl stars react to blockbuster trade",
-      "channel": "breaking-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T21:45:40.553097Z"
-    },
     {
       "key": "24854e478046067e23ecf808",
       "url": "https://www.sportsnet.ca/nhl/video/elliotte-friedman-breaks-down-hellebuyck-trade-between-jets-devils",
@@ -18782,6 +18762,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T21:15:43.026287Z"
+    },
+    {
+      "key": "ae417e403fe05f060e29ce5c",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/b0ab1fe8-972b-42f3-9137-e71f244a6e28",
+      "fingerprint": "1ccd04980c90adb5",
+      "title_norm": "nhl on sportsnet: sabres vs. lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T22:00:53.461315Z"
     }
   ],
   "known_sources": [
