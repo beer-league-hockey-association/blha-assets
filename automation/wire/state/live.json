@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T07:15:40.710414Z",
+  "updated_at": "2026-11-22T07:45:32.405620Z",
   "seen": [
     {
       "key": "beb915d36ee49472b1c027ac",
@@ -18952,6 +18952,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T06:45:47.897415Z"
+    },
+    {
+      "key": "043584c32b0c19eec6b2f4c3",
+      "url": "https://www.sportsnet.ca/nhl/article/rossi-buium-help-take-down-former-team-in-canucks-gritty-win-over-wild",
+      "fingerprint": "b6f4b3d1d87f5db2",
+      "title_norm": "rossi, buium help take down former team in canucks' gritty win over wild",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T07:45:32.355666Z"
     }
   ],
   "known_sources": [
