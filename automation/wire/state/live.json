@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T19:45:46.408943Z",
+  "updated_at": "2026-11-22T20:15:35.237363Z",
   "seen": [
-    {
-      "key": "2620a0b88ecc47ac2b48e2a1",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-prepare-for-stiff-test-against-connor-mcdavid-oilers",
-      "fingerprint": "06758e3653216b85",
-      "title_norm": "maple leafs prepare for stiff test against connor mcdavid, oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T20:00:50.797120Z"
-    },
     {
       "key": "9f120145518d4dabf3360423",
       "url": "https://www.nhl.com/news/capitals-alex-tuch-set-for-different-first-game-against-sabres",
