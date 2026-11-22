@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T03:30:41.160419Z",
+  "updated_at": "2026-11-22T03:45:34.625250Z",
   "seen": [
-    {
-      "key": "77a9f2fa51e4a3a2ed05a5a9",
-      "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-becomes-fourth-player-to-record-30-points-in-first-10-games",
-      "fingerprint": "5cde9a95ca5685d9",
-      "title_norm": "connor mcdavid becomes fourth player to record 30 points in first 10 games",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T03:45:33.091670Z"
-    },
     {
       "key": "30db118ed1423a58a0714528",
       "url": "https://www.sportsnet.ca/nhl/article/jets-fall-to-stars-in-ot-for-fourth-loss-in-a-row",
@@ -18962,6 +18952,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T03:30:41.033522Z"
+    },
+    {
+      "key": "560a99f357727a518317cb9f",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-winnipeg-jets-game-recap-november-21-2026",
+      "fingerprint": "770744f88a95a268",
+      "title_norm": "barbashev ties it late, golden knights rally for shootout win against jets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T03:45:34.305174Z"
+    },
+    {
+      "key": "d60281dc4a7214ba167e4f92",
+      "url": "https://www.sportsnet.ca/nhl/article/jets-fall-to-golden-knights-in-shootout-after-schiefeles-milestone-goal",
+      "fingerprint": "f20a0be4746c9b3f",
+      "title_norm": "jets fall to golden knights in shootout after schiefele's milestone goal",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T03:45:34.553768Z"
     }
   ],
   "known_sources": [
