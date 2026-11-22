@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T18:00:46.474578Z",
+  "updated_at": "2026-11-22T18:15:36.485702Z",
   "seen": [
-    {
-      "key": "6f7e8f067552c9e3a95784bc",
-      "url": "https://www.sportsnet.ca/nhl/article/whitecloud-committed-to-future-with-flames-calgary-is-home",
-      "fingerprint": "898ba60ad0aa2554",
-      "title_norm": "whitecloud committed to future with flames: 'calgary is home'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T18:00:50.007585Z"
-    },
-    {
-      "key": "40b9f41f58b11b4c301e9490",
-      "url": "https://www.sportsnet.ca/nhl/video/why-bukala-loves-command-what-the-jets-got-in-return-for-hellebuyck",
-      "fingerprint": "907d64a8752a70de",
-      "title_norm": "why bukala loves command, what the jets got in return for hellebuyck",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T18:15:35.135965Z"
-    },
     {
       "key": "2583bb90d311b2b58c68a45a",
       "url": "https://www.dailyfaceoff.com/players/news/anthony-cirelli/3842",
