@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T01:30:37.837472Z",
+  "updated_at": "2026-11-22T01:45:30.866332Z",
   "seen": [
     {
       "key": "887c5fbe096df25bbe05bf17",
@@ -18952,6 +18952,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T01:30:37.802011Z"
+    },
+    {
+      "key": "76a84f1fd8416de4e622d0dc",
+      "url": "https://www.dailyfaceoff.com/players/news/clayton-keller/2642",
+      "fingerprint": "69e3ddbfd1238789",
+      "title_norm": "clayton keller (uta) — keller (illness) will not play saturday vs. the ducks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T01:45:30.503204Z"
+    },
+    {
+      "key": "f444ac8153540d935e3499cf",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "9067944eb2d42576",
+      "title_norm": "connor bedard (chi) — bedard will undergo shoulder surgery and is out indefinitely.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T01:45:30.814069Z"
     }
   ],
   "known_sources": [
