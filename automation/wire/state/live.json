@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T07:45:32.405620Z",
+  "updated_at": "2026-11-22T08:45:42.797973Z",
   "seen": [
     {
       "key": "beb915d36ee49472b1c027ac",
@@ -18962,6 +18962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T07:45:32.355666Z"
+    },
+    {
+      "key": "9da8795e24e782550b5046cb",
+      "url": "https://www.nhl.com/news/colorado-avalanche-nathan-mackinnon-injury-status-update-november-21-2026",
+      "fingerprint": "dd343e72438ff731",
+      "title_norm": "mackinnon out 12 weeks for avs after reevaluation",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T08:45:42.706296Z"
     }
   ],
   "known_sources": [
