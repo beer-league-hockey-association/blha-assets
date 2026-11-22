@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T13:00:38.469444Z",
+  "updated_at": "2026-11-22T14:15:32.140810Z",
   "seen": [
     {
       "key": "54e1dfcf28597fb3b443bfe6",
@@ -18972,6 +18972,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-22T13:00:38.402474Z"
+    },
+    {
+      "key": "f1f91880057592e19e7d1e62",
+      "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
+      "fingerprint": "33e5eebc34d33a34",
+      "title_norm": "zach hyman (edm) — hyman left saturday's game with a migraine and is questionable to play sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T14:15:31.754122Z"
+    },
+    {
+      "key": "f1b0971f81e9b866986c1b90",
+      "url": "https://www.dailyfaceoff.com/players/news/martin-pospisil/28414",
+      "fingerprint": "460310eee44ddcb7",
+      "title_norm": "martin pospisil (cgy) — pospisil left saturday's game with an upper-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T14:15:32.048411Z"
     }
   ],
   "known_sources": [
