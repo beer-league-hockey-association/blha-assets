@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T06:15:34.926143Z",
+  "updated_at": "2026-11-22T06:45:47.960425Z",
   "seen": [
     {
       "key": "668f38fda961f071f6aa72f1",
@@ -18942,6 +18942,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T06:15:34.799155Z"
+    },
+    {
+      "key": "8a7f3a1c6a6edeef7b5df28d",
+      "url": "https://www.nhl.com/news/minnesota-wild-vancouver-canucks-game-recap-november-21-2026",
+      "fingerprint": "5c08024d99e18ff1",
+      "title_norm": "rossi scores twice, helps canucks rally for shootout win against wild",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T06:45:47.698074Z"
+    },
+    {
+      "key": "f887959e7ff34afd6bd26223",
+      "url": "https://www.sportsnet.ca/nhl/article/debrusk-lifts-resilient-canucks-over-wild-with-shootout-winner",
+      "fingerprint": "6c7a966883bc7f1b",
+      "title_norm": "debrusk lifts resilient canucks over wild with shootout winner",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T06:45:47.897415Z"
     }
   ],
   "known_sources": [
