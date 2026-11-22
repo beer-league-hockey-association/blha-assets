@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T03:00:42.828947Z",
+  "updated_at": "2026-11-22T03:15:48.075487Z",
   "seen": [
-    {
-      "key": "7d9ccc6b02b300b2aa424720",
-      "url": "https://www.nhl.com/news/winnipeg-jets-dallas-stars-game-recap-october-22-2026",
-      "fingerprint": "3aa358dc9ba1b692",
-      "title_norm": "hintz ties it late, lifts stars past jets in ot for fourth straight win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T03:15:37.025286Z"
-    },
-    {
-      "key": "eb7c476dc0c8eb569bb575b4",
-      "url": "https://www.sportsnet.ca/nhl/article/bruins-michael-dipietro-honours-late-mother-with-shutout-on-hockey-fights-cancer-night",
-      "fingerprint": "1e92825c0ee99b18",
-      "title_norm": "bruins' michael dipietro honours late mother with shutout on hockey fights cancer night",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T03:15:37.326672Z"
-    },
     {
       "key": "0d9c5905ef72f74469de8ded",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-mattias-ekholm-exits-vs-hurricanes-after-hard-fall",
@@ -18962,6 +18942,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T03:00:42.785113Z"
+    },
+    {
+      "key": "4f34b0a29c4d51d0e0b03cb6",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-toronto-maple-leafs-game-recap-november-21-2026",
+      "fingerprint": "be55a21ae5e20002",
+      "title_norm": "jackets score 2 late, send leafs to 9th loss in row",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T03:15:47.387430Z"
+    },
+    {
+      "key": "616bf842aca57f4a9d01907d",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-montreal-canadiens-game-recap-november-21-2026",
+      "fingerprint": "2c982e9e06cebf9f",
+      "title_norm": "cates breaks tie with 31 seconds left, flyers recover",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T03:15:47.611728Z"
+    },
+    {
+      "key": "8ea155995b51d4dac3460f3e",
+      "url": "https://www.nhl.com/news/los-angeles-kings-ottawa-senators-game-recap-november-21-2026",
+      "fingerprint": "cc1960363d8888d5",
+      "title_norm": "stutzle has three points, senators pull away from kings in third period",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T03:15:47.958549Z"
     }
   ],
   "known_sources": [
