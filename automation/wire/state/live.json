@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T03:45:34.625250Z",
+  "updated_at": "2026-11-22T04:00:49.568700Z",
   "seen": [
-    {
-      "key": "30db118ed1423a58a0714528",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-fall-to-stars-in-ot-for-fourth-loss-in-a-row",
-      "fingerprint": "326dada33d9229a2",
-      "title_norm": "jets fall to stars in ot for fourth loss in a row",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T04:00:40.854482Z"
-    },
     {
       "key": "a0e5e99054988ff42d89c6da",
       "url": "https://www.nhl.com/news/minnesota-wild-calgary-flames-game-recap-october-22-2026",
@@ -18972,6 +18962,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T03:45:34.553768Z"
+    },
+    {
+      "key": "bd4fa9fcd2bc964107805c33",
+      "url": "https://www.nhl.com/news/wyatt-kaiser-to-have-player-safety-hearing-for-actions-in-chicago-blackhawks-game",
+      "fingerprint": "ad8257c8253c104d",
+      "title_norm": "kaiser of blackhawks to have player safety hearing",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T04:00:49.484633Z"
     }
   ],
   "known_sources": [
