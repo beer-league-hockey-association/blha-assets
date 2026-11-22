@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T22:00:53.509691Z",
+  "updated_at": "2026-11-22T22:15:42.358759Z",
   "seen": [
-    {
-      "key": "24854e478046067e23ecf808",
-      "url": "https://www.sportsnet.ca/nhl/video/elliotte-friedman-breaks-down-hellebuyck-trade-between-jets-devils",
-      "fingerprint": "a34328c087f321c6",
-      "title_norm": "elliotte friedman breaks down hellebuyck trade between jets, devils",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T22:15:39.504495Z"
-    },
     {
       "key": "4c34eb5b5099993687478e7c",
       "url": "https://www.dailyfaceoff.com/players/news/devon-levi/33010",
@@ -18772,6 +18762,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T22:00:53.461315Z"
+    },
+    {
+      "key": "1811842719bc0d85175f794c",
+      "url": "https://www.nhl.com/news/montreal-nhl-office-charity-ball-hockey-event-for-hockey-fights-cancer",
+      "fingerprint": "e28987a7606591ee",
+      "title_norm": "montreal nhl office stages charity ball hockey event",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T22:15:41.961386Z"
+    },
+    {
+      "key": "4b68f421419fe19e8d5960a5",
+      "url": "https://www.dailyfaceoff.com/players/news/declan-carlile/30124",
+      "fingerprint": "168dd3c9d9e17893",
+      "title_norm": "declan carlile (pit) — carlile (lower-body) is day-to-day and will not play sunday in dallas.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T22:15:42.285173Z"
     }
   ],
   "known_sources": [
