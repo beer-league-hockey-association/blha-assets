@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-21T23:15:33.675707Z",
+  "updated_at": "2026-11-22T00:00:44.853425Z",
   "seen": [
-    {
-      "key": "1b7162798fd3092ddeaf4d7a",
-      "url": "https://www.dailyfaceoff.com/players/news/mitch-marner/2475",
-      "fingerprint": "2e2a2f3f377e310e",
-      "title_norm": "mitch marner (vgk) — marner (personal) will not play thursday in st. louis.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-22T23:45:49.663498Z"
-    },
-    {
-      "key": "b110ea7fcfac257859f7ae08",
-      "url": "https://www.sportsnet.ca/nhl/article/panthers-cooper-black-becomes-tallest-goalie-to-play-nhl-game",
-      "fingerprint": "854708a653d1346e",
-      "title_norm": "panthers' cooper black becomes tallest goalie to play nhl game",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-22T23:45:49.925905Z"
-    },
-    {
-      "key": "d10606086f1904448a6490bd",
-      "url": "https://www.sportsnet.ca/nhl/article/red-wings-looking-for-young-centres-in-trade-talks",
-      "fingerprint": "b3be4a508745f8cb",
-      "title_norm": "red wings looking for young centres in trade talks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T00:00:39.963216Z"
-    },
     {
       "key": "15e3700490fe334701a795d0",
       "url": "https://www.nhl.com/news/nhl-and-winnipeg-jets-create-2026-heritage-classic-legacy-project",
@@ -18952,6 +18922,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-21T23:15:33.595576Z"
+    },
+    {
+      "key": "19ea9d299a1994ba8c42e984",
+      "url": "https://www.nhl.com/news/topic/short-shifts/taylor-halls-wife-sons-congratulate-forward-on-1000-nhl-games",
+      "fingerprint": "8b67ab370d39a029",
+      "title_norm": "hall joined by family to celebrate 1,000 games",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T00:00:44.370341Z"
+    },
+    {
+      "key": "e4f2d45b1dca12fb72526f69",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-calgary-flames-game-recap-november-21-2026",
+      "fingerprint": "f9e6fcbb35ead9b3",
+      "title_norm": "blackhawks defeat flames in ot for first road victory of season",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T00:00:44.786026Z"
     }
   ],
   "known_sources": [
