@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T17:30:36.479357Z",
+  "updated_at": "2026-11-22T17:45:35.880622Z",
   "seen": [
     {
       "key": "908cf977af3c4cd64ca1572d",
@@ -18872,6 +18872,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-22T17:30:36.382793Z"
+    },
+    {
+      "key": "a16dfd91b22389bc0b716af7",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "1fd6a28ab7a630dc",
+      "title_norm": "jack roslovic (tor) — roslovic missed sunday's practice and is considered day-to-day with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T17:45:35.724923Z"
     }
   ],
   "known_sources": [
