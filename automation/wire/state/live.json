@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T16:00:43.366370Z",
+  "updated_at": "2026-11-22T16:15:37.625218Z",
   "seen": [
-    {
-      "key": "ba08711a368999c70c1bebd4",
-      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
-      "fingerprint": "4207fb2f0a98be9f",
-      "title_norm": "evgeni malkin (pit) — malkin (illness) missed pittsburgh's practice on friday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T16:00:45.929216Z"
-    },
-    {
-      "key": "911dd8a99de30fc792c50a64",
-      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
-      "fingerprint": "70cba1a07ed4a46e",
-      "title_norm": "egor chinakhov (pit) — chinakhov (lower-body) will not play on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T16:00:46.147897Z"
-    },
-    {
-      "key": "8e1f58f9dfa57c6af41144de",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-recall-defencemen-cole-mcward-dakota-mermis",
-      "fingerprint": "d2b5f1036cbfb207",
-      "title_norm": "maple leafs recall defencemen cole mcward, dakota mermis",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T16:00:46.515135Z"
-    },
     {
       "key": "6e5a85bcdecd1e11a52281e3",
       "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
