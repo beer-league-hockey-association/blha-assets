@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T00:45:47.328847Z",
+  "updated_at": "2026-11-22T01:30:37.837472Z",
   "seen": [
-    {
-      "key": "6b2b4518fb41c34603b5c826",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/bf182bd8-c21b-4ce9-8ce5-f46d2ad7b447",
-      "fingerprint": "92471146bc466514",
-      "title_norm": "oilers on sportsnet: edmonton vs. carolina",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T01:15:40.863287Z"
-    },
-    {
-      "key": "07b8afc0da6b5573b3e55117",
-      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-sharks-askarov-reaches-across-open-net-to-make-insane-glove-save",
-      "fingerprint": "28d9e52b8747aaa9",
-      "title_norm": "gotta see it: sharks' askarov reaches across open net to make insane glove save",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T01:15:41.157412Z"
-    },
     {
       "key": "887c5fbe096df25bbe05bf17",
       "url": "https://www.nhl.com/news/anaheim-ducks-new-jersey-devils-game-recap-october-22-2026",
@@ -18962,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T00:30:40.004944Z"
+    },
+    {
+      "key": "9b54984798549e9e8f18a2b8",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-hellebuyck-pulled-midway-through-first-period-after-allowing-four-goals",
+      "fingerprint": "a46541c2bd0a0666",
+      "title_norm": "devils' hellebuyck pulled midway through first period after allowing four goals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T01:30:37.802011Z"
     }
   ],
   "known_sources": [
