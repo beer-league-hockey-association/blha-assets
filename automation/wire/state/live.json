@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T01:45:30.866332Z",
+  "updated_at": "2026-11-22T02:00:35.506000Z",
   "seen": [
     {
       "key": "887c5fbe096df25bbe05bf17",
@@ -18972,6 +18972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-22T01:45:30.814069Z"
+    },
+    {
+      "key": "d7edffadc4667f61a53157ac",
+      "url": "https://www.sportsnet.ca/nhl/article/rinzels-offensive-rise-lifts-young-hawk-into-elite-company-with-star-defencemen",
+      "fingerprint": "f952d1379fba6629",
+      "title_norm": "rinzel's offensive rise lifts young 'hawk into elite company with star defencemen",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T02:00:35.475373Z"
     }
   ],
   "known_sources": [
