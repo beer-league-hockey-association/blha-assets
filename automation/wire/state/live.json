@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T03:15:48.075487Z",
+  "updated_at": "2026-11-22T03:30:41.160419Z",
   "seen": [
-    {
-      "key": "0d9c5905ef72f74469de8ded",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-mattias-ekholm-exits-vs-hurricanes-after-hard-fall",
-      "fingerprint": "7c0e76953236a951",
-      "title_norm": "oilers' mattias ekholm exits vs. hurricanes after hard fall",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T03:30:39.918326Z"
-    },
-    {
-      "key": "97307dd717396c93c4281492",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-captain-nick-suzuki-out-multiple-weeks-with-upper-body-injury",
-      "fingerprint": "5e174d083986ecda",
-      "title_norm": "canadiens captain nick suzuki out multiple weeks with upper-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T03:30:40.210763Z"
-    },
     {
       "key": "77a9f2fa51e4a3a2ed05a5a9",
       "url": "https://www.sportsnet.ca/nhl/article/connor-mcdavid-becomes-fourth-player-to-record-30-points-in-first-10-games",
@@ -18972,6 +18952,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T03:15:47.958549Z"
+    },
+    {
+      "key": "ba3921be301df8bc4ef954f5",
+      "url": "https://www.nhl.com/news/washington-capitals-boston-bruins-game-recap-november-21-2026",
+      "fingerprint": "8411e4e12406afbc",
+      "title_norm": "elias lindholm scores four goals, bruins hold off slumping capitals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T03:30:41.033522Z"
     }
   ],
   "known_sources": [
