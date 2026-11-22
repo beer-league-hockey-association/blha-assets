@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T05:00:46.840688Z",
+  "updated_at": "2026-11-22T05:30:33.677864Z",
   "seen": [
     {
       "key": "cbc28d9ce7d51ef81be19bfd",
@@ -18932,6 +18932,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T05:00:46.780653Z"
+    },
+    {
+      "key": "8a974e12f50e99dec023b30b",
+      "url": "https://www.sportsnet.ca/nhl/article/fans-frustrated-as-maple-leaf-losses-mount",
+      "fingerprint": "ebd17d418a2836e7",
+      "title_norm": "fans frustrated as maple leafs' losses mount",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T05:30:33.150407Z"
+    },
+    {
+      "key": "d822c0f583d891f70c5ecb4a",
+      "url": "https://www.sportsnet.ca/nhl/article/stutzle-sizzles-offensively-in-third-period-as-senators-beat-kings",
+      "fingerprint": "eda506a7af5b1fa5",
+      "title_norm": "cousins makes an impact on winning in return to senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T05:30:33.642395Z"
     }
   ],
   "known_sources": [
