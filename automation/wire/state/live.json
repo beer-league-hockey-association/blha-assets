@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T14:30:41.686239Z",
+  "updated_at": "2026-11-22T15:00:41.642047Z",
   "seen": [
     {
       "key": "b5695e331d8a81b21bdc4969",
@@ -19022,6 +19022,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-22T14:30:41.153058Z"
+    },
+    {
+      "key": "c5773ec2f7641a9f056c18b8",
+      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-will-oilers-stars-finish-1-2-3-in-scoring",
+      "fingerprint": "a7738cb3304d4fcd",
+      "title_norm": "sunday overreactions: will oilers stars finish 1-2-3 in scoring?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T15:00:41.577918Z"
     }
   ],
   "known_sources": [
