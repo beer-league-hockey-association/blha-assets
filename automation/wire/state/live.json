@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T05:30:33.677864Z",
+  "updated_at": "2026-11-22T05:45:32.023624Z",
   "seen": [
-    {
-      "key": "cbc28d9ce7d51ef81be19bfd",
-      "url": "https://www.nhl.com/news/utah-mammoth-seattle-kraken-game-recap-october-22-2026",
-      "fingerprint": "7a63f0747c3ce279",
-      "title_norm": "samoskevich, kraken recover again to edge mammoth",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T05:30:41.425621Z"
-    },
     {
       "key": "058e7305eca2c8f39b64eb63",
       "url": "https://www.sportsnet.ca/nhl/article/its-just-not-real-mcdavid-makes-even-more-history-in-oilers-shootout-win",
