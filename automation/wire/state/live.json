@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T15:45:36.681257Z",
+  "updated_at": "2026-11-22T16:00:43.366370Z",
   "seen": [
-    {
-      "key": "1fcadfe2dadfe370f5a9a7e0",
-      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
-      "fingerprint": "2c49d019339360bd",
-      "title_norm": "chris tanev (tor) — tanev (upper-body) will travel with the team, but is still considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T15:45:44.813327Z"
-    },
-    {
-      "key": "4503add9e010af5a80bd387e",
-      "url": "https://www.dailyfaceoff.com/players/news/nick-blankenburg/36299",
-      "fingerprint": "775b6d9ff8029c1f",
-      "title_norm": "nick blankenburg (tor) — blankenburg (undisclosed) has been placed on ir and is considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T15:45:45.102937Z"
-    },
     {
       "key": "ba08711a368999c70c1bebd4",
       "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
