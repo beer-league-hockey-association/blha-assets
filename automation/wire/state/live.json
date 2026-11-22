@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T14:15:32.140810Z",
+  "updated_at": "2026-11-22T14:30:41.686239Z",
   "seen": [
-    {
-      "key": "54e1dfcf28597fb3b443bfe6",
-      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
-      "fingerprint": "152218b1bc41c584",
-      "title_norm": "radek faksa (dal) — faksa (undisclosed) left thursday's game and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T14:15:43.851573Z"
-    },
     {
       "key": "b5695e331d8a81b21bdc4969",
       "url": "https://www.dailyfaceoff.com/players/news/vincent-desharnais/25716",
@@ -18992,6 +18982,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-22T14:15:32.048411Z"
+    },
+    {
+      "key": "ee310bcb1435b8c8324cdd31",
+      "url": "https://www.dailyfaceoff.com/players/news/leo-carlsson/37943",
+      "fingerprint": "45f03c1b4df30082",
+      "title_norm": "leo carlsson (ana) — carlsson left saturday's game with an upper-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T14:30:40.593997Z"
+    },
+    {
+      "key": "98394f0d7f8dbda2c79fb704",
+      "url": "https://www.dailyfaceoff.com/players/news/nikolaj-ehlers/2370",
+      "fingerprint": "591a8f836ff8d0a8",
+      "title_norm": "nikolaj ehlers (car) — ehlers suffered a lower-body injury on saturday and will not play on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T14:30:40.879468Z"
+    },
+    {
+      "key": "536860b5539b5b37f35f66dc",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-frondell/38471",
+      "fingerprint": "ea2ae6a524378d36",
+      "title_norm": "anton frondell (chi) — frondell left saturday's game with an undisclosed injury and is questionable to play sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T14:30:41.126451Z"
+    },
+    {
+      "key": "0b0f91c9e980dbb40df3ce1c",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "86639ad93148e026",
+      "title_norm": "erik gustafsson (lak) — gustafsson left saturday's game with an upper-body injury and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T14:30:41.153058Z"
     }
   ],
   "known_sources": [
