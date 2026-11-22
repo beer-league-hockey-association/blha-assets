@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T02:30:36.261517Z",
+  "updated_at": "2026-11-22T02:45:35.781310Z",
   "seen": [
-    {
-      "key": "748b962a8d51d0c0921fbeb2",
-      "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
-      "fingerprint": "45e7debc038b5c73",
-      "title_norm": "igor chernyshov (sjs) — chernyshov (upper-body) left thursday's game vs. ottawa and will be out for a while.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T02:30:37.203656Z"
-    },
-    {
-      "key": "2d4cb3c8a7e2a4952d5d5862",
-      "url": "https://www.dailyfaceoff.com/players/news/marshall-rifai/25666",
-      "fingerprint": "916293b664ffc89a",
-      "title_norm": "marshall rifai (tor) — rifai is week-to-week with a lower-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T02:30:37.554135Z"
-    },
     {
       "key": "913aa51bdba3cc63f894a938",
       "url": "https://www.nhl.com/news/los-angeles-kings-new-york-islanders-game-recap-october-22-2026",
@@ -18942,6 +18922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T02:30:36.214556Z"
+    },
+    {
+      "key": "710352760bbe5385b6bf19c8",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-adjusting-ask-for-dylan-larkin",
+      "fingerprint": "0ff6fab78b1c5998",
+      "title_norm": "red wings adjusting ask for dylan larkin",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T02:45:35.427232Z"
+    },
+    {
+      "key": "187c5f3b1a6c32396250d83c",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-showing-interest-in-penguins-rakell-rust",
+      "fingerprint": "546a7f5938e9d8fd",
+      "title_norm": "senators showing interest in penguins' rakell, rust",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T02:45:35.735404Z"
     }
   ],
   "known_sources": [
