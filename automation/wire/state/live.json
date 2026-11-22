@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T06:00:36.692029Z",
+  "updated_at": "2026-11-22T06:15:34.926143Z",
   "seen": [
-    {
-      "key": "058e7305eca2c8f39b64eb63",
-      "url": "https://www.sportsnet.ca/nhl/article/its-just-not-real-mcdavid-makes-even-more-history-in-oilers-shootout-win",
-      "fingerprint": "8fe8f7505baa9582",
-      "title_norm": "'it's just not real': mcdavid makes even more history in oilers' shootout win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T06:00:45.204047Z"
-    },
-    {
-      "key": "33665535b9c1f5c5b375d7fe",
-      "url": "https://www.sportsnet.ca/nhl/article/devin-cooleys-masterpiece-sparks-flames-to-win-over-wild",
-      "fingerprint": "46399fb2a61537c9",
-      "title_norm": "devin cooley's masterpiece sparks flames to win over wild",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T06:15:29.545355Z"
-    },
     {
       "key": "668f38fda961f071f6aa72f1",
       "url": "https://www.sportsnet.ca/nhl/article/canucks-feel-fan-frustration-as-losing-streak-continues",
@@ -18952,6 +18932,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T06:00:36.631997Z"
+    },
+    {
+      "key": "5adcdba35f402b4f21e78397",
+      "url": "https://www.nhl.com/news/seattle-kraken-san-jose-sharks-game-recap-november-21-2026",
+      "fingerprint": "eebf59b16cf4eedd",
+      "title_norm": "celebrini, stenberg power sharks past kraken",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-22T06:15:34.799155Z"
     }
   ],
   "known_sources": [
