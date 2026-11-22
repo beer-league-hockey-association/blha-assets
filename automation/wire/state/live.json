@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T17:15:41.595801Z",
+  "updated_at": "2026-11-22T17:30:36.479357Z",
   "seen": [
     {
       "key": "908cf977af3c4cd64ca1572d",
@@ -18862,6 +18862,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-22T17:00:37.458545Z"
+    },
+    {
+      "key": "69116f816906326d5398cb43",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
+      "fingerprint": "dad2cd81abae2f96",
+      "title_norm": "sean durzi (nyr) — durzi (lower-body) will be back in the rangers lineup on sunday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T17:30:36.382793Z"
     }
   ],
   "known_sources": [
