@@ -1,68 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T02:15:39.164244Z",
+  "updated_at": "2026-11-22T02:30:36.261517Z",
   "seen": [
-    {
-      "key": "8f4249f73415c753347b7267",
-      "url": "https://www.nhl.com/news/new-york-rangers-toronto-maple-leafs-game-recap-october-22-2026",
-      "fingerprint": "042d72027e80d770",
-      "title_norm": "stecher scores late, maple leafs win 3rd in row",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T02:15:39.820571Z"
-    },
-    {
-      "key": "087e9445a72dd041742b8dc9",
-      "url": "https://www.nhl.com/news/san-jose-sharks-ottawa-senators-game-recap-october-22-2026",
-      "fingerprint": "746fa82f4ea094ca",
-      "title_norm": "sharks score 6 to ease past senators",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T02:15:40.051282Z"
-    },
-    {
-      "key": "835f40ccc82b4af2a4a31334",
-      "url": "https://www.nhl.com/news/nashville-predators-boston-bruins-game-recap-october-22-2026",
-      "fingerprint": "8352ab47a4bece07",
-      "title_norm": "dipietro gets first career shutout, bruins defeat predators to stay hot",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-23T02:15:40.357511Z"
-    },
-    {
-      "key": "d5afeb96f612cb56b73d6a6b",
-      "url": "https://www.sportsnet.ca/nhl/article/stecher-scores-in-final-minute-to-lift-maple-leafs-over-rangers",
-      "fingerprint": "e206d9e2c792dc95",
-      "title_norm": "stecher scores in final minute to lift maple leafs over rangers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T02:15:40.410360Z"
-    },
-    {
-      "key": "f5bc0ce30153c361e8088985",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/ae451ce0-707f-46ad-a0cc-02df7572ebef",
-      "fingerprint": "1e718cd8e9436da6",
-      "title_norm": "canucks on sportsnet: detroit vs. vancouver",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T02:15:40.418280Z"
-    },
-    {
-      "key": "8303559d772900a471f95ec1",
-      "url": "https://www.sportsnet.ca/nhl/article/balanced-scoring-attack-leads-sharks-to-victory-over-senators",
-      "fingerprint": "4705fe994d34330c",
-      "title_norm": "balanced scoring attack leads sharks to victory over senators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T02:15:40.432742Z"
-    },
     {
       "key": "748b962a8d51d0c0921fbeb2",
       "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
@@ -18982,6 +18922,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T02:15:39.098825Z"
+    },
+    {
+      "key": "c8b824ac744113abbd908a8c",
+      "url": "https://www.buffalohockeybeat.com/sabres-prospect-radim-mrtka-ahls-youngest-player-settled-in-rochester-and-developing-with-amerks",
+      "fingerprint": "897a9eb57d8fce00",
+      "title_norm": "ahl's youngest player, mrtka settling in with amerks",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-22T02:30:35.945082Z"
+    },
+    {
+      "key": "62c4f499c8435543d63586ad",
+      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-clearing-up-maple-leafs-first-round-pick",
+      "fingerprint": "b36a057fd8cef8d7",
+      "title_norm": "saturday headlines: clearing up maple leafs' first-round pick",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T02:30:36.214556Z"
     }
   ],
   "known_sources": [
