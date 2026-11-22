@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T20:45:36.949570Z",
+  "updated_at": "2026-11-22T21:15:43.067461Z",
   "seen": [
-    {
-      "key": "55f71410e0400c62fba9ea53",
-      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-breaking-down-the-connor-hellebuyck-blockbuster",
-      "fingerprint": "b6684b1b6cd99631",
-      "title_norm": "scout's analysis: breaking down the connor hellebuyck blockbuster trade",
-      "channel": "breaking-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T21:15:35.075951Z"
-    },
-    {
-      "key": "a49e2c2e16c05c43bd0616c5",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
-      "fingerprint": "abd5d6ce606ae7d0",
-      "title_norm": "pavel mintyukov (ana) — mintyukov has been placed on ir with a lower-body injury.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-23T21:15:35.461194Z"
-    },
-    {
-      "key": "6f7c170e5fc329479c2c1f3c",
-      "url": "https://www.sportsnet.ca/nhl/video/how-hellebuyck-acquisition-puts-devils-firmly-in-pursuit-of-division",
-      "fingerprint": "cf3fa52ab4769db9",
-      "title_norm": "how hellebuyck acquisition puts devils 'firmly in pursuit' of division",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T21:15:35.741766Z"
-    },
     {
       "key": "1317191a426fcc9e21c08df4",
       "url": "https://www.sportsnet.ca/nhl/video/kypreos-on-hellebuyck-trade-return-i-dont-like-it-for-winnipeg-fans",
@@ -18812,6 +18782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T20:45:36.872324Z"
+    },
+    {
+      "key": "519b2077ed941539d487e550",
+      "url": "https://www.sportsnet.ca/nhl/article/bussi-makes-25-saves-to-help-hurricanes-down-rangers",
+      "fingerprint": "264c73e7b84309c0",
+      "title_norm": "bussi makes 25 saves to help hurricanes down rangers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T21:15:43.026287Z"
     }
   ],
   "known_sources": [
