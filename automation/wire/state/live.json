@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T12:30:40.727832Z",
+  "updated_at": "2026-11-22T13:00:38.469444Z",
   "seen": [
     {
       "key": "54e1dfcf28597fb3b443bfe6",
@@ -18952,6 +18952,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T08:45:42.706296Z"
+    },
+    {
+      "key": "fd5ded486d0983b38d870ebd",
+      "url": "https://www.dailyfaceoff.com/players/news/leo-carlsson/37943",
+      "fingerprint": "8c7c88c7187bb1ca",
+      "title_norm": "leo carlsson (ana) — carlsson (upper-body) left saturday's game vs. utah and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T13:00:38.111977Z"
+    },
+    {
+      "key": "8b608c7e8917c054591493d9",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "e002cb54985c6073",
+      "title_norm": "erik gustafsson (lak) — gustafsson (upper-body) left saturday's game vs. ottawa and did not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T13:00:38.402474Z"
     }
   ],
   "known_sources": [
