@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T00:00:44.853425Z",
+  "updated_at": "2026-11-22T00:15:43.284686Z",
   "seen": [
     {
       "key": "15e3700490fe334701a795d0",
@@ -18942,6 +18942,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T00:00:44.786026Z"
+    },
+    {
+      "key": "2f3c043f91d8354d38ac0ff8",
+      "url": "https://www.sportsnet.ca/nhl/article/sam-rinzels-overtime-goal-lifts-blackhawks-over-flames",
+      "fingerprint": "8dd5edfaa4c8769f",
+      "title_norm": "sam rinzel's overtime goal lifts blackhawks over flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T00:15:42.344790Z"
+    },
+    {
+      "key": "f5d8e4fe46d515339749852e",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/13f2248e-69ff-409d-82d4-c42cb0048163",
+      "fingerprint": "e8d99de0c7d4629d",
+      "title_norm": "saturday night hockey on sportsnet: blue jackets vs. maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T00:15:42.669493Z"
+    },
+    {
+      "key": "c729b5a0f0c73e8af88bb48c",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/2c74558d-22c1-4926-a2de-95bce15b685c",
+      "fingerprint": "060eb73a9d129569",
+      "title_norm": "saturday night hockey on sportsnet: flyers vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T00:15:42.946853Z"
+    },
+    {
+      "key": "8a5a55aacb583e1457ff09ae",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/8ea36a59-3f41-4d24-82fc-c0b0fbc428db",
+      "fingerprint": "9399831f2fd12eb8",
+      "title_norm": "saturday night hockey on sportsnet: kings vs. senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T00:15:42.957043Z"
     }
   ],
   "known_sources": [
