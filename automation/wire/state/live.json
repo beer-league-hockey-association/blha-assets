@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T19:15:36.753004Z",
+  "updated_at": "2026-11-22T19:45:46.408943Z",
   "seen": [
-    {
-      "key": "4f68dd55bee222f20b23bd08",
-      "url": "https://www.sportsnet.ca/nhl/article/namestnikov-placed-on-ir-amid-other-jets-roster-moves",
-      "fingerprint": "ac286bd05971a274",
-      "title_norm": "namestnikov placed on ir amid other jets roster moves",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-23T19:45:38.291253Z"
-    },
     {
       "key": "2620a0b88ecc47ac2b48e2a1",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-prepare-for-stiff-test-against-connor-mcdavid-oilers",
@@ -18802,6 +18792,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-22T19:15:36.598493Z"
+    },
+    {
+      "key": "68efc0402f59a33f325ea27e",
+      "url": "https://www.dailyfaceoff.com/players/news/artemi-panarin/2519",
+      "fingerprint": "5b20deb016688fd8",
+      "title_norm": "artemi panarin (lak) — panarin (personal) will \"most likely\" play monday in montreal.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-22T19:45:46.290884Z"
+    },
+    {
+      "key": "f2991de291b0700bafd3ddd4",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-place-reinhardt-on-waivers-with-barkov-nearing-return",
+      "fingerprint": "526c1c1102897b88",
+      "title_norm": "panthers place reinhardt on waivers with barkov nearing return",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T19:45:46.357473Z"
     }
   ],
   "known_sources": [
