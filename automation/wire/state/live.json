@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T05:45:32.023624Z",
+  "updated_at": "2026-11-22T06:00:36.692029Z",
   "seen": [
     {
       "key": "058e7305eca2c8f39b64eb63",
@@ -18942,6 +18942,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-22T05:30:33.642395Z"
+    },
+    {
+      "key": "83504ffe2028c71bb65dcdfa",
+      "url": "https://www.sportsnet.ca/nhl/article/knies-spurs-blue-jackets-comeback-in-emotional-return-to-toronto",
+      "fingerprint": "824e5772c0022958",
+      "title_norm": "knies spurs blue jackets' comeback in emotional return to toronto",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-22T06:00:36.631997Z"
     }
   ],
   "known_sources": [
