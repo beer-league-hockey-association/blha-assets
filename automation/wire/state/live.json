@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T15:30:36.958383Z",
+  "updated_at": "2026-11-23T15:45:44.332714Z",
   "seen": [
-    {
-      "key": "472ef61080d57c2d7a9014e0",
-      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
-      "fingerprint": "bda7807b5626af3c",
-      "title_norm": "thomas chabot (ott) — chabot (upper-body) will travel with and is expected to return during ottawa's upcoming road trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T15:30:37.770994Z"
-    },
-    {
-      "key": "85481fb62cf958e9e41c8f7f",
-      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
-      "fingerprint": "8b950b62cd447215",
-      "title_norm": "evgeni malkin (pit) — malkin (illness) is out vs. nashville on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T15:30:38.099793Z"
-    },
-    {
-      "key": "3d68bd44fc344ab64bafb0a7",
-      "url": "https://www.dailyfaceoff.com/players/news/sean-durzi/27104",
-      "fingerprint": "545d0d55200f0ac4",
-      "title_norm": "sean durzi (nyr) — durzi (undisclosed) will be a game-time decision in ottawa on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T15:45:30.450522Z"
-    },
     {
       "key": "6f9bbbeea5a89e966159e764",
       "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
