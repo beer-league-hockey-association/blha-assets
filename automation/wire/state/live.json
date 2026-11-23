@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T14:15:34.903875Z",
+  "updated_at": "2026-11-23T15:00:49.468544Z",
   "seen": [
-    {
-      "key": "699915bd16a01f94248205ac",
-      "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
-      "fingerprint": "c0eb0e432978f774",
-      "title_norm": "igor chernyshov (sjs) — chernyshov (upper-body) is out vs. boston on saturday and has returned to san jose for further evaluation.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T15:00:40.107070Z"
-    },
-    {
-      "key": "ac61a861c5ce5ae9195b5202",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
-      "fingerprint": "0af7df6b9d7b8a2c",
-      "title_norm": "rasmus ristolainen (phi) — ristolainen (upper-body) will be a game-time decision vs. anaheim on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T15:00:40.327817Z"
-    },
     {
       "key": "79b8d20aaf68fec8f3b0e6eb",
       "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
