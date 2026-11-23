@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T17:45:39.711273Z",
+  "updated_at": "2026-11-23T18:00:40.539146Z",
   "seen": [
-    {
-      "key": "d0451ca8aa035663d7bb826c",
-      "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
-      "fingerprint": "69fda717545d0952",
-      "title_norm": "igor chernyshov (sjs) — chernyshov (upper-body) is considered week-to-week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T18:00:38.251968Z"
-    },
-    {
-      "key": "57ae0f842cbff34ddb5eab62",
-      "url": "https://www.dailyfaceoff.com/players/news/adam-gaudette/4646",
-      "fingerprint": "8104882385b07e77",
-      "title_norm": "adam gaudette (sjs) — gaudette (upper-body) will make his season debut in ottawa on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T18:00:38.566246Z"
-    },
     {
       "key": "77345fe725d2ae48695a9bba",
       "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
@@ -18742,6 +18722,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T17:15:37.248216Z"
+    },
+    {
+      "key": "8877fa37b06b4c5190e35e3f",
+      "url": "https://www.dailyfaceoff.com/players/news/clayton-keller/2642",
+      "fingerprint": "e2aeb6f076c22b23",
+      "title_norm": "clayton keller (uta) — keller (illness) is expected to return in winnipeg on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:00:39.588747Z"
+    },
+    {
+      "key": "8c7afb7f8a87813297db333f",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "0f33d691812efa25",
+      "title_norm": "dylan guenther (uta) — guenther (upper-body) will remain out vs. winnipeg on monday and is still considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:00:39.893300Z"
+    },
+    {
+      "key": "c50e327ddd36029a3ed96b84",
+      "url": "https://www.dailyfaceoff.com/players/news/john-marino/25570",
+      "fingerprint": "e46e81afb3309e31",
+      "title_norm": "john marino (uta) — marino (upper-body) is day-to-day and unsure if he will play on the current road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:00:40.228908Z"
+    },
+    {
+      "key": "eb786408b78b09e307b052ce",
+      "url": "https://www.dailyfaceoff.com/players/news/michael-carcone/3864",
+      "fingerprint": "b07a17486dab1b9f",
+      "title_norm": "michael carcone (uta) — carcone (upper-body) is expected to be for the next 3-4 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:00:40.236011Z"
     }
   ],
   "known_sources": [
