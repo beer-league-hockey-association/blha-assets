@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T09:45:46.648718Z",
+  "updated_at": "2026-11-23T10:31:11.081668Z",
   "seen": [
-    {
-      "key": "7c60e923cfb1fd7c4c9ec999",
-      "url": "https://www.sportsnet.ca/nhl/article/mackinnon-has-four-points-as-avalanche-beat-lightning",
-      "fingerprint": "2c45401b23ff4539",
-      "title_norm": "mackinnon has four points as avalanche beat lightning",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T10:30:39.680792Z"
-    },
     {
       "key": "12e5844b4ef7d71ec898ed81",
       "url": "https://www.sportsnet.ca/nhl/article/quick-shifts-maple-leafs-mike-babcock-set-to-reunite-as-foes-in-edmonton",
@@ -18812,6 +18802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T06:15:36.682709Z"
+    },
+    {
+      "key": "69bd4b34d6b437e3e9304eb9",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-9-e3srnte",
+      "fingerprint": "25da0982f356bb21",
+      "title_norm": "puzzling players: what do we do with these guys? | fantasy hockey week 9",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-23T10:31:11.013255Z"
     }
   ],
   "known_sources": [
