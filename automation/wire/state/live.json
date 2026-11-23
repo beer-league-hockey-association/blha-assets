@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T02:15:40.850108Z",
+  "updated_at": "2026-11-23T02:30:36.729943Z",
   "seen": [
     {
       "key": "2fc9d5fe563426a89139e9aa",
@@ -18812,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T02:15:40.821231Z"
+    },
+    {
+      "key": "a948421366d8809d5c52c0fe",
+      "url": "https://www.sportsnet.ca/nhl/article/cup-contender-hockey-fans-reacts-to-canadiens-blockbuster-larkin-trade",
+      "fingerprint": "f14830ad3615e8a5",
+      "title_norm": "'cup contender': hockey fans react to canadiens' blockbuster larkin trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T02:30:36.692148Z"
     }
   ],
   "known_sources": [
