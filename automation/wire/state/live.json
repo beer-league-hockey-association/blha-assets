@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T16:15:53.285305Z",
+  "updated_at": "2026-11-23T16:30:47.694594Z",
   "seen": [
     {
       "key": "e0126f2cbb763666fd25fe6e",
@@ -18712,6 +18712,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T16:15:53.244042Z"
+    },
+    {
+      "key": "8f477cdd19849db92ecf073e",
+      "url": "https://www.sportsnet.ca/nhl/article/watch-live-canadiens-gm-kent-hughes-speaks-after-acquiring-dylan-larkin",
+      "fingerprint": "2a78b8b8f329e371",
+      "title_norm": "watch live: canadiens gm kent hughes, dylan larkin speak after trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T16:30:47.146986Z"
+    },
+    {
+      "key": "673f05b412724a615e74733f",
+      "url": "https://dobberprospects.com/2026/11/23/november-khl-report-scoring-leaders",
+      "fingerprint": "c551578a9eafee49",
+      "title_norm": "november khl report: scoring leaders",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-23T16:30:47.670582Z"
     }
   ],
   "known_sources": [
