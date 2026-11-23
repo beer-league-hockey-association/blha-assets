@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T00:30:51.045430Z",
+  "updated_at": "2026-11-23T00:45:37.024727Z",
   "seen": [
     {
       "key": "6b1a969a0fc963d0fcc2d0ac",
@@ -18762,6 +18762,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T00:15:34.836043Z"
+    },
+    {
+      "key": "ab21df57f287861eea16254d",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-frondell/38471",
+      "fingerprint": "8ef527c1d3c406ee",
+      "title_norm": "anton frondell (chi) — frondell (undisclosed) will not play sunday in vancouver.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T00:45:36.891556Z"
     }
   ],
   "known_sources": [
