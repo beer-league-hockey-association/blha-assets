@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T22:30:54.198019Z",
+  "updated_at": "2026-11-23T23:15:37.515536Z",
   "seen": [
-    {
-      "key": "866461dc71a1eafc701ac027",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/4b95a8ae-fd20-45e6-a5b2-466abbc77590",
-      "fingerprint": "877503541f77f094",
-      "title_norm": "saturday night hockey on sportsnet: maple leafs vs. oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T23:00:42.093237Z"
-    },
     {
       "key": "5d5a18efaf5564e92a788c3e",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/b586c4d4-3d58-46a6-9634-163ff66736e9",
@@ -18822,6 +18812,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-23T22:30:54.090597Z"
+    },
+    {
+      "key": "25eeb31390ad373d309af1a0",
+      "url": "https://www.sportsnet.ca/nhl/article/kings-erik-gustafsson-place-on-injured-reserve-will-miss-multiple-weeks",
+      "fingerprint": "75c5adf4e547c575",
+      "title_norm": "kings' erik gustafsson place on injured reserve, will miss multiple weeks",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T23:15:37.467759Z"
     }
   ],
   "known_sources": [
