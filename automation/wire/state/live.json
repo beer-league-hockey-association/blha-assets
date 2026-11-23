@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T12:30:55.902406Z",
+  "updated_at": "2026-11-23T13:15:38.646118Z",
   "seen": [
     {
       "key": "ce752cff41f888bfd20f453b",
@@ -18802,6 +18802,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-23T10:31:11.013255Z"
+    },
+    {
+      "key": "807fe6c2c647e984d74d4a04",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/bonjour-dylan",
+      "fingerprint": "f4d594ab7e40c9fc",
+      "title_norm": "32 thoughts podcast: bonjour, dylan",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T13:15:38.591572Z"
     }
   ],
   "known_sources": [
