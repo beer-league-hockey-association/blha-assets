@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T00:15:34.877761Z",
+  "updated_at": "2026-11-23T00:30:51.045430Z",
   "seen": [
-    {
-      "key": "1398ce1c075627a55e1df580",
-      "url": "https://www.sportsnet.ca/nhl/article/end-of-hellebuyck-era-brings-relief-for-jets-cheveldayoff",
-      "fingerprint": "e86dc9968c6beb89",
-      "title_norm": "end of hellebuyck era brings relief for jets, cheveldayoff",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T00:30:35.735439Z"
-    },
     {
       "key": "6b1a969a0fc963d0fcc2d0ac",
       "url": "https://www.nhl.com/news/winnipeg-jets-expecting-unreal-atmosphere-in-heritage-classic",
