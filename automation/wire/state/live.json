@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T23:15:37.515536Z",
+  "updated_at": "2026-11-23T23:30:42.870887Z",
   "seen": [
-    {
-      "key": "5d5a18efaf5564e92a788c3e",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/b586c4d4-3d58-46a6-9634-163ff66736e9",
-      "fingerprint": "f54600c11e2de636",
-      "title_norm": "saturday night hockey on sportsnet: rangers vs. senators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T23:30:41.435226Z"
-    },
     {
       "key": "c989288ee34592729099e797",
       "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
@@ -18822,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T23:15:37.467759Z"
+    },
+    {
+      "key": "1165dcc402ff31fc963e559e",
+      "url": "https://www.sportsnet.ca/nhl/video/why-larkin-makes-canadiens-team-to-beat-in-atlantic-division",
+      "fingerprint": "d70f614f0e56d0e6",
+      "title_norm": "why larkin makes canadiens team to beat in atlantic division",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T23:30:42.819064Z"
     }
   ],
   "known_sources": [
