@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T21:15:34.460663Z",
+  "updated_at": "2026-11-23T21:30:50.645756Z",
   "seen": [
-    {
-      "key": "a04940b3f648c7f13b2ae32f",
-      "url": "https://www.sportsnet.ca/nhl/article/quinn-hughes-on-wild-contract-talks-my-two-feet-are-planted-in-minnesota",
-      "fingerprint": "47df508cf5fb37aa",
-      "title_norm": "quinn hughes on wild contract talks: 'my two feet are planted in minnesota'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T21:15:34.772764Z"
-    },
-    {
-      "key": "99b95a19726c56864b7818ef",
-      "url": "https://www.sportsnet.ca/nhl/article/ducks-leo-carlsson-burns-flyers-with-goal-and-assist-in-win",
-      "fingerprint": "ed15d67ce6a76b7d",
-      "title_norm": "ducks' leo carlsson burns flyers with goal and assist in win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T21:15:35.001821Z"
-    },
     {
       "key": "184ca1aed6062f2b0dd2bd50",
       "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-embraces-fresh-start-with-devils-postpones-message-to-jets-fans",
