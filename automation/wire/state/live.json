@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T14:00:44.348811Z",
+  "updated_at": "2026-11-23T14:15:34.903875Z",
   "seen": [
     {
       "key": "699915bd16a01f94248205ac",
@@ -18802,6 +18802,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T13:15:38.591572Z"
+    },
+    {
+      "key": "3ff4e0980f13f8d2ad69293f",
+      "url": "https://www.nhl.com/news/topic/trade-coverage/dylan-larkin-traded-to-montreal-canadiens-from-detroit-red-wings",
+      "fingerprint": "092edfda97f05f2d",
+      "title_norm": "larkin traded to habs for package involving dach, hage",
+      "channel": "nhl-transactions",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T14:15:34.779602Z"
     }
   ],
   "known_sources": [
