@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T17:00:44.903191Z",
+  "updated_at": "2026-11-23T17:15:37.320714Z",
   "seen": [
     {
       "key": "41a026d668f5258a5ab600ea",
@@ -18762,6 +18762,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T16:45:52.947789Z"
+    },
+    {
+      "key": "c20999b9581da1a1929215a8",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-kyrou/3867",
+      "fingerprint": "c4e0ed527ce4cf91",
+      "title_norm": "jordan kyrou (wsh) — kyrou is expected to miss at least the next week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T17:15:36.708738Z"
+    },
+    {
+      "key": "c62054a2cfbfda8904afc411",
+      "url": "https://www.nhl.com/news/gavin-mckenna-watch-no-1-pick-maple-leafs-hope-to-end-skid",
+      "fingerprint": "d3681aa2cacb0b2a",
+      "title_norm": "mckenna watch: no. 1 pick, leafs mired in slump",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T17:15:36.945904Z"
+    },
+    {
+      "key": "8415dde8d79a05bc1abeef36",
+      "url": "https://www.nhl.com/news/color-of-hockey-marcus-laraque-forging-own-path-to-nhl-from-dad-georges",
+      "fingerprint": "2bd798d47eb41933",
+      "title_norm": "color of hockey: younger laraque forging own path to nhl",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T17:15:37.248216Z"
     }
   ],
   "known_sources": [
