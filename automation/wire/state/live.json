@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T17:30:42.709902Z",
+  "updated_at": "2026-11-23T17:45:39.711273Z",
   "seen": [
-    {
-      "key": "96936302711d034434df749d",
-      "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
-      "fingerprint": "0cad3bb36ef5dff2",
-      "title_norm": "jared mccann (sea) — mccann (lower-body) is out vs. minnesota on saturday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T17:45:34.044914Z"
-    },
     {
       "key": "d0451ca8aa035663d7bb826c",
       "url": "https://www.dailyfaceoff.com/players/news/igor-chernyshov/38146",
