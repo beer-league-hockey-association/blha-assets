@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T02:00:38.269765Z",
+  "updated_at": "2026-11-23T02:15:40.850108Z",
   "seen": [
     {
       "key": "2fc9d5fe563426a89139e9aa",
@@ -18792,6 +18792,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T02:00:38.229519Z"
+    },
+    {
+      "key": "b67176c92fd7ccb2347b0908",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-acquire-dylan-larkin-from-red-wings",
+      "fingerprint": "7bcdce931f0e7429",
+      "title_norm": "canadiens acquire dylan larkin from red wings",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T02:15:40.644291Z"
+    },
+    {
+      "key": "a3b9df5a2cefc6510aab56df",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/fd4bfdc8-6d07-49bb-9134-7a4c7b1c7f35",
+      "fingerprint": "a0ca061d6d919a03",
+      "title_norm": "canucks on sportsnet: chicago vs. vancouver",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T02:15:40.821231Z"
     }
   ],
   "known_sources": [
