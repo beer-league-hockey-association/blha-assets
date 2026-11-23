@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T04:15:41.683966Z",
+  "updated_at": "2026-11-23T04:30:44.075175Z",
   "seen": [
-    {
-      "key": "f35e7b7ffe30732024e7813c",
-      "url": "https://www.nhl.com/news/tampa-bay-lightning-colorado-avalanche-game-recap-october-23-2026",
-      "fingerprint": "2d44c5520bbfe47d",
-      "title_norm": "mackinnon has four points, avalanche defeat lightning to get back on track",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T04:30:34.329637Z"
-    },
     {
       "key": "7c1980f5cebebcaf7e234c23",
       "url": "https://www.nhl.com/news/2026-heritage-classic-rekindles-childhood-memories-for-montreal-canadiens",
@@ -18832,6 +18822,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T04:15:41.609288Z"
+    },
+    {
+      "key": "e35763f3ffa217a535f53900",
+      "url": "https://www.nhl.com/news/nhl-edge-stats-dylan-larkin-trade-to-montreal-canadiens-2026-27",
+      "fingerprint": "bccf027e7fca7f4c",
+      "title_norm": "edge stats: larkin trade boosts canadiens' cup chances",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T04:30:44.004521Z"
     }
   ],
   "known_sources": [
