@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T04:00:45.794072Z",
+  "updated_at": "2026-11-23T04:15:41.683966Z",
   "seen": [
-    {
-      "key": "f4a60a245d555acb9c205d03",
-      "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro",
-      "fingerprint": "9f1e1321f405c0d4",
-      "title_norm": "heritage blog: ferraro of jets ready for 1st outdoor game",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T04:15:32.432407Z"
-    },
     {
       "key": "f35e7b7ffe30732024e7813c",
       "url": "https://www.nhl.com/news/tampa-bay-lightning-colorado-avalanche-game-recap-october-23-2026",
@@ -18822,6 +18812,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T03:45:34.495282Z"
+    },
+    {
+      "key": "8c6e616bf3e527b73064fea5",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-vancouver-canucks-game-recap-november-22-2026",
+      "fingerprint": "822de5a30a8e1b4a",
+      "title_norm": "kantserov's 1st hat trick lifts blackhawks past canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T04:15:41.302678Z"
+    },
+    {
+      "key": "a80624699d3cf5a7f8f2c8c4",
+      "url": "https://www.sportsnet.ca/nhl/article/blues-rally-over-oilers-in-shootout-for-fourth-straight-win",
+      "fingerprint": "f93f116dd6a00be3",
+      "title_norm": "oilers blow three-goal lead, lose to blues in shootout",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T04:15:41.609288Z"
     }
   ],
   "known_sources": [
