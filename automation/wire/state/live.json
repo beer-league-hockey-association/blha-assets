@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T16:45:53.017729Z",
+  "updated_at": "2026-11-23T17:00:44.903191Z",
   "seen": [
-    {
-      "key": "e0126f2cbb763666fd25fe6e",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/32cd71ea-939d-4290-80d9-06a37b178cb4",
-      "fingerprint": "474388337f25752b",
-      "title_norm": "nhl on sportsnet: ducks vs. flyers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T16:59:51.179086Z"
-    },
     {
       "key": "41a026d668f5258a5ab600ea",
       "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
