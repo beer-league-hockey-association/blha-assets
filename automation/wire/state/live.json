@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T05:30:38.680339Z",
+  "updated_at": "2026-11-23T05:45:38.270629Z",
   "seen": [
-    {
-      "key": "9b826c52bb60bfe18d65eed9",
-      "url": "https://www.nhl.com/news/winnipeg-jets-gm-comfortable-with-connor-hellebuyck-trade",
-      "fingerprint": "e08f1a2a153766f0",
-      "title_norm": "jets gm 'comfortable' with hellebuyck trade",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T05:45:30.785044Z"
-    },
     {
       "key": "1d00c1ffa48e8df4f6813603",
       "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-connor-hellebuyck-trade-to-new-jersey-devils-2026-27",
@@ -18822,6 +18812,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T05:15:38.730020Z"
+    },
+    {
+      "key": "1e294c3c1578874a64c676f7",
+      "url": "https://www.sportsnet.ca/nhl/article/engels-larkin-worth-the-hefty-price-canadiens-paid-red-wings",
+      "fingerprint": "f1e71291ea503e7d",
+      "title_norm": "engels: larkin worth the hefty price canadiens paid red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T05:45:38.205076Z"
     }
   ],
   "known_sources": [
