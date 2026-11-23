@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T16:00:40.601790Z",
+  "updated_at": "2026-11-23T16:15:53.285305Z",
   "seen": [
-    {
-      "key": "89405d2f18072df63f29b354",
-      "url": "https://www.nhl.com/news/chl-notebook-harrington-novotny-schmidt-among-top-nhl-western-prospects",
-      "fingerprint": "11611e5ef9709fa3",
-      "title_norm": "chl notebook: quick-starting nhl western prospects",
-      "channel": "prospect-wire",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T16:15:38.463134Z"
-    },
     {
       "key": "e0126f2cbb763666fd25fe6e",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/32cd71ea-939d-4290-80d9-06a37b178cb4",
@@ -18712,6 +18702,16 @@
       "source_id": "pod_nhl_fantasy_on_ice",
       "tier": 2,
       "seen_at": "2026-11-23T16:00:40.577422Z"
+    },
+    {
+      "key": "4ed01a84a485c7d7bf568e0a",
+      "url": "https://www.sportsnet.ca/nhl/article/capitals-sign-defenceman-jack-st-ivany-to-two-year-2-35m-extension",
+      "fingerprint": "d0425c33fa75d003",
+      "title_norm": "capitals sign defenceman jack st. ivany to two-year, $2.35m extension",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T16:15:53.244042Z"
     }
   ],
   "known_sources": [
