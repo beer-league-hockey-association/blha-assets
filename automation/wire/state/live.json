@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T05:45:38.270629Z",
+  "updated_at": "2026-11-23T06:15:36.761316Z",
   "seen": [
-    {
-      "key": "1d00c1ffa48e8df4f6813603",
-      "url": "https://www.nhl.com/news/topic/nhl-edge/nhl-edge-stats-connor-hellebuyck-trade-to-new-jersey-devils-2026-27",
-      "fingerprint": "0f1ad38fc174bc29",
-      "title_norm": "edge stats: hellebuyck trade makes devils contender",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T06:15:31.579465Z"
-    },
     {
       "key": "066943df3e7401051e0e4613",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Fantasy-Hockey-Week-5-Waiver-Wire-Best-Adds--Streamers--Drops-e3r0g0i",
@@ -18822,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T05:45:38.205076Z"
+    },
+    {
+      "key": "2dcd7c8526e5776ea546095b",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-inconsistency-re-emerges-in-stupefying-loss-to-blackhawks",
+      "fingerprint": "14ac27e4e8930139",
+      "title_norm": "canucks' inconsistency re-emerges in stupefying loss to blackhawks",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T06:15:36.682709Z"
     }
   ],
   "known_sources": [
