@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T16:30:47.694594Z",
+  "updated_at": "2026-11-23T16:45:53.017729Z",
   "seen": [
     {
       "key": "e0126f2cbb763666fd25fe6e",
@@ -18732,6 +18732,46 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-23T16:30:47.670582Z"
+    },
+    {
+      "key": "7c7fcbb51ccdfacd3293c4ee",
+      "url": "https://www.dailyfaceoff.com/players/news/martin-pospisil/28414",
+      "fingerprint": "a91f8be3ec5b0fe0",
+      "title_norm": "martin pospisil (cgy) — pospisil (concussion) did not travel with the team to ottawa.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T16:45:52.064679Z"
+    },
+    {
+      "key": "beabc437365325e0db468324",
+      "url": "https://www.sportsnet.ca/nhl/article/red-wings-steer-toward-brighter-future-with-blockbuster-larkin-deal",
+      "fingerprint": "96c680fc692d0ed6",
+      "title_norm": "red wings steer toward brighter future with blockbuster larkin deal",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T16:45:52.330853Z"
+    },
+    {
+      "key": "6f36276451116830608026e9",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-what-canadiens-red-wings-get-in-dylan-larkin-trade",
+      "fingerprint": "616efbc2ee406954",
+      "title_norm": "scout's analysis: what canadiens, red wings get in dylan larkin trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T16:45:52.641611Z"
+    },
+    {
+      "key": "db357c606d1cc30a1dc47b6a",
+      "url": "https://www.sportsnet.ca/nhl/article/dylan-larkin-to-make-canadiens-debut-against-kings",
+      "fingerprint": "46c5ff9fdb539392",
+      "title_norm": "dylan larkin to make canadiens debut against kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T16:45:52.947789Z"
     }
   ],
   "known_sources": [
