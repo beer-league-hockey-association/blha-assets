@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T00:45:37.024727Z",
+  "updated_at": "2026-11-23T01:15:34.120138Z",
   "seen": [
     {
       "key": "6b1a969a0fc963d0fcc2d0ac",
@@ -18772,6 +18772,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-23T00:45:36.891556Z"
+    },
+    {
+      "key": "67b1ec420139d0d23ba0421c",
+      "url": "https://www.sportsnet.ca/nhl/article/tage-thompson-scores-twice-as-sabres-top-lightning",
+      "fingerprint": "8063a62fe26ff384",
+      "title_norm": "tage thompson scores twice as sabres top lightning",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T01:15:33.689869Z"
+    },
+    {
+      "key": "d72ab32585a26b89ad41d8bd",
+      "url": "https://www.nhl.com/news/buffalo-sabres-tampa-bay-lightning-game-recap-november-22-2026",
+      "fingerprint": "650e53a7a474e6e8",
+      "title_norm": "thompson scores twice, sabres bounce back against bolts",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T01:15:33.985721Z"
     }
   ],
   "known_sources": [
