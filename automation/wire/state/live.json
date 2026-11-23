@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T15:15:38.618514Z",
+  "updated_at": "2026-11-23T15:30:36.958383Z",
   "seen": [
     {
       "key": "472ef61080d57c2d7a9014e0",
@@ -18752,6 +18752,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-23T15:15:38.555407Z"
+    },
+    {
+      "key": "c32bb346a7c5da8bc4a979d8",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-kyrou/3867",
+      "fingerprint": "4936eabcbdd6ed14",
+      "title_norm": "jordan kyrou (wsh) — kyrou is out indefinitely with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T15:30:36.860609Z"
     }
   ],
   "known_sources": [
