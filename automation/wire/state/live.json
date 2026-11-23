@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T18:45:45.938926Z",
+  "updated_at": "2026-11-23T19:00:43.454042Z",
   "seen": [
     {
       "key": "843401549831611f140b436e",
@@ -18812,6 +18812,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T18:30:39.337743Z"
+    },
+    {
+      "key": "8acbdda69d785a112806eb4f",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-23-2026",
+      "fingerprint": "b7f025e6210a4144",
+      "title_norm": "status report: panarin to return for kings tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T19:00:43.323430Z"
     }
   ],
   "known_sources": [
