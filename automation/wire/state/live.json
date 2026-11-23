@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T21:30:50.645756Z",
+  "updated_at": "2026-11-23T22:00:44.001876Z",
   "seen": [
-    {
-      "key": "184ca1aed6062f2b0dd2bd50",
-      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-embraces-fresh-start-with-devils-postpones-message-to-jets-fans",
-      "fingerprint": "ccdcb18f6048c42e",
-      "title_norm": "hellebuyck embraces fresh start with devils, postpones message to jets fans",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T21:45:38.117220Z"
-    },
-    {
-      "key": "66ad9ef0ecfcf84a14b97d8e",
-      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/hellebuyck-trade-insights-with-kevin-cheveldayoff",
-      "fingerprint": "2118a65e66993c72",
-      "title_norm": "32 thoughts podcast: hellebuyck trade insights with kevin cheveldayoff",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T21:45:38.357209Z"
-    },
     {
       "key": "23a22666172dd7211a6f465c",
       "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
