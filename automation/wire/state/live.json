@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-22T23:00:39.670534Z",
+  "updated_at": "2026-11-23T00:15:34.877761Z",
   "seen": [
     {
       "key": "1398ce1c075627a55e1df580",
@@ -18762,6 +18762,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-22T22:45:42.482382Z"
+    },
+    {
+      "key": "d2c71a8b6167bff0ef694483",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/eb38e7f5-fca2-454f-b28a-d065347af882",
+      "fingerprint": "f6376ecd19b4e282",
+      "title_norm": "oilers on sportsnet: edmonton vs. st. louis",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T00:15:34.836043Z"
     }
   ],
   "known_sources": [
