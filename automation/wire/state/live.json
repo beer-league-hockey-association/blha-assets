@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T01:30:34.477545Z",
+  "updated_at": "2026-11-23T02:00:38.269765Z",
   "seen": [
     {
       "key": "2fc9d5fe563426a89139e9aa",
@@ -18782,6 +18782,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T01:15:33.985721Z"
+    },
+    {
+      "key": "c0ea225273a283ab5278225d",
+      "url": "https://www.sportsnet.ca/nhl/video/oilers-draisaitl-reaches-1100-career-points-with-goal-vs-blues",
+      "fingerprint": "f439ea5a1eaafcdb",
+      "title_norm": "oilers' draisaitl reaches 1,100 career points with goal vs. blues",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T02:00:38.229519Z"
     }
   ],
   "known_sources": [
