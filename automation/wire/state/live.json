@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T03:15:36.533420Z",
+  "updated_at": "2026-11-23T03:45:34.565398Z",
   "seen": [
     {
       "key": "d4f258e8be6d5a21c70d07f5",
@@ -18812,6 +18812,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T03:00:46.985226Z"
+    },
+    {
+      "key": "4a93e7a7c3495355e6e40f66",
+      "url": "https://www.nhl.com/news/edmonton-oilers-st-louis-blues-game-recap-november-22-2026",
+      "fingerprint": "d74e8e5b868e4469",
+      "title_norm": "blues rally from three down in third period, defeat oilers in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T03:45:34.286668Z"
+    },
+    {
+      "key": "2e2bed66ad92d639a1befae2",
+      "url": "https://www.sportsnet.ca/nhl/video/breaking-down-larkin-blockbuster-between-red-wings-and-canadiens",
+      "fingerprint": "08e2cd172770920e",
+      "title_norm": "breaking down larkin blockbuster between red wings and canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T03:45:34.495282Z"
     }
   ],
   "known_sources": [
