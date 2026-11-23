@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T19:00:43.454042Z",
+  "updated_at": "2026-11-23T19:15:36.450832Z",
   "seen": [
     {
       "key": "843401549831611f140b436e",
@@ -18822,6 +18822,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T19:00:43.323430Z"
+    },
+    {
+      "key": "7216c576f4f016f9002a512f",
+      "url": "https://www.sportsnet.ca/nhl/video/he-doesnt-need-to-be-the-guy-engels-on-canadiens-acquiring-larkin",
+      "fingerprint": "99ccb9931280a5ef",
+      "title_norm": "'he doesn't need to be the guy': engels on canadiens acquiring larkin",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T19:15:36.411243Z"
     }
   ],
   "known_sources": [
