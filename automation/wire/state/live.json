@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T01:15:34.120138Z",
+  "updated_at": "2026-11-23T01:30:34.477545Z",
   "seen": [
-    {
-      "key": "6b1a969a0fc963d0fcc2d0ac",
-      "url": "https://www.nhl.com/news/winnipeg-jets-expecting-unreal-atmosphere-in-heritage-classic",
-      "fingerprint": "d915e88b0c908bb4",
-      "title_norm": "jets expect 'unreal' heritage classic atmosphere",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T01:15:37.523108Z"
-    },
     {
       "key": "2fc9d5fe563426a89139e9aa",
       "url": "https://www.nhl.com/news/montreal-canadiens-chicago-blackhawks-game-recap-october-23-2026",
