@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T02:30:36.729943Z",
+  "updated_at": "2026-11-23T03:00:47.019622Z",
   "seen": [
     {
       "key": "2fc9d5fe563426a89139e9aa",
@@ -18822,6 +18822,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T02:30:36.692148Z"
+    },
+    {
+      "key": "95e17f693770c65e733577af",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-dallas-stars-game-recap-november-22-2026",
+      "fingerprint": "d3d04d05eb15e884",
+      "title_norm": "oettinger makes 34 saves, stars shut out penguins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T03:00:46.985226Z"
     }
   ],
   "known_sources": [
