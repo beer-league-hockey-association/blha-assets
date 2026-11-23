@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T20:15:40.870948Z",
+  "updated_at": "2026-11-23T21:15:34.460663Z",
   "seen": [
-    {
-      "key": "74f3fe0d580313e6363f6edb",
-      "url": "https://www.nhl.com/news/quinn-hughes-not-sure-what-to-expect-in-first-trip-back-to-vancouver",
-      "fingerprint": "26277fdd5742e4a4",
-      "title_norm": "hughes: 'i don't know what to expect' from canucks fans",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T21:00:35.413279Z"
-    },
     {
       "key": "a04940b3f648c7f13b2ae32f",
       "url": "https://www.sportsnet.ca/nhl/article/quinn-hughes-on-wild-contract-talks-my-two-feet-are-planted-in-minnesota",
@@ -18862,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T20:15:40.791546Z"
+    },
+    {
+      "key": "35d42d7720bb80711b663119",
+      "url": "https://www.dailyfaceoff.com/players/news/leo-carlsson/37943",
+      "fingerprint": "93b0de43c1e9d7f2",
+      "title_norm": "leo carlsson (ana) — carlsson (upper-body) will be a game-time decision in seattle on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T21:15:34.388016Z"
     }
   ],
   "known_sources": [
