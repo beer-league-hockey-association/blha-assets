@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T05:00:42.962483Z",
+  "updated_at": "2026-11-23T05:15:38.842391Z",
   "seen": [
     {
       "key": "5c1556f663848f8c313d1731",
@@ -18822,6 +18822,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T05:00:42.888276Z"
+    },
+    {
+      "key": "2223d9fbd5858e170f787d35",
+      "url": "https://www.nhl.com/news/rookie-watch-ivar-stenberg-viggo-bjorck-trending-up-with-san-jose-winnipeg",
+      "fingerprint": "2fc1941190c20933",
+      "title_norm": "rookie watch: stenberg, bjorck trending up",
+      "channel": "prospect-wire",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T05:15:38.477091Z"
+    },
+    {
+      "key": "ad581debb23e4cf3e2fededb",
+      "url": "https://www.nhl.com/news/nhl-nationally-televised-games-for-week-of-november-23-2026",
+      "fingerprint": "300b2f96c438b507",
+      "title_norm": "nhl nationally televised games for week of nov. 23",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T05:15:38.730020Z"
     }
   ],
   "known_sources": [
