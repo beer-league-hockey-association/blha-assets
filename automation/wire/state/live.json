@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T18:15:54.101517Z",
+  "updated_at": "2026-11-23T18:30:39.396720Z",
   "seen": [
-    {
-      "key": "77345fe725d2ae48695a9bba",
-      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
-      "fingerprint": "b3ee79b9feb04cb5",
-      "title_norm": "nicolas roy (col) — roy (lower-body) will travel but is questionable for sunday's game vs. nashville.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-24T18:30:34.483777Z"
-    },
-    {
-      "key": "5f52aec487157421d322390c",
-      "url": "https://www.sportsnet.ca/nhl/article/capitals-claim-defenceman-jack-st-ivany-off-waivers-from-jets",
-      "fingerprint": "3ba483b638c7c963",
-      "title_norm": "capitals claim defenceman jack st. ivany off waivers from jets",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T18:30:34.521860Z"
-    },
     {
       "key": "0918dc9911af031b409e0457",
       "url": "https://www.nhl.com/news/directv-adds-regional-channels-for-4-nhl-teams-in-multiyear-deal",
@@ -18792,6 +18772,56 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-23T18:15:53.986762Z"
+    },
+    {
+      "key": "731ea71db1c62ab5c9d1294c",
+      "url": "https://www.dailyfaceoff.com/players/news/trevor-moore/2878",
+      "fingerprint": "774afc6a367b4bb5",
+      "title_norm": "trevor moore (lak) — moore (undisclosed) is a game-time decision in montreal on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:30:38.469279Z"
+    },
+    {
+      "key": "302dd145a65c30554e716422",
+      "url": "https://www.nhl.com/news/montreal-canadiens-players-happy-team-traded-for-dylan-larkin",
+      "fingerprint": "b7297d6c1b69da17",
+      "title_norm": "habs players say larkin trade 'great for room'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T18:30:38.604012Z"
+    },
+    {
+      "key": "773870663a6d53b18df65bfe",
+      "url": "https://www.dailyfaceoff.com/players/news/joel-edmundson/2532",
+      "fingerprint": "c38ba90197faac4a",
+      "title_norm": "joel edmundson (lak) — edmundson (undisclosed) will be a game-time decision in montreal on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:30:38.818803Z"
+    },
+    {
+      "key": "a458a1e7fe3cab547e292c74",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-b-1988-gustafsson/2550",
+      "fingerprint": "0a75e62fce5ee4e1",
+      "title_norm": "erik gustafsson (lak) — gustafsson (upper-body) is a game-time decision in montreal on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:30:39.037261Z"
+    },
+    {
+      "key": "643d77b64280b83ae35da5d4",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-stolarz-to-start-ekman-larsson-back-in-against-islanders",
+      "fingerprint": "06e787c5f05944a5",
+      "title_norm": "maple leafs' stolarz to start, ekman-larsson back in against islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:30:39.337743Z"
     }
   ],
   "known_sources": [
