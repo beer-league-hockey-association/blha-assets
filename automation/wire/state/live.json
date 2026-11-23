@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T18:00:40.539146Z",
+  "updated_at": "2026-11-23T18:15:54.101517Z",
   "seen": [
     {
       "key": "77345fe725d2ae48695a9bba",
@@ -18762,6 +18762,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-23T18:00:40.236011Z"
+    },
+    {
+      "key": "663f05bc0ae155b3c340e55d",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "bff8625ad48b6d74",
+      "title_norm": "jack roslovic (tor) — roslovic (upper-body) is a game-time decision vs. the islanders on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:15:53.291341Z"
+    },
+    {
+      "key": "60eadaeb02c254f2a483f793",
+      "url": "https://www.nhl.com/news/topic/3-stars/thomas-oettinger-rinzel-named-nhl-3-stars-of-week-november-23-2026",
+      "fingerprint": "b64bcbc2ad812ab3",
+      "title_norm": "thomas, oettinger, rinzel 3 stars of week",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T18:15:53.589703Z"
+    },
+    {
+      "key": "01a60f5798d91451eb1ba4ef",
+      "url": "https://theahl.com/news/brzustewicz-ahl-player-week",
+      "fingerprint": "24494eb36181d63a",
+      "title_norm": "wranglers' brzustewicz named ahl player of the week",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-23T18:15:53.986762Z"
     }
   ],
   "known_sources": [
