@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T20:00:50.977423Z",
+  "updated_at": "2026-11-23T20:15:40.870948Z",
   "seen": [
-    {
-      "key": "cf0b747d29e1d1a42d614572",
-      "url": "https://www.nhl.com/news/anaheim-ducks-philadelphia-flyers-game-recap-october-24-2026",
-      "fingerprint": "3d252a94a2d20a3f",
-      "title_norm": "ducks rally past flyers to end 5-game losing streak",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T20:15:35.573957Z"
-    },
     {
       "key": "74f3fe0d580313e6363f6edb",
       "url": "https://www.nhl.com/news/quinn-hughes-not-sure-what-to-expect-in-first-trip-back-to-vancouver",
@@ -18852,6 +18842,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T20:00:50.898881Z"
+    },
+    {
+      "key": "685bb06c3f5cc8a404cc5ba7",
+      "url": "https://theahl.com/news/iowa-wild-riley-mercer-hockey-fights-cancer",
+      "fingerprint": "2d9b8f90a0b7fc94",
+      "title_norm": "family's cancer battles continue to inspire wild's mercer",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-23T20:15:40.278966Z"
+    },
+    {
+      "key": "0871e82c0d3a233f37d1caef",
+      "url": "https://www.sportsnet.ca/nhl/article/uncovering-three-key-concerns-facing-the-oilers",
+      "fingerprint": "c00d55ac45b56707",
+      "title_norm": "uncovering three key concerns facing the oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T20:15:40.791546Z"
     }
   ],
   "known_sources": [
