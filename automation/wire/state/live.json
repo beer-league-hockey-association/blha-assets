@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T19:45:46.480924Z",
+  "updated_at": "2026-11-23T20:00:50.977423Z",
   "seen": [
-    {
-      "key": "7d328b6782a24f66f801ce0a",
-      "url": "https://www.nhl.com/news/dustin-byfuglien-back-in-winnipeg-with-jets-alumni-2026-heritage-clasic",
-      "fingerprint": "bf42729858f729e1",
-      "title_norm": "unicorn' byfuglien back in winnipeg with jets alumni",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T20:00:41.648529Z"
-    },
-    {
-      "key": "043e5cf0f95cbb573aafc786",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/c8e2238c-eef3-4126-bf8d-fd10209abb95",
-      "fingerprint": "f56b2c9535005be1",
-      "title_norm": "nhl on sportsnet: kings vs. devils",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T20:00:42.045882Z"
-    },
     {
       "key": "cf0b747d29e1d1a42d614572",
       "url": "https://www.nhl.com/news/anaheim-ducks-philadelphia-flyers-game-recap-october-24-2026",
@@ -18832,6 +18812,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T19:30:39.797838Z"
+    },
+    {
+      "key": "405f6db7ed4a744771ae9518",
+      "url": "https://www.dailyfaceoff.com/players/news/jacob-trouba/2099",
+      "fingerprint": "5b14e9eee27f274e",
+      "title_norm": "jacob trouba (sjs) — trouba (lower-body) is out vs. minnesota on monday and will miss the remainder of the week.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T20:00:50.009434Z"
+    },
+    {
+      "key": "5e1d2b46c69882b95e009cae",
+      "url": "https://www.dailyfaceoff.com/players/news/quinn-hughes/4794",
+      "fingerprint": "8260ac48c829cdc9",
+      "title_norm": "quinn hughes (min) — hughes (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-23T20:00:50.264342Z"
+    },
+    {
+      "key": "18413065b6bcba7bc81d3c9d",
+      "url": "https://www.sportsnet.ca/nhl/article/larkins-hidden-desire-to-join-canadians-key-to-completing-trade-with-red-wings",
+      "fingerprint": "ae083d51ebe81ee0",
+      "title_norm": "larkin's hidden desire to join canadiens key to completing trade with red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T20:00:50.499776Z"
+    },
+    {
+      "key": "48154dbca82353aa0b288a1a",
+      "url": "https://www.sportsnet.ca/nhl/article/this-is-where-i-want-to-be-aatu-raty-excited-for-fresh-start-with-maple-leafs",
+      "fingerprint": "cc6c1065b36c18f0",
+      "title_norm": "'this is where i want to be': aatu raty excited for fresh start with maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T20:00:50.898881Z"
     }
   ],
   "known_sources": [
