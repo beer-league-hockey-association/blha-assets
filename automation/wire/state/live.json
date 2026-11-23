@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T19:15:36.450832Z",
+  "updated_at": "2026-11-23T19:30:39.866343Z",
   "seen": [
     {
       "key": "843401549831611f140b436e",
@@ -18832,6 +18832,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T19:15:36.411243Z"
+    },
+    {
+      "key": "8f946fa5f277aafe74ef6cbf",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-claim-cole-reinhardt-off-waivers-from-panthers",
+      "fingerprint": "eadbbfed5b3e8f6b",
+      "title_norm": "canucks claim cole reinhardt off waivers from panthers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-23T19:30:39.797838Z"
     }
   ],
   "known_sources": [
