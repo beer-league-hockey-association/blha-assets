@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T05:15:38.842391Z",
+  "updated_at": "2026-11-23T05:30:38.680339Z",
   "seen": [
-    {
-      "key": "5c1556f663848f8c313d1731",
-      "url": "https://www.sportsnet.ca/nhl/article/lightning-captain-victor-hedman-leaves-game-early",
-      "fingerprint": "be3dd1d0a75f4456",
-      "title_norm": "lightning captain victor hedman leaves game early",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T05:28:56.423622Z"
-    },
-    {
-      "key": "78bb62f72b9cb79d20a36dc9",
-      "url": "https://www.sportsnet.ca/nhl/article/centres-stabilize-canadiens-in-first-game-without-suzuki",
-      "fingerprint": "95d20662a708d7b0",
-      "title_norm": "centres stabilize canadiens in first game without suzuki",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-24T05:28:56.845585Z"
-    },
     {
       "key": "9b826c52bb60bfe18d65eed9",
       "url": "https://www.nhl.com/news/winnipeg-jets-gm-comfortable-with-connor-hellebuyck-trade",
