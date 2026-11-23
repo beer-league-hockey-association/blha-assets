@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T04:30:44.075175Z",
+  "updated_at": "2026-11-23T05:00:42.962483Z",
   "seen": [
-    {
-      "key": "7c1980f5cebebcaf7e234c23",
-      "url": "https://www.nhl.com/news/2026-heritage-classic-rekindles-childhood-memories-for-montreal-canadiens",
-      "fingerprint": "4cd6695a81a8918b",
-      "title_norm": "heritage classic rekindles childhood memories for habs",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T05:00:37.213905Z"
-    },
-    {
-      "key": "1bf3bdf6c287a51e3e70acfd",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-24-2026",
-      "fingerprint": "a657eec74baf9c16",
-      "title_norm": "nhl on tap: devils anticipate boost from hellebuyck deal",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-24T05:00:37.367631Z"
-    },
     {
       "key": "5c1556f663848f8c313d1731",
       "url": "https://www.sportsnet.ca/nhl/article/lightning-captain-victor-hedman-leaves-game-early",
@@ -18832,6 +18812,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-23T04:30:44.004521Z"
+    },
+    {
+      "key": "f765404fc6db6e62bd982c76",
+      "url": "https://www.nhl.com/news/dylan-larkin-saga-ends-with-blockbuster-trade-to-montreal-canadiens",
+      "fingerprint": "d81cb7d2d9491740",
+      "title_norm": "larkin saga ends with blockbuster trade to canadiens",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-23T05:00:42.888276Z"
     }
   ],
   "known_sources": [
