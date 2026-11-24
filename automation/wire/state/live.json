@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-23T23:30:42.870887Z",
+  "updated_at": "2026-11-24T00:00:56.005512Z",
   "seen": [
     {
       "key": "c989288ee34592729099e797",
@@ -18822,6 +18822,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-23T23:30:42.819064Z"
+    },
+    {
+      "key": "2ef08d69d30730fc6278ad4d",
+      "url": "https://watch.sportsnet.ca/event/Los_Angeles_Montreal_229928",
+      "fingerprint": "d05de1be22407e12",
+      "title_norm": "monday night hockey on sportsnet: larkin makes canadiens debut vs. kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:00:55.668451Z"
+    },
+    {
+      "key": "566caded08aa24b15753edd0",
+      "url": "https://www.sportsnet.ca/nhl/article/report-mammoths-keller-guenther-to-return-to-lineup-vs-jets",
+      "fingerprint": "fceb26de57999956",
+      "title_norm": "report: mammoth's keller, guenther to return to lineup vs. jets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:00:55.964068Z"
     }
   ],
   "known_sources": [
