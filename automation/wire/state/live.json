@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T15:00:47.764645Z",
+  "updated_at": "2026-11-24T15:31:08.458643Z",
   "seen": [
     {
       "key": "67f4659b1e5564ae2aabc712",
@@ -18922,6 +18922,26 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-24T15:00:47.673195Z"
+    },
+    {
+      "key": "018a13d3d519d1b5461516c3",
+      "url": "https://www.dailyfaceoff.com/players/news/conor-geekie/31505",
+      "fingerprint": "8d7a7b56e9e08315",
+      "title_norm": "conor geekie (tbl) — geekie underwent shoulder surgery on monday and is expected to be out for 4-to-5 months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T15:31:08.131844Z"
+    },
+    {
+      "key": "c75e788ec3273a4982058432",
+      "url": "https://www.sportsnet.ca/nhl/article/young-feisty-senators-look-like-a-true-contender-but-will-soon-be-tested",
+      "fingerprint": "cc3bcf4736d20133",
+      "title_norm": "young, feisty senators look like a true contender, but will soon be tested",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T15:31:08.411249Z"
     }
   ],
   "known_sources": [
