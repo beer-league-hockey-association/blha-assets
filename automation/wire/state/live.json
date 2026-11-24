@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T22:30:37.226322Z",
+  "updated_at": "2026-11-24T22:45:37.003083Z",
   "seen": [
     {
       "key": "b19bf84d583106a27ea97fab",
@@ -19242,6 +19242,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T22:30:37.172318Z"
+    },
+    {
+      "key": "cf0822013b2d8f454d580ee5",
+      "url": "https://www.sportsnet.ca/nhl/article/blue-jackets-place-mathieu-olivier-on-injured-reserve",
+      "fingerprint": "34a56554a39dd8d1",
+      "title_norm": "blue jackets place mathieu olivier on injured reserve",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:45:36.864453Z"
     }
   ],
   "known_sources": [
