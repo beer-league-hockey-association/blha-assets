@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T09:30:43.605356Z",
+  "updated_at": "2026-11-24T10:15:51.492154Z",
   "seen": [
     {
       "key": "03c82927337a572ca8d7eb88",
@@ -18922,6 +18922,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T09:30:43.526539Z"
+    },
+    {
+      "key": "3186816a3c5ac1bfda537b5f",
+      "url": "https://www.sportsnet.ca/nhl/article/larkin-leaves-canadiens-debut-excited-despite-loss-to-kings",
+      "fingerprint": "b82095940a1b5499",
+      "title_norm": "larkin leaves canadiens debut 'excited' despite loss to kings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T10:15:51.433512Z"
     }
   ],
   "known_sources": [
