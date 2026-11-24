@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T08:30:52.541745Z",
+  "updated_at": "2026-11-24T09:00:46.756011Z",
   "seen": [
     {
       "key": "03c82927337a572ca8d7eb88",
@@ -18902,6 +18902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T06:45:34.642128Z"
+    },
+    {
+      "key": "39fdbbfe08dcde2c336772c3",
+      "url": "https://www.nhl.com/news/connor-bedard-out-four-months-for-chicago-blackhawks-following-shoulder-surgery",
+      "fingerprint": "992840cda57bfef1",
+      "title_norm": "bedard out 4 months following shoulder surgery",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T09:00:46.631939Z"
     }
   ],
   "known_sources": [
