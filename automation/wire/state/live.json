@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T18:30:43.547800Z",
+  "updated_at": "2026-11-24T19:30:43.523446Z",
   "seen": [
-    {
-      "key": "db9906d8adb39ebca5643141",
-      "url": "https://theahl.com/news/reimer-signs-with-rangers-after-posting-ahl-shutout",
-      "fingerprint": "e30135f250098390",
-      "title_norm": "reimer signs with rangers after posting ahl shutout",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-25T19:15:43.789872Z"
-    },
     {
       "key": "a07801fe2f38fb7e6712ca74",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/ef098a32-7acb-4cfd-9b18-bba059a2e43b",
@@ -19162,6 +19152,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T18:30:43.058748Z"
+    },
+    {
+      "key": "364e89ab60403b8135c9eb52",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-cole-schwindt-wilds-calvin-pickard-hit-waivers",
+      "fingerprint": "bed341cc1ab35a4d",
+      "title_norm": "panthers' cole schwindt, wild's calvin pickard hit waivers",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T19:30:43.454516Z"
     }
   ],
   "known_sources": [
