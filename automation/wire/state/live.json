@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T03:15:38.141150Z",
+  "updated_at": "2026-11-24T03:30:36.128574Z",
   "seen": [
     {
       "key": "2940b24cb113188dbb9da950",
@@ -18872,6 +18872,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T03:15:38.061574Z"
+    },
+    {
+      "key": "09b4543da309565572ce189e",
+      "url": "https://www.nhl.com/news/utah-mammoth-winnipeg-jets-game-recap-november-23-2026",
+      "fingerprint": "b2c7e2062b3d3b70",
+      "title_norm": "vilardi gets hat trick to lift jets past mammoth",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T03:30:36.020811Z"
     }
   ],
   "known_sources": [
