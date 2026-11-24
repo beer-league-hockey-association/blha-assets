@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T19:30:43.523446Z",
+  "updated_at": "2026-11-24T20:00:40.354951Z",
   "seen": [
     {
       "key": "a07801fe2f38fb7e6712ca74",
@@ -19162,6 +19162,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T19:30:43.454516Z"
+    },
+    {
+      "key": "0637185c49a86673ccab184f",
+      "url": "https://www.dailyfaceoff.com/players/news/kyle-palmieri/34",
+      "fingerprint": "7a112942ccf30882",
+      "title_norm": "kyle palmieri (nyi) — palmieri (lower-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T20:00:40.220930Z"
     }
   ],
   "known_sources": [
