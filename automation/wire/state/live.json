@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T20:00:40.354951Z",
+  "updated_at": "2026-11-24T20:15:48.923452Z",
   "seen": [
-    {
-      "key": "a07801fe2f38fb7e6712ca74",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/ef098a32-7acb-4cfd-9b18-bba059a2e43b",
-      "fingerprint": "27f609c25d455a4b",
-      "title_norm": "nhl on sportsnet: panthers vs. blackhawks",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T20:00:43.264824Z"
-    },
     {
       "key": "0ba198b7134209b1cbeb0736",
       "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
