@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T03:30:36.128574Z",
+  "updated_at": "2026-11-24T03:45:39.952148Z",
   "seen": [
-    {
-      "key": "2940b24cb113188dbb9da950",
-      "url": "https://www.nhl.com/news/buffalo-sabres-washington-capitals-game-recap-october-24-2026",
-      "fingerprint": "07246debdca45b5a",
-      "title_norm": "tuch scores twice against former team, lifts capitals past sabres in ot",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T03:45:33.821444Z"
-    },
-    {
-      "key": "55c425247aaa943d99934920",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-get-full-team-effort-in-blowout-win-over-mcdavids-oilers",
-      "fingerprint": "a1d2a52b66c031fd",
-      "title_norm": "maple leafs get full team effort in blowout win over mcdavid's oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T03:45:34.069928Z"
-    },
-    {
-      "key": "8ee77ef2b694d81d0c5187b0",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-lack-of-depth-proves-costly-in-loss-to-maple-leafs",
-      "fingerprint": "0aeaace5ab67b27b",
-      "title_norm": "oilers' lack of depth proves costly in loss to maple leafs",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T03:45:34.463530Z"
-    },
     {
       "key": "f154e0a72054bf4aeae6b82d",
       "url": "https://www.nhl.com/news/carolina-hurricanes-st-louis-blues-game-recap-october-24-2026",
@@ -18882,6 +18852,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T03:30:36.020811Z"
+    },
+    {
+      "key": "99021d4f552f86c4021fe3fb",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-new-york-islanders-game-recap-november-23-2026",
+      "fingerprint": "144982d798aa2abb",
+      "title_norm": "leafs score 4 in row, rally past isles to end skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T03:45:39.807588Z"
     }
   ],
   "known_sources": [
