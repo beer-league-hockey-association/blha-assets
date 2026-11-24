@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T18:00:40.804615Z",
+  "updated_at": "2026-11-24T18:15:47.762847Z",
   "seen": [
     {
       "key": "db9906d8adb39ebca5643141",
@@ -19102,6 +19102,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T18:00:40.747662Z"
+    },
+    {
+      "key": "f4bedaf51dc7081a76849a66",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-myers/176",
+      "fingerprint": "8ef492a3cd131851",
+      "title_norm": "tyler myers (dal) — myers (upper-body) is a possibility to return vs. nashville on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:15:47.697949Z"
     }
   ],
   "known_sources": [
