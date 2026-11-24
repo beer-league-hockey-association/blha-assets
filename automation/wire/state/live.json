@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T17:15:39.625464Z",
+  "updated_at": "2026-11-24T17:30:46.599602Z",
   "seen": [
     {
       "key": "db9906d8adb39ebca5643141",
@@ -18972,6 +18972,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T17:15:39.516729Z"
+    },
+    {
+      "key": "65e89621c5b8c3d727658316",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-nugent-hopkins-back-in-lineup-hyman-remains-out-vs-golden-knights",
+      "fingerprint": "14822a13765bf8d2",
+      "title_norm": "oilers' nugent-hopkins back in lineup, hyman remains out vs. golden knights",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:30:46.575244Z"
     }
   ],
   "known_sources": [
