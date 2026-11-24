@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T21:30:34.351975Z",
+  "updated_at": "2026-11-24T22:00:49.256161Z",
   "seen": [
     {
       "key": "1292ee587fb6bd849efc2057",
@@ -19172,6 +19172,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T21:30:34.277631Z"
+    },
+    {
+      "key": "59ce53312a575bc4759e894f",
+      "url": "https://www.nhl.com/news/florida-panthers-aleksander-barkov-brad-marchard-injury-status-update-november-24-2026",
+      "fingerprint": "6f03715de610e7c1",
+      "title_norm": "barkov, marchand 'possible' to return wednesday",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T22:00:48.158760Z"
+    },
+    {
+      "key": "d17230103a6fbe0ecfb7c136",
+      "url": "https://www.nhl.com/news/conor-geekie-injury-status-update-november-24-2026",
+      "fingerprint": "6bad937c85d2f6ec",
+      "title_norm": "geekie out 4-5 months for lightning after shoulder surgery",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T22:00:48.495265Z"
+    },
+    {
+      "key": "3a39519253693b79af4a8d37",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-will-only-benefit-from-full-larkin-effect-once-demidov-returns",
+      "fingerprint": "713111d159f46da0",
+      "title_norm": "canadiens will only benefit from full larkin effect once demidov returns",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:00:48.705602Z"
+    },
+    {
+      "key": "d52e5d8cff30f2f919bf03c8",
+      "url": "https://www.sportsnet.ca/nhl/video/analyzing-the-best-trade-destinations-for-red-wings-edvinsson",
+      "fingerprint": "b33eb5dad63f82de",
+      "title_norm": "analyzing the best trade destinations for red wings' edvinsson",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:00:48.912040Z"
+    },
+    {
+      "key": "24dbdb80072074e39a274a15",
+      "url": "https://www.sportsnet.ca/nhl/video/islanders-shaefer-details-landlord-matt-martins-influence-on-his-game",
+      "fingerprint": "8dea7a4a95496956",
+      "title_norm": "islanders' schaefer details landlord matt martin's influence on his game",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:00:48.927066Z"
     }
   ],
   "known_sources": [
