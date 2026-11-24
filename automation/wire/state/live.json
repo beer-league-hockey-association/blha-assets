@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T22:45:37.003083Z",
+  "updated_at": "2026-11-24T23:01:20.020986Z",
   "seen": [
-    {
-      "key": "b19bf84d583106a27ea97fab",
-      "url": "https://www.nhl.com/news/topic/trade-coverage/2026-27-nhl-trades",
-      "fingerprint": "087200b33dfec603",
-      "title_norm": "2026-27 nhl trade tracker",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T23:00:42.050334Z"
-    },
-    {
-      "key": "53b4c507bf1154b8af42b4c2",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/6c5d2c0f-a18f-43cd-9c9c-df9d3288dfd0",
-      "fingerprint": "02ef08ac8b650b05",
-      "title_norm": "heritage classic on sportsnet: canadiens vs. jets",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T23:00:42.262826Z"
-    },
     {
       "key": "f084de49f8418f10d0faae0e",
       "url": "https://www.sportsnet.ca/nhl/video/canadiens-hutson-opens-scoring-at-heritage-classic",
