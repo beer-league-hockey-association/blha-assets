@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T16:15:43.999571Z",
+  "updated_at": "2026-11-24T16:30:40.974988Z",
   "seen": [
-    {
-      "key": "b29ab8ab172e8539f067e1be",
-      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
-      "fingerprint": "9f1aa30b672ca733",
-      "title_norm": "evgeni malkin (pit) — malkin (illness) was at practice on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T16:30:36.367010Z"
-    },
-    {
-      "key": "78a22e94b9d78bd3ec900702",
-      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
-      "fingerprint": "b3d233119a922319",
-      "title_norm": "egor chinakhov (pit) — chinakhov (lower body) was at practice on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T16:30:36.612421Z"
-    },
-    {
-      "key": "042069bac66d7458d11c544d",
-      "url": "https://www.nhl.com/news/new-york-rangers-sign-james-reimer-to-one-year-contract",
-      "fingerprint": "08d9a58312cc93d2",
-      "title_norm": "reimer returning to nhl at age 38 with rangers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T16:30:36.943980Z"
-    },
-    {
-      "key": "b745ca35bf574e5d98931feb",
-      "url": "https://www.dailyfaceoff.com/players/news/justin-brazeau/28622",
-      "fingerprint": "581724caeba25d3d",
-      "title_norm": "justin brazeau (pit) — brazeau (lower body) was at practice on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T16:30:37.354271Z"
-    },
-    {
-      "key": "7ac6584598dbc384165a4149",
-      "url": "https://www.sportsnet.ca/nhl/article/rangers-sign-goalie-james-reimer-to-one-year-deal",
-      "fingerprint": "30041d8522e664d8",
-      "title_norm": "rangers sign goalie james reimer to one-year deal",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T16:30:37.383710Z"
-    },
     {
       "key": "0de320312d94f968dca57d48",
       "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
@@ -19002,6 +18952,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T16:15:43.681052Z"
+    },
+    {
+      "key": "64854856b06500b439c0b159",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "55f7db4e31bd1e5d",
+      "title_norm": "brandon hagel (tbl) — hagel (lower-body) practiced in full on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:30:40.255552Z"
+    },
+    {
+      "key": "7d72057cdee3832d6af7c402",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "d98b7c9ca73ee671",
+      "title_norm": "brad marchand (fla) — marchand (knee) practiced on tuesday and has a chance to return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:30:40.573739Z"
+    },
+    {
+      "key": "2e5d7254e7012554ad6c09eb",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "e4b4ca72e88cb215",
+      "title_norm": "aleksander barkov (fla) — barkov (knee) practiced on tuesday and has a chance to return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:30:40.890330Z"
     }
   ],
   "known_sources": [
