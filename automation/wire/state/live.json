@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T04:00:48.044948Z",
+  "updated_at": "2026-11-24T05:00:43.823117Z",
   "seen": [
-    {
-      "key": "9d5117484cc174357a02acec",
-      "url": "https://www.nhl.com/news/winnipeg-jets-will-reset-after-connor-hellebuyck-traded-to-new-jersey-devils",
-      "fingerprint": "2f1cb5c9e0880ba3",
-      "title_norm": "jets get 'relief,' reset with hellebuyck trade",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T04:45:37.203139Z"
-    },
-    {
-      "key": "55227f459e94078d0563f8b0",
-      "url": "https://www.nhl.com/news/tampa-bay-lightning-utah-mammoth-game-recap-october-24-2026",
-      "fingerprint": "c7f367af789d9a15",
-      "title_norm": "kucherov becomes lightning's all-time points leader in ot loss to mammoth",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T04:45:37.520473Z"
-    },
-    {
-      "key": "dd4767c6abba8b39dedbb073",
-      "url": "https://www.nhl.com/news/minnesota-wild-seattle-kraken-game-recap-october-24-2026",
-      "fingerprint": "ae616fe20173a828",
-      "title_norm": "coleman scores twice for wild in win against kraken",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T05:00:38.913858Z"
-    },
     {
       "key": "392cd3714bb3613f2c879884",
       "url": "https://www.nhl.com/news/detroit-red-wings-calgary-flames-game-recap-october-24-2026",
@@ -18882,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T04:00:47.984632Z"
+    },
+    {
+      "key": "6711b557dd6e5c60ff75275e",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-takeaways-pushback-after-frosts-injury-cant-erase-slow-start",
+      "fingerprint": "5205f3ac96555f7d",
+      "title_norm": "flames takeaways: pushback after frost's injury can't erase slow start",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T05:00:43.760904Z"
     }
   ],
   "known_sources": [
