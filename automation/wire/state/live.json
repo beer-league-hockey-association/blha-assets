@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T06:00:46.648735Z",
+  "updated_at": "2026-11-24T06:45:34.694361Z",
   "seen": [
     {
       "key": "9a88902d4427b41ab1f24a18",
@@ -18902,6 +18902,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T06:00:46.608093Z"
+    },
+    {
+      "key": "6deced8bf7e6806e23c8aaaa",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-hellebuyck-bounces-back-as-devils-beat-blue-jackets",
+      "fingerprint": "b7dd68ffbbed89c7",
+      "title_norm": "nhl roundup: hellebuyck bounces back as devils beat blue jackets",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T06:45:34.642128Z"
     }
   ],
   "known_sources": [
