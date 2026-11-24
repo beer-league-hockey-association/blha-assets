@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T10:15:51.492154Z",
+  "updated_at": "2026-11-24T11:45:46.121075Z",
   "seen": [
-    {
-      "key": "03c82927337a572ca8d7eb88",
-      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
-      "fingerprint": "c8059f635a19dfd4",
-      "title_norm": "radek faksa (dal) — faksa (undisclosed) will skate on sunday and could play vs. the islanders.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T11:30:37.085873Z"
-    },
-    {
-      "key": "657dceafee7ce391005c95b0",
-      "url": "https://www.dailyfaceoff.com/players/news/sam-steel/2663",
-      "fingerprint": "b096119aed6edd2f",
-      "title_norm": "sam steel (dal) — steel (undisclosed) will not play on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T11:30:37.356724Z"
-    },
     {
       "key": "ca4b27766086b0b1bc6462c1",
       "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-can-blue-jackets-convince-werenski-to-stay",
