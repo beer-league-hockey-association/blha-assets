@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T02:45:37.899926Z",
+  "updated_at": "2026-11-24T03:00:45.265197Z",
   "seen": [
-    {
-      "key": "78aa3846eb35e41045912c4d",
-      "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro-october-24-2026",
-      "fingerprint": "6951f0be6557f716",
-      "title_norm": "heritage blog: ferraro, jets take practice outdoors",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T03:00:39.742852Z"
-    },
     {
       "key": "2940b24cb113188dbb9da950",
       "url": "https://www.nhl.com/news/buffalo-sabres-washington-capitals-game-recap-october-24-2026",
@@ -18842,6 +18832,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T02:45:37.857903Z"
+    },
+    {
+      "key": "3d9a23443d07360cf4294992",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-frost/2814",
+      "fingerprint": "8702425dacdc5c1b",
+      "title_norm": "morgan frost (cgy) — frost (undisclosed) left monday's game vs. ottawa and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T03:00:43.304381Z"
+    },
+    {
+      "key": "ef409ba05e1a56d773bf05a1",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-morgan-frost-exits-vs-senators-with-upper-body-injury",
+      "fingerprint": "9c5d868f4bc045f0",
+      "title_norm": "flames' morgan frost exits vs. senators with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T03:00:43.526973Z"
+    },
+    {
+      "key": "d9604ee0d2e0903a17159516",
+      "url": "https://www.nhl.com/news/columbus-blue-jackets-new-jersey-devils-game-recap-november-23-2026",
+      "fingerprint": "dc5e7ff75bfb8777",
+      "title_norm": "brown has two points, devils hold off blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T03:00:45.169247Z"
     }
   ],
   "known_sources": [
