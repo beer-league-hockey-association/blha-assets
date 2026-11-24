@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T17:45:44.354003Z",
+  "updated_at": "2026-11-24T18:00:40.804615Z",
   "seen": [
     {
       "key": "db9906d8adb39ebca5643141",
@@ -19052,6 +19052,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T17:45:44.120397Z"
+    },
+    {
+      "key": "0559ea521e2c8bcf1c11b2ca",
+      "url": "https://www.dailyfaceoff.com/players/news/nikolaj-ehlers/2370",
+      "fingerprint": "f81b61c30de4cdb6",
+      "title_norm": "nikolaj ehlers (car) — ehlers (lower-body) will remain out on wednesday vs. tampa bay.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:00:39.429996Z"
+    },
+    {
+      "key": "36ac43286341550ab375d2eb",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "90f78a9e957cf8dc",
+      "title_norm": "victor hedman (tbl) — hedman (illness) missed practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:00:39.858167Z"
+    },
+    {
+      "key": "b244b0f40722e5d1cccf8de1",
+      "url": "https://www.sportsnet.ca/nhl/article/examining-william-nylanders-uneven-start-to-season",
+      "fingerprint": "cba505aed3603c72",
+      "title_norm": "examining william nylander's uneven start to season",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:00:40.135658Z"
+    },
+    {
+      "key": "d59bcaef5e1d34fc202d7f6d",
+      "url": "https://theahl.com/news/diotte-suspended-26nov24",
+      "fingerprint": "68e51da96a25f56b",
+      "title_norm": "comets' diotte suspended six games",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:00:40.403298Z"
+    },
+    {
+      "key": "f4375a5c4dcdb1c0845ac83f",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-cernak/2749",
+      "fingerprint": "05ad8088e52f6025",
+      "title_norm": "erik cernak (tbl) — cernak (illness) missed practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:00:40.747662Z"
     }
   ],
   "known_sources": [
