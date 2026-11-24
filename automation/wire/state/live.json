@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T14:15:46.326345Z",
+  "updated_at": "2026-11-24T15:00:47.764645Z",
   "seen": [
     {
       "key": "67f4659b1e5564ae2aabc712",
@@ -18912,6 +18912,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T14:15:46.286027Z"
+    },
+    {
+      "key": "c778d843bc057528364db4cc",
+      "url": "https://www.cleveland.com/entertainment/2026/11/cleveland-monsters-eager-to-showcase-rocket-arena-in-all-star-classic.html",
+      "fingerprint": "76318460cb7f918c",
+      "title_norm": "monsters eager to showcase rocket arena at ahl all-star classic",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-24T15:00:47.673195Z"
     }
   ],
   "known_sources": [
