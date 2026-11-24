@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T21:00:46.429137Z",
+  "updated_at": "2026-11-24T21:15:46.447458Z",
   "seen": [
-    {
-      "key": "bacdbde6428398398a9a8e30",
-      "url": "https://www.nhl.com/news/alexander-nikishin-one-year-contract-with-carolina-hurricanes",
-      "fingerprint": "72cc3024a25faf71",
-      "title_norm": "nikishin, hurricanes end stalemate with 1-year deal",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T21:15:34.578627Z"
-    },
-    {
-      "key": "0344ae9fcb10c2fa1e675a15",
-      "url": "https://www.sportsnet.ca/nhl/article/sights-and-sounds-from-nhl-heritage-classic-in-winnipeg",
-      "fingerprint": "016bb7a87c0b54a0",
-      "title_norm": "sights and sounds from nhl heritage classic in winnipeg",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T21:15:34.838912Z"
-    },
     {
       "key": "1292ee587fb6bd849efc2057",
       "url": "https://www.nhl.com/news/florida-panthers-chicago-blackhawks-game-recap-october-25-2026",
@@ -19162,6 +19142,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T20:45:38.796978Z"
+    },
+    {
+      "key": "fb0fd4f943f61233d72e9841",
+      "url": "https://www.nhl.com/news/ted-leonsis-forever-grateful-for-journey-as-owner-of-washington-capitals",
+      "fingerprint": "e0d6c5e83c95e843",
+      "title_norm": "leonsis 'forever grateful' for journey as owner of caps",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T21:15:43.108522Z"
+    },
+    {
+      "key": "b2b6060a7e065b636e44b0db",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-gain-confidence-by-snapping-nine-game-slide",
+      "fingerprint": "7c2db4b4b2d115ba",
+      "title_norm": "leafs' long-awaited victory shows 'we can do it'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T21:15:46.321753Z"
     }
   ],
   "known_sources": [
