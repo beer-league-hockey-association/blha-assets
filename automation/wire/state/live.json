@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T20:45:38.931364Z",
+  "updated_at": "2026-11-24T21:00:46.429137Z",
   "seen": [
-    {
-      "key": "0ba198b7134209b1cbeb0736",
-      "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
-      "fingerprint": "78b9e52311d423cc",
-      "title_norm": "radek faksa (dal) — faksa (undisclosed) will not play on sunday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T21:00:39.397651Z"
-    },
     {
       "key": "bacdbde6428398398a9a8e30",
       "url": "https://www.nhl.com/news/alexander-nikishin-one-year-contract-with-carolina-hurricanes",
