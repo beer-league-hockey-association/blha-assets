@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T20:15:48.923452Z",
+  "updated_at": "2026-11-24T20:45:38.931364Z",
   "seen": [
     {
       "key": "0ba198b7134209b1cbeb0736",
@@ -19162,6 +19162,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T20:00:40.220930Z"
+    },
+    {
+      "key": "17f90f91357b3c104883ee01",
+      "url": "https://www.dailyfaceoff.com/players/news/cale-makar/2788",
+      "fingerprint": "0e2a82f1c6b6cf8f",
+      "title_norm": "cale makar (col) — makar (lower-body) has potential to return vs. montreal on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T20:45:38.796978Z"
     }
   ],
   "known_sources": [
