@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T22:15:48.367569Z",
+  "updated_at": "2026-11-24T22:30:37.226322Z",
   "seen": [
     {
       "key": "b19bf84d583106a27ea97fab",
@@ -19212,6 +19212,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T22:00:48.927066Z"
+    },
+    {
+      "key": "ba2e1568af5aef83492fe80c",
+      "url": "https://www.dailyfaceoff.com/players/news/mathieu-olivier/23595",
+      "fingerprint": "1661b806b12f627e",
+      "title_norm": "mathieu olivier (cbj) — olivier (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:30:36.546819Z"
+    },
+    {
+      "key": "ef9e956af8929d307da10459",
+      "url": "https://www.sportsnet.ca/nhl/article/joel-hofer-supplants-jordan-binnington-as-st-louis-blues-starting-goaltender",
+      "fingerprint": "dc999bf35686e46f",
+      "title_norm": "joel hofer supplants jordan binnington as blues' starting goaltender",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:30:36.886721Z"
+    },
+    {
+      "key": "4ba895f7426255b9115be384",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-send-brendan-brisson-ryan-tverberg-to-marlies",
+      "fingerprint": "e67581360b426f07",
+      "title_norm": "maple leafs send brendan brisson, ryan tverberg to marlies",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T22:30:37.172318Z"
     }
   ],
   "known_sources": [
