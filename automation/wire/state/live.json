@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T00:15:35.685501Z",
+  "updated_at": "2026-11-24T00:30:38.674126Z",
   "seen": [
-    {
-      "key": "c989288ee34592729099e797",
-      "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
-      "fingerprint": "5152bbbf433ce8de",
-      "title_norm": "jared mccann (sea) — mccann (lower-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T00:30:36.528207Z"
-    },
     {
       "key": "e456f48eea91830b2a1269f4",
       "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
@@ -18862,6 +18852,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T00:15:35.649598Z"
+    },
+    {
+      "key": "e5996004fd5e1b4e2bd0eb4a",
+      "url": "https://www.dailyfaceoff.com/players/news/dylan-guenther/34613",
+      "fingerprint": "a593142440581803",
+      "title_norm": "dylan guenther (uta) — guenther will be back in the mammoth lineup on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:30:37.710357Z"
+    },
+    {
+      "key": "9893c54a1a8000a5f8545f33",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/4eead46e-e8f4-4365-8b98-f227bc69f66e",
+      "fingerprint": "1816e1dee17f365b",
+      "title_norm": "monday night hockey on sportsnet: maple leafs vs. islanders",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:30:38.018905Z"
+    },
+    {
+      "key": "8d45301a760c8f3d9bc9c75d",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/d47cf40f-f944-41ca-bcee-3595a8c09802",
+      "fingerprint": "c515ca5a53e4636d",
+      "title_norm": "monday night hockey on sportsnet: flames vs. senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:30:38.270086Z"
+    },
+    {
+      "key": "0f53b2290b6b2004c99c8fab",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/17b93289-e88a-48ec-9f12-268a9d320c3e",
+      "fingerprint": "5688e376da16f8db",
+      "title_norm": "monday night hockey on sportsnet: jets vs. mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:30:38.600212Z"
     }
   ],
   "known_sources": [
