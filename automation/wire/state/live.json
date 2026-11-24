@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T18:15:47.762847Z",
+  "updated_at": "2026-11-24T18:30:43.547800Z",
   "seen": [
     {
       "key": "db9906d8adb39ebca5643141",
@@ -19112,6 +19112,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T18:15:47.697949Z"
+    },
+    {
+      "key": "874377e0cd2dbaae74a0e6f1",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-buchnevich/2673",
+      "fingerprint": "9c03fdc5ec214486",
+      "title_norm": "pavel buchnevich (stl) — buchnevich (undisclosed) missed practice on tuesday and is questionable vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:30:42.395107Z"
+    },
+    {
+      "key": "2ec8b76fc22a00dde683d4e5",
+      "url": "https://www.dailyfaceoff.com/players/news/james-snuggerud/31706",
+      "fingerprint": "02b47deecef97a03",
+      "title_norm": "jimmy snuggerud (stl) — snuggerud (undisclosed) missed practice on tuesday and is questionable vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:30:42.677359Z"
+    },
+    {
+      "key": "2e0c331ee541553eaf266948",
+      "url": "https://www.dailyfaceoff.com/players/news/cale-makar/2788",
+      "fingerprint": "a58f3c8f467e3829",
+      "title_norm": "cale makar (col) — makar (lower-body) returned to practice in a full contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:30:43.006381Z"
+    },
+    {
+      "key": "52b0a10cc1b3fe3bf3d79a63",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-carlo/2692",
+      "fingerprint": "3de378d2f35fdd06",
+      "title_norm": "brandon carlo (stl) — carlo (undisclosed) missed practice on tuesday and is questionable vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:30:43.041573Z"
+    },
+    {
+      "key": "7719a97b9f23c3011728b7c5",
+      "url": "https://www.dailyfaceoff.com/players/news/oskar-back/29109",
+      "fingerprint": "5a4b3d150e013dff",
+      "title_norm": "oskar back (dal) — back (broken finger) is a possibility to return vs. nashville on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T18:30:43.058748Z"
     }
   ],
   "known_sources": [
