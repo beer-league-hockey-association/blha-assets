@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T03:00:45.265197Z",
+  "updated_at": "2026-11-24T03:15:38.141150Z",
   "seen": [
     {
       "key": "2940b24cb113188dbb9da950",
@@ -18862,6 +18862,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T03:00:45.169247Z"
+    },
+    {
+      "key": "5b9f21a9d6b60cb5d92977d0",
+      "url": "https://www.sportsnet.ca/nhl/article/mckenna-helps-maple-leafs-beat-islanders-to-end-winless-streak",
+      "fingerprint": "1a90bf6da0013459",
+      "title_norm": "mckenna helps maple leafs beat islanders to end winless streak",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T03:15:38.061574Z"
     }
   ],
   "known_sources": [
