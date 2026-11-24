@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T15:31:08.458643Z",
+  "updated_at": "2026-11-24T15:45:44.498094Z",
   "seen": [
-    {
-      "key": "67f4659b1e5564ae2aabc712",
-      "url": "https://www.nhl.com/utah/video/tbl-at-uta-recap-6407368804112",
-      "fingerprint": "7f582fa3ef9e6250",
-      "title_norm": "simashev's first two nhl goals lift mammoth",
-      "channel": "prospect-wire",
-      "source_id": "ahl_official",
-      "tier": 1,
-      "seen_at": "2026-10-25T15:45:37.508045Z"
-    },
     {
       "key": "e16dc4011a4c6439dd209e1a",
       "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-25-2026",
@@ -18942,6 +18932,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T15:31:08.411249Z"
+    },
+    {
+      "key": "c11ea8ff0172b15d8e268d27",
+      "url": "https://www.dailyfaceoff.com/players/news/james-hagens/37375",
+      "fingerprint": "fdd43fc7349ea04b",
+      "title_norm": "james hagens (bos) — hagens (back) returned to practice in a non-contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T15:45:43.840712Z"
+    },
+    {
+      "key": "ee020439d80860dbfd350753",
+      "url": "https://www.sportsnet.ca/nhl/article/lightning-forward-conor-geekie-out-four-to-five-months-with-shoulder-injury",
+      "fingerprint": "f2e7b4bc2cb30cd1",
+      "title_norm": "lightning forward conor geekie out four to five months with shoulder injury",
+      "channel": "breaking-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T15:45:44.129534Z"
+    },
+    {
+      "key": "29445d9680dde685d4126632",
+      "url": "https://www.dailyfaceoff.com/players/news/rasmus-sandin/4806",
+      "fingerprint": "0562f65e8409eae1",
+      "title_norm": "rasmus sandin (wsh) — sandin (acl surgery) returned to practice in a full-contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T15:45:44.388165Z"
     }
   ],
   "known_sources": [
