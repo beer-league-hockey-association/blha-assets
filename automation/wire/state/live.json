@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T00:30:38.674126Z",
+  "updated_at": "2026-11-24T00:45:36.364632Z",
   "seen": [
-    {
-      "key": "e456f48eea91830b2a1269f4",
-      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
-      "fingerprint": "8268053dfa1a9bd7",
-      "title_norm": "victor hedman (tbl) — hedman (lower-body) is out vs. utah and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T00:45:33.947118Z"
-    },
-    {
-      "key": "57400f294349d32ca4c5faba",
-      "url": "https://www.nhl.com/news/new-jersey-devils-players-excited-to-have-connor-hellebuyck-in-net",
-      "fingerprint": "10dd1f4df84a1550",
-      "title_norm": "devils ready to roll with 'rock' hellebuyck in goal",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T00:45:34.274886Z"
-    },
     {
       "key": "f069cf690536b679d143296f",
       "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-expect-hellebuyck-to-try-and-play-this-week",
