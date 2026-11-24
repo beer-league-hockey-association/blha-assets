@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T17:30:46.599602Z",
+  "updated_at": "2026-11-24T17:45:44.354003Z",
   "seen": [
     {
       "key": "db9906d8adb39ebca5643141",
@@ -18982,6 +18982,76 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T17:30:46.575244Z"
+    },
+    {
+      "key": "408e49242bdd03376209126a",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "be3e11efa02d1a6d",
+      "title_norm": "evgeni malkin (pit) — malkin (upper-body) was a full participant in practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:43.544684Z"
+    },
+    {
+      "key": "cc19af65169f04ffe59c1508",
+      "url": "https://www.dailyfaceoff.com/players/news/gavin-brindley/33176",
+      "fingerprint": "67e8dd4dec549dbe",
+      "title_norm": "gavin brindley (col) — brindley (concussion) returned to practice in a non-contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:43.776573Z"
+    },
+    {
+      "key": "d49667379414cfc802b3b8e0",
+      "url": "https://www.dailyfaceoff.com/players/news/ivan-demidov/38445",
+      "fingerprint": "3be10d70785198c7",
+      "title_norm": "ivan demidov (mtl) — demidov (lower-body) has a chance to join the team on their upcoming road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:44.043992Z"
+    },
+    {
+      "key": "44087c51574f04971dadf15c",
+      "url": "https://www.dailyfaceoff.com/players/news/tyson-kozak/32822",
+      "fingerprint": "12b8191bfc63a9af",
+      "title_norm": "tyson kozak (buf) — kozak (undisclosed) missed practice on tuesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:44.056677Z"
+    },
+    {
+      "key": "d9315290d212308c21d6bb86",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-pulock/2146",
+      "fingerprint": "438394f94dfa17f2",
+      "title_norm": "ryan pulock (nyi) — pulock (upper-body) is expected to miss the next 1-2 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:44.067455Z"
+    },
+    {
+      "key": "428f07e6648262b68afa88aa",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "c647d536cb8a0504",
+      "title_norm": "zemgus girgensons (tbl) — girgensons (upper-body) returned to practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:44.092043Z"
+    },
+    {
+      "key": "912b44c905b449ef7a9eb3ad",
+      "url": "https://www.sportsnet.ca/nhl/article/hage-says-he-plans-to-sign-with-red-wings-after-college-season",
+      "fingerprint": "92599160fa4c0989",
+      "title_norm": "hage says he plans to sign with red wings after college season",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:45:44.120397Z"
     }
   ],
   "known_sources": [
