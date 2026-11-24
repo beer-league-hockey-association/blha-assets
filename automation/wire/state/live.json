@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T16:45:58.424239Z",
+  "updated_at": "2026-11-24T17:00:49.109350Z",
   "seen": [
-    {
-      "key": "0b472228d8fedbd4edbe410e",
-      "url": "https://www.sportsnet.ca/nhl/article/what-we-learned-from-connor-hellebuycks-first-weekend-with-the-devils",
-      "fingerprint": "c2ff9ad70b78aa22",
-      "title_norm": "what we learned from connor hellebuyck's first weekend with the devils",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T17:00:42.294004Z"
-    },
     {
       "key": "d51b201aabd0b3dd97d5d9c1",
       "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
@@ -18972,6 +18962,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T16:30:40.890330Z"
+    },
+    {
+      "key": "b8d58bd0628eb8837580d829",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-nugent-hopkins/1733",
+      "fingerprint": "984efa00e3f8be45",
+      "title_norm": "ryan nugent-hopkins (edm) — nugent-hopkins (undisclosed) will return vs.vegas on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:00:49.025729Z"
     }
   ],
   "known_sources": [
