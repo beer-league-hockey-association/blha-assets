@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T15:45:44.498094Z",
+  "updated_at": "2026-11-24T16:00:48.110444Z",
   "seen": [
     {
       "key": "e16dc4011a4c6439dd209e1a",
@@ -18962,6 +18962,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T15:45:44.388165Z"
+    },
+    {
+      "key": "4539ed213c01e99e7abf8dfe",
+      "url": "https://www.dailyfaceoff.com/players/news/konsta-helenius/38139",
+      "fingerprint": "e6eb89ebb9401fa3",
+      "title_norm": "konsta helenius (buf) — helenius (upper-body) returned to practice in a non-contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:00:47.985377Z"
     }
   ],
   "known_sources": [
