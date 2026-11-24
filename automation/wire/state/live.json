@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T21:15:46.447458Z",
+  "updated_at": "2026-11-24T21:30:34.351975Z",
   "seen": [
     {
       "key": "1292ee587fb6bd849efc2057",
@@ -19162,6 +19162,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T21:15:46.321753Z"
+    },
+    {
+      "key": "548050ecf0e03d1795032a14",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-frondell/38471",
+      "fingerprint": "6145a10b5266360b",
+      "title_norm": "anton frondell (chi) — frondell (undisclosed) returned to practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T21:30:34.277631Z"
     }
   ],
   "known_sources": [
