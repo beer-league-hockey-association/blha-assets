@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T05:45:38.879800Z",
+  "updated_at": "2026-11-24T06:00:46.648735Z",
   "seen": [
     {
       "key": "9a88902d4427b41ab1f24a18",
@@ -18882,6 +18882,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T05:45:38.745360Z"
+    },
+    {
+      "key": "fab6fcaa681f2f58a3f79211",
+      "url": "https://www.nhl.com/news/minnesota-wild-san-jose-sharks-game-recap-november-23-2026",
+      "fingerprint": "bc667a21cb462aa9",
+      "title_norm": "kaprizov, wild defeat sharks, push their point streaks to 15",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T06:00:46.268945Z"
+    },
+    {
+      "key": "41c7f08ddcb975233199abf1",
+      "url": "https://www.sportsnet.ca/nhl/article/mckennas-clutch-winner-helps-maple-leafs-end-skid",
+      "fingerprint": "ccdaa83f5f364323",
+      "title_norm": "mckenna's clutch winner helps maple leafs end skid",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T06:00:46.608093Z"
     }
   ],
   "known_sources": [
