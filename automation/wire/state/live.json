@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T13:15:36.651111Z",
+  "updated_at": "2026-11-24T13:30:45.989809Z",
   "seen": [
     {
       "key": "67f4659b1e5564ae2aabc712",
@@ -18892,6 +18892,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-24T13:15:36.585191Z"
+    },
+    {
+      "key": "8932c077e0b9e9bcda8bba3d",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-nugent-hopkins/1733",
+      "fingerprint": "a6b72295f73896d7",
+      "title_norm": "ryan nugent-hopkins (edm) — nugent-hopkins (undisclosed) is cleared to play and will most likely return to the lineup on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T13:30:45.878211Z"
     }
   ],
   "known_sources": [
