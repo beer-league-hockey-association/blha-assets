@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T09:00:46.756011Z",
+  "updated_at": "2026-11-24T09:30:43.605356Z",
   "seen": [
     {
       "key": "03c82927337a572ca8d7eb88",
@@ -18912,6 +18912,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T09:00:46.631939Z"
+    },
+    {
+      "key": "d1308b8978eec61088f589ba",
+      "url": "https://www.sportsnet.ca/nhl/article/vilardi-nets-hat-trick-as-jets-power-past-mammoth",
+      "fingerprint": "8e8bdca5d89ab140",
+      "title_norm": "vilardi nets hat trick as jets power past mammoth",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T09:30:43.526539Z"
     }
   ],
   "known_sources": [
