@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T12:30:46.543537Z",
+  "updated_at": "2026-11-24T13:15:36.651111Z",
   "seen": [
-    {
-      "key": "d9923959715677ac5603f59c",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-gear-up-for-great-outdoors-at-heritage-classic-cant-wait",
-      "fingerprint": "cb333396aa0b3b6e",
-      "title_norm": "canadiens gear up for great outdoors at heritage classic: 'can't wait'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T13:15:32.692223Z"
-    },
     {
       "key": "67f4659b1e5564ae2aabc712",
       "url": "https://www.nhl.com/utah/video/tbl-at-uta-recap-6407368804112",
@@ -18892,6 +18882,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T10:15:51.433512Z"
+    },
+    {
+      "key": "7bcadcf6cd04395768b7acf5",
+      "url": "https://dobberprospects.com/2026/11/24/november-shl-report-dubs-of-the-month",
+      "fingerprint": "a3c1d6c5416801a1",
+      "title_norm": "november shl report: dubs of the month",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-24T13:15:36.585191Z"
     }
   ],
   "known_sources": [
