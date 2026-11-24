@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T00:00:56.005512Z",
+  "updated_at": "2026-11-24T00:15:35.685501Z",
   "seen": [
     {
       "key": "c989288ee34592729099e797",
@@ -18842,6 +18842,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T00:00:55.964068Z"
+    },
+    {
+      "key": "44602f0baa585b9a647b13ca",
+      "url": "https://www.dailyfaceoff.com/players/news/jack-roslovic/2499",
+      "fingerprint": "0227b70f540fb0cd",
+      "title_norm": "jack roslovic (tor) — roslovic (undisclosed) will not play on monday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:15:35.279368Z"
+    },
+    {
+      "key": "93b5979fdaec95d8187e0d7e",
+      "url": "https://www.sportsnet.ca/nhl/article/dylan-larkins-agent-breaks-down-trade-between-canadiens-red-wings",
+      "fingerprint": "3521ffe49a80b573",
+      "title_norm": "dylan larkin's agent breaks down trade between canadiens, red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T00:15:35.649598Z"
     }
   ],
   "known_sources": [
