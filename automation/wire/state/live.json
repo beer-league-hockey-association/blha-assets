@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T02:15:35.215011Z",
+  "updated_at": "2026-11-24T02:45:37.899926Z",
   "seen": [
-    {
-      "key": "adc154e4f597334d9357878b",
-      "url": "https://www.nhl.com/news/topic/game-recap/san-jose-sharks-boston-bruins-game-recap-october-24-2026",
-      "fingerprint": "709278d52fe94590",
-      "title_norm": "bruins rally past sharks in 3rd, point streak hits 8",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T02:30:44.919268Z"
-    },
-    {
-      "key": "0a3bb9e8aad78bab1c398eaa",
-      "url": "https://www.sportsnet.ca/nhl/article/surging-leafs-scorch-oilers-for-fourth-win-in-a-row",
-      "fingerprint": "871bcbb81977e481",
-      "title_norm": "surging leafs scorch oilers for fourth win in a row",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T02:30:45.220509Z"
-    },
     {
       "key": "78aa3846eb35e41045912c4d",
       "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro-october-24-2026",
@@ -18832,6 +18812,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T02:15:35.146558Z"
+    },
+    {
+      "key": "418cb4e150b9f91a3a0ff5ba",
+      "url": "https://www.dailyfaceoff.com/players/news/kyle-palmieri/34",
+      "fingerprint": "fc0f96564cbf96b8",
+      "title_norm": "kyle palmieri (nyi) — palmieri (lower-body) left monday's game vs. toronto and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T02:45:36.223202Z"
+    },
+    {
+      "key": "e62ce6e0587f264e3995e79b",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-bedard/33531",
+      "fingerprint": "4cfb1006875f03f9",
+      "title_norm": "connor bedard (chi) — bedard (shoulder) underwent successful surgery and is expected to miss the next four months.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T02:45:37.534225Z"
+    },
+    {
+      "key": "d854815a1ee6d0afbe41e8ca",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-bedard-out-four-months-after-undergoing-shoulder-surgery",
+      "fingerprint": "2eacf098c43bf7ff",
+      "title_norm": "blackhawks' bedard out four months after undergoing shoulder surgery",
+      "channel": "breaking-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T02:45:37.857903Z"
     }
   ],
   "known_sources": [
