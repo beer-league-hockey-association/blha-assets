@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T03:45:39.952148Z",
+  "updated_at": "2026-11-24T04:00:48.044948Z",
   "seen": [
-    {
-      "key": "f154e0a72054bf4aeae6b82d",
-      "url": "https://www.nhl.com/news/carolina-hurricanes-st-louis-blues-game-recap-october-24-2026",
-      "fingerprint": "2fa14d900e84c74d",
-      "title_norm": "kochetkov wins seventh straight start, hurricanes shut out blues",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T04:00:38.953210Z"
-    },
     {
       "key": "9d5117484cc174357a02acec",
       "url": "https://www.nhl.com/news/winnipeg-jets-will-reset-after-connor-hellebuyck-traded-to-new-jersey-devils",
@@ -18862,6 +18852,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T03:45:39.807588Z"
+    },
+    {
+      "key": "c917706b089437f16ed89609",
+      "url": "https://www.nhl.com/news/calgary-flames-ottawa-senators-game-recap-november-23-2026",
+      "fingerprint": "9d232ffcf3d70138",
+      "title_norm": "senators edge flames, push point streak to 9",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T04:00:47.354123Z"
+    },
+    {
+      "key": "03a7eb53a5a5092165beebe2",
+      "url": "https://www.nhl.com/news/los-angeles-kings-montreal-canadiens-game-recap-november-23-2026",
+      "fingerprint": "81fad4fdd2a6ea35",
+      "title_norm": "kings defeat canadiens to spoil larkin's debut",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T04:00:47.630722Z"
+    },
+    {
+      "key": "0514e11db5dd614382a63d35",
+      "url": "https://www.sportsnet.ca/nhl/article/ullmark-leads-senators-to-win-over-flames",
+      "fingerprint": "83e1371a2c22b5e0",
+      "title_norm": "ullmark leads senators to win over flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T04:00:47.984632Z"
     }
   ],
   "known_sources": [
