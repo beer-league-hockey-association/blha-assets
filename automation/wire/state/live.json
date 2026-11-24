@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T05:00:43.823117Z",
+  "updated_at": "2026-11-24T05:30:41.940487Z",
   "seen": [
-    {
-      "key": "392cd3714bb3613f2c879884",
-      "url": "https://www.nhl.com/news/detroit-red-wings-calgary-flames-game-recap-october-24-2026",
-      "fingerprint": "49d9eae37d74cffb",
-      "title_norm": "farabee has three points, flames defeat red wings for third straight win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T05:15:36.885456Z"
-    },
-    {
-      "key": "cdc4f894d59df7ec5afafe96",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-pay-tribute-to-2004-team-with-workmanlike-victory",
-      "fingerprint": "3dcf2db93e2ca319",
-      "title_norm": "flames pay tribute to 2004 team with workmanlike victory",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T05:30:35.080890Z"
-    },
     {
       "key": "9a88902d4427b41ab1f24a18",
       "url": "https://www.nhl.com/news/new-york-rangers-ottawa-senators-game-recap-october-24-2026",
@@ -18862,6 +18842,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T05:00:43.760904Z"
+    },
+    {
+      "key": "8ceb77eee8f40f319bfc73fb",
+      "url": "https://www.nhl.com/news/gaudreau-parents-help-honor-high-school-captains-at-columbus-blue-jackets-game",
+      "fingerprint": "d599ee464789dfae",
+      "title_norm": "gaudreau parents honor hs players, talk sons' legacy",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T05:30:41.517886Z"
+    },
+    {
+      "key": "4f7832516db3059cd4d88c1c",
+      "url": "https://www.nhl.com/news/nhl-staff-writers-rountable-thankful-for-gifts-from-hockey-world-2026",
+      "fingerprint": "4c3fc97ac910a2c9",
+      "title_norm": "nhl.com writers thankful for gifts from hockey world",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T05:30:41.692134Z"
+    },
+    {
+      "key": "001b68e0b40c1700abc15148",
+      "url": "https://www.nhl.com/news/mark-stone-epitome-of-being-a-vegas-golden-knights-captain",
+      "fingerprint": "f7b628e464199e0e",
+      "title_norm": "vegas captain 'epitome of being a golden knight'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T05:30:41.836863Z"
     }
   ],
   "known_sources": [
