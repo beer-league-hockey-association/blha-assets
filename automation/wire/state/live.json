@@ -1,58 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T16:00:48.110444Z",
+  "updated_at": "2026-11-24T16:15:43.999571Z",
   "seen": [
-    {
-      "key": "e16dc4011a4c6439dd209e1a",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-25-2026",
-      "fingerprint": "2a58c5afed965b75",
-      "title_norm": "on tap: canadiens, jets set for heritage classic",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T16:15:31.688925Z"
-    },
-    {
-      "key": "4492290c41e986fff7374f37",
-      "url": "https://www.nhl.com/news/trade-to-new-jersey-devils-going-to-fit-perfectly-for-connor-hellebuyck",
-      "fingerprint": "a23c6bec9bd0dc23",
-      "title_norm": "devils 'going to fit perfectly' for hellebuyck",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T16:15:31.866072Z"
-    },
-    {
-      "key": "7700fef46a1cf721a012e1ce",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-25-2026",
-      "fingerprint": "09901b930c9bc81c",
-      "title_norm": "status report: perron could make stars debut tonight",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T16:15:32.120716Z"
-    },
-    {
-      "key": "37a6fa077b657300a9c5c900",
-      "url": "https://www.nhl.com/news/heritage-classic-blog-jake-evans-october-24-2026",
-      "fingerprint": "90b2ed9a08fe819f",
-      "title_norm": "heritage blog: evans, habs test out ice on outdoor rink",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T16:15:32.297720Z"
-    },
-    {
-      "key": "a801497ace2251b6d6b11044",
-      "url": "https://www.nhl.com/news/buffalo-sabres-early-struggles-continue-after-loss-to-washington-capitals",
-      "fingerprint": "f8be513b25f472ff",
-      "title_norm": "sabres struggling putting complete game together",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T16:15:32.309685Z"
-    },
     {
       "key": "b29ab8ab172e8539f067e1be",
       "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
@@ -18972,6 +18922,86 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T16:00:47.985377Z"
+    },
+    {
+      "key": "5f3e99d4b936a7dc6e4613f0",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-dorofeyev/30622",
+      "fingerprint": "2ab98e7511e6242b",
+      "title_norm": "pavel dorofeyev (nyr) — dorofeyev (lower-body) returned to practice in a non-contact jersey on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:15:42.355449Z"
+    },
+    {
+      "key": "5087b08f4f38a974ab378f14",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-recall-djibril-toure-loan-carter-yakemchuk-to-ahl",
+      "fingerprint": "bbfce495a4754202",
+      "title_norm": "senators recall djibril toure, loan carter yakemchuk to ahl",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:15:42.630047Z"
+    },
+    {
+      "key": "0f466818c1d78196e84e2c90",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-24-2026",
+      "fingerprint": "9f543c3e4ae5b0ae",
+      "title_norm": "on tap: mcdavid, eichel go head-to-head in edmonton",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T16:15:42.955665Z"
+    },
+    {
+      "key": "8ebdd148ec7d57a674ef15a7",
+      "url": "https://www.nhl.com/news/dylan-larkin-grateful-for-welcome-from-fans-in-montreal-canadiens-debut",
+      "fingerprint": "56561cdf61c36f19",
+      "title_norm": "larkin 'so grateful' for rousing welcome to montreal",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T16:15:43.283284Z"
+    },
+    {
+      "key": "107911aa9128f9e833fdf1c2",
+      "url": "https://www.nhl.com/news/coaches-room-6-on-5-scoring-comebacks-on-rise-in-nhl-this-season",
+      "fingerprint": "17ffb53b34a1159d",
+      "title_norm": "coaches room: 6-on-5 scoring, comebacks on rise",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T16:15:43.603982Z"
+    },
+    {
+      "key": "168e66da4ad8e0facbc81ef3",
+      "url": "https://www.nhl.com/news/washington-capitals-celebrate-neal-henderson-legacy-with-mural-unveiling-at-fort-dupont-arena",
+      "fingerprint": "dd9f72ba8563c249",
+      "title_norm": "capitals help honor minority youth program founder",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T16:15:43.615187Z"
+    },
+    {
+      "key": "f24c9817d5d81394aaa54d66",
+      "url": "https://www.nhl.com/news/topic/short-shifts/save-of-season-linus-ullmark-stick-save-ottawa-senators",
+      "fingerprint": "ba173ec7caac2380",
+      "title_norm": "watch: ullmark save of season candidate",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T16:15:43.625811Z"
+    },
+    {
+      "key": "e5497e8b7c98c7e325135d96",
+      "url": "https://www.sportsnet.ca/nhl/article/what-comes-next-as-dust-settles-on-canadiens-dylan-larkin-deal",
+      "fingerprint": "fe45f877bfe9367d",
+      "title_norm": "what comes next as dust settles on canadiens' dylan larkin deal?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T16:15:43.681052Z"
     }
   ],
   "known_sources": [
