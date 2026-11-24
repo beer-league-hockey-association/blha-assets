@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T22:00:49.256161Z",
+  "updated_at": "2026-11-24T22:15:48.367569Z",
   "seen": [
-    {
-      "key": "1292ee587fb6bd849efc2057",
-      "url": "https://www.nhl.com/news/florida-panthers-chicago-blackhawks-game-recap-october-25-2026",
-      "fingerprint": "5e84368d0b56b25c",
-      "title_norm": "eller scores late, lifts panthers past blackhawks",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T22:15:34.599619Z"
-    },
     {
       "key": "b19bf84d583106a27ea97fab",
       "url": "https://www.nhl.com/news/topic/trade-coverage/2026-27-nhl-trades",
