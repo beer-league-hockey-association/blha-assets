@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T06:45:34.694361Z",
+  "updated_at": "2026-11-24T08:30:52.541745Z",
   "seen": [
-    {
-      "key": "9a88902d4427b41ab1f24a18",
-      "url": "https://www.nhl.com/news/new-york-rangers-ottawa-senators-game-recap-october-24-2026",
-      "fingerprint": "4cc8875a2939a9b7",
-      "title_norm": "batherson gets hat trick, assist in senators win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-25T08:30:36.303566Z"
-    },
     {
       "key": "03c82927337a572ca8d7eb88",
       "url": "https://www.dailyfaceoff.com/players/news/radek-faksa/1989",
