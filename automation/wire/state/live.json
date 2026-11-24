@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T17:00:49.109350Z",
+  "updated_at": "2026-11-24T17:15:39.625464Z",
   "seen": [
-    {
-      "key": "d51b201aabd0b3dd97d5d9c1",
-      "url": "https://www.dailyfaceoff.com/players/news/jared-mccann/2488",
-      "fingerprint": "7de3f41f9e74b47b",
-      "title_norm": "jared mccann (sea) — mccann (lower body) has been placed on ir and will be out for 10 weeks.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-25T17:15:37.626681Z"
-    },
     {
       "key": "db9906d8adb39ebca5643141",
       "url": "https://theahl.com/news/reimer-signs-with-rangers-after-posting-ahl-shutout",
@@ -18972,6 +18962,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-24T17:00:49.025729Z"
+    },
+    {
+      "key": "22d1890b2e13659690c5ce5e",
+      "url": "https://www.dailyfaceoff.com/players/news/logan-stanley/2652",
+      "fingerprint": "06d8dea701dbe1ac",
+      "title_norm": "logan stanley (nyi) — stanley (maintenance) missed practice on tuesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-24T17:15:39.516729Z"
     }
   ],
   "known_sources": [
