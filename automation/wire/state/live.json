@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T00:45:36.364632Z",
+  "updated_at": "2026-11-24T01:45:35.548542Z",
   "seen": [
-    {
-      "key": "f069cf690536b679d143296f",
-      "url": "https://www.sportsnet.ca/nhl/video/saturday-headlines-expect-hellebuyck-to-try-and-play-this-week",
-      "fingerprint": "58dcd723865088c4",
-      "title_norm": "saturday headlines: expect hellebuyck to try to play this week",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T01:30:39.629462Z"
-    },
-    {
-      "key": "a4d8b0ae4d4c74c3b6f2011d",
-      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-tried-trading-for-forward-to-flip-to-jets-for-hellebuyck",
-      "fingerprint": "0d27af3d44fec271",
-      "title_norm": "hurricanes tried trading for forward to flip to jets for hellebuyck",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T01:41:26.409610Z"
-    },
     {
       "key": "770c09d55bc4f775bc747777",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/9e308bab-2c28-44f7-a3bc-61b81b2d3d1b",
@@ -18872,6 +18852,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-24T00:30:38.600212Z"
+    },
+    {
+      "key": "c82bd027d7f7f0e02658f37c",
+      "url": "https://www.sportsnet.ca/nhl/article/agent-says-crosby-wants-to-be-a-penguin-forever",
+      "fingerprint": "422ff7aec88b13ff",
+      "title_norm": "agent says crosby wants 'to be a penguin forever'",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-24T01:45:35.479585Z"
     }
   ],
   "known_sources": [
