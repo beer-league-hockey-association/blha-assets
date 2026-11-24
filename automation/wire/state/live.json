@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T11:45:46.121075Z",
+  "updated_at": "2026-11-24T12:30:46.543537Z",
   "seen": [
-    {
-      "key": "ca4b27766086b0b1bc6462c1",
-      "url": "https://www.sportsnet.ca/nhl/article/sunday-overreactions-can-blue-jackets-convince-werenski-to-stay",
-      "fingerprint": "fa65b32520f72d17",
-      "title_norm": "sunday overreactions: can blue jackets convince werenski to stay?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-25T12:30:39.170341Z"
-    },
-    {
-      "key": "487fa46d7fd9430187959462",
-      "url": "https://dobberprospects.com/2026/10/25/october-shl-report-dubs-of-the-month",
-      "fingerprint": "2c86887dce060606",
-      "title_norm": "october shl report: dubs of the month",
-      "channel": "prospect-wire",
-      "source_id": "dobber_prospects",
-      "tier": 2,
-      "seen_at": "2026-10-25T12:30:39.491112Z"
-    },
     {
       "key": "d9923959715677ac5603f59c",
       "url": "https://www.sportsnet.ca/nhl/article/canadiens-gear-up-for-great-outdoors-at-heritage-classic-cant-wait",
