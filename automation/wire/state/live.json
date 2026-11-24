@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-24T05:30:41.940487Z",
+  "updated_at": "2026-11-24T05:45:38.879800Z",
   "seen": [
     {
       "key": "9a88902d4427b41ab1f24a18",
@@ -18872,6 +18872,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-24T05:30:41.836863Z"
+    },
+    {
+      "key": "2097933872c80be93f3e1314",
+      "url": "https://www.nhl.com/news/anaheim-ducks-seattle-kraken-game-recap-november-23-2026",
+      "fingerprint": "dbb3fa19dc18c0a1",
+      "title_norm": "kakko scores late, lifts kraken past ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-24T05:45:38.745360Z"
     }
   ],
   "known_sources": [
