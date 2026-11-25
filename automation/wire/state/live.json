@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T05:00:41.471641Z",
+  "updated_at": "2026-11-25T05:15:33.946224Z",
   "seen": [
     {
       "key": "e16b46d86ceac5fadb907931",
@@ -19212,6 +19212,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T05:00:41.394022Z"
+    },
+    {
+      "key": "94fe91c93320c70b66352422",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-25-2026",
+      "fingerprint": "f5dcdcaf7d858761",
+      "title_norm": "on tap: 14-game feast hits pre-thanksgiving table",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T05:15:33.547514Z"
+    },
+    {
+      "key": "9d3a51da892beed633ed660b",
+      "url": "https://www.nhl.com/news/nhl-to-bring-fan-fest-to-global-series-germany",
+      "fingerprint": "a33ab00e634599b6",
+      "title_norm": "nhl set to bring fan fest to global series germany",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T05:15:33.852522Z"
     }
   ],
   "known_sources": [
