@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T12:15:35.517415Z",
+  "updated_at": "2026-11-25T13:00:55.763596Z",
   "seen": [
-    {
-      "key": "479a30bfe22066cf742d84cc",
-      "url": "https://www.nhl.com/news/new-york-islanders-dallas-stars-game-recap-october-25-2026",
-      "fingerprint": "102d81a2fda74fbd",
-      "title_norm": "robertson scores twice, stars pull away from islanders for fifth straight win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T13:00:42.197589Z"
-    },
     {
       "key": "8d5e1f81d7517775ed66f784",
       "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
