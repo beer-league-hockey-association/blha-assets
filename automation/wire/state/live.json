@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T19:30:45.206659Z",
+  "updated_at": "2026-11-25T20:00:43.895135Z",
   "seen": [
-    {
-      "key": "79a9a7c9b18692360b6fbd03",
-      "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
-      "fingerprint": "635a7689c5687494",
-      "title_norm": "jiri kulich (buf) — kulich is in concussion protocol and remains in buffalo.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-26T20:00:37.264972Z"
-    },
     {
       "key": "2c591ffc0ecbd799a77aa377",
       "url": "https://www.sportsnet.ca/nhl/article/ready-today-devils-hellebuyck-eager-to-be-thrown-back-into-fire",
