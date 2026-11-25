@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T07:15:39.711813Z",
+  "updated_at": "2026-11-25T08:59:21.242005Z",
   "seen": [
-    {
-      "key": "626699778a20b608594b0b99",
-      "url": "https://www.nhl.com/news/montreal-canadiens-winnipeg-jets-heritage-classic-game-recap-october-25-2026",
-      "fingerprint": "18fbb0be7d3aa40a",
-      "title_norm": "fowler saves 33, canadiens hold off jets in heritage classic",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T08:45:59.370423Z"
-    },
     {
       "key": "a610743539459a90b5dec295",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-5-e3r3arc",
