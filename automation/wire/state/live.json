@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T18:30:43.574004Z",
+  "updated_at": "2026-11-25T18:45:38.658362Z",
   "seen": [
-    {
-      "key": "af8b461df55e750482b087ab",
-      "url": "https://www.nhl.com/news/quinn-hughes-hears-boos-cheers-during-vancouver-return",
-      "fingerprint": "c132d255379ca90c",
-      "title_norm": "hughes hears boos, cheers in vancouver return",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T18:45:38.410059Z"
-    },
     {
       "key": "23f7b88aedbe157e9863199c",
       "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
@@ -19242,6 +19232,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-25T18:30:43.401703Z"
+    },
+    {
+      "key": "bc256b0ba2dfdc53e42b6e06",
+      "url": "https://www.nhl.com/news/colorado-avalanche-cale-makar-playing-status-report-november-25-2026",
+      "fingerprint": "d04531603cbc8c3b",
+      "title_norm": "makar back from injury for avalanche tonight",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T18:45:38.241853Z"
+    },
+    {
+      "key": "fad79cc196851e2536a7409e",
+      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-how-five-of-the-canucks-top-prospects-are-developing",
+      "fingerprint": "edd6b0a787908c56",
+      "title_norm": "scout's analysis: how five of the canucks' top prospects are developing",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T18:45:38.598614Z"
     }
   ],
   "known_sources": [
