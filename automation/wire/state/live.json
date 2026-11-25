@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T13:45:42.832988Z",
+  "updated_at": "2026-11-25T14:15:37.344487Z",
   "seen": [
     {
       "key": "8d5e1f81d7517775ed66f784",
@@ -19182,6 +19182,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T13:45:42.797039Z"
+    },
+    {
+      "key": "bb915dfda1515494fd9f101f",
+      "url": "https://theahl.com/news/icehogs-sign-boyd-to-tryout",
+      "fingerprint": "25c88141dd284021",
+      "title_norm": "icehogs sign boyd to tryout",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-25T14:15:37.218989Z"
     }
   ],
   "known_sources": [
