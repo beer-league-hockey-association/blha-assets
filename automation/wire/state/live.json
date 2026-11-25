@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T00:25:46.763565Z",
+  "updated_at": "2026-11-25T01:00:43.881702Z",
   "seen": [
-    {
-      "key": "f084de49f8418f10d0faae0e",
-      "url": "https://www.sportsnet.ca/nhl/video/canadiens-hutson-opens-scoring-at-heritage-classic",
-      "fingerprint": "0ab0884074cc101d",
-      "title_norm": "canadiens' hutson opens scoring at heritage classic",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T01:00:39.560750Z"
-    },
-    {
-      "key": "8d9d235056eed2eb9df70848",
-      "url": "https://www.sportsnet.ca/nhl/article/robertson-scores-twice-to-help-stars-beat-islanders",
-      "fingerprint": "c53f618c19fb7f34",
-      "title_norm": "robertson scores twice to help stars beat islanders",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T01:00:39.824238Z"
-    },
     {
       "key": "2f6197e9771e6ae4f65f5af7",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/fca9256f-3f5a-4032-84ef-0eaa659ba71b",
@@ -19242,6 +19222,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T00:25:46.663165Z"
+    },
+    {
+      "key": "c9672d08619e8d53569ad29d",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/d1ff1e5e-e29c-4044-a666-1a8e82d44a11",
+      "fingerprint": "c2ed5c9fef854763",
+      "title_norm": "oilers on sportsnet: edmonton vs. vegas",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T01:00:43.568764Z"
+    },
+    {
+      "key": "2361f00ee4df37ba6ad78e51",
+      "url": "https://www.sportsnet.ca/nhl/article/sharks-celebrini-on-bedard-injury-i-feel-for-him",
+      "fingerprint": "5b37dadda88dab0b",
+      "title_norm": "sharks' celebrini on bedard injury: 'i feel for him'",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T01:00:43.811518Z"
     }
   ],
   "known_sources": [
