@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T04:15:37.570953Z",
+  "updated_at": "2026-11-25T04:30:42.872859Z",
   "seen": [
-    {
-      "key": "07fe26db01fe1e71cf162fcb",
-      "url": "https://www.sportsnet.ca/nhl/article/canadiens-fowler-proves-big-game-reputation-in-win-over-jets-in-heritage-classic",
-      "fingerprint": "0e516b39dd041138",
-      "title_norm": "canadiens' fowler proves big-game reputation in win over jets in heritage classic",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T04:30:38.306421Z"
-    },
     {
       "key": "f4a375135794fa1eea2febfb",
       "url": "https://www.nhl.com/news/minnesota-wild-vancouver-canucks-game-recap-october-25-2026",
