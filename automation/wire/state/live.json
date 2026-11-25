@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T03:15:46.404478Z",
+  "updated_at": "2026-11-25T03:30:50.604041Z",
   "seen": [
     {
       "key": "bab534cbac1f3fac5a69103f",
@@ -19232,6 +19232,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T03:00:55.076228Z"
+    },
+    {
+      "key": "9d5b4259cd617db5a432ea6e",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanches-cale-makar-hopes-to-return-vs-canadiens",
+      "fingerprint": "fce860cb804e811b",
+      "title_norm": "avalanche's cale makar hopes to return vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T03:30:50.471221Z"
     }
   ],
   "known_sources": [
