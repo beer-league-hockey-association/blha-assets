@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T14:15:37.344487Z",
+  "updated_at": "2026-11-25T14:45:38.343445Z",
   "seen": [
     {
       "key": "8d5e1f81d7517775ed66f784",
@@ -19192,6 +19192,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-25T14:15:37.218989Z"
+    },
+    {
+      "key": "225cf54e556b1acd9305289b",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-25-2026",
+      "fingerprint": "ae47734fef07b9d7",
+      "title_norm": "status report: palmieri placed on ir by islanders",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T14:45:38.197605Z"
     }
   ],
   "known_sources": [
