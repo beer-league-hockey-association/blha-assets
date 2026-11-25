@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T01:00:43.881702Z",
+  "updated_at": "2026-11-25T01:15:47.293836Z",
   "seen": [
     {
       "key": "2f6197e9771e6ae4f65f5af7",
@@ -19242,6 +19242,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T01:00:43.811518Z"
+    },
+    {
+      "key": "6349713d2285fc09494806a9",
+      "url": "https://www.nhl.com/news/nhl-fantasy-hockey-spin-dylan-larkin-montreal-canadiens-trade-2026",
+      "fingerprint": "785523d12d6a4e1a",
+      "title_norm": "fantasy spin: larkin has high ceiling with canadiens",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T01:15:47.204324Z"
     }
   ],
   "known_sources": [
