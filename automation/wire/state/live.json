@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T01:15:47.293836Z",
+  "updated_at": "2026-11-25T02:00:40.433690Z",
   "seen": [
-    {
-      "key": "2f6197e9771e6ae4f65f5af7",
-      "url": "https://www.sportsnet.ca/hockey/nhl/games/fca9256f-3f5a-4032-84ef-0eaa659ba71b",
-      "fingerprint": "9cbaac9fda0f368c",
-      "title_norm": "canucks on sportsnet: hughes returns to vancouver with wild",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T02:00:35.395127Z"
-    },
     {
       "key": "ea6fb1fea09cb6c37b8e2244",
       "url": "https://www.sportsnet.ca/nhl/article/fowler-leads-canadiens-over-jets-in-heritage-classic",
