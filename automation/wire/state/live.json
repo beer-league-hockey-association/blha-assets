@@ -1,68 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T15:30:44.268811Z",
+  "updated_at": "2026-11-25T16:30:46.338226Z",
   "seen": [
-    {
-      "key": "51b4cc8819fe333f392bdfde",
-      "url": "https://audioboom.com/posts/8969242",
-      "fingerprint": "478861e4632c8abc",
-      "title_norm": "hellebuyck to devils; week 5 pickups",
-      "channel": "media",
-      "source_id": "pod_nhl_fantasy_on_ice",
-      "tier": 2,
-      "seen_at": "2026-10-26T15:45:41.101247Z"
-    },
-    {
-      "key": "187d0f9b34fb7333bbf0548b",
-      "url": "https://www.sportsnet.ca/nhl/article/champion-hurricanes-still-the-team-to-beat-even-without-landing-hellebuyck",
-      "fingerprint": "eb84925f49b377df",
-      "title_norm": "champion hurricanes still the team to beat — even without landing hellebuyck",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T16:00:40.353515Z"
-    },
-    {
-      "key": "b55c119b7000f21afe92f2ef",
-      "url": "https://www.nhl.com/news/heritage-classic-blog-mario-ferraro-october-26-2026",
-      "fingerprint": "930b306e447d4bf5",
-      "title_norm": "heritage blog: ferraro on 'top gun' entrance with jets",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T16:16:26.999508Z"
-    },
-    {
-      "key": "5e5c68bbf81dd9ba49fe8b84",
-      "url": "https://www.nhl.com/news/winnipeg-jets-look-to-build-on-lessons-of-2026-heritage-classic-loss",
-      "fingerprint": "e76c22f2fe58eb34",
-      "title_norm": "jets look to build on lessons of heritage classic loss",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T16:16:27.263729Z"
-    },
-    {
-      "key": "3dfdebf4300e2974adf5f382",
-      "url": "https://www.nhl.com/news/rookie-watch-ivar-stenberg-james-hagens-among-first-year-players-trending-up",
-      "fingerprint": "92c8cab9d8e36935",
-      "title_norm": "rookie watch: stenberg, hagens trending up",
-      "channel": "prospect-wire",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T16:16:27.544066Z"
-    },
-    {
-      "key": "084c25f79fbeb0f79fb97386",
-      "url": "https://www.dailyfaceoff.com/players/news/taylor-hall/537",
-      "fingerprint": "9aae4e4a8040baa2",
-      "title_norm": "taylor hall (car) — hall (upper-body) is expected to return vs. boston on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-26T16:24:45.285333Z"
-    },
     {
       "key": "f8c3e4963afdd4f300624f1e",
       "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
@@ -19152,6 +19092,56 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-25T14:45:38.197605Z"
+    },
+    {
+      "key": "c4ab33924c6acabd190ca3d2",
+      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-reasons-for-fans-of-all-32-teams-to-be-thankful",
+      "fingerprint": "79a28aec152f3f8c",
+      "title_norm": "rosen: reasons to be thankful for all 32 teams",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T16:30:45.469099Z"
+    },
+    {
+      "key": "914abdd35464ad39061a33ff",
+      "url": "https://www.nhl.com/news/michael-hage-had-ties-to-dylan-larkin-before-trade-between-red-wings-and-canadiens",
+      "fingerprint": "3d32e0a358b5e951",
+      "title_norm": "hage had ties to larkin, wings before trade",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T16:30:45.715286Z"
+    },
+    {
+      "key": "3ffa9fbb5c20322ef72ed156",
+      "url": "https://www.nhl.com/news/stan-wong-dedication-earned-u-s-hall-of-fame-spot",
+      "fingerprint": "8ce0688d7d4e8735",
+      "title_norm": "dedication to players got wong into u.s. hall of fame",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T16:30:45.945300Z"
+    },
+    {
+      "key": "6610a3bbd7934e369319f744",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-recall-goaltender-artur-akhtyamov-from-marlies",
+      "fingerprint": "122644f14304f5bd",
+      "title_norm": "maple leafs recall goaltender artur akhtyamov from marlies",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:30:45.972270Z"
+    },
+    {
+      "key": "0ca6bad95cb42a9a5bf0802e",
+      "url": "https://www.sportsnet.ca/nhl/article/panthers-get-barkov-marchand-back-in-lineup-vs-senators",
+      "fingerprint": "1aac1fe36c1e3d39",
+      "title_norm": "panthers get barkov, marchand back from injury vs. senators",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:30:46.133243Z"
     }
   ],
   "known_sources": [
