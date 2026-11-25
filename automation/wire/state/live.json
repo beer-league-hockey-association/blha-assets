@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T20:00:43.895135Z",
+  "updated_at": "2026-11-25T20:15:45.797454Z",
   "seen": [
-    {
-      "key": "2c591ffc0ecbd799a77aa377",
-      "url": "https://www.sportsnet.ca/nhl/article/ready-today-devils-hellebuyck-eager-to-be-thrown-back-into-fire",
-      "fingerprint": "2e21c920660d3dd8",
-      "title_norm": "'ready today': devils' hellebuyck eager to be thrown back into fire",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T20:15:34.534895Z"
-    },
     {
       "key": "dde426cd643ad200bd142dcd",
       "url": "https://www.sportsnet.ca/nhl/article/hurricanes-activate-taylor-hall-from-injured-reserve",
@@ -19262,6 +19252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T19:15:39.453691Z"
+    },
+    {
+      "key": "5dd52d93be1d7bab93486ee1",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "797b65985a4997b3",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) is expected to return vs. boston on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T20:15:45.624420Z"
     }
   ],
   "known_sources": [
