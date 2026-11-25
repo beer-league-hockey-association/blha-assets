@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T18:45:38.658362Z",
+  "updated_at": "2026-11-25T19:00:26.576605Z",
   "seen": [
     {
       "key": "23f7b88aedbe157e9863199c",
@@ -19252,6 +19252,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T18:45:38.598614Z"
+    },
+    {
+      "key": "cfd2fece9784944bf2b27eba",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-marchenko-sissons-practised-in-regular-sweaters-wednesday",
+      "fingerprint": "2ff4f841d8686de2",
+      "title_norm": "maple leafs' marchenko, sissons practise in regular sweaters",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T19:00:26.505615Z"
     }
   ],
   "known_sources": [
