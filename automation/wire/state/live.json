@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T22:45:39.615784Z",
+  "updated_at": "2026-11-25T23:15:36.119864Z",
   "seen": [
-    {
-      "key": "9b0fa8a2b308ced2a2ac2642",
-      "url": "https://www.nhl.com/news/nhl-fantasy-hockey-spin-connor-hellebuyck-new-jersey-devils-trade-2026-27",
-      "fingerprint": "bcc6fcca672a1cf7",
-      "title_norm": "fantasy spin: hellebuyck traded to devils",
-      "channel": "nhl-transactions",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T23:00:43.887555Z"
-    },
-    {
-      "key": "bde4db306967f592d2ee1c12",
-      "url": "https://www.sportsnet.ca/nhl/article/draisaitl-cooley-fowler-named-nhls-three-stars-of-the-week",
-      "fingerprint": "7dda0b109bc86faf",
-      "title_norm": "draisaitl, cooley, fowler named nhl's three stars of the week",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T23:15:35.842625Z"
-    },
     {
       "key": "24e8b8954a5a4c0aab03e674",
       "url": "https://www.sportsnet.ca/nhl/article/senators-thomas-chabot-sheds-non-contact-jersey-trending-in-right-direction",
