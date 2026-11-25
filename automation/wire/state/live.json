@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T17:45:40.839097Z",
+  "updated_at": "2026-11-25T18:30:43.574004Z",
   "seen": [
     {
       "key": "af8b461df55e750482b087ab",
@@ -19232,6 +19232,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-25T17:30:36.801025Z"
+    },
+    {
+      "key": "76e23497faafc67c2f573df4",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "36862ebd3b3c7d93",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) returned to practice as a full participant on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T18:30:43.401703Z"
     }
   ],
   "known_sources": [
