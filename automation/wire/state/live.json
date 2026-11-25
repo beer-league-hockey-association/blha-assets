@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T17:15:37.521652Z",
+  "updated_at": "2026-11-25T17:30:36.866166Z",
   "seen": [
     {
       "key": "ff2d13e21bb2fc5f783627fa",
@@ -19262,6 +19262,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T17:15:37.466501Z"
+    },
+    {
+      "key": "7334f37093344738fa6f92d5",
+      "url": "https://www.dailyfaceoff.com/players/news/k-andre-miller/4812",
+      "fingerprint": "2b34aa574fb30247",
+      "title_norm": "k'andre miller (car) — miller (illness) will be a game-time decision in tampa bay on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T17:30:36.801025Z"
     }
   ],
   "known_sources": [
