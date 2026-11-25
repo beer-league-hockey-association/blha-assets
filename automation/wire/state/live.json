@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T17:30:36.866166Z",
+  "updated_at": "2026-11-25T17:45:40.839097Z",
   "seen": [
-    {
-      "key": "ff2d13e21bb2fc5f783627fa",
-      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
-      "fingerprint": "b0bc51701b0c4d62",
-      "title_norm": "calum ritchie (nyi) — ritchie (lower-body) has been placed on ir retroactive to october 17th.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-26T17:30:39.741955Z"
-    },
-    {
-      "key": "b41bc7a96cc1c40530a12271",
-      "url": "https://www.dailyfaceoff.com/players/news/matias-maccelli/30063",
-      "fingerprint": "ccc0c4cfcd75a2e0",
-      "title_norm": "matias maccelli (nyi) — maccelli (lower-body) has been placed on ir retroactive to october 17th.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-26T17:30:39.983080Z"
-    },
-    {
-      "key": "1f5ad08dd5311ae185dcd703",
-      "url": "https://www.sportsnet.ca/nhl/article/devils-connor-hellebuyck-says-hes-ready-to-play-could-debut-on-road-trip",
-      "fingerprint": "6ac53e229becd56f",
-      "title_norm": "devils' connor hellebuyck says he's ready to play, could debut on road trip",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T17:45:35.320170Z"
-    },
-    {
-      "key": "547b1e745b6107210687eae0",
-      "url": "https://www.sportsnet.ca/nhl/video/what-made-nikishin-wave-the-white-flag-in-talks-with-hurricanes",
-      "fingerprint": "fc0feef1ae7381bd",
-      "title_norm": "what made nikishin 'wave the white flag' in talks with hurricanes?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T17:45:35.709910Z"
-    },
     {
       "key": "af8b461df55e750482b087ab",
       "url": "https://www.nhl.com/news/quinn-hughes-hears-boos-cheers-during-vancouver-return",
