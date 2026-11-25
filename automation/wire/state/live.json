@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T04:30:42.872859Z",
+  "updated_at": "2026-11-25T04:45:34.148890Z",
   "seen": [
     {
       "key": "f4a375135794fa1eea2febfb",
@@ -19212,6 +19212,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T04:15:37.516994Z"
+    },
+    {
+      "key": "f1789fa2ac0c46d0bbf599ab",
+      "url": "https://www.sportsnet.ca/nhl/video/whats-next-for-red-wings-after-dealing-larkin-to-canadiens",
+      "fingerprint": "4975972affeab3fc",
+      "title_norm": "what's next for red wings after dealing larkin to canadiens?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T04:45:34.089155Z"
     }
   ],
   "known_sources": [
