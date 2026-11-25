@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T21:00:41.239718Z",
+  "updated_at": "2026-11-25T21:15:36.076539Z",
   "seen": [
     {
       "key": "6aa4a11bcf0bf01930cf5941",
@@ -19282,6 +19282,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T20:45:33.622172Z"
+    },
+    {
+      "key": "7d2be6f318b9ee1eed9e5a62",
+      "url": "https://www.nhl.com/news/nhl-edge-stats-wednesday-night-hockey-amazon-prime-2026-27",
+      "fingerprint": "d393d61b2904e8ca",
+      "title_norm": "edge stats: vancouver-detroit 'wednesday night hockey'",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T21:15:35.730872Z"
+    },
+    {
+      "key": "c08a9d431616044148329746",
+      "url": "https://theahl.com/news/stars-acquire-goaltender-petersen-from-bears",
+      "fingerprint": "cc0afc8817a01ad6",
+      "title_norm": "stars acquire goaltender petersen from bears",
+      "channel": "prospect-wire",
+      "source_id": "ahl_official",
+      "tier": 1,
+      "seen_at": "2026-11-25T21:15:35.930641Z"
     }
   ],
   "known_sources": [
