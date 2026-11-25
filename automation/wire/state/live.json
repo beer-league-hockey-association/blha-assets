@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T13:00:55.763596Z",
+  "updated_at": "2026-11-25T13:45:42.832988Z",
   "seen": [
     {
       "key": "8d5e1f81d7517775ed66f784",
@@ -19172,6 +19172,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T06:15:40.813238Z"
+    },
+    {
+      "key": "3aa0f90eaff497017f26dc4f",
+      "url": "https://www.sportsnet.ca/hockey/article/iihf-to-challenge-russia-ruling-by-cas-at-switzerlands-supreme-court",
+      "fingerprint": "fd83154e1fd748d1",
+      "title_norm": "iihf to challenge russia ruling by cas at switzerland's supreme court",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T13:45:42.797039Z"
     }
   ],
   "known_sources": [
