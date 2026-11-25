@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T16:30:46.338226Z",
+  "updated_at": "2026-11-25T16:45:40.195886Z",
   "seen": [
     {
       "key": "f8c3e4963afdd4f300624f1e",
@@ -19142,6 +19142,166 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T16:30:46.133243Z"
+    },
+    {
+      "key": "089a49417499a9f2e77dd194",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-frost/2814",
+      "fingerprint": "569ceea4dcf0d841",
+      "title_norm": "morgan frost (cgy) — frost (undisclosed) skated on wednesday but will remain out vs. pittsburgh.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:38.376010Z"
+    },
+    {
+      "key": "7004ea9372ed1505b9531ba3",
+      "url": "https://www.dailyfaceoff.com/players/news/sean-monahan/2138",
+      "fingerprint": "f9d6fa689f9182f2",
+      "title_norm": "sean monahan (cbj) — monahan (undisclosed) will return vs. new jersey on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:38.674610Z"
+    },
+    {
+      "key": "b5bafa6d7acf276aa43860e3",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "dd7ec4a729a28f39",
+      "title_norm": "victor hedman (tbl) — hedman (illness) is a game-time decision vs. carolina on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.106879Z"
+    },
+    {
+      "key": "be102b35c8d94b7daa63518a",
+      "url": "https://www.dailyfaceoff.com/players/news/elias-pettersson/2801",
+      "fingerprint": "6a107be3e8e0b9e1",
+      "title_norm": "elias pettersson (van) — pettersson (upper-body) has returned to vancouver and is expected to miss the remainder of their road trip.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.133815Z"
+    },
+    {
+      "key": "2bc11fd1a0d42765d2bb97aa",
+      "url": "https://www.dailyfaceoff.com/players/news/egor-chinakhov/30655",
+      "fingerprint": "efea2bee5ec15de4",
+      "title_norm": "egor chinakhov (pit) — chinakhov (undisclosed) is out vs. calgary on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.152257Z"
+    },
+    {
+      "key": "6ec219cd86a21a74ab0f9488",
+      "url": "https://www.dailyfaceoff.com/players/news/evgeni-malkin/1236",
+      "fingerprint": "4d60931c43052441",
+      "title_norm": "evgeni malkin (pit) — malkin (upper-body) is available and expected to return vs. calgary on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.174418Z"
+    },
+    {
+      "key": "ff83cbe67d6787d508e13d04",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-frost/2814",
+      "fingerprint": "56ab5918da286ecb",
+      "title_norm": "morgan frost (cgy) — frost (undisclosed) will be a game-time decision in pittsburgh on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.197281Z"
+    },
+    {
+      "key": "22e3d4ef0901100874d84d34",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
+      "fingerprint": "a2ee9ab615bfc77b",
+      "title_norm": "mattias samuelsson (buf) — samuelsson (maintenance) will be a game-time decision vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.223157Z"
+    },
+    {
+      "key": "462004d27d45c2312c350621",
+      "url": "https://www.dailyfaceoff.com/players/news/brandon-hagel/27046",
+      "fingerprint": "97ca474ea92949d9",
+      "title_norm": "brandon hagel (tbl) — hagel (lower-body) was activated off ir and will be a game-time decision vs. carolina on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.250765Z"
+    },
+    {
+      "key": "50cdb1684401c4492a2a3964",
+      "url": "https://www.dailyfaceoff.com/players/news/james-hagens/37375",
+      "fingerprint": "930cf5bde62c4df8",
+      "title_norm": "james hagens (bos) — hagens (back) is a full participant in wednesday's morning skate.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.272304Z"
+    },
+    {
+      "key": "1d43fda25193edd322215598",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-cernak/2749",
+      "fingerprint": "7b55fb597d5831a8",
+      "title_norm": "erik cernak (tbl) — cernak (illness) will be a game-time decision vs. carolina on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.324697Z"
+    },
+    {
+      "key": "2737a2a15f180cc17e005a25",
+      "url": "https://www.dailyfaceoff.com/players/news/declan-carlile/30124",
+      "fingerprint": "3e2def329c7ba1d5",
+      "title_norm": "declan carlile (pit) — carlile (lower-body) is available and expected to return vs. calgary on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.349813Z"
+    },
+    {
+      "key": "81563b1a11fe8f33a639cf7d",
+      "url": "https://www.dailyfaceoff.com/players/news/brad-marchand/124",
+      "fingerprint": "5883e43fcc161906",
+      "title_norm": "brad marchand (fla) — marchand (knee) will return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.369357Z"
+    },
+    {
+      "key": "379b87cc832633a5f3e02521",
+      "url": "https://www.dailyfaceoff.com/players/news/aleksander-barkov/2132",
+      "fingerprint": "8db664dd7b7591ac",
+      "title_norm": "aleksander barkov (fla) — barkov (knee) will return vs. ottawa on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.389532Z"
+    },
+    {
+      "key": "629b517a235af16472b46647",
+      "url": "https://www.dailyfaceoff.com/players/news/zemgus-girgensons/1953",
+      "fingerprint": "2362d523768dcc63",
+      "title_norm": "zemgus girgensons (tbl) — girgensons (upper-body) will be a game-time decision vs. carolina on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.415293Z"
+    },
+    {
+      "key": "05ac46b4689726e249de8537",
+      "url": "https://www.sportsnet.ca/nhl/article/what-maple-leafs-can-learn-from-dylan-larkin-trade",
+      "fingerprint": "684452b94a1d0f35",
+      "title_norm": "what maple leafs can learn from dylan larkin trade",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T16:45:39.632062Z"
     }
   ],
   "known_sources": [
