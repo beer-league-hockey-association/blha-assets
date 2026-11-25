@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T03:30:50.604041Z",
+  "updated_at": "2026-11-25T03:45:35.369222Z",
   "seen": [
-    {
-      "key": "bab534cbac1f3fac5a69103f",
-      "url": "https://www.sportsnet.ca/nhl/video/wilds-hughes-scores-to-notch-500th-career-point-in-return-to-vancouver",
-      "fingerprint": "b6a48c58cb70fc03",
-      "title_norm": "wild's hughes scores to notch 500th career point in return to vancouver",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T03:43:04.587127Z"
-    },
     {
       "key": "91bcef6e699b490c405e1b43",
       "url": "https://www.nhl.com/news/drew-doughty-wants-to-play-past-40-win-another-stanley-cup-championship-with-kings",
