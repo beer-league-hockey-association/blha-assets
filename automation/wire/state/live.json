@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T20:30:44.306691Z",
+  "updated_at": "2026-11-25T20:45:33.687297Z",
   "seen": [
     {
       "key": "dde426cd643ad200bd142dcd",
@@ -19272,6 +19272,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T20:30:44.226459Z"
+    },
+    {
+      "key": "ebecc474c244a46e7ea553b6",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-buchnevich/2673",
+      "fingerprint": "2b854bf4884b3344",
+      "title_norm": "pavel buchnevich (stl) — buchnevich (upper-body) is out vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T20:45:33.038866Z"
+    },
+    {
+      "key": "d042333fc035034b0c0ea86c",
+      "url": "https://www.dailyfaceoff.com/players/news/james-snuggerud/31706",
+      "fingerprint": "cfa303c6a10ac371",
+      "title_norm": "jimmy snuggerud (stl) — snuggerud (upper-body) is out vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T20:45:33.355908Z"
+    },
+    {
+      "key": "9a34b79c81790c57b662b54a",
+      "url": "https://www.sportsnet.ca/nhl/article/patrik-laine-has-knee-surgery-after-having-setback-in-training",
+      "fingerprint": "e1a6b38da61287f5",
+      "title_norm": "patrik laine has knee surgery after having setback in training",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T20:45:33.622172Z"
     }
   ],
   "known_sources": [
