@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T02:45:44.634140Z",
+  "updated_at": "2026-11-25T03:00:55.130091Z",
   "seen": [
-    {
-      "key": "25bcc07e1b10ea4a6486eeb8",
-      "url": "https://www.sportsnet.ca/nhl/article/wilds-quinn-hughes-hears-boos-in-return-to-vancouver",
-      "fingerprint": "297895949806d05c",
-      "title_norm": "wild's quinn hughes hears boos in return to vancouver",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T03:00:42.673595Z"
-    },
     {
       "key": "a9896cdfcdd5d426fba46e71",
       "url": "https://www.nhl.com/news/colorado-avalanche-nashville-predators-game-recap-october-25-2026",
@@ -19242,6 +19232,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T02:45:44.562423Z"
+    },
+    {
+      "key": "742324fcc17d7db741375138",
+      "url": "https://www.sportsnet.ca/nhl/article/golden-knights-carter-hart-exits-game-vs-oilers",
+      "fingerprint": "d1936bc6e07c43b5",
+      "title_norm": "golden knights' carter hart exits game vs. oilers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T03:00:55.076228Z"
     }
   ],
   "known_sources": [
