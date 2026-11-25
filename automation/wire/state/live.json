@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T05:15:33.946224Z",
+  "updated_at": "2026-11-25T05:30:50.407053Z",
   "seen": [
-    {
-      "key": "e16b46d86ceac5fadb907931",
-      "url": "https://www.sportsnet.ca/nhl/article/kraken-forward-jared-mccann-sidelined-long-term-with-lower-body-injury",
-      "fingerprint": "9e62cfdaf731931f",
-      "title_norm": "kraken forward jared mccann sidelined long-term with lower-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T05:15:39.012630Z"
-    },
-    {
-      "key": "25be6385d478e17f563aa5b6",
-      "url": "https://www.nhl.com/news/gavin-mckenna-watch-maple-leafs-continue-western-trip",
-      "fingerprint": "a4683579affc4a20",
-      "title_norm": "mckenna watch: no. 1 pick continues western trip",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T05:30:42.897375Z"
-    },
-    {
-      "key": "8f3a2496fee2892e72c346a1",
-      "url": "https://www.nhl.com/news/heritage-classic-blog-jake-evans-october-25-2026",
-      "fingerprint": "8fcd7dd277d8bab7",
-      "title_norm": "heritage classic blog: jake evans",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T05:30:43.290754Z"
-    },
     {
       "key": "36db02d6eeae151da6c68f12",
       "url": "https://www.sportsnet.ca/nhl/article/unfazed-hughes-burns-former-team-as-wild-hand-canucks-another-loss",
