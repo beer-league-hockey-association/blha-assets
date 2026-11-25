@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T23:15:36.119864Z",
+  "updated_at": "2026-11-25T23:45:36.732030Z",
   "seen": [
     {
       "key": "24e8b8954a5a4c0aab03e674",
@@ -19262,6 +19262,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T22:30:39.470549Z"
+    },
+    {
+      "key": "883bc9d12218ab780bc06399",
+      "url": "https://www.dailyfaceoff.com/players/news/calum-ritchie/35084",
+      "fingerprint": "6395b36914bfc73a",
+      "title_norm": "calum ritchie (nyi) — ritchie (lower-body) will return vs. st. louis on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T23:45:33.654495Z"
+    },
+    {
+      "key": "b8a743510f40ce3e01dc7d81",
+      "url": "https://www.dailyfaceoff.com/players/news/mattias-samuelsson/28792",
+      "fingerprint": "b977f9f0c9d5f974",
+      "title_norm": "mattias samuelsson (buf) — samuelsson (maintenance) is expected to play vs. new york on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T23:45:33.848073Z"
+    },
+    {
+      "key": "d4727131004df8283c921a3c",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "b4c87042e1881919",
+      "title_norm": "victor hedman (tbl) — hedman (illness) is out vs. carolina on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T23:45:36.176280Z"
+    },
+    {
+      "key": "63a8e53be284db5d660cfb55",
+      "url": "https://www.dailyfaceoff.com/players/news/k-andre-miller/4812",
+      "fingerprint": "8cb452addfe12e54",
+      "title_norm": "k'andre miller (car) — miller (illness) is out vs. tampa bay on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T23:45:36.230160Z"
+    },
+    {
+      "key": "e318672f4645d0c89763a9e5",
+      "url": "https://www.dailyfaceoff.com/players/news/erik-cernak/2749",
+      "fingerprint": "44caa5cbe493d887",
+      "title_norm": "erik cernak (tbl) — cernak (illness) is out vs. carolina on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T23:45:36.244934Z"
     }
   ],
   "known_sources": [
