@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T20:45:33.687297Z",
+  "updated_at": "2026-11-25T21:00:41.239718Z",
   "seen": [
-    {
-      "key": "dde426cd643ad200bd142dcd",
-      "url": "https://www.sportsnet.ca/nhl/article/hurricanes-activate-taylor-hall-from-injured-reserve",
-      "fingerprint": "0aaa426a2d2c5848",
-      "title_norm": "hurricanes activate taylor hall from injured reserve",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T21:00:40.116363Z"
-    },
-    {
-      "key": "0da95246a41f610d013a2761",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-get-welcome-distraction-from-heritage-classic-look-for-on-ice-reset",
-      "fingerprint": "41349cdb8c4ffa3c",
-      "title_norm": "jets get welcome distraction from heritage classic, look for on-ice reset",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T21:00:40.883795Z"
-    },
     {
       "key": "6aa4a11bcf0bf01930cf5941",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-26-2026",
