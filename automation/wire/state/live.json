@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T22:00:38.647067Z",
+  "updated_at": "2026-11-25T22:30:39.515241Z",
   "seen": [
-    {
-      "key": "4ad1fa2fc392335a37481c6e",
-      "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
-      "fingerprint": "5e21c2fc45a8d4be",
-      "title_norm": "mats zuccarello (lak) — zuccarello (upper-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-26T22:30:38.507443Z"
-    },
     {
       "key": "c42d4a35707b9eeb17bd08af",
       "url": "https://www.dailyfaceoff.com/players/news/quinton-byfield/29855",
@@ -19292,6 +19282,16 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-25T22:00:38.586116Z"
+    },
+    {
+      "key": "379bad0e70e31a1da48193f5",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-notebook-marchenko-ready-mckennas-ice-time-bobrovskys-reset",
+      "fingerprint": "4b87217d54e92c3b",
+      "title_norm": "maple leafs notebook: marchenko ready, mckenna's ice time, bobrovsky's reset",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T22:30:39.470549Z"
     }
   ],
   "known_sources": [
