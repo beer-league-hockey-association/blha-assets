@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T21:15:36.076539Z",
+  "updated_at": "2026-11-25T21:30:37.441719Z",
   "seen": [
-    {
-      "key": "6aa4a11bcf0bf01930cf5941",
-      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-26-2026",
-      "fingerprint": "b861c10e07121e56",
-      "title_norm": "status report: hall could play for hurricanes tomorrow",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-26T21:15:37.054327Z"
-    },
-    {
-      "key": "7457fdab2145c06823ac089a",
-      "url": "https://www.sportsnet.ca/nhl-draft/article/projected-no-1-pick-dupont-earns-top-grade-on-nhls-2027-draft-watch-list",
-      "fingerprint": "0d39c5a9e07a59f6",
-      "title_norm": "projected no. 1 pick dupont earns top grade on nhl's 2027 draft watch list",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T21:15:37.427169Z"
-    },
     {
       "key": "4ad1fa2fc392335a37481c6e",
       "url": "https://www.dailyfaceoff.com/players/news/mats-zuccarello/1065",
