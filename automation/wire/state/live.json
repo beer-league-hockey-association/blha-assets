@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T19:00:26.576605Z",
+  "updated_at": "2026-11-25T19:15:39.630832Z",
   "seen": [
-    {
-      "key": "23f7b88aedbe157e9863199c",
-      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
-      "fingerprint": "a418d310f042d365",
-      "title_norm": "thomas chabot (ott) — chabot (upper-body) returned to ottawa's practice in a regular jersey on monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-26T19:00:41.975517Z"
-    },
-    {
-      "key": "6327876d51e406a268f1cd6e",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-chris-tanev-practises-for-first-time-since-injury",
-      "fingerprint": "4a56579e030efe4e",
-      "title_norm": "maple leafs' chris tanev practises for first time since injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T19:00:42.503724Z"
-    },
     {
       "key": "af29a32bb5dadb8bac6cd131",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gm-chayka-talks-defence-cowan-mckenna",
@@ -19262,6 +19242,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-25T19:00:26.505615Z"
+    },
+    {
+      "key": "2040760f842bdc32a82c4f20",
+      "url": "https://www.dailyfaceoff.com/players/news/leo-carlsson/37943",
+      "fingerprint": "a9479da1c6163fa9",
+      "title_norm": "leo carlsson (ana) — carlsson (upper-body) will remain out on wednesday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T19:15:38.715954Z"
+    },
+    {
+      "key": "66f9020c30c580385582b6ce",
+      "url": "https://www.dailyfaceoff.com/players/news/ryan-poehling/2792",
+      "fingerprint": "28a3d9b29b3ba440",
+      "title_norm": "ryan poehling (ana) — poehling (sprained acl) is hopeful to return this weekend.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T19:15:38.951489Z"
+    },
+    {
+      "key": "6a2387adb775d7b5cfe45fa5",
+      "url": "https://www.dailyfaceoff.com/players/news/beckett-sennecke/36637",
+      "fingerprint": "01459200078e949c",
+      "title_norm": "beckett sennecke (ana) — sennecke (upper-body) is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-25T19:15:39.167013Z"
+    },
+    {
+      "key": "361e21a94cf8eb648d7b7eee",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanche-get-cale-makar-back-in-lineup-vs-canadiens",
+      "fingerprint": "b453b315fdc6d6c5",
+      "title_norm": "avalanche get cale makar back in lineup vs. canadiens",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T19:15:39.453691Z"
     }
   ],
   "known_sources": [
