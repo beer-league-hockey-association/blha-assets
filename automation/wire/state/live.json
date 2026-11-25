@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T19:15:39.630832Z",
+  "updated_at": "2026-11-25T19:30:45.206659Z",
   "seen": [
-    {
-      "key": "af29a32bb5dadb8bac6cd131",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-gm-chayka-talks-defence-cowan-mckenna",
-      "fingerprint": "1061dd3966547fa6",
-      "title_norm": "maple leafs gm chayka talks defence, cowan, mckenna",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T19:30:37.638369Z"
-    },
     {
       "key": "79a9a7c9b18692360b6fbd03",
       "url": "https://www.dailyfaceoff.com/players/news/jiri-kulich/36381",
