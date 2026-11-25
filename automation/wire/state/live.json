@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T05:30:50.407053Z",
+  "updated_at": "2026-11-25T06:00:40.665926Z",
   "seen": [
     {
       "key": "36db02d6eeae151da6c68f12",
@@ -19202,6 +19202,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-25T05:15:33.852522Z"
+    },
+    {
+      "key": "e3657ab5e439df6b7a5fa532",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-topple-edmonton-oilers-in-battle-of-pacific-division-best",
+      "fingerprint": "c2e707017243661a",
+      "title_norm": "knights topple oilers in battle of pacific's best teams",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-25T06:00:40.555436Z"
     }
   ],
   "known_sources": [
