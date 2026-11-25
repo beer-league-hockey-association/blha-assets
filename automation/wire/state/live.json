@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T08:59:21.242005Z",
+  "updated_at": "2026-11-25T09:15:47.568986Z",
   "seen": [
-    {
-      "key": "a610743539459a90b5dec295",
-      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Puzzling-Players-What-Do-We-Do-With-These-Guys---Fantasy-Hockey-Week-5-e3r3arc",
-      "fingerprint": "45f13685955f59d2",
-      "title_norm": "puzzling players: what do we do with these guys? | fantasy hockey week 5",
-      "channel": "media",
-      "source_id": "pod_apples_ginos",
-      "tier": 2,
-      "seen_at": "2026-10-26T09:15:38.552587Z"
-    },
     {
       "key": "e52ca36c53a74bfb570064e0",
       "url": "https://www.sportsnet.ca/podcasts/32-thoughts/heritage-and-hellebuyck",
