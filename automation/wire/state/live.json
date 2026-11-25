@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T09:15:47.568986Z",
+  "updated_at": "2026-11-25T12:15:35.517415Z",
   "seen": [
-    {
-      "key": "e52ca36c53a74bfb570064e0",
-      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/heritage-and-hellebuyck",
-      "fingerprint": "6bb026a9b68d04b6",
-      "title_norm": "32 thoughts podcast: breaking down a hellebuyck of a trade",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-26T12:15:31.282657Z"
-    },
     {
       "key": "479a30bfe22066cf742d84cc",
       "url": "https://www.nhl.com/news/new-york-islanders-dallas-stars-game-recap-october-25-2026",
