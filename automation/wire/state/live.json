@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T06:00:40.665926Z",
+  "updated_at": "2026-11-25T06:15:40.839853Z",
   "seen": [
     {
       "key": "36db02d6eeae151da6c68f12",
@@ -19212,6 +19212,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-25T06:00:40.555436Z"
+    },
+    {
+      "key": "96f3efef685dc8be9cc4616d",
+      "url": "https://www.sportsnet.ca/nhl/article/babcock-explains-decision-not-to-challenge-possible-oilers-goal-vs-vegas",
+      "fingerprint": "25606bcd599a6dbc",
+      "title_norm": "babcock explains decision not to challenge possible oilers goal vs. vegas",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-25T06:15:40.813238Z"
     }
   ],
   "known_sources": [
