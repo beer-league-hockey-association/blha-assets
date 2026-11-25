@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-25T21:30:37.441719Z",
+  "updated_at": "2026-11-25T22:00:38.647067Z",
   "seen": [
     {
       "key": "4ad1fa2fc392335a37481c6e",
@@ -19282,6 +19282,16 @@
       "source_id": "ahl_official",
       "tier": 1,
       "seen_at": "2026-11-25T21:15:35.930641Z"
+    },
+    {
+      "key": "a9649e27474ef1166de672b0",
+      "url": "https://dobberprospects.com/2026/11/25/prospect-ramblings-kantserov-keeps-scoring-hughes-opportunity-in-colorado-and-hagens-showing-upside",
+      "fingerprint": "603dd9d096785971",
+      "title_norm": "prospect ramblings – kantserov keeps scoring, hughes opportunity in colorado and hagens showing upside",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-25T22:00:38.586116Z"
     }
   ],
   "known_sources": [
