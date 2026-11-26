@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T03:45:41.691729Z",
+  "updated_at": "2026-11-26T04:00:41.869163Z",
   "seen": [
-    {
-      "key": "0bec83167d26c28235d1bd9e",
-      "url": "https://www.sportsnet.ca/nhl/article/auston-matthews-becomes-fastest-in-maple-leafs-history-to-reach-800-points",
-      "fingerprint": "8785c628bfda3f99",
-      "title_norm": "auston matthews becomes fastest in maple leafs history to reach 800 points",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T04:00:36.102578Z"
-    },
-    {
-      "key": "e354d39a942e4aa94bfc120e",
-      "url": "https://www.nhl.com/news/toronto-maple-leafs-calgary-flames-game-recap-october-26-2026",
-      "fingerprint": "c1b9ee7ede0becd8",
-      "title_norm": "gridin scores twice, sparks flames past maple leafs for fourth straight win",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-27T04:00:36.390772Z"
-    },
     {
       "key": "6a27de26ecad931cbc71421a",
       "url": "https://www.nhl.com/news/detroit-red-wings-edmonton-oilers-game-recap-october-26-2026",
@@ -19342,6 +19322,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T03:31:25.364998Z"
+    },
+    {
+      "key": "31026f64acb2d269ff3d3527",
+      "url": "https://www.nhl.com/news/nashville-predators-dallas-stars-game-recap-november-25-2026",
+      "fingerprint": "4d085365e6c42491",
+      "title_norm": "bourque scores first of season against former team, predators top stars",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T04:00:41.584137Z"
+    },
+    {
+      "key": "d524bd168069b9e2491c1a3e",
+      "url": "https://www.sportsnet.ca/nhl/article/demidov-could-practise-with-canadiens-friday-gm-says",
+      "fingerprint": "a2c36013a9540f64",
+      "title_norm": "demidov could practise with canadiens friday, gm says",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T04:00:41.799588Z"
     }
   ],
   "known_sources": [
