@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T17:15:38.392340Z",
+  "updated_at": "2026-11-26T17:30:39.903423Z",
   "seen": [
     {
       "key": "4be0d178561a1ab03b5b919c",
@@ -19312,6 +19312,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T17:15:38.067442Z"
+    },
+    {
+      "key": "d8328f031f65185ac4421f0f",
+      "url": "https://www.sportsnet.ca/nhl/article/nhl-power-rankings-scoring-records-to-keep-an-eye-on",
+      "fingerprint": "a0cf0316a1b0b9d4",
+      "title_norm": "nhl power rankings: scoring records to keep an eye on",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T17:30:39.845639Z"
     }
   ],
   "known_sources": [
