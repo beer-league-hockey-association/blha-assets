@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T05:30:37.827028Z",
+  "updated_at": "2026-11-26T05:45:38.534464Z",
   "seen": [
-    {
-      "key": "b1b5bc3d7ae785eec9adaf65",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-auston-matthews-unhappy-with-delay-of-game-penalty",
-      "fingerprint": "d920545e480ea12f",
-      "title_norm": "maple leafs' auston matthews unhappy with delay-of-game penalty",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T05:45:35.356022Z"
-    },
-    {
-      "key": "f6aae6018ea2299895769a3f",
-      "url": "https://www.sportsnet.ca/nhl/article/cowan-tries-taking-blame-for-maple-leafs-loss",
-      "fingerprint": "6d5d4bc07767dd68",
-      "title_norm": "cowan tries taking blame for maple leafs loss",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T05:45:35.640244Z"
-    },
-    {
-      "key": "e06fe134a155d47b09b56fe4",
-      "url": "https://www.sportsnet.ca/nhl/article/youngsters-set-tone-for-flames-in-griddy-win",
-      "fingerprint": "e13e845cb813c7b4",
-      "title_norm": "youngsters set tone for flames in 'griddy' win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T05:45:35.869357Z"
-    },
     {
       "key": "020da91474956abfe1548325",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-thwarted-by-rookie-red-wings-goalie-as-depth-salvages-point",
@@ -19362,6 +19332,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T05:00:57.808220Z"
+    },
+    {
+      "key": "981bdde9acbcc24c39dc0b09",
+      "url": "https://www.nhl.com/news/chicago-blackhawks-seattle-kraken-game-recap-november-25-2026",
+      "fingerprint": "ffd39e6f7c033924",
+      "title_norm": "kantserov scores twice, blackhawks top kraken to win third straight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T05:45:37.957480Z"
+    },
+    {
+      "key": "143d6664f566aeab3b56171f",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-costly-mistakes-add-up-in-loss-to-red-wings",
+      "fingerprint": "dccdc9f0de9ec055",
+      "title_norm": "canucks takeaways: costly mistakes add up in loss to red wings",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T05:45:38.243276Z"
+    },
+    {
+      "key": "4c73fb7fba8905febf6bd6e0",
+      "url": "https://www.sportsnet.ca/nhl/article/avalanche-rout-canadiens-behind-two-goals-from-toews",
+      "fingerprint": "0427056d16878515",
+      "title_norm": "avalanche rout canadiens behind two goals from toews",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T05:45:38.475189Z"
     }
   ],
   "known_sources": [
