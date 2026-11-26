@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T04:00:41.869163Z",
+  "updated_at": "2026-11-26T04:30:41.899104Z",
   "seen": [
     {
       "key": "6a27de26ecad931cbc71421a",
@@ -19342,6 +19342,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T04:00:41.799588Z"
+    },
+    {
+      "key": "5aee60d4207c7fac8ece6fc5",
+      "url": "https://www.sportsnet.ca/nhl/article/penguins-egor-chinakhov-placed-on-ir-to-be-re-evaluated-next-week",
+      "fingerprint": "40aa1089a0f8ac02",
+      "title_norm": "penguins' egor chinakhov placed on ir, to be re-evaluated next week",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T04:30:40.916611Z"
+    },
+    {
+      "key": "2a98f826a4e79029444002fd",
+      "url": "https://www.nhl.com/news/utah-mammoth-minnesota-wild-game-recap-november-25-2026",
+      "fingerprint": "63e1296d785ff80c",
+      "title_norm": "kaprizov, wild point streaks end in loss to utah",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T04:30:41.764395Z"
     }
   ],
   "known_sources": [
