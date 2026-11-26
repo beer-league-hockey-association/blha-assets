@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T00:00:41.873797Z",
+  "updated_at": "2026-11-26T00:15:50.239117Z",
   "seen": [
-    {
-      "key": "18dcb32ebed0b4b3bee5658f",
-      "url": "https://www.dailyfaceoff.com/players/news/mikael-backlund/193",
-      "fingerprint": "b687bd0366174031",
-      "title_norm": "mikael backlund (cgy) — backlund (upper-body) is on the ice for warmups and is expected to play monday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T00:15:33.123219Z"
-    },
-    {
-      "key": "c4ffd497aa5eb151f5eb4259",
-      "url": "https://watch.sportsnet.ca/event/Toronto_Calgary_227144",
-      "fingerprint": "e46389a36b044c83",
-      "title_norm": "monday night hockey on sportsnet: maple leafs vs. flames",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T00:15:33.503985Z"
-    },
     {
       "key": "2c035746397ae3512bb91912",
       "url": "https://www.sportsnet.ca/nhl/article/james-reimer-pulled-after-first-period-in-rangers-debut",
