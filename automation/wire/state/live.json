@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T12:00:56.714769Z",
+  "updated_at": "2026-11-26T13:30:40.728221Z",
   "seen": [
     {
       "key": "8a41508aeca06c7fba967bfd",
@@ -19412,6 +19412,16 @@
       "source_id": "pod_apples_ginos",
       "tier": 2,
       "seen_at": "2026-11-26T10:15:42.058943Z"
+    },
+    {
+      "key": "8b69b45b92a62755beaa6458",
+      "url": "https://www.sportsnet.ca/podcasts/32-thoughts/the-airing-of-grievances",
+      "fingerprint": "2c0d781f8ea8ec9c",
+      "title_norm": "32 thoughts podcast: the airing of grievances",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T13:30:40.649312Z"
     }
   ],
   "known_sources": [
