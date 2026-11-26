@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T13:30:40.728221Z",
+  "updated_at": "2026-11-26T14:15:48.124307Z",
   "seen": [
-    {
-      "key": "8a41508aeca06c7fba967bfd",
-      "url": "https://www.dailyfaceoff.com/players/news/rasmus-ristolainen/2140",
-      "fingerprint": "eb3ce21b8c57169e",
-      "title_norm": "rasmus ristolainen (phi) — ristolainen (upper-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T14:15:42.194256Z"
-    },
-    {
-      "key": "f06d8fce1437a98f866119a5",
-      "url": "https://www.dailyfaceoff.com/players/news/cameron-york/30422",
-      "fingerprint": "73381b5a28ff706e",
-      "title_norm": "cam york (phi) — york (upper-body) has been activated off injured reserve.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T14:15:42.518630Z"
-    },
     {
       "key": "f7120b33a1af7519f1e507c6",
       "url": "https://www.nhl.com/news/nhl-monday-night-hockey-to-air-in-european-prime-time",
