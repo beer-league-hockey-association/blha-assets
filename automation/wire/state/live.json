@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T03:31:25.440094Z",
+  "updated_at": "2026-11-26T03:45:41.691729Z",
   "seen": [
-    {
-      "key": "cc2c43bbabc4132cbabaaf7e",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-zach-hyman-exits-vs-red-wings-with-head-injury",
-      "fingerprint": "4b20ee19c416b352",
-      "title_norm": "oilers' zach hyman exits vs. red wings with head injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T03:45:35.293889Z"
-    },
     {
       "key": "0bec83167d26c28235d1bd9e",
       "url": "https://www.sportsnet.ca/nhl/article/auston-matthews-becomes-fastest-in-maple-leafs-history-to-reach-800-points",
