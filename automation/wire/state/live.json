@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T03:15:47.118053Z",
+  "updated_at": "2026-11-26T03:31:25.440094Z",
   "seen": [
     {
       "key": "cc2c43bbabc4132cbabaaf7e",
@@ -19322,6 +19322,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T03:15:46.775913Z"
+    },
+    {
+      "key": "a7fef1f3f960614ac2772f42",
+      "url": "https://www.nhl.com/news/new-jersey-devils-columbus-blue-jackets-game-recap-november-25-2026",
+      "fingerprint": "e1b29df701738187",
+      "title_norm": "hellebuyck stops 22, devils top jackets in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:31:24.592358Z"
+    },
+    {
+      "key": "15404d365af1f81262e808ab",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-washington-capitals-game-recap-november-25-2026",
+      "fingerprint": "7dcb25feb24ebba7",
+      "title_norm": "caps pull away with 4 late goals, end 5-game slide",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:31:24.806795Z"
+    },
+    {
+      "key": "4319aa3ee8396a54375afebe",
+      "url": "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-recap-november-25-2026",
+      "fingerprint": "f2dcf8d2973c984e",
+      "title_norm": "finnie, arvidsson each has 3 points in red wings win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:31:25.364998Z"
     }
   ],
   "known_sources": [
