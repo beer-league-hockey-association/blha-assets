@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T16:45:45.000744Z",
+  "updated_at": "2026-11-26T17:00:42.166863Z",
   "seen": [
     {
       "key": "c6ae958e083448ef744bad1c",
@@ -19272,6 +19272,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T16:45:44.924882Z"
+    },
+    {
+      "key": "d36f88d7dc6ffc3d4b949f04",
+      "url": "https://www.nhl.com/news/brenden-dillon-to-have-player-safety-hearing-for-actions-in-new-jersey-devils-game",
+      "fingerprint": "5ec4241671cb37a6",
+      "title_norm": "dillon of devils to have player safety hearing",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T17:00:42.034961Z"
     }
   ],
   "known_sources": [
