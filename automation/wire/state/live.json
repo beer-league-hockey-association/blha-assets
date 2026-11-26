@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T04:45:43.684281Z",
+  "updated_at": "2026-11-26T05:00:57.846394Z",
   "seen": [
-    {
-      "key": "6a27de26ecad931cbc71421a",
-      "url": "https://www.nhl.com/news/detroit-red-wings-edmonton-oilers-game-recap-october-26-2026",
-      "fingerprint": "d2bdec85cc7b6868",
-      "title_norm": "postava wins 1st nhl start, red wings rally past oilers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-27T05:00:38.302278Z"
-    },
-    {
-      "key": "9e44c4bcb4f1ec27baa6e638",
-      "url": "https://www.sportsnet.ca/nhl/article/raymond-completes-red-wings-rally-with-shootout-winner-over-oilers",
-      "fingerprint": "17270d8c466a79f6",
-      "title_norm": "raymond completes red wings' rally with shootout winner over oilers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T05:00:39.234545Z"
-    },
     {
       "key": "a13fff0e752f91cd1826cee5",
       "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
@@ -19392,6 +19372,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T04:45:43.621616Z"
+    },
+    {
+      "key": "b3806123c7cb0cefa77987b1",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-kaiden-guhle-exits-vs-avalanche-with-apparent-injury",
+      "fingerprint": "f847173d994e5e56",
+      "title_norm": "canadiens' kaiden guhle exits vs. avalanche with apparent injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T05:00:57.808220Z"
     }
   ],
   "known_sources": [
