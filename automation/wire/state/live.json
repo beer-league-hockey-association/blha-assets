@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T04:30:41.899104Z",
+  "updated_at": "2026-11-26T04:45:43.684281Z",
   "seen": [
     {
       "key": "6a27de26ecad931cbc71421a",
@@ -19362,6 +19362,36 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T04:30:41.764395Z"
+    },
+    {
+      "key": "2fbab8609b83258c70d42fef",
+      "url": "https://www.sportsnet.ca/nhl/article/ducks-cutter-gauthier-becomes-first-american-to-score-21-goals-in-14-games",
+      "fingerprint": "85aa8d4bee9137f2",
+      "title_norm": "ducks' cutter gauthier becomes first american to score 21 goals in 14 games",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T04:45:43.091322Z"
+    },
+    {
+      "key": "857321cd883b6a1e949e0b85",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-castagna-savours-surreal-night-after-goal-staredown-with-idol-crosby",
+      "fingerprint": "1e542ca8d251e963",
+      "title_norm": "flames' castagna savours surreal night after goal, staredown with idol crosby",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T04:45:43.375772Z"
+    },
+    {
+      "key": "3eeed9612eb94ccab89f6d41",
+      "url": "https://www.sportsnet.ca/nhl/article/mammoths-win-gives-wild-first-regulation-loss-in-16-games-to-end-franchise-best-run",
+      "fingerprint": "990bdbb966fd3eae",
+      "title_norm": "mammoth's win gives wild first regulation loss in 16 games to end franchise-best run",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T04:45:43.621616Z"
     }
   ],
   "known_sources": [
