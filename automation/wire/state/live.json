@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T07:15:44.157081Z",
+  "updated_at": "2026-11-26T07:30:36.484173Z",
   "seen": [
     {
       "key": "66310983ce50579850fa43a9",
@@ -19392,6 +19392,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T07:15:44.118795Z"
+    },
+    {
+      "key": "01627e111b6ee6a07b98dd1b",
+      "url": "https://www.sportsnet.ca/nhl/article/struggling-canadiens-dealt-another-blue-line-blow-in-lopsided-loss",
+      "fingerprint": "beb5f645d4b97f8e",
+      "title_norm": "struggling canadiens dealt another blue-line blow in lopsided loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T07:30:36.421253Z"
     }
   ],
   "known_sources": [
