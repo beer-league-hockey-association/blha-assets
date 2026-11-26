@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T02:15:39.706276Z",
+  "updated_at": "2026-11-26T02:45:33.127147Z",
   "seen": [
-    {
-      "key": "c201a42224b56ad9a4ec4bb0",
-      "url": "https://www.sportsnet.ca/nhl/article/kings-continue-hot-eastern-conference-trip-with-win-over-rangers",
-      "fingerprint": "c561bf50cecb22a7",
-      "title_norm": "kings continue hot eastern conference trip with win over rangers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T02:30:43.608708Z"
-    },
     {
       "key": "2da7bb38eee7b5ae4d013f76",
       "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
