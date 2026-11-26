@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T20:15:47.825620Z",
+  "updated_at": "2026-11-26T20:45:43.795924Z",
   "seen": [
-    {
-      "key": "49bdec74ef373cf99b52a89b",
-      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
-      "fingerprint": "4f16cd57716deecf",
-      "title_norm": "nicolas roy (col) — roy (lower body) was a full participant in tuesday's practice.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T20:45:39.685378Z"
-    },
-    {
-      "key": "1ad22e2993e45761502b541f",
-      "url": "https://www.sportsnet.ca/nhl/article/golden-knights-turn-to-adin-hill-after-carter-hart-exits-morning-skate-with-injury",
-      "fingerprint": "1e35b703478cbcca",
-      "title_norm": "golden knights turn to adin hill after carter hart exits morning skate with injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T20:45:39.941008Z"
-    },
     {
       "key": "7acd9ab69b064b57065daa7c",
       "url": "https://www.sportsnet.ca/nhl/video/will-rust-be-a-factor-for-hellebuyck-in-devils-debut",
@@ -19352,6 +19332,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T20:15:47.699324Z"
+    },
+    {
+      "key": "0e7cb4663bdb166c1666a1e3",
+      "url": "https://thehockeywriters.com/stars-hyrys-late-breakout-gives-finnish-sleeper-prospects-a-blueprint-to-nhl-success",
+      "fingerprint": "0e98243573e5a9a8",
+      "title_norm": "stars' hyry's late breakout gives finnish sleeper prospects a blueprint to nhl success",
+      "channel": "prospect-wire",
+      "source_id": "thw_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-26T20:45:43.784293Z"
     }
   ],
   "known_sources": [
