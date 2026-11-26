@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T05:45:38.534464Z",
+  "updated_at": "2026-11-26T06:15:35.022284Z",
   "seen": [
     {
       "key": "020da91474956abfe1548325",
@@ -19362,6 +19362,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T05:45:38.475189Z"
+    },
+    {
+      "key": "742731286f0a35e34a45eeee",
+      "url": "https://www.nhl.com/news/san-jose-sharks-anaheim-ducks-game-recap-november-25-2026",
+      "fingerprint": "cec8e87bde454c17",
+      "title_norm": "gauthier stays hot, ducks cruise past sharks to end 4-game skid",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T06:15:34.896562Z"
     }
   ],
   "known_sources": [
