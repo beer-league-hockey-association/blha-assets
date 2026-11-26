@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T16:00:45.444464Z",
+  "updated_at": "2026-11-26T16:15:46.242855Z",
   "seen": [
-    {
-      "key": "4a731a443cf492c664b90eab",
-      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-october-27-2026",
-      "fingerprint": "3ee947d78b1ff6a4",
-      "title_norm": "on tap: celebrini, sharks start homestand vs. sabres",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-27T16:15:35.568307Z"
-    },
-    {
-      "key": "5c3c41dbd3062f342347f25e",
-      "url": "https://www.dailyfaceoff.com/players/news/james-reimer/1438",
-      "fingerprint": "35f7de709d141f4a",
-      "title_norm": "james reimer (nyr) — reimer (upper-body) missed practice on tuesday and is considered day-to-day.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T16:15:35.951579Z"
-    },
     {
       "key": "349b0ecf3146d644835813fb",
       "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-october-27-2026",
@@ -19312,6 +19292,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T13:30:40.649312Z"
+    },
+    {
+      "key": "8b957fd4be47982f9240084e",
+      "url": "https://www.sportsnet.ca/nhl/article/hockey-hall-of-fame-appoints-zdeno-chara-to-selection-committee",
+      "fingerprint": "dde3a42a4e3ec0ef",
+      "title_norm": "hockey hall of fame appoints zdeno chara to selection committee",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T16:15:46.220221Z"
     }
   ],
   "known_sources": [
