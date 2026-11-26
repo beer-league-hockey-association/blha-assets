@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T18:00:45.091832Z",
+  "updated_at": "2026-11-26T18:30:39.476368Z",
   "seen": [
     {
       "key": "f7c563051763f3cf7f1a06ba",
@@ -19312,6 +19312,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T18:00:44.994889Z"
+    },
+    {
+      "key": "0eb2caf326aa2e5234b859e2",
+      "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-27-2026",
+      "fingerprint": "906a3d2e44e384cc",
+      "title_norm": "on tap: kantserov, blackhawks face off against rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T18:30:39.381836Z"
     }
   ],
   "known_sources": [
