@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T19:30:37.789148Z",
+  "updated_at": "2026-11-26T19:45:42.669163Z",
   "seen": [
-    {
-      "key": "512a9950c9cdf9ecd6ee2e07",
-      "url": "https://www.sportsnet.ca/nhl/article/panthers-coach-paul-maurice-goes-to-bat-for-jets-after-hellebuyck-saga",
-      "fingerprint": "d53ac56136d09e3a",
-      "title_norm": "panthers coach paul maurice goes to bat for jets after hellebuyck saga",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T19:45:39.263472Z"
-    },
     {
       "key": "49bdec74ef373cf99b52a89b",
       "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
