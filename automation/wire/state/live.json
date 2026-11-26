@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T00:30:50.362508Z",
+  "updated_at": "2026-11-26T01:00:52.338226Z",
   "seen": [
-    {
-      "key": "8cc3c2e0714ffb67e10e1fcb",
-      "url": "https://www.sportsnet.ca/nhl/article/dustin-byfuglien-pens-message-to-jets-fans-after-alumni-game-return",
-      "fingerprint": "fbdb595952d0402d",
-      "title_norm": "dustin byfuglien pens message to jets fans after alumni-game return",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T01:00:42.299517Z"
-    },
     {
       "key": "f3ddc8d0cdcfbd3ebde3c604",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/916d0b62-ced6-4a02-96c8-5ca5c78b0796",
