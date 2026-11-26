@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T19:45:42.669163Z",
+  "updated_at": "2026-11-26T20:15:47.825620Z",
   "seen": [
     {
       "key": "49bdec74ef373cf99b52a89b",
@@ -19342,6 +19342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T19:30:37.733790Z"
+    },
+    {
+      "key": "3b97f51509b8a5b16e4cd0b8",
+      "url": "https://www.sportsnet.ca/nhl/article/why-maple-leafs-william-nylander-is-getting-a-power-play-demotion",
+      "fingerprint": "a6a9b160739422ed",
+      "title_norm": "why maple leafs' william nylander is getting a power-play demotion",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T20:15:47.699324Z"
     }
   ],
   "known_sources": [
