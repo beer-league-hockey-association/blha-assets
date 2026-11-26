@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T19:15:39.543009Z",
+  "updated_at": "2026-11-26T19:30:37.789148Z",
   "seen": [
-    {
-      "key": "878ccea52be72bbc5417e9e1",
-      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
-      "fingerprint": "e2fa981b1ffa950c",
-      "title_norm": "mattias ekholm (edm) — ekholm (concussion) has a chance to return on wednesday vs. calgary.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T19:15:39.863063Z"
-    },
     {
       "key": "512a9950c9cdf9ecd6ee2e07",
       "url": "https://www.sportsnet.ca/nhl/article/panthers-coach-paul-maurice-goes-to-bat-for-jets-after-hellebuyck-saga",
@@ -19312,6 +19302,56 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T19:15:39.509100Z"
+    },
+    {
+      "key": "18722812c361cca6196d6f5b",
+      "url": "https://www.dailyfaceoff.com/players/news/beckett-sennecke/36637",
+      "fingerprint": "4edc6c44880ac2a6",
+      "title_norm": "beckett sennecke (ana) — sennecke (upper-body) will return vs. los angeles on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-26T19:30:36.654264Z"
+    },
+    {
+      "key": "17221d7d63dca70762cd3842",
+      "url": "https://www.dailyfaceoff.com/players/news/mathieu-olivier/23595",
+      "fingerprint": "03eeffbd32b1bb3b",
+      "title_norm": "mathieu olivier (cbj) — olivier is considered week-to-week with an upper-body injury.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-26T19:30:36.821812Z"
+    },
+    {
+      "key": "bc451d7f1dcf8242692380db",
+      "url": "https://www.nhl.com/news/brenden-dillion-suspended-four-games-for-actions-in-devils-blue-jackets-game",
+      "fingerprint": "cc8ff2ad04a834ac",
+      "title_norm": "devils' dillon suspended 4 games by player safety",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T19:30:37.091363Z"
+    },
+    {
+      "key": "2f48cfcc02bce653b659204f",
+      "url": "https://www.dailyfaceoff.com/players/news/gabriel-perreault/35165",
+      "fingerprint": "21b274cbaf5814a3",
+      "title_norm": "gabriel perreault (nyr) — perreault (lower-body) is expected to be out for the next 4-6 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-26T19:30:37.416216Z"
+    },
+    {
+      "key": "8eacb4d828c51a49a7c98ba9",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-brenden-dillon-suspended-four-games-for-illegal-check-to-head",
+      "fingerprint": "bfcae086c8b42e6f",
+      "title_norm": "devils' brenden dillon suspended four games for illegal check to head",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T19:30:37.733790Z"
     }
   ],
   "known_sources": [
