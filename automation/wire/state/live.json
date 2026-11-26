@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T20:45:43.795924Z",
+  "updated_at": "2026-11-26T21:30:37.191235Z",
   "seen": [
     {
       "key": "7acd9ab69b064b57065daa7c",
@@ -19342,6 +19342,16 @@
       "source_id": "thw_prospects",
       "tier": 2,
       "seen_at": "2026-11-26T20:45:43.784293Z"
+    },
+    {
+      "key": "2713fa8739e0ccdd5fa01eb5",
+      "url": "https://www.sportsnet.ca/nhl/article/longtime-canadien-defenceman-jeff-petry-announces-retirement",
+      "fingerprint": "a1ab948229c975aa",
+      "title_norm": "longtime canadien defenceman jeff petry announces retirement",
+      "channel": "breaking-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T21:30:37.160143Z"
     }
   ],
   "known_sources": [
