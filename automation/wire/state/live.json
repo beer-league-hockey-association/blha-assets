@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T01:00:52.338226Z",
+  "updated_at": "2026-11-26T01:30:38.661335Z",
   "seen": [
     {
       "key": "f3ddc8d0cdcfbd3ebde3c604",
@@ -19272,6 +19272,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T00:00:41.807785Z"
+    },
+    {
+      "key": "741ffe8fee693c21aac391ca",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-bertuzzi/2392",
+      "fingerprint": "12eb80f8b4f640dc",
+      "title_norm": "tyler bertuzzi (chi) — bertuzzi (illness) will not play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-26T01:30:38.217464Z"
+    },
+    {
+      "key": "c09a7bd75dfd3b274080f1b6",
+      "url": "https://www.dailyfaceoff.com/players/news/anton-frondell/38471",
+      "fingerprint": "7ab79d460064d4bf",
+      "title_norm": "anton frondell (chi) — frondell (lower-body) will play on wednesday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-26T01:30:38.541803Z"
     }
   ],
   "known_sources": [
