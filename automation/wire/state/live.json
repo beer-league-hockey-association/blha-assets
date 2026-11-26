@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T19:00:46.506733Z",
+  "updated_at": "2026-11-26T19:15:39.543009Z",
   "seen": [
-    {
-      "key": "e81bee74932442555ef357fd",
-      "url": "https://www.dailyfaceoff.com/players/news/carter-hart/3874",
-      "fingerprint": "78f60778057a1b78",
-      "title_norm": "carter hart (vgk) — hart (lower-body) left vegas' morning skate on tuesday and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T19:00:46.769019Z"
-    },
     {
       "key": "878ccea52be72bbc5417e9e1",
       "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
@@ -19312,6 +19302,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T18:30:39.381836Z"
+    },
+    {
+      "key": "39f96df3f2b5b6772c5079cb",
+      "url": "https://www.sportsnet.ca/nhl/article/nemec-returns-to-new-jersey-with-no-regrets-improved-play",
+      "fingerprint": "e63bb2d6f3e0106b",
+      "title_norm": "flames' nemec returns to new jersey with no regrets, improved play",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T19:15:39.509100Z"
     }
   ],
   "known_sources": [
