@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T02:00:50.055258Z",
+  "updated_at": "2026-11-26T02:15:39.706276Z",
   "seen": [
-    {
-      "key": "494b3f76124b2ebc39edcd91",
-      "url": "https://www.nhl.com/news/los-angeles-kings-new-york-rangers-game-recap-october-26-2026",
-      "fingerprint": "c7237cfc3715dc4a",
-      "title_norm": "doughty has 3 points, kings continue strong road trip with win against rangers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-27T02:15:35.236669Z"
-    },
     {
       "key": "c201a42224b56ad9a4ec4bb0",
       "url": "https://www.sportsnet.ca/nhl/article/kings-continue-hot-eastern-conference-trip-with-win-over-rangers",
