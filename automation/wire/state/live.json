@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T03:00:45.532944Z",
+  "updated_at": "2026-11-26T03:15:47.118053Z",
   "seen": [
     {
       "key": "cc2c43bbabc4132cbabaaf7e",
@@ -19282,6 +19282,46 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T03:00:45.234784Z"
+    },
+    {
+      "key": "90525b6e9a06c1acdc10dddc",
+      "url": "https://www.nhl.com/news/calgary-flames-pittsburgh-penguins-game-recap-november-25-2026",
+      "fingerprint": "d65e8f52aefe746e",
+      "title_norm": "flames score 4 in 2nd, hand pens 5th straight loss",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:15:46.155239Z"
+    },
+    {
+      "key": "0d8ba5562563fc19d98c6640",
+      "url": "https://www.nhl.com/news/new-york-islanders-st-louis-blues-game-recap-november-25-2026",
+      "fingerprint": "fed78903be8ef46f",
+      "title_norm": "eklund ties it with three seconds left, islanders edge blues in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:15:46.414262Z"
+    },
+    {
+      "key": "8f0280c894e1230274a7baad",
+      "url": "https://www.sportsnet.ca/nhl/article/marchand-barkov-shine-in-return-panthers-down-senators",
+      "fingerprint": "b8e506944136f4e6",
+      "title_norm": "marchand, barkov shine in return, panthers down senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T03:15:46.754731Z"
+    },
+    {
+      "key": "ec91ee183940f8dd94a26d09",
+      "url": "https://www.sportsnet.ca/nhl/article/barron-nets-go-ahead-goal-as-jets-keep-rolling-with-win-over-bruins",
+      "fingerprint": "d6007a67a0fe0b8b",
+      "title_norm": "barron nets go-ahead goal as jets keep rolling with win over bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T03:15:46.775913Z"
     }
   ],
   "known_sources": [
