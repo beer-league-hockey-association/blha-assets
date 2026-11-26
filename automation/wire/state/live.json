@@ -1,48 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T17:00:42.166863Z",
+  "updated_at": "2026-11-26T17:15:38.392340Z",
   "seen": [
-    {
-      "key": "c6ae958e083448ef744bad1c",
-      "url": "https://www.sportsnet.ca/nhl/article/penguins-ben-kindel-returns-to-practice-after-collapsing-on-plane",
-      "fingerprint": "fced683fff88fa38",
-      "title_norm": "penguins' ben kindel returns to practice after collapsing on plane",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T17:00:46.627303Z"
-    },
-    {
-      "key": "d27750d49b4473d08e395839",
-      "url": "https://www.dailyfaceoff.com/players/news/joshua-morrissey/2144",
-      "fingerprint": "169e7f8f15ccb66a",
-      "title_norm": "josh morrissey (wpg) — morrissey (upper-body) will travel on winnipeg's upcoming road trip.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T17:15:35.964757Z"
-    },
-    {
-      "key": "c4a90350f1385e2192a0f51c",
-      "url": "https://www.sportsnet.ca/nhl/article/hellebuyck-to-make-first-start-for-devils-vs-stars",
-      "fingerprint": "91797b7910196151",
-      "title_norm": "hellebuyck to make first start for devils vs. stars",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T17:15:36.211826Z"
-    },
-    {
-      "key": "86242dc2e290f9cd415d63a4",
-      "url": "https://www.sportsnet.ca/nhl/article/nhls-most-interesting-goalie-situations-a-month-into-the-season",
-      "fingerprint": "720d2366bb54f290",
-      "title_norm": "nhl's most interesting goalie situations a month into the season",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T17:15:36.403832Z"
-    },
     {
       "key": "4be0d178561a1ab03b5b919c",
       "url": "https://www.nhl.com/news/ben-kindel-practices-with-penguins-after-health-scare",
@@ -19282,6 +19242,76 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T17:00:42.034961Z"
+    },
+    {
+      "key": "042790658d3e7bf60732171b",
+      "url": "https://www.nhl.com/news/aleksander-barkov-brad-marchand-returns-give-florida-panthers-instant-lift",
+      "fingerprint": "f9aa09af0ef74671",
+      "title_norm": "barkov, marchand returns give panthers instant lift",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T17:15:37.378772Z"
+    },
+    {
+      "key": "141faf53eca3915101da380a",
+      "url": "https://www.nhl.com/news/amanda-kessel-persevered-on-way-to-usa-hall-of-fame",
+      "fingerprint": "a23901e40c168468",
+      "title_norm": "amanda kessel persevered on way to u.s. hall of fame",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T17:15:37.666616Z"
+    },
+    {
+      "key": "ef15afd9c04e94c6d2f3263c",
+      "url": "https://www.nhl.com/news/eddie-olczyk-with-chicago-family-for-holiday-showdown-between-blackhawks-and-rangers",
+      "fingerprint": "5df8a7cda79daf07",
+      "title_norm": "olczyk with chicago 'family' for holiday showdown vs. rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T17:15:37.968114Z"
+    },
+    {
+      "key": "accbb95676fd0c8dc6b51990",
+      "url": "https://www.nhl.com/news/topic/hockey-fights-cancer/philadelphia-flyers-cole-knuble-making-family-proud-after-father-mike-cancer-treatment",
+      "fingerprint": "fb6ba04b4f4ae8bb",
+      "title_norm": "flyers' knuble was fueled by dad's cancer fight",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T17:15:37.979377Z"
+    },
+    {
+      "key": "621d11613a651f73e6586867",
+      "url": "https://www.nhl.com/news/montreal-canadiens-legend-maurice-richard-assisted-by-unheralded-stick-maker",
+      "fingerprint": "86012968903bfeb7",
+      "title_norm": "rocket's legend got assist from unheralded stick-maker",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T17:15:37.991393Z"
+    },
+    {
+      "key": "cb3d2063b6b6b6aba75081e3",
+      "url": "https://www.sportsnet.ca/nhl/article/what-is-fixable-and-what-isnt-for-the-maple-leafs",
+      "fingerprint": "c136651c1b979aa8",
+      "title_norm": "what is fixable, and what isn't, for the maple leafs",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T17:15:38.054182Z"
+    },
+    {
+      "key": "0d13e984a71a8d21d610db0b",
+      "url": "https://www.sportsnet.ca/nhl/article/checking-in-on-the-nhl-playoff-picture-at-u-s-thanksgiving",
+      "fingerprint": "d15a42a66a0543d1",
+      "title_norm": "checking in on the nhl playoff picture at u.s. thanksgiving",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T17:15:38.067442Z"
     }
   ],
   "known_sources": [
