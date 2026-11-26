@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T16:30:47.080547Z",
+  "updated_at": "2026-11-26T16:45:45.000744Z",
   "seen": [
-    {
-      "key": "01789c253745a3f3cd823f60",
-      "url": "https://www.dailyfaceoff.com/players/news/logan-thompson/28990",
-      "fingerprint": "c13d5469a6a58bde",
-      "title_norm": "logan thompson (wsh) — thompson (lower-body) took full part in practice on tuesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T16:45:37.318118Z"
-    },
     {
       "key": "c6ae958e083448ef744bad1c",
       "url": "https://www.sportsnet.ca/nhl/article/penguins-ben-kindel-returns-to-practice-after-collapsing-on-plane",
@@ -19272,6 +19262,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T16:15:46.220221Z"
+    },
+    {
+      "key": "286e61a7f48a5b8f2398b030",
+      "url": "https://www.sportsnet.ca/nhl/article/real-kypers-trade-board-3-0-which-star-player-could-move-next",
+      "fingerprint": "70f6532491df3cb3",
+      "title_norm": "real kyper's trade board 3.0: which star player could move next?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T16:45:44.924882Z"
     }
   ],
   "known_sources": [
