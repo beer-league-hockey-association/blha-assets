@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T09:30:41.000042Z",
+  "updated_at": "2026-11-26T10:15:42.096083Z",
   "seen": [
     {
       "key": "66310983ce50579850fa43a9",
@@ -19412,6 +19412,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T09:30:40.877671Z"
+    },
+    {
+      "key": "6b1227be3876f944af8b7081",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Updated-Rest-of-Season-Expectations--A-Trade-Talks-Special-e3t1vlf",
+      "fingerprint": "716edfb6e2b5bd81",
+      "title_norm": "updated rest of season expectations | a trade talks special",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-26T10:15:42.058943Z"
     }
   ],
   "known_sources": [
