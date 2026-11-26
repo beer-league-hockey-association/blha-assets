@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T06:30:36.305176Z",
+  "updated_at": "2026-11-26T07:00:52.386495Z",
   "seen": [
     {
       "key": "66310983ce50579850fa43a9",
@@ -19362,6 +19362,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T06:15:34.896562Z"
+    },
+    {
+      "key": "543df8fb67ac78fcfd71e784",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-florian-xhekaj-receives-match-penalty-for-slew-foot",
+      "fingerprint": "998a45eb6b75fe7d",
+      "title_norm": "canadiens' florian xhekaj receives match penalty for slew foot",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T07:00:52.348396Z"
     }
   ],
   "known_sources": [
