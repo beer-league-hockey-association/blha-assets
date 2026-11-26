@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T02:45:33.127147Z",
+  "updated_at": "2026-11-26T03:00:45.532944Z",
   "seen": [
-    {
-      "key": "2da7bb38eee7b5ae4d013f76",
-      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
-      "fingerprint": "4e3e75b0182562fa",
-      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) left monday's game vs. calgary and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T03:00:44.092831Z"
-    },
-    {
-      "key": "3e8cb226e1ad655a7bfdf4e2",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-kirill-marchenko-exits-vs-flames-with-lower-body-injury",
-      "fingerprint": "328c7ddf749d227a",
-      "title_norm": "maple leafs' kirill marchenko exits vs. flames with lower-body injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T03:00:44.435690Z"
-    },
     {
       "key": "cc2c43bbabc4132cbabaaf7e",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-zach-hyman-exits-vs-red-wings-with-head-injury",
@@ -19262,6 +19242,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-26T01:30:38.541803Z"
+    },
+    {
+      "key": "02f3e10d38fb4cc1d29afdc8",
+      "url": "https://www.nhl.com/news/carolina-hurricanes-tampa-bay-lightning-game-recap-november-25-2026",
+      "fingerprint": "b0433353b5088a45",
+      "title_norm": "hurricanes score three in 3rd, run point streak to 8",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:00:44.700823Z"
+    },
+    {
+      "key": "da8049fee37fa4bf6677804e",
+      "url": "https://www.nhl.com/news/winnipeg-jets-boston-bruins-game-recap-november-25-2026",
+      "fingerprint": "486c34ec779e8637",
+      "title_norm": "connor's 3 points help jets get past bruins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:00:44.954325Z"
+    },
+    {
+      "key": "e2884ad2841532987ea5031a",
+      "url": "https://www.nhl.com/news/new-york-rangers-buffalo-sabres-game-recap-november-25-2026",
+      "fingerprint": "a38ae930d0d1170e",
+      "title_norm": "sabres start fast, score five to cruise past rangers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T03:00:45.195009Z"
+    },
+    {
+      "key": "d12324e4d12948ae381f27f1",
+      "url": "https://www.sportsnet.ca/nhl/article/farabee-has-goal-and-assist-to-help-flames-beat-penguins",
+      "fingerprint": "307bb489aa434f51",
+      "title_norm": "farabee has goal and assist to help flames beat penguins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-26T03:00:45.234784Z"
     }
   ],
   "known_sources": [
