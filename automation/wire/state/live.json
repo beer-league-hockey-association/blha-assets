@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T17:30:39.903423Z",
+  "updated_at": "2026-11-26T18:00:45.091832Z",
   "seen": [
-    {
-      "key": "4be0d178561a1ab03b5b919c",
-      "url": "https://www.nhl.com/news/ben-kindel-practices-with-penguins-after-health-scare",
-      "fingerprint": "87cdb686ce15d2cd",
-      "title_norm": "kindel practices with pens week after health scare",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-27T17:45:42.745001Z"
-    },
-    {
-      "key": "ec902cb86f257f3bafbf6414",
-      "url": "https://www.dailyfaceoff.com/players/news/dante-fabbro/2651",
-      "fingerprint": "e55f86976a0d434c",
-      "title_norm": "dante fabbro (cbj) — fabbro (hand) has been activated from ir and will make his season debut on tuesday vs. philadelphia.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-27T17:45:43.161414Z"
-    },
     {
       "key": "f7c563051763f3cf7f1a06ba",
       "url": "https://www.sportsnet.ca/nhl/article/jack-roslovic-playing-his-best-for-maple-leafs-but-later-than-he-wished",
@@ -19322,6 +19302,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T17:30:39.845639Z"
+    },
+    {
+      "key": "5920aad251d6090190c748ec",
+      "url": "https://www.nhl.com/news/charlie-mcavoy-thankful-to-be-healthy-resumes-holiday-pie-delivery-for-boston-bruins",
+      "fingerprint": "395d0c45a34e4125",
+      "title_norm": "mcavoy thankful to resume bruins holiday pie delivery",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-26T18:00:44.994889Z"
     }
   ],
   "known_sources": [
