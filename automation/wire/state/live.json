@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-26T21:30:37.191235Z",
+  "updated_at": "2026-11-26T22:00:37.451795Z",
   "seen": [
-    {
-      "key": "7acd9ab69b064b57065daa7c",
-      "url": "https://www.sportsnet.ca/nhl/video/will-rust-be-a-factor-for-hellebuyck-in-devils-debut",
-      "fingerprint": "f750c46e67519060",
-      "title_norm": "will rust be a factor for hellebuyck in devils debut?",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-27T21:45:39.261169Z"
-    },
     {
       "key": "35ee75fc208ec2ddb6c6a9da",
       "url": "https://www.sportsnet.ca/nhl/article/why-oilers-are-slow-cooking-ike-howards-development",
@@ -19352,6 +19342,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-26T21:30:37.160143Z"
+    },
+    {
+      "key": "0da6bf08f3ff3975dfb3565c",
+      "url": "https://www.dailyfaceoff.com/players/news/denton-mateychuk/31514",
+      "fingerprint": "135cb1f172679da7",
+      "title_norm": "denton mateychuk (cbj) — mateychuk (upper-body) is expected to be out vs. detroit on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-26T22:00:37.376944Z"
     }
   ],
   "known_sources": [
