@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T20:15:39.243020Z",
+  "updated_at": "2026-11-27T20:30:35.040621Z",
   "seen": [
     {
       "key": "8d4c168a6054c71bd3eb7587",
@@ -19262,6 +19262,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T20:15:39.167759Z"
+    },
+    {
+      "key": "6f3bc117349b2200c4f06c80",
+      "url": "https://www.dailyfaceoff.com/players/news/kaiden-guhle/32947",
+      "fingerprint": "b4429c850b3f649f",
+      "title_norm": "kaiden guhle (mtl) — guhle (lower-body) is out vs. vegas on saturday and is considered day-to-day.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:30:34.987939Z"
     }
   ],
   "known_sources": [
