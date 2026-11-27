@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T22:45:33.321220Z",
+  "updated_at": "2026-11-27T23:00:47.641615Z",
   "seen": [
     {
       "key": "dcc60b91fe4db4f54b3492a0",
@@ -19372,6 +19372,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T22:45:33.255295Z"
+    },
+    {
+      "key": "844758f1412c0d49bc8efbc4",
+      "url": "https://www.nhl.com/news/detroit-red-wings-columbus-blue-jackets-game-recap-november-27-2026",
+      "fingerprint": "145f0c623fe641f4",
+      "title_norm": "gibson makes 18 saves, red wings shut out blue jackets",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T23:00:47.534063Z"
     }
   ],
   "known_sources": [
