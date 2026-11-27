@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T18:00:51.170512Z",
+  "updated_at": "2026-11-27T18:15:36.414816Z",
   "seen": [
     {
       "key": "cad99ae6cc46502a74acf2db",
@@ -19222,6 +19222,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T18:00:50.893085Z"
+    },
+    {
+      "key": "a8222ceba290090491096aad",
+      "url": "https://www.sportsnet.ca/nhl/article/flyers-matvei-michkov-wont-play-vs-canucks-after-violating-team-rules",
+      "fingerprint": "1c9e3c13a4176f46",
+      "title_norm": "flyers' matvei michkov won't play vs. canucks after violating team rules",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:15:36.344196Z"
     }
   ],
   "known_sources": [
