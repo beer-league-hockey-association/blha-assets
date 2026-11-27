@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T03:45:45.049807Z",
+  "updated_at": "2026-11-27T04:30:36.387273Z",
   "seen": [
-    {
-      "key": "9d5c66dc945b6b6ea9dfa3e7",
-      "url": "https://www.nhl.com/news/kasperi-kapanen-picking-up-speed-for-edmonton-oilers",
-      "fingerprint": "8c0bde9250e9ff09",
-      "title_norm": "kapanen picking up speed for oilers",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T04:15:42.552694Z"
-    },
-    {
-      "key": "940de58b5a6d8bda9f100b4b",
-      "url": "https://www.sportsnet.ca/nhl/article/schaefer-plays-all-five-minutes-in-ot-as-islanders-beat-predators",
-      "fingerprint": "0c7477682f464e39",
-      "title_norm": "schaefer plays all five minutes in ot as islanders beat predators",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T04:15:43.004543Z"
-    },
     {
       "key": "aa465249edbd2320b88fe09b",
       "url": "https://www.nhl.com/news/minnesota-wild-utah-mammoth-game-recap-october-27-2026",
