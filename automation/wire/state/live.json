@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T14:15:50.486878Z",
+  "updated_at": "2026-11-27T14:45:36.290719Z",
   "seen": [
     {
       "key": "e88f5b2921a551393f4aa577",
@@ -19062,6 +19062,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T14:15:50.443751Z"
+    },
+    {
+      "key": "a96f99cd950744ec14d711a1",
+      "url": "https://dobberprospects.com/2026/11/27/november-liiga-report-thanksgiving-edition",
+      "fingerprint": "57c4209c3b78cb70",
+      "title_norm": "november liiga report: thanksgiving edition",
+      "channel": "prospect-wire",
+      "source_id": "dobber_prospects",
+      "tier": 2,
+      "seen_at": "2026-11-27T14:45:36.235466Z"
     }
   ],
   "known_sources": [
