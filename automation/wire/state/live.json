@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T16:45:31.612237Z",
+  "updated_at": "2026-11-27T17:00:46.126188Z",
   "seen": [
-    {
-      "key": "36b098dfc9574f4acebe85ff",
-      "url": "https://www.dailyfaceoff.com/players/news/sam-steel/2663",
-      "fingerprint": "48f306c581adccc2",
-      "title_norm": "sam steel (dal) — steel (undisclosed) is expected to return vs. montreal on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T16:45:43.067451Z"
-    },
-    {
-      "key": "641c410886032e5159ca0a61",
-      "url": "https://www.dailyfaceoff.com/players/news/kyle-capobianco/2921",
-      "fingerprint": "0fdcbe6977fa2b50",
-      "title_norm": "kyle capobianco (dal) — capobianco (lower-body) will be out for at least a week.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T16:45:43.414234Z"
-    },
     {
       "key": "b73185805ff135b01896a3a4",
       "url": "https://www.nhl.com/news/jacob-fowler-sets-montreal-canadiens-record-for-saves-by-rookie",
@@ -19142,6 +19122,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T16:45:31.556247Z"
+    },
+    {
+      "key": "1d31c736cf1391a8261866b6",
+      "url": "https://www.dailyfaceoff.com/players/news/leo-carlsson/37943",
+      "fingerprint": "cd11f14af97e5e9e",
+      "title_norm": "leo carlsson (ana) — carlsson (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T17:00:45.104017Z"
+    },
+    {
+      "key": "1a9bd1fb89738a12ccc4e6b8",
+      "url": "https://www.dailyfaceoff.com/players/news/hayden-hodgson/23173",
+      "fingerprint": "e3c33d489c62a181",
+      "title_norm": "hayden hodgson (ott) — hodgson (lower-body) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T17:00:45.605529Z"
+    },
+    {
+      "key": "063eca88e281b3519b9c0416",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-hallander/29096",
+      "fingerprint": "fd7f5e8e196b0546",
+      "title_norm": "filip hallander (edm) — hallander (lower-body) is out indefinitely.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T17:00:46.072734Z"
     }
   ],
   "known_sources": [
