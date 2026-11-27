@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T21:30:58.681884Z",
+  "updated_at": "2026-11-27T21:45:35.025664Z",
   "seen": [
-    {
-      "key": "6d35b9b5c0cf213111f16b24",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-dickinson-ekholm-expected-to-return-vs-flames",
-      "fingerprint": "c9adc013a0ec567d",
-      "title_norm": "oilers' dickinson, ekholm expected to return vs. flames",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T21:42:38.116480Z"
-    },
     {
       "key": "9817178cff6d46acb2b58207",
       "url": "https://www.dailyfaceoff.com/players/news/dakota-joshua/25020",
@@ -19342,6 +19332,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-27T21:30:58.616002Z"
+    },
+    {
+      "key": "530764f259c7e1214c6e1cdc",
+      "url": "https://www.sportsnet.ca/nhl/article/blackhawks-place-patrick-kane-on-ir-with-lower-body-injury",
+      "fingerprint": "186227617dc4a165",
+      "title_norm": "blackhawks place patrick kane on ir with lower-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T21:45:34.914564Z"
     }
   ],
   "known_sources": [
