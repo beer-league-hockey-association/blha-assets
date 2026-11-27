@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T15:45:40.369725Z",
+  "updated_at": "2026-11-27T16:00:49.360884Z",
   "seen": [
-    {
-      "key": "e0a32d88a4f5b1858d4f4533",
-      "url": "https://www.sportsnet.ca/nhl/article/how-young-stars-have-changed-dynamic-of-maple-leafs-room",
-      "fingerprint": "bd5a217596e78f54",
-      "title_norm": "how young stars have changed dynamic of maple leafs' room",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T15:45:47.274782Z"
-    },
     {
       "key": "9cee7798dd14a0931dfb4240",
       "url": "https://www.dailyfaceoff.com/players/news/zach-hyman/2468",
@@ -19102,6 +19092,56 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T15:45:40.248832Z"
+    },
+    {
+      "key": "397e50110487e1159e921c1c",
+      "url": "https://www.dailyfaceoff.com/players/news/kirill-marchenko/29119",
+      "fingerprint": "55ab5c96aedcc6de",
+      "title_norm": "kirill marchenko (tor) — marchenko (lower-body) will return in boston on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T16:00:47.813651Z"
+    },
+    {
+      "key": "f8989d37e63d0f803e250bb8",
+      "url": "https://www.nhl.com/news/islanders-kyle-palmieri-expected-out-for-season-with-right-knee-injury",
+      "fingerprint": "6044f4c0850ec2df",
+      "title_norm": "palmieri expected out rest of season for islanders",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T16:00:48.591527Z"
+    },
+    {
+      "key": "f616b37954a8ce3b9621984c",
+      "url": "https://www.nhl.com/news/rangers-adam-fox-kraken-brandon-montour-join-forces-to-fight-als",
+      "fingerprint": "3b15dbebc7e36404",
+      "title_norm": "fox, montour join forces to fight als",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T16:00:48.803802Z"
+    },
+    {
+      "key": "b1963d2a2cc654fc85219a3b",
+      "url": "https://www.dailyfaceoff.com/players/news/colton-sissons/2030",
+      "fingerprint": "62140c4ea96d65a9",
+      "title_norm": "colton sissons (tor) — sissons (lower-body) will return in boston on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T16:00:48.979565Z"
+    },
+    {
+      "key": "ca4d0b8101e299d7bae2a412",
+      "url": "https://www.dailyfaceoff.com/players/news/declan-chisholm/28803",
+      "fingerprint": "7db5aa03ca8a9ade",
+      "title_norm": "declan chisholm (njd) — chisholm (illness) is out vs. calgary on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T16:00:49.244121Z"
     }
   ],
   "known_sources": [
