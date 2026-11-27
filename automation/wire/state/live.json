@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T07:15:39.511494Z",
+  "updated_at": "2026-11-27T09:30:55.117160Z",
   "seen": [
-    {
-      "key": "a54f1fde99677b4ba5871ed0",
-      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/5-Fantasy-Hockey-Sell-High-Candidates-You-Should-Shop-Now-e3r8a59",
-      "fingerprint": "8f120683f53019d3",
-      "title_norm": "5 fantasy hockey sell-high candidates you should shop now",
-      "channel": "media",
-      "source_id": "pod_apples_ginos",
-      "tier": 2,
-      "seen_at": "2026-10-28T09:15:41.585254Z"
-    },
     {
       "key": "e88f5b2921a551393f4aa577",
       "url": "https://www.sportsnet.ca/nhl/article/unflappable-guy-matthew-schaefer-off-to-strong-sophomore-start-for-islanders",
