@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T17:00:46.126188Z",
+  "updated_at": "2026-11-27T17:30:43.792201Z",
   "seen": [
-    {
-      "key": "b73185805ff135b01896a3a4",
-      "url": "https://www.nhl.com/news/jacob-fowler-sets-montreal-canadiens-record-for-saves-by-rookie",
-      "fingerprint": "58799b56d5540653",
-      "title_norm": "habs gave fowler 'a chance' to set rookie record",
-      "channel": "prospect-wire",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T17:15:50.212972Z"
-    },
     {
       "key": "21633f7108f509e843ac6d78",
       "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
