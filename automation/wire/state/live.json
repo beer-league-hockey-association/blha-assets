@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T19:30:38.171682Z",
+  "updated_at": "2026-11-27T20:00:44.528703Z",
   "seen": [
     {
       "key": "951b9aad5fcd6ced10b9bb5c",
@@ -19212,6 +19212,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T19:30:38.118780Z"
+    },
+    {
+      "key": "ca4aea46549513bd6cb8829c",
+      "url": "https://www.dailyfaceoff.com/players/news/tyson-kozak/32822",
+      "fingerprint": "7e042c344dc314e5",
+      "title_norm": "tyson kozak (buf) — kozak (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:00:43.692578Z"
+    },
+    {
+      "key": "81e61e9ba638231949c67f4f",
+      "url": "https://www.dailyfaceoff.com/players/news/noah-ostlund/36383",
+      "fingerprint": "d041248ceb07accb",
+      "title_norm": "noah ostlund (buf) — ostlund (undisclosed) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:00:43.910567Z"
+    },
+    {
+      "key": "9fb87fb589fcf5d8ed0364c5",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "4e728ad21c4da469",
+      "title_norm": "victor hedman (tbl) — hedman (illness) will return vs. ottawa on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:00:44.147304Z"
+    },
+    {
+      "key": "dae0c97e635b504399afcf6b",
+      "url": "https://www.dailyfaceoff.com/players/news/pontus-holmberg/29640",
+      "fingerprint": "dedd53dc1fe8c9d9",
+      "title_norm": "pontus holmberg (tbl) — holmberg (undisclosed) has been placed on ir and will be out for 4 weeks.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:00:44.194012Z"
     }
   ],
   "known_sources": [
