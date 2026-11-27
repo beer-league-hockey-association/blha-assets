@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T16:30:45.111155Z",
+  "updated_at": "2026-11-27T16:45:31.612237Z",
   "seen": [
-    {
-      "key": "f4a2554a6c810ec45779ba7c",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-zach-hyman-placed-on-injured-reserve-with-stiff-neck",
-      "fingerprint": "12a0fc7f4a88d552",
-      "title_norm": "oilers' zach hyman placed on injured reserve with 'stiff neck'",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T16:30:51.822641Z"
-    },
-    {
-      "key": "151e620c832b24f7ca5360a7",
-      "url": "https://www.nhl.com/news/semyon-varlamov-gets-first-win-after-two-years-for-new-york-islanders",
-      "fingerprint": "80c764376dbb7e5c",
-      "title_norm": "varlamov gets 1st win after long road back for isles",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T16:30:52.173005Z"
-    },
     {
       "key": "36b098dfc9574f4acebe85ff",
       "url": "https://www.dailyfaceoff.com/players/news/sam-steel/2663",
@@ -19142,6 +19122,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T16:30:45.035172Z"
+    },
+    {
+      "key": "628d816ace5dabf114ea6ced",
+      "url": "https://www.dailyfaceoff.com/players/news/andre-burakovsky/2154",
+      "fingerprint": "7bb198daae486a3d",
+      "title_norm": "andre burakovsky (ott) — burakovsky (lower-body) will return to tampa bay on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T16:45:31.360548Z"
+    },
+    {
+      "key": "9d03006fd9cb6ff8627b1482",
+      "url": "https://www.dailyfaceoff.com/players/news/oskar-back/29109",
+      "fingerprint": "cdaf815b75f6924f",
+      "title_norm": "oskar back (dal) — back (broken finger) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T16:45:31.556247Z"
     }
   ],
   "known_sources": [
