@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T20:30:35.040621Z",
+  "updated_at": "2026-11-27T20:45:33.560260Z",
   "seen": [
     {
       "key": "8d4c168a6054c71bd3eb7587",
@@ -19272,6 +19272,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T20:30:34.987939Z"
+    },
+    {
+      "key": "a68d5227feac2daec825780e",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-dorofeyev/30622",
+      "fingerprint": "b5821c04c6507ef2",
+      "title_norm": "pavel dorofeyev (nyr) — dorofeyev (lower-body) will remain out vs. chicago on friday but is close to returning.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:45:33.455952Z"
     }
   ],
   "known_sources": [
