@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T20:00:44.528703Z",
+  "updated_at": "2026-11-27T20:15:39.243020Z",
   "seen": [
-    {
-      "key": "951b9aad5fcd6ced10b9bb5c",
-      "url": "https://www.dailyfaceoff.com/players/news/elmer-soderblom/30683",
-      "fingerprint": "2e9c48b4d33d52c7",
-      "title_norm": "elmer soderblom (pit) — soderblom (upper-body) has been placed on ir.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T20:00:44.638089Z"
-    },
-    {
-      "key": "0b0137773043c215cdb2dab5",
-      "url": "https://www.dailyfaceoff.com/players/news/justin-brazeau/28622",
-      "fingerprint": "71ebbd028c3d993f",
-      "title_norm": "justin brazeau (pit) — brazeau (lower-body) has been activated from ir and assigned to wilkes-barre/scranton (ahl) on a conditioning loan.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T20:00:44.997234Z"
-    },
     {
       "key": "8d4c168a6054c71bd3eb7587",
       "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-what-matvei-michkovs-trajectory-means-for-his-next-contract",
@@ -19252,6 +19232,36 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T20:00:44.194012Z"
+    },
+    {
+      "key": "7b6f596b59a2a00ea49ea1ed",
+      "url": "https://www.dailyfaceoff.com/players/news/owen-tippett/2786",
+      "fingerprint": "e7fbf497f8cf821b",
+      "title_norm": "owen tippett (phi) — tippett (undisclosed) is a late scratch vs. vancouver on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:15:38.546512Z"
+    },
+    {
+      "key": "370c3bf0458681acb36217a9",
+      "url": "https://www.nhl.com/news/philadelphia-flyers-matvei-michkov-playing-status-update-november-27-2026",
+      "fingerprint": "221573a36f9dacc5",
+      "title_norm": "michkov out for flyers game due to 'internal' matter",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T20:15:38.767728Z"
+    },
+    {
+      "key": "4f89d2c0904f04cba77a6922",
+      "url": "https://www.dailyfaceoff.com/players/news/chris-tanev/1494",
+      "fingerprint": "52b34396dc6b7ffe",
+      "title_norm": "chris tanev (tor) — tanev (lower-body) will not return vs. boston on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T20:15:39.167759Z"
     }
   ],
   "known_sources": [
