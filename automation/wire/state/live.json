@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T05:45:42.774171Z",
+  "updated_at": "2026-11-27T07:15:39.511494Z",
   "seen": [
-    {
-      "key": "b8c813a29b0a643b99447d42",
-      "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-lekkerimaki-leads-third-period-comeback-to-end-skid",
-      "fingerprint": "f68f9089921c8852",
-      "title_norm": "canucks takeaways: lekkerimaki leads third-period comeback to end skid",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T07:15:35.551182Z"
-    },
     {
       "key": "a54f1fde99677b4ba5871ed0",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/5-Fantasy-Hockey-Sell-High-Candidates-You-Should-Shop-Now-e3r8a59",
