@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T23:30:38.350783Z",
+  "updated_at": "2026-11-27T23:45:39.418629Z",
   "seen": [
     {
       "key": "dcc60b91fe4db4f54b3492a0",
@@ -19442,6 +19442,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-27T23:30:38.233862Z"
+    },
+    {
+      "key": "ac787f1f83c5e5fe5d6ddc57",
+      "url": "https://www.sportsnet.ca/nhl/article/canucks-fall-to-flyers-for-third-straight-loss",
+      "fingerprint": "dd70e302107821d0",
+      "title_norm": "canucks fall to flyers for third straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T23:45:39.369982Z"
     }
   ],
   "known_sources": [
