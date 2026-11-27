@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T03:30:36.114934Z",
+  "updated_at": "2026-11-27T03:45:45.049807Z",
   "seen": [
-    {
-      "key": "06ca6e1004758bdd83a37041",
-      "url": "https://www.nhl.com/news/new-york-islanders-nashville-predators-game-recap-october-27-2026",
-      "fingerprint": "493c94fb340c1415",
-      "title_norm": "varlamov gets 1st nhl win since 2024 for islanders",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T03:30:42.655640Z"
-    },
-    {
-      "key": "373f8c1828c727ccc0d50b2a",
-      "url": "https://www.sportsnet.ca/nhl/article/jets-fall-to-panthers-for-sixth-straight-loss",
-      "fingerprint": "0095745c8bdbe68c",
-      "title_norm": "jets fall to panthers for sixth straight loss",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T03:45:35.386292Z"
-    },
     {
       "key": "9d5c66dc945b6b6ea9dfa3e7",
       "url": "https://www.nhl.com/news/kasperi-kapanen-picking-up-speed-for-edmonton-oilers",
