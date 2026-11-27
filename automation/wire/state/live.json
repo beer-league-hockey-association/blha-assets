@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T17:30:43.792201Z",
+  "updated_at": "2026-11-27T17:45:39.764624Z",
   "seen": [
-    {
-      "key": "21633f7108f509e843ac6d78",
-      "url": "https://www.dailyfaceoff.com/players/news/nicolas-roy/3818",
-      "fingerprint": "82fa2ecc32e1854d",
-      "title_norm": "nicolas roy (col) — roy (lower-body) will return vs. new jersey on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T17:30:45.537330Z"
-    },
     {
       "key": "5018b35219a41422467405b0",
       "url": "https://www.sportsnet.ca/nhl/article/where-the-nhl-salary-cap-could-soar-to-in-the-next-three-years",
