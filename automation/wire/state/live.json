@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T05:00:44.196464Z",
+  "updated_at": "2026-11-27T05:15:39.730028Z",
   "seen": [
-    {
-      "key": "38ab433ca137d94566e6b4cb",
-      "url": "https://www.nhl.com/news/ottawa-senators-vegas-golden-knights-game-recap-october-27-2026",
-      "fingerprint": "d77350d7c8d78790",
-      "title_norm": "lavoie's 1st nhl goal helps vegas end 3-game skid",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T05:15:38.129561Z"
-    },
-    {
-      "key": "d5493105f7a4c44a52524de0",
-      "url": "https://www.sportsnet.ca/nhl/article/fowler-cementing-place-as-canadiens-starter-with-another-win",
-      "fingerprint": "a9abe267b47ff342",
-      "title_norm": "fowler cementing place as canadiens starter with another win",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T05:15:38.401666Z"
-    },
-    {
-      "key": "305ffac44bd76244bacf7ec0",
-      "url": "https://www.sportsnet.ca/nhl/video/gotta-see-it-hronek-buries-ot-winner-to-end-canucks-10-game-skid",
-      "fingerprint": "f537a8041a0bbafb",
-      "title_norm": "gotta see it: hronek buries ot winner to end canucks' 10-game skid",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T05:15:38.679833Z"
-    },
     {
       "key": "8d1b53d185c17cb09dc00694",
       "url": "https://www.nhl.com/news/vancouver-canucks-anaheim-ducks-game-recap-october-27-2026",
