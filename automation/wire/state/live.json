@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T21:45:35.025664Z",
+  "updated_at": "2026-11-27T22:00:39.444501Z",
   "seen": [
     {
       "key": "9817178cff6d46acb2b58207",
@@ -19342,6 +19342,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T21:45:34.914564Z"
+    },
+    {
+      "key": "3735c054c69367a8c33149de",
+      "url": "https://www.nhl.com/news/dallas-stars-st-louis-blues-game-recap-november-27-2026",
+      "fingerprint": "41d45825d2f6fcfe",
+      "title_norm": "holloway, thomas power blues past stars",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T22:00:39.345319Z"
+    },
+    {
+      "key": "1209ac202590a5177964da83",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-sign-kitchener-rangers-d-alexander-bilecki-to-entry-level-deal",
+      "fingerprint": "3c65b49dc7c1e701",
+      "title_norm": "maple leafs sign kitchener rangers d alexander bilecki to entry-level deal",
+      "channel": "nhl-transactions",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T22:00:39.396573Z"
     }
   ],
   "known_sources": [
