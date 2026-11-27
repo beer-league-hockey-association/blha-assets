@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T03:00:44.094404Z",
+  "updated_at": "2026-11-27T03:15:32.146334Z",
   "seen": [
-    {
-      "key": "1efcbe8538e226751c8b960f",
-      "url": "https://www.nhl.com/news/los-angeles-kings-chicago-blackhawks-game-recap-october-27-2026",
-      "fingerprint": "c474fa9d94a8d972",
-      "title_norm": "blackhawks edge kings to end 3-game slide",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T03:00:48.181113Z"
-    },
-    {
-      "key": "0708f5254b2aac1f98384f56",
-      "url": "https://www.nhl.com/news/new-jersey-devils-dallas-stars-game-recap-october-27-2026",
-      "fingerprint": "63d98942abd37ff6",
-      "title_norm": "hellebuyck makes 16 saves in devils debut, helps cool down red-hot stars",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T03:00:48.522512Z"
-    },
     {
       "key": "803ea408a448175030dea3bd",
       "url": "https://www.nhl.com/news/florida-panthers-winnipeg-jets-game-recap-october-27-2026",
