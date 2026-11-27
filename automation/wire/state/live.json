@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T22:00:39.444501Z",
+  "updated_at": "2026-11-27T22:15:30.999661Z",
   "seen": [
-    {
-      "key": "9817178cff6d46acb2b58207",
-      "url": "https://www.dailyfaceoff.com/players/news/dakota-joshua/25020",
-      "fingerprint": "271cce9c91df7621",
-      "title_norm": "dakota joshua (tor) — joshua (core) will be a game-time decision vs. seattle on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T22:00:45.881368Z"
-    },
     {
       "key": "bf0ef44c11e12b668b12554d",
       "url": "https://www.sportsnet.ca/nhl/article/wild-gm-bill-guerin-talks-hughes-negotiations-i-havent-really-decided",
@@ -19362,6 +19352,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T22:00:39.396573Z"
+    },
+    {
+      "key": "3b069427414ef1d8252d2993",
+      "url": "https://www.dailyfaceoff.com/players/news/filip-chytil/2811",
+      "fingerprint": "716dd641870e8b93",
+      "title_norm": "filip chytil (van) — chytil (undisclosed) left friday's game in philadelphia and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T22:15:30.948998Z"
     }
   ],
   "known_sources": [
