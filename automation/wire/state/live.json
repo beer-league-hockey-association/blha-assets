@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T16:00:49.360884Z",
+  "updated_at": "2026-11-27T16:15:37.490728Z",
   "seen": [
     {
       "key": "9cee7798dd14a0931dfb4240",
@@ -19142,6 +19142,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T16:00:49.244121Z"
+    },
+    {
+      "key": "32f54f60165672084bcc9f82",
+      "url": "https://www.sportsnet.ca/nhl/article/sam-cosentinos-2027-nhl-draft-rankings-november-edition",
+      "fingerprint": "c5b65de1829c02eb",
+      "title_norm": "sam cosentino's 2027 nhl draft rankings: november edition",
+      "channel": "prospect-wire",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T16:15:37.436011Z"
     }
   ],
   "known_sources": [
