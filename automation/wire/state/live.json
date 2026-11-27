@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T19:00:52.204685Z",
+  "updated_at": "2026-11-27T19:15:29.790100Z",
   "seen": [
     {
       "key": "caab058bb9e708622cb6781b",
@@ -19182,6 +19182,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T19:00:52.124414Z"
+    },
+    {
+      "key": "32a490a881288bf8b5bf5116",
+      "url": "https://www.dailyfaceoff.com/players/news/hayden-hodgson/23173",
+      "fingerprint": "e6902284160004a9",
+      "title_norm": "hayden hodgson (ott) — hodgson (lower-body) will return vs. tampa bay on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T19:15:29.722222Z"
     }
   ],
   "known_sources": [
