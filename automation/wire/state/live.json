@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T18:15:36.414816Z",
+  "updated_at": "2026-11-27T18:30:45.073755Z",
   "seen": [
-    {
-      "key": "cad99ae6cc46502a74acf2db",
-      "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
-      "fingerprint": "6bd062b9070c55e9",
-      "title_norm": "thomas chabot (ott) — chabot (upper body) is expected to return on thursday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T18:15:40.978237Z"
-    },
-    {
-      "key": "b6c0a5e7971e678a7e263300",
-      "url": "https://www.dailyfaceoff.com/players/news/pavel-mintyukov/34372",
-      "fingerprint": "23dd21d84e98ac1e",
-      "title_norm": "pavel mintyukov (ana) — mintyukov (lower body) returned to practice on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T18:15:41.279549Z"
-    },
     {
       "key": "85afe48020a775c61ff67fe9",
       "url": "https://www.dailyfaceoff.com/players/news/john-tavares/1016",
@@ -19232,6 +19212,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T18:15:36.344196Z"
+    },
+    {
+      "key": "6b94fd123b985568ed8bfa48",
+      "url": "https://www.sportsnet.ca/nhl/article/who-players-would-pick-to-officiate-an-nhl-game-among-their-teammates",
+      "fingerprint": "536906887ea4d844",
+      "title_norm": "who players would pick to officiate an nhl game among their teammates",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:30:45.034174Z"
     }
   ],
   "known_sources": [
