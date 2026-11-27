@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T00:30:45.168931Z",
+  "updated_at": "2026-11-27T01:00:38.741280Z",
   "seen": [
     {
       "key": "c04808faf0312ae26ac418f9",
@@ -19312,6 +19312,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-26T22:15:40.967682Z"
+    },
+    {
+      "key": "e39cc8fb8d07e417d4f475c8",
+      "url": "https://www.sportsnet.ca/nhl/article/schenn-canucks-aiming-to-revive-effort-level-amid-challenging-stretch",
+      "fingerprint": "7f9fc17c13a0d5dd",
+      "title_norm": "schenn, canucks aiming to revive effort level amid challenging stretch",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T01:00:38.703750Z"
     }
   ],
   "known_sources": [
