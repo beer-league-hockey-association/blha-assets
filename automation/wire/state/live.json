@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T21:00:58.636530Z",
+  "updated_at": "2026-11-27T21:15:37.429894Z",
   "seen": [
     {
       "key": "6d35b9b5c0cf213111f16b24",
@@ -19302,6 +19302,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T21:00:58.596437Z"
+    },
+    {
+      "key": "7fbfd7410de8e9c07e8768f7",
+      "url": "https://www.dailyfaceoff.com/players/news/victor-hedman/1369",
+      "fingerprint": "52251883d8669074",
+      "title_norm": "victor hedman (tbl) — hedman (undisclosed) left friday's game vs. ottawa and is not expected to return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T21:15:36.739986Z"
+    },
+    {
+      "key": "f4fbb6e0e9a5d6b34d987f54",
+      "url": "https://www.dailyfaceoff.com/players/news/tyler-bertuzzi/2392",
+      "fingerprint": "275ce504b1a0f0e9",
+      "title_norm": "tyler bertuzzi (chi) — bertuzzi (illness) will remain out vs. new york on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T21:15:37.009286Z"
+    },
+    {
+      "key": "23d1ff9c6886b670132c97dd",
+      "url": "https://www.nhl.com/news/calgary-flames-new-jersey-devils-game-recap-november-27-2026",
+      "fingerprint": "1e930758ab7a8be6",
+      "title_norm": "hughes brothers lead devils' comeback against flames",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T21:15:37.332986Z"
     }
   ],
   "known_sources": [
