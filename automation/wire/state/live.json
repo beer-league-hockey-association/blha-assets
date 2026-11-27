@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T15:15:34.006446Z",
+  "updated_at": "2026-11-27T15:45:40.369725Z",
   "seen": [
     {
       "key": "e0a32d88a4f5b1858d4f4533",
@@ -19092,6 +19092,16 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T15:15:33.951358Z"
+    },
+    {
+      "key": "9ea966097d4720a8c8fcff4b",
+      "url": "https://www.dailyfaceoff.com/players/news/kyle-palmieri/34",
+      "fingerprint": "29b3124339e1a590",
+      "title_norm": "kyle palmieri (nyi) — palmieri (torn acl and meniscus) is expected to miss the 6-8 months and the remainder of the 2026-27 season.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T15:45:40.248832Z"
     }
   ],
   "known_sources": [
