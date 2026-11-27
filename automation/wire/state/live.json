@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T23:15:34.648893Z",
+  "updated_at": "2026-11-27T23:30:38.350783Z",
   "seen": [
     {
       "key": "dcc60b91fe4db4f54b3492a0",
@@ -19422,6 +19422,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T23:15:34.246236Z"
+    },
+    {
+      "key": "180285e35e716636764542b3",
+      "url": "https://www.sportsnet.ca/nhl/article/lightning-captain-victor-hedman-exits-vs-senators",
+      "fingerprint": "e829a73fbb211a6e",
+      "title_norm": "lightning captain victor hedman exits vs. senators",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T23:30:38.052949Z"
+    },
+    {
+      "key": "506111b5f8eccf87bf0412a5",
+      "url": "https://www.nhl.com/news/connor-hellebuyck-expected-in-net-for-new-jersey-devils-against-winnipeg-jets",
+      "fingerprint": "33a02e7904ee83ea",
+      "title_norm": "hellebuyck expected to face jets for 1st time saturday",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T23:30:38.233862Z"
     }
   ],
   "known_sources": [
