@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T17:45:39.764624Z",
+  "updated_at": "2026-11-27T18:00:51.170512Z",
   "seen": [
-    {
-      "key": "5018b35219a41422467405b0",
-      "url": "https://www.sportsnet.ca/nhl/article/where-the-nhl-salary-cap-could-soar-to-in-the-next-three-years",
-      "fingerprint": "eb5678b7938870da",
-      "title_norm": "where the nhl salary cap could soar to in the next three years",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T17:45:42.781342Z"
-    },
-    {
-      "key": "bed98e18dc2f878ac88d457b",
-      "url": "https://www.sportsnet.ca/nhl/article/despite-prohibitive-price-larkin-trade-to-canadiens-remains-possible",
-      "fingerprint": "308706d2b20af898",
-      "title_norm": "despite 'prohibitive' price, larkin trade to canadiens remains possible",
-      "channel": "nhl-transactions",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T17:45:42.785025Z"
-    },
     {
       "key": "cad99ae6cc46502a74acf2db",
       "url": "https://www.dailyfaceoff.com/players/news/thomas-chabot/2492",
@@ -19132,6 +19112,116 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T17:00:46.072734Z"
+    },
+    {
+      "key": "293ff59453055eb0cb538fd1",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-mcmichael/29203",
+      "fingerprint": "e7f851fe109a3e8b",
+      "title_norm": "connor mcmichael (stl) — mcmichael (lower-body) will return vs. dallas on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:48.938852Z"
+    },
+    {
+      "key": "d95bdc03207e4ed099bd3c76",
+      "url": "https://www.dailyfaceoff.com/players/news/pavel-buchnevich/2673",
+      "fingerprint": "68a95498001db571",
+      "title_norm": "pavel buchnevich (stl) — buchnevich (upper-body) will return vs. dallas on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:49.270901Z"
+    },
+    {
+      "key": "d7b278024abbd2422334898d",
+      "url": "https://www.dailyfaceoff.com/players/news/morgan-frost/2814",
+      "fingerprint": "3b28fad32af33a2a",
+      "title_norm": "morgan frost (cgy) — frost (undisclosed) will return in new jersey on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:49.517823Z"
+    },
+    {
+      "key": "a689aca8b38ca1f05a574a65",
+      "url": "https://www.dailyfaceoff.com/players/news/james-snuggerud/31706",
+      "fingerprint": "3394a5138058d8e8",
+      "title_norm": "jimmy snuggerud (stl) — snuggerud (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:49.528157Z"
+    },
+    {
+      "key": "29a7aea57f6d11fb02d31aef",
+      "url": "https://www.dailyfaceoff.com/players/news/connor-mcmichael/29203",
+      "fingerprint": "bd92900349a76dbc",
+      "title_norm": "connor mcmichael (stl) — mcmichael (lower-body) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:49.538950Z"
+    },
+    {
+      "key": "0678f28e2affcc4d783ada31",
+      "url": "https://www.sportsnet.ca/nhl/article/devils-connor-hellebuyck-to-start-vs-jets-on-saturday",
+      "fingerprint": "7f38cc6ff71be1de",
+      "title_norm": "devils' connor hellebuyck to start vs. jets on saturday",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:50.350690Z"
+    },
+    {
+      "key": "796c5f5d642ccf52418bebec",
+      "url": "https://www.nhl.com/news/nhl-status-report-news-and-notes-november-27-2026",
+      "fingerprint": "bfb3f615a0d545c6",
+      "title_norm": "status report: hellebucyk to start against jets tomorrow",
+      "channel": "injury-report",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T18:00:50.361345Z"
+    },
+    {
+      "key": "74d21771c110a6dbfd3bfb8b",
+      "url": "https://www.dailyfaceoff.com/players/news/vincent-desharnais/25716",
+      "fingerprint": "1fd53a343c72aba2",
+      "title_norm": "vincent desharnais (wsh) — desharnais (appendectomy surgery) will return to the lineup vs. florida on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:50.409005Z"
+    },
+    {
+      "key": "24a1528c62efc98de3a1ed60",
+      "url": "https://www.dailyfaceoff.com/players/news/dakota-joshua/25020",
+      "fingerprint": "223fd77849888d9c",
+      "title_norm": "dakota joshua (tor) — joshua (illness) is out vs. boston on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:50.420203Z"
+    },
+    {
+      "key": "1581f6f9b15bd7f050fc21b2",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/b1313171-fbeb-46cb-a0f1-f9d5074004a3",
+      "fingerprint": "72166c707cd1ecc8",
+      "title_norm": "flames on sportsnet: calgary vs. new jersey",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:50.655632Z"
+    },
+    {
+      "key": "06254bfe5bfafecff4aef493",
+      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-dakota-joshua-scratched-vs-bruins-due-to-illness",
+      "fingerprint": "a1f1fb9ae4555d84",
+      "title_norm": "maple leafs' dakota joshua scratched vs. bruins due to illness",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T18:00:50.893085Z"
     }
   ],
   "known_sources": [
