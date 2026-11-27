@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T05:30:40.464323Z",
+  "updated_at": "2026-11-27T05:45:42.774171Z",
   "seen": [
-    {
-      "key": "c087ee48f5f01c318b51697c",
-      "url": "https://www.nhl.com/news/buffalo-sabres-san-jose-sharks-game-recap-october-27-2026",
-      "fingerprint": "27577105f903dbc4",
-      "title_norm": "ellis makes 23 saves, sabres shut out sharks to end three-game skid",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T05:45:30.716883Z"
-    },
     {
       "key": "b8c813a29b0a643b99447d42",
       "url": "https://www.sportsnet.ca/nhl/article/canucks-takeaways-lekkerimaki-leads-third-period-comeback-to-end-skid",
