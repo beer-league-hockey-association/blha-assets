@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T22:30:45.105029Z",
+  "updated_at": "2026-11-27T22:45:33.321220Z",
   "seen": [
     {
       "key": "dcc60b91fe4db4f54b3492a0",
@@ -19352,6 +19352,26 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T22:15:30.948998Z"
+    },
+    {
+      "key": "658b3fafa131d0d0b5a37a7a",
+      "url": "https://www.sportsnet.ca/nhl/article/connor-browns-third-period-goal-lifts-devils-to-comeback-win-over-flames",
+      "fingerprint": "afa4e0600102e5f5",
+      "title_norm": "connor brown's third-period goal lifts devils to comeback win over flames",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T22:45:32.971306Z"
+    },
+    {
+      "key": "097862d6991d42e88412315a",
+      "url": "https://www.sportsnet.ca/nhl/article/canadiens-notebook-guhles-absence-tests-defensive-depth-demidov-nears-return",
+      "fingerprint": "9b399c0a577ac0fc",
+      "title_norm": "canadiens notebook: guhle's absence tests defensive depth, demidov nears return",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T22:45:33.255295Z"
     }
   ],
   "known_sources": [
