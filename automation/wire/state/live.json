@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T22:15:30.999661Z",
+  "updated_at": "2026-11-27T22:30:45.105029Z",
   "seen": [
-    {
-      "key": "bf0ef44c11e12b668b12554d",
-      "url": "https://www.sportsnet.ca/nhl/article/wild-gm-bill-guerin-talks-hughes-negotiations-i-havent-really-decided",
-      "fingerprint": "ffa7f0d99cfca630",
-      "title_norm": "wild gm bill guerin talks hughes negotiations: 'i haven't really decided'",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T22:30:40.462659Z"
-    },
     {
       "key": "dcc60b91fe4db4f54b3492a0",
       "url": "https://www.nhl.com/news/nhl-edge-stats-kirill-kaprizov-goal-scoring-minnesota-wild-2026-27",
