@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T21:15:37.429894Z",
+  "updated_at": "2026-11-27T21:30:58.681884Z",
   "seen": [
     {
       "key": "6d35b9b5c0cf213111f16b24",
@@ -19332,6 +19332,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-27T21:15:37.332986Z"
+    },
+    {
+      "key": "9ed49842844ca5c4cdc03d97",
+      "url": "https://www.nhl.com/news/utah-mammoth-nashville-predators-game-recap-november-27-2026",
+      "fingerprint": "5f04df1a368ae369",
+      "title_norm": "lee scores twice, mammoth outlast predators in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T21:30:58.616002Z"
     }
   ],
   "known_sources": [
