@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T00:00:44.925941Z",
+  "updated_at": "2026-11-27T00:30:45.168931Z",
   "seen": [
-    {
-      "key": "2ba2ceb4bee1e57b5b4be934",
-      "url": "https://www.nhl.com/news/former-philadelphia-flyers-andre-lacroix-dies-at-81",
-      "fingerprint": "53d8c41f7ca84b97",
-      "title_norm": "lacroix, original member of flyers, dies at 81",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T00:15:42.732788Z"
-    },
     {
       "key": "c04808faf0312ae26ac418f9",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/a2a74a81-c9da-4be8-a85c-37ac1d8066bc",
