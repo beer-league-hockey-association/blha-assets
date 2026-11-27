@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T18:45:35.813736Z",
+  "updated_at": "2026-11-27T19:00:52.204685Z",
   "seen": [
-    {
-      "key": "cc1e2817ddf6535ccb29018c",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-report-cards-grading-the-players-through-one-month",
-      "fingerprint": "1c8beab8969904d1",
-      "title_norm": "maple leafs report cards: grading the players through one month",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T18:45:42.604684Z"
-    },
-    {
-      "key": "fbf216d4da4e68b7b3ce8344",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-provide-injury-updates-for-several-players",
-      "fingerprint": "bfdda03a8edb6796",
-      "title_norm": "maple leafs provide injury updates for several players",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T18:45:42.873882Z"
-    },
     {
       "key": "caab058bb9e708622cb6781b",
       "url": "https://www.nhl.com/news/connor-hellebuyck-impresses-in-first-start-with-new-jersey-devils",
@@ -19182,6 +19162,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T18:30:45.034174Z"
+    },
+    {
+      "key": "a0fde89228379728bdab0d87",
+      "url": "https://www.dailyfaceoff.com/players/news/david-pastrnak/2376",
+      "fingerprint": "4220629c52dcb2ef",
+      "title_norm": "david pastrnak (bos) — pastrnak (lower-body) is unlikely to return to friday's game vs. toronto.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T19:00:51.752304Z"
+    },
+    {
+      "key": "2834f0edabc18e99c08383d8",
+      "url": "https://www.dailyfaceoff.com/players/news/patrick-kane/305",
+      "fingerprint": "39c816a5f08146d1",
+      "title_norm": "patrick kane (chi) — the blackhawks have placed patrick kane (undisclosed) on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T19:00:52.124414Z"
     }
   ],
   "known_sources": [
