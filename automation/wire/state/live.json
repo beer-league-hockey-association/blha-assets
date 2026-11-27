@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T23:00:47.641615Z",
+  "updated_at": "2026-11-27T23:15:34.648893Z",
   "seen": [
     {
       "key": "dcc60b91fe4db4f54b3492a0",
@@ -19382,6 +19382,46 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-27T23:00:47.534063Z"
+    },
+    {
+      "key": "766dd0edba61ffc0dd82a2a3",
+      "url": "https://www.nhl.com/news/vancouver-canucks-philadelphia-flyers-game-recap-november-27-2026",
+      "fingerprint": "c11aae8c5e16b2cb",
+      "title_norm": "foerster, konecny each has 2 points, flyers top canucks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T23:15:33.317178Z"
+    },
+    {
+      "key": "b775591995e5de260c98d9f1",
+      "url": "https://www.nhl.com/news/florida-panthers-washington-capitals-game-recap-november-27-2026",
+      "fingerprint": "c7f74cce11b31073",
+      "title_norm": "bennett has go-ahead goal late in third period, panthers rally past capitals",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T23:15:33.562456Z"
+    },
+    {
+      "key": "dccf4c346f353c59e33dfcd2",
+      "url": "https://www.nhl.com/news/ottawa-senators-tampa-bay-lightning-game-recap-november-27-2026",
+      "fingerprint": "dcb7e032f4db4108",
+      "title_norm": "stutzle gets two goals, senators score six to cruise past lightning",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T23:15:34.197315Z"
+    },
+    {
+      "key": "88701ff29ff429c8502f46bf",
+      "url": "https://www.sportsnet.ca/nhl/article/senators-rout-lightning-in-historic-win-for-linus-ullmark",
+      "fingerprint": "a39ffbd4bb69ac18",
+      "title_norm": "senators rout lightning in historic win for linus ullmark",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T23:15:34.246236Z"
     }
   ],
   "known_sources": [
