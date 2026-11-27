@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T09:30:55.117160Z",
+  "updated_at": "2026-11-27T14:15:50.486878Z",
   "seen": [
     {
       "key": "e88f5b2921a551393f4aa577",
@@ -19052,6 +19052,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T01:00:38.703750Z"
+    },
+    {
+      "key": "e5860755602b40a10d8f98ae",
+      "url": "https://www.sportsnet.ca/nhl/article/friday-four-whats-behind-capitals-slow-start",
+      "fingerprint": "c38782edbad9edf5",
+      "title_norm": "friday four: what's behind capitals' slow start?",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T14:15:50.443751Z"
     }
   ],
   "known_sources": [
