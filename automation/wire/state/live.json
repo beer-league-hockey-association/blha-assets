@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T15:00:43.925834Z",
+  "updated_at": "2026-11-27T15:15:34.006446Z",
   "seen": [
     {
       "key": "e0a32d88a4f5b1858d4f4533",
@@ -19062,6 +19062,36 @@
       "source_id": "dobber_prospects",
       "tier": 2,
       "seen_at": "2026-11-27T14:45:36.235466Z"
+    },
+    {
+      "key": "c26d4da228bb197f58734a5a",
+      "url": "https://www.dailyfaceoff.com/players/news/jordan-kyrou/3867",
+      "fingerprint": "4f4cc3e6d90e1c9f",
+      "title_norm": "jordan kyrou (wsh) — kyrou (upper-body) has been placed on ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T15:15:33.442458Z"
+    },
+    {
+      "key": "2af772667365df360cf632de",
+      "url": "https://www.nhl.com/news/jeff-petry-retires-from-nhl-after-16-seasons",
+      "fingerprint": "a9d308ecebd39d39",
+      "title_norm": "petry retires from nhl after 16 seasons",
+      "channel": "breaking-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T15:15:33.699306Z"
+    },
+    {
+      "key": "01bfe829febe2ecad05276fb",
+      "url": "https://www.dailyfaceoff.com/players/news/vincent-desharnais/25716",
+      "fingerprint": "8b23ca6f24971517",
+      "title_norm": "vincent desharnais (wsh) — desharnais (appendectomy surgery) has been activated from ir.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T15:15:33.951358Z"
     }
   ],
   "known_sources": [
