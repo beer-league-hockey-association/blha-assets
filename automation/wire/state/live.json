@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T20:45:33.560260Z",
+  "updated_at": "2026-11-27T21:00:58.636530Z",
   "seen": [
-    {
-      "key": "8d4c168a6054c71bd3eb7587",
-      "url": "https://www.sportsnet.ca/nhl/article/scouts-analysis-what-matvei-michkovs-trajectory-means-for-his-next-contract",
-      "fingerprint": "071681335dea40cd",
-      "title_norm": "scout's analysis: what matvei michkov's trajectory means for his next contract",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T20:45:34.214540Z"
-    },
-    {
-      "key": "bf20cebf7d56f47d59f6913d",
-      "url": "https://www.sportsnet.ca/nhl/article/mckenna-unites-with-matthews-as-maple-leafs-juggle-lineup",
-      "fingerprint": "302f46d0e43e7b6d",
-      "title_norm": "mckenna unites with matthews as maple leafs juggle lineup",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-28T21:00:43.562412Z"
-    },
     {
       "key": "6d35b9b5c0cf213111f16b24",
       "url": "https://www.sportsnet.ca/nhl/article/oilers-dickinson-ekholm-expected-to-return-vs-flames",
@@ -19282,6 +19262,46 @@
       "source_id": "daily_faceoff_injuries",
       "tier": 1,
       "seen_at": "2026-11-27T20:45:33.455952Z"
+    },
+    {
+      "key": "b29e43d32f94b884802ac33c",
+      "url": "https://www.dailyfaceoff.com/players/news/martin-necas/2804",
+      "fingerprint": "d7859ad68f9f81e2",
+      "title_norm": "martin necas (col) — necas (undisclosed) is a late scratch vs. minnesota on friday.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-27T21:00:55.151915Z"
+    },
+    {
+      "key": "1c401faa0a8d554b23d73820",
+      "url": "https://www.nhl.com/news/toronto-maple-leafs-boston-bruins-game-recap-november-27-2026",
+      "fingerprint": "815ed1dd97a21491",
+      "title_norm": "rielly's first two goals of season help lift maple leafs past bruins",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-27T21:00:55.387526Z"
+    },
+    {
+      "key": "6b7d21848ae2b81dcf213bea",
+      "url": "https://www.sportsnet.ca/hockey/nhl/games/8716e158-1fd3-4167-95ae-1da3b6cdeb87",
+      "fingerprint": "85f2de2f645f6073",
+      "title_norm": "canucks on sportsnet: vancouver vs. philadelphia",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T21:00:58.383900Z"
+    },
+    {
+      "key": "5433515dd1b2aefd5ecf03ea",
+      "url": "https://www.sportsnet.ca/nhl/article/rielly-scores-twice-to-lead-maple-leafs-past-bruins",
+      "fingerprint": "89334da4f8352471",
+      "title_norm": "rielly scores twice to lead maple leafs past bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-27T21:00:58.596437Z"
     }
   ],
   "known_sources": [
