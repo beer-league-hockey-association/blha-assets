@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-27T04:45:35.056012Z",
+  "updated_at": "2026-11-27T05:00:44.196464Z",
   "seen": [
-    {
-      "key": "44b820b285b1fe20994b59e7",
-      "url": "https://www.nhl.com/news/montreal-canadiens-st-louis-blues-game-recap-october-27-2026",
-      "fingerprint": "ea729b2fd734f5a1",
-      "title_norm": "fowler makes career-high 46 saves, canadiens blank blues for third win in row",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-28T04:45:37.919205Z"
-    },
-    {
-      "key": "0fc6757aebcad5fa492843ae",
-      "url": "https://www.dailyfaceoff.com/players/news/kyle-capobianco/2921",
-      "fingerprint": "00c24fb42d060a86",
-      "title_norm": "kyle capobianco (dal) — capobianco (lower-body) left tuesday's game vs. new jersey and did not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-28T05:00:40.466194Z"
-    },
     {
       "key": "38ab433ca137d94566e6b4cb",
       "url": "https://www.nhl.com/news/ottawa-senators-vegas-golden-knights-game-recap-october-27-2026",
