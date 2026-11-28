@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T03:30:35.967600Z",
+  "updated_at": "2026-11-28T03:45:34.102019Z",
   "seen": [
     {
       "key": "18fcc2cf3e7accaf9ca5b58f",
@@ -19472,6 +19472,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-28T03:30:35.879264Z"
+    },
+    {
+      "key": "cb8b6dc79339e5f4646fc021",
+      "url": "https://www.sportsnet.ca/nhl/article/krakens-philipp-grubauer-exits-vs-oilers-with-upper-body-injury",
+      "fingerprint": "8928694e185e95ad",
+      "title_norm": "kraken's philipp grubauer exits vs. oilers with upper-body injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T03:45:34.011619Z"
     }
   ],
   "known_sources": [
