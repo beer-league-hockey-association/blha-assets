@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T05:15:41.016254Z",
+  "updated_at": "2026-11-28T05:30:44.796856Z",
   "seen": [
-    {
-      "key": "b10deec99904fe995512fc74",
-      "url": "https://www.sportsnet.ca/nhl/article/flames-wolf-gets-feet-wet-again-to-mixed-results-after-cooley-injury",
-      "fingerprint": "d656cbb08014172a",
-      "title_norm": "flames' wolf gets feet wet again to mixed results after cooley injury",
-      "channel": "injury-report",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T05:30:34.435077Z"
-    },
-    {
-      "key": "31f00e6e9c2331931e1c663e",
-      "url": "https://www.sportsnet.ca/nhl/article/nhl-roundup-tuch-scores-twice-as-capitals-beat-flyers",
-      "fingerprint": "ddf798db8b8bfd82",
-      "title_norm": "nhl roundup: tuch scores twice as capitals beat flyers",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T05:30:34.786595Z"
-    },
     {
       "key": "e42f4b94427e1cc1f7f1ca38",
       "url": "https://www.nhl.com/news/kirill-marchenko-injury-status-update-october-28-2026",
