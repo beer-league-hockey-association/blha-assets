@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T07:00:40.641982Z",
+  "updated_at": "2026-11-28T07:15:38.216302Z",
   "seen": [
-    {
-      "key": "2457a89d7ea929fe1d44497e",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-bobrovsky-allows-last-minute-goal-in-loss-to-kraken",
-      "fingerprint": "552d04bd8de141bf",
-      "title_norm": "maple leafs' bobrovsky allows last-minute goal in loss to kraken",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T07:15:37.737629Z"
-    },
     {
       "key": "eb8f7dc276df7af9a95abc51",
       "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Trade-Talks-Week-5--Trading-Away-Seth-Jones--Targeting-Dorofeyev--Gauthier--and-More-e3rai3v",
