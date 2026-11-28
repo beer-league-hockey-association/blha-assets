@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T00:00:46.602353Z",
+  "updated_at": "2026-11-28T00:15:33.373405Z",
   "seen": [
     {
       "key": "6c6f6dd635da9d7c03b2dbe3",
@@ -19442,6 +19442,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-27T23:45:39.369982Z"
+    },
+    {
+      "key": "e00ace1965e104f42e569223",
+      "url": "https://www.dailyfaceoff.com/players/news/mark-stone/1779",
+      "fingerprint": "a2cf09e8bebd9417",
+      "title_norm": "mark stone (vgk) — stone (undisclosed) left friday's game vs. san jose and is being evaluated.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-28T00:15:31.888388Z"
+    },
+    {
+      "key": "836f12cdf7ae959b1133eaea",
+      "url": "https://www.nhl.com/news/los-angeles-kings-anaheim-ducks-game-recap-november-27-2026",
+      "fingerprint": "56e360c06c10a634",
+      "title_norm": "zuccarello scores twice, kings defeat ducks",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T00:15:32.823273Z"
+    },
+    {
+      "key": "b5bd6d9f859592e47b1cd3de",
+      "url": "https://www.nhl.com/news/vegas-golden-knights-san-jose-sharks-game-recap-november-27-2026",
+      "fingerprint": "fd79aa315b3e83a2",
+      "title_norm": "sharks bounce back to defeat golden knights",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T00:15:33.314276Z"
     }
   ],
   "known_sources": [
