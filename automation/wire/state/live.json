@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T05:30:44.796856Z",
+  "updated_at": "2026-11-28T07:00:40.641982Z",
   "seen": [
-    {
-      "key": "e42f4b94427e1cc1f7f1ca38",
-      "url": "https://www.nhl.com/news/kirill-marchenko-injury-status-update-october-28-2026",
-      "fingerprint": "ee04abdf701ce730",
-      "title_norm": "marchenko week to week for leafs with lower-body injury",
-      "channel": "injury-report",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-29T06:45:40.322210Z"
-    },
     {
       "key": "2457a89d7ea929fe1d44497e",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-bobrovsky-allows-last-minute-goal-in-loss-to-kraken",
