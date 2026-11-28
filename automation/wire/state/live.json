@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T05:00:48.437128Z",
+  "updated_at": "2026-11-28T05:15:41.016254Z",
   "seen": [
-    {
-      "key": "c50cdead96981f938215597a",
-      "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-outlasted-by-kraken-despite-mckennas-big-game",
-      "fingerprint": "7c1e54c04e867d6b",
-      "title_norm": "maple leafs outlasted by kraken despite mckenna's big game",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T05:15:31.707986Z"
-    },
     {
       "key": "b10deec99904fe995512fc74",
       "url": "https://www.sportsnet.ca/nhl/article/flames-wolf-gets-feet-wet-again-to-mixed-results-after-cooley-injury",
@@ -19462,6 +19452,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T04:15:35.790622Z"
+    },
+    {
+      "key": "aee4714e3219c0c449c1e9fd",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-top-power-play-unit-not-good-enough-in-fifth-straight-loss",
+      "fingerprint": "61bedfc40997a1c1",
+      "title_norm": "oilers' top power-play unit 'not good enough' in fifth straight loss",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T05:15:40.963142Z"
     }
   ],
   "known_sources": [
