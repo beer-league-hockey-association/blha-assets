@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T01:15:30.489011Z",
+  "updated_at": "2026-11-28T01:30:48.486187Z",
   "seen": [
     {
       "key": "32ea130e12e73b845902e907",
@@ -19472,6 +19472,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T00:45:44.613380Z"
+    },
+    {
+      "key": "582b21ceedf9e968ed69cc9a",
+      "url": "https://www.sportsnet.ca/nhl/article/sources-flyers-michkov-scratched-after-another-altercation-with-teammates",
+      "fingerprint": "1a92158f90dd7b63",
+      "title_norm": "sources: flyers' michkov scratched after another altercation with teammates",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T01:30:48.449067Z"
     }
   ],
   "known_sources": [
