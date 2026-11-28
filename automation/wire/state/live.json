@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T00:30:35.933902Z",
+  "updated_at": "2026-11-28T00:45:44.687111Z",
   "seen": [
-    {
-      "key": "6c6f6dd635da9d7c03b2dbe3",
-      "url": "https://www.dailyfaceoff.com/players/news/mattias-ekholm/1675",
-      "fingerprint": "0a37b476d885c459",
-      "title_norm": "mattias ekholm (edm) — ekholm (concussion) will be back in the oilers lineup on wednesday.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-29T00:30:38.806654Z"
-    },
-    {
-      "key": "6ff0c061681b9e587fc421c6",
-      "url": "https://www.nhl.com/news/dan-rosen-weekly-national-hockey-list-nhl-elite-matched-with-halloween-candy",
-      "fingerprint": "f64596fd650b69cb",
-      "title_norm": "national hockey list: halloween candy favorites",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-29T00:45:35.039764Z"
-    },
     {
       "key": "2fe1239d237a107452f1d2f3",
       "url": "https://www.nhl.com/news/minnesota-wild-bill-guerin-hasn-t-talked-quinn-hughes-contract-in-long-time",
@@ -19482,6 +19462,26 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-28T00:30:35.877608Z"
+    },
+    {
+      "key": "ccdbb5eb9d861b9edd999f57",
+      "url": "https://www.sportsnet.ca/nhl/article/golden-knights-captain-mark-stone-exits-vs-sharks-with-injury",
+      "fingerprint": "e68fee19e7b486f7",
+      "title_norm": "golden knights captain mark stone exits vs. sharks with injury",
+      "channel": "injury-report",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T00:45:44.335759Z"
+    },
+    {
+      "key": "183c158bb97636b8e2af98dd",
+      "url": "https://www.sportsnet.ca/nhl/article/its-coming-maple-leafs-get-swagger-back-in-win-over-bruins",
+      "fingerprint": "41e1256517b49643",
+      "title_norm": "'it's coming': maple leafs get swagger back in win over bruins",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T00:45:44.613380Z"
     }
   ],
   "known_sources": [
