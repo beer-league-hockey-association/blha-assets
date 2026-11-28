@@ -1,38 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T02:15:46.501160Z",
+  "updated_at": "2026-11-28T02:41:46.723003Z",
   "seen": [
-    {
-      "key": "e20b5eb3dd8bb87a553fbf4f",
-      "url": "https://www.dailyfaceoff.com/players/news/brennan-othmann/30831",
-      "fingerprint": "eff1d67bb2c011e7",
-      "title_norm": "brennan othmann (cgy) — othmann (upper-body) left wednesday's game vs. edmonton and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-29T02:30:40.732746Z"
-    },
-    {
-      "key": "9b86eb7f68abadd431095f78",
-      "url": "https://www.nhl.com/news/philadelphia-flyers-washington-capitals-game-recap-october-28-2026",
-      "fingerprint": "594c38e5f7d5d813",
-      "title_norm": "tuch, kyrou each scores twice, capitals defeat flyers for fourth win in past five",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-29T02:30:41.045553Z"
-    },
-    {
-      "key": "601d9b17f14cc994ee440729",
-      "url": "https://www.dailyfaceoff.com/players/news/devin-cooley/32944",
-      "fingerprint": "310e37acd31d772e",
-      "title_norm": "devin cooley (cgy) — cooley (lower-body) left wednesday's game vs. edmonton and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-29T02:30:41.304721Z"
-    },
     {
       "key": "e75f0f078ef029b780ee198b",
       "url": "https://www.dailyfaceoff.com/players/news/josh-manson/2400",
