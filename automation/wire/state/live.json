@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T01:30:48.486187Z",
+  "updated_at": "2026-11-28T01:45:42.822703Z",
   "seen": [
-    {
-      "key": "32ea130e12e73b845902e907",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-mcdavid-sets-nhl-record-with-13-game-season-opening-assist-streak",
-      "fingerprint": "af771d6998681b21",
-      "title_norm": "oilers' mcdavid sets nhl record with 13-game season-opening assist streak",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T01:45:31.274336Z"
-    },
     {
       "key": "1961a15bf513bc34d65dce90",
       "url": "https://www.sportsnet.ca/hockey/nhl/games/1c03840e-b908-4ca0-8115-c5043119138e",
@@ -19482,6 +19472,26 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T01:30:48.449067Z"
+    },
+    {
+      "key": "3de6b8fb8987e5fe0b60b2f5",
+      "url": "https://www.nhl.com/news/new-york-rangers-chicago-blackhawks-game-recap-november-27-2026",
+      "fingerprint": "22b685c89fb3fe0f",
+      "title_norm": "mangiapane scores 1st 2 goals of season in hawks win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T01:45:42.354365Z"
+    },
+    {
+      "key": "ea195f34d858e03a9a27cac4",
+      "url": "https://www.sportsnet.ca/nhl/article/struggling-penalty-kill-sinks-canucks-in-loss-to-flyers",
+      "fingerprint": "ed1d4694f06380a4",
+      "title_norm": "struggling penalty kill sinks canucks in loss to flyers",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T01:45:42.783206Z"
     }
   ],
   "known_sources": [
