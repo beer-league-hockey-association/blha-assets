@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T04:30:36.674827Z",
+  "updated_at": "2026-11-28T05:00:48.437128Z",
   "seen": [
-    {
-      "key": "fee85100d9f9675d17e88b83",
-      "url": "https://www.nhl.com/news/toronto-maple-leafs-seattle-kraken-game-recap-october-28-2026",
-      "fingerprint": "620ec736e651d109",
-      "title_norm": "montour scores in final minute, kraken recover to edge maple leafs",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-29T05:00:39.825625Z"
-    },
-    {
-      "key": "d4efa4109a6de4926cca1b76",
-      "url": "https://www.sportsnet.ca/nhl/article/oilers-cruise-past-rebuilding-flames-in-tame-battle-of-alberta",
-      "fingerprint": "bb4005e502d97a58",
-      "title_norm": "oilers cruise past rebuilding flames in tame battle of alberta",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T05:00:40.381740Z"
-    },
     {
       "key": "c50cdead96981f938215597a",
       "url": "https://www.sportsnet.ca/nhl/article/maple-leafs-outlasted-by-kraken-despite-mckennas-big-game",
