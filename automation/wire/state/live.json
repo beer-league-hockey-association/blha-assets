@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T00:15:33.373405Z",
+  "updated_at": "2026-11-28T00:30:35.933902Z",
   "seen": [
     {
       "key": "6c6f6dd635da9d7c03b2dbe3",
@@ -19472,6 +19472,16 @@
       "source_id": "nhl_latest",
       "tier": 0,
       "seen_at": "2026-11-28T00:15:33.314276Z"
+    },
+    {
+      "key": "56950ac24528f5d1d7ec560f",
+      "url": "https://www.nhl.com/news/colorado-avalanche-minnesota-wild-game-recap-november-27-2026",
+      "fingerprint": "374beea3a5e16c7b",
+      "title_norm": "avalanche rally from down three late in third, defeat wild in shootout",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T00:30:35.877608Z"
     }
   ],
   "known_sources": [
