@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T02:41:46.723003Z",
+  "updated_at": "2026-11-28T03:15:39.855559Z",
   "seen": [
     {
       "key": "e75f0f078ef029b780ee198b",
@@ -19442,6 +19442,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T01:45:42.783206Z"
+    },
+    {
+      "key": "59776739dba5b694b531133b",
+      "url": "https://www.sportsnet.ca/nhl/article/flames-squander-lead-against-devils-as-jack-hughes-steals-spotlight",
+      "fingerprint": "5dbee3cd9ddcc26b",
+      "title_norm": "flames squander lead against devils as jack hughes steals spotlight",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T03:15:39.817204Z"
     }
   ],
   "known_sources": [
