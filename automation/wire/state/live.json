@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T03:15:39.855559Z",
+  "updated_at": "2026-11-28T03:30:35.967600Z",
   "seen": [
-    {
-      "key": "e75f0f078ef029b780ee198b",
-      "url": "https://www.dailyfaceoff.com/players/news/josh-manson/2400",
-      "fingerprint": "a7823d036c011f6e",
-      "title_norm": "josh manson (col) — manson (lower-body) left wednesday's game vs. new jersey and will not return.",
-      "channel": "injury-report",
-      "source_id": "daily_faceoff_injuries",
-      "tier": 1,
-      "seen_at": "2026-10-29T03:15:40.770800Z"
-    },
     {
       "key": "18fcc2cf3e7accaf9ca5b58f",
       "url": "https://www.sportsnet.ca/nhl/article/jarry-earns-shutout-as-oilers-douse-flames-to-snap-two-game-losing-skid",
@@ -19452,6 +19442,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T03:15:39.817204Z"
+    },
+    {
+      "key": "7448472fa3a9bf9cef7493b2",
+      "url": "https://www.dailyfaceoff.com/players/news/philipp-grubauer/2065",
+      "fingerprint": "1b5d521609ff7027",
+      "title_norm": "philipp grubauer (sea) — grubauer (upper-body) left friday's game vs. edmonton and will not return.",
+      "channel": "injury-report",
+      "source_id": "daily_faceoff_injuries",
+      "tier": 1,
+      "seen_at": "2026-11-28T03:30:35.522713Z"
+    },
+    {
+      "key": "8f1c39a283a4b9691c6ce405",
+      "url": "https://www.nhl.com/news/florida-panthers-building-momentum-with-aleksander-barkov-brad-marchand-back",
+      "fingerprint": "02c32bb15271daf9",
+      "title_norm": "panthers building momentum with barkov, marchand back",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T03:30:35.696537Z"
+    },
+    {
+      "key": "bbb83e31de1368d63377ab05",
+      "url": "https://www.nhl.com/news/winnipeg-jets-new-york-islanders-game-recap-november-27-2026",
+      "fingerprint": "5c942a013c4d28fb",
+      "title_norm": "connor scores 2, jets top islanders for 3rd straight win",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T03:30:35.879264Z"
     }
   ],
   "known_sources": [
