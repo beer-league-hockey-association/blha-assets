@@ -1,18 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T03:45:34.102019Z",
+  "updated_at": "2026-11-28T04:00:37.385166Z",
   "seen": [
-    {
-      "key": "18fcc2cf3e7accaf9ca5b58f",
-      "url": "https://www.sportsnet.ca/nhl/article/jarry-earns-shutout-as-oilers-douse-flames-to-snap-two-game-losing-skid",
-      "fingerprint": "9b3473be3b91b1eb",
-      "title_norm": "jarry earns shutout as oilers douse flames to snap two-game losing skid",
-      "channel": "nhl-news",
-      "source_id": "sportsnet_nhl",
-      "tier": 1,
-      "seen_at": "2026-10-29T03:45:37.086938Z"
-    },
     {
       "key": "655aca7b4ce44303803c8ae3",
       "url": "https://www.nhl.com/news/new-jersey-devils-colorado-avalanche-game-recap-october-28-2026",
