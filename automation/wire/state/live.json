@@ -1,28 +1,8 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T04:15:35.872949Z",
+  "updated_at": "2026-11-28T04:30:36.674827Z",
   "seen": [
-    {
-      "key": "655aca7b4ce44303803c8ae3",
-      "url": "https://www.nhl.com/news/new-jersey-devils-colorado-avalanche-game-recap-october-28-2026",
-      "fingerprint": "7cf067568574af59",
-      "title_norm": "avalanche score 4 in 3rd, surge past devils",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-29T04:15:36.418418Z"
-    },
-    {
-      "key": "f28f842240ac73fefa556eaa",
-      "url": "https://www.nhl.com/news/jackson-lacombe-boosted-by-olympic-experience-with-team-usa",
-      "fingerprint": "8cdfdcb7009b1568",
-      "title_norm": "ducks' lacombe 'one of the emerging stars in the league'",
-      "channel": "nhl-news",
-      "source_id": "nhl_latest",
-      "tier": 0,
-      "seen_at": "2026-10-29T04:15:36.600813Z"
-    },
     {
       "key": "fee85100d9f9675d17e88b83",
       "url": "https://www.nhl.com/news/toronto-maple-leafs-seattle-kraken-game-recap-october-28-2026",
