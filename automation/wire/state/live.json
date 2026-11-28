@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T04:00:37.385166Z",
+  "updated_at": "2026-11-28T04:15:35.872949Z",
   "seen": [
     {
       "key": "655aca7b4ce44303803c8ae3",
@@ -19472,6 +19472,36 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T03:45:34.011619Z"
+    },
+    {
+      "key": "40f1c985bb27e5a32568428b",
+      "url": "https://www.nhl.com/news/pittsburgh-penguins-buffalo-sabres-game-recap-november-27-2026",
+      "fingerprint": "612388a4e593814d",
+      "title_norm": "penguins score 6 to top sabres, end slide at 5",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T04:15:35.319751Z"
+    },
+    {
+      "key": "b2324f8223b8bb4a3a5a1dbf",
+      "url": "https://www.nhl.com/news/seattle-kraken-edmonton-oilers-game-recap-november-27-2026",
+      "fingerprint": "9c27bb798db5d6ed",
+      "title_norm": "kakko scores 2 in 3rd, kraken rally past oilers",
+      "channel": "nhl-news",
+      "source_id": "nhl_latest",
+      "tier": 0,
+      "seen_at": "2026-11-28T04:15:35.549295Z"
+    },
+    {
+      "key": "e7c9d182d74425a010f5f5b0",
+      "url": "https://www.sportsnet.ca/nhl/article/oilers-drop-fifth-straight-as-kraken-rally-with-two-third-period-goals",
+      "fingerprint": "91378b76353b0538",
+      "title_norm": "oilers drop fifth straight as kraken rally with three third-period goals",
+      "channel": "nhl-news",
+      "source_id": "sportsnet_nhl",
+      "tier": 1,
+      "seen_at": "2026-11-28T04:15:35.790622Z"
     }
   ],
   "known_sources": [
