@@ -1,7 +1,7 @@
 {
   "version": 1,
   "initialized": true,
-  "updated_at": "2026-11-28T09:30:37.079339Z",
+  "updated_at": "2026-11-28T10:30:32.479494Z",
   "seen": [
     {
       "key": "77d962532ce91db15eb2b627",
@@ -19412,6 +19412,16 @@
       "source_id": "sportsnet_nhl",
       "tier": 1,
       "seen_at": "2026-11-28T05:15:40.963142Z"
+    },
+    {
+      "key": "dbe2398c16fddd1b926f6c79",
+      "url": "https://podcasters.spotify.com/pod/show/apples-and-ginos/episodes/Week-10-Waiver-Wire-Must-Add-Players--Elite-Streaming-Options--Who-to-Drop--Fantasy-Hockey-e3t5h32",
+      "fingerprint": "2a436aa58835b6c5",
+      "title_norm": "week 10 waiver wire: must-add players, elite streaming options & who to drop | fantasy hockey",
+      "channel": "media",
+      "source_id": "pod_apples_ginos",
+      "tier": 2,
+      "seen_at": "2026-11-28T10:30:32.448242Z"
     }
   ],
   "known_sources": [
